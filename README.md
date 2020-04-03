@@ -11,6 +11,16 @@ source ./venv/bin/activate
 pip3 install Scrapy
 ```
 
+If you want to leave the virtual-environment, just run:
+```
+deactivate
+```
+
+When you are returning and need to load the virtual environment:
+````bash
+source ./venv/bin/activate
+````
+
 ## Usage
 
 ### Crawler
@@ -51,3 +61,20 @@ Arguments:
 ```bash
 python process/score.py --input data/ucl_courses.json --output test.csv --key shortname --field content
 ```
+
+## Using the Scrapy shell
+
+When developing a crawler, the Scrapy shell is useful to experiment with CSS or XPATH querie.
+
+```
+scrapy shell https://uclouvain.be/cours-2019-ledph1028
+
+# Example CSS query
+response.css("h1.header-school::text").get()
+
+# Example XPath query
+response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]/div/a/text())").getall()
+
+# Goodbye !
+quit()
+``` 
