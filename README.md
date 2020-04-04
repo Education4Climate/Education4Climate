@@ -45,7 +45,7 @@ Arguments:
 - *field*: name of the field to use as input for building the word count.
 
 ````bash
-python process/wordcount.py --input data/ucl_courses.json --output tag_cloud.csv --data content
+python process/wordcount.py --input data/ucl_courses.json --output tag_cloud.csv --field content
 ````
 
 ### Scoring
