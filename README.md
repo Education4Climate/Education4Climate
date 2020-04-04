@@ -32,7 +32,7 @@ Arguments:
 - *output* : destination where crawler results are saved.  
 
 ```bash
-python3 crawler/ucl.py --output data/ucl_test.json
+python crawl/ucl.py --output data/ucl_test.json
 ```
 
 ###  Word count
