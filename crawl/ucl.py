@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import scrapy
 import argparse
 
@@ -77,7 +79,7 @@ def main(output):
     print('All done.')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Craw the UCL courses catalog.')
+    parser = argparse.ArgumentParser(description='Crawl the UCL courses catalog.')
     parser.add_argument("--output", default="output.json", type=str, help="Output file")
     args = parser.parse_args()
     main(args.output)
