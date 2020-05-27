@@ -8,7 +8,7 @@ from scrapy.crawler import CrawlerProcess
 from w3lib.html import remove_tags
 
 
-class UclSpider(scrapy.Spider):
+class UCLSpider(scrapy.Spider):
     name = "ucl"
 
     def start_requests(self):
@@ -74,7 +74,7 @@ def main(output):
         'FEED_URI': output
     })
 
-    process.crawl(UclSpider)
+    process.crawl(UCLSpider)
     process.start() # the script will block here until the crawling is finished
     print('All done.')
 
