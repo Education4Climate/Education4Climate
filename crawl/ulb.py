@@ -23,9 +23,9 @@ class ULBSpider(scrapy.Spider):
 
     def parse_course(self, response):
         data = {
-            'type':         response.xpath("//div//strong[contains(text(), 'Type de titre')]/following::p").get(),
+            'type':         response.xpath("//div//strong[contains(text(), 'Type de')]/following::p").get(),
             'duration':     response.xpath("//div//strong[contains(text(), 'de la formation')]/following::p").get(),
-            'language':     response.xpath("//div//strong[contains(text(), 'Campus')]/following::p").get(),
+            'location':     response.xpath("//div//strong[contains(text(), 'Campus')]/following::p").get(),
             'category':     response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[1]").get(),
             'faculty':      response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[2]").get(),
             'url':          response.url
