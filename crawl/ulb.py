@@ -23,14 +23,25 @@ class ULBSpider(scrapy.Spider):
 
     def parse_course(self, response):
         data = {
-            'type':         response.xpath("//div//strong[contains(text(), 'Type de')]/following::p").get(),
-            'duration':     response.xpath("//div//strong[contains(text(), 'de la formation')]/following::p").get(),
-            'location':     response.xpath("//div//strong[contains(text(), 'Campus')]/following::p").get(),
-            'category':     response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[1]").get(),
-            'faculty':      response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[2]").get(),
+            'type':         self._cleanup(response.xpath("//div//strong[contains(text(), 'Type de titre')]/following::p").get()),
+            'duration':     self._cleanup(response.xpath("//div//strong[contains(text(), 'de la formation')]/following::p").get()),
+            'language':     self._cleanup(response.xpath("//div//strong[contains(text(), 'Campus')]/following::p").get()),
+            'category':     self._cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[1]").get()),
+            'faculty':      self._cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[2]").get()),
             'url':          response.url
         }
         yield data
+
+    def _cleanup(self, data):
+        if data is None:
+            return ""
+        elif isinstance(data, list):
+            result = list()
+            for e in data:
+                result.append(self._cleanup(e))
+            return result
+        else:
+            return remove_tags(data).strip()
 
 
 def main(output):
