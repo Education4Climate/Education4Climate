@@ -18,7 +18,12 @@ class ULBSpider(scrapy.Spider):
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.css("a[href^='https://www.ulb.be/fr/programme/']::attr(href)"):
+        for href in response.css("a[class='item-title__element_title']::attr(href)"):
+            yield response.follow(href, self.parse_prog)
+
+    def parse_prog(self, response):
+        program = response.url + '#programme'
+        for href in response.css("li a[href^='" + program + "-']::attr(href)"):
             yield response.follow(href, self.parse_course)
 
     def parse_course(self, response):
