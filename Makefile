@@ -14,10 +14,10 @@ test-ucl:
 # ------------------------------------------------------------------
 
 generate-ulb:
-	[ -f data/ulb_test.json ] && rm data/ulb_test.json #Delete the file if already exists
+	[ -f data/ulb_test.json ] && rm data/ulb_test.json
 	python3 crawl/ulb.py --output data/ulb_test.json
 
 generate-ucl:
-	#[ -f data/ucl_test.json ] && rm data/ucl_test.json || echo "New file will be created"
+	[ -f data/ucl_test.json ] && rm data/ucl_test.json
 	python3 crawl/ucl.py --output data/ucl_test.json
 
