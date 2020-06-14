@@ -8,7 +8,7 @@ from scrapy.crawler import CrawlerProcess
 from w3lib.html import remove_tags
 
 
-class UCLSpider(scrapy.Spider):
+class UclSpider(scrapy.Spider):
     name = "ucl"
 
     def start_requests(self):
@@ -16,32 +16,27 @@ class UCLSpider(scrapy.Spider):
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.css(".row a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href)"):
-            print('parse: ', href)
+        for href in response.css(".row a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href).getall()"):
             yield response.follow(href, self.parse_formation)
 
     def parse_formation(self, response):
         for href in response.css("li a[href^='/prog-2019']::attr(href)"):
-            print('formation: ', href)
             yield response.follow(href, self.parse_prog)
 
     def parse_prog(self, response):
         prog = response.url[21:]
         for href in response.css("li a[href^='" + prog + "-']::attr(href)"):
-            print('url[21:]: ', prog)
-            print('prog: ', href)
             yield response.follow(href, self.parse_prog_detail)
 
     def parse_prog_detail(self, response):
         for href in response.css("td.composant-ligne1 a[href^='https://uclouvain.be/cours-2019-']::attr(href)"):
-            print('prog_detail: ', href)
             yield response.follow(href, self.parse_course)
 
     def parse_course(self, response):
         data = {
             'class':        self._cleanup(response.css("h1.header-school::text").get()),
             'shortname':    self._cleanup(response.css("span.abbreviation::text").get()),
-            'year':        self._cleanup(response.css("span.anacs::text").get()),
+            'anacs':        self._cleanup(response.css("span.anacs::text").get()),
             'location':     self._cleanup(response.css("span.location::text").get()),
             'teachers':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]/div/a/text())").getall()),
             'language':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]/div[@class='col-sm-10 fa_cell_2']/text())").get()),
@@ -79,12 +74,12 @@ def main(output):
         'FEED_URI': output
     })
 
-    process.crawl(UCLSpider)
+    process.crawl(UclSpider)
     process.start() # the script will block here until the crawling is finished
     print('All done.')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Crawl the UCL courses catalog.')
+    parser = argparse.ArgumentParser(description='Craw the UCL courses catalog.')
     parser.add_argument("--output", default="output.json", type=str, help="Output file")
     args = parser.parse_args()
     main(args.output)
