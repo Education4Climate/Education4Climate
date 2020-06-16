@@ -5,6 +5,7 @@ import argparse
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
+#from scrapy.linkextractors import LinkExtractor
 from w3lib.html import remove_tags
 
 
@@ -18,13 +19,22 @@ class ULBSpider(scrapy.Spider):
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
+        print('Je suis dans parse et voici l url :', response.url)
         for href in response.css("a[class='item-title__element_title']::attr(href)"):
-            yield response.follow(href, self.parse_prog)
+            print('href apres: ', href)
+            yield response.follow(href, self.parse_before_prog)
+
+    def parse_before_prog(self, response):
+        print('yo')
+        yield response.follow('#programme', self.parse_prog)
 
     def parse_prog(self, response):
-        program = response.url + '#programme'
-        for href in response.css("li a[href^='" + program + "-']::attr(href)"):
-            yield response.follow(href, self.parse_course)
+        print('URL du cours :', response.url)
+        print('requete est faite')
+        print(len(response.xpath("//div[@class='prg-programme']")))
+        print(response.xpath("//div[@class='prg-programme']"))
+        #for href in response.xpath("//div[@class='prg-programme']"):
+        #    yield response.follow(href, self.parse_course)
 
     def parse_course(self, response):
         data = {
