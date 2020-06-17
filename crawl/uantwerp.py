@@ -12,47 +12,22 @@ class UclSpider(scrapy.Spider):
     name = "ucl"
 
     def start_requests(self):
-        base_url = 'https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-2019.html'
+        base_url = 'https://www.uantwerpen.be/en/study/education-and-training/'
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.css(".row a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href)"):
-            yield response.follow(href, self.parse_formation)
+        for href in response.xpath("//span[contains(text(), 'Master')]/preceding::h2/a/@href").getall():
+            yield response.follow(href + 'study-programme/', self.parse_formation)
 
     def parse_formation(self, response):
-        for href in response.css("li a[href^='/prog-2019']::attr(href)"):
-            yield response.follow(href, self.parse_prog)
-
-    def parse_prog(self, response):
-        prog = response.url[21:]
-        for href in response.css("li a[href^='" + prog + "-']::attr(href)"):
-            yield response.follow(href, self.parse_prog_detail)
-
-    def parse_prog_detail(self, response):
-        for href in response.css("td.composant-ligne1 a[href^='https://uclouvain.be/cours-2019-']::attr(href)"):
+        for href in response.xpath("//a[@class='iframe cboxElement']/@href").getall():
             yield response.follow(href, self.parse_course)
 
     def parse_course(self, response):
         data = {
-            'class':        self._cleanup(response.css("h1.header-school::text").get()),
-            'shortname':    self._cleanup(response.css("span.abbreviation::text").get()),
-            'anacs':        self._cleanup(response.css("span.anacs::text").get()),
-            'location':     self._cleanup(response.css("span.location::text").get()),
-            'teachers':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]/div/a/text())").getall()),
-            'language':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]/div[@class='col-sm-10 fa_cell_2']/text())").get()),
-            'prerequisite': self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Préalables')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'theme':        self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Thèmes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'goal':         self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Acquis')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'content':      self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Contenu')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'method':       self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Méthodes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'evaluation':   self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Modes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'other':        self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Autres')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'resources':    self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Ressources')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'biblio':       self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Bibliographie')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'faculty':      self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Faculté')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'url':          response.url
-        }
+            'name': self._cleanup(response.xpath("//h1").get()),
 
+        }
         yield data
 
     def _cleanup(self, data):
@@ -66,7 +41,6 @@ class UclSpider(scrapy.Spider):
         else:
             return remove_tags(data).strip()
 
-
 def main(output):
     process = CrawlerProcess({
         'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
@@ -79,7 +53,7 @@ def main(output):
     print('All done.')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Crawl the UCL courses catalog.')
+    parser = argparse.ArgumentParser(description='Crawl the Uantwerp courses catalog.')
     parser.add_argument("--output", default="output.json", type=str, help="Output file")
     args = parser.parse_args()
     main(args.output)
