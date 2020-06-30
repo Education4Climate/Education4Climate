@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import scrapy
 import argparse
 
@@ -10,15 +12,15 @@ class UclSpider(scrapy.Spider):
     name = "ucl"
 
     def start_requests(self):
-        base_url = 'https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-2019.html'
+        base_url = 'https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-' + YEAR + '.html'
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.css(".row a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href)"):
+        for href in response.css("a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href)").getall():
             yield response.follow(href, self.parse_formation)
 
     def parse_formation(self, response):
-        for href in response.css("li a[href^='/prog-2019']::attr(href)"):
+        for href in response.css(f"li a[href^='/prog-{YEAR}']::attr(href)"):
             yield response.follow(href, self.parse_prog)
 
     def parse_prog(self, response):
@@ -27,7 +29,7 @@ class UclSpider(scrapy.Spider):
             yield response.follow(href, self.parse_prog_detail)
 
     def parse_prog_detail(self, response):
-        for href in response.css("td.composant-ligne1 a[href^='https://uclouvain.be/cours-2019-']::attr(href)"):
+        for href in response.css(f"td.composant-ligne1 a[href^='https://uclouvain.be/cours-{YEAR}-']::attr(href)"):
             yield response.follow(href, self.parse_course)
 
     def parse_course(self, response):
@@ -50,7 +52,6 @@ class UclSpider(scrapy.Spider):
             'faculty':      self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Faculté')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
             'url':          response.url
         }
-
         yield data
 
     def _cleanup(self, data):
@@ -76,8 +77,11 @@ def main(output):
     process.start() # the script will block here until the crawling is finished
     print('All done.')
 
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Craw the UCL courses catalog.')
     parser.add_argument("--output", default="output.json", type=str, help="Output file")
+    parser.add_argument("--year", default="2020", type=str, help="Year")
     args = parser.parse_args()
+    YEAR = str(args.year)
     main(args.output)
