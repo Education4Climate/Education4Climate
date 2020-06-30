@@ -5,6 +5,10 @@ UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-201
 
 # ------------------------------------------------------------------
 
+
+
+# ------------------------------------------------------------------
+
 test-ulb:
 	scrapy shell ${ULB_URL}
 
@@ -12,12 +16,11 @@ test-ucl:
 	scrapy shell ${UCL_URL}
 
 # ------------------------------------------------------------------
+generate-ucl:
+	if [ -f data/ucl_test.json ]; then rm data/ucl_test.json; fi
+	python3 crawl/ucl.py --output data/ucl_test.json
 
 generate-ulb:
-	[ -f data/ulb_test.json ] && rm data/ulb_test.json
+	if [ -f data/ulb_test.json ]; then rm data/ulb_test.json; fi
 	python3 crawl/ulb.py --output data/ulb_test.json
-
-generate-ucl:
-	[ -f data/ucl_test.json ] && rm data/ucl_test.json
-	python3 crawl/ucl.py --output data/ucl_test.json
 
