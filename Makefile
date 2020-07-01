@@ -19,12 +19,12 @@ test-uantwerp:
 # ------------------------------------------------------------------
 generate-ucl:
 	if [ -f data/ucl_test_${YEAR}.json ]; then rm data/ucl_test_${YEAR}.json; fi
-	python3 crawl/ucl.py --output data/ucl_test_${YEAR}.json --year ${YEAR}
+	python3 crawl/ucl.py --output data/crawling-results/ucl_test_${YEAR}.json --year ${YEAR}
 
 generate-ulb:
 	if [ -f data/ulb_test_${YEAR}.json ]; then rm data/ulb_test_${YEAR}.json; fi
-	python3 crawl/ulb.py --output data/ulb_test_${YEAR}.json --year ${YEAR}
+	python3 crawl/ulb.py --output data/crawling-results/ulb_test_${YEAR}.json --year ${YEAR}
 
 generate-uantwerp:
 	if [ -f data/uantwerp_${YEAR}.json ]; then rm data/uantwerp_${YEAR}.json; fi
-	python3 crawl/uantwerp.py --output data/uantwerp_${YEAR}.json --year ${YEAR}
+	python3 crawl/uantwerp.py --output data/crawling-results/uantwerp_${YEAR}.json --year ${YEAR}
