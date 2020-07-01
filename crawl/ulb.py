@@ -5,10 +5,13 @@ import argparse
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
+#from scrapy.linkextractors import LinkExtractor
 from w3lib.html import remove_tags
 
 
-class UclSpider(scrapy.Spider):
+#<div class="champ contenu_formation toolbox">
+
+class ULBSpider(scrapy.Spider):
     name = "ulb"
 
     def start_requests(self):
@@ -16,43 +19,32 @@ class UclSpider(scrapy.Spider):
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.css("a[href^='https://www.ulb.be/fr/programme/']::attr(href)"):
-            yield response.follow(href, self.parse_formation)
+        print('Je suis dans parse et voici l url :', response.url)
+        for href in response.css("a[class='item-title__element_title']::attr(href)"):
+            print('href apres: ', href)
+            yield response.follow(href, self.parse_before_prog)
 
-    def parse_formation(self, response):
-        for href in response.css("li a[href^='/prog-2019']::attr(href)"):
-            yield response.follow(href, self.parse_prog)
+    def parse_before_prog(self, response):
+        print('yo')
+        yield response.follow('#programme', self.parse_prog)
 
     def parse_prog(self, response):
-        prog = response.url[21:]
-        for href in response.css("li a[href^='" + prog + "-']::attr(href)"):
-            yield response.follow(href, self.parse_prog_detail)
-
-    def parse_prog_detail(self, response):
-        for href in response.css("td.composant-ligne1 a[href^='https://uclouvain.be/cours-2019-']::attr(href)"):
-            yield response.follow(href, self.parse_course)
+        print('URL du cours :', response.url)
+        print('requete est faite')
+        print(len(response.xpath("//div[@class='prg-programme']")))
+        print(response.xpath("//div[@class='prg-programme']"))
+        #for href in response.xpath("//div[@class='prg-programme']"):
+        #    yield response.follow(href, self.parse_course)
 
     def parse_course(self, response):
         data = {
-            'class':        self._cleanup(response.css("h1.header-school::text").get()),
-            'shortname':    self._cleanup(response.css("span.abbreviation::text").get()),
-            'anacs':        self._cleanup(response.css("span.anacs::text").get()),
-            'location':     self._cleanup(response.css("span.location::text").get()),
-            'teachers':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]/div/a/text())").getall()),
-            'language':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]/div[@class='col-sm-10 fa_cell_2']/text())").get()),
-            'prerequisite': self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Préalables')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'theme':        self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Thèmes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'goal':         self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Acquis')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'content':      self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Contenu')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'method':       self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Méthodes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'evaluation':   self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Modes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'other':        self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Autres')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'resources':    self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Ressources')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'biblio':       self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Bibliographie')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'faculty':      self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Faculté')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'type':         self._cleanup(response.xpath("//div//strong[contains(text(), 'Type de titre')]/following::p").get()),
+            'duration':     self._cleanup(response.xpath("//div//strong[contains(text(), 'de la formation')]/following::p").get()),
+            'language':     self._cleanup(response.xpath("//div//strong[contains(text(), 'Campus')]/following::p").get()),
+            'category':     self._cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[1]").get()),
+            'faculty':      self._cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[2]").get()),
             'url':          response.url
         }
-
         yield data
 
     def _cleanup(self, data):
@@ -74,7 +66,7 @@ def main(output):
         'FEED_URI': output
     })
 
-    process.crawl(UclSpider)
+    process.crawl(ULBSpider)
     process.start() # the script will block here until the crawling is finished
     print('All done.')
 
