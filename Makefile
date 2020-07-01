@@ -1,9 +1,8 @@
 # Macros
 
+YEAR = 2020
 ULB_URL="https://www.ulb.be/fr/programme/lien-vers-catalogue-des-programmes"
 UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-2019.html"
-
-YEAR = 2020
 
 # ------------------------------------------------------------------
 
