@@ -36,7 +36,7 @@ class UclSpider(scrapy.Spider):
         data = {
             'class':        self._cleanup(response.css("h1.header-school::text").get()),
             'shortname':    self._cleanup(response.css("span.abbreviation::text").get()),
-            'anacs':        self._cleanup(response.css("span.anacs::text").get()),
+            'year':        self._cleanup(response.css("span.anacs::text").get()),
             'location':     self._cleanup(response.css("span.location::text").get()),
             'teachers':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]/div/a/text())").getall()),
             'language':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]/div[@class='col-sm-10 fa_cell_2']/text())").get()),

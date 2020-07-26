@@ -73,5 +73,6 @@ def main(output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Crawl the UCL courses catalog.')
     parser.add_argument("--output", default="output.json", type=str, help="Output file")
+    parser.add_argument("--year", default="2020", type=str, help="Academic Year")
     args = parser.parse_args()
     main(args.output)
