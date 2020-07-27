@@ -4,6 +4,7 @@ YEAR = 2020
 ULB_URL="https://www.ulb.be/fr/programme/lien-vers-catalogue-des-programmes"
 UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-${YEAR}.html"
 UANTWERP_URL="https://www.uantwerpen.be/en/study/education-and-training/"
+UGENT_URL="https://studiegids.ugent.be/2020/EN/FACULTY/faculteiten.html"
 
 # ------------------------------------------------------------------
 
@@ -15,6 +16,9 @@ test-ucl:
 
 test-uantwerp:
 	scrapy shell ${UANTWERP_URL}
+
+test-ugent:
+	scrapy shell ${UGENT_URL}
 
 # ------------------------------------------------------------------
 generate-ucl:
@@ -28,3 +32,7 @@ generate-ulb:
 generate-uantwerp:
 	if [ -f data/uantwerp_${YEAR}.json ]; then rm data/uantwerp_${YEAR}.json; fi
 	python3 crawl/uantwerp.py --output data/crawling-results/uantwerp_${YEAR}.json --year ${YEAR}
+
+generate-ugent:
+	if [ -f data/ugent_${YEAR}.json ]; then rm data/ugent_${YEAR}.json; fi
+	python3 crawl/ugent.py --output data/crawling-results/ugent_${YEAR}.json --year ${YEAR}
