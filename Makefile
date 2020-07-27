@@ -4,7 +4,7 @@ YEAR = 2020
 ULB_URL="https://www.ulb.be/fr/programme/lien-vers-catalogue-des-programmes"
 UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-${YEAR}.html"
 UANTWERP_URL="https://www.uantwerpen.be/en/study/education-and-training/"
-UGENT_URL="https://studiegids.ugent.be/2020/EN/FACULTY/faculteiten.html"
+UGENT_URL="https://studiegids.ugent.be/${YEAR}/EN/FACULTY/faculteiten.html"
 
 # ------------------------------------------------------------------
 
