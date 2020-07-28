@@ -28,7 +28,7 @@ class UantwerpSpider(scrapy.Spider):
             # Standard fields :
             'name': "//h1",
             'shortname': "/html/body/form/div[3]/section/section/table/tbody/tr[1]/td[2]/b",
-            'anacs': "/html/body/form/div[3]/section/section/table/tbody/tr[3]/td[2]",
+            'year': "/html/body/form/div[3]/section/section/table/tbody/tr[3]/td[2]",
             'location': "",
             'prerequisite': "/html/body/form/div[3]/section/section/div[1]/div[1]/div",
             'theme':"",
