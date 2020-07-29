@@ -16,7 +16,7 @@ class UantwerpSpider(scrapy.Spider):
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.xpath("//span[contains(text(), 'Master')]/preceding::h2/a/@href").getall():
+        for href in response.xpath("//span[contains(text(), 'master')]/preceding::h2/a/@href").getall():
             yield response.follow(href + 'study-programme/', self.parse_formation)
 
     def parse_formation(self, response):
