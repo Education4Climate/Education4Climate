@@ -17,11 +17,18 @@ class KuleuvenSpider(scrapy.Spider):
 
     def parse(self, response):
         for href in response.xpath("//div[contains(@class, 'level_4')]//ul//li//a/@href").getall():
-            yield response.follow(href, self.parse_formation)
+            yield response.follow(href, self.parse_formation1)
 
-    def parse_formation(self, response):
-        yield {'name': response.url}
+    def parse_formation1(self, response):
+        href = response.xpath('//div[h1[contains(text(), "Programme summary")]]/ul/li/a/@href')
+        yield response.follow(href, self.parse_formation2)
 
+    def parse_formation2(self, response):
+        for href in [None, None]
+        yield response.follow(href, self.parse_course)
+
+    def parse_course(self, response):
+        yield None
 
     def _cleanup(self, data):
         if data is None:
