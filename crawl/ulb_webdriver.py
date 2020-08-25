@@ -37,9 +37,8 @@ def get_course_infos(href,driver):
         elif re.search("[eé]valuation",title) is not None:
             infos["evaluation"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
 
-
-
     return infos
+
 if __name__ == "__main__":
     ulb_driver = Driver()
     ulb_driver.init()
