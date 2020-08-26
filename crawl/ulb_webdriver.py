@@ -20,14 +20,18 @@ def get_course_infos(href,driver):
     #else
 
     #technical details
-    fiche=driver.find_element_by_class_name("fiche-technique")
-    for element in fiche.find_elements_by_xpath("//div[contains(@class,'fiche-technique__colonne')]"):
-        if "titulaire" in element.find_element_by_tag_name("h3").text.lower() :
-            infos["teachers"]=re.split(", | et ",element.text.replace(element.find_element_by_tag_name("h3").text,""))
-        elif "crédit" in element.find_element_by_tag_name("h3").text.lower() :
-            infos["credits"]=element.find_element_by_tag_name("p").text.lower()
-        elif "langue" in element.find_element_by_tag_name("h3").text.lower() :
-            infos["language"]=element.find_element_by_tag_name("p").text.lower()
+    try:
+        fiche=driver.find_element_by_class_name("fiche-technique")
+        for element in fiche.find_elements_by_xpath("//div[contains(@class,'fiche-technique__colonne')]"):
+            if "titulaire" in element.find_element_by_tag_name("h3").text.lower() :
+                infos["teachers"]=re.split(", | et ",element.text.replace(element.find_element_by_tag_name("h3").text,""))
+            elif "crédit" in element.find_element_by_tag_name("h3").text.lower() :
+                infos["credits"]=element.find_element_by_tag_name("p").text.lower()
+            elif "langue" in element.find_element_by_tag_name("h3").text.lower() :
+                infos["language"]=element.find_element_by_tag_name("p").text.lower()
+    except Exception as e:
+        print(e)
+        print(infos["url"])
 
 
     #textual information
@@ -98,9 +102,6 @@ if __name__ == "__main__":
         prg["location"]=element.find_element_by_class_name("search-result-formation__separator").text
         programs[prg["code"]] = prg
     print("number of total programs to crawl : %s\n" % len(programs.keys()))
-    bar = progressbar.ProgressBar(maxval=len(programs.keys()),widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
-    i=0
-    bar.start()
     for p_id,prg in programs.items():
         ulb_driver.driver.get(prg["url"]+"#programme")
         prg["courses"]=[]
@@ -109,6 +110,10 @@ if __name__ == "__main__":
         courses_refs = ulb_driver.driver.find_elements_by_xpath("//a[contains(@title,'COURS')]")
         courses_refs=[e.get_attribute("href") for e in courses_refs]
         print(len(courses_refs))
+        bar = progressbar.ProgressBar(maxval=len(courses_refs),
+                                      widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
+        i = 0
+        bar.start()
         for href in courses_refs:
             ulb_driver.driver.get(href)
             time.sleep(5)
@@ -121,14 +126,14 @@ if __name__ == "__main__":
                 courses_fh.write("\n")
                 courses_fh.flush()
                 courses[id_]=infos
+            i += 1
+            bar.update(i + 1)
         if prg["code"] not in programs.keys():
             programs[prg["code"]] = prg
             program_fh.write(json.dumps(prg))
             program_fh.write("\n")
             program_fh.flush()
-        i+=1
-        bar.update(i+1)
-    bar.finish()
+        bar.finish()
     #json.dump(programs,open("data/crawling-results/ulb_programs.json","w"))
     #json.dump(courses,open("data/crawling-results/ulb_courses.json","w"))
     ulb_driver.delete_driver()
