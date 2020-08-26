@@ -2,7 +2,6 @@ from pyvirtualdisplay import Display
 import os,time,sys
 from selenium import webdriver
 sys.path.append(os.path.abspath(os.getcwd()))
-print(sys.path)
 
 class Driver():
     def __init__(self):
