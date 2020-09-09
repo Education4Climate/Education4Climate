@@ -25,7 +25,7 @@ def get_course_infos(href,driver):
         for element in fiche.find_elements_by_xpath("//div[contains(@class,'fiche-technique__colonne')]"):
             if "titulaire" in element.find_element_by_tag_name("h3").text.lower() :
                 infos["teachers"]=re.split(", | et ",element.text.replace(element.find_element_by_tag_name("h3").text,""))
-            elif "crédit" in element.find_element_by_tag_name("h3").text.lower() :
+            elif "crédit" in element.find_element_by_tag_name("h3").text.lower():
                 infos["credits"]=element.find_element_by_tag_name("p").text.lower()
             elif "langue" in element.find_element_by_tag_name("h3").text.lower() :
                 infos["language"]=element.find_element_by_tag_name("p").text.lower()
