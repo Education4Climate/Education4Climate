@@ -5,6 +5,7 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from unidecode import unidecode
 import config as cfg
+from collections import Counter
 
 def tokenize(text):
     return [unidecode(w.text.lower()) for w in nlp(text) if w.pos_ not in ["PUNCT","NUM","SYM","SPACE"] and w.is_stop is False]
@@ -13,6 +14,14 @@ def refactor_pattern(x):
     x=x.replace("\w+","[^ ]+").lower()
     x=unidecode(x)
     return x
+def compute_climate_score(words,pattern):
+    matching=Counter()
+    scores=0
+    for word,score in words.items():
+        if re.match(pattern,word) is not None:
+            matching[word]+=1
+            scores += (len(word.split(" ")) * score)
+    return scores,matching
 
 def compute_score(words,patterns):
     scores=0
@@ -46,6 +55,8 @@ def load_models(corpus,train,language):
         features = vectorizer.get_feature_names()
     print("models trained or loaded")
     return vectorizer,features
+
+
 def get_pattern_shift(languages):
     patterns={}
     for language in languages:
@@ -70,6 +81,13 @@ def get_odd_patterns(languages):
         patterns[language]=odds
     return patterns
 
+def get_climate_pattern(languages):
+    patterns={}
+    for language in languages:
+        if "climate" in cfg.pattern_sheets[language].keys():
+            tmp=pd.read_csv(cfg.pattern_sheets[language]["climate"],header=None)
+            patterns[language]=tmp.iloc[0][0]
+    return patterns
 
 if __name__=="__main__":
 
@@ -89,8 +107,8 @@ if __name__=="__main__":
     nlp=spacy.load(language)
     df = pd.read_json(args.input)
     print("resources loaded")
-    df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.prerequisite.astype(
-        str) + "\n" + df.theme
+
+    #df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.prerequisite.astype(str) + "\n" + df.theme
     df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.theme.astype(str)
     remove = ["«", "»", "/", "\\"]
     df_courses=df[["class","shortname","text"]].copy()
@@ -98,6 +116,7 @@ if __name__=="__main__":
     vectorizer,features=load_models(df_courses.text.values.tolist(),args.train,language)
     #load patterns for shift
     shift_patterns=get_pattern_shift(languages)
+    climate_patterns=get_climate_pattern(languages)
     odd_patterns=get_odd_patterns(languages)
     results=[]
     for i, row in df_courses.iterrows():
@@ -112,9 +131,12 @@ if __name__=="__main__":
         if i % 1000 == 0: print(i)
         score_shift = compute_score(words_text, shift_patterns[detected_language])
         if not isinstance(score_shift, float): score_shift = 0.0
-        odd_scores=compute_odd_score(words_text,odd_patterns[detected_language])
+        score_climate,matching=compute_climate_score(words_text, climate_patterns[detected_language])
         data={"code":row.shortname,"name":row["class"],"shift_score":score_shift}
-        for odd,b in odd_scores.items(): data[odd]=int(b)
+        data["climate_score"]=score_climate
+        data["climate_patterns"]=json.dumps(matching)
+        #odd_scores=compute_odd_score(words_text,odd_patterns[detected_language])
+        #for odd,b in odd_scores.items(): data[odd]=int(b)
         results.append(data)
     df_results=pd.DataFrame.from_dict(results)
     writer=pd.ExcelWriter(args.output)

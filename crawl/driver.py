@@ -1,4 +1,5 @@
-from pyvirtualdisplay import Display
+#from pyvirtualdisplay import Display
+from xvfbwrapper import Xvfb
 import os,time,sys
 from selenium import webdriver
 sys.path.append(os.path.abspath(os.getcwd()))
@@ -8,8 +9,9 @@ class Driver():
         self.driver=None
 # Setting up Selenium
     def init(self):
-        DRIVER_PATH = "/snap/bin/chromium.chromedriver"#"data/chromedriver"
-        self.display=Display(visible=0)
+        DRIVER_PATH = "data/chromedriver" #"/snap/bin/chromium.chromedriver"
+        self.display=Xvfb()
+        #self.display=Display(visible=0)
         self.display.start()
 
         options = webdriver.ChromeOptions()
