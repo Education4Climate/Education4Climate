@@ -63,17 +63,18 @@ if __name__ == "__main__":
     courses_fh=open("data/crawling-results/ulb_courses.json")
 
     courses = {e["shortname"]:e for e in [json.loads(line) for line in courses_fh.readlines()]}
-    programs = {e["shortname"]:e for e in [json.loads(line) for line in program_fh.readlines()]}
+    programs_saved = {e["code"]:e for e in [json.loads(line) for line in program_fh.readlines()]}
+    programs={}
     program_fh.close()
     courses_fh.close()
     program_fh=open("data/crawling-results/ulb_programs.json","a")
     courses_fh=open("data/crawling-results/ulb_courses.json","a")
 
-    print("already crawled : {} programs, {} courses\n ".format(len(programs.keys()),len(courses.keys())))
+    print("already crawled : {} programs, {} courses\n ".format(len(programs_saved.keys()),len(courses.keys())))
 
     #Get Bac programms
     ulb_driver.driver.get("https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=BA&s=FACULTE_ASC&limit=300&page=1")
-    time.sleep(5)
+    time.sleep(2)
     programs_ref=ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
 
     for element in programs_ref:
@@ -83,12 +84,11 @@ if __name__ == "__main__":
         prg["faculty"]=element.find_element_by_class_name("item-title__element_title").text
         prg["code"]=element.find_element_by_class_name("search-result__mnemonique").text
         prg["location"]=element.find_element_by_class_name("search-result-formation__separator").text
-        #print(prg)
         programs[prg["code"]]=prg
 
     # Get Master programms
     ulb_driver.driver.get("https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=MA&s=FACULTE_ASC&limit=200&page=1")
-    time.sleep(5)
+    time.sleep(1)
     programs_ref = ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
     print("number of BA to crawl : %s\n" % len(programs.keys()))
     BA_=len(programs.keys())
@@ -105,35 +105,38 @@ if __name__ == "__main__":
     for p_id,prg in programs.items():
         ulb_driver.driver.get(prg["url"]+"#programme")
         prg["courses"]=[]
-        time.sleep(5)
+        time.sleep(2)
         print(prg["name"],prg["url"])
         courses_refs = ulb_driver.driver.find_elements_by_xpath("//a[contains(@title,'COURS')]")
         courses_refs=[e.get_attribute("href") for e in courses_refs]
         print(len(courses_refs))
         bar = progressbar.ProgressBar(maxval=len(courses_refs),
                                       widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
-        i = 0
         bar.start()
-        for href in courses_refs:
+        for i,href in enumerate(courses_refs):
             ulb_driver.driver.get(href)
-            time.sleep(5)
-            id_ = ulb_driver.driver.find_element_by_class_name("mnemonique").text
-            prg["courses"].append(id_)
-            if id_ not in courses.keys():
-                infos =get_course_infos(href,ulb_driver.driver)
-                infos["shortname"]=id_
-                courses_fh.write(json.dumps(infos))
-                courses_fh.write("\n")
-                courses_fh.flush()
-                courses[id_]=infos
-            i += 1
-            bar.update(i + 1)
-        if prg["code"] not in programs.keys():
+            time.sleep(2)
+            try:
+                id_ = ulb_driver.driver.find_element_by_class_name("mnemonique").text
+                prg["courses"].append(id_)
+                if id_ not in courses.keys():
+                    infos =get_course_infos(href,ulb_driver.driver)
+                    infos["shortname"]=id_
+                    courses_fh.write(json.dumps(infos))
+                    courses_fh.write("\n")
+                    courses_fh.flush()
+                    courses[id_]=infos
+            except Exception as e:
+                print(e,href)
+            bar.update(i)
+        bar.finish()
+        print(prg["code"], " done crawling. Saving..")
+        if prg["code"] not in programs_saved.keys():
+            prg["courses"]=list(set(prg["courses"]))
             programs[prg["code"]] = prg
             program_fh.write(json.dumps(prg))
             program_fh.write("\n")
             program_fh.flush()
-        bar.finish()
     #json.dump(programs,open("data/crawling-results/ulb_programs.json","w"))
     #json.dump(courses,open("data/crawling-results/ulb_courses.json","w"))
     ulb_driver.delete_driver()
