@@ -122,7 +122,7 @@ if __name__ == "__main__":
             except Exception as e:
                 print(e)
                 print("restarting driver")
-                ulb_driver.driver.init()
+                ulb_driver.init()
                 ulb_driver.driver.get(href)
             time.sleep(2)
             try:
