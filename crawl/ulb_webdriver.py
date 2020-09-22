@@ -114,6 +114,9 @@ if __name__ == "__main__":
                                       widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
         bar.start()
         for i,href in enumerate(courses_refs):
+            if not href.startswith("http"):
+                print("skipping ",href)
+                continue
             try:
                 ulb_driver.driver.get(href)
             except Exception as e:
