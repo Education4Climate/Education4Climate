@@ -9,6 +9,8 @@ class Driver():
         self.driver=None
 # Setting up Selenium
     def init(self):
+        if self.driver is not None:
+            self.delete_driver()
         DRIVER_PATH = "data/chromedriver"
         self.display=Xvfb()
         #self.display=Display(visible=0)

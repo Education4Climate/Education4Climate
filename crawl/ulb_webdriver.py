@@ -114,7 +114,13 @@ if __name__ == "__main__":
                                       widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
         bar.start()
         for i,href in enumerate(courses_refs):
-            ulb_driver.driver.get(href)
+            try:
+                ulb_driver.driver.get(href)
+            except Exception as e:
+                print(e)
+                print("restarting driver")
+                ulb_driver.driver.init()
+                ulb_driver.driver.get(href)
             time.sleep(2)
             try:
                 id_ = ulb_driver.driver.find_element_by_class_name("mnemonique").text
