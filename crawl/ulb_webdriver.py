@@ -101,8 +101,12 @@ if __name__ == "__main__":
         prg["code"]=element.find_element_by_class_name("search-result__mnemonique").text
         prg["location"]=element.find_element_by_class_name("search-result-formation__separator").text
         programs[prg["code"]] = prg
+    
     print("number of total programs to crawl : %s\n" % len(programs.keys()))
     for p_id,prg in programs.items():
+        if p_id in programs_saved.keys():
+            print(prg["name"],prg["url"],"-- already crawled")
+            continue
         ulb_driver.driver.get(prg["url"]+"#programme")
         prg["courses"]=[]
         time.sleep(2)
