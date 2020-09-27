@@ -65,8 +65,8 @@ if __name__ == "__main__":
     ugent_driver.init()
 
     # Extract courses (e.g. 'CLAS-B156') and programs (e.g. 'Master') ALREADY crawled -------------------------------
-    program_fh = open("data/crawling-results/ulb_programs.json")
-    courses_fh = open("data/crawling-results/ulb_courses.json")
+    program_fh = open("data/crawling-results/ugent_programs.json")
+    courses_fh = open("data/crawling-results/ugent_courses.json")
     courses = {e["shortname"]: e for e in [json.loads(line) for line in courses_fh.readlines()]}
     programs = {e["shortname"]: e for e in [json.loads(line) for line in program_fh.readlines()]}
     program_fh.close()
@@ -79,8 +79,9 @@ if __name__ == "__main__":
 
     # Collecting Bachelor programms list ------------------------------------------------------------------
     ugent_driver.driver.get(
-        "https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=BA&s=FACULTE_ASC&limit=300&page=1")
+        'https://studiegids.ugent.be/2020/EN/FACULTY/faculteiten.html')
     time.sleep(5) # Is it necessary?
+    # HERE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     programs_ref = ugent_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
 
     for element in programs_ref:
@@ -96,7 +97,7 @@ if __name__ == "__main__":
 
     # Collecting Master programms list ----------------------------------------------------------------------
     ugent_driver.driver.get(
-        "https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=MA&s=FACULTE_ASC&limit=200&page=1")
+        "https://www.ugent.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=MA&s=FACULTE_ASC&limit=200&page=1")
     time.sleep(5)
     programs_ref = ugent_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
     for element in programs_ref:
