@@ -9,7 +9,7 @@ class Driver():
         self.driver=None
 # Setting up Selenium
     def init(self):
-        DRIVER_PATH = "data/chromedriver" #"/snap/bin/chromium.chromedriver"
+        DRIVER_PATH = "/snap/bin/chromium.chromedriver" #"data/chromedriver" #
         self.display=Xvfb()
         #self.display=Display(visible=0)
         self.display.start()

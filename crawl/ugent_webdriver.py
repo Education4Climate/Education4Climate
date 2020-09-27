@@ -61,8 +61,8 @@ def get_course_infos(href, driver):
 
 
 if __name__ == "__main__":
-    ulb_driver = Driver()
-    ulb_driver.init()
+    ugent_driver = Driver()
+    ugent_driver.init()
 
     # Extract courses (e.g. 'CLAS-B156') and programs (e.g. 'Master') ALREADY crawled -------------------------------
     program_fh = open("data/crawling-results/ulb_programs.json")
@@ -74,14 +74,14 @@ if __name__ == "__main__":
     print("already crawled : {} programs, {} courses\n ".format(len(programs.keys()), len(courses.keys())))
 
 
-    program_fh = open("data/crawling-results/ulb_programs.json", "a")
-    courses_fh = open("data/crawling-results/ulb_courses.json", "a")
+    program_fh = open("data/crawling-results/ugent_programs.json", "a")
+    courses_fh = open("data/crawling-results/ugent_courses.json", "a")
 
     # Collecting Bachelor programms list ------------------------------------------------------------------
-    ulb_driver.driver.get(
+    ugent_driver.driver.get(
         "https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=BA&s=FACULTE_ASC&limit=300&page=1")
     time.sleep(5) # Is it necessary?
-    programs_ref = ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
+    programs_ref = ugent_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
 
     for element in programs_ref:
         prg = {}
@@ -95,10 +95,10 @@ if __name__ == "__main__":
     BA_ = len(programs.keys())
 
     # Collecting Master programms list ----------------------------------------------------------------------
-    ulb_driver.driver.get(
+    ugent_driver.driver.get(
         "https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=MA&s=FACULTE_ASC&limit=200&page=1")
     time.sleep(5)
-    programs_ref = ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
+    programs_ref = ugent_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
     for element in programs_ref:
         prg = {}
         prg["name"] = element.find_element_by_tag_name("strong").text
@@ -115,12 +115,12 @@ if __name__ == "__main__":
 
     # Browsing all programs -----------------------------------------------------------------------
     for prog_id, prg in programs.items():
-        ulb_driver.driver.get(prg["url"] + "#programme")
+        ugent_driver.driver.get(prg["url"] + "#programme")
         prg["courses"] = []
         time.sleep(5)
         print(prg["name"], prg["url"])
         # Listing all courses of the program
-        courses_refs = ulb_driver.driver.find_elements_by_xpath("//a[contains(@title,'COURS')]")
+        courses_refs = ugent_driver.driver.find_elements_by_xpath("//a[contains(@title,'COURS')]")
         courses_refs = [e.get_attribute("href") for e in courses_refs]
         print(len(courses_refs))
         bar = progressbar.ProgressBar(maxval=len(courses_refs),
@@ -129,13 +129,13 @@ if __name__ == "__main__":
         bar.start()
         # Browsing all courses
         for href in courses_refs:
-            ulb_driver.driver.get(href)
+            ugent_driver.driver.get(href)
             time.sleep(5)
-            id_ = ulb_driver.driver.find_element_by_class_name("mnemonique").text
+            id_ = ugent_driver.driver.find_element_by_class_name("mnemonique").text
             prg["courses"].append(id_)
             # Getting and writing course infos
             if id_ not in courses.keys():
-                infos = get_course_infos(href, ulb_driver.driver)
+                infos = get_course_infos(href, ugent_driver.driver)
                 infos["shortname"] = id_
                 courses_fh.write(json.dumps(infos))
                 courses_fh.write("\n")
@@ -149,8 +149,8 @@ if __name__ == "__main__":
             program_fh.write("\n")
             program_fh.flush()
         bar.finish()
-    # json.dump(programs,open("data/crawling-results/ulb_programs.json","w"))
-    # json.dump(courses,open("data/crawling-results/ulb_courses.json","w"))
-    ulb_driver.delete_driver()
+    # json.dump(programs,open("data/crawling-results/ugent_programs.json","w"))
+    # json.dump(courses,open("data/crawling-results/ugent_courses.json","w"))
+    ugent_driver.delete_driver()
     courses_fh.close()
     program_fh.close()
