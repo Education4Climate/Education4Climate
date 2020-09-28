@@ -81,7 +81,8 @@ if __name__ == "__main__":
         prg={}
         prg["name"]=element.find_element_by_tag_name("strong").text
         prg["url"]=element.find_element_by_class_name("item-title__element_title").get_attribute("href")
-        prg["faculty"]=element.find_element_by_class_name("item-title__element_title").text
+        prg["faculty"] = element.find_element_by_xpath("//span[contains(@class,'search-result__structure-rattachement')]").text
+        #prg["faculty"]=element.find_element_by_class_name("item-title__element_title").text
         prg["code"]=element.find_element_by_class_name("search-result__mnemonique").text
         prg["location"]=element.find_element_by_class_name("search-result-formation__separator").text
         programs[prg["code"]]=prg
@@ -97,7 +98,7 @@ if __name__ == "__main__":
         prg = {}
         prg["name"] = element.find_element_by_tag_name("strong").text
         prg["url"] = element.find_element_by_class_name("item-title__element_title").get_attribute("href")
-        prg["faculty"] = element.find_element_by_class_name("item-title__element_title").text
+        prg["faculty"] = element.find_element_by_xpath("//span[contains(@class,'search-result__structure-rattachement')]").text
         prg["code"]=element.find_element_by_class_name("search-result__mnemonique").text
         prg["location"]=element.find_element_by_class_name("search-result-formation__separator").text
         programs[prg["code"]] = prg
