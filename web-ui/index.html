@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ClimatSupBe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tabulator_simple.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h6 class="filter-title">Universités</h6>
+            <div id="schools-selector"></div>
+            <h6 class="filter-title">Thématiques</h6>
+            <div id="themes-selector"></div>
+            <h6 class="filter-title">Langues</h6>
+            <div id="languages-selector"></div>
+            <h6 class="filter-title">Intitulés</h6>
+            <input class="u-full-width" type="text" placeholder="exemple : climat" id="courses-search"
+                onkeyup="setFilters()">
+            <h6 id="results-count"></h6>
+            <div id="courses-table-container">
+            </div>
+        </div>
+    </div>
+
+    <div id="course-details-modal">
+        <div id="card">
+            <h4 id="course-name"></h4>
+            <h5 id="course-short-name"></h5>
+            <div>
+                <h6>Année académique : </h6><span id="course-years"></span>
+            </div>
+            <div>
+                <h6>Contenu du cours : </h6><span id="course-abstract"></span>
+            </div>
+            <div>
+                <h6>Titulaires du cours : </h6><span id="course-teachers"></span>
+            </div>
+            <div>
+                <h6>Thématiques abordées : </h6><span id="course-themes"></span>
+            </div>
+            <div>
+                <h6>Crédits ECTS : </h6><span id="course-credits"></span>
+            </div>
+            <div>
+                <h6>Langues d'enseignement : </h6><span id="course-languages"></span>
+            </div>
+            <div>
+                <h6>Campus : </h6><span id="course-campus"></span>
+            </div>
+            <div>
+                <h6>Score climat : </h6><span id="course-climate-score"></span>
+            </div>
+            <div>
+                <h6>Score Shift : </h6><span id="course-shift-score"></span>
+            </div>
+            <div id="course-url"></div>
+        </div>
+    </div>
+
+    <script src="data/uantwerp.json"></script>
+    <script src="data/ucl.json"></script>
+    <script src="data/ulb.json"></script>
+    <script src="data/umons.json"></script>
+    <script src="data/unamur.json"></script>
+    <script src="js/tabulator.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
