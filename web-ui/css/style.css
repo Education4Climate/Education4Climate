@@ -1,0 +1,89 @@
+.container {
+    max-width : 75%;
+    margin-top: 2.5rem;
+}
+
+/* Thématiques */
+
+.theme {
+    border       : .1rem solid green;
+    padding      : .3rem .7rem .3rem .7rem;
+    border-radius: .3rem;
+}
+
+/* Filtres */
+
+#schools-selector .school-selector h6,
+#themes-selector .theme-selector h6,
+#languages-selector .language-selector h6 {
+    font-size   : 1.3rem;
+    color       : grey;
+    margin-right: 0;
+}
+
+#schools-selector label,
+#schools-selector h6,
+#themes-selector label,
+#themes-selector h6,
+#languages-selector label,
+#languages-selector h6 {
+    display     : inline;
+    margin-right: 2rem;
+}
+
+#themes-selector .theme-selector,
+#languages-selector .language-selector {
+    display: inline-block;
+}
+
+h6.filter-title {
+    text-transform: uppercase;
+    font-size     : 1.4rem;
+    letter-spacing: .2rem;
+    font-weight   : 600;
+    margin-bottom : 1rem;
+}
+
+/* Modal */
+
+#course-details-modal {
+    background-color: rgba(0, 0, 0, .8);
+    width           : 100%;
+    height          : 100%;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    display         : none;
+}
+
+#card {
+    background-color: white;
+    color           : black;
+    border-radius   : .5rem;
+    text-align      : left;
+    width           : 50vw;
+    position        : relative;
+    margin          : auto;
+    top             : 50%;
+    transform       : translateY(-50%);
+    padding         : 1rem;
+}
+
+#course-details-modal h4 {
+    display: inline;
+}
+
+#course-details-modal h5 {
+    display  : inline;
+    color    : grey;
+    font-size: 1.8rem;
+}
+
+#course-details-modal h6 {
+    display       : inline;
+    text-transform: uppercase;
+    font-size     : 1.4rem;
+    letter-spacing: .2rem;
+    font-weight   : 600;
+    margin-bottom : 1rem;
+}
