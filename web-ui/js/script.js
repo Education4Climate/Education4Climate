@@ -1,91 +1,132 @@
-var schools = [uantwerp, ucl, ulb, umons, unamur];
-var courses = [];
+/*jshint esversion: 8 */
+
+var files = ["uantwerp.json", "ucl.json", "ulb.json", "umons.json", "unamur.json"];
+
+var schoolsCount = [];
+var themesCount = [];
+var languagesCount = [];
+
 var table;
-var themes = [];
-var languages = [];
+
+/* NAVIGATION */
 
 window.addEventListener('load', function () {
 
-    schools.forEach(school => {
+    showPage(new URLSearchParams(window.location.search).get('page'));
+});
 
-        schools[school] = 0;
+function showPage(page) {
 
-        school.courses.forEach(course => {
+    page = !page ? "home" : page; // la page d'accueil est la valeur par défaut si on ne passe pas d'argument page
 
-            // On agrège les données de toutes les écoles dans un même tableau
+    ["home", "courses-finder", "teachers-directory", "methodology"].forEach(value => { document.getElementById(value).style.display = page == value ? "block" : "none"; });
 
-            courses.push({
+    switch (page) {
+        case "home": break;
+        case "courses-finder": showCoursesFinder(); break;
+        case "teachers-directory": break;
+        case "methodology": break;
+        default: document.getElementById("home").style.display = "block";
+    }
+}
 
-                schoolShortName: school.shortName,
-                name: course.name,
-                shortName: course.shortName,
-                years: course.years,
-                teachers: course.teachers,
-                credits: course.credits,
-                languages: course.languages,
-                themes: course.themes,
-                abstract: course.abstract,
-                campus: course.campus,
-                shiftScore: course.shiftScore,
-                climateScore: course.climateScore,
-                url: course.url
-            });
+function showCoursesFinder() {
 
-            // On parcourt les thématiques du cours pour pouvoir peupler les filtres
+    getCourses().then(courses => {
 
-            course.themes.forEach(theme => {
+        buildCoursesFinderFilters(courses);
+        buildCoursesFinderTable(courses);
+    });
+}
 
-                if (!themes.includes(theme)) {
+function buildCoursesFinderFilters(courses) {
 
-                    themes.push(theme);
-                    themes[theme] = 1;
-                }
+    courses.forEach(course => {
 
-                themes[theme]++;
-            });
+        // On parcourt les thématiques du cours et on peuple chaque compteur
 
-            course.languages.forEach(language => {
+        course.themes.forEach(theme => {
 
-                if (!languages.includes(language)) {
+            if (!themesCount.includes(theme)) {
 
-                    languages.push(language);
-                    languages[language] = 1;
-                }
+                themesCount.push(theme);
+                themesCount[theme] = 0;
+            }
 
-                languages[language]++;
-            });
-
-            schools[school]++;
+            themesCount[theme]++;
         });
 
-        // On crée chaque filtre qui permet de choisir l'université
+        // On parcourt les langues du cours et on peuple chaque compteur
 
-        var line = "<label class='school-selector'><input type='checkbox' value='" + school.shortName + "' onclick='setFilters()' checked><span class='label-body'>" + school.shortName + "&nbsp;<h6>(" + schools[school] + ")<h6></span></label>";
+        course.languages.forEach(language => {
+
+            if (!languagesCount.includes(language)) {
+
+                languagesCount.push(language);
+                languagesCount[language] = 0;
+            }
+
+            languagesCount[language]++;
+        });
+
+        // On peuple chaque compteur d'université
+
+        if (!schoolsCount.includes(course.schoolShortName)) {
+
+            schoolsCount.push(course.schoolShortName);
+            schoolsCount[course.schoolShortName] = 0;
+        }
+
+        schoolsCount[course.schoolShortName]++;
+    });
+
+    // On trie les thématiques et les langues alphabétiquement
+
+    schoolsCount.sort((a, b) => { return a.localeCompare(b); }); // a.localCompare(b) permet de trier sans prendre en compte les accents (e/é/è)
+    themesCount.sort((a, b) => { return a.localeCompare(b); });
+    languagesCount.sort((a, b) => { return a.localeCompare(b); });
+
+    // On crée les 3 filtres
+
+    schoolsCount.forEach(school => {
+
+        var line = "<div class='custom-control custom-checkbox'><span class='float-right badge badge-light round'>" + schoolsCount[school] + "</span>" +
+            "<input type='checkbox' class='custom-control-input' id='checkbox-" + school + "' value='" + school + "' onclick='setFilters()' checked>" +
+            "<label class='custom-control-label' for='checkbox-" + school + "'>" + school + "</label></div>";
         document.querySelector("#schools-selector").innerHTML += line;
     });
 
-    // On trie les thématiques et les langues alphabétiquement avant de créer les filtres
+    themesCount.forEach(theme => {
 
-    themes.sort((a, b) => { return a.localeCompare(b); }); // a.localCompare(b) permet de trier sans prendre en compte les accents (e/é/è)
-    languages.sort((a, b) => { return a.localeCompare(b); });
-
-    themes.forEach(theme => {
-
-        var line = "<label class='theme-selector'><input type='checkbox' value='" + theme + "' onclick='setFilters()' checked><span class='label-body'>" + theme + "&nbsp;<h6>(" + themes[theme] + ")</h6></span></label>";
+        var line = "<div class='custom-control custom-checkbox'><span class='float-right badge badge-light round'>" + themesCount[theme] + "</span>" +
+            "<input type='checkbox' class='custom-control-input' id='checkbox-" + theme + "' value='" + theme + "' onclick='setFilters()' checked>" +
+            "<label class='custom-control-label' for='checkbox-" + theme + "'>" + theme + "</label></div>";
         document.querySelector("#themes-selector").innerHTML += line;
     });
 
-    languages.forEach(language => {
+    languagesCount.forEach(language => {
 
-        var line = "<label class='language-selector'><input type='checkbox' value='" + language + "' onclick='setFilters()' checked><span class='label-body'>" + getLanguageFromISOCode(language) + "&nbsp;<h6>(" + languages[language] + ")</h6></span></label>";
+        var line = "<div class='custom-control custom-checkbox'><span class='float-right badge badge-light round'>" + languagesCount[language] + "</span>" +
+            "<input type='checkbox' class='custom-control-input' id='checkbox-" + language + "' value='" + language + "' onclick='setFilters()' checked>" +
+            "<label class='custom-control-label' for='checkbox-" + language + "'>" + getLanguageFromISOCode(language) + "</label></div>";
         document.querySelector("#languages-selector").innerHTML += line;
     });
+}
+
+function buildCoursesFinderTable(courses) {
+
+    $('[data-toggle="tooltip"]').tooltip();
 
     // On instancie la table
 
     table = new Tabulator("#courses-table-container", {
 
         data: courses,
+        pagination: "local",
+        paginationSize: 20,
+        initialSort: [{ column: "climateScore", dir: "desc" }],
+        rowClick: function (e, row) { openModal(e, row); },
+        locale: true,
         columns: [
             { title: "Score", field: "climateScore", formatter: "star", sorter: "number", tooltip: true },
             { title: "Université", field: "schoolShortName", sorter: "string" },
@@ -95,8 +136,8 @@ window.addEventListener('load', function () {
                 title: "Thématiques", field: "themes", headerSort: false, formatter: function (cell, formatterParams, onRendered) {
 
                     var cellValue = "";
-                    cell.getValue().forEach(value => { cellValue += "<span class='theme'>" + value + "</span>&nbsp;"; });
-                    
+                    cell.getValue().forEach(value => { cellValue += "<span class='badge badge-primary badge-theme'>" + value + "</span>&nbsp;"; });
+
                     return cellValue;
                 }
             },
@@ -109,39 +150,18 @@ window.addEventListener('load', function () {
                     return cellValue;
                 }
             },
-        ],
-        pagination: "local",
-        paginationSize: 10,
-        initialSort: [
-            { column: "climateScore", dir: "desc" }
-        ],
-        rowClick: function (e, row) { openModal(e, row); },
-        locale: true
+        ]
     });
 
-    displayResultsCount();
+    buildCoursesFinderCount();
+}
 
-    document.getElementById("course-details-modal").addEventListener('click', e => {
-
-        if (event.target.id !== "youtube-logo" && event.target.id !== "spotify-logo" && event.target.id !== "bandcamp-logo") {
-            closeModal();
-        }
-    });
-});
-
-function displayResultsCount() {
+function buildCoursesFinderCount() {
 
     document.getElementById("results-count").innerHTML = "<strong>" + table.getDataCount("active") + " cours sur un total de " + table.getDataCount() + " correspondent à vos critères</strong>";
 }
 
-function getLanguageFromISOCode(code) {
-
-    dictionary = { "fr": "Français", "nl": "Néerlandais", "en": "Anglais", "de": "Allemand" };
-
-    return dictionary.hasOwnProperty(code) ? dictionary[code] : "Inconnu";
-}
-
-/* Filtres */
+/* FILTRES */
 
 function setFilters() {
 
@@ -151,7 +171,7 @@ function setFilters() {
 
     // On recalcule le compteur de résultats
 
-    displayResultsCount();
+    buildCoursesFinderCount();
 }
 
 function getSearchedCourseFilter() {
@@ -198,28 +218,112 @@ function getSelectedLanguagesFilter() {
     return { field: "languages", type: "keywords", value: selectedLanguages == "" ? "-" : selectedLanguages.trim() };
 }
 
-/* Modal */
+function toggleFilters() {
+
+    var sidebar = document.getElementById("courses-finder-sidebar");
+    var button = document.getElementById("courses-finder-show-filters");
+
+    button.innerHTML = sidebar.style.display == "block" ? "Afficher les filtres" : "Cacher les filtres";
+    sidebar.style.display = sidebar.style.display == "block" ? "none" : "block";
+}
+
+/* MODAL */
 
 function openModal(e, row) {
 
     course = row.getData();
 
-    document.getElementById("course-name").innerHTML = course.name;
-    document.getElementById("course-short-name").innerHTML = "[" + course.shortName + "]"
-    document.getElementById("course-years").innerHTML = course.years;
-    document.getElementById("course-abstract").innerHTML = course.abstract;
-    document.getElementById("course-teachers").innerHTML = course.teachers;
-    document.getElementById("course-themes").innerHTML = course.themes;
-    document.getElementById("course-credits").innerHTML = course.credits;
-    document.getElementById("course-languages").innerHTML = course.languages;
-    document.getElementById("course-campus").innerHTML = course.campus;
-    document.getElementById("course-climate-score").innerHTML = course.climateScore;
-    document.getElementById("course-shift-score").innerHTML = course.shiftScore;
-    document.getElementById("course-url").innerHTML = "<a href='" + course.url + "' target='_blank'>Plus de détails</a>";
+    document.getElementById("course-details-name").innerHTML = course.name;
+    document.getElementById("course-details-short-name").innerHTML = course.shortName;
+    document.getElementById("course-details-years").innerHTML = course.years;
+    document.getElementById("course-details-abstract").innerHTML = course.abstract;
+    document.getElementById("course-details-university").innerHTML = course.schoolShortName;
+    document.getElementById("course-details-campus").innerHTML = "&nbsp;(" + course.campus + ")";
+    document.getElementById("course-details-climate-score").innerHTML = course.climateScore;
+    document.getElementById("course-details-shift-score").innerHTML = course.shiftScore;
+    document.getElementById("course-details-url").href = course.url;
+    document.getElementById("course-details-url").innerHTML = "Site de l'" + course.schoolShortName;
+    document.getElementById("course-details-credits").innerHTML = course.credits;
 
-    document.getElementById("course-details-modal").style.display = "block";
+    var themes = "";
+    course.themes.forEach(value => { themes += "<span class='badge badge-primary badge-theme'>" + value + "</span>&nbsp;"; });
+    document.getElementById("course-details-themes").innerHTML = themes;
+
+    var teachers = "";
+    course.teachers.forEach(function (value, i, values) { teachers += i < values.length - 1 ? "<a href='?page=teachers-directory&teacher=" + value + "' target='_blank'>" + value + "</a>" + ", " : "<a href='?page=teachers-directory&teacher=" + value + "' target='_blank'>" + value + "</a>"; });
+    document.getElementById("course-details-teachers").innerHTML = teachers;
+
+    var languages = "";
+    course.languages.forEach(function (value, i, values) { languages += i < values.length - 1 ? getLanguageFromISOCode(value) + ", " : getLanguageFromISOCode(value); });
+    document.getElementById("course-details-languages").innerHTML = languages;
+
+    $('#course-details-modal').modal();
 }
 
 function closeModal() {
+
     document.getElementById("course-details-modal").style.display = "none";
 }
+
+/* DATA */
+
+async function getCourses() {
+
+    if (!sessionStorage.courses) {
+
+        var courses = [];
+
+        // On agrège les données de toutes les écoles dans un même tableau
+
+        await Promise.all(files.map(u => fetch("data/" + u)))
+            .then(responses => Promise.all(responses.map(res => res.json())))
+            .then(schools => {
+
+                schools.forEach(school => {
+
+                    school.courses.forEach(course => {
+
+                        courses.push({
+
+                            schoolShortName: school.shortName,
+                            name: course.name,
+                            shortName: course.shortName,
+                            years: course.years,
+                            teachers: course.teachers,
+                            credits: course.credits,
+                            languages: course.languages,
+                            themes: course.themes,
+                            abstract: course.abstract,
+                            campus: course.campus,
+                            shiftScore: course.shiftScore,
+                            climateScore: course.climateScore,
+                            url: course.url
+                        });
+                    });
+                });
+            });
+
+        sessionStorage.courses = JSON.stringify(courses);
+    }
+
+    return JSON.parse(sessionStorage.courses);
+}
+
+/* HELPERS */
+
+function getLanguageFromISOCode(code) {
+
+    dictionary = { "fr": "Français", "nl": "Néerlandais", "en": "Anglais", "de": "Allemand" };
+
+    return dictionary.hasOwnProperty(code) ? dictionary[code] : "Inconnu";
+}
+
+document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
