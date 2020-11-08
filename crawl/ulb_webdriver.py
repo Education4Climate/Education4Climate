@@ -109,9 +109,8 @@ if __name__ == "__main__":
         programs[prg["code"]] = prg
 
 
-    print("number of masters to crawl : %s\n" % (len(programs.keys()) - BA_))
     print("number of total programs to crawl : %s\n" % len(programs.keys()))
-
+    print("number of masters to crawl : %s\n" % (len(programs.keys()) - BA_))
 
     # Browsing all programs -----------------------------------------------------------------------
     for prog_id, prg in programs.items():
