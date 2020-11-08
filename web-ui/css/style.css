@@ -1,0 +1,119 @@
+/* BASE */
+
+* {
+    font-family: Source Sans Pro, sans-serif;
+}
+
+/* MENU & NAVIGATION */
+
+#logo {
+    height: 1.7rem;
+}
+
+#logo-text {
+    margin-left: .5rem;
+}
+
+#home,
+#courses-finder,
+#teachers-directory,
+#methodology {
+    display: none;
+}
+
+#preload-background-images {
+
+    /* Permet de précharger les 2 images du slideshow pour ne pas avoir un effet de flicker au chargement */
+    display: none;
+}
+
+/* HOME */
+
+#carousel-item-students,
+#carousel-item-teachers {
+    background-size    : cover;
+    background-position: center;
+    padding            : 16rem 0;
+}
+
+#carousel-home .carousel-caption h1 {
+    font-weight: bold;
+}
+
+#carousel-item-students {
+
+    /* Original free picture by Nathan Dumlao under Unsplash Licence : https://unsplash.com/photos/ewGMqs2tmJI */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../background-students.jpg);
+}
+
+#carousel-item-teachers {
+
+    /* Original free picture by ThisisEngineering RAEng under Unsplash Licence : https://unsplash.com/photos/mF6gB6hV5OU */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../background-teachers.jpg);
+}
+
+#home-intro {
+    padding: 2rem 2rem 0 2rem;
+}
+
+#home-project {
+    padding: 0 2rem;
+}
+
+#home-intro h2 {
+    font-weight: bold;
+}
+
+/* TROUVER UN COURS */
+
+#courses-finder h6 {
+    font-weight: 600;
+}
+
+#courses-finder .sidebar {
+
+    background-color: #f8f9fa;
+    min-height      : calc(100vh - 56px);
+}
+
+#courses-finder .sidebar .filter {
+    margin-bottom: 1rem;
+}
+
+#courses-finder-show-filters {
+    display: none;
+}
+
+.badge-primary.badge-theme {
+    padding: .3rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 767.98px) {
+
+    #courses-finder .sidebar {
+        display   : none;
+        min-height: 0;
+    }
+
+    #courses-finder-show-filters {
+        display: block;
+    }
+
+    #courses-finder-show-filters-container {
+        background-color: #f8f9fa;
+    }
+
+    #carousel-item-students,
+    #carousel-item-teachers {
+    /*.carousel-caption */
+        height: calc(100vh - 56px);
+    }
+
+    .carousel-caption {
+        height: calc(100vh - 56px);
+        align-items: center !important;
+        display: flex;
+    }
+}
