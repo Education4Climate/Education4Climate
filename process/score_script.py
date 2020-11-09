@@ -1,11 +1,15 @@
-import re,pandas as pd, numpy as np, random,json
-from langdetect import detect
+# -*- coding: utf-8 -*-
+
 import spacy
+import re
+import json
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from unidecode import unidecode
 import config as cfg
+import pandas as pd
 from collections import Counter
+
 
 def tokenize(text):
     return [unidecode(w.text.lower()) for w in nlp(text) if w.pos_ not in ["PUNCT","NUM","SYM","SPACE"] and w.is_stop is False]

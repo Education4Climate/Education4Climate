@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
 import argparse
+import settings as s
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
@@ -12,7 +12,7 @@ class UantwerpSpider(scrapy.Spider):
     name = "uantwerp"
 
     def start_requests(self):
-        base_url = 'https://www.uantwerpen.be/en/study/education-and-training/'
+        base_url = s.UANTWERP_URL
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
