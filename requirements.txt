@@ -1,6 +1,7 @@
 scrapy~=1.8.0
 argparse~=1.2.1
 w3lib~=1.22.0
+numpy
 nltk
 spacy
 sklearn
@@ -10,3 +11,4 @@ progressbar
 xvfbwrapper
 selenium
 PyPDF2
+pandas
