@@ -86,7 +86,7 @@ ugent_driver = Driver()
 ugent_driver.init()
 
 # Collecting Bachelor programms list ------------------------------------------------------------------
-ugent_driver.driver.get('https://studiegids.ugent.be/2020/EN/FACULTY/faculteiten.html')
+ugent_driver.driver.get(s.UGENT_URL)
 time.sleep(5)  # Is it necessary?
 
 faculties_ref = [my_elem.get_attribute("href") for my_elem in

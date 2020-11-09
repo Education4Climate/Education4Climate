@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
 import argparse
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from w3lib.html import remove_tags
 
+import settings as s
 
 class UclSpider(scrapy.Spider):
     name = "ucl"
 
     def start_requests(self):
-        base_url = 'https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-' + YEAR + '.html'
+        base_url = s.
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):

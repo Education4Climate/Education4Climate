@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
 import argparse
 
-import scrapy
 from scrapy.crawler import CrawlerProcess
 from w3lib.html import remove_tags
 
+import settings as s
 
 class KuleuvenSpider(scrapy.Spider):
     name = "kuleuven"
 
     def start_requests(self):
-        base_url = 'https://onderwijsaanbod.kuleuven.be/opleidingen/e/index.htm'
+        base_url = s.KULEUVEN_URL
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
