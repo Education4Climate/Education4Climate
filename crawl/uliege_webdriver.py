@@ -1,9 +1,5 @@
 import os
-from os.path import join, dirname, abspath
 
-import time
-import re
-import json
 import pandas as pd
 import numpy as np
 
@@ -34,7 +30,7 @@ def get_courses():
     button.click()
 
     # Browse list of courses
-    courses = ulg_driver.driver.find_elements_by_xpath("//tbody//tr")[0:10] # TODO: remove just for testing
+    courses = ulg_driver.driver.find_elements_by_xpath("//tbody//tr")[0:10]  # TODO: remove just for testing
     courses_df = pd.DataFrame(index=range(len(courses)), columns=["Code", "Intitulé", "Langue", "Link"])
     for i, course in enumerate(courses):
         elements = course.find_elements_by_class_name("u-courses-results__row__cell")
@@ -65,9 +61,9 @@ class ULiegeSpider(scrapy.Spider):
 
         class_name = self._cleanup(response.css("h1::text").get())
         year_and_short_name = self._cleanup(response.xpath("//div[@class='u-courses-header__headline']/text()")
-                                       .get()).strip(" ").split("/")
+                                            .get()).strip(" ").split("/")
         short_name = year_and_short_name[1]
-        year = year_and_short_name[0]
+        years = year_and_short_name[0]
 
         # Get teachers name (not an easy task because not a constant syntax)
         teachers_para = response.xpath(".//section[h3[contains(text(),'Enseignant')]]/p")
@@ -80,45 +76,48 @@ class ULiegeSpider(scrapy.Spider):
 
         # Language
         languages = self._cleanup(response.xpath(".//section[h3[contains(text(), "
-                                                "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
+                                                 "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
         languages_code = {"Langue française": 'fr',
                           "Langue anglaise": 'en',
                           "Langue allemande": 'de',
                           "Langue néerlandaise": 'nl',
                           "Langue italienne": "it",
                           "Langue espagnole": "es"}
-        languages = [languages_code[l] for l in languages]
+        languages = [languages_code[lang] for lang in languages]
 
         # Content of the class
         content = self._cleanup(response.xpath(".//section[h3[contains(text(), "
-                                                "\"Contenus de l'unité d'enseignement\")]]").get())[35:]
+                                               "\"Contenus de l'unité d'enseignement\")]]").get())[35:]
+
+        # Cycle and credits
+        credit_lines = self._cleanup(response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
+                                                    "//tr/td[@class='u-courses-results__row__cell--list']").getall())
+        cycles = []
+        ects = []
+        for i, line in enumerate(credit_lines):
+            # Cycle
+            if i % 2 == 0:
+                if 'Master' in line:
+                    cycles += ["master"]
+                elif 'Bachelier' in line:
+                    cycles += ["bachelier"]
+                elif 'Erasmus' in line:
+                    cycles += ["erasmus"]
+                else:
+                    cycles += [line]
+            # Credit number
+            else:
+                ects += [int(line.split(" ")[0])]
 
         data = {
-            'class': class_name,
-            'shortname': short_name,
-            'year': year,
-            # 'location': self._cleanup(response.css("span.location::text").get()),
+            'name': class_name,
+            'id': short_name,
+            'years': years,
             'teachers': teachers,
-            'language': languages,
-            # 'prerequisite': self._cleanup(response.xpath(
-            #   "normalize-space(.//div[div[contains(text(),'Préalables')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            # 'theme': self._cleanup(response.xpath(
-            #    "normalize-space(.//div[div[contains(text(),'Thèmes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            # 'goal': self._cleanup(response.xpath(
-            #    "normalize-space(.//div[div[contains(text(),'Acquis')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'languages': languages,
+            'cycle': cycles,
+            'ects': ects,
             'content': content,
-            # 'method': self._cleanup(response.xpath(
-            #    "normalize-space(.//div[div[contains(text(),'Méthodes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            # 'evaluation': self._cleanup(response.xpath(
-            #    "normalize-space(.//div[div[contains(text(),'Modes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            # 'other': self._cleanup(response.xpath(
-            #    "normalize-space(.//div[div[contains(text(),'Autres')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            # 'resources': self._cleanup(response.xpath(
-            #   "normalize-space(.//div[div[contains(text(),'Ressources')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            # 'biblio': self._cleanup(response.xpath(
-            # "normalize-space(.//div[div[contains(text(),'Bibliographie')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            # 'faculty': self._cleanup(response.xpath(
-            #    "normalize-space(.//div[div[contains(text(),'Faculté')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
             'url': response.url
         }
         yield data
@@ -138,7 +137,7 @@ class ULiegeSpider(scrapy.Spider):
 def main(output):
 
     # Use selenium to retrieve courses
-    # courses_df = get_courses()
+    courses_df = get_courses()
 
     # Scrap all courses using scrappy
     process = CrawlerProcess({
@@ -147,10 +146,7 @@ def main(output):
         'FEED_URI': output
     })
 
-    myurls = ["https://www.programmes.uliege.be/cocoon/20202021/cours/HULG0549-1.html",
-              'https://www.programmes.uliege.be/cocoon/20202021/cours/ELEC0080-1.html',
-              'https://www.programmes.uliege.be/cocoon/20202021/cours/SPOL0378-4.html']
-    process.crawl(ULiegeSpider, myurls=myurls) # "myurls=courses_df["Link"].to_list())
+    process.crawl(ULiegeSpider, myurls=courses_df["Link"].to_list())
     process.start()  # the script will block here until the crawling is finished
     print('All done.')
 
@@ -158,9 +154,5 @@ def main(output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Craw the ULiege courses catalog.')
     parser.add_argument("--output", default="output.json", type=str, help="Output file")
-    parser.add_argument("--year", default="2020", type=str, help="Year")
-    args = parser.parse_args()
-    YEAR = str(args.year)
-    main(args.output)
-
-
+    args_ = parser.parse_args()
+    main(args_.output)
