@@ -122,6 +122,7 @@ class ULiegeSpider(scrapy.Spider):
         }
         yield data
 
+    # TODO: put that in the parent class?
     def _cleanup(self, data):
         if data is None:
             return ""
@@ -145,7 +146,6 @@ def main(output):
         'FEED_FORMAT': 'json',
         'FEED_URI': output
     })
-
     process.crawl(ULiegeSpider, myurls=courses_df["Link"].to_list())
     process.start()  # the script will block here until the crawling is finished
     print('All done.')
