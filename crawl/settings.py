@@ -1,5 +1,5 @@
 
-YEAR = 2020
+YEAR = "2020"
 ULB_URL="https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=BA&s=FACULTE_ASC&limit=300&page=1"
 UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-" + YEAR + ".html"
 UANTWERP_URL="https://www.uantwerpen.be/en/study/education-and-training/"
