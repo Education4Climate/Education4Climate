@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 
-import scrapy
 import argparse
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
 #from scrapy.linkextractors import LinkExtractor
 from w3lib.html import remove_tags
+
+import config.utils as u
 
 
 #<div class="champ contenu_formation toolbox">
@@ -36,28 +37,17 @@ class ULBSpider(scrapy.Spider):
         #for href in response.xpath("//div[@class='prg-programme']"):
         #    yield response.follow(href, self.parse_course)
 
+    @staticmethod
     def parse_course(self, response):
         data = {
-            'type':         self._cleanup(response.xpath("//div//strong[contains(text(), 'Type de titre')]/following::p").get()),
-            'duration':     self._cleanup(response.xpath("//div//strong[contains(text(), 'de la formation')]/following::p").get()),
-            'language':     self._cleanup(response.xpath("//div//strong[contains(text(), 'Campus')]/following::p").get()),
-            'category':     self._cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[1]").get()),
-            'faculty':      self._cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[2]").get()),
+            'type':         u.cleanup(response.xpath("//div//strong[contains(text(), 'Type de titre')]/following::p").get()),
+            'duration':     u.cleanup(response.xpath("//div//strong[contains(text(), 'de la formation')]/following::p").get()),
+            'language':     u.cleanup(response.xpath("//div//strong[contains(text(), 'Campus')]/following::p").get()),
+            'category':     u.cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[1]").get()),
+            'faculty':      u.cleanup(response.xpath("//div//strong[contains(text(), '(s) et universit')]/following::a[2]").get()),
             'url':          response.url
         }
         yield data
-
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
-
 
 def main(output):
     process = CrawlerProcess({

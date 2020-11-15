@@ -4,15 +4,15 @@ import argparse
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from w3lib.html import remove_tags
 
-import settings as s
+import config.settings as s
+import config.utils as u
 
 class UclSpider(scrapy.Spider):
     name = "ucl"
 
     def start_requests(self):
-        base_url = s.
+        base_url = s.UCL_URL
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
@@ -32,39 +32,28 @@ class UclSpider(scrapy.Spider):
         for href in response.css(f"td.composant-ligne1 a[href^='https://uclouvain.be/cours-{YEAR}-']::attr(href)"):
             yield response.follow(href, self.parse_course)
 
-    def parse_course(self, response):
+    @staticmethod
+    def parse_course(response):
         data = {
-            'class':        self._cleanup(response.css("h1.header-school::text").get()),
-            'shortname':    self._cleanup(response.css("span.abbreviation::text").get()),
-            'year':        self._cleanup(response.css("span.anacs::text").get()),
-            'location':     self._cleanup(response.css("span.location::text").get()),
-            'teachers':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]/div/a/text())").getall()),
-            'language':     self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]/div[@class='col-sm-10 fa_cell_2']/text())").get()),
-            'prerequisite': self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Préalables')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'theme':        self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Thèmes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'goal':         self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Acquis')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'content':      self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Contenu')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'method':       self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Méthodes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'evaluation':   self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Modes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'other':        self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Autres')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'resources':    self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Ressources')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'biblio':       self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Bibliographie')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'faculty':      self._cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Faculté')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'class':        u.cleanup(response.css("h1.header-school::text").get()),
+            'shortname':    u.cleanup(response.css("span.abbreviation::text").get()),
+            'year':         u.cleanup(response.css("span.anacs::text").get()),
+            'location':     u.cleanup(response.css("span.location::text").get()),
+            'teachers':     u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]/div/a/text())").getall()),
+            'language':     u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]/div[@class='col-sm-10 fa_cell_2']/text())").get()),
+            'prerequisite': u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Préalables')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'theme':        u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Thèmes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'goal':         u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Acquis')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'content':      u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Contenu')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'method':       u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Méthodes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'evaluation':   u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Modes')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'other':        u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Autres')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'resources':    u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Ressources')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'biblio':       u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Bibliographie')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'faculty':      u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Faculté')]]/div[@class='col-sm-10 fa_cell_2'])").get()),
             'url':          response.url
         }
         yield data
-
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
-
 
 def main(output):
     process = CrawlerProcess({

@@ -21,17 +21,6 @@ class UantwerpSpider(scrapy.Spider):
             yield {'href': base_url+'/'+href}
 
 
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
-
 
 def main(output):
     process = CrawlerProcess({

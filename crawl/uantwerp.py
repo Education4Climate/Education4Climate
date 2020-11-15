@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import argparse
-import settings as s
+
+import config.settings as s
+import config.utils as u
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from w3lib.html import remove_tags
+
 
 
 class UantwerpSpider(scrapy.Spider):
@@ -56,23 +58,12 @@ class UantwerpSpider(scrapy.Spider):
             if xpath_str is '':
                 continue
             try:
-                data[field] = self._cleanup(response.xpath(xpath_str).get())
+                data[field] = u.cleanup(response.xpath(xpath_str).get())
             except Exception as e:
                 raise ValueError("Xpath {} does not work for field {}. "
                                  "\n More information on the error : {}".format(xpath_str, field, e))
         data['url'] = response.url
         yield data
-
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 def main(output):

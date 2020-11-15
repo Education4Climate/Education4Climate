@@ -6,15 +6,11 @@ import time
 import numpy as np
 import pandas as pd
 
-from crawl.driver import Driver
+from crawl.config.driver import Driver
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from w3lib.html import remove_tags
 
-import re
-import json
-import progressbar
-import settings as s
+import config.utils as u
 
 import sys
 sys.path.append(os.getcwd())
@@ -65,23 +61,12 @@ class UNamurProgramSpider(scrapy.Spider):
         for url in self.myurls:
             yield scrapy.Request(url, self.parse)
 
-    def parse(self, response):
-        codes = self._cleanup(response.xpath("//tr//td[@class='code']").getall())
-        links = self._cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall())
+    @staticmethod
+    def parse(response):
+        codes = u.cleanup(response.xpath("//tr//td[@class='code']").getall())
+        links = u.cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall())
         for code, link in zip(codes, links):
             yield {'code': code, 'url': link}
-
-    # TODO: put that in the parent class?
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 class UNamurCourseSpider(scrapy.Spider):
@@ -96,16 +81,16 @@ class UNamurCourseSpider(scrapy.Spider):
             yield scrapy.Request(url, self.parse)
 
     def parse(self, response):
-        name_and_id = self._cleanup(response.css("h1::text").get())
+        name_and_id = u.cleanup(response.css("h1::text").get())
         name = name_and_id.split("[")[0]
         id = name_and_id.split("[")[1].strip("]")
 
-        years = self._cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
+        years = u.cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         # TODO: do we keep the 'suppléant'?
-        teachers = self._cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
+        teachers = u.cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
 
         # TODO: cours en plusieurs langues?
-        languages = self._cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
+        languages = u.cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
         languages = [lang.split(": ")[1] for lang in languages]
         # TODO: check all langugaes used
         languages_code = {"Français": 'fr',
@@ -117,14 +102,14 @@ class UNamurCourseSpider(scrapy.Spider):
         languages = [languages_code[lang] for lang in languages]
 
         # TODO: selecting too much --> need to focus on section 'Contenu'
-        content = self._cleanup(response.xpath("//div[@class='tab-content']").get())
+        content = u.cleanup(response.xpath("//div[@class='tab-content']").get())
 
         # ects and cycle
         # TODO -> need to take it from formation different numbers of credits (see https://directory.unamur.be/teaching/courses/LCLAB101/2020)
-        # ects = self._cleanup(response.xpath("//ul[@class='inline list-separator']/li[contains(text(), 'crédit')]").get())
+        # ects = u.cleanup(response.xpath("//ul[@class='inline list-separator']/li[contains(text(), 'crédit')]").get())
         # ects = int(ects.strip(" crédits"))
 
-        cycle_ects = self._cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
+        cycle_ects = u.cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
         cycles = []
         ects = []
         for i, el in enumerate(cycle_ects):
@@ -150,18 +135,6 @@ class UNamurCourseSpider(scrapy.Spider):
             'url': response.url
         }
         yield data
-
-    # TODO: put that in the parent class?
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 def main(output):

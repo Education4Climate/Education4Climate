@@ -3,9 +3,9 @@
 import argparse
 
 from scrapy.crawler import CrawlerProcess
-from w3lib.html import remove_tags
 
-import settings as s
+import config.settings as s
+import config.utils as u
 
 class KuleuvenSpider(scrapy.Spider):
     name = "kuleuven"
@@ -29,16 +29,6 @@ class KuleuvenSpider(scrapy.Spider):
     def parse_course(self, response):
         yield None
 
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 def main(output):
