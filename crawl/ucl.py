@@ -5,14 +5,14 @@ import argparse
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
-import settings as s
-import utils as u
+import config.settings as s
+import config.utils as u
 
 class UclSpider(scrapy.Spider):
     name = "ucl"
 
     def start_requests(self):
-        base_url = s.
+        base_url = s.UCL_URL
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):

@@ -4,7 +4,7 @@ import os,time,sys
 from selenium import webdriver
 sys.path.append(os.path.abspath(os.getcwd()))
 
-import settings as s
+import config.settings as s
 
 class Driver():
     def __init__(self):

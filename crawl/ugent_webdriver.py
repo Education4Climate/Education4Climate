@@ -3,12 +3,9 @@
 # Settings
 
 # importing required modules
-import re
 
-import utils as u
-import settings as s
-
-
+import config.settings as s
+import config.utils as u
 
 program_urls = {"Bachelor": "BACH/BACH.html", "Master": "MABA/MABA.html"}
 
@@ -17,7 +14,7 @@ import os
 import sys
 
 sys.path.append(os.getcwd())
-from crawl.driver import Driver
+from config.driver import Driver
 
 import time
 

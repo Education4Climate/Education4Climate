@@ -3,13 +3,13 @@
 import os, sys
 
 sys.path.append(os.getcwd())
-from crawl.driver import Driver
+from crawl.config.driver import Driver
 
 import time
 import re
 import json
 import progressbar
-import settings as s
+import config.settings as s
 
 # mapping : [prerequisite,theme,goal,content,method,evaluation other, resources,biblio,faculty,anacs,shortname,class,location, teachers,language]
 def get_course_infos(href, driver):
