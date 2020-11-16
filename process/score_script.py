@@ -1,12 +1,14 @@
-# -*- coding: utf-8 -*-
-
+import re,pandas as pd, numpy as np, random,json
+from langdetect import detect
 import spacy
+import os,time,sys
+sys.path.append(os.path.abspath(os.getcwd()))
 import re
 import json
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 from unidecode import unidecode
-import config as cfg
+import process.config as cfg
 import pandas as pd
 from collections import Counter
 
@@ -29,11 +31,13 @@ def compute_climate_score(words,pattern):
 
 def compute_score(words,patterns):
     scores=0
+    matching=Counter()
     for word,score in words.items():
         for pattern,weight in patterns.items():
             if re.match(pattern,word) is not None:
                 scores += (len(word.split(" ")) * score) ** weight
-    return scores
+                matching[word]+=1
+    return scores,matching
 
 def compute_odd_score(words,odds_patterns):
     scores={}
@@ -48,7 +52,8 @@ def load_models(corpus,train,language):
     if train:
         # print(df["class"][0])
         # Construction/entrainement des modèles
-        vectorizer = TfidfVectorizer(tokenizer=tokenize, analyzer="word", ngram_range=(1, 2))
+        print("training")
+        vectorizer = TfidfVectorizer(tokenizer=tokenize, analyzer="word", ngram_range=(1, 3))
         vectorizer.fit(corpus)
         pickle.dump(vectorizer, open(cfg.vectorizer.format(language), "wb"))
         features = vectorizer.get_feature_names()
@@ -99,10 +104,10 @@ if __name__=="__main__":
     #nlp_models={lg:spacy.load(lg) for lg in languages}
     import argparse
     parser=argparse.ArgumentParser()
-    parser.add_argument("input",help="input json file path")
-    parser.add_argument("output",help="output xlsx file path",default="data/output.xlsx")
+    parser.add_argument("-i","--input",help="input json file path")
+    parser.add_argument("-o","--output",help="output xlsx file path",default="data/output.xlsx")
     parser.add_argument("-l","--language",help="specify language code",default="fr")
-    parser.add_argument("-t","--train",help="train the tfidf model or use old one ?",action="store_false")
+    parser.add_argument("-t","--train",help="train the tfidf model or use old one ?",action="store_true")
     parser.add_argument("--tfidf",help="compute a tfidf weighted score",action="store_true")
 
     args=parser.parse_args()
@@ -113,15 +118,16 @@ if __name__=="__main__":
     print("resources loaded")
 
     #df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.prerequisite.astype(str) + "\n" + df.theme
-    df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.theme.astype(str)
+    #df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.theme.astype(str)
+    df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n"
     remove = ["«", "»", "/", "\\"]
-    df_courses=df[["class","shortname","text"]].copy()
+    df_courses=df[["shortname","url","class","text","teachers"]].copy()
 
     vectorizer,features=load_models(df_courses.text.values.tolist(),args.train,language)
     #load patterns for shift
     shift_patterns=get_pattern_shift(languages)
     climate_patterns=get_climate_pattern(languages)
-    odd_patterns=get_odd_patterns(languages)
+    #odd_patterns=get_odd_patterns(languages)
     results=[]
     for i, row in df_courses.iterrows():
         #try:
@@ -133,10 +139,11 @@ if __name__=="__main__":
         coo_kw = vectorizer.transform([row.text]).tocoo()
         words_text = {features[idx]: score for idx, score in zip(coo_kw.col, coo_kw.data)}
         if i % 1000 == 0: print(i)
-        score_shift = compute_score(words_text, shift_patterns[detected_language])
+        score_shift,match_shift = compute_score(words_text, shift_patterns[detected_language])
         if not isinstance(score_shift, float): score_shift = 0.0
         score_climate,matching=compute_climate_score(words_text, climate_patterns[detected_language])
-        data={"code":row.shortname,"name":row["class"],"shift_score":score_shift}
+        #data={"code":row.shortname,"name":row["class"],"shift_score":score_shift}
+        data={"code":row.shortname,"shift_score":score_shift,"shiftpatterns": json.dumps(match_shift),"class":row["class"],"teachers":row.teachers}
         data["climate_score"]=score_climate
         data["climate_patterns"]=json.dumps(matching)
         #odd_scores=compute_odd_score(words_text,odd_patterns[detected_language])
