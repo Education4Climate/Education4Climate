@@ -3,17 +3,19 @@
 import os, sys
 
 sys.path.append(os.getcwd())
-from crawl.driver import Driver
+from crawl.config.driver import Driver
 
 import time
 import re
 import json
 import progressbar
-import settings as s
+import crawl.config.settings as s
 
 # mapping : [prerequisite,theme,goal,content,method,evaluation other, resources,biblio,faculty,anacs,shortname,class,location, teachers,language]
 def get_course_infos(href, driver):
     infos = {"url": href}
+    driver.get(href)
+    infos["class"]=driver.find_element_by_id("zone-titre").find_element_by_tag_name("h1").text
     # if get anac 2020-2021
     try:
         anac = driver.find_element_by_xpath("//div[contains(@class,'prgNavItem off')]")
@@ -44,19 +46,19 @@ def get_course_infos(href, driver):
     # textual information
     paragraphs = driver.find_elements_by_class_name("paragraphe--1")
     for paragraph in paragraphs:
-        title = paragraph.find_element_by_tag_name("h2").text.lower()
-        if True in [word in title for word in ["contenu", "content"]]:
-            infos["content"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("pr[ée][- ]?requi", title) is not None:
-            infos["prerquisite"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("objectif", title) is not None:
-            infos["goal"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("autres", title) is not None:
-            infos["other"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("m[ée]thode", title) is not None:
-            infos["method"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("[eé]valuation", title) is not None:
-            infos["evaluation"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        title=paragraph.find_element_by_tag_name("h2").text.lower()
+        if True in [word in title for word in ["contenu","content"]]:
+            infos["content"]=paragraph.find_element_by("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("pr[ée][- ]?requi",title) is not None:
+            infos["prerequisite"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("objectif",title) is not None:
+            infos["goal"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("autres",title) is not None:
+            infos["other"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("m[ée]thode",title) is not None:
+            infos["method"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("[eé]valuation",title) is not None:
+            infos["evaluation"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
 
     return infos
 
@@ -69,7 +71,7 @@ if __name__ == "__main__":
     program_fh = open("data/crawling-results/ulb_programs.json")
     courses_fh = open("data/crawling-results/ulb_courses.json")
     courses = {e["shortname"]: e for e in [json.loads(line) for line in courses_fh.readlines()]}
-    programs_saved = {e["shortname"]: e for e in [json.loads(line) for line in program_fh.readlines()]}
+    programs_saved = {e["shortname"]: e for e in [json.loads(line) for line in open("data/crawling-results/ulb_programs.json").readlines()]}
 
     program_fh.close()
     courses_fh.close()
@@ -105,9 +107,9 @@ if __name__ == "__main__":
     
     print("number of total programs to crawl : %s\n" % len(programs_saved.keys()))
     for p_id,prg in programs_saved.items():
-        if p_id in programs_saved.keys():
-            print(prg["name"],prg["url"],"-- already crawled")
-            continue
+#        if p_id in programs_saved.keys():
+#            print(prg["name"],prg["url"],"-- already crawled")
+#            continue
         ulb_driver.driver.get(prg["url"]+"#programme")
         prg["courses"]=[]
         time.sleep(2)

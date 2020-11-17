@@ -6,11 +6,12 @@ import time
 import numpy as np
 import pandas as pd
 
-from crawl.driver import Driver
+from crawl.config.driver import Driver
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from w3lib.html import remove_tags
 
+
+import config.utils as u
 import sys
 sys.path.append(os.getcwd())
 
@@ -60,23 +61,12 @@ class UNamurProgramSpider(scrapy.Spider):
         for url in self.myurls:
             yield scrapy.Request(url, self.parse)
 
-    def parse(self, response):
-        codes = self._cleanup(response.xpath("//tr//td[@class='code']").getall())
-        links = self._cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall())
+    @staticmethod
+    def parse(response):
+        codes = u.cleanup(response.xpath("//tr//td[@class='code']").getall())
+        links = u.cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall())
         for code, link in zip(codes, links):
             yield {'code': code, 'url': link}
-
-    # TODO: put that in the parent class?
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 class UNamurCourseSpider(scrapy.Spider):
@@ -91,16 +81,16 @@ class UNamurCourseSpider(scrapy.Spider):
             yield scrapy.Request(url, self.parse)
 
     def parse(self, response):
-        name_and_id = self._cleanup(response.css("h1::text").get())
+        name_and_id = u.cleanup(response.css("h1::text").get())
         name = name_and_id.split("[")[0]
         id = name_and_id.split("[")[1].strip("]")
 
-        years = self._cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
+        years = u.cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         # TODO: do we keep the 'suppléant'?
-        teachers = self._cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
+        teachers = u.cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
 
         # TODO: cours en plusieurs langues?
-        languages = self._cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
+        languages = u.cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
         languages = [lang.split(": ")[1] for lang in languages]
         # TODO: check all langagae used
         languages_code = {"Français": 'fr',
@@ -111,11 +101,11 @@ class UNamurCourseSpider(scrapy.Spider):
                           "Espagnol / Español": "es"}
         languages = [languages_code[lang] for lang in languages]
 
-        # TODO: too much content selected?
-        content = self._cleanup(response.xpath("//div[@class='tab-content']").get())
 
-        # ects and cycle
-        cycle_ects = self._cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
+        # TODO: too much content selected?
+        content = u.cleanup(response.xpath("//div[@class='tab-content']").get())
+
+        cycle_ects = u.cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
         cycles = []
         ects = []
         programs = []
@@ -135,8 +125,8 @@ class UNamurCourseSpider(scrapy.Spider):
         organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
         campus = ''
         if "Lieu de l'activité" in organisation:
-            campus = self._cleanup(organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
-        faculty = self._cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
+            campus = u.cleanup(organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
+        faculty = u.cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
 
         data = {
             'name': name,
@@ -153,18 +143,6 @@ class UNamurCourseSpider(scrapy.Spider):
             'program': programs
         }
         yield data
-
-    # TODO: put that in the parent class?
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 def get_programs_and_courses(output):

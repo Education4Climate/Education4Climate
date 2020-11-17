@@ -3,10 +3,11 @@ import os
 import pandas as pd
 import numpy as np
 
-from crawl.driver import Driver
+from crawl.config.driver import Driver
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from w3lib.html import remove_tags
+
+import config.utils as u
 
 import argparse
 import sys
@@ -59,10 +60,11 @@ class ULiegeSpider(scrapy.Spider):
         for url in self.myurls:
             yield scrapy.Request(url, self.parse)
 
-    def parse(self, response):
+    @staticmethod
+    def parse(response):
 
-        class_name = self._cleanup(response.css("h1::text").get())
-        year_and_short_name = self._cleanup(response.xpath("//div[@class='u-courses-header__headline']/text()")
+        class_name = u.cleanup(response.css("h1::text").get())
+        year_and_short_name = u.cleanup(response.xpath("//div[@class='u-courses-header__headline']/text()")
                                             .get()).strip(" ").split("/")
         short_name = year_and_short_name[1].strip(" ")
         years = year_and_short_name[0]
@@ -72,12 +74,12 @@ class ULiegeSpider(scrapy.Spider):
         # Check first if there are links (to teachers page)
         teachers_links = teachers_para.xpath(".//a").getall()
         if len(teachers_links) == 0:
-            teachers = self._cleanup(teachers_para.getall())
+            teachers = u.cleanup(teachers_para.getall())
         else:
-            teachers = self._cleanup(teachers_links)
+            teachers = u.cleanup(teachers_links)
 
         # Language
-        languages = self._cleanup(response.xpath(".//section[h3[contains(text(), "
+        languages = u.cleanup(response.xpath(".//section[h3[contains(text(), "
                                                  "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
         languages_code = {"Langue française": 'fr',
                           "Langue anglaise": 'en',
@@ -88,11 +90,11 @@ class ULiegeSpider(scrapy.Spider):
         languages = [languages_code[lang] for lang in languages]
 
         # Content of the class
-        content = self._cleanup(response.xpath(".//section[h3[contains(text(), "
+        content = u.cleanup(response.xpath(".//section[h3[contains(text(), "
                                                "\"Contenus de l'unité d'enseignement\")]]").get())[35:]
 
         # Cycle and credits
-        credit_lines = self._cleanup(response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
+        credit_lines = u.cleanup(response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
                                                     "//tr/td[@class='u-courses-results__row__cell--list']").getall())
         cycles = []
         ects = []
@@ -167,18 +169,6 @@ class ULiegeSpider(scrapy.Spider):
                 'ects', 'content', 'url', 'faculty', 'campus', 'program']
         data = {key: data[key] for key in keys}
         yield data
-
-    # TODO: put that in the parent class?
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 def main(output):

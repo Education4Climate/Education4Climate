@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import argparse
-import settings as s
+
+import config.settings as s
+import config.utils as u
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from w3lib.html import remove_tags
+
 
 
 class UantwerpSpider(scrapy.Spider):
@@ -27,30 +29,27 @@ class UantwerpSpider(scrapy.Spider):
         data_mapper = {
             # Standard fields :
             'name': "//h1",
-            'shortname': "/html/body/form/div[3]/section/section/table/tbody/tr[1]/td[2]/b",
-            'year': "/html/body/form/div[3]/section/section/table/tbody/tr[3]/td[2]",
-            'location': "",
-            'prerequisite': "/html/body/form/div[3]/section/section/div[1]/div[1]/div",
-            'theme':"",
-            # ToDo: Confirm that learning outcomes = goals
-            'goal': "/html/body/form/div[3]/section/section/div[1]/div[2]/div",
+            'id': "/html/body/form/div[3]/section/section/table/tbody/tr[1]/td[2]/b",
+            'teacher': "/html/body/form/div[3]/section/section/table/tbody/tr[11]/td[2]/a",
+            'ects': "/html/body/form/div[3]/section/section/table/tbody/tr[6]/td[2]",
             'content': "/html/body/form/div[3]/section/section/div[1]/div[3]/div/p",
+            'language': "/html/body/form/div[3]/section/section/table/tbody/tr[9]/td[2]",
+            'year': "/html/body/form/div[3]/section/section/table/tbody/tr[3]/td[2]",
+            'campus': "",
+            'faculty': "/html/body/form/div[3]/section/section/table/tbody/tr[2]/td[2]/b",
+            'cycle': "",
+            'formation': "",
+
+            # Other non standard fields :
+            'learning_outcome': "/html/body/form/div[3]/section/section/div[1]/div[2]/div",
             # ToDo: Confirm that method = Teaching method
             'method': "/html/body/form/div[3]/section/section/div[1]/div[5]/div",
             # ToDo: Confirm that evalutation = Assessment method
             'evaluation': "/html/body/form/div[3]/section/section/div[1]/div[6]/div",
-            'other': "",
-            'resources':"",
-
-            # Other non standard fields :
             'contact_hours': "/html/body/form/div[3]/section/section/table/tbody/tr[5]/td[2]",
-            'credits': "/html/body/form/div[3]/section/section/table/tbody/tr[6]/td[2]",
             'study_load': "/html/body/form/div[3]/section/section/table/tbody/tr[7]/td[2]",
             'contract_restrictions': "/html/body/form/div[3]/section/section/table/tbody/tr[8]/td[2]",
-            'language_of_instruction': "/html/body/form/div[3]/section/section/table/tbody/tr[9]/td[2]",
-            'lecturer': "/html/body/form/div[3]/section/section/table/tbody/tr[11]/td[2]/a",
-            # ToDo: Study domain = faculty ?
-            'study_domain': "/html/body/form/div[3]/section/section/table/tbody/tr[2]/td[2]/b"
+            'prerequisite': "/html/body/form/div[3]/section/section/div[1]/div[1]/div"
         }
 
         data = {}
@@ -59,23 +58,12 @@ class UantwerpSpider(scrapy.Spider):
             if xpath_str is '':
                 continue
             try:
-                data[field] = self._cleanup(response.xpath(xpath_str).get())
+                data[field] = u.cleanup(response.xpath(xpath_str).get())
             except Exception as e:
                 raise ValueError("Xpath {} does not work for field {}. "
                                  "\n More information on the error : {}".format(xpath_str, field, e))
-
+        data['url'] = response.url
         yield data
-
-    def _cleanup(self, data):
-        if data is None:
-            return ""
-        elif isinstance(data, list):
-            result = list()
-            for e in data:
-                result.append(self._cleanup(e))
-            return result
-        else:
-            return remove_tags(data).strip()
 
 
 def main(output):
