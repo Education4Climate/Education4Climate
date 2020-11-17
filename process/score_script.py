@@ -1,4 +1,4 @@
-import re,pandas as pd, numpy as np, random,json
+#!/usr/bin/python3.8
 from langdetect import detect
 import spacy
 import os,time,sys
@@ -20,6 +20,7 @@ def refactor_pattern(x):
     x=x.replace("\w+","[^ ]+").lower()
     x=unidecode(x)
     return x
+
 def compute_climate_score(words,pattern):
     matching=Counter()
     scores=0
@@ -48,21 +49,16 @@ def compute_odd_score(words,odds_patterns):
     return scores
 
 
-def load_models(corpus,train,language):
-    if train:
-        # print(df["class"][0])
-        # Construction/entrainement des modèles
-        print("training")
-        vectorizer = TfidfVectorizer(tokenizer=tokenize, analyzer="word", ngram_range=(1, 3))
-        vectorizer.fit(corpus)
-        pickle.dump(vectorizer, open(cfg.vectorizer.format(language), "wb"))
-        features = vectorizer.get_feature_names()
-        print("vectorizer trained")
+def load_models(corpus,language):
+    # print(df["class"][0])
+    # Construction/entrainement des modèles
+    print("training")
+    vectorizer = TfidfVectorizer(tokenizer=tokenize, analyzer="word", ngram_range=(1, 3))
+    vectorizer.fit(corpus)
+    pickle.dump(vectorizer, open(cfg.vectorizer.format(language), "wb"))
+    features = vectorizer.get_feature_names()
+    print("vectorizer trained")
 
-    else:
-        vectorizer = pickle.load(open(cfg.vectorizer.format(language), "rb"))
-        features = vectorizer.get_feature_names()
-    print("models trained or loaded")
     return vectorizer,features
 
 
@@ -107,48 +103,60 @@ if __name__=="__main__":
     parser.add_argument("-i","--input",help="input json file path")
     parser.add_argument("-o","--output",help="output xlsx file path",default="data/output.xlsx")
     parser.add_argument("-l","--language",help="specify language code",default="fr")
-    parser.add_argument("-t","--train",help="train the tfidf model or use old one ?",action="store_true")
-    parser.add_argument("--tfidf",help="compute a tfidf weighted score",action="store_true")
+    parser.add_argument("-f","--field",help="specify the field on which we compute the score",default="content,goal")
 
     args=parser.parse_args()
 
     language=args.language
     nlp=spacy.load(language)
-    df = pd.read_json(args.input)
+    js=json.load(open(args.input))
+    if isinstance(js,list):
+        df = pd.DataFrame.from_dict(js)
+    elif isinstance(js,dict):
+        js=list(js.values())
+        df=pd.DataFrame.from_dict(js)
     print("resources loaded")
-
-    #df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.prerequisite.astype(str) + "\n" + df.theme
-    #df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.theme.astype(str)
-    df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n"
+    fields=args.field.split(",")
+    print(df.shape,fields)
+    df=df.dropna(subset=fields)
+    print(fields,df.shape)
+    df["text"] = df[fields].apply(lambda x : "\n".join(x.values),axis=1)
     remove = ["«", "»", "/", "\\"]
     df_courses=df[["shortname","url","class","text","teachers"]].copy()
 
-    vectorizer,features=load_models(df_courses.text.values.tolist(),args.train,language)
+    vectorizer,features=load_models(df_courses.text.values.tolist(),language)
     #load patterns for shift
     shift_patterns=get_pattern_shift(languages)
     climate_patterns=get_climate_pattern(languages)
     #odd_patterns=get_odd_patterns(languages)
     results=[]
     for i, row in df_courses.iterrows():
+        ##TODO##
+        # implement handling of different languages when patterns are translated
         #try:
         #    detected_language=detect(row.text)
         #except :
             #print("error : ",row.text)
             #detected_language="fr"
         detected_language = "fr"
+        # get tfidf_scores for ngrams in texts
         coo_kw = vectorizer.transform([row.text]).tocoo()
         words_text = {features[idx]: score for idx, score in zip(coo_kw.col, coo_kw.data)}
+
         if i % 1000 == 0: print(i)
+        #compute scores
         score_shift,match_shift = compute_score(words_text, shift_patterns[detected_language])
         if not isinstance(score_shift, float): score_shift = 0.0
         score_climate,matching=compute_climate_score(words_text, climate_patterns[detected_language])
-        #data={"code":row.shortname,"name":row["class"],"shift_score":score_shift}
+
         data={"code":row.shortname,"shift_score":score_shift,"shiftpatterns": json.dumps(match_shift),"class":row["class"],"teachers":row.teachers}
         data["climate_score"]=score_climate
         data["climate_patterns"]=json.dumps(matching)
+        #odd--scores  →  disabled
         #odd_scores=compute_odd_score(words_text,odd_patterns[detected_language])
         #for odd,b in odd_scores.items(): data[odd]=int(b)
         results.append(data)
+    #write results to output file
     df_results=pd.DataFrame.from_dict(results)
     writer=pd.ExcelWriter(args.output)
     df_results.to_excel(writer,index=False,encoding="utf-8")

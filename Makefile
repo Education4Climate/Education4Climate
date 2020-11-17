@@ -49,16 +49,16 @@ crawl-kuleuven:
 #--------------------------------------------------------------------
 
 score-ucl:
-	python process/score_script.py --input data/crawling-results/ucl_${YEAR}.json --output data/ucl_scoring_${YEAR}.csv --key shortname --field content
+	python3 process/score_script.py --input data/crawling-results/ucl_${YEAR}.json --output data/ucl_scoring_${YEAR}.csv --key shortname --field content
 
 score-ulb:
-	python process/score_script.py --input data/crawling-results/ulb_${YEAR}.json --output data/ulb_scoring_${YEAR}.csv --key shortname --field content
+	python3 process/score_script.py --input data/crawling-results/ulb_${YEAR}.json --output data/ulb_scoring_${YEAR}.csv --key shortname --field content
 
 score-uantwerp:
-	python process/score_script.py --input data/crawling-results/uantwerp_${YEAR}.json --output data/uantwerp_scoring_${YEAR}.csv --key shortname --field content
+	python3 process/score_script.py --input data/crawling-results/uantwerp_${YEAR}.json --output data/uantwerp_scoring_${YEAR}.csv --key shortname --field content
 
 score-ugent:
-	python process/score_script.py --input data/crawling-results/ugent_${YEAR}.json --output data/ugent_scoring_${YEAR}.csv --key shortname --field content
+	python3 process/score_script.py --input data/crawling-results/ugent_${YEAR}.json --output data/ugent_scoring_${YEAR}.csv --key shortname --field content
 
 score-kuleuven:
-	python process/score_script.py --input data/crawling-results/kuleuven_${YEAR}.json --output data/kuleuven_scoring_${YEAR}.csv --key shortname --field content
+	python3 process/score_script.py --input data/crawling-results/kuleuven_${YEAR}.json --output data/kuleuven_scoring_${YEAR}.csv --key shortname --field content
