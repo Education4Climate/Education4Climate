@@ -55,7 +55,7 @@ def load_models(corpus,language):
     print("training")
     vectorizer = TfidfVectorizer(tokenizer=tokenize, analyzer="word", ngram_range=(1, 3))
     vectorizer.fit(corpus)
-    pickle.dump(vectorizer, open(cfg.vectorizer.format(language), "wb"))
+    #pickle.dump(vectorizer, open(cfg.vectorizer.format(language), "wb"))
     features = vectorizer.get_feature_names()
     print("vectorizer trained")
 
@@ -117,9 +117,7 @@ if __name__=="__main__":
         df=pd.DataFrame.from_dict(js)
     print("resources loaded")
     fields=args.field.split(",")
-    print(df.shape,fields)
     df=df.dropna(subset=fields)
-    print(fields,df.shape)
     df["text"] = df[fields].apply(lambda x : "\n".join(x.values),axis=1)
     remove = ["«", "»", "/", "\\"]
     df_courses=df[["shortname","url","class","text","teachers"]].copy()
@@ -128,7 +126,7 @@ if __name__=="__main__":
     #load patterns for shift
     shift_patterns=get_pattern_shift(languages)
     climate_patterns=get_climate_pattern(languages)
-    #odd_patterns=get_odd_patterns(languages)
+    odd_patterns=get_odd_patterns(languages)
     results=[]
     for i, row in df_courses.iterrows():
         ##TODO##
@@ -153,8 +151,8 @@ if __name__=="__main__":
         data["climate_score"]=score_climate
         data["climate_patterns"]=json.dumps(matching)
         #odd--scores  →  disabled
-        #odd_scores=compute_odd_score(words_text,odd_patterns[detected_language])
-        #for odd,b in odd_scores.items(): data[odd]=int(b)
+        odd_scores=compute_odd_score(words_text,odd_patterns[detected_language])
+        for odd,b in odd_scores.items(): data[odd]=int(b)
         results.append(data)
     #write results to output file
     df_results=pd.DataFrame.from_dict(results)
