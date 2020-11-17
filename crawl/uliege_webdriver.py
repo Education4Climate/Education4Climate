@@ -144,10 +144,10 @@ class ULiegeSpider(scrapy.Spider):
     def parse_faculty_and_campus(self, response):
         data = response.meta
         # Campus
-        data['campus'] = self._cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
+        data['campus'] = u.cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
 
         # Faculty
-        faculty_link = self._cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
+        faculty_link = u.cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
                                                     "//li/a[@class='u-link' and "
                                                     "contains(text(), 'La Faculté')]/@href").get())
         # Convert address to faculty
