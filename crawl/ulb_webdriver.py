@@ -14,6 +14,8 @@ import crawl.config.settings as s
 # mapping : [prerequisite,theme,goal,content,method,evaluation other, resources,biblio,faculty,anacs,shortname,class,location, teachers,language]
 def get_course_infos(href, driver):
     infos = {"url": href}
+    driver.get(href)
+    infos["name"]=driver.find_element_by_id("zone-titre").find_element_by_tag_name("h1").text
     # if get anac 2020-2021
     try:
         anac = driver.find_element_by_xpath("//div[contains(@class,'prgNavItem off')]")
