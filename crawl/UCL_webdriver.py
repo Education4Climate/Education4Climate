@@ -1,12 +1,12 @@
 import os,sys
 sys.path.append(os.getcwd())
-from crawl.driver import Driver
+from crawl.config.driver import Driver
 import time
 import re
 import json
 
-prog_path = "../data/crawling-results/ucl_programs_2020.json"
-course_path = "../data/crawling-results/ucl_courses_2020.json"
+prog_path = "data/crawling-results/ucl_programs_2020.json"
+course_path = "data/crawling-results/ucl_courses_2020.json"
 programs={}
 courses={}
 
