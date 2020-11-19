@@ -13,6 +13,7 @@ DICT_LANGUES = {
     'Español': 'es'
 }
 
+
 class KuleuvenSpider(scrapy.Spider):
     name = 'kuleuven'
     custom_settings = {
@@ -25,26 +26,33 @@ class KuleuvenSpider(scrapy.Spider):
     def parse(self, response):
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
+        list_campus = [
+            (e['value'], e.text.strip())
+            for e in soup.find(id='kulat_select').optgroup.find_all('option')
+        ]
+
         list_programmes = [
             (
+                cname,
                 e.parent.parent.parent.parent.a.text,
                 e.parent.parent.parent.a.span.text,
                 e.a['href']
             )
-            for e in soup.find_all('li', class_='taal_e')
+            for campus, cname in list_campus
+            for e in soup.find_all('li', class_=['taal_e', campus])
         ]
 
-        for faculty, cycle, relative_link in list_programmes:
+        for campus, faculty, cycle, relative_link in list_programmes:
             next_link_end = relative_link.split('/', 1)[1]
             next_link = f'{BASE_LINK_PROGS}/{next_link_end}'
 
             yield response.follow(
                 next_link,
                 self.parse_programme,
-                cb_kwargs={'faculty': faculty, 'cycle': cycle}
+                cb_kwargs={'campus': campus, 'faculty': faculty, 'cycle': cycle}
             )
 
-    def parse_programme(self, response, faculty, cycle):
+    def parse_programme(self, response, campus, faculty, cycle):
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
         list_sub_programmes = [
@@ -59,10 +67,10 @@ class KuleuvenSpider(scrapy.Spider):
             yield response.follow(
                 next_link,
                 self.parse_sub_programme,
-                cb_kwargs={'faculty': faculty, 'cycle': cycle}
+                cb_kwargs={'campus': campus, 'faculty': faculty, 'cycle': cycle}
             )
 
-    def parse_sub_programme(self, response, faculty, cycle):
+    def parse_sub_programme(self, response, campus, faculty, cycle):
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
         list_courses = [
@@ -74,12 +82,22 @@ class KuleuvenSpider(scrapy.Spider):
         for path in list_courses:
             next_link = f'{DOMAIN}{path}'
 
+            nom_formation = (
+                soup.find(class_='level_0')
+                    .h1
+                    .text
+                    .splitlines()[0]
+                    .strip()
+                    .rsplit(' (', 1)[0]
+            )
+
             base_dict = {
                 'year': path.split('/')[1],
                 'url': next_link,
                 'faculty': faculty,
                 'cycle': cycle,
-                'formation': soup.find(class_='level_0').h1.text.splitlines()[0].strip()
+                'formation': nom_formation,
+                'campus': campus,
             }
 
             yield response.follow(
@@ -112,11 +130,10 @@ class KuleuvenSpider(scrapy.Spider):
         ]
 
         ects = [
-            int(pts.string.split()[0])
+            float(pts.string.split()[0])
             for pts in main.find(class_='studiepunten')
         ]
 
-        # TODO : vérifier s'il n'est pas possible de remplir campus
         # TODO : discuter la question de formation en tant que liste
 
         cur_dict = {
@@ -125,8 +142,7 @@ class KuleuvenSpider(scrapy.Spider):
             'teachers': teach_list,
             'ects': ects,
             'content': content,
-            'language': sorted(set(DICT_LANGUES.get(lang, lang) for lang in language)),
-            'campus': None
+            'language': sorted(set(DICT_LANGUES.get(lang, lang) for lang in language))
         }
 
         yield {**base_dict, **cur_dict}
