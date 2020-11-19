@@ -6,7 +6,12 @@ from config.settings import YEAR
 DOMAIN = 'https://onderwijsaanbod.kuleuven.be'
 BASE_LINK = f'{DOMAIN}//opleidingen/e/#f=-1,-1,-1'
 BASE_LINK_PROGS = f'{DOMAIN}/2020/opleidingen'
-
+DICT_LANGUES = {
+    'English': 'en',
+    'Nederlands': 'nl',
+    'Français': 'fr',
+    'Español': 'es'
+}
 
 class KuleuvenSpider(scrapy.Spider):
     name = 'kuleuven'
@@ -68,14 +73,13 @@ class KuleuvenSpider(scrapy.Spider):
 
         for path in list_courses:
             next_link = f'{DOMAIN}{path}'
-            year = path.split('/')[1]
 
             base_dict = {
-                'year': f'{year}-{int(year) + 1}',
+                'year': path.split('/')[1],
                 'url': next_link,
                 'faculty': faculty,
                 'cycle': cycle,
-                'formation': soup.find(class_='level_0').h1.text
+                'formation': soup.find(class_='level_0').h1.text.splitlines()[0].strip()
             }
 
             yield response.follow(
@@ -84,7 +88,8 @@ class KuleuvenSpider(scrapy.Spider):
                 cb_kwargs={'base_dict': base_dict}
             )
 
-    def parse_course(self, response, base_dict):
+    @staticmethod
+    def parse_course(response, base_dict):
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
         main = soup.find(id='main_container')
@@ -95,15 +100,32 @@ class KuleuvenSpider(scrapy.Spider):
             for t in main.find(class_='docenten').find_all('a')
         ]
 
+        content = '\n'.join([
+            p.text.strip()
+            for p in main.find(class_='tab_content').find_all('p')
+            if p.text.strip()
+        ])
+
+        language = [
+            lang.text.strip(' \n()')
+            for lang in main.find_all('span', class_='taal')
+        ]
+
+        ects = [
+            int(pts.string.split()[0])
+            for pts in main.find(class_='studiepunten')
+        ]
+
         # TODO : vérifier s'il n'est pas possible de remplir campus
+        # TODO : discuter la question de formation en tant que liste
 
         cur_dict = {
-            'name': next(titles.a.next_siblings).strip(' \n>'),
+            'name': titles.text.split('>')[-1].strip(),
             'id': main.find(class_='extraheading').string.strip(' \n()'),
             'teachers': teach_list,
-            'ects': main.find(class_='studiepunten').string.split()[0],
-            'content': main.find(class_='tab_content').p.string,
-            'language': main.find(class_='taal').text.strip(' \n()'),
+            'ects': ects,
+            'content': content,
+            'language': sorted(set(DICT_LANGUES.get(lang, lang) for lang in language)),
             'campus': None
         }
 
