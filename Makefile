@@ -39,7 +39,7 @@ crawl-kuleuven:
 	scrapy runspider ${CRAWLER_FOLDER}/kuleuven.py
 
 crawl-umons:
-	if [ -f data/umons${YEAR}.json ]; then rm data/umons_${YEAR}.json; fi
+	if [ -f data/umons_${YEAR}.json ]; then rm data/umons_${YEAR}.json; fi
 	python3 crawl/umons.py --output data/crawling-results/umons_${YEAR}.json --year ${YEAR}
 
 #--------------------------------------------------------------------
