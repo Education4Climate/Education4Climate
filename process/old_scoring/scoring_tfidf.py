@@ -2,7 +2,7 @@ import pandas as pd
 import os,sys,json
 import spacy
 sys.path.append(os.path.join(os.getcwd()))
-import process.config as cfg
+import process.config.settings as cfg
 from process.old_scoring.nlp_utils import lemmatize,comput_tfidf_score
 from gensim.corpora import Dictionary
 from gensim.models import TfidfModel
