@@ -102,7 +102,7 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("-i","--input",help="input json file path")
     parser.add_argument("-o","--output",help="output xlsx file path",default="data/output.xlsx")
-    parser.add_argument("-l","--language",help="specify language code",default="fr")
+    parser.add_argument("-l","--language",help="specify language code",default="en")
     parser.add_argument("-f","--field",help="specify the field on which we compute the score",default="content,goal")
 
     args=parser.parse_args()
