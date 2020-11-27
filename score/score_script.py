@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import spacy
-
 from tqdm import tqdm # Progress bar
 
 import re
@@ -157,7 +155,6 @@ if __name__=="__main__":
 
     arguments=parser.parse_args()
     main(arguments)
-    #TODO: Separer l'ajout d'arguments de la fonction principale (creer une fonction main potentiellement)
 
 
 
