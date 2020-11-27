@@ -2,8 +2,8 @@ import pandas as pd
 import os,sys,json
 import spacy
 sys.path.append(os.path.join(os.getcwd()))
-import process.config.settings as cfg
-from process.old_scoring.nlp_utils import lemmatize,comput_tfidf_score
+import score.config.settings as cfg
+from score.old_scoring.nlp_utils import lemmatize,comput_tfidf_score
 from gensim.corpora import Dictionary
 from gensim.models import TfidfModel
 import re
@@ -31,7 +31,7 @@ def tfidf_scoring(df,patterns):
 
 #######################
 #
-#      Scoring process : gives a score expressing how much a text (i.e course) is related to global warming, sustainable developpement, etc (cfr. patterns)
+#      Scoring score : gives a score expressing how much a text (i.e course) is related to global warming, sustainable developpement, etc (cfr. patterns)
 #           2 possibilities: simple word count or tfidf weighted score
 #######################
 if __name__=="__main__":
