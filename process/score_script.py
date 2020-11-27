@@ -2,7 +2,7 @@
 
 import spacy
 
-from progressbar import ProgressBar
+from tqdm import tqdm # Progress bar
 
 import re
 import json
@@ -43,7 +43,7 @@ def compute_odd_score(words,odds_patterns):
         else: scores[odd]=False
     return scores
 
-# -------------------------- SCORE COMPUTING --------------------------------
+# -------------------------- SCORE COMPUTATION --------------------------------
 
 def get_shift_patterns(languages):
     patterns={}
@@ -81,24 +81,24 @@ def get_climate_patterns(languages):
 # -------------------------- MAIN --------------------------------
 
 def main(args):
-    languages={"fr_core_news_sm": "fr"}#, "en_core_web_sm": 'en'}
+    languages={"fr_core_news_sm": "fr"}#, "en_core_web_sm": 'en'} # Commented for testing purpose
     #nlp_models={lg:spacy.load(lg) for lg in languages}
 
-    language = args.language
-    nlp = spacy.load(language)
+    # Loading crawling results
     js = json.load(open(args.input))
     if isinstance(js, list):
         df = pd.DataFrame.from_dict(js)
     elif isinstance(js, dict):
         js = list(js.values())
         df = pd.DataFrame.from_dict(js)
-    print("resources loaded")
+    print("Crawled courses loaded")
     fields = args.field.split(",")
     df = df.dropna(subset=fields)
     df["text"] = df[fields].apply(lambda x: "\n".join(x.values), axis=1)
-    remove = ["«", "»", "/", "\\"]
-    df_courses = df[["shortname", "url", "class", "text", "teachers"]].copy()
+    df_courses = df[["shortname", "url", "class", "text", "teachers"]].copy() #TODO: Replace shortname by id
 
+    # Loading models
+    language = args.language
     vectorizer, features = u.load_models(df_courses.text.values.tolist(), language)
 
     # Load patterns for different scores
@@ -109,8 +109,7 @@ def main(args):
     results = []
     print(df_courses)
 
-    pbar = ProgressBar()
-    for i, row in pbar(df_courses.iterrows()):  # TODO: voir si df_courses.apply() pourrait s'appliquer ici
+    for i, row in tqdm(df_courses.iterrows(), total=df_courses.shape[0]):  # TODO: voir si df_courses.apply() pourrait s'appliquer ici
         ##TODO##
         # implement handling of different languages when patterns are translated
         # try:
