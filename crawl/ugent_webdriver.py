@@ -5,19 +5,14 @@
 # importing required modules
 
 import config.settings as s
-import config.utils as u
-
-program_urls = {"Bachelor": "BACH/BACH.html", "Master": "MABA/MABA.html"}
-
-
-import os
-import sys
-
-sys.path.append(os.getcwd())
 from config.driver import Driver
 
 import time
+import os
+import sys
+sys.path.append(os.getcwd())
 
+program_urls = {"Bachelor": "BACH/BACH.html", "Master": "MABA/MABA.html"}
 
 ugent_driver = Driver()
 ugent_driver.init()
@@ -42,9 +37,6 @@ for fac in faculties_ref: # e.g. Click on "Faculty of Arts and Philosopy"
                           for form in ugent_driver.driver.find_elements_by_css_selector("a[target='_top']")]
         for ref in formation_refs: # Click on "Bachelor of Arts in Archeology"
             ugent_driver.driver.get(ref)
-
-
-
 
 programs[prg["code"]] = prg # ???????????
 time.sleep(5)  # Is it necessary?

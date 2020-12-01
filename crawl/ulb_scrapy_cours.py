@@ -92,4 +92,3 @@ class ULBSpider(scrapy.Spider, ABC):
 #     "name": "Histoire de la philosophie",
 #     "class": "Histoire de la philosophie"
 # }
-

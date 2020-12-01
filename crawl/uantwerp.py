@@ -9,7 +9,6 @@ import scrapy
 from scrapy.crawler import CrawlerProcess
 
 
-
 class UantwerpSpider(scrapy.Spider):
     name = "uantwerp"
 
@@ -25,7 +24,8 @@ class UantwerpSpider(scrapy.Spider):
         for href in response.xpath("//a[@class='iframe cboxElement']/@href").getall():
             yield response.follow(href, self.parse_course)
 
-    def parse_course(self, response):
+    @staticmethod
+    def parse_course(response):
         data_mapper = {
             # Standard fields :
             'name': "//h1",
