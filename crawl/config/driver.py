@@ -1,20 +1,27 @@
-#from pyvirtualdisplay import Display
+# from pyvirtualdisplay import Display
 from xvfbwrapper import Xvfb
-import os,time,sys
+import os
 from selenium import webdriver
-sys.path.append(os.path.abspath(os.getcwd()))
 
 import config.settings as s
 
-class Driver():
+import sys
+sys.path.append(os.path.abspath(os.getcwd()))
+
+
+class Driver:
+
     def __init__(self):
-        self.driver=None
-# Setting up Selenium
+        self.driver = None
+
+    # TODO: pourquoi on ne merge pas ça avec la fonction précédente?
+    # Setting up Selenium
     def init(self):
+        # TODO: what is that for?
         if self.driver is not None:
             self.delete_driver()
-        self.display=Xvfb()
-        #self.display=Display(visible=0)
+        self.display = Xvfb()
+        # self.display=Display(visible=0)
         self.display.start()
 
         options = webdriver.ChromeOptions()
@@ -24,12 +31,12 @@ class Driver():
 
         prefs = {"plugins.always_open_pdf_externally": True}
         options.add_experimental_option("prefs", prefs)
-        #options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.1 Safari/605.1.15")
-
+        # options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.1 Safari/605.1.15")
 
         self.driver = webdriver.Chrome(executable_path=s.DRIVER_PATH, options=options)
 
-       # self.driver.execute_script("navigator.geolocation.getCurrentPosition = function(success) { success({coords: {latitude: 50.455755, longitude: 30.511565}}); }")
+       # self.driver.execute_script("navigator.geolocation.getCurrentPosition =
+       # function(success) { success({coords: {latitude: 50.455755, longitude: 30.511565}}); }")
 
     def delete_driver(self):
         self.display.stop()

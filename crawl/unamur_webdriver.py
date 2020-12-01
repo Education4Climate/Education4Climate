@@ -32,7 +32,7 @@ def get_programs():
     # Get formation types (keep only the ones starting with Bachelier and Master)
     formation_types = unamur_driver.driver.find_elements_by_xpath(f"//div[@id='tab-{year}']//h4/a")
     formation_types = np.array(formation_types)[[f.text.startswith("Bachelier")
-                                       or f.text.startswith("Master") for f in formation_types]].tolist()
+                                                 or f.text.startswith("Master") for f in formation_types]].tolist()
     for ft in formation_types:
         time.sleep(0.1)
         ft.click()
@@ -83,7 +83,7 @@ class UNamurCourseSpider(scrapy.Spider):
     def parse(self, response):
         name_and_id = u.cleanup(response.css("h1::text").get())
         name = name_and_id.split("[")[0]
-        id = name_and_id.split("[")[1].strip("]")
+        course_id = name_and_id.split("[")[1].strip("]")
 
         years = u.cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         # TODO: do we keep the 'suppléant'?
@@ -100,7 +100,6 @@ class UNamurCourseSpider(scrapy.Spider):
                           "Italien": "it",
                           "Espagnol / Español": "es"}
         languages = [languages_code[lang] for lang in languages]
-
 
         # TODO: too much content selected?
         content = u.cleanup(response.xpath("//div[@class='tab-content']").get())
@@ -130,7 +129,7 @@ class UNamurCourseSpider(scrapy.Spider):
 
         data = {
             'name': name,
-            'id': id,
+            'id': course_id,
             'year': years,
             'teacher': teachers,
             'language': languages,
@@ -183,6 +182,7 @@ def crawl_courses(output):
 if __name__ == '__main__':
 
     # TODO: is there a way to execute the two crawlers in the same run?
+    #   -> divide file into two
     if 0:
         output_ = "../data/crawling-results/unamur_courses.json"
         get_programs_and_courses(output_)
