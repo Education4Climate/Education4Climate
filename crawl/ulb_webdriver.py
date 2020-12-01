@@ -1,21 +1,25 @@
 # -*- coding: utf-8 -*-
 
-import os, sys
-
-sys.path.append(os.getcwd())
-from crawl.config.driver import Driver
-
+import os
 import time
 import re
 import json
 import progressbar
 import crawl.config.settings as s
 
-# mapping : [prerequisite,theme,goal,content,method,evaluation other, resources,biblio,faculty,anacs,shortname,class,location, teachers,language]
+from crawl.config.driver import Driver
+
+import sys
+
+sys.path.append(os.getcwd())
+
+
+# mapping : [prerequisite,theme,goal,content,method,
+# evaluation other, resources,biblio,faculty,anacs,shortname,class,location, teachers,language]
 def get_course_infos(href, driver):
     infos = {"url": href}
     driver.get(href)
-    infos["class"]=driver.find_element_by_id("zone-titre").find_element_by_tag_name("h1").text
+    infos["class"] = driver.find_element_by_id("zone-titre").find_element_by_tag_name("h1").text
     # if get anac 2020-2021
     try:
         anac = driver.find_element_by_xpath("//div[contains(@class,'prgNavItem off')]")
@@ -46,19 +50,20 @@ def get_course_infos(href, driver):
     # textual information
     paragraphs = driver.find_elements_by_class_name("paragraphe--1")
     for paragraph in paragraphs:
-        title=paragraph.find_element_by_tag_name("h2").text.lower()
-        if True in [word in title for word in ["contenu","content"]]:
-            infos["content"]=paragraph.find_element_by("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("pr[ée][- ]?requi",title) is not None:
-            infos["prerequisite"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("objectif",title) is not None:
-            infos["goal"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("autres",title) is not None:
-            infos["other"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("m[ée]thode",title) is not None:
-            infos["method"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
-        elif re.search("[eé]valuation",title) is not None:
-            infos["evaluation"]=paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        title = paragraph.find_element_by_tag_name("h2").text.lower()
+        if True in [word in title for word in ["contenu", "content"]]:
+            infos["content"] = paragraph.find_element_by("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("pr[ée][- ]?requi", title) is not None:
+            infos["prerequisite"] = paragraph.find_element_by_xpath(
+                "//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("objectif", title) is not None:
+            infos["goal"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("autres", title) is not None:
+            infos["other"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("m[ée]thode", title) is not None:
+            infos["method"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
+        elif re.search("[eé]valuation", title) is not None:
+            infos["evaluation"] = paragraph.find_element_by_xpath("//div[contains(@class,'paragraphe__contenu')]").text
 
     return infos
 
@@ -71,49 +76,53 @@ if __name__ == "__main__":
     program_fh = open("data/crawling-results/ulb_programs.json")
     courses_fh = open("data/crawling-results/ulb_courses.json")
     courses = {e["shortname"]: e for e in [json.loads(line) for line in courses_fh.readlines()]}
-    programs_saved = {e["shortname"]: e for e in [json.loads(line) for line in open("data/crawling-results/ulb_programs.json").readlines()]}
+    programs_saved = {e["shortname"]: e for e in
+                      [json.loads(line) for line in open("data/crawling-results/ulb_programs.json").readlines()]}
 
     program_fh.close()
     courses_fh.close()
-    print("already crawled : {} programs, {} courses\n ".format(len(programs_saved.keys()),len(courses.keys())))
+    print("already crawled : {} programs, {} courses\n ".format(len(programs_saved.keys()), len(courses.keys())))
 
-    #Get Bac programms
+    # Get Bac programms
     ulb_driver.driver.get(s.ULB_URL)
     time.sleep(2)
-    programs_ref=ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
+    programs_ref = ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
 
     for element in programs_ref:
-        prg={}
-        prg["name"]=element.find_element_by_tag_name("strong").text
-        prg["url"]=element.find_element_by_class_name("item-title__element_title").get_attribute("href")
-        prg["faculty"] = element.find_element_by_xpath("//span[contains(@class,'search-result__structure-rattachement')]").text
-        #prg["faculty"]=element.find_element_by_class_name("item-title__element_title").text
-        prg["code"]=element.find_element_by_class_name("search-result__mnemonique").text
-        prg["location"]=element.find_element_by_class_name("search-result-formation__separator").text
-        programs_saved[prg["code"]]=prg
+        prg = {}
+        prg["name"] = element.find_element_by_tag_name("strong").text
+        prg["url"] = element.find_element_by_class_name("item-title__element_title").get_attribute("href")
+        prg["faculty"] = element.find_element_by_xpath(
+            "//span[contains(@class,'search-result__structure-rattachement')]").text
+        # prg["faculty"]=element.find_element_by_class_name("item-title__element_title").text
+        prg["code"] = element.find_element_by_class_name("search-result__mnemonique").text
+        prg["location"] = element.find_element_by_class_name("search-result-formation__separator").text
+        programs_saved[prg["code"]] = prg
 
     # Get Master programms
-    ulb_driver.driver.get("https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&types=formation&typeFo=MA&s=FACULTE_ASC&limit=200&page=1")
+    ulb_driver.driver.get("https://www.ulb.be/servlet/search?l=0&beanKey=beanKeyRechercheFormation&&"
+                          "types=formation&typeFo=MA&s=FACULTE_ASC&limit=200&page=1")
     time.sleep(1)
     programs_ref = ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
     for element in programs_ref:
         prg = {}
         prg["name"] = element.find_element_by_tag_name("strong").text
         prg["url"] = element.find_element_by_class_name("item-title__element_title").get_attribute("href")
-        prg["faculty"] = element.find_element_by_xpath("//span[contains(@class,'search-result__structure-rattachement')]").text
-        prg["code"]=element.find_element_by_class_name("search-result__mnemonique").text
-        prg["location"]=element.find_element_by_class_name("search-result-formation__separator").text
+        prg["faculty"] = element.find_element_by_xpath(
+            "//span[contains(@class,'search-result__structure-rattachement')]").text
+        prg["code"] = element.find_element_by_class_name("search-result__mnemonique").text
+        prg["location"] = element.find_element_by_class_name("search-result-formation__separator").text
         programs_saved[prg["code"]] = prg
-    
+
     print("number of total programs to crawl : %s\n" % len(programs_saved.keys()))
-    for p_id,prg in programs_saved.items():
-#        if p_id in programs_saved.keys():
-#            print(prg["name"],prg["url"],"-- already crawled")
-#            continue
-        ulb_driver.driver.get(prg["url"]+"#programme")
-        prg["courses"]=[]
+    for p_id, prg in programs_saved.items():
+        #        if p_id in programs_saved.keys():
+        #            print(prg["name"],prg["url"],"-- already crawled")
+        #            continue
+        ulb_driver.driver.get(prg["url"] + "#programme")
+        prg["courses"] = []
         time.sleep(2)
-        print(prg["name"],prg["url"])
+        print(prg["name"], prg["url"])
         courses_refs = ulb_driver.driver.find_elements_by_xpath("//a[contains(@title,'COURS')]")
         courses_refs = [e.get_attribute("href") for e in courses_refs]
         print(len(courses_refs))
@@ -121,9 +130,9 @@ if __name__ == "__main__":
                                       widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
         bar.start()
 
-        for i,href in enumerate(courses_refs):
+        for i, href in enumerate(courses_refs):
             if not href.startswith("http"):
-                print("skipping ",href)
+                print("skipping ", href)
                 continue
             try:
                 ulb_driver.driver.get(href)
@@ -137,19 +146,19 @@ if __name__ == "__main__":
                 id_ = ulb_driver.driver.find_element_by_class_name("mnemonique").text
                 prg["courses"].append(id_)
                 if id_ not in courses.keys():
-                    infos =get_course_infos(href,ulb_driver.driver)
-                    infos["shortname"]=id_
+                    infos = get_course_infos(href, ulb_driver.driver)
+                    infos["shortname"] = id_
                     courses_fh.write(json.dumps(infos))
                     courses_fh.write("\n")
                     courses_fh.flush()
-                    courses[id_]=infos
+                    courses[id_] = infos
             except Exception as e:
-                print(e,href)
+                print(e, href)
             bar.update(i)
         bar.finish()
         print(prg["code"], " done crawling. Saving..")
         if prg["code"] not in programs_saved.keys():
-            prg["courses"]=list(set(prg["courses"]))
+            prg["courses"] = list(set(prg["courses"]))
             programs_saved[prg["code"]] = prg
             program_fh.write(json.dumps(prg))
             program_fh.write("\n")

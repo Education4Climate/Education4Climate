@@ -60,12 +60,11 @@ class ULiegeSpider(scrapy.Spider):
         for url in self.myurls:
             yield scrapy.Request(url, self.parse)
 
-    @staticmethod
-    def parse(response):
+    def parse(self, response):
 
         class_name = u.cleanup(response.css("h1::text").get())
         year_and_short_name = u.cleanup(response.xpath("//div[@class='u-courses-header__headline']/text()")
-                                            .get()).strip(" ").split("/")
+                                        .get()).strip(" ").split("/")
         short_name = year_and_short_name[1].strip(" ")
         years = year_and_short_name[0]
 
@@ -80,7 +79,7 @@ class ULiegeSpider(scrapy.Spider):
 
         # Language
         languages = u.cleanup(response.xpath(".//section[h3[contains(text(), "
-                                                 "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
+                                             "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
         languages_code = {"Langue française": 'fr',
                           "Langue anglaise": 'en',
                           "Langue allemande": 'de',
@@ -91,11 +90,11 @@ class ULiegeSpider(scrapy.Spider):
 
         # Content of the class
         content = u.cleanup(response.xpath(".//section[h3[contains(text(), "
-                                               "\"Contenus de l'unité d'enseignement\")]]").get())[35:]
+                                           "\"Contenus de l'unité d'enseignement\")]]").get())[35:]
 
         # Cycle and credits
         credit_lines = u.cleanup(response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
-                                                    "//tr/td[@class='u-courses-results__row__cell--list']").getall())
+                                                "//tr/td[@class='u-courses-results__row__cell--list']").getall())
         cycles = []
         ects = []
         programs = []
@@ -141,15 +140,16 @@ class ULiegeSpider(scrapy.Spider):
         else:
             yield data
 
-    def parse_faculty_and_campus(self, response):
+    @staticmethod
+    def parse_faculty_and_campus(response):
         data = response.meta
         # Campus
         data['campus'] = u.cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
 
         # Faculty
         faculty_link = u.cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
-                                                    "//li/a[@class='u-link' and "
-                                                    "contains(text(), 'La Faculté')]/@href").get())
+                                                "//li/a[@class='u-link' and "
+                                                "contains(text(), 'La Faculté')]/@href").get())
         # Convert address to faculty
         faculty_dict = {"archi": "Faculté d'Architecture",
                         "droit": "Faculté de Droit, Science politique et Criminologie",
