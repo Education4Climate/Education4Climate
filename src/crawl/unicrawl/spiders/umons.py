@@ -19,7 +19,7 @@ class UmonsSpider(scrapy.Spider):
             "https://web.umons.ac.be/fau/fr/loffre-de-formation/",
             "https://web.umons.ac.be/fmp/fr/loffre-de-formation/"
             "https://web.umons.ac.be/fpms/fr/offre-de-formation/",
-            "https://web.umons.ac.be/fpse/fr/offre-de-formation/",
+            "https://web.umons.ac.be/fpse/fr/offre-de-formation/", 
             "https://web.umons.ac.be/eshs/fr/offre-de-formations/"
         ]
         # base_urls =
@@ -38,7 +38,7 @@ class UmonsSpider(scrapy.Spider):
             "https://web.umons.ac.be/fs/fr/training-offer/m1-biol60/",
             "https://web.umons.ac.be/fs/fr/training-offer/m2-bioefd/",
             "https://web.umons.ac.be/fs/fr/training-offer/m2-bioefs/",
-            "https://web.umons.ac.be/fs/fr/training-offer/m2-bioefa/",
+            "https://web.umons.ac.be/fs/fr/training-offer/m2-bioefa/", #do that
             "https://web.umons.ac.be/fs/fr/training-offer/m2-chimfs/",
             "https://web.umons.ac.be/fs/fr/training-offer/m2-chimfd/",
             "https://web.umons.ac.be/fs/fr/training-offer/m1-chim60/",
@@ -54,7 +54,6 @@ class UmonsSpider(scrapy.Spider):
             "https://web.umons.ac.be/fs/fr/training-offer/m2-matfsi/",
             "https://web.umons.ac.be/fs/fr/training-offer/m2-mathfd/",
             'https://web.umons.ac.be/fs/fr/training-offer/m1-math60/',
-            "https://web.umons.ac.be/fs/fr/training-offer/m2-physfa/",
             "https://web.umons.ac.be/fs/fr/training-offer/m2-physfd/",
             "https://web.umons.ac.be/fs/fr/training-offer/m1-phys60/",
             "https://web.umons.ac.be/fs/fr/training-offer/ba-scmath/",
@@ -118,7 +117,7 @@ class UmonsSpider(scrapy.Spider):
         href = response.xpath(
             '//a[contains(@class, "button-primary-alt scheme-background scheme-background-hover")]/@href').get()
         if not href:
-            yield response.follow(response.url, self.parse_details, dont_filter=True)
+            yield response.follow(response.url, self.parse_details)
         else:
             location = response.xpath(
                 '//div[div/text()="Lieu"]').css('div.value::text').get()
