@@ -2,8 +2,8 @@ import pandas as pd
 import os,sys,json
 import spacy
 sys.path.append(os.path.join(os.getcwd()))
-import score.config.settings as cfg
-from score.old_scoring.nlp_utils import lemmatize,comput_tfidf_score
+import src.score.config.settings as cfg
+from src.score.old_scoring.nlp_utils import lemmatize,comput_tfidf_score
 from gensim.corpora import Dictionary
 from gensim.models import TfidfModel
 import re

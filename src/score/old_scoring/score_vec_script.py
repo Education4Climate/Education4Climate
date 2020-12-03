@@ -33,7 +33,7 @@ if __name__=="__main__":
 
     nlp=spacy.load("fr")
     train=False
-    df = pd.read_json("../../data/crawling-results/ucl_courses.json")
+    df = pd.read_json("../../data/crawling-output/ucl_courses.json")
     print("resources loaded")
     df["text"] = df.content.astype(str) + "\n" + df.goal.astype(str) + "\n" + df.prerequisite.astype(
         str) + "\n" + df.theme

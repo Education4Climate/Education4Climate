@@ -5,7 +5,7 @@ from abc import ABC
 
 import scrapy
 
-from crawl.config.settings import YEAR
+from src.crawl.config.settings import YEAR
 
 PATH_COURS_URL = urllib.parse.quote(
     '/ws/ksup/course-programmes?anac={}&mnemonic={}&lang=fr',
