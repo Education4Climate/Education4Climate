@@ -17,7 +17,8 @@ class UclSpider(scrapy.Spider):
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.css("a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href)").getall():
+        for href in response.css(
+                "a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href)").getall():
             yield response.follow(href, self.parse_formation)
 
     def parse_formation(self, response):
@@ -30,41 +31,54 @@ class UclSpider(scrapy.Spider):
             yield response.follow(href, self.parse_prog_detail)
 
     def parse_prog_detail(self, response):
-        for href in response.css(f"td.composant-ligne1 a[href^='https://uclouvain.be/cours-{YEAR}-']::attr(href)"):
+        for href in response.css(
+                f"td.composant-ligne1 a[href^='https://uclouvain.be/cours-{YEAR}-']::attr(href)"):
             yield response.follow(href, self.parse_course)
 
     @staticmethod
     def parse_course(response):
         data = {
-            'class':        u.cleanup(response.css("h1.header-school::text").get()),
-            'shortname':    u.cleanup(response.css("span.abbreviation::text").get()),
-            'year':         u.cleanup(response.css("span.anacs::text").get()),
-            'location':     u.cleanup(response.css("span.location::text").get()),
-            'teachers':     u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]"
-                                                     "/div/a/text())").getall()),
-            'language':     u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2']/text())").get()),
-            'prerequisite': u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Préalables')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'theme':        u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Thèmes')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'goal':         u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Acquis')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'content':      u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Contenu')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'method':       u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Méthodes')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'evaluation':   u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Modes')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'other':        u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Autres')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'resources':    u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Ressources')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'biblio':       u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Bibliographie')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'faculty':      u.cleanup(response.xpath("normalize-space(.//div[div[contains(text(),'Faculté')]]"
-                                                     "/div[@class='col-sm-10 fa_cell_2'])").get()),
-            'url':          response.url
+            'class': u.cleanup(response.css("h1.header-school::text").get()),
+            'shortname': u.cleanup(response.css("span.abbreviation::text").get()),
+            'year': u.cleanup(response.css("span.anacs::text").get()),
+            'location': u.cleanup(response.css("span.location::text").get()),
+            'teachers': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]"
+                               "/div/a/text())").getall()),
+            'language': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Langue')]]"
+                               "/div[@class='col-sm-10 fa_cell_2']/text())").get()),
+            'prerequisite': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Préalables')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'theme': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Thèmes')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'goal': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Acquis')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'content': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Contenu')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'method': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Méthodes')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'evaluation': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Modes')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'other': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Autres')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'resources': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Ressources')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'biblio': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Bibliographie')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'faculty': u.cleanup(
+                response.xpath("normalize-space(.//div[div[contains(text(),'Faculté')]]"
+                               "/div[@class='col-sm-10 fa_cell_2'])").get()),
+            'url': response.url
         }
         yield data
 

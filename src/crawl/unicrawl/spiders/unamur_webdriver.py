@@ -16,7 +16,6 @@ sys.path.append(os.getcwd())
 
 
 def get_programs():
-
     unamur_driver = Driver()
     unamur_driver.init()
 
@@ -31,7 +30,8 @@ def get_programs():
     # Get formation types (keep only the ones starting with Bachelier and Master)
     formation_types = unamur_driver.driver.find_elements_by_xpath(f"//div[@id='tab-{year}']//h4/a")
     formation_types = np.array(formation_types)[[f.text.startswith("Bachelier")
-                                       or f.text.startswith("Master") for f in formation_types]].tolist()
+                                                 or f.text.startswith("Master") for f in
+                                                 formation_types]].tolist()
     for ft in formation_types:
         time.sleep(0.1)
         ft.click()
@@ -60,8 +60,7 @@ class UNamurProgramSpider(scrapy.Spider):
         for url in self.myurls:
             yield scrapy.Request(url, self.parse)
 
-    @staticmethod
-    def parse(response):
+    def parse(self, response):
         codes = u.cleanup(response.xpath("//tr//td[@class='code']").getall())
         links = u.cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall())
         for code, link in zip(codes, links):
@@ -100,7 +99,6 @@ class UNamurCourseSpider(scrapy.Spider):
                           "Espagnol / Español": "es"}
         languages = [languages_code[lang] for lang in languages]
 
-
         # TODO: too much content selected?
         content = u.cleanup(response.xpath("//div[@class='tab-content']").get())
 
@@ -124,7 +122,8 @@ class UNamurCourseSpider(scrapy.Spider):
         organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
         campus = ''
         if "Lieu de l'activité" in organisation:
-            campus = u.cleanup(organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
+            campus = u.cleanup(
+                organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
         faculty = u.cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
 
         data = {
@@ -145,7 +144,6 @@ class UNamurCourseSpider(scrapy.Spider):
 
 
 def get_programs_and_courses(output):
-
     # Get list of programs using selenium
     programs_df = get_programs()
     print("Obtained list of programs.")
@@ -164,7 +162,8 @@ def get_programs_and_courses(output):
 
 
 def crawl_courses(output):
-    courses_df = pd.read_json(open("../../../../data/crawling-output/unamur_courses.json", "r")).drop_duplicates()
+    courses_df = pd.read_json(
+        open("../../../../data/crawling-output/unamur_courses.json", "r")).drop_duplicates()
 
     # Scrap each course using scrappy
     if os.path.exists(output):

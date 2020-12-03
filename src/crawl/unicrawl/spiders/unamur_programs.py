@@ -25,12 +25,15 @@ class UNamurProgramSpider(scrapy.Spider):
         faculties = response.xpath(f"//div[@id='tab-{YEAR}']//h3/a/text()").getall()
         for faculty in faculties:
             # For each faculty get its programs
-            programs_links = response.xpath(f"//div[@id='tab-{YEAR}']//h3[a[contains(text(), \"{faculty}\")]]"
-                                            f"//following::div[1]/div/a/@href").getall()
-            programs_names = response.xpath(f"//div[@id='tab-{YEAR}']//h3[a[contains(text(), \"{faculty}\")]]"
-                                            f"//following::div[1]/div/a/text()").getall()
+            programs_links = response.xpath(
+                f"//div[@id='tab-{YEAR}']//h3[a[contains(text(), \"{faculty}\")]]"
+                f"//following::div[1]/div/a/@href").getall()
+            programs_names = response.xpath(
+                f"//div[@id='tab-{YEAR}']//h3[a[contains(text(), \"{faculty}\")]]"
+                f"//following::div[1]/div/a/text()").getall()
             for program_name, programs_link in zip(programs_names, programs_links):
-                # Scrap only bachelor and master programs # TODO: devrait-on rajouter les certificats?
+                # Scrap only bachelor and master programs
+                # TODO: devrait-on rajouter les certificats?
                 if program_name.startswith("Bachelier") or program_name.startswith("Master"):
                     cycle = 'bachelor' if program_name.startswith("Bachelier") else 'master'
                     base_dict = {"name": program_name, "faculty": faculty, "cycle": cycle}
@@ -61,7 +64,9 @@ class UNamurProgramSpider(scrapy.Spider):
             ects_slimmed = []
             # ects are given for each block -> keep only one value
             for i in range(len(codes)):
-                course_ects = [ects[i*3], ects[i*3+1], ects[i*3+2]] if nb_blocks == 3 else [ects[i*2], ects[i*2+1]]
+                course_ects = [ects[i * 3], ects[i * 3 + 1],
+                               ects[i * 3 + 2]] if nb_blocks == 3 else [ects[i * 2],
+                                                                        ects[i * 2 + 1]]
                 course_ects = [e for e in course_ects if len(e)]
                 # If there is still a different number of ects only keep the first one
                 ects_slimmed += [list(set(course_ects))[0]]
@@ -78,7 +83,6 @@ class UNamurProgramSpider(scrapy.Spider):
 
 
 def get_programs(output):
-
     # Get list of programs using scrappy
     if os.path.exists(output):
         os.remove(output)
@@ -92,6 +96,5 @@ def get_programs(output):
 
 
 if __name__ == '__main__':
-
     output_ = f"../../data/crawling-output/unamur_programs_{YEAR}.json"
     get_programs(output_)

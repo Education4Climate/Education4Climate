@@ -39,10 +39,10 @@ class ULBSpider(scrapy.Spider, ABC):
             }
 
             yield scrapy.Request(
-                    url=COURS_URL.format(YEAR, cours),
-                    callback=self.parse_cours,
-                    cb_kwargs={'base_dict': base_dict}
-                )
+                url=COURS_URL.format(YEAR, cours),
+                callback=self.parse_cours,
+                cb_kwargs={'base_dict': base_dict}
+            )
 
     @staticmethod
     def parse_cours(response, base_dict):

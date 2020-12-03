@@ -17,7 +17,8 @@ class UantwerpSpider(scrapy.Spider):
         yield scrapy.Request(url=base_url, callback=self.parse)
 
     def parse(self, response):
-        for href in response.xpath("//span[contains(text(), 'master')]/preceding::h2/a/@href").getall():
+        for href in response.xpath(
+                "//span[contains(text(), 'master')]/preceding::h2/a/@href").getall():
             yield response.follow(href + 'study-programme/', self.parse_formation)
 
     def parse_formation(self, response):
@@ -61,7 +62,8 @@ class UantwerpSpider(scrapy.Spider):
                 data[field] = u.cleanup(response.xpath(xpath_str).get())
             except Exception as e:
                 raise ValueError("Xpath {} does not work for field {}. "
-                                 "\n More information on the error : {}".format(xpath_str, field, e))
+                                 "\n More information on the error : {}".format(xpath_str, field,
+                                                                                e))
         data['url'] = response.url
         yield data
 
@@ -80,7 +82,8 @@ def main(output):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Crawl the Uantwerp courses catalog.')
-    parser.add_argument("--output", default="output.json".format(__file__), type=str, help="Output file")
+    parser.add_argument("--output", default="output.json".format(__file__), type=str,
+                        help="Output file")
     parser.add_argument("--year", default="2020", type=str, help="Academic Year")
     args = parser.parse_args()
     main(args.output)

@@ -26,7 +26,9 @@ def get_courses():
     ulg_driver.driver.find_elements_by_xpath("//a[contains(@href,'#unite')]")[0].click()
     # Find buttons and click on the 'Rechercher une unité d'enseignement' one
     buttons = ulg_driver.driver.find_elements_by_xpath("//button[@type='submit']")
-    button = np.array(buttons)[[button.text == "Rechercher une unité d'enseignement" for button in buttons]][0]
+    button = np.array(buttons)[
+        [button.text == "Rechercher une unité d'enseignement" for button in buttons]
+    ][0]
     button.click()
 
     # Browse list of courses
@@ -40,7 +42,7 @@ def get_courses():
         # courses_df.loc[i, "Langue"] = elements[1].text
         # title = course.find_element_by_class_name("u-courses-results__row__cell--title")
         # courses_df.loc[i, "Intitulé"] = title.text
-        link = course.find_element_by_class_name("u-courses-results__row__cell--link")\
+        link = course.find_element_by_class_name("u-courses-results__row__cell--link") \
             .find_element_by_css_selector("a").get_attribute('href')
         courses_df.loc[i, "url"] = link
     ulg_driver.delete_driver()
@@ -59,12 +61,12 @@ class ULiegeSpider(scrapy.Spider):
         for url in self.myurls:
             yield scrapy.Request(url, self.parse)
 
-    @staticmethod
-    def parse(response):
+    def parse(self, response):
 
         class_name = u.cleanup(response.css("h1::text").get())
-        year_and_short_name = u.cleanup(response.xpath("//div[@class='u-courses-header__headline']/text()")
-                                            .get()).strip(" ").split("/")
+        year_and_short_name = u.cleanup(
+            response.xpath("//div[@class='u-courses-header__headline']/text()")
+            .get()).strip(" ").split("/")
         short_name = year_and_short_name[1].strip(" ")
         years = year_and_short_name[0]
 
@@ -79,7 +81,7 @@ class ULiegeSpider(scrapy.Spider):
 
         # Language
         languages = u.cleanup(response.xpath(".//section[h3[contains(text(), "
-                                                 "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
+                                             "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
         languages_code = {"Langue française": 'fr',
                           "Langue anglaise": 'en',
                           "Langue allemande": 'de',
@@ -90,11 +92,12 @@ class ULiegeSpider(scrapy.Spider):
 
         # Content of the class
         content = u.cleanup(response.xpath(".//section[h3[contains(text(), "
-                                               "\"Contenus de l'unité d'enseignement\")]]").get())[35:]
+                                           "\"Contenus de l'unité d'enseignement\")]]").get())[35:]
 
         # Cycle and credits
-        credit_lines = u.cleanup(response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
-                                                    "//tr/td[@class='u-courses-results__row__cell--list']").getall())
+        credit_lines = u.cleanup(
+            response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
+                           "//tr/td[@class='u-courses-results__row__cell--list']").getall())
         cycles = []
         ects = []
         programs = []
@@ -136,19 +139,22 @@ class ULiegeSpider(scrapy.Spider):
         if len(program_links) != 0:
 
             for link in program_links:
-                yield response.follow(link, callback=self.parse_faculty_and_campus, meta=data, dont_filter=True)
+                yield response.follow(link, callback=self.parse_faculty_and_campus, meta=data,
+                                      dont_filter=True)
         else:
             yield data
 
-    def parse_faculty_and_campus(self, response):
+    @staticmethod
+    def parse_faculty_and_campus(response):
         data = response.meta
         # Campus
-        data['campus'] = u.cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
+        data['campus'] = u.cleanup(
+            response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
 
         # Faculty
         faculty_link = u.cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
-                                                    "//li/a[@class='u-link' and "
-                                                    "contains(text(), 'La Faculté')]/@href").get())
+                                                "//li/a[@class='u-link' and "
+                                                "contains(text(), 'La Faculté')]/@href").get())
         # Convert address to faculty
         faculty_dict = {"archi": "Faculté d'Architecture",
                         "droit": "Faculté de Droit, Science politique et Criminologie",
@@ -162,7 +168,8 @@ class ULiegeSpider(scrapy.Spider):
                         "facsa": "Faculté des Sciences Appliquées",
                         "ishs": "Faculté des Sciences Sociales"
                         }
-        data["faculty"] = faculty_dict[[key for key in faculty_dict.keys() if key in faculty_link][0]]
+        data["faculty"] = faculty_dict[
+            [key for key in faculty_dict.keys() if key in faculty_link][0]]
 
         keys = ['name', 'id', 'year', 'teacher', 'language', 'cycle',
                 'ects', 'content', 'url', 'faculty', 'campus', 'program']
@@ -171,7 +178,6 @@ class ULiegeSpider(scrapy.Spider):
 
 
 def main(output):
-
     # Use selenium to retrieve courses
     courses_file = "../../../../data/crawling-output/uliege_courses.json"
     if not os.path.exists(courses_file):

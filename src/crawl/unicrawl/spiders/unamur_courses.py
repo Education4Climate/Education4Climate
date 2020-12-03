@@ -13,8 +13,7 @@ from config.settings import YEAR
 
 sys.path.append(os.getcwd())
 
-
-BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}" # first format is code course, second is year
+BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format is code course, second is year
 PROG_DATA_PATH = Path(f'../../data/crawling-output/unamur_programs_{YEAR}.json')
 
 
@@ -51,7 +50,6 @@ class UNamurCourseSpider(scrapy.Spider):
                           "Espagnol / Español": "es"}
         languages = [languages_code[lang] for lang in languages]
 
-
         # TODO: too much content selected?
         content = u.cleanup(response.xpath("//div[@class='tab-content']").get())
 
@@ -75,7 +73,8 @@ class UNamurCourseSpider(scrapy.Spider):
         organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
         campus = ''
         if "Lieu de l'activité" in organisation:
-            campus = u.cleanup(organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
+            campus = u.cleanup(
+                organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
         faculty = u.cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
 
         data = {
@@ -96,7 +95,6 @@ class UNamurCourseSpider(scrapy.Spider):
 
 
 def crawl_courses(output):
-
     # Scrap each course using scrappy
     if os.path.exists(output):
         os.remove(output)
@@ -111,7 +109,6 @@ def crawl_courses(output):
 
 
 if __name__ == '__main__':
-
     # output_ = f'../data/crawling-output/unamur_courses_{YEAR}.json'
     output_ = "output.json"
     crawl_courses(output_)

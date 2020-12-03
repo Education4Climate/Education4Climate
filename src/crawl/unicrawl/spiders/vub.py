@@ -24,7 +24,8 @@ class VUBSpider(scrapy.Spider):
         title2 = response.xpath("//div[@class='rd-inner-slide']/h1/text()")[0].extract().strip()
 
         # TODO : Récupérer la data-key depuis le menu
-        content_bloc = response.xpath("//div[@data-key='tab_36996']/section[contains(@class, 'pg-text')]//p/text()")
+        content_bloc = response.xpath(
+            "//div[@data-key='tab_36996']/section[contains(@class, 'pg-text')]//p/text()")
         content = [c.extract() for c in content_bloc]
 
         data = {
