@@ -1,84 +1,35 @@
 # -*- coding: utf-8 -*-
 
 import os
-import time
+from pathlib import Path
 
-import numpy as np
 import pandas as pd
 
-from src.crawl.config.driver import Driver
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
-
+from config.settings import YEAR
 import config.utils as u
+
 import sys
 sys.path.append(os.getcwd())
 
 
-def get_programs():
-
-    unamur_driver = Driver()
-    unamur_driver.init()
-
-    unamur_driver.driver.get("https://directory.unamur.be/teaching/programmes")
-    # Get all faculties
-    year = 2020
-    faculties = unamur_driver.driver.find_elements_by_xpath(f"//div[@id='tab-{year}']//h3/a")
-    for faculty in faculties:
-        time.sleep(0.1)
-        faculty.click()
-
-    # Get formation types (keep only the ones starting with Bachelier and Master)
-    formation_types = unamur_driver.driver.find_elements_by_xpath(f"//div[@id='tab-{year}']//h4/a")
-    formation_types = np.array(formation_types)[[f.text.startswith("Bachelier")
-                                       or f.text.startswith("Master") for f in formation_types]].tolist()
-    for ft in formation_types:
-        time.sleep(0.1)
-        ft.click()
-
-    # Get all formations
-    programs = unamur_driver.driver.find_elements_by_xpath(f"//div[@id='tab-{year}']//div//div//a")
-    programs = np.array(programs)[[p.text != "" for p in programs]].tolist()
-
-    programs_df = pd.DataFrame(index=range(len(programs)), columns=["nom", "url"])
-    programs_df.nom = [f.text for f in programs]
-    programs_df.url = [f.get_attribute('href') for f in programs]
-
-    unamur_driver.delete_driver()
-
-    return programs_df
-
-
-class UNamurProgramSpider(scrapy.Spider):
-    name = "unamur-program"
-
-    def __init__(self, *args, **kwargs):
-        self.myurls = kwargs.get('myurls', [])
-        super(UNamurProgramSpider, self).__init__(*args, **kwargs)
-
-    def start_requests(self):
-        for url in self.myurls:
-            yield scrapy.Request(url, self.parse)
-
-    @staticmethod
-    def parse(response):
-        codes = u.cleanup(response.xpath("//tr//td[@class='code']").getall())
-        links = u.cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall())
-        for code, link in zip(codes, links):
-            yield {'code': code, 'url': link}
+BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}" # first format is code course, second is year
+PROG_DATA_PATH = Path(f'../../data/crawling-output/unamur_programs_{YEAR}.json')
 
 
 class UNamurCourseSpider(scrapy.Spider):
     name = "unamur-course"
 
-    def __init__(self, *args, **kwargs):
-        self.myurls = kwargs.get('myurls', [])
-        super(UNamurCourseSpider, self).__init__(*args, **kwargs)
-
     def start_requests(self):
-        for url in self.myurls:
-            yield scrapy.Request(url, self.parse)
+
+        courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
+        courses_ids_list = sorted(list(set(courses_ids.sum())))
+
+        for course_id in courses_ids_list:
+            yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse)
+            exit()
 
     def parse(self, response):
         name_and_id = u.cleanup(response.css("h1::text").get())
@@ -145,27 +96,7 @@ class UNamurCourseSpider(scrapy.Spider):
         yield data
 
 
-def get_programs_and_courses(output):
-
-    # Get list of programs using selenium
-    programs_df = get_programs()
-    print("Obtained list of programs.")
-
-    # Get list of course using scrappy
-    if os.path.exists(output):
-        os.remove(output)
-    process = CrawlerProcess({
-        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
-        'FEED_FORMAT': 'json',
-        'FEED_URI': output
-    })
-    process.crawl(UNamurProgramSpider, myurls=programs_df["url"].to_list())
-    process.start()  # the script will block here until the crawling is finished
-    print("Obtained list of courses.")
-
-
 def crawl_courses(output):
-    courses_df = pd.read_json(open("../../data/crawling-output/unamur_courses.json", "r")).drop_duplicates()
 
     # Scrap each course using scrappy
     if os.path.exists(output):
@@ -175,17 +106,13 @@ def crawl_courses(output):
         'FEED_FORMAT': 'json',
         'FEED_URI': output
     })
-    process.crawl(UNamurCourseSpider, myurls=courses_df["url"].to_list())
+    process.crawl(UNamurCourseSpider)
     process.start()  # the script will block here until the crawling is finished
     print("Crawled all courses.")
 
 
 if __name__ == '__main__':
 
-    # TODO: is there a way to execute the two crawlers in the same run?
-    if 0:
-        output_ = "../data/crawling-output/unamur_courses.json"
-        get_programs_and_courses(output_)
-    if 1:
-        output_ = '../data/crawling-output/unamur_2020.json'
-        crawl_courses(output_)
+    # output_ = f'../data/crawling-output/unamur_courses_{YEAR}.json'
+    output_ = "output.json"
+    crawl_courses(output_)
