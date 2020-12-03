@@ -1,5 +1,5 @@
-import scrapy
 import bs4
+import scrapy
 
 from config.settings import YEAR
 

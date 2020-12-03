@@ -1,16 +1,15 @@
+import argparse
 import os
+import sys
 
-import pandas as pd
 import numpy as np
-
-from src.crawl.config.driver import Driver
+import pandas as pd
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
 import config.utils as u
+from config.driver import Driver
 
-import argparse
-import sys
 sys.path.append(os.getcwd())
 
 

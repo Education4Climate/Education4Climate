@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 from pathlib import Path
 
 import pandas as pd
-
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
-from config.settings import YEAR
 import config.utils as u
+from config.settings import YEAR
 
-import sys
 sys.path.append(os.getcwd())
 
 

@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 
-import os
-import time
-import re
 import json
-import progressbar
-import src.crawl.config.settings as s
-
-from src.crawl.config.driver import Driver
-
+import os
+import re
 import sys
+import time
+
+import progressbar
+
+import config.settings as s
+from config.driver import Driver
 
 sys.path.append(os.getcwd())
 

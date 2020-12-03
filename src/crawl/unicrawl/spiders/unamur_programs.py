@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
-from config.settings import YEAR
 import config.utils as u
+from config.settings import YEAR
 
-import sys
 sys.path.append(os.getcwd())
 
 BASE_URL = "https://directory.unamur.be/teaching/programmes"

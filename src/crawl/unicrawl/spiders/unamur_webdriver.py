@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import time
 
 import numpy as np
 import pandas as pd
-
-from src.crawl.config.driver import Driver
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
-
 import config.utils as u
-import sys
+from config.driver import Driver
+
 sys.path.append(os.getcwd())
 
 

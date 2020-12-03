@@ -2,11 +2,11 @@
 
 import argparse
 
-import config.settings as s
-import config.utils as u
-
 import scrapy
 from scrapy.crawler import CrawlerProcess
+
+import config.settings as s
+import config.utils as u
 
 
 class UantwerpSpider(scrapy.Spider):

@@ -1,8 +1,7 @@
-import utils as u
-import settings as s
-
 import re
 
+import config.settings as s
+import utils as u
 
 # Read PDF file
 page_content = u.read_pdf()

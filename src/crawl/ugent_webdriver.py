@@ -4,12 +4,13 @@
 
 # importing required modules
 
+import os
+import sys
+import time
+
 import config.settings as s
 from config.driver import Driver
 
-import time
-import os
-import sys
 sys.path.append(os.getcwd())
 
 program_urls = {"Bachelor": "BACH/BACH.html", "Master": "MABA/MABA.html"}

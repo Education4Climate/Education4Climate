@@ -1,11 +1,11 @@
 import json
-from pathlib import Path
 import urllib.parse
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
-from src.crawl.config.settings import YEAR
+from config.settings import YEAR
 
 PATH_COURS_URL = urllib.parse.quote(
     '/ws/ksup/course-programmes?anac={}&mnemonic={}&lang=fr',
