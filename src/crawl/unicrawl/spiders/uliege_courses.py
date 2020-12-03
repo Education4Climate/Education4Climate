@@ -174,7 +174,7 @@ class ULiegeSpider(scrapy.Spider):
 def main(output):
 
     # Use selenium to retrieve courses
-    courses_file = "../../data/crawling-output/uliege_courses.json"
+    courses_file = "../../../../data/crawling-output/uliege_courses.json"
     if not os.path.exists(courses_file):
         courses_df = get_courses()
         courses_df.to_json(courses_file, orient='records', indent=1)

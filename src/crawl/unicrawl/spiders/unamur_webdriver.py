@@ -165,7 +165,7 @@ def get_programs_and_courses(output):
 
 
 def crawl_courses(output):
-    courses_df = pd.read_json(open("../../data/crawling-output/unamur_courses.json", "r")).drop_duplicates()
+    courses_df = pd.read_json(open("../../../../data/crawling-output/unamur_courses.json", "r")).drop_duplicates()
 
     # Scrap each course using scrappy
     if os.path.exists(output):
