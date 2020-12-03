@@ -1,6 +1,14 @@
 # Macros
 
 YEAR = 2020
+
+CRAWLER_FOLDER = src/crawl
+SCORING_FOLDER = src/score
+
+CRAWLING_OUTPUT_FOLDER = data/crawling-output
+SCORING_OUTPUT_FOLDER = data/scoring-output
+
+
 ULB_URL="https://www.ulb.be/fr/programme/lien-vers-catalogue-des-programmes"
 UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-${YEAR}.html"
 UANTWERP_URL="https://www.uantwerpen.be/en/study/education-and-training/"
@@ -27,41 +35,41 @@ test-kuleuven:
 # ------------------------------------------------------------------
 
 crawl-ucl:
-	if [ -f data/ucl_${YEAR}.json ]; then rm data/ucl_${YEAR}.json; fi
-	python3 crawl/ucl.py --output data/crawling-results/ucl_${YEAR}.json --year ${YEAR}
+	if [ -f ${CRAWLING_OUTPUT_FOLDER}/ucl_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/ucl_${YEAR}.json; fi
+	python3 ${CRAWLER_FOLDER}/ucl.py --output ${CRAWLING_OUTPUT_FOLDER}/ucl_${YEAR}.json --year ${YEAR}
 
 crawl-ulb:
 	if [ -f data/ulb_${YEAR}.json ]; then rm data/ulb_${YEAR}.json; fi
-	python3 crawl/ulb.py --output data/crawling-results/ulb_${YEAR}.json --year ${YEAR}
+	python3 ${CRAWLER_FOLDER}/ulb.py --output ${CRAWLING_OUTPUT_FOLDER}/ulb_${YEAR}.json --year ${YEAR}
 
 crawl-uantwerp:
-	if [ -f data/uantwerp_${YEAR}.json ]; then rm data/uantwerp_${YEAR}.json; fi
-	python3 crawl/uantwerp.py --output data/crawling-results/uantwerp_${YEAR}.json --year ${YEAR}
+	if [ -f ${CRAWLING_OUTPUT_FOLDER}/uantwerp_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/uantwerp_${YEAR}.json; fi
+	python3 ${CRAWLER_FOLDER}//uantwerp.py --output ${CRAWLING_OUTPUT_FOLDER}/uantwerp_${YEAR}.json --year ${YEAR}
 
 crawl-ugent:
-	if [ -f data/ugent_${YEAR}.json ]; then rm data/ugent_${YEAR}.json; fi
-	python3 crawl/ugent_webdriver.py --output data/crawling-results/ugent_${YEAR}.json --year ${YEAR}
+	if [ -f ${CRAWLING_OUTPUT_FOLDER}/ugent_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/ugent_${YEAR}.json; fi
+	python3 ${CRAWLER_FOLDER}/ugent_webdriver.py --output ${CRAWLING_OUTPUT_FOLDER}/ugent_${YEAR}.json --year ${YEAR}
 
 crawl-kuleuven:
-	if [ -f data/kuleuven_${YEAR}.json ]; then rm data/kuleuven_${YEAR}.json; fi
-	python3 crawl/kuleuven.py --output data/crawling-results/kuleuven_${YEAR}.json --year ${YEAR}
+	if [ -f ${CRAWLING_OUTPUT_FOLDER}/kuleuven_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/kuleuven_${YEAR}.json; fi
+	python3 ${CRAWLER_FOLDER}/kuleuven.py --output ${CRAWLING_OUTPUT_FOLDER}/kuleuven_${YEAR}.json --year ${YEAR}
 
 #--------------------------------------------------------------------
 
 score-ucl:
-	python score/score_script.py --input data/crawling-results/ucl_courses_${YEAR}.json --output data/ucl_scoring_${YEAR}.csv
+	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/ucl_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/ucl_scoring_${YEAR}.csv
 
 score-ulb:
-	python score/score_script.py --input data/crawling-results/ulb_courses_${YEAR}.json --output data/ulb_scoring_${YEAR}.csv
+	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/ulb_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/ulb_scoring_${YEAR}.csv
 
 score-uantwerp:
-	python score/score_script.py --input data/crawling-results/uantwerp_courses_${YEAR}.json --output data/uantwerp_scoring_${YEAR}.csv
+	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/uantwerp_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/uantwerp_scoring_${YEAR}.csv
 
 score-ugent:
-	python score/score_script.py --input data/crawling-results/ugent_courses_${YEAR}.json --output data/ugent_scoring_${YEAR}.csv
+	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/ugent_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/ugent_scoring_${YEAR}.csv
 
 score-kuleuven:
-	python score/score_script.py --input data/crawling-results/kuleuven_courses_${YEAR}.json --output data/kuleuven_scoring_${YEAR}.csv
+	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/kuleuven_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/kuleuven_scoring_${YEAR}.csv
 
 
 # Other useful commands ---------------------------------------------------

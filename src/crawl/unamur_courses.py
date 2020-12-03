@@ -6,7 +6,7 @@ import time
 import numpy as np
 import pandas as pd
 
-from crawl.config.driver import Driver
+from src.crawl.config.driver import Driver
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
@@ -165,7 +165,7 @@ def get_programs_and_courses(output):
 
 
 def crawl_courses(output):
-    courses_df = pd.read_json(open("../data/crawling-results/unamur_courses.json", "r")).drop_duplicates()
+    courses_df = pd.read_json(open("../../data/crawling-output/unamur_courses.json", "r")).drop_duplicates()
 
     # Scrap each course using scrappy
     if os.path.exists(output):
@@ -184,8 +184,8 @@ if __name__ == '__main__':
 
     # TODO: is there a way to execute the two crawlers in the same run?
     if 0:
-        output_ = "../data/crawling-results/unamur_courses.json"
+        output_ = "../data/crawling-output/unamur_courses.json"
         get_programs_and_courses(output_)
     if 1:
-        output_ = '../data/crawling-results/unamur_2020.json'
+        output_ = '../data/crawling-output/unamur_2020.json'
         crawl_courses(output_)

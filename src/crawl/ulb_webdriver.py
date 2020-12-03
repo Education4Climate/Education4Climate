@@ -5,9 +5,9 @@ import time
 import re
 import json
 import progressbar
-import crawl.config.settings as s
+import src.crawl.config.settings as s
 
-from crawl.config.driver import Driver
+from src.crawl.config.driver import Driver
 
 import sys
 
@@ -73,11 +73,11 @@ if __name__ == "__main__":
     ulb_driver.init()
 
     # Extract courses (e.g. 'CLAS-B156') and programs (e.g. 'Master') ALREADY crawled -------------------------------
-    program_fh = open("data/crawling-results/ulb_programs.json")
-    courses_fh = open("data/crawling-results/ulb_courses.json")
+    program_fh = open("data/crawling-output/ulb_programs.json")
+    courses_fh = open("data/crawling-output/ulb_courses.json")
     courses = {e["shortname"]: e for e in [json.loads(line) for line in courses_fh.readlines()]}
     programs_saved = {e["shortname"]: e for e in
-                      [json.loads(line) for line in open("data/crawling-results/ulb_programs.json").readlines()]}
+                      [json.loads(line) for line in open("data/crawling-output/ulb_programs.json").readlines()]}
 
     program_fh.close()
     courses_fh.close()
@@ -164,8 +164,8 @@ if __name__ == "__main__":
             program_fh.write("\n")
             program_fh.flush()
         bar.finish()
-    # json.dump(programs,open("data/crawling-results/ulb_programs.json","w"))
-    # json.dump(courses,open("data/crawling-results/ulb_courses.json","w"))
+    # json.dump(programs,open("data/crawling-output/ulb_programs.json","w"))
+    # json.dump(courses,open("data/crawling-output/ulb_courses.json","w"))
 
     ulb_driver.delete_driver()
     courses_fh.close()

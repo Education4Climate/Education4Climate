@@ -41,7 +41,7 @@ def compute_odd_score(words,odds_patterns):
         else: scores[odd]=False
     return scores
 
-# -------------------------- SCORE COMPUTATION --------------------------------
+# -------------------------- PATTERNS LOADING --------------------------------
 
 def get_shift_patterns(languages):
     patterns={}
@@ -79,7 +79,12 @@ def get_climate_patterns(languages):
 # -------------------------- MAIN --------------------------------
 
 def main(args):
+    #TODO
+    #/!\ languages are fr, en, nl (related to sheets to be loaded in settings.py
+    # → use spacy download fr | en | nl  to avoid plain name of models (fr_core_news_sm)
+    #languages=["fr","en","fr"]
     languages={"fr_core_news_sm": "fr"}#, "en_core_web_sm": 'en'} # Commented for testing purpose
+
     #nlp_models={lg:spacy.load(lg) for lg in languages}
 
     # Loading crawling results
