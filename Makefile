@@ -49,16 +49,22 @@ crawl-kuleuven:
 #--------------------------------------------------------------------
 
 score-ucl:
-	python3 process/score_script.py --input data/crawling-results/ucl_${YEAR}.json --output data/ucl_scoring_${YEAR}.csv --key shortname --field content
+	python score/score_script.py --input data/crawling-results/ucl_courses_${YEAR}.json --output data/ucl_scoring_${YEAR}.csv
 
 score-ulb:
-	python3 process/score_script.py --input data/crawling-results/ulb_${YEAR}.json --output data/ulb_scoring_${YEAR}.csv --key shortname --field content
+	python score/score_script.py --input data/crawling-results/ulb_courses_${YEAR}.json --output data/ulb_scoring_${YEAR}.csv
 
 score-uantwerp:
-	python3 process/score_script.py --input data/crawling-results/uantwerp_${YEAR}.json --output data/uantwerp_scoring_${YEAR}.csv --key shortname --field content
+	python score/score_script.py --input data/crawling-results/uantwerp_courses_${YEAR}.json --output data/uantwerp_scoring_${YEAR}.csv
 
 score-ugent:
-	python3 process/score_script.py --input data/crawling-results/ugent_${YEAR}.json --output data/ugent_scoring_${YEAR}.csv --key shortname --field content
+	python score/score_script.py --input data/crawling-results/ugent_courses_${YEAR}.json --output data/ugent_scoring_${YEAR}.csv
 
 score-kuleuven:
-	python3 process/score_script.py --input data/crawling-results/kuleuven_${YEAR}.json --output data/kuleuven_scoring_${YEAR}.csv --key shortname --field content
+	python score/score_script.py --input data/crawling-results/kuleuven_courses_${YEAR}.json --output data/kuleuven_scoring_${YEAR}.csv
+
+
+# Other useful commands ---------------------------------------------------
+
+download_spacy_en:
+	python -m spacy download en

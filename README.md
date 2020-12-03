@@ -51,7 +51,7 @@ Arguments:
 - *field*: name of the field to use as input for building the word count.
 
 ````bash
-python process/wordcount.py --input data/ucl_courses.json --output tag_cloud.csv --field content
+python score/wordcount.py --input data/ucl_courses.json --output tag_cloud.csv --field content
 ````
 
 ### Scoring
@@ -65,7 +65,7 @@ Arguments:
 - *key*: name of field to use as reference key
 
 ```bash
-python process/score.py --input data/ucl_courses.json --output test.csv --key shortname --field content
+python score/score.py --input data/ucl_courses.json --output test.csv --key shortname --field content
 ```
 
 ## Using the Scrapy shell
