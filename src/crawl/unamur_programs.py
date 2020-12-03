@@ -5,19 +5,19 @@ import os
 import scrapy
 from scrapy.crawler import CrawlerProcess
 
+from config.settings import YEAR
 import config.utils as u
+
 import sys
 sys.path.append(os.getcwd())
 
-
-YEAR = 2020
+BASE_URL = "https://directory.unamur.be/teaching/programmes"
 
 
 class UNamurProgramSpider(scrapy.Spider):
     name = "unamur-program"
 
     def start_requests(self):
-        BASE_URL = "https://directory.unamur.be/teaching/programmes"
         yield scrapy.Request(BASE_URL, self.parse)
 
     def parse(self, response):
@@ -69,9 +69,9 @@ class UNamurProgramSpider(scrapy.Spider):
         cur_dict = {'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked
                     'id': '',  # Programs do not seem to have an id
                     'courses': codes,
-                    'ects': ects_slimmed,
-                    'coursesnb': len(codes),
-                    'ectsnb': len(ects_slimmed)
+                    'ects': ects_slimmed  # ,
+                    # 'coursesnb': len(codes),
+                    # 'ectsnb': len(ects_slimmed)
                     }
 
         yield {**base_dict, **cur_dict}
@@ -89,10 +89,9 @@ def get_programs(output):
     })
     process.crawl(UNamurProgramSpider)
     process.start()  # the script will block here until the crawling is finished
-    print("Obtained list of programs.")
 
 
 if __name__ == '__main__':
 
-    output_ = "../data/crawling-results/unamur_programs.json"
+    output_ = f"../../data/crawling-output/unamur_programs_{YEAR}.json"
     get_programs(output_)
