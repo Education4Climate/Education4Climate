@@ -11,6 +11,13 @@ from config.settings import YEAR
 BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format is code course, second is year
 PROG_DATA_PATH = Path(f'../../data/crawling-output/unamur_programs_{YEAR}.json')
 
+LANGUAGES_DICT = {"Français": 'fr',
+                  "Anglais / English": 'en',
+                  "Allemand / Deutsch": 'de',
+                  "Néerlandais / Nederlands": 'nl',
+                  "Italien": "it",
+                  "Espagnol / Español": "es"}
+
 
 class UNamurCourseSpider(scrapy.Spider, ABC):
     name = "unamur-courses"
@@ -25,13 +32,12 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
 
         for course_id in courses_ids_list:
             yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse_main)
-            break
 
     @staticmethod
     def parse_main(response):
-        name_and_id = u.cleanup(response.css("h1::text").get())
+        name_and_id = cleanup(response.css("h1::text").get())
         name = name_and_id.split("[")[0]
-        id = name_and_id.split("[")[1].strip("]")
+        course_id = name_and_id.split("[")[1].strip("]")
 
         years = cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         # TODO: do we keep the 'suppléant'?
@@ -40,14 +46,8 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         # TODO: cours en plusieurs langues?
         languages = cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
         languages = [lang.split(": ")[1] for lang in languages]
-        # TODO: check all langagae used
-        languages_code = {"Français": 'fr',
-                          "Anglais / English": 'en',
-                          "Allemand / Deutsch": 'de',
-                          "Néerlandais / Nederlands": 'nl',
-                          "Italien": "it",
-                          "Espagnol / Español": "es"}
-        languages = [languages_code[lang] for lang in languages]
+        # TODO: check all language used
+        languages = [LANGUAGES_DICT[lang] for lang in languages]
 
         # TODO: too much content selected?
         content = cleanup(response.xpath("//div[@class='tab-content']").get())
@@ -78,7 +78,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
 
         data = {
             'name': name,
-            'id': id,
+            'id': course_id,
             'year': years,
             'teacher': teachers,
             'language': languages,
