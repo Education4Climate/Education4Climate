@@ -1,7 +1,7 @@
-scrapy~=1.8.0
-argparse~=1.2.1
-w3lib~=1.22.0
-numpy
+scrapy
+argparse
+w3lib
+numpy==1.19.3
 nltk
 spacy
 sklearn
@@ -14,3 +14,4 @@ PyPDF2
 pandas
 bs4
 langdetect
+tqdm
