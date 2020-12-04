@@ -1,3 +1,5 @@
+from abc import ABC
+
 import scrapy
 
 import config.settings as s
@@ -6,7 +8,7 @@ import config.settings as s
 # import config.utils as u
 
 
-class VUBSpider(scrapy.Spider):
+class VUBSpider(scrapy.Spider, ABC):
     name = "vub"
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/vub_courses_{s.YEAR}.json',

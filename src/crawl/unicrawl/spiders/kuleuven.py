@@ -1,3 +1,5 @@
+from abc import ABC
+
 import bs4
 import scrapy
 
@@ -14,7 +16,7 @@ DICT_LANGUES = {
 }
 
 
-class KuleuvenSpider(scrapy.Spider):
+class KuleuvenSpider(scrapy.Spider, ABC):
     name = 'kuleuven'
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/kuleuven_courses_{YEAR}.json',

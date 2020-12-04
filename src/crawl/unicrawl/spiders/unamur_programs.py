@@ -2,6 +2,7 @@
 
 import os
 import sys
+from abc import ABC
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
@@ -14,7 +15,7 @@ sys.path.append(os.getcwd())
 BASE_URL = "https://directory.unamur.be/teaching/programmes"
 
 
-class UNamurProgramSpider(scrapy.Spider):
+class UNamurProgramSpider(scrapy.Spider, ABC):
     name = "unamur-programs"
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/unamur_programs_{YEAR}.json',

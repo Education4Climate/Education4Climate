@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import argparse
+from abc import ABC
 
 import scrapy
 from scrapy.crawler import CrawlerProcess
@@ -9,7 +10,7 @@ import config.settings as s
 import config.utils as u
 
 
-class UantwerpSpider(scrapy.Spider):
+class UantwerpSpider(scrapy.Spider, ABC):
     name = "uantwerp"
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/uantwerp_courses_{s.YEAR}.json',

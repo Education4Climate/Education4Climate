@@ -2,6 +2,7 @@
 
 import os
 import sys
+from abc import ABC
 from pathlib import Path
 
 import pandas as pd
@@ -17,7 +18,7 @@ BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format 
 PROG_DATA_PATH = Path(f'../../data/crawling-output/unamur_programs_{YEAR}.json')
 
 
-class UNamurCourseSpider(scrapy.Spider):
+class UNamurCourseSpider(scrapy.Spider, ABC):
     name = "unamur-courses"
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/unamur_courses_{YEAR}.json',

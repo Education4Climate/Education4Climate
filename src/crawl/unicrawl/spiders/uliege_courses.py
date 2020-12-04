@@ -1,6 +1,7 @@
 import argparse
 import os
 import sys
+from abc import ABC
 
 import numpy as np
 import pandas as pd
@@ -51,7 +52,7 @@ def get_courses():
     return courses_df
 
 
-class ULiegeSpider(scrapy.Spider):
+class ULiegeSpider(scrapy.Spider, ABC):
     name = "uliege-courses"
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/uliege_courses_{YEAR}.json',
