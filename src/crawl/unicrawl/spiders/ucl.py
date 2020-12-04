@@ -6,6 +6,8 @@ import scrapy
 import config.settings as s
 import config.utils as u
 
+UCL_URL = f"https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-{s.YEAR}.html"
+
 
 class UclSpider(scrapy.Spider, ABC):
     name = "ucl"
@@ -14,7 +16,7 @@ class UclSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        base_url = s.UCL_URL
+        base_url = UCL_URL
         yield scrapy.Request(url=base_url, callback=self.parse_main)
 
     def parse_main(self, response):

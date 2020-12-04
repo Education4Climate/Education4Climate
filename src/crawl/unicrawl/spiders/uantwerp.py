@@ -6,6 +6,8 @@ import scrapy
 import config.settings as s
 import config.utils as u
 
+UANTWERP_URL = "https://www.uantwerpen.be/en/study/education-and-training/"
+
 
 class UantwerpSpider(scrapy.Spider, ABC):
     name = "uantwerp"
@@ -14,7 +16,7 @@ class UantwerpSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        base_url = s.UANTWERP_URL
+        base_url = UANTWERP_URL
         yield scrapy.Request(url=base_url, callback=self.parse_main)
 
     def parse_main(self, response):
@@ -62,9 +64,10 @@ class UantwerpSpider(scrapy.Spider, ABC):
             try:
                 data[field] = u.cleanup(response.xpath(xpath_str).get())
             except Exception as e:
-                raise ValueError("Xpath {} does not work for field {}. "
-                                 "\n More information on the error : {}".format(xpath_str, field,
-                                                                                e))
+                raise ValueError(
+                    f"Xpath {xpath_str} does not work for field {field}.\n"
+                    f"More information on the error : {e}"
+                )
         data['url'] = response.url
         yield data
 

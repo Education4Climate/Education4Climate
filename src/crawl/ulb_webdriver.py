@@ -6,8 +6,11 @@ import time
 
 import progressbar
 
-import config.settings as s
 from config.driver import Driver
+
+ULB_URL = "https://www.ulb.be/servlet/search?" \
+          "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \
+          "&typeFo=BA&s=FACULTE_ASC&limit=300&page=1"
 
 
 # mapping : [prerequisite,theme,goal,content,method,
@@ -80,7 +83,7 @@ if __name__ == "__main__":
     print("already crawled : {} programs, {} courses\n ".format(len(programs_saved.keys()), len(courses.keys())))
 
     # Get Bac programms
-    ulb_driver.driver.get(s.ULB_URL)
+    ulb_driver.driver.get(ULB_URL)
     time.sleep(2)
     programs_ref = ulb_driver.driver.find_elements_by_xpath("//div[contains(@class,'search-result__result-item')]")
 

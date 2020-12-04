@@ -1,12 +1,8 @@
 # from pyvirtualdisplay import Display
 # from xvfbwrapper import Xvfb
-import os
 from selenium import webdriver
 
 import config.settings as s
-
-import sys
-sys.path.append(os.path.abspath(os.getcwd()))
 
 
 class Driver:
@@ -39,5 +35,5 @@ class Driver:
        # function(success) { success({coords: {latitude: 50.455755, longitude: 30.511565}}); }")
 
     def delete_driver(self):
-        self.display.stop()
+        # self.display.stop()
         self.driver.quit()

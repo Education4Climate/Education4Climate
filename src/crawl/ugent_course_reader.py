@@ -3,15 +3,22 @@ import re
 import config.settings as s
 import utils as u
 
+SEPARATOR_FIRST_AND_SECOND_PART = 'Offered in the following programmes in  2020-2021crdtsoffering'
+
+LECTURERS_PARAGRAPH_SPLITTER = f"Lecturers in academic year {s.YEAR}-{int(s.YEAR) + 1}"
+OTHER_CATEGORIES_SEPARATORS = ["Course offerings and teaching methods",
+                               "Offered in the following programmes in",
+                               "Course size"]
+
 # Read PDF file
 page_content = u.read_pdf()
 
 # mapping : [prerequisite,theme,goal,content,method,evaluation other, resources,biblio,faculty,anacs,shortname,class,location, teachers,language]
 course = {}
 
-if s.SEPARATOR_FIRST_AND_SECOND_PART in page_content:
-    part_1_main_infos = page_content[:page_content.find(s.SEPARATOR_FIRST_AND_SECOND_PART) +
-                                 len(s.SEPARATOR_FIRST_AND_SECOND_PART)]
+if SEPARATOR_FIRST_AND_SECOND_PART in page_content:
+    part_1_main_infos = page_content[:page_content.find(SEPARATOR_FIRST_AND_SECOND_PART) +
+                                 len(SEPARATOR_FIRST_AND_SECOND_PART)]
 # 1 - NAME
 course["name"] = re.split('[()]', part_1_main_infos)[0] #TODO: Look for exceptions
 # 2 - ID
@@ -20,10 +27,10 @@ course["id"] = re.split('[()]', part_1_main_infos)[1] #TODO: Look for exceptions
 # Extract infos from part 1 of the document [credits, study_time, year] ------------------------------
 
 # 3 - TEACHERS
-teacher_paragraph = part_1_main_infos.split(s.LECTURERS_PARAGRAPH_SPLITTER)[1]
+teacher_paragraph = part_1_main_infos.split(LECTURERS_PARAGRAPH_SPLITTER)[1]
 print("TEACHER_PARAGRAPH BEFORE SPLIT: ", teacher_paragraph)
 
-for splitter in s.OTHER_CATEGORIES_SEPARATORS:
+for splitter in OTHER_CATEGORIES_SEPARATORS:
     teacher_paragraph = teacher_paragraph.split(splitter)[0]
 print("TEACHER_PARAGRAPH AFTER SPLIT: ", teacher_paragraph)
 #TODO: Improve this

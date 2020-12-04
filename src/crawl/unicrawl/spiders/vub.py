@@ -4,8 +4,7 @@ import scrapy
 
 import config.settings as s
 
-
-# import config.utils as u
+VUB_URL = 'https://www.vub.be/en/programmes#'
 
 
 class VUBSpider(scrapy.Spider, ABC):
@@ -15,7 +14,7 @@ class VUBSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        base_url = s.VUB_URL
+        base_url = VUB_URL
         yield scrapy.Request(url=base_url, callback=self.parse_main)
 
     def parse_main(self, response):

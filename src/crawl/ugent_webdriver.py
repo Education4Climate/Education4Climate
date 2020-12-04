@@ -4,13 +4,15 @@ import time
 import config.settings as s
 from config.driver import Driver
 
+UGENT_URL = f"https://studiegids.ugent.be/{s.YEAR}/EN/FACULTY/faculteiten.html"
+
 program_urls = {"Bachelor": "BACH/BACH.html", "Master": "MABA/MABA.html"}
 
 ugent_driver = Driver()
 ugent_driver.init()
 
 # Collecting Bachelor programms list ------------------------------------------------------------------
-ugent_driver.driver.get(s.UGENT_URL)
+ugent_driver.driver.get(UGENT_URL)
 time.sleep(5)  # Is it necessary?
 
 faculties_ref = [my_elem.get_attribute("href") for my_elem in
