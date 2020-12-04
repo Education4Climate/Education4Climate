@@ -70,23 +70,11 @@ class UantwerpSpider(scrapy.Spider):
         data['url'] = response.url
         yield data
 
-
-def main(output):
-    process = CrawlerProcess({
-        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
-        'FEED_FORMAT': 'json',
-        'FEED_URI': output
-    })
-
-    process.crawl(UantwerpSpider)
-    process.start()  # the script will block here until the crawling is finished
-    print('All done.')
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Crawl the Uantwerp courses catalog.')
-    parser.add_argument("--output", default="output.json".format(__file__), type=str,
-                        help="Output file")
-    parser.add_argument("--year", default="2020", type=str, help="Academic Year")
-    args = parser.parse_args()
-    main(args.output)
+# Suppression du launcher artisanal, il ne faut pas utiliser ce genre de méthode ultra-roots...
+# (il n'utilise alors pas le paramétrage du scraper)
+# Pour lancer un crawler et le debugger sous Pycharm :
+# Run / Edit configurations
+# Choisir la configuration à modifier
+# Switcher "Script path" par "Module name" et écrire : scrapy.cmdline
+# Parameters : runspider unicrawl/spiders/{nom du script.py}
+# Working directory : {chemin absolu de votre dossier unicrawl}\src\crawl

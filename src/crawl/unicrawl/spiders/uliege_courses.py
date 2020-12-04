@@ -180,45 +180,11 @@ class ULiegeSpider(scrapy.Spider):
         data = {key: data[key] for key in keys}
         yield data
 
-
-def main(output):
-    # Use selenium to retrieve courses
-    courses_file = "../../../../data/crawling-output/uliege_courses.json"
-    if not os.path.exists(courses_file):
-        courses_df = get_courses()
-        courses_df.to_json(courses_file, orient='records', indent=1)
-    else:
-        courses_df = pd.read_json(courses_file)
-
-    # Scrap all courses using scrappy
-    prefile = "uliege_pre.json"
-    if os.path.exists(prefile):
-        os.remove(prefile)
-    process = CrawlerProcess({
-        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
-        'FEED_FORMAT': 'json',
-        'FEED_URI': prefile
-    })
-    process.crawl(ULiegeSpider, myurls=courses_df["url"].to_list())
-    process.start()  # the script will block here until the crawling is finished
-    print('All done.')
-
-    # Merge duplicates (same course but different faculty and campuses) due to the structure of the data
-    courses_df = pd.read_json(prefile)
-    courses_grouped = courses_df.groupby("id")
-    merged_faculty = courses_grouped["faculty"].apply(list)
-    merged_campus = courses_grouped["campus"].apply(list)
-    courses_df = courses_df.set_index('id')
-    courses_df.loc[merged_faculty.index, "faculty"] = merged_faculty
-    courses_df.loc[merged_campus.index, "campus"] = merged_campus
-    courses_df = courses_df.reset_index()
-    courses_df = courses_df.drop_duplicates(subset=["id"])
-    # Save modified file
-    courses_df.to_json(output, orient="records", indent=1)
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Craw the ULiege courses catalog.')
-    parser.add_argument("--output", default="output.json", type=str, help="Output file")
-    args_ = parser.parse_args()
-    main(args_.output)
+# Suppression du launcher artisanal, il ne faut pas utiliser ce genre de méthode ultra-roots...
+# (il n'utilise alors pas le paramétrage du scraper)
+# Pour lancer un crawler et le debugger sous Pycharm :
+# Run / Edit configurations
+# Choisir la configuration à modifier
+# Switcher "Script path" par "Module name" et écrire : scrapy.cmdline
+# Parameters : runspider unicrawl/spiders/{nom du script.py}
+# Working directory : {chemin absolu de votre dossier unicrawl}\src\crawl

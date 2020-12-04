@@ -96,22 +96,11 @@ class UNamurCourseSpider(scrapy.Spider):
         }
         yield data
 
-
-def crawl_courses(output):
-    # Scrap each course using scrappy
-    if os.path.exists(output):
-        os.remove(output)
-    process = CrawlerProcess({
-        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)',
-        'FEED_FORMAT': 'json',
-        'FEED_URI': output
-    })
-    process.crawl(UNamurCourseSpider)
-    process.start()  # the script will block here until the crawling is finished
-    print("Crawled all courses.")
-
-
-if __name__ == '__main__':
-    # output_ = f'../data/crawling-output/unamur_courses_{YEAR}.json'
-    output_ = "output.json"
-    crawl_courses(output_)
+# Suppression du launcher artisanal, il ne faut pas utiliser ce genre de méthode ultra-roots...
+# (il n'utilise alors pas le paramétrage du scraper)
+# Pour lancer un crawler et le debugger sous Pycharm :
+# Run / Edit configurations
+# Choisir la configuration à modifier
+# Switcher "Script path" par "Module name" et écrire : scrapy.cmdline
+# Parameters : runspider unicrawl/spiders/{nom du script.py}
+# Working directory : {chemin absolu de votre dossier unicrawl}\src\crawl
