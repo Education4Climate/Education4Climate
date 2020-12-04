@@ -3,7 +3,7 @@ from abc import ABC
 
 import scrapy
 
-import config.utils as u
+from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URL = "https://directory.unamur.be/teaching/programmes"
@@ -43,20 +43,20 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_program(response, base_dict):
-        codes = u.cleanup(response.xpath("//div[@id='cycle']//tr//td[@class='code']").getall())
+        codes = cleanup(response.xpath("//div[@id='cycle']//tr//td[@class='code']").getall())
         # links = u.cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall()
         # Programs can be divided in 3, 2 or 1 blocks (or there is no ects)
         nb_blocks = 3
-        ects = u.cleanup(response.xpath("//div[@id='cycle']//tr[not(@class='title')]"
-                                        "//td[@class='credit three-column']").getall())
+        ects = cleanup(response.xpath("//div[@id='cycle']//tr[not(@class='title')]"
+                                      "//td[@class='credit three-column']").getall())
         if len(ects) == 0:
             nb_blocks = 2
-            ects = u.cleanup(response.xpath("//div[@id='cycle']//tr[not(@class='title')]"
-                                            "//td[@class='credit two-column']").getall())
+            ects = cleanup(response.xpath("//div[@id='cycle']//tr[not(@class='title')]"
+                                          "//td[@class='credit two-column']").getall())
         if len(ects) == 0:
             nb_blocks = 1
-            ects = u.cleanup(response.xpath("//div[@id='cycle']//tr[not(@class='title')]"
-                                            "//td[@class='credit one-column']").getall())
+            ects = cleanup(response.xpath("//div[@id='cycle']//tr[not(@class='title')]"
+                                          "//td[@class='credit one-column']").getall())
         ects_slimmed = ects
         if nb_blocks > 1:
             ects_slimmed = []

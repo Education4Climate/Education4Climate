@@ -5,7 +5,7 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-import config.utils as u
+from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format is code course, second is year
@@ -33,12 +33,12 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         name = name_and_id.split("[")[0]
         id = name_and_id.split("[")[1].strip("]")
 
-        years = u.cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
+        years = cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         # TODO: do we keep the 'suppléant'?
-        teachers = u.cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
+        teachers = cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
 
         # TODO: cours en plusieurs langues?
-        languages = u.cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
+        languages = cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
         languages = [lang.split(": ")[1] for lang in languages]
         # TODO: check all langagae used
         languages_code = {"Français": 'fr',
@@ -50,9 +50,9 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         languages = [languages_code[lang] for lang in languages]
 
         # TODO: too much content selected?
-        content = u.cleanup(response.xpath("//div[@class='tab-content']").get())
+        content = cleanup(response.xpath("//div[@class='tab-content']").get())
 
-        cycle_ects = u.cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
+        cycle_ects = cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
         cycles = []
         ects = []
         programs = []
@@ -72,9 +72,9 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
         campus = ''
         if "Lieu de l'activité" in organisation:
-            campus = u.cleanup(
+            campus = cleanup(
                 organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
-        faculty = u.cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
+        faculty = cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
 
         data = {
             'name': name,
