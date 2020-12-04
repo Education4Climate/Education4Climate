@@ -19,6 +19,9 @@ PROG_DATA_PATH = Path(f'../../data/crawling-output/unamur_programs_{YEAR}.json')
 
 class UNamurCourseSpider(scrapy.Spider):
     name = "unamur-courses"
+    custom_settings = {
+        'FEED_URI': f'../../data/crawling-output/unamur_courses_{YEAR}.json',
+    }
 
     def start_requests(self):
 

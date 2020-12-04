@@ -11,6 +11,9 @@ import config.utils as u
 
 class UclSpider(scrapy.Spider):
     name = "ucl"
+    custom_settings = {
+        'FEED_URI': f'../../data/crawling-output/ucl_courses_{s.YEAR}.json',
+    }
 
     def start_requests(self):
         base_url = s.UCL_URL

@@ -14,13 +14,13 @@ PATH_COURS_URL = urllib.parse.quote(
 
 COURS_URL = f'https://www.ulb.be/api/formation?path={PATH_COURS_URL}'
 
-PROG_DATA_PATH = Path(f'../data/crawling-results/ulb_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(f'../../data/crawling-output/ulb_programs_{YEAR}.json')
 
 
 class ULBSpider(scrapy.Spider, ABC):
     name = 'ulb-courses'
     custom_settings = {
-        'FEED_URI': f'../data/crawling-results/ulb_courses_{YEAR}.json',
+        'FEED_URI': f'../../data/crawling-output/ulb_courses_{YEAR}.json',
     }
 
     def start_requests(self):

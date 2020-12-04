@@ -17,7 +17,7 @@ DICT_LANGUES = {
 class KuleuvenSpider(scrapy.Spider):
     name = 'kuleuven'
     custom_settings = {
-        'FEED_URI': f'../data/crawling-results/kuleuven_courses_{YEAR}.json',
+        'FEED_URI': f'../../data/crawling-output/kuleuven_courses_{YEAR}.json',
     }
 
     def start_requests(self):

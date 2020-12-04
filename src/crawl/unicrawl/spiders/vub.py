@@ -8,6 +8,9 @@ import config.settings as s
 
 class VUBSpider(scrapy.Spider):
     name = "vub"
+    custom_settings = {
+        'FEED_URI': f'../../data/crawling-output/vub_courses_{s.YEAR}.json',
+    }
 
     def start_requests(self):
         base_url = s.VUB_URL

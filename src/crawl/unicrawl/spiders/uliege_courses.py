@@ -9,6 +9,7 @@ from scrapy.crawler import CrawlerProcess
 
 import config.utils as u
 from config.driver import Driver
+from config.settings import YEAR
 
 sys.path.append(os.getcwd())
 
@@ -52,6 +53,9 @@ def get_courses():
 
 class ULiegeSpider(scrapy.Spider):
     name = "uliege-courses"
+    custom_settings = {
+        'FEED_URI': f'../../data/crawling-output/uliege_courses_{YEAR}.json',
+    }
 
     def __init__(self, *args, **kwargs):
         self.myurls = kwargs.get('myurls', [])

@@ -16,6 +16,9 @@ BASE_URL = "https://directory.unamur.be/teaching/programmes"
 
 class UNamurProgramSpider(scrapy.Spider):
     name = "unamur-programs"
+    custom_settings = {
+        'FEED_URI': f'../../data/crawling-output/unamur_programs_{YEAR}.json',
+    }
 
     def start_requests(self):
         yield scrapy.Request(BASE_URL, self.parse)

@@ -11,6 +11,9 @@ import config.utils as u
 
 class UantwerpSpider(scrapy.Spider):
     name = "uantwerp"
+    custom_settings = {
+        'FEED_URI': f'../../data/crawling-output/uantwerp_courses_{s.YEAR}.json',
+    }
 
     def start_requests(self):
         base_url = s.UANTWERP_URL

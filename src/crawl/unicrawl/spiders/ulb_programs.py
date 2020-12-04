@@ -18,7 +18,7 @@ PROG_URL = f'https://www.ulb.be/api/formation?path={PATH_PROG_URL}'
 class ULBSpider(scrapy.Spider, ABC):
     name = 'ulb-programs'
     custom_settings = {
-        'FEED_URI': f'../data/crawling-results/ulb_programs_{YEAR}.json',
+        'FEED_URI': f'../../data/crawling-output/ulb_programs_{YEAR}.json',
     }
 
     def start_requests(self):
