@@ -1,5 +1,5 @@
 # from pyvirtualdisplay import Display
-from xvfbwrapper import Xvfb
+# from xvfbwrapper import Xvfb
 import os
 from selenium import webdriver
 
@@ -20,9 +20,9 @@ class Driver:
         # TODO: what is that for?
         if self.driver is not None:
             self.delete_driver()
-        self.display = Xvfb()
+        # self.display = Xvfb()
         # self.display=Display(visible=0)
-        self.display.start()
+        # self.display.start()
 
         options = webdriver.ChromeOptions()
         options.add_argument("--disable-infobars")
