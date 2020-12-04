@@ -7,6 +7,8 @@ import scrapy
 
 from config.settings import YEAR
 
+# TODO: change still a copy of ULB crawler
+
 BASE_URL = "https://www.ulb.be/servlet/search?" \
            "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \
            "&typeFo={}&s=FACULTE_ASC&limit=999&page=1"
