@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
-
-import argparse
 from abc import ABC
 
 import scrapy
-from scrapy.crawler import CrawlerProcess
 
 import config.settings as s
 import config.utils as u

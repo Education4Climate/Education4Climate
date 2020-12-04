@@ -7,7 +7,6 @@ from pathlib import Path
 
 import pandas as pd
 import scrapy
-from scrapy.crawler import CrawlerProcess
 
 import config.utils as u
 from config.settings import YEAR

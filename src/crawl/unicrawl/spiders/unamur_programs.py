@@ -5,7 +5,6 @@ import sys
 from abc import ABC
 
 import scrapy
-from scrapy.crawler import CrawlerProcess
 
 import config.utils as u
 from config.settings import YEAR

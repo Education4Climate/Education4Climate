@@ -1,4 +1,3 @@
-import argparse
 import os
 import sys
 from abc import ABC
@@ -6,7 +5,6 @@ from abc import ABC
 import numpy as np
 import pandas as pd
 import scrapy
-from scrapy.crawler import CrawlerProcess
 
 import config.utils as u
 from config.driver import Driver
