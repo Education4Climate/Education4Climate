@@ -63,9 +63,9 @@ class ULiegeSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.myurls:
-            yield scrapy.Request(url, self.parse)
+            yield scrapy.Request(url, self.parse_main)
 
-    def parse(self, response):
+    def parse_main(self, response):
 
         class_name = u.cleanup(response.css("h1::text").get())
         year_and_short_name = u.cleanup(

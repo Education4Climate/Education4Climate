@@ -21,9 +21,9 @@ class KuleuvenSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        yield scrapy.Request(BASE_LINK, self.parse)
+        yield scrapy.Request(BASE_LINK, self.parse_main)
 
-    def parse(self, response):
+    def parse_main(self, response):
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
         list_campus = [

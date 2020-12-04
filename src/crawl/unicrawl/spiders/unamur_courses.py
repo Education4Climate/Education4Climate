@@ -29,10 +29,10 @@ class UNamurCourseSpider(scrapy.Spider):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse)
+            yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse_main)
             exit()
 
-    def parse(self, response):
+    def parse_main(self, response):
         name_and_id = u.cleanup(response.css("h1::text").get())
         name = name_and_id.split("[")[0]
         id = name_and_id.split("[")[1].strip("]")

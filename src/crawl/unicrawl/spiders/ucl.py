@@ -17,9 +17,9 @@ class UclSpider(scrapy.Spider):
 
     def start_requests(self):
         base_url = s.UCL_URL
-        yield scrapy.Request(url=base_url, callback=self.parse)
+        yield scrapy.Request(url=base_url, callback=self.parse_main)
 
-    def parse(self, response):
+    def parse_main(self, response):
         for href in response.css(
                 "a[href^='https://uclouvain.be/fr/catalogue-formations/']::attr(href)").getall():
             yield response.follow(href, self.parse_formation)

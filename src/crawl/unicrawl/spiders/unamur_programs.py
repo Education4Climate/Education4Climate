@@ -21,9 +21,9 @@ class UNamurProgramSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        yield scrapy.Request(BASE_URL, self.parse)
+        yield scrapy.Request(BASE_URL, self.parse_main)
 
-    def parse(self, response):
+    def parse_main(self, response):
         # Get list of faculties
         faculties = response.xpath(f"//div[@id='tab-{YEAR}']//h3/a/text()").getall()
         for faculty in faculties:
