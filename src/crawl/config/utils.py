@@ -1,7 +1,7 @@
-import PyPDF2
 from w3lib.html import remove_tags
 
 
+# TODO: elle sert à quoi cette fonction?
 def is_float(potential_float):
     try:
         float(potential_float)
@@ -11,6 +11,9 @@ def is_float(potential_float):
 
 
 def read_pdf():
+
+    import PyPDF2
+
     pdf_file_obj = open('/home/noel/Téléchargements/A000186.pdf', 'rb')
     pdf_reader = PyPDF2.PdfFileReader(pdf_file_obj)
 
