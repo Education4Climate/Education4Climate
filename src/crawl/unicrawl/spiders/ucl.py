@@ -23,7 +23,7 @@ class UclSpider(scrapy.Spider, ABC):
             yield response.follow(href, self.parse_formation)
 
     def parse_formation(self, response):
-        for href in response.css(f"li a[href^='/prog-{YEAR}']::attr(href)"):
+        for href in response.css(f"li a[href^='/prog-{s.YEAR}']::attr(href)"):
             yield response.follow(href, self.parse_prog)
 
     def parse_prog(self, response):
@@ -33,7 +33,7 @@ class UclSpider(scrapy.Spider, ABC):
 
     def parse_prog_detail(self, response):
         for href in response.css(
-                f"td.composant-ligne1 a[href^='https://uclouvain.be/cours-{YEAR}-']::attr(href)"):
+                f"td.composant-ligne1 a[href^='https://uclouvain.be/cours-{s.YEAR}-']::attr(href)"):
             yield response.follow(href, self.parse_course)
 
     @staticmethod
