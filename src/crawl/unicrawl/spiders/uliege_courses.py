@@ -1,5 +1,3 @@
-import os
-import sys
 from abc import ABC
 
 import numpy as np
@@ -9,8 +7,6 @@ import scrapy
 import config.utils as u
 from config.driver import Driver
 from config.settings import YEAR
-
-sys.path.append(os.getcwd())
 
 
 def get_courses():

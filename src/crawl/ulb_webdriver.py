@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import json
-import os
 import re
-import sys
 import time
 
 import progressbar
 
 import config.settings as s
 from config.driver import Driver
-
-sys.path.append(os.getcwd())
 
 
 # mapping : [prerequisite,theme,goal,content,method,

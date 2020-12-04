@@ -1,7 +1,4 @@
 # -*- coding: utf-8 -*-
-
-import os
-import sys
 from abc import ABC
 from pathlib import Path
 
@@ -10,8 +7,6 @@ import scrapy
 
 import config.utils as u
 from config.settings import YEAR
-
-sys.path.append(os.getcwd())
 
 BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format is code course, second is year
 PROG_DATA_PATH = Path(f'../../data/crawling-output/unamur_programs_{YEAR}.json')

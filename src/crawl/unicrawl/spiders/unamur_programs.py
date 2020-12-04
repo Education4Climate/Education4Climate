@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
-
-import os
-import sys
 from abc import ABC
 
 import scrapy
 
 import config.utils as u
 from config.settings import YEAR
-
-sys.path.append(os.getcwd())
 
 BASE_URL = "https://directory.unamur.be/teaching/programmes"
 
