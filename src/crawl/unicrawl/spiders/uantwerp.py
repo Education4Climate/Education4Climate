@@ -56,7 +56,7 @@ class UantwerpSpider(scrapy.Spider):
         data = {}
         for field in data_mapper:
             xpath_str = data_mapper[field]
-            if xpath_str is '':
+            if xpath_str == '':
                 continue
             try:
                 data[field] = u.cleanup(response.xpath(xpath_str).get())
