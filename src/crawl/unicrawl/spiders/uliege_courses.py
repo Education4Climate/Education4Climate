@@ -51,7 +51,7 @@ def get_courses():
 
 
 class ULiegeSpider(scrapy.Spider):
-    name = "uliege"
+    name = "uliege-courses"
 
     def __init__(self, *args, **kwargs):
         self.myurls = kwargs.get('myurls', [])

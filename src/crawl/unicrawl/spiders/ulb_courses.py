@@ -18,7 +18,7 @@ PROG_DATA_PATH = Path(f'../data/crawling-results/ulb_programs_{YEAR}.json')
 
 
 class ULBSpider(scrapy.Spider, ABC):
-    name = 'ulb'
+    name = 'ulb-courses'
     custom_settings = {
         'FEED_URI': f'../data/crawling-results/ulb_courses_{YEAR}.json',
     }

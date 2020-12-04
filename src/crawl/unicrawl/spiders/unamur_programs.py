@@ -15,7 +15,7 @@ BASE_URL = "https://directory.unamur.be/teaching/programmes"
 
 
 class UNamurProgramSpider(scrapy.Spider):
-    name = "unamur-program"
+    name = "unamur-programs"
 
     def start_requests(self):
         yield scrapy.Request(BASE_URL, self.parse)

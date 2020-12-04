@@ -16,7 +16,7 @@ PROG_URL = f'https://www.ulb.be/api/formation?path={PATH_PROG_URL}'
 
 
 class ULiegeSpider(scrapy.Spider, ABC):
-    name = 'uliege'
+    name = 'uliege-programs'
     custom_settings = {
         'FEED_URI': f'../data/crawling-results/uliege_programs_{YEAR}.json',
     }
