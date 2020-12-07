@@ -40,7 +40,7 @@ crawl-kuleuven:
 
 crawl-umons:
 	if [ -f data/umons_${YEAR}.json ]; then rm data/umons_${YEAR}.json; fi
-	python3 crawl/umons.py --output data/crawling-results/umons_${YEAR}.json --year ${YEAR}
+	python3 ${CRAWLER_FOLDER}/umons.py --output ${CRAWLING_OUTPUT_FOLDER}/umons_${YEAR}.json --year ${YEAR}
 
 #--------------------------------------------------------------------
 
