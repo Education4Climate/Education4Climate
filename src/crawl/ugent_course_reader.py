@@ -1,6 +1,6 @@
 import re
 
-import config.settings as s
+import src.crawl.unicrawl.spiders.config.settings as s
 import utils as u
 
 SEPARATOR_FIRST_AND_SECOND_PART = 'Offered in the following programmes in  2020-2021crdtsoffering'

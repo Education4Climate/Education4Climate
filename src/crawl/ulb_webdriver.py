@@ -6,7 +6,7 @@ import time
 
 import progressbar
 
-from config.driver import Driver
+from src.crawl.unicrawl.spiders.config.driver import Driver
 
 ULB_URL = "https://www.ulb.be/servlet/search?" \
           "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \

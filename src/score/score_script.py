@@ -108,7 +108,7 @@ def main(args):
     fields = args.field.split(",")
     df = df.dropna(subset=fields)
     df["text"] = df[fields].apply(lambda x: "\n".join(x.values), axis=1)
-    df_courses = df[["shortname", "url", "class", "text", "teachers"]].copy()  # TODO: Replace shortname by id
+    df_courses = df[["id", "url", "name", "text", "teacher"]].copy()
 
     # Loading models
     language = args.language
@@ -146,11 +146,11 @@ def main(args):
         odd_scores = compute_odd_score(words_text, odd_patterns[detected_language])
 
         # Generating data
-        data = {"code": row.shortname,
+        data = {"code": row.id,
                 "shift_score": score_shift,
                 "shiftpatterns": json.dumps(match_shift),
-                "class": row["class"],
-                "teachers": row.teachers,
+                "class": row.name,
+                "teachers": row.teacher,
                 "climate_score": score_climate,
                 "climate_patterns": json.dumps(matching)}
         for odd, b in odd_scores.items():
