@@ -46,8 +46,8 @@ def compute_odd_score(words,odds_patterns):
 def get_shift_patterns(languages):
     patterns={}
     for language in languages:
-        print('{}'.format(s.pattern_sheets))
-        df_pattern_shift = pd.read_csv(s.pattern_sheets[language]["shift"], header=0)
+        print('{}'.format(s.PATTERN_SHEETS))
+        df_pattern_shift = pd.read_csv(s.PATTERN_SHEETS[language]["shift"], header=0)
         columns = list(df_pattern_shift.columns)
         df_pattern_shift = df_pattern_shift.dropna(subset=[columns[0]])
         df_pattern_shift[columns[-1]] = df_pattern_shift[columns[-1]].apply(lambda x: float(x.replace(",", ".")))
@@ -60,7 +60,7 @@ def get_shift_patterns(languages):
 def get_odd_patterns(languages):
     patterns={}
     for language in languages:
-        df = pd.read_csv(s.pattern_sheets[language]["odd"],header=0)
+        df = pd.read_csv(s.PATTERN_SHEETS[language]["odd"],header=0)
         odds={}
         for col in df.columns:
             p=[u.refactor_pattern(x) for x in df[col].dropna().values.tolist()]
@@ -71,8 +71,8 @@ def get_odd_patterns(languages):
 def get_climate_patterns(languages):
     patterns={}
     for language in languages:
-        if "climate" in s.pattern_sheets[language].keys():
-            tmp=pd.read_csv(s.pattern_sheets[language]["climate"],header=None)
+        if "climate" in s.PATTERN_SHEETS[language].keys():
+            tmp=pd.read_csv(s.PATTERN_SHEETS[language]["climate"],header=None)
             patterns[language]=tmp.iloc[0][0]
     return patterns
 
