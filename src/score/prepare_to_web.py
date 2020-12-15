@@ -4,7 +4,6 @@ import argparse
 
 import config.settings as s
 
-# TODO: Improve the code, I just made it work for the UCL case
 def main(args):
     scores = pd.read_csv(s.SCORING_OUTPUT_FOLDER + args.school + '_scoring_' + args.year + '.csv')
     scores = scores.drop(columns=["class", "teachers"]).rename(columns={"code": "id"})
