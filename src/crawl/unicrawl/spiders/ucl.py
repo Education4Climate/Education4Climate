@@ -41,11 +41,11 @@ class UclSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_course(response):
         data = {
-            'class': u.cleanup(response.css("h1.header-school::text").get()),
-            'shortname': u.cleanup(response.css("span.abbreviation::text").get()),
+            'name': u.cleanup(response.css("h1.header-school::text").get()),
+            'id': u.cleanup(response.css("span.abbreviation::text").get()),
             'year': u.cleanup(response.css("span.anacs::text").get()),
             'location': u.cleanup(response.css("span.location::text").get()),
-            'teachers': u.cleanup(
+            'teacher': u.cleanup(
                 response.xpath("normalize-space(.//div[div[contains(text(),'Enseignants')]]"
                                "/div/a/text())").getall()),
             'language': u.cleanup(
