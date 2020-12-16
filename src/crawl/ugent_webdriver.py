@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import time
 
-import config.settings as s
-from config.driver import Driver
+import src.crawl.unicrawl.spiders.config.settings as s
+from src.crawl.unicrawl.spiders.config.driver import Driver
 
 UGENT_URL = f"https://studiegids.ugent.be/{s.YEAR}/EN/FACULTY/faculteiten.html"
 

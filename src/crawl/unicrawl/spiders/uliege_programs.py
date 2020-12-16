@@ -1,18 +1,26 @@
-import json
-import urllib.parse
 from abc import ABC
 
-import bs4
 import scrapy
 
+from config.utils import cleanup
 from config.settings import YEAR
 
-BASE_URL = "https://www.ulb.be/servlet/search?" \
-           "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \
-           "&typeFo={}&s=FACULTE_ASC&limit=999&page=1"
+# TODO: maybe it's possible to check the year?
+BASE_URL = "https://www.programmes.uliege.be/cocoon/recherche.html?source=formation"
+PROGRAM_URL = "https://www.programmes.uliege.be{}"
 
-PATH_PROG_URL = urllib.parse.quote('/ws/ksup/programme?anet={}&lang=fr&', safe='{}')
-PROG_URL = f'https://www.ulb.be/api/formation?path={PATH_PROG_URL}'
+FACULTY_DICT = {"archi": "Faculté d'Architecture",
+                "droit": "Faculté de Droit, Science politique et Criminologie",
+                "gembloux": "Gembloux Agro-Bio Tech",
+                "hec": "HEC Liège - Ecole de Gestion",
+                "facmed": "Faculté de Médecine",
+                "fmv": "Faculté de Médecine Vétérinaire",
+                "facphl": "Faculté de Philosophie et Lettres",
+                "fapse": "Faculté de Psychologie, Logopédie et Sciences de l'Education",
+                "facsc": "Faculté des Sciences",
+                "facsa": "Faculté des Sciences Appliquées",
+                "ishs": "Faculté des Sciences Sociales"
+                }
 
 
 class ULiegeSpider(scrapy.Spider, ABC):
@@ -22,42 +30,43 @@ class ULiegeSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        for deg in ('BA', 'MA'):
-            yield scrapy.Request(
-                url=BASE_URL.format(deg),
-                callback=self.parse_main
-            )
+        yield scrapy.Request(
+            url=BASE_URL,
+            callback=self.parse_main
+        )
 
     def parse_main(self, response):
-        soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
-        for p in soup.find_all('div', class_='search-result__result-item'):
-            res = {
-                "name": p.find('strong').text,
-                "url": p.find(class_="item-title__element_title")["href"],
-                "faculty": p.find('span', class_='search-result__structure-rattachement').text,
-                "code": p.find(class_='search-result__mnemonique').text,
-                "location": p.find(class_='search-result-formation__separator').text
-            }
+        links = response.xpath("//td[@class='u-courses-results__row__cell--link']/a/@href").getall()
+        program_ids = [link.split("/")[-1].split(".")[0] for link in links]
 
-            param = res['url'].split('/')[-1].upper()
-
-            yield scrapy.Request(
-                url=PROG_URL.format(param),
-                callback=self.parse_programme,
-                cb_kwargs={'cur_dict': res}
-            )
+        for program_id, link in zip(program_ids, links):
+            base_dict = {"id": program_id}
+            yield scrapy.Request(url=PROGRAM_URL.format(link.replace('formations', 'programmes')),
+                                 callback=self.parse_program,
+                                 cb_kwargs={'base_dict': base_dict})
 
     @staticmethod
-    def parse_programme(response, cur_dict):
+    def parse_program(response, base_dict):
+        name = response.xpath("//h1/text()").get()
+        cycle = response.xpath("//div[@class='u-courses-header__headline']/text()").get().split("/")[1][1:]
+        campus = cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
 
-        json_obj = json.loads(json.loads(response.text)['json'])
+        # Faculty
+        faculty_link = cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
+                                              "//li/a[@class='u-link' and "
+                                              "contains(text(), 'La Faculté')]/@href").get())
+        # Convert address to faculty
+        faculty = FACULTY_DICT[[key for key in FACULTY_DICT.keys() if key in faculty_link][0]]
 
-        list_cours = []
-        for bloc in json_obj['blocs']:
-            if bloc['anac'] == YEAR:
-                list_cours += bloc['progCourses']
+        courses = response.xpath("//th[@class='u-courses-cell--code']/a/text()").getall()
+        ects = response.xpath("//td[@class='u-courses-cell--data--credits']/text()").getall()
 
-        cur_dict['courses'] = sorted(set(e['id'] for e in list_cours))
+        cur_dict = {"name": name,
+                    "cycle": cycle,
+                    "campus": campus,
+                    "faculty": faculty,
+                    "courses": courses,
+                    "ects": ects}
 
-        yield cur_dict
+        yield {**base_dict, **cur_dict}
