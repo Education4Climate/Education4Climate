@@ -40,7 +40,6 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         course_id = name_and_id.split("[")[1].strip("]")
 
         years = cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
-        # TODO: do we keep the 'suppléant'?
         teachers = cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
 
         # TODO: cours en plusieurs langues?
@@ -49,7 +48,6 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         # TODO: check all language used
         languages = [LANGUAGES_DICT[lang] for lang in languages]
 
-        # TODO: too much content selected?
         content = cleanup(response.xpath("//div[@class='tab-content']").get())
 
         cycle_ects = cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())

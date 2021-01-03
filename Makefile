@@ -14,6 +14,7 @@ UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-${Y
 UANTWERP_URL="https://www.uantwerpen.be/en/study/education-and-training/"
 UGENT_URL="https://studiegids.ugent.be/${YEAR}/EN/FACULTY/faculteiten.html"
 KULEUVEN_URL = "https://onderwijsaanbod.kuleuven.be/opleidingen/e/index.htm"
+UMONS_URL = "https://web.umons.ac.be/en/training-offer/"
 
 # ------------------------------------------------------------------
 
@@ -36,6 +37,10 @@ crawl-ugent:
 crawl-kuleuven:
 	if [ -f ${CRAWLING_OUTPUT_FOLDER}/kuleuven_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/kuleuven_${YEAR}.json; fi
 	scrapy runspider ${CRAWLER_FOLDER}/kuleuven.py
+
+crawl-umons:
+	if [ -f data/umons_${YEAR}.json ]; then rm data/umons_${YEAR}.json; fi
+	python3 ${CRAWLER_FOLDER}/umons.py --output ${CRAWLING_OUTPUT_FOLDER}/umons_${YEAR}.json --year ${YEAR}
 
 #--------------------------------------------------------------------
 
@@ -64,8 +69,12 @@ score-unamur:
 	python ${SCORING_FOLDER}/prepare_to_web.py --school "unamur" --year ${YEAR}
 
 score-uliege:
-	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/uliege_courses_2020.json --output ${SCORING_OUTPUT_FOLDER}/uliege_scoring_2020.csv --field "content"
+	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/uliege_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/uliege_scoring_${YEAR}.csv --field "content"
 	python ${SCORING_FOLDER}/prepare_to_web.py --school "uliege" --year ${YEAR}
+
+score-umons:
+	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/umons_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/umons_scoring_${YEAR}.csv
+	python ${SCORING_FOLDER}/prepare_to_web.py --school "umons" --year ${YEAR}
 
 # -----------------------------
 
