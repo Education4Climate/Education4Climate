@@ -44,8 +44,9 @@ def main(school: str, year: int, fields: str, language: str) -> None:
     courses_fn = f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json"
     courses_df = pd.read_json(open(courses_fn, 'r'))
     fields = fields.split(",")
+    for field in fields:
+        assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contian a column {field}"
     # Drop courses for which the scoring field is empty
-    # TODO: check that fields are existing in the dataframe
     courses_df = courses_df.dropna(subset=fields)
     # Concatenate the scoring fields
     courses_df["text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
@@ -66,8 +67,9 @@ def main(school: str, year: int, fields: str, language: str) -> None:
     # TODO: this takes a shit load of time to load, normal?
     vectorizer, features = load_models(courses_ds.tolist(), language)
 
-    #results_df = pd.DataFrame(index=courses_df.index,
-    #                          columns=["class", "shift_score", "shift_patterns", ""])
+    results_df = pd.DataFrame(index=courses_ds.index,
+                              columns=["shift_score", "shift_patterns", "climate_score",
+                                       "climate_patterns"] + [f"SDG{i}" for i in range(1, 18)])
     results = []
     # TODO: voir si df_courses.apply() pourrait s'appliquer ici
     for idx, scoring_text in tqdm(courses_ds.items(), total=len(courses_ds)):
@@ -75,7 +77,7 @@ def main(school: str, year: int, fields: str, language: str) -> None:
         # try:
         #    detected_language = detect(row.text)
         # except :
-        # print("error : ",row.text)
+        # print("error : ", row.text)
         # detected_language = "fr"
         detected_language = "fr"
 
@@ -97,27 +99,21 @@ def main(school: str, year: int, fields: str, language: str) -> None:
         climate_score, climate_matching = compute_climate_score(feature_score_dict, climate_patterns[detected_language])
         sdg_scores = compute_sdg_scores(feature_score_dict, sdg_patterns[detected_language])
 
-        # Generating data
-        # TODO: why not save this directly in a DataFrame?
-        data = {"id": idx,
-                "shift_score": shift_score,
-                "shift_patterns": json.dumps(shift_matching),
-                "climate_score": climate_score,
-                "climate_patterns": json.dumps(climate_matching)}
-        for sdg, b in sdg_scores.items():
-            data[sdg] = int(b)  # TODO Replace by literal statement
-
-        results.append(data)
+        # Saving results
+        results_df.loc[idx, "shift_score"] = shift_score
+        results_df.loc[idx, "shift_patterns"] = json.dumps(shift_matching)
+        results_df.loc[idx, "climate_score"] = climate_score
+        results_df.loc[idx, "climate_patterns"] = json.dumps(climate_matching)
+        for sdg, sdg_score in sdg_scores.items():
+            results_df.loc[idx, sdg] = sdg_score
 
     # Writing results to output file
-    exit()
-    df_results = pd.DataFrame.from_dict(results)
-    output_fn = f"{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
-    df_results.to_csv(output_fn, index=False, encoding="utf-8")
+    # TODO: remove _test when done testing
+    output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}_test2.csv"
+    results_df.to_csv(output_fn, encoding="utf-8")
 
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="Input json file path")
     parser.add_argument("-y", "--year", help="Academic year", default=2020)

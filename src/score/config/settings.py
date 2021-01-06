@@ -1,3 +1,4 @@
+# TODO: pourquoi est-ce qu'on ne mets pas ces fichiers sur le git?
 PATTERN_SHEETS = {
     "fr": {
         "shift": "https://docs.google.com/spreadsheets/d/12vOiqjm3_voRdEz_aFhTR7qGHpG41DajqRXdOV2vMMs/export?format=csv&gid=0",

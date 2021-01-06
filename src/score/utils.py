@@ -46,48 +46,60 @@ def load_models(corpus: List[str], language: str):
     return vectorizer, features
 
 
-# TODO: merge into one function that takes as argument the scoring type?
-def compute_climate_score(ngram_score_dict: Dict[str, float], pattern):
-    # TODO: add documentation
+def compute_climate_score(ngram_score_dict: Dict[str, float], pattern) -> (float, Counter):
+    """
+    # TODO: complete
+
+    :param ngram_score_dict: Dictionary associating ngrams to a score.
+    :param pattern:
+    :return:
+    """
     matching = Counter()
-    scores = 0
+    total_score = 0
     for ngram, score in ngram_score_dict.items():
         if re.match(pattern, ngram) is not None:
-            scores += (len(ngram.split(" ")) * score)
+            total_score += (len(ngram.split(" ")) * score)
             matching[ngram] += 1
-    return scores, matching
+    return total_score, matching
 
 
-def compute_shift_score(ngram_score_dict: Dict[str, float], pattern_weights_dict: Dict[str, float]):
+def compute_shift_score(ngram_score_dict: Dict[str, float], pattern_weights_dict: Dict[str, float]) -> (float, Counter):
     """
     Computes the Shift score.
 
-
+    # TODO: complete
 
     :param ngram_score_dict: Dictionary associating ngrams to a score.
     :param pattern_weights_dict: Dictionary associating patterns to weights.
     :return:
+    - float giving the score associated to the input ngrams
+    - dictionary counting the number of times ngrams have been matched
     """
-    scores = 0.0
+    total_score = 0.0
     matching = Counter()
+    # Compare each ngram to shift score patterns and increase the total score each time there is a match
     for ngram, score in ngram_score_dict.items():
         for pattern, weight in pattern_weights_dict.items():
             if re.match(pattern, ngram) is not None:
                 # TODO: is this computation documented somewhere? where does it come from?
-                scores += (len(ngram.split(" ")) * score) ** weight
+                total_score += (len(ngram.split(" ")) * score) ** weight
                 matching[ngram] += 1
-    print(scores, matching)
-    return scores, matching
+    return total_score, matching
 
 
-def compute_sdg_scores(ngram_score_dict: Dict[str, float], sdgs_patterns):
-    # SDG = Sustainable Development Goals
-    # TODO: add documentation
+def compute_sdg_scores(ngram_score_dict: Dict[str, float], patterns_dict: Dict[str, List[str]]):
+    """
+    Compute the SDG (Sustainable Development Goals) scores.
+
+    :param ngram_score_dict: Dictionary associating ngrams to a score.
+    :param patterns_dict: Dictionary associating a list of patterns to each SDG.
+    :return:
+    """
     scores = {}
-    for sdg, patterns in sdgs_patterns.items():
-        if sum([re.match(pat, ngram) is not None for ngram, score in
-                ngram_score_dict.items() for pat in patterns]) > 2:
-            scores[sdg] = True
+    for sdg, patterns in patterns_dict.items():
+        if sum([re.match(pattern, ngram) is not None for ngram, score in
+                ngram_score_dict.items() for pattern in patterns]) > 2:
+            scores[sdg] = 1
         else:
-            scores[sdg] = False
+            scores[sdg] = 0
     return scores
