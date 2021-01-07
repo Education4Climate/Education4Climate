@@ -115,7 +115,7 @@ def main(school: str, year: int, fields: str, language: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-s", "--school", help="Input json file path")
+    parser.add_argument("-s", "--school", help="School code")
     parser.add_argument("-y", "--year", help="Academic year", default=2020)
     # parser.add_argument("-i", "--input_fn", help="Input json file path")
     # parser.add_argument("-o", "--output_fn", help="Output xlsx file path", default="data/output.xlsx")

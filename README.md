@@ -59,13 +59,13 @@ python score/wordcount.py --input data/ucl_courses.json --output tag_cloud.csv -
 From an input data file, score and filter all entries.
 
 Arguments:
-- *input* : input data file with course catalog in JSON format. 
-- *output* : destination where scoring results are saved. 
+- *school* : code of the school. 
+- *year* : year. 
 - *field*: name of the field to use as input for running the scoring.
-- *key*: name of field to use as reference key
+- *language*: code of the main language of the corpus (fr, nl or en)
 
 ```bash
-python score/score.py --input data/ucl_courses.json --output test.csv --key shortname --field content
+python score/main.py --school ucl --year 2020 --field content --language fr
 ```
 
 ## Using the Scrapy shell
