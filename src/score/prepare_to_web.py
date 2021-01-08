@@ -28,4 +28,3 @@ if __name__=="__main__":
     parser.add_argument("-y", "--year", help="academic year",default=2020)
     arguments = parser.parse_args()
     main(arguments)
-
