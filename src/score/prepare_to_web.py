@@ -11,9 +11,15 @@ def main(args):
     courses = pd.DataFrame.from_dict(js)
     courses = courses.rename(
         columns={"anacs": "year", "class": "name", "teachers": "teacher", "shortname": "id", "location": "campus"})
-    join = courses.set_index("id").join(scores.set_index("id"), on="id", how="right")
-    join.to_csv(s.WEB_INPUT_FOLDER + args.school + '_data_' + args.year + '_heavy.csv')
-    join[join["shift_score"] != 0].to_csv(s.WEB_INPUT_FOLDER + args.school + '_data_' + args.year + '_light.csv')
+
+    # Generating heavy version
+    join = courses.set_index("id").join(scores.set_index("id"), on="id", how="right").reset_index()
+    if 'index' in join.columns:
+        join = join.drop(columns='index')
+    join.to_json(s.WEB_INPUT_FOLDER + args.school + '_data_' + args.year + '_heavy.json', orient='records')
+
+    # Generating light version (only courses with score > 0)
+    join[join["shift_score"] != 0].to_json(s.WEB_INPUT_FOLDER + args.school + '_data_' + args.year + '_light.json', orient='records')
 
 
 if __name__=="__main__":
