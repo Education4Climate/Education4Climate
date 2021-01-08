@@ -10,7 +10,7 @@ import scrapy
 from config.settings import YEAR
 from config.utils import cleanup
 
-PROG_DATA_PATH = Path(f'../../data/crawling-output/ucll_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(f'../../data/crawling-output/umons_programs_{YEAR}.json')
 
 class UmonsCoursesSpider(scrapy.Spider):
     name = "umons-courses"
