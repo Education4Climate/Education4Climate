@@ -5,7 +5,8 @@ from abc import ABC
 from config.settings import YEAR
 BASE_URL = "https://web.umons.ac.be/fr/enseignement/loffre-de-formation-de-lumons/"
 
-class UmonsProgramsSpider(scrapy.Spider, ABC):
+
+class UmonsProgramSpider(scrapy.Spider, ABC):
     name = "umons-programs"
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/umons_programs_{YEAR}.json',
@@ -17,6 +18,7 @@ class UmonsProgramsSpider(scrapy.Spider, ABC):
     def parse_offer(self, response):
         formations = response.xpath('//span//a[not(contains(@href, "png"))]')
         urls = formations.xpath('@href').getall()
+        # TODO: à uniformiser
         cycles = formations.xpath('text()').getall()
         assert len(urls) == len(cycles)
         for cycle, url in zip(cycles, urls):
@@ -29,6 +31,8 @@ class UmonsProgramsSpider(scrapy.Spider, ABC):
             yield response.follow(program, self.parse_prog, cb_kwargs={'cycle':cycle})
 
     def parse_prog(self, response, cycle):
+        # Note: this leads to an error on the 'Bachelier en Droit' and 'Bachelier en Sciences Humaines et Sociales'
+        #  but anyways these programs are organised by the ULB
         href = response.xpath(
             '//a[contains(@class, "button-primary-alt scheme-background scheme-background-hover")]/@href').get()
         if not href:
@@ -42,14 +46,16 @@ class UmonsProgramsSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_prog_detail(response, location, ects, cycle):
+
         faculty = response.css('td.facTitle::text').get()
         program_name = response.css('td.cursusTitle::text').get()
+        courses = response.css('span.linkcodeue::text').getall()
+        courses = [course.strip(" ") for course in courses]
 
-        courses = response.css('a.linkue::attr(href)').getall()
         program_dict = {'faculty': faculty,
                         'name': program_name,
                         'cycle': cycle,
                         'campus': location,
-                        'ects': ects,
-                        'courses_urls': courses}
+                        'courses': courses,
+                        'ects': ects}
         yield program_dict
