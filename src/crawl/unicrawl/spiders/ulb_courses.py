@@ -1,23 +1,45 @@
-import json
-import urllib.parse
 from abc import ABC
 from pathlib import Path
+import urllib.parse
+
+import pandas as pd
 
 import scrapy
 
 from config.settings import YEAR
+from config.utils import cleanup
 
-PATH_COURS_URL = urllib.parse.quote(
-    '/ws/ksup/course-programmes?anac={}&mnemonic={}&lang=fr',
-    safe='{}'
-)
-
-COURS_URL = f'https://www.ulb.be/api/formation?path={PATH_COURS_URL}'
-
+# PATH_COURS_URL = urllib.parse.quote(
+#    '/ws/ksup/course-programmes?anac={}&mnemonic={}&lang=fr',
+#    safe='{}'
+# )
+# COURS_URL = f'https://www.ulb.be/api/formation?path={PATH_COURS_URL}'
+BASE_URL = 'https://www.ulb.be/fr/programme/'
 PROG_DATA_PATH = Path(f'../../data/crawling-output/ulb_programs_{YEAR}.json')
 
+LANGUAGE_DICT = {"français": "fr",
+                 "anglais": "en",
+                 "Inconnu": "",
+                 "Néerlandais": "nl",
+                 "Allemand": "de",
+                 "Chinois": "cn",
+                 "Arabe": "ar",
+                 "Russe": "ru",
+                 "Italien": "it",
+                 "Espagnol": "es",
+                 "Grec moderne": "gr",
+                 "Japonais": "jp",
+                 "Turc": "tr",
+                 "Persan": "fa",
+                 "Roumain": "ro",
+                 "Portugais": "pt",
+                 "Polonais": "pl",
+                 "Tchèque": "cz",
+                 "Slovène": "si",
+                 "Croate": "hr"}
 
-class ULBSpider(scrapy.Spider, ABC):
+
+class ULBCourseSpider(scrapy.Spider, ABC):
     name = 'ulb-courses'
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/ulb_courses_{YEAR}.json',
@@ -25,70 +47,49 @@ class ULBSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        progs = json.loads(PROG_DATA_PATH.read_text('utf-8'))
+        courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
+        courses_ids_list = sorted(list(set(courses_ids.sum())))
 
-        list_cours = []
-        for prog in progs:
-            list_cours += prog['courses']
-
-        for cours in sorted(set(list_cours)):
-            base_dict = {
-                'url': f'https://www.ulb.be/fr/programme/{cours.lower()}',
-                'anacs': f'{YEAR}-{int(YEAR) + 1}',
-                'shortname': cours
-            }
+        for course_id in courses_ids_list:
+            base_dict = {'id': course_id}
 
             yield scrapy.Request(
-                url=COURS_URL.format(YEAR, cours),
-                callback=self.parse_cours,
+                url=f'{BASE_URL}{course_id.lower()}',
+                callback=self.parse_course,
                 cb_kwargs={'base_dict': base_dict}
             )
 
     @staticmethod
-    def parse_cours(response, base_dict):
+    def parse_course(response, base_dict):
 
-        json_obj = json.loads(json.loads(response.text)['json'])
+        name = response.xpath("//h1/text()").get()
+        teachers = cleanup(response.xpath("//h3[text()='Titulaire(s) du cours']/following::text()[1]").get())
+        teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ")
+        teachers = teachers.split(", ")
 
-        # TODO : Finir le scraper lorsque le site remarchera
+        # TODO: move that into the program code
+        ects = response.xpath("//h3[text()='Crédits ECTS']/following::p[1]/text()").get()
+        ects = int(ects) if 1 <= len(ects) <= 2 else None
+
+        # TODO: check if there can be multiple languages
+        languages = response.xpath("//h3[text()=\"Langue(s) d'enseignement\"]/following::p[1]/text()").get()
+        if languages is not None:
+            languages = [LANGUAGE_DICT[language] for language in languages.split(", ")]
+
+        content_titles = ["Contenu du cours", "Objectifs (et/ou acquis d'apprentissages spécifiques)",
+                          "Méthodes d'enseignement et activités d'apprentissages"]
+        content = "\n".join([cleanup(response.xpath(f"//h2[text()=\"{title}\"]/following::div[1]").get())
+                             for title in content_titles])
+        content = "" if content == "\n\n" else content
 
         cur_dict = {
-            "teachers": None,
-            "credits": None,
-            "language": None,
-            "content": None,
-            "goal": None,
-            "prerquisite": None,
-            "method": None,
-            "other": None,
-            "evaluation": None,
-            "name": None,
-            "class": None
+            "name": name,
+            "teacher": teachers,
+            "year": f'{YEAR}-{int(YEAR) + 1}',
+            "ects": ects,
+            "language": languages,
+            "url": response.url,
+            "content": content
         }
 
         yield {**base_dict, **cur_dict}
-
-# cur_dict = {
-#     "url": "https://www.ulb.be/fr/programme/2019-tran-b100",
-#     "anacs": "2020-2021",
-#     "teachers": [
-#         "\nSylvain DELCOMMINETTE (Coordonnateur)", "Didier DEBAISE",
-#         "Odile GILON", "Arnaud PELLETIER", "Luc Libert"
-#     ],
-#     "credits": "5",
-#     "language": "fran\u00e7ais",
-#     "content": "Philosophie ancienne, philosophie m\u00e9di\u00e9vale, philosophie "
-#                "moderne et philosophie contemporaine.",
-#     "goal": "Philosophie ancienne, philosophie m\u00e9di\u00e9vale, "
-#             "philosophie moderne et philosophie contemporaine.",
-#     "prerquisite": "Philosophie ancienne, philosophie m\u00e9di\u00e9vale, "
-#                    "philosophie moderne et philosophie contemporaine.",
-#     "method": "Philosophie ancienne, philosophie m\u00e9di\u00e9vale, "
-#               "philosophie moderne et philosophie contemporaine.",
-#     "other": "Philosophie ancienne, philosophie m\u00e9di\u00e9vale, "
-#              "philosophie moderne et philosophie contemporaine.",
-#     "evaluation": "Philosophie ancienne, philosophie m\u00e9di\u00e9vale, "
-#                   "philosophie moderne et philosophie contemporaine.",
-#     "shortname": "TRAN-B100",
-#     "name": "Histoire de la philosophie",
-#     "class": "Histoire de la philosophie"
-# }
