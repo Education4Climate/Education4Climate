@@ -28,11 +28,13 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
     def start_requests(self):
 
         courses_df = pd.read_json(open(PROG_DATA_PATH, "r"))[["courses", "courses_urls"]]
+        # Combine lists of strings
         courses_ids_list = courses_df["courses"].sum()
         courses_urls_list = courses_df["courses_urls"].sum()
-        courses_ids_urls = sorted(list(set(zip(courses_ids_list, courses_urls_list))))
+        # Some courses are specified at two different urls which have exactly the same content
+        courses_ds = pd.Series(courses_ids_list, courses_urls_list).drop_duplicates()
 
-        for course_id, course_url in courses_ids_urls:
+        for course_url, course_id in courses_ds.items():
             base_dict = {"id": course_id}
             yield scrapy.Request(BASE_URl.format(course_url), self.parse_main, cb_kwargs={"base_dict": base_dict})
 
