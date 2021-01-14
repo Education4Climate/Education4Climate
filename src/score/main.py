@@ -51,7 +51,7 @@ def main(school: str, year: int, fields: str, language: str) -> None:
     # Concatenate the scoring fields
     courses_df["text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
     # TODO: remove limitation on length after testing is done
-    courses_ds = courses_df[["id", "text"]].set_index("id").squeeze()[0:100]
+    courses_ds = courses_df[["id", "text"]].set_index("id").squeeze()
 
     # Load patterns for different types of scores
     # TODO: need to install that with pip?
@@ -70,7 +70,6 @@ def main(school: str, year: int, fields: str, language: str) -> None:
     results_df = pd.DataFrame(index=courses_ds.index,
                               columns=["shift_score", "shift_patterns", "climate_score",
                                        "climate_patterns"] + [f"SDG{i}" for i in range(1, 18)])
-    results = []
     # TODO: voir si df_courses.apply() pourrait s'appliquer ici
     for idx, scoring_text in tqdm(courses_ds.items(), total=len(courses_ds)):
         # TODO: implement handling of different languages when patterns are translated
@@ -81,7 +80,6 @@ def main(school: str, year: int, fields: str, language: str) -> None:
         # detected_language = "fr"
         detected_language = "fr"
 
-        # TODO: why are we using tf-idf scores and not the binary?
         # Get tfidf_scores for ngrams in texts
         # TF-IDF means term-frequency times inverse document frequency
         # The higher the score the more 'relevant' the n-gram is
@@ -108,8 +106,7 @@ def main(school: str, year: int, fields: str, language: str) -> None:
             results_df.loc[idx, sdg] = sdg_score
 
     # Writing results to output file
-    # TODO: remove _test when done testing
-    output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}_test2.csv"
+    output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
     results_df.to_csv(output_fn, encoding="utf-8")
 
 
