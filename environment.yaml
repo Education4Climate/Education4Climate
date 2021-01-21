@@ -1,0 +1,13 @@
+name: unicrawl
+channels:
+  - defaults
+  - conda-forge
+  - anaconda
+dependencies:
+  - scrapy
+  - pandas
+  - protego
+  - tqdm
+  - unidecode
+  - scikit-learn
+  - spacy

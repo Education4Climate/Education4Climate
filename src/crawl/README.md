@@ -1,12 +1,12 @@
-### Note d'Aric: Pourquoi et comment ne pas utiliser un launcher 'artisanal'
+### Aric's comment: Why not to use a 'hand-made' launcher and how to do then?
 
-#### Pourquoi?
-On n'utilise alors pas le paramétrage du scraper.
+#### Why?
+Because if you do, you are not using the parametrization of the scraper.
 
-#### Comment?
-Pour lancer un crawler et le debugger sous Pycharm :
+#### How?
+To launch a crawler and the debugger with PyCharm :
 - Run / Edit configurations
-- Choisir la configuration à modifier
-- Switcher "Script path" par "Module name" et écrire : scrapy.cmdline
-- Parameters : runspider unicrawl/spiders/{nom du script.py}
-- Working directory : {chemin absolu de votre dossier unicrawl}\src\crawl
+- Choose the configuration you want to modify
+- Switch from "Script path" to "Module name" and write : scrapy.cmdline
+- Parameters : runspider unicrawl/spiders/{name of the script.py}
+- Working directory : {absolute path to your unicrawl folder}\src\crawl

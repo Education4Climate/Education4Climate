@@ -47,9 +47,6 @@ def main(school: str, year: int, fields: str) -> None:
         assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contian a column {field}"
     # Drop courses for which the scoring field is empty
     courses_df = courses_df.dropna(subset=fields)
-    #TODO :
-    #reduce output dataframe to usefull informations (teachers, name, id, etc)?
-
     # Concatenate the scoring fields
     courses_df["text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
 

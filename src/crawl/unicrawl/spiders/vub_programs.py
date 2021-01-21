@@ -25,6 +25,8 @@ class VUBSpider(scrapy.Spider, ABC):
 
     def parse_second(self, response):
         # TODO: not possible to be crawled? see https://caliweb.vub.be/robots.txt
+        #  -> need to change the parameter ROBOTS_OBEY in the crawler settings.py
+        # TODO: but if it's possible it's even faster to go directly through there https://caliweb.vub.be/
         plan_link = response.xpath("//ul[@class='rd-opleidingen'][1]//li[1]/a/@href").get()
         yield response.follow(plan_link, self.parse_program)
 
