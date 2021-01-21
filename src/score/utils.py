@@ -28,7 +28,7 @@ def load_models(corpus: List[str], language: str):
     def tokenize(nlp, text):
         # Cut the text into individual tokens removing stop words, punctuations, numbers, symbols and spaces
         return [unidecode(w.text.lower()) for w in nlp(text)
-                if w.pos_ not in ["PUNCT", "NUM", "SYM", "SPACE"] and w.is_stop is False]
+                if w.pos_ not in ["PUNCT", "SYM", "SPACE"] and w.is_stop is False]
     # Load spacy language model
     nlp = spacy.load(language)
     # Allows to send the nlp argument in the callback function passed to TfidfVectorizer
@@ -44,6 +44,13 @@ def load_models(corpus: List[str], language: str):
     logger.info("Vectorizer trained")
 
     return vectorizer, features
+
+def compute_score(text,pattern_mapping):
+    #TODO : insert language detection
+    language="fr"
+    for p in pattern_mapping[language]:
+        if re.search(p,text) is not None: return 1
+    return 0
 
 
 def compute_climate_score(ngram_score_dict: Dict[str, float], pattern) -> (float, Counter):

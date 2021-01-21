@@ -27,9 +27,8 @@ def get_shift_patterns(languages: List[str]) -> Dict[str, Dict[str, float]]:
         #  and a column containing weights (named 'final weights'). # TODO: maybe change the names
         patterns_csv_fn = f"../../data/patterns/{PATTERN_SHEETS[language]['shift']}"
         language_patterns_df = pd.read_csv(patterns_csv_fn, header=0)
-        language_patterns_df = language_patterns_df[["patterns", "final weight"]]
         language_patterns_df["patterns"] = language_patterns_df["patterns"].apply(refactor_pattern)
-        patterns_dict[language] = {pat: weight for pat, weight in language_patterns_df.values}
+        patterns_dict[language]=language_patterns_df.patterns.values.tolist()
     return patterns_dict
 
 
@@ -65,9 +64,8 @@ def get_climate_patterns(languages):
     """
     patterns_dict = {}
     for language in languages:
-        # TODO: why is this checked here and not in the other cases?
-        if "climate" in PATTERN_SHEETS[language].keys():
-            patterns_csv_fn = f"../../data/patterns/{PATTERN_SHEETS[language]['climate']}"
-            tmp = pd.read_csv(patterns_csv_fn, header=None)
-            patterns_dict[language] = tmp.iloc[0][0]
+        patterns_csv_fn = f"../../data/patterns/{PATTERN_SHEETS[language]['climate']}"
+        print(patterns_csv_fn)
+        tmp = pd.read_csv(patterns_csv_fn, header=None)
+        patterns_dict[language] = tmp.iloc[:,0].values.tolist()
     return patterns_dict

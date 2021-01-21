@@ -8,12 +8,11 @@ import pandas as pd
 from tqdm import tqdm  # Progress bar
 
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
-from utils import compute_shift_score, compute_sdg_scores, compute_climate_score, load_models
+from utils import compute_shift_score, compute_sdg_scores, compute_climate_score, load_models,compute_score
 from patterns import get_sdg_patterns, get_shift_patterns, get_climate_patterns
+LANGUAGES=["fr"]#,"nl","en"]
 
-
-# TODO: need to document the scoring methodology in some exterior document
-def main(school: str, year: int, fields: str, language: str) -> None:
+def main(school: str, year: int, fields: str) -> None:
     """
     Computes and saves a series of scores for each course that has non-empty 'fields' values.
 
@@ -48,69 +47,21 @@ def main(school: str, year: int, fields: str, language: str) -> None:
         assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contian a column {field}"
     # Drop courses for which the scoring field is empty
     courses_df = courses_df.dropna(subset=fields)
+    #TODO :
+    #reduce output dataframe to usefull informations (teachers, name, id, etc)?
+
     # Concatenate the scoring fields
     courses_df["text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
-    # TODO: remove limitation on length after testing is done
-    courses_ds = courses_df[["id", "text"]].set_index("id").squeeze()[0:100]
 
     # Load patterns for different types of scores
-    # TODO: need to install that with pip?
-    languages_dict = {"fr_core_news_sm": "fr"}  # , "en_core_web_sm": 'en'} # Commented for testing purpose
-    languages = list(languages_dict.values())
-    shift_patterns = get_shift_patterns(languages)
-    climate_patterns = get_climate_patterns(languages)
-    sdg_patterns = get_sdg_patterns(languages)
-
-    # Loading models
-    # TODO: can we delete this?
-    # nlp_models = {lg: spacy.load(lg) for lg in languages}
-    # TODO: this takes a shit load of time to load, normal?
-    vectorizer, features = load_models(courses_ds.tolist(), language)
-
-    results_df = pd.DataFrame(index=courses_ds.index,
-                              columns=["shift_score", "shift_patterns", "climate_score",
-                                       "climate_patterns"] + [f"SDG{i}" for i in range(1, 18)])
-    results = []
-    # TODO: voir si df_courses.apply() pourrait s'appliquer ici
-    for idx, scoring_text in tqdm(courses_ds.items(), total=len(courses_ds)):
-        # TODO: implement handling of different languages when patterns are translated
-        # try:
-        #    detected_language = detect(row.text)
-        # except :
-        # print("error : ", row.text)
-        # detected_language = "fr"
-        detected_language = "fr"
-
-        # TODO: why are we using tf-idf scores and not the binary?
-        # Get tfidf_scores for ngrams in texts
-        # TF-IDF means term-frequency times inverse document frequency
-        # The higher the score the more 'relevant' the n-gram is
-        # Transform text to tf-idf-weighted document-term matrix and convert te matrix to a coordinate format
-        # This matrix contains one row per document (here equal to 1) and one column per feature
-        tfidf_score_matrix = vectorizer.transform([scoring_text]).tocoo()
-        feature_score_dict = {features[idx]: score for idx, score
-                              in zip(tfidf_score_matrix.col, tfidf_score_matrix.data)}
-
-        # Computing scores
-        shift_score, shift_matching = compute_shift_score(feature_score_dict, shift_patterns[detected_language])
-        # TODO: what is this? why wouldn't it be a float?
-        if not isinstance(shift_score, float):
-            shift_score = 0.0
-        climate_score, climate_matching = compute_climate_score(feature_score_dict, climate_patterns[detected_language])
-        sdg_scores = compute_sdg_scores(feature_score_dict, sdg_patterns[detected_language])
-
-        # Saving results
-        results_df.loc[idx, "shift_score"] = shift_score
-        results_df.loc[idx, "shift_patterns"] = json.dumps(shift_matching)
-        results_df.loc[idx, "climate_score"] = climate_score
-        results_df.loc[idx, "climate_patterns"] = json.dumps(climate_matching)
-        for sdg, sdg_score in sdg_scores.items():
-            results_df.loc[idx, sdg] = sdg_score
-
-    # Writing results to output file
-    # TODO: remove _test when done testing
-    output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}_test2.csv"
-    results_df.to_csv(output_fn, encoding="utf-8")
+    shift_patterns = json.load(open(f"../../data/patterns/shift_patterns.json"))
+    climate_patterns = json.load(open(f"../../data/patterns/climate_patterns.json"))
+    courses_df["shift_score"]=courses_df.text.apply(lambda x :compute_score(x,shift_patterns))
+    courses_df["climate_score"]=courses_df.text.apply(lambda x :compute_score(x,climate_patterns))
+    courses_df.drop("text",axis=1)
+    output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
+    print("file output : {}".format(output_fn))
+    courses_df.to_csv(output_fn, encoding="utf-8")
 
 
 if __name__ == "__main__":
@@ -122,7 +73,6 @@ if __name__ == "__main__":
     parser.add_argument("-f", "--fields", default="content",
                         help="Specify the field(s) on which we compute the score."
                              " If several fields, they need to be separated by a ','")
-    parser.add_argument("-l", "--language", help="Specify language code", default="fr_core_news_sm")
 
     arguments = vars(parser.parse_args())
     main(**arguments)
