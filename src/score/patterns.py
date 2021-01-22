@@ -28,7 +28,7 @@ def get_shift_patterns(languages: List[str]) -> Dict[str, Dict[str, float]]:
         patterns_csv_fn = f"../../data/patterns/{PATTERN_SHEETS[language]['shift']}"
         language_patterns_df = pd.read_csv(patterns_csv_fn, header=0)
         language_patterns_df["patterns"] = language_patterns_df["patterns"].apply(refactor_pattern)
-        patterns_dict[language]=language_patterns_df.patterns.values.tolist()
+        patterns_dict[language] = language_patterns_df.patterns.values.tolist()
     return patterns_dict
 
 
@@ -67,5 +67,5 @@ def get_climate_patterns(languages):
         patterns_csv_fn = f"../../data/patterns/{PATTERN_SHEETS[language]['climate']}"
         print(patterns_csv_fn)
         tmp = pd.read_csv(patterns_csv_fn, header=None)
-        patterns_dict[language] = tmp.iloc[:,0].values.tolist()
+        patterns_dict[language] = tmp.iloc[:, 0].values.tolist()
     return patterns_dict

@@ -5,15 +5,18 @@ import argparse
 import json
 import pandas as pd
 
-from tqdm import tqdm  # Progress bar
+# from tqdm import tqdm  # Progress bar
 
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
-from utils import compute_shift_score, compute_sdg_scores, compute_climate_score, load_models,compute_score
-from patterns import get_sdg_patterns, get_shift_patterns, get_climate_patterns
-LANGUAGES=["fr"]#,"nl","en"]
+from utils import compute_score
+# from utils import compute_shift_score, compute_sdg_scores, compute_climate_score, load_models,compute_score
+# from patterns import get_sdg_patterns, get_shift_patterns, get_climate_patterns
+LANGUAGES = ["fr"]  # ,"nl","en"]
+
 
 def main(school: str, year: int, fields: str) -> None:
     """
+    # TODO: update
     Computes and saves a series of scores for each course that has non-empty 'fields' values.
 
     :param school: Code of the school whose courses will be scored.
@@ -49,15 +52,16 @@ def main(school: str, year: int, fields: str) -> None:
     courses_df = courses_df.dropna(subset=fields)
     # Concatenate the scoring fields
     courses_df["text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
+    courses_df = courses_df[["id", "text"]].set_index("id")
 
     # Load patterns for different types of scores
     shift_patterns = json.load(open(f"../../data/patterns/shift_patterns.json"))
     climate_patterns = json.load(open(f"../../data/patterns/climate_patterns.json"))
-    courses_df["shift_score"]=courses_df.text.apply(lambda x :compute_score(x,shift_patterns))
-    courses_df["climate_score"]=courses_df.text.apply(lambda x :compute_score(x,climate_patterns))
-    courses_df.drop("text",axis=1)
+    courses_df["shift_score"] = courses_df.text.apply(lambda x: compute_score(x, shift_patterns))
+    courses_df["climate_score"] = courses_df.text.apply(lambda x: compute_score(x, climate_patterns))
+    courses_df = courses_df.drop("text", axis=1)
     output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
-    print("file output : {}".format(output_fn))
+    print("Output file : {}".format(output_fn))
     courses_df.to_csv(output_fn, encoding="utf-8")
 
 
@@ -65,8 +69,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="School code")
     parser.add_argument("-y", "--year", help="Academic year", default=2020)
-    # parser.add_argument("-i", "--input_fn", help="Input json file path")
-    # parser.add_argument("-o", "--output_fn", help="Output xlsx file path", default="data/output.xlsx")
     parser.add_argument("-f", "--fields", default="content",
                         help="Specify the field(s) on which we compute the score."
                              " If several fields, they need to be separated by a ','")

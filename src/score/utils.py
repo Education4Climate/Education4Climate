@@ -25,9 +25,9 @@ def load_models(corpus: List[str], language: str):
     """
 
     # We replace the default tokenizer from sklearn by one using spaCy # TODO: why are we doing that?
-    def tokenize(nlp, text):
+    def tokenize(nlp_, text):
         # Cut the text into individual tokens removing stop words, punctuations, numbers, symbols and spaces
-        return [unidecode(w.text.lower()) for w in nlp(text)
+        return [unidecode(w.text.lower()) for w in nlp_(text)
                 if w.pos_ not in ["PUNCT", "SYM", "SPACE"] and w.is_stop is False]
     # Load spacy language model
     nlp = spacy.load(language)
@@ -45,11 +45,16 @@ def load_models(corpus: List[str], language: str):
 
     return vectorizer, features
 
-def compute_score(text,pattern_mapping):
-    #TODO : insert language detection
-    language="fr"
+
+def compute_score(text: str, pattern_mapping: Dict[str, List[str]]) -> int:
+    """Return 1 if 'text' matches one pattern in 'pattern_mapping', 0 otherwise"""
+    # TODO : insert language detection
+    language = "fr"
     for p in pattern_mapping[language]:
-        if re.search(p,text) is not None: return 1
+        if re.search(p, text) is not None:
+            print(text)
+            print(p)
+            return 1
     return 0
 
 
