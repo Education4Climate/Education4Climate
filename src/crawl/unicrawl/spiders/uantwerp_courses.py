@@ -3,8 +3,8 @@ from abc import ABC
 
 import scrapy
 
-import config.settings as s
-import config.utils as u
+from config.settings import YEAR
+from config.utils import cleanup
 
 UANTWERP_URL = "https://www.uantwerpen.be/en/study/education-and-training/"
 
@@ -12,7 +12,7 @@ UANTWERP_URL = "https://www.uantwerpen.be/en/study/education-and-training/"
 class UantwerpSpider(scrapy.Spider, ABC):
     name = "uantwerp"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/uantwerp_courses_{s.YEAR}.json',
+        'FEED_URI': f'../../data/crawling-output/uantwerp_courses_{YEAR}.json',
     }
 
     def start_requests(self):
@@ -62,7 +62,7 @@ class UantwerpSpider(scrapy.Spider, ABC):
             if xpath_str == '':
                 continue
             try:
-                data[field] = u.cleanup(response.xpath(xpath_str).get())
+                data[field] = cleanup(response.xpath(xpath_str).get())
             except Exception as e:
                 raise ValueError(
                     f"Xpath {xpath_str} does not work for field {field}.\n"
@@ -70,12 +70,3 @@ class UantwerpSpider(scrapy.Spider, ABC):
                 )
         data['url'] = response.url
         yield data
-
-# Suppression du launcher artisanal, il ne faut pas utiliser ce genre de méthode ultra-roots...
-# (il n'utilise alors pas le paramétrage du scraper)
-# Pour lancer un crawler et le debugger sous Pycharm :
-# Run / Edit configurations
-# Choisir la configuration à modifier
-# Switcher "Script path" par "Module name" et écrire : scrapy.cmdline
-# Parameters : runspider unicrawl/spiders/{nom du script.py}
-# Working directory : {chemin absolu de votre dossier unicrawl}\src\crawl
