@@ -57,12 +57,14 @@ def compute_score(text: str, pattern_mapping: Dict[str, List[str]]) -> (int, Dic
     """
     # TODO : insert language detection (or do it before calling this function and pass only the relevant patterns)
     language = "fr"
+
+    text = text.lower()
+    for ch in ["\r", "\t", "\n", "\xa0", ":", ";", ".", ",", "?", "!", "(", ")", "…"]:
+        text = text.replace(ch, " ")
+
     pattern_matches_dict = {}
     score = 0
     for p in pattern_mapping[language]:
-        # TODO: maybe a better way to do that? Add ',', '(' and others?
-        for ch in ["\r", "\t", "\n", "\xa0", ":", ";", ".", ",", "?", "!", "(", ")", "…"]:
-            text = text.replace(ch, " ")
         matches = re.findall(p, text)
         if len(matches) != 0:
             pattern_matches_dict[p] = matches
