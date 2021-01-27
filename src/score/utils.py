@@ -46,16 +46,28 @@ def load_models(corpus: List[str], language: str):
     return vectorizer, features
 
 
-def compute_score(text: str, pattern_mapping: Dict[str, List[str]]) -> int:
-    """Return 1 if 'text' matches one pattern in 'pattern_mapping', 0 otherwise"""
-    # TODO : insert language detection
+def compute_score(text: str, pattern_mapping: Dict[str, List[str]]) -> (int, Dict[str, List[str]]):
+    """
+    Compare text to a list of patterns
+    :param text:
+    :param pattern_mapping:
+    :return:
+    - 1 if any pattern is find, 0 otherwise
+    - a dictionary associating the patterns that matched to what they matched
+    """
+    # TODO : insert language detection (or do it before calling this function and pass only the relevant patterns)
     language = "fr"
+    pattern_matches_dict = {}
+    score = 0
     for p in pattern_mapping[language]:
-        if re.search(p, text) is not None:
-            print(text)
-            print(p)
-            return 1
-    return 0
+        # TODO: maybe a better way to do that?
+        for ch in ["\r", "\t", "\n", "\xa0"]:
+            text = text.replace(ch, " ")
+        matches = re.findall(p, text)
+        if len(matches) != 0:
+            pattern_matches_dict[p] = matches
+            score = 1
+    return score, pattern_matches_dict
 
 
 def compute_climate_score(ngram_score_dict: Dict[str, float], pattern) -> (float, Counter):

@@ -1,20 +1,19 @@
 {
   "fr":
           [
-			  "(bilan[^ ]+|empreint[^ ]+) carbon[^ ]+",
-			  "[ée]nerg[^ ]+ (revouvelab[^ ]+|vertes?)",
+			  "(?:bilan[^ ]+|empreint[^ ]+) carbon[^ ]+",
+			  "[ée]nerg[^ ]+ (?:revouvelab[^ ]+|vertes?)",
 			  "transiti[^ ]+ ([ée]nerg[^ ]+|ecolog[^ ]+)",
 			  "solaires?",
 			  "eolien[^ ]+",
 			  "gestion[^ ]+ envir[^ ]+",
-			  "[ée]colo[^ ]+",
+			  "^[ée]colo[^ ]+",
 			  "consom[^ ]+ énerg[^ ]+",
 			  "effica[^ ]+ énerg[^ ]+",
 			  "utilis[^ ]+ énerg[^ ]+",
 			  "bas[- ]carbon[^ ]+",
 			  "décarbon[^ ]+",
-			  "gaz (effets? )?serre",
-			  "(suivis? )?développ[^ ]+ durab[^ ]+",
+			  "développ[^ ]+ durab[^ ]+",
 			  "efficacité ressources",
 			  "consom[^ ]+ durab[^ ]+",
 			  "gestio[^ ]+ durab[^ ]+",
@@ -22,10 +21,10 @@
 			  "produ[^ ]+ durab[^ ]+",
 			  "températ[^ ]+ mond[^ ]+ moyenne",
 			  "(dioxyde carbone|CO2)",
-			  "changements? conditions? (météorologiques?|climatiques?)",
+			  "changements? conditions? (?:météorologiques?|climatiques?)",
 			  "climat[^ ]+",
 			  "actions? Climat[^ ]+",
-			  "adaptations? (changements? )climat[^ ]+",
+			  "adaptations? (?:changements? )climat[^ ]+",
 			  "politiques? climat[^ ]+",
 			  "chang[^ ]+ Clima[^ ]+",
 			  "gestion chang[^ ]+ clima[^ ]+",
@@ -38,8 +37,8 @@
 			  "réfugiés? climatiques?",
 			  "risques? (liés )?clima[^ ]+",
 			  "résist[^ ]+ clima[^ ]+",
-			  "capture (co2|dioxyde carbone)",
-			  "conversion (co2|dioxyde carbone)",
+			  "capture (?:co2|dioxyde carbone)",
+			  "conversion (?:co2|dioxyde carbone)",
 			  "Cop ?[0-9]+",
 			  "Cop ?21",
 			  "ecosyst[^ ]+",
@@ -48,10 +47,10 @@
 			  "temp[^ ]+ moyenne mond[^ ]+",
 			  "température mondiale",
 			  "réchauff[^ ]+ clima[^ ]+",
-			  "gaz (effets? )serre",
+			  "gaz (?:effets? )serre",
 			  "émissions gaz (effets? )serre",
 			  "gaz serre",
-			  "(pertes?|fontes?|diminutions?|réductions?) (glaces?|calottes?( polaires?)|permafrost|pergelisol)"
+			  "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
           ]
 }
 

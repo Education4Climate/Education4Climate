@@ -57,12 +57,24 @@ def main(school: str, year: int, fields: str) -> None:
     # Load patterns for different types of scores
     shift_patterns = json.load(open(f"../../data/patterns/shift_patterns.json"))
     climate_patterns = json.load(open(f"../../data/patterns/climate_patterns.json"))
-    courses_df["shift_score"] = courses_df.text.apply(lambda x: compute_score(x, shift_patterns))
-    courses_df["climate_score"] = courses_df.text.apply(lambda x: compute_score(x, climate_patterns))
+    patterns_matches_dict = {"climate": {}, "shift": {}}
+    for idx, text in courses_df.text.items():
+        score, shift_patterns_matches_dict = compute_score(text, shift_patterns)
+        courses_df.loc[idx, "shift_score"] = score
+        if score == 1:
+            patterns_matches_dict["shift"][idx] = shift_patterns_matches_dict
+        score, climate_patterns_matches_dict = compute_score(text, climate_patterns)
+        courses_df.loc[idx, "climate_score"] = score
+        if score == 1:
+            patterns_matches_dict["climate"][idx] = climate_patterns_matches_dict
     courses_df = courses_df.drop("text", axis=1)
+    # Save scores
     output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
     print("Output file : {}".format(output_fn))
     courses_df.to_csv(output_fn, encoding="utf-8")
+    # Save patterns
+    with open(f"../../{SCORING_OUTPUT_FOLDER}{school}_matches_{year}.json", "w") as f:
+        json.dump(patterns_matches_dict, f, indent=4)
 
 
 if __name__ == "__main__":
