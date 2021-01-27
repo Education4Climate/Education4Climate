@@ -14,6 +14,26 @@ import logging
 logger = logging.Logger(name='Utils Logger')
 
 
+def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]]):
+    """
+    Compare text to a list of patterns
+    :param text: A string that has been lowerized
+    :param patterns: List of patterns matching lowerized strings
+    :return:
+    - 1 if any pattern is find, 0 otherwise
+    - a dictionary associating the patterns that matched to what they matched
+    """
+
+    pattern_matches_dict = {}
+    score = 0
+    for pattern in patterns:
+        matches = re.findall(pattern, text)
+        if len(matches) != 0:
+            pattern_matches_dict[pattern] = matches
+            score = 1
+    return score, pattern_matches_dict
+
+
 def load_models(corpus: List[str], language: str):
     """
     Build TF-IDF vectorize and features from a given corpus.
@@ -44,32 +64,6 @@ def load_models(corpus: List[str], language: str):
     logger.info("Vectorizer trained")
 
     return vectorizer, features
-
-
-def compute_score(text: str, pattern_mapping: Dict[str, List[str]]) -> (int, Dict[str, List[str]]):
-    """
-    Compare text to a list of patterns
-    :param text:
-    :param pattern_mapping:
-    :return:
-    - 1 if any pattern is find, 0 otherwise
-    - a dictionary associating the patterns that matched to what they matched
-    """
-    # TODO : insert language detection (or do it before calling this function and pass only the relevant patterns)
-    language = "fr"
-
-    text = text.lower()
-    for ch in ["\r", "\t", "\n", "\xa0", ":", ";", ".", ",", "?", "!", "(", ")", "…"]:
-        text = text.replace(ch, " ")
-
-    pattern_matches_dict = {}
-    score = 0
-    for p in pattern_mapping[language]:
-        matches = re.findall(p, text)
-        if len(matches) != 0:
-            pattern_matches_dict[p] = matches
-            score = 1
-    return score, pattern_matches_dict
 
 
 def compute_climate_score(ngram_score_dict: Dict[str, float], pattern) -> (float, Counter):
