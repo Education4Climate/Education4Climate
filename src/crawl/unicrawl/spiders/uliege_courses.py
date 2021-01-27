@@ -28,8 +28,12 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
+        i = 0
         for course_id in courses_ids_list:
             yield scrapy.Request(BASE_URL.format(course_id, YEAR), self.parse_main)
+            if i == 10:
+                return
+            i += 1
 
     @staticmethod
     def parse_main(response):
@@ -56,36 +60,16 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         languages = [LANGUAGE_DICT[lang] for lang in languages]
 
         # Content of the class
-        content = cleanup(response.xpath(".//section[h3[contains(text(), "
-                                         "\"Contenus de l'unité d'enseignement\")]]").get()) + " "
-        content += cleanup(response.xpath(".//section[h3[contains(text(), \"Acquis d'apprentissage\")]]").get()) + " "
-        content += cleanup(response.xpath(".//section[h3[contains(text(), \"Activités d'apprentissage\")]]").get())
-
-        # TODO: add back if data for program not manageable
-        """
-        # Cycle and credits
-        credit_lines = cleanup(
-            response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
-                           "//tr/td[@class='u-courses-results__row__cell--list']").getall())
-        cycles = []
-        ects = []
-        programs = []
-        for i, el in enumerate(credit_lines):
-            # Program name
-            if i % 2 == 0:
-                programs += [el]
-                if 'Master' in el:
-                    cycles += ["master"]
-                elif 'Bachelier' in el:
-                    cycles += ["bachelier"]
-                elif 'Erasmus' in el:
-                    cycles += ["erasmus"]
-                else:
-                    cycles += [el]
-            # Credit number
-            else:
-                ects += [int(el.split(" ")[0])]
-        """
+        sections = ["Contenus de l'unité d'enseignement",
+                    "Acquis d'apprentissage (objectifs d'apprentissage) de l'unité d'enseignement",
+                    "Activités d'apprentissage prévues et méthodes d'enseignement"]
+        contents = []
+        for section in sections:
+            content = cleanup(response.xpath(f".//section[h3[contains(text(), \"{section}\")]]").get())
+            content = content.replace(f"{section}", "")
+            contents += [content]
+        content = "\n".join(contents)
+        content = "" if content == "\n\n" else content
 
         data = {
             'name': class_name,
@@ -93,62 +77,8 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
             'year': years,
             'teacher': teachers,
             'language': languages,
-            # 'cycle': cycles,
-            # 'ects': ects,
             'url': response.url,
             'content': content,
-            # 'faculty': '',
-            # 'campus': '',
-            # 'program': programs
         }
 
         yield data
-
-        # TODO: add back if data for program not manageable
-        """
-        # The links to the programs are written in a relative manner
-        program_links = response.xpath(".//section[h3[contains(text(), 'Nombre de crédits')]]"
-                                       "//tr/td[@class='u-courses-results__row__cell--link']/a/@href").getall()
-        data['programlinks'] = program_links
-        if len(program_links) != 0:
-
-            for link in program_links:
-                yield response.follow(link, callback=self.parse_faculty_and_campus, meta=data,
-                                      dont_filter=True)
-        else:
-            yield data
-        """
-
-    """
-    @staticmethod
-    def parse_faculty_and_campus(response):
-        data = response.meta
-        # Campus
-        data['campus'] = cleanup(
-            response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
-
-        # Faculty
-        faculty_link = cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
-                                                "//li/a[@class='u-link' and "
-                                                "contains(text(), 'La Faculté')]/@href").get())
-        # Convert address to faculty
-        faculty_dict = {"archi": "Faculté d'Architecture",
-                        "droit": "Faculté de Droit, Science politique et Criminologie",
-                        "gembloux": "Gembloux Agro-Bio Tech",
-                        "hec": "HEC Liège - Ecole de Gestion",
-                        "facmed": "Faculté de Médecine",
-                        "fmv": "Faculté de Médecine Vétérinaire",
-                        "facphl": "Faculté de Philosophie et Lettres",
-                        "fapse": "Faculté de Psychologie, Logopédie et Sciences de l'Education",
-                        "facsc": "Faculté des Sciences",
-                        "facsa": "Faculté des Sciences Appliquées",
-                        "ishs": "Faculté des Sciences Sociales"
-                        }
-        data["faculty"] = faculty_dict[
-            [key for key in faculty_dict.keys() if key in faculty_link][0]]
-
-        keys = ['name', 'id', 'year', 'teacher', 'language', 'cycle',
-                'ects', 'content', 'url', 'faculty', 'campus', 'program']
-        data = {key: data[key] for key in keys}
-        yield data
-    """
