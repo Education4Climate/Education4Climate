@@ -1,6 +1,6 @@
 {
 	"fr": [
-		"(changem[^ ]+|dereglem[^ ]+|rechauff[^ ]+) clima[^ ]+( global)?",
+		"(?:changem[^ ]+|dereglem[^ ]+|rechauff[^ ]+) clima[^ ]+(?: global)?",
 		"global warming",
 		"climate change",
 		"accords? paris",
@@ -10,6 +10,6 @@
 		"cop ?[0-9]+",
 		"cop ?21",
 		"températures? mondiales?( globales?)?",
-		"gaz ([àa] )?(effets? )(de )?serre"
+		"gaz (?:[àa] )?(?:effets? )(?:de )?serre"
 	]
 }
