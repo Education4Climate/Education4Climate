@@ -1,72 +1,80 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
+from pathlib import Path
+
+import pandas as pd
 
 import scrapy
 
 from config.settings import YEAR
 from config.utils import cleanup
 
-UANTWERP_URL = "https://www.uantwerpen.be/en/study/education-and-training/"
+BASE_URL = "https://www.uantwerpen.be/en/study/programmes/all-programmes/{}/study-programme/"
+COURSE_URL = "https://www.uantwerpen.be/ajax/courseInfo{}"
+PROG_DATA_PATH = Path(f'../../data/crawling-output/uantwerp_programs_{YEAR}.json')
+LANGUAGE_DICT = {"Dutch": 'nl',
+                 "English": 'en',
+                 "French": 'fr'}
 
 
-class UantwerpSpider(scrapy.Spider, ABC):
-    name = "uantwerp"
+class UantwerpCourseSpider(scrapy.Spider, ABC):
+    name = "uantwerp-courses"
     custom_settings = {
         'FEED_URI': f'../../data/crawling-output/uantwerp_courses_{YEAR}.json',
     }
 
     def start_requests(self):
-        base_url = UANTWERP_URL
-        yield scrapy.Request(url=base_url, callback=self.parse_main)
 
-    def parse_main(self, response):
-        for href in response.xpath(
-                "//span[contains(text(), 'master')]/preceding::h2/a/@href").getall():
-            yield response.follow(href + 'study-programme/', self.parse_formation)
+        programs_codes = set(pd.read_json(open(PROG_DATA_PATH, "r"))["id"].tolist())
+        i = 0
+        for code in programs_codes:
+            # This is used to take into account programs with options (e.g. see Bachelor of Applied Linguistics)
+            sub_codes = code.split(" ")
+            url = BASE_URL.format(sub_codes[0])
+            if len(sub_codes) == 2:
+                url += sub_codes[1] + "/"
 
-    def parse_formation(self, response):
-        for href in response.xpath("//a[@class='iframe cboxElement']/@href").getall():
-            yield response.follow(href, self.parse_course)
+            yield scrapy.Request(url=url, callback=self.parse_courses)
+
+            if i == 5:
+                return
+            i += 1
+
+    def parse_courses(self, response):
+
+        main_panel = f"//section[contains(@id, '-{YEAR}')]//section[@class='course']"
+        # One course can be several times in the same program
+        courses_names = response.xpath(f"{main_panel}/header/h5/a/text()").getall()
+        courses_links = response.xpath(f"{main_panel}/header/h5/a/@href").getall()
+        for course_name, course_link in list(set(zip(courses_names, courses_links))):
+            course_info_panel = f"{main_panel}/header[h5/a[text()=\"{course_name}\"]][1]/following::div[1]"
+            course_id = response.xpath(f"{course_info_panel}//div[contains(@class, 'guideNr')]"
+                                       f"//div[@class='value']/text()").get().replace('\n', '').replace('\t', '')
+            # TODO: check if there can be several languages
+            languages = response.xpath(f"{course_info_panel}//div[contains(@class, 'language')]"
+                                       f"//div[@class='value']/text()").getall()
+            languages = list(set([LANGUAGE_DICT[language.replace('\n', '').replace('\t', '')]
+                                  for language in languages]))
+
+            teachers = list(set(response.xpath(f"{course_info_panel}//div[contains(@class, 'teachers')]"
+                                               f"//div[@class='value']//a/text()").getall()))
+
+            base_dict = {"id": course_id,
+                         "name": course_name,
+                         "year": f"{YEAR}-{int(YEAR)+1}",
+                         "language": languages,
+                         "teachers": teachers}
+
+            yield response.follow(COURSE_URL.format(course_link), self.parse_course, cb_kwargs={"base_dict": base_dict})
+            return
+        return
 
     @staticmethod
-    def parse_course(response):
-        data_mapper = {
-            # Standard fields :
-            'name': "//h1",
-            'id': "/html/body/form/div[3]/section/section/table/tbody/tr[1]/td[2]/b",
-            'teacher': "/html/body/form/div[3]/section/section/table/tbody/tr[11]/td[2]/a",
-            'ects': "/html/body/form/div[3]/section/section/table/tbody/tr[6]/td[2]",
-            'content': "/html/body/form/div[3]/section/section/div[1]/div[3]/div/p",
-            'language': "/html/body/form/div[3]/section/section/table/tbody/tr[9]/td[2]",
-            'year': "/html/body/form/div[3]/section/section/table/tbody/tr[3]/td[2]",
-            'campus': "",
-            'faculty': "/html/body/form/div[3]/section/section/table/tbody/tr[2]/td[2]/b",
-            'cycle': "",
-            'formation': "",
+    def parse_course(response, base_dict):
 
-            # Other non standard fields :
-            'learning_outcome': "/html/body/form/div[3]/section/section/div[1]/div[2]/div",
-            # ToDo: Confirm that method = Teaching method
-            'method': "/html/body/form/div[3]/section/section/div[1]/div[5]/div",
-            # ToDo: Confirm that evalutation = Assessment method
-            'evaluation': "/html/body/form/div[3]/section/section/div[1]/div[6]/div",
-            'contact_hours': "/html/body/form/div[3]/section/section/table/tbody/tr[5]/td[2]",
-            'study_load': "/html/body/form/div[3]/section/section/table/tbody/tr[7]/td[2]",
-            'contract_restrictions': "/html/body/form/div[3]/section/section/table/tbody/tr[8]/td[2]",
-            'prerequisite': "/html/body/form/div[3]/section/section/div[1]/div[1]/div"
-        }
-
-        data = {}
-        for field in data_mapper:
-            xpath_str = data_mapper[field]
-            if xpath_str == '':
-                continue
-            try:
-                data[field] = cleanup(response.xpath(xpath_str).get())
-            except Exception as e:
-                raise ValueError(
-                    f"Xpath {xpath_str} does not work for field {field}.\n"
-                    f"More information on the error : {e}"
-                )
-        data['url'] = response.url
-        yield data
+        content = cleanup(response.xpath("//section[contains(header/h3/a/text(), 'Learning outcomes')]/div").get())
+        content += "\n" + cleanup(response.xpath("//section[contains(header/h3/a/text(),"
+                                                 " 'Course contents')]/div").get())
+        base_dict["url"] = response.url
+        base_dict["content"] = content
+        yield base_dict

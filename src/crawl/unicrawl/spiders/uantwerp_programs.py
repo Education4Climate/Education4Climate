@@ -30,9 +30,11 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
 
     def parse_program_info(self, response):
         name = response.xpath("//span[@class='main']/text()").get()
-        faculty = response.xpath("//div[contains(@class, 'managedContent')]//li/a[1]/text()").get()
-        campus = response.xpath("//div[contains(@class, 'managedContent')]//li/a[2]/text()").get()
-        base_dict = {'id': '', # didn't find any id for programs
+        if "(Discontinued)" in name:
+            return
+        faculty = response.xpath("//div[contains(@class, 'managedContent')]//li[2]/a/text()").get()
+        campus = response.xpath("//div[contains(@class, 'managedContent')]//li[3]/a/text()").get()
+        base_dict = {'id': response.url.split("/")[-2],  # didn't find any id for programs so using url
                      'name': name,
                      'faculty': faculty,
                      'campus': campus}
@@ -40,14 +42,25 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
                               self.parse_study_program,
                               cb_kwargs={"base_dict": base_dict})
 
-    @staticmethod
-    def parse_study_program(response, base_dict):
+    def parse_study_program(self, response, base_dict):
 
-        main_tab = "//section[contains(@class, 'stateActive')]"
+        # Check if there are sub-programs. If so, click on the link and call the function recursively.
+        subprograms_links = response.xpath("//nav[@class='navSub']//li/a/@href").getall()
+        if len(subprograms_links) != 0:
+            for link in subprograms_links:
+                cur_dict = base_dict.copy()
+                cur_dict["id"] += " " + link.split("/")[-2]
+                yield response.follow(link, self.parse_study_program, cb_kwargs={"base_dict": cur_dict})
+            return
+
+        main_tab = f"//section[contains(@id, '-{YEAR}')]"
         courses_links = response.xpath(f"{main_tab}//h5//a/@href").getall()
         courses_codes = [link.split("-")[1].split("&")[0] for link in courses_links]
         ects = response.xpath(f"{main_tab}//div[@class='spec points']/div[@class='value']/text()").getall()
-        ects = [e.split(" ")[0] for e in ects]
+        ects = [e.split(" ")[0].replace('\n', '').replace('\t', '') for e in ects]
+
+        # One course can be several times in the same program
+        courses_codes, ects = zip(*list(set(zip(courses_codes, ects))))
 
         cur_dict = {"courses": courses_codes,
                     "ects": ects}
