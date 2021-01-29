@@ -28,12 +28,8 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
-        i = 0
         for course_id in courses_ids_list:
             yield scrapy.Request(BASE_URL.format(course_id, YEAR), self.parse_main)
-            if i == 10:
-                return
-            i += 1
 
     @staticmethod
     def parse_main(response):
@@ -53,6 +49,7 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
             teachers = cleanup(teachers_para.getall())
         else:
             teachers = cleanup(teachers_links)
+        teachers = [] if teachers == ["N..."] else teachers
 
         # Language
         languages = cleanup(response.xpath(".//section[h3[contains(text(), "
@@ -66,14 +63,14 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         contents = []
         for section in sections:
             content = cleanup(response.xpath(f".//section[h3[contains(text(), \"{section}\")]]").get())
-            content = content.replace(f"{section}", "")
+            content = content.replace(f"{section}", "").strip("\n")
             contents += [content]
         content = "\n".join(contents)
         content = "" if content == "\n\n" else content
 
         data = {
-            'name': class_name,
             'id': short_name,
+            'name': class_name,
             'year': years,
             'teacher': teachers,
             'language': languages,

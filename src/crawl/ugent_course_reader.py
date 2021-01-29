@@ -1,7 +1,33 @@
 import re
 
 import src.crawl.unicrawl.spiders.config.settings as s
-import utils as u
+
+
+# TODO: elle sert à quoi cette fonction?
+def is_float(potential_float):
+    try:
+        float(potential_float)
+        return True
+    except ValueError:
+        return False
+
+
+def read_pdf():
+
+    import PyPDF2
+
+    pdf_file_obj = open('/home/noel/Téléchargements/A000186.pdf', 'rb')
+    pdf_reader = PyPDF2.PdfFileReader(pdf_file_obj)
+
+    page_content = ''
+    for page_nb in range(pdf_reader.numPages):
+        page_content += pdf_reader.getPage(page_nb).extractText()
+
+    pdf_file_obj.close()
+    with open("/home/noel/Téléchargements/A000186.txt", "w") as text_file:
+        text_file.write(page_content)
+    return page_content
+
 
 SEPARATOR_FIRST_AND_SECOND_PART = 'Offered in the following programmes in  2020-2021crdtsoffering'
 
@@ -11,7 +37,7 @@ OTHER_CATEGORIES_SEPARATORS = ["Course offerings and teaching methods",
                                "Course size"]
 
 # Read PDF file
-page_content = u.read_pdf()
+page_content = read_pdf()
 
 # mapping : [prerequisite,theme,goal,content,method,evaluation other, resources,biblio,faculty,anacs,shortname,class,location, teachers,language]
 course = {}
@@ -41,7 +67,7 @@ course["teacher"] = teacher_paragraph
 index = page_content.find('Credits')
 substring = page_content[index:index+len('Credits')+ 20]
 for part in re.split('[ (]', substring):
-    if u.is_float(part):
+    if is_float(part):
         course["ects"] = float(part)
         break
 
@@ -49,7 +75,7 @@ for part in re.split('[ (]', substring):
 index = page_content.find('Study time')
 substring = page_content[index:index+len('Study time')+ 20]
 for part in re.split('[ (]', substring):
-    if u.is_float(part):
+    if is_float(part):
         course["study_time"] = float(part)
         break
 
