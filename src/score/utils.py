@@ -14,6 +14,26 @@ import logging
 logger = logging.Logger(name='Utils Logger')
 
 
+def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]]):
+    """
+    Compare text to a list of patterns
+    :param text: A string that has been lowerized
+    :param patterns: List of patterns matching lowerized strings
+    :return:
+    - 1 if any pattern is find, 0 otherwise
+    - a dictionary associating the patterns that matched to what they matched
+    """
+
+    pattern_matches_dict = {}
+    score = 0
+    for pattern in patterns:
+        matches = re.findall(pattern, text)
+        if len(matches) != 0:
+            pattern_matches_dict[pattern] = matches
+            score = 1
+    return score, pattern_matches_dict
+
+
 def load_models(corpus: List[str], language: str):
     """
     Build TF-IDF vectorize and features from a given corpus.
@@ -44,18 +64,6 @@ def load_models(corpus: List[str], language: str):
     logger.info("Vectorizer trained")
 
     return vectorizer, features
-
-
-def compute_score(text: str, pattern_mapping: Dict[str, List[str]]) -> int:
-    """Return 1 if 'text' matches one pattern in 'pattern_mapping', 0 otherwise"""
-    # TODO : insert language detection
-    language = "fr"
-    for p in pattern_mapping[language]:
-        if re.search(p, text) is not None:
-            print(text)
-            print(p)
-            return 1
-    return 0
 
 
 def compute_climate_score(ngram_score_dict: Dict[str, float], pattern) -> (float, Counter):
