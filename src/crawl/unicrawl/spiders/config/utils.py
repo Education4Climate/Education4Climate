@@ -10,4 +10,4 @@ def cleanup(data):
             result.append(cleanup(e))
         return result
     else:
-        return replace_tags(data, " ").strip()
+        return replace_tags(data, " ").strip().strip("\n")

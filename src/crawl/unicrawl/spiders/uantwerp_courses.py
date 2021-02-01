@@ -66,8 +66,10 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
         sections = ["Learning outcomes", "Course contents", "Eindcompetenties", "Inhoud"]
         content = ""
         for section in sections:
-            section_content = cleanup(response.xpath(f"//section[contains(header/h3/a/text(), \"{section}\")]/div").get())
+            section_content = cleanup(response.xpath(f"//section[contains(header/h3/a/text(),"
+                                                     f" \"{section}\")]/div").get())
             content += "\n" + section_content if len(section_content) != 0 else ""
+        content = content.strip("\n")
 
         base_dict["url"] = response.url
         base_dict["content"] = content
