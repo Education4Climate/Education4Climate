@@ -9,12 +9,16 @@ import scrapy
 from config.settings import YEAR
 from config.utils import cleanup
 
-BASE_URL = "https://www.uantwerpen.be/en/study/programmes/all-programmes/{}/study-programme/"
 COURSE_URL = "https://www.uantwerpen.be/ajax/courseInfo{}"
 PROG_DATA_PATH = Path(f'../../data/crawling-output/uantwerp_programs_{YEAR}.json')
 LANGUAGE_DICT = {"Dutch": 'nl',
+                 "Nederlands": 'nl',
                  "English": 'en',
-                 "French": 'fr'}
+                 "Engels": 'en',
+                 "French": 'fr',
+                 "Frans": 'fr'}
+
+# TODO: some pages were dead when the crawler was last ran on the 01/02/2021
 
 
 class UantwerpCourseSpider(scrapy.Spider, ABC):
@@ -25,20 +29,9 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        programs_codes = set(pd.read_json(open(PROG_DATA_PATH, "r"))["id"].tolist())
-        i = 0
-        for code in programs_codes:
-            # This is used to take into account programs with options (e.g. see Bachelor of Applied Linguistics)
-            sub_codes = code.split(" ")
-            url = BASE_URL.format(sub_codes[0])
-            if len(sub_codes) == 2:
-                url += sub_codes[1] + "/"
-
+        study_programs_url = set(pd.read_json(open(PROG_DATA_PATH, "r"))["url"].tolist())
+        for url in study_programs_url:
             yield scrapy.Request(url=url, callback=self.parse_courses)
-
-            if i == 5:
-                return
-            i += 1
 
     def parse_courses(self, response):
 
@@ -66,15 +59,16 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
                          "teachers": teachers}
 
             yield response.follow(COURSE_URL.format(course_link), self.parse_course, cb_kwargs={"base_dict": base_dict})
-            return
-        return
 
     @staticmethod
     def parse_course(response, base_dict):
 
-        content = cleanup(response.xpath("//section[contains(header/h3/a/text(), 'Learning outcomes')]/div").get())
-        content += "\n" + cleanup(response.xpath("//section[contains(header/h3/a/text(),"
-                                                 " 'Course contents')]/div").get())
+        sections = ["Learning outcomes", "Course contents", "Eindcompetenties", "Inhoud"]
+        content = ""
+        for section in sections:
+            section_content = cleanup(response.xpath(f"//section[contains(header/h3/a/text(), \"{section}\")]/div").get())
+            content += "\n" + section_content if len(section_content) != 0 else ""
+
         base_dict["url"] = response.url
         base_dict["content"] = content
         yield base_dict
