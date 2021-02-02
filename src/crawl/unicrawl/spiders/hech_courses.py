@@ -54,7 +54,7 @@ class HECHCourseSpider(scrapy.Spider, ABC):
             'year': years,
             'teacher': teachers,
             'language': languages,
-            'content': content,
             'url': response.url,
+            'content': content,
         }
         yield {**base_dict, **cur_dict}

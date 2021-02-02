@@ -51,6 +51,8 @@ class VUBProgramSpider(scrapy.Spider, ABC):
         faculty = response.xpath("//p[1]/text()").get()
 
         courses_links = response.xpath("//i/a/@href").getall()
+        if len(courses_links) == 0:
+            return
         courses_codes = [link.split("id=")[1].split("&")[0] for link in courses_links]
         courses_texts = response.xpath("//i/a/text()").getall()
         courses_ects = [int(text.split("ECTS")[0]) for text in courses_texts]
