@@ -1,6 +1,6 @@
 # from pyvirtualdisplay import Display
 # from xvfbwrapper import Xvfb
-from selenium import webdriver
+# from selenium import webdriver
 
 from settings import DRIVER_PATH
 
