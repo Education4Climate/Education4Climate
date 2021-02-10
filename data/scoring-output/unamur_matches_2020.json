@@ -1,0 +1,316 @@
+{
+    "decarbonization": {
+        "EINGM107": {
+            "(?:bilan[^ ]+|empreint[^ ]+) carbon[^ ]+": [
+                "empreintes carbone"
+            ]
+        }
+    },
+    "energy": {
+        "FINT0039": {
+            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
+                "\u00e9nerg\u00e9tique"
+            ]
+        },
+        "SBOEM260": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "\u00e9nergie verte"
+            ]
+        },
+        "SCHIM223": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "energies renouvelables",
+                "\u00e9nergies vertes",
+                "\u00e9nergies renouvelables",
+                "\u00e9nergies renouvelables",
+                "\u00e9nergie renouvelables"
+            ]
+        },
+        "SGOGB302": {
+            "solaires?": [
+                "solaire",
+                "solaire"
+            ]
+        },
+        "SMATB213": {
+            "solaires?": [
+                "solaire",
+                "solaire",
+                "solaires",
+                "solaire",
+                "solaire",
+                "solaire"
+            ]
+        },
+        "SMATB310": {
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "SMATM127": {
+            "solaires?": [
+                "solaire",
+                "solaires",
+                "solaire"
+            ]
+        },
+        "SPHYM134": {
+            "solaires?": [
+                "solaire"
+            ]
+        }
+    },
+    "consumption": {},
+    "environment": {
+        "SGOGB210": {
+            "ecosyst[^ ]+": [
+                "ecosyst\u00e9miques",
+                "ecosyst\u00e9miques"
+            ]
+        },
+        "SSMRM102": {
+            "ecosyst[^ ]+": [
+                "ecosyst\u00e9miques",
+                "ecosyst\u00e9miques"
+            ]
+        }
+    },
+    "climatology": {
+        "EFAEM057": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "EINGB221": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatologie"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "SBIOB001": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "SBIOB153": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique",
+                "climatique",
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique",
+                "changement climatique",
+                "changement climatique"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "SBIOB229": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "SBIOB228": {
+            "(dioxyde carbone|co2)": [
+                "co2"
+            ]
+        },
+        "SCHIM124": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique",
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "SCHIM223": {
+            "(dioxyde carbone|co2)": [
+                "co2"
+            ]
+        },
+        "SCHIM229": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique"
+            ]
+        },
+        "SGOGB302": {
+            "climat[^ ]+": [
+                "climats",
+                "climatique",
+                "climatiques",
+                "climatiques",
+                "climatiques",
+                "climatologie",
+                "climatique",
+                "climats",
+                "climats",
+                "climatiques",
+                "climatologie",
+                "climatique",
+                "climats",
+                "climatiques",
+                "climats",
+                "climatologique",
+                "climats",
+                "climatologie"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changements climatiques",
+                "changements climatiques",
+                "changements climatiques"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "SGOLB202": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "SGOLB304": {
+            "climat[^ ]+": [
+                "climatologie"
+            ]
+        },
+        "SGOLB311": {
+            "climat[^ ]+": [
+                "climatologie"
+            ]
+        },
+        "SGOLM145": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "SPHYM109": {
+            "(dioxyde carbone|co2)": [
+                "co2"
+            ]
+        },
+        "SPHYM119": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "SSMRM102": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique",
+                "changement climatique"
+            ]
+        },
+        "SSPSM101": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "SVETB205": {
+            "climat[^ ]+": [
+                "climatologie"
+            ]
+        }
+    },
+    "durability": {
+        "DROIB330": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ECGEB284": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ECGEB321": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "EINGM107": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "INFOM476": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "SGOGB101": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "SGOGB310": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "SGOLB303": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "SSMRM101": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "SSMRM103": {
+            "gestio[^ ]+ durab[^ ]+": [
+                "gestion durable"
+            ]
+        },
+        "SSPSB107": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "SSPSB208": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        }
+    },
+    "society": {}
+}

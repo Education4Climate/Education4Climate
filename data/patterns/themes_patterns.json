@@ -1,0 +1,95 @@
+{
+	"decarbonization": {
+		"fr": ["(?:bilan[^ ]+|empreint[^ ]+) carbon[^ ]+",
+			  "bas[- ]carbon[^ ]+",
+			  "décarbon[^ ]+",
+			  "capture (?:co2|dioxyde carbone)",
+			  "conversion (?:co2|dioxyde carbone)"
+		],
+		"en": [],
+		"nl": []
+	},
+	"energy": {
+		"fr": ["[ée]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)",
+			   "transiti[^ ]+ ([ée]nerg[^ ]+|ecolog[^ ]+)",
+			   "solaires?",
+			   "eolien[^ ]+",
+			   "consom[^ ]+ énerg[^ ]+",
+			   "effica[^ ]+ énerg[^ ]+",
+			   "utilis[^ ]+ énerg[^ ]+"
+		],
+		"en": [],
+		"nl": []
+	},
+	"consumption": {
+		"fr": ["consom[^ ]+ énerg[^ ]+",
+			   "utilis[^ ]+ énerg[^ ]+"
+		],
+		"en": [],
+		"nl": []
+	},
+	"environment": {
+		"fr": ["gestion[^ ]+ envir[^ ]+",
+			   "^[ée]colo[^ ]+",
+			   "ecosyst[^ ]+",
+			   "conditions? météo[^ ]+ extr[^ ]+",
+			   "événements? météo[^ ]+ extr[^ ]+",
+			   "temp[^ ]+ moyenne mond[^ ]+",
+			   "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
+		],
+		"en": [],
+		"nl": []
+	},
+	"climatology": {
+		"fr": ["températ[^ ]+ mond[^ ]+ moyenne",
+			  "temp[^ ]+ moyenne mond[^ ]+",
+			  "(dioxyde carbone|co2)",
+			  "changements? conditions? (?:météorologiques?|climatiques?)",
+			  "climat[^ ]+",
+			  "actions? climat[^ ]+",
+			  "adaptations? (?:changements? )climat[^ ]+",
+			  "chang[^ ]+ clima[^ ]+",
+			  "alerte précoce clima[^ ]+",
+			  "risque[^ ]+ clima[^ ]+",
+			  "impact clima[^ ]+",
+			  "atténu[^ ]+ clima[^ ]+",
+			  "conditions? météo[^ ]+ extr[^ ]+",
+			  "événements? météo[^ ]+ extr[^ ]+",
+			  "réchauff[^ ]+ clima[^ ]+",
+			  "gaz (?:effets? )serre",
+			  "émissions gaz (:?effets? )serre",
+			  "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
+		],
+		"en": [],
+		"nl": []
+	},
+	"durability": {
+		"fr": ["développ[^ ]+ durab[^ ]+",
+			  "efficacité ressources",
+			  "consom[^ ]+ durab[^ ]+",
+			  "gestio[^ ]+ durab[^ ]+",
+			  "pratiques? durabl[^ ]+",
+			  "produ[^ ]+ durab[^ ]+",
+			  "gestion chang[^ ]+ clima[^ ]+",
+			  "planifications? chang[^ ]+ clima[^ ]+",
+			  "politiques? matières? chang[^ ]+ clima[^ ]+",
+			  "risques? (?:liés? )clima[^ ]+",
+			  "résist[^ ]+ clima[^ ]+"
+		],
+		"en": [],
+		"nl": []
+	},
+	"society": {
+		"fr": ["actions? climat[^ ]+",
+			  "adaptations? (?:changements? )climat[^ ]+",
+			  "politiques? climat[^ ]+",
+			  "politiques? matières? chang[^ ]+ clima[^ ]+",
+			  "réfugiés? climatiques?",
+			  "^cop ?[0-9]+"
+		],
+		"en": [],
+		"nl": []
+	}
+}
+
+

@@ -1,0 +1,122 @@
+{
+    "decarbonization": {},
+    "energy": {
+        "UA-B1-ARCHIT-012-M": {
+            "solaires?": [
+                "solaire",
+                "solaire",
+                "solaire",
+                "solaire"
+            ]
+        },
+        "UA-B2-ARCHIT-015-M": {
+            "consom[^ ]+ \u00e9nerg[^ ]+": [
+                "consommation \u00e9nerg\u00e9tique"
+            ]
+        },
+        "UA-B3-ARCHIT-013-M": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "energies renouvelables"
+            ]
+        },
+        "UI-B1-IRCIVI-009-M": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "\u00e9nergie renouvelable"
+            ],
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "UI-B3-IRCIVA-010-M": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "\u00e9nergies renouvelables"
+            ]
+        },
+        "US-B1-SCPHYS-007-M": {
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "US-B2-SCMATH-020-M": {
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "UW-B3-IGGEST-003-M": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "\u00e9nergie renouvelable"
+            ],
+            "solaires?": [
+                "solaire"
+            ]
+        }
+    },
+    "consumption": {
+        "UA-B2-ARCHIT-015-M": {
+            "consom[^ ]+ \u00e9nerg[^ ]+": [
+                "consommation \u00e9nerg\u00e9tique"
+            ]
+        }
+    },
+    "environment": {
+        "US-B3-SCBIOL-008-M": {
+            "ecosyst[^ ]+": [
+                "ecosyst\u00e8mes",
+                "ecosyst\u00e8me"
+            ]
+        }
+    },
+    "climatology": {
+        "UA-B1-ARCHIT-012-M": {
+            "climat[^ ]+": [
+                "climatiques",
+                "climatisme",
+                "climatique"
+            ]
+        },
+        "UI-B1-IRCIVI-009-M": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "US-B2-SCBIOL-007-M": {
+            "climat[^ ]+": [
+                "climatiques",
+                "climatiques"
+            ]
+        },
+        "UW-B2-IGGEST-003-M": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        }
+    },
+    "durability": {
+        "UI-B1-IRCIVI-009-M": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "UI-M1-IRIGIG-840-C": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "UW-B3-IGGEST-003-M": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        }
+    },
+    "society": {}
+}

@@ -10,7 +10,7 @@ import langdetect
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
 from utils import compute_score
 
-ACCEPTED_LANGUAGES = ["fr"] # ["en", "fr", "nl"]
+ACCEPTED_LANGUAGES = ["fr"]  # ["en", "fr", "nl"]
 
 
 def main(school: str, year: int, fields: str) -> None:
@@ -24,14 +24,6 @@ def main(school: str, year: int, fields: str) -> None:
 
     :return: None
 
-    ----
-    Note:
-    Scores are first saved into a DataFrame before being saved. The keys of the DataFrame are the following:
-    - shift_score:
-    - shift_patterns:
-    - climate_score:
-    - climate_patterns:
-    - 'sdg':
 
     """
     # TODO
@@ -52,9 +44,9 @@ def main(school: str, year: int, fields: str) -> None:
     courses_df = courses_df[["id", "text"]].set_index("id")
 
     # Load patterns for different types of scores
-    shift_patterns = json.load(open(f"../../data/patterns/shift_patterns.json"))
-    climate_patterns = json.load(open(f"../../data/patterns/climate_patterns.json"))
-    patterns_matches_dict = {"climate": {}, "shift": {}}
+    themes_patterns = json.load(open(f"../../data/patterns/themes_patterns.json"))
+    themes = themes_patterns.keys()
+    patterns_matches_dict = {theme: {} for theme in themes}
     for idx, text in courses_df.text.items():
 
         # Clean text # TODO: maybe a better way to do that
@@ -62,24 +54,28 @@ def main(school: str, year: int, fields: str) -> None:
         for ch in ["\r", "\t", "\n", "\xa0", ":", ";", ".", ",", "?", "!", "(", ")", "…"]:
             text = text.replace(ch, " ")
 
+        if len(text) == 0:
+            courses_df.loc[idx, themes] = 0
+            continue
+
         # Detect language of text
         language = langdetect.detect(text)
         # TODO: create patterns for 'en' and 'nl'
         if language not in ACCEPTED_LANGUAGES:
             print(idx, language)
+            courses_df.loc[idx, themes] = 0
             continue
 
         # Match patterns and compute scores
-        score, shift_patterns_matches_dict = compute_score(text, shift_patterns[language])
-        courses_df.loc[idx, "shift_score"] = score
-        if score == 1:
-            patterns_matches_dict["shift"][idx] = shift_patterns_matches_dict
-        score, climate_patterns_matches_dict = compute_score(text, climate_patterns[language])
-        courses_df.loc[idx, "climate_score"] = score
-        if score == 1:
-            patterns_matches_dict["climate"][idx] = climate_patterns_matches_dict
+        for theme in themes:
+            score, shift_patterns_matches_dict = compute_score(text, themes_patterns[theme][language])
+            courses_df.loc[idx, theme] = score
+            if score == 1:
+                patterns_matches_dict[theme][idx] = shift_patterns_matches_dict
 
     courses_df = courses_df.drop("text", axis=1)
+    courses_df = courses_df.astype(int)
+
     # Save scores
     output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
     print("Output file : {}".format(output_fn))
