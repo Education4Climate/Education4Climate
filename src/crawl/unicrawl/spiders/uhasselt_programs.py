@@ -69,19 +69,27 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_program(response, base_dict):
 
-        # TODO: Get additional stuff -> need to be more specifig
-        main_path = "//div[contains(text(), 'Modeltraject')]/following::td[1]" \
-                    "//a[contains(@href, 'opleidings') and contains(@href, 'i=')]"
-        courses_list = response.xpath(f"{main_path}/text()").getall()
-        courses_list += response.xpath(f"{main_path}/u/text()").getall()
+        # For simplicity taking only course in tables under tabs 'Modeltraject' (except 'Modeltraject van ...')
+        main_path = "//div[contains(text(), 'Modeltraject') and not(contains(text(), 'Modeltraject van'))]" \
+                    "/following::td[1]//table//table//tr"
+        courses_list = response.xpath(f"{main_path}/td[1]/a/text()").getall()
         courses_ids = [course.split(" ")[0] for course in courses_list]
         if len(courses_ids) == 0:
             return
 
-        # TODO: get credits
+        ects = response.xpath(f"{main_path}/td[5]/text()").getall()
+        ects = [e for e in ects if e != 'SP']
+        # Some programs do not have a regular way of displaying ects... (some times 4th sometimes 5th column)
+        if len(ects) != len(courses_ids):
+            ects = [0]*len(courses_ids)
 
-        # TODO: get faculty and campus --> probably none
+        # Remove duplicates
+        courses_ids, ects = zip(*list(set(zip(courses_ids, ects))))
 
-        cur_dict = {"courses": courses_ids}
+        # Didn't find any info on campus or faculty
+        cur_dict = {"faculty": '',
+                    "campus": '',
+                    "courses": courses_ids,
+                    "ects": ects}
         yield {**base_dict, **cur_dict}
 
