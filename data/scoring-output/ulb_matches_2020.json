@@ -1,0 +1,540 @@
+{
+    "decarbonization": {
+        "CNST-P3006": {
+            "d\u00e9carbon[^ ]+": [
+                "d\u00e9carbon\u00e9"
+            ]
+        },
+        "ENVI-F405": {
+            "bas[- ]carbon[^ ]+": [
+                "bas-carbone",
+                "bas-carbone"
+            ]
+        }
+    },
+    "energy": {
+        "ARCH-H300": {
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "ARCH-P7119": {
+            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
+                "\u00e9nerg\u00e9tique"
+            ]
+        },
+        "ARCH-P8119": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "\u00e9nergie renouvelable"
+            ]
+        },
+        "CHIM-F405": {
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "CHIM-F423": {
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "CNST-P3003": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "\u00e9nergie renouvelable"
+            ]
+        },
+        "ELEC-H201": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
+                "energies renouvelables"
+            ]
+        },
+        "ENVI-F454": {
+            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
+                "\u00e9nerg\u00e9tique"
+            ]
+        },
+        "GEOL-F305": {
+            "solaires?": [
+                "solaire"
+            ]
+        },
+        "GEOL-F4004": {
+            "solaires?": [
+                "solaire",
+                "solaire",
+                "solaire",
+                "solaires",
+                "solaire",
+                "solaire",
+                "solaire",
+                "solaire",
+                "solaire"
+            ]
+        },
+        "PHYS-F105": {
+            "solaires?": [
+                "solaire"
+            ]
+        }
+    },
+    "consumption": {},
+    "environment": {
+        "BING-F410": {
+            "ecosyst[^ ]+": [
+                "ecosyst\u00e8mes"
+            ]
+        },
+        "BING-F525": {
+            "ecosyst[^ ]+": [
+                "ecosyst\u00e8mes"
+            ]
+        },
+        "BIOL-F444": {
+            "ecosyst[^ ]+": [
+                "ecosystems",
+                "ecosystem"
+            ]
+        },
+        "COMM-B430": {
+            "ecosyst[^ ]+": [
+                "ecosyst\u00e8me"
+            ]
+        },
+        "ENVI-F403": {
+            "ecosyst[^ ]+": [
+                "ecosystem"
+            ]
+        },
+        "ENVI-P1003": {
+            "ecosyst[^ ]+": [
+                "ecosystems"
+            ]
+        },
+        "PHYS-H515": {
+            "ecosyst[^ ]+": [
+                "ecosystems"
+            ]
+        }
+    },
+    "climatology": {
+        "ARCH-P7117": {
+            "climat[^ ]+": [
+                "climate"
+            ]
+        },
+        "ARCH-P8119": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatiques",
+                "climatique"
+            ]
+        },
+        "BING-F1001": {
+            "climat[^ ]+": [
+                "climatiques",
+                "climatique",
+                "climatiques"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique",
+                "changements climatiques"
+            ]
+        },
+        "BING-F410": {
+            "climat[^ ]+": [
+                "climatiques"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changements climatiques"
+            ]
+        },
+        "BING-F415": {
+            "climat[^ ]+": [
+                "climatologie"
+            ]
+        },
+        "BING-H4003": {
+            "(dioxyde carbone|co2)": [
+                "co2",
+                "co2",
+                "co2"
+            ]
+        },
+        "BIOL-F305": {
+            "climat[^ ]+": [
+                "climatique"
+            ]
+        },
+        "CNST-H306": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique",
+                "climatique",
+                "climatique",
+                "climatique",
+                "climatic",
+                "climatic",
+                "climatic",
+                "climate",
+                "climatic"
+            ]
+        },
+        "CNST-P3003": {
+            "climat[^ ]+": [
+                "climats",
+                "climatisation",
+                "climatique",
+                "climatique"
+            ]
+        },
+        "CNST-P3006": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique",
+                "climate"
+            ]
+        },
+        "DROI-C5100": {
+            "climat[^ ]+": [
+                "climatiques"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changements climatiques"
+            ]
+        },
+        "DROI-C670": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique",
+                "climatique"
+            ]
+        },
+        "ECON-S2002": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique"
+            ]
+        },
+        "ENVI-F1001": {
+            "climat[^ ]+": [
+                "climatiques",
+                "climatique",
+                "climats",
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique",
+                "changement climatique"
+            ]
+        },
+        "ENVI-F405": {
+            "climat[^ ]+": [
+                "climatiques",
+                "climatologie",
+                "climats",
+                "climatique\"",
+                "climatique",
+                "climatiques",
+                "climatique",
+                "climatique",
+                "climatiques",
+                "climatique",
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changements climatiques",
+                "changements climatiques"
+            ],
+            "risque[^ ]+ clima[^ ]+": [
+                "risques climatiques"
+            ]
+        },
+        "ENVI-F454": {
+            "(dioxyde carbone|co2)": [
+                "co2"
+            ]
+        },
+        "ENVI-F504": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique",
+                "climatique",
+                "climatique",
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique",
+                "changement climatique",
+                "changement climatique",
+                "changement climatique",
+                "changement climatique"
+            ]
+        },
+        "ENVI-F526": {
+            "climat[^ ]+": [
+                "climatiques",
+                "climatiques"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changements climatiques",
+                "changements climatiques"
+            ]
+        },
+        "ENVI-P1003": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "ENVI-S101": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique"
+            ]
+        },
+        "ETHI-F1001": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique"
+            ]
+        },
+        "GEOG-F102": {
+            "climat[^ ]+": [
+                "climatique",
+                "climatique"
+            ]
+        },
+        "GEOG-F203": {
+            "climat[^ ]+": [
+                "climatologie",
+                "climatiques",
+                "climats",
+                "climate",
+                "climate",
+                "climate",
+                "climate",
+                "climate",
+                "climate"
+            ]
+        },
+        "GEOG-F207": {
+            "climat[^ ]+": [
+                "climatologiques",
+                "climatique"
+            ]
+        },
+        "GEOG-F307": {
+            "climat[^ ]+": [
+                "climatologiques",
+                "climatique"
+            ]
+        },
+        "GEOG-F408": {
+            "climat[^ ]+": [
+                "climatologiques",
+                "climatologiques",
+                "climate",
+                "climate",
+                "climate",
+                "climate"
+            ]
+        },
+        "GEOL-F4003": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "GEOL-F411": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "GEOL-F428": {
+            "climat[^ ]+": [
+                "climat-carbone"
+            ]
+        },
+        "GEOL-F432": {
+            "climat[^ ]+": [
+                "climatiques"
+            ]
+        },
+        "GEST-H506": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "chang[^ ]+ clima[^ ]+": [
+                "changement climatique"
+            ]
+        },
+        "ORIE-B2071": {
+            "climat[^ ]+": [
+                "climatique"
+            ],
+            "r\u00e9chauff[^ ]+ clima[^ ]+": [
+                "r\u00e9chauffement climatique"
+            ]
+        },
+        "VETE-G2206": {
+            "climat[^ ]+": [
+                "climatologie"
+            ]
+        },
+        "VETE-G3302": {
+            "(dioxyde carbone|co2)": [
+                "co2"
+            ]
+        }
+    },
+    "durability": {
+        "ARCH-H300": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "BING-F1001": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "BING-F4003": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "BING-F403": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "BIOL-F2001": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "BIOL-F4001": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "CHIM-F430": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "CHIM-F474": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "CNST-P3006": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "DROI-C5021": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ECON-S2001": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ECON-S2002": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ECON-S3001": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ECON-S307": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ECON-S533": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ENVI-F409": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ENVI-P1003": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "ENVI-S101": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "GEOL-F426": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "GEST-H506": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "PHYS-S201": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "POLI-D504": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "PROJ-H417": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "TOUR-F425": {
+            "gestio[^ ]+ durab[^ ]+": [
+                "gestion durable",
+                "gestion durable",
+                "gestion durable"
+            ]
+        },
+        "TRAN-H3001": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        }
+    },
+    "society": {
+        "ENVI-F405": {
+            "politiques? climat[^ ]+": [
+                "politique climatique",
+                "politique climatique"
+            ]
+        }
+    }
+}
