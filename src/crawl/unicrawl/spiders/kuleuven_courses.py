@@ -59,8 +59,8 @@ class KULeuvenCourseSpider(scrapy.Spider, ABC):
         content = " ".join(content)
 
         yield {
-            'name': course_name,
             'id': course_id,
+            'name': course_name,
             'year': years,
             'teacher': teachers,
             'language': languages,
