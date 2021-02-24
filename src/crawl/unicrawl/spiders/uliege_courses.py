@@ -42,14 +42,16 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         years = year_and_short_name[0]
 
         # Get teachers name (not an easy task because not a constant syntax)
-        teachers_para = response.xpath(".//section[h3[contains(text(),'Enseignant')]]/p")
+        teachers_para = response.xpath(".//section[h3[contains(text(),'Enseignant')"
+                                       " or contains(text(),'Suppléant')]]/p")
         # Check first if there are links (to teachers page)
         teachers_links = teachers_para.xpath(".//a").getall()
         if len(teachers_links) == 0:
             teachers = cleanup(teachers_para.getall())
         else:
             teachers = cleanup(teachers_links)
-        teachers = [] if teachers == ["N..."] else teachers
+        teachers = [] if teachers == ["N..."] or teachers == [""] else teachers
+        teachers = list(set(teachers))
 
         # Language
         languages = cleanup(response.xpath(".//section[h3[contains(text(), "
