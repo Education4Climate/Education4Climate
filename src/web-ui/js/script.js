@@ -2,7 +2,6 @@
 
 const DATA_FOLDER = "data";
 const SCHOOLS_FILE = DATA_FOLDER + "/" + "schools.json";
-const THEMES = ["decarbonization", "energy", "consumption", "environment", "climatology", "durability", "society"];
 
 var schoolsCount = [];
 var themesCount = [];
@@ -46,7 +45,7 @@ function buildCoursesFinderFilters(courses) {
     courses.forEach(course => {
 
         // On parcourt les thématiques du cours et on peuple chaque compteur
-
+       
         course.themes.forEach(theme => {
 
             if (!themesCount.includes(theme)) {
@@ -323,7 +322,7 @@ async function getCourses() {
                             teachers: course.teacher,
                             url: course.url,
                             languages: course.language,
-                            themes: getThemes(course), //course.themes,
+                            themes: course.themes
                             //abstract: course.abstract,
                             //campus: course.campus,
                             //shiftScore: course.shiftScore,
@@ -347,15 +346,6 @@ function getLanguageFromISOCode(code) {
     dictionary = { "fr": "Français", "nl": "Néerlandais", "en": "Anglais", "de": "Allemand", "ar": "Arabe" };
 
     return dictionary.hasOwnProperty(code) ? dictionary[code] : "Inconnu";
-}
-
-function getThemes(course) {
-
-    var themes = [];
-
-    THEMES.forEach(theme => { if (course[theme]) { themes.push(theme); } });
-
-    return themes;
 }
 
 document.querySelectorAll('.smooth-scroll').forEach(anchor => {
