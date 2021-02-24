@@ -56,7 +56,7 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
                          "name": course_name,
                          "year": f"{YEAR}-{int(YEAR)+1}",
                          "language": languages,
-                         "teachers": teachers}
+                         "teacher": teachers}
 
             yield response.follow(COURSE_URL.format(course_link), self.parse_course, cb_kwargs={"base_dict": base_dict})
 

@@ -36,7 +36,7 @@ class KULeuvenProgramSpider(scrapy.Spider, ABC):
         codes = [link.split('.')[0] for link in links]
 
         for code, link in zip(codes, links):
-            cur_dict = {"code": code}
+            cur_dict = {"id": code}
             yield response.follow(link, self.parse_program, cb_kwargs={"base_dict": {**cur_dict, **base_dict}})
 
     @staticmethod

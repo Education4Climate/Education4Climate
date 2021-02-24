@@ -33,11 +33,11 @@ class ULBProgramSpider(scrapy.Spider, ABC):
 
         for p in soup.find_all('div', class_='search-result__result-item'):
             res = {
+                "id": p.find(class_='search-result__mnemonique').text,
                 "name": p.find('strong').text,
-                "url": p.find(class_="item-title__element_title")["href"],
                 "faculty": p.find('span', class_='search-result__structure-rattachement').text,
-                "code": p.find(class_='search-result__mnemonique').text,
-                "location": p.find(class_='search-result-formation__separator').text
+                "campus": p.find(class_='search-result-formation__separator').text,
+                "url": p.find(class_="item-title__element_title")["href"]
             }
 
             param = res['url'].split('/')[-1].upper()
