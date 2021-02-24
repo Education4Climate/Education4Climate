@@ -20,13 +20,10 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "energy",
+   "durability"
+  ]
  },
  {
   "id":"ARCH-P7117",
@@ -51,13 +48,9 @@
   "campus":[
    "Flagey"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"ARCH-P7119",
@@ -80,13 +73,9 @@
   "campus":[
    "Flagey"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy"
+  ]
  },
  {
   "id":"ARCH-P8119",
@@ -110,13 +99,10 @@
   "campus":[
    "Flagey"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy",
+   "climatology"
+  ]
  },
  {
   "id":"BING-F1001",
@@ -140,16 +126,13 @@
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine",
-   "Charleroi Gosselies"
+   "Charleroi Gosselies",
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":1,
-  "society":0
+  "themes":[
+   "climatology",
+   "durability"
+  ]
  },
  {
   "id":"BING-F4003",
@@ -171,13 +154,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"BING-F403",
@@ -199,13 +178,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"BING-F410",
@@ -227,13 +202,10 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":1,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "environment",
+   "climatology"
+  ]
  },
  {
   "id":"BING-F415",
@@ -256,13 +228,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"BING-F525",
@@ -284,13 +252,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":1,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "environment"
+  ]
  },
  {
   "id":"BING-H4003",
@@ -314,13 +278,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"BIOL-F2001",
@@ -344,13 +304,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"BIOL-F305",
@@ -370,16 +326,12 @@
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine",
-   "Charleroi Gosselies"
+   "Charleroi Gosselies",
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"BIOL-F4001",
@@ -401,13 +353,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"BIOL-F444",
@@ -429,13 +377,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":1,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "environment"
+  ]
  },
  {
   "id":"CHIM-F405",
@@ -458,13 +402,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy"
+  ]
  },
  {
   "id":"CHIM-F423",
@@ -486,13 +426,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy"
+  ]
  },
  {
   "id":"CHIM-F430",
@@ -514,13 +450,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"CHIM-F474",
@@ -543,13 +475,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"CNST-H306",
@@ -571,13 +499,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"CNST-P3003",
@@ -599,13 +523,10 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy",
+   "climatology"
+  ]
  },
  {
   "id":"CNST-P3006",
@@ -628,13 +549,11 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":1,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":1,
-  "society":0
+  "themes":[
+   "decarbonization",
+   "climatology",
+   "durability"
+  ]
  },
  {
   "id":"COMM-B430",
@@ -651,19 +570,15 @@
    5.0
   ],
   "faculty":[
-   "Facult\u00e9 de Philosophie et Sciences sociales",
-   "Facult\u00e9 de Lettres, Traduction et Communication"
+   "Facult\u00e9 de Lettres, Traduction et Communication",
+   "Facult\u00e9 de Philosophie et Sciences sociales"
   ],
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":1,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "environment"
+  ]
  },
  {
   "id":"DROI-C5021",
@@ -685,13 +600,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"DROI-C5100",
@@ -714,13 +625,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"DROI-C670",
@@ -743,13 +650,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"ECON-S2001",
@@ -772,13 +675,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"ECON-S2002",
@@ -800,16 +699,13 @@
    "Facult\u00e9 de Philosophie et Sciences sociales"
   ],
   "campus":[
-   "Charleroi Ville Haute",
-   "Solbosch"
+   "Solbosch",
+   "Charleroi Ville Haute"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":1,
-  "society":0
+  "themes":[
+   "climatology",
+   "durability"
+  ]
  },
  {
   "id":"ECON-S3001",
@@ -834,13 +730,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"ECON-S307",
@@ -868,13 +760,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"ECON-S533",
@@ -896,13 +784,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"ELEC-H201",
@@ -925,13 +809,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy"
+  ]
  },
  {
   "id":"ENVI-F1001",
@@ -954,17 +834,13 @@
    "Facult\u00e9 de Philosophie et Sciences sociales"
   ],
   "campus":[
-   "Plaine",
+   "Solbosch",
    "Charleroi Gosselies",
-   "Solbosch"
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"ENVI-F403",
@@ -981,21 +857,17 @@
    5.0
   ],
   "faculty":[
-   "Facult\u00e9 de Droit et de Criminologie",
    "Facult\u00e9 des Sciences",
+   "Facult\u00e9 de Droit et de Criminologie",
    "Facult\u00e9 de Philosophie et Sciences sociales"
   ],
   "campus":[
-   "Plaine",
-   "Solbosch"
+   "Solbosch",
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":1,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "environment"
+  ]
  },
  {
   "id":"ENVI-F405",
@@ -1018,13 +890,11 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":1,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":1
+  "themes":[
+   "decarbonization",
+   "climatology",
+   "society"
+  ]
  },
  {
   "id":"ENVI-F409",
@@ -1046,13 +916,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"ENVI-F454",
@@ -1075,13 +941,10 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy",
+   "climatology"
+  ]
  },
  {
   "id":"ENVI-F504",
@@ -1103,13 +966,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"ENVI-F526",
@@ -1132,13 +991,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"ENVI-P1003",
@@ -1161,13 +1016,11 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":1,
-  "climatology":1,
-  "durability":1,
-  "society":0
+  "themes":[
+   "environment",
+   "climatology",
+   "durability"
+  ]
  },
  {
   "id":"ENVI-S101",
@@ -1192,13 +1045,10 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":1,
-  "society":0
+  "themes":[
+   "climatology",
+   "durability"
+  ]
  },
  {
   "id":"ETHI-F1001",
@@ -1219,17 +1069,13 @@
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine",
+   "Solbosch",
    "Charleroi Gosselies",
-   "Solbosch"
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOG-F102",
@@ -1249,16 +1095,12 @@
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine",
-   "Solbosch"
+   "Solbosch",
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOG-F203",
@@ -1278,16 +1120,12 @@
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine",
-   "Solbosch"
+   "Solbosch",
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOG-F207",
@@ -1312,13 +1150,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOG-F307",
@@ -1343,13 +1177,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOG-F408",
@@ -1371,13 +1201,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOL-F305",
@@ -1400,13 +1226,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy"
+  ]
  },
  {
   "id":"GEOL-F4003",
@@ -1428,13 +1250,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOL-F4004",
@@ -1457,13 +1275,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy"
+  ]
  },
  {
   "id":"GEOL-F411",
@@ -1486,13 +1300,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOL-F426",
@@ -1514,13 +1324,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"GEOL-F428",
@@ -1544,13 +1350,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEOL-F432",
@@ -1574,13 +1376,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"GEST-H506",
@@ -1602,16 +1400,13 @@
    "\u00c9cole polytechnique de Bruxelles"
   ],
   "campus":[
-   "Autre campus",
-   "Solbosch"
+   "Solbosch",
+   "Autre campus"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":1,
-  "society":0
+  "themes":[
+   "climatology",
+   "durability"
+  ]
  },
  {
   "id":"ORIE-B2071",
@@ -1635,13 +1430,9 @@
   "campus":[
    "Uccle"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"PHYS-F105",
@@ -1662,16 +1453,12 @@
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine",
-   "Solbosch"
+   "Solbosch",
+   "Plaine"
   ],
-  "decarbonization":0,
-  "energy":1,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "energy"
+  ]
  },
  {
   "id":"PHYS-H515",
@@ -1694,13 +1481,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":1,
-  "climatology":0,
-  "durability":0,
-  "society":0
+  "themes":[
+   "environment"
+  ]
  },
  {
   "id":"PHYS-S201",
@@ -1722,13 +1505,9 @@
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"POLI-D504",
@@ -1746,19 +1525,15 @@
    5.0
   ],
   "faculty":[
-   "Facult\u00e9 de Philosophie et Sciences sociales",
-   "Facult\u00e9 de Lettres, Traduction et Communication"
+   "Facult\u00e9 de Lettres, Traduction et Communication",
+   "Facult\u00e9 de Philosophie et Sciences sociales"
   ],
   "campus":[
    "Solbosch"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"PROJ-H417",
@@ -1779,17 +1554,13 @@
    "\u00c9cole polytechnique de Bruxelles"
   ],
   "campus":[
-   "Autre campus",
    "Solbosch",
+   "Autre campus",
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"TOUR-F425",
@@ -1811,13 +1582,9 @@
   "campus":[
    "Plaine"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"TRAN-H3001",
@@ -1840,13 +1607,9 @@
   "campus":[
    "Charleroi Ville Haute"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":0,
-  "durability":1,
-  "society":0
+  "themes":[
+   "durability"
+  ]
  },
  {
   "id":"VETE-G2206",
@@ -1869,13 +1632,9 @@
   "campus":[
    "Erasme"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  },
  {
   "id":"VETE-G3302",
@@ -1899,12 +1658,8 @@
   "campus":[
    "Erasme"
   ],
-  "decarbonization":0,
-  "energy":0,
-  "consumption":0,
-  "environment":0,
-  "climatology":1,
-  "durability":0,
-  "society":0
+  "themes":[
+   "climatology"
+  ]
  }
 ]

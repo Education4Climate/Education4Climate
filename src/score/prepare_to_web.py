@@ -12,8 +12,6 @@ def main(school: str, year: int):
     courses_df = pd.read_json(open(courses_fn, 'r')).set_index("id")
     courses_df = courses_df.drop("content", axis=1)
 
-    print(courses_df)
-
     # Load program crawling output
     programs_fn = f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json"
     programs_df = pd.read_json(open(programs_fn, 'r'))
@@ -31,6 +29,7 @@ def main(school: str, year: int):
     for key in ["ects", "faculty", "campus"]:
         if key in keys_in_courses:
             courses_df[key] = courses_df[key].apply(lambda x: [x] if not isinstance(x, list) else x)
+            courses_df[key] = courses_df[key].apply(lambda x: list(set(x)))
 
     # Associate programs data to courses
     # TODO: maybe a more efficient way to do this
@@ -45,6 +44,10 @@ def main(school: str, year: int):
             if course_id in program_courses:
                 if 'ects' in keys_in_programs:
                     # Ects should be in a list at the same position as the course in the courses list
+                    print(program_courses)
+                    print(course_id)
+                    print(program_courses.index(course_id))
+                    print(programs_df.loc[program_id, 'ects'])
                     ects += [programs_df.loc[program_id, 'ects'][program_courses.index(course_id)]]
                 if 'faculty' in keys_in_programs:
                     faculty += [programs_df.loc[program_id, 'faculty']]
@@ -66,13 +69,16 @@ def main(school: str, year: int):
     # Load scoring output
     scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
     scores_df = pd.read_csv(scores_fn, index_col=0)
-    non_zero_courses_index = scores_df[(scores_df.sum(axis=1) != 0)].index
+    courses_with_matches_index = scores_df[(scores_df.sum(axis=1) != 0)].index
 
     # Generating heavy version and light version (only courses with score > 0)
-    web_df = courses_df.join(scores_df, on="id", how="right").reset_index()
+    # Convert columns of scores to list of themes
+    courses_df["themes"] = scores_df.apply(lambda x: x[x == 1].index.tolist(), axis=1).to_frame()
+    courses_df = courses_df.reset_index()
     web_fn = f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_"
-    web_df.to_json(web_fn + "heavy.json", orient='records')
-    web_df.loc[web_df.id.isin(non_zero_courses_index)].to_json(web_fn + 'light.json', orient='records', indent=1)
+    courses_df.to_json(web_fn + "heavy.json", orient='records')
+    courses_df.loc[courses_df.id.isin(courses_with_matches_index)]\
+        .to_json(web_fn + 'light.json', orient='records', indent=1)
 
 
 if __name__ == "__main__":
