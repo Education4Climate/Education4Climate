@@ -44,10 +44,6 @@ def main(school: str, year: int):
             if course_id in program_courses:
                 if 'ects' in keys_in_programs:
                     # Ects should be in a list at the same position as the course in the courses list
-                    print(program_courses)
-                    print(course_id)
-                    print(program_courses.index(course_id))
-                    print(programs_df.loc[program_id, 'ects'])
                     ects += [programs_df.loc[program_id, 'ects'][program_courses.index(course_id)]]
                 if 'faculty' in keys_in_programs:
                     faculty += [programs_df.loc[program_id, 'faculty']]
@@ -79,6 +75,13 @@ def main(school: str, year: int):
     courses_df.to_json(web_fn + "heavy.json", orient='records')
     courses_df.loc[courses_df.id.isin(courses_with_matches_index)]\
         .to_json(web_fn + 'light.json', orient='records', indent=1)
+
+    # Creating program file
+    # Load program scoring file
+    program_scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv"
+    programs_scores_df = pd.read_csv(program_scores_fn, index_col=0)
+    programs_df = pd.concat([programs_df.set_index('id'), programs_scores_df], axis=1).reset_index()
+    programs_df.to_json(web_fn + "programs.json", orient='records')
 
 
 if __name__ == "__main__":
