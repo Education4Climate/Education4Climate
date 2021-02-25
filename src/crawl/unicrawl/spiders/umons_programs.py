@@ -3,6 +3,7 @@ import scrapy
 from abc import ABC
 
 from config.settings import YEAR
+from config.utils import cleanup
 BASE_URL = "https://web.umons.ac.be/fr/enseignement/loffre-de-formation-de-lumons/"
 
 
@@ -22,13 +23,19 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
         cycles = formations.xpath('text()').getall()
         assert len(urls) == len(cycles)
         for cycle, url in zip(cycles, urls):
-            yield response.follow(url, self.parse_prog, cb_kwargs={'cycle':cycle})
+            if 'BA' in cycle:
+                cycle = 'bac'
+            elif 'MA' in cycle:
+                cycle = 'master'
+            else:
+                cycle = 'other'
+            yield response.follow(url, self.parse_prog, cb_kwargs={'cycle': cycle})
 
     def parse_details(self, response, cycle):
         programs = response.xpath(
             '//article[starts-with(@class,"shortcode-training training-small scheme-")]/a/@href').getall()
         for program in programs:
-            yield response.follow(program, self.parse_prog, cb_kwargs={'cycle':cycle})
+            yield response.follow(program, self.parse_prog, cb_kwargs={'cycle': cycle})
 
     def parse_prog(self, response, cycle):
         # Note: this leads to an error on the 'Bachelier en Droit' and 'Bachelier en Sciences Humaines et Sociales'
@@ -36,26 +43,29 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
         href = response.xpath(
             '//a[contains(@class, "button-primary-alt scheme-background scheme-background-hover")]/@href').get()
         if not href:
-            yield response.follow(response.url, self.parse_details, cb_kwargs={'cycle':cycle})
+            yield response.follow(response.url, self.parse_details, cb_kwargs={'cycle': cycle})
         else:
-            location = response.xpath(
+            campus = response.xpath(
                 '//div[div/text()="Lieu"]').css('div.value::text').get()
-            ects = response.xpath(
-                '//div[div/text()="Crédits ECTS"]').css('div.value::text').get()
-            yield response.follow(url=href, callback=self.parse_prog_detail, cb_kwargs={'location': location, 'ects': ects, 'cycle':cycle})
+            # ects = response.xpath(
+            #     '//div[div/text()="Crédits ECTS"]').css('div.value::text').get()
+            yield response.follow(url=href, callback=self.parse_prog_detail, cb_kwargs={'campus': campus, 'cycle': cycle})
 
     @staticmethod
-    def parse_prog_detail(response, location, ects, cycle):
+    def parse_prog_detail(response, campus, cycle):
 
         faculty = response.css('td.facTitle::text').get()
         program_name = response.css('td.cursusTitle::text').get()
         courses = response.css('span.linkcodeue::text').getall()
         courses = [course.strip(" ") for course in courses]
+        ects = cleanup(response.xpath("//td[@class='credits colnumber']").getall())
+        ects = [int(e) if e != '' else 0 for e in ects]
 
-        program_dict = {'faculty': faculty,
+        program_dict = {'id': response.url.split("/")[-1].split(".")[0],
                         'name': program_name,
+                        'faculty': faculty,
                         'cycle': cycle,
-                        'campus': location,
+                        'campus': campus,
                         'courses': courses,
                         'ects': ects}
         yield program_dict

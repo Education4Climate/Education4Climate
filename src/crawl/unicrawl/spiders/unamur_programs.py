@@ -33,9 +33,9 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 # Scrap only bachelor and master programs
                 # TODO: devrait-on rajouter les certificats?
                 if program_name.startswith("Bachelier") or program_name.startswith("Master"):
-                    cycle = 'bachelor' if program_name.startswith("Bachelier") else 'master'
+                    cycle = 'bac' if program_name.startswith("Bachelier") else 'master'
                     base_dict = {
-                        "id": '',  # Programs do not seem to have an id
+                        "id": programs_link.split("/")[-2],
                         "name": program_name,
                         "faculty": faculty,
                         "cycle": cycle}

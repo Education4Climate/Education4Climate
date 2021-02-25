@@ -60,7 +60,12 @@ def main(school: str, year: int):
     courses_df = pd.concat([courses_df, courses_aux_df], axis=1)
 
     # Convert faculties to disciplines
-    # TODO
+    faculties_to_fields_df = pd.read_csv("../../data/faculties_to_fields.csv")
+    faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
+    faculties_to_fields_ds = faculties_to_fields_df[["faculty", "field"]].set_index("faculty")
+    courses_df["field"] = courses_df["faculty"].apply(lambda x:
+                                                      list(set([faculties_to_fields_ds.loc[i][0] for i in x])))
+    programs_df["field"] = programs_df["faculty"].apply(lambda x: faculties_to_fields_ds.loc[x][0])
 
     # Load scoring output
     scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
