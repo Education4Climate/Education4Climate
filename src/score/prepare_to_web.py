@@ -81,7 +81,7 @@ def main(school: str, year: int):
     program_scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv"
     programs_scores_df = pd.read_csv(program_scores_fn, index_col=0)
     programs_df = pd.concat([programs_df.set_index('id'), programs_scores_df], axis=1).reset_index()
-    programs_df.to_json(web_fn + "programs.json", orient='records')
+    programs_df.to_json(web_fn + "programs.json", orient='records', indent=1)
 
 
 if __name__ == "__main__":
