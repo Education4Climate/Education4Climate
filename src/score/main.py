@@ -54,12 +54,16 @@ def main(school: str, year: int, fields: str) -> None:
         for ch in ["\r", "\t", "\n", "\xa0", ":", ";", ".", ",", "?", "!", "(", ")", "…"]:
             text = text.replace(ch, " ")
 
-        if len(text) == 0:
+        if len(text.strip(" ")) == 0:
             courses_df.loc[idx, themes] = 0
             continue
 
         # Detect language of text
-        language = langdetect.detect(text)
+        try:
+            language = langdetect.detect(text)
+        except langdetect.lang_detect_exception.LangDetectException:
+            courses_df.loc[idx, themes] = 0
+            continue
         # TODO: create patterns for 'en' and 'nl'
         if language not in ACCEPTED_LANGUAGES:
             print(idx, language)
