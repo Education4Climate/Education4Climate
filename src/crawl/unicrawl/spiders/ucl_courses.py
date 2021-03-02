@@ -38,12 +38,13 @@ class UCLCourseSpider(scrapy.Spider, ABC):
         courses_list = sorted(list(set(courses.sum())))
 
         for course_id in courses_list:
-            yield scrapy.Request(url=BASE_URL.format(YEAR, course_id), callback=self.parse_course)
+            yield scrapy.Request(url=BASE_URL.format(YEAR, course_id),
+                                 callback=self.parse_course,
+                                 cb_kwargs={"course_id": course_id})
 
     @staticmethod
-    def parse_course(response):
+    def parse_course(response, course_id):
 
-        course_id = cleanup(response.css("span.abbreviation::text").get())
         course_name = cleanup(response.css("h1.header-school::text").get())
         year = cleanup(response.css("span.anacs::text").get())
         campus = cleanup(response.css("span.location::text").get())
@@ -54,9 +55,10 @@ class UCLCourseSpider(scrapy.Spider, ABC):
         languages = [LANGUAGE_DICT[l] for l in languages if l != '']
         
         # content
-        sections = ["Thèmes", "Acquis", "Contenu"]
+        sections = ["Thèmes", " Acquis", "Contenu"]
         content = "\n".join([cleanup(response.xpath(f"//div[div[contains(text(),'{section}')]]/div[2]").get())
                              for section in sections])
+        content = content.strip("\n ")
 
         data = {
             'id': course_id,

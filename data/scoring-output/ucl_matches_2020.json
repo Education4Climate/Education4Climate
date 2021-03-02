@@ -1,38 +1,38 @@
 {
     "decarbonization": {
-        "lmapr2647": {
+        "LMAPR2647": {
             "captures? (?:du |de )?(?:co2|dioxyde de carbone)": [
                 "capture du co2"
             ]
         }
     },
     "energy": {
-        "lalle1532": {
+        "LALLE1532": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
             ]
         },
-        "langl1882": {
+        "LANGL1882": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
             ]
         },
-        "lbarc1142": {
+        "LBARC1142": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lbarc1360": {
+        "LBARC1360": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
             ]
         },
-        "lbir1121": {
+        "LBIR1121": {
             "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
                 "hydro\u00e9lectriques"
             ]
         },
-        "lbir1325a": {
+        "LBIR1325A": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
             ],
@@ -40,12 +40,12 @@
                 "bilan d'\u00e9nergie"
             ]
         },
-        "lbirc2109": {
+        "LBIRC2109": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilans \u00e9nerg\u00e9tiques"
             ]
         },
-        "lbres2105": {
+        "LBRES2105": {
             "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
                 "\u00e9olienne",
                 "\u00e9olienne",
@@ -53,22 +53,22 @@
                 "\u00e9olienne"
             ]
         },
-        "lchm1211": {
+        "LCHM1211": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lchm1211a": {
+        "LCHM1211A": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lelec2550": {
+        "LELEC2550": {
             "photovolta[i\u00ef]ques?": [
                 "photovoltaiques"
             ]
         },
-        "lenvi2007": {
+        "LENVI2007": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable",
                 "\u00e9nergie renouvelable",
@@ -94,67 +94,67 @@
                 "bilans \u00e9nerg\u00e9tiques"
             ]
         },
-        "lepl1804": {
+        "LEPL1804": {
             "photovolta[i\u00ef]ques?": [
                 "photovolta\u00efques",
                 "photovolta\u00efque"
             ]
         },
-        "lgeo2210": {
+        "LGEO2210": {
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "transition \u00e9nerg\u00e9tique"
             ]
         },
-        "linge1317": {
+        "LINGE1317": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
             ]
         },
-        "lmapr2014": {
+        "LMAPR2014": {
             "photovolta[i\u00ef]ques?": [
                 "photovolta\u00efques"
             ]
         },
-        "lmapr2430": {
+        "LMAPR2430": {
             "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "efficacit\u00e9 \u00e9nerg\u00e9tique",
                 "efficacit\u00e9 \u00e9nerg\u00e9tique",
-                "efficacit\u00e9 \u00e9nerg\u00e9tiqueproc\u00e9d\u00e9s"
+                "efficacit\u00e9 \u00e9nerg\u00e9tique"
             ]
         },
-        "lmeca1855": {
+        "LMECA1855": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilans d'\u00e9nergie"
             ]
         },
-        "lphys2162": {
+        "LPHYS2162": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilans \u00e9nerg\u00e9tiques",
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lphys2163": {
+        "LPHYS2163": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique",
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lsinc1131": {
+        "LSINC1131": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "ltarc1142": {
+        "LTARC1142": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "ltarc1260": {
+        "LTARC1260": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "ltarc1360": {
+        "LTARC1360": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
             ],
@@ -162,76 +162,76 @@
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "ltarc2169": {
+        "LTARC2169": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique",
                 "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "ltrad2171": {
+        "LTRAD2171": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
             ]
         },
-        "wmds1210": {
+        "WMDS1210": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
                 "bilan \u00e9nerg\u00e9tique"
             ]
         }
     },
     "consumption": {
-        "lenvi2007": {
+        "LENVI2007": {
             "consom[^ ]+ \u00e9nerg[^ ]+": [
                 "consommations \u00e9nerg\u00e9tiques"
             ]
         }
     },
     "environment": {
-        "lbarc2147": {
+        "LBARC2147": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e9miques"
             ]
         },
-        "lbio1110": {
+        "LBIO1110": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8me"
             ]
         },
-        "lbio1114": {
+        "LBIO1114": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbio1117": {
+        "LBIO1117": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "ecosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbio1253": {
+        "LBIO1253": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbio1310": {
+        "LBIO1310": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbio1344": {
+        "LBIO1344": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbio1356": {
+        "LBIO1356": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me"
             ]
         },
-        "lbir1230": {
+        "LBIR1230": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes",
@@ -240,33 +240,25 @@
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbir1230a": {
+        "LBIR1230A": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbir1270": {
+        "LBIR1270": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbir1334": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8me'",
-                "\u00e9cosyst\u00e8me'",
-                "\u00e9cosyst\u00e8me'"
-            ]
-        },
-        "lbir1354": {
+        "LBIR1354": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbira2109": {
+        "LBIRA2109": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me",
                 "\u00e9cosyst\u00e8me",
@@ -274,139 +266,139 @@
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbire2105": {
+        "LBIRE2105": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbirf2104": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8mes",
-                "\u00e9cosyst\u00e8mes"
-            ]
-        },
-        "lbirf2105": {
+        "LBIRF2105": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me"
             ]
         },
-        "lbirf2202": {
+        "LBIRF2104": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "LBIRF2202": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbres2101": {
+        "LBRES2101": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbres2101a": {
+        "LBRES2101A": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lbrte2201": {
+        "LBRTE2201": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lcomu2360": {
+        "LCOMU2360": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me"
             ]
         },
-        "ldvld1300": {
+        "LDVLD1300": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me"
             ]
         },
-        "lecso2330": {
+        "LECSO2330": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me"
             ]
         },
-        "lgeo1111": {
+        "LGEO1111": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lgeo1321": {
+        "LGEO1321": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e9miques"
             ]
         },
-        "lgeo1332": {
+        "LGEO1332": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lgeo1332a": {
+        "LGEO1332A": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes",
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lgeo1343": {
+        "LGEO1343": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lgeo2230": {
+        "LGEO2230": {
             "[\u00e9e]cosyst[^ ]+": [
                 "ecosystem"
             ]
         },
-        "ltarc1251": {
+        "LTARC1251": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8mes"
             ]
         },
-        "lurba2940": {
+        "LURBA2940": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e9miques"
             ]
         },
-        "mcomu1307": {
+        "MCOMU1307": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me"
             ]
         },
-        "mhelh2262": {
+        "MHELH2262": {
             "[\u00e9e]cosyst[^ ]+": [
                 "\u00e9cosyst\u00e8me"
             ]
         }
     },
     "climatology": {
-        "lbarc1360": {
+        "LBARC1360": {
             "contextes? clima[^ ]+": [
                 "contexte climatique"
             ]
         },
-        "lbarc2131": {
+        "LBARC2131": {
             "climatolog[^ ]+": [
                 "climatologues"
             ]
         },
-        "lbarc2147": {
+        "LBARC2147": {
             "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "lbarc2236": {
+        "LBARC2236": {
             "climatolog[^ ]+": [
                 "climatologues"
             ]
         },
-        "lbir1130": {
+        "LBIR1130": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ],
@@ -414,22 +406,22 @@
                 "contextes climatiques"
             ]
         },
-        "lbir1130a": {
+        "LBIR1130A": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "lbir1230": {
+        "LBIR1230": {
             "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "lbir1230a": {
+        "LBIR1230A": {
             "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "lbir1328": {
+        "LBIR1328": {
             "climatolog[^ ]+": [
                 "climatologie",
                 "climatologie"
@@ -442,7 +434,7 @@
                 "projections climatiques"
             ]
         },
-        "lbir1328a": {
+        "LBIR1328A": {
             "climatolog[^ ]+": [
                 "climatologie"
             ],
@@ -451,42 +443,42 @@
                 "changement climatique"
             ]
         },
-        "lbir1336": {
+        "LBIR1336": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "lbir1336b": {
+        "LBIR1336B": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "lbira2107": {
+        "LBIRA2107": {
             "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
                 "gaz \u00e0 effet de serre"
             ]
         },
-        "lbirf2106": {
+        "LBIRF2106": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "lboe2191": {
+        "LBOE2191": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "lchm1311": {
+        "LCHM1311": {
             "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
                 "gaz \u00e0 effet de serre"
             ]
         },
-        "ldrop2063": {
+        "LDROP2063": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "ldvlp2325": {
+        "LDVLP2325": {
             "adaptations? (?:aux? )(?:changements? )climat[^ ]+": [
                 "adaptation au changement climatique"
             ],
@@ -500,7 +492,7 @@
                 "climato-scepticisme"
             ]
         },
-        "lenvi2005": {
+        "LENVI2005": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changements climatiques",
@@ -510,7 +502,7 @@
                 "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
-        "lenvi2010": {
+        "LENVI2010": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ],
@@ -518,53 +510,53 @@
                 "strat\u00e9gies climatiques"
             ]
         },
-        "lenvi2101": {
+        "LENVI2101": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "lepl1804": {
+        "LEPL1804": {
             "enjeux? clima[^ ]+": [
                 "enjeux climatiques"
             ]
         },
-        "lfilo2190": {
+        "LFILO2190": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "lfilo2970": {
+        "LFILO2970": {
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "lgeo1332": {
+        "LGEO1332": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "lgeo1332a": {
+        "LGEO1332A": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "lgeo2130": {
+        "LGEO2130": {
             "climatolog[^ ]+": [
                 "climatology"
             ]
         },
-        "lgerm2716": {
+        "LGERM2716": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique"
             ]
         },
-        "lgerm2726": {
+        "LGERM2726": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "lphy1365": {
+        "LPHY1365": {
             "climatolog[^ ]+": [
                 "climatologie"
             ],
@@ -572,7 +564,7 @@
                 "changements climatiques"
             ]
         },
-        "lphys2162": {
+        "LPHYS2162": {
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changements climatiques"
@@ -581,12 +573,12 @@
                 "mod\u00e8les climatiques"
             ]
         },
-        "lphys2163": {
+        "LPHYS2163": {
             "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "lphys2265": {
+        "LPHYS2265": {
             "climatolog[^ ]+": [
                 "climatologie"
             ],
@@ -594,7 +586,7 @@
                 "mod\u00e8les climatiques"
             ]
         },
-        "lphys2267": {
+        "LPHYS2267": {
             "climatolog[^ ]+": [
                 "climatologie"
             ],
@@ -622,39 +614,39 @@
                 "for\u00e7ages climatiques"
             ]
         },
-        "lphys2269": {
+        "LPHYS2269": {
             "climatolog[^ ]+": [
                 "climatologies"
             ]
         },
-        "lsped1221": {
+        "LSPED1221": {
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "lspri2005": {
+        "LSPRI2005": {
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "ltarc1360": {
+        "LTARC1360": {
             "contextes? clima[^ ]+": [
                 "contexte climatique"
             ]
         },
-        "lteco2200": {
+        "LTECO2200": {
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "lvet1312": {
+        "LVET1312": {
             "climatolog[^ ]+": [
                 "climatologie"
             ]
         }
     },
     "durability": {
-        "lbarc1366": {
+        "LBARC1366": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
@@ -662,77 +654,77 @@
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbarc2236": {
+        "LBARC2236": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbarc2237": {
+        "LBARC2237": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbir1230": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable"
-            ]
-        },
-        "lbir1230a": {
+        "LBIR1230": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbir1361": {
+        "LBIR1230A": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbir2050": {
+        "LBIR1361": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "LBIR2050": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable\""
             ]
         },
-        "lbir2050a": {
+        "LBIR2050A": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbira2107": {
+        "LBIRA2107": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbirc2109": {
+        "LBIRC2109": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lbire2131": {
+        "LBIRE2131": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
-                "d\u00e9veloppement durableenjeux"
+                "d\u00e9veloppement durable"
             ]
         },
-        "lbirf2102": {
+        "LBIRF2102": {
             "gestio[^ ]+ durab[^ ]+": [
                 "gestion durable",
                 "gestion durable"
             ]
         },
-        "ldreu2207": {
+        "LDREU2207": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
-                "d\u00e9veloppement durableacc\u00e8s"
+                "d\u00e9veloppement durable"
             ]
         },
-        "ldrop2061": {
+        "LDROP2061": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
@@ -740,43 +732,15 @@
                 "d\u00e9veloppement durable"
             ]
         },
-        "ldvld1300": {
+        "LDVLD1300": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "ldvlp2325": {
+        "LDVLP2325": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable"
-            ]
-        },
-        "lecon2257": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "d\u00e9veloppement durable"
-            ]
-        },
-        "lenvi2002": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable"
-            ]
-        },
-        "lenvi2006": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable",
-                "d\u00e9veloppement durable"
-            ]
-        },
-        "lenvi2010": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
@@ -785,144 +749,172 @@
                 "d\u00e9veloppement durable"
             ]
         },
-        "lenvi2101": {
+        "LECON2257": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "LENVI2002": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "LENVI2006": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lepl1804": {
+        "LENVI2010": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "LENVI2101": {
+            "d\u00e9velopp[^ ]+ durab[^ ]+": [
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable",
+                "d\u00e9veloppement durable"
+            ]
+        },
+        "LEPL1804": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lfsa2245": {
+        "LFSA2245": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lgeo2110": {
+        "LGEO2110": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lgeo2110b": {
+        "LGEO2110B": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lgeo2210": {
+        "LGEO2210": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lgerm2726": {
+        "LGERM2726": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "licar1201": {
+        "LICAR1201": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "licar1605": {
+        "LICAR1605": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "licar2601": {
+        "LICAR2601": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "licar2602": {
+        "LICAR2602": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "licar2801": {
+        "LICAR2801": {
             "architectures? durab[^ ]+": [
                 "architecture durable"
             ]
         },
-        "lmapr2001": {
+        "LMAPR2001": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lmapr2001a": {
+        "LMAPR2001A": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lmapr2647": {
+        "LMAPR2647": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "lpsp1001": {
+        "LPSP1001": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lspri2005": {
+        "LSPRI2005": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lsst1001": {
+        "LSST1001": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "ltarc1250": {
+        "LTARC1250": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "lurba2950": {
+        "LURBA2950": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "mgehd2113": {
+        "MGEHD2113": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable"
             ]
         },
-        "mshum1228": {
+        "MSHUM1228": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         },
-        "mspri2160": {
+        "MSPRI2160": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
-                "d\u00e9veloppement durablela"
+                "d\u00e9veloppement durable"
             ]
         },
-        "wfsp2109": {
+        "WFSP2109": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
             ]
         }
     },
     "society": {
-        "lbarc1347": {
+        "LBARC1347": {
             "adaptations? (?:aux? )?(?:changements? )?climat[^ ]+": [
                 "adaptation climatique"
             ]
         },
-        "ldvlp2325": {
+        "LDVLP2325": {
             "adaptations? (?:aux? )?(?:changements? )?climat[^ ]+": [
                 "adaptation au changement climatique"
             ],
@@ -932,7 +924,7 @@
                 "accord de paris"
             ]
         },
-        "lfilo2360": {
+        "LFILO2360": {
             "justice climat[^ ]+": [
                 "justice climatique"
             ]
