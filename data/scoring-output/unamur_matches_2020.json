@@ -8,13 +8,35 @@
     },
     "energy": {
         "FINT0039": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
+            ]
+        },
+        "MMEDB331": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro-\u00e9lectrique"
             ]
         },
         "SBOEM260": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie verte"
+            ]
+        },
+        "SCHIB111": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "SCHIM123": {
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efques",
+                "photovolta\u00efques"
+            ]
+        },
+        "SCHIM124": {
+            "[\u00e9e]nerg[^ ]+ fossiles?": [
+                "\u00e9nergie fossile",
+                "\u00e9nergie fossile"
             ]
         },
         "SCHIM223": {
@@ -24,87 +46,117 @@
                 "\u00e9nergies renouvelables",
                 "\u00e9nergies renouvelables",
                 "\u00e9nergie renouvelables"
+            ],
+            "[\u00e9e]nerg[^ ]+ fossiles?": [
+                "\u00e9nergies fossiles",
+                "energies fossiles"
+            ],
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque"
             ]
         },
-        "SGOGB302": {
-            "solaires?": [
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SMATB213": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaires",
-                "solaire",
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SMATB310": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "SMATM127": {
-            "solaires?": [
-                "solaire",
-                "solaires",
-                "solaire"
-            ]
-        },
-        "SPHYM134": {
-            "solaires?": [
-                "solaire"
+        "SPHYM106": {
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque"
             ]
         }
     },
     "consumption": {},
     "environment": {
+        "FACCM301": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9mique"
+            ]
+        },
+        "SBIOB207": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SBIOB209": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SBIOB212": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "SBIOB309": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SBIOB346": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SBOEM142": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "SBOEM162": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
         "SGOGB210": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
+                "ecosyst\u00e9miques",
+                "ecosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "SGOLB303": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "SSMRM102": {
+            "[\u00e9e]cosyst[^ ]+": [
                 "ecosyst\u00e9miques",
                 "ecosyst\u00e9miques"
             ]
         },
-        "SSMRM102": {
-            "ecosyst[^ ]+": [
-                "ecosyst\u00e9miques",
-                "ecosyst\u00e9miques"
+        "SSPSB107": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SVETB310": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ZOOL2000-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
             ]
         }
     },
     "climatology": {
         "EFAEM057": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
         "EINGB221": {
-            "climat[^ ]+": [
-                "climatique",
+            "climatolog[^ ]+": [
                 "climatologie"
             ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "SBIOB001": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "SBIOB153": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatique",
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique",
@@ -115,60 +167,26 @@
             ]
         },
         "SBIOB229": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "SBIOB228": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
         "SCHIM124": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique",
                 "r\u00e9chauffement climatique"
             ]
         },
-        "SCHIM223": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
         "SCHIM229": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "SGOGB302": {
-            "climat[^ ]+": [
-                "climats",
-                "climatique",
-                "climatiques",
-                "climatiques",
-                "climatiques",
+            "climatolog[^ ]+": [
                 "climatologie",
-                "climatique",
-                "climats",
-                "climats",
-                "climatiques",
                 "climatologie",
-                "climatique",
-                "climats",
-                "climatiques",
-                "climats",
                 "climatologique",
-                "climats",
                 "climatologie"
             ],
             "chang[^ ]+ clima[^ ]+": [
@@ -180,56 +198,29 @@
                 "r\u00e9chauffement climatique"
             ]
         },
-        "SGOLB202": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "SGOLB304": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
         "SGOLB311": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "SGOLM145": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "SPHYM109": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "SPHYM119": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "SSMRM102": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique"
             ]
         },
         "SSPSM101": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
         "SVETB205": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         }

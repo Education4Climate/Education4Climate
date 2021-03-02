@@ -1,5 +1,11 @@
 {
-    "decarbonization": {},
+    "decarbonization": {
+        "lmapr2647": {
+            "captures? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "capture du co2"
+            ]
+        }
+    },
     "energy": {
         "lalle1532": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
@@ -11,14 +17,55 @@
                 "\u00e9nergies renouvelables"
             ]
         },
+        "lbarc1142": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
         "lbarc1360": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
             ]
         },
+        "lbir1121": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectriques"
+            ]
+        },
         "lbir1325a": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
+            ],
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan d'\u00e9nergie"
+            ]
+        },
+        "lbirc2109": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans \u00e9nerg\u00e9tiques"
+            ]
+        },
+        "lbres2105": {
+            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne",
+                "\u00e9olienne",
+                "\u00e9olienne",
+                "\u00e9olienne"
+            ]
+        },
+        "lchm1211": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "lchm1211a": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "lelec2550": {
+            "photovolta[i\u00ef]ques?": [
+                "photovoltaiques"
             ]
         },
         "lenvi2007": {
@@ -30,22 +77,32 @@
                 "\u00e9nergie renouvelable",
                 "\u00e9nergies renouvelables"
             ],
-            "solaires?": [
-                "solaire",
-                "solaires"
+            "solaires? thermiques?": [
+                "solaires thermiques"
             ],
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque"
+            ],
+            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne",
+                "\u00e9nergie \u00e9olienne"
+            ],
+            "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
                 "consommations \u00e9nerg\u00e9tiques"
+            ],
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans \u00e9nerg\u00e9tiques"
+            ]
+        },
+        "lepl1804": {
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efques",
+                "photovolta\u00efque"
             ]
         },
         "lgeo2210": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
-            ]
-        },
-        "licar2801": {
-            "solaires?": [
-                "solaire"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
             ]
         },
         "linge1317": {
@@ -54,72 +111,71 @@
             ]
         },
         "lmapr2014": {
-            "solaires?": [
-                "solaires"
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efques"
             ]
         },
         "lmapr2430": {
-            "effica[^ ]+ \u00e9nerg[^ ]+": [
+            "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "efficacit\u00e9 \u00e9nerg\u00e9tique",
                 "efficacit\u00e9 \u00e9nerg\u00e9tique",
                 "efficacit\u00e9 \u00e9nerg\u00e9tiqueproc\u00e9d\u00e9s"
             ]
         },
-        "lphys1214": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaires"
+        "lmeca1855": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans d'\u00e9nergie"
             ]
         },
-        "lphys2161": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire"
+        "lphys2162": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans \u00e9nerg\u00e9tiques",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lphys2260": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire"
+        "lphys2163": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lphys2266": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaires",
-                "solaire",
-                "solaires",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire"
+        "lsinc1131": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "lphys2269": {
-            "solaires?": [
-                "solaire",
-                "solaire"
+        "ltarc1142": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "ltarc1260": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "ltarc1360": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
             ],
-            "solaires?": [
-                "solaires"
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "ltarc2169": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "ltrad2171": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
+            ]
+        },
+        "wmds1210": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         }
     },
@@ -131,382 +187,385 @@
         }
     },
     "environment": {
+        "lbarc2147": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "lbio1110": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "lbio1114": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
         "lbio1117": {
-            "ecosyst[^ ]+": [
-                "ecosyst\u00e8mes"
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "ecosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbio1253": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbio1310": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbio1344": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbio1356": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "lbir1230": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbir1230a": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbir1270": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbir1334": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me'",
+                "\u00e9cosyst\u00e8me'",
+                "\u00e9cosyst\u00e8me'"
+            ]
+        },
+        "lbir1354": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbira2109": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbire2105": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbirf2104": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbirf2105": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "lbirf2202": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbres2101": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbres2101a": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lbrte2201": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lcomu2360": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "ldvld1300": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "lecso2330": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "lgeo1111": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lgeo1321": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "lgeo1332": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lgeo1332a": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lgeo1343": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
             ]
         },
         "lgeo2230": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
                 "ecosystem"
+            ]
+        },
+        "ltarc1251": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "lurba2940": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "mcomu1307": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "mhelh2262": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
             ]
         }
     },
     "climatology": {
-        "lbarc1260": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "lbarc1347": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
         "lbarc1360": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatique"
+            "contextes? clima[^ ]+": [
+                "contexte climatique"
             ]
         },
         "lbarc2131": {
-            "climat[^ ]+": [
-                "climatologues",
-                "climat-energie"
-            ]
-        },
-        "lbarc2147": {
-            "climat[^ ]+": [
-                "climatologie",
-                "climatiques"
-            ]
-        },
-        "lbarc2236": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologues"
             ]
         },
-        "lbio1344": {
-            "climat[^ ]+": [
-                "climatiques"
+        "lbarc2147": {
+            "climatolog[^ ]+": [
+                "climatologie"
             ]
         },
-        "lbio1357": {
-            "climat[^ ]+": [
-                "climatiques"
+        "lbarc2236": {
+            "climatolog[^ ]+": [
+                "climatologues"
             ]
         },
         "lbir1130": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
+            ],
+            "contextes? clima[^ ]+": [
+                "contextes climatiques"
             ]
         },
         "lbir1130a": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "lbir1230": {
-            "climat[^ ]+": [
-                "climatologie",
-                "climats",
-                "climatiques",
-                "climatiques"
+            "climatolog[^ ]+": [
+                "climatologie"
             ]
         },
         "lbir1230a": {
-            "climat[^ ]+": [
-                "climatologie",
-                "climats",
-                "climatiques"
-            ]
-        },
-        "lbir1325a": {
-            "climat[^ ]+": [
-                "climatisation"
+            "climatolog[^ ]+": [
+                "climatologie"
             ]
         },
         "lbir1328": {
-            "climat[^ ]+": [
-                "climats",
-                "climatique",
-                "climatique",
+            "climatolog[^ ]+": [
                 "climatologie",
-                "climatiques",
-                "climatologie",
-                "climats",
-                "climatique"
+                "climatologie"
             ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique"
+            ],
+            "project[^ ]+ clima[^ ]+": [
+                "projections climatiques"
             ]
         },
         "lbir1328a": {
-            "climat[^ ]+": [
-                "climats",
-                "climatique",
-                "climatologie",
-                "climats",
-                "climatique"
+            "climatolog[^ ]+": [
+                "climatologie"
             ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique"
             ]
         },
-        "lbir1334": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "lbir1336": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "lbir1336b": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "lbirf2105": {
-            "climat[^ ]+": [
-                "climatiques"
+        "lbira2107": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "lbirf2106": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
-            ]
-        },
-        "lbirf2202": {
-            "climat[^ ]+": [
-                "climats"
             ]
         },
         "lboe2191": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "lchm1211": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "lchm1211a": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "lchm2140": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+        "lchm1311": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "ldrop2063": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "ldvlp2325": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatique",
-                "climatique",
-                "climatiques",
-                "climato-scepticisme"
+            "adaptations? (?:aux? )(?:changements? )climat[^ ]+": [
+                "adaptation au changement climatique"
             ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique",
                 "changement climatique",
                 "changement climatique"
-            ]
-        },
-        "ledph1052": {
-            "climat[^ ]+": [
-                "climatiques"
+            ],
+            "climato-?scept[^ ]+": [
+                "climato-scepticisme"
             ]
         },
         "lenvi2005": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changements climatiques",
                 "changements climatiques"
-            ]
-        },
-        "lenvi2007": {
-            "climat[^ ]+": [
-                "climatique"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
         "lenvi2010": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
+            ],
+            "strat[\u00e9e]gies? clima[^ ]+": [
+                "strat\u00e9gies climatiques"
             ]
         },
         "lenvi2101": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "lepl1804": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "lespo2103": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "leusl2031": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique"
-            ]
-        },
-        "leusl2702": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "lfial1190": {
-            "climat[^ ]+": [
-                "climat\""
+            "enjeux? clima[^ ]+": [
+                "enjeux climatiques"
             ]
         },
         "lfilo2190": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "lfilo2360": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
         "lfilo2970": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
         "lgeo1332": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "lgeo1332a": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "lgeo2130": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatology"
             ]
         },
-        "lgeo2240": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ]
-        },
         "lgerm2716": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique"
             ]
         },
         "lgerm2726": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "licar1605": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatiques"
-            ]
-        },
-        "licar2601": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ]
-        },
-        "licar2602": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "licar2801": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "lkine2127": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2"
-            ]
-        },
-        "lmapr2647": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
         "lphy1365": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques",
+            "climatolog[^ ]+": [
                 "climatologie"
             ],
             "chang[^ ]+ clima[^ ]+": [
@@ -514,69 +573,30 @@
             ]
         },
         "lphys2162": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatiques",
-                "climatique",
-                "climatique",
-                "climatique",
-                "climatique",
-                "climatiques",
-                "climatique",
-                "climatique",
-                "climatiquer\u00e9ponse",
-                "climatique",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changements climatiques"
+            ],
+            "mod[\u00e8e]les? clima[^ ]+": [
+                "mod\u00e8les climatiques"
             ]
         },
         "lphys2163": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
         "lphys2265": {
-            "climat[^ ]+": [
-                "climatologie",
-                "climatiques"
+            "climatolog[^ ]+": [
+                "climatologie"
+            ],
+            "mod[\u00e8e]les? clima[^ ]+": [
+                "mod\u00e8les climatiques"
             ]
         },
         "lphys2267": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ],
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatologie",
-                "climatiques",
-                "climats",
-                "climatiques",
-                "climats",
-                "climatiques",
-                "climatiques",
-                "climatique",
-                "climatique",
-                "climatique",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climats",
-                "climatique",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques"
+            "climatolog[^ ]+": [
+                "climatologie"
             ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
@@ -587,83 +607,49 @@
                 "changements climatiques",
                 "changements climatiques",
                 "changements climatiques"
+            ],
+            "project[^ ]+ clima[^ ]+": [
+                "projections climatiques",
+                "projections climatiques"
+            ],
+            "mod[\u00e8e]les? clima[^ ]+": [
+                "mod\u00e8les climatiques"
+            ],
+            "questions? clima[^ ]+": [
+                "question climatique"
+            ],
+            "for[\u00e7c]ages? clima[^ ]+": [
+                "for\u00e7ages climatiques"
             ]
         },
         "lphys2269": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatologies",
-                "climatiques"
+            "climatolog[^ ]+": [
+                "climatologies"
             ]
         },
         "lsped1221": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
         "lspri2005": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "ltarc1260": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "ltarc1344": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
         "ltarc1360": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatisation"
-            ]
-        },
-        "lteco2102": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2"
+            "contextes? clima[^ ]+": [
+                "contexte climatique"
             ]
         },
         "lteco2200": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "lvet1311": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "lvet1312": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
-            ]
-        },
-        "mlsmm2253": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiquesles"
-            ]
-        },
-        "wmds1224": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2",
-                "co2"
             ]
         }
     },
@@ -858,6 +844,11 @@
                 "d\u00e9veloppement durable"
             ]
         },
+        "licar2801": {
+            "architectures? durab[^ ]+": [
+                "architecture durable"
+            ]
+        },
         "lmapr2001": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "d\u00e9veloppement durable"
@@ -925,5 +916,26 @@
             ]
         }
     },
-    "society": {}
+    "society": {
+        "lbarc1347": {
+            "adaptations? (?:aux? )?(?:changements? )?climat[^ ]+": [
+                "adaptation climatique"
+            ]
+        },
+        "ldvlp2325": {
+            "adaptations? (?:aux? )?(?:changements? )?climat[^ ]+": [
+                "adaptation au changement climatique"
+            ],
+            "accords? de paris(?:(?: sur| pour) le climat)?": [
+                "accord de paris sur le climat",
+                "accord de paris sur le climat",
+                "accord de paris"
+            ]
+        },
+        "lfilo2360": {
+            "justice climat[^ ]+": [
+                "justice climatique"
+            ]
+        }
+    }
 }
