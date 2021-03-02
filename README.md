@@ -1,30 +1,32 @@
 # unicrawl
 
-A universal crawler for stuff.
+Unicrawl is a tool for crawling and analyzing data from higher education schools.
 
-## Setup in DEV mode
+This tool is developped in the context of the project Education4Climate developed by the volunteering
+group 'The Shifters' - Belgium.
 
-```bash
-sudo pip3 install virtualenv
-python3 -m venv venv
-source ./venv/bin/activate
-pip3 install Scrapy
-python3 -m spacy download fr
-#python3 -m spacy download nl
-#python3 -m spacy download en
-```
+The scope of the project is the higher education schools in Belgium but the methods used here could easily 
+extended to other countries.
 
-If you want to leave the virtual-environment, just run:
-```
-deactivate
-```
+## Composition
 
-When you are returning and need to load the virtual environment:
-````bash
-source ./venv/bin/activate
-````
+The tool is composed of three main parts:
+- [Crawling](src/crawl/README.md)
+- [Scoring](src/score/README.md)
+- [Web UI](src/web-ui/README.md)
+
+described in their respective READMEs
+  
+## Run
+
+TODO: check those and remove one if not need
+
+All requirements for running the different parts of Unicrawl are listed in requirements.yaml
+and requirements.txt.
 
 ## Usage
+
+TODO: update Makefile and see if we keep that here or in other READMEs
 
 ### Crawler
 

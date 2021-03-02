@@ -8,14 +8,6 @@ SCORING_FOLDER = src/score
 CRAWLING_OUTPUT_FOLDER = data/crawling-output
 SCORING_OUTPUT_FOLDER = data/scoring-output
 
-
-ULB_URL="https://www.ulb.be/fr/programme/lien-vers-catalogue-des-programmes"
-UCL_URL="https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-${YEAR}.html"
-UANTWERP_URL="https://www.uantwerpen.be/en/study/education-and-training/"
-UGENT_URL="https://studiegids.ugent.be/${YEAR}/EN/FACULTY/faculteiten.html"
-KULEUVEN_URL = "https://onderwijsaanbod.kuleuven.be/opleidingen/e/index.htm"
-UMONS_URL = "https://web.umons.ac.be/en/training-offer/"
-
 # ------------------------------------------------------------------
 
 crawl-ucl:
@@ -75,8 +67,3 @@ score-uliege:
 score-umons:
 	python ${SCORING_FOLDER}/score_script.py --input ${CRAWLING_OUTPUT_FOLDER}/umons_courses_${YEAR}.json --output ${SCORING_OUTPUT_FOLDER}/umons_scoring_${YEAR}.csv
 	python ${SCORING_FOLDER}/prepare_to_web.py --school "umons" --year ${YEAR}
-
-# -----------------------------
-
-virtual-env:
-	if [ -f venv ]; then source venv/bin/activate; fi

@@ -1,9 +1,13 @@
+## Crawling
+
+TODO: explain methodology
+
 ### Scrapy
 
 All crawlers are developped using the Scrapy Python library.
 For more information, check: https://scrapy.org/.
 
-### Why you should not use a 'hand-made' launcher and how to do then?
+### FOR DEVS: Why you should not use a 'hand-made' launcher and how to do then?
 
 #### Why?
 Because if you do, you are not using the parametrization of the scraper.
