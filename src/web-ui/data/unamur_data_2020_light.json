@@ -19,8 +19,13 @@
   ],
   "faculty":[
    "Facult\u00e9 des sciences",
-   "Facult\u00e9 de droit",
-   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
+   "Facult\u00e9 de droit"
+  ],
+  "field":[
+   "law & criminology",
+   "sciences",
+   "economy & management"
   ],
   "themes":[
    "durability"
@@ -44,10 +49,16 @@
    "NAMUR"
   ],
   "faculty":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
    "Facult\u00e9 des sciences",
    "Facult\u00e9 d'informatique",
-   "Facult\u00e9 de droit",
-   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+   "Facult\u00e9 de droit"
+  ],
+  "field":[
+   "applied sciences & engineering",
+   "law & criminology",
+   "sciences",
+   "economy & management"
   ],
   "themes":[
    "durability"
@@ -73,6 +84,9 @@
   "faculty":[
    "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
   ],
+  "field":[
+   "economy & management"
+  ],
   "themes":[
    "durability"
   ]
@@ -96,6 +110,9 @@
   ],
   "faculty":[
    "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+  ],
+  "field":[
+   "economy & management"
   ],
   "themes":[
    "climatology"
@@ -124,6 +141,9 @@
   "faculty":[
    "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
   ],
+  "field":[
+   "economy & management"
+  ],
   "themes":[
    "climatology"
   ]
@@ -148,9 +168,39 @@
   "faculty":[
    "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
   ],
+  "field":[
+   "economy & management"
+  ],
   "themes":[
    "decarbonization",
    "durability"
+  ]
+ },
+ {
+  "id":"FACCM301",
+  "name":"Formes et objets de l'accompagnement  ",
+  "year":"2020-2021",
+  "teacher":[
+   "Boucenna Sephora"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/FACCM301\/2020",
+  "ects":[
+   4
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+  ],
+  "field":[
+   "economy & management"
+  ],
+  "themes":[
+   "environment"
   ]
  },
  {
@@ -173,6 +223,10 @@
   "faculty":[
    "Facult\u00e9 d'informatique",
    "Facult\u00e9 de droit"
+  ],
+  "field":[
+   "applied sciences & engineering",
+   "law & criminology"
   ],
   "themes":[
    "energy"
@@ -198,34 +252,39 @@
   "faculty":[
    "Facult\u00e9 d'informatique"
   ],
+  "field":[
+   "applied sciences & engineering"
+  ],
   "themes":[
    "durability"
   ]
  },
  {
-  "id":"SBIOB001",
-  "name":"Stage pluridisciplinaire d'\u00e9t\u00e9 ",
+  "id":"MMEDB331",
+  "name":"Physiologie humaine ",
   "year":"2020-2021",
   "teacher":[
-   "Silvestre Fr\u00e9d\u00e9ric",
-   "Yans Johan"
+   "Caron Nathalie",
+   "Tajeddine Nicolas (suppl\u00e9ant)"
   ],
   "language":[
    "fr"
   ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB001\/2020",
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/MMEDB331\/2020",
   "ects":[
-   3
+   6
   ],
   "campus":[
    "NAMUR"
   ],
   "faculty":[
-   "Facult\u00e9 des sciences",
    "Facult\u00e9 de m\u00e9decine"
   ],
+  "field":[
+   "health"
+  ],
   "themes":[
-   "climatology"
+   "energy"
   ]
  },
  {
@@ -248,8 +307,93 @@
   "faculty":[
    "Facult\u00e9 de m\u00e9decine"
   ],
+  "field":[
+   "health"
+  ],
   "themes":[
    "climatology"
+  ]
+ },
+ {
+  "id":"SBIOB207",
+  "name":"Notions de biologie fonctionnelle et adaptative ",
+  "year":"2020-2021",
+  "teacher":[
+   "De Laender Frederik"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB207\/2020",
+  "ects":[
+   5
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"SBIOB209",
+  "name":"Introduction \u00e0 la bact\u00e9riologie ",
+  "year":"2020-2021",
+  "teacher":[
+
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB209\/2020",
+  "ects":[
+   2
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"SBIOB212",
+  "name":"\u00c9cologie g\u00e9n\u00e9rale ",
+  "year":"2020-2021",
+  "teacher":[
+   "KESTEMONT Patrick"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB212\/2020",
+  "ects":[
+   5,
+   6
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
   ]
  },
  {
@@ -273,22 +417,26 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
    "climatology"
   ]
  },
  {
-  "id":"SBIOB228",
-  "name":"Physiologie v\u00e9g\u00e9tale ",
+  "id":"SBIOB309",
+  "name":"Stage d'\u00e9cologie et biologie int\u00e9grative ",
   "year":"2020-2021",
   "teacher":[
-   "Van Cutsem Pierre"
+   "KESTEMONT Patrick"
   ],
   "language":[
    "fr"
   ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB228\/2020",
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB309\/2020",
   "ects":[
+   3,
    4
   ],
   "campus":[
@@ -297,8 +445,96 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
-   "climatology"
+   "environment"
+  ]
+ },
+ {
+  "id":"SBIOB346",
+  "name":"Biodiversit\u00e9 et esp\u00e8ces invasives ",
+  "year":"2020-2021",
+  "teacher":[
+   "De Laender Frederik",
+   "Van Doninck Karine",
+   "MARESCAUX Jonathan (suppl\u00e9ant)"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB346\/2020",
+  "ects":[
+   2
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"SBOEM142",
+  "name":"Ecologie des milieux aquatiques naturels et perturb\u00e9s  ",
+  "year":"2020-2021",
+  "teacher":[
+   "De Laender Frederik",
+   "Jarillo Diaz Javier (suppl\u00e9ant)"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM142\/2020",
+  "ects":[
+   2
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"SBOEM162",
+  "name":"Ecotoxicology of populations communities and ecosystems ",
+  "year":"2020-2021",
+  "teacher":[
+   "De Laender Frederik",
+   "Jarillo Diaz Javier (suppl\u00e9ant)"
+  ],
+  "language":[
+   "en"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM162\/2020",
+  "ects":[
+   2
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
   ]
  },
  {
@@ -320,6 +556,65 @@
   ],
   "faculty":[
    "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "energy"
+  ]
+ },
+ {
+  "id":"SCHIB111",
+  "name":"Chimie g\u00e9n\u00e9rale ",
+  "year":"2020-2021",
+  "teacher":[
+   "Wouters Johan"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SCHIB111\/2020",
+  "ects":[
+   6
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 de m\u00e9decine",
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "health",
+   "sciences"
+  ],
+  "themes":[
+   "energy"
+  ]
+ },
+ {
+  "id":"SCHIM123",
+  "name":"Electronique et photonique mol\u00e9culaires ",
+  "year":"2020-2021",
+  "teacher":[
+   "Champagne Benoit"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SCHIM123\/2020",
+  "ects":[
+   3
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
   ],
   "themes":[
    "energy"
@@ -345,7 +640,11 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
+   "energy",
    "climatology"
   ]
  },
@@ -370,9 +669,11 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
-   "energy",
-   "climatology"
+   "energy"
   ]
  },
  {
@@ -394,6 +695,9 @@
   ],
   "faculty":[
    "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
   ],
   "themes":[
    "climatology"
@@ -419,6 +723,9 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
    "durability"
   ]
@@ -442,6 +749,9 @@
   ],
   "faculty":[
    "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
   ],
   "themes":[
    "environment"
@@ -467,8 +777,10 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
-   "energy",
    "climatology"
   ]
  },
@@ -492,32 +804,11 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
    "durability"
-  ]
- },
- {
-  "id":"SGOLB202",
-  "name":"G\u00e9ographie physique et g\u00e9omorphologie ",
-  "year":"2020-2021",
-  "teacher":[
-   "Hallet Vincent"
-  ],
-  "language":[
-   "fr"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOLB202\/2020",
-  "ects":[
-   5
-  ],
-  "campus":[
-   "NAMUR"
-  ],
-  "faculty":[
-   "Facult\u00e9 des sciences"
-  ],
-  "themes":[
-   "climatology"
   ]
  },
  {
@@ -540,7 +831,11 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
+   "environment",
    "durability"
   ]
  },
@@ -563,6 +858,9 @@
   ],
   "faculty":[
    "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
   ],
   "themes":[
    "climatology"
@@ -589,177 +887,38 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
-  "themes":[
-   "climatology"
-  ]
- },
- {
-  "id":"SGOLM145",
-  "name":"P\u00e9dologie ",
-  "year":"2020-2021",
-  "teacher":[
-   "Hallet Vincent"
-  ],
-  "language":[
-   "fr"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOLM145\/2020",
-  "ects":[
-   2
-  ],
-  "campus":[
-   "NAMUR"
-  ],
-  "faculty":[
-   "Facult\u00e9 des sciences"
+  "field":[
+   "sciences"
   ],
   "themes":[
    "climatology"
   ]
  },
  {
-  "id":"SMATB213",
-  "name":"Astronomie ",
-  "year":"2020-2021",
-  "teacher":[
-   "Fuzfa Andre"
-  ],
-  "language":[
-   "fr"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SMATB213\/2020",
-  "ects":[
-   2
-  ],
-  "campus":[
-   "NAMUR"
-  ],
-  "faculty":[
-   "Facult\u00e9 des sciences"
-  ],
-  "themes":[
-   "energy"
-  ]
- },
- {
-  "id":"SMATB310",
-  "name":"Travail interdisciplinaire ",
-  "year":"2020-2021",
-  "teacher":[
-   "Lemaitre Anne"
-  ],
-  "language":[
-   "fr"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SMATB310\/2020",
-  "ects":[
-   4
-  ],
-  "campus":[
-   "NAMUR"
-  ],
-  "faculty":[
-   "Facult\u00e9 des sciences"
-  ],
-  "themes":[
-   "energy"
-  ]
- },
- {
-  "id":"SMATM127",
-  "name":"Dynamique c\u00e9leste et r\u00e9sonances ",
-  "year":"2020-2021",
-  "teacher":[
-   "Lemaitre Anne",
-   "TEYSSANDIER Jean (suppl\u00e9ant)"
-  ],
-  "language":[
-   "fr"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SMATM127\/2020",
-  "ects":[
-   6
-  ],
-  "campus":[
-   "NAMUR"
-  ],
-  "faculty":[
-   "Facult\u00e9 des sciences"
-  ],
-  "themes":[
-   "energy"
-  ]
- },
- {
-  "id":"SPHYM109",
-  "name":"Physique des lasers, optique non-lin\u00e9aire et quantique ",
-  "year":"2020-2021",
-  "teacher":[
-   "Caudano Yves",
-   "Lepere Muriel",
-   "LEONIS Sylvain (suppl\u00e9ant)"
-  ],
-  "language":[
-   "fr"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYM109\/2020",
-  "ects":[
-   6
-  ],
-  "campus":[
-   "NAMUR"
-  ],
-  "faculty":[
-   "Facult\u00e9 des sciences"
-  ],
-  "themes":[
-   "climatology"
-  ]
- },
- {
-  "id":"SPHYM119",
-  "name":"Astrophysique nucl\u00e9aire ",
-  "year":"2020-2021",
-  "teacher":[
-   "Terwagne Guy"
-  ],
-  "language":[
-   "fr"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYM119\/2020",
-  "ects":[
-   3
-  ],
-  "campus":[
-   "NAMUR"
-  ],
-  "faculty":[
-   "Facult\u00e9 des sciences"
-  ],
-  "themes":[
-   "climatology"
-  ]
- },
- {
-  "id":"SPHYM134",
-  "name":"Plasmonique et applications ",
+  "id":"SPHYM106",
+  "name":"Nanomat\u00e9riaux et applications de la physique du solide ",
   "year":"2020-2021",
   "teacher":[
    "HENRARD Luc",
-   "Lobet Micha\u00ebl (suppl\u00e9ant)"
+   "Sporken Robert",
+   "Lobet Micha\u00ebl (suppl\u00e9ant)",
+   "MAJ\u00c9RUS Bruno (suppl\u00e9ant)"
   ],
   "language":[
    "fr"
   ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYM134\/2020",
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYM106\/2020",
   "ects":[
-   3
+   6
   ],
   "campus":[
    "NAMUR"
   ],
   "faculty":[
    "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
   ],
   "themes":[
    "energy"
@@ -786,6 +945,9 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
    "durability"
   ]
@@ -809,6 +971,9 @@
   ],
   "faculty":[
    "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
   ],
   "themes":[
    "environment",
@@ -835,6 +1000,9 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
    "durability"
   ]
@@ -859,7 +1027,11 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
+   "environment",
    "durability"
   ]
  },
@@ -888,6 +1060,9 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
    "durability"
   ]
@@ -915,6 +1090,10 @@
    "Facult\u00e9 des sciences",
    "Facult\u00e9 de philosophie et lettres"
   ],
+  "field":[
+   "social science",
+   "sciences"
+  ],
   "themes":[
    "climatology"
   ]
@@ -939,8 +1118,65 @@
   "faculty":[
    "Facult\u00e9 des sciences"
   ],
+  "field":[
+   "sciences"
+  ],
   "themes":[
    "climatology"
+  ]
+ },
+ {
+  "id":"SVETB310",
+  "name":"Microbiologie ",
+  "year":"2020-2021",
+  "teacher":[
+   "Gillet Nicolas"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SVETB310\/2020",
+  "ects":[
+   4
+  ],
+  "campus":[
+   "NAMUR"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"ZOOL2000-1",
+  "name":"Ecologie, production et gestion des \u00e9cosyst\u00e8mes aquatiques ",
+  "year":"2020-2021",
+  "teacher":[
+   "De Laender Frederik"
+  ],
+  "language":[
+   "fr"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/ZOOL2000-1\/2020",
+  "ects":[
+   8
+  ],
+  "campus":[
+   "LI\u00c8GE"
+  ],
+  "faculty":[
+   "Facult\u00e9 des sciences"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
   ]
  }
 ]
