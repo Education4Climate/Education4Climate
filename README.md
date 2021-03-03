@@ -2,7 +2,7 @@
 
 Unicrawl is a tool for crawling and analyzing data from higher education schools.
 
-This tool is developped in the context of the project Education4Climate developed by the volunteering
+This tool is developed in the context of the project Education4Climate by the volunteering
 group 'The Shifters' - Belgium.
 
 The scope of the project is the higher education schools in Belgium but the methods used here could easily 

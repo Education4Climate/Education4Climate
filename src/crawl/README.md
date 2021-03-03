@@ -1,10 +1,63 @@
 ## Crawling
 
-TODO: explain methodology
+The goal of crawling is to extract automatically information from web content.
+
+In the context of this project, what we seek is information about higher education school.
+More particularly, information about their courses and programs.
+
+For each school, we therefore develop two crawlers (i.e. scripts for crawling): one for programs and one for courses.
+
+### Academic year
+
+Before explaining the two types of crawlers and their output, it is important to note that 
+schools change their programs on a yearly basis. Thus, all of the scripts described below take as 
+input the year for which the data should be extracted.
+
+### Program crawler
+
+A program is generally composed of a set of courses, compulsory or not, and under the completion of a sufficient number
+of these courses, a diploma unique to this program is awarded.
+
+The programs crawlers are contained in [src/crawl/unicrawl/spiders](unicrawl/spiders) and named in the following way: 
+*{School code}_programs.py*.
+
+For each program, we retrieve:
+- *id*: the code of the program (note: if there is none, we make up one)
+- *name*: the name of the program
+- *faculty*: the faculty/institute organising the program
+- *campus*: the campus where it is organised
+- *cycle*: its cycle (bac, master, ...)
+- *courses*: the list of courses that are offered in this program
+- *ects*: the list of ECTS associated to these courses in the program
+
+### Course crawler
+
+What we refer as course in the crawlers can actually be one of two things. 
+The first, most straightforward one, is a class given by one or several teachers. 
+The second one is actually a group of class, usually called a 'teaching unit'.
+This differentiation is made because a lot of schools do not provide unique web pages per class
+but only per teaching unit, preventing from retrieving information per class.
+In the following description, we will therefore use the word 'course' to refer both 
+to individual classes and teaching units.
+
+As for programs, the courses crawlers are contained in [src/crawl/unicrawl/spiders](unicrawl/spiders) 
+and named: *{School code}_courses.py*.
+
+For each course, we retrieve:
+- *id*: the id of the course
+- *name*: the name of the course
+- *year*: the academic year (e.g. 2020-2021) (TODO: remove?)  
+- *teacher*: the list of teachers giving/organising the course (TODO: change to teachers?)
+- *language*: the list of languages in which the course is given/evaluated (TODO: change to languages?)
+- *url*: the url of the web page where the course is described
+- *content*: text describing the content of the course
+
+TODO: add explanation of mixed fields
+TODO: add explanation of merging program lines
 
 ### Scrapy
 
-All crawlers are developped using the Scrapy Python library.
+All crawlers are developed using the Scrapy Python library.
 For more information, check: https://scrapy.org/.
 
 ### FOR DEVS: Why you should not use a 'hand-made' launcher and how to do then?
