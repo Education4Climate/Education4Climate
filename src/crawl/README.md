@@ -30,11 +30,25 @@ For each program, we retrieve:
 - *courses*: the list of courses that are offered in this program
 - *ects*: the list of ECTS associated to these courses in the program
 
+The output of the crawler is saved in the directory [data/crawling-output/](../../data/crawling-output) 
+under the name *{School code}\_programs\_{YEAR}.json*.
+
+#### Duplicate programs outputs
+Due to the structure of certain school websites, program information can be split across different webpages
+that cannot be access sequentially leading to the creation several lines corresponding
+to this program in the output file
+
+In that case (see for example the program crawler for [UCLouvain](unicrawl/spiders/ucl_programs.py)), the output
+of the program crawler is saved to a file named *{School code}\_programs\_{YEAR}\_pre.csv*.
+The duplicate program lines are then merged using the script [*merge_programs.py*](merge_programs.py) which 
+save the final results in the *{School code}\_programs\_{YEAR}.json* file.
+
+
 ### Course crawler
 
 What we refer as course in the crawlers can actually be one of two things. 
 The first, most straightforward one, is a class given by one or several teachers. 
-The second one is actually a group of class, usually called a 'teaching unit'.
+The second one is actually a group of classes, usually called a 'teaching unit'.
 This differentiation is made because a lot of schools do not provide unique web pages per class
 but only per teaching unit, preventing from retrieving information per class.
 In the following description, we will therefore use the word 'course' to refer both 
@@ -52,20 +66,28 @@ For each course, we retrieve:
 - *url*: the url of the web page where the course is described
 - *content*: text describing the content of the course
 
-TODO: add explanation of mixed fields
-TODO: add explanation of merging program lines
+The output of the crawler is saved in the directory [data/crawling-output/](../../data/crawling-output) 
+under the name *{School code}\_courses\_{YEAR}.json*.
+
+#### Mixed fields
+
+For some schools, some fields mentioned earlier are more easily accessed at the courses or program level.
+For example, some schools will only specify ECTS at the course level and thus an *ects* field is generated
+in the output of the corresponding crawler.
+
 
 ### Scrapy
 
 All crawlers are developed using the Scrapy Python library.
 For more information, check: https://scrapy.org/.
 
-### FOR DEVS: Why you should not use a 'hand-made' launcher and how to do then?
+### For Developers
+#### Why you should not use a 'hand-made' launcher and how to do then?
 
-#### Why?
+##### Why?
 Because if you do, you are not using the parametrization of the scraper.
 
-#### How?
+##### How?
 To launch a crawler and the debugger with PyCharm :
 - Run / Edit configurations
 - Choose the configuration you want to modify
