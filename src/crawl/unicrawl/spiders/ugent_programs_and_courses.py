@@ -24,16 +24,29 @@ def extract_url_from_toggle_content(toggle_content: str) -> str:
     url = toggle_content.split(",")[1].replace("'", "")
     return url
 
+
 def extract_ects(ects_list: List[str]) -> List[str]:
-    ects_list.remove("Crdt")
-    ects_list.remove("")
+    if "Crdt" in ects_list:
+        ects_list.remove("Crdt")
+
+    if "" in ects_list:
+        ects_list.remove("")
     return ects_list
+
+
+def extract_teacher(teacher_list: List[str]) -> List[str]:
+    if "Instructor" in teacher_list:
+        teacher_list.remove("Instructor")
+
+    if "" in teacher_list:
+        teacher_list.remove("")
+    return teacher_list
 
 
 class UgentProgramSpider(scrapy.Spider, ABC):
     name = 'ugent-programs'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/pre_ugent_programs_{YEAR}.json',
+        'FEED_URI': f'../../data/crawling-output/ugent_programs_and_courses_{YEAR}.json',
     }
 
     def start_requests(self):
@@ -84,7 +97,7 @@ class UgentProgramSpider(scrapy.Spider, ABC):
         courses_id = [extract_id_from_url_ugent(url) for url in urls]
         courses_content = ['jojo']*len(courses_id)
         courses_ects = extract_ects([cleanup(res) for res in response.xpath("//td[@class='studiepunten']").getall()])
-        courses_teacher = [cleanup(res) for res in response.xpath("//td[@class='lesgever']/a").getall()]
+        courses_teacher = extract_teacher([cleanup(res) for res in response.xpath("//td[@class='lesgever']").getall()])
         final_dict = {**base_dict,
                       **{
                           'url(debug)': response.url[-15:],
