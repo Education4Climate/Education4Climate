@@ -21,6 +21,8 @@ def main(school: str, year: int):
     # Sum courses scores into programs scores
     programs_scores_df = pd.DataFrame(index=programs_courses_ds.index, columns=themes, dtype=int)
     for program_id, program_courses in programs_courses_ds.items():
+        # Remove non-scored courses from list (could happen if the course was not crawlable)
+        program_courses = list(set(program_courses).intersection(set(courses_scores_df.index)))
         programs_scores_df.loc[program_id] = courses_scores_df.loc[program_courses].sum()
 
     programs_scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv"

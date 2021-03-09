@@ -33,8 +33,12 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 # Scrap only bachelor and master programs
                 # TODO: devrait-on rajouter les certificats?
                 if program_name.startswith("Bachelier") or program_name.startswith("Master"):
-                    cycle = 'bachelor' if program_name.startswith("Bachelier") else 'master'
-                    base_dict = {"name": program_name, "faculty": faculty, "cycle": cycle}
+                    cycle = 'bac' if program_name.startswith("Bachelier") else 'master'
+                    base_dict = {
+                        "id": programs_link.split("/")[-2],
+                        "name": program_name,
+                        "faculty": faculty,
+                        "cycle": cycle}
                     yield response.follow(
                         programs_link,
                         self.parse_program,
@@ -70,11 +74,8 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 ects_slimmed += [list(set(course_ects))[0]]
 
         cur_dict = {'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked
-                    'id': '',  # Programs do not seem to have an id
                     'courses': codes,
-                    'ects': ects_slimmed  # ,
-                    # 'coursesnb': len(codes),
-                    # 'ectsnb': len(ects_slimmed)
+                    'ects': ects_slimmed
                     }
 
         yield {**base_dict, **cur_dict}

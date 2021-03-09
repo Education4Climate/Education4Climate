@@ -1,6 +1,7 @@
 /*jshint esversion: 8 */
 
-var files = ["uantwerp.json", "ucl.json", "ulb.json", "umons.json", "unamur.json"];
+const DATA_FOLDER = "data";
+const SCHOOLS_FILE = DATA_FOLDER + "/" + "schools.json";
 
 var schoolsCount = [];
 var themesCount = [];
@@ -44,7 +45,7 @@ function buildCoursesFinderFilters(courses) {
     courses.forEach(course => {
 
         // On parcourt les thématiques du cours et on peuple chaque compteur
-
+       
         course.themes.forEach(theme => {
 
             if (!themesCount.includes(theme)) {
@@ -267,40 +268,69 @@ function closeModal() {
 
 /* DATA */
 
+async function getSchools() {
+
+    if (!sessionStorage.schools) {
+
+        var schools = [];
+
+        await fetch(SCHOOLS_FILE).then((response) => {
+            return response.json();
+        }).then((data) => {
+
+            data.schools.forEach(school => {
+
+                schools.push({
+                    id: school.id,
+                    name: school.name,
+                    shortName: school.shortName,
+                    file: school.file
+                });
+            });
+        });
+
+        sessionStorage.schools = JSON.stringify(schools);
+    }
+
+    return JSON.parse(sessionStorage.schools);
+}
+
 async function getCourses() {
 
     if (!sessionStorage.courses) {
 
         var courses = [];
 
-        // On agrège les données de toutes les écoles dans un même tableau
+        const schools = await getSchools();
 
-        await Promise.all(files.map(u => fetch("data/" + u)))
+        await Promise.all(schools.map(school => fetch("data/" + school.file)))
             .then(responses => Promise.all(responses.map(res => res.json())))
-            .then(schools => {
+            .then(results => {
 
-                schools.forEach(school => {
+                for (var i = 0; i < results.length; i++) {
 
-                    school.courses.forEach(course => {
+                    // On agrège les données de toutes les écoles dans un même tableau
+
+                    results[i].forEach(course => {
 
                         courses.push({
 
-                            schoolShortName: school.shortName,
+                            schoolShortName: schools[i].shortName,
                             name: course.name,
-                            shortName: course.shortName,
-                            years: course.years,
-                            teachers: course.teachers,
-                            credits: course.credits,
-                            languages: course.languages,
-                            themes: course.themes,
-                            abstract: course.abstract,
-                            campus: course.campus,
-                            shiftScore: course.shiftScore,
-                            climateScore: course.climateScore,
-                            url: course.url
+                            shortName: course.id,
+                            years: course.year,
+                            teachers: course.teacher,
+                            url: course.url,
+                            languages: course.language,
+                            themes: course.themes
+                            //abstract: course.abstract,
+                            //campus: course.campus,
+                            //shiftScore: course.shiftScore,
+                            //climateScore: course.climateScore,
+                            //credits: course.credits                          
                         });
                     });
-                });
+                }
             });
 
         sessionStorage.courses = JSON.stringify(courses);
@@ -313,7 +343,7 @@ async function getCourses() {
 
 function getLanguageFromISOCode(code) {
 
-    dictionary = { "fr": "Français", "nl": "Néerlandais", "en": "Anglais", "de": "Allemand" };
+    dictionary = { "fr": "Français", "nl": "Néerlandais", "en": "Anglais", "de": "Allemand", "ar": "Arabe" };
 
     return dictionary.hasOwnProperty(code) ? dictionary[code] : "Inconnu";
 }

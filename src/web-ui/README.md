@@ -1,5 +1,7 @@
 # Web interface proof of concept
 
+TODO: translate to english?
+
 ## Utilisateurs finaux
 
 * Professeurs d'université à la recherche de pairs ayant une expertise dans telle ou telle thématique

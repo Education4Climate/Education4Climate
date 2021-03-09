@@ -2,29 +2,34 @@
     "decarbonization": {},
     "energy": {
         "UA-B1-ARCHIT-012-M": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire"
+            "solaires? thermiques?": [
+                "solaire thermique",
+                "solaire thermique"
+            ],
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque",
+                "photovolta\u00efque"
             ]
         },
         "UA-B2-ARCHIT-015-M": {
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
+            "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
                 "consommation \u00e9nerg\u00e9tique"
             ]
         },
         "UA-B3-ARCHIT-013-M": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "energies renouvelables"
+            ],
+            "[\u00e9e]nerg[^ ]+ fossiles?": [
+                "energies fossiles"
             ]
         },
         "UI-B1-IRCIVI-009-M": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
             ],
-            "solaires?": [
-                "solaire"
+            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne"
             ]
         },
         "UI-B3-IRCIVA-010-M": {
@@ -32,22 +37,37 @@
                 "\u00e9nergies renouvelables"
             ]
         },
-        "US-B1-SCPHYS-007-M": {
-            "solaires?": [
-                "solaire"
+        "UI-B3-IRCIVI-004-M": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans d'\u00e9nergie"
             ]
         },
-        "US-B2-SCMATH-020-M": {
-            "solaires?": [
-                "solaire"
+        "US-B1-SCBIOC-009-C": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "US-B1-SCBIOC-017-C": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "US-B1-SCBIOC-022-C": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "US-B2-SCBIOL-007-M": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans \u00e9nerg\u00e9tiques"
             ]
         },
         "UW-B3-IGGEST-003-M": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
             ],
-            "solaires?": [
-                "solaire"
+            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne"
             ]
         }
     },
@@ -59,36 +79,64 @@
         }
     },
     "environment": {
+        "UA-B1-ARCHIT-012-M": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "UA-B1-ARCHIT-016-M": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "UI-B1-IRCIVI-009-M": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "UI-B3-IRCIVA-012-M": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "US-B3-SCBIOC-933-C": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "US-B3-SCBIOL-004-M": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
         "US-B3-SCBIOL-008-M": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
                 "ecosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
                 "ecosyst\u00e8me"
+            ]
+        },
+        "US-M1-BIOL60-021-M": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "UW-B3-IGGEST-003-M": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
             ]
         }
     },
     "climatology": {
-        "UA-B1-ARCHIT-012-M": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatisme",
-                "climatique"
-            ]
-        },
-        "UI-B1-IRCIVI-009-M": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "US-B2-SCBIOL-007-M": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ]
-        },
         "UW-B2-IGGEST-003-M": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]

@@ -75,6 +75,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         languages = response.xpath("//h3[text()=\"Langue(s) d'enseignement\"]/following::p[1]/text()").get()
         if languages is not None:
             languages = [LANGUAGE_DICT[language] for language in languages.split(", ")]
+        languages = [] if languages == [""] else languages
 
         content_titles = ["Contenu du cours", "Objectifs (et/ou acquis d'apprentissages spécifiques)",
                           "Méthodes d'enseignement et activités d'apprentissages"]

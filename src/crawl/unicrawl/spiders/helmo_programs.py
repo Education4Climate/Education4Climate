@@ -40,7 +40,8 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
             elif 'Spécialisation' in program_name:
                 cycle = 'spe'
 
-            cur_dict = {"name": program_name,
+            cur_dict = {"id": '',
+                        "name": program_name,
                         "cycle": cycle}
 
             yield response.follow(link, self.parse_program_main,

@@ -4,11 +4,47 @@
             "bas[- ]carbon[^ ]+": [
                 "bas carbone'",
                 "bas carbone"
+            ],
+            "captures? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "capture de co2"
+            ],
+            "valorisat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "valorisation du co2"
+            ],
+            "stock[^ ]* (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "stockage co2",
+                "stockage du co2",
+                "stockages du co2"
             ]
         },
         "GENV0002-1": {
             "d\u00e9carbon[^ ]+": [
                 "d\u00e9carbonisation"
+            ]
+        },
+        "GEOL0008-1": {
+            "s[\u00e9e]qu[\u00e9e]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "s\u00e9questration du co2"
+            ]
+        },
+        "GEOL0008-2": {
+            "s[\u00e9e]qu[\u00e9e]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "s\u00e9questration du co2"
+            ]
+        },
+        "GEOL0008-4": {
+            "s[\u00e9e]qu[\u00e9e]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "s\u00e9questration du co2"
+            ]
+        },
+        "MECA0037-1": {
+            "stock[^ ]* (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "stockage du co2"
+            ]
+        },
+        "SCER0010-1": {
+            "captures? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "capture du co2"
             ]
         }
     },
@@ -18,14 +54,20 @@
                 "\u00e9nergie renouvelable",
                 "\u00e9nergies renouvelables"
             ],
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
+            "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
                 "consommations \u00e9nerg\u00e9tiques",
                 "consommations \u00e9nerg\u00e9tiques"
+            ],
+            "utilis[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
+                "utilisation d'\u00e9nergie"
+            ],
+            "vecteur[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "vecteurs \u00e9nerg\u00e9tiques"
             ]
         },
         "AERO0032-1": {
-            "solaires?": [
-                "solaire"
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9oliennes"
             ]
         },
         "AGRO0016-1": {
@@ -33,86 +75,56 @@
                 "\u00e9nergies renouvelables",
                 "\u00e9nergie renouvelable"
             ],
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique",
-                "\u00e9nerg\u00e9tique"
+            "[\u00e9e]nerg[^ ]+ fossiles?": [
+                "\u00e9nergies fossiles"
+            ],
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique",
+                "transition \u00e9nerg\u00e9tique"
             ]
         },
-        "APRI0003-2": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "ARCH0006-2": {
-            "solaires?": [
-                "solaire",
-                "solaires",
-                "solaires",
-                "solaire",
-                "solaires"
+        "ALIM0010-3": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "ARCH0009-3": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
-            ],
-            "solaires?": [
-                "solaire"
             ]
         },
-        "ARCH0068-6": {
-            "solaires?": [
-                "solaires"
+        "ARCH0079-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "ARCH0068-7": {
-            "solaires?": [
-                "solaires"
-            ]
-        },
-        "ARCH0089-1": {
-            "solaires?": [
-                "solaire",
-                "solaires"
-            ]
-        },
-        "ARCH0089-4": {
-            "solaires?": [
-                "solaire",
-                "solaires"
+        "ARCH0085-6": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "ARCH1626-1": {
-            "solaires?": [
-                "solaires"
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans \u00e9nerg\u00e9tiques"
             ]
         },
-        "ARCH1952-1": {
-            "solaires?": [
-                "solaire"
+        "ARCH1967-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "ARCH2019-1": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "ARCH3280-2": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "BIOL2040-1": {
-            "solaires?": [
-                "solaire"
+        "ASTR0204-2": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "CHIM9234-1": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie verte"
             ],
-            "solaires?": [
-                "solaires"
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9oliennes"
             ]
         },
         "CHIM9234-2": {
@@ -120,9 +132,9 @@
                 "\u00e9nergie verte",
                 "\u00e9nergie verte"
             ],
-            "solaires?": [
-                "solaires",
-                "solaires"
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9oliennes",
+                "\u00e9oliennes"
             ]
         },
         "CHIM9315-1": {
@@ -131,20 +143,34 @@
                 "\u00e9nergie renouvelable",
                 "\u00e9nergie renouvelables"
             ],
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
-                "consommation \u00e9nerg\u00e9tique"
+            "[\u00e9e]nerg[^ ]+ fossiles?": [
+                "\u00e9nergies fossiles",
+                "\u00e9nergies fossiles"
+            ],
+            "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
+                "consommation d'\u00e9nergie",
+                "consommation \u00e9nerg\u00e9tique",
+                "consommation d'\u00e9nergie"
             ]
         },
-        "COSM0445-1": {
-            "solaires?": [
-                "solaires",
-                "solaires",
-                "solaires"
+        "CLIM0002-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "CLIM0002-2": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "CNAV0022-1": {
+            "utilis[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
+                "utilisateurs d'\u00e9nergie"
             ]
         },
         "DROI2335-1": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
             ]
         },
         "ECON0945-1": {
@@ -152,24 +178,27 @@
                 "\u00e9nergies renouvelables"
             ]
         },
-        "ELEC0041-1": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
         "ELEC0080-1": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables",
                 "\u00e9nergies renouvelables"
             ],
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
             ]
         },
         "ENVT0019-2": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables",
                 "\u00e9nergies renouvelables"
+            ],
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "ENVT0026-1": {
@@ -180,14 +209,15 @@
         "ENVT0068-1": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
-            ],
-            "solaires?": [
-                "solaire",
-                "solaire"
+            ]
+        },
+        "ENVT0069-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans d'\u00e9nergie"
             ]
         },
         "ENVT0070-1": {
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
+            "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
                 "consommation \u00e9nerg\u00e9tique",
                 "consommation \u00e9nerg\u00e9tique"
             ]
@@ -197,9 +227,33 @@
                 "\u00e9nergies renouvelables"
             ]
         },
+        "ENVT0072-1": {
+            "photovolta[i\u00ef]ques?": [
+                "photovoltaique",
+                "photovoltaique"
+            ]
+        },
+        "ENVT2011-2": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilans \u00e9nerg\u00e9tiques",
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "ENVT2023-2": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectricit\u00e9"
+            ]
+        },
+        "ENVT3038-1": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectriques",
+                "hydro\u00e9lectriques"
+            ]
+        },
         "ENVT3042-1": {
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
-                "consommation \u00e9nerg\u00e9tique"
+            "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
+                "consommation \u00e9nerg\u00e9tique",
+                "consommation d'\u00e9nergie"
             ]
         },
         "ENVT3057-1": {
@@ -208,76 +262,116 @@
                 "\u00e9nergies renouvelables",
                 "\u00e9nerg\u00e9tiques renouvelables",
                 "\u00e9nerg\u00e9tiques renouvelables"
+            ],
+            "vecteur[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "vecteurs \u00e9nerg\u00e9tiques",
+                "vecteurs \u00e9nerg\u00e9tiques"
             ]
         },
         "ENVT3057-2": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
+            ],
+            "vecteur[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "vecteurs \u00e9nerg\u00e9tiques",
+                "vecteurs \u00e9nerg\u00e9tiques"
             ]
         },
         "ENVT3059-1": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables"
             ],
-            "solaires?": [
-                "solaires"
+            "solaires? thermiques?": [
+                "solaires thermique"
+            ],
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque"
+            ],
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9oliennes"
             ]
         },
         "FORE0043-1": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
+            ]
+        },
+        "GCIV2035-1": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectriques",
+                "hydro\u00e9lectrique"
+            ]
+        },
+        "GCIV2065-1": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectricit\u00e9",
+                "hydro\u00e9lectriques",
+                "hydro\u00e9lectriques"
+            ]
+        },
+        "GENV0001-2": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectricit\u00e9"
             ]
         },
         "GENV0002-1": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergies renouvelables",
                 "\u00e9nergies renouvelables"
+            ],
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "GEOG2018-1": {
-            "solaires?": [
-                "solaires"
+        "GEOG2016-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "GEOL0008-1": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique\"",
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique\"",
+                "transition \u00e9nerg\u00e9tique"
             ],
-            "effica[^ ]+ \u00e9nerg[^ ]+": [
+            "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "efficacit\u00e9 \u00e9nerg\u00e9tique"
             ]
         },
         "GEOL0008-2": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique\"",
-                "\u00e9nerg\u00e9tique\"",
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique\"",
+                "transition \u00e9nerg\u00e9tique\"",
+                "transition \u00e9nerg\u00e9tique"
             ],
-            "effica[^ ]+ \u00e9nerg[^ ]+": [
+            "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "efficacit\u00e9 \u00e9nerg\u00e9tique"
             ]
         },
         "GEOL0008-4": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique\"",
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique\"",
+                "transition \u00e9nerg\u00e9tique"
             ],
-            "effica[^ ]+ \u00e9nerg[^ ]+": [
+            "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "efficacit\u00e9 \u00e9nerg\u00e9tique"
             ]
         },
         "GEOL1050-1": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
             ],
-            "effica[^ ]+ \u00e9nerg[^ ]+": [
+            "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "efficacit\u00e9 \u00e9nerg\u00e9tique"
             ]
         },
         "GERE0029-1": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
+            ]
+        },
+        "GERE0034-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "GERE0036-1": {
@@ -295,8 +389,26 @@
                 "\u00e9nergie renouvelable",
                 "\u00e9nergie renouvelable"
             ],
-            "solaires?": [
-                "solaire"
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque",
+                "photovolta\u00efque"
+            ],
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne",
+                "\u00e9oliennes"
+            ]
+        },
+        "HULG0488-1": {
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne",
+                "\u00e9olienne",
+                "\u00e9olienne",
+                "\u00e9olienne"
+            ]
+        },
+        "HULG9278-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "LANG2972-1": {
@@ -309,37 +421,53 @@
                 "energies renouvelables"
             ]
         },
-        "MECA0006-1": {
-            "solaires?": [
-                "solaire",
-                "solaires"
+        "MECA0002-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "MECA0034-1": {
-            "solaires?": [
-                "solaire"
+        "MECA0031-2": {
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9oliennes"
+            ]
+        },
+        "MECA0041-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
+            ]
+        },
+        "MECA0041-2": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "MECA0450-3": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelable"
             ],
-            "solaires?": [
-                "solaire"
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque"
+            ],
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne",
+                "\u00e9oliennes"
             ]
         },
         "MECA0512-1": {
-            "solaires?": [
-                "solaires",
-                "solaire"
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique",
+                "bilans \u00e9nerg\u00e9tiques"
             ]
         },
         "MECA0515-1": {
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "\u00e9nergie renouvelables"
-            ],
-            "solaires?": [
-                "solaire"
+            ]
+        },
+        "MECA0518-1": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectrique"
             ]
         },
         "MECA0519-1": {
@@ -348,23 +476,49 @@
             ]
         },
         "MECA0526-1": {
-            "effica[^ ]+ \u00e9nerg[^ ]+": [
+            "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "efficacit\u00e9 \u00e9nerg\u00e9tique"
             ]
         },
-        "MECA0529-1": {
-            "eolien[^ ]+": [
-                "eoliennes"
+        "MECA0528-1": {
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9oliennes"
+            ],
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan d'\u00e9nergie",
+                "bilan d'\u00e9nergie",
+                "bilans d'\u00e9nergie"
             ]
         },
-        "MICR1713-1": {
-            "solaires?": [
-                "solaire"
+        "MECA0529-1": {
+            "[\u00e9e]olien[^ ]+": [
+                "eoliennes",
+                "\u00e9oliennes",
+                "\u00e9oliennes",
+                "\u00e9oliennes"
+            ],
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan d'\u00e9nergie",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "PHYS0987-1": {
-            "solaires?": [
-                "solaire"
+            "photovolta[i\u00ef]ques?": [
+                "photovolta\u00efque"
+            ]
+        },
+        "PHYS3024-1": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan d'\u00e9nergie"
+            ]
+        },
+        "PROJ0001-1": {
+            "[\u00e9e]olien[^ ]+": [
+                "\u00e9olienne"
+            ],
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "SMEM0042-1": {
@@ -372,151 +526,48 @@
                 "energies renouvelables"
             ]
         },
-        "SPAT0021-1": {
-            "solaires?": [
-                "solaires"
+        "SPAT0024-2": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "SPAT0023-1": {
-            "solaires?": [
-                "solaire",
-                "solaire"
+        "SPAT0024-3": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
-        "SPAT0026-1": {
-            "solaires?": [
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SPAT0028-2": {
-            "solaires?": [
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SPAT0029-1": {
-            "solaires?": [
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SPAT0032-2": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "SPAT0033-1": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "SPAT0035-1": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "SPAT0036-1": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "SPAT0043-1": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire"
+        "SPAT0024-4": {
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "SPAT0048-4": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SPAT0054-1": {
-            "solaires?": [
-                "solaire"
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "SPAT0055-1": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SPAT0056-1": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaires",
-                "solaire"
-            ]
-        },
-        "SPAT0063-1": {
-            "solaires?": [
-                "solaire",
-                "solaires",
-                "solaire"
-            ]
-        },
-        "SPAT0065-1": {
-            "solaires?": [
-                "solaire"
-            ]
-        },
-        "SPAT0066-1": {
-            "solaires?": [
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SPAT0067-1": {
-            "solaires?": [
-                "solaires"
-            ]
-        },
-        "SPAT0076-1": {
-            "solaires?": [
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaire",
-                "solaires",
-                "solaire",
-                "solaire"
-            ]
-        },
-        "SPAT0079-1": {
-            "solaires?": [
-                "solaire"
+            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
+                "bilan \u00e9nerg\u00e9tique",
+                "bilan \u00e9nerg\u00e9tique"
             ]
         },
         "SPOL0099-1": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
-            ]
-        },
-        "SSTG0043-1": {
-            "solaires?": [
-                "solaire"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
             ]
         },
         "TRAD0202-1": {
-            "transiti[^ ]+ ([\u00e9e]nerg[^ ]+|ecolog[^ ]+)": [
-                "\u00e9nerg\u00e9tique"
+            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "transition \u00e9nerg\u00e9tique"
+            ]
+        },
+        "ZOOL2000-1": {
+            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
+                "hydro\u00e9lectricit\u00e9"
             ]
         }
     },
@@ -545,168 +596,690 @@
         }
     },
     "environment": {
+        "AGRO0021-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "AGRO0023-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ANIM0024-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0027-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0031-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0518-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0810-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0852-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0860-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0861-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0863-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL0865-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL2032-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL2036-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL2038-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "BIOL2039-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "CHIM0715-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "COMU2144-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ECON2255-4": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "ECON2298-3": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9mique"
+            ]
+        },
+        "ENVT0047-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
         "ENVT2044-1": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
                 "ecosyst\u00e9mologie",
-                "ecosyst\u00e8mes"
+                "ecosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ENVT2058-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ENVT3016-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ENVT3020-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ENVT3041-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ENVT3045-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ENVT3050-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "ENVT3060-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "FORE0001-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "FORE0025-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "FORE0041-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GBLX0060-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GBLX2131-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
             ]
         },
         "GBLX2141-1": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
                 "ecosystemer"
             ]
         },
+        "GBLX2147-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques"
+            ]
+        },
+        "GEOG2013-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GEOL0210-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GEOL0313-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GEOL1049-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GEOP0002-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "GEOP0002-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "GERE0023-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GERE0025-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
         "GERE0034-1": {
-            "ecosyst[^ ]+": [
-                "ecosyst\u00e8me-atmosph\u00e8re"
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "ecosyst\u00e8me-atmosph\u00e8re",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes/climat",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "GERE0036-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GERE0037-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GEST3024-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GEST3160-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "GEST7005-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "GEST7030-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "GIRI0002-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GIRI0004-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GIRI0010-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GIRI9002-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "GIRI9010-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "HIST0164-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "HORT0014-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9mique"
+            ]
+        },
+        "HORT0015-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9mique"
             ]
         },
         "HULG0490-1": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
                 "ecosystem",
                 "ecosyst\u00e9miques"
             ]
         },
+        "HULG9179-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "HULG9285-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes\""
+            ]
+        },
+        "HULG9390-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "HULG9393-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "INFO2037-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "INFO2038-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "INFO2040-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
         "LANG2962-1": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
                 "ecosystems"
             ]
         },
         "LANG2962-2": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
                 "ecosystems"
+            ]
+        },
+        "MICR0120-8": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "MICR0120-9": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "MICR0720-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "MICR1717-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0019-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
             ]
         },
         "OCEA0049-1": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me",
                 "ecosystem",
-                "ecosystem"
+                "ecosystem",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "OCEA0050-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "OCEA0053-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0055-5": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0062-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0080-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
             ]
         },
         "OCEA0082-1": {
-            "ecosyst[^ ]+": [
+            "[\u00e9e]cosyst[^ ]+": [
                 "ecosystems",
                 "ecosystems",
+                "\u00e9cosyst\u00e8mes",
                 "ecosystems"
+            ]
+        },
+        "OCEA0084-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0085-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "OCEA0086-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0158-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0220-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0223-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA0227-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "OCEA2022-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "PALE0201-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "PAYS0013-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "PAYS0013-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "PAYS0014-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "PCER0049-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "RCER0036-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e9miques",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SBIM0493-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SCER0012-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SPAT0027-3": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "SPAT0054-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "SSTG0054-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "VEGE0021-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "VEGE0024-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "VEGE0036-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "VEGE0036-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "VEGE0042-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ZOOL0006-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ZOOL0205-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ZOOL0218-4": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8me"
+            ]
+        },
+        "ZOOL2000-1": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes",
+                "\u00e9cosyst\u00e8mes"
+            ]
+        },
+        "ZOOL2019-2": {
+            "[\u00e9e]cosyst[^ ]+": [
+                "\u00e9cosyst\u00e8mes"
             ]
         }
     },
     "climatology": {
         "ACER0048-1": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2",
-                "co2",
-                "co2",
-                "co2"
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9mission de gaz \u00e0 effet de serre"
             ]
         },
-        "AGRO0021-1": {
-            "climat[^ ]+": [
-                "climatiques"
+        "ACER0049-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effet de serre",
+                "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
-        "ANIM0029-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "ARCH0006-2": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatiques",
-                "climatique",
-                "climatiques",
-                "climats",
-                "climatique",
-                "climatiques"
-            ]
-        },
-        "ARCH0009-3": {
-            "climat[^ ]+": [
-                "climatisation"
+        "ACER0075-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effets de serre"
             ]
         },
         "ARCH0080-1": {
-            "climat[^ ]+": [
-                "climatisation",
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "ARCH0117-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "ARCH0355-2": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "ARCH0514-2": {
-            "climat[^ ]+": [
-                "climatisation",
-                "climatisation",
-                "climatisation"
-            ]
-        },
-        "ARCH0571-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "ARCH1741-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "ARCH3262-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "ARCH3265-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "ARCH3266-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "ARCH3272-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "ARCH3277-5": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "BIOL0031-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "BIOL0812-2": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "BIOL0852-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatique",
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changements climatiques",
@@ -716,262 +1289,121 @@
                 "changement climatique"
             ]
         },
-        "BOTA0415-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "BOTA0415-2": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ]
-        },
-        "CHIM9234-1": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2"
-            ]
-        },
-        "CHIM9234-2": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2",
-                "co2",
-                "co2"
-            ]
-        },
-        "CHIM9239-2": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
         "CHIM9315-1": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2",
-                "co2"
-            ],
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
+            ],
+            "[\u00e9e]missions? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "\u00e9missions de co2"
             ]
         },
         "CLIM0002-1": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
+            ],
+            "mod[\u00e8e]les? clima[^ ]+": [
+                "mod\u00e8les climatiques",
+                "mod\u00e8les climatiques",
+                "mod\u00e8les climatiques"
             ]
         },
         "CLIM0002-2": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatiques",
-                "climatiques",
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
+            ],
+            "mod[\u00e8e]les? clima[^ ]+": [
+                "mod\u00e8les climatiques",
+                "mod\u00e8les climatiques",
+                "mod\u00e8les climatiques"
+            ]
+        },
+        "CLIM0007-2": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "CLIM0009-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "CLIM0017-2": {
-            "(dioxyde carbone|co2)": [
-                "co2",
-                "co2"
+            "climatolog[^ ]+": [
+                "climatologie"
             ],
-            "climat[^ ]+": [
-                "climatiques",
-                "climatologie",
-                "climatiques"
+            "mod[\u00e8e]les? clima[^ ]+": [
+                "mod\u00e8les climatiques",
+                "mod\u00e8les climatiques"
             ]
         },
         "ECON0944-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "ECON2248-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "ECON2301-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "ENVT0040-2": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "ENVT0040-3": {
-            "climat[^ ]+": [
-                "climatique"
+            "[\u00e9e]missions? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "\u00e9missions de co2"
             ]
         },
         "ENVT0065-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ],
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
         "ENVT0066-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "ENVT0846-2": {
-            "climat[^ ]+": [
-                "climat-biodiversit\u00e9-alimentation"
-            ]
-        },
         "ENVT2011-2": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie",
-                "climats",
-                "climatiques",
-                "climats",
                 "climatologie"
             ]
         },
-        "ENVT2019-2": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "ENVT2058-1": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
         "ENVT2065-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "ENVT3022-1": {
-            "climat[^ ]+": [
-                "climat&amp",
-                "climatique"
-            ]
-        },
         "ENVT3043-1": {
-            "climat[^ ]+": [
-                "climatisation",
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "FORE0001-2": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "FORE0009-1": {
-            "climat[^ ]+": [
-                "climats"
-            ]
-        },
         "GBLX2144-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changements climatiques"
             ]
         },
         "GBLX2147-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "GENV0001-2": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
-        "GEOG0201-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ]
-        },
-        "GEOG0201-3": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ]
-        },
-        "GEOG0201-4": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ]
-        },
-        "GEOG0217-2": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "GEOG0605-1": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
         "GEOG0630-3": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatique",
-                "climatique",
-                "climats",
-                "climats",
-                "climatique",
-                "climats",
-                "climats",
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique",
                 "r\u00e9chauffement climatique",
@@ -981,411 +1413,187 @@
             ]
         },
         "GEOG0630-5": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique",
-                "climatique",
-                "climats",
-                "climats",
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique",
                 "r\u00e9chauffement climatique",
                 "r\u00e9chauffement climatique"
             ]
         },
-        "GEOG0633-3": {
-            "climat[^ ]+": [
-                "climatiques"
+        "GEOG0661-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "GEOG2012-1": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
         "GEOG2013-1": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "GEOG2016-1": {
-            "climat[^ ]+": [
-                "climatologie",
-                "climats",
-                "climats",
-                "climatiques",
+            "climatolog[^ ]+": [
                 "climatologie",
                 "climatologie",
-                "climatiques",
                 "climatologie",
                 "climatologie",
-                "climats",
                 "climatologie",
                 "climatologie",
-                "climats"
+                "climatologie"
             ]
         },
         "GEOG2020-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques",
-                "climats",
-                "climatologie",
-                "climatiques",
-                "climats"
-            ]
-        },
-        "GEOG2052-1": {
-            "climat[^ ]+": [
-                "climatique"
+            "climatolog[^ ]+": [
+                "climatologie"
             ]
         },
         "GEOL0008-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
         "GEOL0008-2": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
         "GEOL0008-4": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
         "GEOL0205-1": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
         "GEOL0224-2": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatologiques",
-                "climatiques",
-                "climatique",
-                "climatique",
-                "climatique"
+            "climatolog[^ ]+": [
+                "climatologiques"
             ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "GEOL0297-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "GEOL0311-1": {
-            "climat[^ ]+": [
-                "climatologie",
-                "climat-r\u00e9chauffement-pal\u00e9oclimat"
+            "climatolog[^ ]+": [
+                "climatologie"
             ]
         },
-        "GERE0007-3": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatique"
-            ]
-        },
-        "GERE0027-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatique"
-            ]
-        },
-        "GERE0034-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+        "GEOL1050-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
         "GEST3024-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "GEST3047-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "GEST6002-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "GEST7030-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "GRHO0008-5": {
-            "climat[^ ]+": [
-                "climatation"
-            ]
-        },
         "HAAR0247-1": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologues"
             ]
         },
         "HEVL0071-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "HEVL0071-2": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
             ]
         },
         "HULG0365-1": {
-            "climat[^ ]+": [
-                "climatique"
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "HULG0484-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changements climatiques",
                 "changements climatiques"
-            ]
-        },
-        "HULG0487-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "HULG9307-1": {
-            "climat[^ ]+": [
-                "climatation"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effet de serre"
             ]
         },
         "HULG9391-1": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "IMMU0120-6": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+        "LOGI0012-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "de gaz \u00e0 effet de serre"
             ]
         },
         "MATH0508-1": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie",
                 "climatologie"
             ]
         },
-        "MECA0006-1": {
-            "climat[^ ]+": [
-                "climatisation",
-                "climatiseurs",
-                "climatiseur"
-            ]
-        },
-        "MECA0034-1": {
-            "climat[^ ]+": [
-                "climatis\u00e9s",
-                "climatisation",
-                "climatisation"
-            ]
-        },
-        "MECA0037-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "MECA0501-1": {
-            "climat[^ ]+": [
-                "climatisation"
-            ]
-        },
-        "MECA0512-1": {
-            "climat[^ ]+": [
-                "climatisation",
-                "climatiseur"
-            ]
-        },
-        "MECA0515-1": {
-            "climat[^ ]+": [
-                "climatisation"
-            ]
-        },
-        "OCEA0033-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "OCEA0049-1": {
-            "climat[^ ]+": [
-                "climats"
-            ]
-        },
-        "OCEA0053-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "OCEA0055-5": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "OCEA0082-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "OCEA0086-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "OCEA0220-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
-        "OCEA2022-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "PEDA0060-2": {
-            "climat[^ ]+": [
-                "climats",
-                "climats"
-            ]
-        },
         "PHYS3010-2": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ],
-            "climat[^ ]+": [
-                "climats",
-                "climatique",
-                "climatiques",
-                "climats",
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique",
                 "changement climatique"
             ]
         },
-        "PSTG0034-2": {
-            "climat[^ ]+": [
-                "climater"
-            ]
-        },
-        "PSTG0035-2": {
-            "climat[^ ]+": [
-                "climater"
-            ]
-        },
-        "PSTG0036-1": {
-            "climat[^ ]+": [
-                "climater"
-            ]
-        },
-        "PSTG0037-2": {
-            "climat[^ ]+": [
-                "climater"
-            ]
-        },
-        "RCER0035-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ],
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "SCER0010-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
         "SDOC0001-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
-            ]
-        },
-        "SOCI0073-3": {
-            "climat[^ ]+": [
-                "climatique"
             ]
         },
         "SPAT0026-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ],
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
             ]
         },
         "SPAT0027-3": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatique",
-                "climatique",
-                "climatiques",
-                "climatique",
-                "climatiques",
-                "climatique",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques",
                 "changement climatique",
@@ -1393,93 +1601,46 @@
                 "changement climatique",
                 "changement climatique",
                 "changements climatiques"
+            ],
+            "project[^ ]+ clima[^ ]+": [
+                "projections climatiques"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre"
+            ]
+        },
+        "SPAT0077-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "gaz \u00e0 effet de serre",
+                "gaz \u00e0 effet de serre",
+                "gaz \u00e0 effet de serre",
+                "gaz \u00e0 effet de serre"
             ]
         },
         "SPOL0382-2": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique"
             ]
         },
-        "SSTG0023-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "SSTG0024-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "SSTG0047-2": {
-            "climat[^ ]+": [
-                "climatique"
-            ]
-        },
-        "TECH0752-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "TECH0753-1": {
-            "(dioxyde carbone|co2)": [
-                "co2"
-            ]
-        },
-        "VEGE0024-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "VEGE0027-1": {
-            "climat[^ ]+": [
-                "climatiques",
-                "climatiques"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changements climatiques"
             ]
         },
         "VEGE0034-1": {
-            "climat[^ ]+": [
-                "climatique"
-            ],
             "chang[^ ]+ clima[^ ]+": [
                 "changement climatique"
-            ]
-        },
-        "VEGE0041-1": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "VEGE0041-2": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
-        "VEGE0043-1": {
-            "climat[^ ]+": [
-                "climatiques"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "\u00e9missions de gaz \u00e0 effets de serre"
             ]
         },
         "VETE0036-6": {
-            "climat[^ ]+": [
+            "climatolog[^ ]+": [
                 "climatologie"
             ]
         },
-        "VETE0456-2": {
-            "climat[^ ]+": [
-                "climatiques"
-            ]
-        },
         "ZOOL2019-2": {
-            "climat[^ ]+": [
-                "climatique",
-                "climatique"
-            ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "r\u00e9chauffement climatique",
                 "r\u00e9chauffement climatique"
@@ -1550,6 +1711,11 @@
                 "d\u00e9veloppement durable"
             ]
         },
+        "ARCH3275-1": {
+            "architectures? durab[^ ]+": [
+                "architecture durable"
+            ]
+        },
         "BIOD0001-3": {
             "gestio[^ ]+ durab[^ ]+": [
                 "gestion durable"
@@ -1598,7 +1764,6 @@
         },
         "ECON2246-2": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "d\u00e9veloppement- durabilit\u00e91",
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
                 "d\u00e9veloppement durable",
@@ -1817,5 +1982,16 @@
             ]
         }
     },
-    "society": {}
+    "society": {
+        "CLIM0007-2": {
+            "accords? de paris(?:(?: sur| pour) le climat)?": [
+                "accord de paris"
+            ]
+        },
+        "SOCI0073-3": {
+            "justice climat[^ ]+": [
+                "justice climatique"
+            ]
+        }
+    }
 }
