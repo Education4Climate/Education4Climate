@@ -2,10 +2,13 @@ from abc import ABC
 from typing import List
 
 import scrapy
+import pdfplumber
 
 from config.settings import YEAR
 from config.utils import cleanup
 import re
+import os
+import urllib3
 
 BASE_URL = "https://studiegids.ugent.be/{year}/EN/FACULTY/A/{cycle}/{cycle}.html"
 
@@ -41,6 +44,36 @@ def extract_teacher(teacher_list: List[str]) -> List[str]:
     if "" in teacher_list:
         teacher_list.remove("")
     return teacher_list
+
+
+def read_pdf(pdf_path: str) -> str:
+    page_content = ''
+    with pdfplumber.open(pdf_path) as pdf:
+        for page_nb in range(len(pdf.pages)):
+            first_page = pdf.pages[0]
+            page_content += first_page.extract_text()
+    return page_content
+
+
+def download_pdf(pdf_url: str) -> str:
+    urllib3.disable_warnings()
+    filePath = r"file.pdf"
+    with urllib3.PoolManager() as http:
+        r = http.request('GET', pdf_url)
+        with open(filePath, 'wb') as fout:
+            fout.write(r.data)
+    return filePath
+
+
+def delete_pdf(pdf_path: str) -> str:
+    os.remove(pdf_path)
+
+
+def extract_content(pdf_url: str) -> str:
+    pdf_path = download_pdf(pdf_url)
+    content = read_pdf(pdf_path)
+    delete_pdf(pdf_path)
+    return content
 
 
 class UgentProgramSpider(scrapy.Spider, ABC):
@@ -93,15 +126,16 @@ class UgentProgramSpider(scrapy.Spider, ABC):
             yield response.follow(link, self.parse_course_list_final, cb_kwargs={"base_dict": base_dict})
 
     def parse_course_list_final(self, response, base_dict):
-        urls = [cleanup(res) for res in response.xpath("//td[@class='cursus']/a/@href").getall()]
+        urls = ["https://studiegids.ugent.be/" + cleanup(res) for res in response.xpath("//td[@class='cursus']/a/@href").getall()]
         courses_id = [extract_id_from_url_ugent(url) for url in urls]
-        courses_content = ['jojo']*len(courses_id)
+        courses_content = [extract_content(url) for url in urls]
         courses_ects = extract_ects([cleanup(res) for res in response.xpath("//td[@class='studiepunten']").getall()])
         courses_teacher = extract_teacher([cleanup(res) for res in response.xpath("//td[@class='lesgever']").getall()])
         final_dict = {**base_dict,
                       **{
-                          'url(debug)': response.url[-15:],
+                          'url(debug)': response.url,
                           'courses': courses_id,
+                          'courses_urls': urls,
                           'courses_ects': courses_ects,
                           'courses_teacher': courses_teacher,
                           'courses_content': courses_content
