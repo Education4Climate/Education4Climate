@@ -41,7 +41,7 @@ to this program in the output file
 In that case (see for example the program crawler for [UCLouvain](unicrawl/spiders/ucl_programs.py)), the output
 of the program crawler is saved to a file named *{School code}\_programs\_{YEAR}\_pre.csv*.
 The duplicate program lines are then merged using the script [*merge_programs.py*](merge_programs.py) which 
-save the final results in the *{School code}\_programs\_{YEAR}.json* file.
+saves the final results in the *{School code}\_programs\_{YEAR}.json* file.
 
 
 ### Course crawler
