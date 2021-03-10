@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -12,7 +13,8 @@ UCL_URL = f"https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-
 class UCLProgramSpider(scrapy.Spider, ABC):
     name = "ucl-programs"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/ucl_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
+                                                              f'ucl_programs_{YEAR}_pre.json'),
     }
 
     def start_requests(self):
@@ -35,8 +37,8 @@ class UCLProgramSpider(scrapy.Spider, ABC):
 
     def parse_program(self, response, base_dict):
 
-        program_id = response.xpath("//span[@class='abbreviation']/text()").get().strip(" ")
-        program_name = response.xpath("//div[@class='title-container']//h1/text()").get()
+        program_id = response.xpath("//p[@id='offer-page-subtitle']/text()").get().split('\n')[0]
+        program_name = response.xpath("//div[@id='offer-page-title']/a/text()").get()
         campus = response.xpath("//span[@class='location']/text()").get()
         campus = "" if campus is None else campus.strip(" ")
 

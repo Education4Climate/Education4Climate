@@ -2,7 +2,7 @@
 # from xvfbwrapper import Xvfb
 # from selenium import webdriver
 
-from settings import DRIVER_PATH
+from src.crawl.unicrawl.settings import DRIVER_PATH
 
 
 class Driver:

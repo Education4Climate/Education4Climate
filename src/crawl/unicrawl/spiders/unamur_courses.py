@@ -9,7 +9,8 @@ from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format is code course, second is year
-PROG_DATA_PATH = Path(f'../../data/crawling-output/unamur_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
+                                                           f'unamur_programs_{YEAR}.json')
 
 LANGUAGES_DICT = {"Français": 'fr',
                   "Anglais / English": 'en',
@@ -22,7 +23,8 @@ LANGUAGES_DICT = {"Français": 'fr',
 class UNamurCourseSpider(scrapy.Spider, ABC):
     name = "unamur-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/unamur_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
+                                                              f'unamur_courses_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -44,7 +46,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
 
         # TODO: cours en plusieurs langues?
         languages = cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
-        languages = [lang.split(": ")[1] for lang in languages]
+        languages = [lang.split(":  ")[1] for lang in languages]
         # TODO: check all language used
         languages = [LANGUAGES_DICT[lang] for lang in languages]
 

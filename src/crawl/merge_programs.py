@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pandas as pd
 
 from unicrawl.spiders.config.settings import YEAR
@@ -14,7 +16,9 @@ def merge_programs(school: str):
     """
 
     # Read the programs file
-    programs_df = pd.read_json(f"../../data/crawling-output/{school}_programs_{YEAR}_pre.json").set_index("id")
+    programs_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_programs_{YEAR}_pre.json")
+    programs_df = pd.read_json(programs_fn).set_index("id")
 
     # TODO: there is probably a better way to do that
     # Group different keys
@@ -33,10 +37,12 @@ def merge_programs(school: str):
         return x
     programs_merged_df[["courses", "ects"]].apply(lambda x: remove_doubles(x), axis=1)
 
-    programs_merged_fn = f"../../data/crawling-output/{school}_programs_{YEAR}.json"
+    programs_merged_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_programs_{YEAR}.json")
     programs_merged_df.reset_index().to_json(programs_merged_fn, orient='records', indent=1)
 
 
 if __name__ == '__main__':
+    # TODO: edit
     school = 'ucl'
     merge_programs(school)

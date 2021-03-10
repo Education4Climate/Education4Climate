@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from pathlib import Path
 import argparse
 
 import json
@@ -32,7 +33,8 @@ def main(school: str, year: int, fields: str) -> None:
     #  languages=["fr","en","fr"]
 
     # Loading crawling results
-    courses_fn = f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json"
+    courses_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
     courses_df = pd.read_json(open(courses_fn, 'r'))
     fields = fields.split(",")
     for field in fields:
@@ -44,7 +46,8 @@ def main(school: str, year: int, fields: str) -> None:
     courses_df = courses_df[["id", "text"]].set_index("id")
 
     # Load patterns for different types of scores
-    themes_patterns = json.load(open(f"../../data/patterns/themes_patterns.json"))
+    themes_fn = Path(__file__).parent.absolute().joinpath("../../data/patterns/themes_patterns.json")
+    themes_patterns = json.load(open(themes_fn, 'r'))
     themes = themes_patterns.keys()
     patterns_matches_dict = {theme: {} for theme in themes}
     for idx, text in courses_df.text.items():
@@ -81,11 +84,13 @@ def main(school: str, year: int, fields: str) -> None:
     courses_df = courses_df.astype(int)
 
     # Save scores
-    output_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
+    output_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
     print("Output file : {}".format(output_fn))
     courses_df.to_csv(output_fn, encoding="utf-8")
     # Save patterns
-    with open(f"../../{SCORING_OUTPUT_FOLDER}{school}_matches_{year}.json", "w") as f:
+    matches_output_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_matches_{year}.json")
+    with open(matches_output_fn, "w") as f:
         json.dump(patterns_matches_dict, f, indent=4)
 
 
