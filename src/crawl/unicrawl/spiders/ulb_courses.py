@@ -48,7 +48,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
     def start_requests(self):
 
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
-        courses_ids_list = sorted(list(set(courses_ids.sum())))
+        courses_ids_list = sorted(list(set(courses_ids.sum()))) 
 
         for course_id in courses_ids_list:
             base_dict = {'id': course_id}
