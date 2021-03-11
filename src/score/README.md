@@ -37,15 +37,15 @@ all patterns in the corresponding ontology are searched in the text. If at least
 the course is given a score of 1 for that theme, otherwise it scores 0.
 
 The first output of the courses scoring is a table (courses x themes) that is saved in
-[data/scoring-output/](../../data/scoring-output) under the name ```{School code}_scoring_{YEAR}.csv```.
+[data/scoring-output/](../../data/scoring-output) under the name ```{SchoolCode}_scoring_{YEAR}.csv```.
 
 The second output is a json file containing for each theme, the courses that scored 1, which patterns 
 were found in each course description and to what compounds these patterns matched.
-This output is saved in the same directory under the name ```{School code}_matches_{YEAR}.json```.
+This output is saved in the same directory under the name ```{SchoolCode}_matches_{YEAR}.json```.
 
 ### Scoring programs
 
 Once courses are scored, a score can be computed per theme for each program by computing the number of 
 courses in that program that have score 1 in each theme.
 A table containing this information is saved in the output scoring directory under the name 
-```{School code}_programs_scoring_{YEAR}.csv```.
+```{SchoolCode}_programs_scoring_{YEAR}.csv```.
