@@ -16,47 +16,39 @@ The tool is composed of three main parts:
 - [Scoring](src/score/README.md)
 - [Web UI](src/web-ui/README.md)
 
-described in their respective READMEs
+described in their respective READMEs.
   
 ## Run
 
-TODO: check those and remove one if not need
+### Requirements
 
 All requirements for running the different parts of Unicrawl are listed in requirements.yaml
 and requirements.txt.
 
-## Usage
+### Snakemake
 
-TODO: update Makefile and see if we keep that here or in other READMEs
+Crawling and scoring results can be automatically generated using 
+the workflow management system [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html).
 
-### Crawler
+Snakemake allows defining rules which describe how to generate a given output file by specifying
+which inputs are required and through which script. There can be dependencies between rules such that
+the output of one rule is the input of another rule. Snakemake then automatically determines which rules
+and in which order it should execute them.
 
-Testing: 
+For example, calling:
 
 ```bash
-make test-ucl
+snakemake -j1 data/scoring-output/unamur_scoring_2020.json
 ```
 
-Execute the UCL crawler, fetching all courses and saving them in the output file in JSON format.
+will first execute the rule ```crawl_courses``` if the file *data/crawling-output/unamur_courses_2020.csv* has not been 
+yet generated as it is a required input for the rule ```score_courses```, which will then be called to generate
+the desired file.
 
-Arguments: arguments are set up in the Makefile
-- *year*: year of the analyzed courses (*2020 means the academic year 2020-2021*). 
-- *output file*: output file path, directly linked to the year. (*data/ucl_2020.json*)
-
-```bash
-make generate-ucl
-```
-
-### Scoring
-
-From an input data file, score and filter all entries.
-
-Arguments:
-- *school* : code of the school. 
-- *year* : year. 
-- *field*: name of the field to use as input for running the scoring.
-- *language*: code of the main language of the corpus (fr, nl or en)
+All these rules are defined in a [Snakefile](Snakefile). Special rules such
+as ```score_programs_for_all_school``` allow to automatically generate for all schools defined in the Snakefile
+the program score files by running
 
 ```bash
-python score/main.py --school ucl --year 2020 --field content --language fr
+snakemake -j1 score_programs_for_all_school
 ```

@@ -38,7 +38,6 @@ rule merge_duplicates:
         "python {SRC_CRAWL_FOLDER}merge_programs.py -s ucl -y {wildcards.year}"
 
 
-
 rule crawl_courses:
     input: CRAWLING_OUTPUT_FOLDER + '{school}_programs_{year}.json'
     output: CRAWLING_OUTPUT_FOLDER + '{school}_courses_{year}.json'
