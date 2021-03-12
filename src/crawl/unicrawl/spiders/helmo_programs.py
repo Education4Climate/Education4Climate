@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -20,7 +21,8 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
 
     name = "helmo-programs"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/helmo_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
+                                                              f'helmo_programs_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -32,7 +34,7 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
         programs_links = response.xpath("//span[contains(text(), 'Menu')]//following::ul[1]//a/@href").getall()
         programs_names = response.xpath("//span[contains(text(), 'Menu')]//following::ul[1]//a/text()").getall()
 
-        for program_name, link in zip(programs_names, programs_links):
+        for i, (program_name, link) in enumerate(zip(programs_names, programs_links)):
 
             cycle = 'bac'
             if 'Master' in program_name:
@@ -40,7 +42,7 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
             elif 'Spécialisation' in program_name:
                 cycle = 'spe'
 
-            cur_dict = {"id": '',
+            cur_dict = {"id": f"{response.url.split('/')[-1].split('.')[0]} - {i}",
                         "name": program_name,
                         "cycle": cycle}
 

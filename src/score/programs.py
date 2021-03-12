@@ -1,5 +1,6 @@
 """ Aggregate scores by programs """
 
+from pathlib import Path
 import argparse
 
 import pandas as pd
@@ -10,11 +11,13 @@ from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
 def main(school: str, year: int):
 
     # Load programs crawling output
-    programs_fn = f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json"
+    programs_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
     programs_courses_ds = pd.read_json(open(programs_fn, 'r')).set_index("id")["courses"].squeeze()
 
     # Load scoring output for courses
-    courses_scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
+    courses_scores_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
     courses_scores_df = pd.read_csv(courses_scores_fn, index_col=0)
     themes = courses_scores_df.columns
 
@@ -25,7 +28,8 @@ def main(school: str, year: int):
         program_courses = list(set(program_courses).intersection(set(courses_scores_df.index)))
         programs_scores_df.loc[program_id] = courses_scores_df.loc[program_courses].sum()
 
-    programs_scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv"
+    programs_scores_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv")
     programs_scores_df.astype(int).to_csv(programs_scores_fn)
 
 

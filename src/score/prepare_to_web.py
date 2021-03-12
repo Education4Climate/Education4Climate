@@ -1,3 +1,4 @@
+from pathlib import Path
 import argparse
 
 import pandas as pd
@@ -8,12 +9,14 @@ from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_I
 def main(school: str, year: int):
 
     # Load course crawling output
-    courses_fn = f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json"
+    courses_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
     courses_df = pd.read_json(open(courses_fn, 'r')).set_index("id")
     courses_df = courses_df.drop("content", axis=1)
 
     # Load program crawling output
-    programs_fn = f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json"
+    programs_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
     programs_df = pd.read_json(open(programs_fn, 'r'))
 
     keys_in_courses = ["name", "year", "teacher", "language", "url"]
@@ -60,7 +63,8 @@ def main(school: str, year: int):
     courses_df = pd.concat([courses_df, courses_aux_df], axis=1)
 
     # Convert faculties to disciplines
-    faculties_to_fields_df = pd.read_csv("../../data/faculties_to_fields.csv")
+    fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
+    faculties_to_fields_df = pd.read_csv(fields_fn)
     faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
     faculties_to_fields_ds = faculties_to_fields_df[["faculty", "field"]].set_index("faculty")
     courses_df["field"] = courses_df["faculty"].apply(lambda x:
@@ -68,7 +72,7 @@ def main(school: str, year: int):
     programs_df["field"] = programs_df["faculty"].apply(lambda x: faculties_to_fields_ds.loc[x][0])
 
     # Load scoring output
-    scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv"
+    scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
     scores_df = pd.read_csv(scores_fn, index_col=0)
     courses_with_matches_index = scores_df[(scores_df.sum(axis=1) != 0)].index
 
@@ -76,14 +80,15 @@ def main(school: str, year: int):
     # Convert columns of scores to list of themes
     courses_df["themes"] = scores_df.apply(lambda x: x[x == 1].index.tolist(), axis=1).to_frame()
     courses_df = courses_df.reset_index()
-    web_fn = f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_"
+    web_fn = Path(__file__).parent.absolute().joinpath(f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_")
     courses_df.to_json(web_fn + "heavy.json", orient='records')
     courses_df.loc[courses_df.id.isin(courses_with_matches_index)]\
         .to_json(web_fn + 'light.json', orient='records', indent=1)
 
     # Creating program file
     # Load program scoring file
-    program_scores_fn = f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv"
+    program_scores_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv")
     programs_scores_df = pd.read_csv(program_scores_fn, index_col=0)
     programs_df = pd.concat([programs_df.set_index('id'), programs_scores_df], axis=1).reset_index()
     programs_df.to_json(web_fn + "programs.json", orient='records', indent=1)

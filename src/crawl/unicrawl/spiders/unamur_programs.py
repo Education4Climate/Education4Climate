@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -12,10 +13,13 @@ BASE_URL = "https://directory.unamur.be/teaching/programmes"
 class UNamurProgramSpider(scrapy.Spider, ABC):
     name = "unamur-programs"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/unamur_programs_{YEAR}.json',
+        # TODO: this is ugly
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
+                                                              f'unamur_programs_{YEAR}.json')
     }
 
     def start_requests(self):
+
         yield scrapy.Request(BASE_URL, self.parse_main)
 
     def parse_main(self, response):

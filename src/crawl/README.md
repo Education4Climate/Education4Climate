@@ -19,19 +19,19 @@ A program is generally composed of a set of courses, compulsory or not, and unde
 of these courses, a diploma unique to this program is awarded.
 
 The programs crawlers are contained in [src/crawl/unicrawl/spiders](unicrawl/spiders) and named in the following way: 
-*{School code}_programs.py*.
+```{SchoolCode}_programs.py```.
 
 For each program, we retrieve:
-- *id*: the code of the program (note: if there is none, we make up one)
-- *name*: the name of the program
-- *faculty*: the faculty/institute organising the program
-- *campus*: the campus where it is organised
-- *cycle*: its cycle (bac, master, ...)
-- *courses*: the list of courses that are offered in this program
-- *ects*: the list of ECTS associated to these courses in the program
+- ```id```: the code of the program (note: if there is none, we make up one)
+- ```name```: the name of the program
+- ```faculty```: the faculty/institute organising the program
+- ```campus```: the campus where it is organised
+- ```cycle```: its cycle (bac, master, ...)
+- ```courses```: the list of courses that are offered in this program
+- ```ects```: the list of ECTS associated to these courses in the program
 
 The output of the crawler is saved in the directory [data/crawling-output/](../../data/crawling-output) 
-under the name *{School code}\_programs\_{YEAR}.json*.
+under the name ```{SchoolCode}_programs_{YEAR}.json```.
 
 #### Duplicate programs outputs
 Due to the structure of certain school websites, program information can be split across different webpages
@@ -39,9 +39,9 @@ that cannot be access sequentially leading to the creation several lines corresp
 to this program in the output file
 
 In that case (see for example the program crawler for [UCLouvain](unicrawl/spiders/ucl_programs.py)), the output
-of the program crawler is saved to a file named *{School code}\_programs\_{YEAR}\_pre.csv*.
+of the program crawler is saved to a file named ```{SchoolCode}_programs_{YEAR}_pre.csv```.
 The duplicate program lines are then merged using the script [*merge_programs.py*](merge_programs.py) which 
-save the final results in the *{School code}\_programs\_{YEAR}.json* file.
+saves the final results in the ```{SchoolCode}_programs_{YEAR}.json``` file.
 
 
 ### Course crawler
@@ -55,19 +55,19 @@ In the following description, we will therefore use the word 'course' to refer b
 to individual classes and teaching units.
 
 As for programs, the courses crawlers are contained in [src/crawl/unicrawl/spiders](unicrawl/spiders) 
-and named: *{School code}_courses.py*.
+and named: ```{SchoolCode}_courses.py```.
 
 For each course, we retrieve:
-- *id*: the id of the course
-- *name*: the name of the course
-- *year*: the academic year (e.g. 2020-2021) (TODO: remove?)  
-- *teacher*: the list of teachers giving/organising the course (TODO: change to teachers?)
-- *language*: the list of languages in which the course is given/evaluated (TODO: change to languages?)
-- *url*: the url of the web page where the course is described
-- *content*: text describing the content of the course
+- ```id```: the id of the course
+- ```name```: the name of the course
+- ```year```: the academic year (e.g. 2020-2021) (TODO: remove?)  
+- ```teacher```: the list of teachers giving/organising the course (TODO: change to teachers?)
+- ```language```: the list of languages in which the course is given/evaluated (TODO: change to languages?)
+- ```url```: the url of the web page where the course is described
+- ```content```: text describing the content of the course
 
 The output of the crawler is saved in the directory [data/crawling-output/](../../data/crawling-output) 
-under the name *{School code}\_courses\_{YEAR}.json*.
+under the name ```{SchoolCode}_courses_{YEAR}.json```.
 
 #### Mixed fields
 

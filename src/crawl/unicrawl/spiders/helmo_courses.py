@@ -9,7 +9,8 @@ from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URl = "https://www.helmo.be/Formations/{}"
-PROG_DATA_PATH = Path(f'../../data/crawling-output/helmo_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
+                                                           f'helmo_programs_{YEAR}.json')
 
 LANGUAGES_DICT = {"Français": 'fr',
                   "Anglais": 'en'}
@@ -22,7 +23,8 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
 
     name = "helmo-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/helmo_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
+                                                              f'helmo_courses_{YEAR}.json')
     }
 
     def start_requests(self):

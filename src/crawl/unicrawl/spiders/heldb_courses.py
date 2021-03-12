@@ -10,6 +10,7 @@ BASE_URL = "http://www.heldb.be/fr/formations-et-enseignement"
 # TODO: check languages
 LANGUAGE_DICT = {"Français": "fr"}
 
+
 class HELDBCourseSpider(scrapy.Spider, ABC):
     """
     Course crawler for Haute Ecole Lucia de Brouckère
