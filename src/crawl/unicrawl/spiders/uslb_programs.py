@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -10,7 +11,8 @@ BASE_URL = "https://www.usaintlouis.be/sl/enseignement_prog2020.html"
 class USLBProgramsSpider(scrapy.Spider, ABC):
     name = "uslb-programs"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/uslb_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/uslb_programs_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -1,10 +1,14 @@
-import json
 import pandas as pd
-from typing import List
 
-UGENT_CRAWLED_PATH = 'data/crawling-output/ugent_courses_and_programs_2020.json'
-UGENT_NEW_CRAWLED_PATH_PROGRAMS = 'data/crawling-output/ugent_programs_2020.json'
-UGENT_NEW_CRAWLED_PATH_COURSES = 'data/crawling-output/ugent_courses_2020.json'
+from pathlib import Path
+
+
+UGENT_CRAWLED_PATH = Path(__file__).parent.absolute().joinpath(
+    '../../../../data/crawling-output/ugent_courses_and_programs_2020.json')
+UGENT_NEW_CRAWLED_PATH_PROGRAMS = Path(__file__).parent.absolute().joinpath(
+    '../../../data/crawling-output/ugent_programs_2020.json')
+UGENT_NEW_CRAWLED_PATH_COURSES = Path(__file__).parent.absolute().joinpath(
+    '../../../../data/crawling-output/ugent_courses_2020.json')
 
 
 def main():

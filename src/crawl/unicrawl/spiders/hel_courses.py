@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -16,7 +17,8 @@ class HELCourseSpider(scrapy.Spider, ABC):
 
     name = "hel-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/hel_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/hel_courses_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -17,8 +17,8 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
 
     name = "heldb-programs"
     custom_settings = {
-        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
-                                                              f'heldb_programs_{YEAR}.json')
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/heldb_programs_{YEAR}.json')
     }
 
     def start_requests(self):

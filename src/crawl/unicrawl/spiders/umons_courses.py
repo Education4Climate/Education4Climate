@@ -9,7 +9,8 @@ from config.settings import YEAR
 from config.utils import cleanup
 
 BASE_URL = "http://applications.umons.ac.be/web/fr/pde/2020-2021/ue/{}.htm"
-PROG_DATA_PATH = Path(f'../../data/crawling-output/umons_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/umons_programs_{YEAR}.json')
 
 LANGUAGE_DICT = {"Français": "fr",
                  "Anglais": "en",
@@ -32,7 +33,8 @@ LANGUAGE_DICT = {"Français": "fr",
 class UmonsCourseSpider(scrapy.Spider, ABC):
     name = "umons-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/umons_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/umons_courses_{YEAR}.json')
     }
 
     def start_requests(self):

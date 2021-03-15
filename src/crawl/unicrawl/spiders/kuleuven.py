@@ -1,6 +1,7 @@
 # TODO: delete?
 
 from abc import ABC
+from pathlib import Path
 
 import bs4
 import scrapy
@@ -21,7 +22,8 @@ DICT_LANGUES = {
 class KuleuvenSpider(scrapy.Spider, ABC):
     name = 'kuleuven'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/kuleuven_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/kuleuven_courses_{YEAR}.json')
     }
 
     def start_requests(self):

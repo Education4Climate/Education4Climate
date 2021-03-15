@@ -1,6 +1,7 @@
+from abc import ABC
+from pathlib import Path
 import json
 import urllib.parse
-from abc import ABC
 
 import bs4
 import scrapy
@@ -18,7 +19,8 @@ PROG_URL = f'https://www.ulb.be/api/formation?path={PATH_PROG_URL}'
 class ULBProgramSpider(scrapy.Spider, ABC):
     name = 'ulb-programs'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/ulb_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/ulb_programs_{YEAR}.json')
     }
 
     def start_requests(self):

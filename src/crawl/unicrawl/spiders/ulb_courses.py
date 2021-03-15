@@ -15,7 +15,8 @@ from config.utils import cleanup
 # )
 # COURS_URL = f'https://www.ulb.be/api/formation?path={PATH_COURS_URL}'
 BASE_URL = 'https://www.ulb.be/fr/programme/'
-PROG_DATA_PATH = Path(f'../../data/crawling-output/ulb_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/ulb_programs_{YEAR}.json')
 
 LANGUAGE_DICT = {"français": "fr",
                  "anglais": "en",
@@ -42,7 +43,8 @@ LANGUAGE_DICT = {"français": "fr",
 class ULBCourseSpider(scrapy.Spider, ABC):
     name = 'ulb-courses'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/ulb_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/ulb_courses_{YEAR}.json')
     }
 
     def start_requests(self):

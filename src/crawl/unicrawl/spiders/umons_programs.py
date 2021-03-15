@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from abc import ABC
+from pathlib import Path
 
 from config.settings import YEAR
 from config.utils import cleanup
@@ -10,7 +11,8 @@ BASE_URL = "https://web.umons.ac.be/fr/enseignement/loffre-de-formation-de-lumon
 class UmonsProgramSpider(scrapy.Spider, ABC):
     name = "umons-programs"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/umons_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/umons_programs_{YEAR}.json')
     }
 
     def start_requests(self):

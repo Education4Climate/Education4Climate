@@ -1,4 +1,5 @@
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -10,7 +11,8 @@ BASE_URL = 'http://onderwijsaanbod.limburg.ucll.be/opleidingen/n/'
 class UCLLProgramSpider(scrapy.Spider, ABC):
     name = 'ucll-programs'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/ucll_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/ucll_programs_{YEAR}.json')
     }
 
     def start_requests(self):

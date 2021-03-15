@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -20,7 +21,8 @@ class HERSProgramSpider(scrapy.Spider, ABC):
 
     name = "hers-programs"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/hers_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/hers_programs_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -9,7 +9,8 @@ from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URl = "http://progcours.heaj.be/cocoon/cours/{}.html"  # first format is code course, second is year
-PROG_DATA_PATH = Path(f'../../data/crawling-output/heaj_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/heaj_programs_{YEAR}.json')
 
 # TODO: checker langues
 LANGUAGES_DICT = {"Langue française": 'fr',
@@ -23,7 +24,8 @@ class HECHCourseSpider(scrapy.Spider, ABC):
 
     name = "heaj-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/heaj_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/heaj_courses_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import scrapy
 from abc import ABC
 import bs4
@@ -21,7 +23,8 @@ BASE_DATA = {
 class UHasseltProgramSpider(scrapy.Spider, ABC):
     name = 'uhasselt-programs'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/uhasselt_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/uhasselt_programs_{YEAR}.json')
     }
 
     def start_requests(self):

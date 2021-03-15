@@ -9,7 +9,8 @@ from config.settings import YEAR
 from config.utils import cleanup
 
 BASE_URl = "http://onderwijsaanbodmechelenantwerpen.thomasmore.be/syllabi/{}.htm"  # first format is code course, second is year
-PROG_DATA_PATH = Path(f'../../data/crawling-output/thomasmore_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/thomasmore_programs_{YEAR}.json')
 
 # TODO: check languages
 LANGUAGES_DICT = {"Nederlands": 'nl',
@@ -25,7 +26,8 @@ LANGUAGES_DICT = {"Nederlands": 'nl',
 class ThomasMoreCourseSpider(scrapy.Spider, ABC):
     name = "thomasmore-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/thomasmore_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/thomasmore_courses_{YEAR}.json')
     }
 
     def start_requests(self):

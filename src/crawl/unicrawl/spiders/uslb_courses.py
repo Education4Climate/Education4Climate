@@ -9,7 +9,8 @@ import scrapy
 from config.settings import YEAR
 from config.utils import cleanup
 
-PROG_DATA_PATH = Path(f'../../data/crawling-output/uslb_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/uslb_programs_{YEAR}.json')
 BASE_URL = "https://www.usaintlouis.be/sl/2020/C{}.html"
 LANGUAGE_DICT = {"français": 'fr',
                  "francais": 'fr',
@@ -27,7 +28,8 @@ LANGUAGE_DICT = {"français": 'fr',
 class USLBCoursesSpider(scrapy.Spider, ABC):
     name = "uslb-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/uslb_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/uslb_courses_{YEAR}.json')
     }
 
     def start_requests(self):

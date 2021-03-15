@@ -8,7 +8,8 @@ from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URL = "https://www.programmes.uliege.be/cocoon/cours/{}.html"
-PROG_DATA_PATH = Path(f'../../data/crawling-output/uliege_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/uliege_programs_{YEAR}.json')
 LANGUAGE_DICT = {"Langue française": 'fr',
                  "Langue anglaise": 'en',
                  "Langue allemande": 'de',
@@ -20,7 +21,8 @@ LANGUAGE_DICT = {"Langue française": 'fr',
 class ULiegeCourseSpider(scrapy.Spider, ABC):
     name = "uliege-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/uliege_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/uliege_courses_{YEAR}.json')
     }
 
     def start_requests(self):

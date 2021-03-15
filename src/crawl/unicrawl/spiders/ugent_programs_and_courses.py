@@ -1,5 +1,6 @@
 from abc import ABC
 from typing import List
+from pathlib import Path
 
 import scrapy
 import pdfplumber
@@ -79,7 +80,8 @@ def extract_content(pdf_url: str) -> str:
 class UgentProgramSpider(scrapy.Spider, ABC):
     name = 'ugent-programs'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/ugent_programs_and_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/ugent_programs_and_courses_{YEAR}.json')
     }
 
     def start_requests(self):

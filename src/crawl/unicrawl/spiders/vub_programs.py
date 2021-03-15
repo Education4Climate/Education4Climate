@@ -1,4 +1,5 @@
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -12,7 +13,8 @@ BASE_URL = 'https://caliweb.vub.be/'
 class VUBProgramSpider(scrapy.Spider, ABC):
     name = "vub-programs"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/vub_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/vub_programs_{YEAR}.json')
     }
 
     def start_requests(self):

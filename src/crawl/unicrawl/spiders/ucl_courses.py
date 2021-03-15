@@ -10,7 +10,8 @@ from config.settings import YEAR
 from config.utils import cleanup
 
 BASE_URL = "https://uclouvain.be/cours-{}-{}"
-PROG_DATA_PATH = Path(f'../../data/crawling-output/ucl_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/ucl_programs_{YEAR}.json')
 
 
 LANGUAGE_DICT = {"Français": "fr",
@@ -29,7 +30,8 @@ LANGUAGE_DICT = {"Français": "fr",
 class UCLCourseSpider(scrapy.Spider, ABC):
     name = "ucl-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/ucl_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/ucl_courses_{YEAR}.json')
     }
 
     def start_requests(self):

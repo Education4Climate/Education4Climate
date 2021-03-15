@@ -13,8 +13,8 @@ UCL_URL = f"https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-
 class UCLProgramSpider(scrapy.Spider, ABC):
     name = "ucl-programs"
     custom_settings = {
-        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
-                                                              f'ucl_programs_{YEAR}_pre.json'),
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/ucl_programs_{YEAR}_pre.json')
     }
 
     def start_requests(self):

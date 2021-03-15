@@ -8,7 +8,8 @@ from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URL = "https://uhintra03.uhasselt.be/studiegidswww/opleidingsonderdeel.aspx?a={}&i={}&n=4&t=01"
-PROG_DATA_PATH = Path(f'../../data/crawling-output/uhasselt_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/uhasselt_programs_{YEAR}.json')
 LANGUAGE_DICT = {'Nederlands': 'nl',
                  'Engels': 'en',
                  'English': 'en'}
@@ -17,7 +18,8 @@ LANGUAGE_DICT = {'Nederlands': 'nl',
 class UHasseltCourseSpider(scrapy.Spider, ABC):
     name = "uhasselt-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/uhasselt_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/uhasselt_courses_{YEAR}.json')
     }
 
     def start_requests(self):

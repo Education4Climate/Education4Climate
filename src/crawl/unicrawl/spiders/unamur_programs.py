@@ -14,8 +14,8 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
     name = "unamur-programs"
     custom_settings = {
         # TODO: this is ugly
-        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
-                                                              f'unamur_programs_{YEAR}.json')
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/unamur_programs_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -1,4 +1,5 @@
 from abc import ABC
+from pathlib import Path
 
 import scrapy
 
@@ -10,7 +11,8 @@ BASE_URL = 'https://onderwijsaanbod.kuleuven.be/opleidingen/n/'
 class KULeuvenProgramSpider(scrapy.Spider, ABC):
     name = 'kuleuven-programs'
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/kuleuven_programs_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/kuleuven_programs_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -9,8 +9,8 @@ from config.utils import cleanup
 from config.settings import YEAR
 
 BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format is code course, second is year
-PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
-                                                           f'unamur_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/unamur_programs_{YEAR}.json')
 
 LANGUAGES_DICT = {"Français": 'fr',
                   "Anglais / English": 'en',
@@ -23,8 +23,8 @@ LANGUAGES_DICT = {"Français": 'fr',
 class UNamurCourseSpider(scrapy.Spider, ABC):
     name = "unamur-courses"
     custom_settings = {
-        'FEED_URI': Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/'
-                                                              f'unamur_courses_{YEAR}.json')
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/unamur_courses_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -10,7 +10,8 @@ from config.settings import YEAR
 from config.utils import cleanup
 
 COURSE_URL = "https://www.uantwerpen.be/ajax/courseInfo{}"
-PROG_DATA_PATH = Path(f'../../data/crawling-output/uantwerp_programs_{YEAR}.json')
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../data/crawling-output/uantwerp_programs_{YEAR}.json')
 LANGUAGE_DICT = {"Dutch": 'nl',
                  "Nederlands": 'nl',
                  "English": 'en',
@@ -24,7 +25,8 @@ LANGUAGE_DICT = {"Dutch": 'nl',
 class UantwerpCourseSpider(scrapy.Spider, ABC):
     name = "uantwerp-courses"
     custom_settings = {
-        'FEED_URI': f'../../data/crawling-output/uantwerp_courses_{YEAR}.json',
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../data/crawling-output/uantwerp_courses_{YEAR}.json')
     }
 
     def start_requests(self):
