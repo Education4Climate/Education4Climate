@@ -9,8 +9,21 @@
 			   "s[ée]qu[ée]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)",
 			   "stock[^ ]* (?:du |de )?(?:co2|dioxyde de carbone)"
 		],
-		"en": [],
-		"nl": []
+		"en": ["carbon (footprint|assessment|balance|audit)",
+			"low(-| )carbon",
+			"(carbon|(co|CO)2?) (capture|conversion|valuation|sequestration)",
+			"CCS"
+		],
+		"nl": ["koolstofinventaris",
+			"CO2?-balans",
+			"koolstofvrij",
+			"((CO|co)2?|kooldioxide)(- )(voetafdruk|vangst|afvang|omzetting)",
+			"(voetafdruk|vangst|afvang|omzetting) van (CO|co|kooldioxide)",
+			"koolstofvoetafdruk",
+			"koolstofverbruik",
+			"koolstofarm",
+			"laag koolstofgehalte"
+			]
 	},
 	"energy": {
 		"fr": ["[ée]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)",
@@ -26,15 +39,27 @@
 			   "vecteur[^ ]+ [ée]nerg[^ ]+",
 			   "bilans? (?:d')?[ée]nerg[^ ]+"
 		],
-		"en": [],
-		"nl": []
+		"en": [
+			"(green|renewable|low carbon) energy",
+			"fossil fuel",
+			"(photovoltaic|solar|geothermal|hydro(electric)?)+( |-)?(energy|power)",
+			"energy (consumption|use|efficiency|vector|assessment)"
+		],
+		"nl": ["groene energie",
+			"energietransitie",
+			"(zonne|photovolta[iï]sche?)(- )energie",
+			"wind(turbines|molens)",
+			"wind(kracht|energie)",
+			"energie(-| )?(verbruik|gebruik|effici[eë]ntie)",
+			"(verbruik|gebruik|effici[eë]ntie) van energie"
+		]
 	},
 	"consumption": {
 		"fr": ["consom[^ ]+ énerg[^ ]+",
 			   "utilis[^ ]+ énerg[^ ]+"
 		],
-		"en": [],
-		"nl": []
+		"en": ["energy (consumption|use)"],
+		"nl": ["energie(-| )?(verbruik|gebruik|effici[eë]ntie)"]
 	},
 	"environment": {
 		"fr": ["gestion[^ ]+ envir[^ ]+",
@@ -45,8 +70,27 @@
 			   "temp[^ ]+ moyenne mond[^ ]+",
 			   "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
 		],
-		"en": [],
-		"nl": []
+		"en": [
+			"environmental (management|maintenance)",
+			"(environmentalist|ecolo[^ ]+)",
+			"extreme weather (condition|events)",
+			"global (average|mean) temperature",
+			"(thawing|loss|melting|reduction|shrinking) (of )?(((polar )? ice( caps)?)|permafrost)"
+		],
+		"nl": [
+			"milieu(beheer|management|beleid)",
+			"eco(logisch|systeem)",
+			"extreme (weersomstandig[^ ]+)",
+			"(globale?|wereldwijde?) gemiddelde temperatuur",
+			"gemiddelde temperatuur op aarde",
+			"ijsverlies",
+			"smelten (ijs(kap|dooi)?)",
+			"smelten pool(kap|ijs)",
+			"permafrostreductie",
+			"(smeltende|dooi) permafrost",
+			"ontdooiend Noordpoolgebied",
+			"permafrostreductie"
+		]
 	},
 	"climatology": {
 		"fr": ["temp[^ ]+ mond[^ ]+ moyenne",
@@ -77,7 +121,31 @@
 			   "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
 		],
 		"en": [],
-		"nl": []
+		"nl": [
+			"extreme (weer[^ ]*|meteo[^ ]*)",
+			"(globale?|wereldwijde?) gemiddelde temperatuur",
+			"gemiddelde temperatuur op aarde",
+			"ijsverlies",
+			"smelten (ijs(kap|dooi)?)",
+			"smelten pool(kap|ijs)",
+			"permafrostreductie",
+			"(smeltende|dooi) permafrost",
+			"ontdooiend Noordpoolgebied",
+			"permafrostreductie",
+			"((CO|co)2?|kooldioxide)",
+			"verandering van metereologische omstandigheden",
+			"verandering in weersomstandigheden",
+			"klimaat(veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)",
+			"(beheer|planning|beleid)( inzaa?ke?)? van de klimaatverandering",
+			"klimaatgerelateerd risico / klimaatrisico",
+			"klimatologische weerstand",
+			"vroegtijdige waarschuwing klimaat",
+			"vroegtijdige waarschuwing inzake klimaat",
+			"aanpassing aan klimaat(verandering)?",
+			"gevolgen voor het klimaat",
+			"impact op het klimaat",
+			"broeikasgas"
+		]
 	},
 	"durability": {
 		"fr": ["développ[^ ]+ durab[^ ]+",
@@ -94,7 +162,15 @@
 			  "résist[^ ]+ clima[^ ]+"
 		],
 		"en": [],
-		"nl": []
+		"nl": [
+				"duurzame ontwikkeling",
+				"hulpbronnenefficiëntie", "efficiënt gebruik van hulpbronnen",
+				"duurzaa?me? (consumptie|verbruik|beheer|beleid|praktijk|productie|product)",
+				"klimaat(veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand)",
+				"(beheer|planning|beleid)( inzaa?ke?)? van de klimaatverandering",
+				"klimaatgerelateerd risico / klimaatrisico",
+				"klimatologische weerstand"
+		]
 	},
 	"society": {
 		"fr": ["actions? (?:pour )?(?:le )?climat[^ ]+",
@@ -107,7 +183,11 @@
 			   "justice climat[^ ]+"
 		],
 		"en": [],
-		"nl": []
+		"nl": [
+				"klimaat(actie|adaptatie|aanpassing|beleid|vluchteling)",
+				"aanpassing aan klimaat(verandering)?",
+				"beleid inzake klimaatverandering"
+		]
 	}
 }
 
