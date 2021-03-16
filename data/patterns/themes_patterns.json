@@ -120,7 +120,14 @@
 			   "[ée]missions? (?:du |de )?(?:co2|dioxyde de carbone)",
 			   "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
 		],
-		"en": [],
+		"en": [
+			"greenhouse gas(es)?",
+			"climate (change|sceptic|processus|physics|mitigation|strategy|conditions)",
+			"(carbon dyoxide|(co|CO)2?) ",
+			"extreme weather (condition|events)",
+			"global (average|mean) temperature",
+			"(thawing|loss|melting|reduction|shrinking) (of )?(((polar )? ice( caps)?)|permafrost)"
+		],
 		"nl": [
 			"extreme (weer[^ ]*|meteo[^ ]*)",
 			"(globale?|wereldwijde?) gemiddelde temperatuur",
@@ -182,7 +189,11 @@
 			   "accords? de paris(?:(?: sur| pour) le climat)?",
 			   "justice climat[^ ]+"
 		],
-		"en": [],
+		"en": ["climate( change)? (action|justice|refugees?|polic(y|ies)|adaptation)",
+			"(actions?|adaptations?) (for the|to) climate",
+			"(COP|cop) ?[0-9]+",
+			"[pP]aris agreement"
+		],
 		"nl": [
 				"klimaat(actie|adaptatie|aanpassing|beleid|vluchteling)",
 				"aanpassing aan klimaat(verandering)?",
