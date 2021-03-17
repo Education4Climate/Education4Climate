@@ -330,8 +330,6 @@ function getSelectedLanguagesFilter() {
 
 function toggleFilters(mode) {
 
-    console.log("toggleFilters(" + mode + ")");
-
     var sidebar = document.querySelector("#" + mode + "-finder .sidebar");
     var button = document.querySelector("#" + mode + "-finder .show-filters");
 
@@ -480,7 +478,6 @@ async function getPrograms() {
         }
 
         sessionStorage.programs = JSON.stringify(programs);
-        console.log(programs);
     }
 
     return JSON.parse(sessionStorage.programs);
