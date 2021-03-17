@@ -198,7 +198,6 @@ function buildCoursesFinderTable(courses) {
         data: courses,
         pagination: "local",
         paginationSize: 20,
-        initialSort: [{ column: "climateScore", dir: "desc" }],
         rowClick: function (e, row) { openModal(e, row); },
         locale: true,
         columns: [
@@ -240,10 +239,11 @@ function buildProgramsFinderTable(programs) {
         data: programs,
         pagination: "local",
         paginationSize: 20,
-        initialSort: [{ column: "climateScore", dir: "desc" }],
+        initialSort: [{ column: "score", dir: "desc" }],
         rowClick: function (e, row) { openModal(e, row); },
         locale: true,
         columns: [
+            { title: "Score", field: "score", sorter: "int" },
             { title: "Université", field: "schoolShortName", sorter: "string" },
             { title: "Intitulé", field: "name", sorter: "string" },
             { title: "Code", field: "id", formatter: "link", formatterParams: { labelField: "id", urlField: "url", target: "_blank" } },
@@ -462,10 +462,6 @@ async function getPrograms() {
 
                     data.forEach(p => {
 
-                        var themes = getThemes(p); // Temporaire en attendant de recevoir un tableau de thématiques
-
-                        if (themes.length > 0) { // Temporaire en attendant que les cours sans thèmes soient filtrés du JSON
-
                             programs.push({
 
                                 id: p.id,
@@ -475,30 +471,22 @@ async function getPrograms() {
                                 campus: p.campus,
                                 schoolShortName: schools[i].shortName,
                                 courses: p.courses,
-                                themes: themes,
-                                field: p.field
+                                themes: p.themes,
+                                field: p.field,
+                                score: p.themes_scores.reduce((a, b) => a + b, 0)
                             });
-                        }
                     });
                 });
         }
 
         sessionStorage.programs = JSON.stringify(programs);
+        console.log(programs);
     }
 
     return JSON.parse(sessionStorage.programs);
 }
 
 /* HELPERS */
-
-function getThemes(program) {  // Temporaire en attendant de recevoir un tableau de thématiques
-
-    var themes = [];
-
-    THEMES.forEach(theme => { if (program[theme]) { themes.push(theme); } });
-
-    return themes;
-}
 
 function getLanguageFromISOCode(code) {
 
