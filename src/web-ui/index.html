@@ -41,6 +41,11 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" href="?page=programs-finder">Trouver un programme
+                        <sup>BETA</sup></a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" href="?page=teachers-directory">Annuaire des enseignants<sup>BETA</sup></a>
                 </li>
 
@@ -155,28 +160,28 @@
 
         <div class="row">
 
-            <div class="col-sm-12" id="courses-finder-show-filters-container">
-                <button type="button" class="btn btn-primary btn-lg btn-block" id="courses-finder-show-filters"
-                    style="margin-top: 1rem;margin-bottom: 1rem;" onclick="toggleFilters()">Afficher les
+            <div class="col-sm-12 show-filters-container">
+                <button type="button" class="btn btn-primary btn-lg btn-block show-filters"
+                    style="margin-top: 1rem;margin-bottom: 1rem;" onclick="toggleFilters('courses')">Afficher les
                     filtres</button>
             </div>
             <!-- SIDEBAR -->
 
-            <div class="col-md-2 sidebar" id="courses-finder-sidebar">
+            <div class="col-md-2 sidebar">
 
                 <h6 class="text-primary">Universités</h6>
-                <div id="schools-selector" class="filter"></div>
+                <div class="filter schools-selector"></div>
 
                 <h6 class="text-primary">Thématiques</h6>
-                <div id="themes-selector" class="filter"></div>
+                <div class="filter themes-selector"></div>
 
                 <h6 class="text-primary">Langues</h6>
                 <div id="languages-selector" class="filter"></div>
 
                 <h6 class="text-primary">Intitulé</h6>
-                <div id="title-finder" class="filter">
-                    <input id="courses-search" type="text" class="form-control" id="inlineFormInputName2"
-                        placeholder="exemple : climat" onkeyup="setFilters()">
+                <div class="filter">
+                    <input type="text" class="form-control name-search" id="inlineFormInputName2"
+                        placeholder="exemple : climat" onkeyup="setFilters('courses')">
                 </div>
 
             </div>
@@ -189,8 +194,53 @@
                     <h1>Trouver un cours</h1>
                 </div>
 
-                <h6 id="results-count"></h6>
+                <h6 class="results-count"></h6>
                 <div id="courses-table-container">
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+    <!-- TROUVER UN PROGRAMME -->
+
+    <div class="container-fluid" id="programs-finder">
+
+        <div class="row">
+
+            <div class="col-sm-12 show-filters-container">
+                <button type="button" class="btn btn-primary btn-lg btn-block show-filters"
+                    style="margin-top: 1rem;margin-bottom: 1rem;" onclick="toggleFilters('programs')">Afficher les
+                    filtres</button>
+            </div>
+            <!-- SIDEBAR -->
+
+            <div class="col-md-2 sidebar">
+
+                <h6 class="text-primary">Universités</h6>
+                <div class="filter schools-selector"></div>
+
+                <h6 class="text-primary">Thématiques</h6>
+                <div id="programs-finder-" class="filter themes-selector"></div>
+
+                <h6 class="text-primary">Intitulé</h6>
+                <div class="filter">
+                    <input type="text" class="form-control name-search" id="inlineFormInputName2"
+                        placeholder="exemple : climat" onkeyup="setFilters('programs')">
+                </div>
+
+            </div>
+
+            <!-- TABLE -->
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1>Trouver un programme</h1>
+                </div>
+
+                <h6 class="results-count"></h6>
+                <div id="programs-table-container">
                 </div>
             </main>
         </div>
@@ -222,7 +272,8 @@
                 <div class="modal-header">
                     <h5 class="modal-title"><span id="course-details-name"></span>
                         <span class="badge badge-light" id="course-details-short-name"></span>&nbsp;
-                        <span class="badge badge-light" id="course-details-years"></span></h5>
+                        <span class="badge badge-light" id="course-details-years"></span>
+                    </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right;">
                         <span aria-hidden="true">&times;</span>
                     </button>

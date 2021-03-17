@@ -11,7 +11,7 @@ import langdetect
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
 from utils import compute_score
 
-ACCEPTED_LANGUAGES = ["fr"]  # ["en", "fr", "nl"]
+ACCEPTED_LANGUAGES = ["fr","en", "nl"]
 
 
 def main(school: str, year: int, fields: str) -> None:

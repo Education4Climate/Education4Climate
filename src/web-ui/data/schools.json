@@ -1,34 +1,32 @@
 {
     "schools": [
         {
-            "id": 1,
-            "name": "Université catholique de Louvain",
-            "shortName": "UCLouvain",
-            "file": "ucl_data_2020_light.json"
-        },
-        {
             "id": 2,
             "name": "Université Libre de Bruxelles",            
             "shortName": "ULB",
-            "file": "ulb_data_2020_light.json"
+            "file": "ulb_data_2020_light.json",
+            "programFile": "ulb_data_2020_programs.json"
         },
         {
             "id": 3,
             "name": "Université de Liège",
             "shortName": "ULiège",
-            "file": "uliege_data_2020_light.json"
+            "file": "uliege_data_2020_light.json",
+            "programFile": "uliege_data_2020_programs.json"
         },
         {
             "id": 4,
             "name": "Université de Mons",
             "shortName": "UMons",
-            "file": "umons_data_2020_light.json"
+            "file": "umons_data_2020_light.json",
+            "programFile": "umons_data_2020_programs.json"
         },
         {
             "id": 5,
             "name": "Université de Namur",
             "shortName": "UNamur",
-            "file": "unamur_data_2020_light.json"
+            "file": "unamur_data_2020_light.json",
+            "programFile": "unamur_data_2020_programs.json"
         }      
     ]
 }

@@ -16,6 +16,7 @@
 
 #home,
 #courses-finder,
+#programs-finder,
 #teachers-directory,
 #methodology {
     display: none;
@@ -64,23 +65,23 @@
     font-weight: bold;
 }
 
-/* TROUVER UN COURS */
+/* TROUVER UN COURS/PROGRAMME */
 
-#courses-finder h6 {
+#courses-finder h6, #programs-finder h6 {
     font-weight: 600;
 }
 
-#courses-finder .sidebar {
+#courses-finder .sidebar, #programs-finder .sidebar {
 
     background-color: #f8f9fa;
     min-height      : calc(100vh - 56px);
 }
 
-#courses-finder .sidebar .filter {
+#courses-finder .sidebar .filter, #programs-finder .sidebar .filter {
     margin-bottom: 1rem;
 }
 
-#courses-finder-show-filters {
+.show-filters {
     display: none;
 }
 
@@ -92,16 +93,16 @@
 
 @media (max-width: 767.98px) {
 
-    #courses-finder .sidebar {
+    #courses-finder .sidebar, #programs-finder .sidebar {
         display   : none;
         min-height: 0;
     }
 
-    #courses-finder-show-filters {
+    .show-filters {
         display: block;
     }
 
-    #courses-finder-show-filters-container {
+    .show-filters-container {
         background-color: #f8f9fa;
     }
 
