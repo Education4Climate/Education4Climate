@@ -27,10 +27,16 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
     pattern_matches_dict = {}
     score = 0
     for pattern in patterns:
-        matches = re.findall(pattern, text)
+        matches = list(re.finditer(pattern, text))
         if len(matches) != 0:
-            pattern_matches_dict[pattern] = matches
             score = 1
+            pattern_matches_dict[pattern] = []
+            for match in matches:
+                # For each match, retrieve a number of characters before and after to get the context
+                start, end = match.span()
+                start = max(0, start-20)
+                end = min(end+20, len(text)-1)
+                pattern_matches_dict[pattern] += [text[start:end]]
     return score, pattern_matches_dict
 
 

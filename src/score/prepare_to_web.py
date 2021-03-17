@@ -81,17 +81,24 @@ def main(school: str, year: int):
     courses_df["themes"] = scores_df.apply(lambda x: x[x == 1].index.tolist(), axis=1).to_frame()
     courses_df = courses_df.reset_index()
     web_fn = Path(__file__).parent.absolute().joinpath(f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_")
-    courses_df.to_json(web_fn + "heavy.json", orient='records')
+    courses_df.to_json(f"{web_fn}heavy.json", orient='records')
     courses_df.loc[courses_df.id.isin(courses_with_matches_index)]\
-        .to_json(web_fn + 'light.json', orient='records', indent=1)
+        .to_json(f"{web_fn}light.json", orient='records', indent=1)
 
-    # Creating program file
-    # Load program scoring file
+    # Creating program file (only programs with score > 0)
     program_scores_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv")
     programs_scores_df = pd.read_csv(program_scores_fn, index_col=0)
-    programs_df = pd.concat([programs_df.set_index('id'), programs_scores_df], axis=1).reset_index()
-    programs_df.to_json(web_fn + "programs.json", orient='records', indent=1)
+    # Get programs that matched at least one theme
+    programs_with_matches_index = programs_scores_df[(programs_scores_df.sum(axis=1) != 0)].index
+    # Get list of matched themes per program and associated scores
+    programs_df = programs_df.set_index("id")
+    programs_df["themes"] = programs_scores_df.apply(lambda x: x[x > 0].index.tolist(), axis=1).to_frame()
+    programs_df["themes_scores"] = programs_scores_df.apply(lambda x: x[x > 0].values.tolist(), axis=1).to_frame()
+    programs_df = programs_df.reset_index()
+    programs_df.loc[programs_df.id.isin(programs_with_matches_index)]\
+        .to_json(f"{web_fn}programs.json", orient='records', indent=1)
+    # TODO: regroup themes scores under two fields: 'fields' and 'fields_scores'
 
 
 if __name__ == "__main__":

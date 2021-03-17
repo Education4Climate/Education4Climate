@@ -1,10 +1,12 @@
-
 CRAWLERS_FOLDER = 'src/crawl/unicrawl/spiders/'
 SCORER_FOLDER = 'src/score/'
 SRC_CRAWL_FOLDER = 'src/crawl/'
 CRAWLING_OUTPUT_FOLDER = 'data/crawling-output/'
 SCORING_OUTPUT_FOLDER = 'data/scoring-output/'
 WEB_INPUT_FOLDER = 'src/web-ui/data/'
+
+# TODO import from config file?
+YEAR = 2020
 
 # TODO: add special rules when merge is needed -> expl UCLouvain
 
@@ -17,9 +19,25 @@ schools = ["unamur", "helmo"]
 
 ruleorder: merge_duplicates > crawl_programs
 
+# All school rules
 rule score_programs_for_all_school:
-    input: expand(SCORING_OUTPUT_FOLDER + '{school}_programs_scoring_{year}.csv', school=schools, year=2020)
+    input: expand(SCORING_OUTPUT_FOLDER + '{school}_programs_scoring_{year}.csv', school=schools, year=YEAR)
 
+rule score_courses_for_all_school:
+    input: expand(SCORING_OUTPUT_FOLDER + '{school}_scoring_{year}.csv', school=schools, year=YEAR)
+
+rule crawl_programs_for_all_school:
+    input: expand(CRAWLING_OUTPUT_FOLDER + '{school}_programs_{year}.csv', school=schools, year=YEAR)
+
+rule crawl_courses_for_all_school:
+    input: expand(CRAWLING_OUTPUT_FOLDER + '{school}_courses_{year}.csv', school=schools, year=YEAR)
+
+rule prepare_to_web_for_all_school:
+    input:
+        expand(WEB_INPUT_FOLDER + '{school}_data_{year}_light.csv', school=schools, year=YEAR)
+        expand(WEB_INPUT_FOLDER + '{school}_data_{year}_programs.csv', school=schools, year=YEAR)
+
+# Per school rule
 rule crawl_programs:
     output: CRAWLING_OUTPUT_FOLDER + '{school}_programs_{year}.json'
     shell:
