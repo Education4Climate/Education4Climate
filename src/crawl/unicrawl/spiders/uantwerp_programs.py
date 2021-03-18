@@ -109,8 +109,12 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
         base_dict["cycle"] = ""
         if "bachelor" in response.url:
             base_dict["cycle"] = "bac"
+            base_dict["id"] += '-bac'
+            base_dict["name"] = f"Bachelor in {base_dict['name']}"
         elif "master" in response.url:
             base_dict["cycle"] = "master"
+            base_dict["id"] += '-master'
+            base_dict["name"] = f"Master in {base_dict['name']}"
 
         # Get courses and ects
         main_tab = f"//section[contains(@id, '-{YEAR}')]"

@@ -11,7 +11,7 @@ import langdetect
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
 from utils import compute_score
 
-ACCEPTED_LANGUAGES = ["fr","en", "nl"]
+ACCEPTED_LANGUAGES = ["fr", "en", "nl"]
 
 
 def main(school: str, year: int, fields: str) -> None:
@@ -27,15 +27,11 @@ def main(school: str, year: int, fields: str) -> None:
 
 
     """
-    # TODO
-    #  /!\ languages are fr, en, nl (related to sheets to be loaded in settings.py
-    #  → use spacy download fr | en | nl  to avoid plain name of models (fr_core_news_sm)
-    #  languages=["fr","en","fr"]
 
     # Loading crawling results
     courses_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
-    courses_df = pd.read_json(open(courses_fn, 'r'))
+    courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str})
     fields = fields.split(",")
     for field in fields:
         assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contian a column {field}"
@@ -67,7 +63,7 @@ def main(school: str, year: int, fields: str) -> None:
         except langdetect.lang_detect_exception.LangDetectException:
             courses_df.loc[idx, themes] = 0
             continue
-        # TODO: create patterns for 'en' and 'nl'
+        # TODO: maybe instead of that we should the first known language associated to the course
         if language not in ACCEPTED_LANGUAGES:
             print(idx, language)
             courses_df.loc[idx, themes] = 0

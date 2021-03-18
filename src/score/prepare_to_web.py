@@ -19,6 +19,15 @@ def main(school: str, year: int):
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
     programs_df = pd.read_json(open(programs_fn, 'r'))
 
+    # TODO: remove
+    if 0:
+        fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
+        faculties_to_fields_df = pd.read_csv(fields_fn)
+        faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
+        faculties_to_fields_ds = faculties_to_fields_df[["faculty", "field"]].set_index("faculty")
+        print(programs_df["faculty"].apply(lambda x: faculties_to_fields_ds.loc[x][0]))
+        exit()
+
     keys_in_courses = ["name", "year", "teacher", "language", "url"]
     keys_in_programs = ["ects", "faculty", "campus"]
     # These keys can either be in the courses or programs dataframe, so check that
