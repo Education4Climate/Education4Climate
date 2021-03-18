@@ -9,195 +9,205 @@
 			   "s[ée]qu[ée]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)",
 			   "stock[^ ]* (?:du |de )?(?:co2|dioxyde de carbone)"
 		],
-		"en": ["carbon (footprint|assessment|balance|audit)",
-			"low(-| )carbon",
-			"(carbon|(co|CO)2?) (capture|conversion|valuation|sequestration)",
-			"CCS"
+		"en": [
+			"carbon (?:footprint|assessment|balance|audit)",
+			"low(?:-| )carbon",
+			"(?:carbon|co2?) (?:capture|conversion|valuation|sequestration)",
+			"ccs"
 		],
-		"nl": ["koolstofinventaris",
-			"CO2?-balans",
+		"nl": [
+			"koolstofinventaris",
+			"co2?-balans",
 			"koolstofvrij",
-			"((CO|co)2?|kooldioxide)(- )(voetafdruk|vangst|afvang|omzetting)",
-			"(voetafdruk|vangst|afvang|omzetting) van (CO|co|kooldioxide)",
+			"(?:co2?|kooldioxide)(?:- )(?:voetafdruk|vangst|afvang|omzetting)",
+			"(?:voetafdruk|vangst|afvang|omzetting) van (?:co2?|kooldioxide)",
 			"koolstofvoetafdruk",
 			"koolstofverbruik",
 			"koolstofarm",
 			"laag koolstofgehalte"
-			]
+		]
 	},
 	"energy": {
-		"fr": ["[ée]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)",
-		       "[ée]nerg[^ ]+ fossiles?",
-			   "transiti[^ ]+ [ée]nerg[^ ]+",
-			   "solaires? thermiques?",
-			   "photovolta[iï]ques?",
-			   "(?:[ée]nergies? )?[ée]olien[^ ]+",
-			   "hydro-?[ée]l[ée]ctri[^ ]+",
-			   "consom[^ ]+ (?:d')?[ée]nerg[^ ]+",
-			   "effica[^ ]+ [ée]nerg[^ ]+",
-			   "utilis[^ ]+ (?:d')?[ée]nerg[^ ]+",
-			   "vecteur[^ ]+ [ée]nerg[^ ]+",
-			   "bilans? (?:d')?[ée]nerg[^ ]+"
+		"fr": [
+			"[ée]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)",
+		    "[ée]nerg[^ ]+ fossiles?",
+		    "transiti[^ ]+ [ée]nerg[^ ]+",
+		    "solaires? thermiques?",
+		    "photovolta[iï]ques?",
+		    "(?:[ée]nergies? )?[ée]olien[^ ]+",
+		    "hydro-?[ée]l[ée]ctri[^ ]+",
+		    "consom[^ ]+ (?:d')?[ée]nerg[^ ]+",
+		    "effica[^ ]+ [ée]nerg[^ ]+",
+		    "utilis[^ ]+ (?:d')?[ée]nerg[^ ]+",
+		    "vecteur[^ ]+ [ée]nerg[^ ]+",
+		    "bilans? (?:d')?[ée]nerg[^ ]+"
 		],
 		"en": [
-			"(green|renewable|low carbon) energy",
+			"(?:green|renewable|low carbon) energy",
 			"fossil fuel",
-			"(photovoltaic|solar|geothermal|hydro(electric)?)+( |-)?(energy|power)",
-			"energy (consumption|use|efficiency|vector|assessment)"
+			"(?:photovoltaic|solar|geothermal|hydro(electric)?)+( |-)?(energy|power)",
+			"energy (?:consumption|use|efficiency|vector|assessment)"
 		],
-		"nl": ["groene energie",
-			"energietransitie",
-			"(zonne|photovolta[iï]sche?)(- )energie",
-			"wind(turbines|molens)",
-			"wind(kracht|energie)",
-			"energie(-| )?(verbruik|gebruik|effici[eë]ntie)",
-			"(verbruik|gebruik|effici[eë]ntie) van energie"
+		"nl": [
+			"groene energie",
+		    "energietransitie",
+			"(?:zonne|photovolta[iï]sche?)(?:- )energie",
+			"wind(?:turbines|molens)",
+			"wind(?:kracht|energie)",
+			"energie(?:-| )?(?:verbruik|gebruik|effici[eë]ntie)",
+			"(?:verbruik|gebruik|effici[eë]ntie) van energie"
 		]
 	},
 	"consumption": {
-		"fr": ["consom[^ ]+ énerg[^ ]+",
-			   "utilis[^ ]+ énerg[^ ]+"
+		"fr": [
+			"consom[^ ]+ énerg[^ ]+",
+		    "utilis[^ ]+ énerg[^ ]+"
 		],
 		"en": ["energy (consumption|use)"],
-		"nl": ["energie(-| )?(verbruik|gebruik|effici[eë]ntie)"]
+		"nl": ["energie(?:-| )?(?:verbruik|gebruik|effici[eë]ntie)"]
 	},
 	"environment": {
-		"fr": ["gestion[^ ]+ envir[^ ]+",
-			   "^[ée]colo[^ ]+",
-			   "[ée]cosyst[^ ]+",
-			   "conditions? m[ée]t[ée]o[^ ]+ extr[^ ]+",
-			   "[ée]v[ée]nements? m[ée]t[ée]o[^ ]+ extr[^ ]+",
-			   "temp[^ ]+ moyenne mond[^ ]+",
-			   "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
+		"fr": [
+			"gestion[^ ]+ envir[^ ]+",
+		    "^[ée]colo[^ ]+",
+		    "[ée]cosyst[^ ]+",
+		    "conditions? m[ée]t[ée]o[^ ]+ extr[^ ]+",
+		    "[ée]v[ée]nements? m[ée]t[ée]o[^ ]+ extr[^ ]+",
+		    "temp[^ ]+ moyenne mond[^ ]+",
+		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
 		],
 		"en": [
-			"environmental (management|maintenance)",
-			"(environmentalist|ecolo[^ ]+)",
-			"extreme weather (condition|events)",
-			"global (average|mean) temperature",
-			"(thawing|loss|melting|reduction|shrinking) (of )?(((polar )? ice( caps)?)|permafrost)"
+			"environmental (?:management|maintenance)",
+		    "(?:environmentalist|ecolo[^ ]+)",
+		    "extreme weather (?:condition|events)",
+		    "global (?:average|mean) temperature",
+		    "(?:thawing|loss|melting|reduction|shrinking) (?:of )?(?:(?:(?:polar )? ice(?: caps)?)|permafrost)"
 		],
 		"nl": [
-			"milieu(beheer|management|beleid)",
-			"eco(logisch|systeem)",
-			"extreme (weersomstandig[^ ]+)",
-			"(globale?|wereldwijde?) gemiddelde temperatuur",
+			"milieu(?:beheer|management|beleid)",
+			"eco(?:logisch|systeem)",
+			"extreme (?:weersomstandig[^ ]+)",
+			"(?:globale?|wereldwijde?) gemiddelde temperatuur",
 			"gemiddelde temperatuur op aarde",
 			"ijsverlies",
-			"smelten (ijs(kap|dooi)?)",
-			"smelten pool(kap|ijs)",
+			"smelten (?:ijs(kap|dooi)?)",
+			"smelten pool(?:kap|ijs)",
 			"permafrostreductie",
-			"(smeltende|dooi) permafrost",
+			"(?:smeltende|dooi) permafrost",
 			"ontdooiend Noordpoolgebied",
 			"permafrostreductie"
 		]
 	},
 	"climatology": {
-		"fr": ["temp[^ ]+ mond[^ ]+ moyenne",
-			   "temp[^ ]+ moyenne mond[^ ]+",
-			   "changements? (?:des? )?conditions? (?:m[ée]t[ée]orologiques?|climatiques?)",
-			   "climatolog[^ ]+",
-			   "actions? (?:pour )?(?:le )?climat[^ ]+",
-			   "adaptations? (?:aux? )(?:changements? )climat[^ ]+",
-			   "chang[^ ]+ clima[^ ]+",
-			   "alerte précoce clima[^ ]+",
-			   "risque[^ ]+ clima[^ ]+",
-			   "impact clima[^ ]+",
-			   "strat[ée]gies? clima[^ ]+",
-			   "enjeux? clima[^ ]+",
-			   "contextes? clima[^ ]+",
-			   "atténu[^ ]+ clima[^ ]+",
-			   "project[^ ]+ clima[^ ]+",
-			   "mod[èe]les? clima[^ ]+",
-			   "processus clima[^ ]+",
-			   "questions? clima[^ ]+",
-			   "for[çc]ages? clima[^ ]+",
-			   "conditions? météo[^ ]+ extr[^ ]+",
-			   "événements? météo[^ ]+ extr[^ ]+",
-			   "réchauff[^ ]+ clima[^ ]+",
-			   "climato-?scept[^ ]+",
-			   "(?:[ée]missions? )?(?:de )?gaz (?:[àa] )?(?:effets? )(?:de )?serre",
-			   "[ée]missions? (?:du |de )?(?:co2|dioxyde de carbone)",
-			   "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
+		"fr": [
+			"temp[^ ]+ mond[^ ]+ moyenne",
+		    "temp[^ ]+ moyenne mond[^ ]+",
+		    "changements? (?:des? )?conditions? (?:m[ée]t[ée]orologiques?|climatiques?)",
+		    "climatolog[^ ]+",
+		    "actions? (?:pour )?(?:le )?climat[^ ]+",
+		    "adaptations? (?:aux? )(?:changements? )climat[^ ]+",
+		    "chang[^ ]+ clima[^ ]+",
+		    "alerte précoce clima[^ ]+",
+		    "risque[^ ]+ clima[^ ]+",
+		    "impact clima[^ ]+",
+		    "strat[ée]gies? clima[^ ]+",
+		    "enjeux? clima[^ ]+",
+		    "contextes? clima[^ ]+",
+		    "atténu[^ ]+ clima[^ ]+",
+		    "project[^ ]+ clima[^ ]+",
+		    "mod[èe]les? clima[^ ]+",
+		    "processus clima[^ ]+",
+		    "questions? clima[^ ]+",
+		    "for[çc]ages? clima[^ ]+",
+			"conditions? météo[^ ]+ extr[^ ]+",
+		    "événements? météo[^ ]+ extr[^ ]+",
+		    "réchauff[^ ]+ clima[^ ]+",
+		    "climato-?scept[^ ]+",
+		    "(?:[ée]missions? )?(?:de )?gaz (?:[àa] )?(?:effets? )(?:de )?serre",
+		    "[ée]missions? (?:du |de )?(?:co2|dioxyde de carbone)",
+		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
 		],
 		"en": [
 			"greenhouse gas(es)?",
-			"climate (change|sceptic|processus|physics|mitigation|strategy|conditions)",
-			"(carbon dyoxide|(co|CO)2?) ",
-			"extreme weather (condition|events)",
-			"global (average|mean) temperature",
-			"(thawing|loss|melting|reduction|shrinking) (of )?(((polar )? ice( caps)?)|permafrost)"
+			"climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)",
+			"(?:carbon dyoxide|co2?) emissions?",
+			"extreme weather (?:condition|events)",
+			"global (?:average|mean) temperature",
+			"(?:thawing|loss|melting|reduction|shrinking) (?:of )?(?:(?:(?:polar )? ice(?: caps)?)|permafrost)"
 		],
 		"nl": [
-			"extreme (weer[^ ]*|meteo[^ ]*)",
-			"(globale?|wereldwijde?) gemiddelde temperatuur",
+			"extreme (?:weer[^ ]*|meteo[^ ]*)",
+			"(?:globale?|wereldwijde?) gemiddelde temperatuur",
 			"gemiddelde temperatuur op aarde",
 			"ijsverlies",
-			"smelten (ijs(kap|dooi)?)",
+			"smelten (?:ijs(?:kap|dooi)?)",
 			"smelten pool(kap|ijs)",
 			"permafrostreductie",
-			"(smeltende|dooi) permafrost",
+			"(?:smeltende|dooi) permafrost",
 			"ontdooiend Noordpoolgebied",
 			"permafrostreductie",
-			"((CO|co)2?|kooldioxide)",
+			"(?:co2?|kooldioxide)(?:-| )uistoot",
 			"verandering van metereologische omstandigheden",
 			"verandering in weersomstandigheden",
-			"klimaat(veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)",
-			"(beheer|planning|beleid)( inzaa?ke?)? van de klimaatverandering",
+			"klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)",
+			"(?:beheer|planning|beleid)(?: inzaa?ke?)? van de klimaatverandering",
 			"klimaatgerelateerd risico / klimaatrisico",
 			"klimatologische weerstand",
 			"vroegtijdige waarschuwing klimaat",
 			"vroegtijdige waarschuwing inzake klimaat",
-			"aanpassing aan klimaat(verandering)?",
+			"aanpassing aan klimaat(?:verandering)?",
 			"gevolgen voor het klimaat",
 			"impact op het klimaat",
 			"broeikasgas"
 		]
 	},
 	"durability": {
-		"fr": ["développ[^ ]+ durab[^ ]+",
-			  "efficacité (?:des )?ressources",
-			  "consom[^ ]+ durab[^ ]+",
-			  "gestio[^ ]+ durab[^ ]+",
-			  "pratiques? durabl[^ ]+",
-			  "produ[^ ]+ durab[^ ]+",
-			  "architectures? durab[^ ]+",
-			  "gestion (?:du |des )?chang[^ ]+ clima[^ ]+",
-			  "planifications? (?:du |des )chang[^ ]+ clima[^ ]+",
-			  "politiques? (?:en )?matières? (?:de )?chang[^ ]+ clima[^ ]+",
-			  "risques? (?:liés? )(?:au )?clima[^ ]+",
-			  "résist[^ ]+ clima[^ ]+"
+		"fr": [
+			"développ[^ ]+ durab[^ ]+",
+			"efficacité (?:des )?ressources",
+		    "consom[^ ]+ durab[^ ]+",
+		    "gestio[^ ]+ durab[^ ]+",
+		    "pratiques? durabl[^ ]+",
+		    "produ[^ ]+ durab[^ ]+",
+		    "architectures? durab[^ ]+",
+		    "gestion (?:du |des )?chang[^ ]+ clima[^ ]+",
+		    "planifications? (?:du |des )chang[^ ]+ clima[^ ]+",
+		    "politiques? (?:en )?matières? (?:de )?chang[^ ]+ clima[^ ]+",
+		    "risques? (?:liés? )(?:au )?clima[^ ]+",
+		    "résist[^ ]+ clima[^ ]+"
 		],
 		"en": [],
 		"nl": [
-				"duurzame ontwikkeling",
-				"hulpbronnenefficiëntie", "efficiënt gebruik van hulpbronnen",
-				"duurzaa?me? (consumptie|verbruik|beheer|beleid|praktijk|productie|product)",
-				"klimaat(veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand)",
-				"(beheer|planning|beleid)( inzaa?ke?)? van de klimaatverandering",
-				"klimaatgerelateerd risico / klimaatrisico",
-				"klimatologische weerstand"
+			"duurzame ontwikkeling",
+			"hulpbronnenefficiëntie", "efficiënt gebruik van hulpbronnen",
+			"duurzaa?me? (consumptie|verbruik|beheer|beleid|praktijk|productie|product)",
+			"klimaat(veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand)",
+			"(beheer|planning|beleid)( inzaa?ke?)? van de klimaatverandering",
+			"klimaatgerelateerd risico / klimaatrisico",
+			"klimatologische weerstand"
 		]
 	},
 	"society": {
-		"fr": ["actions? (?:pour )?(?:le )?climat[^ ]+",
-			   "adaptations? (?:aux? )?(?:changements? )?climat[^ ]+",
-			   "politiques? climat[^ ]+",
-			   "politiques? (?:en )?matières? (?:de )?chang[^ ]+ clima[^ ]+",
-			   "réfugiés? climatiques?",
-			   "^cop ?[0-9]+",
-			   "accords? de paris(?:(?: sur| pour) le climat)?",
-			   "justice climat[^ ]+"
+		"fr": [
+			"actions? (?:pour )?(?:le )?climat[^ ]+",
+		    "adaptations? (?:aux? )?(?:changements? )?climat[^ ]+",
+		    "politiques? climat[^ ]+",
+		    "politiques? (?:en )?matières? (?:de )?chang[^ ]+ clima[^ ]+",
+		    "réfugiés? climatiques?",
+		    "^cop ?[0-9]+",
+		    "accords? de paris(?:(?: sur| pour) le climat)?",
+		    "justice climat[^ ]+"
 		],
-		"en": ["climate( change)? (action|justice|refugees?|polic(y|ies)|adaptation)",
+		"en": [
+			"climate( change)? (action|justice|refugees?|polic(y|ies)|adaptation)",
 			"(actions?|adaptations?) (for the|to) climate",
-			"(COP|cop) ?[0-9]+",
-			"[pP]aris agreement"
+			"^cop ?[0-9]+",
+			"paris agreement"
 		],
 		"nl": [
-				"klimaat(actie|adaptatie|aanpassing|beleid|vluchteling)",
-				"aanpassing aan klimaat(verandering)?",
-				"beleid inzake klimaatverandering"
+			"klimaat(actie|adaptatie|aanpassing|beleid|vluchteling)",
+			"aanpassing aan klimaat(verandering)?",
+			"beleid inzake klimaatverandering"
 		]
 	}
 }

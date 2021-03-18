@@ -15,7 +15,7 @@ wildcard_constraints:
     school="[-a-zA-Z]*",
     special_schools="ucl"
 
-schools = ["unamur", "helmo"]
+schools = ["vub", "kuleuven", "uhasselt", "uslb", "uantwerp"]
 
 ruleorder: merge_duplicates > crawl_programs
 
@@ -34,7 +34,7 @@ rule crawl_courses_for_all_school:
 
 rule prepare_to_web_for_all_school:
     input:
-        expand(WEB_INPUT_FOLDER + '{school}_data_{year}_light.csv', school=schools, year=YEAR)
+        expand(WEB_INPUT_FOLDER + '{school}_data_{year}_light.csv', school=schools, year=YEAR),
         expand(WEB_INPUT_FOLDER + '{school}_data_{year}_programs.csv', school=schools, year=YEAR)
 
 # Per school rule
