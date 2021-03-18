@@ -1,6 +1,13 @@
 {
     "schools": [
         {
+            "id": 1,
+            "name": "Université catholique de Louvain",
+            "shortName": "UCLouvain",
+            "file": "ucl_data_2020_light.json",
+            "programFile": "ucl_data_2020_programs.json"
+        },        
+        {
             "id": 2,
             "name": "Université Libre de Bruxelles",            
             "shortName": "ULB",

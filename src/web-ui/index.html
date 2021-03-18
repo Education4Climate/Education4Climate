@@ -1,3 +1,4 @@
+<!doctype html>
 <html>
 
 <head>
@@ -180,8 +181,8 @@
 
                 <h6 class="text-primary">Intitulé</h6>
                 <div class="filter">
-                    <input type="text" class="form-control name-search" id="inlineFormInputName2"
-                        placeholder="exemple : climat" onkeyup="setFilters('courses')">
+                    <input type="text" class="form-control name-search" placeholder="exemple : climat"
+                        onkeyup="setFilters('courses')">
                 </div>
 
             </div>
@@ -221,18 +222,20 @@
                 <div class="filter schools-selector"></div>
 
                 <h6 class="text-primary">Thématiques</h6>
-                <div id="programs-finder-" class="filter themes-selector"></div>
+                <div class="filter themes-selector"></div>
+
+                <h6 class="text-primary">Disciplines</h6>
+                <div class="filter fields-selector"></div>
 
                 <h6 class="text-primary">Intitulé</h6>
                 <div class="filter">
-                    <input type="text" class="form-control name-search" id="inlineFormInputName2"
-                        placeholder="exemple : climat" onkeyup="setFilters('programs')">
+                    <input type="text" class="form-control name-search" placeholder="exemple : climat"
+                        onkeyup="setFilters('programs')">
                 </div>
 
             </div>
 
             <!-- TABLE -->
-
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                 <div
                     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
@@ -240,6 +243,43 @@
                 </div>
 
                 <h6 class="results-count"></h6>
+
+                <!--div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"><span class="badge badge-success">19</span> Science et gestion de
+                                l'environnement</h5>
+                            <small>S2UENV01</small>
+                        </div>
+                        <p class="mb-1"><span class="badge badge-primary badge-theme">energy</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">consumption</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">environment</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">climatology</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">durability</span></p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"><span class="badge badge-success">14</span> Master : bioingénieur en
+                                sciences et technologies de l'environnement</h5>
+                            <small class="text-muted">S2XENV01</small>
+                        </div>
+                        <p class="mb-1"><span class="badge badge-primary badge-theme">environment</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">climatology</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">durability</span></p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1"><span class="badge badge-success">11</span> Sciences de l'ingénieur,
+                                orientation bioingénieur</h5>
+                            <small class="text-muted">MA-IRBE</small>
+                        </div>
+                        <p class="mb-1"><span class="badge badge-primary badge-theme">energy</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">environment</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">climatology</span>&nbsp;<span
+                                class="badge badge-primary badge-theme">durability</span></p>
+                    </a>
+                </div-->
+
                 <div id="programs-table-container">
                 </div>
             </main>
@@ -317,6 +357,65 @@
                                 <div style="color:black;font-size:2rem;" id="course-details-shift-score"></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary mr-auto" role="button" aria-disabled="true"
+                        id="course-details-url" target="_blank">Site de l'ULB</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DETAILS PROGRAMMES -->
+
+    <div class="modal fade" id="program-details-modal" tabindex="-1" aria-labelledby="Détail d'un programme"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span id="program-details-name"></span>
+                        <span class="badge badge-light" id="program-details-id"></span>&nbsp;
+                        <span class="badge badge-light" id="course-details-years"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="program-details-themes">
+                    </div>
+                    <hr>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Université : </h6>
+                        <span id="program-details-school"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Faculté : </h6>
+                        <span id="program-details-faculty"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Campus : </h6>
+                        <span id="program-details-campus"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Diplôme : </h6>
+                        <span id="program-details-cycle"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Discipline : </h6>
+                        <span id="program-details-field"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Score <sup
+                                data-toggle="tooltip"
+                                title="Le score climat c'est Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                                style="cursor:pointer;">?</sup> : </h6>
+                        <span id="program-details-score"></span>
+                    </div>
+                    <hr>
+                    <div id="program-details-courses">
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -104,9 +104,11 @@ function buildCoursesFinderFilters(courses) {
 
     schoolsCount.forEach(school => {
 
+        var schoolId = "school-" + school.toId();
+
         var line = "<div class=\"custom-control custom-checkbox\"><span class=\"float-right badge badge-light round\">" + schoolsCount[school] + "</span>" +
-            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + school + "\" value=\"" + school + "\" onclick=\"setFilters('courses')\" checked>" +
-            "<label class=\"custom-control-label\" for=\"checkbox-" + school + "\">" + school + "</label></div>";
+            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + schoolId + "\" value=\"" + schoolId + "\" onclick=\"setFilters('courses')\" checked>" +
+            "<label class=\"custom-control-label\" for=\"checkbox-" + schoolId + "\">" + school + "</label></div>";
         document.querySelector("#courses-finder .schools-selector").innerHTML += line;
     });
 
@@ -144,14 +146,6 @@ function buildProgramsFinderFilters(programs) {
             programsThemesCount[theme]++;
         });
 
-        if (!programsFieldsCount.includes(program.field)) {
-
-            programsFieldsCount.push(program.field);
-            programsFieldsCount[program.field] = 0;
-        }
-
-        programsFieldsCount[program.field]++;
-
         // On peuple chaque compteur d'université
 
         if (!schoolsCount.includes(program.schoolShortName)) {
@@ -161,29 +155,54 @@ function buildProgramsFinderFilters(programs) {
         }
 
         schoolsCount[program.schoolShortName]++;
+
+        // On parcourt les disciplines du programme et on peuple chaque compteur
+
+        if (!programsFieldsCount.includes(program.field)) {
+
+            programsFieldsCount.push(program.field);
+            programsFieldsCount[program.field] = 0;
+        }
+
+        programsFieldsCount[program.field]++;
     });
 
-    // On trie les thématiques et les langues alphabétiquement
+    // On trie les écoles, les thématiques et les disciplines alphabétiquement
 
     schoolsCount.sort((a, b) => { return a.localeCompare(b); }); // a.localCompare(b) permet de trier sans prendre en compte les accents (e/é/è)
     programsThemesCount.sort((a, b) => { return a.localeCompare(b); });
+    programsFieldsCount.sort((a, b) => { return a.localeCompare(b); });
 
     // On crée les 2 filtres
 
     schoolsCount.forEach(school => {
 
+        var schoolId = "school-" + school.toId();
+
         var line = "<div class=\"custom-control custom-checkbox\"><span class=\"float-right badge badge-light round\">" + schoolsCount[school] + "</span>" +
-            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + school + "\" value=\"" + school + "\" onclick=\"setFilters('programs')\" checked>" +
-            "<label class=\"custom-control-label\" for=\"checkbox-" + school + "\">" + school + "</label></div>";
+            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + schoolId + "\" value=\"" + schoolId + "\" onclick=\"setFilters('programs')\" checked>" +
+            "<label class=\"custom-control-label\" for=\"checkbox-" + schoolId + "\">" + school + "</label></div>";
         document.querySelector("#programs-finder .schools-selector").innerHTML += line;
     });
 
     programsThemesCount.forEach(theme => {
 
+        var themeId = "theme-" + theme.toId();
+
         var line = "<div class=\"custom-control custom-checkbox\"><span class=\"float-right badge badge-light round\">" + programsThemesCount[theme] + "</span>" +
-            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + theme + "\" value=\"" + theme + "\" onclick=\"setFilters('programs')\" checked>" +
-            "<label class=\"custom-control-label\" for=\"checkbox-" + theme + "\">" + theme + "</label></div>";
+            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + themeId + "\" value=\"" + themeId + "\" onclick=\"setFilters('programs')\" checked>" +
+            "<label class=\"custom-control-label\" for=\"checkbox-" + themeId + "\">" + theme + "</label></div>";
         document.querySelector("#programs-finder .themes-selector").innerHTML += line;
+    });
+
+    programsFieldsCount.forEach(field => {
+
+        var fieldId = "field-" + field.toId();
+
+        var line = "<div class=\"custom-control custom-checkbox\"><span class=\"float-right badge badge-light round\">" + programsFieldsCount[field] + "</span>" +
+            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + fieldId + "\" value=\"" + fieldId + "\" onclick=\"setFilters('programs')\" checked>" +
+            "<label class=\"custom-control-label\" for=\"checkbox-" + fieldId + "\">" + field + "</label></div>";
+        document.querySelector("#programs-finder .fields-selector").innerHTML += line;
     });
 }
 
@@ -198,7 +217,6 @@ function buildCoursesFinderTable(courses) {
         data: courses,
         pagination: "local",
         paginationSize: 20,
-        initialSort: [{ column: "climateScore", dir: "desc" }],
         rowClick: function (e, row) { openModal(e, row); },
         locale: true,
         columns: [
@@ -214,6 +232,7 @@ function buildCoursesFinderTable(courses) {
                     return cellValue;
                 }
             },
+            { title: "ID thèmes", field: "themesIds", sorter: "string", visible: false },
             {
                 title: "Langues", field: "languages", headerSort: false, formatter: function (cell, formatterParams, onRendered) {
 
@@ -240,14 +259,26 @@ function buildProgramsFinderTable(programs) {
         data: programs,
         pagination: "local",
         paginationSize: 20,
-        initialSort: [{ column: "climateScore", dir: "desc" }],
-        rowClick: function (e, row) { openModal(e, row); },
+        initialSort: [{ column: "score", dir: "desc" }],
+        rowClick: function (e, row) { openProgramModal(e, row); },
+        responsiveLayout: "collapse",
         locale: true,
         columns: [
+            { title: "Score", field: "score", sorter: "int" },
             { title: "Université", field: "schoolShortName", sorter: "string" },
+            { title: "ID Université", field: "schoolId", sorter: "string", visible: false },
             { title: "Intitulé", field: "name", sorter: "string" },
-            { title: "Code", field: "id", formatter: "link", formatterParams: { labelField: "id", urlField: "url", target: "_blank" } },
+            {
+                title: "Code", field: "id", formatter: function (cell, formatterParams, onRendered) {
+
+                    var url = cell.getRow().getData().url;
+                    var value = cell.getValue();
+
+                    return url == null ? value : "<a href=\'" + url + "' target='_blank'>" + value + "</a>";
+                }
+            },
             { title: "Discipline", field: "field", sorter: "string" },
+            { title: "ID Discipline", field: "fieldId", sorter: "string", visible: false },
             {
                 title: "Thématiques", field: "themes", headerSort: false, formatter: function (cell, formatterParams, onRendered) {
 
@@ -256,7 +287,8 @@ function buildProgramsFinderTable(programs) {
 
                     return cellValue;
                 }
-            }
+            },
+            { title: "ID thèmes", field: "themesIds", sorter: "string", visible: false }
         ]
     });
 
@@ -267,7 +299,7 @@ function buildFinderCount(mode) {
 
     var type = mode == "courses" ? "cours" : "programmes";
 
-    document.querySelector("#" + mode + "-finder" + " .results-count").innerHTML = "<strong>" + table.getDataCount("active") + " " + type + " sur un total de " + table.getDataCount() + " correspondent à vos critères</strong>";
+    document.querySelector("#" + mode + "-finder" + " .results-count").innerHTML = "<strong>" + table.getDataCount("active") + " " + type + " sur un total de " + table.getDataCount() + "</strong>";
 }
 
 /* FILTRES */
@@ -277,7 +309,7 @@ function setFilters(mode) {
     // On chaîne les différents filtres
 
     if (mode == "courses") table.setFilter([getSelectedSchoolsFilter(mode), getSelectedThemesFilter(mode), getSelectedLanguagesFilter(), getSearchedNameFilter(mode)]);
-    else if (mode == "programs") table.setFilter([getSelectedSchoolsFilter(mode), getSelectedThemesFilter(mode), getSearchedNameFilter(mode)]);
+    else if (mode == "programs") table.setFilter([getSelectedSchoolsFilter(mode), getSelectedThemesFilter(mode), getSelectedFieldsFilter(), getSearchedNameFilter(mode)]);
 
     // On recalcule le compteur de résultats
 
@@ -299,7 +331,7 @@ function getSelectedSchoolsFilter(mode) {
 
     // Si aucune école n'est sélectionnée, on envoie un filtre qui fait d'office échouer la recherche ("-")
 
-    return { field: "schoolShortName", type: "keywords", value: selectedSchools == "" ? "-" : selectedSchools.trim() };
+    return { field: "schoolId", type: "keywords", value: selectedSchools == "" ? "-" : selectedSchools.trim() };
 }
 
 function getSelectedThemesFilter(mode) {
@@ -312,7 +344,7 @@ function getSelectedThemesFilter(mode) {
 
     // Si aucune thématique n'est sélectionnée, on envoie un filtre qui fait d'office échouer la recherche ("-")
 
-    return { field: "themes", type: "keywords", value: selectedThemes == "" ? "-" : selectedThemes.trim() };
+    return { field: "themesIds", type: "keywords", value: selectedThemes == "" ? "@" : selectedThemes.trim() };
 }
 
 function getSelectedLanguagesFilter() {
@@ -328,9 +360,20 @@ function getSelectedLanguagesFilter() {
     return { field: "languages", type: "keywords", value: selectedLanguages == "" ? "-" : selectedLanguages.trim() };
 }
 
-function toggleFilters(mode) {
+function getSelectedFieldsFilter() {
 
-    console.log("toggleFilters(" + mode + ")");
+    var selectedFields = "";
+
+    document.querySelectorAll("#programs-finder .fields-selector input[type='checkbox']:checked").forEach(checkbox => {
+        selectedFields += checkbox.value + " ";
+    });
+
+    // Si aucune discipline n'est sélectionnée, on envoie un filtre qui fait d'office échouer la recherche ("-")
+
+    return { field: "fieldId", type: "keywords", value: selectedFields == "" ? "-" : selectedFields.trim() };
+}
+
+function toggleFilters(mode) {
 
     var sidebar = document.querySelector("#" + mode + "-finder .sidebar");
     var button = document.querySelector("#" + mode + "-finder .show-filters");
@@ -370,6 +413,32 @@ function openModal(e, row) {
     document.getElementById("course-details-languages").innerHTML = languages;
 
     $('#course-details-modal').modal();
+}
+
+function openProgramModal(e, row) {
+
+    program = row.getData();
+
+    // []courses
+    // []ects
+    // [] themes + scores (?)
+
+    var themes = "";
+    program.themes.forEach(value => { themes += "<span class='badge badge-primary badge-theme'>" + value + "</span>&nbsp;"; });
+    document.getElementById("program-details-themes").innerHTML = themes;
+
+    document.querySelector("#program-details-name").innerHTML = program.name;
+    document.querySelector("#program-details-id").innerHTML = program.id;
+
+    document.querySelector("#program-details-school").innerHTML = program.schoolShortName;
+    document.querySelector("#program-details-cycle").innerHTML = program.cycle;
+    document.querySelector("#program-details-campus").innerHTML = program.campus;
+    document.querySelector("#program-details-faculty").innerHTML = program.faculty;
+    document.querySelector("#program-details-field").innerHTML = program.field;
+    document.querySelector("#program-details-score").innerHTML = program.score;
+    
+
+    $('#program-details-modal').modal();
 }
 
 function closeModal() {
@@ -428,13 +497,15 @@ async function getCourses() {
                         courses.push({
 
                             schoolShortName: schools[i].shortName,
+                            schoolId: "school-" + schools[i].shortName.toId(),
                             name: course.name,
                             shortName: course.id,
                             years: course.year,
                             teachers: course.teacher,
                             url: course.url,
                             languages: course.language,
-                            themes: course.themes
+                            themes: course.themes,
+                            themesIds: course.themes.map(a => "theme-" + a.toId()),
                         });
                     });
                 }
@@ -462,23 +533,23 @@ async function getPrograms() {
 
                     data.forEach(p => {
 
-                        var themes = getThemes(p); // Temporaire en attendant de recevoir un tableau de thématiques
+                        programs.push({
 
-                        if (themes.length > 0) { // Temporaire en attendant que les cours sans thèmes soient filtrés du JSON
-
-                            programs.push({
-
-                                id: p.id,
-                                name: p.name,
-                                url: p.url,
-                                faculty: p.faculty,
-                                campus: p.campus,
-                                schoolShortName: schools[i].shortName,
-                                courses: p.courses,
-                                themes: themes,
-                                field: p.field
-                            });
-                        }
+                            id: p.id,
+                            name: p.name,
+                            url: p.url,
+                            faculty: p.faculty,
+                            campus: p.campus,
+                            schoolShortName: schools[i].shortName,
+                            schoolId: "school-" + schools[i].shortName.toId(),
+                            courses: p.courses,
+                            themes: p.themes,
+                            themesIds: p.themes.map(a => "theme-" + a.toId()),
+                            field: p.field,
+                            fieldId: "field-" + p.field.toId(),
+                            score: p.themes_scores.reduce((a, b) => a + b, 0),
+                            cycle: p.cycle
+                        });
                     });
                 });
         }
@@ -491,14 +562,9 @@ async function getPrograms() {
 
 /* HELPERS */
 
-function getThemes(program) {  // Temporaire en attendant de recevoir un tableau de thématiques
-
-    var themes = [];
-
-    THEMES.forEach(theme => { if (program[theme]) { themes.push(theme); } });
-
-    return themes;
-}
+String.prototype.toId = function () {
+    return this.toLowerCase().replace(/[^a-zA-Z0-9]+/g, "-");
+};
 
 function getLanguageFromISOCode(code) {
 
