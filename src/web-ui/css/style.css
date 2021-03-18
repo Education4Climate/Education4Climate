@@ -98,6 +98,16 @@
         min-height: 0;
     }
 
+    #courses-finder h1, #programs-finder h1 {
+        font-size: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h6.results-count  {
+        text-align: center;
+    }
+
     .show-filters {
         display: block;
     }
