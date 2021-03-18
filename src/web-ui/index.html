@@ -225,7 +225,7 @@
                 <div class="filter themes-selector"></div>
 
                 <h6 class="text-primary">Disciplines</h6>
-                <div class="filter fields-selector"></div>      
+                <div class="filter fields-selector"></div>
 
                 <h6 class="text-primary">Intitulé</h6>
                 <div class="filter">
@@ -357,6 +357,65 @@
                                 <div style="color:black;font-size:2rem;" id="course-details-shift-score"></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary mr-auto" role="button" aria-disabled="true"
+                        id="course-details-url" target="_blank">Site de l'ULB</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DETAILS PROGRAMMES -->
+
+    <div class="modal fade" id="program-details-modal" tabindex="-1" aria-labelledby="Détail d'un programme"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><span id="program-details-name"></span>
+                        <span class="badge badge-light" id="program-details-id"></span>&nbsp;
+                        <span class="badge badge-light" id="course-details-years"></span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="program-details-themes">
+                    </div>
+                    <hr>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Université : </h6>
+                        <span id="program-details-school"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Faculté : </h6>
+                        <span id="program-details-faculty"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Campus : </h6>
+                        <span id="program-details-campus"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Diplôme : </h6>
+                        <span id="program-details-cycle"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Discipline : </h6>
+                        <span id="program-details-field"></span>
+                    </div>
+                    <div>
+                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Score <sup
+                                data-toggle="tooltip"
+                                title="Le score climat c'est Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                                style="cursor:pointer;">?</sup> : </h6>
+                        <span id="program-details-score"></span>
+                    </div>
+                    <hr>
+                    <div id="program-details-courses">
                     </div>
                 </div>
                 <div class="modal-footer">

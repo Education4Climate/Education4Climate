@@ -104,9 +104,11 @@ function buildCoursesFinderFilters(courses) {
 
     schoolsCount.forEach(school => {
 
+        var schoolId = "school-" + school.toId();
+
         var line = "<div class=\"custom-control custom-checkbox\"><span class=\"float-right badge badge-light round\">" + schoolsCount[school] + "</span>" +
-            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + school + "\" value=\"" + school + "\" onclick=\"setFilters('courses')\" checked>" +
-            "<label class=\"custom-control-label\" for=\"checkbox-" + school + "\">" + school + "</label></div>";
+            "<input type=\"checkbox\" class=\"custom-control-input\" id=\"checkbox-" + schoolId + "\" value=\"" + schoolId + "\" onclick=\"setFilters('courses')\" checked>" +
+            "<label class=\"custom-control-label\" for=\"checkbox-" + schoolId + "\">" + school + "</label></div>";
         document.querySelector("#courses-finder .schools-selector").innerHTML += line;
     });
 
@@ -258,7 +260,7 @@ function buildProgramsFinderTable(programs) {
         pagination: "local",
         paginationSize: 20,
         initialSort: [{ column: "score", dir: "desc" }],
-        rowClick: function (e, row) { openModal(e, row); },
+        rowClick: function (e, row) { openProgramModal(e, row); },
         responsiveLayout: "collapse",
         locale: true,
         columns: [
@@ -413,6 +415,32 @@ function openModal(e, row) {
     $('#course-details-modal').modal();
 }
 
+function openProgramModal(e, row) {
+
+    program = row.getData();
+
+    // []courses
+    // []ects
+    // [] themes + scores (?)
+
+    var themes = "";
+    program.themes.forEach(value => { themes += "<span class='badge badge-primary badge-theme'>" + value + "</span>&nbsp;"; });
+    document.getElementById("program-details-themes").innerHTML = themes;
+
+    document.querySelector("#program-details-name").innerHTML = program.name;
+    document.querySelector("#program-details-id").innerHTML = program.id;
+
+    document.querySelector("#program-details-school").innerHTML = program.schoolShortName;
+    document.querySelector("#program-details-cycle").innerHTML = program.cycle;
+    document.querySelector("#program-details-campus").innerHTML = program.campus;
+    document.querySelector("#program-details-faculty").innerHTML = program.faculty;
+    document.querySelector("#program-details-field").innerHTML = program.field;
+    document.querySelector("#program-details-score").innerHTML = program.score;
+    
+
+    $('#program-details-modal').modal();
+}
+
 function closeModal() {
 
     document.getElementById("course-details-modal").style.display = "none";
@@ -519,7 +547,8 @@ async function getPrograms() {
                             themesIds: p.themes.map(a => "theme-" + a.toId()),
                             field: p.field,
                             fieldId: "field-" + p.field.toId(),
-                            score: p.themes_scores.reduce((a, b) => a + b, 0)
+                            score: p.themes_scores.reduce((a, b) => a + b, 0),
+                            cycle: p.cycle
                         });
                     });
                 });
