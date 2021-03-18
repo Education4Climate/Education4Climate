@@ -77,6 +77,9 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
             subprogram_name = subprogram_name.strip("\r ")
             cur_dict["name"] += f" {subprogram_name}" if subprogram_name is not None else ''
 
+        # Add url
+        cur_dict['url'] = response.url
+
         courses_codes = response.xpath("//div[@id='honglet1']//td[@class='courssigle']/text()").getall()
         if len(courses_codes) == 0:
             courses_codes = response.xpath("//td[@class='courssigle']/text()").getall()

@@ -78,6 +78,7 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 ects_slimmed += [list(set(course_ects))[0]]
 
         cur_dict = {'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked
+                    'url': response.url,
                     'courses': codes,
                     'ects': ects_slimmed
                     }

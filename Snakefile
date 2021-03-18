@@ -15,7 +15,7 @@ wildcard_constraints:
     school="[-a-zA-Z]*",
     special_schools="ucl"
 
-schools = ["vub", "kuleuven", "uhasselt", "uslb", "uantwerp"]
+schools = ["vub", "kuleuven", "uliege", "umons", "unamur"]
 
 ruleorder: merge_duplicates > crawl_programs
 

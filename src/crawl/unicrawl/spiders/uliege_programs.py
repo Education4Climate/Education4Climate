@@ -68,6 +68,7 @@ class ULiegeSpider(scrapy.Spider, ABC):
                     "cycle": cycle,
                     "campus": campus,
                     "faculty": faculty,
+                    "url": response.url,
                     "courses": courses,
                     "ects": ects}
 

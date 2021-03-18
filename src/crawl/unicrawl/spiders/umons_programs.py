@@ -51,10 +51,12 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
                 '//div[div/text()="Lieu"]').css('div.value::text').get()
             # ects = response.xpath(
             #     '//div[div/text()="Crédits ECTS"]').css('div.value::text').get()
-            yield response.follow(url=href, callback=self.parse_prog_detail, cb_kwargs={'campus': campus, 'cycle': cycle})
+            yield response.follow(url=href, callback=self.parse_prog_detail, cb_kwargs={'campus': campus,
+                                                                                        'cycle': cycle,
+                                                                                        'url': response.url})
 
     @staticmethod
-    def parse_prog_detail(response, campus, cycle):
+    def parse_prog_detail(response, campus, cycle, url):
 
         faculty = response.css('td.facTitle::text').get()
         program_name = response.css('td.cursusTitle::text').get()
@@ -68,6 +70,7 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
                         'faculty': faculty,
                         'cycle': cycle,
                         'campus': campus,
+                        'url': url,
                         'courses': courses,
                         'ects': ects}
         yield program_dict

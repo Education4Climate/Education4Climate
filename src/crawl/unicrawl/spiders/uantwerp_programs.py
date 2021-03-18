@@ -74,7 +74,8 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
 
         cur_dict = {'name': name,
                     'faculty': faculty,
-                    'campus': campus}
+                    'campus': campus,
+                    'url': response.url}
 
         # Find the study programme link
         # Search link in the side-panel
@@ -128,8 +129,8 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
         # One course can be several times in the same program
         courses_codes, ects = zip(*list(set(zip(courses_codes, ects))))
 
-        cur_dict = {"courses": courses_codes,
-                    "ects": ects,
-                    "url": response.url}
+        cur_dict = {"url": response.url,
+                    "courses": courses_codes,
+                    "ects": ects}
 
         yield {**base_dict, **cur_dict}

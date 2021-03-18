@@ -64,5 +64,6 @@ class VUBProgramSpider(scrapy.Spider, ABC):
                "faculty": faculty,
                "campus": "",  # didn't find information on campuses"#
                "cycle": cycle,
+               "url": response.url,
                "courses": courses_codes,
                "ects": courses_ects}

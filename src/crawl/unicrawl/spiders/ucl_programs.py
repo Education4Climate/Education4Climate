@@ -56,7 +56,8 @@ class UCLProgramSpider(scrapy.Spider, ABC):
         cur_dict = {"id": program_id,
                     "name": program_name,
                     "campus": campus,
-                    "cycle": cycle}
+                    "cycle": cycle,
+                    "url": response.url}
 
         # TODO: this creates a problem as we will have mulitple lines for the same program. How to correct that?
         pages_names = ["Tronc commun", "Programme par matière", "Finalité spécialisée", "Programme"]

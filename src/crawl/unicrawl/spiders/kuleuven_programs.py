@@ -80,6 +80,7 @@ class KULeuvenProgramSpider(scrapy.Spider, ABC):
         cur_dict = {'name': program_name,
                     'cycle': cycle,
                     'campus': campus,
+                    'url': response.url,
                     'courses': courses,
                     'ects': ects,
                     'courses_urls': courses_url}

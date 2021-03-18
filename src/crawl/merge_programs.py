@@ -24,7 +24,7 @@ def merge_programs(school: str):
     # Group different keys
     programs_df_grouped = programs_df.groupby("id")
     programs_merged_df = programs_df_grouped["name"].unique().apply(lambda x: x[0]).to_frame()
-    for key in ["campus", 'cycle', "faculty"]:
+    for key in ["campus", 'cycle', "faculty", "url"]:
         programs_merged_df[key] = programs_df_grouped[key].unique().apply(lambda x: x[0])
     programs_merged_df['courses'] = programs_df_grouped["courses"].sum()
     programs_merged_df['ects'] = programs_df_grouped["ects"].sum()
