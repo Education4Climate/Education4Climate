@@ -8,9 +8,9 @@ REQUIRED_COLUMNS_COURSES = {"name", "id", "teachers", "ects", "content", "cycle"
                             "faculty", "program"}
 REQUIRED_COLUMNS_PROGRAMS = {"name", "id", "cycle", "campus", "faculty", "courses", "ects"}
 
-TYPES_COLUMNS_COURSES = {"name": str, "id": str, "teachers": list, "ects": list, "content": str,
-                         "cycle": str, "languages": list, "url": str, "year": int, "campus": str,
-                         "faculty": str, "program": str}
+TYPES_COLUMNS_COURSES = {"name": str, "id": str, "teachers": list, "content": str,
+                         "cycle": str, "languages": list, "url": str, "year": str, "campus": str,
+                         "faculty": str}
 TYPES_COLUMNS_PROGRAMS = {"name": str, "id": str, "cycle": str, "campus": str, "faculty": str, "courses": list,
                           "ects": list}
 
@@ -39,12 +39,12 @@ class TestTypesFieldsInCrawledFiles(unittest.TestCase):
         for file in glob.glob("data/crawling-output/*_programs_*.json"):
             with self.subTest(file=file):
                 columns = set(pd.read_json(file).columns)
-                self.assertTrue(columns.issubset(REQUIRED_COLUMNS_PROGRAMS),
+                self.assertTrue(REQUIRED_COLUMNS_PROGRAMS.issubset(columns),
                                 msg="\n\nThe following columns are missing in the file >>> {file} <<<\n"
                                     "====> {missing_columns}".format(file=file,
                                                                      missing_columns=REQUIRED_COLUMNS_PROGRAMS.difference(
                                                                          columns)))
-
+    """
     def test_too_many_columns_in_program_files(self):
         for file in glob.glob("data/crawling-output/*_programs_*.json"):
             with self.subTest(file=file):
@@ -64,9 +64,10 @@ class TestTypesFieldsInCrawledFiles(unittest.TestCase):
                                     "====> {not_required_columns}".format(file=file,
                                                                           not_required_columns=columns.difference(
                                                                               REQUIRED_COLUMNS_COURSES)))
+    """
 
     def test_types_in_program_files(self):
-        for file in glob.glob("data/crawling-output/*_programs_*.json"):
+        for file in [f for f in glob.glob("data/crawling-output/*_programs_*.json") if "courses" not in f]:
             with self.subTest(file=file):
                 data = pd.read_json(file)
                 for column in data.columns:
@@ -82,20 +83,22 @@ class TestTypesFieldsInCrawledFiles(unittest.TestCase):
                                                                         act_type=type(value)))
 
     def test_types_in_course_files(self):
-        for file in glob.glob("data/crawling-output/*_courses_*.json"):
+        for file in [f for f in glob.glob("data/crawling-output/*_courses_*.json") if "programs" not in f]:
             with self.subTest(file=file):
                 data = pd.read_json(file)
                 for column in data.columns:
                     with self.subTest(column=column):
-                        for value in data[column].values:
+                        for i, value in enumerate(data[column].values):
                             self.assertTrue(type(value) == TYPES_COLUMNS_COURSES[column],
                                             msg="\n\nIn the column  of the file {file}"
                                                 "\nThe expecting type of '{column}' is >> {exp_type} << "
                                                 "but a value with type >> {act_type} << "
-                                                "has been found".format(column=column,
+                                                "has been found.\nline: {line} - value: {value}".format(column=column,
                                                                         file=file,
                                                                         exp_type=TYPES_COLUMNS_COURSES[column],
-                                                                        act_type=type(value)))
+                                                                        act_type=type(value),
+                                                                        line=i,
+                                                                        value=value))
 
 
 if __name__ == '__main__':

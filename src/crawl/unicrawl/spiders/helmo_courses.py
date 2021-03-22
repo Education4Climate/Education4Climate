@@ -37,7 +37,7 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
         courses_ds = pd.Series(courses_ids_list, courses_urls_list).drop_duplicates()
 
         for course_url, course_id in courses_ds.items():
-            base_dict = {"id": course_id}
+            base_dict = {"id": str(course_id)}
             yield scrapy.Request(BASE_URl.format(course_url), self.parse_main, cb_kwargs={"base_dict": base_dict})
 
     @staticmethod

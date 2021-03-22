@@ -64,7 +64,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_course(response, base_dict):
 
-        name = response.xpath("//h1/text()").get()
+        name = response.xpath("//h1/text()").get()x
         teachers = cleanup(response.xpath("//h3[text()='Titulaire(s) du cours']/following::text()[1]").get())
         teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ")
         teachers = teachers.split(", ")
@@ -87,10 +87,9 @@ class ULBCourseSpider(scrapy.Spider, ABC):
 
         cur_dict = {
             "name": name,
-            "teacher": teachers,
+            "teachers": teachers,
             "year": f'{YEAR}-{int(YEAR) + 1}',
-            "ects": ects,
-            "language": languages,
+            "languages": languages,
             "url": response.url,
             "content": content
         }

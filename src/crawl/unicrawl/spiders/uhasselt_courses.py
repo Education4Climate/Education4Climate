@@ -28,7 +28,7 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            base_dict = {"id": course_id}
+            base_dict = {"id": str(course_id)}
             yield scrapy.Request(BASE_URL.format(YEAR, course_id), self.parse_main, cb_kwargs={"base_dict": base_dict})
 
     @staticmethod

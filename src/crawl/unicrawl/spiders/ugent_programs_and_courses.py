@@ -102,7 +102,7 @@ class UgentProgramSpider(scrapy.Spider, ABC):
         cycle = cleanup(name.split(' ')[0])
         url = response.url
         faculty = cleanup(response.xpath("//h2").get())
-        year = int(cleanup(response.xpath("//h3").get()).split("-")[-1]) - 1
+        year = str(cleanup(response.xpath("//h3").get())) + str(cleanup(response.xpath("//h3").get())+1)
         version = cleanup(get_program_version(
             response.xpath("//div[@class='menuHeader'][contains(text(), 'Programme')]").get()))
 
