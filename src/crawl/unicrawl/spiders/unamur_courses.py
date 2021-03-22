@@ -43,6 +43,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
 
         years = cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         teachers = cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
+        teachers = [teacher.replace(' (suppléant)') for teacher in teachers]
 
         # TODO: cours en plusieurs langues?
         languages = cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
