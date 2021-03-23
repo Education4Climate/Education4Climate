@@ -5,6 +5,8 @@ import pandas as pd
 
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_INPUT_FOLDER
 
+import logging
+logger = logging.getLogger()
 
 def main(school: str, year: int):
 
@@ -76,9 +78,15 @@ def main(school: str, year: int):
     faculties_to_fields_df = pd.read_csv(fields_fn)
     faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
     faculties_to_fields_ds = faculties_to_fields_df[["faculty", "field"]].set_index("faculty")
-    courses_df["field"] = courses_df["faculty"].apply(lambda x:
-                                                      list(set([faculties_to_fields_ds.loc[i][0] for i in x])))
-    programs_df["field"] = programs_df["faculty"].apply(lambda x: faculties_to_fields_ds.loc[x][0])
+
+    def faculty_to_field(faculty):
+        if faculty in faculties_to_fields_ds.index:
+            return faculties_to_fields_ds.loc[faculty][0]
+        else:
+            logger.warning(f"Warning: {faculty} was not found in faculty_to_fields")
+            return ''
+    courses_df["field"] = courses_df["faculty"].apply(lambda x: list(set([faculty_to_field(i) for i in x])))
+    programs_df["field"] = programs_df["faculty"].apply(lambda x: faculty_to_field(x))
 
     # Load scoring output
     scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
@@ -118,7 +126,6 @@ def main(school: str, year: int):
 
     programs_df.loc[programs_df.id.isin(programs_with_matches_index)]\
         .to_json(f"{web_fn}programs.json", orient='records', indent=1)
-    # TODO: regroup themes scores under two fields: 'fields' and 'fields_scores'
 
 
 if __name__ == "__main__":
