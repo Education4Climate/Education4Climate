@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Education 4 Climate">
+    <meta name="application-name" content="Education 4 Climate">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-vue.css">
+    <title>Education 4 Climate</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container-fluid">
+                    <a href="index.html"><img src="icon-climatsup.svg" alt="logo" id="logo"></a>
+                    <a class="navbar-brand text-primary" href="#">EDUCATION 4 CLIMATE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Présentation</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="courses.html">Trouver un cours<sup>BETA</sup></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="programs.html">Trouver un programme<sup>BETA</sup></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="teachers.html">Annuaire des enseignants<sup>BETA</sup></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="methodology.html">Méthodologie</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                                    aria-expanded="false">FR</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                    <li><a class="dropdown-item" href="#">NL</a></li>
+                                    <li><a class="dropdown-item" href="#">EN</a></li>
+                                </ul>
+                            </li>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="programs-loader" v-if="!dataLoaded" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="spinner-border text-primary"></div>
+            <h4>Chargement en cours</h4>
+        </div>
+
+        <div class="container-fluid" id="programs-finder" v-if="dataLoaded">
+
+            <div class="row">
+
+                <div class="d-grid show-filters-container">
+                    <button type="button" class="btn btn-primary show-filters" data-bs-toggle="collapse"
+                        data-bs-target=".sidebar">Afficher les filtres</button>
+                </div>
+
+                <div class="col-md-2 sidebar collapse">
+
+                    <h6 class="text-primary">Universités</h6>
+                    <div class="filter schools-selector">
+                        <div class="form-check" v-for="school in sortedSchools">
+                            <input type="checkbox" class="form-check-input" v-model="selectedSchools"
+                                :id="'checkbox-school-' + school.id" :value="school.id">
+                            <label class="form-check-label"
+                                :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
+                            <span
+                                class="float-end text-body"><small><strong>{{totalProgramsCounts[school.id]}}</strong></small></span>
+                        </div>
+                    </div>
+
+                    <h6 class="text-primary">Thématiques</h6>
+                    <div class="filter themes-selector">
+                        <div class="form-check" v-for="theme in sortedThemes">
+                            <input type="checkbox" class="form-check-input" v-model="selectedThemes"
+                                :id="'checkbox-theme-' + theme.id" :value="theme.id">
+                            <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{theme.name}}</label>
+                            <span
+                                class="float-end text-body"><small><strong>{{theme.totalCount}}</strong></small></span>
+                        </div>
+                    </div>
+
+                    <h6 class="text-primary">Disciplines</h6>
+                    <div class="filter fields-selector">
+                        <div class="form-check" v-for="field in sortedFields">
+                            <input type="checkbox" class="form-check-input" v-model="selectedFields"
+                                :id="'checkbox-field-' + field.id" :value="field.id"><label class="form-check-label"
+                                :for="'checkbox-field-' + field.id">{{field.name}}</label>
+                            <span
+                                class="float-end text-body"><small><strong>{{field.totalCount}}</strong></small></span>
+                        </div>
+
+
+                    </div>
+
+                    <h6 class="text-primary">Intitulé</h6>
+                    <div class="filter">
+                        <input type="text" class="form-control name-search" v-model="searchedName"
+                            placeholder="exemple : climat">
+                    </div>
+
+                </div>
+
+                <div class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4s">
+
+                    <h6 class="results-count">{{filteredPrograms.length}} programmes sur {{programs.length}}</h6>
+
+                    <div class="accordion accordion-flush overflow-hidden" id="programsAccordion">
+                        <div class="accordion-item" v-for="(program, i) in paginatedPrograms">
+                            <h2 class="accordion-header" :id="'heading'+i">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    :data-bs-target="'#collapse'+i" aria-expanded="false" :aria-controls="'collapse'+i">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h5><span class="badge bg-success">{{program.score}}</span>
+                                                    {{program.name}}
+                                                    <span
+                                                        class="badge bg-light text-body">{{schools[program.schoolId].shortName}}</span>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span v-for="(theme, j) in program.themes">
+                                                    <span class="badge bg-primary bg-theme">{{ themes.length > theme.id
+                                                        ? themes[theme.id].name : ""}}&nbsp;&nbsp;&nbsp;
+                                                        <span
+                                                            class="badge rounded-pill bg-white text-primary">{{theme.score}}</span>
+                                                    </span>
+                                                    &nbsp;
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div :id="'collapse'+i" class="accordion-collapse collapse" :aria-labelledby="'heading'+i"
+                                data-bs-parent="#programsAccordion">
+                                <div class="accordion-body">
+                                    <div class="col-12">
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Code du
+                                                cours :</h6><span>&nbsp;{{program.code}}</span>
+                                            <span v-if="program.url != ''">&nbsp;(<a :href="program.url"
+                                                    target="_blank" rel="noopener">voir sur le site</a>)</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Faculté :
+                                            </h6><span>&nbsp;{{program.faculty}}</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Campus :
+                                            </h6><span>&nbsp;{{program.campus}}</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Diplôme :
+                                            </h6><span>&nbsp;{{program.cycle}}</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                Discipline:</h6><span>&nbsp;{{fields[program.fieldId].name}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script type="module" src="js/programs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
