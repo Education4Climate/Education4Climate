@@ -1,25 +1,13 @@
-/* BASE */
-
-* {
-    font-family: Source Sans Pro, sans-serif;
+a {
+    text-decoration: none;
 }
 
 /* MENU & NAVIGATION */
 
 #logo {
-    height: 1.7rem;
-}
-
-#logo-text {
-    margin-left: .5rem;
-}
-
-#home,
-#courses-finder,
-#programs-finder,
-#teachers-directory,
-#methodology {
-    display: none;
+    height      : 1.7rem;
+    margin-right: .5rem;
+    margin-left : .3rem;
 }
 
 #preload-background-images {
@@ -44,13 +32,13 @@
 #carousel-item-students {
 
     /* Original free picture by Nathan Dumlao under Unsplash Licence : https://unsplash.com/photos/ewGMqs2tmJI */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../background-students.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background-students.jpg);
 }
 
 #carousel-item-teachers {
 
     /* Original free picture by ThisisEngineering RAEng under Unsplash Licence : https://unsplash.com/photos/mF6gB6hV5OU */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../background-teachers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background-teachers.jpg);
 }
 
 #home-intro {
@@ -65,19 +53,26 @@
     font-weight: bold;
 }
 
+#carousel-home .learn-more {
+    display:none;
+}
+
 /* TROUVER UN COURS/PROGRAMME */
 
-#courses-finder h6, #programs-finder h6 {
+#courses-finder h6,
+#programs-finder h6 {
     font-weight: 600;
 }
 
-#courses-finder .sidebar, #programs-finder .sidebar {
+#courses-finder .sidebar,
+#programs-finder .sidebar {
 
     background-color: #f8f9fa;
     min-height      : calc(100vh - 56px);
 }
 
-#courses-finder .sidebar .filter, #programs-finder .sidebar .filter {
+#courses-finder .sidebar .filter,
+#programs-finder .sidebar .filter {
     margin-bottom: 1rem;
 }
 
@@ -85,26 +80,28 @@
     display: none;
 }
 
-.badge-primary.badge-theme {
-    padding: .3rem;
+#programs-loader, #courses-loader {
+    min-height: calc(100vh - 56px);
 }
+
+#programs-loader h4, courses-loader h4 {
+    margin-top: 1rem;
+}
+
+.filter .form-check { overflow:hidden; }
+.filter .form-check label { width: 85%; }
 
 /* RESPONSIVE */
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
 
-    #courses-finder .sidebar, #programs-finder .sidebar {
-        display   : none;
-        min-height: 0;
+    #courses-finder .sidebar,
+    #programs-finder .sidebar {
+        padding-top: 1rem;
+        min-height : 0;
     }
 
-    #courses-finder h1, #programs-finder h1 {
-        font-size: 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    h6.results-count  {
+    h6.results-count {
         text-align: center;
     }
 
@@ -118,13 +115,39 @@
 
     #carousel-item-students,
     #carousel-item-teachers {
-    /*.carousel-caption */
+        /*.carousel-caption */
         height: calc(100vh - 56px);
     }
 
     .carousel-caption {
-        height: calc(100vh - 56px);
+        height     : calc(100vh - 56px);
         align-items: center !important;
-        display: flex;
+        display    : flex;
+    }
+
+    .bg-theme {
+        margin-bottom: 0.3rem;
+    }
+
+    .accordion-button {
+        padding-left : 0.2rem;
+        padding-right: 0.2rem;
+    }
+
+    #carousel-home .learn-more {
+        margin-top: 2rem;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1199.99px) {
+
+    #courses-finder .sidebar,
+    #programs-finder .sidebar {
+        display: block;
+    }
+
+    h6.results-count {
+        padding-left: 20px;
     }
 }
