@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tabulator_simple.min.css">
 
 </head>
 
@@ -21,7 +20,7 @@
 
     <!-- NAVIGATION -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
         <a href="index.html"><img src="icon-climatsup.svg" alt="logo" id="logo"></a>
         <a class="navbar-brand text-primary" href="index.html" id="logo-text">EDUCATION 4 CLIMATE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -30,28 +29,27 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Présentation</a>
+                    <a class="nav-link" href="programs.html">Trouver un programme</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=courses-finder">Trouver un cours
-                        <sup>BETA</sup></a>
+                    <a class="nav-link" href="courses.html">Trouver un cours</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=programs-finder">Trouver un programme
-                        <sup>BETA</sup></a>
+                    <a class="nav-link" href="teachers.html">Annuaire des enseignants</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="?page=teachers-directory">Annuaire des enseignants<sup>BETA</sup></a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="?page=methodology">Méthodologie</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
+                        aria-expanded="false">FR</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                        <li><a class="dropdown-item" href="#">NL</a></li>
+                        <li><a class="dropdown-item" href="#">EN</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -155,278 +153,6 @@
 
     </main>
 
-    <!-- TROUVER UN COURS -->
-
-    <div class="container-fluid" id="courses-finder">
-
-        <div class="row">
-
-            <div class="col-sm-12 show-filters-container">
-                <button type="button" class="btn btn-primary btn-lg btn-block show-filters"
-                    style="margin-top: 1rem;margin-bottom: 1rem;" onclick="toggleFilters('courses')">Afficher les
-                    filtres</button>
-            </div>
-            <!-- SIDEBAR -->
-
-            <div class="col-md-2 sidebar">
-
-                <h6 class="text-primary">Universités</h6>
-                <div class="filter schools-selector"></div>
-
-                <h6 class="text-primary">Thématiques</h6>
-                <div class="filter themes-selector"></div>
-
-                <h6 class="text-primary">Langues</h6>
-                <div id="languages-selector" class="filter"></div>
-
-                <h6 class="text-primary">Intitulé</h6>
-                <div class="filter">
-                    <input type="text" class="form-control name-search" placeholder="exemple : climat"
-                        onkeyup="setFilters('courses')">
-                </div>
-
-            </div>
-
-            <!-- TABLE -->
-
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-                <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1>Trouver un cours</h1>
-                </div>
-
-                <h6 class="results-count"></h6>
-                <div id="courses-table-container">
-                </div>
-            </main>
-        </div>
-
-    </div>
-
-    <!-- TROUVER UN PROGRAMME -->
-
-    <div class="container-fluid" id="programs-finder">
-
-        <div class="row">
-
-            <div class="col-sm-12 show-filters-container">
-                <button type="button" class="btn btn-primary btn-lg btn-block show-filters"
-                    style="margin-top: 1rem;margin-bottom: 1rem;" onclick="toggleFilters('programs')">Afficher les
-                    filtres</button>
-            </div>
-            <!-- SIDEBAR -->
-
-            <div class="col-md-2 sidebar">
-
-                <h6 class="text-primary">Universités</h6>
-                <div class="filter schools-selector"></div>
-
-                <h6 class="text-primary">Thématiques</h6>
-                <div class="filter themes-selector"></div>
-
-                <h6 class="text-primary">Disciplines</h6>
-                <div class="filter fields-selector"></div>
-
-                <h6 class="text-primary">Intitulé</h6>
-                <div class="filter">
-                    <input type="text" class="form-control name-search" placeholder="exemple : climat"
-                        onkeyup="setFilters('programs')">
-                </div>
-
-            </div>
-
-            <!-- TABLE -->
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-                <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-                    <h1>Trouver un programme</h1>
-                </div>
-
-                <h6 class="results-count"></h6>
-
-                <!--div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"><span class="badge badge-success">19</span> Science et gestion de
-                                l'environnement</h5>
-                            <small>S2UENV01</small>
-                        </div>
-                        <p class="mb-1"><span class="badge badge-primary badge-theme">energy</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">consumption</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">environment</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">climatology</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">durability</span></p>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"><span class="badge badge-success">14</span> Master : bioingénieur en
-                                sciences et technologies de l'environnement</h5>
-                            <small class="text-muted">S2XENV01</small>
-                        </div>
-                        <p class="mb-1"><span class="badge badge-primary badge-theme">environment</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">climatology</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">durability</span></p>
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1"><span class="badge badge-success">11</span> Sciences de l'ingénieur,
-                                orientation bioingénieur</h5>
-                            <small class="text-muted">MA-IRBE</small>
-                        </div>
-                        <p class="mb-1"><span class="badge badge-primary badge-theme">energy</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">environment</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">climatology</span>&nbsp;<span
-                                class="badge badge-primary badge-theme">durability</span></p>
-                    </a>
-                </div-->
-
-                <div id="programs-table-container">
-                </div>
-            </main>
-        </div>
-
-    </div>
-
-    <!-- ANNUAIRE DES ENSEIGNANTS -->
-
-    <div class="container-fluid" id="teachers-directory">
-        <div class="jumbotron">
-            TODO
-        </div>
-    </div>
-
-    <!-- METHODOLOGIE -->
-
-    <div class="container-fluid" id="methodology">
-        <div class="jumbotron">
-            TODO
-        </div>
-    </div>
-
-    <!-- MODAL DETAILS COURS -->
-
-    <div class="modal fade" id="course-details-modal" tabindex="-1" aria-labelledby="Détail d'un cours"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><span id="course-details-name"></span>
-                        <span class="badge badge-light" id="course-details-short-name"></span>&nbsp;
-                        <span class="badge badge-light" id="course-details-years"></span>
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right;">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="course-details-abstract">
-                    </div>
-                    <div id="course-details-themes">
-                    </div>
-                    <hr>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Université : </h6>
-                        <span id="course-details-university"></span>
-                        <span id="course-details-campus"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Langue : </h6>
-                        <span id="course-details-languages"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Enseignant : </h6>
-                        <span id="course-details-teachers"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Crédits ECTS : </h6><span
-                            id="course-details-credits"></span>
-                    </div>
-                    <hr>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 text-center text-primary" style="font-weight: 600;">Score climat <sup
-                                    data-toggle="tooltip"
-                                    title="Le score climat c'est Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                                    style="cursor:pointer;">?</sup>
-                                <div style="color:black;font-size:2rem;" id="course-details-climate-score"></div>
-                            </div>
-                            <div class="col-md-6 text-center text-primary" style="font-weight: 600;">Score Shift <sup
-                                    data-toggle="tooltip"
-                                    title="Le score Shift c'est Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                                    style="cursor:pointer;">?</sup>
-                                <div style="color:black;font-size:2rem;" id="course-details-shift-score"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-primary mr-auto" role="button" aria-disabled="true"
-                        id="course-details-url" target="_blank">Site de l'ULB</a>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL DETAILS PROGRAMMES -->
-
-    <div class="modal fade" id="program-details-modal" tabindex="-1" aria-labelledby="Détail d'un programme"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"><span id="program-details-name"></span>
-                        <span class="badge badge-light" id="program-details-id"></span>&nbsp;
-                        <span class="badge badge-light" id="course-details-years"></span>
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float:right;">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div id="program-details-themes">
-                    </div>
-                    <hr>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Université : </h6>
-                        <span id="program-details-school"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Faculté : </h6>
-                        <span id="program-details-faculty"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Campus : </h6>
-                        <span id="program-details-campus"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Diplôme : </h6>
-                        <span id="program-details-cycle"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Discipline : </h6>
-                        <span id="program-details-field"></span>
-                    </div>
-                    <div>
-                        <h6 class="text-primary" style="font-weight: 600;display:inline;">Score <sup
-                                data-toggle="tooltip"
-                                title="Le score climat c'est Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                                style="cursor:pointer;">?</sup> : </h6>
-                        <span id="program-details-score"></span>
-                    </div>
-                    <hr>
-                    <div id="program-details-courses">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn btn-primary mr-auto" role="button" aria-disabled="true"
-                        id="course-details-url" target="_blank">Site de l'ULB</a>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="preload-background-images">
         <img src="background-students.jpg" width="1" height="1" />
         <img src="background-teachers.jpg" width="1" height="1" />
@@ -436,7 +162,6 @@
 
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tabulator.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>

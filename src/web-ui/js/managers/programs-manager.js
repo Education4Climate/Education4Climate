@@ -6,9 +6,9 @@
  */
 
 import * as constants from '../constants.js';
-import { getSchools } from './schools-manager.js';
+import * as schoolsManager from './schools-manager.js';
 
-var totalProgramsCounts = [];
+var totalProgramsCountBySchool = [];
 var programsThemes = [];
 var programsFields = [];
 
@@ -18,6 +18,7 @@ var programsFields = [];
  * their respective total occurences. All the data are cached in the
  * sessionStorage so original data are only accessed once per browser tab.
  * 
+ * @export
  * @returns a cached array of all the programs.
  */
 export async function getPrograms() {
@@ -26,11 +27,11 @@ export async function getPrograms() {
 
         var programs = [];
 
-        const schools = await getSchools();
+        const schools = await schoolsManager.getSchools();
 
         for (var i = 0; i < schools.length; i++) {
 
-            await fetch(constants.DATA_FOLDER + "/" + schools[i].programFile)
+            await fetch(constants.DATA_FOLDER + "/" + schools[i].programsFile)
                 .then(response => { return response.json(); })
                 .then(data => {
 
@@ -53,26 +54,34 @@ export async function getPrograms() {
                         });
                     });
 
-                    totalProgramsCounts[schools[i].id] = data.length;
+                    totalProgramsCountBySchool[schools[i].id] = data.length;
                 });
         }
 
-        sessionStorage.totalProgramsCounts = JSON.stringify(totalProgramsCounts);
+        sessionStorage.totalProgramsCountBySchool = JSON.stringify(totalProgramsCountBySchool);
+        sessionStorage.programsThemes = JSON.stringify(programsThemes);
         sessionStorage.programs = JSON.stringify(programs);
     }
 
     return JSON.parse(sessionStorage.programs);
 }
 
-export async function getTotalProgramsCounts() {
+/**
+ * Get the total number of programs for each school.
+ *
+ * @export
+ * @returns a cached array of the total programs count for each school, every index of the array
+ * being the index of the schools array returned by schoolsManager.getSChools().
+ */
+export async function getTotalProgramsCountBySchool() {
 
-    if (!sessionStorage.totalProgramsCounts) {
+    if (!sessionStorage.totalProgramsCountBySchool) {
 
         await getPrograms();
-        sessionStorage.totalProgramsCounts = JSON.stringify(totalProgramsCounts);
+        sessionStorage.totalProgramsCountBySchool = JSON.stringify(totalProgramsCountBySchool);
     }
 
-    return JSON.parse(sessionStorage.totalProgramsCounts);
+    return JSON.parse(sessionStorage.totalProgramsCountBySchool);
 }
 
 export async function getProgramsThemes() {
@@ -162,8 +171,8 @@ function getThemes(themes, scores) {
             score: scores[i]
         });
     }
-    
+
     t.sort((a, b) => { return b.score - a.score; });
-    
+
     return t;
 }

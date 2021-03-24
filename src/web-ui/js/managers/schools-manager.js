@@ -10,7 +10,8 @@ import * as constants from '../constants.js';
 /**
  * Gets the schools from the schools JSON file.
  * 
- * @returns a cached array of all the schools.
+ * @returns a cached array of all the schools where every index
+ * is also the school ID.
  */
 export async function getSchools() {
 
@@ -28,8 +29,8 @@ export async function getSchools() {
                         id: i,
                         name: school.name,
                         shortName: school.shortName,
-                        file: school.file,
-                        programFile: school.programFile
+                        coursesFile: school.coursesFile,
+                        programsFile: school.programsFile
                     });
                 });
             });

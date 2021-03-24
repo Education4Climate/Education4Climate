@@ -1,28 +1,28 @@
 /*jshint esversion: 8 */
 
 /**
- * @file Manages the programs finder tool.
+ * @file Manages the courses finder tool.
  * @author Quentin V.
  */
 
 import * as constants from './constants.js';
 import * as schoolsManager from './managers/schools-manager.js';
-import * as programsManager from './managers/programs-manager.js';
+import * as coursesManager from './managers/courses-manager.js';
 
 var app = Vue.createApp({
     el: '#app',
     data() {
         return {
             schools: [],
-            programs: [],
-            displayedPrograms: [],
-            totalProgramsCounts: [],
+            courses: [],
+            displayedCourses: [],
+            totalCoursesCounts: [],
             themes: [],
-            fields: [],
+            languages: [],
             dataLoaded: false,
             selectedSchools: [],
             selectedThemes: [],
-            selectedFields: [],
+            selectedLanguages: [],
             searchedName: "",
             currentPage: 0,
             showResponsiveFilters: false
@@ -37,40 +37,40 @@ var app = Vue.createApp({
 
             return this.themes.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
-        sortedFields() { /* Sort the fields DESC on the total count for display */
+        sortedLanguages() { /* Sort the languages DESC on the total count for display */
 
-            return this.fields.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
+            return this.languages.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
-        sortedPrograms() { /* Sort the programs DESC on their score for display */
+        sortedCourses() { /* Sort the courses DESC on their score for display */
 
-            return this.programs.slice().sort((a, b) => { return b.score - a.score; });
+            return this.courses.slice().sort((a, b) => { return b.themes.length - a.themes.length; });
         },
-        filteredPrograms() { /* Filter the sorted programs according to the schools/themes/fields selected and program name searched */
+        filteredCourses() { /* Filter the sorted courses according to the schools/themes/languages selected and course name searched */
 
             this.currentPage = 0;
 
-            return this.sortedPrograms.slice()
-                .filter(program => this.selectedSchools.includes(program.schoolId))
-                .filter(program => this.selectedThemes.some(theme => program.themes.map(theme => theme.id).includes(theme)))
-                .filter(program => this.selectedFields.includes(program.fieldId))
-                .filter(program => program.name.toLowerCase().includes(this.searchedName.toLowerCase()));
+            return this.sortedCourses.slice()
+                .filter(course => this.selectedSchools.includes(course.schoolId))
+                .filter(course => this.selectedThemes.some(theme => course.themes.includes(theme)))
+                .filter(course => this.selectedLanguages.some(language => course.languages.includes(language)))
+                .filter(course => course.name.toLowerCase().includes(this.searchedName.toLowerCase()));
         },
-        paginatedPrograms() { /* Paginate the filtered programs */
+        paginatedCourses() { /* Paginate the filtered courses */
 
             if (this.currentPage == 0) {
-                this.displayedPrograms = [];
+                this.displayedCourses = [];
             }
 
             const start = this.currentPage * constants.PAGE_SIZE;
             const end = start + constants.PAGE_SIZE;
             let current = start;
 
-            while (current < end && this.filteredPrograms[end - (end - current)]) {
-                this.displayedPrograms.push(this.filteredPrograms[end - (end - current)]);
+            while (current < end && this.filteredCourses[end - (end - current)]) {
+                this.displayedCourses.push(this.filteredCourses[end - (end - current)]);
                 current++;
             }
 
-            return this.displayedPrograms;
+            return this.displayedCourses;
         }
     },
     mounted() {
@@ -97,17 +97,17 @@ var app = Vue.createApp({
             this.selectedSchools = this.schools.map(school => { return school.id; }); // sets the default selected fields
         });
 
-        await programsManager.getPrograms().then(programs => this.programs = programs);
-        await programsManager.getTotalProgramsCountBySchool().then(totalProgramsCounts => this.totalProgramsCounts = totalProgramsCounts);
+        await coursesManager.getCourses().then(courses => this.courses = courses);
+        await coursesManager.getTotalCoursesCounts().then(totalCoursesCounts => this.totalCoursesCounts = totalCoursesCounts);
 
-        await programsManager.getProgramsThemes().then(themes => {
+        await coursesManager.getCoursesThemes().then(themes => {
             this.themes = themes;
             this.selectedThemes = this.themes.map(theme => { return theme.id; }); // sets the default selected themes
         });
 
-        await programsManager.getProgramsFields().then(fields => {
-            this.fields = fields;
-            this.selectedFields = this.fields.map(field => { return field.id; }); // sets the default selected fields
+        await coursesManager.getCoursesLanguages().then(languages => {
+            this.languages = languages;
+            this.selectedLanguages = this.languages.map(language => { return language.id; }); // sets the default selected languages
         });
 
         this.dataLoaded = true;
@@ -115,7 +115,7 @@ var app = Vue.createApp({
     methods: {
         loadMore() {
 
-            this.currentPage = this.displayedPrograms.length < this.filteredPrograms.length ? this.currentPage + 1 : this.currentPage;
+            this.currentPage = this.displayedCourses.length < this.filteredCourses.length ? this.currentPage + 1 : this.currentPage;
         }
     }
 });

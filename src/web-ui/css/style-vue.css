@@ -94,17 +94,20 @@
     padding: .3rem;
 }
 
-#programs-loader {
+#programs-loader, #courses-loader {
     min-height: calc(100vh - 56px);
 }
 
-#programs-loader h4 {
+#programs-loader h4, courses-loader h4 {
     margin-top: 1rem;
 }
 
+.filter .form-check { overflow:hidden; }
+.filter .form-check label { width: 85%; }
+
 /* RESPONSIVE */
 
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
 
     #courses-finder .sidebar,
     #programs-finder .sidebar {
@@ -153,7 +156,7 @@
     }
 }
 
-@media (min-width: 767.99px) {
+@media (min-width: 1199.99px) {
 
     #courses-finder .sidebar,
     #programs-finder .sidebar {
