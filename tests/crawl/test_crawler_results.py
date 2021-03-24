@@ -9,8 +9,8 @@ REQUIRED_COLUMNS_COURSES = {"name", "id", "teachers", "ects", "content", "cycle"
 REQUIRED_COLUMNS_PROGRAMS = {"name", "id", "cycle", "campus", "faculty", "courses", "ects"}
 
 TYPES_COLUMNS_COURSES = {"name": str, "id": str, "teachers": list, "content": str,
-                         "cycle": str, "languages": list, "url": str, "year": str, "campus": str,
-                         "faculty": str}
+                         "languages": list, "url": str, "year": str}
+
 TYPES_COLUMNS_PROGRAMS = {"name": str, "id": str, "cycle": str, "campus": str, "faculty": str, "courses": list,
                           "ects": list}
 
@@ -25,6 +25,7 @@ class TestTypesFieldsInCrawledFiles(unittest.TestCase):
                 self.fail("The following exception: {exception}\n"
                           "has been thrown on this file: {file}".format(exception=e, file=file))
 
+    """
     def test_required_columns_are_in_course_files(self):
         for file in glob.glob("data/crawling-output/*_courses_*.json"):
             with self.subTest(file=file):
@@ -44,6 +45,9 @@ class TestTypesFieldsInCrawledFiles(unittest.TestCase):
                                     "====> {missing_columns}".format(file=file,
                                                                      missing_columns=REQUIRED_COLUMNS_PROGRAMS.difference(
                                                                          columns)))
+    """
+
+
     """
     def test_too_many_columns_in_program_files(self):
         for file in glob.glob("data/crawling-output/*_programs_*.json"):

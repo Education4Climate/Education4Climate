@@ -6,45 +6,10 @@ import pandas as pd
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_INPUT_FOLDER
 
 
-def main(school: str, year: int):
-
-    # Load course crawling output
-    courses_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
-    courses_df = pd.read_json(open(courses_fn, 'r')).set_index("id")
-    courses_df = courses_df.drop("content", axis=1)
-
-    # Load program crawling output
-    programs_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
-    programs_df = pd.read_json(open(programs_fn, 'r'))
-
-    # TODO: remove
-    if 0:
-        fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
-        faculties_to_fields_df = pd.read_csv(fields_fn)
-        faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
-        faculties_to_fields_ds = faculties_to_fields_df[["faculty", "field"]].set_index("faculty")
-        print(programs_df["faculty"].apply(lambda x: faculties_to_fields_ds.loc[x][0]))
-        exit()
-
-    keys_in_courses = ["name", "year", "teacher", "language", "url"]
+def check_available_fields(courses_df, programs_df):
     keys_in_programs = ["ects", "faculty", "campus"]
-    # These keys can either be in the courses or programs dataframe, so check that
-    for key in keys_in_programs:
-        if key in courses_df.columns:
-            keys_in_courses.append(key)
-            keys_in_programs.remove(key)
-    courses_df = courses_df[keys_in_courses]
-    # TODO: actually change that in the crawler
-    # If those directly in courses, they might not be in list format
-    for key in ["ects", "faculty", "campus"]:
-        if key in keys_in_courses:
-            courses_df[key] = courses_df[key].apply(lambda x: [x] if not isinstance(x, list) else x)
-            courses_df[key] = courses_df[key].apply(lambda x: list(set(x)))
+    keys_in_programs = [key for key in keys_in_programs if key in programs_df.columns]
 
-    # Associate programs data to courses
-    # TODO: maybe a more efficient way to do this
     courses_aux_df = pd.DataFrame(index=courses_df.index, columns=keys_in_programs)
     for course_id in courses_aux_df.index:
         ects = []
@@ -69,9 +34,12 @@ def main(school: str, year: int):
         if 'campus' in keys_in_programs:
             courses_aux_df.loc[course_id, 'campus'] = list(set(campus))
 
+    print(courses_aux_df)
     courses_df = pd.concat([courses_df, courses_aux_df], axis=1)
+    return courses_df
 
-    # Convert faculties to disciplines
+
+def convert_faculty_to_thematics(courses_df, programs_df, school: str):
     fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
     faculties_to_fields_df = pd.read_csv(fields_fn)
     faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
@@ -79,6 +47,49 @@ def main(school: str, year: int):
     courses_df["field"] = courses_df["faculty"].apply(lambda x:
                                                       list(set([faculties_to_fields_ds.loc[i][0] for i in x])))
     programs_df["field"] = programs_df["faculty"].apply(lambda x: faculties_to_fields_ds.loc[x][0])
+    return courses_df, programs_df
+
+
+def main(school: str, year: int):
+    # Load course crawling output
+    courses_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
+    courses_df = pd.read_json(open(courses_fn, 'r')).set_index("id")
+    courses_df = courses_df.drop("content", axis=1)
+
+    # Load program crawling output
+    programs_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
+    programs_df = pd.read_json(open(programs_fn, 'r'))
+
+    # These keys can either be in the courses or programs dataframe, so check that
+
+    keys_in_courses = ["name", "year", "teachers", "languages", "url"]
+
+    if 0:
+        for key in keys_in_programs:
+            if key in courses_df.columns:
+                keys_in_courses.append(key)
+                keys_in_programs.remove(key)
+
+    keys_in_courses = [key for key in keys_in_courses if key in courses_df.columns]
+    courses_df = courses_df[keys_in_courses]
+    # TODO: actually change that in the crawler
+    # If those directly in courses, they might not be in list format
+    for key in ["ects", "faculty", "campus"]:
+        if key in keys_in_courses:
+            courses_df[key] = courses_df[key].apply(lambda x: [x] if not isinstance(x, list) else x)
+            courses_df[key] = courses_df[key].apply(lambda x: list(set(x)))
+
+    # Associate programs data to courses
+    # TODO: maybe a more efficient way to do this
+
+    #courses_df = check_available_fields(courses_df, programs_df)
+
+    # Convert faculties to disciplines
+
+    if "faculty" in courses_df.columns:
+        courses_df, programs_df = convert_faculty_to_thematics(courses_df, programs_df, school)
 
     # Load scoring output
     scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
@@ -91,7 +102,7 @@ def main(school: str, year: int):
     courses_df = courses_df.reset_index()
     web_fn = Path(__file__).parent.absolute().joinpath(f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_")
     courses_df.to_json(f"{web_fn}heavy.json", orient='records')
-    courses_df.loc[courses_df.id.isin(courses_with_matches_index)]\
+    courses_df.loc[courses_df.id.isin(courses_with_matches_index)] \
         .to_json(f"{web_fn}light.json", orient='records', indent=1)
 
     # Creating program file (only programs with score > 0)
@@ -105,7 +116,7 @@ def main(school: str, year: int):
     programs_df["themes"] = programs_scores_df.apply(lambda x: x[x > 0].index.tolist(), axis=1).to_frame()
     programs_df["themes_scores"] = programs_scores_df.apply(lambda x: x[x > 0].values.tolist(), axis=1).to_frame()
     programs_df = programs_df.reset_index()
-    programs_df.loc[programs_df.id.isin(programs_with_matches_index)]\
+    programs_df.loc[programs_df.id.isin(programs_with_matches_index)] \
         .to_json(f"{web_fn}programs.json", orient='records', indent=1)
     # TODO: regroup themes scores under two fields: 'fields' and 'fields_scores'
 

@@ -6,7 +6,7 @@ from pathlib import Path
 UGENT_CRAWLED_PATH = Path(__file__).parent.absolute().joinpath(
     '../../../../data/crawling-output/ugent_courses_and_programs_2020.json')
 UGENT_NEW_CRAWLED_PATH_PROGRAMS = Path(__file__).parent.absolute().joinpath(
-    '../../../data/crawling-output/ugent_programs_2020.json')
+    '../../../../data/crawling-output/ugent_programs_2020.json')
 UGENT_NEW_CRAWLED_PATH_COURSES = Path(__file__).parent.absolute().joinpath(
     '../../../../data/crawling-output/ugent_courses_2020.json')
 
@@ -45,6 +45,8 @@ def main():
                 courses_data.append(course_row)
 
     new_columns = [col.removeprefix('courses_') for col in COURSES_COLUMNS] + ["year", "cycle", "name"]
+    new_columns[new_columns.index("courses")] = "id"
+    new_columns[new_columns.index("urls")] = "url"
     print("new_columns: {}".format(new_columns))
     courses_df = pd.DataFrame(columns=new_columns,
                               data=courses_data)
