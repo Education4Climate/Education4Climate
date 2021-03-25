@@ -40,6 +40,10 @@ export async function getCourses() {
                             languages: getLanguages(course.language),
                             themes: getThemes(course.themes)
                         });
+
+                        if (!course.language) {
+                            console.log(schools[i].name + " : " + course.id + " has no language");
+                        }
                     });
 
                     totalCoursesCounts[schools[i].id] = data.length;
@@ -129,34 +133,37 @@ function getLanguages(languages) {
 
     var l = [];
 
-    for (var i = 0; i < languages.length; i++) {
+    if (languages) {
 
-        var id = -1;
+        for (var i = 0; i < languages.length; i++) {
 
-        for (var j = 0; j < coursesLanguages.length; j++) {
+            var id = -1;
 
-            if (coursesLanguages[j].name == languages[i]) {
+            for (var j = 0; j < coursesLanguages.length; j++) {
 
-                id = j;
-                break;
+                if (coursesLanguages[j].name == languages[i]) {
+
+                    id = j;
+                    break;
+                }
             }
+
+            if (id == -1) {
+
+                id = coursesLanguages.length;
+
+                coursesLanguages.push({
+
+                    id: id,
+                    name: languages[i],
+                    totalCount: 0
+                });
+            }
+
+            coursesLanguages[id].totalCount++;
+
+            l.push(id);
         }
-
-        if (id == -1) {
-
-            id = coursesLanguages.length;
-
-            coursesLanguages.push({
-
-                id: id,
-                name: languages[i],
-                totalCount: 0
-            });
-        }
-
-        coursesLanguages[id].totalCount++;
-
-        l.push(id);
     }
 
     return l;
