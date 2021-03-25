@@ -46,11 +46,11 @@ var app = Vue.createApp({
             return this.fields.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
         sortedPrograms() { /* Sort the programs DESC on their score for display */
-            console.log("sortedPrograms");
+
             return this.programs.slice().sort((a, b) => { return b.score - a.score; });
         },
         filteredPrograms() { /* Filter the sorted programs according to the schools/themes/fields selected and program name searched */
-            console.log("filteredPrograms");
+
             this.currentPage = 0;
 
             return this.sortedPrograms.slice()

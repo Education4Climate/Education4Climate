@@ -52,30 +52,17 @@ export async function getPrograms() {
                             score: program.courses.length,
                             cycle: program.cycle
                         });
+
+                        // DEBUG
+                        if (!program.themes) console.log(schools[i].name + " : " + program.id + " has no theme");
+                        if (!program.themes_scores) console.log(schools[i].name + " : " + program.id + " has no theme score");
+                        if (!program.url || program.url === "") console.log(schools[i].name + " : " + program.id + " has no url");
+                        if (program.themes && program.themes_scores && program.themes.length != program.themes_scores.length) console.log(schools[i].name + " : " + program.id + " has no score for all themes");
                     });
 
                     totalProgramsCountBySchool[schools[i].id] = data.length;
                 });
         }
-
-        let cycles = [];
-        console.log(programs.length);
-        programs.forEach(program => {
-
-            if (!cycles.includes(program.cycle)) {
-                cycles.push(program.cycle);
-                cycles[program.cycle] = 0;
-            }
-
-            cycles[program.cycle]++;
-        });
-
-        console.log(cycles);
-
-        cycles.forEach((cycle, index) => {
-
-            console.log(index + " : " + cycle);
-        });
 
         sessionStorage.totalProgramsCountBySchool = JSON.stringify(totalProgramsCountBySchool);
         sessionStorage.programsThemes = JSON.stringify(programsThemes);
@@ -158,40 +145,43 @@ function getThemes(themes, scores) {
 
     var t = [];
 
-    for (var i = 0; i < themes.length; i++) {
+    if (themes && scores && themes.length == scores.length) {
 
-        var id = -1;
+        for (var i = 0; i < themes.length; i++) {
 
-        for (var j = 0; j < programsThemes.length; j++) {
+            var id = -1;
 
-            if (programsThemes[j].name == themes[i]) {
+            for (var j = 0; j < programsThemes.length; j++) {
 
-                id = j;
-                break;
+                if (programsThemes[j].name == themes[i]) {
+
+                    id = j;
+                    break;
+                }
             }
-        }
 
-        if (id == -1) {
+            if (id == -1) {
 
-            id = programsThemes.length;
+                id = programsThemes.length;
 
-            programsThemes.push({
+                programsThemes.push({
 
+                    id: id,
+                    name: themes[i],
+                    totalCount: 0
+                });
+            }
+
+            programsThemes[id].totalCount++;
+
+            t.push({
                 id: id,
-                name: themes[i],
-                totalCount: 0
+                score: scores[i]
             });
         }
 
-        programsThemes[id].totalCount++;
-
-        t.push({
-            id: id,
-            score: scores[i]
-        });
+        t.sort((a, b) => { return b.score - a.score; });
     }
-
-    t.sort((a, b) => { return b.score - a.score; });
 
     return t;
 }

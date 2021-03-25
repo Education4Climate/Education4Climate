@@ -41,9 +41,10 @@ export async function getCourses() {
                             themes: getThemes(course.themes)
                         });
 
-                        if (!course.language) {
-                            console.log(schools[i].name + " : " + course.id + " has no language");
-                        }
+                        // DEBUG
+                        if (!course.language) console.log(schools[i].name + " : " + course.id + " has no language");
+                        if (!course.themes) console.log(schools[i].name + " : " + course.id + " has no theme");
+                        if (!course.url || course.url === "") console.log(schools[i].name + " : " + course.id + " has no url");
                     });
 
                     totalCoursesCounts[schools[i].id] = data.length;
@@ -96,34 +97,37 @@ function getThemes(themes) {
 
     var t = [];
 
-    for (var i = 0; i < themes.length; i++) {
+    if (themes) {
 
-        var id = -1;
+        for (var i = 0; i < themes.length; i++) {
 
-        for (var j = 0; j < coursesThemes.length; j++) {
+            var id = -1;
 
-            if (coursesThemes[j].name == themes[i]) {
+            for (var j = 0; j < coursesThemes.length; j++) {
 
-                id = j;
-                break;
+                if (coursesThemes[j].name == themes[i]) {
+
+                    id = j;
+                    break;
+                }
             }
+
+            if (id == -1) {
+
+                id = coursesThemes.length;
+
+                coursesThemes.push({
+
+                    id: id,
+                    name: themes[i],
+                    totalCount: 0
+                });
+            }
+
+            coursesThemes[id].totalCount++;
+
+            t.push(id);
         }
-
-        if (id == -1) {
-
-            id = coursesThemes.length;
-
-            coursesThemes.push({
-
-                id: id,
-                name: themes[i],
-                totalCount: 0
-            });
-        }
-
-        coursesThemes[id].totalCount++;
-
-        t.push(id);
     }
 
     return t;
