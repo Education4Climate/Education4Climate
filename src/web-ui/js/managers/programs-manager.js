@@ -49,7 +49,7 @@ export async function getPrograms() {
                             courses: program.courses,
                             themes: getThemes(program.themes, program.themes_scores),
                             fieldId: getFieldId(program.field),
-                            score: program.themes_scores.reduce((a, b) => a + b, 0),
+                            score: program.courses.length,
                             cycle: program.cycle
                         });
                     });
@@ -57,6 +57,25 @@ export async function getPrograms() {
                     totalProgramsCountBySchool[schools[i].id] = data.length;
                 });
         }
+
+        let cycles = [];
+        console.log(programs.length);
+        programs.forEach(program => {
+
+            if (!cycles.includes(program.cycle)) {
+                cycles.push(program.cycle);
+                cycles[program.cycle] = 0;
+            }
+
+            cycles[program.cycle]++;
+        });
+
+        console.log(cycles);
+
+        cycles.forEach((cycle, index) => {
+
+            console.log(index + " : " + cycle);
+        });
 
         sessionStorage.totalProgramsCountBySchool = JSON.stringify(totalProgramsCountBySchool);
         sessionStorage.programsThemes = JSON.stringify(programsThemes);

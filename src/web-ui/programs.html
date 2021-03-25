@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
@@ -26,7 +27,7 @@
 
     <div id="app">
 
-        <header>
+        <header v-if="dataLoaded">
             <nav class="navbar navbar-expand-xl navbar-light bg-light">
                 <div class="container-fluid">
                     <a href="index.html"><img src="./img/icon-education4climate.svg" alt="logo" id="logo"></a>
@@ -38,26 +39,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-
                             <li class="nav-item">
-                                <a class="nav-link active" href="programs.html">Trouver un programme</a>
+                                <a class="nav-link active text-primary"
+                                    href="programs.html">{{translate("menu.programs")}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="courses.html">Trouver un cours</a>
+                                <a class="nav-link" href="courses.html">{{translate("menu.courses")}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="teachers.html">Annuaire des enseignants</a>
+                                <a class="nav-link" href="teachers.html">{{translate("menu.teachers")}}</a>
                             </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
-                                    aria-expanded="false">FR</a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                    <li><a class="dropdown-item" href="#">NL</a></li>
-                                    <li><a class="dropdown-item" href="#">EN</a></li>
-                                </ul>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item" v-for="language in availableLanguages">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)" href="#">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
                     </div>
@@ -76,15 +74,15 @@
             <div class="row">
 
                 <div class="d-grid show-filters-container">
-                    <button type="button" class="btn btn-primary show-filters"
-                        data-bs-toggle="collapse"
+                    <button type="button" class="btn btn-primary show-filters" data-bs-toggle="collapse"
                         data-bs-target=".sidebar" @click="showResponsiveFilters = !showResponsiveFilters">
-                        {{ showResponsiveFilters ? 'Cacher les filtres' : 'Afficher les filtres' }}</button>
+                        {{ showResponsiveFilters ? translate("shared.hide-filters") : translate("shared.show-filters")
+                        }}</button>
                 </div>
 
                 <div class="col-xl-2 sidebar collapse">
 
-                    <h6 class="text-primary">Universités</h6>
+                    <h6 class="text-primary">{{translate("shared.schools")}}</h6>
                     <div class="filter schools-selector">
                         <div class="form-check" v-for="school in sortedSchools">
                             <input type="checkbox" class="form-check-input" v-model="selectedSchools"
@@ -96,29 +94,30 @@
                         </div>
                     </div>
 
-                    <h6 class="text-primary">Thématiques</h6>
+                    <h6 class="text-primary">{{translate("shared.themes")}}</h6>
                     <div class="filter themes-selector">
                         <div class="form-check" v-for="theme in sortedThemes">
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
                                 :id="'checkbox-theme-' + theme.id" :value="theme.id">
-                            <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{theme.name}}</label>
+                            <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
+                                theme.name)}}</label>
                             <span
                                 class="float-end text-body"><small><strong>{{theme.totalCount}}</strong></small></span>
                         </div>
                     </div>
 
-                    <h6 class="text-primary">Disciplines</h6>
+                    <h6 class="text-primary">{{translate("shared.fields")}}</h6>
                     <div class="filter fields-selector">
                         <div class="form-check" v-for="field in sortedFields">
                             <input type="checkbox" class="form-check-input" v-model="selectedFields"
                                 :id="'checkbox-field-' + field.id" :value="field.id"><label class="form-check-label"
-                                :for="'checkbox-field-' + field.id">{{field.name}}</label>
+                                :for="'checkbox-field-' + field.id">{{translate("fields." + field.name)}}</label>
                             <span
                                 class="float-end text-body"><small><strong>{{field.totalCount}}</strong></small></span>
                         </div>
                     </div>
 
-                    <h6 class="text-primary">Intitulé</h6>
+                    <h6 class="text-primary">{{translate("shared.name")}}</h6>
                     <div class="filter">
                         <input type="text" class="form-control name-search" v-model="searchedName"
                             placeholder="exemple : climat">
@@ -128,7 +127,8 @@
 
                 <div class="col-lg-12 col-xl-10 pt-3 px-4s">
 
-                    <h6 class="results-count">{{filteredPrograms.length}} programmes sur {{programs.length}}</h6>
+                    <h6 class="results-count">{{filteredPrograms.length}}
+                        {{translate("programs.programs-of")}}{{programs.length}}</h6>
 
                     <div class="accordion accordion-flush overflow-hidden" id="programsAccordion">
                         <div class="accordion-item" v-for="(program, i) in paginatedPrograms">
@@ -148,8 +148,8 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <span v-for="(theme, j) in program.themes">
-                                                    <span
-                                                        class="badge bg-primary bg-theme">{{themes[theme.id].name}}&nbsp;&nbsp;&nbsp;
+                                                    <span class="badge bg-primary bg-theme">{{translate("themes." +
+                                                        themes[theme.id].name)}}&nbsp;&nbsp;&nbsp;
                                                         <span
                                                             class="badge rounded-pill bg-white text-primary">{{theme.score}}</span>
                                                     </span>
@@ -168,23 +168,27 @@
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">Code :
                                             </h6><span>&nbsp;{{program.code}}</span>
                                             <span v-if="program.url != ''">&nbsp;(<a :href="program.url" target="_blank"
-                                                    rel="noopener">voir sur le site</a>)</span>
-                                        </div>
-                                        <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Faculté :
-                                            </h6><span>&nbsp;{{program.faculty}}</span>
-                                        </div>
-                                        <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Campus :
-                                            </h6><span>&nbsp;{{program.campus}}</span>
-                                        </div>
-                                        <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Diplôme :
-                                            </h6><span>&nbsp;{{program.cycle}}</span>
+                                                    rel="noopener">{{translate("shared.external-website")}}</a>)</span>
                                         </div>
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
-                                                Discipline:</h6><span>&nbsp;{{fields[program.fieldId].name}}</span>
+                                                {{translate("programs.detail-faculty")}}</h6>
+                                            <span>&nbsp;{{program.faculty}}</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("programs.detail-campus")}}</h6>
+                                            <span>&nbsp;{{program.campus}}</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("programs.detail-cycle")}}</h6>
+                                            <span>&nbsp;{{program.cycle}}</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("programs.detail-field")}}</h6>
+                                            <span>&nbsp;{{translate("fields." + fields[program.fieldId].name)}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -204,6 +208,5 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
 </body>
-
 
 </html>

@@ -8,6 +8,7 @@
 import * as constants from './constants.js';
 import * as schoolsManager from './managers/schools-manager.js';
 import * as programsManager from './managers/programs-manager.js';
+import * as translationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
     el: '#app',
@@ -25,7 +26,10 @@ var app = Vue.createApp({
             selectedFields: [],
             searchedName: "",
             currentPage: 0,
-            showResponsiveFilters: false
+            showResponsiveFilters: false,
+            currentLanguage: "fr",
+            translations: [],
+            availableLanguages: constants.AVAILABLE_LANGUAGES
         };
     },
     computed: {
@@ -42,11 +46,11 @@ var app = Vue.createApp({
             return this.fields.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
         sortedPrograms() { /* Sort the programs DESC on their score for display */
-
+            console.log("sortedPrograms");
             return this.programs.slice().sort((a, b) => { return b.score - a.score; });
         },
         filteredPrograms() { /* Filter the sorted programs according to the schools/themes/fields selected and program name searched */
-
+            console.log("filteredPrograms");
             this.currentPage = 0;
 
             return this.sortedPrograms.slice()
@@ -92,6 +96,12 @@ var app = Vue.createApp({
     },
     async created() {
 
+        this.currentLanguage = translationManager.getLanguage();
+
+        await translationManager.loadTranslations().then(translations => {
+            this.translations = translations;
+        });
+
         await schoolsManager.getSchools().then(schools => {
             this.schools = schools;
             this.selectedSchools = this.schools.map(school => { return school.id; }); // sets the default selected fields
@@ -116,6 +126,15 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.displayedPrograms.length < this.filteredPrograms.length ? this.currentPage + 1 : this.currentPage;
+        },
+        translate(key) {
+
+            let corpus = this.translations.find(translation => translation.language === this.currentLanguage);
+            return key.split('.').reduce((obj, i) => obj[i], corpus.translations);
+        },
+        setLanguage(language) {
+            this.currentLanguage = language;
+            translationManager.setLanguage(language);
         }
     }
 });

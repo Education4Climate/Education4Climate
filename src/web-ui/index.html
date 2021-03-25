@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="app" v-if="dataLoaded">
 
         <header>
             <nav class="navbar navbar-expand-xl navbar-light bg-light">
@@ -38,26 +38,22 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-
                             <li class="nav-item">
-                                <a class="nav-link" href="programs.html">Trouver un programme</a>
+                                <a class="nav-link" href="programs.html">{{translate("menu.programs")}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="courses.html">Trouver un cours</a>
+                                <a class="nav-link" href="courses.html">{{translate("menu.courses")}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="teachers.html">Annuaire des enseignants</a>
+                                <a class="nav-link" href="teachers.html">{{translate("menu.teachers")}}</a>
                             </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown"
-                                    aria-expanded="false">FR</a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown05">
-                                    <li><a class="dropdown-item" href="#">NL</a></li>
-                                    <li><a class="dropdown-item" href="#">EN</a></li>
-                                </ul>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item" v-for="language in availableLanguages">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)" href="#">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
                     </div>
@@ -74,10 +70,9 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
-                                        <h1>Où étudier pour contribuer à la transition carbone et avoir un impact sur le
-                                            climat ?</h1>
-                                        <p><a class="btn btn-primary learn-more" href="#home-intro">En
-                                                savoir plus</a></p>
+                                        <h1>{{translate("home.headline-students")}}</h1>
+                                        <p><a class="btn btn-primary learn-more"
+                                                href="#home-intro">{{translate("home.learn-more")}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +83,7 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
-                                        <h1>Où trouver un collègue, un directeur de mémoire ou un promoteur de thèse ?
+                                        <h1>{{translate("home.headline-teachers")}}
                                         </h1>
                                         <p><a class="btn btn-primary learn-more" href="#home-intro">En
                                                 savoir plus</a></p>
@@ -179,10 +174,12 @@
             <img src="./img/background-teachers.jpg" width="1" height="1" />
         </div>
 
-        <script src="https://unpkg.com/vue@next"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"></script>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script type="module" src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

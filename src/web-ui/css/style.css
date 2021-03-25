@@ -54,7 +54,7 @@ a {
 }
 
 #carousel-home .learn-more {
-    display:none;
+    display: none;
 }
 
 /* TROUVER UN COURS/PROGRAMME */
@@ -80,16 +80,31 @@ a {
     display: none;
 }
 
-#programs-loader, #courses-loader {
+#programs-loader,
+#courses-loader {
     min-height: calc(100vh - 56px);
 }
 
-#programs-loader h4, courses-loader h4 {
+#programs-loader h4,
+courses-loader h4 {
     margin-top: 1rem;
 }
 
-.filter .form-check { overflow:hidden; }
-.filter .form-check label { width: 85%; }
+.filter .form-check {
+    overflow: hidden;
+}
+
+.filter .form-check label {
+    width: 85%;
+}
+
+#languages-selector {
+    flex-direction: row;
+}
+
+#languages-selector a.active {
+    color: #0d6efd;
+}
 
 /* RESPONSIVE */
 
@@ -136,7 +151,11 @@ a {
 
     #carousel-home .learn-more {
         margin-top: 2rem;
-        display: inline-block;
+        display   : inline-block;
+    }
+
+    #languages-selector .nav-item {
+        margin-right: 1rem
     }
 }
 

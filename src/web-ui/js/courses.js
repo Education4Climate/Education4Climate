@@ -8,6 +8,7 @@
 import * as constants from './constants.js';
 import * as schoolsManager from './managers/schools-manager.js';
 import * as coursesManager from './managers/courses-manager.js';
+import * as translationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
     el: '#app',
@@ -25,7 +26,10 @@ var app = Vue.createApp({
             selectedLanguages: [],
             searchedName: "",
             currentPage: 0,
-            showResponsiveFilters: false
+            showResponsiveFilters: false,
+            currentLanguage: "fr",
+            translations: [],
+            availableLanguages: constants.AVAILABLE_LANGUAGES       
         };
     },
     computed: {
@@ -92,6 +96,12 @@ var app = Vue.createApp({
     },
     async created() {
 
+        this.currentLanguage = translationManager.getLanguage();
+
+        await translationManager.loadTranslations().then(translations => {
+            this.translations = translations;
+        });
+
         await schoolsManager.getSchools().then(schools => {
             this.schools = schools;
             this.selectedSchools = this.schools.map(school => { return school.id; }); // sets the default selected fields
@@ -116,7 +126,16 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.displayedCourses.length < this.filteredCourses.length ? this.currentPage + 1 : this.currentPage;
-        }
+        },
+        translate(key) {
+
+            let corpus = this.translations.find(translation => translation.language === this.currentLanguage);
+            return key.split('.').reduce((obj, i) => obj[i], corpus.translations);
+        },
+        setLanguage(language) {
+            this.currentLanguage = language;
+            translationManager.setLanguage(language);
+        }        
     }
 });
 
