@@ -37,6 +37,10 @@ def extract_ects(ects_list: List[str]) -> List[str]:
         ects_list.remove("")
     return ects_list
 
+def extract_year(messy_string: str) ->str:
+    year = "".join([j for j in messy_string if j.isdigit()])
+    year = year[:4] + '-' + year[4:]
+    return year
 
 def extract_teacher(teacher_list: List[str]) -> List[str]:
     if "Instructor" in teacher_list:
@@ -102,7 +106,7 @@ class UgentProgramSpider(scrapy.Spider, ABC):
         cycle = cleanup(name.split(' ')[0])
         url = response.url
         faculty = cleanup(response.xpath("//h2").get())
-        year = int(cleanup(response.xpath("//h3").get()).split("-")[-1]) - 1
+        year = extract_year(cleanup(response.xpath("//h3").get()))
         version = cleanup(get_program_version(
             response.xpath("//div[@class='menuHeader'][contains(text(), 'Programme')]").get()))
 

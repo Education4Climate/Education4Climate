@@ -40,7 +40,7 @@ class VUBCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            base_dict = {"id": course_id}
+            base_dict = {"id": str(course_id)}
             yield scrapy.Request(BASE_URL.format(course_id), self.parse_course, cb_kwargs={"base_dict": base_dict})
 
     def parse_course(self, response, base_dict):
@@ -77,8 +77,8 @@ class VUBCourseSpider(scrapy.Spider, ABC):
 
         cur_dict = {"name": name,
                     "year": f"{YEAR}-{int(YEAR)+1}",
-                    "language": languages,
-                    "teacher": teachers,
+                    "languages": languages,
+                    "teachers": teachers,
                     "url": response.url,
                     "content": content}
 
