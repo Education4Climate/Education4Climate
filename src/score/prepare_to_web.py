@@ -5,6 +5,9 @@ import pandas as pd
 
 from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_INPUT_FOLDER
 
+import logging
+logger = logging.getLogger()
+
 
 def check_available_fields(courses_df, programs_df):
     keys_in_programs = ["ects", "faculty", "campus"]
@@ -93,7 +96,7 @@ def main(school: str, year: int):
 
     # Load scoring output
     scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
-    scores_df = pd.read_csv(scores_fn, index_col=0)
+    scores_df = pd.read_csv(scores_fn, dtype={'id': str}).set_index('id')
     courses_with_matches_index = scores_df[(scores_df.sum(axis=1) != 0)].index
 
     # Generating heavy version and light version (only courses with score > 0)
@@ -109,6 +112,12 @@ def main(school: str, year: int):
     program_scores_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv")
     programs_scores_df = pd.read_csv(program_scores_fn, index_col=0)
+
+    # Get for each program the list of courses that matched in at least one them
+    matched_courses = list(courses_df[courses_df.id.isin(courses_with_matches_index)].id)
+    for program_id, program_courses in programs_df['courses'].items():
+        programs_df.loc[program_id]['courses'] = list(set(program_courses).intersection(set(matched_courses)))
+
     # Get programs that matched at least one theme
     programs_with_matches_index = programs_scores_df[(programs_scores_df.sum(axis=1) != 0)].index
     # Get list of matched themes per program and associated scores
@@ -118,7 +127,6 @@ def main(school: str, year: int):
     programs_df = programs_df.reset_index()
     programs_df.loc[programs_df.id.isin(programs_with_matches_index)] \
         .to_json(f"{web_fn}programs.json", orient='records', indent=1)
-    # TODO: regroup themes scores under two fields: 'fields' and 'fields_scores'
 
 
 if __name__ == "__main__":

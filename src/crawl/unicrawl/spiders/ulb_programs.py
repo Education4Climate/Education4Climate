@@ -8,11 +8,12 @@ import scrapy
 
 from config.settings import YEAR
 
+# BASE_URL = "https://www.ulb.be/servlet/search?q=&l=0&beanKey=beanKeyRechercheFormation&typeFo={}&s=&limit=999&page=1"
 BASE_URL = "https://www.ulb.be/servlet/search?" \
            "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \
            "&typeFo={}&s=FACULTE_ASC&limit=999&page=1"
 
-PATH_PROG_URL = urllib.parse.quote('/ws/ksup/programme?anet={}&lang=fr&', safe='{}')
+PATH_PROG_URL = urllib.parse.quote('/ws/ksup/programme?gen=prod&anet={}&lang=fr&', safe='{}')
 PROG_URL = f'https://www.ulb.be/api/formation?path={PATH_PROG_URL}'
 
 
@@ -25,18 +26,21 @@ class ULBProgramSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
         for deg in ('BA', 'MA'):
+            cycle = 'bac' if deg == 'BA' else 'master'
             yield scrapy.Request(
                 url=BASE_URL.format(deg),
-                callback=self.parse_main
+                callback=self.parse_main,
+                cb_kwargs={'cycle': cycle}
             )
 
-    def parse_main(self, response):
+    def parse_main(self, response, cycle):
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
         for p in soup.find_all('div', class_='search-result__result-item'):
             res = {
                 "id": p.find(class_='search-result__mnemonique').text,
                 "name": p.find('strong').text,
+                "cycle": cycle,
                 "faculty": p.find('span', class_='search-result__structure-rattachement').text,
                 "campus": p.find(class_='search-result-formation__separator').text,
                 "url": p.find(class_="item-title__element_title")["href"]

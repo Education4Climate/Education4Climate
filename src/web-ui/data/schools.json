@@ -1,53 +1,52 @@
 {
     "schools": [
         {
-            "id": 1,
             "name": "Université catholique de Louvain",
             "shortName": "UCLouvain",
-            "file": "ucl_data_2020_light.json",
-            "programFile": "ucl_data_2020_programs.json"
+            "coursesFile": "ucl_data_2020_light.json",
+            "programsFile": "ucl_data_2020_programs.json"
         },        
         {
-            "id": 2,
             "name": "Université Libre de Bruxelles",            
             "shortName": "ULB",
-            "file": "ulb_data_2020_light.json",
-            "programFile": "ulb_data_2020_programs.json"
+            "coursesFile": "ulb_data_2020_light.json",
+            "programsFile": "ulb_data_2020_programs.json"
         },
         {
-            "id": 3,
             "name": "Université de Liège",
             "shortName": "ULiège",
-            "file": "uliege_data_2020_light.json",
-            "programFile": "uliege_data_2020_programs.json"
+            "coursesFile": "uliege_data_2020_light.json",
+            "programsFile": "uliege_data_2020_programs.json"
         },
         {
-            "id": 4,
             "name": "Université de Mons",
             "shortName": "UMons",
-            "file": "umons_data_2020_light.json",
-            "programFile": "umons_data_2020_programs.json"
+            "coursesFile": "umons_data_2020_light.json",
+            "programsFile": "umons_data_2020_programs.json"
         },
         {
-            "id": 5,
             "name": "Université de Namur",
             "shortName": "UNamur",
-            "file": "unamur_data_2020_light.json",
-            "programFile": "unamur_data_2020_programs.json"
+            "coursesFile": "unamur_data_2020_light.json",
+            "programsFile": "unamur_data_2020_programs.json"
         },
         {
-            "id": 6,
             "name": "Katholieke Universiteit Leuven",
             "shortName": "KU Leuven",
-            "file": "kuleuven_data_2020_light.json",
-            "programFile": "kuleuven_data_2020_programs.json"
+            "coursesFile": "kuleuven_data_2020_light.json",
+            "programsFile": "kuleuven_data_2020_programs.json"
         },
         {
-            "id": 7,
             "name": "Vrije Universiteit Brussel",
             "shortName": "VUB",
-            "file": "vub_data_2020_light.json",
-            "programFile": "vub_data_2020_programs.json"
-        }
+            "coursesFile": "vub_data_2020_light.json",
+            "programsFile": "vub_data_2020_programs.json"
+        },
+        {
+            "name": "Université Saint-Louis - Bruxelles",
+            "shortName": "USLB",
+            "coursesFile": "uslb_data_2020_light.json",
+            "programsFile": "uslb_data_2020_programs.json"
+        }        
     ]
 }
