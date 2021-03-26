@@ -3,7 +3,7 @@ a {
 }
 
 [v-cloak] { /* hide un-compiled mustache bindings until Vue is loaded */
-    display: none;
+    display: none !important;
 }
 
 /* MENU & NAVIGATION */
