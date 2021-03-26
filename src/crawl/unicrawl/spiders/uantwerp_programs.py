@@ -115,7 +115,8 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
         elif "master" in response.url:
             base_dict["cycle"] = "master"
             base_dict["id"] += '-master'
-            base_dict["name"] = f"Master in {base_dict['name']}"
+            if not base_dict['name'].starswith("Master"):
+                base_dict["name"] = f"Master in {base_dict['name']}"
 
         # Get courses and ects
         main_tab = f"//section[contains(@id, '-{YEAR}')]"
