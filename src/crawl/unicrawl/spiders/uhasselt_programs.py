@@ -19,6 +19,59 @@ BASE_DATA = {
     "beschridAcjaar$ctl00": "2020",
 }
 
+# This is not great but it's the only way we found to get faculties
+FACULTIES_PROGRAMS = \
+    {"Faculteit Architectuur en Kunst":
+         ["bachelor in de interieurarchitectuur", "master in de interieurarchitectuur",
+          "Master of Interior Architecture", "bachelor in de architectuur",
+          "master in de architectuur", "Educatieve master in de ontwerpwetenschappen"],
+     "Faculteit Bedrijfseconomische Wetenschappen": [
+         "bachelor handelsingenieur",
+         "bachelor in de toegepaste economische wetenschappen",
+         "master in de toegepaste economische wetenschappen",
+         "Master of Management",
+         "bachelor in de handelswetenschappen",
+         "master in de handelswetenschappen",
+         "master handelsingenieur",
+         "Educatieve master in de economie",
+         "bachelor handelsingenieur in de beleidsinformatica",
+         "master handelsingenieur in de beleidsinformatica"],
+     "Faculteit Geneeskunde en Levenswetenschappen": [
+         "bachelor in de biomedische wetenschappen",
+         "Master of Biomedical Sciences",
+         "master in de biomedische wetenschappen",
+         "bachelor in de geneeskunde",
+         "Educatieve master in de gezondheidswetenschappen"],
+     "Faculteit Industriële Ingenieurswetenschappen":
+         ["bachelor in de industri\u00eble wetenschappen",
+          "master in de industri\u00eble wetenschappen: nucleaire technologie",
+          "master in de industri\u00eble wetenschappen: verpakkingstechnologie",
+          "master in de industri\u00eble wetenschappen: chemie",
+          "master in de industri\u00eble wetenschappen: elektromechanica",
+          "Educatieve master in de wetenschappen en technologie",
+          "master in de industri\u00eble wetenschappen: elektronica-ICT",
+          "master in de industri\u00eble wetenschappen: bouwkunde",
+          "master in de industri\u00eble wetenschappen: energie"],
+     "School voor Mobiliteitswetenschappen": [
+         "bachelor in de mobiliteitswetenschappen",
+         "master in de mobiliteitswetenschappen",
+         "Master of Transportation Sciences"],
+     "Faculteit Rechten": ["bachelor in de rechten", "master in de rechten"],
+     "Faculteit Revalidatiewetenschappen": [
+         "bachelor in de revalidatiewetenschappen en de kinesitherapie",
+         "master in de revalidatiewetenschappen en de kinesitherapie"],
+     "Faculteit Wetenschappen": [
+         "bachelor in de wiskunde", "bachelor in de informatica",
+         "bachelor in de chemie", "bachelor in de biologie",
+         "master in de informatica", "bachelor in de fysica",
+         "Master of Statistics and Data Science"],
+     "School of Expert Education": [
+         "Postgraduaat Stralingsdeskundige",
+         "Postgraduaat Milieucoördinator - niveau A",
+         "Postgraduaat Relatie- en Communicatiewetenschappen",
+         "Postgraduaat Biogebaseerde en circulaire economie",
+         "Postgraduaat Bedrijfskunde"]}
+
 
 class UHasseltProgramSpider(scrapy.Spider, ABC):
     name = 'uhasselt-programs'
@@ -53,13 +106,20 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
             cycle = ''
             if 'bachelor' in prog_name:
                 cycle = 'bac'
-            elif 'master' in prog_name:
+            elif 'master' in prog_name or 'Master' in prog_name:
                 cycle = 'master'
             elif 'Postgraduaat' in prog_name:
                 cycle = 'post-grad'
 
+            faculty = ''
+            for f in FACULTIES_PROGRAMS:
+                if prog_name in FACULTIES_PROGRAMS[f]:
+                    faculty = f
+                    break
+
             base_dict = {"id": prog,
                          "name": prog_name,
+                         "faculty": faculty,
                          "cycle": cycle}
 
             yield scrapy.http.FormRequest(
@@ -90,8 +150,8 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
         courses_ids, ects = zip(*list(set(zip(courses_ids, ects))))
 
         # Didn't find any info on campus or faculty
-        cur_dict = {"faculty": '',
-                    "campus": '',
+        cur_dict = {"campus": '',
+                    "url": '',
                     "courses": courses_ids,
                     "ects": ects}
         yield {**base_dict, **cur_dict}
