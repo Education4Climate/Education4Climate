@@ -40,26 +40,23 @@ export async function getPrograms() {
                         programs.push({
 
                             id: j,
-                            code: program.id,
-                            name: program.name,
-                            url: program.url,
-                            faculty: program.faculty,
-                            campus: program.campus,
+                            code: program.id ? program.id : "",
+                            name: program.name ? program.name : "",
+                            url: program.url ? program.url : "",
+                            faculty: program.faculty ? program.faculty : "",
+                            campus: program.campus ? program.campus : "",
                             schoolId: schools[i].id,
-                            courses: program.courses,
-                            themes: getThemes(program.themes, program.themes_scores),
-                            fieldId: getFieldId(program.field),
-                            score: program.courses.length,
-                            cycle: program.cycle
+                            courses: program.courses && program.courses.length > 0 ? program.courses : [],
+                            themes: getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
+                            fieldId: getFieldId(program.field ? program.field : "other"),
+                            score: program.courses ? program.courses.length : 0,
+                            cycle: program.cycle ? program.cycle : ""
                         });
 
-                        // DEBUG
-                        if (!program.themes) console.log(schools[i].name + " : " + program.id + " has no theme");
-                        if (!program.themes_scores) console.log(schools[i].name + " : " + program.id + " has no theme score");
-                        if (!program.url || program.url === "") console.log(schools[i].name + " : " + program.id + " has no url");
-                        if (program.themes && program.themes_scores && program.themes.length != program.themes_scores.length) console.log(schools[i].name + " : " + program.id + " has no score for all themes");
+                        debugProgramsErrors(schools[i].shortName, program);
                     });
 
+                    console.log(programsThemes);
                     totalProgramsCountBySchool[schools[i].id] = data.length;
                 });
         }
@@ -182,6 +179,25 @@ function getThemes(themes, scores) {
 
         t.sort((a, b) => { return b.score - a.score; });
     }
+    else {
+        if(themes && scores)
+        console.log("ici : " + themes.length + " / " + scores.length);
+    }
 
     return t;
+}
+
+function debugProgramsErrors(school, program) {
+
+    if (!program.id) console.log(school + " : " + program.id + " has no id");
+    if (!program.name) console.log(school + " : " + program.id + " has no name");
+    if (!program.url) console.log(school + " : " + program.id + " has no url");
+    if (!program.faculty) console.log(school + " : " + program.id + " has no faculty");
+    if (!program.campus) console.log(school + " : " + program.id + " has no campus");
+    if (!program.field) console.log(school + " : " + program.id + " has no field");
+    if (!program.cycle) console.log(school + " : " + program.id + " has no cycle");
+    if (!program.courses || program.courses.length === 0) console.log(school + " : " + program.id + " has no courses");
+    if (!program.themes || program.themes.length === 0) console.log(school + " : " + program.id + " has no themes");
+    if (!program.themes_scores || program.themes_scores.length === 0) console.log(school + " : " + program.id + " has no themes_scores");
+    if (program.themes && program.themes_scores && program.themes.length !== program.themes_scores.length) console.log(school + " : " + program.id + " has no score for all themes");
 }

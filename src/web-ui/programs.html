@@ -92,7 +92,7 @@
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
                                 :id="'checkbox-theme-' + theme.id" :value="theme.id">
                             <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
-                                theme.name)}}</label>
+                                theme.name, true)}}</label>
                             <span
                                 class="float-end text-body"><small><strong>{{theme.totalCount}}</strong></small></span>
                         </div>
@@ -103,7 +103,7 @@
                         <div class="form-check" v-for="field in sortedFields">
                             <input type="checkbox" class="form-check-input" v-model="selectedFields"
                                 :id="'checkbox-field-' + field.id" :value="field.id"><label class="form-check-label"
-                                :for="'checkbox-field-' + field.id">{{translate("fields." + field.name)}}</label>
+                                :for="'checkbox-field-' + field.id">{{translate("fields." + field.name, true)}}</label>
                             <span
                                 class="float-end text-body"><small><strong>{{field.totalCount}}</strong></small></span>
                         </div>

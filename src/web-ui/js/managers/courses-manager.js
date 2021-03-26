@@ -31,7 +31,7 @@ export async function getCourses() {
                         courses.push({
 
                             id: j,
-                            teachers: course.teachers,
+                            teachers: course.teachers && course.teachers.length > 0 ? course.teachers : [],
                             year: course.year ? course.year : "",
                             code: course.id ? course.id : "",
                             name: course.name ? course.name : "",
