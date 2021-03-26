@@ -9,11 +9,31 @@ import logging
 logger = logging.getLogger()
 
 
-def check_available_fields(courses_df, programs_df):
-    keys_in_programs = ["ects", "faculty", "campus"]
-    keys_in_programs = [key for key in keys_in_programs if key in programs_df.columns]
+def exchange_fields(courses_df, programs_df):
 
-    courses_aux_df = pd.DataFrame(index=courses_df.index, columns=keys_in_programs)
+    # By default, courses should contain the following keys at minima (+ id)
+    keys_in_courses = ["name", "year", "teachers", "languages", "url"]
+    # If convenient, courses can also contain the following information. If they don't, we are adding them back in.
+    # TODO: why is cycle not here?
+    keys_in_programs = ["ects", "faculty", "campus"]
+    keys_not_in_courses = ["ects", "faculty", "campus"]
+    # First, we identify in which dataframes those 'programs keys' are and update the lists accordingly
+    for key in keys_in_programs:
+        if key in courses_df.columns:
+            keys_in_courses.append(key)
+            keys_not_in_courses.remove(key)
+    # Keep only those columns (drop for example the column 'content')
+    courses_df = courses_df[keys_in_courses]
+    # TODO: actually change that in the crawler
+    # If 'program keys' were directly in courses, they might not be in list format
+    for key in keys_in_programs:
+        if key in keys_in_courses:
+            courses_df[key] = courses_df[key].apply(lambda x: [x] if not isinstance(x, list) else x)
+            courses_df[key] = courses_df[key].apply(lambda x: list(set(x)))
+
+    # Finally, we add to the courses dataframe, the 'program data' that was not already in there
+    # TODO: maybe a more efficient way to do this
+    courses_aux_df = pd.DataFrame(index=courses_df.index, columns=keys_not_in_courses)
     for course_id in courses_aux_df.index:
         ects = []
         faculty = []
@@ -37,8 +57,8 @@ def check_available_fields(courses_df, programs_df):
         if 'campus' in keys_in_programs:
             courses_aux_df.loc[course_id, 'campus'] = list(set(campus))
 
-    print(courses_aux_df)
     courses_df = pd.concat([courses_df, courses_aux_df], axis=1)
+
     return courses_df
 
 
@@ -47,13 +67,21 @@ def convert_faculty_to_thematics(courses_df, programs_df, school: str):
     faculties_to_fields_df = pd.read_csv(fields_fn)
     faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
     faculties_to_fields_ds = faculties_to_fields_df[["faculty", "field"]].set_index("faculty")
-    courses_df["field"] = courses_df["faculty"].apply(lambda x:
-                                                      list(set([faculties_to_fields_ds.loc[i][0] for i in x])))
-    programs_df["field"] = programs_df["faculty"].apply(lambda x: faculties_to_fields_ds.loc[x][0])
+
+    def faculty_to_field(faculty):
+        if faculty in faculties_to_fields_ds.index:
+            return faculties_to_fields_ds.loc[faculty][0]
+        else:
+            logger.warning(f"Warning: {faculty} was not found in faculty_to_fields")
+            return ''
+
+    courses_df["field"] = courses_df["faculty"].apply(lambda x: list(set([faculty_to_field(i) for i in x])))
+    programs_df["field"] = programs_df["faculty"].apply(lambda x: faculty_to_field(x))
     return courses_df, programs_df
 
 
 def main(school: str, year: int):
+
     # Load course crawling output
     courses_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
@@ -65,34 +93,12 @@ def main(school: str, year: int):
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
     programs_df = pd.read_json(open(programs_fn, 'r'))
 
-    # These keys can either be in the courses or programs dataframe, so check that
-
-    keys_in_courses = ["name", "year", "teachers", "languages", "url"]
-
-    if 0:
-        for key in keys_in_programs:
-            if key in courses_df.columns:
-                keys_in_courses.append(key)
-                keys_in_programs.remove(key)
-
-    keys_in_courses = [key for key in keys_in_courses if key in courses_df.columns]
-    courses_df = courses_df[keys_in_courses]
-    # TODO: actually change that in the crawler
-    # If those directly in courses, they might not be in list format
-    for key in ["ects", "faculty", "campus"]:
-        if key in keys_in_courses:
-            courses_df[key] = courses_df[key].apply(lambda x: [x] if not isinstance(x, list) else x)
-            courses_df[key] = courses_df[key].apply(lambda x: list(set(x)))
-
-    # Associate programs data to courses
-    # TODO: maybe a more efficient way to do this
-
-    #courses_df = check_available_fields(courses_df, programs_df)
+    # By default, some keys like "ects", "faculty" and "campus" should be associated to programs
+    # But in some cases, they are associated to courses.
+    courses_df = exchange_fields(courses_df, programs_df)
 
     # Convert faculties to disciplines
-
-    if "faculty" in courses_df.columns:
-        courses_df, programs_df = convert_faculty_to_thematics(courses_df, programs_df, school)
+    courses_df, programs_df = convert_faculty_to_thematics(courses_df, programs_df, school)
 
     # Load scoring output
     scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
@@ -105,7 +111,7 @@ def main(school: str, year: int):
     courses_df = courses_df.reset_index()
     web_fn = Path(__file__).parent.absolute().joinpath(f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_")
     courses_df.to_json(f"{web_fn}heavy.json", orient='records')
-    courses_df.loc[courses_df.id.isin(courses_with_matches_index)] \
+    courses_df.loc[courses_df.id.isin(courses_with_matches_index)]\
         .to_json(f"{web_fn}light.json", orient='records', indent=1)
 
     # Creating program file (only programs with score > 0)
@@ -125,6 +131,11 @@ def main(school: str, year: int):
     programs_df["themes"] = programs_scores_df.apply(lambda x: x[x > 0].index.tolist(), axis=1).to_frame()
     programs_df["themes_scores"] = programs_scores_df.apply(lambda x: x[x > 0].values.tolist(), axis=1).to_frame()
     programs_df = programs_df.reset_index()
+
+    # TODO: keep or remove ects?
+    programs_df = programs_df[['id', 'name', 'faculty', 'cycle', 'campus', 'url', 'courses',
+                               'field', 'themes', 'themes_scores']]
+
     programs_df.loc[programs_df.id.isin(programs_with_matches_index)] \
         .to_json(f"{web_fn}programs.json", orient='records', indent=1)
 
