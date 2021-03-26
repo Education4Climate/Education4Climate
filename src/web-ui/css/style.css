@@ -61,6 +61,10 @@ a {
     display: none;
 }
 
+a.btn:empty { /* avoid showing empty buttons while loading translations */
+    display: none !important;
+}
+
 /* TROUVER UN COURS/PROGRAMME */
 
 #courses-finder h6,
