@@ -129,9 +129,9 @@ var app = Vue.createApp({
 
             this.currentPage = this.displayedCourses.length < this.filteredCourses.length ? this.currentPage + 1 : this.currentPage;
         },
-        translate(key) {
+        translate(key, returnKeyIfNotFound) {
 
-            return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage) : "";
+            return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {
             this.currentLanguage = language;

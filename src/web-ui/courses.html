@@ -92,7 +92,7 @@
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
                                 :id="'checkbox-theme-' + theme.id" :value="theme.id">
                             <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
-                                theme.name)}}</label>
+                                theme.name, true)}}</label>
                             <span
                                 class="float-end text-body"><small><strong>{{theme.totalCount}}</strong></small></span>
                         </div>
@@ -105,7 +105,7 @@
                                 :id="'checkbox-language-' + language.id" :value="language.id"><label
                                 class="form-check-label"
                                 :for="'checkbox-language-' + language.id">{{translate("languages." +
-                                language.name)}}</label>
+                                language.name, true)}}</label>
                             <span
                                 class="float-end text-body"><small><strong>{{language.totalCount}}</strong></small></span>
                         </div>
@@ -163,8 +163,8 @@
                                         </div>
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
-                                                {{translate("courses.detail-years")}}</h6>
-                                            <span>&nbsp;{{course.years}}</span>
+                                                {{translate("courses.detail-year")}}</h6>
+                                            <span>&nbsp;{{course.year}}</span>
                                         </div>
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">{{translate("courses.detail-languages")}}</h6>

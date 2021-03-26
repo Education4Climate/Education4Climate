@@ -32,19 +32,16 @@ export async function getCourses() {
 
                             id: j,
                             teachers: course.teachers,
-                            years: course.year,
-                            code: course.id,
-                            name: course.name,
+                            year: course.year ? course.year : "",
+                            code: course.id ? course.id : "",
+                            name: course.name ? course.name : "",
                             schoolId: schools[i].id,
-                            url: course.url,
-                            languages: getLanguages(course.languages),
-                            themes: getThemes(course.themes)
+                            url: course.url ? course.url : "",
+                            languages: getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
+                            themes: getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
                         });
 
-                        // DEBUG
-                        if (!course.languages) console.log(schools[i].name + " : " + course.id + " has no language");
-                        if (!course.themes) console.log(schools[i].name + " : " + course.id + " has no theme");
-                        if (!course.url || course.url === "") console.log(schools[i].name + " : " + course.id + " has no url");
+                        debugCoursesErrors(schools[i].shortName, course);
                     });
 
                     totalCoursesCounts[schools[i].id] = data.length;
@@ -171,4 +168,15 @@ function getLanguages(languages) {
     }
 
     return l;
+}
+
+function debugCoursesErrors(school, course) {
+
+    if (!course.year) console.log(school + " : " + course.id + " has no year");
+    if (!course.id) console.log(school + " : " + course.id + " has no id");
+    if (!course.name) console.log(school + " : " + course.id + " has no name");
+    if (!course.url) console.log(school + " : " + course.id + " has no url");
+    if (!course.languages || course.languages.length === 0) console.log(school + " : " + course.id + " has no languages");
+    if (!course.themes || course.themes.length === 0) console.log(school + " : " + course.id + " has no themes");
+    if (!course.teachers || course.teachers.length === 0) console.log(school + " : " + course.id + " has no teachers");
 }
