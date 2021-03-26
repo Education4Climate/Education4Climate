@@ -17,8 +17,8 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Education 4 Climate</title>
 </head>
@@ -121,7 +121,8 @@
 
                 <div class="col-lg-12 col-xl-10 pt-3 px-4s">
 
-                    <h6 class="results-count">{{filteredCourses.length}}{{translate("courses.courses-of")}}{{courses.length}}</h6>
+                    <h6 class="results-count">
+                        {{filteredCourses.length}}{{translate("courses.courses-of")}}{{courses.length}}</h6>
 
                     <div class="accordion accordion-flush overflow-hidden" id="coursesAccordion">
                         <div class="accordion-item" v-for="(course, i) in paginatedCourses">
@@ -156,7 +157,8 @@
                                 <div class="accordion-body">
                                     <div class="col-12">
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">{{translate("shared.code")}}
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("shared.code")}}
                                             </h6><span>&nbsp;{{course.code}}</span>
                                             <span v-if="course.url != ''">&nbsp;(<a :href="course.url" target="_blank"
                                                     rel="noopener">{{translate("shared.external-website")}}</a>)</span>
@@ -167,11 +169,14 @@
                                             <span>&nbsp;{{course.year}}</span>
                                         </div>
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">{{translate("courses.detail-languages")}}</h6>
-                                            <span>&nbsp;{{course.languages.map(language => translate("languages." + languages[language].name)).slice().join(' / ')}}</span>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("courses.detail-languages")}}</h6>
+                                            <span>&nbsp;{{course.languages.map(language => translate("languages." +
+                                                languages[language].name)).slice().join(' / ')}}</span>
                                         </div>
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">{{translate("courses.detail-teachers")}}</h6>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("courses.detail-teachers")}}</h6>
                                             <ul>
                                                 <li v-for="teacher in course.teachers">{{teacher}}</li>
                                             </ul>
@@ -190,8 +195,8 @@
 
     <script src="https://unpkg.com/vue@next"></script>
     <script type="module" src="js/courses.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 </body>
 
