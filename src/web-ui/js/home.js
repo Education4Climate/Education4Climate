@@ -16,7 +16,8 @@ var app = Vue.createApp({
             translations: [],
             availableLanguages: constants.AVAILABLE_LANGUAGES,
             menuItems: constants.MENU_ITEMS,
-            currentMenuItem: ""
+            currentMenuItem: "",
+            dataLoaded: false
         };
     },
     async created() {
@@ -32,8 +33,7 @@ var app = Vue.createApp({
     methods: {
         translate(key) {
 
-            let corpus = this.translations.find(translation => translation.language === this.currentLanguage);
-            return key.split('.').reduce((obj, i) => obj[i], corpus.translations);
+            return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage) : "";
         },
         setLanguage(language) {
             this.currentLanguage = language;

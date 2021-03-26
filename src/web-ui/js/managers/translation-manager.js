@@ -40,12 +40,31 @@ export function setLanguage(language) {
     }
 }
 
-export function translate(key, language) {
+export function translate(translations, key, language) {
 
-    let translations = JSON.parse(sessionStorage.translations);
+    if (!translations || translations.length == 0) {
+
+        console.log("translate() : parameter 'translations' is empty");
+        return "";
+    }
+
     let corpus = translations.find(translation => translation.language === language);
 
-    return key.split('.').reduce((obj, i) => obj[i], corpus.translations);
+    if (!corpus) {
+
+        console.log("translate() : no corpus found for language '" + language + "'");
+        return "";
+    }
+
+    let value = key.split('.').reduce((obj, i) => obj[i], corpus.translations);
+    
+    if (!value) {
+
+        console.log("translate() : no translation found in language '" + language + "' for key '" + key + "'");
+        return "";
+    }
+
+    return value;
 }
 
 export async function loadTranslations() {
