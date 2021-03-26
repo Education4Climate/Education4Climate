@@ -40,7 +40,7 @@ export function setLanguage(language) {
     }
 }
 
-export function translate(translations, key, language) {
+export function translate(translations, key, language, returnKeyIfNotFound = false) {
 
     if (!translations || translations.length == 0) {
 
@@ -61,7 +61,7 @@ export function translate(translations, key, language) {
     if (!value) {
 
         console.log("translate() : no translation found in language '" + language + "' for key '" + key + "'");
-        return "";
+        return returnKeyIfNotFound ? key : "";
     }
 
     return value;
