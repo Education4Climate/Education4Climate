@@ -31,18 +31,18 @@ export async function getCourses() {
                         courses.push({
 
                             id: j,
-                            teachers: course.teacher,
+                            teachers: course.teachers,
                             years: course.year,
                             code: course.id,
                             name: course.name,
                             schoolId: schools[i].id,
                             url: course.url,
-                            languages: getLanguages(course.language),
+                            languages: getLanguages(course.languages),
                             themes: getThemes(course.themes)
                         });
 
                         // DEBUG
-                        if (!course.language) console.log(schools[i].name + " : " + course.id + " has no language");
+                        if (!course.languages) console.log(schools[i].name + " : " + course.id + " has no language");
                         if (!course.themes) console.log(schools[i].name + " : " + course.id + " has no theme");
                         if (!course.url || course.url === "") console.log(schools[i].name + " : " + course.id + " has no url");
                     });
