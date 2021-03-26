@@ -14,7 +14,9 @@ var app = Vue.createApp({
         return {
             currentLanguage: "fr",
             translations: [],
-            availableLanguages: constants.AVAILABLE_LANGUAGES
+            availableLanguages: constants.AVAILABLE_LANGUAGES,
+            menuItems: constants.MENU_ITEMS,
+            currentMenuItem: ""
         };
     },
     async created() {

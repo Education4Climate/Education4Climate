@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+[v-cloak] { /* hide un-compiled mustache bindings until Vue is loaded */
+    display: none;
+}
+
 /* MENU & NAVIGATION */
 
 #logo {
@@ -102,7 +106,7 @@ courses-loader h4 {
     flex-direction: row;
 }
 
-#languages-selector a.active {
+#languages-selector a.active, #menu a.active {
     color: #0d6efd;
 }
 

@@ -37,23 +37,16 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="programs.html">{{translate("menu.programs")}}</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="courses.html">{{translate("menu.courses")}}</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="teachers.html">{{translate("menu.teachers")}}</a>
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
+                            <li class="nav-item" v-for="item in menuItems">
+                                <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
+                                    :href="item + '.html'" v-cloak>{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
-                                    @click="setLanguage(language)" href="#">{{language.toUpperCase()}}</a>
+                                    @click="setLanguage(language)" href="#" v-cloak>{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
                     </div>

@@ -29,7 +29,9 @@ var app = Vue.createApp({
             showResponsiveFilters: false,
             currentLanguage: "fr",
             translations: [],
-            availableLanguages: constants.AVAILABLE_LANGUAGES       
+            availableLanguages: constants.AVAILABLE_LANGUAGES,
+            menuItems: constants.MENU_ITEMS,
+            currentMenuItem: "courses"
         };
     },
     computed: {
