@@ -85,7 +85,7 @@ def main(school: str, year: int):
     # Load course crawling output
     courses_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
-    courses_df = pd.read_json(open(courses_fn, 'r')).set_index("id")
+    courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str}).set_index("id")
     courses_df = courses_df.drop("content", axis=1)
 
     # Load program crawling output
