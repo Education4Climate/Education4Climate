@@ -109,10 +109,15 @@
                         </div>
                     </div>
 
-                    <h6 class="text-primary">{{translate("shared.name")}}</h6>
+                    <label for="input-name-filter">
+                        <h6 class="text-primary">{{translate("shared.name")}}</h6>
+                    </label>
                     <div class="filter">
                         <input type="text" class="form-control name-search" v-model="searchedName"
-                            placeholder="exemple : climat">
+                            placeholder="exemple : climat" id="input-name-filter">
+                        <div class="form-text">
+                            {{translate("programs.search-in-name")}}
+                        </div>
                     </div>
 
                 </div>
