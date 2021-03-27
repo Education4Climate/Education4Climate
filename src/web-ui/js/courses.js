@@ -50,14 +50,7 @@ var app = Vue.createApp({
 
             return this.languages.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
-        sortedCourses() { /* Sort the courses DESC on their score for display */
-
-            return this.courses.slice().sort((a, b) => { return b.themes.length - a.themes.length; });
-        },
-        filteredCourses() { /* Filter the sorted courses according to the schools/themes/languages selected and course name searched */
-
-            /* TODO : d'abord filtrer PUIS trier */
-            /* TODO : chronométrer le temps des filtres */
+        filteredCourses() { /* Step 1 : filter the courses */
 
             if (this.dataLoaded) {
 
@@ -66,10 +59,11 @@ var app = Vue.createApp({
                 let searchedName = this.searchedName.toLowerCase();
 
                 if (this.programs && this.programs.length > 0) {
+
                     searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
                 }
 
-                return this.sortedCourses.slice()
+                return this.courses.slice()
                     .filter(course => this.selectedSchools.includes(course.schoolId))
                     .filter(course => this.selectedThemes.some(theme => course.themes.includes(theme)))
                     .filter(course => this.selectedLanguages.some(language => course.languages.includes(language)))
@@ -79,7 +73,11 @@ var app = Vue.createApp({
 
             return true;
         },
-        paginatedCourses() { /* Paginate the filtered courses */
+        sortedCourses() { /* Step 2 : sort the filtered courses DESC on their score for display */
+
+            return this.dataLoaded ? this.filteredCourses.slice().sort((a, b) => { return b.themes.length - a.themes.length; }) : true;
+        },        
+        paginatedCourses() { /* Step 3 : paginate the sorted courses */
 
             if (this.currentPage == 0) {
                 this.displayedCourses = [];
@@ -89,8 +87,8 @@ var app = Vue.createApp({
             const end = start + constants.PAGE_SIZE;
             let current = start;
 
-            while (current < end && this.filteredCourses[end - (end - current)]) {
-                this.displayedCourses.push(this.filteredCourses[end - (end - current)]);
+            while (current < end && this.sortedCourses[end - (end - current)]) {
+                this.displayedCourses.push(this.sortedCourses[end - (end - current)]);
                 current++;
             }
 
@@ -145,20 +143,21 @@ var app = Vue.createApp({
             this.selectedLanguages = this.languages.map(language => { return language.id; }); // sets the default selected languages
         });
 
-        this.dataLoaded = true;
+        await programsManager.getPrograms().then(programs => this.programs = programs);
 
-        programsManager.getPrograms().then(programs => this.programs = programs);
+        this.dataLoaded = true;
     },
     methods: {
         loadMore() {
 
-            this.currentPage = this.displayedCourses.length < this.filteredCourses.length ? this.currentPage + 1 : this.currentPage;
+            this.currentPage = this.dataLoaded && this.displayedCourses.length < this.sortedCourses.length ? this.currentPage + 1 : this.currentPage;
         },
         translate(key, returnKeyIfNotFound) {
 
             return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {
+
             this.currentLanguage = language;
             translationManager.setLanguage(language);
         }
