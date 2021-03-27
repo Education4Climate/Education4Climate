@@ -75,5 +75,5 @@ def merge_courses(school: str):
 
 if __name__ == '__main__':
     # TODO: edit
-    school = 'uantwerp'
-    merge_courses(school)
+    school = 'ugent'
+    merge_programs(school)
