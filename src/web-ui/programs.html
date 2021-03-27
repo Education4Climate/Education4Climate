@@ -182,6 +182,11 @@
                                                 {{translate("programs.detail-field")}}</h6>
                                             <span>&nbsp;{{translate("fields." + fields[program.fieldId].name)}}</span>
                                         </div>
+                                        <div class="button-courses-list">
+                                            <a class="btn btn-primary"
+                                                :href="'courses.html?schoolId=' + program.schoolId + '&programCode=' + program.code"
+                                                role="button">{{translate("programs.detail-courses-list")}}</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

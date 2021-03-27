@@ -56,7 +56,6 @@ export async function getPrograms() {
                         debugProgramsErrors(schools[i].shortName, program);
                     });
 
-                    console.log(programsThemes);
                     totalProgramsCountBySchool[schools[i].id] = data.length;
                 });
         }
@@ -178,10 +177,6 @@ function getThemes(themes, scores) {
         }
 
         t.sort((a, b) => { return b.score - a.score; });
-    }
-    else {
-        if(themes && scores)
-        console.log("ici : " + themes.length + " / " + scores.length);
     }
 
     return t;

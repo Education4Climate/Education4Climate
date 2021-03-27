@@ -111,10 +111,16 @@
                         </div>
                     </div>
 
-                    <h6 class="text-primary">{{translate("shared.name")}}</h6>
+                    <h6 class="text-primary">{{translate("courses.course-name")}}</h6>
                     <div class="filter">
                         <input type="text" class="form-control name-search" v-model="searchedName"
                             placeholder="exemple : climat">
+                    </div>
+
+                    <h6 class="text-primary">{{translate("courses.program-code")}}</h6>
+                    <div class="filter">
+                        <input type="text" class="form-control program-code-search" v-model="searchedProgramCode"
+                            placeholder="exemple : MA-STIC">
                     </div>
 
                 </div>
