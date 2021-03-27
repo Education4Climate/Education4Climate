@@ -31,7 +31,8 @@ var app = Vue.createApp({
             translations: [],
             availableLanguages: constants.AVAILABLE_LANGUAGES,
             menuItems: constants.MENU_ITEMS,
-            currentMenuItem: "programs"
+            currentMenuItem: "programs",
+            cycles: []
         };
     },
     computed: {
@@ -126,6 +127,10 @@ var app = Vue.createApp({
         await programsManager.getProgramsFields().then(fields => {
             this.fields = fields;
             this.selectedFields = this.fields.map(field => { return field.id; }); // sets the default selected fields
+        });
+
+        await programsManager.getProgramsCycles().then(cycles => {
+            this.cycles = cycles;
         });
 
         this.dataLoaded = true;

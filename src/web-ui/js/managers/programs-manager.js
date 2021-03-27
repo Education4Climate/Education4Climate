@@ -11,6 +11,7 @@ import * as schoolsManager from './schools-manager.js';
 var totalProgramsCountBySchool = [];
 var programsThemes = [];
 var programsFields = [];
+var programsCycles = [];
 
 /**
  * Gets the programs from the 'programFile' properties in the school.json.
@@ -50,7 +51,7 @@ export async function getPrograms() {
                             themes: getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
                             fieldId: getFieldId(program.field ? program.field : "other"),
                             score: program.courses ? program.courses.length : 0,
-                            cycle: program.cycle ? program.cycle : ""
+                            cycleId: program.cycle ? getCycleId(program.cycle) : "other"
                         });
 
                         debugProgramsErrors(schools[i].shortName, program);
@@ -62,6 +63,8 @@ export async function getPrograms() {
 
         sessionStorage.totalProgramsCountBySchool = JSON.stringify(totalProgramsCountBySchool);
         sessionStorage.programsThemes = JSON.stringify(programsThemes);
+        sessionStorage.programsFields = JSON.stringify(programsFields);
+        sessionStorage.programsCycles = JSON.stringify(programsCycles);
         sessionStorage.programs = JSON.stringify(programs);
     }
 
@@ -106,6 +109,17 @@ export async function getProgramsFields() {
     }
 
     return JSON.parse(sessionStorage.programsFields);
+}
+
+export async function getProgramsCycles() {
+
+    if (!sessionStorage.programsCycles) {
+
+        await getPrograms();
+        sessionStorage.programsCycles = JSON.stringify(programsCycles);
+    }
+
+    return JSON.parse(sessionStorage.programsCycles); 
 }
 
 function getFieldId(field) {
@@ -180,6 +194,40 @@ function getThemes(themes, scores) {
     }
 
     return t;
+}
+
+function getCycleId(cycle) {
+
+    var id = -1;
+
+    var master = ["master", "master"];
+    var bac = ["bac", "bachelier", "bachelor"];
+
+    cycle = master.includes(cycle.toLowerCase()) ? "master" : bac.includes(cycle.toLowerCase()) ? "bac" : "other";
+
+    for (var i = 0; i < programsCycles.length; i++) {
+
+        if (programsCycles[i].name == cycle) {
+
+            id = i;
+            break;
+        }
+    }
+
+    if (id == -1) {
+
+        id = programsCycles.length;
+
+        programsCycles.push({
+            id: id,
+            name: cycle,
+            totalCount: 0
+        });
+    }
+
+    programsCycles[i].totalCount++;
+
+    return id;
 }
 
 function debugProgramsErrors(school, program) {
