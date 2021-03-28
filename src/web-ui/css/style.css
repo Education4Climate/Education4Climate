@@ -107,6 +107,10 @@ courses-loader h4 {
     margin-top: 1rem;
 }
 
+.themes-badges .badge.bg-primary {
+    margin-right: 0.8rem;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -187,6 +191,10 @@ courses-loader h4 {
 
     #languages-selector .nav-item {
         margin-right: 1rem
+    }
+
+    .sidebar {
+        padding-bottom: 1rem;
     }
 }
 

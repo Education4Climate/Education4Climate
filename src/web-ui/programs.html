@@ -130,27 +130,22 @@
                             <h2 class="accordion-header" :id="'heading'+i">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     :data-bs-target="'#collapse'+i" aria-expanded="false" :aria-controls="'collapse'+i">
-                                    <div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <h5><span class="badge bg-success">{{program.score}}</span>
-                                                    {{program.name}}
-                                                    <span
-                                                        class="badge bg-light text-body">{{schools[program.schoolId].shortName}}</span>
-                                                </h5>
-                                            </div>
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <h5><span class="badge bg-success">{{program.score}}</span>
+                                                {{program.name}}
+                                                <span
+                                                    class="badge bg-light text-body">{{schools[program.schoolId].shortName}}</span>
+                                            </h5>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <span v-for="(theme, j) in program.themes">
-                                                    <span class="badge bg-primary bg-theme">{{translate("themes." +
-                                                        themes[theme.id].name)}}&nbsp;&nbsp;&nbsp;
-                                                        <span
-                                                            class="badge rounded-pill bg-white text-primary">{{theme.score}}</span>
-                                                    </span>
-                                                    &nbsp;
+                                        <div class="themes-badges">
+                                            <span v-for="(theme, j) in program.themes">
+                                                <span class="badge bg-primary bg-theme">{{translate("themes." +
+                                                    themes[theme.id].name)}}&nbsp;&nbsp;&nbsp;
+                                                    <span
+                                                        class="badge rounded-pill bg-white text-primary">{{theme.score}}</span>
                                                 </span>
-                                            </div>
+                                            </span>
                                         </div>
                                     </div>
                                 </button>
