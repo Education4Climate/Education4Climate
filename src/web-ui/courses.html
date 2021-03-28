@@ -27,7 +27,7 @@
 
     <div id="app">
 
-        <header v-if="dataLoaded">
+        <header v-if="dataLoaded" v-cloak>
             <nav class="navbar navbar-expand-xl navbar-light bg-light">
                 <div class="container-fluid">
                     <a href="index.html"><img src="./img/icon-education4climate.svg" alt="logo" id="logo"></a>
@@ -58,7 +58,7 @@
         <div id="courses-loader" v-if="!dataLoaded"
             class="d-flex flex-column justify-content-center align-items-center">
             <div class="spinner-border text-primary"></div>
-            <h4>Chargement en cours</h4>
+            <h4 v-if="translations.length > 0" v-cloak>{{translate("shared.loading")}}</h4>
         </div>
 
         <div class="container-fluid" id="courses-finder" v-if="dataLoaded">

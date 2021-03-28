@@ -141,8 +141,8 @@ var app = Vue.createApp({
             this.currentPage = this.dataLoaded && this.displayedPrograms.length < this.sortedPrograms.length ? this.currentPage + 1 : this.currentPage;
         },
         translate(key, returnKeyIfNotFound) {
-
-            return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
+            
+            return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {
 

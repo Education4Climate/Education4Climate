@@ -76,7 +76,7 @@ var app = Vue.createApp({
         sortedCourses() { /* Step 2 : sort the filtered courses DESC on their score for display */
 
             return this.dataLoaded ? this.filteredCourses.slice().sort((a, b) => { return b.themes.length - a.themes.length; }) : true;
-        },        
+        },
         paginatedCourses() { /* Step 3 : paginate the sorted courses */
 
             if (this.currentPage == 0) {
@@ -154,7 +154,7 @@ var app = Vue.createApp({
         },
         translate(key, returnKeyIfNotFound) {
 
-            return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
+            return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {
 
