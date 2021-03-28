@@ -157,15 +157,15 @@
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">Code :
                                             </h6><span>&nbsp;{{program.code}}</span>
-                                            <span v-if="program.url != ''">&nbsp;(<a :href="program.url" target="_blank"
+                                            <span v-if="program.url">&nbsp;(<a :href="program.url" target="_blank"
                                                     rel="noopener">{{translate("shared.external-website")}}</a>)</span>
                                         </div>
-                                        <div>
+                                        <div v-if="program.faculty">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
                                                 {{translate("programs.detail-faculty")}}</h6>
                                             <span>&nbsp;{{program.faculty}}</span>
                                         </div>
-                                        <div>
+                                        <div v-if="program.campus">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
                                                 {{translate("programs.detail-campus")}}</h6>
                                             <span>&nbsp;{{program.campus}}</span>
