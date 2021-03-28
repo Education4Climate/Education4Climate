@@ -74,46 +74,43 @@
 
                 <div class="col-xl-2 sidebar collapse">
 
-                    <h6 class="text-primary">{{translate("shared.schools")}}</h6>
-                    <div class="filter schools-selector">
-                        <div class="form-check" v-for="school in sortedSchools">
+                    <h6 class="title first">{{translate("shared.schools")}}</h6>
+                    <div class="filter d-flex" v-for="school in sortedSchools">
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedSchools"
                                 :id="'checkbox-school-' + school.id" :value="school.id">
                             <label class="form-check-label"
                                 :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
-                            <span
-                                class="float-end text-body"><small><strong>{{totalCoursesCounts[school.id]}}</strong></small></span>
                         </div>
+                        <span class="ml-auto count">{{totalCoursesCounts[school.id]}}</span>
                     </div>
 
-                    <h6 class="text-primary">{{translate("shared.themes")}}</h6>
-                    <div class="filter themes-selector">
-                        <div class="form-check" v-for="theme in sortedThemes">
+                    <h6 class="title">{{translate("shared.themes")}}</h6>
+                    <div class="filter d-flex" v-for="theme in sortedThemes">
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
                                 :id="'checkbox-theme-' + theme.id" :value="theme.id">
                             <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
                                 theme.name, true)}}</label>
-                            <span
-                                class="float-end text-body"><small><strong>{{theme.totalCount}}</strong></small></span>
                         </div>
+                        <span class="ml-auto count">{{theme.totalCount}}</span>
                     </div>
 
-                    <h6 class="text-primary">{{translate("shared.languages")}}</h6>
-                    <div class="filter fields-selector">
-                        <div class="form-check" v-for="language in sortedLanguages">
+                    <h6 class="title">{{translate("shared.languages")}}</h6>
+                    <div class="filter d-flex" v-for="language in sortedLanguages">
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedLanguages"
                                 :id="'checkbox-language-' + language.id" :value="language.id"><label
                                 class="form-check-label"
                                 :for="'checkbox-language-' + language.id">{{translate("languages." +
                                 language.name, true)}}</label>
-                            <span
-                                class="float-end text-body"><small><strong>{{language.totalCount}}</strong></small></span>
                         </div>
+                        <span class="ml-auto count">{{language.totalCount}}</span>
                     </div>
 
 
                     <label for="input-name-filter">
-                        <h6 class="text-primary">{{translate("courses.course-name")}}</h6>
+                        <h6 class="title">{{translate("courses.course-name")}}</h6>
                     </label>
                     <div class="filter">
                         <input type="text" class="form-control name-search" v-model="searchedName"
@@ -125,7 +122,7 @@
 
 
                     <label for="input-program-code-filter">
-                        <h6 class="text-primary">{{translate("courses.program-code")}}</h6>
+                        <h6 class="title">{{translate("courses.program-code")}}</h6>
                     </label>
                     <div class="filter">
                         <input type="text" class="form-control program-code-search" v-model="searchedProgramCode"

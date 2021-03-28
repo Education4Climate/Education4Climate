@@ -74,43 +74,41 @@
 
                 <div class="col-xl-2 sidebar collapse">
 
-                    <h6 class="text-primary">{{translate("shared.schools")}}</h6>
-                    <div class="filter schools-selector">
-                        <div class="form-check" v-for="school in sortedSchools">
+                    <h6 class="title first">{{translate("shared.schools")}}</h6>
+                    <div class="filter d-flex" v-for="school in sortedSchools">
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedSchools"
                                 :id="'checkbox-school-' + school.id" :value="school.id">
                             <label class="form-check-label"
                                 :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
-                            <span
-                                class="float-end text-body"><small><strong>{{totalProgramsCounts[school.id]}}</strong></small></span>
                         </div>
+                        <span class="ml-auto count">{{totalProgramsCounts[school.id]}}</span>
                     </div>
 
-                    <h6 class="text-primary">{{translate("shared.themes")}}</h6>
-                    <div class="filter themes-selector">
-                        <div class="form-check" v-for="theme in sortedThemes">
+                    <h6 class="title">{{translate("shared.themes")}}</h6>
+                    <div class="filter d-flex" v-for="theme in sortedThemes">
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
                                 :id="'checkbox-theme-' + theme.id" :value="theme.id">
                             <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
                                 theme.name, true)}}</label>
-                            <span
-                                class="float-end text-body"><small><strong>{{theme.totalCount}}</strong></small></span>
                         </div>
+                        <span class="ml-auto count">{{theme.totalCount}}</span>
                     </div>
 
-                    <h6 class="text-primary">{{translate("shared.fields")}}</h6>
-                    <div class="filter fields-selector">
-                        <div class="form-check" v-for="field in sortedFields">
+                    <h6 class="title">{{translate("shared.fields")}}</h6>
+                    <div class="filter d-flex" v-for="field in sortedFields">
+                        <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedFields"
-                                :id="'checkbox-field-' + field.id" :value="field.id"><label class="form-check-label"
-                                :for="'checkbox-field-' + field.id">{{translate("fields." + field.name, true)}}</label>
-                            <span
-                                class="float-end text-body"><small><strong>{{field.totalCount}}</strong></small></span>
+                                :id="'checkbox-field-' + field.id" :value="field.id">
+                            <label class="form-check-label" :for="'checkbox-field-' + field.id">{{translate("fields." +
+                                field.name, true)}}</label>
                         </div>
+                        <span class="ml-auto count">{{field.totalCount}}</span>
                     </div>
 
                     <label for="input-name-filter">
-                        <h6 class="text-primary">{{translate("shared.name")}}</h6>
+                        <h6 class="title">{{translate("shared.name")}}</h6>
                     </label>
                     <div class="filter">
                         <input type="text" class="form-control name-search" v-model="searchedName"

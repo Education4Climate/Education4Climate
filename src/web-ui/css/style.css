@@ -2,7 +2,8 @@ a {
     text-decoration: none;
 }
 
-[v-cloak] { /* hide un-compiled mustache bindings until Vue is loaded */
+[v-cloak] {
+    /* hide un-compiled mustache bindings until Vue is loaded */
     display: none !important;
 }
 
@@ -61,7 +62,8 @@ a {
     display: none;
 }
 
-a.btn:empty { /* avoid showing empty buttons while loading translations */
+a.btn:empty {
+    /* avoid showing empty buttons while loading translations */
     display: none !important;
 }
 
@@ -70,22 +72,6 @@ a.btn:empty { /* avoid showing empty buttons while loading translations */
 #courses-finder h6,
 #programs-finder h6 {
     font-weight: 600;
-}
-
-#courses-finder .sidebar,
-#programs-finder .sidebar {
-
-    background-color: #f8f9fa;
-    min-height      : calc(100vh - 56px);
-}
-
-#courses-finder .sidebar .filter,
-#programs-finder .sidebar .filter {
-    margin-bottom: 1rem;
-}
-
-.show-filters {
-    display: none;
 }
 
 #programs-loader,
@@ -98,20 +84,13 @@ courses-loader h4 {
     margin-top: 1rem;
 }
 
-.filter .form-check {
-    overflow: hidden;
-}
-
-.filter .form-check label {
-    width: 85%;
-}
-
 #languages-selector {
     flex-direction: row;
 }
 
-#languages-selector a.active, #menu a.active {
-    color: #0d6efd;
+#languages-selector a.active,
+#menu a.active {
+    color      : #0d6efd;
     font-weight: 500;
 }
 
@@ -121,14 +100,44 @@ courses-loader h4 {
 
 .accordion-item .accordion-collapse {
     border-right: 1px solid #D5DBDB;
-    border-left: 1px solid #D5DBDB;
+    border-left : 1px solid #D5DBDB;
 }
 
 .button-courses-list {
     margin-top: 1rem;
 }
 
+/* SIDEBAR */
+
+.sidebar {
+    background-color: #f8f9fa;
+    min-height      : calc(100vh - 56px);
+}
+
+.sidebar h6.title {
+    color     : #0d6efd;
+    margin-top: 1rem;
+}
+
+.sidebar h6.title.first {
+    margin-top: 0;
+}
+
+.filter .count {
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size  : 14px;
+}
+
+.filter .form-check {
+    width: 100%;
+}
+
 /* RESPONSIVE */
+
+.show-filters {
+    display: none;
+}
 
 @media (max-width: 1199.98px) {
 
