@@ -51,7 +51,7 @@ export async function getPrograms() {
                             themes: getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
                             fieldId: getFieldId(program.field ? program.field : "other"),
                             score: program.courses ? program.courses.length : 0,
-                            cycleId: program.cycle ? getCycleId(program.cycle) : "other"
+                            cycleId: getCycleId(program.cycle ? program.cycle : "other")
                         });
 
                         debugProgramsErrors(schools[i].shortName, program);
@@ -119,7 +119,7 @@ export async function getProgramsCycles() {
         sessionStorage.programsCycles = JSON.stringify(programsCycles);
     }
 
-    return JSON.parse(sessionStorage.programsCycles); 
+    return JSON.parse(sessionStorage.programsCycles);
 }
 
 function getFieldId(field) {
