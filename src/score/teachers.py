@@ -24,13 +24,15 @@ def main(school: str, year: int):
     # Load teachers
     courses_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
-    courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str}).set_index("id")[["teacher", "name"]]
+    print(courses_fn)
+    print(pd.read_json(open(courses_fn, 'r')))
+    courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str}).set_index("id")[["teachers", "name"]]
     courses_df = courses_df.loc[matched_courses_index]
 
     # Create table associating teachers to the list of (ids and names of) matched courses they give
-    teachers_courses_df = pd.DataFrame(index=set(courses_df['teacher'].sum()), columns=['ids', 'names'], dtype=str)
+    teachers_courses_df = pd.DataFrame(index=set(courses_df['teachers'].sum()), columns=['ids', 'names'], dtype=str)
     for teacher in teachers_courses_df.index:
-        courses_b = courses_df['teacher'].apply(lambda teacher_list: teacher in teacher_list)
+        courses_b = courses_df['teachers'].apply(lambda teacher_list: teacher in teacher_list)
         teachers_courses_df.loc[teacher, 'ids'] = list(courses_df[courses_b].index)
         teachers_courses_df.loc[teacher, 'names'] = list(courses_df[courses_b]['name'])
     teachers_courses_df = teachers_courses_df.reset_index()
@@ -43,10 +45,15 @@ def main(school: str, year: int):
 
     # TODO: temporary
     # Save for mailing
-    # Divide name and surname
-    teachers_courses_df["name"] = teachers_courses_df["teacher"].apply(lambda teacher: teacher.split(" ")[-1])
-    teachers_courses_df["surname"] = \
-        teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[:-1]))
+    # Divide name and surname (some schools start with the surname, other with the name
+    if school in ['uliege', 'ulb']:
+        teachers_courses_df["name"] = teachers_courses_df["teacher"].apply(lambda teacher: teacher.split(" ")[0])
+        teachers_courses_df["surname"] = \
+            teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[1:]))
+    else:
+        teachers_courses_df["name"] = teachers_courses_df["teacher"].apply(lambda teacher: teacher.split(" ")[-1])
+        teachers_courses_df["surname"] = \
+            teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[:-1]))
     teachers_courses_df = teachers_courses_df.drop('teacher', axis=1)
     teachers_mail_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_teachers_{year}.csv")
