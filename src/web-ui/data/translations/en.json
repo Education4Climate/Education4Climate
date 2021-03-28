@@ -53,7 +53,7 @@
         "bac": "Bachelor",
         "master": "Master",
         "other": "Other"
-    },    
+    },
     "programs": {
         "programs-of": " programmes of ",
         "detail-faculty": "Faculty : ",
@@ -61,7 +61,7 @@
         "detail-cycle": "Cycle : ",
         "detail-field": "Field : ",
         "detail-courses-list": "Courses list",
-        "search-in-name" : "Partial search in the programme name"
+        "search-in-name": "Partial search in the programme name"
     },
     "courses": {
         "courses-of": " courses of ",
@@ -70,7 +70,13 @@
         "detail-teachers": "Teacher(s) : ",
         "course-name": "Course name",
         "program-code": "Programme code : ",
-        "search-in-name" : "Partial search in the course name",
+        "search-in-name": "Partial search in the course name",
         "search-code": "Exact search of a programme code"
+    },
+    "teachers": {
+        "search-in-name": "Partial search in the teacher name",
+        "teachers-of": " teachers of ",
+        "name": "Name/firstname",
+        "external-website": "Phonebook on university website"
     }
 }

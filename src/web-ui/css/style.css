@@ -111,6 +111,22 @@ a.btn:empty {
     margin-right: 0.8rem;
 }
 
+/* Teachers directory */
+
+#alphabet {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#alphabet .letter {
+    margin-right : 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#alphabet .letter.active {
+    background-color: #157347;
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -195,6 +211,13 @@ a.btn:empty {
 
     .sidebar {
         padding-bottom: 1rem;
+    }
+
+    /* Teachers directory */
+
+    #alphabet {
+        text-align: center;
+        margin-left: 0;
     }
 }
 
