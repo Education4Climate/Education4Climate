@@ -179,4 +179,5 @@ function debugCoursesErrors(school, course) {
     if (!course.languages || course.languages.length === 0) console.log(school + " : " + course.id + " has no languages");
     if (!course.themes || course.themes.length === 0) console.log(school + " : " + course.id + " has no themes");
     if (!course.teachers || course.teachers.length === 0) console.log(school + " : " + course.id + " has no teachers");
+    if (course.teachers && course.teachers.length > 0 && !course.teachers[0]) console.log(school + " : " + course.id + " has an empty teacher");
 }
