@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <div id="app" v-if="dataLoaded">
+    <div id="app" v-if="dataLoaded" v-cloak>
 
         <header>
             <nav class="navbar navbar-expand-xl navbar-light bg-light">
@@ -40,13 +40,13 @@
                         <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
                             <li class="nav-item" v-for="item in menuItems">
                                 <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
-                                    :href="item + '.html'" v-cloak>{{translate("menu." + item)}}</a>
+                                    :href="item + '.html'">{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
-                                    @click="setLanguage(language)" href="#" v-cloak>{{language.toUpperCase()}}</a>
+                                    @click="setLanguage(language)" href="#">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
                     </div>
@@ -63,9 +63,9 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
-                                        <h1 v-cloak>{{translate("home.headline-students")}}</h1>
-                                        <p><a class="btn btn-primary learn-more" href="#home-intro"
-                                                v-cloak>{{translate("home.learn-more")}}</a></p>
+                                        <h1>{{translate("home.headline-students")}}</h1>
+                                        <p><a class="btn btn-primary learn-more"
+                                                href="#home-intro">{{translate("home.learn-more")}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -76,10 +76,10 @@
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6">
-                                        <h1 v-cloak>{{translate("home.headline-teachers")}}
+                                        <h1>{{translate("home.headline-teachers")}}
                                         </h1>
-                                        <p><a class="btn btn-primary learn-more" href="#home-intro"
-                                                v-cloak>{{translate("home.learn-more")}}</a></p>
+                                        <p><a class="btn btn-primary learn-more"
+                                                href="#home-intro">{{translate("home.learn-more")}}</a></p>
                                     </div>
                                 </div>
                             </div>
