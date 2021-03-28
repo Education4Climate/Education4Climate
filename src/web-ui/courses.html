@@ -172,7 +172,7 @@
                                             <span v-if="course.url != ''">&nbsp;(<a :href="course.url" target="_blank"
                                                     rel="noopener">{{translate("shared.external-website")}}</a>)</span>
                                         </div>
-                                        <div>
+                                        <div v-if="course.year">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
                                                 {{translate("courses.detail-year")}}</h6>
                                             <span>&nbsp;{{course.year}}</span>
@@ -183,7 +183,7 @@
                                             <span>&nbsp;{{course.languages.map(language => translate("languages." +
                                                 languages[language].name)).slice().join(' / ')}}</span>
                                         </div>
-                                        <div>
+                                        <div v-if="course.teachers.length > 0">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
                                                 {{translate("courses.detail-teachers")}}</h6>
                                             <ul>
