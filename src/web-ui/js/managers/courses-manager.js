@@ -31,7 +31,7 @@ export async function getCourses() {
                         courses.push({
 
                             id: j,
-                            teachers: course.teachers && course.teachers.length > 0 ? course.teachers : [],
+                            teachers: getCleanedTeachers(course.teachers),
                             year: course.year ? course.year : "",
                             code: course.id ? course.id : "",
                             name: course.name ? course.name : "",
@@ -55,6 +55,28 @@ export async function getCourses() {
     }
 
     return JSON.parse(sessionStorage.courses);
+}
+
+function getCleanedTeachers(teachers) {
+
+    let t = [];
+
+    if (teachers && teachers.length > 0) {
+
+        teachers.forEach(teacher => {
+
+            teacher = teacher.replace("\u00a0", " ").trim();
+            const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr."];
+            toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
+            teacher = teacher.trim();
+
+            if (teacher.length > 0) {
+                t.push(teacher);
+            }
+        });
+    }
+
+    return t;
 }
 
 export async function getTotalCoursesCounts() {
