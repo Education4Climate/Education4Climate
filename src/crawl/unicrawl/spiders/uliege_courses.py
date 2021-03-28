@@ -76,8 +76,8 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
             'id': short_name,
             'name': class_name,
             'year': years,
-            'teacher': teachers,
-            'language': languages,
+            'teachers': teachers,
+            'languages': languages,
             'url': response.url,
             'content': content,
         }
