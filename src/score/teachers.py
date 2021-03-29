@@ -38,6 +38,18 @@ def main(school: str, year: int):
     teachers_courses_df = teachers_courses_df.reset_index()
     teachers_courses_df.columns = ['teacher', 'courses_ids', 'courses_names']
 
+    # Update teachers names to get in all cases 'Surname name'
+    # TODO: maybe this should be taken care of in the crawlers
+    if school in ['uhasselt']:
+        teachers_courses_df['teacher'] = teachers_courses_df['teacher'].apply(lambda t: t.split('. ')[-1])
+        for text in ['Mevrouw ', 'De heer ']:
+            teachers_courses_df['teacher'] = teachers_courses_df['teacher'].apply(lambda t: t.replace(text, ''))
+    if school in ['uliege', 'ulb', 'uantwerp', 'uhasselt', 'vub']:
+        teachers_courses_df['teacher'] = teachers_courses_df["teacher"]\
+            .apply(lambda teacher: f"{' '.join(teacher.split(' ')[1:])} {teacher.split(' ')[0]}")
+    if school in ['uliege']:
+        teachers_courses_df['teacher'] = teachers_courses_df['teacher'].apply(lambda t: t.replace(' ', ''))
+
     # Save for web app
     teachers_web_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_teachers.json")
@@ -46,14 +58,9 @@ def main(school: str, year: int):
     # TODO: temporary
     # Save for mailing
     # Divide name and surname (some schools start with the surname, other with the name
-    if school in ['uliege', 'ulb']:
-        teachers_courses_df["name"] = teachers_courses_df["teacher"].apply(lambda teacher: teacher.split(" ")[0])
-        teachers_courses_df["surname"] = \
-            teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[1:]))
-    else:
-        teachers_courses_df["name"] = teachers_courses_df["teacher"].apply(lambda teacher: teacher.split(" ")[-1])
-        teachers_courses_df["surname"] = \
-            teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[:-1]))
+    teachers_courses_df["name"] = teachers_courses_df["teacher"].apply(lambda teacher: teacher.split(" ")[-1])
+    teachers_courses_df["surname"] = \
+        teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[:-1]))
     teachers_courses_df = teachers_courses_df.drop('teacher', axis=1)
     teachers_mail_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_teachers_{year}.csv")
