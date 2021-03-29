@@ -51,11 +51,11 @@ def exchange_fields(courses_df, programs_df):
                     campus += [programs_df.loc[program_id, 'campus']]
         # Add the lists to the dataframe if required
         if 'ects' in keys_in_programs:
-            courses_aux_df.loc[course_id, 'ects'] = list(set(ects))
+            courses_aux_df.loc[course_id]['ects'] = list(set(ects))
         if 'faculty' in keys_in_programs:
-            courses_aux_df.loc[course_id, 'faculty'] = list(set(faculty))
+            courses_aux_df.loc[course_id]['faculty'] = list(set(faculty))
         if 'campus' in keys_in_programs:
-            courses_aux_df.loc[course_id, 'campus'] = list(set(campus))
+            courses_aux_df.loc[course_id]['campus'] = list(set(campus))
 
     courses_df = pd.concat([courses_df, courses_aux_df], axis=1)
 

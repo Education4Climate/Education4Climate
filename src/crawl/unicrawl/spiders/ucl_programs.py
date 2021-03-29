@@ -37,10 +37,14 @@ class UCLProgramSpider(scrapy.Spider, ABC):
 
     def parse_program(self, response, base_dict):
 
-        program_id = response.xpath("//p[@id='offer-page-subtitle']/text()").get().split('\n')[0]
+        program_id_and_campus = response.xpath("//p[@id='offer-page-subtitle']/text()").get().split('\n')
+        program_id = program_id_and_campus[0]
+        # If no campus is specified, consider it's Louvain-La-Neuve
+        campus = program_id_and_campus[3].strip(" ") if len(program_id_and_campus) > 3 else 'Louvain-La-Neuve'
+
         program_name = response.xpath("//div[@id='offer-page-title']/a/text()").get()
-        campus = response.xpath("//span[@class='location']/text()").get()
-        campus = "" if campus is None else campus.strip(" ")
+        # campus = response.xpath("//span[@class='location']/text()").get()
+        # campus = "" if campus is None else campus.strip(" ")
 
         if 'Bachelier' in program_name:
             cycle = 'bac'
