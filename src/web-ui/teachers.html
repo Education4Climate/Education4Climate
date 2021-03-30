@@ -101,7 +101,8 @@
                     </label>
                     <div class="filter">
                         <input type="text" class="form-control name-search" v-model="searchedName"
-                            placeholder="exemple : climat" id="input-name-filter" @keyup="firstLetterSearched=''">
+                            :placeholder="translate('teachers.name-example')" id="input-name-filter"
+                            @keyup="firstLetterSearched=''">
                         <div class="form-text">
                             {{translate("teachers.search-in-name")}}
                         </div>
@@ -130,16 +131,15 @@
                                     :data-bs-target="'#collapse'+i" aria-expanded="false" :aria-controls="'collapse'+i">
                                     <div class="d-flex flex-column">
                                         <div>
-                                            <h5><span class="badge bg-success"></span>
-                                                {{teacher.name}}
-                                                <span
-                                                    class="badge bg-light text-body">{{schools[teacher.schoolId].shortName}}</span>
+                                            <h5>{{teacher?teacher.name:''}}
+                                                <span class="badge bg-light text-body">{{schools[teacher.schoolId]?
+                                                    schools[teacher.schoolId].shortName:''}}</span>
                                             </h5>
                                         </div>
                                         <div class="themes-badges">
                                             <span class="badge bg-primary bg-theme"
-                                                v-for="theme in teacher.themesIds">{{translate("themes." +
-                                                themes[theme].name)}}
+                                                v-for="theme in teacher.themesIds">{{themes[theme]?translate("themes." +
+                                                themes[theme].name):''}}
                                             </span>
                                         </div>
                                     </div>
@@ -152,15 +152,17 @@
                                         <div v-if="teacher.coursesIds.length > 0">
                                             <ul>
                                                 <li v-for="id in teacher.coursesIds">
-                                                    <span>{{courses[id].name}}</span>
+                                                    <span>{{courses[id]?courses[id].name:''}}</span>
                                                     <span v-if="courses[id].url">
                                                         (<a :href="courses[id].url" target="_blank"
-                                                            rel="noopener">{{courses[id].code}}</a>)
+                                                            rel="noopener">{{courses[id]?courses[id].code:''}}</a>)
                                                     </span>
-                                                    <span v-if="!courses[id].url">{{courses[id].code}}</span>
+                                                    <span
+                                                        v-if="!courses[id].url">{{courses[id]?courses[id].code:''}}</span>
                                                 </li>
                                             </ul>
-                                            <a :href="schools[teacher.schoolId].teachersDirectoryUrl" target="_blank"
+                                            <a :href="schools[teacher.schoolId]?schools[teacher.schoolId].teachersDirectoryUrl:''"
+                                                target="_blank"
                                                 rel="noopener">{{translate("teachers.external-website")}}</a>
                                         </div>
                                     </div>
