@@ -26,11 +26,11 @@ export async function getCourses() {
                 .then(response => { return response.json(); })
                 .then(data => {
 
-                    data.forEach((course, j) => {
+                    data.forEach((course) => {
 
                         courses.push({
 
-                            id: j,
+                            id: courses.length,
                             teachers: getCleanedTeachers(course.teachers),
                             year: course.year ? course.year : "",
                             code: course.id ? course.id : "",
@@ -66,7 +66,7 @@ function getCleanedTeachers(teachers) {
         teachers.forEach(teacher => {
 
             teacher = teacher.replace("\u00a0", " ").trim();
-            const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr."];
+            const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr.", "Mevrouw ", "De heer "];
             toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
             teacher = teacher.trim();
 
