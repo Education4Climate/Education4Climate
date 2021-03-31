@@ -9,26 +9,39 @@ import * as constants from '../constants.js';
 
 export function getLanguage() {
 
+    // Step 1 : if the language is passed in the url
+
+    const urlLanguage = new URL(document.location).searchParams.get("lang");
+
+    if (urlLanguage && constants.AVAILABLE_LANGUAGES.includes(urlLanguage)) {
+
+        setLanguage(urlLanguage);
+        return urlLanguage;
+    }
+
+    // Step 2 : if the language is stored in the local storage
+
     let storedLanguage = localStorage.getItem("language");
 
-    if (storedLanguage) {
+    if (storedLanguage && constants.AVAILABLE_LANGUAGES.includes(storedLanguage)) {
 
-        if (!constants.AVAILABLE_LANGUAGES.includes(storedLanguage)) {
-
-            localStorage.removeItem("language");
-        }
-        else {
-            return storedLanguage;
-        }
+        setLanguage(storedLanguage);
+        return storedLanguage;
     }
 
-    if (navigator && navigator.languages) {
+    // Step 3 : the language of the browser
 
-        let navigatorLanguage = navigator.languages[0].substr(0, 2);
+    let navigatorLanguage = navigator && navigator.languages && navigator.languages[0].substr(0, 2);
 
-        return constants.AVAILABLE_LANGUAGES.includes(navigatorLanguage) ? navigatorLanguage : constants.DEFAULT_LANGUAGE;
+    if (navigatorLanguage && constants.AVAILABLE_LANGUAGES.includes(navigatorLanguage)) {
+
+        setLanguage(navigatorLanguage);
+        return navigatorLanguage;
     }
 
+    // Step 4 : default language
+
+    setLanguage(constants.DEFAULT_LANGUAGE);
     return constants.DEFAULT_LANGUAGE;
 }
 
@@ -37,6 +50,28 @@ export function setLanguage(language) {
     if (constants.AVAILABLE_LANGUAGES.includes(language)) {
 
         localStorage.setItem("language", language);
+
+        // sets the 'lang' attribute inside the <html> tag
+
+        document.documentElement.setAttribute('lang', language);
+
+        // add the 'lang" parameter in the url
+
+        if (document.location.search) {
+
+            const urlLanguage = new URL(document.location).searchParams.get("lang");
+
+            if (urlLanguage) {
+
+                window.history.replaceState({}, "", document.location.pathname + document.location.search.replace("lang=" + urlLanguage, "lang=" + language));
+            }
+            else {
+                window.history.replaceState({}, "", document.location.pathname + document.location.search + "&lang=" + language);
+            }
+        }
+        else {
+            window.history.replaceState({}, "", document.location.pathname + "?lang=" + language);
+        }
     }
 }
 
