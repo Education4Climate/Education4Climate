@@ -57,7 +57,7 @@ var app = Vue.createApp({
                     .filter(teacher => this.selectedSchools.includes(teacher.schoolId))
                     .filter(teacher => this.selectedThemes.some(theme => teacher.themesIds.includes(theme)))
                     .filter(teacher => teacher.name.toLowerCase().includes(searchedName))
-                    .filter(teacher => !this.firstLetterSearched ? true : teacher.name[0].toUpperCase() === this.firstLetterSearched);
+                    .filter(teacher => !this.firstLetterSearched || !teacher.name[0] ? true : teacher.name[0].toUpperCase() === this.firstLetterSearched);
             }
 
             return true;
