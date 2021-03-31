@@ -20,36 +20,33 @@ export async function getCourses() {
 
         const schools = await schoolsManager.getSchools();
 
-        for (var i = 0; i < schools.length; i++) {
+        var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.coursesFile);
 
-            await fetch(constants.DATA_FOLDER + "/" + schools[i].coursesFile)
-                .then(response => { return response.json(); })
-                .then(data => {
+        // Getting all the .json in parralel
+        var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
-                    data.forEach((course, j) => {
+        data.forEach((c, i) => {
 
-                        courses.push({
+            c.forEach((course, j) => {
 
-                            id: j,
-                            teachers: course.teachers,
-                            years: course.year,
-                            code: course.id,
-                            name: course.name,
-                            schoolId: schools[i].id,
-                            url: course.url,
-                            languages: getLanguages(course.languages),
-                            themes: getThemes(course.themes)
-                        });
+                courses.push({
 
-                        // DEBUG
-                        if (!course.languages) console.log(schools[i].name + " : " + course.id + " has no language");
-                        if (!course.themes) console.log(schools[i].name + " : " + course.id + " has no theme");
-                        if (!course.url || course.url === "") console.log(schools[i].name + " : " + course.id + " has no url");
-                    });
-
-                    totalCoursesCounts[schools[i].id] = data.length;
+                    id: courses.length,
+                    teachers: course.teachers && course.teachers.length > 0 ? course.teachers : [], //getCleanedTeachers(course.teachers),
+                    year: course.year ? course.year : "",
+                    code: course.id ? course.id : "",
+                    name: course.name ? course.name : "",
+                    schoolId: schools[i].id,
+                    url: course.url ? course.url : "",
+                    languages: getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
+                    themes: getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
                 });
-        }
+
+                debugCoursesErrors(schools[i].shortName, course);
+            });
+
+            totalCoursesCounts[schools[i].id] = c.length;
+        });
 
         sessionStorage.totalCoursesCounts = JSON.stringify(totalCoursesCounts);
         sessionStorage.coursesThemes = JSON.stringify(coursesThemes);
@@ -58,6 +55,28 @@ export async function getCourses() {
     }
 
     return JSON.parse(sessionStorage.courses);
+}
+
+function getCleanedTeachers(teachers) {
+
+    let t = [];
+
+    if (teachers && teachers.length > 0) {
+
+        teachers.forEach(teacher => {
+
+            teacher = teacher.replace("\u00a0", " ").trim();
+            const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr.", "Mevrouw ", "De heer "];
+            toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
+            teacher = teacher.trim();
+
+            if (teacher.length > 0) {
+                t.push(teacher);
+            }
+        });
+    }
+
+    return t;
 }
 
 export async function getTotalCoursesCounts() {
@@ -171,4 +190,16 @@ function getLanguages(languages) {
     }
 
     return l;
+}
+
+function debugCoursesErrors(school, course) {
+
+    if (!course.year) console.log(school + " : " + course.id + " has no year");
+    if (!course.id) console.log(school + " : " + course.id + " has no id");
+    if (!course.name) console.log(school + " : " + course.id + " has no name");
+    if (!course.url) console.log(school + " : " + course.id + " has no url");
+    if (!course.languages || course.languages.length === 0) console.log(school + " : " + course.id + " has no languages");
+    if (!course.themes || course.themes.length === 0) console.log(school + " : " + course.id + " has no themes");
+    if (!course.teachers || course.teachers.length === 0) console.log(school + " : " + course.id + " has no teachers");
+    if (course.teachers && course.teachers.length > 0 && !course.teachers[0]) console.log(school + " : " + course.id + " has an empty teacher");
 }

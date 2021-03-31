@@ -40,7 +40,7 @@ export function setLanguage(language) {
     }
 }
 
-export function translate(translations, key, language) {
+export function translate(translations, key, language, returnKeyIfNotFound = false) {
 
     if (!translations || translations.length == 0) {
 
@@ -57,11 +57,11 @@ export function translate(translations, key, language) {
     }
 
     let value = key.split('.').reduce((obj, i) => obj[i], corpus.translations);
-    
+
     if (!value) {
 
         console.log("translate() : no translation found in language '" + language + "' for key '" + key + "'");
-        return "";
+        return returnKeyIfNotFound ? key : "";
     }
 
     return value;
@@ -73,17 +73,12 @@ export async function loadTranslations() {
 
         var translations = [];
 
-        for (let language of constants.AVAILABLE_LANGUAGES) {
+        var urls = constants.AVAILABLE_LANGUAGES.map(language => constants.DATA_FOLDER + "/translations/" + language + ".json");
 
-            await fetch(constants.DATA_FOLDER + "/translations/" + language + ".json")
-                .then(response => { return response.json(); })
-                .then(data => {
-                    translations.push({
-                        language: language,
-                        translations: data
-                    });
-                });
-        }
+        // Getting all the .json in parralel
+        var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
+
+        data.forEach((language, i) => { translations.push({ language: constants.AVAILABLE_LANGUAGES[i], translations: language }); });
 
         sessionStorage.translations = JSON.stringify(translations);
     }

@@ -14,7 +14,8 @@
         "external-website": "voir sur le site",
         "name-exemple": "exemple : climat",
         "show-filters": "Afficher les filtres",
-        "hide-filters": "Cacher les filtres"
+        "hide-filters": "Cacher les filtres",
+        "loading": "Chargement en cours"
     },
     "home": {
         "headline-students": "Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?",
@@ -28,7 +29,8 @@
         "energy": "Énergie",
         "consumption": "Consommation",
         "society": "Société",
-        "decarbonization": "Décarbonation"
+        "decarbonization": "Décarbonation",
+        "other": "Autre"
     },
     "fields": {
         "applied sciences & engineering": "Sciences appliquées et ingénierie",
@@ -36,14 +38,21 @@
         "sciences": "Sciences",
         "economy & management": "Économie et management",
         "health": "Santé",
-        "law & criminology": "Sciences juridiques"
+        "law & criminology": "Sciences juridiques",
+        "other": "Autre"
     },
     "languages": {
         "fr": "Français",
         "en": "Anglais",
         "nl": "Néerlandais",
         "de": "Allemand",
-        "ar": "Arabe"
+        "ar": "Arabe",
+        "other": "Autre"
+    },
+    "cycles": {
+        "bac": "Bachelier",
+        "master": "Master",
+        "other": "Autre"
     },
     "programs": {
         "programs-of": " formations sur ",
@@ -51,12 +60,24 @@
         "detail-campus": "Campus : ",
         "detail-cycle": "Diplôme : ",
         "detail-field": "Discipline : ",
-        "detail-courses-list": "Liste des cours"
+        "detail-courses-list": "Liste des cours",
+        "search-in-name": "Recherche partielle dans l'intitulé de la formation"
     },
     "courses": {
         "courses-of": " cours sur ",
-        "detail-years": "Année académique : ",
+        "detail-year": "Année académique : ",
         "detail-languages": "Langue(s) d'apprentissage : ",
-        "detail-teachers": "Enseignant(s) : "
+        "detail-teachers": "Enseignant(s) : ",
+        "course-name": "Intitulé du cours",
+        "program-code": "Code de la formation",
+        "search-in-name": "Recherche partielle dans l'intitulé du cours",
+        "search-code": "Recherche exacte du code d'une formation"
+    },
+    "teachers": {
+        "search-in-name": "Recherche partielle dans le nom/prénom de l'enseignant",
+        "teachers-of": " enseignants sur ",
+        "name": "Nom/prénom",
+        "external-website": "Annuaire sur le site de l'université",
+        "name-example": "exemple : Claude"
     }
 }

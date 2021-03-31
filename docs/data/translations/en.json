@@ -14,7 +14,8 @@
         "external-website": "read more",
         "name-exemple": "exemple : environment",
         "show-filters": "Show filters",
-        "hide-filters": "Hide filters"
+        "hide-filters": "Hide filters",
+        "loading": "Loading"
     },
     "home": {
         "headline-students": "Where to study to contribute to the carbon transition and have an impact on the climate?",
@@ -28,7 +29,8 @@
         "energy": "Energy",
         "consumption": "Consumption",
         "society": "Society",
-        "decarbonization": "Decarbonization"
+        "decarbonization": "Decarbonization",
+        "other": "Other"
     },
     "fields": {
         "applied sciences & engineering": "Applied sciences & engineering",
@@ -36,14 +38,21 @@
         "sciences": "Sciences",
         "economy & management": "Economy & management",
         "health": "Health",
-        "law & criminology": "Law & criminology"
+        "law & criminology": "Law & criminology",
+        "other": "Other"
     },
     "languages": {
         "fr": "French",
         "en": "English",
         "nl": "Dutch",
         "de": "German",
-        "ar": "Arabic"
+        "ar": "Arabic",
+        "other": "Other"
+    },
+    "cycles": {
+        "bac": "Bachelor",
+        "master": "Master",
+        "other": "Other"
     },
     "programs": {
         "programs-of": " programmes of ",
@@ -51,12 +60,24 @@
         "detail-campus": "Campus : ",
         "detail-cycle": "Cycle : ",
         "detail-field": "Field : ",
-        "detail-courses-list": "Courses list"
+        "detail-courses-list": "Courses list",
+        "search-in-name": "Partial search in the programme name"
     },
     "courses": {
         "courses-of": " courses of ",
-        "detail-years": "Academic year : ",
+        "detail-year": "Academic year : ",
         "detail-languages": "Language(s) : ",
-        "detail-teachers": "Teacher(s) : "
+        "detail-teachers": "Teacher(s) : ",
+        "course-name": "Course name",
+        "program-code": "Programme code : ",
+        "search-in-name": "Partial search in the course name",
+        "search-code": "Exact search of a programme code"
+    },
+    "teachers": {
+        "search-in-name": "Partial search in the teacher name",
+        "teachers-of": " teachers of ",
+        "name": "Name/firstname",
+        "external-website": "Phonebook on university website",
+        "name-example": "exemple : Claude"
     }
 }

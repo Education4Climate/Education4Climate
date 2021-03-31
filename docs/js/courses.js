@@ -8,6 +8,7 @@
 import * as constants from './constants.js';
 import * as schoolsManager from './managers/schools-manager.js';
 import * as coursesManager from './managers/courses-manager.js';
+import * as programsManager from './managers/programs-manager.js';
 import * as translationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
@@ -31,7 +32,9 @@ var app = Vue.createApp({
             translations: [],
             availableLanguages: constants.AVAILABLE_LANGUAGES,
             menuItems: constants.MENU_ITEMS,
-            currentMenuItem: "courses"
+            currentMenuItem: "courses",
+            searchedProgramCode: new URL(document.location).searchParams.get("programCode"),
+            programs: []
         };
     },
     computed: {
@@ -47,21 +50,34 @@ var app = Vue.createApp({
 
             return this.languages.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
-        sortedCourses() { /* Sort the courses DESC on their score for display */
+        filteredCourses() { /* Step 1 : filter the courses */
 
-            return this.courses.slice().sort((a, b) => { return b.themes.length - a.themes.length; });
+            if (this.dataLoaded) {
+
+                this.currentPage = 0;
+                let searchedProgram = null;
+                let searchedName = this.searchedName.toLowerCase();
+
+                if (this.programs && this.programs.length > 0) {
+
+                    searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
+                }
+
+                return this.courses.slice()
+                    .filter(course => this.selectedSchools.includes(course.schoolId))
+                    .filter(course => this.selectedThemes.some(theme => course.themes.includes(theme)))
+                    .filter(course => this.selectedLanguages.some(language => course.languages.includes(language)))
+                    .filter(course => course.name.toLowerCase().includes(searchedName))
+                    .filter(course => this.searchedProgramCode ? searchedProgram && searchedProgram.courses.includes(course.code) : true);
+            }
+
+            return true;
         },
-        filteredCourses() { /* Filter the sorted courses according to the schools/themes/languages selected and course name searched */
+        sortedCourses() { /* Step 2 : sort the filtered courses DESC on their score for display */
 
-            this.currentPage = 0;
-
-            return this.sortedCourses.slice()
-                .filter(course => this.selectedSchools.includes(course.schoolId))
-                .filter(course => this.selectedThemes.some(theme => course.themes.includes(theme)))
-                .filter(course => this.selectedLanguages.some(language => course.languages.includes(language)))
-                .filter(course => course.name.toLowerCase().includes(this.searchedName.toLowerCase()));
+            return this.dataLoaded ? this.filteredCourses.slice().sort((a, b) => { return b.themes.length - a.themes.length; }) : true;
         },
-        paginatedCourses() { /* Paginate the filtered courses */
+        paginatedCourses() { /* Step 3 : paginate the sorted courses */
 
             if (this.currentPage == 0) {
                 this.displayedCourses = [];
@@ -71,8 +87,8 @@ var app = Vue.createApp({
             const end = start + constants.PAGE_SIZE;
             let current = start;
 
-            while (current < end && this.filteredCourses[end - (end - current)]) {
-                this.displayedCourses.push(this.filteredCourses[end - (end - current)]);
+            while (current < end && this.sortedCourses[end - (end - current)]) {
+                this.displayedCourses.push(this.sortedCourses[end - (end - current)]);
                 current++;
             }
 
@@ -105,8 +121,13 @@ var app = Vue.createApp({
         });
 
         await schoolsManager.getSchools().then(schools => {
+
             this.schools = schools;
-            this.selectedSchools = this.schools.map(school => { return school.id; }); // sets the default selected fields
+
+            let schoolIdInUrl = new URL(document.location).searchParams.get("schoolId");
+            let schoolFromUrl = schoolIdInUrl ? this.schools.find(school => school.id == schoolIdInUrl) : null;
+
+            this.selectedSchools = schoolFromUrl ? [schoolFromUrl.id] : this.schools.map(school => { return school.id; }); // sets the default selected schools
         });
 
         await coursesManager.getCourses().then(courses => this.courses = courses);
@@ -122,21 +143,24 @@ var app = Vue.createApp({
             this.selectedLanguages = this.languages.map(language => { return language.id; }); // sets the default selected languages
         });
 
+        await programsManager.getPrograms().then(programs => this.programs = programs);
+
         this.dataLoaded = true;
     },
     methods: {
         loadMore() {
 
-            this.currentPage = this.displayedCourses.length < this.filteredCourses.length ? this.currentPage + 1 : this.currentPage;
+            this.currentPage = this.dataLoaded && this.displayedCourses.length < this.sortedCourses.length ? this.currentPage + 1 : this.currentPage;
         },
-        translate(key) {
+        translate(key, returnKeyIfNotFound) {
 
-            return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage) : "";
+            return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {
+
             this.currentLanguage = language;
             translationManager.setLanguage(language);
-        }        
+        }
     }
 });
 

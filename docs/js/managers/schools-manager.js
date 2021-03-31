@@ -30,7 +30,8 @@ export async function getSchools() {
                         name: school.name,
                         shortName: school.shortName,
                         coursesFile: school.coursesFile,
-                        programsFile: school.programsFile
+                        programsFile: school.programsFile,
+                        teachersDirectoryUrl: school.teachersDirectoryUrl
                     });
                 });
             });

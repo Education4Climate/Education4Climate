@@ -33,7 +33,7 @@ var app = Vue.createApp({
     methods: {
         translate(key) {
 
-            return this.dataLoaded ? translationManager.translate(this.translations, key, this.currentLanguage) : "";
+            return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage) : "";
         },
         setLanguage(language) {
             this.currentLanguage = language;
