@@ -7,6 +7,12 @@ a {
     display: none !important;
 }
 
+body.modal-open {
+
+    /* fixbug Bootstrap qui ajoute un padding à droite du body quand on ouvre une modale */
+    padding-right: 0 !important;
+}
+
 body.courses, body.programs, body.teachers {
     
     /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
