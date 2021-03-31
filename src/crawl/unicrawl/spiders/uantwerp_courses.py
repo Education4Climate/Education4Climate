@@ -17,7 +17,9 @@ LANGUAGE_DICT = {"Dutch": 'nl',
                  "English": 'en',
                  "Engels": 'en',
                  "French": 'fr',
-                 "Frans": 'fr'}
+                 "Frans": 'fr',
+                 "Duits": 'de',
+                 "Spaans": 'es'}
 
 # TODO: some pages were dead when the crawler was last ran on the 01/02/2021
 
@@ -53,6 +55,8 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
 
             teachers = list(set(response.xpath(f"{course_info_panel}//div[contains(@class, 'teachers')]"
                                                f"//div[@class='value']//a/text()").getall()))
+            # Put surname first
+            teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
             base_dict = {"id": course_id,
                          "name": course_name,
