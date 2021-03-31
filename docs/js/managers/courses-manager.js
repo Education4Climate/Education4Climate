@@ -32,7 +32,7 @@ export async function getCourses() {
                 courses.push({
 
                     id: courses.length,
-                    teachers: getCleanedTeachers(course.teachers),
+                    teachers: course.teachers && course.teachers.length > 0 ? course.teachers : [], //getCleanedTeachers(course.teachers),
                     year: course.year ? course.year : "",
                     code: course.id ? course.id : "",
                     name: course.name ? course.name : "",
