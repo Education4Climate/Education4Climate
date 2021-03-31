@@ -63,6 +63,7 @@
             class="d-flex flex-column justify-content-center align-items-center">
             <div class="spinner-border text-primary"></div>
             <h4 v-if="translations.length > 0" v-cloak>{{translate("shared.loading")}}</h4>
+            <div class="text-danger" v-cloak>{{errors}}</div>
         </div>
 
         <div class="container-fluid" id="programs-finder" v-if="dataLoaded" v-cloak>
