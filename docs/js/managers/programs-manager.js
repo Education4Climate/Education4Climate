@@ -24,42 +24,44 @@ var programsCycles = [];
  */
 export async function getPrograms() {
 
+    console.log("getPrograms()");
+
     if (!sessionStorage.programs) {
 
         var programs = [];
 
         const schools = await schoolsManager.getSchools();
 
-        for (var i = 0; i < schools.length; i++) {
+        var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.programsFile);
 
-            await fetch(constants.DATA_FOLDER + "/" + schools[i].programsFile)
-                .then(response => { return response.json(); })
-                .then(data => {
+        // Getting all the .json in parralel
+        var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
-                    data.forEach((program, j) => {
+        data.forEach((p, i) => {
 
-                        programs.push({
+            p.forEach((program, j) => {
 
-                            id: j,
-                            code: program.id ? program.id : "",
-                            name: program.name ? program.name : "",
-                            url: program.url ? program.url : "",
-                            faculty: program.faculty ? program.faculty : "",
-                            campus: program.campus ? program.campus : "",
-                            schoolId: schools[i].id,
-                            courses: program.courses && program.courses.length > 0 ? program.courses : [],
-                            themes: getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
-                            fieldId: getFieldId(program.field ? program.field : "other"),
-                            score: program.courses ? program.courses.length : 0,
-                            cycleId: getCycleId(program.cycle ? program.cycle : "other")
-                        });
+                programs.push({
 
-                        debugProgramsErrors(schools[i].shortName, program);
-                    });
-
-                    totalProgramsCountBySchool[schools[i].id] = data.length;
+                    id: j,
+                    code: program.id ? program.id : "",
+                    name: program.name ? program.name : "",
+                    url: program.url ? program.url : "",
+                    faculty: program.faculty ? program.faculty : "",
+                    campus: program.campus ? program.campus : "",
+                    schoolId: schools[i].id,
+                    courses: program.courses && program.courses.length > 0 ? program.courses : [],
+                    themes: getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
+                    fieldId: getFieldId(program.field ? program.field : "other"),
+                    score: program.courses ? program.courses.length : 0,
+                    cycleId: getCycleId(program.cycle ? program.cycle : "other")
                 });
-        }
+
+                debugProgramsErrors(schools[i].shortName, program);
+            });
+
+            totalProgramsCountBySchool[schools[i].id] = p.length;
+        });
 
         sessionStorage.totalProgramsCountBySchool = JSON.stringify(totalProgramsCountBySchool);
         sessionStorage.programsThemes = JSON.stringify(programsThemes);

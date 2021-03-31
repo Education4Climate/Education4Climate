@@ -20,33 +20,33 @@ export async function getCourses() {
 
         const schools = await schoolsManager.getSchools();
 
-        for (var i = 0; i < schools.length; i++) {
+        var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.coursesFile);
 
-            await fetch(constants.DATA_FOLDER + "/" + schools[i].coursesFile)
-                .then(response => { return response.json(); })
-                .then(data => {
+        // Getting all the .json in parralel
+        var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
-                    data.forEach((course) => {
+        data.forEach((c, i) => {
 
-                        courses.push({
+            c.forEach((course, j) => {
 
-                            id: courses.length,
-                            teachers: getCleanedTeachers(course.teachers),
-                            year: course.year ? course.year : "",
-                            code: course.id ? course.id : "",
-                            name: course.name ? course.name : "",
-                            schoolId: schools[i].id,
-                            url: course.url ? course.url : "",
-                            languages: getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
-                            themes: getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
-                        });
+                courses.push({
 
-                        debugCoursesErrors(schools[i].shortName, course);
-                    });
-
-                    totalCoursesCounts[schools[i].id] = data.length;
+                    id: courses.length,
+                    teachers: getCleanedTeachers(course.teachers),
+                    year: course.year ? course.year : "",
+                    code: course.id ? course.id : "",
+                    name: course.name ? course.name : "",
+                    schoolId: schools[i].id,
+                    url: course.url ? course.url : "",
+                    languages: getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
+                    themes: getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
                 });
-        }
+
+                debugCoursesErrors(schools[i].shortName, course);
+            });
+
+            totalCoursesCounts[schools[i].id] = c.length;
+        });
 
         sessionStorage.totalCoursesCounts = JSON.stringify(totalCoursesCounts);
         sessionStorage.coursesThemes = JSON.stringify(coursesThemes);
