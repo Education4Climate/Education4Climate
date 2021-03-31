@@ -127,9 +127,9 @@ var app = Vue.createApp({
 
             // sets the filters default selected schools / themes / fields
 
-            this.selectedSchools = this.schools.map(school => { return school.id; }); // sets the default selected fields
+            this.selectedSchools = this.schools.map(school => { return school.id; });
             this.selectedThemes = this.themes.map(theme => { return theme.id; });
-            this.selectedFields = this.fields.map(field => { return field.id; }); // sets the default selected fields
+            this.selectedFields = this.fields.map(field => { return field.id; });
 
             // hides the loader
 
