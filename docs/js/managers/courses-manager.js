@@ -32,7 +32,7 @@ export async function getCourses() {
                 courses.push({
 
                     id: courses.length,
-                    teachers: course.teachers && course.teachers.length > 0 ? course.teachers : [], //getCleanedTeachers(course.teachers),
+                    teachers: getCleanedTeachers(course.teachers),
                     year: course.year ? course.year : "",
                     code: course.id ? course.id : "",
                     name: course.name ? course.name : "",
@@ -65,9 +65,10 @@ function getCleanedTeachers(teachers) {
 
         teachers.forEach(teacher => {
 
-            teacher = teacher.replace("\u00a0", " ").trim();
-            const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr.", "Mevrouw ", "De heer "];
-            toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
+            // teacher = teacher.replace("\u00a0", " ").trim();
+            // const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr.", "Mevrouw ", "De heer "];
+            // toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
+
             teacher = teacher.trim();
 
             if (teacher.length > 0) {
