@@ -66,6 +66,7 @@ class VUBCourseSpider(scrapy.Spider, ABC):
         teachers = teachers.strip('<dd>').strip("</dd>")
         teachers = teachers.replace("(titularis)\n", '').replace("(course titular)\n", '')
         teachers = [teacher.strip(" ").strip("\n") for teacher in teachers.split("<br>")]
+        teachers = [t for t in teachers if t != "Promotor ."]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
