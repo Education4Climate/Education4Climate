@@ -7,6 +7,12 @@ a {
     display: none !important;
 }
 
+body.courses, body.programs, body.teachers {
+    
+    /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
+    overflow: scroll;
+}
+
 /* MENU & NAVIGATION */
 
 #logo {
