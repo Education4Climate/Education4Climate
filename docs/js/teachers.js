@@ -103,37 +103,43 @@ var app = Vue.createApp({
     },
     async created() {
 
-        this.currentLanguage = translationManager.getLanguage();
+        try {
+            
+            // detect current language and loads translations
 
-        await translationManager.loadTranslations().then(translations => { this.translations = translations; });
+            this.currentLanguage = translationManager.getLanguage();
+            this.translations = await translationManager.loadTranslations();
 
-        await schoolsManager.getSchools().then(schools => {
+            // loads schools, courses and teachers data
 
-            this.schools = schools;
-            this.selectedSchools = this.schools.map(school => { return school.id; }); // sets the default selected fields
-        });
+            this.schools = await schoolsManager.getSchools();
+            this.courses = await coursesManager.getCourses();
+            this.themes = await coursesManager.getCoursesThemes();
+            this.teachers = await teachersManager.getTeachers();
 
-        await coursesManager.getCourses().then(courses => this.courses = courses);
+            // sets the filters default selected schools / themes
 
-        await coursesManager.getCoursesThemes().then(themes => {
-            this.themes = themes;
-            this.selectedThemes = this.themes.map(theme => { return theme.id; }); // sets the default selected themes
-        });
+            this.selectedSchools = this.schools.map(school => { return school.id; });
+            this.selectedThemes = this.themes.map(theme => { return theme.id; });
 
-        await teachersManager.getTeachers().then(teachers => {
-
-            this.teachers = teachers;
+            // computes the total counts of teachers by school / theme
 
             this.schools.forEach(school => {
-                this.teachersCountsBySchool[school.id] = teachers.filter(teacher => school.id == teacher.schoolId).length;
+                this.teachersCountsBySchool[school.id] = this.teachers.filter(teacher => school.id == teacher.schoolId).length;
             });
 
             this.themes.forEach(theme => {
-                this.teachersCountsByTheme[theme.id] = teachers.filter(teacher => teacher.themesIds.includes(theme.id)).length;
+                this.teachersCountsByTheme[theme.id] = this.teachers.filter(teacher => teacher.themesIds.includes(theme.id)).length;
             });
-        });
 
-        this.dataLoaded = true;
+            // hides the loader
+
+            this.dataLoaded = true;
+        }
+        catch (error) {
+            console.log(error);
+            this.errors += error;
+        }
     },
     methods: {
         loadMore() {
