@@ -64,10 +64,13 @@ class ULBCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_course(response, base_dict):
 
-        name = response.xpath("//h1/text()").get()x
+        name = response.xpath("//h1/text()").get()
         teachers = cleanup(response.xpath("//h3[text()='Titulaire(s) du cours']/following::text()[1]").get())
         teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ")
         teachers = teachers.split(", ")
+        teachers = [teacher for teacher in teachers if teacher != ""]
+        # Put surname first
+        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
         # TODO: move that into the program code
         ects = response.xpath("//h3[text()='Crédits ECTS']/following::p[1]/text()").get()

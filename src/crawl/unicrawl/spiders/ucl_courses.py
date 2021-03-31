@@ -67,8 +67,8 @@ class UCLCourseSpider(scrapy.Spider, ABC):
             'name': course_name,
             'year': year,
             'campus': campus,
-            'teacher': teachers,
-            'language': languages,
+            'teachers': teachers,
+            'languages': languages,
             'url': response.url,
             'content': content,
         }

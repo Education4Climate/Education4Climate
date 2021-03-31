@@ -40,13 +40,13 @@ class VUBProgramSpider(scrapy.Spider, ABC):
 
         name = response.xpath("//h1/text()").get()
 
-        cycle = ""
+        cycle = "other"
         if "Bachelor" in name:
             cycle = "bac"
         elif "Postgraduaat" in name or "Postgraduate" in name:
             cycle = 'post-grad'
         elif "Schakelprogramma Master" in name or "Voorbereidingsprogramma Master" in name:
-            cycle = ""
+            cycle = "other"
         elif 'Master' in name:
             cycle = "master"
 
@@ -62,7 +62,7 @@ class VUBProgramSpider(scrapy.Spider, ABC):
         yield {"id": main_program_id + '-' + sub_program_id,  # don't think there are ids, so took one from url
                "name": name,
                "faculty": faculty,
-               "campus": "",  # didn't find information on campuses"#
+               "campus": "",  # didn't find information on campuses
                "cycle": cycle,
                "url": response.url,
                "courses": courses_codes,

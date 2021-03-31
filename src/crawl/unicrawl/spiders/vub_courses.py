@@ -58,7 +58,7 @@ class VUBCourseSpider(scrapy.Spider, ABC):
         languages = response.xpath("//dt[contains(text(), 'Onderwijsta') or text()='Taught in']"
                                    "/following::dd[1]/text()").get()
         if languages is None or len(languages) == 0:
-            languages = []
+            languages = ['nl']
         else:
             languages = [LANGUAGE_DICT[lang] for lang in languages.split(", ")]
 
@@ -66,6 +66,8 @@ class VUBCourseSpider(scrapy.Spider, ABC):
         teachers = teachers.strip('<dd>').strip("</dd>")
         teachers = teachers.replace("(titularis)\n", '').replace("(course titular)\n", '')
         teachers = [teacher.strip(" ").strip("\n") for teacher in teachers.split("<br>")]
+        # Put surname first
+        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
         sections = ["Course content", "Additional info", "Learning outcomes",
                     "Inhoud", "Bijkomende info", "Leerresultaten"]
