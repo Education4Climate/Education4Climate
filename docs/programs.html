@@ -184,6 +184,13 @@
                                                 {{translate("programs.detail-field")}}</h6>
                                             <span>&nbsp;{{translate("fields." + fields[program.fieldId].name)}}</span>
                                         </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("programs.detail-score")}}</h6>
+                                            <span>&nbsp;{{program.score}}</span>&nbsp;
+                                            <span type="button" data-bs-toggle="modal" data-bs-target="#modalScore"
+                                                class="badge rounded-pill bg-primary">?</span>
+                                        </div>
                                         <div class="button-courses-list">
                                             <a class="btn btn-primary"
                                                 :href="'courses.html?schoolId=' + program.schoolId + '&programCode=' + program.code"
@@ -195,6 +202,20 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" tabindex="-1" id="modalScore">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>{{translate("programs.detail-score-tooltip")}}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"
+                            data-bs-dismiss="modal">{{translate("shared.close")}}</button>
+                    </div>
                 </div>
             </div>
         </div>
