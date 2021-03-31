@@ -34,8 +34,10 @@
         <header v-if="dataLoaded" v-cloak>
             <nav class="navbar navbar-expand-xl navbar-light bg-light">
                 <div class="container-fluid">
-                    <a href="index.html"><img src="./img/icon-education4climate.svg" alt="logo" id="logo"></a>
-                    <a class="navbar-brand text-primary" href="index.html"><strong>EDUCATION 4 CLIMATE</strong></a>
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
+                            alt="logo" id="logo"></a>
+                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
+                            4 CLIMATE</strong></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -45,13 +47,14 @@
                         <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
                             <li class="nav-item" v-for="item in menuItems">
                                 <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
-                                    :href="item + '.html'">{{translate("menu." + item)}}</a>
+                                    :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
-                                    @click="setLanguage(language)" href="javascript:void(0);">{{language.toUpperCase()}}</a>
+                                    @click="setLanguage(language)"
+                                    href="javascript:void(0);">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
                     </div>
