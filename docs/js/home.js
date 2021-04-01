@@ -17,18 +17,27 @@ var app = Vue.createApp({
             availableLanguages: constants.AVAILABLE_LANGUAGES,
             menuItems: constants.MENU_ITEMS,
             currentMenuItem: "",
-            dataLoaded: false
+            dataLoaded: false,
+            errors: ""
         };
     },
     async created() {
 
-        this.currentLanguage = translationManager.getLanguage();
+        try {
 
-        await translationManager.loadTranslations().then(translations => {
-            this.translations = translations;
-        });
+            // detect current language and loads translations
 
-        this.dataLoaded = true;
+            this.currentLanguage = translationManager.getLanguage();
+            this.translations = await translationManager.loadTranslations();
+
+            // hides the loader
+
+            this.dataLoaded = true;
+        }
+        catch (error) {
+            console.log(error);
+            this.errors += error;
+        }
     },
     methods: {
         translate(key) {
