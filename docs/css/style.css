@@ -13,6 +13,10 @@ body.modal-open {
     padding-right: 0 !important;
 }
 
+.bg-secondary {
+    background-color: #f8f9fa !important;
+}
+
 body.courses, body.programs, body.teachers {
     
     /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
@@ -165,6 +169,30 @@ a.btn:empty {
     width: 100%;
 }
 
+main {
+    padding-bottom: 3rem;
+}
+
+/* FOOTER */
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin-right: 2rem;
+}
+
+.sidebar-footer {
+    padding-top: 4rem;
+    text-align: right;
+}
+.sidebar-footer li {
+    list-style: none;
+}
+
+.navbar-footer {
+    display: none;
+}
+
 /* RESPONSIVE */
 
 .show-filters {
@@ -231,6 +259,30 @@ a.btn:empty {
         text-align: center;
         margin-left: 0;
     }
+
+    /* Footer */
+
+    footer {
+        text-align: center;
+    }
+
+    footer div.right {
+        margin-top: 1rem;
+    }
+
+    .sidebar-footer {
+        display:none;
+    }
+
+    .navbar-footer {
+        display: block;
+        text-align: right;
+        margin-right: 0.1rem;
+    }
+
+    .navbar-footer li {
+        list-style: none;
+    }
 }
 
 @media (min-width: 1199.99px) {
@@ -242,5 +294,11 @@ a.btn:empty {
 
     h6.results-count {
         padding-left: 20px;
+    }
+
+    /* Footer */
+
+    footer div.right {
+        text-align: right;
     }
 }
