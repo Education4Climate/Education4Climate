@@ -171,7 +171,7 @@
                                             </h5>
                                         </div>
                                         <div class="themes-badges">
-                                            <span v-for="(theme, j) in program.themes">
+                                            <span v-for="theme in program.themes">
                                                 <span class="badge bg-primary bg-theme">{{translate("themes." +
                                                     themes[theme.id].name)}}&nbsp;&nbsp;&nbsp;
                                                     <span
@@ -228,6 +228,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-light" v-if="sortedPrograms.length > paginatedPrograms.length"
+                            type="button" @click="loadMore()">Charger plus</button>
                     </div>
 
                 </div>

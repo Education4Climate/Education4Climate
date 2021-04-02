@@ -203,6 +203,11 @@
                         </div>
                     </div>
 
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-light" v-if="sortedTeachers.length > paginatedTeachers.length"
+                            type="button" @click="loadMore()">Charger plus</button>
+                    </div>
+
                 </div>
             </div>
         </div>
