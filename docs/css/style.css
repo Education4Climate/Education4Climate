@@ -303,6 +303,11 @@ footer li {
 
 @media (min-width: 1199.99px) {
 
+    .carousel-caption {
+        top      : 60%;
+        transform: translateY(-50%);
+    }
+
     #courses-finder .sidebar,
     #programs-finder .sidebar {
         display: block;
