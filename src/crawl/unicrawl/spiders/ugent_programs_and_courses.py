@@ -115,6 +115,7 @@ class UgentProgramSpider(scrapy.Spider, ABC):
                      'cycle': cycle,
                      'url': url,
                      'faculty': faculty,
+                     'campus': '',
                      'year': year,
                      'version(debug)': version}
 
@@ -140,10 +141,10 @@ class UgentProgramSpider(scrapy.Spider, ABC):
         final_dict = {**base_dict,
                       **{
                           'url(debug)': response.url,
-                          'courses': courses_id,
+                          'courses_id': courses_id,
                           'courses_urls': urls,
                           'courses_ects': courses_ects,
-                          'courses_teacher': courses_teacher,
+                          'courses_teachers': courses_teacher,
                           'courses_content': courses_content
                       }}
         yield final_dict
