@@ -34,7 +34,10 @@ var app = Vue.createApp({
             menuItems: constants.MENU_ITEMS,
             currentMenuItem: "courses",
             searchedProgramCode: new URL(document.location).searchParams.get("programCode"),
-            programs: []
+            searchedProgram: {},
+            searchedSchoolId: new URL(document.location).searchParams.get("schoolId"),
+            programs: [],
+            errors: ""
         };
     },
     computed: {
@@ -55,20 +58,14 @@ var app = Vue.createApp({
             if (this.dataLoaded) {
 
                 this.currentPage = 0;
-                let searchedProgram = null;
                 let searchedName = this.searchedName.toLowerCase();
-
-                if (this.programs && this.programs.length > 0) {
-
-                    searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
-                }
 
                 return this.courses.slice()
                     .filter(course => this.selectedSchools.includes(course.schoolId))
                     .filter(course => this.selectedThemes.some(theme => course.themes.includes(theme)))
                     .filter(course => this.selectedLanguages.some(language => course.languages.includes(language)))
                     .filter(course => course.name.toLowerCase().includes(searchedName))
-                    .filter(course => this.searchedProgramCode ? searchedProgram && searchedProgram.courses.includes(course.code) : true);
+                    .filter(course => this.searchedProgram ? this.searchedProgram.courses.includes(course.code) : true);
             }
 
             return true;
@@ -97,55 +94,56 @@ var app = Vue.createApp({
     },
     mounted() {
 
-        window.addEventListener("scroll", () => {
+        var intersectionObserver = new IntersectionObserver(entries => {
 
-            let scrollTop = window.scrollY;
-            let docHeight = document.body.offsetHeight;
-            let winHeight = window.innerHeight;
-            let scrollPercent = scrollTop / (docHeight - winHeight);
-            let scrollPercentRounded = Math.round(scrollPercent * 100);
+            if (entries[0].intersectionRatio <= 0) return;
 
-            if (scrollPercentRounded === 100) {
-                this.loadMore();
-            }
-        });
+            this.loadMore();
+        }, { rootMargin: "200px" });
 
-        this.loadMore();
+        intersectionObserver.observe(this.$refs.loadMore);
     },
     async created() {
 
-        this.currentLanguage = translationManager.getLanguage();
+        try {
 
-        await translationManager.loadTranslations().then(translations => {
-            this.translations = translations;
-        });
+            // detect current language and loads translations
 
-        await schoolsManager.getSchools().then(schools => {
+            this.currentLanguage = translationManager.getLanguage();
+            this.translations = await translationManager.loadTranslations();
 
-            this.schools = schools;
+            // loads schools data
 
-            let schoolIdInUrl = new URL(document.location).searchParams.get("schoolId");
-            let schoolFromUrl = schoolIdInUrl ? this.schools.find(school => school.id == schoolIdInUrl) : null;
+            this.schools = await schoolsManager.getSchools();
 
-            this.selectedSchools = schoolFromUrl ? [schoolFromUrl.id] : this.schools.map(school => { return school.id; }); // sets the default selected schools
-        });
+            // if both parameters schoolId and programCode are passed in the url,
+            // loads the programs and find the right school/program
 
-        await coursesManager.getCourses().then(courses => this.courses = courses);
-        await coursesManager.getTotalCoursesCounts().then(totalCoursesCounts => this.totalCoursesCounts = totalCoursesCounts);
+            let searchedSchool = this.searchedSchoolId && this.searchedProgramCode ? this.schools.find(school => school.id == this.searchedSchoolId) : null;
+            this.programs = searchedSchool ? await programsManager.getPrograms() : [];
+            this.searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
 
-        await coursesManager.getCoursesThemes().then(themes => {
-            this.themes = themes;
-            this.selectedThemes = this.themes.map(theme => { return theme.id; }); // sets the default selected themes
-        });
+            // loads courses data
 
-        await coursesManager.getCoursesLanguages().then(languages => {
-            this.languages = languages;
-            this.selectedLanguages = this.languages.map(language => { return language.id; }); // sets the default selected languages
-        });
+            this.courses = await coursesManager.getCourses();
+            this.totalCoursesCounts = await coursesManager.getTotalCoursesCounts();
+            this.themes = await coursesManager.getCoursesThemes();
+            this.languages = await coursesManager.getCoursesLanguages();
 
-        await programsManager.getPrograms().then(programs => this.programs = programs);
+            // sets the filters default selected schools / themes / languages
 
-        this.dataLoaded = true;
+            this.selectedSchools = searchedSchool ? [searchedSchool.id] : this.schools.map(school => { return school.id; });
+            this.selectedThemes = this.themes.map(theme => { return theme.id; });
+            this.selectedLanguages = this.languages.map(language => { return language.id; });
+
+            // hides the loader
+
+            this.dataLoaded = true;
+        }
+        catch (error) {
+            console.log(error);
+            this.errors += error;
+        }
     },
     methods: {
         loadMore() {

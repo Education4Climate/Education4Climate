@@ -32,7 +32,8 @@ var app = Vue.createApp({
             availableLanguages: constants.AVAILABLE_LANGUAGES,
             menuItems: constants.MENU_ITEMS,
             currentMenuItem: "programs",
-            cycles: []
+            cycles: [],
+            errors: ""
         };
     },
     computed: {
@@ -88,52 +89,50 @@ var app = Vue.createApp({
     },
     mounted() {
 
-        window.addEventListener("scroll", () => {
+        var intersectionObserver = new IntersectionObserver(entries => {
 
-            let scrollTop = window.scrollY;
-            let docHeight = document.body.offsetHeight;
-            let winHeight = window.innerHeight;
-            let scrollPercent = scrollTop / (docHeight - winHeight);
-            let scrollPercentRounded = Math.round(scrollPercent * 100);
+            if (entries[0].intersectionRatio <= 0) return;
 
-            if (scrollPercentRounded === 100) {
-                this.loadMore();
-            }
-        });
+            this.loadMore();
+        }, { rootMargin: "200px" });
 
-        this.loadMore();
+        intersectionObserver.observe(this.$refs.loadMore);
     },
     async created() {
 
-        this.currentLanguage = translationManager.getLanguage();
+        try {
 
-        await translationManager.loadTranslations().then(translations => {
-            this.translations = translations;
-        });
+            // detect current language and loads translations
 
-        await schoolsManager.getSchools().then(schools => {
-            this.schools = schools;
-            this.selectedSchools = this.schools.map(school => { return school.id; }); // sets the default selected fields
-        });
+            this.currentLanguage = translationManager.getLanguage();
+            this.translations = await translationManager.loadTranslations();
 
-        await programsManager.getPrograms().then(programs => this.programs = programs);
-        await programsManager.getTotalProgramsCountBySchool().then(totalProgramsCounts => this.totalProgramsCounts = totalProgramsCounts);
+            // loads schools data
 
-        await programsManager.getProgramsThemes().then(themes => {
-            this.themes = themes;
-            this.selectedThemes = this.themes.map(theme => { return theme.id; }); // sets the default selected themes
-        });
+            this.schools = await schoolsManager.getSchools();
 
-        await programsManager.getProgramsFields().then(fields => {
-            this.fields = fields;
-            this.selectedFields = this.fields.map(field => { return field.id; }); // sets the default selected fields
-        });
+            // loads programs data
 
-        await programsManager.getProgramsCycles().then(cycles => {
-            this.cycles = cycles;
-        });
+            this.programs = await programsManager.getPrograms();
+            this.totalProgramsCounts = await programsManager.getTotalProgramsCountBySchool();
+            this.themes = await programsManager.getProgramsThemes();
+            this.fields = await programsManager.getProgramsFields();
+            this.cycles = await programsManager.getProgramsCycles();
 
-        this.dataLoaded = true;
+            // sets the filters default selected schools / themes / fields
+
+            this.selectedSchools = this.schools.map(school => { return school.id; });
+            this.selectedThemes = this.themes.map(theme => { return theme.id; });
+            this.selectedFields = this.fields.map(field => { return field.id; });
+
+            // hides the loader
+
+            this.dataLoaded = true;
+        }
+        catch (error) {
+            console.log(error);
+            this.errors += error;
+        }
     },
     methods: {
         loadMore() {
@@ -141,7 +140,7 @@ var app = Vue.createApp({
             this.currentPage = this.dataLoaded && this.displayedPrograms.length < this.sortedPrograms.length ? this.currentPage + 1 : this.currentPage;
         },
         translate(key, returnKeyIfNotFound) {
-            
+
             return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {

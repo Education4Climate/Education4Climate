@@ -24,8 +24,6 @@ var programsCycles = [];
  */
 export async function getPrograms() {
 
-    console.log("getPrograms()");
-
     if (!sessionStorage.programs) {
 
         var programs = [];

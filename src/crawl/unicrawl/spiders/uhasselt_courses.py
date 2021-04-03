@@ -43,6 +43,12 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
         teachers_path = "//td[contains(text(), 'teaching team') or contains(text(), 'onderwijsteam')]"
         teachers += response.xpath(f"{teachers_path}/following::td[1]/a/text()").getall()
         teachers += response.xpath(f"{teachers_path}/following::tr/td/a/text()").getall()
+        # Remove all the dr., ir., etc and Mevrouw and De heer
+        teachers = [t.split('. ')[-1] for t in teachers]
+        for text in ['Mevrouw ', 'De heer ']:
+            teachers = [t.replace(text, '') for t in teachers]
+        # Put surname first
+        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
         languages = response.xpath("//td[contains(text(), 'Onderwijstaal') "
                                    "or contains(text(), 'Language of instruction')]/b/text()").getall()
@@ -53,8 +59,8 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
         cur_dict = {
             'name': course_name,
             'year': f"{YEAR}-{int(YEAR)+1}",
-            'teacher': teachers,
-            'language': languages,
+            'teachers': teachers,
+            'languages': languages,
             'url': response.url,
             'content': content,
         }

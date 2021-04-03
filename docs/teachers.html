@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -21,21 +21,22 @@
     <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
     <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Education 4 Climate</title>
 </head>
 
-<body>
+<body class="teachers">
 
     <div id="app">
 
         <header v-if="dataLoaded" v-cloak>
             <nav class="navbar navbar-expand-xl navbar-light bg-light">
                 <div class="container-fluid">
-                    <a href="index.html"><img src="./img/icon-education4climate.svg" alt="logo" id="logo"></a>
-                    <a class="navbar-brand text-primary" href="index.html"><strong>EDUCATION 4 CLIMATE</strong></a>
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
+                            alt="logo" id="logo"></a>
+                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
+                            4 CLIMATE</strong></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -45,15 +46,28 @@
                         <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
                             <li class="nav-item" v-for="item in menuItems">
                                 <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
-                                    :href="item + '.html'">{{translate("menu." + item)}}</a>
+                                    :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
-                                    @click="setLanguage(language)" href="#">{{language.toUpperCase()}}</a>
+                                    @click="setLanguage(language)"
+                                    href="javascript:void(0);">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
+                        <div class="navbar-footer text-muted">
+                            <hr>
+                            <div>
+                                <div>The Shifters Belgium</div>
+                                <ul>
+                                    <li><a href="contact.html">{{translate("footer.contact")}}</a></li>
+                                    <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                    <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -63,6 +77,7 @@
             class="d-flex flex-column justify-content-center align-items-center">
             <div class="spinner-border text-primary"></div>
             <h4 v-if="translations.length > 0" v-cloak>{{translate("shared.loading")}}</h4>
+            <div class="text-danger" v-cloak>{{errors}}</div>
         </div>
 
         <div class="container-fluid" id="programs-finder" v-if="dataLoaded" v-cloak>
@@ -109,6 +124,19 @@
                             @keyup="firstLetterSearched=''">
                         <div class="form-text">
                             {{translate("teachers.search-in-name")}}
+                        </div>
+                    </div>
+
+                    <div class="sidebar-footer text-muted">
+                        <hr>
+                        <div>
+                            <div>The Shifters Belgium</div>
+                            <ul>
+                                <li><a href="contact.html">{{translate("footer.contact")}}</a></li>
+                                <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                        rel="noopener">GitHub</a></li>
+                            </ul>
                         </div>
                     </div>
 
@@ -179,13 +207,17 @@
             </div>
         </div>
 
+        <div class="d-grid gap-2" >
+            <button class="btn btn-light" ref="loadMore" id="load-more"
+                :class="dataLoaded && sortedTeachers.length > paginatedTeachers.length? 'show' : ''" type="button"
+                @click="loadMore()">{{translate("shared.load-more")}}</button>
+        </div>
+
     </div>
 
-    <script src="https://unpkg.com/vue@next"></script>
+    <script src="js/vue.global.prod.js"></script>
     <script type="module" src="js/teachers.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -7,6 +7,16 @@ import scrapy
 from config.settings import YEAR
 BASE_URL = "https://www.usaintlouis.be/sl/enseignement_prog2020.html"
 
+PROGRAM_FACULTIES = \
+    {"Master de spécialisation en droits de l'homme": "Faculté de droit",
+     "Master de spécialisation en droit de l'environnement et en droit public immobilier": "Faculté de droit",
+     "Master de spécialisation en analyse interdisciplinaire de la construction européenne":
+         "Institut d’études européennes",
+     "Master en stratégie de la communication et culture numérique":
+         "Faculté des sciences économiques, sociales, politiques et de la communication",
+     "Master de sp\u00e9cialisation en gestion des risques financiers":
+         "Faculté des sciences économiques, sociales, politiques et de la communication"}
+
 
 class USLBProgramsSpider(scrapy.Spider, ABC):
     name = "uslb-programs"
@@ -70,6 +80,11 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
 
         program_name = response.xpath("//p[@class='ProgrammeTitre']/text()").get()
         cur_dict["name"] = program_name
+
+        # Add some faculties 'by-hand'
+        if program_name in PROGRAM_FACULTIES:
+            cur_dict['faculty'] = PROGRAM_FACULTIES[program_name]
+
         # Find additional subprogram name
         subprogram_name = response.xpath("//div[@id='honglet1']//p[contains(text(), 'Majeure')][1]/text()").get()
         if subprogram_name is not None:
@@ -85,6 +100,8 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
             courses_codes = response.xpath("//td[@class='courssigle']/text()").getall()
         courses_codes = [code.strip("\r ") for code in courses_codes]
         cur_dict['courses'] = courses_codes
+        if len(courses_codes) == 0:
+            return
 
         nb_columns = 3
         ects = response.xpath("//div[@id='honglet1']//td[@class='courscredits3b']/text()").getall()[4:]

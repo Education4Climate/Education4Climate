@@ -25,7 +25,7 @@ class ULBProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        for deg in ('BA', 'MA'):
+        for deg in ('BA', 'MA', 'MA60', 'MS'):
             cycle = 'bac' if deg == 'BA' else 'master'
             yield scrapy.Request(
                 url=BASE_URL.format(deg),
@@ -36,6 +36,7 @@ class ULBProgramSpider(scrapy.Spider, ABC):
     def parse_main(self, response, cycle):
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
+        # TODO: modify to get 'Master en sciences et gestion de l'environnement'
         for p in soup.find_all('div', class_='search-result__result-item'):
             res = {
                 "id": p.find(class_='search-result__mnemonique').text,

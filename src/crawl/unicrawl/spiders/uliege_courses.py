@@ -45,14 +45,21 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
 
         # Get teachers name (not an easy task because not a constant syntax)
         teachers_para = response.xpath(".//section[h3[contains(text(),'Enseignant')"
-                                       " or contains(text(),'Suppléant')]]/p")
+                                       " or contains(text(),'Suppléant')"
+                                       " or contains(text(),'Coordinateur')]]/p")
         # Check first if there are links (to teachers page)
         teachers_links = teachers_para.xpath(".//a").getall()
         if len(teachers_links) == 0:
-            teachers = cleanup(teachers_para.getall())
+            teachers = cleanup(teachers_para.get()).split(", ")
         else:
             teachers = cleanup(teachers_links)
-        teachers = [] if teachers == ["N..."] or teachers == [""] else teachers
+        teachers = [] if teachers == [""] else teachers
+        # Replace strange characters
+        teachers = [t for t in teachers if "N..." in t]
+        teachers = [t.replace(' ', ' ') for t in teachers]
+        teachers = [t.replace('  ', ' ') for t in teachers]
+        # Put surname first
+        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
         teachers = list(set(teachers))
 
         # Language
