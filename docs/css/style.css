@@ -17,8 +17,10 @@ body.modal-open {
     background-color: #f8f9fa !important;
 }
 
-body.courses, body.programs, body.teachers {
-    
+body.courses,
+body.programs,
+body.teachers {
+
     /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
     overflow-y: scroll;
 }
@@ -130,7 +132,7 @@ a.btn:empty {
 /* Teachers directory */
 
 #alphabet {
-    margin-left: 1rem;
+    margin-left  : 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -180,21 +182,31 @@ footer {
 }
 
 footer li {
-    list-style: none;
-    display: inline;
+    list-style  : none;
+    display     : inline;
     margin-right: 2rem;
 }
 
 .sidebar-footer {
     padding-top: 4rem;
-    text-align: right;
+    text-align : right;
 }
+
 .sidebar-footer li {
     list-style: none;
 }
 
 .navbar-footer {
     display: none;
+}
+
+#load-more {
+    display: none;
+    padding: 1rem;
+}
+
+#load-more.show {
+    display: block;
 }
 
 /* RESPONSIVE */
@@ -260,7 +272,7 @@ footer li {
     /* Teachers directory */
 
     #alphabet {
-        text-align: center;
+        text-align : center;
         margin-left: 0;
     }
 
@@ -275,12 +287,12 @@ footer li {
     }
 
     .sidebar-footer {
-        display:none;
+        display: none;
     }
 
     .navbar-footer {
-        display: block;
-        text-align: right;
+        display     : block;
+        text-align  : right;
         margin-right: 0.1rem;
     }
 

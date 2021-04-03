@@ -227,14 +227,14 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-light" v-if="sortedCourses.length > paginatedCourses.length"
-                            type="button" @click="loadMore()">Charger plus</button>
-                    </div>
-
                 </div>
             </div>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-light" ref="loadMore" id="load-more"
+                :class="dataLoaded && sortedCourses.length > paginatedCourses.length? 'show' : ''" type="button"
+                @click="loadMore()">{{translate("shared.load-more")}}</button>
         </div>
 
     </div>

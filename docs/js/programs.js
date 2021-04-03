@@ -89,20 +89,14 @@ var app = Vue.createApp({
     },
     mounted() {
 
-        window.addEventListener("scroll", () => {
+        var intersectionObserver = new IntersectionObserver(entries => {
 
-            let scrollTop = window.scrollY;
-            let docHeight = document.body.offsetHeight;
-            let winHeight = window.innerHeight;
-            let scrollPercent = scrollTop / (docHeight - winHeight);
-            let scrollPercentRounded = Math.round(scrollPercent * 100);
+            if (entries[0].intersectionRatio <= 0) return;
 
-            if (scrollPercentRounded === 100) {
-                this.loadMore();
-            }
-        });
+            this.loadMore();
+        }, { rootMargin: "200px" });
 
-        this.loadMore();
+        intersectionObserver.observe(this.$refs.loadMore);
     },
     async created() {
 
