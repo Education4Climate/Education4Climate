@@ -5,12 +5,13 @@
  * @author Quentin V.
  */
 
+import baseApp from "./base-app.js";
 import * as constants from './constants.js';
 import SchoolsManager from './managers/schools-manager.js';
 import ProgramsManager from './managers/programs-manager.js';
-import TranslationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
+    mixins: [baseApp],
     el: '#app',
     data() {
         return {
@@ -20,21 +21,14 @@ var app = Vue.createApp({
             totalProgramsCounts: [],
             themes: [],
             fields: [],
-            dataLoaded: false,
             selectedSchools: [],
             selectedThemes: [],
             selectedFields: [],
             searchedName: "",
             currentPage: 0,
             showResponsiveFilters: false,
-            currentLanguage: "fr",
-            translations: [],
-            availableLanguages: constants.AVAILABLE_LANGUAGES,
-            menuItems: constants.MENU_ITEMS,
             currentMenuItem: "programs",
             cycles: [],
-            errors: "",
-            translationManager: new TranslationManager(),
             schoolsManager: new SchoolsManager(),
             programsManager: new ProgramsManager()
         };
@@ -105,11 +99,6 @@ var app = Vue.createApp({
 
         try {
 
-            // detect current language and loads translations
-
-            this.currentLanguage = this.translationManager.getLanguage();
-            this.translations = await this.translationManager.loadTranslations();
-
             // loads schools data
 
             this.schools = await this.schoolsManager.getSchools();
@@ -141,15 +130,6 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.dataLoaded && this.displayedPrograms.length < this.sortedPrograms.length ? this.currentPage + 1 : this.currentPage;
-        },
-        translate(key, returnKeyIfNotFound) {
-
-            return this.translations.length > 0 ? this.translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
-        },
-        setLanguage(language) {
-
-            this.currentLanguage = language;
-            this.translationManager.setLanguage(language);
         }
     }
 });

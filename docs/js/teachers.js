@@ -5,13 +5,14 @@
  * @author Quentin V.
  */
 
+import baseApp from "./base-app.js";
 import * as constants from './constants.js';
 import SchoolsManager from './managers/schools-manager.js';
-import TranslationManager from "./managers/translation-manager.js";
 import TeachersManager from "./managers/teachers-manager.js";
 import CoursesManager from './managers/courses-manager.js';
 
 var app = Vue.createApp({
+    mixins: [baseApp],
     el: '#app',
     data() {
         return {
@@ -20,21 +21,14 @@ var app = Vue.createApp({
             teachers: [],
             displayedTeachers: [],
             themes: [],
-            dataLoaded: false,
             selectedSchools: [],
             currentPage: 0,
             showResponsiveFilters: false,
-            currentLanguage: "fr",
-            translations: [],
-            availableLanguages: constants.AVAILABLE_LANGUAGES,
-            menuItems: constants.MENU_ITEMS,
             currentMenuItem: "teachers",
             alphabet: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
             firstLetterSearched: "",
             searchedName: "",
             selectedThemes: [],
-            errors: "",
-            translationManager: new TranslationManager(),
             teachersManager: new TeachersManager(),
             schoolsManager: new SchoolsManager(),
             coursesManager: new CoursesManager()
@@ -122,11 +116,6 @@ var app = Vue.createApp({
 
         try {
 
-            // detect current language and loads translations
-
-            this.currentLanguage = this.translationManager.getLanguage();
-            this.translations = await this.translationManager.loadTranslations();
-
             // loads schools, courses and teachers data
 
             this.schools = await this.schoolsManager.getSchools();
@@ -152,15 +141,6 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.dataLoaded && this.displayedTeachers.length < this.sortedTeachers.length ? this.currentPage + 1 : this.currentPage;
-        },
-        translate(key, returnKeyIfNotFound) {
-
-            return this.translations.length > 0 ? this.translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
-        },
-        setLanguage(language) {
-
-            this.currentLanguage = language;
-            this.translationManager.setLanguage(language);
         }
     }
 });
