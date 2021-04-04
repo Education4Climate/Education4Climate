@@ -29,8 +29,6 @@ var app = Vue.createApp({
             availableLanguages: constants.AVAILABLE_LANGUAGES,
             menuItems: constants.MENU_ITEMS,
             currentMenuItem: "teachers",
-            teachersCountsBySchool: [],
-            teachersCountsByTheme: [],
             alphabet: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
             firstLetterSearched: "",
             searchedName: "",
@@ -83,6 +81,26 @@ var app = Vue.createApp({
             }
 
             return this.displayedTeachers;
+        },
+        teachersCountsBySchool() { // Computes the total counts of teachers by school
+
+            const teachersCountsBySchool = [];
+
+            this.schools.forEach(school => {
+                teachersCountsBySchool[school.id] = this.teachers.filter(teacher => school.id == teacher.schoolId).length;
+            });
+
+            return teachersCountsBySchool;
+        },
+        teachersCountsByTheme() { // Computes the total counts of teachers by theme
+
+            const teachersCountsByTheme = [];
+
+            this.themes.forEach(theme => {
+                teachersCountsByTheme[theme.id] = this.teachers.filter(teacher => teacher.themesIds.includes(theme.id)).length;
+            });
+
+            return teachersCountsByTheme;
         }
     },
     mounted() {
@@ -99,7 +117,7 @@ var app = Vue.createApp({
     async created() {
 
         try {
-            
+
             // detect current language and loads translations
 
             this.currentLanguage = translationManager.getLanguage();
@@ -116,16 +134,6 @@ var app = Vue.createApp({
 
             this.selectedSchools = this.schools.map(school => { return school.id; });
             this.selectedThemes = this.themes.map(theme => { return theme.id; });
-
-            // computes the total counts of teachers by school / theme
-
-            this.schools.forEach(school => {
-                this.teachersCountsBySchool[school.id] = this.teachers.filter(teacher => school.id == teacher.schoolId).length;
-            });
-
-            this.themes.forEach(theme => {
-                this.teachersCountsByTheme[theme.id] = this.teachers.filter(teacher => teacher.themesIds.includes(theme.id)).length;
-            });
 
             // hides the loader
 
