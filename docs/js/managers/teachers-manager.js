@@ -7,60 +7,65 @@
 
 import * as coursesManager from './courses-manager.js';
 
-export async function getTeachers() {
+class TeachersManager {
 
-    if (!sessionStorage.teachers) {
+    static async getTeachers() {
 
-        let teachers = [];
+        if (!sessionStorage.teachers) {
 
-        const courses = await coursesManager.getCourses();
+            let teachers = [];
 
-        courses.forEach(course => {
+            const courses = await coursesManager.getCourses();
 
-            if (course.teachers && course.teachers.length > 0) {
+            courses.forEach(course => {
 
-                course.teachers.forEach(teacher => {
+                if (course.teachers && course.teachers.length > 0) {
 
-                    let id = -1;
+                    course.teachers.forEach(teacher => {
 
-                    for (var i = 0; i < teachers.length; i++) {
+                        let id = -1;
 
-                        if (teachers[i].schoolId == course.schoolId && teachers[i].name == teacher) {
+                        for (var i = 0; i < teachers.length; i++) {
 
-                            id = i;
-                            break;
+                            if (teachers[i].schoolId == course.schoolId && teachers[i].name == teacher) {
+
+                                id = i;
+                                break;
+                            }
                         }
-                    }
 
-                    if (id === -1) {
+                        if (id === -1) {
 
-                        id = teachers.length;
+                            id = teachers.length;
 
-                        teachers.push({
+                            teachers.push({
 
-                            id: id,
-                            schoolId: course.schoolId,
-                            name: teacher,
-                            coursesIds: [],
-                            themesIds: []
+                                id: id,
+                                schoolId: course.schoolId,
+                                name: teacher,
+                                coursesIds: [],
+                                themesIds: []
+                            });
+                        }
+
+                        teachers[id].coursesIds.push(course.id);
+
+                        course.themes.forEach(theme => {
+
+                            if (!teachers[id].themesIds.includes(theme)) {
+
+                                teachers[id].themesIds.push(theme);
+                            }
                         });
-                    }
-
-                    teachers[id].coursesIds.push(course.id);
-
-                    course.themes.forEach(theme => {
-
-                        if (!teachers[id].themesIds.includes(theme)) {
-
-                            teachers[id].themesIds.push(theme);
-                        }
                     });
-                });
-            }
-        });
+                }
+            });
 
-        sessionStorage.teachers = JSON.stringify(teachers);
+            sessionStorage.teachers = JSON.stringify(teachers);
+        }
+
+        return JSON.parse(sessionStorage.teachers);
     }
-
-    return JSON.parse(sessionStorage.teachers);
 }
+
+export default TeachersManager;

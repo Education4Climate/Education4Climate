@@ -8,7 +8,7 @@
 import * as constants from './constants.js';
 import * as schoolsManager from './managers/schools-manager.js';
 import * as translationManager from "./managers/translation-manager.js";
-import * as teachersManager from "./managers/teachers-manager.js";
+import TeachersManager from "./managers/teachers-manager.js";
 import * as coursesManager from './managers/courses-manager.js';
 
 var app = Vue.createApp({
@@ -128,7 +128,7 @@ var app = Vue.createApp({
             this.schools = await schoolsManager.getSchools();
             this.courses = await coursesManager.getCourses();
             this.themes = await coursesManager.getCoursesThemes();
-            this.teachers = await teachersManager.getTeachers();
+            this.teachers = await TeachersManager.getTeachers();
 
             // sets the filters default selected schools / themes
 
