@@ -2,19 +2,19 @@ from abc import ABC
 from pathlib import Path
 import json
 import urllib.parse
-
-import bs4
 import scrapy
 
 from config.settings import YEAR
 
-# BASE_URL = "https://www.ulb.be/servlet/search?q=&l=0&beanKey=beanKeyRechercheFormation&typeFo={}&s=&limit=999&page=1"
 BASE_URL = "https://www.ulb.be/servlet/search?" \
            "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \
            "&typeFo={}&s=FACULTE_ASC&limit=999&page=1"
 
 PATH_PROG_URL = urllib.parse.quote('/ws/ksup/programme?gen=prod&anet={}&lang=fr&', safe='{}')
 PROG_URL = f'https://www.ulb.be/api/formation?path={PATH_PROG_URL}'
+
+PATH_SUBPROG_URL = urllib.parse.quote('/ws/ksup/programme?gen=prod&anet={}&option={}&lang=fr&', safe='{}')
+SUBPROG_URL = f'https://www.ulb.be/api/formation?path={PATH_SUBPROG_URL}'
 
 
 class ULBProgramSpider(scrapy.Spider, ABC):
@@ -34,37 +34,70 @@ class ULBProgramSpider(scrapy.Spider, ABC):
             )
 
     def parse_main(self, response, cycle):
-        soup = bs4.BeautifulSoup(response.text, 'html.parser')
+        # soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
-        # TODO: modify to get 'Master en sciences et gestion de l'environnement'
-        for p in soup.find_all('div', class_='search-result__result-item'):
-            res = {
-                "id": p.find(class_='search-result__mnemonique').text,
-                "name": p.find('strong').text,
-                "cycle": cycle,
-                "faculty": p.find('span', class_='search-result__structure-rattachement').text,
-                "campus": p.find(class_='search-result-formation__separator').text,
-                "url": p.find(class_="item-title__element_title")["href"]
-            }
-
-            param = res['url'].split('/')[-1].upper()
-
+        main_div = "//div[contains(@class, 'search-result__result-item')]"
+        program_links = response.xpath(f"{main_div}/div[contains(@class, 'search-result__formations')]/a/@href").getall()
+        campuses = response.xpath(f"{main_div}/div[contains(@class, 'search-result__campus')]/span/text()").getall()
+        for link, campus in zip(program_links, campuses):
             yield scrapy.Request(
-                url=PROG_URL.format(param),
-                callback=self.parse_programme,
-                cb_kwargs={'cur_dict': res}
+                url=link,
+                callback=self.parse_secondary,
+                cb_kwargs={'main_program_id': None, 'cycle': cycle, 'campus': campus.strip(" \n")}
             )
 
+    def parse_secondary(self, response, main_program_id, cycle, campus):
+
+        # Get subprograms if there are some
+        main_div = "//div[contains(@class, 'search-result__result-item')]"
+        program_links = response.xpath(
+            f"{main_div}/div[contains(@class, 'search-result__formations')]/a/@href").getall()
+        if len(program_links) != 0:
+            campuses = response.xpath(f"{main_div}/div[contains(@class, 'search-result__campus')]/div/text()").getall()
+            main_program_id = response.url.split("/")[-1].upper()
+            for link, campus in zip(program_links, campuses):
+                yield scrapy.Request(
+                    url=link,
+                    callback=self.parse_secondary,
+                    cb_kwargs={'main_program_id': main_program_id, 'campus': campus.strip(" \n"), 'cycle': cycle}
+                )
+            return
+
+        # Otherwise extract information for the program
+        program_id = response.url.split("/")[-1]
+        program_name = response.xpath("//h1/text()").get()
+        faculty = response.xpath("//div[@class='zone-titre__surtitre']/a/text()").get()
+        base_dict = {'id': program_id.upper(),
+                     'name': program_name,
+                     'faculty': faculty,
+                     'cycle': cycle,
+                     'campus': campus,
+                     'url': response.url}
+
+        # TODO: actually if programs are contained in programs one needs to add a finalé arugment to the url
+        program_id = program_id.upper()
+        if main_program_id is None:
+            link = PROG_URL.format(program_id)
+        else:
+            link = SUBPROG_URL.format(main_program_id, program_id)
+        yield scrapy.Request(url=link, callback=self.parse_programme,
+                             cb_kwargs={"base_dict": base_dict})
+
     @staticmethod
-    def parse_programme(response, cur_dict):
+    def parse_programme(response, base_dict):
 
         json_obj = json.loads(json.loads(response.text)['json'])
 
-        list_cours = []
+        courses_ects = []
         for bloc in json_obj['blocs']:
             if bloc['anac'] == YEAR:
-                list_cours += bloc['progCourses']
+                courses_ects += [(course['id'], course['credits']) for course in bloc['progCourses']]
 
-        cur_dict['courses'] = sorted(set(e['id'] for e in list_cours))
+        if len(courses_ects) == 0:
+            return
 
-        yield cur_dict
+        courses, ects = zip(*list(set(courses_ects)))
+        base_dict['courses'] = courses
+        base_dict['ects'] = ects
+
+        yield base_dict
