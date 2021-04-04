@@ -8,7 +8,7 @@
 import * as constants from './constants.js';
 import * as schoolsManager from './managers/schools-manager.js';
 import * as programsManager from './managers/programs-manager.js';
-import * as translationManager from "./managers/translation-manager.js";
+import TranslationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
     el: '#app',
@@ -33,7 +33,8 @@ var app = Vue.createApp({
             menuItems: constants.MENU_ITEMS,
             currentMenuItem: "programs",
             cycles: [],
-            errors: ""
+            errors: "",
+            translationManager: new TranslationManager()
         };
     },
     computed: {
@@ -104,8 +105,8 @@ var app = Vue.createApp({
 
             // detect current language and loads translations
 
-            this.currentLanguage = translationManager.getLanguage();
-            this.translations = await translationManager.loadTranslations();
+            this.currentLanguage = this.translationManager.getLanguage();
+            this.translations = await this.translationManager.loadTranslations();
 
             // loads schools data
 
@@ -141,12 +142,12 @@ var app = Vue.createApp({
         },
         translate(key, returnKeyIfNotFound) {
 
-            return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
+            return this.translations.length > 0 ? this.translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {
 
             this.currentLanguage = language;
-            translationManager.setLanguage(language);
+            this.translationManager.setLanguage(language);
         }
     }
 });

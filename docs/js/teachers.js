@@ -7,7 +7,7 @@
 
 import * as constants from './constants.js';
 import * as schoolsManager from './managers/schools-manager.js';
-import * as translationManager from "./managers/translation-manager.js";
+import TranslationManager from "./managers/translation-manager.js";
 import TeachersManager from "./managers/teachers-manager.js";
 import * as coursesManager from './managers/courses-manager.js';
 
@@ -33,7 +33,9 @@ var app = Vue.createApp({
             firstLetterSearched: "",
             searchedName: "",
             selectedThemes: [],
-            errors: ""
+            errors: "",
+            translationManager: new TranslationManager(),
+            teachersManager: new TeachersManager()
         };
     },
     computed: {
@@ -120,15 +122,15 @@ var app = Vue.createApp({
 
             // detect current language and loads translations
 
-            this.currentLanguage = translationManager.getLanguage();
-            this.translations = await translationManager.loadTranslations();
+            this.currentLanguage = this.translationManager.getLanguage();
+            this.translations = await this.translationManager.loadTranslations();
 
             // loads schools, courses and teachers data
 
             this.schools = await schoolsManager.getSchools();
             this.courses = await coursesManager.getCourses();
             this.themes = await coursesManager.getCoursesThemes();
-            this.teachers = await TeachersManager.getTeachers();
+            this.teachers = await this.teachersManager.getTeachers();
 
             // sets the filters default selected schools / themes
 
@@ -151,12 +153,12 @@ var app = Vue.createApp({
         },
         translate(key, returnKeyIfNotFound) {
 
-            return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
+            return this.translations.length > 0 ? this.translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         setLanguage(language) {
 
             this.currentLanguage = language;
-            translationManager.setLanguage(language);
+            this.translationManager.setLanguage(language);
         }
     }
 });

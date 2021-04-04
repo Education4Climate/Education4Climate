@@ -9,7 +9,7 @@ import * as coursesManager from './courses-manager.js';
 
 class TeachersManager {
 
-    static async getTeachers() {
+    async getTeachers() {
 
         if (!sessionStorage.teachers) {
 

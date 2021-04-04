@@ -6,7 +6,7 @@
  */
 
 import * as constants from './constants.js';
-import * as translationManager from "./managers/translation-manager.js";
+import TranslationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
     el: '#app',
@@ -18,7 +18,8 @@ var app = Vue.createApp({
             menuItems: constants.MENU_ITEMS,
             currentMenuItem: "",
             dataLoaded: false,
-            errors: ""
+            errors: "",
+            translationManager: new TranslationManager()
         };
     },
     async created() {
@@ -27,8 +28,8 @@ var app = Vue.createApp({
 
             // detect current language and loads translations
 
-            this.currentLanguage = translationManager.getLanguage();
-            this.translations = await translationManager.loadTranslations();
+            this.currentLanguage = this.translationManager.getLanguage();
+            this.translations = await this.translationManager.loadTranslations();
 
             // hides the loader
 
@@ -42,11 +43,11 @@ var app = Vue.createApp({
     methods: {
         translate(key) {
 
-            return this.translations.length > 0 ? translationManager.translate(this.translations, key, this.currentLanguage) : "";
+            return this.translations.length > 0 ? this.translationManager.translate(this.translations, key, this.currentLanguage) : "";
         },
         setLanguage(language) {
             this.currentLanguage = language;
-            translationManager.setLanguage(language);
+            this.translationManager.setLanguage(language);
         }
     }
 });
