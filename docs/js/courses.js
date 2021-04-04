@@ -6,9 +6,9 @@
  */
 
 import * as constants from './constants.js';
-import * as schoolsManager from './managers/schools-manager.js';
-import * as coursesManager from './managers/courses-manager.js';
-import * as programsManager from './managers/programs-manager.js';
+import SchoolsManager from './managers/schools-manager.js';
+import CoursesManager from './managers/courses-manager.js';
+import ProgramsManager from './managers/programs-manager.js';
 import TranslationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
@@ -39,6 +39,9 @@ var app = Vue.createApp({
             programs: [],
             errors: "",
             translationManager: new TranslationManager(),
+            schoolsManager: new SchoolsManager(),
+            programsManager: new ProgramsManager(),
+            coursesManager: new CoursesManager()
         };
     },
     computed: {
@@ -60,7 +63,8 @@ var app = Vue.createApp({
 
                 this.currentPage = 0;
                 let searchedName = this.searchedName.toLowerCase();
-
+                this.searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
+                
                 return this.courses.slice()
                     .filter(course => this.selectedSchools.includes(course.schoolId))
                     .filter(course => this.selectedThemes.some(theme => course.themes.includes(theme)))
@@ -115,21 +119,21 @@ var app = Vue.createApp({
 
             // loads schools data
 
-            this.schools = await schoolsManager.getSchools();
+            this.schools = await this.schoolsManager.getSchools();
 
             // if both parameters schoolId and programCode are passed in the url,
             // loads the programs and find the right school/program
 
             let searchedSchool = this.searchedSchoolId && this.searchedProgramCode ? this.schools.find(school => school.id == this.searchedSchoolId) : null;
-            this.programs = searchedSchool ? await programsManager.getPrograms() : [];
+            this.programs = searchedSchool ? await this.programsManager.getPrograms() : [];
             this.searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
 
             // loads courses data
 
-            this.courses = await coursesManager.getCourses();
-            this.totalCoursesCounts = await coursesManager.getTotalCoursesCounts();
-            this.themes = await coursesManager.getCoursesThemes();
-            this.languages = await coursesManager.getCoursesLanguages();
+            this.courses = await this.coursesManager.getCourses();
+            this.totalCoursesCounts = await this.coursesManager.getTotalCoursesCounts();
+            this.themes = await this.coursesManager.getCoursesThemes();
+            this.languages = await this.coursesManager.getCoursesLanguages();
 
             // sets the filters default selected schools / themes / languages
 

@@ -5,9 +5,14 @@
  * @author Quentin V.
  */
 
-import * as coursesManager from './courses-manager.js';
+import CoursesManager from './courses-manager.js';
 
 class TeachersManager {
+
+    constructor() {
+
+        this.coursesManager = new CoursesManager();
+    }
 
     async getTeachers() {
 
@@ -15,7 +20,7 @@ class TeachersManager {
 
             let teachers = [];
 
-            const courses = await coursesManager.getCourses();
+            const courses = await this.coursesManager.getCourses();
 
             courses.forEach(course => {
 

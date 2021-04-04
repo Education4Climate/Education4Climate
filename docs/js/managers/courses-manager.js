@@ -6,201 +6,210 @@
  */
 
 import * as constants from '../constants.js';
-import * as schoolsManager from './schools-manager.js';
+import SchoolsManager from './schools-manager.js';
 
-var totalCoursesCounts = [];
-var coursesThemes = [];
-var coursesLanguages = [];
+class CoursesManager {
 
-export async function getCourses() {
+    constructor() {
 
-    if (!sessionStorage.courses) {
+        this.totalCoursesCounts = [];
+        this.coursesThemes = [];
+        this.coursesLanguages = [];
+        this.schoolsManager = new SchoolsManager();
+    }
 
-        var courses = [];
+    async getCourses() {
 
-        const schools = await schoolsManager.getSchools();
+        if (!sessionStorage.courses) {
 
-        var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.coursesFile);
+            var courses = [];
 
-        // Getting all the .json in parralel
-        var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
+            const schools = await this.schoolsManager.getSchools();
 
-        data.forEach((c, i) => {
+            var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.coursesFile);
 
-            c.forEach((course, j) => {
+            // Getting all the .json in parralel
+            var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
-                courses.push({
+            data.forEach((c, i) => {
 
-                    id: courses.length,
-                    teachers: getCleanedTeachers(course.teachers),
-                    year: course.year ? course.year : "",
-                    code: course.id ? course.id : "",
-                    name: course.name ? course.name : "",
-                    schoolId: schools[i].id,
-                    url: course.url ? course.url : "",
-                    languages: getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
-                    themes: getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
+                c.forEach((course, j) => {
+
+                    courses.push({
+
+                        id: courses.length,
+                        teachers: this._getCleanedTeachers(course.teachers),
+                        year: course.year ? course.year : "",
+                        code: course.id ? course.id : "",
+                        name: course.name ? course.name : "",
+                        schoolId: schools[i].id,
+                        url: course.url ? course.url : "",
+                        languages: this._getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
+                        themes: this._getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
+                    });
+
+                    this._debugCoursesErrors(schools[i].shortName, course);
                 });
 
-                debugCoursesErrors(schools[i].shortName, course);
+                this.totalCoursesCounts[schools[i].id] = c.length;
             });
 
-            totalCoursesCounts[schools[i].id] = c.length;
-        });
-
-        sessionStorage.totalCoursesCounts = JSON.stringify(totalCoursesCounts);
-        sessionStorage.coursesThemes = JSON.stringify(coursesThemes);
-        sessionStorage.coursesLanguages = JSON.stringify(coursesLanguages);
-        sessionStorage.courses = JSON.stringify(courses);
-    }
-
-    return JSON.parse(sessionStorage.courses);
-}
-
-function getCleanedTeachers(teachers) {
-
-    let t = [];
-
-    if (teachers && Array.isArray(teachers) && teachers.length > 0) {
-
-        teachers.forEach(teacher => {
-
-            // teacher = teacher.replace("\u00a0", " ").trim();
-            // const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr.", "Mevrouw ", "De heer "];
-            // toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
-
-            teacher = teacher.trim();
-
-            if (teacher.length > 0) {
-                t.push(teacher);
-            }
-        });
-    }
-
-    return t;
-}
-
-export async function getTotalCoursesCounts() {
-
-    if (!sessionStorage.totalCoursesCounts) {
-
-        await getCourses();
-        sessionStorage.totalCoursesCounts = JSON.stringify(totalCoursesCounts);
-    }
-
-    return JSON.parse(sessionStorage.totalCoursesCounts);
-}
-
-export async function getCoursesThemes() {
-
-    if (!sessionStorage.coursesThemes) {
-
-        await getCourses();
-        sessionStorage.coursesThemes = JSON.stringify(coursesThemes);
-    }
-
-    return JSON.parse(sessionStorage.coursesThemes);
-}
-
-export async function getCoursesLanguages() {
-
-    if (!sessionStorage.coursesLanguages) {
-
-        await getCourses();
-        sessionStorage.coursesLanguages = JSON.stringify(coursesLanguages);
-    }
-
-    return JSON.parse(sessionStorage.coursesLanguages);
-}
-
-function getThemes(themes) {
-
-    var t = [];
-
-    if (themes) {
-
-        for (var i = 0; i < themes.length; i++) {
-
-            var id = -1;
-
-            for (var j = 0; j < coursesThemes.length; j++) {
-
-                if (coursesThemes[j].name == themes[i]) {
-
-                    id = j;
-                    break;
-                }
-            }
-
-            if (id == -1) {
-
-                id = coursesThemes.length;
-
-                coursesThemes.push({
-
-                    id: id,
-                    name: themes[i],
-                    totalCount: 0
-                });
-            }
-
-            coursesThemes[id].totalCount++;
-
-            t.push(id);
+            sessionStorage.totalCoursesCounts = JSON.stringify(this.totalCoursesCounts);
+            sessionStorage.coursesThemes = JSON.stringify(this.coursesThemes);
+            sessionStorage.coursesLanguages = JSON.stringify(this.coursesLanguages);
+            sessionStorage.courses = JSON.stringify(courses);
         }
+
+        return JSON.parse(sessionStorage.courses);
     }
 
-    return t;
-}
+    _getCleanedTeachers(teachers) {
 
-function getLanguages(languages) {
+        let t = [];
 
-    var l = [];
+        if (teachers && Array.isArray(teachers) && teachers.length > 0) {
 
-    if (languages) {
+            teachers.forEach(teacher => {
 
-        for (var i = 0; i < languages.length; i++) {
+                // teacher = teacher.replace("\u00a0", " ").trim();
+                // const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr.", "Mevrouw ", "De heer "];
+                // toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
 
-            var id = -1;
+                teacher = teacher.trim();
 
-            for (var j = 0; j < coursesLanguages.length; j++) {
-
-                if (coursesLanguages[j].name == languages[i]) {
-
-                    id = j;
-                    break;
+                if (teacher.length > 0) {
+                    t.push(teacher);
                 }
-            }
-
-            if (id == -1) {
-
-                id = coursesLanguages.length;
-
-                coursesLanguages.push({
-
-                    id: id,
-                    name: languages[i],
-                    totalCount: 0
-                });
-            }
-
-            coursesLanguages[id].totalCount++;
-
-            l.push(id);
+            });
         }
+
+        return t;
     }
 
-    return l;
+    async getTotalCoursesCounts() {
+
+        if (!sessionStorage.totalCoursesCounts) {
+
+            await getCourses();
+            sessionStorage.totalCoursesCounts = JSON.stringify(this.totalCoursesCounts);
+        }
+
+        return JSON.parse(sessionStorage.totalCoursesCounts);
+    }
+
+    async getCoursesThemes() {
+
+        if (!sessionStorage.coursesThemes) {
+
+            await getCourses();
+            sessionStorage.coursesThemes = JSON.stringify(this.coursesThemes);
+        }
+
+        return JSON.parse(sessionStorage.coursesThemes);
+    }
+
+    async getCoursesLanguages() {
+
+        if (!sessionStorage.coursesLanguages) {
+
+            await getCourses();
+            sessionStorage.coursesLanguages = JSON.stringify(this.coursesLanguages);
+        }
+
+        return JSON.parse(sessionStorage.coursesLanguages);
+    }
+
+    _getThemes(themes) {
+
+        var t = [];
+
+        if (themes) {
+
+            for (var i = 0; i < themes.length; i++) {
+
+                var id = -1;
+
+                for (var j = 0; j < this.coursesThemes.length; j++) {
+
+                    if (this.coursesThemes[j].name == themes[i]) {
+
+                        id = j;
+                        break;
+                    }
+                }
+
+                if (id == -1) {
+
+                    id = this.coursesThemes.length;
+
+                    this.coursesThemes.push({
+
+                        id: id,
+                        name: themes[i],
+                        totalCount: 0
+                    });
+                }
+
+                this.coursesThemes[id].totalCount++;
+
+                t.push(id);
+            }
+        }
+
+        return t;
+    }
+
+    _getLanguages(languages) {
+
+        var l = [];
+
+        if (languages) {
+
+            for (var i = 0; i < languages.length; i++) {
+
+                var id = -1;
+
+                for (var j = 0; j < this.coursesLanguages.length; j++) {
+
+                    if (this.coursesLanguages[j].name == languages[i]) {
+
+                        id = j;
+                        break;
+                    }
+                }
+
+                if (id == -1) {
+
+                    id = this.coursesLanguages.length;
+
+                    this.coursesLanguages.push({
+
+                        id: id,
+                        name: languages[i],
+                        totalCount: 0
+                    });
+                }
+
+                this.coursesLanguages[id].totalCount++;
+
+                l.push(id);
+            }
+        }
+
+        return l;
+    }
+
+    _debugCoursesErrors(school, course) {
+
+        if (!course.year) console.log(school + " : " + course.id + " has no year");
+        if (!course.id) console.log(school + " : " + course.id + " has no id");
+        if (!course.name) console.log(school + " : " + course.id + " has no name");
+        if (!course.url) console.log(school + " : " + course.id + " has no url");
+        if (!course.languages || course.languages.length === 0) console.log(school + " : " + course.id + " has no languages");
+        if (!course.themes || course.themes.length === 0) console.log(school + " : " + course.id + " has no themes");
+        if (!course.teachers || !Array.isArray(course.teachers) || course.teachers.length === 0) console.log(school + " : " + course.id + " has no teachers");
+        if (course.teachers && course.teachers.length > 0 && !course.teachers[0]) console.log(school + " : " + course.id + " has an empty teacher");
+    }
 }
 
-function debugCoursesErrors(school, course) {
-
-    if (!course.year) console.log(school + " : " + course.id + " has no year");
-    if (!course.id) console.log(school + " : " + course.id + " has no id");
-    if (!course.name) console.log(school + " : " + course.id + " has no name");
-    if (!course.url) console.log(school + " : " + course.id + " has no url");
-    if (!course.languages || course.languages.length === 0) console.log(school + " : " + course.id + " has no languages");
-    if (!course.themes || course.themes.length === 0) console.log(school + " : " + course.id + " has no themes");
-    if (!course.teachers || !Array.isArray(course.teachers) || course.teachers.length === 0) console.log(school + " : " + course.id + " has no teachers");
-    if (course.teachers && course.teachers.length > 0 && !course.teachers[0]) console.log(school + " : " + course.id + " has an empty teacher");
-}
+export default CoursesManager;

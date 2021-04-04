@@ -7,37 +7,42 @@
 
 import * as constants from '../constants.js';
 
-/**
- * Gets the schools from the schools JSON file.
- * 
- * @returns a cached array of all the schools where every index
- * is also the school ID.
- */
-export async function getSchools() {
+class SchoolsManager {
 
-    if (!sessionStorage.schools) {
+    /**
+     * Gets the schools from the schools JSON file.
+     * 
+     * @returns a cached array of all the schools where every index
+     * is also the school ID.
+     */
+    async getSchools() {
 
-        var schools = [];
+        if (!sessionStorage.schools) {
 
-        await fetch(constants.SCHOOLS_FILE)
-            .then(response => response.json())
-            .then(data => {
+            var schools = [];
 
-                data.schools.forEach((school, i) => {
+            await fetch(constants.SCHOOLS_FILE)
+                .then(response => response.json())
+                .then(data => {
 
-                    schools.push({
-                        id: i,
-                        name: school.name,
-                        shortName: school.shortName,
-                        coursesFile: school.coursesFile,
-                        programsFile: school.programsFile,
-                        teachersDirectoryUrl: school.teachersDirectoryUrl
+                    data.schools.forEach((school, i) => {
+
+                        schools.push({
+                            id: i,
+                            name: school.name,
+                            shortName: school.shortName,
+                            coursesFile: school.coursesFile,
+                            programsFile: school.programsFile,
+                            teachersDirectoryUrl: school.teachersDirectoryUrl
+                        });
                     });
                 });
-            });
 
-        sessionStorage.schools = JSON.stringify(schools);
+            sessionStorage.schools = JSON.stringify(schools);
+        }
+
+        return JSON.parse(sessionStorage.schools);
     }
-
-    return JSON.parse(sessionStorage.schools);
 }
+
+export default SchoolsManager;

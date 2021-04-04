@@ -6,8 +6,8 @@
  */
 
 import * as constants from './constants.js';
-import * as schoolsManager from './managers/schools-manager.js';
-import * as programsManager from './managers/programs-manager.js';
+import SchoolsManager from './managers/schools-manager.js';
+import ProgramsManager from './managers/programs-manager.js';
 import TranslationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
@@ -34,7 +34,9 @@ var app = Vue.createApp({
             currentMenuItem: "programs",
             cycles: [],
             errors: "",
-            translationManager: new TranslationManager()
+            translationManager: new TranslationManager(),
+            schoolsManager: new SchoolsManager(),
+            programsManager: new ProgramsManager()
         };
     },
     computed: {
@@ -110,15 +112,15 @@ var app = Vue.createApp({
 
             // loads schools data
 
-            this.schools = await schoolsManager.getSchools();
+            this.schools = await this.schoolsManager.getSchools();
 
             // loads programs data
 
-            this.programs = await programsManager.getPrograms();
-            this.totalProgramsCounts = await programsManager.getTotalProgramsCountBySchool();
-            this.themes = await programsManager.getProgramsThemes();
-            this.fields = await programsManager.getProgramsFields();
-            this.cycles = await programsManager.getProgramsCycles();
+            this.programs = await this.programsManager.getPrograms();
+            this.totalProgramsCounts = await this.programsManager.getTotalProgramsCountBySchool();
+            this.themes = await this.programsManager.getProgramsThemes();
+            this.fields = await this.programsManager.getProgramsFields();
+            this.cycles = await this.programsManager.getProgramsCycles();
 
             // sets the filters default selected schools / themes / fields
 

@@ -6,10 +6,10 @@
  */
 
 import * as constants from './constants.js';
-import * as schoolsManager from './managers/schools-manager.js';
+import SchoolsManager from './managers/schools-manager.js';
 import TranslationManager from "./managers/translation-manager.js";
 import TeachersManager from "./managers/teachers-manager.js";
-import * as coursesManager from './managers/courses-manager.js';
+import CoursesManager from './managers/courses-manager.js';
 
 var app = Vue.createApp({
     el: '#app',
@@ -35,7 +35,9 @@ var app = Vue.createApp({
             selectedThemes: [],
             errors: "",
             translationManager: new TranslationManager(),
-            teachersManager: new TeachersManager()
+            teachersManager: new TeachersManager(),
+            schoolsManager: new SchoolsManager(),
+            coursesManager: new CoursesManager()
         };
     },
     computed: {
@@ -127,9 +129,9 @@ var app = Vue.createApp({
 
             // loads schools, courses and teachers data
 
-            this.schools = await schoolsManager.getSchools();
-            this.courses = await coursesManager.getCourses();
-            this.themes = await coursesManager.getCoursesThemes();
+            this.schools = await this.schoolsManager.getSchools();
+            this.courses = await this.coursesManager.getCourses();
+            this.themes = await this.coursesManager.getCoursesThemes();
             this.teachers = await this.teachersManager.getTeachers();
 
             // sets the filters default selected schools / themes
