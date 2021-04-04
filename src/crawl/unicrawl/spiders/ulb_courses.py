@@ -72,15 +72,11 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
-        # TODO: move that into the program code
-        ects = response.xpath("//h3[text()='Crédits ECTS']/following::p[1]/text()").get()
-        ects = int(ects) if 1 <= len(ects) <= 2 else None
-
         # TODO: check if there can be multiple languages
         languages = response.xpath("//h3[text()=\"Langue(s) d'enseignement\"]/following::p[1]/text()").get()
         if languages is not None:
             languages = [LANGUAGE_DICT[language] for language in languages.split(", ")]
-        languages = [] if languages == [""] else languages
+        languages = ['fr'] if languages == [""] else languages
 
         content_titles = ["Contenu du cours", "Objectifs (et/ou acquis d'apprentissages spécifiques)",
                           "Méthodes d'enseignement et activités d'apprentissages"]

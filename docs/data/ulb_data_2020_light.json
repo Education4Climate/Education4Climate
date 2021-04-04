@@ -4,15 +4,15 @@
   "name":"Projet d'architecture III",
   "year":"2020-2021",
   "teachers":[
-   "Samia BEN RAJEB",
-   "Daniel DETHIER"
+   "BEN RAJEB Samia",
+   "DETHIER Daniel"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/arch-h300",
   "ects":[
-   15.0
+   15
   ],
   "faculty":[
    "\u00c9cole polytechnique de Bruxelles"
@@ -28,27 +28,87 @@
   ]
  },
  {
+  "id":"ARCH-H400",
+  "name":"Sustainable urban Design Studio",
+  "year":"2020-2021",
+  "teachers":[
+   "Zaib KHAN MAHSUD Ahmed",
+   "Van Sande Hera"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/arch-h400",
+  "ects":[
+   8
+  ],
+  "faculty":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"ARCH-H502",
+  "name":"Theory of architecture and urbanism",
+  "year":"2020-2021",
+  "teachers":[
+   "Zaib KHAN MAHSUD Ahmed"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/arch-h502",
+  "ects":[
+   4
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences",
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "sciences",
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment",
+   "climatology"
+  ]
+ },
+ {
   "id":"ARCH-P7119",
   "name":"AED1 - Architecture \u00e9cologies durabilit\u00e9s : l\u2019\u00e9chelle du commun (module 1)",
   "year":"2020-2021",
   "teachers":[
-   "Bernard DEPREZ",
-   "Isabelle PRIGNOT"
+   "DEPREZ Bernard",
+   "PRIGNOT Isabelle"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/arch-p7119",
   "ects":[
-   10.0
+   10
   ],
   "faculty":[
-   "Facult\u00e9 d'Architecture La Cambre Horta"
+   "Facult\u00e9 d'Architecture La Cambre Horta",
+   "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Flagey"
+   "Solbosch"
   ],
   "field":[
+   "sciences",
    "applied sciences & engineering"
   ],
   "themes":[
@@ -61,22 +121,22 @@
   "name":"AED2 - Architecture \u00e9cologies durabilit\u00e9s : l\u2019\u00e9chelle du b\u00e2timent (module 2)",
   "year":"2020-2021",
   "teachers":[
-   "Bernard DEPREZ",
-   "Sebastian MORENO-VACCA",
-   "Isabelle PRIGNOT"
+   "DEPREZ Bernard",
+   "MORENO-VACCA Sebastian",
+   "PRIGNOT Isabelle"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/arch-p8119",
   "ects":[
-   10.0
+   10
   ],
   "faculty":[
    "Facult\u00e9 d'Architecture La Cambre Horta"
   ],
   "campus":[
-   "Flagey"
+   "Solbosch"
   ],
   "field":[
    "applied sciences & engineering"
@@ -86,28 +146,55 @@
   ]
  },
  {
+  "id":"ARCH-Y500",
+  "name":"Low energy design for sustainable buildings",
+  "year":"2020-2021",
+  "teachers":[
+   "DESCAMPS Filip"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/arch-y500",
+  "ects":[
+   4
+  ],
+  "faculty":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
   "id":"BING-F1001",
   "name":"Sciences de la terre et du bioing\u00e9nieur, environnement et soci\u00e9t\u00e9",
   "year":"2020-2021",
   "teachers":[
-   "Pierre REGNIER",
-   "Charles DE CANNIERE",
-   "Jean-Michel DECROLY",
-   "Christian HERMANS",
-   "Frank PATTYN"
+   "REGNIER Pierre",
+   "DE CANNIERE Charles",
+   "DECROLY Jean-Michel",
+   "HERMANS Christian",
+   "PATTYN Frank"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f1001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Charleroi Gosselies",
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -124,14 +211,14 @@
   "name":"Agro-\u00e9cosyst\u00e8mes et syst\u00e8mes agraires",
   "year":"2020-2021",
   "teachers":[
-   "Marjolein VISSER"
+   "VISSER Marjolein"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f202",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -147,19 +234,47 @@
   ]
  },
  {
+  "id":"BING-F3004",
+  "name":"Anglais scientifique et \u00e9pist\u00e9mologie des sciences",
+  "year":"2020-2021",
+  "teachers":[
+   "KERMISCH C\u00e9line",
+   "Lucy Gillian"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f3004",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"BING-F4001",
   "name":"Economie agricole et d\u00e9veloppement rural",
   "year":"2020-2021",
   "teachers":[
-   "Marjolein VISSER",
-   "Werner BOSMANS"
+   "VISSER Marjolein",
+   "BOSMANS Werner"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f4001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -179,14 +294,14 @@
   "name":"Sylviculture et qualit\u00e9 du bois",
   "year":"2020-2021",
   "teachers":[
-   "Charles DE CANNIERE"
+   "DE CANNIERE Charles"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f4003",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -206,14 +321,14 @@
   "name":"Entomologie",
   "year":"2020-2021",
   "teachers":[
-   "Nicolas VEREECKEN"
+   "VEREECKEN Nicolas"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f4004",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -233,15 +348,15 @@
   "name":"P\u00e9dologie et m\u00e9canique des sols",
   "year":"2020-2021",
   "teachers":[
-   "Thomas DROUET DE LA THIBAUDERIE",
-   "Bertrand FRANCOIS"
+   "DROUET DE LA THIBAUDERIE Thomas",
+   "FRANCOIS Bertrand"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f4005",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -261,14 +376,14 @@
   "name":"Phytotechnie des grandes cultures en r\u00e9gions temper\u00e9es",
   "year":"2020-2021",
   "teachers":[
-   ""
+   "Louvieaux Julien"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f403",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -289,14 +404,14 @@
   "name":"Structure, \u00e9volution et fonctionnement des \u00e9cosyst\u00e8mes aquatiques",
   "year":"2020-2021",
   "teachers":[
-   "Nathalie GYPENS"
+   "GYPENS Nathalie"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f410",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -317,15 +432,15 @@
   "name":"Syst\u00e8mes d'\u00e9levage et productions animales integr\u00e9es",
   "year":"2020-2021",
   "teachers":[
-   "Dominique DEMBLON",
-   "Fran\u00e7ois SERNEELS"
+   "DEMBLON Dominique",
+   "SERNEELS Fran\u00e7ois"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f415",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -345,14 +460,14 @@
   "name":"Innovations agro\u00e9cologiques et production alimentaire",
   "year":"2020-2021",
   "teachers":[
-   "Nicolas VEREECKEN"
+   "VEREECKEN Nicolas"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f431",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -372,15 +487,15 @@
   "name":"Ecologie de la conservation et estimation foresti\u00e8re",
   "year":"2020-2021",
   "teachers":[
-   "Charles DE CANNIERE",
-   "Gr\u00e9gory MAHY"
+   "DE CANNIERE Charles",
+   "MAHY Gr\u00e9gory"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f5001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -400,14 +515,14 @@
   "name":"Qualit\u00e9 microbiologique des eaux",
   "year":"2020-2021",
   "teachers":[
-   "Pierre SERVAIS"
+   "SERVAIS Pierre"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f523",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -427,19 +542,21 @@
   "name":"Mod\u00e9lisation des \u00e9cosyst\u00e8mes aquatiques",
   "year":"2020-2021",
   "teachers":[
-   "Nathalie GYPENS"
+   "GYPENS Nathalie"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f525",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Erasme",
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -450,49 +567,20 @@
   ]
  },
  {
-  "id":"BING-H4003",
-  "name":"Unit operations and processes for the environment and bio-industries",
-  "year":"2020-2021",
-  "teachers":[
-   "Beno\u00eet HAUT",
-   "Fr\u00e9d\u00e9ric DEBASTE",
-   "Beno\u00eet SCHEID"
-  ],
-  "languages":[
-   "en"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-h4003",
-  "ects":[
-   10.0
-  ],
-  "faculty":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "campus":[
-   "Plaine"
-  ],
-  "field":[
-   "sciences"
-  ],
-  "themes":[
-   "decarbonization"
-  ]
- },
- {
   "id":"BIOL-F2001",
   "name":"El\u00e9ments de botanique et de zoologie",
   "year":"2020-2021",
   "teachers":[
-   "Jean-Fran\u00e7ois FLOT",
-   "Jean-Christophe DE BISEAU D'HAUTEVILLE",
-   "Pierre Jacques MEERTS"
+   "FLOT Jean-Fran\u00e7ois",
+   "DE BISEAU D'HAUTEVILLE Jean-Christophe",
+   "Jacques MEERTS Pierre"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f2001",
   "ects":[
-   15.0
+   15
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -512,20 +600,20 @@
   "name":"Zoologie 2",
   "year":"2020-2021",
   "teachers":[
-   "Yves ROISIN"
+   "ROISIN Yves"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f304",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Charleroi Gosselies"
+   "Solbosch"
   ],
   "field":[
    "sciences"
@@ -539,21 +627,22 @@
   "name":"Botanique, phytog\u00e9ographie et ethno\u00e9cologie",
   "year":"2020-2021",
   "teachers":[
-   "Farid DAHDOUH-GUEBAS"
+   "DAHDOUH-GUEBAS Farid"
   ],
   "languages":[
+   "en",
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f305",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Charleroi Gosselies",
-   "Plaine"
+   "Autre campus",
+   "Solbosch"
   ],
   "field":[
    "sciences"
@@ -567,21 +656,22 @@
   "name":"Ecologie g\u00e9n\u00e9rale",
   "year":"2020-2021",
   "teachers":[
-   "Pierre Jacques MEERTS",
-   "Isabelle GEORGE"
+   "Jacques MEERTS Pierre",
+   "GEORGE Isabelle"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f309",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Charleroi Gosselies",
+   "Autre campus",
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -596,22 +686,22 @@
   "name":"Ecologie et biodiversit\u00e9",
   "year":"2020-2021",
   "teachers":[
-   "Bruno DANIS",
-   "Isabelle GEORGE",
-   "Pierre Jacques MEERTS"
+   "DANIS Bruno",
+   "GEORGE Isabelle",
+   "Jacques MEERTS Pierre"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f310",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Charleroi Gosselies"
+   "Solbosch"
   ],
   "field":[
    "sciences"
@@ -625,14 +715,14 @@
   "name":"Behavioural Ecology in natural and man-made environment",
   "year":"2020-2021",
   "teachers":[
-   "Claire DETRAIN"
+   "DETRAIN Claire"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f4001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -652,20 +742,20 @@
   "name":"P\u00e9dologie et \u00e9cosyst\u00e8mes",
   "year":"2020-2021",
   "teachers":[
-   "Thomas DROUET DE LA THIBAUDERIE"
+   "DROUET DE LA THIBAUDERIE Thomas"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f4002",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Autre campus"
   ],
   "field":[
    "sciences"
@@ -679,20 +769,21 @@
   "name":"Social-ecological systems",
   "year":"2020-2021",
   "teachers":[
-   "Farid DAHDOUH-GUEBAS",
-   "Jean-Louis DENEUBOURG"
+   "DAHDOUH-GUEBAS Farid",
+   "DENEUBOURG Jean-Louis"
   ],
   "languages":[
-
+   "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f4005",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -707,21 +798,51 @@
   "name":"Biotechnologies animales et v\u00e9g\u00e9tales",
   "year":"2020-2021",
   "teachers":[
-   "Nathalie VERBRUGGEN",
-   "Mondher EL JAZIRI",
-   "Jacob SOUOPGUI"
+   "VERBRUGGEN Nathalie",
+   "EL JAZIRI Mondher",
+   "SOUOPGUI Jacob"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f412",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"BIOL-F417",
+  "name":"Marine biology",
+  "year":"2020-2021",
+  "teachers":[
+   "DUBOIS Philippe",
+   "KOCHZIUS Marc"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f417",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -736,19 +857,20 @@
   "name":"Ecotoxicologie",
   "year":"2020-2021",
   "teachers":[
-   "Philippe DUBOIS"
+   "DUBOIS Philippe"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f441",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -763,19 +885,20 @@
   "name":"Plant-soil interactions",
   "year":"2020-2021",
   "teachers":[
-   "Pierre Jacques MEERTS"
+   "Jacques MEERTS Pierre"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f444",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -790,20 +913,20 @@
   "name":"Biog\u00e9ographie",
   "year":"2020-2021",
   "teachers":[
-   "Bruno DANIS"
+   "DANIS Bruno"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f531",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Autre campus"
   ],
   "field":[
    "sciences"
@@ -817,23 +940,23 @@
   "name":"Biochimie+physiologie reproductive",
   "year":"2020-2021",
   "teachers":[
-   "Marie-Isabelle GARCIA",
-   "Anne DELBAERE",
-   "Jean-Yves SPRINGAEL",
-   "Pascale VERTONGEN"
+   "GARCIA Marie-Isabelle",
+   "DELBAERE Anne",
+   "SPRINGAEL Jean-Yves",
+   "VERTONGEN Pascale"
   ],
   "languages":[
-
+   "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/bmol-g2204",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de M\u00e9decine"
   ],
   "campus":[
-   "Erasme"
+   "Solbosch"
   ],
   "field":[
    "health"
@@ -847,20 +970,20 @@
   "name":"Chimie et catalyse organom\u00e9talliques",
   "year":"2020-2021",
   "teachers":[
-   "Gwilherm EVANO"
+   "EVANO Gwilherm"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-f430",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Solbosch"
   ],
   "field":[
    "sciences"
@@ -874,21 +997,21 @@
   "name":"Chimie de l'environnement et risques chimiques",
   "year":"2020-2021",
   "teachers":[
-   "Pierre-Fran\u00e7ois COHEUR",
-   "Laurence RONGY"
+   "COHEUR Pierre-Fran\u00e7ois",
+   "RONGY Laurence"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-f474",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Solbosch"
   ],
   "field":[
    "sciences"
@@ -902,27 +1025,28 @@
   "name":"Pollution du milieu physique",
   "year":"2020-2021",
   "teachers":[
-   "Michel VERBANCK",
-   "Gilles BRUYLANTS"
+   "VERBANCK Michel",
+   "BRUYLANTS Gilles"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-h302",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "\u00c9cole polytechnique de Bruxelles",
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Charleroi Ville Haute",
+   "Autre campus",
+   "Solbosch",
    "Plaine"
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -930,30 +1054,32 @@
   ]
  },
  {
-  "id":"CNST-P3003",
-  "name":"Conception \u00e9nerg\u00e9tique des b\u00e2timents et \u00e9quipements HVAC",
+  "id":"CHIM-S201",
+  "name":"Industrial applications of chemistry",
   "year":"2020-2021",
   "teachers":[
-   "Bernard DEPREZ"
+   "DELPLANCKE Marie-Paule"
   ],
   "languages":[
-   "fr"
+   "en"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/cnst-p3003",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-s201",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
-   "Facult\u00e9 d'Architecture La Cambre Horta"
+   "Solvay Brussels School of Economics and Management"
   ],
   "campus":[
-   "Plaine"
+   "UMons",
+   "Solbosch"
   ],
   "field":[
-   "applied sciences & engineering"
+   "economy & management"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "consumption"
   ]
  },
  {
@@ -961,21 +1087,20 @@
   "name":"Mat\u00e9riaux et construction 3 : de la physique du b\u00e2timent au d\u00e9tail d'architecture",
   "year":"2020-2021",
   "teachers":[
-   "Sebastian MORENO-VACCA",
-   "Gil HONORE"
+   "MORENO-VACCA Sebastian"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/cnst-p3006",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 d'Architecture La Cambre Horta"
   ],
   "campus":[
-   "Plaine"
+   "Solbosch"
   ],
   "field":[
    "applied sciences & engineering"
@@ -986,24 +1111,53 @@
   ]
  },
  {
+  "id":"CNST-Y512",
+  "name":"Energy performance in buildings",
+  "year":"2020-2021",
+  "teachers":[
+   "DESCAMPS Filip"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/cnst-y512",
+  "ects":[
+   6
+  ],
+  "faculty":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
   "id":"COMM-B430",
   "name":"Strat\u00e9gies num\u00e9riques en communication",
   "year":"2020-2021",
   "teachers":[
-   "David GRUNEWALD"
+   "GRUNEWALD David"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/comm-b430",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Philosophie et Sciences sociales",
    "Facult\u00e9 de Lettres, Traduction et Communication"
   ],
   "campus":[
+   "Erasme",
    "Solbosch"
   ],
   "field":[
@@ -1018,14 +1172,14 @@
   "name":"Droit de l'environnement",
   "year":"2020-2021",
   "teachers":[
-   "Chiara ARMENI"
+   "ARMENI Chiara"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/droi-c5021",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Droit et de Criminologie"
@@ -1045,14 +1199,14 @@
   "name":"Th\u00e9orie du droit",
   "year":"2020-2021",
   "teachers":[
-   "Beno\u00eet FRYDMAN"
+   "FRYDMAN Beno\u00eet"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/droi-c5100",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Philosophie et Sciences sociales",
@@ -1074,14 +1228,14 @@
   "name":"Analysis of Contemporary Economic Issues",
   "year":"2020-2021",
   "teachers":[
-   "Jean-Pierre DE LAET"
+   "DE LAET Jean-Pierre"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/econ-s2001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Philosophie et Sciences sociales",
@@ -1091,8 +1245,8 @@
    "Solbosch"
   ],
   "field":[
-   "economy & management",
-   "social science"
+   "social science",
+   "economy & management"
   ],
   "themes":[
    "durability"
@@ -1103,27 +1257,27 @@
   "name":"\u00c9conomie du travail et \u00e9thique \u00e9conomique ",
   "year":"2020-2021",
   "teachers":[
-   "Fran\u00e7ois RYCX",
-   "Jean Luc DE MEULEMEESTER"
+   "RYCX Fran\u00e7ois",
+   "Luc DE MEULEMEESTER Jean"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/econ-s2002",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Philosophie et Sciences sociales",
    "Solvay Brussels School of Economics and Management"
   ],
   "campus":[
-   "Solbosch",
-   "Charleroi Ville Haute"
+   "Charleroi Ville Haute",
+   "Solbosch"
   ],
   "field":[
-   "economy & management",
-   "social science"
+   "social science",
+   "economy & management"
   ],
   "themes":[
    "durability",
@@ -1135,9 +1289,9 @@
   "name":"International Trade Theory - Politique \u00e9conomique et int\u00e9gration europ\u00e9ennes",
   "year":"2020-2021",
   "teachers":[
-   "Fabienne ILZKOVITZ",
-   "Chrissopighi BRAILA",
-   "Mathieu PARENTI"
+   "ILZKOVITZ Fabienne",
+   "BRAILA Chrissopighi",
+   "PARENTI Mathieu"
   ],
   "languages":[
    "en",
@@ -1145,12 +1299,13 @@
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/econ-s3001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Solvay Brussels School of Economics and Management"
   ],
   "campus":[
+   "UMons",
    "Solbosch"
   ],
   "field":[
@@ -1165,47 +1320,20 @@
   "name":"S\u00e9minaire d'\u00e9conomie appliqu\u00e9e ",
   "year":"2020-2021",
   "teachers":[
-   "Jean MATTIJS",
-   "Michele CINCERA",
-   "Jean Luc DE MEULEMEESTER",
-   "Denis HERBAUX",
-   "Vincent MABILLARD",
-   "Fran\u00e7ois RYCX",
-   "Khalid SEKKAT"
+   "MATTIJS Jean",
+   "CINCERA Michele",
+   "Luc DE MEULEMEESTER Jean",
+   "HERBAUX Denis",
+   "MABILLARD Vincent",
+   "RYCX Fran\u00e7ois",
+   "SEKKAT Khalid"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/econ-s307",
   "ects":[
-   5.0
-  ],
-  "faculty":[
-   "Solvay Brussels School of Economics and Management"
-  ],
-  "campus":[
-   "Solbosch"
-  ],
-  "field":[
-   "economy & management"
-  ],
-  "themes":[
-   "durability"
-  ]
- },
- {
-  "id":"ECON-S533",
-  "name":"Field project in European regulation",
-  "year":"2020-2021",
-  "teachers":[
-   "Fabienne ILZKOVITZ"
-  ],
-  "languages":[
-   "en"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/econ-s533",
-  "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Solvay Brussels School of Economics and Management"
@@ -1225,20 +1353,21 @@
   "name":"Electricit\u00e9 et \u00e9lectronique",
   "year":"2020-2021",
   "teachers":[
-   "Fr\u00e9d\u00e9ric ROBERT",
-   "Johan GYSELINCK"
+   "ROBERT Fr\u00e9d\u00e9ric",
+   "GYSELINCK Johan"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/elec-h201",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -1253,20 +1382,20 @@
   "name":"Power electronics",
   "year":"2020-2021",
   "teachers":[
-   "Johan GYSELINCK"
+   "GYSELINCK Johan"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/elec-h312",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "\u00c9cole polytechnique de Bruxelles"
   ],
   "campus":[
-   "Charleroi Ville Haute"
+   "Solbosch"
   ],
   "field":[
    "applied sciences & engineering"
@@ -1280,32 +1409,63 @@
   "name":"Sciences de la Terre, Environnement et Soci\u00e9t\u00e9",
   "year":"2020-2021",
   "teachers":[
-   "Pierre REGNIER",
-   "Jean-Michel DECROLY",
-   "Frank PATTYN"
+   "REGNIER Pierre",
+   "DECROLY Jean-Michel",
+   "PATTYN Frank"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f1001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Philosophie et Sciences sociales",
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Autre campus",
    "Solbosch",
-   "Charleroi Gosselies",
+   "Flagey",
    "Plaine"
   ],
   "field":[
-   "sciences",
-   "social science"
+   "social science",
+   "sciences"
   ],
   "themes":[
    "climatology"
+  ]
+ },
+ {
+  "id":"ENVI-F4001",
+  "name":"Fonctionnement et gestion des environnements agricoles et aquatiques",
+  "year":"2020-2021",
+  "teachers":[
+   "SERVAIS Pierre",
+   "GODDEN Bernard",
+   "GYPENS Nathalie"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f4001",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
   ]
  },
  {
@@ -1313,27 +1473,30 @@
   "name":"Socio-environmental Dynamics",
   "year":"2020-2021",
   "teachers":[
-   "Maria MANCILLA GARCIA"
+   "MANCILLA GARCIA Maria"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f403",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Philosophie et Sciences sociales",
    "Facult\u00e9 de Droit et de Criminologie",
+   "\u00c9cole de Sant\u00e9 publique",
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Erasme",
    "Solbosch",
    "Plaine"
   ],
   "field":[
-   "sciences",
    "social science",
+   "sciences",
+   "health",
    "law & criminology"
   ],
   "themes":[
@@ -1345,20 +1508,22 @@
   "name":"Climat: sciences et politiques",
   "year":"2020-2021",
   "teachers":[
-   "Frank PATTYN",
-   "Etienne HANNON"
+   "PATTYN Frank",
+   "HANNON Etienne"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f405",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Autre campus",
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -1376,19 +1541,20 @@
   "name":"Economie \u00e9cologique",
   "year":"2020-2021",
   "teachers":[
-   "Thomas BAULER"
+   "BAULER Thomas"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f409",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -1400,13 +1566,41 @@
   ]
  },
  {
+  "id":"ENVI-F437",
+  "name":"Ecologie et cycles biog\u00e9ochimiques",
+  "year":"2020-2021",
+  "teachers":[
+   "GODART Marie-Fran\u00e7oise"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f437",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
   "id":"ENVI-F452",
   "name":"Analyse et gestion des impacts environnementaux",
   "year":"2020-2021",
   "teachers":[
-   "Wouter ACHTEN",
-   "Yves DE SMET",
-   "Marie-Fran\u00e7oise GODART"
+   "ACHTEN Wouter",
+   "DE SMET Yves",
+   "GODART Marie-Fran\u00e7oise"
   ],
   "languages":[
    "en",
@@ -1414,7 +1608,160 @@
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f452",
   "ects":[
-   5.0
+   5
+  ],
+  "faculty":[
+   "\u00c9cole de Sant\u00e9 publique",
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Erasme",
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences",
+   "health"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"ENVI-F454",
+  "name":"Energie: Soci\u00e9t\u00e9 et environnement",
+  "year":"2020-2021",
+  "teachers":[
+   "HUART Michel",
+   "MATTIELLI Nadine"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f454",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "energy"
+  ]
+ },
+ {
+  "id":"ENVI-F504",
+  "name":null,
+  "year":"2020-2021",
+  "teachers":[
+
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f504",
+  "ects":[
+   0
+  ],
+  "faculty":[
+   "Facult\u00e9 de Philosophie et Sciences sociales",
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "social science",
+   "sciences"
+  ],
+  "themes":[
+   "climatology"
+  ]
+ },
+ {
+  "id":"ENVI-F510",
+  "name":"Droit de l'environnement",
+  "year":"2020-2021",
+  "teachers":[
+   "ARMENI Chiara"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f510",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 de Philosophie et Sciences sociales",
+   "\u00c9cole de Sant\u00e9 publique",
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Erasme",
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "social science",
+   "sciences",
+   "health"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"ENVI-F526",
+  "name":"Sciences de l'atmosph\u00e8re et changements climatiques",
+  "year":"2020-2021",
+  "teachers":[
+   "COHEUR Pierre-Fran\u00e7ois",
+   "CLERBAUX Cathy"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f526",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Autre campus",
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "climatology"
+  ]
+ },
+ {
+  "id":"ENVI-F531",
+  "name":"Sustainability Transitions: Dynamics, Governance and Politics",
+  "year":"2020-2021",
+  "teachers":[
+   "BAULER Thomas",
+   "PEL Bonno"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f531",
+  "ects":[
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -1430,87 +1777,34 @@
   ]
  },
  {
-  "id":"ENVI-F454",
-  "name":"Energie: Soci\u00e9t\u00e9 et environnement",
+  "id":"ENVI-L505",
+  "name":"Approches syst\u00e9mique, pr\u00e9vention et rem\u00e9diation en sant\u00e9 environnementale",
   "year":"2020-2021",
   "teachers":[
-   "Michel HUART",
-   "Nadine MATTIELLI"
+   "BOULAND Catherine"
   ],
   "languages":[
    "fr"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f454",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-l505",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
+   "\u00c9cole de Sant\u00e9 publique",
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Erasme",
    "Plaine"
   ],
   "field":[
-   "sciences"
+   "sciences",
+   "health"
   ],
   "themes":[
-   "energy",
-   "climatology"
-  ]
- },
- {
-  "id":"ENVI-F504",
-  "name":null,
-  "year":"2020-2021",
-  "teachers":[
-   ""
-  ],
-  "languages":[
-
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f504",
-  "ects":[
-   null
-  ],
-  "faculty":[
-   "Facult\u00e9 de Philosophie et Sciences sociales"
-  ],
-  "campus":[
-   "Solbosch"
-  ],
-  "field":[
-   "social science"
-  ],
-  "themes":[
-   "climatology"
-  ]
- },
- {
-  "id":"ENVI-F526",
-  "name":"Sciences de l'atmosph\u00e8re et changements climatiques",
-  "year":"2020-2021",
-  "teachers":[
-   "Pierre-Fran\u00e7ois COHEUR",
-   "Cathy CLERBAUX"
-  ],
-  "languages":[
-   "fr"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f526",
-  "ects":[
-   5.0
-  ],
-  "faculty":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "campus":[
-   "Plaine"
-  ],
-  "field":[
-   "sciences"
-  ],
-  "themes":[
-   "climatology"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -1518,21 +1812,21 @@
   "name":"Interactions avec le milieu",
   "year":"2020-2021",
   "teachers":[
-   "Suzanne GIOVANNINI",
-   "Bernard DEPREZ"
+   "GIOVANNINI Suzanne",
+   "DEPREZ Bernard"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-p1003",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 d'Architecture La Cambre Horta"
   ],
   "campus":[
-   "Plaine"
+   "Solbosch"
   ],
   "field":[
    "applied sciences & engineering"
@@ -1547,17 +1841,17 @@
   "name":"Introduction au d\u00e9veloppement durable",
   "year":"2020-2021",
   "teachers":[
-   "Gani ALDASHEV",
-   "Bertrand COLLIGNON",
-   "ROLAND MOREAU",
-   "Andrea REA"
+   "ALDASHEV Gani",
+   "COLLIGNON Bertrand",
+   "MOREAU ROLAND",
+   "REA Andrea"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-s101",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Solvay Brussels School of Economics and Management"
@@ -1578,22 +1872,23 @@
   "name":"Sciences, Ethique et Soci\u00e9t\u00e9",
   "year":"2020-2021",
   "teachers":[
-   "Pierre-Fr\u00e9d\u00e9ric DALED",
-   "Patrick MARDULYN"
+   "DALED Pierre-Fr\u00e9d\u00e9ric",
+   "MARDULYN Patrick"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ethi-f1001",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Autre campus",
    "Solbosch",
-   "Charleroi Gosselies",
+   "Flagey",
    "Plaine"
   ],
   "field":[
@@ -1608,21 +1903,22 @@
   "name":"G\u00e9omorphologie tectonique",
   "year":"2020-2021",
   "teachers":[
-   "Frank PATTYN"
+   "PATTYN Frank"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f102",
   "ects":[
-   null
+   10,
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Solbosch",
-   "Plaine"
+   "Autre campus",
+   "Flagey"
   ],
   "field":[
    "sciences"
@@ -1637,21 +1933,21 @@
   "name":"Climatologie et g\u00e9omorphologie glaciaire",
   "year":"2020-2021",
   "teachers":[
-   "Frank PATTYN"
+   "PATTYN Frank"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f203",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Solbosch",
-   "Plaine"
+   "Autre campus",
+   "Flagey"
   ],
   "field":[
    "sciences"
@@ -1665,23 +1961,23 @@
   "name":"Excursions de g\u00e9ographie I",
   "year":"2020-2021",
   "teachers":[
-   "Jean-Michel DECROLY",
-   "Francois FRIPIAT",
-   "Frank PATTYN",
-   "El\u00e9onore WOLFF"
+   "DECROLY Jean-Michel",
+   "FRIPIAT Francois",
+   "PATTYN Frank",
+   "WOLFF El\u00e9onore"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f207",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Autre campus"
   ],
   "field":[
    "sciences"
@@ -1695,23 +1991,23 @@
   "name":"Excursions de g\u00e9ographie II",
   "year":"2020-2021",
   "teachers":[
-   "Jean-Michel DECROLY",
-   "Francois FRIPIAT",
-   "Frank PATTYN",
-   "El\u00e9onore WOLFF"
+   "DECROLY Jean-Michel",
+   "FRIPIAT Francois",
+   "PATTYN Frank",
+   "WOLFF El\u00e9onore"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f307",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Autre campus"
   ],
   "field":[
    "sciences"
@@ -1725,19 +2021,21 @@
   "name":"The Earth system and its interactions",
   "year":"2020-2021",
   "teachers":[
-   "Francois FRIPIAT"
+   "FRIPIAT Francois"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f400",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
+   "Autre campus",
+   "Solbosch",
    "Plaine"
   ],
   "field":[
@@ -1752,20 +2050,48 @@
   "name":"Mod\u00e9lisation en g\u00e9osciences : glaciologie et climatologie",
   "year":"2020-2021",
   "teachers":[
-   "Frank PATTYN"
+   "PATTYN Frank"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f408",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Autre campus",
+   "Solbosch"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "climatology"
+  ]
+ },
+ {
+  "id":"GEOG-F410",
+  "name":"Les archives climatiques des derniers 100 000 ans",
+  "year":"2020-2021",
+  "teachers":[
+   "FRIPIAT Francois"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f410",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Solbosch"
   ],
   "field":[
    "sciences"
@@ -1779,20 +2105,20 @@
   "name":"Compl\u00e9ments de m\u00e9tallog\u00e9nie",
   "year":"2020-2021",
   "teachers":[
-   "Johan YANS"
+   "YANS Johan"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/geol-f426",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
   ],
   "campus":[
-   "Plaine"
+   "Autre campus"
   ],
   "field":[
    "sciences"
@@ -1806,23 +2132,23 @@
   "name":"Energy policy and management",
   "year":"2020-2021",
   "teachers":[
-   "Pierre HENNEAUX",
-   "Samuel FURFARI",
-   "Benjamin GENET"
+   "HENNEAUX Pierre",
+   "FURFARI Samuel",
+   "GENET Benjamin"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-h506",
   "ects":[
-   null
+   2,
+   5
   ],
   "faculty":[
    "\u00c9cole polytechnique de Bruxelles"
   ],
   "campus":[
-   "Solbosch",
-   "Autre campus"
+   "Plaine"
   ],
   "field":[
    "applied sciences & engineering"
@@ -1834,48 +2160,81 @@
   ]
  },
  {
-  "id":"ORIE-B2071",
-  "name":"Pratique de la langue : Arabe",
+  "id":"GEST-S3002",
+  "name":"S\u00e9minaire pluridisciplinaire de sciences et technologie - Techniques de communication",
   "year":"2020-2021",
   "teachers":[
-   "Mohsen HANTOUT",
-   "Zakaria KASSEM OUALI",
-   "Mehdi MOUSLIM"
+   "VAN ZEEBROECK Nicolas",
+   "ALLE Michel",
+   "DE BEAUFFORT Yvan",
+   "EMPLIT Philippe",
+   "HAMOIR Olivier",
+   "Mathieu Bernard"
   ],
   "languages":[
-   "ar"
+   "fr"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/orie-b2071",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-s3002",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
-   "Facult\u00e9 de Lettres, Traduction et Communication"
+   "Solvay Brussels School of Economics and Management"
   ],
   "campus":[
-   "Uccle"
+   "UMons"
   ],
   "field":[
-   "social science"
+   "economy & management"
   ],
   "themes":[
-   "climatology"
+   "durability"
   ]
  },
  {
-  "id":"PHYS-H515",
-  "name":"Radioecology and environmental  radioactivity monitoring",
+  "id":"MECA-H417",
+  "name":"Sustainable energy",
   "year":"2020-2021",
   "teachers":[
-   "Nicolas PAULY",
-   "Geert BIERMANS"
+   "HUART Michel",
+   "BLONDEAU Julien"
   ],
   "languages":[
    "en"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/phys-h515",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/meca-h417",
   "ects":[
-   2.0
+   3
+  ],
+  "faculty":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Plaine"
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "decarbonization",
+   "energy",
+   "consumption",
+   "climatology"
+  ]
+ },
+ {
+  "id":"MEMO-H507",
+  "name":"Master thesis architectural engineering",
+  "year":"2020-2021",
+  "teachers":[
+   "ESPION Bernard"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/memo-h507",
+  "ects":[
+   24
   ],
   "faculty":[
    "\u00c9cole polytechnique de Bruxelles"
@@ -1891,23 +2250,253 @@
   ]
  },
  {
+  "id":"MSTL-F601",
+  "name":"G\u00e9ographie des transports et localisation des activit\u00e9s \u00e9conomiques",
+  "year":"2020-2021",
+  "teachers":[
+   "DOBRUSZKES Fr\u00e9d\u00e9ric",
+   "STRALE Mathieu"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/mstl-f601",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Charleroi Ville Haute",
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"MSTL-F602",
+  "name":"Transports, territoire et d\u00e9veloppement durable",
+  "year":"2020-2021",
+  "teachers":[
+   "DECONINCK Mireille",
+   "GODART Marie-Fran\u00e7oise",
+   "LOYAERTS YVON"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/mstl-f602",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Charleroi Ville Haute"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"MSTL-F603",
+  "name":"\u00c9valuation technique, \u00e9conomique et socio-\u00e9conomique des transports",
+  "year":"2020-2021",
+  "teachers":[
+   "COOLS Mario",
+   "NAYES Estelle",
+   "ZEROUAL Thomas"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/mstl-f603",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Charleroi Ville Haute"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"MSTL-F604",
+  "name":"Mod\u00e9lisation, simulation et recherche op\u00e9rationnelle",
+  "year":"2020-2021",
+  "teachers":[
+   "CORNELIS Eric",
+   "Vincent TUYTTENS Daniel"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/mstl-f604",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Charleroi Ville Haute"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"MSTL-F611",
+  "name":"Module transversal",
+  "year":"2020-2021",
+  "teachers":[
+   "DOBRUSZKES Fr\u00e9d\u00e9ric"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/mstl-f611",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Charleroi Ville Haute"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"MSTL-H601",
+  "name":"G\u00e9ographie des transports et localisation des activit\u00e9s \u00e9conomiques",
+  "year":"2020-2021",
+  "teachers":[
+   "DOBRUSZKES Fr\u00e9d\u00e9ric",
+   "STRALE Mathieu"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/mstl-h601",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "campus":[
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"ORIE-B2071",
+  "name":"Pratique de la langue : Arabe",
+  "year":"2020-2021",
+  "teachers":[
+   "HANTOUT Mohsen",
+   "KASSEM OUALI Zakaria",
+   "MOUSLIM Mehdi"
+  ],
+  "languages":[
+   "ar"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/orie-b2071",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "social science"
+  ],
+  "themes":[
+   "climatology"
+  ]
+ },
+ {
+  "id":"PHYS-H515",
+  "name":"Radioecology and environmental  radioactivity monitoring",
+  "year":"2020-2021",
+  "teachers":[
+   "PAULY Nicolas",
+   "BIERMANS Geert"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/phys-h515",
+  "ects":[
+   2
+  ],
+  "faculty":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Plaine"
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
   "id":"PHYS-S201",
   "name":"Physique des technologies de l'information",
   "year":"2020-2021",
   "teachers":[
-   "Philippe EMPLIT"
+   "EMPLIT Philippe"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/phys-s201",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Solvay Brussels School of Economics and Management"
   ],
   "campus":[
+   "UMons",
    "Solbosch"
   ],
   "field":[
@@ -1918,19 +2507,74 @@
   ]
  },
  {
+  "id":"POLI-D439",
+  "name":"Elections and Political Participation",
+  "year":"2020-2021",
+  "teachers":[
+   "VAN HAUTE Emilie",
+   "PAULIS Emilien"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/poli-d439",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "social science"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"POLI-D445",
+  "name":"International Political Economy",
+  "year":"2020-2021",
+  "teachers":[
+   "BERGAMASCHI Isaline"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/poli-d445",
+  "ects":[
+   10
+  ],
+  "faculty":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "social science"
+  ],
+  "themes":[
+   "climatology"
+  ]
+ },
+ {
   "id":"POLI-D504",
   "name":"Probl\u00e8mes actuels de politique internationale",
   "year":"2020-2021",
   "teachers":[
-   "Nicolas LEDENT",
-   "Axel KENES"
+   "LEDENT Nicolas",
+   "KENES Axel"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/poli-d504",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de Philosophie et Sciences sociales",
@@ -1947,34 +2591,93 @@
   ]
  },
  {
+  "id":"POLI-O417",
+  "name":"Energy and Environment Policies of the EU",
+  "year":"2020-2021",
+  "teachers":[
+   "BLED Amandine",
+   "ORSINI Marco"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/poli-o417",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "social science"
+  ],
+  "themes":[
+   "energy",
+   "climatology"
+  ]
+ },
+ {
   "id":"PROJ-H417",
   "name":"Projet coop\u00e9ration au d\u00e9veloppement \/ development cooperation project",
   "year":"2020-2021",
   "teachers":[
-   "Antoine NONCLERCQ"
+   "NONCLERCQ Antoine"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/proj-h417",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
-   "\u00c9cole polytechnique de Bruxelles",
-   "Facult\u00e9 des Sciences"
+   "Facult\u00e9 des Sciences",
+   "\u00c9cole polytechnique de Bruxelles"
   ],
   "campus":[
    "Solbosch",
-   "Plaine",
-   "Autre campus"
+   "Plaine"
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "durability"
+  ]
+ },
+ {
+  "id":"PROJ-H502",
+  "name":"Design project competition",
+  "year":"2020-2021",
+  "teachers":[
+   "BOUILLARD Philippe",
+   "GERIN Vincent"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/proj-h502",
+  "ects":[
+   4
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences",
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Solbosch",
+   "Plaine"
+  ],
+  "field":[
+   "sciences",
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment"
   ]
  },
  {
@@ -1982,21 +2685,21 @@
   "name":"Projet d'architecture : Urban Assemblages",
   "year":"2020-2021",
   "teachers":[
-   "Mar Nadia CASABELLA ALVAREZ",
-   "G\u00e9ry LELOUTRE"
+   "Nadia CASABELLA ALVAREZ Mar",
+   "LELOUTRE G\u00e9ry"
   ],
   "languages":[
    "en"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/proj-p0802",
   "ects":[
-   10.0
+   10
   ],
   "faculty":[
    "Facult\u00e9 d'Architecture La Cambre Horta"
   ],
   "campus":[
-   "Flagey"
+   "Solbosch"
   ],
   "field":[
    "applied sciences & engineering"
@@ -2006,18 +2709,48 @@
   ]
  },
  {
+  "id":"SAPU-L4021",
+  "name":"Probl\u00e8mes de sant\u00e9 et environnement",
+  "year":"2020-2021",
+  "teachers":[
+   "BOULAND Catherine",
+   "COPPIETERS'T WALLANT Yves",
+   "DONNEN Philippe",
+   "LAHAYE MARIE-CHRISTINE"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/sapu-l4021",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "\u00c9cole de Sant\u00e9 publique"
+  ],
+  "campus":[
+   "Erasme"
+  ],
+  "field":[
+   "health"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"TOUR-F425",
   "name":"Gestion des entreprises touristiques",
   "year":"2020-2021",
   "teachers":[
-   "Isabelle CLOQUET"
+   "CLOQUET Isabelle"
   ],
   "languages":[
-
+   "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/tour-f425",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 des Sciences"
@@ -2033,31 +2766,90 @@
   ]
  },
  {
-  "id":"TRAN-H3001",
-  "name":"De l'\u00e9pist\u00e9mologie des sciences \u00e0 la gestion de projet",
+  "id":"URBA-H9009",
+  "name":"Urban Sustainability and circular Economy",
   "year":"2020-2021",
   "teachers":[
-   "C\u00e9line KERMISCH",
-   "Patrick SIMON"
+   "Zaib KHAN MAHSUD Ahmed",
+   "ATHANASSIADIS Aristide"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/urba-h9009",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Facult\u00e9 des Sciences",
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "sciences",
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment",
+   "climatology"
+  ]
+ },
+ {
+  "id":"URBA-P9006",
+  "name":"Atelier urbanisme - Bruxelles",
+  "year":"2020-2021",
+  "teachers":[
+   "Grulois Geoffrey",
+   "LELOUTRE G\u00e9ry"
   ],
   "languages":[
    "fr"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/tran-h3001",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/urba-p9006",
   "ects":[
-   5.0
+   10
   ],
   "faculty":[
    "\u00c9cole polytechnique de Bruxelles"
   ],
   "campus":[
-   "Charleroi Ville Haute"
+   "Solbosch"
   ],
   "field":[
    "applied sciences & engineering"
   ],
   "themes":[
-   "durability"
+   "environment"
+  ]
+ },
+ {
+  "id":"URBA-Y707",
+  "name":"R\u00e9silience urbaine",
+  "year":"2020-2021",
+  "teachers":[
+   "BECUE Vincent",
+   "CENCI J\u00e9r\u00e9my"
+  ],
+  "languages":[
+   "fr"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/urba-y707",
+  "ects":[
+   2
+  ],
+  "faculty":[
+   "Facult\u00e9 d'Architecture La Cambre Horta"
+  ],
+  "campus":[
+   "Solbosch"
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "climatology"
   ]
  },
  {
@@ -2065,21 +2857,21 @@
   "name":"Ethnographie et \u00e9cologie des animaux domestiques",
   "year":"2020-2021",
   "teachers":[
-   "Fran\u00e7ois-Xavier PHILIPPE",
-   "Jean-Fran\u00e7ois CABARAUX"
+   "PHILIPPE Fran\u00e7ois-Xavier",
+   "CABARAUX Jean-Fran\u00e7ois"
   ],
   "languages":[
    "fr"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/vete-g2206",
   "ects":[
-   5.0
+   5
   ],
   "faculty":[
    "Facult\u00e9 de M\u00e9decine"
   ],
   "campus":[
-   "Erasme"
+   "Plaine"
   ],
   "field":[
    "health"
