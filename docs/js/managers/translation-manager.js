@@ -47,11 +47,15 @@ class TranslationManager {
         return constants.DEFAULT_LANGUAGE;
     }
 
-    setLanguage(language) {
+    setLanguage(language, consentLocalStorage = false) {
 
         if (constants.AVAILABLE_LANGUAGES.includes(language)) {
 
-            localStorage.setItem("language", language);
+            if (consentLocalStorage) {
+
+                localStorage.setItem("language", language);
+                console.log("Language set in the Local Storage");
+            }
 
             // sets the 'lang' attribute inside the <html> tag
 

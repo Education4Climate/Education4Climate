@@ -17,12 +17,15 @@
         "hide-filters": "Hide filters",
         "loading": "Loading",
         "close": "Close",
-        "load-more": "Load more"
+        "load-more": "Load more",
+        "learn-more": "Learn more",
+        "cancel": "Cancel",
+        "validate": "Validate",
+        "privacy-policy": "Privacy policy"    
     },
     "home": {
         "headline-students": "Where to study to contribute to the carbon transition and have an impact on the climate?",
-        "headline-teachers": "Where can I find a colleague, a thesis supervisor or a thesis promoter?",
-        "learn-more": "Learn more"
+        "headline-teachers": "Where can I find a colleague, a thesis supervisor or a thesis promoter?"
     },
     "themes": {
         "environment": "Environment",
@@ -64,7 +67,7 @@
         "detail-field": "Field : ",
         "detail-courses-list": "Courses list",
         "detail-score": "Score : ",
-        "detail-score-tooltip" : "The assigned score reflects the number of courses that address at least one of the themes.",
+        "detail-score-tooltip": "The assigned score reflects the number of courses that address at least one of the themes.",
         "search-in-name": "Partial search in the programme name"
     },
     "courses": {
@@ -85,7 +88,17 @@
         "name-example": "exemple : Claude"
     },
     "footer": {
-        "contact": "Contact us",
-        "legal": "Terms of use"
+        "contact": "Contact us"
+    },
+    "cookies": {
+        "use-cookies": "This website uses cookies",
+        "customize": "Customize",
+        "accept-all": "Accept all",
+        "modal-title": "Cookie management panel",
+        "modal-intro": "By allowing these services, you accept their cookies and the use of tracking technologies necessary for their proper functioning.",
+        "analytics-intro": "Audience measurement",
+        "analytics-cookies": "This service can install 9 cookies",
+        "local-storage-intro": "Remember your choice of language",
+        "local-storage-cookies": "This feature installs one cookie"
     }
 }

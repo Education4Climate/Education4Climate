@@ -17,12 +17,10 @@ body.modal-open {
     background-color: #f8f9fa !important;
 }
 
-body.courses,
-body.programs,
-body.teachers {
+body {
 
     /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
-    overflow-y: scroll;
+    overflow-y: scroll !important;
 }
 
 /* MENU & NAVIGATION */
@@ -209,6 +207,16 @@ footer li {
     display: block;
 }
 
+/* COOKIES */
+
+#cookieBar {
+    width: 95%;
+}
+
+#toggleAnalyticsCookies, #toggleLocalStorageCookies {
+    float:right;
+}
+
 /* RESPONSIVE */
 
 .show-filters {
@@ -286,6 +294,12 @@ footer li {
         margin-top: 1rem;
     }
 
+    footer li {
+
+        display: block;
+        padding-top: 0.5rem;
+    }
+
     .sidebar-footer {
         display: none;
     }
@@ -299,6 +313,10 @@ footer li {
     .navbar-footer li {
         list-style: none;
         padding-top: 0.5rem;
+    }
+
+    footer div.right {
+        margin-top: 0;
     }
 }
 

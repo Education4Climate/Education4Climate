@@ -17,12 +17,15 @@
         "hide-filters": "Cacher les filtres",
         "loading": "Chargement en cours",
         "close": "Fermer",
-        "load-more": "Charger plus"
+        "load-more": "Charger plus",
+        "learn-more": "En savoir plus",
+        "cancel": "Annuler",
+        "validate": "Valider",
+        "privacy-policy": "Politique de confidentialité"
     },
     "home": {
         "headline-students": "Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?",
-        "headline-teachers": "Où trouver un collègue, un directeur de mémoire ou un promoteur de thèse ?",
-        "learn-more": "En savoir plus"
+        "headline-teachers": "Où trouver un collègue, un directeur de mémoire ou un promoteur de thèse ?"
     },
     "themes": {
         "environment": "Environnement",
@@ -64,7 +67,7 @@
         "detail-field": "Discipline : ",
         "detail-courses-list": "Liste des cours",
         "detail-score": "Score : ",
-        "detail-score-tooltip" : "Le score attribué reflète le nombre de cours de la formation qui abordent au moins une des thématiques.",
+        "detail-score-tooltip": "Le score attribué reflète le nombre de cours de la formation qui abordent au moins une des thématiques.",
         "search-in-name": "Recherche partielle dans l'intitulé de la formation"
     },
     "courses": {
@@ -85,7 +88,17 @@
         "name-example": "exemple : Claude"
     },
     "footer": {
-        "contact": "Contact",
-        "legal": "Mentions légales"
+        "contact": "Contact"
+    },
+    "cookies": {
+        "use-cookies": "Ce site utilise des cookies",
+        "customize": "Personnaliser",
+        "accept-all": "Tout accepter",
+        "modal-title": "Panneau de gestion des cookies",
+        "modal-intro": "En autorisant ces services, vous acceptez le dépôt et la lecture de cookies et l'utilisation de technologies de suivi nécessaires à leur bon fonctionnement.",
+        "analytics-intro": "Mesure d'audience",
+        "analytics-cookies": "Ce service peut déposer 9 cookies",
+        "local-storage-intro": "Retient votre choix de langue",
+        "local-storage-cookies": "Cette fonctionnalité dépose un cookie"
     }
 }

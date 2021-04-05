@@ -72,7 +72,7 @@
                                     <div class="col-md-6">
                                         <h1>{{translate("home.headline-students")}}</h1>
                                         <p><a class="btn btn-primary learn-more"
-                                                href="#home-intro">{{translate("home.learn-more")}}</a></p>
+                                                href="#home-intro">{{translate("shared.learn-more")}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                         <h1>{{translate("home.headline-teachers")}}
                                         </h1>
                                         <p><a class="btn btn-primary learn-more"
-                                                href="#home-intro">{{translate("home.learn-more")}}</a></p>
+                                                href="#home-intro">{{translate("shared.learn-more")}}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -177,7 +177,8 @@
                     <div class="col-xl-6 right">
                         <ul>
                             <li><a href="contact.html">{{translate("footer.contact")}}</a></li>
-                            <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                    data-bs-target="#modalCookies">Cookies</a></li>
                             <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank" rel="noopener">GitHub</a>
                             </li>
                         </ul>
@@ -190,6 +191,10 @@
             <img src="./img/background-students.jpg" width="1" height="1" />
             <img src="./img/background-teachers.jpg" width="1" height="1" />
         </div>
+
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
 
     </div>
 

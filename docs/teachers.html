@@ -62,7 +62,8 @@
                                 <div>The Shifters Belgium</div>
                                 <ul>
                                     <li><a href="contact.html">{{translate("footer.contact")}}</a></li>
-                                    <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                    <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a></li>
                                     <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
                                             rel="noopener">GitHub</a></li>
                                 </ul>
@@ -133,7 +134,8 @@
                             <div>The Shifters Belgium</div>
                             <ul>
                                 <li><a href="contact.html">{{translate("footer.contact")}}</a></li>
-                                <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                        data-bs-target="#modalCookies">Cookies</a></li>
                                 <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
                                         rel="noopener">GitHub</a></li>
                             </ul>
@@ -207,11 +209,15 @@
             </div>
         </div>
 
-        <div class="d-grid gap-2" >
+        <div class="d-grid gap-2">
             <button class="btn btn-light" ref="loadMore" id="load-more"
                 :class="dataLoaded && sortedTeachers.length > paginatedTeachers.length? 'show' : ''" type="button"
                 @click="loadMore()">{{translate("shared.load-more")}}</button>
         </div>
+
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
 
     </div>
 
