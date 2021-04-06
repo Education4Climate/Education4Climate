@@ -25,10 +25,12 @@ var CookieManager = {
         <div class="row">
             <div class="col-md-6">{{translate("cookies.use-cookies")}}</div>
             <div class="col-md-6 text-end mt-2">
-                <button type="button" class="btn btn-light me-3" data-bs-toggle="modal"
+                <button type="button" class="btn btn-light me-2 btn-sm" data-bs-toggle="modal"
                     data-bs-target="#modalCookies">{{translate("cookies.customize")}}</button>
-                <button type="button" class="btn btn-primary"
-                    @click="changeCookiesConsent(true)">{{translate("cookies.accept-all")}}</button>
+                <button type="button" class="btn btn-danger me-2 btn-sm"
+                    @click="changeCookiesConsent(false, false)">{{translate("cookies.reject-all")}}</button>
+                <button type="button" class="btn btn-primary btn-sm"
+                    @click="changeCookiesConsent(true, true)">{{translate("cookies.accept-all")}}</button>
             </div>
         </div>
     </div>
@@ -83,12 +85,12 @@ var CookieManager = {
 
             return this.translations.length > 0 ? this.translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
-        changeCookiesConsent(acceptAll) {
+        changeCookiesConsent(consentGoogleAnalytics, consentLocalStorage) {
 
-            // If user clicked on "Accept all", set 'true' to both flags
+            // Set the local values
 
-            this.consentGoogleAnalytics = acceptAll ? true : this.consentGoogleAnalytics;
-            this.consentLocalStorage = acceptAll ? true : this.consentLocalStorage;
+            this.consentGoogleAnalytics = consentGoogleAnalytics !== undefined ? consentGoogleAnalytics : this.consentGoogleAnalytics;
+            this.consentLocalStorage = consentLocalStorage !== undefined ? consentLocalStorage : this.consentLocalStorage;
 
             // Set the booleans in the 'cookieManager' Local Storage value
 
