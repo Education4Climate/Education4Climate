@@ -217,6 +217,10 @@ footer li {
     float:right;
 }
 
+#cookieBar .buttons {
+    text-align: right;
+}
+
 /* RESPONSIVE */
 
 .show-filters {
@@ -340,5 +344,21 @@ footer li {
 
     footer div.right {
         text-align: right;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #cookieBar .buttons {
+        text-align: center;
+    }
+
+    #cookieBar .buttons button {
+        margin-bottom: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
     }
 }

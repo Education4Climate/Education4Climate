@@ -24,7 +24,7 @@ var CookieManager = {
     template: `<div class="container bg-white shadow p-3 mb-4 rounded fixed-bottom" id="cookieBar" v-if="displayCookieBar" v-cloak>
         <div class="row">
             <div class="col-md-6">{{translate("cookies.use-cookies")}}</div>
-            <div class="col-md-6 text-end mt-2">
+            <div class="col-md-6 mt-2 buttons">
                 <button type="button" class="btn btn-light me-2 btn-sm" data-bs-toggle="modal"
                     data-bs-target="#modalCookies">{{translate("cookies.customize")}}</button>
                 <button type="button" class="btn btn-danger me-2 btn-sm"
