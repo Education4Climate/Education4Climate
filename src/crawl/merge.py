@@ -1,6 +1,7 @@
 from pathlib import Path
 import argparse
 
+import numpy as np
 import pandas as pd
 
 from unicrawl.spiders.config.settings import YEAR
@@ -28,16 +29,20 @@ def merge_programs(school: str, year: int):
     programs_merged_df = programs_df_grouped["name"].unique().apply(lambda x: x[0]).to_frame()
     for key in ["campus", 'cycle', "faculty", "url"]:
         programs_merged_df[key] = programs_df_grouped[key].unique().apply(lambda x: x[0])
-    programs_merged_df['courses'] = programs_df_grouped["courses"].sum()
-    programs_merged_df['ects'] = programs_df_grouped["ects"].sum()
+    keys_as_list = ['courses', 'ects']
+    if school == 'ugent':
+        keys_as_list += ['courses_names', 'courses_teachers']
+    for key in keys_as_list:
+        programs_merged_df[key] = programs_df_grouped[key].sum()
 
-    # Remove redundant courses-ects couple
+    # Remove duplicate courses
     def remove_doubles(x):
-        courses, ects = zip(*list(set(zip(x.courses, x.ects))))
+        courses, positions = np.unique(x.courses, return_index=True)
         x.courses = courses
-        x.ects = ects
+        for key in keys_as_list[1:]:
+            x[key] = list(np.array(x[key])[positions])
         return x
-    programs_merged_df[["courses", "ects"]].apply(lambda x: remove_doubles(x), axis=1)
+    programs_merged_df[keys_as_list].apply(lambda x: remove_doubles(x), axis=1)
 
     programs_merged_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_programs_{YEAR}.json")
