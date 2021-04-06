@@ -67,8 +67,8 @@ class USLBCoursesSpider(scrapy.Spider, ABC):
         content = "" if content == "/\n/" else content
 
         cur_dict = {"name": course_name,
-                    "language": languages_codes,
-                    "teacher": teachers,
+                    "languages": languages_codes,
+                    "teachers": teachers,
                     "year": f"{YEAR}-{int(YEAR)+1}",
                     "url": response.url,
                     "content": content}

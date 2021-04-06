@@ -107,7 +107,7 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
                 return
 
         # Find cycle based on url
-        base_dict["cycle"] = ""
+        base_dict["cycle"] = "other"
         if "bachelor" in response.url:
             base_dict["cycle"] = "bac"
             base_dict["id"] += '-bac'

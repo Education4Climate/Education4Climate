@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Education 4 Climate">
+    <meta name="application-name" content="Education 4 Climate">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Education 4 Climate" />
+    <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
+    <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Education 4 Climate</title>
+</head>
+
+<body class="courses">
+
+    <div id="app">
+
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                <div class="container-fluid">
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
+                            alt="logo" id="logo"></a>
+                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
+                            4 CLIMATE</strong></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
+                            <li class="nav-item" v-for="item in menuItems">
+                                <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
+                                    :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item" v-for="language in availableLanguages">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)"
+                                    href="javascript:void(0);">{{language.toUpperCase()}}</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-footer text-muted">
+                            <hr>
+                            <div>
+                                <div>The Shifters Belgium</div>
+                                <ul>
+                                    <li><a href="contact.html">{{translate("footer.contact")}}</a></li>
+                                    <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                    <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="courses-loader" v-if="!dataLoaded"
+            class="d-flex flex-column justify-content-center align-items-center">
+            <div class="spinner-border text-primary"></div>
+            <h4 v-if="translations.length > 0" v-cloak>{{translate("shared.loading")}}</h4>
+            <div class="text-danger" v-cloak>{{errors}}</div>
+        </div>
+
+        <div class="container-fluid" id="courses-finder" v-if="dataLoaded" v-cloak>
+
+            <div class="row">
+
+                <div class="d-grid show-filters-container">
+                    <button type="button" class="btn btn-primary show-filters" data-bs-toggle="collapse"
+                        data-bs-target=".sidebar" @click="showResponsiveFilters = !showResponsiveFilters">
+                        {{ showResponsiveFilters ? translate("shared.hide-filters") : translate("shared.show-filters")
+                        }}</button>
+                </div>
+
+                <div class="col-xl-2 sidebar collapse">
+
+                    <h6 class="title first">{{translate("shared.schools")}}</h6>
+                    <div class="filter d-flex" v-for="school in sortedSchools">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" v-model="selectedSchools"
+                                :id="'checkbox-school-' + school.id" :value="school.id">
+                            <label class="form-check-label"
+                                :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
+                        </div>
+                        <span class="ml-auto count">{{totalCoursesCounts[school.id]}}</span>
+                    </div>
+
+                    <h6 class="title">{{translate("shared.themes")}}</h6>
+                    <div class="filter d-flex" v-for="theme in sortedThemes">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" v-model="selectedThemes"
+                                :id="'checkbox-theme-' + theme.id" :value="theme.id">
+                            <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
+                                theme.name, true)}}</label>
+                        </div>
+                        <span class="ml-auto count">{{theme.totalCount}}</span>
+                    </div>
+
+                    <h6 class="title">{{translate("shared.languages")}}</h6>
+                    <div class="filter d-flex" v-for="language in sortedLanguages">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" v-model="selectedLanguages"
+                                :id="'checkbox-language-' + language.id" :value="language.id"><label
+                                class="form-check-label"
+                                :for="'checkbox-language-' + language.id">{{translate("languages." +
+                                language.name, true)}}</label>
+                        </div>
+                        <span class="ml-auto count">{{language.totalCount}}</span>
+                    </div>
+
+
+                    <label for="input-name-filter">
+                        <h6 class="title">{{translate("courses.course-name")}}</h6>
+                    </label>
+                    <div class="filter">
+                        <input type="text" class="form-control name-search" v-model="searchedName"
+                            placeholder="exemple : climat" id="input-name-filter">
+                        <div class="form-text">
+                            {{translate("courses.search-in-name")}}
+                        </div>
+                    </div>
+
+
+                    <label for="input-program-code-filter">
+                        <h6 class="title">{{translate("courses.program-code")}}</h6>
+                    </label>
+                    <div class="filter">
+                        <input type="text" class="form-control program-code-search" v-model="searchedProgramCode"
+                            placeholder="exemple : MA-STIC" id="input-program-code-filter">
+                        <div id="passwordHelpBlock" class="form-text">
+                            {{translate("courses.search-code")}}
+                        </div>
+                    </div>
+
+                    <div class="sidebar-footer text-muted">
+                        <hr>
+                        <div>
+                            <div>The Shifters Belgium</div>
+                            <ul>
+                                <li><a href="contact.html">{{translate("footer.contact")}}</a></li>
+                                <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                        rel="noopener">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-12 col-xl-10 pt-3 px-4s">
+
+                    <h6 class="results-count">
+                        {{sortedCourses.length}}{{translate("courses.courses-of")}}{{courses.length}}</h6>
+
+                    <div class="accordion accordion-flush overflow-hidden" id="coursesAccordion">
+                        <div class="accordion-item" v-for="(course, i) in paginatedCourses">
+                            <h2 class="accordion-header" :id="'heading'+i">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    :data-bs-target="'#collapse'+i" aria-expanded="false" :aria-controls="'collapse'+i">
+                                    <div class="d-flex flex-column">
+                                        <div>
+                                            <h5><span class="badge bg-success"></span>
+                                                {{course.name}}
+                                                <span
+                                                    class="badge bg-light text-body">{{schools[course.schoolId].shortName}}</span>
+                                            </h5>
+                                        </div>
+                                        <div class="themes-badges">
+                                            <span class="badge bg-primary bg-theme"
+                                                v-for="(theme, j) in course.themes">{{translate("themes." +
+                                                themes[theme].name)}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div :id="'collapse'+i" class="accordion-collapse collapse" :aria-labelledby="'heading'+i"
+                                data-bs-parent="#coursesAccordion">
+                                <div class="accordion-body">
+                                    <div class="col-12">
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("shared.code")}}
+                                            </h6><span>&nbsp;{{course.code}}</span>
+                                            <span v-if="course.url != ''">&nbsp;(<a :href="course.url" target="_blank"
+                                                    rel="noopener">{{translate("shared.external-website")}}</a>)</span>
+                                        </div>
+                                        <div v-if="course.year">
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("courses.detail-year")}}</h6>
+                                            <span>&nbsp;{{course.year}}</span>
+                                        </div>
+                                        <div>
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("courses.detail-languages")}}</h6>
+                                            <span>&nbsp;{{course.languages.map(language => translate("languages." +
+                                                languages[language].name)).slice().join(' / ')}}</span>
+                                        </div>
+                                        <div v-if="course.teachers.length > 0">
+                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                                {{translate("courses.detail-teachers")}}</h6>
+                                            <ul>
+                                                <li v-for="teacher in course.teachers">{{teacher}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-light" ref="loadMore" id="load-more"
+                :class="dataLoaded && sortedCourses.length > paginatedCourses.length? 'show' : ''" type="button"
+                @click="loadMore()">{{translate("shared.load-more")}}</button>
+        </div>
+
+    </div>
+
+    <script src="js/vue.global.prod.js"></script>
+    <script type="module" src="js/courses.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -55,6 +55,7 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
 
         main_teacher = response.xpath("//table[@class='UETbl'][1]//td[3]//text()").get()
         teachers = list(set([main_teacher] + response.xpath("//table[@class='UETbl'][1]//td[5]//li/text()").getall()))
+        teachers = [teacher for teacher in teachers if 'N.' not in teacher]
 
         languages = response.xpath("//table[@class='UETbl'][2]//td[1]//li/text()").getall()
         languages_codes = []
@@ -74,8 +75,8 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
         cur_dict = {
             'name':  course_name,
             'year':  year,
-            'teacher': teachers,
-            'language': languages_codes,
+            'teachers': teachers,
+            'languages': languages_codes,
             'url': response.url,
             'content': content
         }

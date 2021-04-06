@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+# Décommenter le Allow pour la PROD (pas nécessaire de risquer d'indexer les cours/programmes/profs)
+# Allow: /index.html

@@ -1,4 +1,5 @@
 from pathlib import Path
+import argparse
 
 import numpy as np
 import pandas as pd
@@ -6,7 +7,7 @@ import pandas as pd
 from unicrawl.spiders.config.settings import YEAR
 
 
-def merge_programs(school: str):
+def merge_programs(school: str, year: int):
     """
     # TODO: complete desc
     Merge UCL and others? programs
@@ -19,7 +20,7 @@ def merge_programs(school: str):
 
     # Read the programs file
     programs_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_programs_{YEAR}_pre.json")
+        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_programs_{year}_pre.json")
     programs_df = pd.read_json(programs_fn).set_index("id")
 
     # TODO: there is probably a better way to do that
@@ -48,7 +49,7 @@ def merge_programs(school: str):
     programs_merged_df.reset_index().to_json(programs_merged_fn, orient='records', indent=1)
 
 
-def merge_courses(school: str):
+def merge_courses(school: str, year: int):
     """
     # TODO: complete desc
     Merge Uantwerp and others? courses
@@ -61,7 +62,7 @@ def merge_courses(school: str):
 
     # Read the programs file
     courses_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_courses_{YEAR}_pre.json")
+        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_courses_{year}_pre.json")
     courses_df = pd.read_json(courses_fn).set_index("id")
 
     # TODO: there is probably a better way to do that
@@ -79,6 +80,13 @@ def merge_courses(school: str):
 
 
 if __name__ == '__main__':
-    # TODO: edit
-    school = 'ugent'
-    merge_programs(school)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-t", "--type", help='course or program', default='course')
+    parser.add_argument("-s", "--school", help="input json file path")
+    parser.add_argument("-y", "--year", help="academic year", default=2020)
+    arguments = vars(parser.parse_args())
+    print(arguments)
+    if arguments['type'] == 'course':
+        merge_courses(arguments['school'], arguments['year'])
+    else:
+        merge_programs(arguments['school'], arguments['year'])
