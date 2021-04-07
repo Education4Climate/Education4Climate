@@ -63,20 +63,27 @@ def merge_courses(school: str, year: int):
     # Read the programs file
     courses_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_courses_{year}_pre.json")
-    courses_df = pd.read_json(courses_fn).set_index("id")
+    courses_df = pd.read_json(courses_fn)
 
     # TODO: there is probably a better way to do that
     # Group different keys
-    courses_df_grouped = courses_df.groupby("id")
-    courses_merged_df = courses_df_grouped["name"].unique().apply(lambda x: x[0]).to_frame()
+    if school != 'ugent':
+        courses_df = courses_df.set_index("id")
+        courses_df_grouped = courses_df.groupby("id")
+        courses_merged_df = courses_df_grouped["name"].unique().apply(lambda x: x[0]).to_frame()
+    else:
+        courses_df_grouped = courses_df.groupby("name")
+        courses_merged_df = courses_df_grouped["id"].unique().apply(lambda x: x[0]).to_frame()
     for key in ["year", "url", "content"]:
-        courses_merged_df[key] = courses_df_grouped[key].apply(lambda x: x[0])
+        courses_merged_df[key] = courses_df_grouped[key].apply(lambda x: x.iloc[0])
     courses_merged_df['languages'] = courses_df_grouped["languages"].sum().apply(lambda x: list(set(x)))
     courses_merged_df['teachers'] = courses_df_grouped["teachers"].sum().apply(lambda x: list(set(x)))
 
+    courses_merged_df = courses_merged_df.reset_index().set_index("id")
+
     courses_merged_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_courses_{YEAR}.json")
-    courses_merged_df.reset_index().to_json(courses_merged_fn, orient='records', indent=1)
+    courses_merged_df.reset_index().to_json(courses_merged_fn, orient='records')
 
 
 if __name__ == '__main__':

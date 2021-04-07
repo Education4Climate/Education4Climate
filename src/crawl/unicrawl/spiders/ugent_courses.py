@@ -77,5 +77,6 @@ def main(fn):
 
 
 if __name__ == '__main__':
-    FEED_URI = Path(__file__).parent.absolute().joinpath(f'../../../../data/crawling-output/ugent_courses_{YEAR}.json')
+    FEED_URI = Path(__file__).parent.absolute().joinpath(
+        f'../../../../data/crawling-output/ugent_courses_{YEAR}_pre.json')
     main(FEED_URI)
