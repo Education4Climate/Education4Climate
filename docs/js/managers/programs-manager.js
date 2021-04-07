@@ -12,7 +12,6 @@ class ProgramsManager {
 
     constructor() {
 
-        this.totalProgramsCountBySchool = [];
         this.programsThemes = [];
         this.programsFields = [];
         this.programsCycles = [];
@@ -63,11 +62,8 @@ class ProgramsManager {
 
                     this._debugProgramsErrors(schools[i].shortName, program);
                 });
-
-                this.totalProgramsCountBySchool[schools[i].id] = p.length;
             });
 
-            sessionStorage.totalProgramsCountBySchool = JSON.stringify(this.totalProgramsCountBySchool);
             sessionStorage.programsThemes = JSON.stringify(this.programsThemes);
             sessionStorage.programsFields = JSON.stringify(this.programsFields);
             sessionStorage.programsCycles = JSON.stringify(this.programsCycles);
@@ -75,24 +71,6 @@ class ProgramsManager {
         }
 
         return JSON.parse(sessionStorage.programs);
-    }
-
-    /**
-     * Get the total number of programs for each school.
-     *
-     * @export
-     * @returns a cached array of the total programs count for each school, every index of the array
-     * being the index of the schools array returned by SchoolsManager.getSChools().
-     */
-    async getTotalProgramsCountBySchool() {
-
-        if (!sessionStorage.totalProgramsCountBySchool) {
-
-            await this.getPrograms();
-            sessionStorage.totalProgramsCountBySchool = JSON.stringify(this.totalProgramsCountBySchool);
-        }
-
-        return JSON.parse(sessionStorage.totalProgramsCountBySchool);
     }
 
     async getProgramsThemes() {

@@ -102,7 +102,7 @@
                             <label class="form-check-label"
                                 :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
                         </div>
-                        <span class="ml-auto count">{{totalProgramsCounts[school.id]}}</span>
+                        <span class="ml-auto count">{{programsCountsBySchool[school.id]}}</span>
                     </div>
 
                     <h6 class="title">{{translate("shared.themes")}}</h6>

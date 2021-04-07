@@ -18,7 +18,6 @@ var app = Vue.createApp({
             schools: [],
             programs: [],
             displayedPrograms: [],
-            totalProgramsCounts: [],
             themes: [],
             fields: [],
             selectedSchools: [],
@@ -82,7 +81,17 @@ var app = Vue.createApp({
             }
 
             return this.displayedPrograms;
-        }
+        },
+        programsCountsBySchool() { // Computes the total counts of programs by school
+
+            const programsCountsBySchool = [];
+
+            this.schools.forEach(school => {
+                programsCountsBySchool[school.id] = this.programs.filter(program => school.id == program.schoolId).length;
+            });
+
+            return programsCountsBySchool;
+        }     
     },
     mounted() {
 
@@ -106,7 +115,6 @@ var app = Vue.createApp({
             // loads programs data
 
             this.programs = await this.programsManager.getPrograms();
-            this.totalProgramsCounts = await this.programsManager.getTotalProgramsCountBySchool();
             this.themes = await this.programsManager.getProgramsThemes();
             this.fields = await this.programsManager.getProgramsFields();
             this.cycles = await this.programsManager.getProgramsCycles();
