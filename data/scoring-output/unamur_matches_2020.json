@@ -2,19 +2,14 @@
     "decarbonization": {
         "EINGM107": {
             "(?:bilan[^ ]+|empreint[^ ]+) carbon[^ ]+": [
-                "  analyse des flux  empreintes carbone     normes qualit\u00e9 "
+                "  analyse des flux  empreintes carbone       normes qualit"
             ]
         }
     },
     "energy": {
-        "FINT0039": {
-            "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
-                "u nucl\u00e9aire dans la transition \u00e9nerg\u00e9tique en question  p  lan"
-            ]
-        },
         "MMEDB331": {
             "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "ire       equilibre hydro-\u00e9lectrique       physiologie d"
+                "e         equilibre hydro-\u00e9lectrique         physiologie"
             ]
         },
         "SBOEM260": {
@@ -24,13 +19,13 @@
         },
         "SCHIB111": {
             "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "um\u00e9riques   chap v  bilan \u00e9nerg\u00e9tique et \u00e9volution des tr"
+                "riques      chap v  bilan \u00e9nerg\u00e9tique et \u00e9volution des tr"
             ]
         },
         "SCHIM123": {
             "photovolta[i\u00ef]ques?": [
-                "     4 c  mat\u00e9riaux photovolta\u00efques                 4 d",
-                "     4 c  mat\u00e9riaux photovolta\u00efques               4 d  "
+                "     4 c  mat\u00e9riaux photovolta\u00efques                   4",
+                "     4 c  mat\u00e9riaux photovolta\u00efques                 4 d"
             ]
         },
         "SCHIM124": {
@@ -43,16 +38,21 @@
             "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
                 "sources d'\u00e9nergie   energies renouvelables  pr\u00e9sentation des \u00e9",
                 "n  introduction aux \u00e9nergies vertes  pr\u00e9sentation du pr",
-                "cl\u00e9aire   ~1h    5  \u00e9nergies renouvelables  photovolta\u00efque org",
-                "rganique  ~2h    6  \u00e9nergies renouvelables  thermo\u00e9lectrique o",
-                "iques  2h    co2 et \u00e9nergie renouvelables par photosynth\u00e8se  "
+                "ire   ~1h        5  \u00e9nergies renouvelables  photovolta\u00efque org",
+                "ique  ~2h        6  \u00e9nergies renouvelables  thermo\u00e9lectrique o",
+                " 2h        co 2  et \u00e9nergie renouvelables par photosynth\u00e8se  "
             ],
             "[\u00e9e]nerg[^ ]+ fossiles?": [
                 "s  pr\u00e9sentation des \u00e9nergies fossiles  p\u00e9trole  gaz natur",
-                "su    1  mati\u00e8re et energies fossiles  p\u00e9trole  gaz natur"
+                "      1  mati\u00e8re et energies fossiles  p\u00e9trole  gaz natur"
             ],
             "photovolta[i\u00ef]ques?": [
-                "gies renouvelables  photovolta\u00efque organique  ~2h    6"
+                "gies renouvelables  photovolta\u00efque organique  ~2h     "
+            ]
+        },
+        "SCHIM224": {
+            "(?:photovoltaic|solar|geothermal|hydro(electric)?)+( |-)?(energy|power)": [
+                "ronic materials and solar energy conversio"
             ]
         },
         "SPHYM106": {
@@ -63,169 +63,19 @@
     },
     "consumption": {},
     "environment": {
-        "AGRE2221": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "AGRE2310": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "BIOE2001": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "BIOE2002": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "BIRE2101": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "BIRE2102": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "BIRE2105": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "BIRF2104": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "BRAT2101": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "BRES2106": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
         "DROIB330": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 " civile au pr\u00e9judice \u00e9cologique font l'objet de la "
             ]
         },
-        "DROP2061": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "DROP2063": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "DROP2101": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "DROP2102": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "DROP2103": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
         "EINGB221": {
             "d\u00e9fis? environnement[^ ]+": [
-                "que    chapitre 1   d\u00e9fis environnementaux   chapitre 2   prod"
+                "       chapitre 1   d\u00e9fis environnementaux     chapitre 2   pr"
             ]
         },
         "EINGM107": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "es de cas    part 3  ecologie industrielle et th\u00e9"
-            ]
-        },
-        "ENVI2011": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                "de cas       part 3  ecologie industrielle et th\u00e9"
             ]
         },
         "FACCM301": {
@@ -233,368 +83,19 @@
                 "nduira \u00e0 une vision \u00e9cosyst\u00e9mique du d\u00e9veloppement de"
             ]
         },
-        "FAGRM401": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FAGRM402": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FAGRM403": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FAGRM404": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FAGRM405": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FAGRM406": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FAGRM407": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FAGRM409": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "FILO2003": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
         "FINT0039": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "s  crise \u00e9conomique  \u00e9cologique  sociale  politique"
             ]
         },
-        "GEO1343": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "GEO2140": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "LBIR1328": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBIR1334": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBIR1336": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBIR1362": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2113": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2120": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2121": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2122": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2140": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2141": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2143": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2148": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "LBOE2160": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2161": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2166": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2168": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2185": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2191": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2196": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LBOE2292": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
         "LELVB002": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "en vlaamse cultuur   ecologie   religie   politie"
-            ]
-        },
-        "LGEO1342": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LGEO2330": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "LGEO2401": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "LMAT2330": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
+                " vlaamse cultuur     ecologie     religie     pol"
             ]
         },
         "LPHIB103": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "pr\u00e9hender les enjeux \u00e9cologiques contemporains  et c"
-            ]
-        },
-        "LPHIB302": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "gie philosophique et \u00e9cologies [lphib103]         "
-            ]
-        },
-        "LPHIB304": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "gie philosophique et \u00e9cologies [lphib103]         "
-            ]
-        },
-        "LSC2001": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LSC2220": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "LSCI2330": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "MSBMM113": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SAGRM203": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SAGRM206": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SAGRM211": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SAGRM213": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SAGRM214": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
             ]
         },
         "SBIOB001": {
@@ -607,12 +108,7 @@
                 "les traits et l'\u00e9tat \u00e9cologique des eaux de surface"
             ],
             "[\u00e9e]cosyst[^ ]+": [
-                "oules     bases des \u00e9cosyst\u00e8mes     pr\u00e9sentation de"
-            ]
-        },
-        "SBIOB208": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " outils ad\u00e9quats \u00e0 l\u2019\u00e9cologie de terrain en abord"
+                "les       bases des \u00e9cosyst\u00e8mes       pr\u00e9sentation "
             ]
         },
         "SBIOB209": {
@@ -620,17 +116,16 @@
                 "ies dans les divers \u00e9cosyst\u00e8mes qu'elles ont coloni"
             ]
         },
+        "SBIOB208": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                " outils ad\u00e9quats \u00e0 l\u2019\u00e9cologie de terrain en abord"
+            ]
+        },
         "SBIOB212": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "s et pratiques  de l'\u00e9cologie        objectifs  p",
+                "s et pratiques  de l'\u00e9cologie          objectifs ",
                 "aissances de base en \u00e9cologie g\u00e9n\u00e9rale  leur perm",
-                "          contenu  l'\u00e9cologie pr\u00e9cise les relatio",
-                "lieu et son contexte \u00e9cologique          mode d'\u00e9va",
-                "nsion des ph\u00e9nom\u00e8nes \u00e9cologiques  - int\u00e9gration des ",
-                "les grands probl\u00e8mes \u00e9cologiques actuels  les rappor",
-                " travail personnel d'\u00e9cologie sont cot\u00e9s et leur ",
-                " supports \u00e9ventuels  ecologie  ricklefs et miller",
-                "ie des organismes et \u00e9cologie16       unit\u00e9s d'ense"
+                "        contenu    l'\u00e9cologie pr\u00e9cise les relatio"
             ],
             "[\u00e9e]cosyst[^ ]+": [
                 " leur milieu   et l'\u00e9cosyst\u00e8me qui constitue le pl"
@@ -644,23 +139,15 @@
         "SBIOB309": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "ises dans le cours d'\u00e9cologie g\u00e9n\u00e9rale  bac 2   a",
-                "quisition de donn\u00e9es \u00e9cologiques sur base d'\u00e9chantil",
-                "nt une approche de l'\u00e9cologie terrestre et aquati"
+                "quisition de donn\u00e9es \u00e9cologiques sur base d'\u00e9chantil"
             ],
             "[\u00e9e]cosyst[^ ]+": [
-                " diff\u00e9rents types d'\u00e9cosyst\u00e8mes terrestres et aquat",
-                "ues sur le terrain  \u00e9cosyst\u00e8mes aquatiques et fores"
-            ]
-        },
-        "SBIOB324": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie13       unit\u00e9s d'ense"
+                " diff\u00e9rents types d'\u00e9cosyst\u00e8mes terrestres et aquat"
             ]
         },
         "SBIOB326": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "  qui se destine \u00e0 l'\u00e9cologie  la physiologie ou ",
-                "ie des organismes et \u00e9cologie14       unit\u00e9s d'ense"
+                "  qui se destine \u00e0 l'\u00e9cologie  la physiologie ou "
             ]
         },
         "SBIOB344": {
@@ -671,66 +158,29 @@
         "SBIOB346": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "iff\u00e9rentes notions d'\u00e9cologie li\u00e9es au ph\u00e9nom\u00e8ne ",
-                "\u00e0 utiliser un mod\u00e8le \u00e9cologique simple    partie es",
-                "\u00e9rale [sbiob102]  et \u00e9cologie g\u00e9n\u00e9rale [sbiob212]",
-                "ie des organismes et \u00e9cologie12       bachelier en "
+                "\u00e0 utiliser un mod\u00e8le \u00e9cologique simple      partie "
             ],
             "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes      partie esp\u00e8ces",
-                " fonctionnement des \u00e9cosyst\u00e8mes    - entrainer les ",
-                " fonctionnement des \u00e9cosyst\u00e8mes                 th\u00e9"
-            ]
-        },
-        "SBIOB347": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie12       master 120 en"
-            ]
-        },
-        "SBIOB348": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie12       bachelier en "
-            ]
-        },
-        "SBIOB349": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie12       bachelier en "
+                " fonctionnement des \u00e9cosyst\u00e8mes        partie esp\u00e8c",
+                " fonctionnement des \u00e9cosyst\u00e8mes      - entrainer le",
+                " fonctionnement des \u00e9cosyst\u00e8mes                    "
             ]
         },
         "SBIOB362": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "ncipaux aspects de l'\u00e9cologie animale  l'acc\u00e8s au",
-                "ures sociales  socio-\u00e9cologie et socio-biologie  ",
-                "ie des organismes et \u00e9cologie12       bachelier en "
+                "ures sociales  socio-\u00e9cologie et socio-biologie  "
             ]
         },
         "SBIOB367": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "stress et concepts d'\u00e9cologie du stress et d'endo",
-                "ie des organismes et \u00e9cologie14       bachelier en "
+                "stress et concepts d'\u00e9cologie du stress et d'endo"
             ]
         },
         "SBIOB368": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "tude de recherche en \u00e9cologie appliqu\u00e9e  souvent ",
-                "dans la domaine de l\u2019\u00e9cologie appliqu\u00e9e         m",
-                "ie des organismes et \u00e9cologie14       bachelier en "
-            ]
-        },
-        "SBIOM119": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBIOM129": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
+                "dans la domaine de l\u2019\u00e9cologie appliqu\u00e9e          "
             ]
         },
         "SBIOM131": {
@@ -738,118 +188,34 @@
                 "es vari\u00e9s tels que l'\u00e9cologie  la m\u00e9decine et la "
             ]
         },
-        "SBIOM132": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
         "SBIOM201": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e8les au point de vue \u00e9cologie  cycle \u00e9volutif et ",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo"
-            ]
-        },
-        "SBIOM205": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
+                "\u00e8les au point de vue \u00e9cologie  cycle \u00e9volutif et "
             ]
         },
         "SBOEM108": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "rrain pour \u00e9tudier l'\u00e9cologie des macro-invert\u00e9br",
                 "ons scientifiques en \u00e9cologie communautaire      ",
-                " \u00e9tude de terrain en \u00e9cologie aquatique         c",
+                " \u00e9tude de terrain en \u00e9cologie aquatique          ",
                 " respectivement de l'\u00e9cologie des lacs et un de l",
-                " des lacs et un de l'\u00e9cologie des rivi\u00e8res       ",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM109": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM111": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                " des lacs et un de l'\u00e9cologie des rivi\u00e8res       "
             ]
         },
         "SBOEM112": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "iatement des donn\u00e9es \u00e9cologiques et introduire de no",
-                "37-789-5   analyzing ecological data  zuur  alain  ",
-                "/index php/analysing-ecological-data   vid\u00e9os       g\u00e9n\u00e9",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM123": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                "iatement des donn\u00e9es \u00e9cologiques et introduire de no"
             ]
         },
         "SBOEM124": {
             "[^a-z][\u00e9e]colo[^ ]+": [
-                "prentissage  cours d'\u00e9cologie mol\u00e9culaire enseign",
-                "es dans la recherche \u00e9cologique et \u00e9volutive  les \u00e9",
-                " la revue \"molecular ecology\" sur base d'une anal",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                "entissage    cours d'\u00e9cologie mol\u00e9culaire enseign",
+                "es dans la recherche \u00e9cologique et \u00e9volutive  les \u00e9"
             ]
         },
         "SBOEM142": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ematical modeling in ecology and evolution  prin",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ],
             "[\u00e9e]cosyst[^ ]+": [
-                " perturbations de l\u2019\u00e9cosyst\u00e8me         contenu  to"
-            ]
-        },
-        "SBOEM144": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                " perturbations de l\u2019\u00e9cosyst\u00e8me           contenu  "
             ]
         },
         "SBOEM162": {
@@ -857,58 +223,18 @@
                 "\u00e0 utiliser un mod\u00e8le \u00e9cologique pr\u00e9cod\u00e9 pour \u00e9value",
                 "inants  chimiques et \u00e9cologiques  des effets sur les",
                 "inants  chimiques et \u00e9cologiques  des effets sur les",
-                "plication de mod\u00e8les \u00e9cologiques pour quantifier les",
-                "ematical modeling in ecology and evolution  prin",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                "plication de mod\u00e8les \u00e9cologiques pour quantifier les"
             ],
             "[\u00e9e]cosyst[^ ]+": [
                 "nces au niveau de l'\u00e9cosyst\u00e8me sont \u00e9galement disc",
-                "pondants            \u00e9cosyst\u00e8mes  cons\u00e9quences des e",
-                "r les fonctions des \u00e9cosyst\u00e8mes            introduc"
-            ]
-        },
-        "SBOEM163": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                "ants                \u00e9cosyst\u00e8mes  cons\u00e9quences des e",
+                "r les fonctions des \u00e9cosyst\u00e8mes                intr"
             ]
         },
         "SBOEM165": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "ess in evolution and ecology  methodology  exper",
-                "mics in evolutionary ecology with a focus on stu",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM166": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM197": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
+                "mics in evolutionary ecology with a focus on stu"
             ]
         },
         "SBOEM237": {
@@ -919,85 +245,7 @@
                 "ur quantifier l\u2019\u00e9tat \u00e9cologique d\u2019une eau de surfac",
                 "'\u00e9volution de l'\u00e9tat \u00e9cologique d\u2019une eau de surfac",
                 "ur quantifier l\u2019\u00e9tat \u00e9cologique des eaux de surface",
-                "ple  calculer l'\u00e9tat \u00e9cologique        description ",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SBOEM238": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM240": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo"
-            ]
-        },
-        "SBOEM241": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo"
-            ]
-        },
-        "SBOEM260": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM261": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SBOEM297": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SELVB301": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie11       unit\u00e9s d'ense"
-            ]
-        },
-        "SFCMM101": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SFCMM201": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SGOGB201": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
+                "ple  calculer l'\u00e9tat \u00e9cologique          descriptio"
             ]
         },
         "SGOGB210": {
@@ -1007,49 +255,9 @@
                 "uation des services \u00e9cosyst\u00e9miques pour une gestion te"
             ]
         },
-        "SGOGB301": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SGOLB210": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
         "SGOLB303": {
             "[\u00e9e]cosyst[^ ]+": [
                 "sol - le sol dans l'\u00e9cosyst\u00e8me - ph\u00e9nom\u00e8nes de mig"
-            ]
-        },
-        "SGOLM145": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SGOLM146": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
             ]
         },
         "SSMRM102": {
@@ -1082,100 +290,16 @@
                 " de l'animal et des \u00e9cosyst\u00e8mes dans la biosph\u00e8re e"
             ]
         },
-        "SSPSB309": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie12       unit\u00e9s d'ense"
-            ]
-        },
-        "SSPSM101": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SSPSM203": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
         "SVETB205": {
             "[^a-z][\u00e9e]colo[^ ]+": [
                 "'objectif du cours d'\u00e9cologie appliqu\u00e9e aux anima",
                 "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie et continue ensuite",
-                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie       du logement d"
-            ]
-        },
-        "SVETB218": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie13       bachelier en "
-            ]
-        },
-        "SVETB219": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie12       bachelier en "
-            ]
-        },
-        "SVETB301": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "SVETB306": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie14       unit\u00e9s d'ense"
+                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie         du logement"
             ]
         },
         "SVETB310": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie14       unit\u00e9s d'ense"
-            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "avec la multitude d\u2019\u00e9cosyst\u00e8mes colonis\u00e9s par les m"
-            ]
-        },
-        "SVETM202": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti"
-            ]
-        },
-        "SVETM209": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo"
-            ]
-        },
-        "THEO2840": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
-            ]
-        },
-        "WMD2290": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 approfo",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 didacti",
-                "ie des organismes et \u00e9cologie  \u00e0 finalit\u00e9 sp\u00e9cial"
             ]
         },
         "ZOOL2000-1": {
@@ -1187,12 +311,12 @@
     "climatology": {
         "EFAEM057": {
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "  innovation     le r\u00e9chauffement climatique     drogues     edu"
+                "innovation       le r\u00e9chauffement climatique       drogues      "
             ]
         },
         "EINGB221": {
             "climatolog[^ ]+": [
-                "thermodynamique   - climatologie   - physique des se"
+                "ermodynamique     - climatologie     - physique des "
             ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
                 "d\u00e9chets  pollution  r\u00e9chauffement climatique     li\u00e9es au domain"
@@ -1200,12 +324,12 @@
         },
         "SBIOB153": {
             "chang[^ ]+ clima[^ ]+": [
-                " biodiversit\u00e9 et du changement climatique     ma\u00eetriser le vo",
-                " biodiversit\u00e9 et du changement climatique        contenu  div",
-                " biodiversit\u00e9 et du changement climatique         table des m"
+                " biodiversit\u00e9 et du changement climatique       ma\u00eetriser le ",
+                " biodiversit\u00e9 et du changement climatique          contenu   ",
+                " biodiversit\u00e9 et du changement climatique           table des"
             ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "oxyde de carbone et r\u00e9chauffement climatique   7  biologie de la"
+                "oxyde de carbone et r\u00e9chauffement climatique     7  biologie de "
             ]
         },
         "SBIOB229": {
@@ -1221,15 +345,14 @@
         },
         "SCHIM229": {
             "chang[^ ]+ clima[^ ]+": [
-                "d\u00e9fi \u00e9nerg\u00e9tique et changement climatique   iii  chimie de l'"
+                "d\u00e9fi \u00e9nerg\u00e9tique et changement climatique     iii  chimie de "
             ]
         },
         "SGOGB302": {
             "climatolog[^ ]+": [
                 "\u00e9orologie et temps  climatologie et climat  syst\u00e8me ",
                 "\u00e9orologie et temps  climatologie et climat  syst\u00e8me ",
-                "\u00e0 r\u00e9aliser un bilan climatologique mensuel            ",
-                "ion  m  tabeaud  la climatologie               langu"
+                "\u00e0 r\u00e9aliser un bilan climatologique mensuel"
             ],
             "chang[^ ]+ clima[^ ]+": [
                 "ent est mis sur les changements climatiques et l'amplification ",
@@ -1237,12 +360,12 @@
                 "determinants 9  les changements climatiques - l'effet de serre "
             ],
             "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "dans le contexte du r\u00e9chauffement climatique         objectifs  "
+                "dans le contexte du r\u00e9chauffement climatique           objectifs"
             ]
         },
         "SGOLB304": {
             "climatolog[^ ]+": [
-                "ie  diagen\u00e8se  pal\u00e9oclimatologie               objec"
+                "ie  diagen\u00e8se  pal\u00e9oclimatologie                 obj"
             ]
         },
         "SGOLB311": {
@@ -1270,8 +393,8 @@
     "durability": {
         "DROIB330": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnement et au d\u00e9veloppement durable      comprendre l\u2019i",
-                "notion nouvelle  le d\u00e9veloppement durable         contenu  la",
+                "environnement et au d\u00e9veloppement durable        comprendre l",
+                "notion nouvelle  le d\u00e9veloppement durable           contenu  ",
                 "environnement et le d\u00e9veloppement durable peuvent trouver pla",
                 "environnement et au d\u00e9veloppement durable  de leur port\u00e9e et ",
                 "roit au recours  le d\u00e9veloppement durable fait de plus son en",
@@ -1285,18 +408,22 @@
         },
         "ECGEB321": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "dans la dignit\u00e9     d\u00e9veloppement durable et spiritualit\u00e9    "
+                "ns la dignit\u00e9       d\u00e9veloppement durable et spiritualit\u00e9    "
+            ]
+        },
+        "EDEVM334": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                " makers and promote sustainable development  this course will r"
             ]
         },
         "EINGM107": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "es pour soutenir le d\u00e9veloppement durable   - r\u00e9flexion criti",
-                "ature syst\u00e9mique du d\u00e9veloppement durable    - compr\u00e9hension ",
-                "er des objectifs de d\u00e9veloppement durable   - analyse des opp",
-                "re des objectifs de d\u00e9veloppement durable        contenu  le ",
-                "ens\u00e9e syst\u00e9mique et d\u00e9veloppement durable [5h]   part 2  outi",
-                "t 2  technologie et d\u00e9veloppement durable [5h]      m\u00e9thodes ",
-                "s dans les d\u00e9fis de d\u00e9veloppement durable        mode d'\u00e9valu"
+                "es pour soutenir le d\u00e9veloppement durable     - r\u00e9flexion cri",
+                "ature syst\u00e9mique du d\u00e9veloppement durable      - compr\u00e9hensio",
+                "er des objectifs de d\u00e9veloppement durable     - analyse des o",
+                "re des objectifs de d\u00e9veloppement durable          contenu   ",
+                "ens\u00e9e syst\u00e9mique et d\u00e9veloppement durable [5h]     part 2  ou",
+                "t 2  technologie et d\u00e9veloppement durable [5h]         m\u00e9thod"
             ]
         },
         "INFOM476": {
@@ -1309,8 +436,8 @@
         },
         "SGOGB101": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "dans une optique de d\u00e9veloppement durable               objec",
-                "dans une optique de d\u00e9veloppement durable               conte"
+                "dans une optique de d\u00e9veloppement durable                    ",
+                "dans une optique de d\u00e9veloppement durable                    "
             ]
         },
         "SGOGB310": {
@@ -1321,12 +448,12 @@
         },
         "SGOLB303": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ne r\u00e9flexion sur le d\u00e9veloppement durable         objectifs  "
+                "ne r\u00e9flexion sur le d\u00e9veloppement durable           objectifs"
             ]
         },
         "SSMRM101": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " rural  \u00e0 l\u2019aune du d\u00e9veloppement durable                    "
+                " rural  \u00e0 l\u2019aune du d\u00e9veloppement durable"
             ]
         },
         "SSMRM103": {

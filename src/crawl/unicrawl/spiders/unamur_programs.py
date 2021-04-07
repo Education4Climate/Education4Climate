@@ -77,7 +77,7 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 # If there is still a different number of ects only keep the first one
                 ects_slimmed += [list(set(course_ects))[0]]
 
-        cur_dict = {'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked
+        cur_dict = {'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked -> also gembloux or louvain-la-neuve
                     'url': response.url,
                     'courses': codes,
                     'ects': ects_slimmed

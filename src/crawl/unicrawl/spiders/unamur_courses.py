@@ -37,13 +37,13 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_main(response):
-        name_and_id = cleanup(response.css("h1::text").get())
-        name = name_and_id.split("[")[0]
+        name_and_id = response.xpath("//h1/text").get()
+        name = name_and_id.split("[")[0].strip(" ")
         course_id = name_and_id.split("[")[1].strip("]")
 
         years = cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         teachers = cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
-        teachers = [teacher.replace(' (suppléant)') for teacher in teachers]
+        teachers = [teacher.replace(' (suppléant)', '') for teacher in teachers]
 
         # TODO: cours en plusieurs langues?
         languages = cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
@@ -51,44 +51,44 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         # TODO: check all language used
         languages = [LANGUAGES_DICT[lang] for lang in languages]
 
-        content = cleanup(response.xpath("//div[@class='tab-content']").get())
+        content = cleanup(response.xpath("//div[@id='tab-introduction']").get())
 
-        cycle_ects = cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
-        cycles = []
-        ects = []
-        programs = []
-        for i, el in enumerate(cycle_ects):
-            if i % 3 == 0:
-                programs += [el]
-                if "Bachelier" in el:
-                    cycles += ["bachelier"]
-                elif "Master" in el:
-                    cycles += ["Master"]
-                else:
-                    cycles += [el]
-            elif i % 3 == 2:
-                ects += [int(el)]
+        # cycle_ects = cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
+        # cycles = []
+        # ects = []
+        # programs = []
+        # for i, el in enumerate(cycle_ects):
+        #     if i % 3 == 0:
+        #         programs += [el]
+        #         if "Bachelier" in el:
+        #             cycles += ["bac"]
+        #         elif "Master" in el:
+        #             cycles += ["master"]
+        #         else:
+        #             cycles += ["other"]
+        #     elif i % 3 == 2:
+        #         ects += [int(el)]
 
         # TODO: need to check if there are not sometimes several campuses or faculties
-        organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
-        campus = ''
-        if "Lieu de l'activité" in organisation:
-            campus = cleanup(
-                organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
-        faculty = cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
+        # organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
+        # campus = ''
+        # if "Lieu de l'activité" in organisation:
+        #     campus = cleanup(
+        #         organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
+        # faculty = cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
 
         data = {
-            'name': name,
             'id': course_id,
+            'name': name,
             'year': years,
             'teachers': teachers,
             'languages': languages,
-            'cycle': cycles,
-            'ects': ects,
-            'content': content,
+            # 'cycle': cycles,
+            # 'ects': ects,
             'url': response.url,
-            'faculty': faculty,
-            'campus': campus,
-            'program': programs
+            # 'faculty': faculty,
+            # 'campus': campus,
+            # 'program': programs,
+            'content': content
         }
         yield data
