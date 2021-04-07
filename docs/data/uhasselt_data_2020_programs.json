@@ -7,14 +7,17 @@
   "campus":"",
   "url":"",
   "courses":[
-   "2055"
+   "2055",
+   "1955"
   ],
   "field":"economy & management",
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ]
  },
  {
@@ -25,17 +28,21 @@
   "campus":"",
   "url":"",
   "courses":[
-   "4368",
-   "4391"
+   "2612",
+   "2576",
+   "4391",
+   "4368"
   ],
   "field":"applied sciences & engineering",
   "themes":[
    "energy",
-   "consumption"
+   "consumption",
+   "environment"
   ],
   "themes_scores":[
    2,
-   1
+   1,
+   2
   ]
  },
  {
@@ -46,7 +53,62 @@
   "campus":"",
   "url":"",
   "courses":[
+   "1955",
    "3568"
+  ],
+  "field":"sciences",
+  "themes":[
+   "durability"
+  ],
+  "themes_scores":[
+   2
+  ]
+ },
+ {
+  "id":"768",
+  "name":"Master of Transportation Sciences",
+  "faculty":"School voor Mobiliteitswetenschappen",
+  "cycle":"master",
+  "campus":"",
+  "url":"",
+  "courses":[
+   "1955"
+  ],
+  "field":"sciences",
+  "themes":[
+   "durability"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"349",
+  "name":"Master of Statistics and Data Science",
+  "faculty":"Faculteit Wetenschappen",
+  "cycle":"master",
+  "campus":"",
+  "url":"",
+  "courses":[
+   "1955"
+  ],
+  "field":"sciences",
+  "themes":[
+   "durability"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"135",
+  "name":"bachelor in de informatica",
+  "faculty":"Faculteit Wetenschappen",
+  "cycle":"bac",
+  "campus":"",
+  "url":"",
+  "courses":[
+   "1955"
   ],
   "field":"sciences",
   "themes":[
@@ -65,14 +127,35 @@
   "url":"",
   "courses":[
    "2237",
-   "3239"
+   "3239",
+   "1955"
   ],
   "field":"law & criminology",
   "themes":[
-   "climatology"
+   "climatology",
+   "durability"
   ],
   "themes_scores":[
-   2
+   2,
+   1
+  ]
+ },
+ {
+  "id":"749",
+  "name":"master in de mobiliteitswetenschappen",
+  "faculty":"School voor Mobiliteitswetenschappen",
+  "cycle":"master",
+  "campus":"",
+  "url":"",
+  "courses":[
+   "1955"
+  ],
+  "field":"sciences",
+  "themes":[
+   "durability"
+  ],
+  "themes_scores":[
+   1
   ]
  },
  {
@@ -101,6 +184,7 @@
   "campus":"",
   "url":"",
   "courses":[
+   "4280",
    "4281"
   ],
   "field":"applied sciences & engineering",
@@ -109,7 +193,7 @@
    "durability"
   ],
   "themes_scores":[
-   1,
+   2,
    1
   ]
  },
@@ -143,7 +227,27 @@
   ],
   "field":"health",
   "themes":[
-   "climatology"
+   "climatology",
+   "durability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ]
+ },
+ {
+  "id":"H74",
+  "name":"master in de revalidatiewetenschappen en de kinesitherapie",
+  "faculty":"Faculteit Revalidatiewetenschappen",
+  "cycle":"master",
+  "campus":"",
+  "url":"",
+  "courses":[
+   "1955"
+  ],
+  "field":"health",
+  "themes":[
+   "durability"
   ],
   "themes_scores":[
    1
@@ -157,8 +261,8 @@
   "campus":"",
   "url":"",
   "courses":[
-   "3939",
-   "2871"
+   "2871",
+   "3939"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -180,13 +284,16 @@
   "campus":"",
   "url":"",
   "courses":[
-   "1692"
+   "1692",
+   "1955"
   ],
   "field":"economy & management",
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ],
   "themes_scores":[
+   1,
    1
   ]
  },
@@ -198,9 +305,9 @@
   "campus":"",
   "url":"",
   "courses":[
+   "3939",
    "2355",
-   "4134",
-   "3939"
+   "4134"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -223,7 +330,8 @@
   "url":"",
   "courses":[
    "3752",
-   "2055"
+   "2055",
+   "1955"
   ],
   "field":"economy & management",
   "themes":[
@@ -232,7 +340,7 @@
   ],
   "themes_scores":[
    1,
-   1
+   3
   ]
  },
  {
@@ -263,9 +371,10 @@
   "campus":"",
   "url":"",
   "courses":[
-   "3752",
    "3860",
-   "2055"
+   "3752",
+   "2055",
+   "1955"
   ],
   "field":"economy & management",
   "themes":[
@@ -276,7 +385,7 @@
   "themes_scores":[
    1,
    2,
-   1
+   3
   ]
  },
  {
@@ -287,14 +396,18 @@
   "campus":"",
   "url":"",
   "courses":[
-   "3351"
+   "3351",
+   "4216",
+   "4280"
   ],
   "field":"applied sciences & engineering",
   "themes":[
-   "energy"
+   "energy",
+   "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ]
  },
  {
@@ -305,17 +418,20 @@
   "campus":"",
   "url":"",
   "courses":[
+   "3648",
    "3026",
    "3558"
   ],
   "field":"applied sciences & engineering",
   "themes":[
    "energy",
-   "consumption"
+   "consumption",
+   "environment"
   ],
   "themes_scores":[
    2,
-   2
+   2,
+   1
   ]
  },
  {
@@ -326,7 +442,8 @@
   "campus":"",
   "url":"",
   "courses":[
-   "1568"
+   "1568",
+   "1955"
   ],
   "field":"sciences",
   "themes":[
@@ -337,7 +454,7 @@
   "themes_scores":[
    1,
    1,
-   1
+   2
   ]
  },
  {
@@ -348,7 +465,8 @@
   "campus":"",
   "url":"",
   "courses":[
-   "3943"
+   "3943",
+   "1955"
   ],
   "field":"health",
   "themes":[
@@ -357,6 +475,24 @@
   ],
   "themes_scores":[
    1,
+   2
+  ]
+ },
+ {
+  "id":"025",
+  "name":"bachelor in de fysica",
+  "faculty":"Faculteit Wetenschappen",
+  "cycle":"bac",
+  "campus":"",
+  "url":"",
+  "courses":[
+   "1955"
+  ],
+  "field":"sciences",
+  "themes":[
+   "durability"
+  ],
+  "themes_scores":[
    1
   ]
  },
@@ -368,14 +504,17 @@
   "campus":"",
   "url":"",
   "courses":[
-   "2055"
+   "2055",
+   "1955"
   ],
   "field":"economy & management",
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ]
  },
  {
@@ -387,9 +526,9 @@
   "url":"",
   "courses":[
    "3742",
+   "1955",
    "2000",
-   "3623",
-   "3240"
+   "3623"
   ],
   "field":"health",
   "themes":[
@@ -402,9 +541,9 @@
   "themes_scores":[
    1,
    1,
-   3,
+   2,
    1,
-   1
+   2
   ]
  },
  {
@@ -415,12 +554,14 @@
   "campus":"",
   "url":"",
   "courses":[
-   "3458",
-   "3121",
-   "1567",
    "3124",
+   "2243",
+   "3139",
    "1568",
-   "3139"
+   "3121",
+   "3458",
+   "1955",
+   "1567"
   ],
   "field":"sciences",
   "themes":[
@@ -429,9 +570,9 @@
    "durability"
   ],
   "themes_scores":[
-   6,
+   7,
    1,
-   1
+   2
   ]
  },
  {
@@ -442,13 +583,16 @@
   "campus":"",
   "url":"",
   "courses":[
+   "1955",
    "1567"
   ],
   "field":"sciences",
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ],
   "themes_scores":[
+   1,
    1
   ]
  },
@@ -460,14 +604,17 @@
   "campus":"",
   "url":"",
   "courses":[
-   "2055"
+   "2055",
+   "1955"
   ],
   "field":"economy & management",
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ]
  },
  {
@@ -478,6 +625,7 @@
   "campus":"",
   "url":"",
   "courses":[
+   "1955",
    "3939",
    "4134"
   ],
@@ -485,9 +633,11 @@
   "themes":[
    "energy",
    "consumption",
-   "environment"
+   "environment",
+   "durability"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1
@@ -501,9 +651,9 @@
   "campus":"",
   "url":"",
   "courses":[
-   "2330",
+   "3264",
    "3697",
-   "3264"
+   "2330"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -545,9 +695,10 @@
   "campus":"",
   "url":"",
   "courses":[
-   "3752",
+   "1692",
    "3860",
-   "1692"
+   "3752",
+   "1955"
   ],
   "field":"economy & management",
   "themes":[
@@ -558,7 +709,7 @@
   "themes_scores":[
    1,
    2,
-   1
+   2
   ]
  },
  {
@@ -570,8 +721,7 @@
   "url":"",
   "courses":[
    "3943",
-   "4449",
-   "4451"
+   "4449"
   ],
   "field":"health",
   "themes":[
@@ -580,8 +730,26 @@
    "durability"
   ],
   "themes_scores":[
-   2,
    1,
+   1,
+   1
+  ]
+ },
+ {
+  "id":"597",
+  "name":"bachelor in de handelswetenschappen",
+  "faculty":"Faculteit Bedrijfseconomische Wetenschappen",
+  "cycle":"bac",
+  "campus":"",
+  "url":"",
+  "courses":[
+   "1955"
+  ],
+  "field":"economy & management",
+  "themes":[
+   "durability"
+  ],
+  "themes_scores":[
    1
   ]
  }

@@ -20,6 +20,25 @@
   ]
  },
  {
+  "id":"ANTR2M",
+  "name":"Master [120] en anthropologie",
+  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication (ESPO)",
+  "cycle":"master",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-antr2m",
+  "courses":[
+   "LANTR2010",
+   "LANTR2100"
+  ],
+  "field":"economy & management",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ]
+ },
+ {
   "id":"APPBIOL",
   "name":"Approfondissement en sciences biologiques",
   "faculty":"facult\u00e9 des sciences (SC) (y compris m\u00e9decine v\u00e9t\u00e9rinaire)",
@@ -27,10 +46,12 @@
   "campus":"Louvain-La-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-appbiol",
   "courses":[
+   "LBIO1357",
    "LBIO1253",
-   "LGEO1332A",
+   "LBIR1230A",
    "LBIO1356",
-   "LBIR1230A"
+   "LGEO1332A",
+   "LBIO1281"
   ],
   "field":"sciences",
   "themes":[
@@ -39,7 +60,7 @@
    "durability"
   ],
   "themes_scores":[
-   4,
+   6,
    2,
    1
   ]
@@ -63,6 +84,24 @@
   ]
  },
  {
+  "id":"APPEDPH",
+  "name":"Approfondissement en sciences de la motricit\u00e9",
+  "faculty":"Facult\u00e9 des sciences de la motricit\u00e9 (FSM)",
+  "cycle":"other",
+  "campus":"Louvain-La-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-appedph",
+  "courses":[
+   "LEDPH1052"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"APPGEOG",
   "name":"Approfondissement en sciences g\u00e9ographiques",
   "faculty":"facult\u00e9 des sciences (SC) (y compris m\u00e9decine v\u00e9t\u00e9rinaire)",
@@ -70,10 +109,10 @@
   "campus":"Louvain-La-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-appgeog",
   "courses":[
-   "LBIR1328",
    "LBIR1270",
-   "LBIR1336",
-   "LBIR1230"
+   "LBIR1230",
+   "LBIR1328",
+   "LBIR1336"
   ],
   "field":"sciences",
   "themes":[
@@ -82,7 +121,7 @@
    "durability"
   ],
   "themes_scores":[
-   2,
+   3,
    3,
    1
   ]
@@ -117,18 +156,20 @@
   "courses":[
    "LBARC1360",
    "LBARC1142",
-   "LBARC1366",
-   "LBARC1347"
+   "LBARC1347",
+   "LBARC1366"
   ],
   "field":"applied sciences & engineering",
   "themes":[
    "energy",
+   "environment",
    "climatology",
    "durability",
    "society"
   ],
   "themes_scores":[
    2,
+   1,
    1,
    1,
    1
@@ -142,11 +183,14 @@
   "campus":"Bruxelles Saint-Gilles",
   "url":"https:\/\/uclouvain.be\/prog-2020-arcb2m",
   "courses":[
-   "LTARC2169",
-   "LBARC2236",
-   "LBARC2131",
+   "LBARC2101",
+   "LBARC2130",
    "LBARC2147",
-   "LBARC2237"
+   "LBARC2201",
+   "LTARC2169",
+   "LBARC2237",
+   "LBARC2131",
+   "LBARC2236"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -157,7 +201,7 @@
   ],
   "themes_scores":[
    1,
-   1,
+   6,
    3,
    2
   ]
@@ -175,9 +219,11 @@
   ],
   "field":"applied sciences & engineering",
   "themes":[
+   "environment",
    "durability"
   ],
   "themes_scores":[
+   1,
    2
   ]
  },
@@ -189,17 +235,20 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-arch2m",
   "courses":[
-   "LICAR2801",
    "LICAR2602",
    "LTECO2200",
+   "LICAR2801",
+   "LICAR2303",
    "LICAR2601"
   ],
   "field":"applied sciences & engineering",
   "themes":[
+   "environment",
    "climatology",
    "durability"
   ],
   "themes_scores":[
+   1,
    1,
    3
   ]
@@ -213,12 +262,12 @@
   "url":"https:\/\/uclouvain.be\/prog-2020-arct1ba",
   "courses":[
    "LBARC1366",
-   "LTARC1260",
    "LTARC1142",
-   "LTARC1250",
+   "LBARC1347",
+   "LTARC1260",
    "LTARC1360",
-   "LTARC1251",
-   "LBARC1347"
+   "LTARC1250",
+   "LTARC1251"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -230,7 +279,7 @@
   ],
   "themes_scores":[
    3,
-   1,
+   3,
    1,
    2,
    1
@@ -244,6 +293,8 @@
   "campus":"Tournai",
   "url":"https:\/\/uclouvain.be\/prog-2020-arct2m",
   "courses":[
+   "LTARC2142",
+   "LTARC2231",
    "LTARC2169",
    "LBARC2147"
   ],
@@ -255,7 +306,43 @@
   ],
   "themes_scores":[
    1,
-   1,
+   3,
+   1
+  ]
+ },
+ {
+  "id":"ARKE1BA",
+  "name":"Bachelier en histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-arke1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"BICL2MC",
+  "name":"Master de sp\u00e9cialisation en biologie clinique",
+  "faculty":"Facult\u00e9 de pharmacie et sciences biom\u00e9dicales (FASB)",
+  "cycle":"master",
+  "campus":"Bruxelles Woluwe",
+  "url":"https:\/\/uclouvain.be\/prog-2020-bicl2mc",
+  "courses":[
+   "WMDS2137"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ]
  },
@@ -267,13 +354,17 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-biol1ba",
   "courses":[
-   "LTECO2200",
-   "LBIO1110",
-   "LSST1001",
-   "LBIO1310",
-   "LBIO1117",
    "LBIO1344",
-   "LBIR1130"
+   "LTECO2200",
+   "LBIO1310",
+   "LSST1001",
+   "LBIO1311",
+   "LBIO1242",
+   "LBIR1130",
+   "LBIO1110",
+   "LBIO1217",
+   "LBIO1117",
+   "LBIO1317"
   ],
   "field":"sciences",
   "themes":[
@@ -282,7 +373,7 @@
    "durability"
   ],
   "themes_scores":[
-   4,
+   8,
    2,
    1
   ]
@@ -313,19 +404,19 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-bir1ba",
   "courses":[
-   "LCHM1211A",
-   "LBIR1121",
-   "LBIR1336",
-   "LBIR1328",
-   "LBIR1230",
-   "LBIR1336B",
-   "LBIR1328A",
-   "LANGL1882",
-   "LBIR1325A",
    "LBIR1354",
+   "LBIR1230",
+   "LBIR1121",
    "LBIR1361",
+   "LBIR1336",
+   "LBIR1336B",
+   "LANGL1882",
+   "LBIR1328",
+   "LCHM1211A",
+   "LBIR1328A",
+   "LBIR1270",
    "LBIR1130",
-   "LBIR1270"
+   "LBIR1325A"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -336,7 +427,7 @@
   ],
   "themes_scores":[
    4,
-   3,
+   5,
    6,
    2
   ]
@@ -349,17 +440,17 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-bira2m",
   "courses":[
-   "LBIR2050",
-   "LBIRA2109",
-   "LBIRA2107",
-   "LTECO2200",
    "LBIR2050A",
+   "LEPL1804",
+   "LTECO2200",
+   "LENVI2007",
+   "LBIR2050",
+   "LBRTE2201",
+   "LGEO1321",
+   "LBIRA2109",
    "LGEO2110B",
    "LFSA2245",
-   "LEPL1804",
-   "LGEO1321",
-   "LBRTE2201",
-   "LENVI2007"
+   "LBIRA2107"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -372,7 +463,7 @@
   "themes_scores":[
    2,
    1,
-   3,
+   5,
    3,
    6
   ]
@@ -385,15 +476,16 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-birc2m",
   "courses":[
-   "LTECO2200",
+   "LMAPR2430",
+   "LBRTI2102",
    "LBIR2050A",
-   "LBIRC2109",
-   "LPHYS2267",
-   "LGEO2130",
-   "LFSA2245",
    "LEPL1804",
+   "LTECO2200",
    "LBRTE2201",
-   "LMAPR2430"
+   "LPHYS2267",
+   "LBIRC2109",
+   "LGEO2130",
+   "LFSA2245"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -404,7 +496,7 @@
   ],
   "themes_scores":[
    3,
-   1,
+   3,
    4,
    4
   ]
@@ -417,16 +509,16 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-bire2m",
   "courses":[
-   "LBIRA2109",
-   "LBIRE2105",
-   "LTECO2200",
-   "LBRES2101",
    "LBRES2105",
    "LEPL1804",
-   "LBRTE2201",
+   "LTECO2200",
    "LENVI2007",
+   "LBIRE2105",
+   "LBRTE2201",
    "LMAPR2001A",
-   "LBIRE2131"
+   "LBIRE2131",
+   "LBIRA2109",
+   "LBRES2101"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -439,7 +531,7 @@
   "themes_scores":[
    3,
    1,
-   4,
+   6,
    2,
    3
   ]
@@ -452,13 +544,15 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-birf2m",
   "courses":[
-   "LBIRF2102",
-   "LTECO2200",
-   "LBIRF2104",
-   "LBIRF2202",
+   "LBIRF2213",
    "LBIRF2106",
-   "LBIRF2105",
-   "LBIRE2131"
+   "LBRAT2101B",
+   "LTECO2200",
+   "LBIRF2102",
+   "LBIRF2202",
+   "LBIRE2131",
+   "LBIRF2104",
+   "LBIRF2105"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -467,7 +561,7 @@
    "durability"
   ],
   "themes_scores":[
-   3,
+   8,
    2,
    2
   ]
@@ -480,13 +574,17 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-boe2m",
   "courses":[
-   "LBOE2191"
+   "LBOE2191",
+   "LBOE2112",
+   "LBOE2109"
   ],
   "field":"sciences",
   "themes":[
+   "environment",
    "climatology"
   ],
   "themes_scores":[
+   3,
    1
   ]
  },
@@ -516,11 +614,11 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-chim1ba",
   "courses":[
-   "LTECO2200",
    "LCHM1211",
-   "LBIO1110",
+   "LTECO2200",
    "LSST1001",
-   "LBIR1130"
+   "LBIR1130",
+   "LBIO1110"
   ],
   "field":"sciences",
   "themes":[
@@ -537,6 +635,24 @@
   ]
  },
  {
+  "id":"CHIM2M",
+  "name":"Master [120] en sciences chimiques",
+  "faculty":"facult\u00e9 des sciences (SC) (y compris m\u00e9decine v\u00e9t\u00e9rinaire)",
+  "cycle":"master",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-chim2m",
+  "courses":[
+   "LCHM2140"
+  ],
+  "field":"sciences",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"CHIM2M1",
   "name":"Master [60] en sciences chimiques",
   "faculty":"facult\u00e9 des sciences (SC) (y compris m\u00e9decine v\u00e9t\u00e9rinaire)",
@@ -544,11 +660,33 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-chim2m1",
   "courses":[
-   "LSST1001"
+   "LSST1001",
+   "LCHM2245",
+   "LCHM2140"
   ],
   "field":"sciences",
   "themes":[
+   "environment",
    "durability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ]
+ },
+ {
+  "id":"CLAS1BA",
+  "name":"Bachelier en langues et lettres anciennes, orientation classiques",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-clas1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
@@ -562,16 +700,17 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-clim2m",
   "courses":[
+   "LGEO1332",
+   "LGEO2110",
    "LGEO2230",
+   "LPHYS2265",
+   "LGEO2140",
    "LPHYS2267",
    "LGEO1321",
-   "LGEO2110",
-   "LGEO1332",
-   "LPHYS2265",
-   "LENVI2005",
-   "LPHY1365",
    "LGEO2210",
-   "LPHYS2269"
+   "LPHYS2269",
+   "LENVI2005",
+   "LPHY1365"
   ],
   "field":"sciences",
   "themes":[
@@ -582,7 +721,7 @@
   ],
   "themes_scores":[
    1,
-   3,
+   5,
    6,
    2
   ]
@@ -595,14 +734,15 @@
   "campus":"Mons",
   "url":"https:\/\/uclouvain.be\/prog-2020-comm1ba",
   "courses":[
-   "MCOMU1307"
+   "MCOMU1307",
+   "MSHUM1114"
   ],
   "field":"economy & management",
   "themes":[
    "environment"
   ],
   "themes_scores":[
-   1
+   2
   ]
  },
  {
@@ -660,6 +800,42 @@
   ]
  },
  {
+  "id":"DENT1BA",
+  "name":"Bachelier en sciences dentaires",
+  "faculty":"Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire (MEDE)",
+  "cycle":"bac",
+  "campus":"Bruxelles Woluwe",
+  "url":"https:\/\/uclouvain.be\/prog-2020-dent1ba",
+  "courses":[
+   "WMDS1106"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"DENT2M",
+  "name":"Master [120] en sciences dentaires",
+  "faculty":"Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire (MEDE)",
+  "cycle":"master",
+  "campus":"Bruxelles Woluwe",
+  "url":"https:\/\/uclouvain.be\/prog-2020-dent2m",
+  "courses":[
+   "LTECO2101"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"DREU2MC",
   "name":"Master de sp\u00e9cialisation en droit europ\u00e9en",
   "faculty":"Facult\u00e9 de droit et de criminologie (DRT)",
@@ -703,6 +879,7 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-ecso2mc",
   "courses":[
+   "LECSO2320",
    "LECSO2330"
   ],
   "field":"economy & management",
@@ -710,7 +887,7 @@
    "environment"
   ],
   "themes_scores":[
-   1
+   2
   ]
  },
  {
@@ -757,27 +934,33 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-envi2mc",
   "courses":[
-   "LENVI2101",
+   "LENVI2007",
+   "LSPRI2225",
+   "LBIR1328A",
+   "LGEO2210",
    "LGEO2110B",
    "LDROP2061",
-   "LBIO1114",
-   "LBIRE2105",
-   "LGEO1343",
-   "LBIR1328A",
-   "LPHYS2162",
-   "LENVI2010",
-   "LANGL1882",
-   "LENVI2007",
-   "LBIR1354",
-   "LENVI2006",
-   "LBIR2050",
+   "LBOE2120",
    "LMAPR2647",
+   "LINMA2510",
    "LENVI2002",
-   "LENVI2005",
-   "LGEO2210",
-   "LBIRA2109",
+   "LBIO1217",
+   "LBIR1354",
+   "LBRAT2101",
+   "LGEO1343",
+   "LBIR2050",
+   "LBIRE2105",
+   "LBIO1114",
+   "LPHYS2162",
+   "LENVI2006",
    "LDROP2063",
-   "LBRTE2201"
+   "LBOE2292",
+   "LENVI2101",
+   "LENVI2005",
+   "LANGL1882",
+   "LBRTE2201",
+   "LBIRA2109",
+   "LENVI2010"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -792,9 +975,9 @@
    1,
    4,
    1,
-   6,
-   6,
-   9
+   13,
+   7,
+   10
   ]
  },
  {
@@ -805,13 +988,16 @@
   "campus":"Bruxelles Woluwe",
   "url":"https:\/\/uclouvain.be\/prog-2020-esp2m",
   "courses":[
+   "LTECO2101",
    "WFSP2109"
   ],
   "field":"health",
   "themes":[
+   "environment",
    "durability"
   ],
   "themes_scores":[
+   1,
    1
   ]
  },
@@ -823,13 +1009,20 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-etes9ce",
   "courses":[
+   "LLSMS2099",
+   "LECON2067",
+   "LLSMS2098",
    "LFILO2360"
   ],
   "field":"economy & management",
   "themes":[
+   "environment",
+   "durability",
    "society"
   ],
   "themes_scores":[
+   1,
+   2,
    1
   ]
  },
@@ -852,6 +1045,24 @@
   ]
  },
  {
+  "id":"FARM2M",
+  "name":"Master [120] en sciences pharmaceutiques",
+  "faculty":"Facult\u00e9 de pharmacie et sciences biom\u00e9dicales (FASB)",
+  "cycle":"master",
+  "campus":"Bruxelles Woluwe",
+  "url":"https:\/\/uclouvain.be\/prog-2020-farm2m",
+  "courses":[
+   "LTECO2101"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"FILA9CE",
   "name":"Certificat universitaire en philosophie (approfondissement)",
   "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
@@ -859,9 +1070,9 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-fila9ce",
   "courses":[
-   "LFILO2360",
    "LFILO2970",
-   "LFILO2190"
+   "LFILO2190",
+   "LFILO2360"
   ],
   "field":"social science",
   "themes":[
@@ -892,6 +1103,26 @@
   ]
  },
  {
+  "id":"FILO1BA",
+  "name":"Bachelier en philosophie",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-filo1ba",
+  "courses":[
+   "LFILO1220",
+   "LTECO1210",
+   "LFILO1310"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   3
+  ]
+ },
+ {
   "id":"FILO2M",
   "name":"Master [120] en philosophie",
   "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
@@ -899,8 +1130,8 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-filo2m",
   "courses":[
-   "LFILO2360",
-   "LFILO2190"
+   "LFILO2190",
+   "LFILO2360"
   ],
   "field":"social science",
   "themes":[
@@ -920,8 +1151,8 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-filo2m1",
   "courses":[
-   "LFILO2360",
-   "LFILO2190"
+   "LFILO2190",
+   "LFILO2360"
   ],
   "field":"social science",
   "themes":[
@@ -930,6 +1161,24 @@
   ],
   "themes_scores":[
    1,
+   1
+  ]
+ },
+ {
+  "id":"FILO9CE",
+  "name":"Certificat universitaire en philosophie (fondements)",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"certificate",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-filo9ce",
+  "courses":[
+   "LFILO1220"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ]
  },
@@ -1054,16 +1303,16 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-geog1ba",
   "courses":[
-   "LTECO2200",
+   "LGEO1332",
    "LGEO1343",
+   "LTECO2200",
+   "LSST1001",
+   "LBIO1117",
+   "LBIR1130",
+   "LGEO1321",
    "LGEO1111",
    "LBIO1110",
-   "LGEO1321",
-   "LSST1001",
-   "LGEO1332",
-   "LPHY1365",
-   "LBIO1117",
-   "LBIR1130"
+   "LPHY1365"
   ],
   "field":"sciences",
   "themes":[
@@ -1085,8 +1334,9 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-geog2m",
   "courses":[
-   "LGEO2110",
+   "LGEO2140",
    "LGEO2230",
+   "LGEO2110",
    "LGEO2210"
   ],
   "field":"sciences",
@@ -1097,7 +1347,7 @@
   ],
   "themes_scores":[
    1,
-   1,
+   3,
    2
   ]
  },
@@ -1109,11 +1359,13 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-geog2m1",
   "courses":[
-   "LGEO2230",
-   "LGEO2130",
    "LGEO2110",
+   "LGEO2230",
    "LSST1001",
-   "LGEO2210"
+   "LGEO2140",
+   "LGEO2210",
+   "LGEO2130",
+   "LGEO2160"
   ],
   "field":"sciences",
   "themes":[
@@ -1124,7 +1376,7 @@
   ],
   "themes_scores":[
    1,
-   1,
+   4,
    1,
    3
   ]
@@ -1140,6 +1392,24 @@
    "LBRES2101A"
   ],
   "field":"applied sciences & engineering",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"GERM1BA",
+  "name":"Bachelier en langues et lettres modernes, orientation germaniques",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-germ1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
   "themes":[
    "environment"
   ],
@@ -1176,14 +1446,15 @@
   "campus":"Mons",
   "url":"https:\/\/uclouvain.be\/prog-2020-gesm1ba",
   "courses":[
-   "MCOMU1307"
+   "MCOMU1307",
+   "MSHUM1114"
   ],
   "field":"economy & management",
   "themes":[
    "environment"
   ],
   "themes_scores":[
-   1
+   2
   ]
  },
  {
@@ -1194,11 +1465,68 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-gest2m",
   "courses":[
-   "LSST1001"
+   "LSST1001",
+   "LLSMX2001"
   ],
   "field":"economy & management",
   "themes":[
+   "environment",
    "durability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ]
+ },
+ {
+  "id":"GRH2M",
+  "name":"Master [120] en gestion des ressources humaines",
+  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication (ESPO)",
+  "cycle":"master",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-grh2m",
+  "courses":[
+   "LECON2051"
+  ],
+  "field":"economy & management",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"HIST1BA",
+  "name":"Bachelier en histoire",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-hist1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"HORI1BA",
+  "name":"Bachelier en langues et lettres anciennes, orientation orientales",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-hori1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
@@ -1212,13 +1540,17 @@
   "campus":"Mons",
   "url":"https:\/\/uclouvain.be\/prog-2020-husm1ba",
   "courses":[
-   "MSHUM1228"
+   "MSHUM1114",
+   "MSHUM1228",
+   "MSPOL1346C"
   ],
   "field":"economy & management",
   "themes":[
+   "environment",
    "durability"
   ],
   "themes_scores":[
+   3,
    1
   ]
  },
@@ -1230,13 +1562,16 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-info2m",
   "courses":[
+   "LINGI2359",
    "LTECO2200"
   ],
   "field":"applied sciences & engineering",
   "themes":[
+   "environment",
    "climatology"
   ],
   "themes_scores":[
+   1,
    1
   ]
  },
@@ -1248,8 +1583,8 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-inge1ba",
   "courses":[
-   "LINGE1317",
-   "LALLE1532"
+   "LALLE1532",
+   "LINGE1317"
   ],
   "field":"economy & management",
   "themes":[
@@ -1267,11 +1602,36 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-inge2m",
   "courses":[
-   "LSST1001"
+   "LLSMS2397",
+   "LLSMS2099",
+   "LSST1001",
+   "LLSMS2098",
+   "LLSMS2398",
+   "LLSMX2001"
   ],
   "field":"economy & management",
   "themes":[
+   "environment",
    "durability"
+  ],
+  "themes_scores":[
+   1,
+   5
+  ]
+ },
+ {
+  "id":"INGM1BA",
+  "name":"Bachelier : ing\u00e9nieur de gestion",
+  "faculty":"Louvain School of Management (LSM)",
+  "cycle":"bac",
+  "campus":"Mons",
+  "url":"https:\/\/uclouvain.be\/prog-2020-ingm1ba",
+  "courses":[
+   "MSHUM1114"
+  ],
+  "field":"economy & management",
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
@@ -1292,12 +1652,50 @@
   "field":"applied sciences & engineering",
   "themes":[
    "energy",
+   "environment",
    "climatology",
    "durability"
   ],
   "themes_scores":[
    1,
    1,
+   1,
+   1
+  ]
+ },
+ {
+  "id":"KINE1BA",
+  "name":"Bachelier en kin\u00e9sith\u00e9rapie et r\u00e9adaptation",
+  "faculty":"Facult\u00e9 des sciences de la motricit\u00e9 (FSM)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-kine1ba",
+  "courses":[
+   "LKINE1038"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"LAFR1BA",
+  "name":"Bachelier en langues et lettres anciennes et modernes",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-lafr1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ]
  },
@@ -1359,6 +1757,24 @@
   ]
  },
  {
+  "id":"LOGO2M",
+  "name":"Master [120] en logop\u00e9die",
+  "faculty":"Facult\u00e9 de psychologie et sciences de l'\u00e9ducation (PSP)",
+  "cycle":"master",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-logo2m",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"MAP2M",
   "name":"Master [120] : ing\u00e9nieur civil en math\u00e9matiques appliqu\u00e9es",
   "faculty":"\u00c9cole polytechnique de Louvain (EPL)",
@@ -1384,10 +1800,10 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-math1ba",
   "courses":[
-   "LSST1001",
-   "LGEO1111",
    "LTECO2200",
-   "LBIO1110"
+   "LBIO1110",
+   "LSST1001",
+   "LGEO1111"
   ],
   "field":"sciences",
   "themes":[
@@ -1445,14 +1861,37 @@
   "campus":"Bruxelles Woluwe",
   "url":"https:\/\/uclouvain.be\/prog-2020-md1ba",
   "courses":[
-   "WMDS1210"
+   "WMDS1106",
+   "WMDS1210",
+   "WMDS1321"
   ],
   "field":"health",
   "themes":[
-   "energy"
+   "energy",
+   "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   2
+  ]
+ },
+ {
+  "id":"MD2M",
+  "name":"Master [180] en m\u00e9decine",
+  "faculty":"Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire (MEDE)",
+  "cycle":"master",
+  "campus":"Bruxelles Woluwe",
+  "url":"https:\/\/uclouvain.be\/prog-2020-md2m",
+  "courses":[
+   "WMDS2137",
+   "LTECO2101"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
   ]
  },
  {
@@ -1499,7 +1938,10 @@
   "campus":"Louvain-La-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-minbiol",
   "courses":[
+   "LBIO1311",
+   "LBIO1242",
    "LCHM1311",
+   "LBIO1281",
    "LBIO1117"
   ],
   "field":"sciences",
@@ -1508,7 +1950,7 @@
    "climatology"
   ],
   "themes_scores":[
-   1,
+   4,
    1
   ]
  },
@@ -1541,15 +1983,17 @@
   "campus":"Louvain-La-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-mincults",
   "courses":[
-   "LBIO1114",
+   "LBIR1230",
    "LBIR1336",
    "LBIR1328",
-   "LBIR1230",
+   "LBIO1114",
+   "LBIR1130",
    "LGEO1111",
    "LBIO1110",
+   "LBIO1217",
    "LINGE1317",
    "LBIO1117",
-   "LBIR1130"
+   "LBIO1317"
   ],
   "field":"sciences",
   "themes":[
@@ -1560,7 +2004,7 @@
   ],
   "themes_scores":[
    1,
-   5,
+   8,
    4,
    1
   ]
@@ -1574,8 +2018,8 @@
   "url":"https:\/\/uclouvain.be\/prog-2020-mindd",
   "courses":[
    "LBIR2050",
-   "LBIR1230A",
    "LSPED1221",
+   "LBIR1230A",
    "LDVLD1300"
   ],
   "field":"economy & management",
@@ -1585,7 +2029,7 @@
    "durability"
   ],
   "themes_scores":[
-   2,
+   3,
    2,
    3
   ]
@@ -1598,12 +2042,12 @@
   "campus":"Louvain-La-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-mindenv",
   "courses":[
-   "LSPED1221",
-   "LDVLP2325",
-   "LBIR1130A",
    "LGEO1332",
+   "LBIR1354",
+   "LBIR1130A",
+   "LDVLP2325",
    "LBIR1230A",
-   "LBIR1354"
+   "LSPED1221"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -1613,9 +2057,45 @@
    "society"
   ],
   "themes_scores":[
-   3,
+   5,
    5,
    2,
+   1
+  ]
+ },
+ {
+  "id":"MINFILO",
+  "name":"Mineure en philosophie",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"minor",
+  "campus":"Louvain-La-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-minfilo",
+  "courses":[
+   "LFILO1220"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"MINFOPA",
+  "name":"Mineure en sciences de l'\u00e9ducation",
+  "faculty":"Facult\u00e9 de psychologie et sciences de l'\u00e9ducation (PSP)",
+  "cycle":"minor",
+  "campus":"Louvain-La-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-minfopa",
+  "courses":[
+   "LFOPA2006"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ]
  },
@@ -1627,13 +2107,13 @@
   "campus":"Louvain-La-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-mingeog",
   "courses":[
-   "LGEO1343",
-   "LGEO1111",
-   "LBIR1328",
-   "LGEO1321",
    "LGEO1332",
-   "LPHY1365",
-   "LBIR1130"
+   "LGEO1343",
+   "LBIR1328",
+   "LBIR1130",
+   "LGEO1321",
+   "LGEO1111",
+   "LPHY1365"
   ],
   "field":"sciences",
   "themes":[
@@ -1680,7 +2160,7 @@
    "climatology"
   ],
   "themes_scores":[
-   1,
+   2,
    1
   ]
  },
@@ -1711,6 +2191,24 @@
   "url":"https:\/\/uclouvain.be\/prog-2020-mult2m",
   "courses":[
    "LCOMU2360"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"MUSI1BA",
+  "name":"Bachelier en histoire de l'art et arch\u00e9ologie, orientation musicologie",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-musi1ba",
+  "courses":[
+   "LTECO1210"
   ],
   "field":"social science",
   "themes":[
@@ -1767,9 +2265,9 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-phys2m",
   "courses":[
-   "LSST1001",
    "LPHYS2163",
-   "LPHYS2162"
+   "LPHYS2162",
+   "LSST1001"
   ],
   "field":"sciences",
   "themes":[
@@ -1791,9 +2289,9 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-phys2m1",
   "courses":[
-   "LSST1001",
    "LPHYS2163",
-   "LPHYS2162"
+   "LPHYS2162",
+   "LSST1001"
   ],
   "field":"sciences",
   "themes":[
@@ -1815,7 +2313,9 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-ppe1ba",
   "courses":[
-   "LDVLD1300"
+   "LFILO1220",
+   "LDVLD1300",
+   "LFILO1310"
   ],
   "field":"economy & management",
   "themes":[
@@ -1823,7 +2323,7 @@
    "durability"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ]
  },
@@ -1853,11 +2353,33 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-psp1ba",
   "courses":[
+   "LPSP1336",
+   "LTECO1210",
    "LPSP1001"
   ],
   "field":"social science",
   "themes":[
+   "environment",
    "durability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ]
+ },
+ {
+  "id":"ROGE1BA",
+  "name":"Bachelier en langues et lettres modernes, orientation g\u00e9n\u00e9rale",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-roge1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
@@ -1881,6 +2403,60 @@
   ],
   "themes_scores":[
    2,
+   1
+  ]
+ },
+ {
+  "id":"ROM1BA",
+  "name":"Bachelier en langues et lettres fran\u00e7aises et romanes, orientation g\u00e9n\u00e9rale",
+  "faculty":"Facult\u00e9 de philosophie, arts et lettres (FIAL)",
+  "cycle":"bac",
+  "campus":"Louvain-la-Neuve",
+  "url":"https:\/\/uclouvain.be\/prog-2020-rom1ba",
+  "courses":[
+   "LTECO1210"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"SBIM2M",
+  "name":"Master [120] en sciences biom\u00e9dicales",
+  "faculty":"Facult\u00e9 de pharmacie et sciences biom\u00e9dicales (FASB)",
+  "cycle":"master",
+  "campus":"Bruxelles Woluwe",
+  "url":"https:\/\/uclouvain.be\/prog-2020-sbim2m",
+  "courses":[
+   "LTECO2101"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"SBIM2M1",
+  "name":"Master [60] en sciences biom\u00e9dicales",
+  "faculty":"Facult\u00e9 de pharmacie et sciences biom\u00e9dicales (FASB)",
+  "cycle":"master",
+  "campus":"Bruxelles Woluwe",
+  "url":"https:\/\/uclouvain.be\/prog-2020-sbim2m1",
+  "courses":[
+   "LTECO2101"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ]
  },
@@ -1910,13 +2486,16 @@
   "campus":"Charleroi",
   "url":"https:\/\/uclouvain.be\/prog-2020-sinc1ba",
   "courses":[
-   "LSINC1131"
+   "LSINC1131",
+   "LSINC1233"
   ],
   "field":"applied sciences & engineering",
   "themes":[
-   "energy"
+   "energy",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ]
  },
@@ -1949,13 +2528,16 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-sinf2m",
   "courses":[
+   "LINGI2359",
    "LTECO2200"
   ],
   "field":"applied sciences & engineering",
   "themes":[
+   "environment",
    "climatology"
   ],
   "themes_scores":[
+   1,
    1
   ]
  },
@@ -1985,13 +2567,19 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-soca2m1",
   "courses":[
+   "LANTR2010",
+   "LANTR2100",
+   "LSOC2091",
+   "LANTR2055",
    "LENVI2006"
   ],
   "field":"economy & management",
   "themes":[
+   "environment",
    "durability"
   ],
   "themes_scores":[
+   4,
    1
   ]
  },
@@ -2061,13 +2649,16 @@
   "campus":"Mons",
   "url":"https:\/\/uclouvain.be\/prog-2020-spom1ba",
   "courses":[
+   "MSHUM1114",
    "MSHUM1228"
   ],
   "field":"economy & management",
   "themes":[
+   "environment",
    "durability"
   ],
   "themes_scores":[
+   2,
    1
   ]
  },
@@ -2153,8 +2744,9 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-urba2mc",
   "courses":[
-   "LURBA2950",
    "LDROP2061",
+   "LURBA2950",
+   "LICAR2303",
    "LDROP2063",
    "LURBA2940"
   ],
@@ -2165,7 +2757,7 @@
    "durability"
   ],
   "themes_scores":[
-   1,
+   2,
    1,
    2
   ]
@@ -2178,15 +2770,18 @@
   "campus":"Louvain-la-Neuve",
   "url":"https:\/\/uclouvain.be\/prog-2020-vete1ba",
   "courses":[
+   "LBIO1311",
    "LSST1001",
    "LVET1312"
   ],
   "field":"sciences",
   "themes":[
+   "environment",
    "climatology",
    "durability"
   ],
   "themes_scores":[
+   2,
    1,
    1
   ]

@@ -1,5 +1,41 @@
 [
  {
+  "id":"BPS1",
+  "name":"Bachelier en sciences pharmaceutiques (Mons)",
+  "faculty":"Facult\u00e9 de M\u00e9decine et de Pharmacie",
+  "cycle":"bac",
+  "campus":"Mons",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/ba-pharma\/",
+  "courses":[
+   "UM-B1-PHARMA-007-M"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"MED1",
+  "name":"Bachelier en m\u00e9decine (Mons)",
+  "faculty":"Facult\u00e9 de M\u00e9decine et de Pharmacie",
+  "cycle":"bac",
+  "campus":"Mons",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/ba-medeci\/",
+  "courses":[
+   "UM-B3-MEDECI-002-M"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"BAC1",
   "name":"Bachelier en architecture (Mons)",
   "faculty":"Facult\u00e9 d'Architecture et d'Urbanisme",
@@ -7,10 +43,10 @@
   "campus":"Mons",
   "url":"https:\/\/web.umons.ac.be\/fau\/fr\/formations\/ba-archit\/",
   "courses":[
-   "UA-B1-ARCHIT-016-M",
-   "UA-B1-ARCHIT-012-M",
    "UA-B2-ARCHIT-015-M",
-   "UA-B3-ARCHIT-013-M"
+   "UA-B1-ARCHIT-012-M",
+   "UA-B3-ARCHIT-013-M",
+   "UA-B1-ARCHIT-016-M"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -25,6 +61,28 @@
   ]
  },
  {
+  "id":"TIS1",
+  "name":"Master en transitions et innovations sociales (Mons)",
+  "faculty":"Ecole des Sciences Humaines et Sociales",
+  "cycle":"master",
+  "campus":"Mons",
+  "url":"https:\/\/web.umons.ac.be\/eshs\/fr\/formations\/m2-metiss\/",
+  "courses":[
+   "UH-M1-METISS-004-M",
+   "UH-M1-METISS-003-M",
+   "UH-M1-METISS-036-M",
+   "UH-M1-METISS-042-M",
+   "UH-M1-METISS-050-M"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   5
+  ]
+ },
+ {
   "id":"BWG1_S261",
   "name":"Bachelier  : ing\u00e9nieur de gestion (Mons)",
   "faculty":"Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion",
@@ -32,8 +90,8 @@
   "campus":"Mons",
   "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-iggest\/",
   "courses":[
-   "UW-B2-IGGEST-003-M",
-   "UW-B3-IGGEST-003-M"
+   "UW-B3-IGGEST-003-M",
+   "UW-B2-IGGEST-003-M"
   ],
   "field":"economy & management",
   "themes":[
@@ -59,6 +117,7 @@
   "courses":[
    "US-B3-SCBIOC-933-C",
    "US-B1-SCBIOC-017-C",
+   "US-B2-SCBIOC-929-C",
    "US-B1-SCBIOC-022-C"
   ],
   "field":"sciences",
@@ -68,7 +127,7 @@
   ],
   "themes_scores":[
    2,
-   1
+   2
   ]
  },
  {
@@ -79,6 +138,7 @@
   "campus":"Mons",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m1-biol60\/",
   "courses":[
+   "US-M1-BIOL60-019-M",
    "US-M1-BIOL60-021-M"
   ],
   "field":"sciences",
@@ -86,7 +146,7 @@
    "environment"
   ],
   "themes_scores":[
-   1
+   2
   ]
  },
  {
@@ -97,9 +157,14 @@
   "campus":"Mons",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/ba-scbiol\/",
   "courses":[
-   "US-B2-SCBIOL-007-M",
+   "US-B3-SCBIOL-005-M",
    "US-B3-SCBIOL-004-M",
-   "US-B3-SCBIOL-008-M"
+   "US-B3-SCBIOL-008-M",
+   "US-B3-SCBIOL-014-M",
+   "US-B1-SCBIOL-004-M",
+   "US-B2-SCBIOL-007-M",
+   "US-B3-SCBIOL-010-M",
+   "US-B2-SCBIOL-008-M"
   ],
   "field":"sciences",
   "themes":[
@@ -108,7 +173,61 @@
   ],
   "themes_scores":[
    1,
-   2
+   8
+  ]
+ },
+ {
+  "id":"BPL1",
+  "name":"Bachelier en sciences psychologiques et de l'\u00e9ducation, orientation logop\u00e9die (Mons)",
+  "faculty":"Facult\u00e9 de Psychologie et des Sciences de l'Education",
+  "cycle":"bac",
+  "campus":"Mons",
+  "url":"https:\/\/web.umons.ac.be\/fpse\/fr\/formations\/ba-balogo\/",
+  "courses":[
+   "UP-B2-BALOGO-005-M"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"BEP1",
+  "name":"Bachelier en sciences psychologiques et de l'\u00e9ducation, orientation g\u00e9n\u00e9rale (Charleroi)",
+  "faculty":"Facult\u00e9 de Psychologie et des Sciences de l'Education",
+  "cycle":"bac",
+  "campus":"Charleroi",
+  "url":"https:\/\/web.umons.ac.be\/fpse\/fr\/formations\/ba-bagene-c\/",
+  "courses":[
+   "UP-B2-BAGENE-005-C"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
+  "id":"PAA1",
+  "name":"Bachelier en sciences psychologiques et de l'\u00e9ducation, orientation g\u00e9n\u00e9rale (Mons)",
+  "faculty":"Facult\u00e9 de Psychologie et des Sciences de l'Education",
+  "cycle":"bac",
+  "campus":"Mons",
+  "url":"https:\/\/web.umons.ac.be\/fpse\/fr\/formations\/ba-bagene\/",
+  "courses":[
+   "UP-B2-BAGENE-005-M"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
   ]
  },
  {
@@ -119,8 +238,8 @@
   "campus":"Mons",
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/ba-ircivi\/",
   "courses":[
-   "UI-B1-IRCIVI-009-M",
-   "UI-B3-IRCIVI-004-M"
+   "UI-B3-IRCIVI-004-M",
+   "UI-B1-IRCIVI-009-M"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -152,6 +271,24 @@
   ],
   "themes_scores":[
    1,
+   1
+  ]
+ },
+ {
+  "id":"BBS1",
+  "name":"Bachelier en sciences biom\u00e9dicales (Mons)",
+  "faculty":"Facult\u00e9 de M\u00e9decine et de Pharmacie",
+  "cycle":"bac",
+  "campus":"Mons",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/ba-biomed\/",
+  "courses":[
+   "UM-B3-BIOMED-002-M"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ]
  }

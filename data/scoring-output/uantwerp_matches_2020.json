@@ -36,14 +36,6 @@
                 "at  voor nieuwbouw  energiegebruik van gebouwen wordt "
             ]
         },
-        "1203TEWWET": {
-            "wind(?:turbines|molens)": [
-                "scheepsschroeven en windturbines uitgelegd  tot slot"
-            ],
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                "weerstandsgedrag en energieverbruik  via de  impulswet "
-            ]
-        },
         "1331FTITSL": {
             "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
                 "of ownership en het energieverbruik   be3  em-k4    3  "
@@ -52,11 +44,6 @@
         "1715FTIKVM": {
             "energy (?:consumption|use|efficiency|vector|assessment)": [
                 "urship and rational energy consumption  laws concerning qu"
-            ]
-        },
-        "2001WETLSN": {
-            "energy (?:consumption|use|efficiency|vector|assessment)": [
-                "r networks  such as energy efficiency  performance  compl"
             ]
         },
         "2001WETPSS": {
@@ -131,11 +118,6 @@
                 "at  voor nieuwbouw  energiegebruik van gebouwen wordt "
             ]
         },
-        "1203TEWWET": {
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                "weerstandsgedrag en energieverbruik  via de  impulswet "
-            ]
-        },
         "1331FTITSL": {
             "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
                 "of ownership en het energieverbruik   be3  em-k4    3  "
@@ -159,222 +141,330 @@
     },
     "environment": {
         "1001CPGVKB": {
-            "eco(?:logisch|systeem)": [
-                "ver de economische  ecologische  sociale en govern",
-                "s - imdo       - de ecologische pijler van duurzaa"
+            "[^a-z]ecolo[^ ]+": [
+                "over de economische  ecologische  sociale en governa",
+                "ts - imdo       - de ecologische pijler van duurzaam"
             ]
         },
         "1001IOBGJU": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "y  colonialism and decolonization  so that their visi"
             ]
         },
         "1001WETALP": {
-            "eco(?:logisch|systeem)": [
-                "egetatiezones en de ecologische factoren die deze "
+            "[^a-z]ecolo[^ ]+": [
+                "vegetatiezones en de ecologische factoren die deze z"
+            ]
+        },
+        "1001WETBIA": {
+            "[^a-z]ecolo[^ ]+": [
+                "r behandeling van de ecologie en het sociaal gedr"
             ]
         },
         "1001WETBOP": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 " onderdelen van het ecosysteem aarde  geosfeer  bi"
             ]
         },
         "1001WETBOS": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 "egrijpt het bos als ecosysteem  en kan ecologische",
-                " ecosysteem  en kan ecologische processen in bosse",
                 "rven in het bos als ecosysteem  in de bosdynamiek "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "s ecosysteem  en kan ecologische processen in bossen"
+            ]
+        },
+        "1001WETCEC": {
+            "[^a-z]ecolo[^ ]+": [
+                "rijven wat culturele ecologie inhoudt   hij/zij k",
+                " biologie  culturele ecologie onderzoekt de wisse",
+                "ieu m a w  culturele ecologie bestudeert hoe het "
+            ]
+        },
+        "1001WETDIE": {
+            "[^a-z]ecolo[^ ]+": [
+                "ipes van evolutie en ecologie en het functioneren",
+                "ipes van evolutie en ecologie en het functioneren"
             ]
         },
         "1001WETDON": {
-            "eco(?:logisch|systeem)": [
-                "ge aandacht voor de ecologische  de economische en"
+            "[^a-z]ecolo[^ ]+": [
+                "ige aandacht voor de ecologische  de economische en "
             ]
         },
         "1001WETECO": {
-            "eco(?:logisch|systeem)": [
-                "tionele eenheden in ecologische systemen defini\u00ebre"
+            "[^a-z]ecolo[^ ]+": [
+                "ctionele eenheden in ecologische systemen defini\u00ebren",
+                "rte situering van de ecologie  vervolgens komen e",
+                "opleidingsonderdeel 'ecologie i' gevolgd wordt do",
+                " gevolgd wordt door 'ecologie ii' in het tweede d",
+                "ige inleiding tot de ecologie"
             ]
         },
         "1001WETESB": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 "sis vormen voor het ecosysteembeheer    de student",
                 "gaan op het concept ecosysteembeheer"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "secologie  vegetatie-ecologie  etc    vervolgens "
             ]
         },
         "1001WETGLB": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 "componenten van een ecosysteem  lucht  water  bode"
             ]
         },
         "1001WETLAB": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 " soorten binnen een ecosysteem  in dit onderzoeksp"
             ]
         },
         "1001WETMAR": {
-            "eco(?:logisch|systeem)": [
-                "legt de link met de ecologische vindplaats    hij/"
+            "[^a-z]ecolo[^ ]+": [
+                " legt de link met de ecologische vindplaats    hij/z"
             ]
         },
         "1001WETPAR": {
-            "eco(?:logisch|systeem)": [
-                "ens en begrijpt hoe ecologische omstandigheden een"
+            "[^a-z]ecolo[^ ]+": [
+                "mens en begrijpt hoe ecologische omstandigheden een "
             ]
         },
         "1001WETPLA": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 "n organismen in het ecosysteem    de student heeft"
             ]
         },
         "1001WETTYP": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 "en aantal belgische ecosysteemtypes  tijdens een a",
                 " aantal belangrijke ecosysteemtypes besproken  hoe"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "waarin verschilt hun ecologie van die van andere "
             ]
         },
         "1003FBDBMW": {
-            "eco(?:logisch|systeem)": [
-                "de evolutionaire en ecologische ontstaansgeschiede"
-            ]
-        },
-        "1003GENGE2": {
-            "eco(?:logisch|systeem)": [
-                " abdomen en het gynaecologisch en borst onderzoek ",
-                "n  het klinisch gynaecologisch onderzoek en hechti"
+            "[^a-z]ecolo[^ ]+": [
+                " de evolutionaire en ecologische ontstaansgeschieden"
             ]
         },
         "1003WETECO": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 " nutri\u00ebntencycli op ecosysteemniveau   op het scha",
-                "tionele eenheden in ecologische systemen defini\u00ebre",
                 "halen  gemeenschap  ecosysteem  landschap  aarde  ",
                 " nutri\u00ebntencycli op ecosysteemniveau  vervolgens  "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ctionele eenheden in ecologische systemen defini\u00ebren",
+                "at is de link tussen ecologie en energie  link na"
             ]
         },
         "1005WETECO": {
-            "eco(?:logisch|systeem)": [
-                "tionele eenheden in ecologische systemen defini\u00ebre"
+            "[^a-z]ecolo[^ ]+": [
+                "ctionele eenheden in ecologische systemen defini\u00ebren",
+                "gemeen inzicht in de ecologie en je kent en begri",
+                "n domeinen binnen de ecologie  de wederzijdse rel",
+                "n de indeling van de ecologie kort aan bod  vervo",
+                "isatieniveau's in de ecologie  op het niveau van ",
+                "isatieniveau's in de ecologie  ecologie is de stu",
+                "au's in de ecologie  ecologie is de studie van al"
             ]
         },
         "1006WETECO": {
-            "eco(?:logisch|systeem)": [
-                "eenschappen tot het ecosysteem  je kan ze  modelma",
-                "in de manier waarop ecologische processen populati",
-                "angrijke specifieke ecologische uitdagingen en mil",
-                "ch reflecteren over ecologische stellingen op basi",
-                "eer je ook kritisch ecologische stellingen en prob"
+            "ecosysteems?": [
+                "eenschappen tot het ecosysteem  je kan ze  modelma"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ste theorie\u00ebn van de ecologie op verschillende ni",
+                " in de manier waarop ecologische processen populatie",
+                "langrijke specifieke ecologische uitdagingen en mili",
+                "sch reflecteren over ecologische stellingen op basis",
+                "geschiedenis van de  ecologie  volgende onderwerp",
+                "ndien bekijken we de ecologie ook vanuit de prakt",
+                "milieuproblemen    - ecologie in de praktijk  kli",
+                "imaatverandering   - ecologie in de praktijk  bio",
+                "ming en \u2013herstel   - ecologie in de praktijk  men",
+                "e groei &amp  urbane ecologie       tot slot leer",
+                "leer je ook kritisch ecologische stellingen en probl"
             ]
         },
         "1010FLWGES": {
-            "eco(?:logisch|systeem)": [
-                "misch  cultureel en ecologisch  chronologisch kade",
-                "misch  cultureel en ecologisch vlak in de duizendj"
+            "[^a-z]ecolo[^ ]+": [
+                "omisch  cultureel en ecologisch  chronologisch kade",
+                "omisch  cultureel en ecologisch vlak in de duizendj"
             ]
         },
         "1013FLWGES": {
-            "eco(?:logisch|systeem)": [
-                "hillende sociale en ecologische processen anderzij"
+            "[^a-z]ecolo[^ ]+": [
+                "vier grote delen  1  ecologie  2  demografie en e",
+                "chillende sociale en ecologische processen anderzijd"
             ]
         },
         "1014FLWGES": {
-            "eco(?:logisch|systeem)": [
-                "n van de wereld  2  ecologisch  de relatie tussen "
-            ]
-        },
-        "1020GENGE2": {
-            "eco(?:logisch|systeem)": [
-                " intimiteit bij gynaecologische oncologische aando",
-                "linische lijn   gynaecologisch onderzoek en borst "
+            "[^a-z]ecolo[^ ]+": [
+                "dbouw  de impact van ecologie en geografie  ca  5",
+                "en van de wereld  2  ecologisch  de relatie tussen "
             ]
         },
         "1021FOWIAR": {
-            "eco(?:logisch|systeem)": [
-                "  de student kan de ecologische impact van een pro",
-                "diverse tools om de ecologische impact van een pro"
+            "[^a-z]ecolo[^ ]+": [
+                "   de student kan de ecologische impact van een prod",
+                " diverse tools om de ecologische impact van een prod"
+            ]
+        },
+        "1023FTIBPC": {
+            "ecolo[^ ]+": [
+                "my  social context  ecology  ethics and safety "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "omy  social context  ecology  ethics and safety "
+            ]
+        },
+        "1024FTIACV": {
+            "[^a-z]ecolo[^ ]+": [
+                "voor duurzaamheid en ecologie  bc1 in dit opleidi"
             ]
         },
         "1027FTIPRO": {
-            "eco(?:logisch|systeem)": [
-                "f proces vanuit een ecologisch perspectief observe",
-                " bedenken voor een  ecologisch ontwerpprobleem of ",
-                "erde ergonomisch en ecologisch onderzoek schriftel",
-                "en en methoden voor ecologisch ontwerpen en intera",
-                "asis daarvan worden ecologische verbeteringen voor"
+            "[^a-z]ecolo[^ ]+": [
+                "of proces vanuit een ecologisch perspectief observe",
+                "n bedenken voor een  ecologisch ontwerpprobleem of ",
+                "oerde ergonomisch en ecologisch onderzoek schriftel",
+                "ken en methoden voor ecologisch ontwerpen en intera",
+                "basis daarvan worden ecologische verbeteringen voorg"
+            ]
+        },
+        "1028FTIPRO": {
+            "[^a-z]ecolo[^ ]+": [
+                "man centered design  ecologisch  - pakket van eisen"
             ]
         },
         "1030FOWPOW": {
-            "eco(?:logisch|systeem)": [
-                "studenten kunnen de ecologische impact van een ont"
-            ]
-        },
-        "1032GENGE2": {
-            "eco(?:logisch|systeem)": [
-                "e kraambed      gynaecologische infecties      men"
+            "[^a-z]ecolo[^ ]+": [
+                " studenten kunnen de ecologische impact van een ontw"
             ]
         },
         "1036FBDFAR": {
-            "eco(?:logisch|systeem)": [
-                " en hun functie  de ecologische betekenis van plan"
+            "[^a-z]ecolo[^ ]+": [
+                "n en hun functie  de ecologische betekenis van plant"
             ]
         },
         "1038FOWPOW": {
-            "eco(?:logisch|systeem)": [
-                "studenten kunnen de ecologische aspecten van een b",
-                "studenten kunnen de ecologische impact van een ont",
-                "atschappelijk en/of ecologisch probleem waarvoor n",
-                "eem waarvoor na een ecologische analyse en ideegen",
-                "se en ideegeneratie ecologische oplossingen en pro"
+            "[^a-z]ecolo[^ ]+": [
+                " studenten kunnen de ecologische aspecten van een be",
+                " studenten kunnen de ecologische impact van een ontw",
+                "aatschappelijk en/of ecologisch probleem waarvoor n",
+                "leem waarvoor na een ecologische analyse en ideegene",
+                "yse en ideegeneratie ecologische oplossingen en prod"
+            ]
+        },
+        "1040FOWPOW": {
+            "[^a-z]ecolo[^ ]+": [
+                "nizatie   menselijke ecologie  en sociale verande"
             ]
         },
         "1044FBDDIE": {
-            "eco(?:logisch|systeem)": [
-                "de evolutionaire en ecologische ontstaansgeschiede"
+            "[^a-z]ecolo[^ ]+": [
+                " de evolutionaire en ecologische ontstaansgeschieden"
             ]
         },
         "1050FLWGES": {
-            "eco(?:logisch|systeem)": [
-                "rote themata uit de ecologische geschiedenis  elk ",
-                "p in het heden  de \u201cecologische agenda\u201d van het og",
-                "perkingen binnen de ecologische geschiedenis zowel"
+            "[^a-z]ecolo[^ ]+": [
+                "grote themata uit de ecologische geschiedenis  elk t",
+                "ap in het heden  de \u201cecologische agenda\u201d van het oge",
+                "e tussen economie en ecologie  in elk college wor",
+                "eperkingen binnen de ecologische geschiedenis zowel "
             ]
         },
         "1058FBDDIE": {
-            "eco(?:logisch|systeem)": [
-                "misch  ethologisch  ecologisch en ergonomisch kade"
+            "[^a-z]ecolo[^ ]+": [
+                "omisch  ethologisch  ecologisch en ergonomisch kade"
             ]
         },
         "1065FOWIAR": {
-            "eco(?:logisch|systeem)": [
-                "erdedigen    je kan ecologische en duurzame aspect"
+            "[^a-z]ecolo[^ ]+": [
+                "verdedigen    je kan ecologische en duurzame aspecte",
+                "k op duurzaamheid en ecologie  aan de hand van ee"
             ]
         },
-        "1234GENRVK": {
-            "eco(?:logisch|systeem)": [
-                "gie van het uro-gynaecologische stelsel      *basi"
+        "1080FTIBPB": {
+            "[^a-z]ecolo[^ ]+": [
+                "chappelijke context  ecologie  ethiek en veilighe"
+            ]
+        },
+        "1081FLWGES": {
+            "[^a-z]ecolo[^ ]+": [
+                "fie en urbanisering  ecologische geschiedenis en ges"
+            ]
+        },
+        "1081FTIBAP": {
+            "[^a-z]ecolo[^ ]+": [
+                "chappelijke context  ecologie  ethiek en veilighe"
+            ]
+        },
+        "1083FTIBAP": {
+            "[^a-z]ecolo[^ ]+": [
+                "chappelijke context  ecologie  ethiek en veilighe"
+            ]
+        },
+        "1090FTIBCP": {
+            "ecolo[^ ]+": [
+                "my  social context  ecology  ethics and safety "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "omy  social context  ecology  ethics and safety "
+            ]
+        },
+        "1092FTIBCP": {
+            "ecolo[^ ]+": [
+                "my  social context  ecology  ethics and safety "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "omy  social context  ecology  ethics and safety "
+            ]
+        },
+        "1118FLWTLT": {
+            "ecolo[^ ]+": [
+                "mically vulnerable  ecologically challenged and ethn"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "omically vulnerable  ecologically challenged and ethn"
             ]
         },
         "1300PSWSDT": {
-            "eco(?:logisch|systeem)": [
-                " student kan sociaalecologische vraagstukken vanui",
-                "arbij worden sociaalecologische vraagstukken vanui",
-                "od komen zijn bijv  ecologische gedragsverandering"
+            "[^a-z]ecolo[^ ]+": [
+                "bod komen zijn bijv  ecologische gedragsverandering "
             ]
         },
         "1300PSWSIQ": {
-            "eco(?:logisch|systeem)": [
-                "de klimaatcrisis en ecologische voetafdruk  ongeli",
-                " ongelijkheid en de ecologische kwestie  stijn oos"
+            "[^a-z]ecolo[^ ]+": [
+                " de klimaatcrisis en ecologische voetafdruk  ongelij",
+                "  ongelijkheid en de ecologische kwestie  stijn oost"
+            ]
+        },
+        "1322FTIREG": {
+            "[^a-z]ecolo[^ ]+": [
+                "chappelijke context  ecologie  ethiek en veilighe"
             ]
         },
         "1331FTITSL": {
-            "eco(?:logisch|systeem)": [
-                "che  economische en ecologische aspecten   be4  em"
+            "[^a-z]ecolo[^ ]+": [
+                "sche  economische en ecologische aspecten   be4  em-"
+            ]
+        },
+        "1333FTIREG": {
+            "[^a-z]ecolo[^ ]+": [
+                "chappelijke context  ecologie  ethiek en veilighe"
             ]
         },
         "2000WETMRM": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "th the economic and ecologic impact of the diffe"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ith the economic and ecologic impact of the diffe"
             ]
         },
         "2000WETMSR": {
@@ -383,25 +473,41 @@
             ]
         },
         "2001WETAQU": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "nowledge of aquatic ecology  they have an overv"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "knowledge of aquatic ecology  they have an overv"
             ]
         },
         "2001WETBEC": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "dels in behavioural ecology  see course content",
                 "pers on behavioural ecology  this course addres",
                 "ches in behavioural ecology by means of formal ",
                 "tion to behavioural ecology with an overview of",
                 "ods and behavioural ecology     optimal foragin"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "odels in behavioural ecology  see course content",
+                "apers on behavioural ecology  this course addres",
+                "aches in behavioural ecology by means of formal ",
+                "ction to behavioural ecology with an overview of",
+                "hods and behavioural ecology     optimal foragin"
             ]
         },
         "2001WETCAS": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "of natural capital  ecological resilience  special",
                 "utilization space\" \"ecological footprints\"   forma",
                 "cosystem services   ecological valuation  ecologic",
                 "ological valuation  ecological footprint  ecosyste"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                " of natural capital  ecological resilience  special",
+                " utilization space\" \"ecological footprints\"   forma",
+                "ecosystem services   ecological valuation  ecologic",
+                "cological valuation  ecological footprint  ecosyste"
             ]
         },
         "2001WETCLQ": {
@@ -410,192 +516,317 @@
             ]
         },
         "2001WETECI": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "ents understand the ecological mechanisms that can",
                 "s and models of the ecology of infections in na"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "dents understand the ecological mechanisms that can",
+                "ts and models of the ecology of infections in na"
             ]
         },
         "2001WETECM": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
+                " know the basics of ecological modelling   differe",
                 "ok  introduction to ecological modelling by j\u00f6rgen",
                 "udents the basis of ecological modelling using dif"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "s know the basics of ecological modelling   differe",
+                "ook  introduction to ecological modelling by j\u00f6rgen",
+                "tudents the basis of ecological modelling using dif"
             ]
         },
         "2001WETEIL": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "ad knowledge of the ecology and evolution of in",
                 "to our knowledge of ecology and evolution in ge",
                 " the development of ecological and evolutionary th",
                 "been called natural ecological and evolutionary la",
                 "urse introduces the ecological and evolutionary tr"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "oad knowledge of the ecology and evolution of in",
+                " to our knowledge of ecology and evolution in ge",
+                "n the development of ecological and evolutionary th",
+                " been called natural ecological and evolutionary la",
+                "ourse introduces the ecological and evolutionary tr"
             ]
         },
         "2001WETENT": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "al  ethological and ecological diversity of insect",
                 "iology  behavioural ecology  evolution     with"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "cal  ethological and ecological diversity of insect",
+                "siology  behavioural ecology  evolution     with"
+            ]
+        },
+        "2001WETEST": {
+            "ecolo[^ ]+": [
+                "et insight into the ecological processes and struc"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "get insight into the ecological processes and struc"
             ]
         },
         "2001WETGAM": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "sed on economic and ecologic aspects  the studen"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ased on economic and ecologic aspects  the studen"
             ]
         },
         "2001WETLEC": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
+                "wledge in landscape ecology  understanding how ",
+                "to make a landscape ecological study  the course c",
                 "basics of landscape ecology  this is followed b",
                 "n a final landscape ecological description of the "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "owledge in landscape ecology  understanding how ",
+                " to make a landscape ecological study  the course c",
+                " basics of landscape ecology  this is followed b",
+                "in a final landscape ecological description of the "
             ]
         },
         "2001WETMAM": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "ogically as well as ecologically    he/she can recog"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "logically as well as ecologically    he/she can recog"
             ]
         },
         "2001WETMEC": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
+                "ethods in microbial ecology  including next gen",
+                "ethods in microbial ecology  including next gen",
+                "pecialist microbial ecology articles from the r",
                 "rature in microbial ecology  to sharpen student"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "methods in microbial ecology  including next gen",
+                "methods in microbial ecology  including next gen",
+                "specialist microbial ecology articles from the r",
+                "erature in microbial ecology  to sharpen student"
             ]
         },
         "2001WETMOB": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "ology and ecosystem ecology   you are able to s",
                 "erimental design in ecology  ecology is concern",
                 " design in ecology  ecology is concerned with  ",
                 "amental problems in ecology  examples    how ca"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "iology and ecosystem ecology   you are able to s",
+                "perimental design in ecology  ecology is concern",
+                "l design in ecology  ecology is concerned with  ",
+                "damental problems in ecology  examples    how ca"
             ]
         },
         "2001WETORN": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "siology  behaviour  ecology     they become fam"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ysiology  behaviour  ecology     they become fam"
             ]
         },
         "2001WETPAL": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 " discipline of paleoecologyaims to reconstructthe e",
                 "miliar withthepaleo-ecological methodology the res",
                 "uiredto bringapaleo-ecological study to a successf"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "amiliar withthepaleo-ecological methodology the res",
+                "quiredto bringapaleo-ecological study to a successf"
             ]
         },
         "2001WETREC": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 " an overview of the ecological background and soci",
                 "text of restoration ecology  then problems and ",
                 "a restoration tool  ecological restoration in the "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "h an overview of the ecological background and soci",
+                "ntext of restoration ecology  then problems and ",
+                " a restoration tool  ecological restoration in the "
             ]
         },
         "2001WETSYS": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 " this is a field in ecology which was not intro",
                 "iple can be used in ecology to explain the dyna"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "  this is a field in ecology which was not intro",
+                "ciple can be used in ecology to explain the dyna"
             ]
         },
         "2001WETTGD": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "our and behavioural ecology to conservation bio",
                 " `urban behavioural ecology'   this is not an ex"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "iour and behavioural ecology to conservation bio",
+                "  `urban behavioural ecology'   this is not an ex"
+            ]
+        },
+        "2001WETTPO": {
+            "ecolo[^ ]+": [
+                "dels in behavioural ecology   he/she understand"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "odels in behavioural ecology   he/she understand"
             ]
         },
         "2002FOWERF": {
-            "eco(?:logisch|systeem)": [
-                "zorg  erfgoed &amp  ecologische duurzaamheid  part"
-            ]
-        },
-        "2003GENGE1": {
-            "eco(?:logisch|systeem)": [
-                "me onderzoeken  gynaecologisch  andrologisch en re",
-                "n een infuus en gynaecologische vaardigheden   com"
+            "[^a-z]ecolo[^ ]+": [
+                "dzorg  erfgoed &amp  ecologische duurzaamheid  parti"
             ]
         },
         "2008FBDBMW": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "veral other topics  ecology  diagnostics  epide"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "everal other topics  ecology  diagnostics  epide"
+            ]
+        },
+        "2008FBDFAZ": {
+            "[^a-z]ecolo[^ ]+": [
+                "nomie  kostprijs  en ecologie  selectie van resis"
             ]
         },
         "2009FBDBMW": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
+                "nderstanding of the ecology of infectious disea",
+                "us diseases and how ecological dynamics are import",
                 " general population ecology      2          par",
                 "2          parasite ecology      3          geo"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "understanding of the ecology of infectious disea",
+                "ous diseases and how ecological dynamics are import",
+                "  general population ecology      2          par",
+                " 2          parasite ecology      3          geo"
             ]
         },
         "2021FLWTHF": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "ral dramaturgy  and ecological dramaturgy  associa"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "iral dramaturgy  and ecological dramaturgy  associa"
+            ]
+        },
+        "2021FOWERF": {
+            "[^a-z]ecolo[^ ]+": [
+                "schaps  historische  ecologie  de landschapstypol"
             ]
         },
         "2023FBDBMW": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 " verstoring van het ecosysteem op de mens- global "
             ]
         },
+        "2024FOWSRP": {
+            "[^a-z]ecolo[^ ]+": [
+                "ijke autocorrelatie  ecological fallacy  atomistic "
+            ]
+        },
         "2029TEWMHI": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
+                "nduct together with ecological and economic princi",
                 "without ethical and ecological boundaries being pe",
                 "ess the ethical and ecological issues that a busin"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "onduct together with ecological and economic princi",
+                " without ethical and ecological boundaries being pe",
+                "ress the ethical and ecological issues that a busin"
             ]
         },
         "2030FOWSRP": {
-            "eco(?:logisch|systeem)": [
-                "ls economisch  als  ecologisch  heeft gevorderd in"
+            "[^a-z]ecolo[^ ]+": [
+                "als economisch  als  ecologisch  heeft gevorderd in"
             ]
         },
         "2031FOWERF": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "and controversies  decolonisation  black lives matter"
             ]
         },
         "2032FOWPOW": {
-            "eco(?:logisch|systeem)": [
-                "m b t  economische  ecologische  sociale   culture",
-                "ische  economische  ecologisch en/of vormgerelatee"
+            "[^a-z]ecolo[^ ]+": [
+                " m b t  economische  ecologische  sociale   culturel",
+                "nische  economische  ecologisch en/of vormgerelatee"
             ]
         },
         "2041FOWPOW": {
-            "eco(?:logisch|systeem)": [
-                "m b t  economische  ecologische  sociale   culture"
+            "[^a-z]ecolo[^ ]+": [
+                " m b t  economische  ecologische  sociale   culturel"
             ]
         },
         "2041GENEP1": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "scribe the valuable ecological dynamics important "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "escribe the valuable ecological dynamics important "
             ]
         },
         "2042FOWPOW": {
-            "eco(?:logisch|systeem)": [
-                "m b t  economische  ecologische  sociale   culture"
+            "[^a-z]ecolo[^ ]+": [
+                " m b t  economische  ecologische  sociale   culturel"
             ]
         },
         "2043FOWPOW": {
-            "eco(?:logisch|systeem)": [
-                "ische  economische  ecologisch en/of vormgerelatee"
+            "[^a-z]ecolo[^ ]+": [
+                "nische  economische  ecologisch en/of vormgerelatee"
             ]
         },
         "2045FOWPOW": {
-            "eco(?:logisch|systeem)": [
-                "ign\u2019 een sociaal en ecologisch gunstige gedragsver"
+            "[^a-z]ecolo[^ ]+": [
+                "sign\u2019 een sociaal en ecologisch gunstige gedragsver"
             ]
         },
         "2048FOWPOW": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "regard to economic  ecological  social  cultural  "
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                " regard to economic  ecological  social  cultural  "
             ]
         },
         "2101MDOBSF": {
-            "eco(?:logisch|systeem)": [
-                "en   biologische en ecologische gevolgen van bodem"
+            "[^a-z]ecolo[^ ]+": [
+                "len   biologische en ecologische gevolgen van bodemv",
+                "ondheid  materialen  ecologie   trends in emissie"
             ]
         },
         "2102MDODOW": {
-            "eco(?:logisch|systeem)": [
-                "te meten  zoals de 'ecologische voetafdruk'  het '"
+            "[^a-z]ecolo[^ ]+": [
+                " te meten  zoals de 'ecologische voetafdruk'  het 'a"
             ]
         },
         "2103MDOESB": {
             "milieu(?:beheer|management|beleid)": [
                 "tal hoofdlijnen van milieubeheer  vervolgens de vers"
             ],
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 "obale situering van ecosysteembeheer"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                " migratie  vegetatie-ecologie etc    in het laats"
             ]
         },
         "2106MDOMBL": {
@@ -617,8 +848,8 @@
                 "lieurecht  europees milieubeleid en duurzame ontwikk",
                 " antwerpen  het vak milieubeleid vertegenwoordigt 3 "
             ],
-            "eco(?:logisch|systeem)": [
-                "enzen aan de groei  ecologische modernisering en d"
+            "[^a-z]ecolo[^ ]+": [
+                "renzen aan de groei  ecologische modernisering en du"
             ]
         },
         "2107MDOMEC": {
@@ -636,9 +867,9 @@
             ]
         },
         "2110FTIDBO": {
-            "eco(?:logisch|systeem)": [
-                "e maatschappelijke  ecologische en economische imp",
-                "n  de deelaspecten  ecologisch  financieel en soci"
+            "[^a-z]ecolo[^ ]+": [
+                "de maatschappelijke  ecologische en economische impa",
+                "en  de deelaspecten  ecologisch  financieel en soci"
             ]
         },
         "2116TEWKOO": {
@@ -646,21 +877,48 @@
                 " het vervoerbeleid  milieubeleid en ruimtelijke orde"
             ]
         },
+        "2134TEWKOO": {
+            "ecolo[^ ]+": [
+                "g   sustainability  ecological awareness  etc   an"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                " g   sustainability  ecological awareness  etc   an"
+            ]
+        },
+        "2201WETENB": {
+            "ecolo[^ ]+": [
+                "s are able to solve ecological problems in these d"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ts are able to solve ecological problems in these d"
+            ]
+        },
         "2201WETERG": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "ly assumed and that ecological and evolutionary ti"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "sly assumed and that ecological and evolutionary ti"
             ]
         },
         "2201WETESE": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 " different steps in ecological risk assessment  it",
                 "he environment      ecological engineering for imp",
                 "ity      the use of ecological engineering  i e  t"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "e different steps in ecological risk assessment  it",
+                "the environment      ecological engineering for imp",
+                "lity      the use of ecological engineering  i e  t"
             ]
         },
         "2201WETMEF": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "al cycling  and the ecological interactions  stude"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "cal cycling  and the ecological interactions  stude"
             ]
         },
         "2204MDOEMB": {
@@ -679,7 +937,7 @@
             ]
         },
         "2206MDOGCH": {
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
                 "eranderingen in het ecosysteem aarde  zowel in het"
             ]
         },
@@ -688,13 +946,23 @@
                 "tersystemen  ook in milieubeleid wordt waterbeleid s",
                 "e samenhang met het milieubeheer  de ruimtelijke ord"
             ],
-            "eco(?:logisch|systeem)": [
+            "ecosysteems?": [
+                "n wetenschappelijke ecosysteemkennis  beleidsrelev"
+            ],
+            "[^a-z]ecolo[^ ]+": [
                 "vanuit ecologisch functioneren een on",
-                "unnen communiceren  ecologische doelstellingen kun",
-                " maatschappelijk en ecologisch kunnen optimalisere",
-                "linair benaderd     ecologisch functioneren van wa",
-                "n wetenschappelijke ecosysteemkennis  beleidsrelev",
-                "ning houdend met de ecologische doelstellingen die"
+                "kunnen communiceren  ecologische doelstellingen kunn",
+                "r maatschappelijk en ecologisch kunnen optimalisere",
+                "plinair benaderd     ecologisch functioneren van wa",
+                "ening houdend met de ecologische doelstellingen die "
+            ]
+        },
+        "2210MDOMTC": {
+            "ecolo[^ ]+": [
+                "gical  economic and ecological aspects  a realisti"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ogical  economic and ecological aspects  a realisti"
             ]
         },
         "2212MDOMMT": {
@@ -703,38 +971,112 @@
                 "deelaspcten van het milieumanagement van concrete bedrij"
             ]
         },
+        "2250FSWQMS": {
+            "environmental (?:management|maintenance)": [
+                "ard iso en 9004     environmental management standard iso 14001 "
+            ]
+        },
         "2300RECMIL": {
             "milieu(?:beheer|management|beleid)": [
                 "cht en het algemeen milieubeleid  milieu-effectrappo"
             ]
         },
         "2301FSWGUO": {
-            "eco(?:logisch|systeem)": [
-                " als economische \u00e9n ecologische meerwaarde te cre\u00eb"
+            "[^a-z]ecolo[^ ]+": [
+                "  als economische \u00e9n ecologische meerwaarde te cre\u00ebr"
             ]
         },
         "2400FSWFOI": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "n be introduced to decolonial debates  affect the"
             ]
         },
         "3001IOBRM2": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "be contested  the \u2018decolonial turn\u2019 in developmen"
             ]
         },
         "3001IOBTOD": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "big-d development  decolonial and post-developmen"
             ]
         },
         "3007IOBLPR": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
+                "ution of access and ecological sustainability  the",
+                "d the impact of the ecological-climate crisis  e g  land g",
+                " access to land and ecological justice and sustain",
                 "ender  and emergent ecologies  stoetzer  davis et"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "bution of access and ecological sustainability  the",
+                "nd the impact of the ecological-climate crisis  e g  land g",
+                "f access to land and ecological justice and sustain",
+                "gender  and emergent ecologies  stoetzer  davis et"
+            ]
+        },
+        "3101WETGWP": {
+            "ecolo[^ ]+": [
+                "sical  chemical and ecological characteristics of ",
+                "mising link between ecology and economy    seve",
+                "d a balance between ecological functioning and ade"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ysical  chemical and ecological characteristics of ",
+                "omising link between ecology and economy    seve",
+                "nd a balance between ecological functioning and ade"
+            ]
+        },
+        "3102WETIAW": {
+            "ecolo[^ ]+": [
+                "nment   \u2022 calculate ecological indices based on id",
+                "cal  biological and ecological monitoring      exa"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "onment   \u2022 calculate ecological indices based on id",
+                "ical  biological and ecological monitoring      exa"
+            ]
+        },
+        "3104WETR21": {
+            "ecolo[^ ]+": [
+                "ile considering the ecological  spatial  and socio"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "hile considering the ecological  spatial  and socio"
+            ]
+        },
+        "3201WETWTT": {
+            "ecolo[^ ]+": [
+                "gical  economic and ecological aspects  a realisti"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ogical  economic and ecological aspects  a realisti"
+            ]
+        },
+        "3203WETNBS": {
+            "ecolo[^ ]+": [
+                "describe the ecological role and societal i",
+                "ical processes  and ecological processes  carry ou",
+                "heck  assessment of ecological and societal effect",
+                "ecosystem services  ecological engineering  we wil"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "describe the ecological role and societal i",
+                "gical processes  and ecological processes  carry ou",
+                "check  assessment of ecological and societal effect",
+                " ecosystem services  ecological engineering  we wil"
+            ]
+        },
+        "3205WETRMH": {
+            "ecolo[^ ]+": [
+                "ing forces for many ecological processes  moreover"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "ving forces for many ecological processes  moreover"
             ]
         },
         "9009UAOOUD": {
-            "(?:environmentalist|ecolo[^ ]+)": [
+            "ecolo[^ ]+": [
                 "020  reflecting on decolonial perspectives       ",
                 "perspectives       decolonization is a process  not a",
                 "eing in the world  decolonization has enormous social",
@@ -756,11 +1098,16 @@
                 " november  feminist ecologies &amp  coloniality o",
                 "    17 november  a decolonial critique of state b",
                 "y interventions un-decolonizable in the global south"
+            ],
+            "[^a-z]ecolo[^ ]+": [
+                "economic  political  ecological and cultural implic",
+                "ctober  decolonizing ecological relations          ",
+                "3 november  feminist ecologies &amp  coloniality o"
             ]
         },
         "9131FOWKEU": {
-            "eco(?:logisch|systeem)": [
-                "n gaan de studenten ecologisch verantwoorde oploss"
+            "[^a-z]ecolo[^ ]+": [
+                "en gaan de studenten ecologisch verantwoorde oploss"
             ]
         }
     },
@@ -796,7 +1143,7 @@
         },
         "1006WETECO": {
             "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
-                "gie in de praktijk  klimaatverandering      - ecologie in "
+                "gie in de praktijk  klimaatverandering   - ecologie in de "
             ]
         },
         "1050FLWGES": {
@@ -807,11 +1154,6 @@
         "1200RECRSO": {
             "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
                 "  door onder andere klimaatverandering  niet-duurzame vorm"
-            ]
-        },
-        "1302TEWSBX": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                "food     energy     climate change     environment    "
             ]
         },
         "1329FTIDEN": {
@@ -834,9 +1176,19 @@
                 "potential causes of climate change  and puts the whole"
             ]
         },
+        "2001WETPEC": {
+            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "bal changes such as climate change     you can indicat"
+            ]
+        },
         "2001WETTDT": {
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
                 "ions in relation to climate change             estimat"
+            ]
+        },
+        "2010WETOLA": {
+            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "or risks induced by climate change  including  sea lev"
             ]
         },
         "2023FBDBMW": {
@@ -852,6 +1204,12 @@
         "2100FSWMDD": {
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
                 "omic issues such as climate change  new  bio technolog"
+            ]
+        },
+        "2100RECDIS": {
+            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                " module  gender and climate change issues in the gover",
+                "rence on mitigating climate change and empowering wome"
             ]
         },
         "2105TEWSEW": {
@@ -876,9 +1234,11 @@
         },
         "2201WETDGC": {
             "greenhouse gas(es)?": [
+                " greenhouse effect  greenhouse gases  the global carbon ",
                 "nd urbanisation     greenhouse gas emissions and globa"
             ],
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                " points  as well as climate mitigation and adaptation   st",
                 "missions and global climate change     changes in hydr",
                 "s     and indirect  climate change      changes in nut"
             ]
@@ -893,9 +1253,24 @@
                 "egulating services  climate mitigation  water regulation  "
             ]
         },
+        "2201WETFEF": {
+            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "ents understand how climate change will affect the eco"
+            ]
+        },
+        "2201WETGCP": {
+            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "hanging and extreme climate conditions on organism functio"
+            ]
+        },
         "2201WETOCE": {
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
                 "e effects of global climate change on plant  animal an"
+            ]
+        },
+        "2201WETTEF": {
+            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "tal changes such as climate change   students can indi"
             ]
         },
         "2202MDODOW": {
@@ -911,18 +1286,25 @@
         },
         "2300RECEXA": {
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                " module  gender and climate change issues in the the g",
+                " module  gender and climate change issues in the gover",
                 "rence on mitigating climate change and empowering wome"
             ]
         },
         "3002IOBNPA": {
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "lopment-environment/climate change debates  their unde",
+                "between environment/climate change and development    ",
                 "he \u2018green economy\u2019  climate change and carbon markets "
             ]
         },
         "3003IOBGLO": {
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
                 "ed to tackle global climate change  the second part of"
+            ]
+        },
+        "3007IOBLPR": {
+            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "ted to land use and climate change adaptation  redd+  "
             ]
         },
         "9110MDOCCC": {
@@ -934,7 +1316,11 @@
         },
         "9111MDOCSC": {
             "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                "climate change is a societal probl",
+                "es and reactions to climate change  and can situate th",
+                "evel governance for climate change  ranging from the i",
+                "political debate on climate change     the student can",
+                "l responsibility in climate change challenges  climate",
+                " change challenges  climate change is a societal probl",
                 "blem and challenge  climate change is to a large exten",
                 "r to put  and keep  climate change on the political an",
                 "etal drivers behind climate change  which will be the ",
@@ -987,7 +1373,7 @@
         },
         "1006WETECO": {
             "klimaat(veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand)": [
-                "gie in de praktijk  klimaatverandering      - ecologie in "
+                "gie in de praktijk  klimaatverandering   - ecologie in de "
             ]
         },
         "1048FOWARC": {
@@ -1133,9 +1519,22 @@
                 "p eu systeem in het klimaatbeleid   statiegelden  sub"
             ]
         },
+        "3007IOBLPR": {
+            "climate( change)? (action|justice|refugees?|polic(y|ies)|adaptation)": [
+                "ted to land use and climate change adaptation  redd+  payments fo"
+            ]
+        },
+        "3203WETNBS": {
+            "climate( change)? (action|justice|refugees?|polic(y|ies)|adaptation)": [
+                "llenges  especially climate adaptation and mitigation and "
+            ]
+        },
         "9111MDOCSC": {
             "climate( change)? (action|justice|refugees?|polic(y|ies)|adaptation)": [
                 "n  human rights and climate justice  class 2 5 is on ad"
+            ],
+            "(actions?|adaptations?) (for the|to) climate": [
+                " consequences and reactions to climate change  and can sit"
             ]
         },
         "9112MDOENU": {

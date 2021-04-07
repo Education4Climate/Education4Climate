@@ -70,22 +70,29 @@
 		"fr": [
 			"gestion[^ ]+ envir[^ ]+",
 		    "^[ée]colo[^ ]+",
+		    "[^a-z][ée]colo[^ ]+",
 		    "[ée]cosyst[^ ]+",
 		    "conditions? m[ée]t[ée]o[^ ]+ extr[^ ]+",
 		    "[ée]v[ée]nements? m[ée]t[ée]o[^ ]+ extr[^ ]+",
 		    "temp[^ ]+ moyenne mond[^ ]+",
-		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
+		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)",
+			"défis? environnement[^ ]+"
 		],
 		"en": [
 			"environmental (?:management|maintenance)",
-		    "(?:environmentalist|ecolo[^ ]+)",
+		    "environmentalist",
+		    "^ecolo[^ ]+",
+		    "[^a-z]ecolo[^ ]+",
 		    "extreme weather (?:condition|events)",
 		    "global (?:average|mean) temperature",
-		    "(?:thawing|loss|melting|reduction|shrinking) (?:of )?(?:(?:(?:polar )? ice(?: caps)?)|permafrost)"
+		    "(?:thawing|loss|melting|reduction|shrinking) (?:of )?(?:(?:(?:polar )? ice(?: caps)?)|permafrost)",
+			"environmental challenge"
 		],
 		"nl": [
 			"milieu(?:beheer|management|beleid)",
-			"eco(?:logisch|systeem)",
+			"ecosysteems?",
+			"^ecolo[^ ]+",
+			"[^a-z]ecolo[^ ]+",
 			"extreme (?:weersomstandig[^ ]+)",
 			"(?:globale?|wereldwijde?) gemiddelde temperatuur",
 			"gemiddelde temperatuur op aarde",
@@ -95,7 +102,8 @@
 			"permafrostreductie",
 			"(?:smeltende|dooi) permafrost",
 			"ontdooiend Noordpoolgebied",
-			"permafrostreductie"
+			"permafrostreductie",
+			"milieu(?:-| )?uitdaging"
 		]
 	},
 	"climatology": {
@@ -176,14 +184,21 @@
 		    "risques? (?:liés? )(?:au )?clima[^ ]+",
 		    "résist[^ ]+ clima[^ ]+"
 		],
-		"en": [],
+		"en": [
+			"sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)",
+			"resources? efficiency",
+			"climate change (?:management|planning|policy)",
+			"climate (risk|resistance)"
+		],
 		"nl": [
 			"duurzame ontwikkeling",
-			"hulpbronnenefficiëntie", "efficiënt gebruik van hulpbronnen",
-			"duurzaa?me? (consumptie|verbruik|beheer|beleid|praktijk|productie|product)",
-			"klimaat(veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand)",
-			"(beheer|planning|beleid)( inzaa?ke?)? van de klimaatverandering",
-			"klimaatgerelateerd risico / klimaatrisico",
+			"hulpbronnenefficiëntie",
+			"efficiënt gebruik van hulpbronnen",
+			"duurzaa?me? (?:consumptie|verbruik|beheer|beleid|praktijk|productie|product)",
+			"klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand)",
+			"(?:beheer|planning|beleid)(?: inzaa?ke?)? van de klimaatverandering",
+			"klimaatgerelateerd risico",
+			"klimaatrisico",
 			"klimatologische weerstand"
 		]
 	},

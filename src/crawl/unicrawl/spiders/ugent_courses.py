@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
-from abc import ABC
 from pathlib import Path
 from os import remove
-import json
 
 import numpy as np
 import pandas as pd
-import scrapy
 
 import urllib3
 from pdfminer.high_level import extract_text

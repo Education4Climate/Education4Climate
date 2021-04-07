@@ -7,16 +7,13 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/prog_hist1ba.html",
   "courses":[
-   "ESPO1164",
    "ESPO1161"
   ],
   "field":"social science",
   "themes":[
-   "environment",
    "durability"
   ],
   "themes_scores":[
-   1,
    1
   ]
  },
@@ -64,16 +61,13 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/prog_bben1ba.html",
   "courses":[
-   "ESPO1164",
    "INGE1342"
   ],
   "field":"social science",
   "themes":[
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   1,
    1
   ]
  },
@@ -85,9 +79,9 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_soca1ba_tr.html",
   "courses":[
-   "ESPO1164",
+   "ESPO1161",
    "HDPO1312",
-   "ESPO1161"
+   "SOCA1314"
   ],
   "field":"social science",
   "themes":[
@@ -109,9 +103,10 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_comu1ba_tr.html",
   "courses":[
-   "ESPO1164",
+   "ESPO1161",
+   "SOCA1314",
    "HDPO1312",
-   "ESPO1161"
+   "POLS1321"
   ],
   "field":"social science",
   "themes":[
@@ -120,7 +115,7 @@
    "durability"
   ],
   "themes_scores":[
-   1,
+   2,
    1,
    1
   ]
@@ -133,8 +128,9 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_comu1ba_fa.html",
   "courses":[
-   "ESPO1164",
-   "HDPO1312"
+   "SOCA1314",
+   "HDPO1312",
+   "POLS1321"
   ],
   "field":"social science",
   "themes":[
@@ -142,7 +138,7 @@
    "climatology"
   ],
   "themes_scores":[
-   1,
+   2,
    1
   ]
  },
@@ -154,8 +150,8 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_spol1ba_tr.html",
   "courses":[
-   "ESPO1164",
-   "ESPO1161"
+   "ESPO1161",
+   "SOCA1314"
   ],
   "field":"social science",
   "themes":[
@@ -175,8 +171,9 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_spol1ba_fa.html",
   "courses":[
-   "ESPO1164",
-   "HDPO1321"
+   "SOCA1314",
+   "HDPO1321",
+   "POLS1321"
   ],
   "field":"social science",
   "themes":[
@@ -185,7 +182,7 @@
    "durability"
   ],
   "themes_scores":[
-   1,
+   2,
    1,
    1
   ]
@@ -199,14 +196,18 @@
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_spol1ba_un.html",
   "courses":[
    "HDPO1321",
-   "HDPO1312"
+   "SOCA1314",
+   "HDPO1312",
+   "POLS1321"
   ],
   "field":"social science",
   "themes":[
+   "environment",
    "climatology",
    "durability"
   ],
   "themes_scores":[
+   2,
    2,
    1
   ]
@@ -237,13 +238,17 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_comu1ba_un.html",
   "courses":[
-   "HDPO1312"
+   "SOCA1314",
+   "HDPO1312",
+   "POLS1321"
   ],
   "field":"social science",
   "themes":[
+   "environment",
    "climatology"
   ],
   "themes_scores":[
+   2,
    1
   ]
  },
@@ -255,8 +260,8 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_soca1ba_fa.html",
   "courses":[
-   "ESPO1164",
-   "HDPO1312"
+   "HDPO1312",
+   "POLS1321"
   ],
   "field":"social science",
   "themes":[
@@ -276,13 +281,17 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_soca1ba_un.html",
   "courses":[
-   "HDPO1312"
+   "SOCA1314",
+   "HDPO1312",
+   "POLS1321"
   ],
   "field":"social science",
   "themes":[
+   "environment",
    "climatology"
   ],
   "themes_scores":[
+   2,
    1
   ]
  },
@@ -312,16 +321,13 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_inge1ba_tr.html",
   "courses":[
-   "ESPO1164",
    "INGE1242"
   ],
   "field":"social science",
   "themes":[
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   1,
    1
   ]
  },
@@ -333,18 +339,15 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_inge1ba_fa.html",
   "courses":[
-   "ESPO1164",
-   "INGE1242",
-   "ECGE1313"
+   "ECGE1313",
+   "INGE1242"
   ],
   "field":"social science",
   "themes":[
    "energy",
-   "environment",
    "durability"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ]
@@ -357,8 +360,8 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_inge1ba_un.html",
   "courses":[
-   "INGE1242",
-   "ECGE1313"
+   "ECGE1313",
+   "INGE1242"
   ],
   "field":"social science",
   "themes":[
@@ -378,17 +381,14 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_ecge1ba_tr.html",
   "courses":[
-   "ESPO1164",
    "ECGE1313",
    "ESPO1161"
   ],
   "field":"social science",
   "themes":[
-   "environment",
    "durability"
   ],
   "themes_scores":[
-   1,
    2
   ]
  },
@@ -400,16 +400,13 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_ecge1ba_fa.html",
   "courses":[
-   "ESPO1164",
    "ECGE1313"
   ],
   "field":"social science",
   "themes":[
-   "environment",
    "durability"
   ],
   "themes_scores":[
-   1,
    1
   ]
  },
@@ -440,29 +437,8 @@
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_droi1ba_n3.html",
   "courses":[
    "DROI1365",
-   "HDPO1321"
-  ],
-  "field":"law & criminology",
-  "themes":[
-   "climatology",
-   "durability"
-  ],
-  "themes_scores":[
-   2,
-   1
-  ]
- },
- {
-  "id":"droi1ba_fn",
-  "name":"Bachelier en droit Majeure : Bilingue fran\u00e7ais-n\u00e9erlandais",
-  "faculty":"Facult\u00e9 de droit",
-  "cycle":"bac",
-  "campus":"",
-  "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_droi1ba_fn.html",
-  "courses":[
-   "ESPO1164",
-   "DROI1365",
-   "HDPO1321"
+   "HDPO1321",
+   "POLS1321"
   ],
   "field":"law & criminology",
   "themes":[
@@ -477,6 +453,27 @@
   ]
  },
  {
+  "id":"droi1ba_fn",
+  "name":"Bachelier en droit Majeure : Bilingue fran\u00e7ais-n\u00e9erlandais",
+  "faculty":"Facult\u00e9 de droit",
+  "cycle":"bac",
+  "campus":"",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_droi1ba_fn.html",
+  "courses":[
+   "DROI1365",
+   "HDPO1321"
+  ],
+  "field":"law & criminology",
+  "themes":[
+   "climatology",
+   "durability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ]
+ },
+ {
   "id":"droi1ba_a3",
   "name":"Bachelier en droit Majeure : Bilingue fran\u00e7ais-anglais, 3e langue : n\u00e9erlandais",
   "faculty":"Facult\u00e9 de droit",
@@ -484,8 +481,8 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_droi1ba_a3.html",
   "courses":[
-   "DRAN1351",
-   "ESPO1164"
+   "POLS1321",
+   "DRAN1351"
   ],
   "field":"law & criminology",
   "themes":[
@@ -503,8 +500,8 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_droi1ba_fa.html",
   "courses":[
-   "DRAN1351",
-   "ESPO1164"
+   "POLS1321",
+   "DRAN1351"
   ],
   "field":"law & criminology",
   "themes":[
@@ -522,18 +519,15 @@
   "campus":"",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2020\/maj_droi1ba_un.html",
   "courses":[
-   "ESPO1164",
    "DROI1365",
    "HDPO1321"
   ],
   "field":"law & criminology",
   "themes":[
-   "environment",
    "climatology",
    "durability"
   ],
   "themes_scores":[
-   1,
    2,
    1
   ]

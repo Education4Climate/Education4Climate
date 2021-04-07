@@ -110,7 +110,7 @@ def main(school: str, year: int):
     courses_df["themes"] = scores_df.apply(lambda x: x[x == 1].index.tolist(), axis=1).to_frame()
     courses_df = courses_df.reset_index()
     web_fn = Path(__file__).parent.absolute().joinpath(f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_")
-    courses_df.to_json(f"{web_fn}heavy.json", orient='records')
+    # courses_df.to_json(f"{web_fn}heavy.json", orient='records')
     courses_df.loc[courses_df.id.isin(courses_with_matches_index)]\
         .to_json(f"{web_fn}light.json", orient='records', indent=1)
 

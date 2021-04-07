@@ -28,8 +28,8 @@
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/bachelor-diergeneeskunde\/studieprogramma\/",
   "courses":[
    "1044FBDDIE",
-   "1058FBDDIE",
-   "1001IOBGJU"
+   "1001IOBGJU",
+   "1058FBDDIE"
   ],
   "field":"health",
   "themes":[
@@ -51,18 +51,20 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/master-development-evaluation\/study-programme\/",
   "courses":[
-   "3007IOBLPR",
-   "3001IOBTOD",
    "3002IOBNPA",
-   "3001IOBRM2"
+   "3001IOBRM2",
+   "3001IOBTOD",
+   "3007IOBLPR"
   ],
   "field":"social science",
   "themes":[
    "environment",
-   "climatology"
+   "climatology",
+   "society"
   ],
   "themes_scores":[
    3,
+   2,
    1
   ]
  },
@@ -74,12 +76,12 @@
   "campus":"Campus Groenenborger",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/master-chemistry\/study-programme\/",
   "courses":[
+   "2001WETPSS",
+   "1715FTIKVM",
+   "2001WETGAM",
    "2001WETCLQ",
    "2000WETMSR",
-   "2000WETMRM",
-   "2001WETPSS",
-   "2001WETGAM",
-   "1715FTIKVM"
+   "2000WETMRM"
   ],
   "field":"sciences",
   "themes":[
@@ -116,6 +118,52 @@
   ]
  },
  {
+  "id":"think-water",
+  "name":"Think Water",
+  "faculty":"Institute of Environment and Sustainable Development",
+  "cycle":"other",
+  "campus":"Campus Drie Eiken",
+  "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/think-water\/study-programme\/",
+  "courses":[
+   "3102WETIAW",
+   "3101WETGWP",
+   "3203WETNBS",
+   "3205WETRMH",
+   "2201WETFEF",
+   "3104WETR21",
+   "3201WETWTT"
+  ],
+  "field":"sciences",
+  "themes":[
+   "environment",
+   "climatology",
+   "society"
+  ],
+  "themes_scores":[
+   6,
+   1,
+   1
+  ]
+ },
+ {
+  "id":"veiligheidswetenschappen-master",
+  "name":"Master in Veiligheidswetenschappen",
+  "faculty":"Faculteit Sociale Wetenschappen",
+  "cycle":"master",
+  "campus":"Stadscampus",
+  "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/veiligheidswetenschappen\/over-de-master\/studieprogramma\/",
+  "courses":[
+   "2250FSWQMS"
+  ],
+  "field":"social science",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"wijsbegeerte-studeren-bac",
   "name":"Bachelor in Wijsbegeerte",
   "faculty":"Faculteit Letteren en Wijsbegeerte",
@@ -123,11 +171,11 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/wijsbegeerte-studeren\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "1001IOBGJU",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB"
+   "1001CPGVKB",
+   "1001IOBGJU",
+   "1002CPGVKB",
+   "9009UAOOUD"
   ],
   "field":"social science",
   "themes":[
@@ -197,15 +245,16 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/tew-bedrijfskunde\/master\/studieprogramma\/",
   "courses":[
-   "2029TEWMHI",
-   "2116TEWKOO"
+   "2134TEWKOO",
+   "2116TEWKOO",
+   "2029TEWMHI"
   ],
   "field":"economy & management",
   "themes":[
    "environment"
   ],
   "themes_scores":[
-   2
+   3
   ]
  },
  {
@@ -234,10 +283,10 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/tew-bedrijfskunde\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
    "1003CPGCSL",
    "1001CPGVKB",
-   "1001IOBGJU"
+   "1001IOBGJU",
+   "1002CPGVKB"
   ],
   "field":"economy & management",
   "themes":[
@@ -263,11 +312,11 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/tew-economisch-beleid\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "1001IOBGJU",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB"
+   "1001CPGVKB",
+   "1001IOBGJU",
+   "1002CPGVKB",
+   "9009UAOOUD"
   ],
   "field":"economy & management",
   "themes":[
@@ -282,7 +331,7 @@
    1,
    1,
    3,
-   4,
+   3,
    2,
    2
   ]
@@ -313,15 +362,15 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/sociologie-studeren\/bachelor\/studieprogramma\/",
   "courses":[
-   "1013FLWGES",
-   "1002CPGVKB",
-   "1300PSWSIQ",
-   "1001IOBGJU",
-   "9009UAOOUD",
    "1003CPGCSL",
    "1001CPGVKB",
+   "1001IOBGJU",
+   "1300PSWSDT",
+   "1002CPGVKB",
+   "1013FLWGES",
+   "9009UAOOUD",
    "1014FLWGES",
-   "1300PSWSDT"
+   "1300PSWSIQ"
   ],
   "field":"social science",
   "themes":[
@@ -371,13 +420,14 @@
   "campus":"Stadscampus - Mutsaard",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/master-stedenbouw\/over-de-master\/studieprogramma\/",
   "courses":[
-   "2001FOWSRP",
-   "9009UAOOUD",
+   "2102MDODOW",
    "1001CPGVKB",
    "2103MDOESB",
+   "2001FOWSRP",
+   "2106MDOMBL",
+   "9009UAOOUD",
    "2030FOWSRP",
-   "2102MDODOW",
-   "2106MDOMBL"
+   "2024FOWSRP"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -388,7 +438,7 @@
   ],
   "themes_scores":[
    1,
-   6,
+   7,
    1,
    3
   ]
@@ -401,7 +451,6 @@
   "campus":"Campus Drie Eiken",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/revalidatie-en-kinesitherapie\/bachelor\/studieprogramma\/",
   "courses":[
-   "1234GENRVK",
    "1001IOBGJU"
   ],
   "field":"health",
@@ -411,7 +460,7 @@
    "society"
   ],
   "themes_scores":[
-   2,
+   1,
    1,
    1
   ]
@@ -424,12 +473,12 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/sociaal-economische-wetenschappen\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "1300PSWSIQ",
-   "1001IOBGJU",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB"
+   "1001CPGVKB",
+   "1001IOBGJU",
+   "1002CPGVKB",
+   "9009UAOOUD",
+   "1300PSWSIQ"
   ],
   "field":"economy & management",
   "themes":[
@@ -444,7 +493,7 @@
    1,
    1,
    4,
-   4,
+   3,
    2,
    2
   ]
@@ -457,12 +506,13 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/master-rechten\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "9009UAOOUD",
-   "2300RECMIL",
+   "2300RECEXA",
    "1003CPGCSL",
    "1001CPGVKB",
-   "2300RECEXA"
+   "1002CPGVKB",
+   "2300RECMIL",
+   "9009UAOOUD",
+   "2100RECDIS"
   ],
   "field":"law & criminology",
   "themes":[
@@ -477,7 +527,7 @@
    1,
    1,
    3,
-   3,
+   4,
    2,
    1
   ]
@@ -490,8 +540,8 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/bachelor-rechten\/studieprogramma\/",
   "courses":[
-   "1200RECRSO",
-   "1001IOBGJU"
+   "1001IOBGJU",
+   "1200RECRSO"
   ],
   "field":"law & criminology",
   "themes":[
@@ -515,14 +565,14 @@
   "campus":"Campus Mutsaard en\u00a0Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/productontwikkeling-studeren\/master\/studieprogramma\/",
   "courses":[
-   "2045FOWPOW",
-   "9009UAOOUD",
-   "2042FOWPOW",
-   "2048FOWPOW",
-   "2041FOWPOW",
-   "2043FOWPOW",
    "9131FOWKEU",
-   "2032FOWPOW"
+   "2045FOWPOW",
+   "2048FOWPOW",
+   "2043FOWPOW",
+   "2032FOWPOW",
+   "2042FOWPOW",
+   "9009UAOOUD",
+   "2041FOWPOW"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -542,9 +592,10 @@
   "campus":"Campus Mutsaard en\u00a0Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/productontwikkeling-studeren\/bachelor\/studieprogramma\/",
   "courses":[
+   "1040FOWPOW",
+   "1001IOBGJU",
    "1030FOWPOW",
-   "1038FOWPOW",
-   "1001IOBGJU"
+   "1038FOWPOW"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -553,7 +604,7 @@
    "society"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
    1
   ]
@@ -602,11 +653,11 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/politieke-wetenschappen\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "1001IOBGJU",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB"
+   "1001CPGVKB",
+   "1001IOBGJU",
+   "1002CPGVKB",
+   "9009UAOOUD"
   ],
   "field":"social science",
   "themes":[
@@ -624,6 +675,24 @@
    3,
    2,
    2
+  ]
+ },
+ {
+  "id":"organisatie-en-management-studeren-master",
+  "name":"Master in Organisatie en management",
+  "faculty":"Faculteit Bedrijfswetenschappen en Economie",
+  "cycle":"master",
+  "campus":"Stadscampus",
+  "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/organisatie-en-management-studeren\/over-de-master\/studieprogramma\/",
+  "courses":[
+   "2134TEWKOO"
+  ],
+  "field":"economy & management",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
   ]
  },
  {
@@ -656,20 +725,21 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/master-milieuwetenschap\/studieprogramma\/",
   "courses":[
-   "2204MDOEMB",
-   "2206MDOGCH",
-   "2207MDOIWB",
-   "2212MDOMMT",
-   "2202MDODOW",
-   "2107MDOMEC",
-   "2205MDOMER",
-   "2109MDOMRT",
-   "2103MDOESB",
-   "2101MDOBSF",
-   "2102MDODOW",
    "2201MDODPT",
+   "2102MDODOW",
+   "2109MDOMRT",
+   "2101MDOBSF",
+   "2107MDOMEC",
+   "2207MDOIWB",
+   "2202MDODOW",
+   "2103MDOESB",
+   "2206MDOGCH",
    "2108MDOMGK",
-   "2106MDOMBL"
+   "2106MDOMBL",
+   "2210MDOMTC",
+   "2204MDOEMB",
+   "2212MDOMMT",
+   "2205MDOMER"
   ],
   "field":"sciences",
   "themes":[
@@ -681,7 +751,7 @@
   ],
   "themes_scores":[
    1,
-   11,
+   12,
    4,
    5,
    1
@@ -713,11 +783,30 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/master-of-laws\/study-programme\/",
   "courses":[
-   "2300RECEXA"
+   "2300RECEXA",
+   "2100RECDIS"
   ],
   "field":"law & criminology",
   "themes":[
    "climatology"
+  ],
+  "themes_scores":[
+   2
+  ]
+ },
+ {
+  "id":"manama-klinische-biologie",
+  "name":"Master-na-master in de klinische biologie",
+  "faculty":"Faculteit Farmaceutische, Biomedische en Diergeneeskundige Wetenschappen",
+  "cycle":"other",
+  "campus":"Campus Drie Eiken",
+  "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/manama-klinische-biologie\/studieprogramma\/",
+  "courses":[
+   "2008FBDFAZ"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
@@ -796,8 +885,12 @@
   "campus":"Campus Groenenborger",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/ingenieur-elektronica-ict\/bachelor\/studieprogramma\/",
   "courses":[
+   "1028FTIPRO",
+   "1001IOBGJU",
+   "1024FTIACV",
    "1027FTIPRO",
-   "1001IOBGJU"
+   "1090FTIBCP",
+   "1081FTIBAP"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -806,7 +899,7 @@
    "society"
   ],
   "themes_scores":[
-   2,
+   6,
    1,
    1
   ]
@@ -857,9 +950,13 @@
   "campus":"Campus Groenenborger",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/ingenieur-bouwkunde\/bachelor\/studieprogramma\/",
   "courses":[
-   "1027FTIPRO",
+   "1028FTIPRO",
    "1125FTIENE",
-   "1001IOBGJU"
+   "1080FTIBPB",
+   "1001IOBGJU",
+   "1024FTIACV",
+   "1027FTIPRO",
+   "1023FTIBPC"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -872,7 +969,7 @@
   "themes_scores":[
    1,
    1,
-   2,
+   6,
    1,
    1
   ]
@@ -885,10 +982,16 @@
   "campus":"Campus Groenenborger",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/ingenieur-elektromechanica\/bachelor\/studieprogramma\/",
   "courses":[
-   "1329FTIDEN",
-   "1027FTIPRO",
+   "1028FTIPRO",
    "1331FTITSL",
-   "1001IOBGJU"
+   "1001IOBGJU",
+   "1024FTIACV",
+   "1083FTIBAP",
+   "1329FTIDEN",
+   "1322FTIREG",
+   "1027FTIPRO",
+   "1333FTIREG",
+   "1092FTIBCP"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -902,7 +1005,7 @@
   "themes_scores":[
    1,
    1,
-   3,
+   9,
    2,
    1,
    1
@@ -945,14 +1048,17 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/handelsingenieur-beleidsinformatica\/master\/studieprogramma\/",
   "courses":[
-   "2142TEWKOO"
+   "2142TEWKOO",
+   "2134TEWKOO"
   ],
   "field":"economy & management",
   "themes":[
+   "environment",
    "climatology",
    "durability"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ]
@@ -965,17 +1071,16 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/handelsingenieur-worden\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "1001IOBGJU",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB"
+   "1001CPGVKB",
+   "1001IOBGJU",
+   "1002CPGVKB",
+   "9009UAOOUD"
   ],
   "field":"economy & management",
   "themes":[
    "decarbonization",
    "energy",
-   "consumption",
    "environment",
    "climatology",
    "durability",
@@ -983,7 +1088,6 @@
   ],
   "themes_scores":[
    1,
-   2,
    1,
    3,
    3,
@@ -999,11 +1103,11 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/handelsingenieur-beleidsinformatica\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "1001IOBGJU",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB"
+   "1001CPGVKB",
+   "1001IOBGJU",
+   "1002CPGVKB",
+   "9009UAOOUD"
   ],
   "field":"economy & management",
   "themes":[
@@ -1031,14 +1135,16 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/geschiedenis-studeren\/bachelor\/studieprogramma\/",
   "courses":[
-   "1013FLWGES",
-   "1002CPGVKB",
-   "1001IOBGJU",
-   "1050FLWGES",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB",
+   "1118FLWTLT",
    "1010FLWGES",
+   "1001IOBGJU",
+   "1001CPGVKB",
+   "1002CPGVKB",
+   "1013FLWGES",
+   "1050FLWGES",
+   "1081FLWGES",
+   "9009UAOOUD",
    "1014FLWGES"
   ],
   "field":"social science",
@@ -1053,28 +1159,10 @@
   "themes_scores":[
    1,
    1,
-   7,
+   9,
    4,
    3,
    2
-  ]
- },
- {
-  "id":"geneeskunde-master",
-  "name":"Master in Geneeskunde",
-  "faculty":"Faculteit Geneeskunde en Gezondheidswetenschappen",
-  "cycle":"master",
-  "campus":"Campus Drie Eiken",
-  "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/geneeskunde\/master\/studieprogramma\/",
-  "courses":[
-   "2003GENGE1"
-  ],
-  "field":"health",
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
   ]
  },
  {
@@ -1085,9 +1173,6 @@
   "campus":"Campus Drie Eiken",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/geneeskunde\/bachelor\/studieprogramma\/",
   "courses":[
-   "1003GENGE2",
-   "1020GENGE2",
-   "1032GENGE2",
    "1001IOBGJU"
   ],
   "field":"health",
@@ -1097,7 +1182,7 @@
    "society"
   ],
   "themes_scores":[
-   4,
+   1,
    1,
    1
   ]
@@ -1110,16 +1195,20 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/master-governance-development\/study-programme\/",
   "courses":[
+   "3001IOBRM2",
    "3007IOBLPR",
-   "3001IOBTOD",
-   "3001IOBRM2"
+   "3001IOBTOD"
   ],
   "field":"social science",
   "themes":[
-   "environment"
+   "environment",
+   "climatology",
+   "society"
   ],
   "themes_scores":[
-   3
+   3,
+   1,
+   1
   ]
  },
  {
@@ -1130,18 +1219,20 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/master-globalisation-development\/study-programme\/",
   "courses":[
+   "3001IOBRM2",
    "3007IOBLPR",
    "3001IOBTOD",
-   "3003IOBGLO",
-   "3001IOBRM2"
+   "3003IOBGLO"
   ],
   "field":"social science",
   "themes":[
    "environment",
-   "climatology"
+   "climatology",
+   "society"
   ],
   "themes_scores":[
    3,
+   2,
    1
   ]
  },
@@ -1164,6 +1255,24 @@
   ]
  },
  {
+  "id":"master-farmaceutische-zorg-master",
+  "name":"Master in de farmaceutische zorg",
+  "faculty":"Faculteit Farmaceutische, Biomedische en Diergeneeskundige Wetenschappen",
+  "cycle":"master",
+  "campus":"Campus Drie Eiken",
+  "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/master-farmaceutische-zorg\/studieprogramma\/",
+  "courses":[
+   "2008FBDFAZ"
+  ],
+  "field":"health",
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ]
+ },
+ {
   "id":"bachelor-farmaceutische-wetenschap-bac",
   "name":"Bachelor in Bachelor in de farmaceutische wetenschappen",
   "faculty":"Faculteit Farmaceutische, Biomedische en Diergeneeskundige Wetenschappen",
@@ -1171,8 +1280,8 @@
   "campus":"Campus Drie Eiken",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/bachelor-farmaceutische-wetenschap\/studieprogramma\/",
   "courses":[
-   "1036FBDFAR",
    "1001IOBGJU",
+   "1036FBDFAR",
    "1056FBDFAR"
   ],
   "field":"health",
@@ -1197,11 +1306,11 @@
   "campus":"Campus Groenenborger",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/fysica-studeren\/bachelor\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
+   "1001CPGVKB",
    "1001IOBGJU",
+   "1002CPGVKB",
    "9009UAOOUD",
-   "1005WETECO",
-   "1001CPGVKB"
+   "1005WETECO"
   ],
   "field":"sciences",
   "themes":[
@@ -1229,11 +1338,11 @@
   "campus":"",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/postgraduate-energy-climate\/study-programme\/",
   "courses":[
-   "9111MDOCSC",
    "9110MDOCCC",
    "9113MDOREN",
-   "9114MDOMOT",
-   "9112MDOENU"
+   "9112MDOENU",
+   "9111MDOCSC",
+   "9114MDOMOT"
   ],
   "field":"",
   "themes":[
@@ -1255,9 +1364,10 @@
   "campus":"Campus\u00a0Mutsaard\u00a0en Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/master-erfgoedstudies\/over-de-master\/studieprogramma\/",
   "courses":[
+   "2021FOWERF",
+   "2011FOWERF",
    "2002FOWERF",
-   "2031FOWERF",
-   "2011FOWERF"
+   "2031FOWERF"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -1267,7 +1377,7 @@
    "society"
   ],
   "themes_scores":[
-   2,
+   3,
    1,
    1,
    1
@@ -1299,8 +1409,8 @@
   "campus":"Stadscampus - Mutsaard",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/master-conservatie-restauratie\/studieprogramma\/",
   "courses":[
-   "2031FOWERF",
-   "2011FOWERF"
+   "2011FOWERF",
+   "2031FOWERF"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -1365,13 +1475,13 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/communicatiewetenschappen-studeren\/bachelor\/studieprogramma\/",
   "courses":[
-   "1013FLWGES",
-   "1002CPGVKB",
-   "1001IOBGJU",
-   "1300PSWSIQ",
-   "9009UAOOUD",
    "1003CPGCSL",
-   "1001CPGVKB"
+   "1001CPGVKB",
+   "1001IOBGJU",
+   "1002CPGVKB",
+   "1013FLWGES",
+   "9009UAOOUD",
+   "1300PSWSIQ"
   ],
   "field":"social science",
   "themes":[
@@ -1399,26 +1509,32 @@
   "campus":"Campus Drie Eiken",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/master-global-change-biology\/study-programme\/",
   "courses":[
-   "2001WETEIL",
    "2001WETAQU",
-   "2001WETORN",
-   "2201WETDGC",
-   "9009UAOOUD",
-   "2001WETMEC",
-   "2201WETESE",
-   "2001WETTDT",
    "2001WETMAM",
-   "2001WETREC",
    "2201WETMEF",
-   "2001WETENT",
-   "2201WETERG",
-   "2001WETECM",
-   "2001WETSYS",
+   "2201WETGCP",
+   "2201WETFEF",
+   "2001WETMEC",
    "2001WETMOB",
+   "9009UAOOUD",
+   "2201WETDGC",
+   "2010WETOLA",
+   "2001WETEIL",
    "2001WETPAL",
-   "2201WETESS",
+   "2201WETERG",
    "2001WETMKG",
-   "2201WETOCE"
+   "2201WETENB",
+   "2001WETENT",
+   "2201WETESE",
+   "2201WETTEF",
+   "2201WETESS",
+   "2001WETSYS",
+   "2001WETTDT",
+   "2001WETREC",
+   "2001WETEST",
+   "2201WETOCE",
+   "2001WETORN",
+   "2001WETECM"
   ],
   "field":"sciences",
   "themes":[
@@ -1428,8 +1544,8 @@
   ],
   "themes_scores":[
    1,
-   15,
-   6
+   17,
+   10
   ]
  },
  {
@@ -1440,24 +1556,28 @@
   "campus":"Campus Drie Eiken",
   "url":"https:\/\/www.uantwerpen.be\/en\/study\/programmes\/all-programmes\/master-biology\/study-programme\/",
   "courses":[
-   "2001WETMAM",
-   "2001WETEIL",
-   "2001WETREC",
-   "2001WETENT",
+   "2001WETTPO",
    "2001WETAQU",
-   "2001WETTGD",
-   "2001WETORN",
-   "9009UAOOUD",
-   "2001WETCAS",
-   "2001WETECM",
-   "2201WETDGC",
-   "2001WETECI",
-   "2001WETPAL",
+   "2001WETMAM",
+   "2201WETFEF",
    "2001WETMEC",
+   "9009UAOOUD",
+   "2201WETDGC",
+   "2001WETPEC",
+   "2001WETECI",
+   "2001WETEIL",
+   "2001WETPAL",
+   "2001WETENT",
+   "2001WETLEC",
+   "2001WETCAS",
    "2201WETESS",
+   "2001WETTGD",
    "2001WETTDT",
+   "2001WETREC",
+   "2001WETEST",
+   "2001WETORN",
    "2001WETBEC",
-   "2001WETLEC"
+   "2001WETECM"
   ],
   "field":"sciences",
   "themes":[
@@ -1467,8 +1587,8 @@
   ],
   "themes_scores":[
    1,
-   15,
-   4
+   17,
+   6
   ]
  },
  {
@@ -1501,13 +1621,14 @@
   "campus":"Campus Groenenborger",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/bio-ingenieur-worden\/over-de-bachelor\/studieprogramma\/",
   "courses":[
-   "1001IOBGJU",
-   "1001WETBOP",
-   "1001WETBOS",
-   "1001WETGLB",
    "1001WETPLA",
+   "1001WETPCT",
+   "1001WETBOP",
+   "1001WETDIE",
+   "1001IOBGJU",
+   "1001WETGLB",
    "1006WETECO",
-   "1001WETPCT"
+   "1001WETBOS"
   ],
   "field":"sciences",
   "themes":[
@@ -1519,7 +1640,7 @@
   ],
   "themes_scores":[
    1,
-   6,
+   7,
    2,
    1,
    1
@@ -1533,16 +1654,18 @@
   "campus":"Campus Groenenborger",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/biologie-studeren\/bachelor\/studieprogramma\/",
   "courses":[
-   "1001WETALP",
-   "1001WETECO",
-   "1001IOBGJU",
-   "1003WETECO",
-   "1001WETPAR",
-   "1001WETESB",
    "1003CPGCSL",
-   "1001WETLAB",
    "1001WETMAR",
+   "1001WETESB",
+   "1001IOBGJU",
+   "1001WETBIA",
+   "1001WETALP",
+   "1001WETLAB",
+   "1001WETCEC",
+   "1001WETPAR",
    "1001WETTYP",
+   "1001WETECO",
+   "1003WETECO",
    "1001WETDON"
   ],
   "field":"sciences",
@@ -1553,7 +1676,7 @@
    "society"
   ],
   "themes_scores":[
-   10,
+   12,
    2,
    2,
    1
@@ -1612,12 +1735,12 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/architectuur-studeren\/master\/studieprogramma\/",
   "courses":[
-   "1002CPGVKB",
-   "9009UAOOUD",
-   "1001CPGVKB",
    "2110FTIDBO",
+   "1001CPGVKB",
+   "1002CPGVKB",
    "2103MDOESB",
-   "2106MDOMBL"
+   "2106MDOMBL",
+   "9009UAOOUD"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -1645,9 +1768,9 @@
   "campus":"Stadscampus",
   "url":"https:\/\/www.uantwerpen.be\/nl\/studeren\/aanbod\/alle-opleidingen\/architectuur-studeren\/bachelor\/studieprogramma\/",
   "courses":[
-   "1043FOWARC",
    "1048FOWARC",
-   "1001IOBGJU"
+   "1001IOBGJU",
+   "1043FOWARC"
   ],
   "field":"applied sciences & engineering",
   "themes":[

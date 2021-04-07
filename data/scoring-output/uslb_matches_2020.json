@@ -21,13 +21,20 @@
             ]
         },
         "DRAN1351": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                "nt society  from an ecological  a social and an ec"
+            "[^a-z]ecolo[^ ]+": [
+                "ent society  from an ecological  a social and an ec"
             ]
         },
-        "ESPO1164": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                "obe  including the decolonization of asia and africa "
+        "POLS1321": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "oches inspir\u00e9es de l'\u00e9cologie humaine  e a  jarre",
+                "es approches dites d'\u00e9cologie \u00ab profonde \u00bb  e a  "
+            ]
+        },
+        "SOCA1314": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "nt \u00e9mancipateur de l'\u00e9cologie dans la mesure o\u00f9 l",
+                "marqu\u00e9 le d\u00e9but de l'\u00e9cologie politique dans les "
             ]
         }
     },

@@ -650,7 +650,8 @@
    "applied sciences & engineering"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -695,18 +696,19 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -915,15 +917,15 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "energy"
@@ -1762,15 +1764,15 @@
    6
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "energy"
@@ -1804,6 +1806,33 @@
   ]
  },
  {
+  "id":"I002846",
+  "name":"Biotechnology in Mining",
+  "year":"2020-2021",
+  "teachers":[
+   "Schl\u00f6hmann Michael"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002846.pdf",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
   "id":"C004330",
   "name":"Blue Economy and Sustainable Use of Marine Resources",
   "year":"2020-2021",
@@ -1827,7 +1856,8 @@
    "sciences"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -2007,15 +2037,15 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -2172,15 +2202,15 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -2376,7 +2406,8 @@
    "applied sciences & engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "durability"
   ]
  },
  {
@@ -2394,18 +2425,18 @@
    5
   ],
   "faculty":[
+   "Faculteit Wetenschappen",
    "Faculteit Economie en Bedrijfskunde",
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Wetenschappen"
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
    "applied sciences & engineering",
-   "economy & management",
-   "sciences"
+   "sciences",
+   "economy & management"
   ],
   "themes":[
    "energy",
@@ -2630,35 +2661,6 @@
   ]
  },
  {
-  "id":"K001337",
-  "name":"Conflict and Society in Central and Eastern Africa [en]",
-  "year":"2020-2021",
-  "teachers":[
-   "Vlassenroot Koen"
-  ],
-  "languages":[
-   "en"
-  ],
-  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/K001337.pdf",
-  "ects":[
-   5
-  ],
-  "faculty":[
-   "Faculteit Politieke en Sociale Wetenschappen",
-   "Faculteit Psychologie en Pedagogische Wetenschappen",
-   "Faculteit Letteren en Wijsbegeerte"
-  ],
-  "campus":[
-   ""
-  ],
-  "field":[
-   "social science"
-  ],
-  "themes":[
-   "environment"
-  ]
- },
- {
   "id":"C003326",
   "name":"Conservatie-genetica",
   "year":"2020-2021",
@@ -2728,8 +2730,8 @@
    6
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Ingenieurswetenschappen en Architectuur"
+   "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
@@ -2783,9 +2785,9 @@
    5
   ],
   "faculty":[
-   "Faculteit Geneeskunde en Gezondheidswetenschappen",
    "Faculteit Politieke en Sociale Wetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Geneeskunde en Gezondheidswetenschappen",
    "Faculteit Letteren en Wijsbegeerte"
   ],
   "campus":[
@@ -2793,8 +2795,8 @@
   ],
   "field":[
    "health",
-   "applied sciences & engineering",
-   "social science"
+   "social science",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -2924,17 +2926,17 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Economie en Bedrijfskunde",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
    "applied sciences & engineering",
-   "economy & management",
-   "sciences"
+   "sciences",
+   "economy & management"
   ],
   "themes":[
    "durability"
@@ -3255,8 +3257,8 @@
    6
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Ingenieurswetenschappen en Architectuur"
+   "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
@@ -3285,16 +3287,16 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "energy",
@@ -3376,15 +3378,15 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -3489,18 +3491,18 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Politieke en Sociale Wetenschappen",
    "Faculteit Wetenschappen",
-   "Faculteit Politieke en Sociale Wetenschappen"
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
    "social science",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "energy",
@@ -3815,8 +3817,8 @@
    ""
   ],
   "field":[
-   "economy & management",
-   "social science"
+   "social science",
+   "economy & management"
   ],
   "themes":[
    "durability"
@@ -3844,8 +3846,8 @@
    ""
   ],
   "field":[
-   "economy & management",
-   "social science"
+   "social science",
+   "economy & management"
   ],
   "themes":[
    "durability"
@@ -3950,8 +3952,8 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Ingenieurswetenschappen en Architectuur"
+   "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
@@ -4089,15 +4091,15 @@
    4
   ],
   "faculty":[
-   "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Recht en Criminologie"
+   "Faculteit Recht en Criminologie",
+   "Faculteit Ingenieurswetenschappen en Architectuur"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "law & criminology"
+   "law & criminology",
+   "applied sciences & engineering"
   ],
   "themes":[
    "energy",
@@ -4160,6 +4162,33 @@
   ]
  },
  {
+  "id":"I002194",
+  "name":"Environmental Assessment",
+  "year":"2020-2021",
+  "teachers":[
+   "Fischer Benjamin"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002194.pdf",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"O000148",
   "name":"Environmental Law and Management",
   "year":"2020-2021",
@@ -4184,7 +4213,8 @@
   ],
   "themes":[
    "environment",
-   "climatology"
+   "climatology",
+   "durability"
   ]
  },
  {
@@ -4202,18 +4232,19 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
-   "climatology"
+   "climatology",
+   "durability"
   ]
  },
  {
@@ -4229,6 +4260,34 @@
   "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002609.pdf",
   "ects":[
    3
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "environment"
+  ]
+ },
+ {
+  "id":"I001439",
+  "name":"Environmental Noise",
+  "year":"2020-2021",
+  "teachers":[
+   "Van Renterghem Timothy"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I001439.pdf",
+  "ects":[
+   3,
+   4
   ],
   "faculty":[
    "Faculteit Bio-ingenieurswetenschappen"
@@ -4285,15 +4344,15 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -4327,6 +4386,33 @@
   ]
  },
  {
+  "id":"I002591",
+  "name":"Environmental Technology: Waste",
+  "year":"2020-2021",
+  "teachers":[
+   "Ronsse Frederik"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002591.pdf",
+  "ects":[
+   3
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"C002884",
   "name":"Epidemiologie en gerandomiseerde klinische studies",
   "year":"2020-2021",
@@ -4341,45 +4427,16 @@
    5
   ],
   "faculty":[
-   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Politieke en Sociale Wetenschappen",
    "Faculteit Wetenschappen",
-   "Faculteit Politieke en Sociale Wetenschappen"
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "sciences",
-   "social science"
-  ],
-  "themes":[
-   "environment"
-  ]
- },
- {
-  "id":"A005281",
-  "name":"Erfgoed [en]",
-  "year":"2020-2021",
-  "teachers":[
-   "Bass-Krueger Maude"
-  ],
-  "languages":[
-   "en"
-  ],
-  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/A005281.pdf",
-  "ects":[
-   5
-  ],
-  "faculty":[
-   "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Letteren en Wijsbegeerte"
-  ],
-  "campus":[
-   ""
-  ],
-  "field":[
-   "applied sciences & engineering",
-   "social science"
+   "social science",
+   "sciences"
   ],
   "themes":[
    "environment"
@@ -4427,17 +4484,17 @@
    6
   ],
   "faculty":[
+   "Faculteit Economie en Bedrijfskunde",
    "Faculteit Politieke en Sociale Wetenschappen",
    "Faculteit Psychologie en Pedagogische Wetenschappen",
-   "Faculteit Economie en Bedrijfskunde",
    "Faculteit Letteren en Wijsbegeerte"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "economy & management",
-   "social science"
+   "social science",
+   "economy & management"
   ],
   "themes":[
    "environment"
@@ -4607,6 +4664,33 @@
   ]
  },
  {
+  "id":"I002478",
+  "name":"Field work IMSOGLO",
+  "year":"2020-2021",
+  "teachers":[
+   "Finke Peter"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002478.pdf",
+  "ects":[
+   3
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"B001675",
   "name":"Financieel recht",
   "year":"2020-2021",
@@ -4657,7 +4741,8 @@
    "sciences"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "climatology"
   ]
  },
  {
@@ -4765,7 +4850,8 @@
    "applied sciences & engineering"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "climatology"
   ]
  },
  {
@@ -5622,6 +5708,33 @@
   ]
  },
  {
+  "id":"C004374",
+  "name":"Global Change Physiology",
+  "year":"2020-2021",
+  "teachers":[
+
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/C004374.pdf",
+  "ects":[
+   6
+  ],
+  "faculty":[
+   "Faculteit Wetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "climatology"
+  ]
+ },
+ {
   "id":"K001223",
   "name":"Globalisation and Global Governance [en]",
   "year":"2020-2021",
@@ -5636,17 +5749,17 @@
    5
   ],
   "faculty":[
+   "Faculteit Economie en Bedrijfskunde",
    "Faculteit Politieke en Sociale Wetenschappen",
    "Faculteit Psychologie en Pedagogische Wetenschappen",
-   "Faculteit Economie en Bedrijfskunde",
    "Faculteit Letteren en Wijsbegeerte"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "economy & management",
-   "social science"
+   "social science",
+   "economy & management"
   ],
   "themes":[
    "durability"
@@ -5677,6 +5790,33 @@
   ],
   "themes":[
    "environment"
+  ]
+ },
+ {
+  "id":"C004192",
+  "name":"Green Chemistry",
+  "year":"2020-2021",
+  "teachers":[
+
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/C004192.pdf",
+  "ects":[
+   3
+  ],
+  "faculty":[
+   "Faculteit Wetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "sciences"
+  ],
+  "themes":[
+   "durability"
   ]
  },
  {
@@ -5722,8 +5862,8 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Ingenieurswetenschappen en Architectuur"
+   "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
@@ -5750,16 +5890,16 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -5960,34 +6100,6 @@
   ]
  },
  {
-  "id":"K001203",
-  "name":"History of Globalisation",
-  "year":"2020-2021",
-  "teachers":[
-   "Bogaert Koenraad"
-  ],
-  "languages":[
-   "nl"
-  ],
-  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/K001203.pdf",
-  "ects":[
-   6
-  ],
-  "faculty":[
-   "Faculteit Politieke en Sociale Wetenschappen",
-   "Faculteit Letteren en Wijsbegeerte"
-  ],
-  "campus":[
-   ""
-  ],
-  "field":[
-   "social science"
-  ],
-  "themes":[
-   "environment"
-  ]
- },
- {
   "id":"C004311",
   "name":"Human-induced Impacts on Coastal Ecosystems",
   "year":"2020-2021",
@@ -6140,8 +6252,8 @@
    4
   ],
   "faculty":[
-   "Faculteit Wetenschappen",
-   "Faculteit Politieke en Sociale Wetenschappen"
+   "Faculteit Politieke en Sociale Wetenschappen",
+   "Faculteit Wetenschappen"
   ],
   "campus":[
    ""
@@ -6259,8 +6371,8 @@
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -6344,8 +6456,8 @@
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -6626,6 +6738,33 @@
   ]
  },
  {
+  "id":"I002089",
+  "name":"Internship Sustainable Management of Aquatic Resources",
+  "year":"2020-2021",
+  "teachers":[
+   "Van Stappen Gilbert"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002089.pdf",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"I002623",
   "name":"Interphase Processes of Host-associated Micro-organisms",
   "year":"2020-2021",
@@ -6829,8 +6968,8 @@
    6
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Economie en Bedrijfskunde"
+   "Faculteit Economie en Bedrijfskunde",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
@@ -6859,15 +6998,15 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -7031,15 +7170,15 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -7131,33 +7270,6 @@
   ]
  },
  {
-  "id":"C004238",
-  "name":"Landscape Genetics in Marine Settings",
-  "year":"2020-2021",
-  "teachers":[
-
-  ],
-  "languages":[
-   "nl"
-  ],
-  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/C004238.pdf",
-  "ects":[
-   3
-  ],
-  "faculty":[
-   "Faculteit Wetenschappen"
-  ],
-  "campus":[
-   ""
-  ],
-  "field":[
-   "sciences"
-  ],
-  "themes":[
-   "climatology"
-  ]
- },
- {
   "id":"C001032",
   "name":"Landschapsecologie [en]",
   "year":"2020-2021",
@@ -7200,16 +7312,16 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -7258,8 +7370,8 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Ingenieurswetenschappen en Architectuur"
+   "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
@@ -7485,7 +7597,8 @@
    "sciences"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -7512,7 +7625,8 @@
    "applied sciences & engineering"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -7620,7 +7734,8 @@
    "sciences"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -7984,15 +8099,15 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -8103,8 +8218,8 @@
    ""
   ],
   "field":[
-   "economy & management",
-   "social science"
+   "social science",
+   "economy & management"
   ],
   "themes":[
    "environment"
@@ -8247,6 +8362,62 @@
   ]
  },
  {
+  "id":"I002755",
+  "name":"Meat Science and Technology [en]",
+  "year":"2020-2021",
+  "teachers":[
+   "De Smet Stefaan"
+  ],
+  "languages":[
+   "en"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002755.pdf",
+  "ects":[
+   4
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen",
+   "Faculteit Wetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "sciences",
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
+  "id":"I002632",
+  "name":"Metabolic Engineering and Modelling of Micro-organisms",
+  "year":"2020-2021",
+  "teachers":[
+   "De Mey Marjan"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002632.pdf",
+  "ects":[
+   4
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"I002655",
   "name":"Meteorologie en ecoklimatologie",
   "year":"2020-2021",
@@ -8342,15 +8513,15 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -8538,17 +8709,17 @@
    6
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Economie en Bedrijfskunde",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
    "applied sciences & engineering",
-   "economy & management",
-   "sciences"
+   "sciences",
+   "economy & management"
   ],
   "themes":[
    "environment",
@@ -8746,8 +8917,8 @@
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -8770,8 +8941,8 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Ingenieurswetenschappen en Architectuur"
+   "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
@@ -9370,16 +9541,16 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -9956,15 +10127,15 @@
    6
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "climatology",
@@ -10205,8 +10376,8 @@
    5
   ],
   "faculty":[
-   "Faculteit Psychologie en Pedagogische Wetenschappen",
    "Faculteit Politieke en Sociale Wetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
    "Faculteit Letteren en Wijsbegeerte"
   ],
   "campus":[
@@ -10218,7 +10389,8 @@
   "themes":[
    "energy",
    "environment",
-   "climatology"
+   "climatology",
+   "durability"
   ]
  },
  {
@@ -10236,18 +10408,18 @@
    6
   ],
   "faculty":[
-   "Faculteit Psychologie en Pedagogische Wetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Politieke en Sociale Wetenschappen",
    "Faculteit Wetenschappen",
-   "Faculteit Politieke en Sociale Wetenschappen"
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
+   "social science",
    "sciences",
-   "social science"
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -10441,7 +10613,8 @@
    "sciences"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -10460,15 +10633,15 @@
    6
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -10570,15 +10743,15 @@
    7
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "durability"
@@ -10739,21 +10912,48 @@
    5
   ],
   "faculty":[
-   "Faculteit Economie en Bedrijfskunde",
-   "Faculteit Bio-ingenieurswetenschappen",
    "Faculteit Ingenieurswetenschappen en Architectuur",
-   "Faculteit Wetenschappen"
+   "Faculteit Economie en Bedrijfskunde",
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
    "economy & management",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
+  ]
+ },
+ {
+  "id":"I002192",
+  "name":"Raw Materials Network Seminar",
+  "year":"2020-2021",
+  "teachers":[
+   "Fors Per"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002192.pdf",
+  "ects":[
+   5
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
   ]
  },
  {
@@ -10771,8 +10971,8 @@
    9
   ],
   "faculty":[
-   "Faculteit Psychologie en Pedagogische Wetenschappen",
-   "Faculteit Farmaceutische Wetenschappen"
+   "Faculteit Farmaceutische Wetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
   ],
   "campus":[
    ""
@@ -11246,7 +11446,8 @@
    "applied sciences & engineering"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "durability"
   ]
  },
  {
@@ -11429,15 +11630,15 @@
    4
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment",
@@ -11460,18 +11661,19 @@
    5
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
-   "climatology"
+   "climatology",
+   "durability"
   ]
  },
  {
@@ -11799,6 +12001,33 @@
   ]
  },
  {
+  "id":"I002585",
+  "name":"Sustainability and Environmental Economics",
+  "year":"2020-2021",
+  "teachers":[
+   "Speelman Stijn"
+  ],
+  "languages":[
+   "nl"
+  ],
+  "url":"https:\/\/studiegids.ugent.be\/2020\/NL\/studiefiches\/I002585.pdf",
+  "ects":[
+   4
+  ],
+  "faculty":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "campus":[
+   ""
+  ],
+  "field":[
+   "applied sciences & engineering"
+  ],
+  "themes":[
+   "durability"
+  ]
+ },
+ {
   "id":"I002744",
   "name":"Sustainable Animal Husbandry [en]",
   "year":"2020-2021",
@@ -11840,8 +12069,8 @@
    5
   ],
   "faculty":[
-   "Faculteit Psychologie en Pedagogische Wetenschappen",
    "Faculteit Politieke en Sociale Wetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
    "Faculteit Letteren en Wijsbegeerte"
   ],
   "campus":[
@@ -12093,8 +12322,8 @@
    5
   ],
   "faculty":[
-   "Faculteit Psychologie en Pedagogische Wetenschappen",
    "Faculteit Politieke en Sociale Wetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
    "Faculteit Letteren en Wijsbegeerte"
   ],
   "campus":[
@@ -12482,8 +12711,8 @@
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "social science"
+   "social science",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -12558,15 +12787,15 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Wetenschappen"
+   "Faculteit Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""
   ],
   "field":[
-   "applied sciences & engineering",
-   "sciences"
+   "sciences",
+   "applied sciences & engineering"
   ],
   "themes":[
    "environment"
@@ -13050,8 +13279,8 @@
    3
   ],
   "faculty":[
-   "Faculteit Bio-ingenieurswetenschappen",
-   "Faculteit Ingenieurswetenschappen en Architectuur"
+   "Faculteit Ingenieurswetenschappen en Architectuur",
+   "Faculteit Bio-ingenieurswetenschappen"
   ],
   "campus":[
    ""

@@ -117,20 +117,50 @@
     },
     "environment": {
         "ARCH-H400": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                " of sustainability  ecology and energy as catal",
-                " of sustainability  ecology and energy as catal"
+            "[^a-z]ecolo[^ ]+": [
+                "s of sustainability  ecology and energy as catal",
+                "s of sustainability  ecology and energy as catal"
             ]
         },
         "ARCH-H502": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                " of sustainability  ecology and energy as catal",
-                "eth doherty  eds    ecological urbanism   lars m\u00fcl"
+            "[^a-z]ecolo[^ ]+": [
+                "s of sustainability  ecology and energy as catal",
+                "reth doherty  eds    ecological urbanism   lars m\u00fcl"
+            ]
+        },
+        "ARCH-P7111": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ant les aspects de l\u2019\u00e9cologie du territoire  du d"
+            ]
+        },
+        "ARCH-P7119": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "rche \u00ab architectures \u00e9cologies durabilit\u00e9s \u00bb   htt",
+                "uniteddiversity coop/ecological_building/bedzed-seven-years-on pdf   blewitt   joh",
+                "   une histoire de l'\u00e9cologie   points  1991   fe",
+                "  les deux \u00e2mes de l\u2019\u00e9cologie   l\u2019harmattan  2008",
+                "   f\u00e9lix   les trois \u00e9cologies   1989   hopkins   "
+            ]
+        },
+        "ARCH-P7120": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "rche \u00ab architectures \u00e9cologies durabilit\u00e9s \u00bb  http"
+            ]
+        },
+        "ARCH-P8119": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "es de l\u2019architecture \u00e9cologique  acv  etc    \u00e0 \u00e9lar",
+                "rche \u00ab architectures \u00e9cologies durabilit\u00e9s \u00bb   htt"
             ]
         },
         "ARCH-Y500": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                " of sustainability  ecology and energy as catal"
+            "[^a-z]ecolo[^ ]+": [
+                "s of sustainability  ecology and energy as catal"
+            ]
+        },
+        "BINF-F404": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "s de mod\u00e9lisation en \u00e9cologie et en \u00e9pid\u00e9miologie"
             ]
         },
         "BING-F1001": {
@@ -139,11 +169,23 @@
             ]
         },
         "BING-F202": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "  notions de base en \u00e9cologie  agriculture et nut",
+                "f\u00e9rer les bases agro-\u00e9cologiques fa\u00e7onnant les princ"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "ine  3h        de l\u2019\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me",
                 "\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me  flux d'\u00e9nergie  3h",
                 "gie  3h        de l\u2019\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me",
                 "\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me  cycles min\u00e9raux  6"
+            ]
+        },
+        "BING-F305": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "elles sont les bases \u00e9cologiques d'une nouvelle r\u00e9vo",
+                "ique d'un article et \u00e9cologie du sol  3  r\u00e9ins\u00e9re",
+                "es d'un raisonnement \u00e9cologique autour de nos \"food",
+                "an  s  r   2006  the ecology of sustainable food"
             ]
         },
         "BING-F4001": {
@@ -152,7 +194,23 @@
                 "ro\u00e9cologie et d'agro\u00e9cosyst\u00e8mes et syst\u00e8mes agraire"
             ]
         },
+        "BING-F4002": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "dre  1998  numerical ecology  2nd ed   elsevier "
+            ]
+        },
+        "BING-F4003": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "   otto h -j   1998  \u00e9cologie foresti\u00e8re  idf  pa"
+            ]
+        },
         "BING-F4004": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "        2  processus \u00e9cologiques \u00e0 l'origine de la m",
+                "            3  r\u00f4les \u00e9cologiques et \u00e9conomiques des ",
+                "base du diagnostique \u00e9cologique permettant de carac",
+                "base du diagnostique \u00e9cologique permettant de carac"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "sectes dans nos agro\u00e9cosyst\u00e8mes et dans nos villes ",
                 "t\u00e8mes agraires  agro\u00e9cosyst\u00e8mes et agro\u00e9cologie  en"
@@ -163,12 +221,25 @@
                 "sols  diversit\u00e9 des \u00e9cosyst\u00e8mes             propose"
             ]
         },
+        "BING-F4006": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "vivant \u00e0 une \u00e9chelle \u00e9cologique situ\u00e9e entre celle "
+            ]
+        },
+        "BING-F4007": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ie des organismes et \u00e9cologie            1 1 renf"
+            ]
+        },
         "BING-F403": {
             "[\u00e9e]cosyst[^ ]+": [
                 "t\u00e8mes agraires  agro\u00e9cosyst\u00e8mes et agro\u00e9cologie    "
             ]
         },
         "BING-F410": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ie des organismes et ecologie               appr\u00e9"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "e  productivit\u00e9 des \u00e9cosyst\u00e8mes et r\u00e9sistance aux p",
                 " fonctionnement des \u00e9cosyst\u00e8mes et est illustr\u00e9 par",
@@ -179,12 +250,24 @@
             ]
         },
         "BING-F431": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "        4  les r\u00f4les \u00e9cologiques et \u00e9conomiques des ",
+                "nnovations sociales  \u00e9cologiques et agronomiques des"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "    6  les services \u00e9cosyst\u00e9miques   d\u00e9finitions et ap",
                 "ations dans les agro\u00e9cosyst\u00e8mes et les villes les o"
             ]
         },
         "BING-F5001": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "          le paysage \u00e9cologique comme unit\u00e9 spatial",
+                "        l'\u00e9valuation \u00e9cologique des paysages       ",
+                "           le r\u00e9seau \u00e9cologique comme outil de plan",
+                "re est consacr\u00e9e \u00e0 l\u2019\u00e9cologie de la conservation ",
+                "\u00e9chelle des paysages \u00e9cologiques   a l'issue de cett",
+                "structur\u00e9e de r\u00e9seau \u00e9cologique et d\u2019articuler les "
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "alogues et nouveaux \u00e9cosyst\u00e8mes               le r\u00e9",
                 "de restauration des \u00e9cosyst\u00e8mes et de pr\u00e9servation "
@@ -196,6 +279,9 @@
             ]
         },
         "BING-F525": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "a practical guide to ecological modelling  springe"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 " fonctionnement des \u00e9cosyst\u00e8mes aquatiques  d\u00e9coupa",
                 "ules en un mod\u00e8le d'\u00e9cosysteme et application  ide",
@@ -205,17 +291,39 @@
                 "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
             ]
         },
+        "BING-F535": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "dre  1998  numerical ecology  2nded   elsevier  "
+            ]
+        },
         "BIOL-F304": {
             "[\u00e9e]cosyst[^ ]+": [
                 "importance dans les \u00e9cosyst\u00e8mes  situation dans le "
             ]
         },
         "BIOL-F305": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "e   x   les syst\u00e8mes \u00e9cologiques de la bio-g\u00e9osph\u00e8re",
+                "nobotanique et socio-\u00e9cologie  xiii   la t\u00e9l\u00e9d\u00e9te",
+                "n des syst\u00e8mes socio-\u00e9cologiques   f  les zonobiomes",
+                "lantes- les syst\u00e8mes \u00e9cologiques du bio-g\u00e9osph\u00e8re- l",
+                "s ombrothermiques- l\u2019\u00e9cologie des environnements ",
+                "es bases de la socio-\u00e9cologie     voir aussi site",
+                "on of the earth  the ecological systems of the geo-",
+                " g a  fox  2006  the ecology of plants  2nd edit",
+                "res  fonctionnement  \u00e9cologie et biotechnologies "
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 " fonctionnement des \u00e9cosyst\u00e8mes   1 9  appr\u00e9hender "
             ]
         },
         "BIOL-F309": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ssources et de niche \u00e9cologique permettant de synth",
+                "es facteurs clefs en \u00e9cologie  cours ex cathedra ",
+                "p  townsend  c  r    ecology   individuals  popu",
+                "iples of terrestrial ecology  springer          "
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 " fonctionnement des \u00e9cosyst\u00e8mes 0  introduction 1  ",
                 " d'\u00e9nergie dans les \u00e9cosyst\u00e8mes   \u00e9l\u00e9ments de bio\u00e9n",
@@ -223,12 +331,31 @@
             ]
         },
         "BIOL-F310": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "r la biodiversit\u00e9 4  ecologie marine  1  5  ecolo",
+                "ologie marine  1  5  ecologie marine  2  6  biodi",
+                "ssources et de niche \u00e9cologique permettant de synth",
+                "es facteurs clefs en \u00e9cologie  pour tous  et en f",
+                "et al   2011  marine ecology  oxford university "
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "matique 7  services \u00e9cosystemiques 8  biodiversit\u00e9 et ",
                 " fonctionnement des \u00e9cosyst\u00e8mes  et permettant d'ap"
             ]
         },
+        "BIOL-F4001": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "cipaux concepts de l'\u00e9cologie comportementale ser",
+                "n perspective avec l\u2019\u00e9cologie des esp\u00e8ces   en ra",
+                "grands concepts de l'\u00e9cologie comportementale    ",
+                "ie des organismes et ecologie       renforcer ses",
+                "n et al  behavioural ecology  oxford university "
+            ]
+        },
         "BIOL-F4002": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ie des organismes et ecologie     1 1  renforcer "
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 " fonctionnement des \u00e9cosyst\u00e8mes   3 1  effectuer un"
             ]
@@ -239,15 +366,18 @@
             ]
         },
         "BIOL-F412": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ie des organismes et ecologie  discuter des impli"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
             ]
         },
         "BIOL-F417": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                "et al 2011   marine ecology   processes  system",
-                "ela i 2009   marine ecological processes   3 rd  r",
-                "tion  biodiversity  ecology   new york   oxford"
+            "[^a-z]ecolo[^ ]+": [
+                " et al 2011   marine ecology   processes  system",
+                "iela i 2009   marine ecological processes   3 rd  r",
+                "ction  biodiversity  ecology   new york   oxford"
             ]
         },
         "BIOL-F441": {
@@ -256,6 +386,9 @@
             ]
         },
         "BIOL-F444": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ie des organismes et ecologie       1- constituer"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "cles in terrestrial ecosystems   functional traits",
                 "unity structure and ecosystem functioning   to ex",
@@ -266,8 +399,16 @@
             ]
         },
         "BIOL-F531": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "hie       l\u2019approche \u00e9cologique       l\u2019approche hi"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 " fonctionnement des \u00e9cosyst\u00e8mes  \u2022 1 9  appr\u00e9hender"
+            ]
+        },
+        "BIOL-J102": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "          el\u00e9ments d'\u00e9cologie et d'\u00e9volution des "
             ]
         },
         "CHIM-H302": {
@@ -275,9 +416,30 @@
                 " fonctionnement des \u00e9cosyst\u00e8mes aquatiques  perturb"
             ]
         },
+        "CNST-H306": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "013   design for the ecological age  rethinking the"
+            ]
+        },
+        "CNST-P1007": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "isation sur le choix \u00e9cologique des mat\u00e9riaux et su"
+            ]
+        },
+        "CNST-P3004": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "l\u2019isolation phonique \u00e9cologique  editions terres vi"
+            ]
+        },
+        "CNST-P3006": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "17-29940/  magazine \"ecologik\"  https //www ecolog",
+                "ologik\"  https //www ecologikmagazine fr/  \"architecture "
+            ]
+        },
         "CNST-Y512": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                " of sustainability  ecology and energy as catal"
+            "[^a-z]ecolo[^ ]+": [
+                "s of sustainability  ecology and energy as catal"
             ]
         },
         "COMM-B430": {
@@ -285,37 +447,86 @@
                 "  etude de cas d\u2019un ecosyst\u00e8me social d\u00e9velopp\u00e9 pa"
             ]
         },
+        "COMM-B470": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "n linguistique  2  l'\u00e9cologie des langues  3  et "
+            ]
+        },
+        "CRIM-C408": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ial et mat\u00e9riel  son \u00e9cologie  sp\u00e9cifique  par ai"
+            ]
+        },
+        "DENT-G3301": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ral  biofilms oraux  \u00e9cologie microbienne orale  "
+            ]
+        },
         "ENVI-F4001": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                " pratiques agricoles \u00e9cologiquement orient\u00e9es   environ"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 " lois r\u00e9gissant ces \u00e9cosyst\u00e8mes pour une gestion ra"
             ]
         },
         "ENVI-F403": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "m services in social-ecological systems   cambridge"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "ilience  sustaining ecosystem services in social-"
             ]
         },
         "ENVI-F409": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ale et de l'\u00e9conomie \u00e9cologique  une s\u00e9rie limit\u00e9e ",
+                "rodoxe de l'economie \u00e9cologique  contribution au pr",
+                "stagl sigrid  2005   ecological economics  an intro"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
             ]
         },
         "ENVI-F437": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "s \u00eatres vivants 2  l'\u00e9cologie  \u00e9tude des cycles b",
+                " ramade - el\u00e9ments d'\u00e9cologie  ediscience interna"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "nnement g\u00e9n\u00e9ral des \u00e9cosyst\u00e8mes  flux d'\u00e9nergie  ch",
                 " principaux types d'\u00e9cosyst\u00e8mes | grands biomes | b"
             ]
         },
         "ENVI-F452": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ion du cycle de vie  \u00e9cologie industrielle  berce"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
             ]
         },
+        "ENVI-F5001": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "t de l'igeat         ecologie politique et gouver",
+                "olitique et \u00e9conomie \u00e9cologique  tom bauler        "
+            ]
+        },
+        "ENVI-F504": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "es approches comme l\u2019\u00e9cologie politique  les sts ",
+                "ani\u00e8re dont la crise \u00e9cologique mondiale  dans ses ",
+                "posantes de la crise \u00e9cologique et la comp\u00e9tition p"
+            ]
+        },
         "ENVI-F531": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                "plexity of soc-tech-ecological systems  path depen",
-                "ation  critiques of ecological modernization  the ",
-                "ocial-technological-ecological systems  e g  mobil"
+            "[^a-z]ecolo[^ ]+": [
+                "mplexity of soc-tech-ecological systems  path depen",
+                "vation  critiques of ecological modernization  the ",
+                "social-technological-ecological systems  e g  mobil"
+            ],
+            "environmental challenge": [
+                "ach to contemporary environmental challenges  linking environme"
             ]
         },
         "ENVI-L505": {
@@ -324,15 +535,58 @@
             ]
         },
         "ENVI-P1003": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "e propose un cours d\u2019\u00e9cologie en architecture  il",
+                "e les probl\u00e9matiques \u00e9cologiques contemporaines  l'a",
+                "   une histoire de l'\u00e9cologie   points  1991   de",
+                "d  paul  la synth\u00e8se \u00e9cologique   populations  comm",
+                "uy   qu'est-ce que l'\u00e9cologie   vuibert  2010    ",
+                "space for humanity   ecology and society 14 2   ",
+                "iety 14 2   32   www ecologyandsociety org/vol14/iss2/art3"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 " d\u2019organisation des \u00e9cosyst\u00e8mes et raconte l\u2019histoi",
                 "tions  communaut\u00e9s  \u00e9cosyst\u00e8mes  biosph\u00e8re  noosph\u00e8",
                 "inking   sustaining ecosystems and people in a cha"
             ]
         },
+        "GERM-B430": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "nche sur le discours \u00e9cologique/\u00e9cocritique et l'\u00e9copo\u00e9tique au",
+                "uelle  esth\u00e9tique et \u00e9cologique/\u00e9copo\u00e9tique   familiariser les "
+            ]
+        },
+        "GEST-D447": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ies du changement  l'\u00e9cologie des organisations  "
+            ]
+        },
+        "GEST-S454": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "dre de la transition \u00e9cologique et sociale        p",
+                "res de la transition \u00e9cologique et sociale et les e"
+            ]
+        },
+        "GEST-S471": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "  quelques principes \u00e9cologiques de base       parti",
+                "     biomim\u00e9tisme et \u00e9cologie industrielle       "
+            ]
+        },
+        "GEST-S488": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "dre de la transition \u00e9cologique et sociale  pour la"
+            ]
+        },
+        "LANG-D314": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "mor = l'humour       ecologie en duurzaamheid = l",
+                " en duurzaamheid = l'\u00e9cologie et la durabilit\u00e9   "
+            ]
+        },
         "MEMO-H507": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                " of sustainability  ecology and energy as catal"
+            "[^a-z]ecolo[^ ]+": [
+                "s of sustainability  ecology and energy as catal"
             ]
         },
         "PHYS-H515": {
@@ -341,32 +595,107 @@
             ]
         },
         "POLI-D439": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                "out in manitoba  an ecological analysis\u201d  canadian"
+            "[^a-z]ecolo[^ ]+": [
+                "nout in manitoba  an ecological analysis\u201d  canadian"
             ]
         },
         "PROJ-H502": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                " of sustainability  ecology and energy as catal"
+            "[^a-z]ecolo[^ ]+": [
+                "s of sustainability  ecology and energy as catal"
+            ]
+        },
+        "PROJ-P0602": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ournal of industrial ecology 12 6  789-800  jaco"
             ]
         },
         "PROJ-P0802": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "me infrastructure et ecologie  louise  et en part"
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "tropolitains et des \u00e9cosyst\u00e8mes r\u00e9gionaux  pour ce ",
                 "m\u00e9tabolisme urbain  \u00e9cosyst\u00e8mes naturels  etc   du "
             ]
         },
+        "PROJ-P1002": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ournal of industrial ecology 12 6  789-800  jaco"
+            ]
+        },
+        "SAPU-L4310": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                " soci\u00e9t\u00e9 \u2022 le mod\u00e8le \u00e9cologique de uri bronfenbrenn",
+                "brenner u  1979  the ecology of human developmen"
+            ]
+        },
+        "SOCA-D4996": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                " th\u00e9oriques  comme l\u2019\u00e9cologie culturelle et l\u2019eth",
+                "rts de la  political ecology en mati\u00e8re de compr"
+            ]
+        },
+        "SOCA-D550": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "iques  politiques et \u00e9cologiques  quelles sont les r",
+                "vers contextes socio-\u00e9cologiques       depuis les an",
+                "iques  politiques et \u00e9cologiques  cours  lectures  d"
+            ]
+        },
+        "TRAD-B4006": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                " actes des congr\u00e8s  \u25cfecolotrain  https //translatio",
+                "/learning-center/  \u25cf ecolomedia  https //translatio"
+            ]
+        },
+        "TRAD-B4023": {
+            "d\u00e9fis? environnement[^ ]+": [
+                "conomiques face aux d\u00e9fis environnementaux et sociaux  \u00e9d  mar"
+            ]
+        },
+        "TRAN-B2000": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "ade  f    \u00e9l\u00e9ments d\u2019\u00e9cologie     \u00e9cologie appliq",
+                "ments d\u2019\u00e9cologie     \u00e9cologie appliqu\u00e9e   paris  "
+            ]
+        },
         "URBA-H9009": {
-            "(?:environmentalist|ecolo[^ ]+)": [
-                "  urban ecosystems  ecological principles for the ",
-                "herty  eds   2010   ecological urbanism   baden  l",
-                "2013  resilience in ecology and urban design  l"
+            "[^a-z]ecolo[^ ]+": [
+                "   urban ecosystems  ecological principles for the ",
+                "oherty  eds   2010   ecological urbanism   baden  l",
+                " 2013  resilience in ecology and urban design  l"
+            ]
+        },
+        "URBA-P706": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "cago  naissance de l\u2019\u00e9cologie urbaine  paris  fla"
             ]
         },
         "URBA-P9006": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "me infrastructure et ecologie  louise  et en part",
+                "ciale  \u00e9conomique et \u00e9cologique               d\u00e9mon",
+                "16   toward an urban ecology   scape   new york "
+            ],
             "[\u00e9e]cosyst[^ ]+": [
                 "t plus attentif des \u00e9cosyst\u00e8mes environnants  moins",
                 "tropolitains et des \u00e9cosyst\u00e8mes r\u00e9gionaux  pour ce "
+            ]
+        },
+        "URBA-P9008": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "s liaisons vertes et \u00e9cologiques urbaines  analyse d"
+            ]
+        },
+        "VETE-G2206": {
+            "[^a-z][\u00e9e]colo[^ ]+": [
+                "    ----      partim ecologie  ce cours commence ",
+                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie et continue ensuite",
+                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie     du logement des",
+                "    ----      partim ecologie  l'objectif du cour",
+                "'objectif du cours d'\u00e9cologie appliqu\u00e9e aux anima",
+                "    ----      partim ecologie  ce cours  tant pou",
+                "     ----     partim ecologie   "
             ]
         }
     },
@@ -533,6 +862,11 @@
                 "mpte des aspects de d\u00e9veloppement durable aux travers de choi"
             ]
         },
+        "ARCH-H400": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                " general context of sustainable development             explore"
+            ]
+        },
         "ARCH-P7119": {
             "architectures? durab[^ ]+": [
                 "        questions d\u2019architecture durable     bernard deprez ",
@@ -580,6 +914,12 @@
                 " une perspective de d\u00e9veloppement durable          donner les"
             ]
         },
+        "CHIM-S201": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "urse is part of the sustainable development initiative of the s",
+                "cs and management  \u201csustainable development@sbsem\u201d  definition "
+            ]
+        },
         "CNST-P3006": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "loise en mati\u00e8re de d\u00e9veloppement durable   la profession d'a"
@@ -588,6 +928,11 @@
         "DROI-C5021": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "         concepts - d\u00e9veloppement durable         instruments"
+            ]
+        },
+        "DROI-S400": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "  lo 1 1  integrate sustainable development into problem analys"
             ]
         },
         "ECON-S2001": {
@@ -624,6 +969,11 @@
                 " principes          d\u00e9veloppement durable             bloc 2 "
             ]
         },
+        "ENVI-F531": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "tal changes towards sustainable development  it provides a vari"
+            ]
+        },
         "ENVI-L505": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "e deux sc\u00e9narios de d\u00e9veloppement durable                    "
@@ -655,10 +1005,47 @@
                 "ue dans le cadre du d\u00e9veloppement durable  examiner le foncti"
             ]
         },
+        "GEST-S2002": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "rse is part of the  sustainable development initiative of the s",
+                "cs and management  \u201csustainable development@sbsem\u201d  see profile"
+            ]
+        },
+        "GEST-S204": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "urse is part of the sustainable development initiative of the s",
+                "cs and management  \u201csustainable development@sbsem\u201d   we put a l"
+            ]
+        },
         "GEST-S3002": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "    strat\u00e9gie &amp  d\u00e9veloppement durable    transports publi",
                 "riale   int\u00e9grer le d\u00e9veloppement durable dans l'analyse   ad"
+            ]
+        },
+        "GEST-S303": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "urse is part of the sustainable development initiative of the s",
+                "cs and management  \u201csustainable development@sbsem\u201d       market",
+                "s course integrates sustainable development at every stage of t"
+            ]
+        },
+        "GEST-S307": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "urse is part of the sustainable development initiative of the s",
+                "cs and management  \u201csustainable development@sbsem\u201d      what ma",
+                "ntrepreneurship and sustainable development matter for our soci"
+            ]
+        },
+        "GEST-S407": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "    lo1 1 integrate sustainable development into problem analys"
+            ]
+        },
+        "GEST-S442": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                "2 2       integrate sustainable development into problem analys",
+                "2 2       integrate sustainable development into problem analys"
             ]
         },
         "MSTL-F601": {
@@ -709,6 +1096,11 @@
         "PROJ-H417": {
             "d\u00e9velopp[^ ]+ durab[^ ]+": [
                 "environnementaux du d\u00e9veloppement durable a\u0300 ses activit\u00e9s pr"
+            ]
+        },
+        "PROJ-H502": {
+            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
+                " 7  real estate and sustainable development  8  construction co"
             ]
         },
         "SAPU-L4021": {
