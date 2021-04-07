@@ -24,7 +24,7 @@ class UGentProgramSpider(scrapy.Spider, ABC):
     def start_requests(self):
         faculties_codes = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'J', 'K']
         for faculty_code in faculties_codes:
-            for deg in ('BACH', 'MABA'):
+            for deg in ('BACH', 'MABA', 'EDMA'):
                 yield scrapy.Request(
                     url=BASE_URL.format(year=YEAR, faculty=faculty_code, cycle=deg),
                     callback=self.parse_main
@@ -32,12 +32,15 @@ class UGentProgramSpider(scrapy.Spider, ABC):
 
     def parse_main(self, response):
         program_links = response.xpath("//li[a[@target='_top']]/a/@href").getall()
-        for link in program_links:
-            yield response.follow(link, self.parse_programmes)
+        program_names = response.xpath("//li[a[@target='_top']]/a/text()").getall()
+        for link, program_name in zip(program_links, program_names):
+            program_name = program_name.replace("  ", '').replace("\n", '')\
+                .replace('-', ' - ').replace('  ', ' ').strip(" ")
+            yield response.follow(link, self.parse_programmes, cb_kwargs={'program_name': program_name})
 
-    def parse_programmes(self, response):
+    def parse_programmes(self, response, program_name):
         program_id = response.url.split('/')[-2]
-        program_name = response.xpath("//article//h1/text()").get()
+        # program_name = response.xpath("//article//h1/text()").get()
         cycle = 'bac' if 'Bachelor' in program_name else 'master'
         faculty = response.xpath("//div/h2/text()").get()
         # TODO: make faculty a list?
@@ -61,11 +64,12 @@ class UGentProgramSpider(scrapy.Spider, ABC):
         # Get list of courses in this subprogram
         courses_ids = [url.split('/')[-1].strip('.pdf')
                        for url in response.xpath("//td[@class='cursus']//a/@href").getall()]
-        courses_names = response.xpath("//td[@class='cursus']//a/text()").getall()
+        courses_names = []
         courses_ects = []
         courses_teachers = []
         for courses_id in courses_ids:
             course_xpath = f"//td[@class='cursus']//a[contains(@href, '{courses_id}')]"
+            courses_names += [response.xpath(f"{course_xpath}/text()").get().strip(" ").replace(' ]', ']')]
             courses_ects += [response.xpath(f"{course_xpath}"
                                             f"/following::td[@class='studiepunten'][1]/text()").get()]
             courses_teachers += [response.xpath(f"{course_xpath}"
@@ -73,9 +77,9 @@ class UGentProgramSpider(scrapy.Spider, ABC):
         courses_ects = [float(e) if '.' in e else int(e) for e in courses_ects]
         courses_teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" if t is not None else None
                             for t in courses_teachers]
-        print(len(courses_ids))
-        print(len(courses_ects))
-        print(len(courses_teachers))
+        print(len(courses_ids), len(courses_names), len(courses_ects), len(courses_teachers))
+        if len(courses_ids) != len(courses_names) or len(courses_ids) != len(courses_ects) or len(courses_teachers) != len(courses_ids):
+            exit()
         # If there are any, create an entry in the output file
         if len(courses_ids) != 0:
             cur_dict = {'courses': courses_ids,

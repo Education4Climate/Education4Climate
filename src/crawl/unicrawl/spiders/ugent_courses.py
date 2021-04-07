@@ -57,7 +57,7 @@ def main(fn):
         # Languages
         languages = ['nl']
         if '[' in course_name and ']' in course_name:
-            languages = course_name.split("[")[-1].split(']')[0].split(',')
+            languages = course_name.split("[")[-1].split(']')[0].replace(' ', '').split(',')
         # Content
         url = BASE_URl.format(course_id)
         content = extract_content(url)
