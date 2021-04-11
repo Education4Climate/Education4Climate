@@ -4,7 +4,7 @@ import json
 import urllib.parse
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.ulb.be/servlet/search?" \
            "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \
@@ -21,7 +21,7 @@ class ULBProgramSpider(scrapy.Spider, ABC):
     name = 'ulb-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ulb_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ulb_programs_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -74,7 +74,6 @@ class ULBProgramSpider(scrapy.Spider, ABC):
                      'campus': campus,
                      'url': response.url}
 
-        # TODO: actually if programs are contained in programs one needs to add a finalé arugment to the url
         program_id = program_id.upper()
         if main_program_id is None:
             link = PROG_URL.format(program_id)

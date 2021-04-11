@@ -1,12 +1,13 @@
-CRAWLERS_FOLDER = 'src/crawl/unicrawl/spiders/'
-SCORER_FOLDER = 'src/score/'
-SRC_CRAWL_FOLDER = 'src/crawl/'
-CRAWLING_OUTPUT_FOLDER = 'data/crawling-output/'
-SCORING_OUTPUT_FOLDER = 'data/scoring-output/'
-WEB_INPUT_FOLDER = 'src/web-ui/data/'
+from settings import *
 
-# TODO import from config file?
-YEAR = 2020
+CRAWLERS_FOLDER = 'src/crawl/unicrawl/spiders/'
+SRC_SCORE_FOLDER = 'src/score/'
+SRC_CRAWL_FOLDER = 'src/crawl/'
+SRC_WEB_FOLDER = 'src/web/'
+# CRAWLING_OUTPUT_FOLDER = 'data/crawling-output/'
+# SCORING_OUTPUT_FOLDER = 'data/scoring-output/'
+# WEB_INPUT_FOLDER = 'src/web-ui/data/'
+# YEAR = 2020
 
 # TODO: add special rules when merge is needed -> expl UCLouvain
 
@@ -68,7 +69,7 @@ rule score_courses:
         SCORING_OUTPUT_FOLDER + '{school}_scoring_{year}.csv',
         SCORING_OUTPUT_FOLDER + '{school}_matches_{year}.json'
     shell:
-        "python {SCORER_FOLDER}courses.py -s {wildcards.school} -y {wildcards.year}"
+        "python {SRC_SCORE_FOLDER}courses.py -s {wildcards.school} -y {wildcards.year}"
 
 rule score_programs:
     input:
@@ -76,7 +77,7 @@ rule score_programs:
         SCORING_OUTPUT_FOLDER + '{school}_scoring_{year}.csv'
     output: SCORING_OUTPUT_FOLDER + '{school}_programs_scoring_{year}.csv'
     shell:
-        "python {SCORER_FOLDER}programs.py -s {wildcards.school} -y {wildcards.year}"
+        "python {SRC_SCORE_FOLDER}programs.py -s {wildcards.school} -y {wildcards.year}"
 
 
 rule prepare_to_web:
@@ -90,4 +91,4 @@ rule prepare_to_web:
         WEB_INPUT_FOLDER + '{school}_data_{year}_heavy.csv',
         WEB_INPUT_FOLDER + '{school}_data_{year}_programs.csv'
     shell:
-        "python {SCORER_FOLDER}prepare_to_web.py -s {wildcards.school} -y {wildcards.year}"
+        "python {SRC_WEB_FOLDER}prepare.py -s {wildcards.school} -y {wildcards.year}"

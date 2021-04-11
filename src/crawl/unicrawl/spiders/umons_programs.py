@@ -3,8 +3,8 @@ import scrapy
 from abc import ABC
 from pathlib import Path
 
-from config.settings import YEAR
-from config.utils import cleanup
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = "https://web.umons.ac.be/fr/enseignement/loffre-de-formation-de-lumons/"
 
 
@@ -12,7 +12,7 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
     name = "umons-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/umons_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}umons_programs_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -21,7 +21,6 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
     def parse_offer(self, response):
         formations = response.xpath('//span//a[not(contains(@href, "png"))]')
         urls = formations.xpath('@href').getall()
-        # TODO: à uniformiser
         cycles = formations.xpath('text()').getall()
         assert len(urls) == len(cycles)
         for cycle, url in zip(cycles, urls):

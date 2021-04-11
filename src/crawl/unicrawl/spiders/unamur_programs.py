@@ -4,8 +4,8 @@ from pathlib import Path
 
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://directory.unamur.be/teaching/programmes"
 
@@ -13,9 +13,8 @@ BASE_URL = "https://directory.unamur.be/teaching/programmes"
 class UNamurProgramSpider(scrapy.Spider, ABC):
     name = "unamur-programs"
     custom_settings = {
-        # TODO: this is ugly
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/unamur_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}unamur_programs_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -35,7 +34,7 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 f"//following::div[1]/div/a/text()").getall()
             for program_name, programs_link in zip(programs_names, programs_links):
                 # Scrap only bachelor and master programs
-                # TODO: devrait-on rajouter les certificats?
+                # TODO: should we add certificates?
                 if program_name.startswith("Bachelier") or program_name.startswith("Master"):
                     cycle = 'bac' if program_name.startswith("Bachelier") else 'master'
                     base_dict = {

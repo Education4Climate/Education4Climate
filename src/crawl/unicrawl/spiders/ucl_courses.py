@@ -6,12 +6,12 @@ import pandas as pd
 
 import scrapy
 
-from config.settings import YEAR
-from config.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from src.crawl.utils import cleanup
 
 BASE_URL = "https://uclouvain.be/cours-{}-{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/ucl_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}ucl_programs_{YEAR}.json')
 
 
 LANGUAGE_DICT = {"Français": "fr",
@@ -31,7 +31,7 @@ class UCLCourseSpider(scrapy.Spider, ABC):
     name = "ucl-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ucl_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ucl_courses_{YEAR}.json')
     }
 
     def start_requests(self):

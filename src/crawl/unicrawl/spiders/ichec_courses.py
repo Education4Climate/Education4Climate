@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.ichec.be/fr/programmes"
 # TODO: check languages
@@ -20,7 +20,7 @@ class ICHECCourseSpider(scrapy.Spider, ABC):
     name = "ichec-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ichec_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ichec_courses_{YEAR}.json')
     }
 
     def start_requests(self):

@@ -5,12 +5,12 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format is code course, second is year
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/unamur_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}unamur_programs_{YEAR}.json')
 
 LANGUAGES_DICT = {"Français": 'fr',
                   "Anglais / English": 'en',
@@ -24,7 +24,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
     name = "unamur-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/unamur_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}unamur_courses_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -45,14 +45,13 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         teachers = cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
         teachers = [teacher.replace(' (suppléant)', '') for teacher in teachers]
 
-        # TODO: cours en plusieurs langues?
         languages = cleanup(response.xpath("//div[contains(text(), 'Langue')]").getall())
         languages = [lang.split(":  ")[1] for lang in languages]
-        # TODO: check all language used
         languages = [LANGUAGES_DICT[lang] for lang in languages]
 
         content = cleanup(response.xpath("//div[@id='tab-introduction']").get())
 
+        # TODO: remove if not required anymore
         # cycle_ects = cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
         # cycles = []
         # ects = []
@@ -69,7 +68,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         #     elif i % 3 == 2:
         #         ects += [int(el)]
 
-        # TODO: need to check if there are not sometimes several campuses or faculties
+        # ODO: need to check if there are not sometimes several campuses or faculties
         # organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
         # campus = ''
         # if "Lieu de l'activité" in organisation:

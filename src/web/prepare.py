@@ -3,7 +3,7 @@ import argparse
 
 import pandas as pd
 
-from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_INPUT_FOLDER
+from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_INPUT_FOLDER
 
 import logging
 logger = logging.getLogger()

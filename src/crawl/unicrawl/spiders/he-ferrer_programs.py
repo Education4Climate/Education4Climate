@@ -2,10 +2,11 @@
 from abc import ABC
 from pathlib import Path
 
+import pandas as pd
+
 import scrapy
 
-from config.settings import YEAR
-import pandas as pd
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://fiches-ue.icampusferrer.eu/locked_list.php"
 
@@ -18,7 +19,7 @@ class HEFERRERProgramSpider(scrapy.Spider, ABC):
     name = "he-ferrer-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/he-ferrer_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}he-ferrer_programs_{YEAR}.json')
     }
 
     def start_requests(self):

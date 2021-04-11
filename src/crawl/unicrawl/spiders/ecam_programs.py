@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.ecam.be/{}"
 PROGRAM_CODE_LIST = ["MAU", "MCO", "MEM", "MEO", "MGE", "MIN", "MIS", "MIC"]
@@ -18,7 +18,7 @@ class ECAMProgramSpider(scrapy.Spider, ABC):
     name = "ecam-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ecam_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ecam_programs_{YEAR}.json')
     }
 
     def start_requests(self):

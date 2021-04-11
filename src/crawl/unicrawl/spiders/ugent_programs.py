@@ -1,15 +1,9 @@
 from abc import ABC
-from typing import List
 from pathlib import Path
 
 import scrapy
-# import pdfplumber
 
-from config.settings import YEAR
-from config.utils import cleanup
-import re
-import os
-import urllib3
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://studiegids.ugent.be/{year}/NL/FACULTY/{faculty}/{cycle}/{cycle}.html"
 
@@ -18,7 +12,7 @@ class UGentProgramSpider(scrapy.Spider, ABC):
     name = 'ugent-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ugent_programs_{YEAR}_pre.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}_pre.json')
     }
 
     def start_requests(self):

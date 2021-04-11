@@ -5,12 +5,12 @@ import pandas as pd
 
 import scrapy
 
-from config.settings import YEAR
-from config.utils import cleanup
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = 'https://caliweb.vub.be/?page=course-offer&id={}&anchor=1'
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/vub_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}vub_programs_{YEAR}.json')
 LANGUAGE_DICT = {"Dutch": 'nl',
                  "Nederlands": 'nl',
                  "English": 'en',
@@ -28,7 +28,7 @@ class VUBCourseSpider(scrapy.Spider, ABC):
     name = "vub-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/vub_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}vub_courses_{YEAR}.json')
     }
 
     def start_requests(self):

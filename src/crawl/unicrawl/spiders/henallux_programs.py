@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://paysage.henallux.be/"
 
@@ -17,7 +17,7 @@ class HENALLUXProgramSpider(scrapy.Spider, ABC):
     name = "henallux-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/henallux_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}henallux_programs_{YEAR}.json')
     }
 
     def start_requests(self):

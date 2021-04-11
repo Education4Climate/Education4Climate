@@ -3,7 +3,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = 'https://caliweb.vub.be/'
 
@@ -14,7 +14,7 @@ class VUBProgramSpider(scrapy.Spider, ABC):
     name = "vub-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/vub_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}vub_programs_{YEAR}.json')
     }
 
     def start_requests(self):

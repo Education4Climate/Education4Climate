@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "http://progcours.hech.be/cocoon/fac/fac{}"
 DEPARTMENTS_CODES = {"A": "Département Agronomique",
@@ -21,7 +21,7 @@ class HECHProgramSpider(scrapy.Spider, ABC):
     name = "hech-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/hech_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}hech_programs_{YEAR}.json')
     }
 
     def start_requests(self):

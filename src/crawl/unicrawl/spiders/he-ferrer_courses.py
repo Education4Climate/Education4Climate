@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://fiches-ue.icampusferrer.eu/locked_list.php"
 
@@ -20,7 +20,7 @@ class HECHCourseSpider(scrapy.Spider, ABC):
     name = "he-ferrer-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/he-ferrer_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}he-ferrer_courses_{YEAR}.json')
     }
 
     def start_requests(self):

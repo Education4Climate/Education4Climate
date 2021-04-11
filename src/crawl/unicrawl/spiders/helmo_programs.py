@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.helmo.be/Formations/{}.aspx"
 DEPARTMENTS = {"Département Economique et Juridique": "Economique",
@@ -22,7 +22,7 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
     name = "helmo-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/helmo_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_programs_{YEAR}.json')
     }
 
     def start_requests(self):

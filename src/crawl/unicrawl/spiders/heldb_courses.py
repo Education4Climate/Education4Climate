@@ -4,8 +4,8 @@ from pathlib import Path
 
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "http://www.heldb.be/fr/formations-et-enseignement"
 # TODO: check languages
@@ -20,7 +20,7 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
     name = "heldb-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/heldb_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_courses_{YEAR}.json')
     }
 
     def start_requests(self):

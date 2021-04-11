@@ -5,12 +5,12 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URl = "http://progcours.heaj.be/cocoon/cours/{}.html"  # first format is code course, second is year
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/heaj_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}heaj_programs_{YEAR}.json')
 
 # TODO: checker langues
 LANGUAGES_DICT = {"Langue française": 'fr',
@@ -25,7 +25,7 @@ class HECHCourseSpider(scrapy.Spider, ABC):
     name = "heaj-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/heaj_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}heaj_courses_{YEAR}.json')
     }
 
     def start_requests(self):

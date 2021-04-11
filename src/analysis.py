@@ -3,7 +3,7 @@ from typing import List
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from config.settings import SCORING_OUTPUT_FOLDER, CRAWLING_OUTPUT_FOLDER
+from settings import SCORING_OUTPUT_FOLDER, CRAWLING_OUTPUT_FOLDER
 
 
 def analyse_courses(schools: List[str], year: int, themes: List[str]):

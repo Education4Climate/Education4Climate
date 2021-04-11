@@ -5,12 +5,12 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-from config.settings import YEAR
-from config.utils import cleanup
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "http://applications.umons.ac.be/web/fr/pde/2020-2021/ue/{}.htm"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/umons_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}umons_programs_{YEAR}.json')
 
 LANGUAGE_DICT = {"Français": "fr",
                  "Anglais": "en",
@@ -34,7 +34,7 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
     name = "umons-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/umons_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}umons_courses_{YEAR}.json')
     }
 
     def start_requests(self):

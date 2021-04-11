@@ -4,13 +4,17 @@ import argparse
 import numpy as np
 import pandas as pd
 
-from unicrawl.spiders.config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 
 def merge_programs(school: str, year: int):
     """
-    # TODO: complete desc
-    Merge UCL and others? programs
+    Merge duplicated programs.
+
+    :param school: Code of the school whose programs will be merged.
+    :param year: Year for which the data was crawled.
+
+    :return: None
 
     Note:
     After running unicrawl/spiders/{school}_programs.py, programs can be split over several lines
@@ -20,10 +24,9 @@ def merge_programs(school: str, year: int):
 
     # Read the programs file
     programs_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_programs_{year}_pre.json")
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}_pre.json")
     programs_df = pd.read_json(programs_fn).set_index("id")
 
-    # TODO: there is probably a better way to do that
     # Group different keys
     programs_df_grouped = programs_df.groupby("id")
     programs_merged_df = programs_df_grouped["name"].unique().apply(lambda x: x[0]).to_frame()
@@ -45,14 +48,18 @@ def merge_programs(school: str, year: int):
     programs_merged_df[keys_as_list].apply(lambda x: remove_doubles(x), axis=1)
 
     programs_merged_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_programs_{YEAR}.json")
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{YEAR}.json")
     programs_merged_df.reset_index().to_json(programs_merged_fn, orient='records', indent=1)
 
 
 def merge_courses(school: str, year: int):
     """
-    # TODO: complete desc
-    Merge Uantwerp and others? courses
+    Merge duplicated courses.
+
+    :param school: Code of the school whose courses will be merged.
+    :param year: Year for which the data was crawled.
+
+    :return: None
 
     Note:
     After running unicrawl/spiders/{school}_coursess.py, courses can be split over several lines
@@ -62,10 +69,9 @@ def merge_courses(school: str, year: int):
 
     # Read the programs file
     courses_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_courses_{year}_pre.json")
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}_pre.json")
     courses_df = pd.read_json(courses_fn)
 
-    # TODO: there is probably a better way to do that
     # Group different keys
     if school != 'ugent':
         courses_df = courses_df.set_index("id")
@@ -82,7 +88,7 @@ def merge_courses(school: str, year: int):
     courses_merged_df = courses_merged_df.reset_index().set_index("id")
 
     courses_merged_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../data/crawling-output/{school}_courses_{YEAR}.json")
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{YEAR}.json")
     courses_merged_df.reset_index().to_json(courses_merged_fn, orient='records')
 
 
@@ -92,7 +98,6 @@ if __name__ == '__main__':
     parser.add_argument("-s", "--school", help="input json file path")
     parser.add_argument("-y", "--year", help="academic year", default=2020)
     arguments = vars(parser.parse_args())
-    print(arguments)
     if arguments['type'] == 'course':
         merge_courses(arguments['school'], arguments['year'])
     else:

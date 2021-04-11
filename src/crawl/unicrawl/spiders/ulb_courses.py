@@ -1,13 +1,12 @@
 from abc import ABC
 from pathlib import Path
-import urllib.parse
 
 import pandas as pd
 
 import scrapy
 
-from config.settings import YEAR
-from config.utils import cleanup
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 # PATH_COURS_URL = urllib.parse.quote(
 #    '/ws/ksup/course-programmes?anac={}&mnemonic={}&lang=fr',
@@ -16,7 +15,7 @@ from config.utils import cleanup
 # COURS_URL = f'https://www.ulb.be/api/formation?path={PATH_COURS_URL}'
 BASE_URL = 'https://www.ulb.be/fr/programme/'
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/ulb_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}ulb_programs_{YEAR}.json')
 
 LANGUAGE_DICT = {"français": "fr",
                  "anglais": "en",
@@ -44,7 +43,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
     name = 'ulb-courses'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ulb_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ulb_courses_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -72,7 +71,6 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
-        # TODO: check if there can be multiple languages
         languages = response.xpath("//h3[text()=\"Langue(s) d'enseignement\"]/following::p[1]/text()").get()
         if languages is not None:
             languages = [LANGUAGE_DICT[language] for language in languages.split(", ")]

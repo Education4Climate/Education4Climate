@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.heldb.be/fr/formations-et-enseignement/formations/{}"
 DEPARTMENTS_CODES = ["economique", "pedagogique", "technique"]
@@ -18,7 +18,7 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
     name = "heldb-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/heldb_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_programs_{YEAR}.json')
     }
 
     def start_requests(self):

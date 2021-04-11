@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://helue.azurewebsites.net/ListingPub"
 
@@ -17,7 +17,7 @@ class HELProgramSpider(scrapy.Spider, ABC):
     name = "hel-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/hel_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}hel_programs_{YEAR}.json')
     }
 
     def start_requests(self):

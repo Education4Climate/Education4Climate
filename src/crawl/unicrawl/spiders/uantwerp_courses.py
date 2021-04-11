@@ -6,12 +6,12 @@ import pandas as pd
 
 import scrapy
 
-from config.settings import YEAR
-from config.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from src.crawl.utils import cleanup
 
 COURSE_URL = "https://www.uantwerpen.be/ajax/courseInfo{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/uantwerp_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}uantwerp_programs_{YEAR}.json')
 LANGUAGE_DICT = {"Dutch": 'nl',
                  "Nederlands": 'nl',
                  "English": 'en',
@@ -21,14 +21,12 @@ LANGUAGE_DICT = {"Dutch": 'nl',
                  "Duits": 'de',
                  "Spaans": 'es'}
 
-# TODO: some pages were dead when the crawler was last ran on the 01/02/2021
-
 
 class UantwerpCourseSpider(scrapy.Spider, ABC):
     name = "uantwerp-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/uantwerp_courses_{YEAR}_pre.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uantwerp_courses_{YEAR}_pre.json')
     }
 
     def start_requests(self):
@@ -47,7 +45,6 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
             course_info_panel = f"{main_panel}/header[h5/a[text()=\"{course_name}\"]][1]/following::div[1]"
             course_id = response.xpath(f"{course_info_panel}//div[contains(@class, 'guideNr')]"
                                        f"//div[@class='value']/text()").get().replace('\n', '').replace('\t', '')
-            # TODO: check if there can be several languages
             languages = response.xpath(f"{course_info_panel}//div[contains(@class, 'language')]"
                                        f"//div[@class='value']/text()").getall()
             languages = list(set([LANGUAGE_DICT[language.replace('\n', '').replace('\t', '')]

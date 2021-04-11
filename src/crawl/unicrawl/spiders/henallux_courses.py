@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 # TODO: check that we are not visiting several time the same courses
 
@@ -22,7 +22,7 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
     name = "henallux-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/henallux_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}henallux_courses_{YEAR}.json')
     }
 
     def start_requests(self):

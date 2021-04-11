@@ -9,11 +9,11 @@ import urllib3
 from pdfminer.high_level import extract_text
 
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URl = "https://studiegids.ugent.be/2020/NL/studiefiches/{}.pdf"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/ugent_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}.json')
 
 
 def download_pdf(pdf_url: str) -> str:
@@ -75,5 +75,5 @@ def main(fn):
 
 if __name__ == '__main__':
     FEED_URI = Path(__file__).parent.absolute().joinpath(
-        f'../../../../data/crawling-output/ugent_courses_{YEAR}_pre.json')
+        f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_courses_{YEAR}_pre.json')
     main(FEED_URI)

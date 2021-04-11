@@ -3,7 +3,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = 'http://onderwijsaanbod.limburg.ucll.be/opleidingen/n/'
 
@@ -12,7 +12,7 @@ class UCLLProgramSpider(scrapy.Spider, ABC):
     name = 'ucll-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ucll_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ucll_programs_{YEAR}.json')
     }
 
     def start_requests(self):

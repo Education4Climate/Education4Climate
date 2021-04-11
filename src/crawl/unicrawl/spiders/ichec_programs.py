@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR
 
 BASE_URL = "https://www.ichec.be/fr/programmes"
 
@@ -17,7 +17,7 @@ class ICHECProgramSpider(scrapy.Spider, ABC):
     name = "ichec-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ichec_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ichec_programs_{YEAR}.json')
     }
 
     def start_requests(self):

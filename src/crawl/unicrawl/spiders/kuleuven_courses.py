@@ -5,14 +5,13 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-from config.settings import YEAR
-from config.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from src.crawl.utils import cleanup
 
 BASE_URl = "http://onderwijsaanbod.kuleuven.be/syllabi/{}.htm"  # first format is code course, second is year
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/kuleuven_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}kuleuven_programs_{YEAR}.json')
 
-# TODO: check languages
 LANGUAGES_DICT = {"Nederlands": 'nl',
                   "Dutch": 'nl',
                   "Frans": 'fr',
@@ -43,7 +42,7 @@ class KULeuvenCourseSpider(scrapy.Spider, ABC):
     name = "kuleuven-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/kuleuven_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}kuleuven_courses_{YEAR}.json')
     }
 
     def start_requests(self):

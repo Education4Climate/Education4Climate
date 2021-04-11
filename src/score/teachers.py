@@ -5,7 +5,7 @@ import argparse
 
 import pandas as pd
 
-from config.settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_INPUT_FOLDER
+from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
 
 
 def main(school: str, year: int):

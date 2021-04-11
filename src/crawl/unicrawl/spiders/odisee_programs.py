@@ -3,7 +3,7 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = 'http://onderwijsaanbod.odisee.be/opleidingen/n/'
 
@@ -12,7 +12,7 @@ class OdiseeProgramSpider(scrapy.Spider, ABC):
     name = 'odisee-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/odisee_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}odisee_programs_{YEAR}.json')
     }
 
     def start_requests(self):

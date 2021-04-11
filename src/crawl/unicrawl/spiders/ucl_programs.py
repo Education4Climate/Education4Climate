@@ -4,8 +4,8 @@ from pathlib import Path
 
 import scrapy
 
-from config.settings import YEAR
-from config.utils import cleanup
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 UCL_URL = f"https://uclouvain.be/fr/catalogue-formations/formations-par-faculte-{YEAR}.html"
 
@@ -14,7 +14,7 @@ class UCLProgramSpider(scrapy.Spider, ABC):
     name = "ucl-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ucl_programs_{YEAR}_pre.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ucl_programs_{YEAR}_pre.json')
     }
 
     def start_requests(self):
@@ -63,7 +63,6 @@ class UCLProgramSpider(scrapy.Spider, ABC):
                     "cycle": cycle,
                     "url": response.url}
 
-        # TODO: this creates a problem as we will have mulitple lines for the same program. How to correct that?
         pages_names = ["Tronc commun", "Programme par matière", "Finalité spécialisée", "Programme"]
         for page_name in pages_names:
             course_list_link = \

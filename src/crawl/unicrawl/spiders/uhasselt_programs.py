@@ -4,7 +4,7 @@ import scrapy
 from abc import ABC
 import bs4
 
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = 'https://uhintra03.uhasselt.be/studiegidswww/opleiding.aspx'
 
@@ -77,7 +77,7 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
     name = 'uhasselt-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/uhasselt_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uhasselt_programs_{YEAR}.json')
     }
 
     def start_requests(self):

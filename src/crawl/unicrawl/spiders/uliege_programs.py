@@ -3,8 +3,8 @@ from pathlib import Path
 
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 # TODO: maybe it's possible to check the year?
 BASE_URL = "https://www.programmes.uliege.be/cocoon/recherche.html?source=formation"
@@ -28,7 +28,7 @@ class ULiegeSpider(scrapy.Spider, ABC):
     name = 'uliege-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/uliege_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uliege_programs_{YEAR}.json')
     }
 
     def start_requests(self):

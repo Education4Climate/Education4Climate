@@ -4,12 +4,12 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.programmes.uliege.be/cocoon/cours/{}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/uliege_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}uliege_programs_{YEAR}.json')
 LANGUAGE_DICT = {"Langue française": 'fr',
                  "Langue anglaise": 'en',
                  "Langue allemande": 'de',
@@ -22,7 +22,7 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
     name = "uliege-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/uliege_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uliege_courses_{YEAR}.json')
     }
 
     def start_requests(self):

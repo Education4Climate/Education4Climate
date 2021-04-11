@@ -5,12 +5,11 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URl = "https://www.ecam.be/{}"  # first format is code course, second is year
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/ecam_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}ecam_programs_{YEAR}.json')
 
 # TODO: checker langues
 LANGUAGES_DICT = {"FR": 'fr', "EN": 'en'}
@@ -24,7 +23,7 @@ class ECAMCourseSpider(scrapy.Spider, ABC):
     name = "ecam-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/ecam_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ecam_courses_{YEAR}.json')
     }
 
     def start_requests(self):

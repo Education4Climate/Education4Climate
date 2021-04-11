@@ -4,12 +4,12 @@ from pathlib import Path
 import pandas as pd
 import scrapy
 
-from config.utils import cleanup
-from config.settings import YEAR
+from src.crawl.utils import cleanup
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://uhintra03.uhasselt.be/studiegidswww/opleidingsonderdeel.aspx?a={}&i={}&n=4&t=01"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../data/crawling-output/uhasselt_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}uhasselt_programs_{YEAR}.json')
 LANGUAGE_DICT = {'Nederlands': 'nl',
                  'Engels': 'en',
                  'English': 'en'}
@@ -19,7 +19,7 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
     name = "uhasselt-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../data/crawling-output/uhasselt_courses_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uhasselt_courses_{YEAR}.json')
     }
 
     def start_requests(self):
@@ -34,7 +34,6 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_main(response, base_dict):
 
-        # TODO: check if this doesn't create problems
         course_name = response.xpath("//h4/text()").get().split(" (")[0]
 
         # Teachers are list in a very weird way (html-wise)
