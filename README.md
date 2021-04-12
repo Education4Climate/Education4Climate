@@ -1,12 +1,13 @@
 <a href="https://theshiftproject.org/equipe/#benevoles"><img src="https://theshiftproject.org/wp-content/uploads/2017/10/SHIFTERS-TSP-L500PX-BLANC.png" alt="The Shifters" width="230px"></a>
-# unicrawl
 
-Unicrawl is a tool for crawling and analyzing data from higher education schools.
+# Education4climate
+
+[Universities4climate](https://education4climate.be/) is a tool for crawling and analyzing data from higher education schools.
 
 This tool is developed in the context of the project Education4Climate by the volunteering
 group 'The Shifters' - Belgium.
 
-The scope of the project is the higher education schools in Belgium but the methods used here could easily 
+The scope of the project is the higher education schools in Belgium but the methods used here could easily be
 extended to other countries.
 
 ## Composition
@@ -18,14 +19,13 @@ The tool is composed of three main parts:
 
 described in their respective READMEs.
   
-## Run
 
 ### Requirements
 
 All requirements for running the different parts of Unicrawl are listed in requirements.yaml
 and requirements.txt.
 
-### Snakemake
+### Run using Snakemake
 
 Crawling and scoring results can be automatically generated using 
 the workflow management system [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html).
