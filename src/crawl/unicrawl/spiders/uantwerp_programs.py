@@ -10,6 +10,42 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = "https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/?s=16&f=124"
 # Note: cannot crawl the Antwerp Management School courses (not on the same website)
 
+PROGRAMS_FACULTY = {"Faculteit Farmaceutische, Biomedische en Diergeneeskundige Wetenschappen":
+                    ["Postgraduaat in het klinisch wetenschappelijk onderzoek",
+                     "Postgraduaat in het ondernemerschap voor wetenschappen en biomedische wetenschappen",
+                     "Postgraduaat in het milieu en gezondheidswetenschappen"],
+                    "Faculteit Geneeskunde en Gezondheidswetenschappen":
+                    ["Postgraduate of Algology",
+                     "Postgraduaat in de psychotherapie - jeugd en context: optie 1",
+                     "Postgraduaat in de psychotherapie - jeugd en context: optie 2",
+                     "Postgraduaat in de psychotherapie: optie volwassenen",
+                     "Postgraduaat in de radioprotectie",
+                     "Postgraduaat in het rampenmanagement",
+                     "Postgraduaat in de systeemtheoretische psychotherapie",
+                     "Postgraduaat verpleegkundige in de huisartspraktijk"],
+                    "Faculteit Rechten":
+                    ["Postgraduaat in het aansprakelijkheidsrecht en het verzekeringsrecht",
+                     "Postgraduaat in het gezondheidsrecht en gezondheidsethiek",
+                     "Postgraduaat in de preventieadviseur niveau 1"],
+                    "Faculteit Wetenschappen":
+                    ["Postgraduaat in de adviseur gevaarlijke stoffen",
+                     "Educatieve master"],
+                    "Centrum voor Andragogiek":
+                    ["Postgraduaat in het schoolbeleid"],
+                    "Centrum Nascholing Onderwijs":
+                    ["Postgraduaat in de socio-emotionele leerlingbegeleiding in het secundair onderwijs",
+                     "Postgraduaat in de leerzorg in het secundair onderwijs (Tijdelijk niet aangeboden)"],
+                    "Instituut voor Milieu en Duurzame Ontwikkeling":
+                    ["Postgraduate of Energy and Climate"],
+                    "Antwerp School of Education":
+                    ["Postgraduaat in de didactiek Nederlands aan anderstaligen"],
+                    "Linguapolis":
+                    ["Postgraduate of Dutch as a Foreign Language in an Academic Context"],
+                    "Faculteit Letteren en Wijsbegeerte":
+                    ["Digital Text Analysis"],
+                    "Faculteit Sociale Wetenschappen":
+                    ["Master in de opleidings- en onderwijswetenschappen"]}
+
 
 class UantwerpProgramSpider(scrapy.Spider, ABC):
     name = "uantwerp-programs"
@@ -36,7 +72,7 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
         # Check the navigation tab for programme info tabs
         for text, url in zip(nav_tabs_text, nav_tabs_urls):
             if text in ["About the programme", "Programme info", "Opleidingsinfo", "Bachelor", "Master",
-                        "Over de bachelor", "Over de master", "Tijdens een bachelor"]:
+                        "Over de bachelor", "Over de master", "Tijdens een bachelor", "Opleindingsinfo en FAQ"]:
                 yield response.follow(url, self.parse_program_info, cb_kwargs={"base_dict": base_dict})
 
         if match is False:
@@ -63,10 +99,7 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
 
         faculty = response.xpath("//div[contains(@class, 'managedContent')]"
                                  "//li/a[contains(text(), 'Facult') or contains(text(), 'Institu')]/text()").get()
-        faculty = "" if faculty is None else faculty
-        if faculty is "":
-            print(name)
-            print(response.url)
+        faculty = PROGRAMS_FACULTY[name] if faculty is None else faculty
         # TODO: can actually have multiple campus, get all and put in a list? need to change all other crawlers?
         campus = response.xpath("//div[contains(@class, 'managedContent')]"
                                 "//li/a[contains(text(), 'ampus')]/text()").get()
@@ -96,27 +129,18 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
 
     def parse_study_program(self, response, base_dict):
 
-        # Check if there are sub-programs. If so, click on the link and call the function recursively.
-        if 0:
-            subprograms_links = response.xpath("//nav[@class='navSub']//li/a/@href").getall()
-            if len(subprograms_links) != 0:
-                for link in subprograms_links:
-                    cur_dict = base_dict.copy()
-                    cur_dict["id"] += " " + link.split("/")[-2]
-                    yield response.follow(link, self.parse_study_program, cb_kwargs={"base_dict": cur_dict})
-                return
-
         # Find cycle based on url
         base_dict["cycle"] = "other"
-        if "bachelor" in response.url:
-            base_dict["cycle"] = "bac"
-            base_dict["id"] += '-bac'
-            base_dict["name"] = f"Bachelor in {base_dict['name']}"
-        elif "master" in response.url:
+        if "master" in response.url:
             base_dict["cycle"] = "master"
             base_dict["id"] += '-master'
-            if not base_dict['name'].starswith("Master"):
+            if not('master' in base_dict['name'] or 'Master' in base_dict['name']):
                 base_dict["name"] = f"Master in {base_dict['name']}"
+        elif "bachelor" in response.url:
+            base_dict["cycle"] = "bac"
+            base_dict["id"] += '-bac'
+            if not('bachelor' in base_dict['name'] or 'Bachelor' in base_dict['name']):
+                base_dict["name"] = f"Bachelor in {base_dict['name']}"
 
         # Get courses and ects
         main_tab = f"//section[contains(@id, '-{YEAR}')]"

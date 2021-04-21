@@ -52,6 +52,17 @@ class ULiegeSpider(scrapy.Spider, ABC):
     def parse_program(response, base_dict):
         name = response.xpath("//h1/text()").get()
         cycle = response.xpath("//div[@class='u-courses-header__headline']/text()").get().split("/")[1][1:]
+        if cycle == 'Bachelier':
+            cycle = 'bac'
+        elif 'Master' in cycle:
+            cycle = 'master'
+        elif 'Certificat' in cycle:
+            cycle = 'certificate'
+        elif cycle == 'Formation doctorale':
+            cycle = 'doctor'
+        else:
+            cycle = 'other'
+
         campus = cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
 
         # Faculty

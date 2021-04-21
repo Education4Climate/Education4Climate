@@ -109,7 +109,7 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
             elif 'master' in prog_name or 'Master' in prog_name:
                 cycle = 'master'
             elif 'Postgraduaat' in prog_name:
-                cycle = 'post-grad'
+                cycle = 'postgrad'
 
             faculty = ''
             for f in FACULTIES_PROGRAMS:
