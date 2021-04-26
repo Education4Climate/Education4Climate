@@ -8,7 +8,6 @@ a {
 }
 
 body.modal-open {
-
     /* fixbug Bootstrap qui ajoute un padding à droite du body quand on ouvre une modale */
     padding-right: 0 !important;
 }
@@ -18,7 +17,6 @@ body.modal-open {
 }
 
 body {
-
     /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
     overflow-y: scroll !important;
 }
@@ -26,13 +24,12 @@ body {
 /* MENU & NAVIGATION */
 
 #logo {
-    height      : 1.7rem;
-    margin-right: .5rem;
-    margin-left : .3rem;
+    height: 1.7rem;
+    margin-right: 0.5rem;
+    margin-left: 0.3rem;
 }
 
 #preload-background-images {
-
     /* Permet de précharger les 2 images du slideshow pour ne pas avoir un effet de flicker au chargement */
     display: none;
 }
@@ -41,9 +38,9 @@ body {
 
 #carousel-item-students,
 #carousel-item-teachers {
-    background-size    : cover;
+    background-size: cover;
     background-position: center;
-    padding            : 16rem 0;
+    padding: 16rem 0;
 }
 
 #carousel-home .carousel-caption h1 {
@@ -51,23 +48,38 @@ body {
 }
 
 #carousel-item-students {
-
     /* Original free picture by Nathan Dumlao under Unsplash Licence : https://unsplash.com/photos/ewGMqs2tmJI */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background-students.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/background-students.jpg);
 }
 
 #carousel-item-teachers {
-
     /* Original free picture by ThisisEngineering RAEng under Unsplash Licence : https://unsplash.com/photos/mF6gB6hV5OU */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background-teachers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../img/background-teachers.jpg);
 }
 
 #home-intro {
+    max-width: 60rem;
     padding: 2rem 2rem 0 2rem;
 }
 
+#home-intro a {
+    margin: 1rem 0 0rem 0;
+}
+
 #home-project {
-    padding: 0 2rem;
+    padding: 2rem;
+    max-width: 60rem;
+}
+
+#home-project p {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+#home-project h3 {
+    font-size: 1.2rem;
 }
 
 #home-intro h2 {
@@ -106,17 +118,17 @@ a.btn:empty {
 
 #languages-selector a.active,
 #menu a.active {
-    color      : #0d6efd;
+    color: #0d6efd;
     font-weight: 500;
 }
 
 .accordion-body {
-    background-color: #FDFEFE;
+    background-color: #fdfefe;
 }
 
 .accordion-item .accordion-collapse {
-    border-right: 1px solid #D5DBDB;
-    border-left : 1px solid #D5DBDB;
+    border-right: 1px solid #d5dbdb;
+    border-left: 1px solid #d5dbdb;
 }
 
 .button-courses-list {
@@ -130,12 +142,12 @@ a.btn:empty {
 /* Teachers directory */
 
 #alphabet {
-    margin-left  : 1rem;
+    margin-left: 1rem;
     margin-bottom: 0.5rem;
 }
 
 #alphabet .letter {
-    margin-right : 0.5rem;
+    margin-right: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -147,11 +159,11 @@ a.btn:empty {
 
 .sidebar {
     background-color: #f8f9fa;
-    min-height      : calc(100vh - 56px);
+    min-height: calc(100vh - 56px);
 }
 
 .sidebar h6.title {
-    color     : #0d6efd;
+    color: #0d6efd;
     margin-top: 1rem;
 }
 
@@ -162,7 +174,7 @@ a.btn:empty {
 .filter .count {
     margin-left: 1rem;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
 }
 
 .filter .form-check {
@@ -180,14 +192,14 @@ footer {
 }
 
 footer li {
-    list-style  : none;
-    display     : inline;
+    list-style: none;
+    display: inline;
     margin-right: 2rem;
 }
 
 .sidebar-footer {
     padding-top: 4rem;
-    text-align : right;
+    text-align: right;
 }
 
 .sidebar-footer li {
@@ -213,8 +225,9 @@ footer li {
     width: 95%;
 }
 
-#toggleAnalyticsCookies, #toggleLocalStorageCookies {
-    float:right;
+#toggleAnalyticsCookies,
+#toggleLocalStorageCookies {
+    float: right;
 }
 
 #cookieBar .buttons {
@@ -228,11 +241,18 @@ footer li {
 }
 
 @media (max-width: 1199.98px) {
+    /* HOME */
+
+    #home-logos .logo {
+        margin-bottom: 3rem;
+    }
+
+    /* MENU & NAVIGATION */
 
     #courses-finder .sidebar,
     #programs-finder .sidebar {
         padding-top: 1rem;
-        min-height : 0;
+        min-height: 0;
     }
 
     h6.results-count {
@@ -254,9 +274,9 @@ footer li {
     }
 
     .carousel-caption {
-        height     : calc(100vh - 56px);
+        height: calc(100vh - 56px);
         align-items: center !important;
-        display    : flex;
+        display: flex;
     }
 
     .bg-theme {
@@ -264,17 +284,17 @@ footer li {
     }
 
     .accordion-button {
-        padding-left : 0.2rem;
+        padding-left: 0.2rem;
         padding-right: 0.2rem;
     }
 
     #carousel-home .learn-more {
         margin-top: 2rem;
-        display   : inline-block;
+        display: inline-block;
     }
 
     #languages-selector .nav-item {
-        margin-right: 1rem
+        margin-right: 1rem;
     }
 
     .sidebar {
@@ -284,14 +304,14 @@ footer li {
     /* Teachers directory */
 
     #alphabet {
-        text-align : center;
+        text-align: center;
         margin-left: 0;
     }
 
     #alphabet button {
-        padding: .25rem .5rem;
-        font-size: .875rem;
-        border-radius: .2rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        border-radius: 0.2rem;
     }
 
     /* Footer */
@@ -305,7 +325,6 @@ footer li {
     }
 
     footer li {
-
         display: block;
         padding-top: 0.5rem;
     }
@@ -315,8 +334,8 @@ footer li {
     }
 
     .navbar-footer {
-        display     : block;
-        text-align  : right;
+        display: block;
+        text-align: right;
         margin-right: 0.1rem;
     }
 
@@ -331,9 +350,8 @@ footer li {
 }
 
 @media (min-width: 1199.99px) {
-
     .carousel-caption {
-        top      : 60%;
+        top: 60%;
         transform: translateY(-50%);
     }
 
@@ -354,7 +372,6 @@ footer li {
 }
 
 @media (max-width: 375px) {
-
     #cookieBar .buttons {
         text-align: center;
     }
