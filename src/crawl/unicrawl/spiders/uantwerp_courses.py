@@ -26,7 +26,7 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
     name = "uantwerp-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}uantwerp_courses_{YEAR}_pre.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uantwerp_courses_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):

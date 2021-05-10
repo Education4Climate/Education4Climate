@@ -12,7 +12,7 @@ class UGentProgramSpider(scrapy.Spider, ABC):
     name = 'ugent-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}_pre.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):
