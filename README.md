@@ -38,10 +38,10 @@ and in which order it should execute them.
 For example, calling:
 
 ```bash
-snakemake -j1 data/scoring-output/unamur_scoring_2020.json
+snakemake -j1 data/scoring-output/unamur_scoring_2020.csv
 ```
 
-will first execute the rule ```crawl_courses``` if the file *data/crawling-output/unamur_courses_2020.csv* has not been 
+will first execute the rule ```crawl_courses``` if the file *data/crawling-output/unamur_courses_2020.json* has not been 
 yet generated as it is a required input for the rule ```score_courses```, which will then be called to generate
 the desired file.
 
