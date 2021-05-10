@@ -12,7 +12,7 @@ class VivesProgramSpider(scrapy.Spider, ABC):
     name = 'vives-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}vives_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}vives_programs_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):

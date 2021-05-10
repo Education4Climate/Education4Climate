@@ -14,7 +14,7 @@ class UCLProgramSpider(scrapy.Spider, ABC):
     name = "ucl-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ucl_programs_{YEAR}_pre.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ucl_programs_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):

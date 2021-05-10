@@ -22,7 +22,7 @@ class HERSProgramSpider(scrapy.Spider, ABC):
     name = "hers-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}hers_programs_{YEAR}.json')
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}hers_programs_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):
