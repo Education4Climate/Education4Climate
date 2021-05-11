@@ -27,16 +27,36 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
     pattern_matches_dict = {}
     score = 0
     for pattern in patterns:
-        matches = list(re.finditer(pattern, text))
-        if len(matches) != 0:
-            score = 1
-            pattern_matches_dict[pattern] = []
-            for match in matches:
-                # For each match, retrieve a number of characters before and after to get the context
-                start, end = match.span()
-                start = max(0, start-20)
-                end = min(end+20, len(text)-1)
-                pattern_matches_dict[pattern] += [text[start:end]]
+        if isinstance(pattern,list):
+
+            #check multi term matches
+            term1_match=re.search(pattern[0],text)
+            term2_match=re.search(pattern[1],text)
+            if term1_match is not None and term2_match is not None:
+                pattern_matches_dict[pattern[0] + "----" + pattern[1]] = []
+                score = 1
+                start, end = term1_match.span()
+                start = max(0,start-20)
+                end = min(end + 20, len(text) - 1)
+                t=text[start:end]
+                start, end = term2_match.span()
+                start = max(0,start-20)
+                end = min(end + 20, len(text) - 1)
+                t=t+"----"+text[start:end]
+                pattern_matches_dict[pattern[0]+"----"+pattern[1]]+=[t]
+
+
+        else :
+            matches = list(re.finditer(pattern, text))
+            if len(matches) != 0:
+                score = 1
+                pattern_matches_dict[pattern] = []
+                for match in matches:
+                    # For each match, retrieve a number of characters before and after to get the context
+                    start, end = match.span()
+                    start = max(0, start-20)
+                    end = min(end+20, len(text)-1)
+                    pattern_matches_dict[pattern] += [text[start:end]]
     return score, pattern_matches_dict
 
 
