@@ -1,22 +1,19 @@
 {
 	"climate": {
 		"fr": [
+			"(chang[^ ]+|context[^ ]+|att[ée]nu[^ ]+|project[^ ]+|impacts?|mod[éeè]l[^ ]+) clima[^ ]+",
 			"temp[^ ]+ mond[^ ]+ moyenne",
 		    "temp[^ ]+ moyenne mond[^ ]+",
 		    "changements? (?:des? )?conditions? (?:m[ée]t[ée]orologiques?|climatiques?)",
-		    "climatolog[^ ]+",
+
 		    "actions? (?:pour )?(?:le )?climat[^ ]+",
 		    "adaptations? (?:aux? )(?:changements? )climat[^ ]+",
 		    "chang[^ ]+ clima[^ ]+",
 		    "alerte précoce clima[^ ]+",
 		    "risque[^ ]+ clima[^ ]+",
-		    "impact clima[^ ]+",
 		    "strat[ée]gies? clima[^ ]+",
 		    "enjeux? clima[^ ]+",
-		    "contextes? clima[^ ]+",
 		    "atténu[^ ]+ clima[^ ]+",
-		    "project[^ ]+ clima[^ ]+",
-		    "mod[èe]les? clima[^ ]+",
 		    "processus clima[^ ]+",
 		    "questions? clima[^ ]+",
 		    "for[çc]ages? clima[^ ]+",
@@ -47,7 +44,7 @@
 		],
 		"en": [
 			"greenhouse gas(es)?",
-			"climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)",
+			"climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)",
 			"(?:carbon dyoxide|co2?) emissions?",
 			"extreme weather (?:condition|events)",
 			"global (?:average|mean) temperature",
@@ -106,14 +103,12 @@
 		    "[ée]nerg[^ ]+ fossiles?",
 		    "transiti[^ ]+ [ée]nerg[^ ]+",
 		    "solaires? thermiques?",
-		    "photovolta[iï]ques?",
+		    "([ée]lectri[^ ]+|panneaux?) photovol[^ ]+",
 		    "(?:[ée]nergies? )?[ée]olien[^ ]+",
 		    "hydro-?[ée]l[ée]ctri[^ ]+",
 		    "consom[^ ]+ (?:d')?[ée]nerg[^ ]+",
 		    "effica[^ ]+ [ée]nerg[^ ]+",
-		    "utilis[^ ]+ (?:d')?[ée]nerg[^ ]+",
-		    "vecteur[^ ]+ [ée]nerg[^ ]+",
-		    "bilans? (?:d')?[ée]nerg[^ ]+"
+		    "utilis[^ ]+ (?:d')?[ée]nerg[^ ]+"
 		],
 		"en": [
 			"(?:green|renewable|low carbon) energy",
@@ -133,30 +128,29 @@
 	},
 	"environment": {
 		"fr": [
+			["[ée]cosyst[èe]m","(pollution|résilience)"],
+			["biodiversité","([ée]rosion|effondrement|impact|conséquence|[ée]cologie)"],
+			"agro[- ]?[ée]colo[^ ]+",
 			"gestion[^ ]+ envir[^ ]+",
-		    "(?:^|[^a-z])[ée]colo[^ ]+",
-		    "[ée]cosyst[^ ]+",
+		    "(pertes?|déteriorations?|impacts?|contamination) (\\w+ ){0,2}([ée]cosyst[^ ]+|[ée]colo[^ ]+)",
 		    "conditions? m[ée]t[ée]o[^ ]+ extr[^ ]+",
 		    "[ée]v[ée]nements? m[ée]t[ée]o[^ ]+ extr[^ ]+",
 		    "temp[^ ]+ moyenne mond[^ ]+",
 		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)",
-			"défis? environnement[^ ]+",
-			"biodiversit[ée]"
+			"(défis?|contaminations?|droits?( de l')?) ?environnement[^ ]+"
 		],
 		"en": [
 			"environmental (?:management|maintenance)",
 		    "environmentalist",
-		    "(?:^|[^a-z])ecolo[^ ]+",
 		    "extreme weather (?:condition|events)",
 		    "global (?:average|mean) temperature",
 		    "(?:thawing|loss|melting|reduction|shrinking) (?:of )?(?:(?:(?:polar )? ice(?: caps)?)|permafrost)",
 			"environmental challenge",
-			"biodiversity"
+			["biodiversity","(collapse|extinction|impact|destruction)"]
 		],
 		"nl": [
 			"milieu(?:beheer|management|beleid)",
 			"ecosysteems?",
-			"(?:^|[^a-z])ecolo[^ ]+",
 			"extreme (?:weersomstandig[^ ]+)",
 			"(?:globale?|wereldwijde?) gemiddelde temperatuur",
 			"gemiddelde temperatuur op aarde",
@@ -173,7 +167,9 @@
 	},
 	"durability": {
 		"fr": [
-			"développ[^ ]+ durab[^ ]+",
+			"économie circulaire",
+			"analyse de cycle de vie",
+			["(développ[^ ]+|solutions?) durab[^ ]+","(impact|environnement|[ée]cologie)"],
 			"efficacité (?:des )?ressources",
 		    "consom[^ ]+ durab[^ ]+",
 		    "gestio[^ ]+ durab[^ ]+",
@@ -187,9 +183,9 @@
 		    "résist[^ ]+ clima[^ ]+"
 		],
 		"en": [
-			"sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)",
+			"sustainable development goals",
 			"resources? efficiency",
-			"climate change (?:management|planning|policy)",
+			"climate change (management|planning|policy)",
 			"climate (risk|resistance)"
 		],
 		"nl": [
