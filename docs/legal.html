@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Education 4 Climate">
+    <meta name="application-name" content="Education 4 Climate">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Education 4 Climate" />
+    <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
+    <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Education 4 Climate</title>
+</head>
+
+<body class="home">
+
+    <div id="app" v-if="dataLoaded" v-cloak>
+
+        <header>
+            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+                <div class="container-fluid">
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
+                            alt="logo" id="logo"></a>
+                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
+                            4 CLIMATE</strong><sup class="beta"> BETA</sup></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
+                            <li class="nav-item" v-for="item in menuItems">
+                                <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
+                                    :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item" v-for="language in availableLanguages">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)"
+                                    href="javascript:void(0);">{{language.toUpperCase()}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="home">
+
+
+
+            <div class="container " id="home-intro">
+
+                <h1>Mentions légales</h1>
+
+                <p>Les sites educations4climate.be et education4climate.org sont la propriété de :</p>
+
+                <p>
+                    <strong>The Shifters Belgium</strong>
+                    <br />Adresse : Rue Baron Lambert 21, 1040 Etterbeek, Belgium
+                    <br />Numéro de téléphone : +32 4 86 18 89 86
+                    <br />Directeur de la publication : Quentin LANCRENON
+                </p>
+
+                <p>Ce site est hébergé par :</p>
+                
+                <p>
+                    <strong>GitHub</strong>
+                    <br/>Adresse : 88 Colin P Kelly Jr Street. 94107 San Francisco, California, USA.
+                </p>
+
+                <h2>Fonctionnement de l'algorithme</h2>
+
+                <p>Le projet Education4Climate fonctionne grâce à un algorithme dont l’objectif est d'identifier quels
+                    cours et programmes de chaque école et université couvrent certains thèmes liés au climat et à la
+                    durabilité environnementale. Un description plus détaillée de la méthodologie peut-être trouvée ici.
+                </p>
+
+                <p>La finalité de ce traitement de données est de répertorier sur notre site, à des fins d’information,
+                    les cours et programmes qui traitent les problématiques liées au climat et à la transition
+                    énergétique. La vocation de ce projet est donc d’augmenter la visibilité de ces cours et de leurs
+                    professeurs.</p>
+
+                <h2>Fiabilité des informations figurant sur le site</h2>
+
+                <p>Le propriétaire du site fournit des informations à des fins purement informatives. Il s’efforce de
+                    contrôler leur exactitude et de les maintenir à jour. Mais aucune garantie n’est apportée concernant
+                    l’exactitude, la précision, la mise à jour ou l’exhaustivité de ces informations.
+                    Par conséquent, le propriétaire du site décline toute responsabilité pour tout dommage résultant
+                    notamment d’une imprécision ou inexactitude des informations disponibles sur ce site, ou pour toute
+                    atteinte résultant d’une intrusion frauduleuse d’un tiers sur ce site, ou encore pour tout dommage
+                    ou virus qui pourrait endommager ou rendre inutilisable votre équipement informatique suite à la
+                    visite de ce site.
+                </p>
+
+                <p>Le propriétaire du site ne pourra être tenu responsable en cas d’indisponibilité du site pour quelque
+                    cause que ce soit.</p>
+
+                <h2>Droit d'accès, de modification et de suppression de vos données personnelles</h2>
+
+                <p>En tant que professeur universitaire référencé sur notre site, vous disposez d’un droit d’accès, de
+                    modification et de suppression de vos données personnelles. Pour exercer vos droits, il vous suffit
+                    simplement de nous contacter par e-mail à l’adresse: <a
+                        href="mailto:education4climate@theshifters.org">education4climate@theshifters.org</a></p>
+
+                <h2>Liens vers d'autres sites</h2>
+
+                <p>
+                    Afin de faciliter l’accès aux présentations des cours référencés, le propriétaire du site a inséré
+                    un certain nombre de liens vers des sites tiers. Cependant, il n’est pas responsable de
+                    l’indisponibilité des sites tiers, de leur contenu, publicité ou autres éléments disponibles sur ces
+                    sites. La responsabilité du propriétaire de ce site ne saurait donc être engagée au titre d’un site
+                    tiers auquel vous auriez pu avoir accès.
+                </p>
+
+                <h2>Droit d'auteur</h2>
+
+                <p>Ce site respecte les droits d’auteur. Tous les droits des auteurs des cours universitaires référencés
+                    sur ce site sont réservés.</p>
+
+                <h2>Cookies</h2>
+
+
+                <p>Les cookies sont des petits fichiers d'informations qui sont automatiquement stockés sur le disque
+                    dur de votre ordinateur lorsque vous visitez un site Web et qui contiennent un numéro
+                    d'identification unique.</p>
+                <p>Ces cookies facilitent la visite du site Web en question par l'utilisateur et la navigation sur ce
+                    site. Ils peuvent servir à adapter le site à vos préférences personnelles (langue) et permettent
+                    également d'analyser l'utilisation d'un site Web.</p>
+                <p>La configuration de la plupart des navigateurs vous offre la possibilité d’accepter ou de refuser les
+                    cookies et de vous avertir chaque fois qu’un cookie est utilisé. Vous pouvez refuser les cookies,
+                    bien que cela puisse affecter une pratique de navigation optimale et les fonctionnalités des
+                    services proposés sur le site. Vous pouvez trouver plus d'informations dans la fonction d'aide de
+                    votre navigateur.</p>
+                <p>Lorsque vous visitez notre site, certains cookies sont stockés sur votre navigateur à savoir les
+                    cookies nécessaires au fonctionnement du site et les cookies à des fins statistiques (Google
+                    analytics).</p>
+                <p>Vous trouverez dans <a href="https://support.google.com/analytics/answer/6004245?hl=fr"
+                        target="_blank" rel="noopener">cet article</a> un récapitulatif de la façon dont nous utilisons
+                    les données dans le
+                    cadre de Google Analytics, ainsi que de notre engagement à garantir leur confidentialité et leur
+                    sécurité.</p>
+
+            </div>
+
+            <div class="text-danger" v-cloak>{{errors}}</div>
+
+        </main>
+
+        <footer class="text-muted py-5 bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">The Shifters Belgium</div>
+                    <div class="col-xl-6 right">
+                        <ul>
+                            <li><a
+                                    href="https://framaforms.org/education4climatebe-1617447411">{{translate("footer.contact")}}</a>
+                            </li>
+                            <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                    data-bs-target="#modalCookies">Cookies</a></li>
+                            <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank" rel="noopener">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="preload-background-images">
+            <img src="./img/background-students.jpg" width="1" height="1" />
+            <img src="./img/background-teachers.jpg" width="1" height="1" />
+        </div>
+
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
+
+    </div>
+
+    <script src="js/vue.global.prod.js"></script>
+    <script type="module" src="js/home.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
