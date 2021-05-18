@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse
 from typing import List, Dict
-
+from unidecode import unidecode
 import json
 import pandas as pd
 
@@ -28,22 +28,23 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
     score = 0
     for pattern in patterns:
         if isinstance(pattern,list):
-
+            pattern_matches_dict["---".join(pattern)] = []
+            matches=[]
+            matches_text=[]
             #check multi term matches
-            term1_match=re.search(pattern[0],text)
-            term2_match=re.search(pattern[1],text)
-            if term1_match is not None and term2_match is not None:
-                pattern_matches_dict[pattern[0] + "----" + pattern[1]] = []
-                score = 1
-                start, end = term1_match.span()
-                start = max(0,start-20)
-                end = min(end + 20, len(text) - 1)
-                t=text[start:end]
-                start, end = term2_match.span()
-                start = max(0,start-20)
-                end = min(end + 20, len(text) - 1)
-                t=t+"----"+text[start:end]
-                pattern_matches_dict[pattern[0]+"----"+pattern[1]]+=[t]
+            t=""
+            for p in pattern:
+                m=re.search(p,text)
+                matches.append(m is not None)
+                if m is not None:
+                    start, end = m.span()
+                    start = max(0, start - 20)
+                    end = min(end + 20, len(text) - 1)
+                    t += "---"
+                    t+=text[start:end]
+            if False not in matches:
+                score=1
+                pattern_matches_dict["---".join(pattern)]+=[t]
 
 
         else :
@@ -57,6 +58,7 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
                     start = max(0, start-20)
                     end = min(end+20, len(text)-1)
                     pattern_matches_dict[pattern] += [text[start:end]]
+        pattern_matches_dict={k:v for k,v in pattern_matches_dict.items() if len(v)>0}
     return score, pattern_matches_dict
 
 
@@ -120,6 +122,7 @@ def main(school: str, year: int, fields: str) -> None:
                 continue
 
         # Match patterns and compute scores
+        text=unidecode(text)
         for theme in themes:
             score, shift_patterns_matches_dict = compute_score(text, themes_patterns[theme][language])
             courses_df.loc[idx, theme] = score
