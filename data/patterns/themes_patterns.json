@@ -145,7 +145,7 @@
 		    "conditions? m[ée]t[ée]o[^ ]+ extr[^ ]+",
 		    "[ée]v[ée]nements? m[ée]t[ée]o[^ ]+ extr[^ ]+",
 		    "temp[^ ]+ moyenne mond[^ ]+",
-		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)",
+		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)"
 		],
 		"en": [
 			"environmental (?:management|maintenance)",
@@ -154,7 +154,7 @@
 		    "global (?:average|mean) temperature",
 		    "(?:thawing|loss|melting|reduction|shrinking) (?:of )?(?:(?:(?:polar )? ice(?: caps)?)|permafrost)",
 			"environmental challenge",
-			["biodiversity","(collapse|extinction|impact|destruction)","(environment|ecology|ecosystem)"],
+			["biodiversity","(collapse|extinction|impact|destruction)","(environment|ecology|ecosystem)"]
 		],
 		"nl": [
 			"milieu(?:beheer|management|beleid)",
