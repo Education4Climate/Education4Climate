@@ -1,6 +1,9 @@
 {
-    "decarbonization": {
+    "climate": {
         "ACER0048-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ettant de r\u00e9duire l'\u00e9mission de gaz \u00e0 effet de serre dans diff\u00e9rents dom"
+            ],
             "bas[- ]carbon[^ ]+": [
                 "modes de transport 'bas carbone' incluant v\u00e9hicules ",
                 "des comportements \u00ab bas carbone \u00bb \u00e0 tous les niveau"
@@ -17,24 +20,264 @@
                 "tation des modes de stockages du co2   r\u00e9servoirs de gaz"
             ]
         },
+        "ACER0049-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "les inventaires des \u00e9missions de gaz \u00e0 effet de serre dans le cadre du ra",
+                "jets de r\u00e9duction d'\u00e9missions de gaz \u00e0 effet de serre dans le cadre des m"
+            ]
+        },
+        "ACER0075-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "n carbone et autres gaz \u00e0 effets de serre ou polluants    pr\u00e9"
+            ]
+        },
+        "ARCH0355-2": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " de transformation  changements climatiques  saisons  \u00e9quilibre"
+            ]
+        },
+        "BIOL0031-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "e les oc\u00e9ans et les impacts climatiques et /ou antrhopiques"
+            ]
+        },
+        "BIOL0852-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ecosyst\u00e8mes et changements climatiques      description du",
+                "articuli\u00e8rement les changements climatiques et leurs cons\u00e9quenc",
+                "e du carbone et les changements climatiques      introduction  ",
+                " introduction   les changements climatiques  preuves et causes ",
+                "ces \u00e9cologiques des changements climatiques       remarque     ",
+                "ues en lien avec le changement climatique par l'analyse d'un ",
+                "ntexte th\u00e9orique du changement climatique    d\u00e9finir  expliqu"
+            ]
+        },
+        "CHIM9315-1": {
+            "[\u00e9e]missions? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "de la r\u00e9duction des \u00e9missions de co2     - impact enviro"
+            ]
+        },
+        "CLIM0002-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " d'applications des mod\u00e8les climatiques  partie 2     l'obj",
+                "ation \u00e0 l'\u00e9tude des changements climatiques  du pass\u00e9 et du fut",
+                " \u00e0 l'utilisation de mod\u00e8les climatiques    les s\u00e9ances prat",
+                "miliariser avec les mod\u00e8les climatiques simples  des mod\u00e8le"
+            ]
+        },
+        "CLIM0002-2": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " d'applications des mod\u00e8les climatiques  partie 2     l'obj",
+                "ation \u00e0 l'\u00e9tude des changements climatiques  du pass\u00e9 et du fut",
+                " \u00e0 l'utilisation de mod\u00e8les climatiques    les s\u00e9ances prat",
+                "miliariser avec les mod\u00e8les climatiques simples  des mod\u00e8le"
+            ]
+        },
+        "CLIM0007-2": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "         principaux gaz \u00e0 effet de serre  ges  et bandes d'a"
+            ],
+            "(?:^|[^a-z])cop ?[0-9]+": [
+                "  l'accord de paris  cop21     insuffisance de"
+            ],
+            "accords? de paris(?:(?: sur| pour) le climat)?": [
+                "ocole de kyoto    l'accord de paris  cop21     insuffis"
+            ]
+        },
+        "CLIM0009-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "nts g\u00e9ologiques aux changements climatiques actuels  le cours c"
+            ]
+        },
+        "CLIM0017-2": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " des simulations de mod\u00e8les climatiques r\u00e9alis\u00e9es dans la p",
+                " des simulations de mod\u00e8les climatiques r\u00e9alis\u00e9es dans la p"
+            ]
+        },
+        "ECON0944-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " - l'\u00e9conomie et le changement climatique    les principaux o"
+            ]
+        },
+        "ECON2248-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "e de l'\u00e9conomie des changements climatiques      7  discussion "
+            ]
+        },
+        "ECON2301-1": {
+            "[\u00e9e]missions? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "issance \u00e9conomique  \u00e9missions de co2 et biodiversit\u00e9  le"
+            ]
+        },
+        "ENVT0019-2": {
+            "[\u00e9e]missions? (?:du |de )?(?:co2|dioxyde de carbone)": [
+                "ilan \u00e9nerg\u00e9tique et \u00e9missions de co2 sur le cycle de vie"
+            ]
+        },
+        "ENVT2065-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "la biodiversit\u00e9   - changement climatique   les diff\u00e9rentes t"
+            ]
+        },
+        "GBLX2144-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " participation  les changements climatiques  l'\u00e9cologie  l'eau ",
+                "  l'historique  les changements climatiques  l'\u00e9cologie  l'eau "
+            ]
+        },
+        "GBLX2147-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " enjeux associ\u00e9s au changement climatique  \u00e0 la crise de l'ea"
+            ]
+        },
+        "GENV0001-2": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ts hydrologiques du changement climatique  risque de crues et"
+            ]
+        },
         "GENV0002-1": {
             "d\u00e9carbon[^ ]+": [
                 "vec le processus de d\u00e9carbonisation et de d\u00e9nucl\u00e9arisat"
             ]
         },
+        "GEOG0048-1": {
+            "climate diplomacy": [
+                "climate diplomacy"
+            ]
+        },
+        "GEOG0050-1": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "health impacts of climate changes"
+            ]
+        },
+        "GEOG0630-3": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " sur ces milieux du rechauffement climatique     pour le milieu "
+            ]
+        },
+        "GEOG0630-5": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " sur ces milieux du rechauffement climatique     pour le milieu "
+            ]
+        },
+        "GEOG0661-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                " radiatif  r\u00f4le des gaz \u00e0 effet de serre  transport d'\u00e9nergi"
+            ]
+        },
+        "GEOG0662-1": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "ational politics of climate change"
+            ]
+        },
+        "GEOG2012-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " contexte actuel du rechauffement climatique  3  de la g\u00e9omorpho"
+            ]
+        },
+        "GEOG2013-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ent face au d\u00e9fi du changement climatique  la compr\u00e9hension d"
+            ]
+        },
         "GEOL0008-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ique  du calcul des \u00e9missions de gaz \u00e0 effet de serre  de la capture et d"
+            ],
             "s[\u00e9e]qu[\u00e9e]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)": [
                 "la capture et de la s\u00e9questration du co2       g\u00e9ologie appl"
             ]
         },
         "GEOL0008-2": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ique  du calcul des \u00e9missions de gaz \u00e0 effet de serre  de la capture et d"
+            ],
             "s[\u00e9e]qu[\u00e9e]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)": [
                 "la capture et de la s\u00e9questration du co2                comp"
             ]
         },
         "GEOL0008-4": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ique  du calcul des \u00e9missions de gaz \u00e0 effet de serre  de la capture et d"
+            ],
             "s[\u00e9e]qu[\u00e9e]strat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone)": [
                 "la capture et de la s\u00e9questration du co2       g\u00e9ologogie ap"
+            ]
+        },
+        "GEOL0224-2": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "on    5  causes des changements climatiques    6  evolution du ",
+                "  introduction \u00e0 la mod\u00e9llisation climatique et pr\u00e9dictions    l"
+            ]
+        },
+        "GEOL1050-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "tique    calcul des \u00e9missions de gaz \u00e0 effet de serre  ghg     techniques"
+            ]
+        },
+        "GERE0034-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " - atmosph\u00e8re  sous changements climatiques    le cours porte s"
+            ]
+        },
+        "GEST3024-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "les perspectives de changements climatiques plaident pour une \u00e9"
+            ]
+        },
+        "GEST3047-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ntaux  par exemple  changement climatique  substance appauvri"
+            ]
+        },
+        "GEST6002-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " la lutte contre le changement climatique  la protection de l"
+            ]
+        },
+        "GEST7030-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "miques traitant des changements climatiques ou de la biodiversi"
+            ]
+        },
+        "HEVL0071-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " - l'\u00e9conomie et le changement climatique      introduction \u00e0"
+            ]
+        },
+        "HEVL0071-2": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " - l'\u00e9conomie et le changement climatique    les principaux o"
+            ]
+        },
+        "HULG0365-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ue et r\u00e9duction des gaz \u00e0 effet de serre et modification/\u00e9vo"
+            ]
+        },
+        "HULG0484-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "changements climatiques   impacts et soluti",
+                "3   att\u00e9nuation des changements climatiques   chacun des trois ",
+                "ques et sociaux des changements climatiques d'origine humaine  ",
+                "a probl\u00e9matique des changements climatiques avec un esprit \u00e0 la"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ar la r\u00e9duction des \u00e9missions de gaz \u00e0 effet de serre  et faire face aux "
+            ]
+        },
+        "LGER0053-2": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "langue anglaise    \"climate change and the literary im",
+                "in his essay about \"climate change and the unthinkable",
+                "enge represented by climate change  our reading list w",
+                " great derangement  climate change and the unthinkable"
+            ]
+        },
+        "LOGI0012-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "rticulier en termes de gaz \u00e0 effet de serre et autres polluants"
             ]
         },
         "MECA0037-1": {
@@ -42,9 +285,24 @@
                 "es de captage et de stockage du co2      8  aspects \u00e9co"
             ]
         },
+        "OCEA0055-5": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ans le contexte des changements climatiques et en particulier l"
+            ]
+        },
         "OCEA0056-1": {
             "(?:carbon|co2?) (?:capture|conversion|valuation|sequestration)": [
                 "rable potential for carbon sequestration     seagrasses are "
+            ]
+        },
+        "OCEA0082-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "norganiques  et des gaz \u00e0 effet de serre dans divers \u00e9cosyst"
+            ]
+        },
+        "OCEA0086-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "norganiques  et des gaz \u00e0 effet de serre dans divers \u00e9cosyst"
             ]
         },
         "OCEA0094-1": {
@@ -52,125 +310,118 @@
                 "rable potential for carbon sequestration     seagrasses are "
             ]
         },
+        "OCEA0220-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ans le contexte des changements climatiques et en particulier l"
+            ]
+        },
+        "PHYS3010-2": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "correspondante    - changement climatique  outils d'investiga",
+                "endre les causes du changement climatique et son impact sur l"
+            ]
+        },
         "SCER0010-1": {
             "captures? (?:du |de )?(?:co2|dioxyde de carbone)": [
                 "ion  d\u00e9poussi\u00e9rage  capture du co2  pot catalytique 2 "
+            ]
+        },
+        "SCER0046-1": {
+            "bas[- ]carbon[^ ]+": [
+                "sage \u00e0 une \u00e9conomie bas carbone - pens\u00e9e syst\u00e8me"
+            ]
+        },
+        "SOCI0073-3": {
+            "justice climat[^ ]+": [
+                "ement durable et la justice climatique  les nouvelles tend"
+            ]
+        },
+        "SPAT0026-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "e solaire jusqu'aux changements climatiques actuels  il s'adres"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "l'holoc\u00e8ne  climat  gaz \u00e0 effet de serre et v\u00e9g\u00e9tation      "
+            ]
+        },
+        "SPAT0027-3": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ne synth\u00e8se sur les changements climatiques actuels et futurs  ",
+                "et de serre   4  le changement climatique au 20\u00e8me si\u00e8cle   a",
+                "et mod\u00e8les   5  les changements climatiques du pass\u00e9   m\u00e9thodes",
+                "\u00e9istoc\u00e8ne     6  le changement climatique du futur   sc\u00e9nario",
+                "ocio-\u00e9conomiques et projections climatiques du giec   7  les im",
+                "  7  les impacts du changement climatique  niveau de la mer  ",
+                "a probl\u00e9matique des changements climatiques globaux     en guis"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "rbone et bilans des gaz \u00e0 effet de serre   4  le changement "
+            ]
+        },
+        "SPAT0077-1": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "e    inventaire des gaz \u00e0 effet de serre majeurs d'origine n",
+                "n des \u00e9missions des gaz \u00e0 effet de serre anthropiques    a l",
+                "evue les principaux gaz \u00e0 effet de serre anthropiques et nat",
+                "r les \u00e9missions des gaz \u00e0 effet de serre anthropiques    sui"
+            ]
+        },
+        "VEGE0027-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ol  l'influence des changements climatiques sur les cultures et"
+            ]
+        },
+        "VEGE0034-1": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " effets de serre et changement climatique li\u00e9es aux activit\u00e9s"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ogie   ainsi qu'aux \u00e9missions de gaz \u00e0 effets de serre et changement clima"
             ]
         }
     },
     "energy": {
         "ACER0048-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "les de production d'\u00e9nergie renouvelable    o introduction g",
-                "  o les diff\u00e9rentes \u00e9nergies renouvelables       proc\u00e9d\u00e9s low "
-            ],
             "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
                 "      - r\u00e9duire les consommations \u00e9nerg\u00e9tiques ponctuelles  r\u00e9duir",
                 "      1 r\u00e9duire les consommations \u00e9nerg\u00e9tiques  r\u00e9duire les besoin"
             ],
             "utilis[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
                 "es alternatives \u00e0 l'utilisation d'\u00e9nergie primaire fossile   "
-            ],
-            "vecteur[^ ]+ [\u00e9e]nerg[^ ]+": [
-                "    - production de vecteurs \u00e9nerg\u00e9tiques   biocarburants de "
-            ]
-        },
-        "AERO0032-1": {
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "ons  les ponts  les \u00e9oliennes  les c\u00e2bles haute t"
             ]
         },
         "AGRO0016-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "au d\u00e9veloppment des \u00e9nergies renouvelables      le cours forme",
-                "e une des sources d'\u00e9nergie renouvelable qui est pertienente"
-            ],
-            "[\u00e9e]nerg[^ ]+ fossiles?": [
-                "e sa d\u00e9pendance aux \u00e9nergies fossiles mais peut \u00e9galement"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---e sa d\u00e9pendance aux \u00e9nergies fossiles mais peut \u00e9galemen---analyse des impacts environnementaux       partim 1  "
             ],
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "s le contexte de la transition \u00e9nerg\u00e9tique  le secteur agricol",
                 "er les enjeux de la transition \u00e9nerg\u00e9tique dans le secteur agr"
             ]
         },
-        "ALIM0010-3": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "onne les notions du bilan \u00e9nerg\u00e9tique quotidien     en g\u00e9"
-            ]
-        },
         "ARCH0009-3": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "hoix des syst\u00e8mes - \u00e9nergies renouvelables et distribution de "
-            ]
-        },
-        "ARCH0079-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "suivants       - le bilan \u00e9nerg\u00e9tique d'un b\u00e2timent     -"
-            ]
-        },
-        "ARCH0085-6": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                " du b\u00e2timent li\u00e9 au bilan \u00e9nerg\u00e9tique et \u00e0 son dimensionn"
-            ]
-        },
-        "ARCH1626-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "          calcul de bilans \u00e9nerg\u00e9tiques    sous consid\u00e9rati"
-            ]
-        },
-        "ARCH1967-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "e  au recyclage  au bilan \u00e9nerg\u00e9tique de la fabrication s",
-                "e  au recyclage  au bilan \u00e9nerg\u00e9tique de la fabrication s"
-            ]
-        },
-        "ASTR0204-2": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "s et on \u00e9tablit son bilan \u00e9nerg\u00e9tique  les probl\u00e8mes r\u00e9ce"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---hoix des syst\u00e8mes - \u00e9nergies renouvelables et distribution de ---t  \u00e9nergie  impacts environnementaux     * d'applique"
             ]
         },
         "CHIM9234-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "our la production d'\u00e9nergie verte  \u00e9oliennes  cellule"
-            ],
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "on d'\u00e9nergie verte  \u00e9oliennes  cellules solaires "
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---our la production d'\u00e9nergie verte  \u00e9oliennes  cellule---t leur impact sur l'environnement \u00e9valu\u00e9e     l'\u00e9tudi"
             ]
         },
         "CHIM9234-2": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "our la production d'\u00e9nergie verte  \u00e9oliennes  cellule",
-                "our la production d'\u00e9nergie verte  \u00e9oliennes  cellule"
-            ],
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "on d'\u00e9nergie verte  \u00e9oliennes  cellules solaires ",
-                "on d'\u00e9nergie verte  \u00e9oliennes  cellules solaires "
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---our la production d'\u00e9nergie verte  \u00e9oliennes  cellule---t leur impact sur l'environnement \u00e9valu\u00e9e      les \u00e9t"
             ]
         },
         "CHIM9315-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "iff\u00e9rentes formes d'\u00e9nergie renouvelables et technologies ass",
-                "    - les sources d'\u00e9nergie renouvelable 'conventionnelles' ",
-                "oiter les sources d'\u00e9nergie renouvelables    8  de discuter l"
-            ],
-            "[\u00e9e]nerg[^ ]+ fossiles?": [
-                "e l'utilisation des \u00e9nergies fossiles \u00e0 divers ph\u00e9nom\u00e8nes",
-                "scuter la place des \u00e9nergies fossiles et renouvelable pou"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---iff\u00e9rentes formes d'\u00e9nergie renouvelables et technologies ass---ts et \u00e0 leur impact environnemental  pluies acides  r"
             ],
             "consom[^ ]+ (?:d')?[\u00e9e]nerg[^ ]+": [
                 "les relations entre consommation d'\u00e9nergie  d\u00e9mographie et d\u00e9v",
                 "r l'\u00e9volution de la consommation \u00e9nerg\u00e9tique mondiale    3  de d",
                 "ur pour diminuer la consommation d'\u00e9nergie et assurer l'approv"
-            ]
-        },
-        "CLIM0002-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "  1  les mod\u00e8les de bilan \u00e9nerg\u00e9tique    2  les mod\u00e8les d"
-            ]
-        },
-        "CLIM0002-2": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "  1  les mod\u00e8les de bilan \u00e9nerg\u00e9tique    2  les mod\u00e8les d"
             ]
         },
         "CNAV0022-1": {
@@ -184,46 +435,26 @@
             ]
         },
         "ECON0945-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "e d\u00e9veloppement des \u00e9nergies renouvelables       - transport e"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---e d\u00e9veloppement des \u00e9nergies renouvelables       - transport e---conomie  \u00e9nergie et environnement    ce cours est ass"
             ]
         },
         "ELEC0080-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "arition massive des \u00e9nergies renouvelables  de nouvelles charg",
-                "aleur pour \u00e0 base d'\u00e9nergies renouvelables permettra de faire "
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---arition massive des \u00e9nergies renouvelables  de nouvelles charg---'investissement  et environnemental  au travers de di"
             ],
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
                 "rastructure dans la transition \u00e9nerg\u00e9tique  une courte introdu"
             ]
         },
-        "ENVT0019-2": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "el  utilisation des \u00e9nergies renouvelables dans les b\u00e2timents ",
-                "el  utilisation des \u00e9nergies renouvelables dans les b\u00e2timents "
-            ],
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "\u00e0 la r\u00e9alisation du bilan \u00e9nerg\u00e9tique d'une maison neuve ",
-                "e et de r\u00e9aliser le bilan \u00e9nerg\u00e9tique d'un b\u00e2timent exist",
-                "iff\u00e9rents termes du bilan \u00e9nerg\u00e9tique sont pr\u00e9sent\u00e9es    ",
-                "timent r\u00e9el dont le bilan \u00e9nerg\u00e9tique est \u00e9valu\u00e9 progress",
-                "able de r\u00e9aliser un bilan \u00e9nerg\u00e9tique d'un b\u00e2timent  et d",
-                "rendre la notion de bilan \u00e9nerg\u00e9tique d'un b\u00e2timent et de"
-            ]
-        },
         "ENVT0026-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "la valorisation des \u00e9nergies renouvelables     - l'utilisation"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---la valorisation des \u00e9nergies renouvelables     - l'utilisation--- d'\u00e9valuer l'impact environnemental d'un produit  pro"
             ]
         },
         "ENVT0068-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "sente les sources d'\u00e9nergie renouvelable qui sont pertienent"
-            ]
-        },
-        "ENVT0069-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "        \u00e9tablir les bilans d'\u00e9nergie sur des syst\u00e8mes \u00e9l"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---valorisation des \u00e9nergies renouvelables    ce cours pr\u00e9sent---analyse des impacts environnementaux     au terme du "
             ]
         },
         "ENVT0070-1": {
@@ -233,31 +464,14 @@
             ]
         },
         "ENVT0071-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "es en lien avec les \u00e9nergies renouvelables et la performance e"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---projet en \u00e9nergies renouvelables et b\u00e2timents perfor---s et la performance environnementale des b\u00e2timents   "
             ]
         },
         "ENVT0072-1": {
-            "photovolta[i\u00ef]ques?": [
-                "surface de panneaux photovoltaique  point de fonctionn",
-                "surface de panneaux photovoltaique  point de fonctionn"
-            ]
-        },
-        "ENVT2011-2": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "ents d'observation  bilans \u00e9nerg\u00e9tiques de l'atmosph\u00e8re et ",
-                "pen-geiger    2  le bilan \u00e9nerg\u00e9tique de la surface    3 "
-            ]
-        },
-        "ENVT2023-2": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "ar les cours d'eau  hydro\u00e9lectricit\u00e9  navigation  irriga"
-            ]
-        },
-        "ENVT3038-1": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "   les am\u00e9nagements hydro\u00e9lectriques   l'analyse du risq",
-                "tion d'am\u00e9nagements hydro\u00e9lectriques ou encore l'analyse"
+            "([\u00e9e]lectri[^ ]+|panneaux?) photovol[^ ]+": [
+                "hangeur  surface de panneaux photovoltaique  point de fonctionn",
+                "hangeur  surface de panneaux photovoltaique  point de fonctionn"
             ]
         },
         "ENVT3042-1": {
@@ -266,39 +480,9 @@
                 "erg\u00e9tique  confort  consommation d'\u00e9nergie co\u00fbt d'exploitation"
             ]
         },
-        "ENVT3057-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "rtim 1   ressources \u00e9nerg\u00e9tiques renouvelables et non renouvelable",
-                "rog\u00e8ne  biomasse et \u00e9nergies renouvelables        partim 2   i",
-                "rtim 1   ressources \u00e9nerg\u00e9tiques renouvelables et non renouvelable",
-                "rtim 1   ressources \u00e9nerg\u00e9tiques renouvelables et non renouvelable"
-            ],
-            "vecteur[^ ]+ [\u00e9e]nerg[^ ]+": [
-                "tion des diff\u00e9rents vecteurs \u00e9nerg\u00e9tiques  renouvelables et n",
-                " notre pays  et des vecteurs \u00e9nerg\u00e9tiques utilis\u00e9s de nos jou"
-            ]
-        },
-        "ENVT3057-2": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "rog\u00e8ne  biomasse et \u00e9nergies renouvelables     \u00e0 l'issue de ce"
-            ],
-            "vecteur[^ ]+ [\u00e9e]nerg[^ ]+": [
-                "tion des diff\u00e9rents vecteurs \u00e9nerg\u00e9tiques  renouvelables et n",
-                " notre pays  et des vecteurs \u00e9nerg\u00e9tiques utilis\u00e9s de nos jou"
-            ]
-        },
         "ENVT3059-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "r l'utilisation des \u00e9nergies renouvelables dans les b\u00e2timents "
-            ],
-            "solaires? thermiques?": [
-                "luent  les syst\u00e8mes solaires thermique et photovolta\u00efque  "
-            ],
-            "photovolta[i\u00ef]ques?": [
-                "laires thermique et photovolta\u00efque  les fa\u00e7ades active"
-            ],
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                " biomasse  les micro\u00e9oliennes  les syst\u00e8mes innov"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "--- et int\u00e9gration des \u00e9nergies renouvelables    partie sm  le co---lan  \u00e9nerg\u00e9tique ou environnemental  d'un b\u00e2timent af"
             ]
         },
         "FORE0043-1": {
@@ -306,40 +490,9 @@
                 "ion  carbonisation  transition \u00e9nerg\u00e9tique     durabilit\u00e9 natu"
             ]
         },
-        "GCIV2035-1": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "re des am\u00e9nagements hydro\u00e9lectriques d'autre part  le co",
-                "le d'un am\u00e9nagement hydro\u00e9lectrique  s\u00e9ance n\u00b06     m\u00e9c"
-            ]
-        },
-        "GCIV2065-1": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "s \u00e0 buts multiples  hydro\u00e9lectricit\u00e9  gestion des crues ",
-                "nges  les centrales hydro\u00e9lectriques  les r\u00e9seaux d'addu",
-                "on        centrales hydro\u00e9lectriques    r\u00e9seaux d'adduct"
-            ]
-        },
-        "GENV0001-2": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "ns le sous-sol      hydro\u00e9lectricit\u00e9  gestion durable de"
-            ]
-        },
-        "GENV0002-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "ncipalement sur les \u00e9nergies renouvelables et utiliser de mani",
-                "de l'impact que les \u00e9nergies renouvelables peuvent avoir dans "
-            ],
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "e important dans le bilan \u00e9nerg\u00e9tique de nos soci\u00e9t\u00e9s et "
-            ]
-        },
-        "GEOG2016-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "cipitations     -le bilan \u00e9nerg\u00e9tique de la terre        "
-            ]
-        },
         "GEOL0008-1": {
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "drocarbures dans la transition \u00e9nerg\u00e9tique      g\u00e9ologie appli",
                 "drocarbures dans la transition \u00e9nerg\u00e9tique\" ces 15 premi\u00e8res he",
                 "  le contexte de la transition \u00e9nerg\u00e9tique  statistiques mondi"
             ],
@@ -349,6 +502,7 @@
         },
         "GEOL0008-2": {
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "drocarbures dans la transition \u00e9nerg\u00e9tique      g\u00e9ologie appli",
                 "drocarbures dans la transition \u00e9nerg\u00e9tique\" ces 15 premi\u00e8res he",
                 "drocarbures dans la transition \u00e9nerg\u00e9tique\"    ces 35 heures do",
                 "  le contexte de la transition \u00e9nerg\u00e9tique  statistiques mondi"
@@ -359,6 +513,7 @@
         },
         "GEOL0008-4": {
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "drocarbures dans la transition \u00e9nerg\u00e9tique  g\u00e9ologie appliqu\u00e9e",
                 "drocarbures dans la transition \u00e9nerg\u00e9tique\" ces 15 premi\u00e8res he",
                 "  le contexte de la transition \u00e9nerg\u00e9tique  statistiques mondi"
             ],
@@ -373,6 +528,7 @@
         },
         "GEOL1050-1": {
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
+                "ventionnels dans la transition \u00e9nerg\u00e9tique               intro",
                 "ts en cours dans la transition \u00e9nerg\u00e9tique pour r\u00e9duire l'empr"
             ],
             "effica[^ ]+ [\u00e9e]nerg[^ ]+": [
@@ -380,114 +536,38 @@
             ]
         },
         "GERE0029-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                " ou de production d'\u00e9nergie renouvelable      * recueillir d"
-            ]
-        },
-        "GERE0034-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "s flux    th\u00e8me 1   bilan \u00e9nerg\u00e9tique    th\u00e8me 2   transp"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "--- ou de production d'\u00e9nergie renouvelable      * recueillir d---ions de rem\u00e9diation environnementale dans les syst\u00e8me"
             ]
         },
         "GERE0036-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                " ou de production d'\u00e9nergie renouvelable      de plus  le co"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "--- ou de production d'\u00e9nergie renouvelable      de plus  le co---m\u00e9trologie environnementale    dans un conte"
             ]
         },
         "GERE0038-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "0  introduction aux \u00e9nergies renouvelables    introduction aux",
-                "eurs favorisant les \u00e9nergies renouvelables    1  photovolta\u00efqu",
-                "mes \u00e9nerg\u00e9tiques et \u00e9nergies renouvelables\" propos\u00e9 ici poursui",
-                "oeuvre de projets d'\u00e9nergies renouvelables    3  g\u00e9rer le stoc",
-                "rer le stockage des \u00e9nergies renouvelables intermitentes  par ",
-                "mes de production d'\u00e9nergie renouvelable     - capable d'ana",
-                "s d'installations d'\u00e9nergie renouvelable     - capable de d\u00e9"
-            ],
-            "photovolta[i\u00ef]ques?": [
-                "renouvelables    1  photovolta\u00efque    radiation solair",
-                "solaire  conversion photovolta\u00efque  performances  int\u00e9"
-            ],
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "eolien    ressource \u00e9olienne  elements des machi",
-                "ements des machines \u00e9oliennes  production d\u00e9lectr"
-            ]
-        },
-        "HULG0488-1": {
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "- erosion hydrique  \u00e9olienne et aratoire   proce",
-                " du sol    *erosion \u00e9olienne    *erosion aratoir",
-                " saltation  \u00e9rosion \u00e9olienne  dans un tunnel \u00e0 v",
-                "e enherb\u00e9e  \u00e9rosion \u00e9olienne     - calculs dans "
-            ]
-        },
-        "HULG9278-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                " dans le cadre d'un bilan \u00e9nerg\u00e9tique      d'expliquer et"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---mes \u00e9nerg\u00e9tiques et \u00e9nergies renouvelables      theorie      0---t technologies de l'environnement    1   former aux m"
             ]
         },
         "LANG2972-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "environnementaux    energies renouvelables    groupes de pr\u00e9se"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---environnementaux    energies renouvelables    groupes de pr\u00e9se---    protection de l'environnement    les changements "
             ]
         },
         "LANG2973-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "environnementaux    energies renouvelables    groupes de pr\u00e9se"
-            ]
-        },
-        "MECA0002-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "udiants de faire le bilan \u00e9nerg\u00e9tique et l'analyse des pe"
-            ]
-        },
-        "MECA0031-2": {
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "tique ou encore des \u00e9oliennes           g\u00e9n\u00e9ralit"
-            ]
-        },
-        "MECA0041-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "agement de chaleur  bilan \u00e9nerg\u00e9tique d'un moteur diesel "
-            ]
-        },
-        "MECA0041-2": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "agement de chaleur  bilan \u00e9nerg\u00e9tique d'un moteur diesel "
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---environnementaux    energies renouvelables    groupes de pr\u00e9se---    protection de l'environnement    les changements "
             ]
         },
         "MECA0450-3": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "roduit le concept d'\u00e9nergie renouvelable et pr\u00e9sente le pote"
-            ],
-            "photovolta[i\u00ef]ques?": [
-                "2  \u00e9nergie solaire  photovolta\u00efque et thermique     3 "
-            ],
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "ycle de vie      1  \u00e9nergie \u00e9olienne  performance et tec",
-                " des divers types d'\u00e9oliennes       2  \u00e9nergie so"
-            ]
-        },
-        "MECA0512-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "endra \u00e0 exprimer un bilan \u00e9nerg\u00e9tique sur un syst\u00e8me ferm",
-                "tant les notions de bilan \u00e9nerg\u00e9tique et entropique  lors",
-                "liquer la notion de bilans \u00e9nerg\u00e9tiques \u00e0 des syst\u00e8mes r\u00e9el"
-            ]
-        },
-        "MECA0515-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "ation des sources d'\u00e9nergie renouvelables  de syst\u00e8mes permet"
-            ]
-        },
-        "MECA0518-1": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "le d'un am\u00e9nagement hydro\u00e9lectrique  s\u00e9ance n\u00b06     m\u00e9c"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---roduit le concept d'\u00e9nergie renouvelable et pr\u00e9sente le pote---issement par kw     environnement  impacts sur le cyc"
             ]
         },
         "MECA0519-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                " ou de production d'\u00e9nergie renouvelable  sepaer      plus p"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "--- ou de production d'\u00e9nergie renouvelable  sepaer      plus p---ans un contexte agroenvironnemental    choisir et dim"
             ]
         },
         "MECA0526-1": {
@@ -495,79 +575,9 @@
                 " pour am\u00e9liorer son efficacit\u00e9 \u00e9nerg\u00e9tique  notamment par le b"
             ]
         },
-        "MECA0528-1": {
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "bines hydrauliques  \u00e9oliennes  cycles brayton et "
-            ],
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "ures  branchements  bilan d'\u00e9nergie et rendement     - ",
-                " fonctionnement  le bilan d'\u00e9nergie et les limites d'op",
-                "on     - calcul des bilans d'\u00e9nergie et des conditions a"
-            ]
-        },
-        "MECA0529-1": {
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                "bes  cavitation     eoliennes  classification et ",
-                "nception de pales d'\u00e9oliennes \u00e0 axe horizontale s",
-                " volet concerne les \u00e9oliennes  les objectifs sont",
-                "n a\u00e9rodynamique des \u00e9oliennes \u00e0 axe horizontale  "
-            ],
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "litude  composants  bilan \u00e9nerg\u00e9tique  cavitation  courbe",
-                "litude  composants  bilan d'\u00e9nergie  courbes caract\u00e9ris",
-                "blir et utiliser le bilan \u00e9nerg\u00e9tique     comprenne le co"
-            ]
-        },
-        "PHYS0987-1": {
-            "photovolta[i\u00ef]ques?": [
-                "dispositifs pour le photovolta\u00efque et la conversion ph"
-            ]
-        },
-        "PHYS3024-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                " exp\u00e9rimentales     bilan d'\u00e9nergie      a l'issue du c"
-            ]
-        },
-        "PROJ0001-1": {
-            "(?:[\u00e9e]nergies? )?[\u00e9e]olien[^ ]+": [
-                " m\u00e9caniques sur une \u00e9olienne  calcul de la force"
-            ],
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "ectrique  calcul du bilan \u00e9nerg\u00e9tique d'un r\u00e9acteur chimi"
-            ]
-        },
         "SMEM0042-1": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "uxembourg  finalit\u00e9 energies renouvelables   les r\u00e8glements de"
-            ]
-        },
-        "SPAT0024-2": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "om\u00e8nes radiatifs et bilan \u00e9nerg\u00e9tique   3  thermostatique",
-                "om\u00e8nes radiatifs et bilan \u00e9nerg\u00e9tique   3  thermostatique",
-                "om\u00e8nes radiatifs et bilan \u00e9nerg\u00e9tique   3  thermostatique"
-            ]
-        },
-        "SPAT0024-3": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "om\u00e8nes radiatifs et bilan \u00e9nerg\u00e9tique   3  thermostatique"
-            ]
-        },
-        "SPAT0024-4": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "om\u00e8nes radiatifs et bilan \u00e9nerg\u00e9tique   3  thermostatique"
-            ]
-        },
-        "SPAT0048-4": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                " et applications    bilan \u00e9nerg\u00e9tique et climat    effet ",
-                "tion chimique et le bilan \u00e9nerg\u00e9tique de l'atmosph\u00e8re  il"
-            ]
-        },
-        "SPAT0055-1": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                " et applications    bilan \u00e9nerg\u00e9tique et climat    effet ",
-                "tion chimique et le bilan \u00e9nerg\u00e9tique de l'atmosph\u00e8re "
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---uxembourg  finalit\u00e9 energies renouvelables   les r\u00e8glements de---ces et gestion de l'environnement \u00e0 finalit\u00e9 doivent "
             ]
         },
         "SPOL0099-1": {
@@ -588,2204 +598,271 @@
                 "ted  cooling water  energy consumption for water sanitatio",
                 "d scenarios and the energy consumption of pumping systems "
             ]
-        },
-        "ZOOL2000-1": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "ar les cours d'eau  hydro\u00e9lectricit\u00e9  navigation  irriga"
-            ]
-        }
-    },
-    "consumption": {
-        "ACER0048-1": {
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
-                "      - r\u00e9duire les consommations \u00e9nerg\u00e9tiques ponctuelles  r\u00e9duir",
-                "      1 r\u00e9duire les consommations \u00e9nerg\u00e9tiques  r\u00e9duire les besoin"
-            ]
-        },
-        "CHIM9315-1": {
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
-                "r l'\u00e9volution de la consommation \u00e9nerg\u00e9tique mondiale    3  de d"
-            ]
-        },
-        "ENVT0070-1": {
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
-                "ui va au-del\u00e0 de la consommation \u00e9nerg\u00e9tique  approch\u00e9e dans d'a",
-                " que ceux li\u00e9s \u00e0 la consommation \u00e9nerg\u00e9tique \u00e0 proprement parler"
-            ]
-        },
-        "ENVT3042-1": {
-            "consom[^ ]+ \u00e9nerg[^ ]+": [
-                "ur les enjeux de la consommation \u00e9nerg\u00e9tique  sur la pr\u00e9sentatio"
-            ]
-        },
-        "UEEN0001-1": {
-            "energy (consumption|use)": [
-                "ted  cooling water  energy consumption for water sanitatio",
-                "d scenarios and the energy consumption of pumping systems "
-            ]
         }
     },
     "environment": {
-        "AGRO0001-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "comme r\u00e9sultant de l'\u00e9cologie  de l'histoire  et "
-            ]
-        },
-        "AGRO0021-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "s culturales et des \u00e9cosyst\u00e8mes existant dans les r"
-            ]
-        },
-        "AGRO0023-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ctionnement des agro\u00e9cosyst\u00e8mes   le cours abordera",
-                "ctionnement des agro\u00e9cosyst\u00e8mes   d\u00e9velopper une ap",
-                "ctionnement des agro\u00e9cosyst\u00e8mes   l'enseignement mi"
+        "AGRO0025-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "ion territoriale en agro\u00e9cologie"
             ]
         },
         "ANIM0018-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "animale et les bases \u00e9cologiques du processus de p\u00e2t"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "tivant des leviers  agro\u00e9cologiques  les savoirs et com"
             ]
         },
         "ANIM0024-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " l'agronomie et de l'\u00e9cologie pour permettre de m",
-                "t consid\u00e9r\u00e9e comme l'\u00e9cologie d'un syst\u00e8me alimen"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---e culture comme des \u00e9cosyst\u00e8mes particuliers  dan---\u00e9 pour augmenter la r\u00e9silience  et  5  optimiser l"
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "e culture comme des \u00e9cosyst\u00e8mes particuliers  dans ",
-                " concevoir des agro-\u00e9cosyst\u00e8mes plus durables   dan",
-                "\u00e9gr\u00e9s dans les agro-\u00e9cosyst\u00e8mes et les syst\u00e8mes ali",
-                "sitif dans les agro-\u00e9cosyst\u00e8mes  dans ce cours nous"
-            ]
-        },
-        "ARCH0560-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "cl\u00e9ment   de la deep ecology et/ou du g\u00e9nie \u00e9col",
-                "ology et/ou du g\u00e9nie \u00e9cologique  etc    - donne les",
-                "cl\u00e9ment   de la deep ecology et/ou de pratiques "
-            ]
-        },
-        "ARCH0570-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "t\u00e9grant la dimension \u00e9cologique  responsable   - pr"
-            ]
-        },
-        "ARCH0573-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "te de crise sociale  \u00e9cologique et sanitaire      c"
-            ]
-        },
-        "ARCH0574-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ier       l'approche \u00e9cologique techniciste n'est p"
-            ]
-        },
-        "ARCH0575-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e0 des pr\u00e9occupations \u00e9cologiques et en tenant compte"
-            ]
-        },
-        "ARCH0593-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "    soutenabilit\u00e9 /  \u00e9cologie urbaine  \u00e9cole de c"
-            ]
-        },
-        "ARCH1622-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "suivant l'\u00e9valuation \u00e9cologiqu"
-            ]
-        },
-        "ARCH1626-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ux conventionnels et \u00e9cologiques / alternatives     "
-            ]
-        },
-        "ARCH1943-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ani\u00e8res  \u00e0 travers l'\u00e9cologie  l'environnement  l"
-            ]
-        },
-        "ARCH1953-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ani\u00e8res  \u00e0 travers l'\u00e9cologie  l'environnement  l"
-            ]
-        },
-        "ARCH2001-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ectivit\u00e9  techniques \u00e9cologiques ou polluantes  attr"
-            ]
-        },
-        "BIOC9244-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie  ainsi que la plupa"
-            ]
-        },
-        "BIOD0001-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "l\u00e9ments d'un syst\u00e8me \u00e9cologique menac\u00e9s par les cha",
-                "  d\u00e9finir les enjeux \u00e9cologiques d'un projet dans le"
-            ]
-        },
-        "BIOD0007-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "s     interpr\u00e9tation \u00e9cologique des communaut\u00e9s v\u00e9g",
-                "diversit\u00e9     niches \u00e9cologiques     caract\u00e9risation"
-            ]
-        },
-        "BIOL0027-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "me partie  notions d'\u00e9cologie            les tp s",
-                "diff\u00e9rents aspects d'\u00e9cologie  \u00e0 d\u00e9finir      pr\u00e9"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "tituant les  pal\u00e9o- \u00e9cosyst\u00e8mes qu'ils seront appel"
-            ]
-        },
-        "BIOL0030-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ynamique de syst\u00e8mes \u00e9cologiques et g\u00e9n\u00e9tiques  ce c",
-                "rovenant de syst\u00e8mes \u00e9cologiques et de r\u00e9gulation de"
-            ]
-        },
-        "BIOL0031-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " monde  dans divers \u00e9cosyst\u00e8mes pour comprendre les"
-            ]
-        },
-        "BIOL0518-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "biodiversit\u00e9 et de l'ecologie est n\u00e9cessaire \u00e0 un",
-                "oncepts de base de l'ecologie  enfin  l'\u00e9tude des",
-                "a compr\u00e9hension de l'\u00e9cologie et de la biodiversi",
-                "osyst\u00e8mes  de niches \u00e9cologiques  de flux d'\u00e9nergie "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "mil\u00e9 les concepts d'\u00e9cosyst\u00e8mes  de niches \u00e9cologiq",
-                " fonctionnement des \u00e9cosyst\u00e8mes     les \u00e9tudiants a"
-            ]
-        },
-        "BIOL0810-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e des principes de l'\u00e9cologie  \u00e9tude des \u00e9cosyst\u00e8"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "\u00e9cologie  \u00e9tude des \u00e9cosyst\u00e8mes   il s'agit de d\u00e9te",
-                "nes esp\u00e8ces dans un \u00e9cosyst\u00e8me donn\u00e9  et quelles s",
-                " croissante sur les \u00e9cosyst\u00e8mes qu'il occupe     -l"
-            ]
-        },
-        "BIOL0812-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e9orie neutraliste en \u00e9cologie  de faire r\u00e9aliser ",
-                "ment due \u00e0 la d\u00e9rive \u00e9cologique  facteurs d\u00e9mograph",
-                " de la biog\u00e9ographie \u00e9cologique  ces analyses sont "
-            ]
-        },
-        "BIOL0826-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et ecologie sur les th\u00e8mes de l",
-                "ie des organismes et ecologie  mais ne sera compt",
-                " association  groupe \u00e9cologique  el\u00e9ments explicati"
-            ]
-        },
-        "BIOL0844-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "is leurs similarit\u00e9s \u00e9cologiques et une certaine con",
-                "ant la biologie et l'\u00e9cologie de ces deux groupes",
-                " la biog\u00e9ographie  l'\u00e9cologie et les symbioses te"
-            ]
-        },
-        "BIOL0847-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ement  des notions d'\u00e9cologie nous permettrons de",
-                "ement  des notions d'\u00e9cologie nous permettrons de"
-            ]
-        },
-        "BIOL0847-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ement  des notions d'\u00e9cologie nous permettrons de",
-                "ement  des notions d'\u00e9cologie nous permettrons de"
-            ]
-        },
-        "BIOL0848-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ement  des notions d'\u00e9cologie nous permettrons de",
-                "ement  des notions d'\u00e9cologie nous permettrons de",
-                "le     evolution     ecologie             travaux",
-                "le     evolution     ecologie       partie th\u00e9ori"
-            ]
-        },
-        "BIOL0848-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ement  des notions d'\u00e9cologie nous permettrons de",
-                "ement  des notions d'\u00e9cologie nous permettrons de",
-                "le     evolution     ecologie             travaux",
-                "le     evolution     ecologie      partie th\u00e9oriq"
-            ]
-        },
-        "BIOL0849-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e  de g\u00e9n\u00e9tique et d'\u00e9cologie     objectifs en te"
-            ]
-        },
-        "BIOL0850-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e  de g\u00e9n\u00e9tique et d'\u00e9cologie     objectifs en te"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "me d'\u00e9levage pour l'agro\u00e9cologie      contexte justi",
+                "e ce cours        l'agro\u00e9cologie \u00e9tudie les syst\u00e8mes",
+                "ision plus large  l'agro\u00e9cologie est consid\u00e9r\u00e9e comm",
+                "mmation   l'\u00e9levage agro\u00e9cologique est peu \u00e9tudi\u00e9 dans",
+                " des principes de l'agro\u00e9cologie aux productions ani",
+                "urer une transition agro\u00e9cologique dans les syst\u00e8mes d",
+                "es 5 principes de l'agro\u00e9cologie appliqu\u00e9s \u00e0 l'\u00e9leva",
+                "urer une transition agro\u00e9cologique du syst\u00e8me \u00e9tudi\u00e9  ",
+                "alyse de l'approche agro\u00e9cologique appliqu\u00e9e aux syst\u00e8",
+                " les principes de l'agro\u00e9cologie afin de devenir de ",
+                "es de la transition agro\u00e9cologique     l'enseignement "
             ]
         },
         "BIOL0852-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "syst\u00e8mes des cours d'\u00e9cologie et de biodiversit\u00e9 ",
-                "rbone   cons\u00e9quences \u00e9cologiques des changements cli"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes des cours d'\u00e9cologi",
-                "la perturbation des \u00e9cosyst\u00e8mes par les activit\u00e9s a",
-                " fonctionnement des \u00e9cosyst\u00e8mes       table des mat"
-            ]
-        },
-        "BIOL0856-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "des d'\u00e9thologie ou d'\u00e9cologie  la seconde moiti\u00e9 ",
-                "s en \u00e9thologie et en \u00e9cologie      - eveil \u00e0 pren"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---ecosyst\u00e8mes et changements cl---chauffement global  r\u00e9silience  r\u00e9sistance  giec  "
             ]
         },
         "BIOL0860-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "plantes  les raisons \u00e9cologiques de cette strat\u00e9gie ",
-                "aluation des risques \u00e9cologiques    analyser et inte"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes  nous aborderons de",
-                "s toxiques pour les \u00e9cosyst\u00e8mes terrestres repose p",
-                "n avec les services \u00e9cosyst\u00e9miques    d\u00e9finir l'\u00e9cotox",
-                "s toxiques pour les \u00e9cosyst\u00e8mes terrestres    d\u00e9cri"
-            ]
-        },
-        "BIOL0861-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ntale de diff\u00e9rents \u00e9cosyst\u00e8mes aura \u00e9t\u00e9 d\u00e9velopp\u00e9e"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "--- fonctionnement des \u00e9cosyst\u00e8mes  nous aborderons ---xploit\u00e9es pour la d\u00e9pollution de l'environnement "
             ]
         },
         "BIOL0863-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "fonctionnement de l'\u00e9cosyst\u00e8me aquatique   en part",
-                "la mod\u00e9lisation des \u00e9cosyst\u00e8mes \u00ab rivi\u00e8re \u00bb  la mod",
-                "mment repr\u00e9senter l'\u00e9cosyst\u00e8me bassin-versant/rivi",
-                "m\u00e9liorer l'\u00e9tat des \u00e9cosyst\u00e8mes aquatiques et att\u00e9n"
-            ]
-        },
-        "BIOL0865-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e des principes de l'\u00e9cologie  \u00e9tude des \u00e9cosyst\u00e8"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "\u00e9cologie  \u00e9tude des \u00e9cosyst\u00e8mes   il s'agit de d\u00e9te",
-                "nes esp\u00e8ces dans un \u00e9cosyst\u00e8me donn\u00e9  et quelles s",
-                " croissante sur les \u00e9cosyst\u00e8mes qu'il occupe     -l",
-                "esp\u00e8ces au sein des \u00e9cosyst\u00e8mes  et la grande influ",
-                " de l'homme sur ces \u00e9cosyst\u00e8mes      il s'agit auss",
-                "ration actuelle des \u00e9cosyst\u00e8mes s'inscrit dans un t"
-            ]
-        },
-        "BIOL1064-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " actuels  taxonomie  ecologie  reproduction  onto",
-                "ions sociales  socio-\u00e9cologie et socio-biologie  "
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---fonctionnement de l'\u00e9cosyst\u00e8me aquatique   en par---venir et r\u00e9duire la pollution  promouvoir son uti"
             ]
         },
         "BIOL2003-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " d'esp\u00e8ces  l'impact \u00e9cologique  l'int\u00e9r\u00eat en anato"
+            "(pertes?|d\u00e9teriorations?|impacts?|contamination) ([\u00e9e]cosyst[^ ]+|[\u00e9e]colo[^ ]+)": [
+                "nombre d'esp\u00e8ces  l'impact \u00e9cologique  l'int\u00e9r\u00eat en anato"
             ]
         },
-        "BIOL2026-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ement  des notions d'\u00e9cologie nous permettrons de",
-                "le     evolution     ecologie     le cours de bio"
-            ]
-        },
-        "BIOL2031-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "        partie iii   ecologie        chapitre 16 ",
-                "       chapitre 16   ecologie des populations    "
-            ]
-        },
-        "BIOL2032-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "manit\u00e9 et enfin de l'\u00e9cologie  \u00e9quilibres et dyna"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "de l'homme dans les \u00e9cosyst\u00e8mes     voir avant-prop"
-            ]
-        },
-        "BIOL2033-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "on \u00e0 la diversit\u00e9  l'\u00e9cologie et au monitoring de"
-            ]
-        },
-        "BIOL2036-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "nt la diversit\u00e9 des \u00e9cosyst\u00e8mes  des esp\u00e8ces  et de",
-                " communaut\u00e9s et des \u00e9cosyst\u00e8mes  les \"hotspots\"    ",
-                "t perturbations des \u00e9cosyst\u00e8mes          usages des",
-                "es  pour diff\u00e9rents \u00e9cosyst\u00e8mes     l'enseignement ",
-                " de rem\u00e9diation des \u00e9cosyst\u00e8mes      ceci  \u00e0 partir"
-            ]
-        },
-        "BIOL2038-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e8res      ce cours d'\u00e9cologie et de microbiologie",
-                "comment fait-on de l'\u00e9cologie  - approche scienti",
-                "tifique    module 2  ecologie des sols    module ",
-                "es sols    module 3  ecologie microbienne et cycl",
-                "ions fondamentales d'\u00e9cologie enseign\u00e9es au 2\u00e8me ",
-                "a signification de l'\u00e9cologie scientifique  il s'",
-                "m\u00e9thodes d'\u00e9tudes en \u00e9cologie et sur les d\u00e9marche",
-                "e de fin d'\u00e9tudes  l'\u00e9cologie des sols porte sur ",
-                "      la nature de l'\u00e9cologie    les m\u00e9thodes d'\u00e9",
-                "m\u00e9thodes d'\u00e9tudes en \u00e9cologie    la d\u00e9marche scie",
-                "le des ph\u00e9nom\u00e8nes en \u00e9cologie    d\u00e9veloppement d'",
-                "ifique appliqu\u00e9e \u00e0 l'\u00e9cologie  l'\u00e9tude des sols e"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "fique \u00e0 l'\u00e9tude des \u00e9cosyst\u00e8mes    mobilisation des"
-            ]
-        },
-        "BIOL2039-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ions fondamentales d'\u00e9cologie enseign\u00e9es en 2\u00e8me ",
-                "elier en biologie  l'\u00e9cologie des eaux douces  sy",
-                "u sein de leur niche \u00e9cologique dans le cadre d'une",
-                "uation de la qualit\u00e9 \u00e9cologique et physico-chimique"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "end la vie dans les \u00e9cosyst\u00e8mes aquatiques sera pas",
-                "e des organismes et \u00e9cosyst\u00e8mes aquatiques soit abo",
-                "encontr\u00e9es dans les \u00e9cosyst\u00e8mes d'eau douce majeurs"
-            ]
-        },
-        "BIOL2213-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "pts et m\u00e9thodes de l'\u00e9cologie comportementale  il",
-                "r l'originalit\u00e9 de l'\u00e9cologie comportementale et ",
-                " entre comportement  \u00e9cologie et \u00e9volution dans u",
-                "h\u00e9ories propos\u00e9es en \u00e9cologie comportementale pou"
-            ]
-        },
-        "BOTA0414-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "t\u00e9r\u00eat agronomique et \u00e9cologique         comprendre ",
-                "omique  forestier ou \u00e9cologique  et les positionner"
-            ]
-        },
-        "CHIM0715-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "nt abord\u00e9e dans des \u00e9cosyst\u00e8mes d'int\u00e9r\u00eat agronomiq"
-            ]
-        },
-        "COMU2144-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "manit\u00e9 et enfin de l'\u00e9cologie  \u00e9quilibres et dyna"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "de l'homme dans les \u00e9cosyst\u00e8mes       perspective \u00e9"
-            ]
-        },
-        "ECON2255-4": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "it\u00e8res des services \u00e9cosyst\u00e9miques    discussion sur l",
-                "omis entre services \u00e9cosyst\u00e9miques  hartman     exerci",
-                "ingente de services \u00e9cosyst\u00e9miques    a l'issue de ce "
+        "DROI0725-1": {
+            "droit (de l')?environnement---protection (de l')environnement": [
+                "---xi\u00e8me  consacr\u00e9e au droit de l'environnement marin  sont abord\u00e9e---essources que de la protection de l'environnement     aucu"
             ]
         },
         "ECON2298-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "tion \u00e0 la transition \u00e9cologique et sociale     la d"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "rit\u00e9  agro\u00e9cologie  \u00e9cosyst\u00e9mique  etc   dans lequel "
-            ]
-        },
-        "ELEC0080-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "en pleine transition \u00e9cologique o\u00f9 ces derniers doi",
-                "ntexte de transition \u00e9cologique  il aura \u00e9galement "
-            ]
-        },
-        "ENVT0008-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "- notions de base en \u00e9cologie - p\u00eache piscicultur"
-            ]
-        },
-        "ENVT0040-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ngent dans une crise \u00e9cologique globale qui impose ",
-                "\u00e9rer   la transition \u00e9cologique   l'objectif du cou"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "lexif  circularit\u00e9  agro\u00e9cologie  \u00e9cosyst\u00e9mique  etc",
+                "h\u00e8me 'm\u00e9ta' comme l'agro\u00e9cologie en mobilisant tant "
             ]
         },
         "ENVT0040-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "  partim transitions \u00e9cologiques   les crises multip",
-                "ngent dans une crise \u00e9cologique globale qui impose ",
-                "\u00e9rer   la transition \u00e9cologique   l'objectif du cou",
-                "  partim transitions \u00e9cologiques   les \u00e9tudiants doi",
-                " semences et justice \u00e9cologique   \u00e9levage technolog",
-                "  partim transitions \u00e9cologiques   les cours est org"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                " partim transitions agro\u00e9cologiques   partim d\u00e9di\u00e9 \u00e0 l'",
+                "   partim d\u00e9di\u00e9 \u00e0 l'agro\u00e9cologie donn\u00e9 sous forme de",
+                " partim transitions agro\u00e9cologiques   d\u00e9velopper une ca",
+                "xit\u00e9 des dynamiques agro\u00e9cologiques     - poss\u00e9der une ",
+                "e et historique des agro\u00e9cologies et de la diversit\u00e9 ",
+                "xtes nationaux ou l'agro\u00e9cologie se d\u00e9veloppe   - co",
+                "overses autour de l'agro\u00e9cologie sur les th\u00e9matiques",
+                " partim transitions agro\u00e9cologiques   - lectures pr\u00e9par"
             ]
         },
         "ENVT0047-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "lexit\u00e9 des services \u00e9cosyst\u00e9miques et d'estimer leur i",
-                "iliser les services \u00e9cosyst\u00e9miques comme indicateurs d",
-                "tiques des services \u00e9cosyst\u00e9miques en les appliquant n"
-            ]
-        },
-        "ENVT0062-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "l\u00e9ments de base de l'\u00e9cologie          la partie "
-            ]
-        },
-        "ENVT0063-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "la philosophie  de l'\u00e9cologie  des sciences de ge",
-                "la philosophie  de l'\u00e9cologie  des sciences de ge",
-                "la philosophie  de l'\u00e9cologie  des sciences de ge"
-            ]
-        },
-        "ENVT0063-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "la philosophie  de l'\u00e9cologie  des sciences de ge"
-            ]
-        },
-        "ENVT2023-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "otions de bases de l'\u00e9cologie des poissons des ea",
-                "sances de bases de l'\u00e9cologie des poissons des ea"
-            ]
-        },
-        "ENVT2044-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "porelle des syst\u00e9mes \u00e9cologiques de l'individu aux \u00e9",
-                "isation des syst\u00e8mes \u00e9cologiques / interaction entre",
-                "umaines et processus \u00e9cologiques     structure du co",
-                "tation  les facteurs \u00e9cologiques  illustration de la",
-                "riables d'un syst\u00e8me \u00e9cologique et d\u00e9velopper une a",
-                "tative d'un probl\u00e8me \u00e9cologique  en vue de l'utilis"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "s de l'individu aux \u00e9cosyst\u00e8mes / m\u00e9thodes d'\u00e9tudes",
-                " sp\u00e9cifique      5  ecosyst\u00e9mologie  ecosyst\u00e8mes    d\u00e9f",
-                "5  ecosyst\u00e9mologie  ecosyst\u00e8mes    d\u00e9finitions  str",
-                "ce et stabilit\u00e9 des \u00e9cosyst\u00e8mes  les grands \u00e9cosyst",
-                "yst\u00e8mes  les grands \u00e9cosyst\u00e8mes mondiaux et leurs c",
-                " fonctionnement des \u00e9cosyst\u00e8mes     identifier les "
-            ]
-        },
-        "ENVT2049-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "o 14000    empreinte \u00e9cologique    introduire les d",
-                "lcul d'une empreinte \u00e9cologiqu"
-            ]
-        },
-        "ENVT2058-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes tropicaux en int\u00e9gr"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                " se  agriculture et agro\u00e9cologie    ils seront capab",
+                "e du paysage ou \u00e0 l'agro\u00e9cologie     le cours donn\u00e9 "
             ]
         },
         "ENVT3016-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "s compartiments des \u00e9cosyst\u00e8mes terrestres et aquat"
-            ]
-        },
-        "ENVT3020-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ration de la qualit\u00e9 \u00e9cologique et d une gestion du",
-                "rantit un \u00ab bon \u00e9tat \u00e9cologique \u00bb de l'eau et des m",
-                "\u00e9s dans l'\u00e9valuation \u00e9cologique des cours d'eau et ",
-                "es pour l'\u00e9valuation \u00e9cologique des eaux de surface"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "nctionnement de ces \u00e9cosyst\u00e8mes en g\u00e9n\u00e9ral et sur l"
-            ]
-        },
-        "ENVT3027-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "la philosophie  de l'\u00e9cologie  des sciences de ge"
-            ]
-        },
-        "ENVT3041-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "la mod\u00e9lisation des \u00e9cosyst\u00e8mes \u00ab rivi\u00e8re \u00bb  la mod"
-            ]
-        },
-        "ENVT3045-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ressions par biomes/\u00e9cosyst\u00e8mes  apr\u00e8s une introduc",
-                "stituent les biomes/\u00e9cosyst\u00e8mes pour l'homme de m\u00eam",
-                "radation des biomes/\u00e9cosyst\u00e8mes  ils doivent pouvoi",
-                "iques et les biomes/\u00e9cosyst\u00e8mes les plus menac\u00e9s  i",
-                "volution des biomes/\u00e9cosyst\u00e8mes de la plan\u00e8te depui",
-                "r les divers biomes/\u00e9cosyst\u00e8mes     la bonne \u00e9volut",
-                " 10 pages par biome/\u00e9cosyst\u00e8mes sont fournis \u00e0 l'en"
-            ]
-        },
-        "ENVT3050-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "lexit\u00e9 des services \u00e9cosyst\u00e9miques et d'estimer leur i",
-                "iliser les services \u00e9cosyst\u00e9miques comme indicateurs d",
-                "tiques des services \u00e9cosyst\u00e9miques     ils apprendront"
-            ]
-        },
-        "ENVT3060-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "de suivi temporel d'\u00e9cosyst\u00e8mes agricoles  forestie"
-            ]
-        },
-        "FINA0058-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "s et les certificats \u00e9cologiques et de cog\u00e9n\u00e9ration "
-            ]
-        },
-        "FORE0001-2": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ion durable       l'\u00e9cosyst\u00e8me for\u00eat     - descrip",
-                "nes      - services \u00e9cosyst\u00e9miques         la gestion ",
-                "pace et de services \u00e9cosyst\u00e9miques       ils trouveron",
-                "fonctionnement de l'\u00e9cosyst\u00e8me for\u00eat les bases de "
-            ]
-        },
-        "FORE0003-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "les aspects sociaux  \u00e9cologiques et \u00e9conomiques dans"
-            ]
-        },
-        "FORE0005-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ti\u00e8re  sylviculture  \u00e9cologie  \u00e9conomie  valorisa"
-            ]
-        },
-        "FORE0008-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " les classifications \u00e9cologiques       partie 2   ca",
-                "iotique   conditions \u00e9cologiques  territoires \u00e9colog",
-                "ogiques  territoires \u00e9cologiques  matrice de r\u00e9f\u00e9ren",
-                "og\u00e9ographie  groupes \u00e9cologiques  syntaxonomie     -"
-            ]
-        },
-        "FORE0009-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nent africain     3  ecologie des esp\u00e8ces ligneus"
-            ]
-        },
-        "FORE0017-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "     ecologie et dynamique des po",
-                "\u00e9hender l'\u00e9tude de l'\u00e9cologie et de la dynamique ",
-                "\u00e9gion wallonne       ecologie et dynamique des po",
-                "sances de bases de l'\u00e9cologie des poissons des ea",
-                "ages piscicoles      ecologie et dynamique des po"
-            ]
-        },
-        "FORE0021-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "de sylviculture et d'\u00e9cologie foresti\u00e8re    cours"
-            ]
-        },
-        "FORE0025-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "conomique  services \u00e9cosyst\u00e9miques  aut\u00e9cologie      e"
-            ]
-        },
-        "FORE0033-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "p\u00e8ces foresti\u00e8res  l'\u00e9cologie g\u00e9n\u00e9tique  la g\u00e9n\u00e9t"
-            ]
-        },
-        "FORE0041-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "    \u00b7 equilibre des \u00e9cosyst\u00e8mes et sant\u00e9 des for\u00eats"
-            ]
-        },
-        "FORE0042-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "pt\u00e9es aux conditions \u00e9cologiques environnantes et au"
-            ]
-        },
-        "GBLX0060-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ogie synth\u00e9tique \u00e0 l'\u00e9cologie synth\u00e9tique    3 1 ",
-                " synth\u00e9tiques   3 2  \u00e9cologie synth\u00e9tique   condi",
-                "ut\u00e9s synth\u00e9tiques et \u00e9cologie synth\u00e9tique   ces c"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "s agissent dans les \u00e9cosyst\u00e8mes naturels  c'est-\u00e0-d",
-                "\u00e9cis  ax\u00e9es sur les \u00e9cosyst\u00e8mes aquatiques   ainsi "
-            ]
-        },
-        "GBLX2131-2": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes     grands syst\u00e8mes",
-                "ices rendus par les \u00e9cosyst\u00e8mes    a l'issue du cou",
-                " fonctionnement des \u00e9cosyst\u00e8mes    - la diversit\u00e9 d",
-                "  - la diversit\u00e9 de \u00e9cosyst\u00e8mes et l'organisation d",
-                "ices rendus par les \u00e9cosyst\u00e8mes    l'\u00e9tudiant est c"
-            ]
-        },
-        "GBLX2139-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "oncepts de base de l'\u00e9cologie du paysage  dont l'",
-                "oncepts de base de l'\u00e9cologie du paysage concerna"
-            ]
-        },
-        "GBLX2141-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " de cet atelier est ecosystemer     les \u00e9tudiants s"
-            ]
-        },
-        "GBLX2144-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ments climatiques  l'\u00e9cologie  l'eau  la mobilit\u00e9",
-                "ments climatiques  l'\u00e9cologie  l'eau  la mobilit\u00e9"
-            ]
-        },
-        "GBLX2147-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "urbaine et services \u00e9cosyst\u00e9miques      capacit\u00e9 \u00e0 con"
-            ]
-        },
-        "GBLX2152-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "es ascpects sociaux  \u00e9cologiques et \u00e9conomiques dans"
-            ]
-        },
-        "GBLX2153-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nctions nourrici\u00e8re  \u00e9cologique  \u00e9conomique et soci",
-                "es aspects  sociaux  \u00e9cologiques  \u00e9conomiques  techn",
-                "ciales  \u00e9conomiques  \u00e9cologiques  techniques  l\u00e9gisl"
-            ]
-        },
-        "GEOG0222-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ve naturelle  r\u00e9seau \u00e9cologique  natura 2000    7  "
-            ]
-        },
-        "GEOG0603-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "mit\u00e9  int\u00e9grit\u00e9 4  l'\u00e9cologie du paysage 5  la co"
-            ]
-        },
-        "GEOG2013-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "morphologiques sur l'\u00e9cologie et la biog\u00e9ographie"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "\u00e9valuer le r\u00f4le des \u00e9cosyst\u00e8mes     - comprendre le"
-            ]
-        },
-        "GEOL0210-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "re de la vie et des \u00e9cosyst\u00e8mes     ces travaux pra"
-            ]
-        },
-        "GEOL0263-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "himie pr\u00e9biotique  l'\u00e9cologie  la microbiologie  "
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---s compartiments des \u00e9cosyst\u00e8mes terrestres et aqu---urbations li\u00e9es aux pollutions seront pr\u00e9sent\u00e9s  "
             ]
         },
         "GEOL0313-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "des risques  sant\u00e9  \u00e9cosyst\u00e8mes  ressources en eau "
-            ]
-        },
-        "GEOL1049-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "i que les inf\u00e9rences \u00e9cologiques des organismes foss",
-                "nnelle  interactions \u00e9cologiques  etc      comment e"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "cologiques dans des \u00e9cosyst\u00e8mes tr\u00e8s bien pr\u00e9serv\u00e9s"
-            ]
-        },
-        "GEOP0002-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "amp  structure de l'\u00e9cosyst\u00e8me   - analyse stochas",
-                "amp  structure de l'\u00e9cosyst\u00e8me   - analyse de la d",
-                "application sur des \u00e9cosyst\u00e8mes naturels      edaph",
-                "our caract\u00e9riser un \u00e9cosyst\u00e8me control\u00e9 par l'eau ",
-                "our caract\u00e9riser un \u00e9cosyst\u00e8me control\u00e9 par l'eau "
-            ]
-        },
-        "GEOP0002-2": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "amp  structure de l'\u00e9cosyst\u00e8me   - analyse stochas",
-                "our caract\u00e9riser un \u00e9cosyst\u00e8me control\u00e9 par l'eau "
-            ]
-        },
-        "GEOP0009-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "dre les implications \u00e9cologiques et environnementale"
-            ]
-        },
-        "GERE0023-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "it      - fonctions \u00e9cosyst\u00e9miques des sols au sein de",
-                "nservation dans les \u00e9cosyst\u00e8mes \u00e0 diff\u00e9rentes \u00e9chel"
-            ]
-        },
-        "GERE0025-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "nservation dans les \u00e9cosyst\u00e8mes \u00e0 diff\u00e9rentes \u00e9chel"
-            ]
-        },
-        "GERE0034-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "4 et n2o  entre les \u00e9cosyst\u00e8mes terrestres et l'atm",
-                " flux \u00e0 l'interface ecosyst\u00e8me-atmosph\u00e8re et des r\u00e9servoirs d",
-                "t et la gestion des \u00e9cosyst\u00e8mes influencent ces \u00e9ch",
-                "s entre plantes/sol/\u00e9cosyst\u00e8me et l'atmosph\u00e8re    ",
-                "es \u00e9changes plantes/\u00e9cosyst\u00e8mes/climat    mieux comprendre",
-                "prendre le r\u00f4le des \u00e9cosyst\u00e8mes terrestres dans le ",
-                "t du climat sur ces \u00e9cosyst\u00e8mes  particuli\u00e8rement e",
-                " des cycles pour un \u00e9cosyst\u00e8me en particulier    m"
-            ]
-        },
-        "GERE0036-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "et gestion des agro-\u00e9cosyst\u00e8mes  la m\u00e9trologie envi"
-            ]
-        },
-        "GERE0037-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " d'\u00e9nergie dans les \u00e9cosyst\u00e8mes terrestres    lors ",
-                "les composantes des \u00e9cosyst\u00e8mes ainsi que les princ",
-                "iochimique dans les \u00e9cosyst\u00e8mes     - la r\u00e9alisatio"
-            ]
-        },
-        "GEST1093-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e9opolitique  social  \u00e9cologique        pour familia"
-            ]
-        },
-        "GEST3024-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " et d\u00e9gradation des \u00e9cosyst\u00e8mes    economie circula"
-            ]
-        },
-        "GEST3053-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "iques  politiques et \u00e9cologiques de notre temps     ",
-                " engage une nouvelle \u00e9cologie des relations entre"
-            ]
-        },
-        "GEST3160-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "et des acteurs de l'\u00e9cosyst\u00e8me entrepreneurial uti",
-                "spects relatifs \u00e0 l'\u00e9cosyst\u00e8me entrepreneurial don",
-                "bmc  financement et \u00e9cosyst\u00e8me   cette liste d'act"
-            ]
-        },
-        "GEST7005-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "cipaux acteurs de l'\u00e9cosyst\u00e8me belge  aa1-aa2-aa5 "
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---des risques  sant\u00e9  \u00e9cosyst\u00e8mes  ressources en ea---ener une \u00e9tude de d\u00e9pollution du sol ou de l'eau "
             ]
         },
         "GEST7030-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "li\u00e9s \u00e0 la transition \u00e9cologique et sociale  il s'ag",
-                "s le nom d' economie ecologique    ecological econo",
-                "onomie ecologique    ecological economics  en angla",
-                "ues et des questions \u00e9cologiques  y compris dans leu",
-                "tiels de l' economie ecologique  peuvent \u00eatre assoc",
-                "\u00e9s du d\u00e9bat \u00e9conomie/\u00e9cologie   entropie  circula",
-                "e dans la transition \u00e9cologique et sociale    ce co",
-                "eux de la transition \u00e9cologique et sociale     au s",
-                "ransition sociale et \u00e9cologique          analyser l",
-                "ransition sociale et \u00e9cologique et percevoir les ob",
-                "ons cl\u00e9s en \u00e9conomie \u00e9cologique et de mobiliser les",
-                "eux de la transition \u00e9cologique et sociale     - de",
-                "nseurs de l'\u00e9conomie \u00e9cologique    des lectures cri",
-                "tion  ex   empreinte \u00e9cologique des circuits courts"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "n sous-syst\u00e8me d'un \u00e9cosyst\u00e8me  local ou global  p"
-            ]
-        },
-        "GIRI0002-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "entaires  zoonoses  \u00e9cosyst\u00e8mes et sant\u00e9  approches"
-            ]
-        },
-        "GIRI0004-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "rmifuges  zoonoses  \u00e9cosyst\u00e8mes et sant\u00e9  approche "
-            ]
-        },
-        "GIRI0010-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "sistance  zoonoses  \u00e9cosyst\u00e8mes et g\u00e9ographie      "
+            "ecologi---(anthropocene|transition (energetique|sociale|climatiq))": [
+                "--- le nom d' economie ecologique    ecological ec---uer \u00e0 construire la transition sociale et \u00e9cologique      "
             ]
         },
         "GIRI9002-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "itoire  gestion des \u00e9cosyst\u00e8mes     d'autre part  \u00e0"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---itoire  gestion des \u00e9cosyst\u00e8mes     d'autre part ---omplexit\u00e9  syst\u00e8me  r\u00e9silience  pr\u00e9vention  pr\u00e9cau"
             ]
         },
-        "GIRI9010-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "sistance  zoonoses  \u00e9cosyst\u00e8mes et g\u00e9ographie      "
+        "HULG0491-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "innovation agro\u00e9cologique et production alime",
+                "91-1   \"innovations agro\u00e9cologiques et production alime"
             ]
         },
-        "HIST0164-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "leur impact sur les \u00e9cosyst\u00e8mes     ce cours ne con"
+        "HULG0492-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "et d\u00e9veloppement en agro\u00e9cologie    les engagements ",
+                "et d\u00e9veloppement en agro\u00e9cologie\" peuvent \u00eatre consul"
             ]
         },
-        "HORT0014-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "vec les notions de l'\u00e9cologie applicables aux  \u00e9c",
-                "pr\u00e9senter une vision \u00e9cologique et \u00e9cosyst\u00e9mique de",
-                "le du fonctionnement \u00e9cologique des paysages urbain",
-                "ser les notions de l'\u00e9cologie  du paysage  applic",
-                "re le fonctionnement \u00e9cologique des paysages urbain",
-                "cherches en cours en \u00e9cologie urbaine  lectures d"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "ision \u00e9cologique et \u00e9cosyst\u00e9mique des syst\u00e8mes urbain"
+        "HULG0495-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "aires \"trajectoires agro\u00e9cologiques\""
             ]
         },
-        "HORT0015-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "oncepts de base de l'\u00e9cologie du paysage  dont l'",
-                "vec les notions de l'\u00e9cologie applicables aux  \u00e9c",
-                "pr\u00e9senter une vision \u00e9cologique et \u00e9cosyst\u00e9mique de",
-                "le du fonctionnement \u00e9cologique des paysages urbain",
-                "oncepts de base de l'\u00e9cologie du paysage concerna",
-                "ser les notions de l'\u00e9cologie  du paysage  applic",
-                "re le fonctionnement \u00e9cologique des paysages urbain"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "ision \u00e9cologique et \u00e9cosyst\u00e9mique des syst\u00e8mes urbain"
-            ]
-        },
-        "HULG0365-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "durable  l'empreinte \u00e9cologique  les mobilit\u00e9s alte",
-                "s environnementales  \u00e9cologiques et soci\u00e9tales  et a"
-            ]
-        },
-        "HULG0490-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "iques the millenium ecosystem assessment    conte",
-                "bal et des services ecosyst\u00e9miques en jeu \u00e0 l'\u00e9chelle "
-            ]
-        },
-        "HULG9173-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "roduction  l'int\u00e9r\u00eat \u00e9cologique des embranchements "
-            ]
-        },
-        "HULG9179-2": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "es en fonction de l'\u00e9cosyst\u00e8me    - savoir justifi"
-            ]
-        },
-        "HULG9199-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "es sp\u00e9cificit\u00e9s de l'\u00e9cologie du paysage et les p",
-                "ution \u00e0 une approche \u00e9cologiquement et paysag\u00e8rement r\u00e9",
-                "nt les potentialit\u00e9s \u00e9cologiques et paysag\u00e8res pr\u00e9al",
-                "rer dans les r\u00e9seaux \u00e9cologiques     - comprendre  c",
-                "r\u00e9s dans les r\u00e9seaux \u00e9cologiques   - communiquer ave"
-            ]
-        },
-        "HULG9202-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " culturels  sociaux  \u00e9cologiques  esth\u00e9tiques  \u00e9cono"
-            ]
-        },
-        "HULG9285-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "mes agraires et agro\u00e9cosyst\u00e8mes\" peuvent \u00eatre consul"
-            ]
-        },
-        "HULG9390-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "istiques   services \u00e9cosyst\u00e9miques rendus   sols const",
-                "rniers au sein de l'\u00e9cosyst\u00e8me et de lui donner le"
-            ]
-        },
-        "HULG9393-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "\u00eetre les principaux \u00e9cosyst\u00e8mes forestiers et de co"
-            ]
-        },
-        "HULG9409-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " caract\u00e9ristiques et \u00e9cologie d'une rivi\u00e8re    qu",
-                " le prisme tant de l'\u00e9cologie que de la gestion e",
-                "ctions  hydraulique  \u00e9cologique  socio-\u00e9conomique e"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "e base associ\u00e9s aux \u00e9cosyst\u00e8mes aquatiques  par le "
-            ]
-        },
-        "HULG9550-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "es en fonction de l'\u00e9cosyst\u00e8me    - savoir justifi"
-            ]
-        },
-        "INFO2037-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ire et analyser les \u00e9cosyst\u00e8mes forestiers  naturel"
+        "HULG9335-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "agro\u00e9cologie    les engagements ",
+                "cours hulg9335-1   \"agro\u00e9cologie\" peuvent \u00eatre consul"
             ]
         },
         "INFO2038-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nnement d'un syst\u00e8me \u00e9cologique  for\u00eats  milieux na"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "ire et analyser les \u00e9cosyst\u00e8mes forestiers  naturel"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---ire et analyser les \u00e9cosyst\u00e8mes forestiers  natur---rmes de durabilit\u00e9  r\u00e9silience et int\u00e9gration\"    "
             ]
         },
-        "INFO2040-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " dans une logique d'\u00e9cosyst\u00e8mes       digital busin"
-            ]
-        },
-        "INGE0008-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "gie v\u00e9g\u00e9tale ou de l'\u00e9cologie  le projet se divis"
-            ]
-        },
-        "LANG2962-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "al warming  natural ecosystems  waste management  "
-            ]
-        },
-        "LANG2962-2": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "al warming  natural ecosystems  waste management  "
-            ]
-        },
-        "LANG2972-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ans le monde    etre \u00e9cologique    termes \u00e9cologiqu",
-                "\u00e9cologique    termes \u00e9cologiques    la malnutrition "
-            ],
-            "d\u00e9fis? environnement[^ ]+": [
-                " l'environnement    d\u00e9fis environnementaux    energies renouve"
-            ]
-        },
-        "LANG2973-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ans le monde    etre \u00e9cologique    termes \u00e9cologiqu",
-                "\u00e9cologique    termes \u00e9cologiques    la malnutrition "
-            ],
-            "d\u00e9fis? environnement[^ ]+": [
-                " l'environnement    d\u00e9fis environnementaux    energies renouve"
-            ]
-        },
-        "LROM0209-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "th\u00e9tique  \u00e9thique    \u00e9cologie des \u00e9tudes litt\u00e9rai",
-                "e schaeffer   petite \u00e9cologie des \u00e9tudes litt\u00e9rai"
-            ]
-        },
-        "MBIO0002-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "lti-r\u00e9sistantes    - ecologie de la r\u00e9sistance   "
-            ]
-        },
-        "MECA0499-2": {
-            "d\u00e9fis? environnement[^ ]+": [
-                "   face aux d\u00e9fis environnementaux et de mobilit\u00e9 du 2"
-            ]
-        },
-        "MECA0527-1": {
-            "d\u00e9fis? environnement[^ ]+": [
-                "   face aux d\u00e9fis environnementaux et de mobilit\u00e9 du 2"
-            ]
-        },
-        "MICR0120-8": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " et vivent dans des \u00e9cosyst\u00e8mes tr\u00e8s vari\u00e9s et comp",
-                "dans les diff\u00e9rents \u00e9cosyst\u00e8mes et celui de l'homme"
-            ]
-        },
-        "MICR0120-9": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " et vivent dans des \u00e9cosyst\u00e8mes tr\u00e8s vari\u00e9s et comp",
-                "dans les diff\u00e9rents \u00e9cosyst\u00e8mes et celui de l'homme"
-            ]
-        },
-        "MICR0720-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "   mais dont le r\u00f4le \u00e9cologique est similaire \u00e0 cel",
-                "es terrestres   r\u00f4le \u00e9cologique et \u00e9conomique  muci",
-                "cteurs du bois  r\u00f4le \u00e9cologique  nuisance pour le b",
-                "un int\u00e9r\u00eat \u00e9volutif  \u00e9cologique  m\u00e9dical  exp\u00e9rimen"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "mes   r\u00f4le dans les \u00e9cosyst\u00e8mes actuels  fixation d"
-            ]
-        },
-        "MICR1717-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " et vivent dans des \u00e9cosyst\u00e8mes tr\u00e8s vari\u00e9s et comp"
-            ]
-        },
-        "OCEA0014-1": {
-            "[^a-z]ecolo[^ ]+": [
-                "cal and mathematical ecology with practical exam"
-            ]
-        },
-        "OCEA0019-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ique     et \u00e9tudie l'\u00e9cologie des organismes mari"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "ension globale  des \u00e9cosyst\u00e8mes marins      le cour"
-            ]
-        },
-        "OCEA0027-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "r divers probl\u00e8mes d'\u00e9cologie marine et de biog\u00e9o",
-                "eurs isotopiques \u00e0 l'\u00e9cologie et la bio-g\u00e9ochimie",
-                "eurs utilisations en \u00e9cologie et la biog\u00e9ochimie "
-            ]
-        },
-        "OCEA0043-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "   biotope  facteurs \u00e9cologiques  conditions bioc\u00e9no"
+        "MANA0007-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "s dans le master en agro\u00e9cologie   pour ce faire  il"
             ]
         },
         "OCEA0049-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ue biologique  et d' ecologie marine      - des \u00e9"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " globe terrestre  l'\u00e9cosyst\u00e8me p\u00e9lagique abrite de",
-                "isciplinaire de cet \u00e9cosyst\u00e8me        outline cont",
-                "ptations    pelagic ecosystem  description  patch",
-                " future for pelagic ecosystem         - la divers",
-                "tionnement global d'\u00e9cosyst\u00e8mes p\u00e9lagiques types es",
-                "aux sup\u00e9rieurs de l'\u00e9cosyst\u00e8me p\u00e9lagique  e g  la ",
-                "ironnementaux sur l'\u00e9cosyst\u00e8me p\u00e9lagique seront pr"
+            "climat---environnement---ecologie": [
+                "---  les courants  les climats et l'homme affecte---ie p\u00e9lagique      l'environnement p\u00e9lagique  occupe l---e biologique  et d' ecologie marine      - des \u00e9"
             ]
         },
         "OCEA0050-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " \u00e0 une probl\u00e9matique \u00e9cologique du benthos m\u00e9diterr"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "enthique       de l'\u00e9cosyst\u00e8me \"herbiers \u00e0 posidon"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---enthique       de l'\u00e9cosyst\u00e8me \"herbiers \u00e0 posido---ndice  paysager  de pollution          l'\u00e9tdiant "
             ]
         },
         "OCEA0053-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "s organismes et les \u00e9cosyst\u00e8mes marins  les liens e"
-            ]
-        },
-        "OCEA0055-5": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " structuration de l'\u00e9cosyst\u00e8me  cas de l'oc\u00e9an aus",
-                " fonctionnement des \u00e9cosyst\u00e8mes    vous serez capab"
-            ]
-        },
-        "OCEA0056-1": {
-            "[^a-z]ecolo[^ ]+": [
-                " marine phanerogames ecology   seagrasses  marin",
-                "f sampling in marine ecology   the field samplin",
-                "odologies for marine ecological baseline surveys   ",
-                " marine phanerogames ecology   the student will ",
-                "f sampling in marine ecology   the student will ",
-                " marine phanerogames ecology   organisation     ",
-                "f sampling in marine ecology   organisation     "
-            ]
-        },
-        "OCEA0057-7": {
-            "[^a-z]ecolo[^ ]+": [
-                "cription      marine ecology   the ocean is the ",
-                " relevant aspects of ecology  including the spat",
-                "ems      the  marine ecology  is the scientific ",
-                "features      marine ecology is a subset of the ",
-                "he course of  marine ecology  provides an introd",
-                "s an introduction to ecology focuses on specific",
-                "s on specific marine ecological concept  covering i",
-                " general concepts in ecology applied to marine e",
-                "gy applied to marine ecology  definitions  ecolo",
-                "cology  definitions  ecological factors  production",
-                " of organisms        ecology of the some marine ",
-                "c concepts in marine ecology  colonization  clim",
-                "cription      marine ecology   the course will  ",
-                "a basic knowledge of ecological characteristics and",
-                "   be abble to apply ecological principles    be ab",
-                "ctively about marine ecology  issues and ideas  ",
-                "ds applied in marine ecology during the field tr",
-                "and interpret marine ecological data            int",
-                "e biogeochemical and ecological processes       mar",
-                "ocesses       marine ecology fieldtrip   student",
-                "and models in marine ecology     identifying and",
-                "nal and experimental ecological research     see oc",
-                "cription      marine ecology        lectures and",
-                "imples        marine ecology fieldtrip   a week "
-            ]
-        },
-        "OCEA0057-9": {
-            "[^a-z]ecolo[^ ]+": [
-                "     marine ecology   the ocean is the ",
-                " relevant aspects of ecology  including the spat",
-                "ems      the  marine ecology  is the scientific ",
-                "features      marine ecology is a subset of the ",
-                "he course of  marine ecology  provides an introd",
-                "s an introduction to ecology focuses on specific",
-                "s on specific marine ecological concept  covering i",
-                " general concepts in ecology applied to marine e",
-                "gy applied to marine ecology  definitions  ecolo",
-                "cology  definitions  ecological factors  production",
-                " of organisms        ecology of the some marine ",
-                "c concepts in marine ecology  colonization  clim",
-                "cies          marine ecology   the course will  ",
-                "a basic knowledge of ecological characteristics and",
-                "   be abble to apply ecological principles    be ab",
-                "ctively about marine ecology  issues and ideas  ",
-                "ds applied in marine ecology during the field tr",
-                "and interpret marine ecological data            mar",
-                "ta            marine ecology fieldtrip   student",
-                "and models in marine ecology     identifying and",
-                "nal and experimental ecological research       mari",
-                "esearch       marine ecology        lectures and",
-                "on            marine ecology fieldtrip   a week "
-            ]
-        },
-        "OCEA0060-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "marques d'ordre plus \u00e9cologique  abondance et diver",
-                "tte diversit\u00e9        ecology of the coral reefs ",
-                "u diff\u00e9rentes niches \u00e9cologiques  fonctionnement tro",
-                " les r\u00e9ponses        ecology of the coral reefs ",
-                "our le stage \"marine ecology\" \u00e0 la station stares",
-                "tareso  corse        ecology of the coral reefs "
-            ]
-        },
-        "OCEA0062-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " populations et les \u00e9cosyst\u00e8mes    polluants organi"
-            ]
-        },
-        "OCEA0063-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "     part i   ecology and ecotoxicology  ",
-                "une introduction \u00e0 l'\u00e9cologie et \u00e0 l'\u00e9cotoxicolog",
-                "gnant       part i   ecology and ecotoxicology  ",
-                "psie        part i   ecology and ecotoxicology  "
-            ]
-        },
-        "OCEA0064-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "des caract\u00e9ristiques \u00e9cologiques  distribution g\u00e9ogr",
-                "es de diversit\u00e9 et d'\u00e9cologie mol\u00e9culaire sur les"
-            ]
-        },
-        "OCEA0080-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "m\u00e9 assimilable \u00e0 un \u00e9cosyst\u00e8me artificiel     sa p"
-            ]
-        },
-        "OCEA0082-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " dynamics in marine ecosystems   en milieu marin l",
-                " dynamics in marine ecosystems   introduction des ",
-                "e serre dans divers \u00e9cosyst\u00e8mes marins        geolo",
-                " dynamics in marine ecosystems   20 h de th\u00e9orie  "
-            ]
-        },
-        "OCEA0084-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " populations et les \u00e9cosyst\u00e8mes    polluants organi"
-            ]
-        },
-        "OCEA0085-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "un \u00e9l\u00e9ment-cl\u00e9 de l'\u00e9cosyst\u00e8me oc\u00e9anique  aujourd'"
-            ]
-        },
-        "OCEA0086-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "e serre dans divers \u00e9cosyst\u00e8mes marins     20 h de "
-            ]
-        },
-        "OCEA0088-1": {
-            "[^a-z]ecolo[^ ]+": [
-                " relevant aspects of ecology  including the spat",
-                "ems      the  marine ecology  is the scientific ",
-                "features      marine ecology is a subset of the ",
-                "he course of  marine ecology  provides an introd",
-                "s an introduction to ecology focuses on specific",
-                "s on specific marine ecological concept  covering i",
-                " general concepts in ecology applied to marine e",
-                "gy applied to marine ecology  definitions  ecolo",
-                "cology  definitions  ecological factors  production",
-                " of organisms        ecology of the some marine ",
-                "c concepts in marine ecology  colonization  clim",
-                "a basic knowledge of ecological characteristics and",
-                "   be abble to apply ecological principles    be ab",
-                "ctively about marine ecology  issues and ideas  ",
-                "ds applied in marine ecology during the field tr",
-                "and interpret marine ecological data          lectu"
-            ]
-        },
-        "OCEA0089-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ermes d'interactions \u00e9cologiques et des taux de r\u00e9ac",
-                "e biogeochemical and ecological processes    la moi"
-            ]
-        },
-        "OCEA0091-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "endant l'ann\u00e9e  i e  \u00e9cologie marine  oc\u00e9anograph"
-            ]
-        },
-        "OCEA0092-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "marques d'ordre plus \u00e9cologique  abondance et diver",
-                "u diff\u00e9rentes niches \u00e9cologiques  fonctionnement tro",
-                "our le stage \"marine ecology\" \u00e0 la station stares"
-            ]
-        },
-        "OCEA0093-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "des caract\u00e9ristiques \u00e9cologiques  distribution g\u00e9ogr",
-                "es de diversit\u00e9 et d'\u00e9cologie mol\u00e9culaire sur les"
-            ]
-        },
-        "OCEA0096-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "me biog\u00e9ochimique ou \u00e9cologique  et \u00e0 prendre en ma"
-            ]
-        },
-        "OCEA0144-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "u diff\u00e9rentes niches \u00e9cologiques  fonctionnement tro"
-            ]
-        },
-        "OCEA0158-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "l'\u00e9tat de sant\u00e9 des \u00e9cosyst\u00e8mes marins     les obje"
-            ]
-        },
-        "OCEA0160-1": {
-            "[^a-z]ecolo[^ ]+": [
-                "odologies for marine ecological baseline surveys   "
-            ]
-        },
-        "OCEA0220-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " structuration de l'\u00e9cosyst\u00e8me  cas de l'oc\u00e9an aus",
-                " fonctionnement des \u00e9cosyst\u00e8mes    vous serez capab"
-            ]
-        },
-        "OCEA0223-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie  la phylog\u00e9nie  l'\u00e9cologie  la physiologie et ",
-                "ie  la phylog\u00e9nie  l'\u00e9cologie  la physiologie et ",
-                "t\u00e9grer des notions d'\u00e9cologie et de biodiversit\u00e9 "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "er la diversit\u00e9 des \u00e9cosyst\u00e8mes c\u00f4tiers de r\u00e9gions ",
-                "er la diversit\u00e9 des \u00e9cosyst\u00e8mes c\u00f4tiers de r\u00e9gions ",
-                " anthropisation des \u00e9cosyst\u00e8mes tropicaux   c'est \u00e9"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---s organismes et les \u00e9cosyst\u00e8mes marins  les liens---tiques \u00e9mergentes   pollution  d\u00e9chets  phytoplan"
             ]
         },
         "OCEA0227-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "fonctionnement de l'\u00e9cosyst\u00e8me aquatique   en part",
-                "la mod\u00e9lisation des \u00e9cosyst\u00e8mes \u00ab rivi\u00e8re \u00bb  la mod",
-                "mment repr\u00e9senter l'\u00e9cosyst\u00e8me bassin-versant/rivi",
-                "m\u00e9liorer l'\u00e9tat des \u00e9cosyst\u00e8mes aquatiques et att\u00e9n"
-            ]
-        },
-        "OCEA0229-1": {
-            "[^a-z]ecolo[^ ]+": [
-                "on    formulation of ecological interactions    che",
-                "hapter 7 taxonomy of ecological models             ",
-                "on    formulation of ecological interactions    che",
-                "hapter 7 taxonomy of ecological models             "
-            ]
-        },
-        "OCEA2022-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "es  relations inter \u00e9cosyst\u00e8mes      halieutique  s",
-                " fonctionnement des \u00e9cosyst\u00e8mes  perturbations clim"
-            ]
-        },
-        "PALE0201-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ssiles     notions d'\u00e9cologie et de physiologies "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "rganismes au sein d'\u00e9cosyst\u00e8mes anciens bien pr\u00e9ser"
-            ]
-        },
-        "PALE0202-3": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ssiles     notions d'\u00e9cologie et de physiologies "
-            ]
-        },
-        "PAYS0001-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " 8h00     le paysage ecologique comme unit\u00e9 spatial",
-                "els     l'\u00e9valuation \u00e9cologique des paysages    le ",
-                "matrice    le r\u00e9seau \u00e9cologique comme outil de plan",
-                "tils pour la gestion \u00e9cologiques des paysages  n2000",
-                " analyse de paysages \u00e9cologiques  cas d'\u00e9tudes de re",
-                "toration des r\u00e9seaux \u00e9cologiques  rencontre avec les",
-                " de design de r\u00e9seau \u00e9cologique    fournir les outi",
-                "'\u00e9chelle des paysage \u00e9cologique    a l'issue du cou",
-                "structur\u00e9e de r\u00e9seau \u00e9cologique et \u00e0 articuler les "
-            ]
-        },
-        "PAYS0006-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "oncepts de base de l'\u00e9cologie du paysage  dont l'",
-                "oncepts de base de l'\u00e9cologie du paysage     cour"
-            ]
-        },
-        "PAYS0007-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "age et les processus \u00e9cologiques paysagers et sur le",
-                "sagers  d'\u00e9l\u00e9ments d'\u00e9cologie urbaine seront \u00e9gal",
-                "r son interpr\u00e9tation \u00e9cologique  a c\u00f4t\u00e9 des exercic",
-                "ur le fonctionnement \u00e9cologique du paysage     etan"
-            ]
-        },
-        "PAYS0013-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ue sont le social  l'\u00e9cologie et l'\u00e9conomie   les",
-                "les aspects sociaux  \u00e9cologiques et \u00e9conomiques     "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "  - urbanisation et \u00e9cosyst\u00e8mes v\u00e9g\u00e9taux en zone tr",
-                "  - urbanisation et \u00e9cosyst\u00e8mes v\u00e9g\u00e9taux en zone tr"
-            ]
-        },
-        "PAYS0013-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ue sont le social  l'\u00e9cologie et l'\u00e9conomie   les"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "  - urbanisation et \u00e9cosyst\u00e8mes v\u00e9g\u00e9taux en zone tr"
-            ]
-        },
-        "PAYS0014-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "   l'ing\u00e9nierie \u00e9cologique s'adresse \u00e0 la mani",
-                "mis sur l'ing\u00e9nierie \u00e9cologique appliqu\u00e9e \u00e0 la rest",
-                "rsit\u00e9   les concepts \u00e9cologiques qui soutiennent les",
-                "ions de restauration \u00e9cologique sont analys\u00e9s   les",
-                " li\u00e9s a l'ing\u00e9n\u00e9irie \u00e9cologique sont abord\u00e9s par le",
-                "obiliser les savoirs \u00e9cologiques et techniques pour "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "la manipulation des \u00e9cosyst\u00e8mes par et/ou pour la b",
-                "tic sur l'\u00e9tat d'un \u00e9cosyst\u00e8me et ses fonctions li",
-                "a restauration d'un \u00e9cosyst\u00e8me          proposer u",
-                "e de restauration d'\u00e9cosyst\u00e8mes d\u00e9grad\u00e9s en tenant "
-            ]
-        },
-        "PAYS0015-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nctions nourrici\u00e8re  \u00e9cologique  \u00e9conomique et soci",
-                "es aspects  sociaux  \u00e9cologiques  \u00e9conomiques  techn",
-                "ciales  \u00e9conomiques  \u00e9cologiques  techniques  l\u00e9gisl"
-            ]
-        },
-        "PCER0049-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ndre les diff\u00e9rents \u00e9cosyst\u00e8mes de cr\u00e9ation  et un ",
-                "       comprendre l'\u00e9cosyst\u00e8me belge et internatio"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---fonctionnement de l'\u00e9cosyst\u00e8me aquatique   en par---venir et r\u00e9duire la pollution  promouvoir son uti"
             ]
         },
         "PEDA0056-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ture  de valeur et l'\u00e9cologie des dispositifs    "
-            ]
-        },
-        "PEDA4059-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "    - les dimensions \u00e9cologiques des tice    - les d"
-            ]
-        },
-        "PHIL0036-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "es des domaines de l'\u00e9cologie ou de l'\u00e9tude des h"
-            ]
-        },
-        "PHIL0175-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " anthropog\u00e9niques et \u00e9cologie      le programme d"
-            ]
-        },
-        "PSYC1063-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "cio-biologie - socio-\u00e9cologie   rappel des m\u00e9cani"
-            ]
-        },
-        "RAVT0002-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "les rapports entre l'\u00e9cologie comportementale et ",
-                "incipaux propres \u00e0 l'\u00e9cologie comportementale aff",
-                "es de la biologie et \u00e9cologie g\u00e9n\u00e9rale de l'esp\u00e8c",
-                "l'habitat  fonctions \u00e9cologiques de l'esp\u00e8ce  3  la ",
-                "nts th\u00e9oriques sur l'\u00e9cologie comportementale et "
-            ]
-        },
-        "RAVT0003-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "les aspects sociaux  \u00e9cologiques et \u00e9conomiques de l"
-            ]
-        },
-        "RCER0035-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nctions nourrici\u00e8re  \u00e9cologique  \u00e9conomique et soci",
-                "ciales  \u00e9conomiques  \u00e9cologiques  techniques  l\u00e9gisl"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                " d\u00e9veloppement de l'agro\u00e9cologie dans les pays du su"
             ]
         },
         "RCER0036-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "     biodiversit\u00e9 et ecologie urbaine     biodive",
-                "     biodiversit\u00e9 et \u00e9cologie urbaine       apr\u00e8s",
-                "ens\u00e9e et de l'action \u00e9cologique depuis les milieux ",
-                "     biodiversit\u00e9 et ecologie urbaine   comprendr",
-                "     biodiversit\u00e9 et ecologie urbaine   cours th\u00e9"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "en ville   services \u00e9cosyst\u00e9miques  biophilie  infrast",
-                "ure verte  nouveaux \u00e9cosyst\u00e8mes  b\u00e2timents v\u00e9g\u00e9tali"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---ure verte  nouveaux \u00e9cosyst\u00e8mes  b\u00e2timents v\u00e9g\u00e9ta--- v\u00e9g\u00e9taux li\u00e9s \u00e0 la pollution seront \u00e9galement pr"
             ]
         },
-        "RCER0038-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ents et de quartiers \u00e9cologiques pr\u00e9sents sur le mar"
+        "RSTG0010-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "\u00e0 o\u00f9 des masters en agro\u00e9cologie sont susceptibles d"
             ]
         },
-        "SBIM0493-2": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " et vivent dans des \u00e9cosyst\u00e8mes tr\u00e8s vari\u00e9s et comp",
-                "dans les diff\u00e9rents \u00e9cosyst\u00e8mes et celui de l'homme"
+        "RTFE2006-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                " en relation avec l'agro\u00e9cologie et les enseignement"
             ]
         },
         "SCER0012-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "s compartiments des \u00e9cosyst\u00e8mes terrestres et aquat"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---s compartiments des \u00e9cosyst\u00e8mes terrestres et aqu---urbations li\u00e9es aux pollutions seront pr\u00e9sent\u00e9s  "
             ]
         },
-        "SDOC0061-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "des caract\u00e9ristiques \u00e9cologiques  distribution g\u00e9ogr",
-                "es de diversit\u00e9 et d'\u00e9cologie mol\u00e9culaire sur les"
-            ]
-        },
-        "SDOC0062-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "n et morphologie    -ecologie    -m\u00e9tabolisme    "
-            ]
-        },
-        "SMEM0013-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et ecologie  boe  comporte la r",
-                "rtement de biologie  ecologie et evolution et n'y",
-                "rtement de biologie  ecologie et evolution  pour ",
-                "rtement de biologie  ecologie et evolution       ",
-                "rtement de biologie  ecologie et evolution  \u00e0 con",
-                "ie des organismes  l'\u00e9cologie ou l'\u00e9volution  inc",
-                " des organismes et l'\u00e9cologie  en relation avec l"
-            ]
-        },
-        "SOCI0022-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "le       3  la crise \u00e9cologique met-elle fin \u00e0 l'as"
-            ]
-        },
-        "SPAT0027-3": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "la mer  hydrologie  \u00e9cosyst\u00e8mes terrestres et marin"
-            ]
-        },
-        "SPAT0054-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "les vivantes et \u00e0 l'\u00e9cosyst\u00e8me terrestre  mais s'\u00e9"
-            ]
-        },
-        "SPOL2328-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ralisme  socialisme  \u00e9cologie politique  communis"
-            ]
-        },
-        "SPOL2351-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "psologie et discours \u00e9cologist"
-            ]
-        },
-        "SSTG0023-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et ecologie  il a lieu sur tene",
-                "iog\u00e9ographie et leur \u00e9cologie  ainsi que la conna",
-                "ie des organismes et ecologie  il a lieu sur tene",
-                "iog\u00e9ographie et leur \u00e9cologie  ainsi que la conna"
-            ]
-        },
-        "SSTG0024-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e fonctionnelle et l'\u00e9cologie  il n'est donc pas ",
-                " de la g\u00e9nomique \u00e0 l'\u00e9cologie des organismes mari",
-                "verses facettes de l'\u00e9cologie sont abord\u00e9es  tant"
-            ]
-        },
-        "SSTG0046-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "es des organismes et \u00e9cologie proviennent d'horiz",
-                "iques g\u00e9ologiques et \u00e9cologiques des lieux visit\u00e9s  "
-            ]
-        },
-        "SSTG0047-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ions ayant trait \u00e0 l'\u00e9cologie sp\u00e9cifique de ce ty",
-                "s de r\u00e9f\u00e9rences de l'\u00e9cologie de montagne  en par",
-                "es   les contraintes \u00e9cologiques que rencontrent les"
-            ]
-        },
-        "SSTG0054-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e de cas concr\u00e8te en ecologie  il s'agit  1  d'\u00e9v",
-                "t\u00e9grer des notions d'\u00e9cologie et de biodiversit\u00e9 ",
-                "ce d'\u00e9tude de cas en ecologie associ\u00e9 \u00e0 un contex"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "ser et d'\u00e9tudier un \u00e9cosyst\u00e8me en particulier  gui"
-            ]
-        },
-        "SSTG0062-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "cation pratique de l'\u00e9cologie spatiale et/ou trop",
-                "f\u00e9rence par bin\u00f4mes  \u00e9cologie spatiale  \u00e9cologie ",
-                "  \u00e9cologie spatiale  \u00e9cologie trophique des commu",
-                "c en toile de fond l'\u00e9cologie fonctionnelle et la",
-                "e de la recherche en \u00e9cologie des milieux d'eau d"
-            ]
-        },
-        "TRAD0111-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e du ch\u00f4mage et de l'\u00e9cologie par exemple  rappel"
-            ]
-        },
-        "VEGE0021-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "eaux de surface les \u00e9cosyst\u00e8mes aquatiques   struct",
-                "it\u00e9 biologique de l'\u00e9cosyst\u00e8me    4  etude de cas ",
-                " impliqu\u00e9s dans les \u00e9cosyst\u00e8mes aquatiques -identif",
-                "ndice biotique d'un \u00e9cosyst\u00e8me aquatique -explique"
-            ]
-        },
-        "VEGE0024-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "s culturales et des \u00e9cosyst\u00e8mes existant dans les r"
+        "VEGE0028-1": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "urales  y compris l'agro\u00e9cologie  et g\u00e9n\u00e9tiques  les"
             ]
         },
         "VEGE0036-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " principes de l'agro-\u00e9cologie et discuter la fa\u00e7o"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "re durable des agro-\u00e9cosyst\u00e8mes tropicaux      a l'",
-                "re durable des agro-\u00e9cosyst\u00e8mes tropicaux      a l'",
-                "pt\u00e9e \u00e0 un grand agro\u00e9cosyst\u00e8me tropical  ce travai"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "agro\u00e9cologie tropicale et temp\u00e9r",
+                "urs et du concept d'agro\u00e9cologie    ii  illustration",
+                "cettes du concept d'agro\u00e9cologie et de pratiques agr",
+                "gie et de pratiques agro\u00e9cologiques   excursions       ",
+                " scientifiques de l'agro\u00e9cologie et de leur applicat",
+                "cation de pratiques agro\u00e9cologiques dans des contextes ",
+                "cettes du concept d'agro\u00e9cologie et leur faire acqu\u00e9",
+                " des comp\u00e9tences en agro\u00e9cologie afin de leur permet",
+                " les principes de l'agro-\u00e9cologie et discuter la fa\u00e7o",
+                "t\u00e9r\u00eat des pratiques agro\u00e9cologiques vues lors des excur",
+                " des comp\u00e9tences en agro\u00e9cologie afin de leur permet",
+                "poser des solutions agro\u00e9cologiques en mati\u00e8re de gesti",
+                "tion d'une pratique agro\u00e9cologique adapt\u00e9e \u00e0 un grand "
             ]
         },
         "VEGE0036-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " principes de l'agro-\u00e9cologie et discuter la fa\u00e7o"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "re durable des agro-\u00e9cosyst\u00e8mes tropicaux      a l'"
-            ]
-        },
-        "VEGE0037-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nctions nourrici\u00e8re  \u00e9cologique  \u00e9conomique et soci",
-                "es aspects  sociaux  \u00e9cologiques  \u00e9conomiques  techn",
-                "ciales  \u00e9conomiques  \u00e9cologiques  techniques  l\u00e9gisl"
-            ]
-        },
-        "VEGE0041-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "intes biologiques et \u00e9cologiques  contraintes r\u00e9glem"
-            ]
-        },
-        "VEGE0041-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "intes biologiques et \u00e9cologiques  contraintes r\u00e9glem"
-            ]
-        },
-        "VEGE0042-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "opulations dans des \u00e9cosyst\u00e8mes agricoles et non ag"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "agro\u00e9cologie tropicale et temp\u00e9r",
+                "urs et du concept d'agro\u00e9cologie    ii  illustration",
+                "cettes du concept d'agro\u00e9cologie et de pratiques agr",
+                "gie et de pratiques agro\u00e9cologiques   excursions     do",
+                "cettes du concept d'agro\u00e9cologie et leur faire acqu\u00e9",
+                " des comp\u00e9tences en agro\u00e9cologie afin de leur permet",
+                " les principes de l'agro-\u00e9cologie et discuter la fa\u00e7o",
+                "t\u00e9r\u00eat des pratiques agro\u00e9cologiques vues lors des excur"
             ]
         },
         "VETE0036-6": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie et continue ensuite",
-                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie      du logement de",
-                "'objectif du cours d'\u00e9cologie appliqu\u00e9e aux anima"
-            ]
-        },
-        "VETE2057-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "tique  alimentation  \u00e9cologie  \u00e9thologie  ethnogr"
-            ]
-        },
-        "VETE2087-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e9tique  d'\u00e9thique  d'\u00e9cologie et de science du bi"
-            ]
-        },
-        "ZOOL0006-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "socio-\u00e9conomiques et \u00e9cologiques  les techniques et "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " reconstitution des \u00e9cosyst\u00e8mes artificiels  notamm"
-            ]
-        },
-        "ZOOL0205-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "mol\u00e9cules jusqu'aux \u00e9cosyst\u00e8mes  s'agissant des psy"
-            ]
-        },
-        "ZOOL0218-4": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "m\u00e9 assimilable \u00e0 un \u00e9cosyst\u00e8me artificiel   sa pr\u00e9"
-            ]
-        },
-        "ZOOL0230-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "c la th\u00e9matique de l'\u00e9cologie des poissons des ea"
-            ]
-        },
-        "ZOOL0232-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "une introduction \u00e0 l'\u00e9cologie  l'\u00e9thologie et la ",
-                "nelle approfondie en \u00e9cologie  \u00e9thologie et conse"
-            ]
-        },
-        "ZOOL2000-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "otions de bases de l'\u00e9cologie des poissons des ea",
-                "sances de bases de l'\u00e9cologie des poissons des ea"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "nvert\u00e9br\u00e9s dans les \u00e9cosyst\u00e8mes aquatiques  les asp",
-                "tion secondaire des \u00e9cosyst\u00e8mes aquatiques  sont \u00e9g",
-                " primaires dans les \u00e9cosyst\u00e8mes aquatiques  de pouv",
-                "aux invert\u00e9br\u00e9s des \u00e9cosyst\u00e8mes lotiques  le mat\u00e9ri"
-            ]
-        },
-        "ZOOL2018-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ment en soci\u00e9t\u00e9 et d'\u00e9cologie chimique     a l'is"
-            ]
-        },
-        "ZOOL2019-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "sente la biologie et \u00e9cologie des insectes  la mo"
-            ]
-        },
-        "ZOOL2019-2": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "sente la biologie et \u00e9cologie des insectes  la mo",
-                "ie    la biologie  l'\u00e9cologie et la syst\u00e9matique "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "tiles dans les agro-\u00e9cosyst\u00e8mes seront d\u00e9velopp\u00e9es "
-            ]
-        },
-        "ZOOL2021-1": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e9hender l'\u00e9tude de l'\u00e9cologie et de la dynamique ",
-                "c la th\u00e9matique de l'\u00e9cologie des poissons des ea",
-                "sances de bases de l'\u00e9cologie des poissons des ea"
-            ]
-        }
-    },
-    "climatology": {
-        "ACER0048-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ettant de r\u00e9duire l'\u00e9mission de gaz \u00e0 effet de serre dans diff\u00e9rents dom"
-            ]
-        },
-        "ACER0049-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "les inventaires des \u00e9missions de gaz \u00e0 effet de serre dans le cadre du ra",
-                "jets de r\u00e9duction d'\u00e9missions de gaz \u00e0 effet de serre dans le cadre des m"
-            ]
-        },
-        "ACER0075-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "n carbone et autres gaz \u00e0 effets de serre ou polluants    pr\u00e9"
-            ]
-        },
-        "ARCH0080-1": {
-            "climatolog[^ ]+": [
-                "ulique  el\u00e9ments de climatologie  notions  de confor"
-            ]
-        },
-        "ARCH0355-2": {
-            "chang[^ ]+ clima[^ ]+": [
-                " de transformation  changements climatiques  saisons  \u00e9quilibre"
-            ]
-        },
-        "BIOL0852-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "articuli\u00e8rement les changements climatiques et leurs cons\u00e9quenc",
-                "e du carbone et les changements climatiques      introduction  ",
-                " introduction   les changements climatiques  preuves et causes ",
-                "ces \u00e9cologiques des changements climatiques       remarque     ",
-                "ues en lien avec le changement climatique par l'analyse d'un ",
-                "ntexte th\u00e9orique du changement climatique    d\u00e9finir  expliqu"
-            ]
-        },
-        "CHIM9315-1": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "tal  pluies acides  r\u00e9chauffement climatique  production d'ozone"
-            ],
-            "[\u00e9e]missions? (?:du |de )?(?:co2|dioxyde de carbone)": [
-                "de la r\u00e9duction des \u00e9missions de co2     - impact enviro"
-            ]
-        },
-        "CLIM0002-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ation \u00e0 l'\u00e9tude des changements climatiques  du pass\u00e9 et du fut"
-            ],
-            "mod[\u00e8e]les? clima[^ ]+": [
-                " d'applications des mod\u00e8les climatiques  partie 2     l'obj",
-                " \u00e0 l'utilisation de mod\u00e8les climatiques    les s\u00e9ances prat",
-                "miliariser avec les mod\u00e8les climatiques simples  des mod\u00e8le"
-            ]
-        },
-        "CLIM0002-2": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ation \u00e0 l'\u00e9tude des changements climatiques  du pass\u00e9 et du fut"
-            ],
-            "mod[\u00e8e]les? clima[^ ]+": [
-                " d'applications des mod\u00e8les climatiques  partie 2     l'obj",
-                " \u00e0 l'utilisation de mod\u00e8les climatiques    les s\u00e9ances prat",
-                "miliariser avec les mod\u00e8les climatiques simples  des mod\u00e8le"
-            ]
-        },
-        "CLIM0007-2": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "         principaux gaz \u00e0 effet de serre  ges  et bandes d'a"
-            ]
-        },
-        "CLIM0009-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "nts g\u00e9ologiques aux changements climatiques actuels  le cours c"
-            ]
-        },
-        "CLIM0017-2": {
-            "climatolog[^ ]+": [
-                "  au laboratoire de climatologie  et dont les sortie"
-            ],
-            "mod[\u00e8e]les? clima[^ ]+": [
-                " des simulations de mod\u00e8les climatiques r\u00e9alis\u00e9es dans la p",
-                " des simulations de mod\u00e8les climatiques r\u00e9alis\u00e9es dans la p"
-            ]
-        },
-        "ECON0944-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                " - l'\u00e9conomie et le changement climatique    les principaux o"
-            ]
-        },
-        "ECON2248-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "e de l'\u00e9conomie des changements climatiques      7  discussion "
-            ]
-        },
-        "ECON2301-1": {
-            "[\u00e9e]missions? (?:du |de )?(?:co2|dioxyde de carbone)": [
-                "issance \u00e9conomique  \u00e9missions de co2 et biodiversit\u00e9  le"
-            ]
-        },
-        "ENVT0065-1": {
-            "climatolog[^ ]+": [
-                "e     base de l'agroclimatologie et applications pou"
-            ]
-        },
-        "ENVT0066-1": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "ossiers tels que le r\u00e9chauffement climatique  les nouvelles init"
-            ]
-        },
-        "ENVT2011-2": {
-            "climatolog[^ ]+": [
-                "t quelques bases en climatologie  structure de l'atm",
-                "tra les bases de la climatologie et sera capable de "
-            ]
-        },
-        "ENVT2058-1": {
-            "climatolog[^ ]+": [
-                "s      1  rappel de climatologie   2  description de"
-            ]
-        },
-        "ENVT2065-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "la biodiversit\u00e9   - changement climatique   les diff\u00e9rentes t"
-            ]
-        },
-        "ENVT3043-1": {
-            "climatolog[^ ]+": [
-                "ulique  el\u00e9ments de climatologie  notions  de confor"
-            ]
-        },
-        "GBLX2144-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                " participation  les changements climatiques  l'\u00e9cologie  l'eau ",
-                "  l'historique  les changements climatiques  l'\u00e9cologie  l'eau "
-            ]
-        },
-        "GBLX2147-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                " enjeux associ\u00e9s au changement climatique  \u00e0 la crise de l'ea"
-            ]
-        },
-        "GENV0001-2": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ts hydrologiques du changement climatique  risque de crues et"
-            ]
-        },
-        "GEOG0605-1": {
-            "climatolog[^ ]+": [
-                "graphie  p\u00e9dologie  climatologie  et les facteurs hu"
-            ]
-        },
-        "GEOG0630-3": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "f\u00e9rents syst\u00e8mes au r\u00e9chauffement climatique est discut\u00e9e ainsi ",
-                "sol en lien avec le r\u00e9chauffement climatique  4  l'importance de",
-                " sur ces milieux du r\u00e9chauffement climatique  de l'urbanisation ",
-                " discussions sur le r\u00e9chauffement climatique avec une vue plus c",
-                " discussions sur le r\u00e9chauffement climatique et les migrations e"
-            ]
-        },
-        "GEOG0630-5": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "f\u00e9rents syst\u00e8mes au r\u00e9chauffement climatique est discut\u00e9e ainsi ",
-                "sol en lien avec le r\u00e9chauffement climatique  4  l'importance de",
-                " discussions sur le r\u00e9chauffement climatique avec une vue plus c"
-            ]
-        },
-        "GEOG0661-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                " radiatif  r\u00f4le des gaz \u00e0 effet de serre  transport d'\u00e9nergi"
-            ]
-        },
-        "GEOG2012-1": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "au des mers li\u00e9e au r\u00e9chauffement climatique sur les diff\u00e9rents "
-            ]
-        },
-        "GEOG2013-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ent face au d\u00e9fi du changement climatique  la compr\u00e9hension d"
-            ]
-        },
-        "GEOG2016-1": {
-            "climatolog[^ ]+": [
-                "     partim climatologie   ce cours de g\u00e9ogr",
-                "parties distinctes  climatologie et g\u00e9omorphologie  ",
-                "       1  la partie climatologie du cours est donn\u00e9e",
-                "tiques       partim climatologie   les objectifs du ",
-                "s sont       partie climatologie       - identifier ",
-                "relles       partim climatologie   organisation du c",
-                "u cours          1  climatologie  15h th\u00e9orie +15h t"
-            ]
-        },
-        "GEOG2020-1": {
-            "climatolog[^ ]+": [
-                "ues notions de pal\u00e9oclimatologie  la lecture et l'an"
-            ]
-        },
-        "GEOL0008-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ique  du calcul des \u00e9missions de gaz \u00e0 effet de serre  de la capture et d"
-            ]
-        },
-        "GEOL0008-2": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ique  du calcul des \u00e9missions de gaz \u00e0 effet de serre  de la capture et d"
-            ]
-        },
-        "GEOL0008-4": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ique  du calcul des \u00e9missions de gaz \u00e0 effet de serre  de la capture et d"
-            ]
-        },
-        "GEOL0205-1": {
-            "climatolog[^ ]+": [
-                "l\u00e9og\u00e9ographie  pal\u00e9oclimatologie  pal\u00e9ooc\u00e9anographie"
-            ]
-        },
-        "GEOL0224-2": {
-            "climatolog[^ ]+": [
-                "   3  archives pal\u00e9oclimatologiques    4  m\u00e9thodes de d"
-            ],
-            "chang[^ ]+ clima[^ ]+": [
-                "on    5  causes des changements climatiques    6  evolution du "
-            ]
-        },
-        "GEOL0311-1": {
-            "climatolog[^ ]+": [
-                "tre 5   \u00e9l\u00e9ments de climatologie  structure et circu"
-            ]
-        },
-        "GEOL1050-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "tique    calcul des \u00e9missions de gaz \u00e0 effet de serre  ghg     techniques"
-            ]
-        },
-        "GEST3024-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "les perspectives de changements climatiques plaident pour une \u00e9"
-            ]
-        },
-        "GEST3047-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ntaux  par exemple  changement climatique  substance appauvri"
-            ]
-        },
-        "GEST6002-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                " la lutte contre le changement climatique  la protection de l"
-            ]
-        },
-        "GEST7030-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "miques traitant des changements climatiques ou de la biodiversi"
-            ]
-        },
-        "HAAR0247-1": {
-            "climatolog[^ ]+": [
-                "hercheurs comme les climatologues  les forestiers  le"
-            ]
-        },
-        "HEVL0071-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                " - l'\u00e9conomie et le changement climatique      introduction \u00e0"
-            ]
-        },
-        "HEVL0071-2": {
-            "chang[^ ]+ clima[^ ]+": [
-                " - l'\u00e9conomie et le changement climatique    les principaux o"
-            ]
-        },
-        "HULG0365-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ue et r\u00e9duction des gaz \u00e0 effet de serre et modification/\u00e9vo"
-            ]
-        },
-        "HULG0484-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "3   att\u00e9nuation des changements climatiques   chacun des trois ",
-                "ques et sociaux des changements climatiques d'origine humaine  ",
-                "a probl\u00e9matique des changements climatiques avec un esprit \u00e0 la"
-            ],
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ar la r\u00e9duction des \u00e9missions de gaz \u00e0 effet de serre  et faire face aux "
-            ]
-        },
-        "HULG9391-1": {
-            "climatolog[^ ]+": [
-                "ie  g\u00e9omorphologie  climatologie  sont mobilis\u00e9es et"
-            ]
-        },
-        "LGER0053-2": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                "   \"climate change and the literary im",
-                "in his essay about \"climate change and the unthinkable",
-                "enge represented by climate change  our reading list w",
-                " great derangement  climate change and the unthinkable"
-            ]
-        },
-        "LOGI0012-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "rticulier en termes de gaz \u00e0 effet de serre et autres polluants"
-            ]
-        },
-        "MATH0508-1": {
-            "climatolog[^ ]+": [
-                "s\u00e9ries issues de la climatologie    l'objectif du co",
-                "lles relavant de la climatologie     les travaux pra"
-            ]
-        },
-        "OCEA0055-5": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ans le contexte des changements climatiques et en particulier l"
-            ]
-        },
-        "OCEA0082-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "norganiques  et des gaz \u00e0 effet de serre dans divers \u00e9cosyst"
-            ]
-        },
-        "OCEA0086-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "norganiques  et des gaz \u00e0 effet de serre dans divers \u00e9cosyst"
-            ]
-        },
-        "OCEA0220-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ans le contexte des changements climatiques et en particulier l"
-            ]
-        },
-        "PHYS3010-2": {
-            "chang[^ ]+ clima[^ ]+": [
-                "correspondante    - changement climatique  outils d'investiga",
-                "endre les causes du changement climatique et son impact sur l"
-            ]
-        },
-        "SDOC0001-1": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "ues  ogms  clonage  r\u00e9chauffement climatique  etc    s'invitent "
-            ]
-        },
-        "SPAT0026-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "e solaire jusqu'aux changements climatiques actuels  il s'adres"
-            ],
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "l'holoc\u00e8ne  climat  gaz \u00e0 effet de serre et v\u00e9g\u00e9tation      "
-            ]
-        },
-        "SPAT0027-3": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ne synth\u00e8se sur les changements climatiques actuels et futurs  ",
-                "et de serre   4  le changement climatique au 20\u00e8me si\u00e8cle   a",
-                "et mod\u00e8les   5  les changements climatiques du pass\u00e9   m\u00e9thodes",
-                "\u00e9istoc\u00e8ne     6  le changement climatique du futur   sc\u00e9nario",
-                "  7  les impacts du changement climatique  niveau de la mer  ",
-                "a probl\u00e9matique des changements climatiques globaux     en guis"
-            ],
-            "project[^ ]+ clima[^ ]+": [
-                "ocio-\u00e9conomiques et projections climatiques du giec   7  les im"
-            ],
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "rbone et bilans des gaz \u00e0 effet de serre   4  le changement "
-            ]
-        },
-        "SPAT0077-1": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "e    inventaire des gaz \u00e0 effet de serre majeurs d'origine n",
-                "n des \u00e9missions des gaz \u00e0 effet de serre anthropiques    a l",
-                "evue les principaux gaz \u00e0 effet de serre anthropiques et nat",
-                "r les \u00e9missions des gaz \u00e0 effet de serre anthropiques    sui"
-            ]
-        },
-        "SPOL0382-2": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                " et lutte contre le r\u00e9chauffement climatique  l'eau  les d\u00e9chets"
-            ]
-        },
-        "VEGE0027-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ol  l'influence des changements climatiques sur les cultures et"
-            ]
-        },
-        "VEGE0034-1": {
-            "chang[^ ]+ clima[^ ]+": [
-                " effets de serre et changement climatique li\u00e9es aux activit\u00e9s"
-            ],
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ogie   ainsi qu'aux \u00e9missions de gaz \u00e0 effets de serre et changement clima"
-            ]
-        },
-        "VETE0036-6": {
-            "climatolog[^ ]+": [
-                "ge  le bruit  la bioclimatologie  l'isolation  la ve"
-            ]
-        },
-        "ZOOL2019-2": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "\u00e9hender l'impact de r\u00e9chauffement climatique sur la biologie d'e",
-                "\u00e9hender l'impact de r\u00e9chauffement climatique sur la biologie d'e"
+            "climat---environnement---ecologie": [
+                "---ge  le bruit  la bioclimatologie  l'isolation ---alit\u00e9 g\u00e9n\u00e9rale de l'environnement            le cours---ecologie appliqu\u00e9e aux anima"
             ]
         }
     },
     "durability": {
         "AGRO0002-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "rtilisation pour le d\u00e9veloppement durable      situer et quan"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---rtilisation pour le d\u00e9veloppement durable      situer et quan---en n et ses aspects environnementaux    raisonnement "
             ],
             "gestio[^ ]+ durab[^ ]+": [
                 "biens  programme de gestion durable de l'azote en agric"
             ]
         },
         "ARCH0085-5": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " de leur rapport au d\u00e9veloppement durable     - l'art   la ma"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- de leur rapport au d\u00e9veloppement durable     - l'art   la ma---tude des ressources environnementales mobilis\u00e9es  ene"
             ]
         },
         "ARCH0560-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "les territoires  le d\u00e9veloppement durable et \u00e9coresponsable e"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---les territoires  le d\u00e9veloppement durable et \u00e9coresponsable e--- signification et l'impact des m\u00e9thodes tran-s"
             ]
         },
-        "ARCH0570-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ctives utilis\u00e9es et d\u00e9veloppement durable   - rendre coh\u00e9renc"
-            ]
-        },
-        "ARCH0591-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "a question   1   du d\u00e9veloppement durable   anthropoc\u00e8ne  \u00e9co"
+        "ARCH0574-1": {
+            "analyse de cycle de vie": [
+                "rmique dynamique  d'analyse de cycle de vie  acv  et de l'\u00e9cono"
             ]
         },
         "ARCH0596-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " de leur rapport au d\u00e9veloppement durable    - l'art   la mai"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- de leur rapport au d\u00e9veloppement durable    - l'art   la mai--- de construction    impacts sur le processus d"
             ]
         },
         "ARCH1734-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ponsable au d\u00e9fi du d\u00e9veloppement durable       ce cours cons"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---ponsable au d\u00e9fi du d\u00e9veloppement durable       ce cours cons--- donnent forme \u00e0 un environnement ville ou village  l"
             ]
         },
         "ARCH2001-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "se des objectifs du d\u00e9veloppement durable de notre plan\u00e8te   "
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---se des objectifs du d\u00e9veloppement durable de notre plan\u00e8te   ---n des r\u00e9seaux     \u00b7 impact de la conception de"
             ]
         },
         "ARCH2002-3": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ux contemporains du d\u00e9veloppement durable      l'espace appr\u00e9"
-            ],
             "gestio[^ ]+ durab[^ ]+": [
                 "ion inh\u00e9rente \u00e0 une gestion durable du territoire      "
             ]
         },
         "ARCH2007-2": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "de les principes du d\u00e9veloppement durable appliqu\u00e9s \u00e0 la conc",
-                "endre les enjeux du d\u00e9veloppement durable appliqu\u00e9s \u00e0 la conc"
-            ]
-        },
-        "ARCH2319-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " des contraintes du d\u00e9veloppement durable ainsi que de la con",
-                " des contraintes du d\u00e9veloppement durable  l'enseignement th\u00e9"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---de les principes du d\u00e9veloppement durable appliqu\u00e9s \u00e0 la conc---ation de la qualit\u00e9 environnementale et de la durabil"
             ]
         },
         "ARCH3275-1": {
@@ -2804,111 +881,110 @@
             ]
         },
         "BIOL2036-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "x dans le cadre du \"d\u00e9veloppement durable\"     les cours th\u00e9or"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---x dans le cadre du \"d\u00e9veloppement durable\"     les cours th\u00e9or---sit\u00e9    indicateurs environnementaux    enjeux dans l"
+            ]
+        },
+        "CHIM0699-2": {
+            "analyse de cycle de vie": [
+                "a m\u00e9thodologie de l'analyse de cycle de vie  acv  permettant d'"
             ]
         },
         "CHIM0742-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "rendre la notion de d\u00e9veloppement durable  dd   les impacts l"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---ie des mat\u00e9riaux et d\u00e9veloppement durable    ce cours vise \u00e0 ---t durable  dd   les impacts li\u00e9s \u00e0 la fabricat"
             ]
         },
         "CHIM9248-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "fis actuels li\u00e9s au d\u00e9veloppement durable et \u00e0 son impact pro"
-            ]
-        },
-        "CHIM9301-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "roc\u00e9d\u00e9 en termes de d\u00e9veloppement durable et faisabilit\u00e9 indu"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---fis actuels li\u00e9s au d\u00e9veloppement durable et \u00e0 son impact pro---nt durable et \u00e0 son impact profond sur la conc"
             ]
         },
         "CHIM9315-1": {
             "gestio[^ ]+ durab[^ ]+": [
+                "gestion durable des combustibles   ",
                 "pects associ\u00e9s \u00e0 la gestion durable des combustibles  l"
             ]
         },
         "DROI0960-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "oine commun \u00bb  le \u00ab d\u00e9veloppement durable \u00bb  l'\u00ab int\u00e9gration "
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---oine commun \u00bb  le \u00ab d\u00e9veloppement durable \u00bb  l'\u00ab int\u00e9gration ---droit de l'environnement      l'enseignement"
             ]
         },
         "ECON0945-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "tion des esp\u00e8ces et d\u00e9veloppement durable  on aborde les prob",
-                "la r\u00e9alisation d'un d\u00e9veloppement durable     - d'\u00e9mettre un "
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---tion des esp\u00e8ces et d\u00e9veloppement durable  on aborde les prob---conomie  \u00e9nergie et environnement    ce cours est ass"
             ]
         },
         "ECON2246-2": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "vit\u00e9 5  croissance  d\u00e9veloppement durable et environnement 6 ",
-                "ment 6  croissance  d\u00e9veloppement durable et sant\u00e9 7  croissa",
-                "ant\u00e9 7  croissance  d\u00e9veloppement durable et \u00e9ducation 8  cro",
-                "tion 8  croissance  d\u00e9veloppement durable et lutte contre la ",
-                "ret\u00e9 9  croissance  d\u00e9veloppement durable et d\u00e9mocratie 10  c",
-                "tie 10  croissance  d\u00e9veloppement durable et corruption 11  l",
-                " et de dynamique de d\u00e9veloppement durable  a l'issue du cours"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---vit\u00e9 5  croissance  d\u00e9veloppement durable et environnement 6 ---oppement durable et environnement 6  croissance  d\u00e9ve"
             ]
         },
         "ECON2257-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ns une strat\u00e9gie de d\u00e9veloppement durable  a l'issue du cours"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---ns une strat\u00e9gie de d\u00e9veloppement durable  a l'issue du cours---matique fonci\u00e8re et environnement    a partir d'\u00e9tude"
             ]
         },
         "ECON2275-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "vaux de groupe   le d\u00e9veloppement durable  la surpopulation h"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---vaux de groupe   le d\u00e9veloppement durable  la surpopulation h---s sur la sant\u00e9 et l'environnement qui ne sont pas tou"
             ]
         },
         "ECON2301-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " transition vers le d\u00e9veloppement durable     ce cours vise \u00e0",
-                " transition vers un d\u00e9veloppement durable     expos\u00e9s par le "
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- transition vers le d\u00e9veloppement durable     ce cours vise \u00e0---et ses cons\u00e9quences environnementales  nous aborderon"
+            ]
+        },
+        "ENVT0026-1": {
+            "analyse de cycle de vie": [
+                "a m\u00e9thodologie de l'analyse de cycle de vie  acv  permettant d'"
             ]
         },
         "ENVT0028-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "  etude d'impact et d\u00e9veloppement durable          contributi"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---  etude d'impact et d\u00e9veloppement durable          contributi---etude d'impact environnemental   a"
+            ]
+        },
+        "ENVT0051-1": {
+            "analyse de cycle de vie": [
+                "ation        partie analyse de cycle de vie  acv    ce cours vi",
+                "urs vise \u00e0 situer l'analyse de cycle de vie parmi les outils d'"
             ]
         },
         "ENVT0063-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " la biodiversit\u00e9 et d\u00e9veloppement durable   le cours appr\u00e9hen",
-                " la biodiversit\u00e9 et d\u00e9veloppement durable   le cours vise \u00e0 o",
-                " la biodiversit\u00e9 et d\u00e9veloppement durable         les activit"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- la biodiversit\u00e9 et d\u00e9veloppement durable   le cours appr\u00e9hen---s gestionnaire de l'environnement pour les rendre cap"
+            ]
+        },
+        "ENVT0063-2": {
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- la biodiversit\u00e9 et d\u00e9veloppement durable    le cours appr\u00e9he---s gestionnaire de l'environnement pour les rendre cap"
             ]
         },
         "ENVT0066-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "me  soci\u00e9t\u00e9 civile  d\u00e9veloppement durable    dans cette persp",
-                "stion du concept de d\u00e9veloppement durable  probl\u00e9matique de l"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---me  soci\u00e9t\u00e9 civile  d\u00e9veloppement durable    dans cette persp---environnement et d\u00e9veloppement   "
             ]
         },
         "ENVT0067-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " une perspective de d\u00e9veloppement durable    l'\u00e9thique et la ",
-                "mentale relative au d\u00e9veloppement durable    communication et",
-                "mentale relative au d\u00e9veloppement durable    appliquer des m\u00e9",
-                "ication relative au d\u00e9veloppement durable           cours ex "
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---communication et d\u00e9veloppement durable         communicati---ns la communication environnementale    enjeux de la "
             ]
         },
         "ENVT0846-2": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ire des concepts de d\u00e9veloppement durables   du progr\u00e8s \u00e0 l'an",
-                "es grands enjeux du d\u00e9veloppement durable   climat-biodiversi",
-                "  &amp amp  outils  d\u00e9veloppement durable  soutenabilit\u00e9  ant",
-                "t r\u00e9flexive  sur le d\u00e9veloppement durable   la critique ne co",
-                "crets et globaux du d\u00e9veloppement durable   climat  alimentat"
+            "\u00e9conomie circulaire": [
+                "ld introduction \u00e0 l'\u00e9conomie circulaire    les grands enjeu"
             ]
         },
         "ENVT2009-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ment la question du d\u00e9veloppement durable \u00e0 partir d'\u00e9tudes d"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---ment la question du d\u00e9veloppement durable \u00e0 partir d'\u00e9tudes d---ctualit\u00e9 des enjeux environnementaux sur l'agenda de "
             ]
         },
-        "ENVT2066-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "dans un contexte de d\u00e9veloppement durable analyse et critique"
+        "ENVT2049-2": {
+            "analyse de cycle de vie": [
+                "    3  discuter une analyse de cycle de vie     expos\u00e9s et calc"
             ]
         },
         "ENVT3020-1": {
@@ -2916,19 +992,19 @@
                 "\u00e9cologique et d une gestion durable de la ressource afi"
             ]
         },
-        "ENVT3023-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnement et de d\u00e9veloppement durable    - diff\u00e9rentes ap"
+        "ENVT3022-1": {
+            "analyse de cycle de vie": [
+                "multicrit\u00e8re et une analyse de cycle de vie appliqu\u00e9e \u00e0 des pro"
             ]
         },
-        "ENVT3040-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "dans un contexte de d\u00e9veloppement durable analyse et critique"
+        "ENVT3023-1": {
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---environnement et de d\u00e9veloppement durable    - diff\u00e9rentes ap---ction d'indicateurs environnementaux globaux      - u"
             ]
         },
         "ENVT3044-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ropie  lien avec le d\u00e9veloppement durable  applications diver"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---ropie  lien avec le d\u00e9veloppement durable  applications diver--- scientifiques de l'environnement    le cours a pour "
             ]
         },
         "FORE0001-2": {
@@ -2939,19 +1015,33 @@
                 "n foresti\u00e8re  de la gestion durable en passant par la l"
             ]
         },
+        "FORE0009-1": {
+            "gestio[^ ]+ durab[^ ]+": [
+                "gestion durable des for\u00eats tropical"
+            ]
+        },
         "GCER0097-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "des 17 objectifs du d\u00e9veloppement durable des   nations unies"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---des 17 objectifs du d\u00e9veloppement durable des   nations unies---outils d'\u00e9valuation environnementale    cours 1  3h  "
             ]
         },
         "GCIV0008-2": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "jectif principal de d\u00e9veloppement durable du syst\u00e8me de trans"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---jectif principal de d\u00e9veloppement durable du syst\u00e8me de trans---ement pertinents et environnementalement acceptables "
             ]
         },
         "GENV0001-2": {
+            "analyse de cycle de vie": [
+                "de l'environnement  analyse de cycle de vie      l'enseignement",
+                " risque ainsi que l'analyse de cycle de vie  gr\u00e2ce \u00e0 la connais"
+            ],
             "gestio[^ ]+ durab[^ ]+": [
                 "  hydro\u00e9lectricit\u00e9  gestion durable des r\u00e9servoirs  imp"
+            ]
+        },
+        "GENV0002-1": {
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---energie et d\u00e9veloppement durable    nos soci\u00e9t\u00e9s son---n particulier  de l'impact que les \u00e9nergies re"
             ]
         },
         "GEOG0212-1": {
@@ -2959,56 +1049,50 @@
                 "iliser en vue de la gestion durable des ressources en t"
             ]
         },
-        "GEOG2003-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "dus et contr\u00f4l\u00e9s de d\u00e9veloppement durable          le cours a"
-            ]
-        },
-        "GEOG2024-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "adre d'un projet de d\u00e9veloppement durable   5  synth\u00e8se des d"
-            ]
-        },
-        "GEOG2047-2": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "adre d'un projet de d\u00e9veloppement durable   5  synth\u00e8se des d"
-            ]
-        },
-        "GEOL1044-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "sur les crit\u00e8res du d\u00e9veloppement durable     compr\u00e9hension d"
-            ]
-        },
         "GEST3024-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "'inscrivent dans le d\u00e9veloppement durable     ce cours offre ",
-                "onstat de crises    d\u00e9veloppement durable    transition manag",
-                "mix et objectifs de d\u00e9veloppement durable    investissement s",
-                "tion    traduire le d\u00e9veloppement durable en modalit\u00e9s concr\u00e8"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---entreprise et d\u00e9veloppement durable           descripti---rs  soci\u00e9t\u00e9 civile  environnement  etc    ensuite  il"
             ]
         },
         "GEST7030-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "\u00e9s \u00e0 un objectif de d\u00e9veloppement durable dans sa double dime"
+            "economie ecologique": [
+                "onnu sous le nom d' economie ecologique    ecological econo",
+                "es essentiels de l' economie ecologique  peuvent \u00eatre assoc"
+            ],
+            "ecological economics": [
+                "nomie ecologique    ecological economics  en anglais  en exa"
+            ],
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---\u00e9s \u00e0 un objectif de d\u00e9veloppement durable dans sa double dime---\u00e8res \u00e9conomiques et environnementales  une fois pos\u00e9e"
             ]
         },
         "GRHO0035-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "mondialisation    - d\u00e9veloppement durable et rse \u00e0 l'\u00e9chelle "
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---mondialisation    - d\u00e9veloppement durable et rse \u00e0 l'\u00e9chelle ---- mondialisation et impact sur la vie des entr"
             ]
         },
         "HULG0365-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "porains tels que le d\u00e9veloppement durable  l'empreinte \u00e9colog"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---porains tels que le d\u00e9veloppement durable  l'empreinte \u00e9colog---e  les l\u00e9gislations environnementale  paysag\u00e8re  urba"
             ],
             "gestio[^ ]+ durab[^ ]+": [
                 "ns une dynamique de gestion durable  r\u00e9sultant de l'\u00e9vo",
                 "n\u00e9 \u00e0 promouvoir une gestion durable de l'espace foncier"
             ]
         },
+        "HULG9350-1": {
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---environnement et du d\u00e9veloppement durable---droit de l'environnement et du d\u00e9veloppement"
+            ]
+        },
+        "MECA0526-1": {
+            "\u00e9conomie circulaire": [
+                " pyrom\u00e9tallurgie et \u00e9conomie circulaire    - re-manufacturi"
+            ]
+        },
         "OCEA0223-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "arine  aquaculture  d\u00e9veloppement durable  conservation  anth"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---arine  aquaculture  d\u00e9veloppement durable  conservation  anth---e  la phylog\u00e9nie  l'\u00e9cologie  la physiologie et "
             ]
         },
         "OCEA2022-1": {
@@ -3017,28 +1101,13 @@
             ]
         },
         "PAYS0013-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " une perspective de d\u00e9veloppement durable  description d\u00e9tail"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- une perspective de d\u00e9veloppement durable  description d\u00e9tail---e sont le social  l'\u00e9cologie et l'\u00e9conomie   les"
             ]
         },
         "PAYS0013-2": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " une perspective de d\u00e9veloppement durable  description d\u00e9tail"
-            ]
-        },
-        "RCER0037-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "els que transition  d\u00e9veloppement durable  afin de d\u00e9velopper"
-            ]
-        },
-        "SANT0740-2": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "    introduction au d\u00e9veloppement durable     introduction \u00e0 "
-            ]
-        },
-        "SOCI0073-3": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "d  les objectifs de d\u00e9veloppement durable et la justice clima"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- une perspective de d\u00e9veloppement durable  description d\u00e9tail---e sont le social  l'\u00e9cologie et l'\u00e9conomie   les"
             ]
         },
         "STFE2004-1": {
@@ -3049,25 +1118,13 @@
             ]
         },
         "TRAD0116-1": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "otectionnisme  fmi  d\u00e9veloppement durable et certains aspects"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---otectionnisme  fmi  d\u00e9veloppement durable et certains aspects---tualit\u00e9 \u00e9conomique  environnementale   ainsi que de q"
             ]
         },
         "VETE2067-1": {
             "gestio[^ ]+ durab[^ ]+": [
                 "\u00e9 des animaux et la gestion durable des \u00e9levages  les r"
-            ]
-        }
-    },
-    "society": {
-        "CLIM0007-2": {
-            "accords? de paris(?:(?: sur| pour) le climat)?": [
-                "ocole de kyoto    l'accord de paris  cop21     insuffis"
-            ]
-        },
-        "SOCI0073-3": {
-            "justice climat[^ ]+": [
-                "ement durable et la justice climatique  les nouvelles tend"
             ]
         }
     }

@@ -1,5 +1,36 @@
 {
-    "decarbonization": {},
+    "climate": {
+        "1568": {
+            "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
+                " aan bod komen zijn klimaatverandering  beschikbaarheid va"
+            ]
+        },
+        "1995": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "cosystem functions  climate change   food crisis or th"
+            ]
+        },
+        "2000": {
+            "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
+                " aan bod komen zijn klimaatverandering  beschikbaarheid va"
+            ]
+        },
+        "2237": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "stitutional review  climate change  federalism and rul"
+            ]
+        },
+        "3239": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                " impact assessment  climate change  waste  environment"
+            ]
+        },
+        "3943": {
+            "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
+                "olgen van migratie  klimaatverandering   verontreiniging  "
+            ]
+        }
+    },
     "energy": {
         "2355": {
             "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
@@ -56,207 +87,44 @@
             ]
         }
     },
-    "consumption": {
-        "2355": {
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                "estiek  materialen  energiegebruik  kwaliteit van het "
-            ]
-        },
-        "3026": {
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                " reactiesnelheid en energie effici\u00ebntie wordt hierbij beand"
-            ]
-        },
-        "3264": {
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                "digde modellen voor energieverbruik in gebouwen  inleid"
-            ]
-        },
-        "3558": {
-            "energy (consumption|use)": [
-                "es such as rational energy use  eco-design and lif"
-            ]
-        },
-        "3623": {
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                "ling van eetlust en energiegebruik  evenals van het li"
-            ]
-        },
-        "3939": {
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                "nmilieu  welzijn en energiegebruik  richting energiene"
-            ]
-        },
-        "4368": {
-            "energie(?:-| )?(?:verbruik|gebruik|effici[e\u00eb]ntie)": [
-                "atiedoelstellingen  energie-effici\u00ebntie   flexibiliteit   c"
-            ]
-        }
-    },
     "environment": {
-        "1567": {
-            "[^a-z]ecolo[^ ]+": [
-                "nciples of microbial ecology  as well as how mic"
-            ]
-        },
-        "1568": {
-            "[^a-z]ecolo[^ ]+": [
-                "heid van water  onze ecologische voetafdruk  duurzaa"
-            ]
-        },
         "1692": {
             "milieu(?:beheer|management|beleid)": [
+                "milieubeleid milieueconomie  mil",
                 "nomie  milieurecht  milieubeleid  kosten-batenanalys"
             ]
         },
-        "2055": {
-            "[^a-z]ecolo[^ ]+": [
-                " positive social and ecological impacts  doing well"
-            ]
-        },
-        "2000": {
-            "[^a-z]ecolo[^ ]+": [
-                "heid van water  onze ecologische voetafdruk  duurzaa"
-            ]
-        },
-        "2243": {
-            "[^a-z]ecolo[^ ]+": [
-                "arcoding  genomische ecologie  forensische wetens"
-            ]
-        },
-        "2330": {
-            "[^a-z]ecolo[^ ]+": [
-                "udio's 3 &amp  4     ecologie  de centrale vraags",
-                "in de ruimte als een ecologisch systeem mensen en d",
-                "ruimte  bv  papanek  ecologie - toekomst         "
-            ]
-        },
-        "2355": {
-            "[^a-z]ecolo[^ ]+": [
-                "sch/milieutechnisch  ecologisch  bouwconcept     bi"
-            ]
-        },
-        "2576": {
-            "[^a-z]ecolo[^ ]+": [
-                "iplinaire  economie  ecologie  politiek       kij"
-            ]
-        },
-        "2612": {
-            "[^a-z]ecolo[^ ]+": [
-                "iplinaire  economie  ecologie  politiek       kij"
-            ]
-        },
-        "2796": {
-            "[^a-z]ecolo[^ ]+": [
-                "ndig  economisch als ecologisch gebied onderbouwd \u00e9",
-                " in de filosofie van ecologisch en universeel ontwe"
-            ]
-        },
-        "2871": {
-            "[^a-z]ecolo[^ ]+": [
-                "nci\u00eble  economische  ecologische en sociale impact  "
-            ]
-        },
-        "3124": {
-            "[^a-z]ecolo[^ ]+": [
-                "s sluiten aan bij de ecologische en botanische leeri",
-                "ics uit de geologie  ecologie  dierkunde  vooral "
-            ]
-        },
-        "3121": {
-            "[^a-z]ecolo[^ ]+": [
-                "de cyanophyta en hun ecologische betekenis   2  de s",
-                "ogie  levencyclus en ecologisch belang van enkele s"
+        "1995": {
+            "biodiversity---(collapse|extinction|impact|destruction)---(environment|ecology|ecosystem)": [
+                "---ether it be loss of biodiversity and ecosystem funct---iew on the possible impact of new developments---environmental ethics in this co"
             ]
         },
         "3139": {
-            "[^a-z]ecolo[^ ]+": [
-                "lora   biogeografie  ecologie  ecologische aanpas",
-                "geografie  ecologie  ecologische aanpassingen van fa"
+            "biodiversiteit": [
+                "nen de domeinen van biodiversiteit  identificatie van "
             ]
         },
         "3458": {
             "ecosysteems?": [
                 "rkt zich dat uit op ecosysteemdiensten  effecten v",
                 "e monetarisatie van ecosysteemdiensten   payment f"
+            ],
+            "biodiversiteit": [
+                "eleidsaspecten rond biodiversiteit in ontwikkelingslan",
+                "  inleiding  waarom biodiversiteit in ontwikkelingslan",
+                "zijn  hotspots  van biodiversiteit over de wereld vers",
+                "ten van verlies van biodiversiteit op gezondheid  migr",
+                "   beschrijving van biodiversiteit  taxonomie en  the "
             ]
         },
-        "3648": {
-            "[^a-z]ecolo[^ ]+": [
-                "1    industri\u00eble ecologie en de rol van een i"
-            ]
-        },
-        "3697": {
-            "[^a-z]ecolo[^ ]+": [
-                "ulturele  people  en ecologische  planet  aspecten"
-            ]
-        },
-        "3742": {
-            "[^a-z]ecolo[^ ]+": [
-                "eren    v het begrip ecologische valkuil kunnen duid"
-            ]
-        },
-        "3860": {
-            "[^a-z]ecolo[^ ]+": [
-                "kt en van sociale en ecologische doeleinden te  vold",
-                "n  zowel sociale als ecologische  steeds meer opgeno"
-            ]
-        },
-        "4134": {
-            "[^a-z]ecolo[^ ]+": [
-                "end met economische  ecologische  sociale  historisc"
-            ]
-        },
-        "4216": {
-            "[^a-z]ecolo[^ ]+": [
-                " landbouw  tuinbouw  ecologie     is aandacht voo"
+        "3419": {
+            "milieu(?:beheer|management|beleid)": [
+                "milieubeheerssystemen in bedrijv"
             ]
         },
         "4281": {
             "milieu(?:beheer|management|beleid)": [
                 "l wordt het vlaamse milieubeleid onder de loep genom"
-            ]
-        },
-        "4280": {
-            "[^a-z]ecolo[^ ]+": [
-                "oecologie behelst de ecologie van de radioactieve"
-            ]
-        },
-        "4449": {
-            "[^a-z]ecolo[^ ]+": [
-                "ypes studie  census  ecologische studie  algemene en"
-            ]
-        }
-    },
-    "climatology": {
-        "1568": {
-            "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
-                " aan bod komen zijn klimaatverandering  beschikbaarheid va"
-            ]
-        },
-        "1995": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                "cosystem functions  climate change   food crisis or th"
-            ]
-        },
-        "2000": {
-            "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
-                " aan bod komen zijn klimaatverandering  beschikbaarheid va"
-            ]
-        },
-        "2237": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                "stitutional review  climate change  federalism and rul"
-            ]
-        },
-        "3239": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                " impact assessment  climate change  waste  environment"
-            ]
-        },
-        "3943": {
-            "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand|mitigatie)": [
-                "olgen van migratie  klimaatverandering   verontreiniging  "
             ]
         }
     },
@@ -266,25 +134,19 @@
                 " aan bod komen zijn klimaatverandering  beschikbaarheid va"
             ]
         },
-        "1955": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "  globalization and sustainable development  is made up of a se",
-                "ctive challenges to sustainable development in a variety of dom"
-            ]
-        },
-        "1995": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "s determine whether sustainable development can provide a way f"
-            ]
-        },
         "2055": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "rriculum for the un sustainable development goals  sdgs  and bu"
+            "sustainable development goals": [
+                "rriculum for the un sustainable development goals  sdgs  and business"
             ]
         },
         "2000": {
             "klimaat(?:veranderingsbeheer|beleid|risico|bestendigheid|verandering|weerstand)": [
                 " aan bod komen zijn klimaatverandering  beschikbaarheid va"
+            ]
+        },
+        "3513": {
+            "sustainab(ility|le)---mobility": [
+                "---sustainable tourism management ---ational  tourism    mobility issues related to t"
             ]
         },
         "3568": {
@@ -294,7 +156,7 @@
         },
         "3752": {
             "duurzame ontwikkeling": [
-                "duurzame ontwikkeling is ontwikkeling die",
+                "uurzaamheidsanalyse duurzame ontwikkeling is ontwikkeling die",
                 "n complexitieit van duurzame ontwikkeling      2  het kunnen "
             ]
         },
@@ -303,13 +165,32 @@
                 "olgen van migratie  klimaatverandering   verontreiniging  "
             ]
         },
+        "4200": {
+            "sustainab(ility|le)---mobility": [
+                "---ng environment      sustainable mobility solutions ---simulation of urban mobility  during the self-le"
+            ]
+        },
+        "4206": {
+            "sustainab(ility|le)---mobility": [
+                "---nsport  in terms of sustainability  social equality an---on of transport and mobility is treated from dif"
+            ]
+        },
         "4281": {
             "duurzame ontwikkeling": [
                 "en   3  aanpak voor duurzame ontwikkeling en duurzaam materia",
                 " in de trend van de duurzame ontwikkeling          deel 1 tec",
                 "             deel 3 duurzame ontwikkeling  materialen en ener"
             ]
+        },
+        "4329": {
+            "sustainab(ility|le)---mobility": [
+                "---ng environment      sustainable mobility solutions ---simulation of urban mobility  during the self-le"
+            ]
+        },
+        "4334": {
+            "sustainab(ility|le)---mobility": [
+                "---nsport  in terms of sustainability  social equality an---on of transport and mobility is treated from dif"
+            ]
         }
-    },
-    "society": {}
+    }
 }

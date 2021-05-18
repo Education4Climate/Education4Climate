@@ -1,88 +1,50 @@
 {
-    "decarbonization": {},
-    "energy": {
-        "INGE1242": {
-            "photovolta[i\u00ef]ques?": [
-                "onction pn  cellule photovolta\u00efque  led  sol\u00e9no\u00efde  g\u00e9"
-            ]
-        },
-        "INGE1342": {
-            "photovolta[i\u00ef]ques?": [
-                "onction pn  cellule photovolta\u00efque  led  sol\u00e9no\u00efde  g\u00e9"
-            ]
-        }
-    },
-    "consumption": {},
-    "environment": {
-        "COMU2106": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "tive3  mod\u00e9lisation \u00e9cosyst\u00e9mique- d\u00e9finition et princ",
-                "- le golden circle- ecosyst\u00e8me de l'enseigne   son"
-            ]
-        },
-        "DRAN1351": {
-            "[^a-z]ecolo[^ ]+": [
-                "ent society  from an ecological  a social and an ec"
-            ]
-        },
-        "POLS1321": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "oches inspir\u00e9es de l'\u00e9cologie humaine  e a  jarre",
-                "es approches dites d'\u00e9cologie \u00ab profonde \u00bb  e a  "
-            ]
-        },
-        "SOCA1314": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nt \u00e9mancipateur de l'\u00e9cologie dans la mesure o\u00f9 l",
-                "marqu\u00e9 le d\u00e9but de l'\u00e9cologie politique dans les "
-            ]
-        }
-    },
-    "climatology": {
+    "climate": {
         "DPIM2121": {
-            "chang[^ ]+ clima[^ ]+": [
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
                 "ions industrielles\u2022 changement climatique\u2022 politique des produ"
             ]
         },
-        "DROI1365": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "es  lutte contre le r\u00e9chauffement climatique  esp\u00e8ces menac\u00e9es  "
-            ]
-        },
         "HDPO1312": {
-            "chang[^ ]+ clima[^ ]+": [
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
                 "x contemporains  le changement climatique   les relations nor"
-            ],
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "t\u00e9 fondamentaux  le r\u00e9chauffement climatique   les relations nor"
             ]
         },
         "HDPO1321": {
-            "chang[^ ]+ clima[^ ]+": [
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
                 "cientifiques sur le changement climatique et l'\u00e9tat de la bio",
                 "it\u00e9- gouvernance du changement climatique- gouvernance de la p"
             ]
         }
     },
-    "durability": {
-        "ECGE1313": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnement et au d\u00e9veloppement durable- croissance  environ"
+    "energy": {},
+    "environment": {
+        "DPIM2113": {
+            "droit (de l')?environnement---protection (de l')environnement": [
+                "---du territoire qu'en droit de l'environnement---x et droit p\u00e9nal la protection de l'environnement se d\u00e9cline tant sur"
             ]
         },
-        "ESPO1161": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " de l'\u00e9galit\u00e9 et le d\u00e9veloppement durable dans une soci\u00e9t\u00e9 du"
+        "DPIM2122": {
+            "droit (de l')?environnement---protection (de l')environnement": [
+                "---pes fondamentaux du droit de l'environnement  le principe du pol---t\u00e9 sp\u00e9cifiques \u00e0 la protection de l'environnement  la directive 2004/"
             ]
         },
-        "HDPO1321": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "par la demande de \u00ab d\u00e9veloppement durable \u00bb ne sont pas uniqu",
-                "ocal  le concept de d\u00e9veloppement durable impose en particuli",
-                " la mani\u00e8re dont ce d\u00e9veloppement durable a trac\u00e9 son chemin ",
-                "rientation vers un \u2018d\u00e9veloppement durable'  - notion de durabi"
+        "DPIM2131": {
+            "droit (de l')?environnement---protection (de l')environnement": [
+                "---ns administratives  droit de l'environnement  la protection de l---l'environnement  la protection de l'environnement s'est d'abord d\u00e9fin"
             ]
         }
     },
-    "society": {}
+    "durability": {
+        "ECGE1313": {
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---environnement et au d\u00e9veloppement durable- croissance  environ---economie de l'environnement \u00e9tudier l'apport de"
+            ]
+        },
+        "HDPO1321": {
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---oit  gouvernance et d\u00e9veloppement durable dans le contexte so--- la protection de l'environnement et de la qualit\u00e9 de"
+            ]
+        }
+    }
 }
