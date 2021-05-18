@@ -42,6 +42,7 @@
 			"diplomatie climatique"
 		],
 		"en": [
+			["glaciolog","climatolog","(modelisation|thermodynamiq|atmospher)"],
 			"greenhouse gas(es)?",
 			"climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)",
 			"(?:carbon dyoxide|co2?) emissions?",
@@ -145,7 +146,6 @@
 		    "[ée]v[ée]nements? m[ée]t[ée]o[^ ]+ extr[^ ]+",
 		    "temp[^ ]+ moyenne mond[^ ]+",
 		    "(?:pertes?|fontes?|diminutions?|réductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol)",
-			"(défis?|contaminations?|droits?( de l')?) ?environnement[^ ]+"
 		],
 		"en": [
 			"environmental (?:management|maintenance)",
@@ -154,7 +154,7 @@
 		    "global (?:average|mean) temperature",
 		    "(?:thawing|loss|melting|reduction|shrinking) (?:of )?(?:(?:(?:polar )? ice(?: caps)?)|permafrost)",
 			"environmental challenge",
-			["biodiversity","(collapse|extinction|impact|destruction)"]
+			["biodiversity","(collapse|extinction|impact|destruction)","(environment|ecology|ecosystem)"],
 		],
 		"nl": [
 			"milieu(?:beheer|management|beleid)",
