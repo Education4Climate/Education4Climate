@@ -1,36 +1,171 @@
 {
-    "decarbonization": {
-        "CNST-P3006": {
-            "d\u00e9carbon[^ ]+": [
-                "'oeuvrer \u00e0 un futur d\u00e9carbon\u00e9  porteur d\u2019une nouv"
+    "climate": {
+        "ARCH-H502": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                " urbanism in age of climate change   washington dc  is"
+            ]
+        },
+        "BING-F1001": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "n meme mouvement le changement climatique  la chute de la bio",
+                "e  genie genetique  changements climatiques      dans sa vie pr"
+            ]
+        },
+        "BING-F410": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ls et anthropiques  changements climatiques  eutrophisation  su"
+            ]
+        },
+        "CHIM-H302": {
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "es et brouillards   gaz a effet de serre  gaz detruisant l'o"
+            ]
+        },
+        "DROI-C5100": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "de lutte contre les changements climatiques  le droit selon l'e"
+            ]
+        },
+        "ECON-S2002": {
+            "justice climat[^ ]+": [
+                "eloppement durable  justice climatique  intergenerationnel",
+                "   2018   penser la justice climatique  paris  presses uni"
+            ]
+        },
+        "ENVI-F1001": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "n meme mouvement le changement climatique  la chute de la bio",
+                "linga  p   2013  le changement climatique  mythes  realites e"
             ]
         },
         "ENVI-F405": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ents et impacts des changements climatiques  aux mecanismes pos",
+                "a problematique des changements climatiques dans ses dimensions"
+            ],
+            "risque[^ ]+ clima[^ ]+": [
+                "issions  impacts et risques climatiques  liens avec les aut"
+            ],
+            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
+                "ssions anthropiques de gaz a effet de serre  impacts  et politi"
+            ],
             "bas[- ]carbon[^ ]+": [
-                "ion vers la soci\u00e9t\u00e9 bas-carbone  gestion de la tran",
-                "matique  transition bas-carbone  coop\u00e9ration intern"
+                "ion vers la societe bas-carbone  gestion de la tran",
+                "matique  transition bas-carbone  cooperation intern"
+            ],
+            "politiques? climat[^ ]+": [
+                "s legislatifs de la politique climatique europeenne   les en",
+                "et long terme de la politique climatique en belgique apprehe"
+            ],
+            "accords? de paris(?:(?: sur| pour) le climat)?": [
+                " de climat  unfccc  accord de paris    le cadre institu"
+            ]
+        },
+        "ENVI-F526": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                " de l'atmosphere et changements climatiques dans la premiere pa",
+                "fet de serre et les changements climatiques  ce cours a pour bu",
+                "ite de l'air et aux changements climatiques  cours theorique so"
+            ]
+        },
+        "ENVI-S101": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ites de la planete  changement climatique  biodiversite  ress"
+            ]
+        },
+        "ETHI-F1001": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "culture   causes du changement climatique actuel   genomique "
+            ]
+        },
+        "GEOG-F102": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "re  geomorphologie  contexte climatique  bilan energetique "
+            ]
+        },
+        "GEOG-F203": {
+            "glaciolog---climatolog---(modelisation|thermodynamiq|atmospher)": [
+                "--- zones climatiques  glaciologie  dynamique des gl---climatologie et geomorphologie--- et thermodyanmique atmospherique - zones climati"
+            ]
+        },
+        "GEOG-F408": {
+            "glaciolog---climatolog---(modelisation|thermodynamiq|atmospher)": [
+                "---on en geosciences   glaciologie et climatologie m---es   glaciologie et climatologie modeles mathemati---modelisation en geosciences   gl"
+            ]
+        },
+        "GEOG-F410": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "essentiellement aux changements climatiques qui ont eu lieu au ",
+                "i e   forcages  des changements climatiques  le temps de repons"
+            ],
+            "processus clima[^ ]+": [
+                "r coherence  et les processus climatiques sous-jacents  cours"
+            ]
+        },
+        "GEST-H506": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "ement durable et le changement climatique  role des principal"
             ]
         },
         "MECA-H417": {
+            "(?:carbon dyoxide|co2?) emissions?": [
+                "ed topics  biomass  co2 emissions and carbon capture "
+            ],
             "(?:carbon|co2?) (?:capture|conversion|valuation|sequestration)": [
                 "  co2 emissions and carbon capture and storage  mobili"
+            ]
+        },
+        "ORIE-B2071": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "eneral tels que  le rechauffement climatique  les nouvelles tech"
+            ]
+        },
+        "POLI-D434": {
+            "(?:^|[^a-z])cop ?[0-9]+": [
+                "003  4niv 327 1 held cop 2          - in frenc"
+            ]
+        },
+        "POLI-D445": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "development o 15/05 climate change  seminars o 26/02  "
+            ]
+        },
+        "POLI-O417": {
+            "greenhouse gas(es)?": [
+                "ude the emission of greenhouse gases and air pollutants "
+            ],
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                " they contribute to climate change  damage natural eco"
+            ]
+        },
+        "URBA-H9009": {
+            "climat[^ ]+ (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
+                "anism in the age of climate change   washington dc  is"
+            ]
+        },
+        "URBA-Y707": {
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
+                "aux aleas naturels  rechauffement climatique        et humains  "
             ]
         }
     },
     "energy": {
         "ARCH-P7119": {
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
-                "s que repr\u00e9sente la transition \u00e9nerg\u00e9tique et sociale et \u00e0 la "
+                "s que represente la transition energetique et sociale et a la "
             ]
         },
         "ARCH-P8119": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "n des potentiels en \u00e9nergie renouvelable et aux techniques d"
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---n des potentiels en energie renouvelable et aux techniques d---poses par bruxelles environnement  www bruxellesenvir"
             ]
         },
-        "BMOL-G2204": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "apable d'\u00e9tablir le bilan \u00e9nerg\u00e9tique associ\u00e9 \u00e0 la d\u00e9grad"
+        "ARCH-Y500": {
+            "energy (performance|consumption)---(sustainability|sustainable (solutions|development))---environment": [
+                "---tural  material and energy performance of buildings and st---ork and strives for sustainable solutions to engineering prob---he ethical  social  environmental and economic cont"
+            ],
+            "low energy---sustainability": [
+                "---low energy design for sustaina---rds using issues of sustainability  ecology and energy"
             ]
         },
         "CHIM-S201": {
@@ -38,45 +173,30 @@
                 "stries  analysis of energy consumption and of energy sourc"
             ]
         },
-        "ELEC-H201": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "othermie            energies renouvelables - le photovolta\u00efque"
-            ],
-            "photovolta[i\u00ef]ques?": [
-                " renouvelables - le photovolta\u00efque initier \u00e0 l'\u00e9lectro"
+        "CNST-Y504": {
+            "energy (performance|consumption)---(sustainability|sustainable (solutions|development))---environment": [
+                "---tural  material and energy performance of buildings and st---ork and strives for sustainable solutions to engineering prob---he ethical  social  environmental and economic cont"
             ]
         },
-        "ELEC-H312": {
-            "photovolta[i\u00ef]ques?": [
-                "drant            le photovolta\u00efque etudier les convert"
-            ]
-        },
-        "ENVI-F405": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "rucial qu'y joue le bilan \u00e9nerg\u00e9tique du globe terrestre "
+        "CNST-Y512": {
+            "energy (performance|consumption)---(sustainability|sustainable (solutions|development))---environment": [
+                "---energy performance in buildings go to ---ork and strives for sustainable solutions to engineering prob---he ethical  social  environmental and economic cont"
             ]
         },
         "ENVI-F454": {
             "transiti[^ ]+ [\u00e9e]nerg[^ ]+": [
-                "ie   g\u00e9opolitique   transition \u00e9nerg\u00e9tique   durabilit\u00e9 des so"
+                "ie   geopolitique   transition energetique   durabilite des so"
             ]
         },
-        "GEOG-F102": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "ontexte climatique  bilan \u00e9nerg\u00e9tique de la terre   la mo"
-            ]
-        },
-        "GEOG-F400": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "s impliqu\u00e9s dans le bilan \u00e9nerg\u00e9tique terrestre  ainsi qu"
-            ]
-        },
-        "GEST-H506": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "  premi\u00e8re partie   bilans \u00e9nerg\u00e9tiques et sc\u00e9narios de pr\u00e9"
+        "MECA-H414": {
+            "(?:green|renewable|low carbon) energy": [
+                "renewable energy technology   contri"
             ]
         },
         "MECA-H417": {
+            "energy (performance|consumption)---(sustainability|sustainable (solutions|development))---environment": [
+                "---rt  ue and national energy consumptions    energy chain  c---y today  energy and sustainability are matters of prim--- aware of societal  environmental and economic issu"
+            ],
             "(?:green|renewable|low carbon) energy": [
                 "of an investment in renewable energy or efficiency using",
                 "ergy efficiency and renewable energy technologies  1995 "
@@ -95,1041 +215,513 @@
                 "nomic evaluation of energy efficiency and renewable energ"
             ]
         },
+        "MEMO-H507": {
+            "energy (performance|consumption)---(sustainability|sustainable (solutions|development))---environment": [
+                "---tural  material and energy performance of buildings and st---ork and strives for sustainable solutions to engineering prob---he ethical  social  environmental and economic cont"
+            ]
+        },
+        "PHYS-H515": {
+            "nucleaire---pollu(ant|tion)---environnement": [
+                "---notions de physique nucleaire  effets des rayonne---ue et terrestre des polluants radioactifs  trans---ontamination dans l'environnement  donner les notions"
+            ]
+        },
         "POLI-O417": {
             "energy (?:consumption|use|efficiency|vector|assessment)": [
                 "d at energy saving  energy efficiency  reducing the envir"
             ]
-        }
-    },
-    "consumption": {
-        "CHIM-S201": {
-            "energy (consumption|use)": [
-                "stries  analysis of energy consumption and of energy sourc"
+        },
+        "PROJ-H502": {
+            "energy (performance|consumption)---(sustainability|sustainable (solutions|development))---environment": [
+                "---tural  material and energy performance of buildings and st--- 7  real estate and sustainable development  8  construction co---he ethical  social  environmental and economic cont"
             ]
         },
-        "MECA-H417": {
-            "energy (consumption|use)": [
-                "rt  ue and national energy consumptions    energy chain  c",
-                "crete situations of energy consumption  or generation  in ",
-                " energy systems and energy consumption of given activities"
+        "TRAN-B2000": {
+            "nucleaire---pollu(ant|tion)---environnement": [
+                "---rces fossiles &amp  nucleaire - renouvelables  et---bles  et apercu des polluants principaux    il e---impact sanitaire et environnemental significatif  res"
             ]
         }
     },
     "environment": {
-        "ARCH-H400": {
-            "[^a-z]ecolo[^ ]+": [
-                "s of sustainability  ecology and energy as catal",
-                "s of sustainability  ecology and energy as catal"
-            ]
-        },
-        "ARCH-H502": {
-            "[^a-z]ecolo[^ ]+": [
-                "s of sustainability  ecology and energy as catal",
-                "reth doherty  eds    ecological urbanism   lars m\u00fcl"
-            ]
-        },
         "ARCH-P7111": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ant les aspects de l\u2019\u00e9cologie du territoire  du d"
+            "climat---environnement---ecologie": [
+                "---r l'amelioration du climat urbain   les scenar---si que de bruxelles environnement  en raison du conte---nt les aspects de l'ecologie du territoire  du d"
             ]
         },
         "ARCH-P7119": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "rche \u00ab architectures \u00e9cologies durabilit\u00e9s \u00bb   htt",
-                "uniteddiversity coop/ecological_building/bedzed-seven-years-on pdf   blewitt   joh",
-                "   une histoire de l'\u00e9cologie   points  1991   fe",
-                "  les deux \u00e2mes de l\u2019\u00e9cologie   l\u2019harmattan  2008",
-                "   f\u00e9lix   les trois \u00e9cologies   1989   hopkins   "
-            ]
-        },
-        "ARCH-P7120": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "rche \u00ab architectures \u00e9cologies durabilit\u00e9s \u00bb  http"
+            "ecologi---(anthropocene|transition (energetique|sociale|climatiq))": [
+                "---aed1 - architecture ecologies durabilites   l'e---s que represente la transition energetique et sociale et a la "
             ]
         },
         "ARCH-P8119": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "es de l\u2019architecture \u00e9cologique  acv  etc    \u00e0 \u00e9lar",
-                "rche \u00ab architectures \u00e9cologies durabilit\u00e9s \u00bb   htt"
-            ]
-        },
-        "ARCH-Y500": {
-            "[^a-z]ecolo[^ ]+": [
-                "s of sustainability  ecology and energy as catal"
-            ]
-        },
-        "BINF-F404": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "s de mod\u00e9lisation en \u00e9cologie et en \u00e9pid\u00e9miologie"
+            "climat---environnement---ecologie": [
+                "---ecoconception 1  bioclimatique et confort  ber---poses par bruxelles environnement  www bruxellesenvir---aed2 - architecture ecologies durabilites   l'ec"
             ]
         },
         "BING-F1001": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ices rendus par les \u00e9cosyst\u00e8mes  d\u00e9veloppement dura"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---ices rendus par les ecosystemes  developpement du---le  exploitation et pollution de l'eau  rejets da"
+            ],
+            "biodiversite---(erosion|effondrement|impact|consequence)---(ecologie|environnement|ecosystem)": [
+                "---que  la chute de la biodiversite  la rarefaction des---ions homme-nature   impact des societes agrair---et du bioingenieur  environnement et societe partie 1"
             ]
         },
         "BING-F202": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "  notions de base en \u00e9cologie  agriculture et nut",
-                "f\u00e9rer les bases agro-\u00e9cologiques fa\u00e7onnant les princ"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "ine  3h        de l\u2019\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me",
-                "\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me  flux d'\u00e9nergie  3h",
-                "gie  3h        de l\u2019\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me",
-                "\u00e9cosyst\u00e8me \u00e0 l\u2019agro-\u00e9cosyst\u00e8me  cycles min\u00e9raux  6"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "ransferer les bases agro-ecologiques faconnant les princ"
             ]
         },
         "BING-F305": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "elles sont les bases \u00e9cologiques d'une nouvelle r\u00e9vo",
-                "ique d'un article et \u00e9cologie du sol  3  r\u00e9ins\u00e9re",
-                "es d'un raisonnement \u00e9cologique autour de nos \"food",
-                "an  s  r   2006  the ecology of sustainable food"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "agro-ecologie theorie  2 ects    ",
+                " 1  introduction  l'agroecologie  qu'est-ce  d'ou ca",
+                " champ d'etude de l'agroecologie  en decrire son his"
             ]
         },
         "BING-F4001": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ss\u00e9es  les services \u00e9cosyst\u00e9miques au service de la qu",
-                "ro\u00e9cologie et d'agro\u00e9cosyst\u00e8mes et syst\u00e8mes agraire"
-            ]
-        },
-        "BING-F4002": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "dre  1998  numerical ecology  2nd ed   elsevier "
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "wervel   3d belgian agroecology meeting 2014  ulb  ",
+                "ees par les cours d'agroecologie et d'agroecosysteme",
+                "ricultural systems  agroecology and rural innovatio"
             ]
         },
         "BING-F4003": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "   otto h -j   1998  \u00e9cologie foresti\u00e8re  idf  pa"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "l'agriculture  de l'agroecologie  de la sylviculture"
             ]
         },
         "BING-F4004": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "        2  processus \u00e9cologiques \u00e0 l'origine de la m",
-                "            3  r\u00f4les \u00e9cologiques et \u00e9conomiques des ",
-                "base du diagnostique \u00e9cologique permettant de carac",
-                "base du diagnostique \u00e9cologique permettant de carac"
+            "biodiversite---(erosion|effondrement|impact|consequence)---(ecologie|environnement|ecosystem)": [
+                "---mise en place de la biodiversite entomologique      ---t de caracteriser l'impact des pratiques agric---sectes dans nos agroecosystemes et dans nos ville"
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "sectes dans nos agro\u00e9cosyst\u00e8mes et dans nos villes ",
-                "t\u00e8mes agraires  agro\u00e9cosyst\u00e8mes et agro\u00e9cologie  en"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                " agroecosystemes et agroecologie  entomologie  paras"
             ]
         },
         "BING-F4005": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "sols  diversit\u00e9 des \u00e9cosyst\u00e8mes             propose"
-            ]
-        },
-        "BING-F4006": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "vivant \u00e0 une \u00e9chelle \u00e9cologique situ\u00e9e entre celle "
-            ]
-        },
-        "BING-F4007": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et \u00e9cologie            1 1 renf"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "l'agriculture  de l'agroecologie  de la sylviculture"
             ]
         },
         "BING-F403": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "t\u00e8mes agraires  agro\u00e9cosyst\u00e8mes et agro\u00e9cologie    "
+            "climat---environnement---ecologie": [
+                "---erre  des regions a climat tempere    il dispo---es a l'impact sur l'environnement  la qualite et la t---oecosystemes et agroecologie            zootechn"
+            ],
+            "ecologi---climat---(elevage|agriculture|(developpement|amenagement) du territoire)": [
+                "---ra d'une vision agroecologique des grandes prod---erre  des regions a climat tempere    il dispo---otechnologies  de l'agriculture  de la sylviculture"
+            ],
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "posera d'une vision agroecologique des grandes product",
+                " agroecosystemes et agroecologie            zootechn",
+                "l'agriculture  de l'agroecologie  de la sylviculture"
             ]
         },
         "BING-F410": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et ecologie               appr\u00e9"
+            "climat---environnement---ecologie": [
+                "---piques  changements climatiques  eutrophisatio--- et techniques de l'environnement                    ---e des organismes et ecologie               appre"
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "e  productivit\u00e9 des \u00e9cosyst\u00e8mes et r\u00e9sistance aux p",
-                " fonctionnement des \u00e9cosyst\u00e8mes et est illustr\u00e9 par",
-                " fonctionnement des \u00e9cosyst\u00e8mes aquatiques         ",
-                "tions possibles des \u00e9cosyst\u00e8mes aquatiques en r\u00e9pon",
-                "  domaines d'\u00e9tude  ecosyst\u00e8mes aquatiques         ",
-                " fonctionnement des \u00e9cosyst\u00e8mes                    "
+            "ecosystem---(perturbations?|degradations?|pollutions?)---(anthropiq|anthropocene)": [
+                "--- fonctionnement des ecosystemes aquatiques l'ense---s et resistance aux perturbations  resilience  ou au ---gements naturels et anthropiques  changements cli"
+            ],
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "--- fonctionnement des ecosystemes aquatiques l'ense---acer les sources de pollution ou de perturbation "
+            ]
+        },
+        "BING-F430": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "et developpement en agroecologie 1   la revolution v",
+                "onsequences     2   agroecologie - tour du monde des",
+                "ba et la transition agroecologique inachevee     4   a",
+                " sur des  approches agroecologiques  dans les pays du s"
             ]
         },
         "BING-F431": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "        4  les r\u00f4les \u00e9cologiques et \u00e9conomiques des ",
-                "nnovations sociales  \u00e9cologiques et agronomiques des"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "    6  les services \u00e9cosyst\u00e9miques   d\u00e9finitions et ap",
-                "ations dans les agro\u00e9cosyst\u00e8mes et les villes les o"
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "innovations agroecologiques et production alime",
+                "ur de la transition agroecologique                    ",
+                "omiques des modeles agroecologiques contemporains au no",
+                "s sur des approches agroecologiques  en particulier les"
             ]
         },
         "BING-F5001": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "          le paysage \u00e9cologique comme unit\u00e9 spatial",
-                "        l'\u00e9valuation \u00e9cologique des paysages       ",
-                "           le r\u00e9seau \u00e9cologique comme outil de plan",
-                "re est consacr\u00e9e \u00e0 l\u2019\u00e9cologie de la conservation ",
-                "\u00e9chelle des paysages \u00e9cologiques   a l'issue de cett",
-                "structur\u00e9e de r\u00e9seau \u00e9cologique et d\u2019articuler les "
+            "biodiversite---(erosion|effondrement|impact|consequence)---(ecologie|environnement|ecosystem)": [
+                "---le de gestion de la biodiversite  rappels           ---        predire les impacts economiques  socia---ecologie de la conservation "
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "alogues et nouveaux \u00e9cosyst\u00e8mes               le r\u00e9",
-                "de restauration des \u00e9cosyst\u00e8mes et de pr\u00e9servation "
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "l'agriculture  de l'agroecologie  de la sylviculture"
             ]
         },
         "BING-F523": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "   domaine d'\u00e9tude  \u00e9cosyst\u00e8mes aquatiques         "
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---   domaine d'etude  ecosystemes aquatiques       ---acer les sources de pollution ou de perturbation "
             ]
         },
         "BING-F525": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "a practical guide to ecological modelling  springe"
+            "ecosystem---(perturbations?|degradations?|pollutions?)---(anthropiq|anthropocene)": [
+                "---modelisation des ecosystemes aquatiques rappel---es en reponse a des perturbations naturelles et anthr---tions naturelles et anthropiques  l'enseignement "
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes aquatiques  d\u00e9coupa",
-                "ules en un mod\u00e8le d'\u00e9cosysteme et application  ide",
-                "  application \u00e0 des \u00e9cosyst\u00e8mes limniques et marins",
-                "le comportement des \u00e9cosyst\u00e8mes aquatiques en r\u00e9pon",
-                "st\u00e8mes biologiques  ecosyst\u00e8mes aquatiques - choisi",
-                "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
-            ]
-        },
-        "BING-F535": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "dre  1998  numerical ecology  2nded   elsevier  "
-            ]
-        },
-        "BIOL-F304": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "importance dans les \u00e9cosyst\u00e8mes  situation dans le "
+            "degradation---ecosystem---environnement": [
+                "---ucle microbienne de degradation de la matiere organ---modelisation des ecosystemes aquatiques rappel---ion des contraintes environnementales  application a "
             ]
         },
         "BIOL-F305": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e   x   les syst\u00e8mes \u00e9cologiques de la bio-g\u00e9osph\u00e8re",
-                "nobotanique et socio-\u00e9cologie  xiii   la t\u00e9l\u00e9d\u00e9te",
-                "n des syst\u00e8mes socio-\u00e9cologiques   f  les zonobiomes",
-                "lantes- les syst\u00e8mes \u00e9cologiques du bio-g\u00e9osph\u00e8re- l",
-                "s ombrothermiques- l\u2019\u00e9cologie des environnements ",
-                "es bases de la socio-\u00e9cologie     voir aussi site",
-                "on of the earth  the ecological systems of the geo-",
-                " g a  fox  2006  the ecology of plants  2nd edit",
-                "res  fonctionnement  \u00e9cologie et biotechnologies "
+            "climat---environnement---ecologie": [
+                "---ession   c  l'effet climatique sur les environ---ntes cultivees   b  environnement biotique et abiotiq---ogeographie et ethnoecologie le cours compte 6 s"
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes   1 9  appr\u00e9hender "
-            ]
-        },
-        "BIOL-F309": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ssources et de niche \u00e9cologique permettant de synth",
-                "es facteurs clefs en \u00e9cologie  cours ex cathedra ",
-                "p  townsend  c  r    ecology   individuals  popu",
-                "iples of terrestrial ecology  springer          "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes 0  introduction 1  ",
-                " d'\u00e9nergie dans les \u00e9cosyst\u00e8mes   \u00e9l\u00e9ments de bio\u00e9n",
-                " fonctionnement des \u00e9cosyst\u00e8mes  et permettant d'ap"
+            "ecosystem---(perturbations?|degradations?|pollutions?)---(anthropiq|anthropocene)": [
+                "--- fonctionnement des ecosystemes   1 9  apprehende---s pathogenes  vii   perturbation et succession   c  ---on et les pressions anthropiques qu'ils souffrent"
             ]
         },
         "BIOL-F310": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "r la biodiversit\u00e9 4  ecologie marine  1  5  ecolo",
-                "ologie marine  1  5  ecologie marine  2  6  biodi",
-                "ssources et de niche \u00e9cologique permettant de synth",
-                "es facteurs clefs en \u00e9cologie  pour tous  et en f",
-                "et al   2011  marine ecology  oxford university "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "matique 7  services \u00e9cosystemiques 8  biodiversit\u00e9 et ",
-                " fonctionnement des \u00e9cosyst\u00e8mes  et permettant d'ap"
-            ]
-        },
-        "BIOL-F4001": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "cipaux concepts de l'\u00e9cologie comportementale ser",
-                "n perspective avec l\u2019\u00e9cologie des esp\u00e8ces   en ra",
-                "grands concepts de l'\u00e9cologie comportementale    ",
-                "ie des organismes et ecologie       renforcer ses",
-                "n et al  behavioural ecology  oxford university "
-            ]
-        },
-        "BIOL-F4002": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et ecologie     1 1  renforcer "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes   3 1  effectuer un"
-            ]
-        },
-        "BIOL-F4005": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes  1 9  appr\u00e9hender e"
+            "biodiversite---(erosion|effondrement|impact|consequence)---(ecologie|environnement|ecosystem)": [
+                "---ecologie et biodiversite 1  biodiversite - g---ant d'apprehender l'impact des activites humai---ecologie et biodiversite 1  "
             ]
         },
         "BIOL-F412": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et ecologie  discuter des impli"
+            "climat---environnement---ecologie": [
+                "---s biologiques et le climat             respect---e  la medecine et l'environnement  des aspects de la ---e des organismes et ecologie  discuter des impli"
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
+            "ecologi---climat---(elevage|agriculture|(developpement|amenagement) du territoire)": [
+                "---e des organismes et ecologie  discuter des impl---s biologiques et le climat             respect---otechnologies  de l'agriculture  de la sylviculture"
             ]
         },
         "BIOL-F417": {
-            "[^a-z]ecolo[^ ]+": [
-                " et al 2011   marine ecology   processes  system",
-                "iela i 2009   marine ecological processes   3 rd  r",
-                "ction  biodiversity  ecology   new york   oxford"
+            "biodiversity---(collapse|extinction|impact|destruction)---(environment|ecology|ecosystem)": [
+                "---ine biology  marine biodiversity assessment  adaptat---ulation and climate impact  processes controll---controlling pelagic ecosystems  processes control"
             ]
         },
         "BIOL-F441": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ntaminants dans les \u00e9cosyst\u00e8mes  effets sur les org"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "---ntaminants dans les ecosystemes  effets sur les o---r  b  2001   marine pollution  5th ed  oxford uni"
             ]
         },
         "BIOL-F444": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ie des organismes et ecologie       1- constituer"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "cles in terrestrial ecosystems   functional traits",
-                "unity structure and ecosystem functioning   to ex",
-                "t\u00e8mes agraires  agro\u00e9cosyst\u00e8mes et agro\u00e9cologie  a ",
-                "atoire \u00e0 celle de l\u2019\u00e9cosyst\u00e8me  c1  appliquer les ",
-                "de restauration des \u00e9cosyst\u00e8mes et de pr\u00e9servation ",
-                " fonctionnement des \u00e9cosyst\u00e8mes      2- r\u00e9soudre de"
-            ]
-        },
-        "BIOL-F531": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "hie       l\u2019approche \u00e9cologique       l\u2019approche hi"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes  \u2022 1 9  appr\u00e9hender"
-            ]
-        },
-        "BIOL-J102": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "          el\u00e9ments d'\u00e9cologie et d'\u00e9volution des "
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                " agroecosystemes et agroecologie  a  2  entomologie "
             ]
         },
         "CHIM-H302": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes aquatiques  perturb"
+            "[\u00e9e]cosyst[\u00e8e]m---(pollution|r\u00e9silience)": [
+                "--- fonctionnement des ecosystemes aquatiques  pertu---pollution du milieu physique "
             ]
         },
         "CNST-H306": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "013   design for the ecological age  rethinking the"
+            "conception bioclimatiq---durab(ilite|le)---systemes? energetiques?": [
+                "---lite de l'air   7   conception bioclimatique passive   8   cha---e et integree de la durabilite   11   etude de cas---se climatique   3   systemes energetiques   4   ressources  m"
             ]
         },
-        "CNST-P1007": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "isation sur le choix \u00e9cologique des mat\u00e9riaux et su"
+        "DROI-C5150": {
+            "droit (de l')?environnement---protection (de l')environnement": [
+                "---ution historique du droit de l'environnement  de ses sources et ---gles relatives a la protection de l'environnement s'inscrivent  cette"
             ]
         },
-        "CNST-P3004": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "l\u2019isolation phonique \u00e9cologique  editions terres vi"
+        "ENVI-D500": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                " reach  initiatives agroecologiques    un accent partic"
             ]
         },
-        "CNST-P3006": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "17-29940/  magazine \"ecologik\"  https //www ecolog",
-                "ologik\"  https //www ecologikmagazine fr/  \"architecture "
-            ]
-        },
-        "CNST-Y512": {
-            "[^a-z]ecolo[^ ]+": [
-                "s of sustainability  ecology and energy as catal"
-            ]
-        },
-        "COMM-B430": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "  etude de cas d\u2019un ecosyst\u00e8me social d\u00e9velopp\u00e9 pa"
-            ]
-        },
-        "COMM-B470": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "n linguistique  2  l'\u00e9cologie des langues  3  et "
-            ]
-        },
-        "CRIM-C408": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ial et mat\u00e9riel  son \u00e9cologie  sp\u00e9cifique  par ai"
-            ]
-        },
-        "DENT-G3301": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ral  biofilms oraux  \u00e9cologie microbienne orale  "
+        "ENVI-F1001": {
+            "biodiversite---(erosion|effondrement|impact|consequence)---(ecologie|environnement|ecosystem)": [
+                "---que  la chute de la biodiversite  la rarefaction des---tions homme-nature  impact des societes agrair---iences de la terre  environnement et societe partie 1"
             ]
         },
         "ENVI-F4001": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " pratiques agricoles \u00e9cologiquement orient\u00e9es   environ"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " lois r\u00e9gissant ces \u00e9cosyst\u00e8mes pour une gestion ra"
-            ]
-        },
-        "ENVI-F403": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "m services in social-ecological systems   cambridge"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "ilience  sustaining ecosystem services in social-"
-            ]
-        },
-        "ENVI-F409": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ale et de l'\u00e9conomie \u00e9cologique  une s\u00e9rie limit\u00e9e ",
-                "rodoxe de l'economie \u00e9cologique  contribution au pr",
-                "stagl sigrid  2005   ecological economics  an intro"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
+            "biodiversite---(erosion|effondrement|impact|consequence)---(ecologie|environnement|ecosystem)": [
+                "---essources  impacts  biodiversite les reglementation ----environnement  les consequences des differentes pr---ment et gestion des environnements agricoles et aquat"
             ]
         },
         "ENVI-F437": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "s \u00eatres vivants 2  l'\u00e9cologie  \u00e9tude des cycles b",
-                " ramade - el\u00e9ments d'\u00e9cologie  ediscience interna"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "nnement g\u00e9n\u00e9ral des \u00e9cosyst\u00e8mes  flux d'\u00e9nergie  ch",
-                " principaux types d'\u00e9cosyst\u00e8mes | grands biomes | b"
+            "ecosystem---(perturbations?|degradations?|pollutions?)---(anthropiq|anthropocene)": [
+                "---nnement general des ecosystemes  flux d'energie  ---ts globaux et leurs perturbations anthropiques   la c---leurs perturbations anthropiques   la competence "
             ]
         },
         "ENVI-F452": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ion du cycle de vie  \u00e9cologie industrielle  berce"
+            "climat---environnement---ecologie": [
+                "---s biologiques et le climat             mettre ---gestion des impacts environnementaux apercu general d---on du cycle de vie  ecologie industrielle  berce"
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "nthropiques sur les \u00e9cosyst\u00e8mes  les ressources bio"
+            "gestion environnement---ecologi---impact": [
+                "---        systemes de gestion environnemental - iso 14001 &amp ---on du cycle de vie  ecologie industrielle  berc---lyse et gestion des impacts environnementaux a"
             ]
         },
         "ENVI-F5001": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "t de l'igeat         ecologie politique et gouver",
-                "olitique et \u00e9conomie \u00e9cologique  tom bauler        "
+            "ecologi---(political ecology|ecologie politique)---environnement": [
+                "--- de l'igeat         ecologie politique et gouve--- de l'igeat         ecologie politique et gouvernance  mar---ies de gestion de l'environnement les etudiants se re"
             ]
         },
-        "ENVI-F504": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "es approches comme l\u2019\u00e9cologie politique  les sts ",
-                "ani\u00e8re dont la crise \u00e9cologique mondiale  dans ses ",
-                "posantes de la crise \u00e9cologique et la comp\u00e9tition p"
+        "ENVI-F510": {
+            "droit (de l')?environnement---protection (de l')environnement": [
+                "---droit de l'environnement au cours des 40 der---disponibles pour la protection de l'environnement ainsi que de leurs "
+            ],
+            "biodiversite---(erosion|effondrement|impact|consequence)---(ecologie|environnement|ecosystem)": [
+                "---       climat       biodiversite          le cours  ---        assumer les consequences de ses actes ou de---droit de l'environnement au cours des 40 der"
             ]
         },
         "ENVI-F531": {
-            "[^a-z]ecolo[^ ]+": [
-                "mplexity of soc-tech-ecological systems  path depen",
-                "vation  critiques of ecological modernization  the ",
-                "social-technological-ecological systems  e g  mobil"
-            ],
             "environmental challenge": [
                 "ach to contemporary environmental challenges  linking environme"
             ]
         },
-        "ENVI-L505": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ices d\u2019une approche \u00e9cosyst\u00e9mique de la sant\u00e9  d  cha"
-            ]
-        },
         "ENVI-P1003": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "e propose un cours d\u2019\u00e9cologie en architecture  il",
-                "e les probl\u00e9matiques \u00e9cologiques contemporaines  l'a",
-                "   une histoire de l'\u00e9cologie   points  1991   de",
-                "d  paul  la synth\u00e8se \u00e9cologique   populations  comm",
-                "uy   qu'est-ce que l'\u00e9cologie   vuibert  2010    ",
-                "space for humanity   ecology and society 14 2   ",
-                "iety 14 2   32   www ecologyandsociety org/vol14/iss2/art3"
+            "climat---environnement---ecologie": [
+                "---e et d'urbanisme bioclimatiques  concevoir  ed---e l'homme et de son environnement bati  quels sont le--- propose un cours d'ecologie en architecture  il"
             ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " d\u2019organisation des \u00e9cosyst\u00e8mes et raconte l\u2019histoi",
-                "tions  communaut\u00e9s  \u00e9cosyst\u00e8mes  biosph\u00e8re  noosph\u00e8",
-                "inking   sustaining ecosystems and people in a cha"
-            ]
-        },
-        "GERM-B430": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "nche sur le discours \u00e9cologique/\u00e9cocritique et l'\u00e9copo\u00e9tique au",
-                "uelle  esth\u00e9tique et \u00e9cologique/\u00e9copo\u00e9tique   familiariser les "
-            ]
-        },
-        "GEST-D447": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ies du changement  l'\u00e9cologie des organisations  "
-            ]
-        },
-        "GEST-S454": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "dre de la transition \u00e9cologique et sociale        p",
-                "res de la transition \u00e9cologique et sociale et les e"
-            ]
-        },
-        "GEST-S471": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "  quelques principes \u00e9cologiques de base       parti",
-                "     biomim\u00e9tisme et \u00e9cologie industrielle       "
-            ]
-        },
-        "GEST-S488": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "dre de la transition \u00e9cologique et sociale  pour la"
-            ]
-        },
-        "LANG-D314": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "mor = l'humour       ecologie en duurzaamheid = l",
-                " en duurzaamheid = l'\u00e9cologie et la durabilit\u00e9   "
-            ]
-        },
-        "MEMO-H507": {
-            "[^a-z]ecolo[^ ]+": [
-                "s of sustainability  ecology and energy as catal"
+            "ecologi---(anthropocene|transition (energetique|sociale|climatiq))": [
+                "--- propose un cours d'ecologie en architecture  i---tiste   l'evenement anthropocene   seuil  2013    br"
             ]
         },
         "PHYS-H515": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "  radioactivity and ecosystems  fortemps 2001  isb"
-            ]
-        },
-        "POLI-D439": {
-            "[^a-z]ecolo[^ ]+": [
-                "nout in manitoba  an ecological analysis\u201d  canadian"
-            ]
-        },
-        "PROJ-H502": {
-            "[^a-z]ecolo[^ ]+": [
-                "s of sustainability  ecology and energy as catal"
-            ]
-        },
-        "PROJ-P0602": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ournal of industrial ecology 12 6  789-800  jaco"
-            ]
-        },
-        "PROJ-P0802": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "me infrastructure et ecologie  louise  et en part"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "tropolitains et des \u00e9cosyst\u00e8mes r\u00e9gionaux  pour ce ",
-                "m\u00e9tabolisme urbain  \u00e9cosyst\u00e8mes naturels  etc   du "
-            ]
-        },
-        "PROJ-P1002": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ournal of industrial ecology 12 6  789-800  jaco"
-            ]
-        },
-        "SAPU-L4310": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " soci\u00e9t\u00e9 \u2022 le mod\u00e8le \u00e9cologique de uri bronfenbrenn",
-                "brenner u  1979  the ecology of human developmen"
+            "nucleaire---pollu(ant|tion)---environnement": [
+                "---notions de physique nucleaire  effets des rayonne---ue et terrestre des polluants radioactifs  trans---ontamination dans l'environnement  donner les notions"
             ]
         },
         "SOCA-D4996": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " th\u00e9oriques  comme l\u2019\u00e9cologie culturelle et l\u2019eth",
-                "rts de la  political ecology en mati\u00e8re de compr"
-            ]
-        },
-        "SOCA-D550": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "iques  politiques et \u00e9cologiques  quelles sont les r",
-                "vers contextes socio-\u00e9cologiques       depuis les an",
-                "iques  politiques et \u00e9cologiques  cours  lectures  d"
-            ]
-        },
-        "TRAD-B4006": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " actes des congr\u00e8s  \u25cfecolotrain  https //translatio",
-                "/learning-center/  \u25cf ecolomedia  https //translatio"
-            ]
-        },
-        "TRAD-B4023": {
-            "d\u00e9fis? environnement[^ ]+": [
-                "conomiques face aux d\u00e9fis environnementaux et sociaux  \u00e9d  mar"
+            "ecologi---(political ecology|ecologie politique)---environnement": [
+                "---theoriques  comme l'ecologie culturelle et l'et--- aux apports de la  political ecology en matiere de compr---anthropologie de l'environnement ce cours de 24h com"
+            ],
+            "ecologi---multispecies stud(y|ies)---environnement": [
+                "---theoriques  comme l'ecologie culturelle et l'et---ales ainsi que des  multispecies studies   le troisieme et d---anthropologie de l'environnement ce cours de 24h com"
             ]
         },
         "TRAN-B2000": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ade  f    \u00e9l\u00e9ments d\u2019\u00e9cologie     \u00e9cologie appliq",
-                "ments d\u2019\u00e9cologie     \u00e9cologie appliqu\u00e9e   paris  "
-            ]
-        },
-        "URBA-H9009": {
-            "[^a-z]ecolo[^ ]+": [
-                "   urban ecosystems  ecological principles for the ",
-                "oherty  eds   2010   ecological urbanism   baden  l",
-                " 2013  resilience in ecology and urban design  l"
-            ]
-        },
-        "URBA-P706": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "cago  naissance de l\u2019\u00e9cologie urbaine  paris  fla"
+            "nucleaire---pollu(ant|tion)---environnement": [
+                "---rces fossiles &amp  nucleaire - renouvelables  et---bles  et apercu des polluants principaux    il e---impact sanitaire et environnemental significatif  res"
             ]
         },
         "URBA-P9006": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "me infrastructure et ecologie  louise  et en part",
-                "ciale  \u00e9conomique et \u00e9cologique               d\u00e9mon",
-                "16   toward an urban ecology   scape   new york "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "t plus attentif des \u00e9cosyst\u00e8mes environnants  moins",
-                "tropolitains et des \u00e9cosyst\u00e8mes r\u00e9gionaux  pour ce "
-            ]
-        },
-        "URBA-P9008": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "s liaisons vertes et \u00e9cologiques urbaines  analyse d"
+            "ecologi---(anthropocene|transition (energetique|sociale|climatiq))": [
+                "---e infrastructure et ecologie  louise  et en par---dre aux defis de la transition sociale  economique et ecol"
             ]
         },
         "VETE-G2206": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "    ----      partim ecologie  ce cours commence ",
-                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie et continue ensuite",
-                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie     du logement des",
-                "    ----      partim ecologie  l'objectif du cour",
-                "'objectif du cours d'\u00e9cologie appliqu\u00e9e aux anima",
-                "    ----      partim ecologie  ce cours  tant pou",
-                "     ----     partim ecologie   "
-            ]
-        }
-    },
-    "climatology": {
-        "ARCH-H502": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                " urbanism in age of climate change   washington dc  is"
-            ]
-        },
-        "BING-F1001": {
-            "chang[^ ]+ clima[^ ]+": [
-                "n m\u00eame mouvement le changement climatique  la chute de la bio",
-                "e  g\u00e9nie g\u00e9n\u00e9tique  changements climatiques      dans sa vie pr"
-            ]
-        },
-        "BING-F410": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ls et anthropiques  changements climatiques  eutrophisation  su"
-            ]
-        },
-        "BING-F415": {
-            "climatolog[^ ]+": [
-                "r\u00e9gulation et la bioclimatologie  la physiologie de "
-            ]
-        },
-        "CHIM-H302": {
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "es et brouillards   gaz \u00e0 effet de serre  gaz d\u00e9truisant l'o"
-            ]
-        },
-        "DROI-C5100": {
-            "chang[^ ]+ clima[^ ]+": [
-                "de lutte contre les changements climatiques  le droit selon l'e"
-            ]
-        },
-        "ENVI-F1001": {
-            "chang[^ ]+ clima[^ ]+": [
-                "n m\u00eame mouvement le changement climatique  la chute de la bio",
-                "linga  p   2013  le changement climatique  mythes  r\u00e9alit\u00e9s e"
-            ]
-        },
-        "ENVI-F405": {
-            "climatolog[^ ]+": [
-                "e introduction \u00e0 la climatologie et la m\u00e9t\u00e9orologie "
+            "climat---environnement---ecologie": [
+                "---ge  le bruit  la bioclimatologie  l'isolation ---al  au respect de l'environnement  a la qualite et la---ethnographie et ecologie des animaux domesti"
             ],
-            "chang[^ ]+ clima[^ ]+": [
-                "ents et impacts des changements climatiques  aux m\u00e9canismes pos",
-                "a probl\u00e9matique des changements climatiques dans ses dimensions"
-            ],
-            "risque[^ ]+ clima[^ ]+": [
-                "issions  impacts et risques climatiques  liens avec les aut"
-            ],
-            "(?:[\u00e9e]missions? )?(?:de )?gaz (?:[\u00e0a] )?(?:effets? )(?:de )?serre": [
-                "ssions anthropiques de gaz \u00e0 effet de serre  impacts  et politi"
-            ]
-        },
-        "ENVI-F504": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ationale            changement climatique 1   in\u00e9galit\u00e9s des ",
-                "tionnels            changement climatique 2   in\u00e9galit\u00e9s face",
-                "s\u00e9curit\u00e9            changement climatique 3   conflits et opp",
-                "bal et in\u00e9galit\u00e9s   changement climatique et catastrophes nat",
-                " la g\u00e9opolitique du changement climatique  \u00e0 la fois dans l\u2019i"
-            ]
-        },
-        "ENVI-F526": {
-            "chang[^ ]+ clima[^ ]+": [
-                "fet de serre et les changements climatiques  ce cours a pour bu",
-                "it\u00e9 de l\u2019air et aux changements climatiques  cours th\u00e9orique so"
-            ]
-        },
-        "ENVI-S101": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ites de la plan\u00e8te  changement climatique  biodiversit\u00e9  ress"
-            ]
-        },
-        "ETHI-F1001": {
-            "chang[^ ]+ clima[^ ]+": [
-                "culture   causes du changement climatique actuel   g\u00e9nomique "
-            ]
-        },
-        "GEOG-F102": {
-            "contextes? clima[^ ]+": [
-                "re  g\u00e9omorphologie  contexte climatique  bilan \u00e9nerg\u00e9tique "
-            ]
-        },
-        "GEOG-F203": {
-            "climatolog[^ ]+": [
-                "climatologie  le climat de la te"
-            ]
-        },
-        "GEOG-F207": {
-            "climatolog[^ ]+": [
-                "ion des \u00e9tapes pal\u00e9oclimatologiques r\u00e9gionales et compa"
-            ]
-        },
-        "GEOG-F307": {
-            "climatolog[^ ]+": [
-                "ion des \u00e9tapes pal\u00e9oclimatologiques r\u00e9gionales et compa"
-            ]
-        },
-        "GEOG-F408": {
-            "climatolog[^ ]+": [
-                "  glaciologiques et climatologiques  r\u00e9analyse des donn",
-                "les glaciologiques  climatologiques et g\u00e9omorphologique"
-            ]
-        },
-        "GEOG-F410": {
-            "chang[^ ]+ clima[^ ]+": [
-                "essentiellement aux changements climatiques qui ont eu lieu au ",
-                "i e   for\u00e7ages  des changements climatiques  le temps de r\u00e9pons"
-            ],
-            "processus clima[^ ]+": [
-                "r coh\u00e9rence  et les processus climatiques sous-jacents  cours"
-            ]
-        },
-        "GEST-H506": {
-            "chang[^ ]+ clima[^ ]+": [
-                "ement durable et le changement climatique  r\u00f4le des principal"
-            ]
-        },
-        "MECA-H417": {
-            "(?:carbon dyoxide|co2?) emissions?": [
-                "ed topics  biomass  co2 emissions and carbon capture "
-            ]
-        },
-        "ORIE-B2071": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "\u00e9n\u00e9ral tels que  le r\u00e9chauffement climatique  les nouvelles tech"
-            ]
-        },
-        "POLI-D445": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                "development o 15/05 climate change \uf0b7 seminars o 26/02 "
-            ]
-        },
-        "POLI-O417": {
-            "greenhouse gas(es)?": [
-                "ude the emission of greenhouse gases and air pollutants "
-            ],
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                " they contribute to climate change  damage natural eco"
-            ]
-        },
-        "URBA-H9009": {
-            "climate (?:change|sceptic|processus|physics|mitigation|strategy|conditions)": [
-                "anism in the age of climate change   washington dc  is"
-            ]
-        },
-        "URBA-Y707": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "aux al\u00e9as naturels  r\u00e9chauffement climatique        et humains  "
-            ]
-        },
-        "VETE-G2206": {
-            "climatolog[^ ]+": [
-                "ge  le bruit  la bioclimatologie  l'isolation  la ve"
+            "ecologi---climat---(elevage|agriculture|(developpement|amenagement) du territoire)": [
+                "---ethnographie et ecologie des animaux domest---ge  le bruit  la bioclimatologie  l'isolation ---ive historique de l'elevage  depuis les origine"
             ]
         }
     },
     "durability": {
-        "ARCH-H300": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "mpte des aspects de d\u00e9veloppement durable aux travers de choi"
-            ]
-        },
         "ARCH-H400": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                " general context of sustainable development             explore"
+            "sustainab(ility|le)---mobility": [
+                "---sustainable urban design studio---k                   mobility  structure  delinea"
             ]
         },
         "ARCH-P7119": {
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---ohn   understanding sustainable development   routledge  2015  ---ence regionale de l'environnement et des nouvelles en---aed1 - architecture ecologies durabilites   l'e"
+            ],
             "architectures? durab[^ ]+": [
-                "        questions d\u2019architecture durable     bernard deprez ",
-                "s durables et des \u00ab architectures durables \u00bb  th\u00e9orie des comm"
+                "        questions d'architecture durable     bernard deprez ",
+                " durables et des << architectures durables >>  theorie des com"
+            ]
+        },
+        "ARCH-P8119": {
+            "(architecture|construction) durable---ecologi---materia(ux|ls)": [
+                "---avec ces notions du construction durable  \"passif\"  l'acv  l---aed2 - architecture ecologies durabilites   l'e---e a des systemes et materiaux alternatifs et dura"
             ]
         },
         "BING-F1001": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ar les \u00e9cosyst\u00e8mes  d\u00e9veloppement durable  g\u00e9nie g\u00e9n\u00e9tique  c"
-            ]
-        },
-        "BING-F3004": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " face aux enjeux du d\u00e9veloppement durable                    "
+            "environnement---(de)?pollution---developpement durable": [
+                "---et du bioingenieur  environnement et societe partie 1---le  exploitation et pollution de l'eau  rejets da---ar les ecosystemes  developpement durable  genie genetique  c"
             ]
         },
         "BING-F4003": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnementaux du d\u00e9veloppement durable \u00e0 ses activit\u00e9s pro"
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---environnementaux du developpement durable a ses activites pro---omiques  sociaux et environnementaux des modes de pro---riculture  de l'agroecologie  de la sylvicultur"
             ]
         },
         "BING-F403": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnementaux du d\u00e9veloppement durable \u00e0 ses activit\u00e9s pro"
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---environnementaux du developpement durable a ses activites pro---es a l'impact sur l'environnement  la qualite et la t---ra d'une vision agroecologique des grandes prod"
+            ]
+        },
+        "BING-H5001": {
+            "(circular|regenerative) economy": [
+                "onomy/processes and circular economy pretreatment for bi",
+                "o better pursue the circular economy for the future biob"
             ]
         },
         "BIOL-F2001": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " face aux enjeux du d\u00e9veloppement durable                    "
+            "developpements? durables?---transition": [
+                "--- face aux enjeux du developpement durable                    ---uges    les grandes transitions evolutives de la l"
             ]
         },
         "BIOL-F4001": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnementaux du d\u00e9veloppement durable \u00e0 ses activit\u00e9s pro"
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---environnementaux du developpement durable a ses activites pro---res vivants et leur environnement notamment afin d'en---behavioural ecology in natural and man-"
             ]
         },
         "CHIM-F430": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " chimie verte et le d\u00e9veloppement durable  acqu\u00e9rir des compl"
+            "chimie verte---developpement durable": [
+                "---ions de base sur la chimie verte et le developpement--- chimie verte et le developpement durable  acquerir des compl"
             ]
         },
         "CHIM-F474": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ronnement  comme le d\u00e9veloppement durable  chimie verte   la ",
-                " une perspective de d\u00e9veloppement durable          donner les"
+            "developpement durable---(problem(e|atique)s?|perturbations?|impacts?|droits?) (d'|de l')?environnement": [
+                "---ronnement  comme le developpement durable  chimie verte   la ---une description des problematiques environnementales qu'ils engendre"
+            ],
+            "chimie verte---developpement durable": [
+                "---eloppement durable  chimie verte   la toxicite des s---ronnement  comme le developpement durable  chimie verte   la "
+            ],
+            "environnement---(de)?pollution---developpement durable": [
+                "---chimie de l'environnement et risques chimique---composes en jeu  la pollution s'exprime localemen---ronnement  comme le developpement durable  chimie verte   la "
             ]
         },
-        "CHIM-S201": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "urse is part of the sustainable development initiative of the s",
-                "cs and management  \u201csustainable development@sbsem\u201d  definition "
+        "CHIM-H504": {
+            "(circular|regenerative) economy": [
+                "ineering aspects of circular economy"
+            ]
+        },
+        "CHIM-H522": {
+            "(circular|regenerative) economy": [
+                "in the framework of circular economy  part ii - operatio",
+                "arious practices of circular economy  giving the keys to"
+            ]
+        },
+        "CNST-P1007": {
+            "(architecture|construction) durable---ecologi---materia(ux|ls)": [
+                "---materiaux et sur la construction durable  l'objectif du cour---sation sur le choix ecologique des materiaux et---materiaux et construction 1  "
             ]
         },
         "CNST-P3006": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "loise en mati\u00e8re de d\u00e9veloppement durable   la profession d'a"
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---loise en matiere de developpement durable   la profession d'a---us  en regenerant l'environnement par le projet  1 le---7-29940/  magazine \"ecologik\"  https //www ecol"
             ]
         },
         "DROI-C5021": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "         concepts - d\u00e9veloppement durable         instruments"
+            "developpement durable---(problem(e|atique)s?|perturbations?|impacts?|droits?) (d'|de l')?environnement": [
+                "---         concepts - developpement durable         instruments---droit de l'environnement '     environmental"
             ]
         },
         "DROI-S400": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "  lo 1 1  integrate sustainable development into problem analys"
+            "sustainab(ility|le)---mobility": [
+                "---  lo 1 1  integrate sustainable development into pr---ons - international mobility  the example of the"
             ]
         },
-        "ECON-S2001": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " \u00b7      int\u00e9grer le d\u00e9veloppement durable dans l\u2019analyse     "
-            ]
-        },
-        "ECON-S2002": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "si les questions de d\u00e9veloppement durable  justice climatique",
-                "x int\u00e9ress\u00e9s par le d\u00e9veloppement durable     bourban  m   20"
-            ]
-        },
-        "ECON-S3001": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "is des questions de d\u00e9veloppement durable          adopter un"
-            ]
-        },
-        "ECON-S307": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "crit\u00e8res propres au d\u00e9veloppement durable     trouver  diff\u00e9r",
-                "lo 1 2  int\u00e9grer le d\u00e9veloppement durable dans l'analyselo 2 "
+        "ENVI-D500": {
+            "analyse de cycle de vie": [
+                " environnementales  analyse de cycle de vie  reglementation rea"
             ]
         },
         "ENVI-F409": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnementaux du d\u00e9veloppement durable a\u0300 ses activit\u00e9s pr",
-                "   environnement et d\u00e9veloppement durable  une approche m\u00e9ta-",
-                " 2007   economie du d\u00e9veloppement durable   2i\u00e8me \u00e9dition   d"
+            "developpement durable---(problem(e|atique)s?|perturbations?|impacts?|droits?) (d'|de l')?environnement": [
+                "---environnementaux du developpement durable a ses activites pro---construits face aux problemes environnementaux  on abordera plu"
+            ],
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---environnementaux du developpement durable a ses activites pro--- face aux problemes environnementaux  on abordera plu---economie ecologique le cours aborder"
+            ],
+            "economie ecologique": [
+                "economie ecologique le cours abordera s",
+                "onnementale et de l'economie ecologique  une serie limitee ",
+                "che heterodoxe de l'economie ecologique  contribution au pr"
+            ],
+            "ecological economics": [
+                "tagl sigrid  2005   ecological economics  an introduction  c"
+            ]
+        },
+        "ENVI-F452": {
+            "(durabilite|materiaux)---analyse (du )?cycle de vie": [
+                "---e multi-criteres la durabilite environnementale es---indicateurs         analyse du cycle de vie et empreintes      "
+            ]
+        },
+        "ENVI-F5001": {
+            "economie ecologique": [
+                "onomie politique et economie ecologique  tom bauler        "
             ]
         },
         "ENVI-F510": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " principes          d\u00e9veloppement durable             bloc 2 "
+            "developpement durable---(problem(e|atique)s?|perturbations?|impacts?|droits?) (d'|de l')?environnement": [
+                "--- principes          developpement durable             bloc 2 ---droit de l'environnement au cours des 40 der"
             ]
         },
         "ENVI-F531": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "tal changes towards sustainable development  it provides a vari"
-            ]
-        },
-        "ENVI-L505": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "e deux sc\u00e9narios de d\u00e9veloppement durable                    "
+            "sustainab(ility|le)---mobility": [
+                "---sustainability transitions  dynami---gical systems  e g  mobility  energy  agricultur"
+            ],
+            "(circular|regenerative) economy": [
+                "  water management  circular economy   the course presen"
             ]
         },
         "ENVI-P1003": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "et am\u00e9nager avec le d\u00e9veloppement durable   le moniteur  1996"
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---et amenager avec le developpement durable   le moniteur  1996---e l'homme et de son environnement bati  quels sont le--- propose un cours d'ecologie en architecture  i"
+            ],
+            "developpement durable---(anthropocene|transition (energ|social|climat))": [
+                "---et amenager avec le developpement durable   le moniteur  1996---tiste   l'evenement anthropocene   seuil  2013    br"
             ]
         },
-        "ENVI-S101": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "le regard global du d\u00e9veloppement durable  au terme de cette ",
-                "x soci\u00e9taux li\u00e9s au d\u00e9veloppement durable et leur complexit\u00e9 ",
-                " peut contribuer au d\u00e9veloppement durable et comment elles pe",
-                "\u00e9es \u00e0 la r\u00e9alit\u00e9 du d\u00e9veloppement durable  \u2022 de suivre les di",
-                "ours th\u00e9matiques en d\u00e9veloppement durable  dans la suite du b",
-                "lo 1 2  int\u00e9grer le d\u00e9veloppement durable dans l'analyse    l"
+        "GEOG-Y035": {
+            "sustainab(ility|le)---mobility": [
+                "---sustainable mobility and logist---sustainable mobility and logistics"
             ]
         },
         "GEOL-F426": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ans une approche de d\u00e9veloppement durable  pr\u00e9ciser  au trave"
-            ]
-        },
-        "GEST-H506": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "en entre \u00e9nergie et d\u00e9veloppement durable et le changement cl",
-                "ue dans le cadre du d\u00e9veloppement durable  examiner le foncti"
-            ]
-        },
-        "GEST-S2002": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "rse is part of the  sustainable development initiative of the s",
-                "cs and management  \u201csustainable development@sbsem\u201d  see profile"
-            ]
-        },
-        "GEST-S204": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "urse is part of the sustainable development initiative of the s",
-                "cs and management  \u201csustainable development@sbsem\u201d   we put a l"
+            "developpement durable---materia(ux|ls)---gisement": [
+                "---ans une approche de developpement durable  preciser  au trave---gisement de <<  raw materials siliceux  >>  utili---iption de plusieurs gisements metalliferes et di"
             ]
         },
         "GEST-S3002": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "    strat\u00e9gie &amp  d\u00e9veloppement durable    transports publi",
-                "riale   int\u00e9grer le d\u00e9veloppement durable dans l'analyse   ad"
+            "developpement durable---(problem(e|atique)s?|perturbations?|impacts?|droits?) (d'|de l')?environnement": [
+                "---    strategie &amp  developpement durable    transports publi---on  autonomisation  impact environnemental     energie  enje"
             ]
         },
-        "GEST-S303": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "urse is part of the sustainable development initiative of the s",
-                "cs and management  \u201csustainable development@sbsem\u201d       market",
-                "s course integrates sustainable development at every stage of t"
+        "GEST-S471": {
+            "(durabilite|materiaux)---analyse (du )?cycle de vie": [
+                "---secteur prive et la durabilite          apercu his---olisme industriel   analyse du cycle de vie   comptabilite carb"
+            ],
+            "(developpement durable|sustainable development)---environnement---(ecolog[iy]|\u00e9cosystem)": [
+                "---management and sustainable development   constraints and o---ement economique et environnement              indica--- quelques principes ecologiques de base       p"
             ]
         },
-        "GEST-S307": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "urse is part of the sustainable development initiative of the s",
-                "cs and management  \u201csustainable development@sbsem\u201d      what ma",
-                "ntrepreneurship and sustainable development matter for our soci"
-            ]
-        },
-        "GEST-S407": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "    lo1 1 integrate sustainable development into problem analys"
-            ]
-        },
-        "GEST-S442": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                "2 2       integrate sustainable development into problem analys",
-                "2 2       integrate sustainable development into problem analys"
-            ]
-        },
-        "MSTL-F601": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "orts  territoire et d\u00e9veloppement durable  et les activit\u00e9s d"
+        "MECA-H417": {
+            "sustainab(ility|le)---mobility": [
+                "---sustainable energy today  energ---apture and storage  mobility  near zero emission"
             ]
         },
         "MSTL-F602": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ent la dimension du d\u00e9veloppement durable dans l\u2019analyse  il "
-            ],
             "gestio[^ ]+ durab[^ ]+": [
-                "entent en termes de gestion durable  d\u2019autre part  les "
-            ]
-        },
-        "MSTL-F603": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " une perspective de d\u00e9veloppement durable  cette n\u00e9cessit\u00e9 d\u2019"
-            ]
-        },
-        "MSTL-F604": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " une perspective de d\u00e9veloppement durable  une attention part"
+                "entent en termes de gestion durable  d'autre part  les "
             ]
         },
         "MSTL-F611": {
             "gestio[^ ]+ durab[^ ]+": [
-                "iques en mati\u00e8re de gestion durable du territoire  des "
-            ]
-        },
-        "MSTL-H601": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "orts  territoire et d\u00e9veloppement durable  et les activit\u00e9s d"
-            ]
-        },
-        "PHYS-S201": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ns des objectifs de d\u00e9veloppement durable valid\u00e9s par l\u2019onu  ",
-                "cts \u00e9nerg\u00e9tiques du d\u00e9veloppement durable  outre 20 s\u00e9ances d",
-                " lo 1 3 int\u00e9grer le d\u00e9veloppement durable dans l\u2019analyse     "
-            ]
-        },
-        "POLI-D504": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ternationales  omc  d\u00e9veloppement durable       sont \u00e9galemen"
-            ]
-        },
-        "PROJ-H417": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnementaux du d\u00e9veloppement durable a\u0300 ses activit\u00e9s pr"
+                "iques en matiere de gestion durable du territoire  des "
             ]
         },
         "PROJ-H502": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                " 7  real estate and sustainable development  8  construction co"
+            "sustainab(ility|le)---mobility": [
+                "--- 7  real estate and sustainable development  8  con---mplexity  heritage  mobility             to elab"
             ]
         },
         "SAPU-L4021": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "l'environnement  le d\u00e9veloppement durable et ses impacts sur "
+            "developpement durable---(problem(e|atique)s?|perturbations?|impacts?|droits?) (d'|de l')?environnement": [
+                "---l'environnement  le developpement durable et ses impacts sur ---enir et ameliorer l'impact de l'environnement sur la sante humain"
+            ]
+        },
+        "SOCA-Y506": {
+            "sustainable development goals": [
+                "development and the sustainable development goals  sdgs "
             ]
         },
         "TOUR-F425": {
             "gestio[^ ]+ durab[^ ]+": [
-                "   pertinence d'une gestion durable pour les op\u00e9rateurs",
-                "base associ\u00e9es \u00e0 la gestion durable des entreprises tou",
-                "pes et outils d\u2019une gestion durable vus au cours       "
-            ]
-        }
-    },
-    "society": {
-        "ECON-S2002": {
-            "justice climat[^ ]+": [
-                "eloppement durable  justice climatique  interg\u00e9n\u00e9rationnel",
-                "   2018   penser la justice climatique  paris  presses uni"
+                "   pertinence d'une gestion durable pour les operateurs",
+                "base associees a la gestion durable des entreprises tou",
+                "pes et outils d'une gestion durable vus au cours       "
             ]
         },
-        "ENVI-F405": {
-            "politiques? climat[^ ]+": [
-                "s l\u00e9gislatifs de la politique climatique europ\u00e9enne   les en",
-                "et long terme de la politique climatique en belgique appr\u00e9he"
-            ],
-            "accords? de paris(?:(?: sur| pour) le climat)?": [
-                " de climat  unfccc  accord de paris    le cadre institu"
+        "URBA-H9009": {
+            "(circular|regenerative) economy": [
+                " sustainability and circular economy introduction  urban",
+                "lity challenges and circular economy perspectives  susta",
+                "banism  sustainable circular economy  concepts and appro",
+                "with an emphasis on circular economy perspectives and su",
+                "with an emphasis on circular economy perspectives and su"
+            ]
+        },
+        "URBA-P9009": {
+            "(circular|regenerative) economy": [
+                "asses   resilience  circular economy  urban production t"
             ]
         }
     }
