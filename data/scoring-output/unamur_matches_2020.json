@@ -1,476 +1,103 @@
 {
-    "decarbonization": {
+    "climate": {
         "EINGM107": {
             "(?:bilan[^ ]+|empreint[^ ]+) carbon[^ ]+": [
                 "  analyse des flux  empreintes carbone       normes qualit"
             ]
-        }
-    },
-    "energy": {
-        "MMEDB331": {
-            "hydro-?[\u00e9e]l[\u00e9e]ctri[^ ]+": [
-                "e         equilibre hydro-\u00e9lectrique         physiologie"
-            ]
-        },
-        "SBOEM260": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "cides  production d'\u00e9nergie verte         il s'effect"
-            ]
-        },
-        "SCHIB111": {
-            "bilans? (?:d')?[\u00e9e]nerg[^ ]+": [
-                "riques      chap v  bilan \u00e9nerg\u00e9tique et \u00e9volution des tr"
-            ]
-        },
-        "SCHIM123": {
-            "photovolta[i\u00ef]ques?": [
-                "     4 c  mat\u00e9riaux photovolta\u00efques                   4",
-                "     4 c  mat\u00e9riaux photovolta\u00efques                 4 d"
-            ]
-        },
-        "SCHIM124": {
-            "[\u00e9e]nerg[^ ]+ fossiles?": [
-                "e l'\u00e9puisement de l'\u00e9nergie fossile et la prolongation ",
-                "e l'\u00e9puisement de l'\u00e9nergie fossile et la prolongation "
-            ]
-        },
-        "SCHIM223": {
-            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?)": [
-                "sources d'\u00e9nergie   energies renouvelables  pr\u00e9sentation des \u00e9",
-                "n  introduction aux \u00e9nergies vertes  pr\u00e9sentation du pr",
-                "ire   ~1h        5  \u00e9nergies renouvelables  photovolta\u00efque org",
-                "ique  ~2h        6  \u00e9nergies renouvelables  thermo\u00e9lectrique o",
-                " 2h        co 2  et \u00e9nergie renouvelables par photosynth\u00e8se  "
-            ],
-            "[\u00e9e]nerg[^ ]+ fossiles?": [
-                "s  pr\u00e9sentation des \u00e9nergies fossiles  p\u00e9trole  gaz natur",
-                "      1  mati\u00e8re et energies fossiles  p\u00e9trole  gaz natur"
-            ],
-            "photovolta[i\u00ef]ques?": [
-                "gies renouvelables  photovolta\u00efque organique  ~2h     "
-            ]
-        },
-        "SCHIM224": {
-            "(?:photovoltaic|solar|geothermal|hydro(electric)?)+( |-)?(energy|power)": [
-                "ronic materials and solar energy conversio"
-            ]
-        },
-        "SPHYM106": {
-            "photovolta[i\u00ef]ques?": [
-                "ux   diode  cellule photovolta\u00efque  senseurs  transpor"
-            ]
-        }
-    },
-    "consumption": {},
-    "environment": {
-        "DROIB330": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " civile au pr\u00e9judice \u00e9cologique font l'objet de la "
-            ]
-        },
-        "EINGB221": {
-            "d\u00e9fis? environnement[^ ]+": [
-                "       chapitre 1   d\u00e9fis environnementaux     chapitre 2   pr"
-            ]
-        },
-        "EINGM107": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "de cas       part 3  ecologie industrielle et th\u00e9"
-            ]
-        },
-        "FACCM301": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "nduira \u00e0 une vision \u00e9cosyst\u00e9mique du d\u00e9veloppement de"
-            ]
-        },
-        "FINT0039": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "s  crise \u00e9conomique  \u00e9cologique  sociale  politique"
-            ]
-        },
-        "LELVB002": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " vlaamse cultuur     ecologie     religie     pol"
-            ]
-        },
-        "LPHIB103": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "pr\u00e9hender les enjeux \u00e9cologiques contemporains  et c"
-            ]
-        },
-        "SBIOB001": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "  de cartographie  d'\u00e9cologie  de g\u00e9ographie  d'a"
-            ]
-        },
-        "SBIOB207": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "les traits et l'\u00e9tat \u00e9cologique des eaux de surface"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "les       bases des \u00e9cosyst\u00e8mes       pr\u00e9sentation "
-            ]
-        },
-        "SBIOB209": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "ies dans les divers \u00e9cosyst\u00e8mes qu'elles ont coloni"
-            ]
-        },
-        "SBIOB208": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " outils ad\u00e9quats \u00e0 l\u2019\u00e9cologie de terrain en abord"
-            ]
-        },
-        "SBIOB212": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "s et pratiques  de l'\u00e9cologie          objectifs ",
-                "aissances de base en \u00e9cologie g\u00e9n\u00e9rale  leur perm",
-                "        contenu    l'\u00e9cologie pr\u00e9cise les relatio"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " leur milieu   et l'\u00e9cosyst\u00e8me qui constitue le pl"
-            ]
-        },
-        "SBIOB229": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "la conservation et d\u2019\u00e9cologie pourront \u00eatre abord"
-            ]
-        },
-        "SBIOB309": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ises dans le cours d'\u00e9cologie g\u00e9n\u00e9rale  bac 2   a",
-                "quisition de donn\u00e9es \u00e9cologiques sur base d'\u00e9chantil"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " diff\u00e9rents types d'\u00e9cosyst\u00e8mes terrestres et aquat"
-            ]
-        },
-        "SBIOB326": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "  qui se destine \u00e0 l'\u00e9cologie  la physiologie ou "
-            ]
-        },
-        "SBIOB344": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "vironnement ou radio-\u00e9cologie   plusieurs autres "
-            ]
-        },
-        "SBIOB346": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "iff\u00e9rentes notions d'\u00e9cologie li\u00e9es au ph\u00e9nom\u00e8ne ",
-                "\u00e0 utiliser un mod\u00e8le \u00e9cologique simple      partie "
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                " fonctionnement des \u00e9cosyst\u00e8mes        partie esp\u00e8c",
-                " fonctionnement des \u00e9cosyst\u00e8mes      - entrainer le",
-                " fonctionnement des \u00e9cosyst\u00e8mes                    "
-            ]
-        },
-        "SBIOB362": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ncipaux aspects de l'\u00e9cologie animale  l'acc\u00e8s au",
-                "ures sociales  socio-\u00e9cologie et socio-biologie  "
-            ]
-        },
-        "SBIOB367": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "stress et concepts d'\u00e9cologie du stress et d'endo"
-            ]
-        },
-        "SBIOB368": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "tude de recherche en \u00e9cologie appliqu\u00e9e  souvent ",
-                "dans la domaine de l\u2019\u00e9cologie appliqu\u00e9e          "
-            ]
-        },
-        "SBIOM131": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "es vari\u00e9s tels que l'\u00e9cologie  la m\u00e9decine et la "
-            ]
-        },
-        "SBIOM201": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e8les au point de vue \u00e9cologie  cycle \u00e9volutif et "
-            ]
-        },
-        "SBOEM108": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "rrain pour \u00e9tudier l'\u00e9cologie des macro-invert\u00e9br",
-                "ons scientifiques en \u00e9cologie communautaire      ",
-                " \u00e9tude de terrain en \u00e9cologie aquatique          ",
-                " respectivement de l'\u00e9cologie des lacs et un de l",
-                " des lacs et un de l'\u00e9cologie des rivi\u00e8res       "
-            ]
-        },
-        "SBOEM112": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "iatement des donn\u00e9es \u00e9cologiques et introduire de no"
-            ]
-        },
-        "SBOEM124": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "entissage    cours d'\u00e9cologie mol\u00e9culaire enseign",
-                "es dans la recherche \u00e9cologique et \u00e9volutive  les \u00e9"
-            ]
-        },
-        "SBOEM142": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " perturbations de l\u2019\u00e9cosyst\u00e8me           contenu  "
-            ]
-        },
-        "SBOEM162": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "\u00e0 utiliser un mod\u00e8le \u00e9cologique pr\u00e9cod\u00e9 pour \u00e9value",
-                "inants  chimiques et \u00e9cologiques  des effets sur les",
-                "inants  chimiques et \u00e9cologiques  des effets sur les",
-                "plication de mod\u00e8les \u00e9cologiques pour quantifier les"
-            ],
-            "[\u00e9e]cosyst[^ ]+": [
-                "nces au niveau de l'\u00e9cosyst\u00e8me sont \u00e9galement disc",
-                "ants                \u00e9cosyst\u00e8mes  cons\u00e9quences des e",
-                "r les fonctions des \u00e9cosyst\u00e8mes                intr"
-            ]
-        },
-        "SBOEM165": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ess in evolution and ecology  methodology  exper",
-                "mics in evolutionary ecology with a focus on stu"
-            ]
-        },
-        "SBOEM237": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "des bases de donn\u00e9es \u00e9cologiques et physicochimiques",
-                "t interpr\u00e9ter l\u2019\u00e9tat \u00e9cologique sur base de ces don",
-                " pour estimer l'\u00e9tat \u00e9cologique d'un eau de surface",
-                "ur quantifier l\u2019\u00e9tat \u00e9cologique d\u2019une eau de surfac",
-                "'\u00e9volution de l'\u00e9tat \u00e9cologique d\u2019une eau de surfac",
-                "ur quantifier l\u2019\u00e9tat \u00e9cologique des eaux de surface",
-                "ple  calculer l'\u00e9tat \u00e9cologique          descriptio"
-            ]
-        },
-        "SGOGB210": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " notion de services ecosyst\u00e9miques au travers de cas c",
-                " notion de services ecosyst\u00e9miques au travers de cas c",
-                "uation des services \u00e9cosyst\u00e9miques pour une gestion te"
-            ]
-        },
-        "SGOLB303": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "sol - le sol dans l'\u00e9cosyst\u00e8me - ph\u00e9nom\u00e8nes de mig"
-            ]
-        },
-        "SSMRM102": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "concept de services ecosyst\u00e9miques  dans le contexte i",
-                "concept de services ecosyst\u00e9miques est introduit comme"
-            ]
-        },
-        "SSMRM103": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "ts de syst\u00e8mes socio-\u00e9cologiques et de r\u00e9silience  a",
-                "n aux syst\u00e8mes socio-\u00e9cologiques  dans le contexte d",
-                "lexit\u00e9 et r\u00e9silience \u00e9cologique  articul\u00e9 autour de",
-                " de r\u00e9silience socio-\u00e9cologiques  il aborde  entre a"
-            ]
-        },
-        "SSMRM104": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                " la transition socio-\u00e9cologiques  et leurs implicati",
-                "es transitions socio-\u00e9cologiques    collapsologie  i"
-            ]
-        },
-        "SSPSB102": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "  en biologie  ou en \u00e9cologie  plus g\u00e9n\u00e9ralement "
-            ]
-        },
-        "SSPSB107": {
-            "[\u00e9e]cosyst[^ ]+": [
-                " de l'animal et des \u00e9cosyst\u00e8mes dans la biosph\u00e8re e"
-            ]
-        },
-        "SVETB205": {
-            "[^a-z][\u00e9e]colo[^ ]+": [
-                "'objectif du cours d'\u00e9cologie appliqu\u00e9e aux anima",
-                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie et continue ensuite",
-                "ncipes g\u00e9n\u00e9raux de l'\u00e9cologie         du logement"
-            ]
-        },
-        "SVETB310": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "avec la multitude d\u2019\u00e9cosyst\u00e8mes colonis\u00e9s par les m"
-            ]
-        },
-        "ZOOL2000-1": {
-            "[\u00e9e]cosyst[^ ]+": [
-                "alimentaires et les \u00e9cosyst\u00e8mes  les bases du calcu"
-            ]
-        }
-    },
-    "climatology": {
-        "EFAEM057": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "innovation       le r\u00e9chauffement climatique       drogues      "
-            ]
-        },
-        "EINGB221": {
-            "climatolog[^ ]+": [
-                "ermodynamique     - climatologie     - physique des "
-            ],
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "d\u00e9chets  pollution  r\u00e9chauffement climatique     li\u00e9es au domain"
-            ]
         },
         "SBIOB153": {
-            "chang[^ ]+ clima[^ ]+": [
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
                 " biodiversit\u00e9 et du changement climatique       ma\u00eetriser le ",
                 " biodiversit\u00e9 et du changement climatique          contenu   ",
                 " biodiversit\u00e9 et du changement climatique           table des"
-            ],
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "oxyde de carbone et r\u00e9chauffement climatique     7  biologie de "
-            ]
-        },
-        "SBIOB229": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "ternationale sur le r\u00e9chauffement climatique  etc  pratiquement "
-            ]
-        },
-        "SCHIM124": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "ce aux probl\u00e8mes du r\u00e9chauffement climatique  de l'\u00e9puisement de",
-                "ce aux probl\u00e8mes du r\u00e9chauffement climatique  de l'\u00e9puisement de"
             ]
         },
         "SCHIM229": {
-            "chang[^ ]+ clima[^ ]+": [
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
                 "d\u00e9fi \u00e9nerg\u00e9tique et changement climatique     iii  chimie de "
             ]
         },
         "SGOGB302": {
-            "climatolog[^ ]+": [
-                "\u00e9orologie et temps  climatologie et climat  syst\u00e8me ",
-                "\u00e9orologie et temps  climatologie et climat  syst\u00e8me ",
-                "\u00e0 r\u00e9aliser un bilan climatologique mensuel"
-            ],
-            "chang[^ ]+ clima[^ ]+": [
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
                 "ent est mis sur les changements climatiques et l'amplification ",
                 "ns  intertropicaux  changements climatiques  effet de serre    ",
                 "determinants 9  les changements climatiques - l'effet de serre "
-            ],
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "dans le contexte du r\u00e9chauffement climatique           objectifs"
-            ]
-        },
-        "SGOLB304": {
-            "climatolog[^ ]+": [
-                "ie  diagen\u00e8se  pal\u00e9oclimatologie                 obj"
-            ]
-        },
-        "SGOLB311": {
-            "climatolog[^ ]+": [
-                " la g\u00e9ologie   pal\u00e9oclimatologie  biostratigraphie e"
             ]
         },
         "SSMRM102": {
-            "chang[^ ]+ clima[^ ]+": [
+            "(rechauffement|chang[^ ]+|context[^ ]+|att[\u00e9e]nu[^ ]+|project[^ ]+|impacts?|mod[\u00e9e\u00e8]l[^ ]+) clima[^ ]+": [
                 "changement global   changement climatique  esp\u00e8ces invasives ",
                 "tes de la plan\u00e8te   changement climatique  perturbation du cy"
             ]
+        }
+    },
+    "energy": {
+        "SCHIM223": {
+            "[\u00e9e]nerg[^ ]+ (?:renouvelab[^ ]+|vertes?|eolien|solaire|fossile)---environnement": [
+                "---sources d'\u00e9nergie   energies renouvelables  pr\u00e9sentation des \u00e9--- l'\u00e9nergie  et de l'environnement   au xxi\u00e8me si\u00e8cle "
+            ]
+        }
+    },
+    "environment": {
+        "DROIB330": {
+            "droit (de l')?environnement---protection (de l')environnement": [
+                "---droit de l'environnement et du d\u00e9veloppement--- analyse comment la protection de l'environnement et le d\u00e9veloppement"
+            ]
         },
-        "SSPSM101": {
-            "r\u00e9chauff[^ ]+ clima[^ ]+": [
-                "ette probl\u00e9matique  r\u00e9chauffement climatique  \u00e9puisement des res"
+        "LBRAI2110": {
+            "agro[- ]?[\u00e9e]colo[^ ]+": [
+                "elements of agroecology contenu    le descr"
             ]
         },
         "SVETB205": {
-            "climatolog[^ ]+": [
-                "ge  le bruit  la bioclimatologie  l'isolation  la ve"
+            "climat---environnement---ecologie": [
+                "---ge  le bruit  la bioclimatologie  l'isolation ---es composantes de l'environnement des animaux suscept---ecologie appliqu\u00e9e aux anima"
             ]
         }
     },
     "durability": {
         "DROIB330": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "environnement et au d\u00e9veloppement durable        comprendre l",
-                "notion nouvelle  le d\u00e9veloppement durable           contenu  ",
-                "environnement et le d\u00e9veloppement durable peuvent trouver pla",
-                "environnement et au d\u00e9veloppement durable  de leur port\u00e9e et ",
-                "roit au recours  le d\u00e9veloppement durable fait de plus son en",
-                "environnement et le d\u00e9veloppement durable un terrain favorabl"
-            ]
-        },
-        "ECGEB284": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "rd des objectifs de d\u00e9veloppement durable  odd  d\u00e9finis par l"
-            ]
-        },
-        "ECGEB321": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ns la dignit\u00e9       d\u00e9veloppement durable et spiritualit\u00e9    "
-            ]
-        },
-        "EDEVM334": {
-            "sustainable (?:development|consumption|management|practice|product[^ ]+|architecture)": [
-                " makers and promote sustainable development  this course will r"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---environnement et du d\u00e9veloppement durable acquis d'apprentiss---droit de l'environnement et du d\u00e9veloppement"
             ]
         },
         "EINGM107": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "es pour soutenir le d\u00e9veloppement durable     - r\u00e9flexion cri",
-                "ature syst\u00e9mique du d\u00e9veloppement durable      - compr\u00e9hensio",
-                "er des objectifs de d\u00e9veloppement durable     - analyse des o",
-                "re des objectifs de d\u00e9veloppement durable          contenu   ",
-                "ens\u00e9e syst\u00e9mique et d\u00e9veloppement durable [5h]     part 2  ou",
-                "t 2  technologie et d\u00e9veloppement durable [5h]         m\u00e9thod"
+            "analyse de cycle de vie": [
+                "de la technologie   analyse de cycle de vie  analyse des flux  "
+            ],
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---es pour soutenir le d\u00e9veloppement durable     - r\u00e9flexion cri--- et holistiques des impacts environnementaux d"
+            ]
+        },
+        "FINT0039": {
+            "\u00e9conomie circulaire": [
+                "   \u00ab les d\u00e9fis de l'\u00e9conomie circulaire \u00bb               j  "
             ]
         },
         "INFOM476": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " lien entre tics et d\u00e9veloppement durable  il vise \u00e0 sensibil",
-                "diants aux d\u00e9fis du d\u00e9veloppement durable et \u00e0 les faire r\u00e9fl",
-                "ition du concept de d\u00e9veloppement durable  - les indicateurs ",
-                " les indicateurs de d\u00e9veloppement durable   - les syst\u00e8mes de"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---informatique et d\u00e9veloppement durable acquis d'apprentiss---t\u00e8mes de management environnemental  - l'analyse du c"
             ]
         },
-        "SGOGB101": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "dans une optique de d\u00e9veloppement durable                    ",
-                "dans une optique de d\u00e9veloppement durable                    "
-            ]
-        },
-        "SGOGB310": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "dans une optique de d\u00e9veloppement durable et ce dans des cont",
-                "dans une optique de d\u00e9veloppement durable et ce dans des cont"
+        "SCHIM115": {
+            "\u00e9conomie circulaire": [
+                "s et b\u00e9n\u00e9fices de l'\u00e9conomie circulaire      - introduction"
             ]
         },
         "SGOLB303": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "ne r\u00e9flexion sur le d\u00e9veloppement durable           objectifs"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "---ne r\u00e9flexion sur le d\u00e9veloppement durable           objectifs---environnement et g\u00e9ologie acquis "
             ]
         },
         "SSMRM101": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                " rural  \u00e0 l\u2019aune du d\u00e9veloppement durable"
+            "(d\u00e9velopp[^ ]+|solutions?) durab[^ ]+---(impact|environnement|[\u00e9e]cologie)": [
+                "--- rural  \u00e0 l\u2019aune du d\u00e9veloppement durable---r les interactions  impacts et influences  ave"
             ]
         },
         "SSMRM103": {
             "gestio[^ ]+ durab[^ ]+": [
                 "rticipatifs pour la gestion durable des ressources natu"
             ]
-        },
-        "SSPSB107": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "s la perspective du d\u00e9veloppement durable  la troisi\u00e8me parti"
-            ]
-        },
-        "SSPSB208": {
-            "d\u00e9velopp[^ ]+ durab[^ ]+": [
-                "iques  \u00e9conomiques  d\u00e9veloppement durable  sant\u00e9 publique  l\u00e9"
-            ]
         }
-    },
-    "society": {}
+    }
 }
