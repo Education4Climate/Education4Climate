@@ -114,7 +114,7 @@ var app = Vue.createApp({
             // loads the programs and find the right school/program
 
             let searchedSchool = this.searchedSchoolId && this.searchedProgramCode ? this.schools.find(school => school.id == this.searchedSchoolId) : null;
-            this.programs = searchedSchool ? await this.programsManager.getPrograms() : [];
+            this.programs = await this.programsManager.getPrograms();
             this.searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
 
             // loads courses data
