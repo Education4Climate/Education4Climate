@@ -167,6 +167,10 @@ class CoursesManager {
 
             for (var i = 0; i < languages.length; i++) {
 
+                if (languages[i] != "en" && languages[i] != "fr" && languages[i] != "nl") {
+                    languages[i] = "other";
+                }
+
                 var id = -1;
 
                 for (var j = 0; j < this.coursesLanguages.length; j++) {
