@@ -33,16 +33,18 @@ def main(school: str, year: int):
         teachers_courses_df.loc[teacher, 'names'] = list(courses_df[courses_b]['name'])
     teachers_courses_df = teachers_courses_df.reset_index()
     teachers_courses_df.columns = ['teacher', 'courses_ids', 'courses_names']
+    teachers_courses_df['courses_number'] = teachers_courses_df["courses_names"].apply(lambda x: len(x))
 
-    # Save for mailing
     # Divide name and surname (some schools start with the surname, other with the name
     teachers_courses_df["name"] = teachers_courses_df["teacher"].apply(lambda teacher: teacher.split(" ")[-1])
     teachers_courses_df["surname"] = \
         teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[:-1]))
     teachers_courses_df = teachers_courses_df.drop('teacher', axis=1)
+
+    # Save for mailing
     teachers_mail_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_teachers_{year}.csv")
-    teachers_courses_df[['surname', 'name', 'courses_names']].to_csv(teachers_mail_fn)
+    teachers_courses_df[['surname', 'name', 'courses_names', 'courses_number']].to_csv(teachers_mail_fn)
 
 
 if __name__ == "__main__":
