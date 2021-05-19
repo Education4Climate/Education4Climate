@@ -51,7 +51,8 @@ class KULeuvenProgramSpider(scrapy.Spider, ABC):
         cycle = 'other'
         if 'bachelor' in program_name or 'Bachelor' in program_name:
             cycle = 'bac'
-        elif 'postgraduaat' in program_name or 'Postgraduaat' in program_name:
+        elif 'postgraduaat' in program_name or 'Postgraduaat' in program_name or \
+                'postgraduate' in program_name or 'Postgraduate' in program_name:
             cycle = 'postgrad'
         elif 'graduaat' in program_name or 'Graduaat' in program_name:
             cycle = 'grad'

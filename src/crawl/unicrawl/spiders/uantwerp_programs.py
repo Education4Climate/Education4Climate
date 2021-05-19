@@ -130,6 +130,7 @@ class UantwerpProgramSpider(scrapy.Spider, ABC):
     def parse_study_program(self, response, base_dict):
 
         # Find cycle based on url
+        # TODO: misses post-graduate, master na master, some masters
         base_dict["cycle"] = "other"
         if "master" in response.url:
             base_dict["cycle"] = "master"

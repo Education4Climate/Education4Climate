@@ -45,7 +45,8 @@ class VUBProgramSpider(scrapy.Spider, ABC):
             cycle = "bac"
         elif "Postgraduaat" in name or "Postgraduate" in name:
             cycle = 'postgrad'
-        elif "Schakelprogramma Master" in name or "Voorbereidingsprogramma Master" in name:
+        elif "Schakelprogramma Master" in name or "Voorbereidingsprogramma Master" in name \
+                or 'Educatieve master' in name:
             cycle = "other"
         elif 'Master' in name:
             cycle = "master"

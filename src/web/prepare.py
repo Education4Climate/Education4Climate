@@ -62,7 +62,7 @@ def exchange_fields(courses_df, programs_df):
     return courses_df
 
 
-def convert_faculty_to_thematics(courses_df, programs_df, school: str):
+def convert_faculty_to_fields(courses_df, programs_df, school: str):
     fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
     faculties_to_fields_df = pd.read_csv(fields_fn)
     faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
@@ -98,7 +98,7 @@ def main(school: str, year: int):
     courses_df = exchange_fields(courses_df, programs_df)
 
     # Convert faculties to disciplines
-    courses_df, programs_df = convert_faculty_to_thematics(courses_df, programs_df, school)
+    courses_df, programs_df = convert_faculty_to_fields(courses_df, programs_df, school)
 
     # Load scoring output
     scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")

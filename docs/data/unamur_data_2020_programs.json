@@ -1,23 +1,5 @@
 [
  {
-  "id":"040B",
-  "name":"Bachelier en histoire",
-  "faculty":"Facult\u00e9 de philosophie et lettres",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/040B\/2020",
-  "courses":[
-   "LELVB002"
-  ],
-  "field":"social science",
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
   "id":"100B",
   "name":"Bachelier en droit",
   "faculty":"Facult\u00e9 de droit",
@@ -25,7 +7,6 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/100B\/2020",
   "courses":[
-   "ECGEB284",
    "DROIB330",
    "FINT0039"
   ],
@@ -35,29 +16,8 @@
    "durability"
   ],
   "themes_scores":[
-   2,
-   2
-  ]
- },
- {
-  "id":"000B",
-  "name":"Bachelier en philosophie",
-  "faculty":"Facult\u00e9 de philosophie et lettres",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/000B\/2020",
-  "courses":[
-   "LPHIB103",
-   "SSPSM101"
-  ],
-  "field":"social science",
-  "themes":[
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
    1,
-   1
+   2
   ]
  },
  {
@@ -68,20 +28,13 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/460B\/2020",
   "courses":[
-   "MMEDB331",
-   "SBIOB001",
-   "SCHIB111",
    "SBIOB153"
   ],
   "field":"health",
   "themes":[
-   "energy",
-   "environment",
-   "climatology"
+   "climate"
   ],
   "themes_scores":[
-   2,
-   1,
    1
   ]
  },
@@ -93,17 +46,13 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/420B\/2020",
   "courses":[
-   "MMEDB331",
-   "SCHIB111",
    "SBIOB153"
   ],
   "field":"health",
   "themes":[
-   "energy",
-   "climatology"
+   "climate"
   ],
   "themes_scores":[
-   2,
    1
   ]
  },
@@ -115,54 +64,13 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/280K\/2020",
   "courses":[
-   "SCHIM224",
-   "SCHIM223",
-   "SPHYM106"
+   "SCHIM223"
   ],
   "field":"sciences",
   "themes":[
    "energy"
   ],
   "themes_scores":[
-   3
-  ]
- },
- {
-  "id":"251K",
-  "name":"Master de sp\u00e9cialisation en gestion des ressources aquatiques et aquaculture",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/251K\/2020",
-  "courses":[
-   "ZOOL2000-1"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"224M",
-  "name":"Master 60 in chemistry ",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/224M\/2020",
-  "courses":[
-   "SCHIM224",
-   "SCHIM124"
-  ],
-  "field":"sciences",
-  "themes":[
-   "energy",
-   "climatology"
-  ],
-  "themes_scores":[
-   2,
    1
   ]
  },
@@ -174,36 +82,16 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/210M\/2020",
   "courses":[
-   "SCHIM223",
-   "SSPSM101",
    "SGOGB302",
-   "SPHYM106"
+   "SCHIM223"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
+   "climate",
+   "energy"
   ],
   "themes_scores":[
-   2,
-   2
-  ]
- },
- {
-  "id":"200M",
-  "name":"Master 60 en sciences math\u00e9matiques",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/200M\/2020",
-  "courses":[
-   "SSPSM101"
-  ],
-  "field":"sciences",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
+   1,
    1
   ]
  },
@@ -215,55 +103,11 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/220M\/2020",
   "courses":[
-   "SCHIM124",
-   "SSPSM101",
-   "SCHIM123"
+   "SCHIM115"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
-  ],
-  "themes_scores":[
-   2,
-   2
-  ]
- },
- {
-  "id":"250M",
-  "name":"Master 60 en sciences biologiques",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/250M\/2020",
-  "courses":[
-   "SBIOM131",
-   "SSPSM101",
-   "SBOEM165"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
-   2,
-   1
-  ]
- },
- {
-  "id":"26AM",
-  "name":"Master in molecular microbiology, research focus",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/26AM\/2020",
-  "courses":[
-   "SBIOM201"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment"
+   "durability"
   ],
   "themes_scores":[
    1
@@ -277,22 +121,20 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/241M\/2020",
   "courses":[
-   "SSPSM101",
-   "SSMRM104",
-   "SSMRM101",
    "SSMRM103",
    "SSMRM102",
+   "SSMRM101",
    "DROIB330"
   ],
   "field":"sciences",
   "themes":[
+   "climate",
    "environment",
-   "climatology",
    "durability"
   ],
   "themes_scores":[
-   4,
-   2,
+   1,
+   1,
    3
   ]
  },
@@ -304,22 +146,20 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/243M\/2020",
   "courses":[
-   "SSPSM101",
-   "SSMRM104",
-   "SSMRM101",
    "SSMRM103",
    "SSMRM102",
+   "SSMRM101",
    "DROIB330"
   ],
   "field":"sciences",
   "themes":[
+   "climate",
    "environment",
-   "climatology",
    "durability"
   ],
   "themes_scores":[
-   4,
-   2,
+   1,
+   1,
    3
   ]
  },
@@ -331,22 +171,20 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/244M\/2020",
   "courses":[
-   "SSPSM101",
-   "SSMRM104",
-   "SSMRM101",
    "SSMRM103",
    "SSMRM102",
+   "SSMRM101",
    "DROIB330"
   ],
   "field":"sciences",
   "themes":[
+   "climate",
    "environment",
-   "climatology",
    "durability"
   ],
   "themes_scores":[
-   4,
-   2,
+   1,
+   1,
    3
   ]
  },
@@ -358,22 +196,20 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/242M\/2020",
   "courses":[
-   "SSPSM101",
-   "SSMRM104",
-   "SSMRM101",
    "SSMRM103",
    "SSMRM102",
+   "SSMRM101",
    "DROIB330"
   ],
   "field":"sciences",
   "themes":[
+   "climate",
    "environment",
-   "climatology",
    "durability"
   ],
   "themes_scores":[
-   4,
-   2,
+   1,
+   1,
    3
   ]
  },
@@ -385,21 +221,20 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/245M\/2020",
   "courses":[
-   "SSPSM101",
-   "SSMRM104",
-   "SSMRM101",
    "SSMRM103",
    "SSMRM102",
-   "DROIB330"
+   "DROIB330",
+   "SSMRM101",
+   "LBRAI2110"
   ],
   "field":"sciences",
   "themes":[
+   "climate",
    "environment",
-   "climatology",
    "durability"
   ],
   "themes_scores":[
-   4,
+   1,
    2,
    3
   ]
@@ -412,19 +247,17 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/212M\/2020",
   "courses":[
-   "SCHIM223",
-   "SSPSM101",
    "SGOGB302",
-   "SPHYM106"
+   "SCHIM223"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
+   "climate",
+   "energy"
   ],
   "themes_scores":[
-   2,
-   2
+   1,
+   1
   ]
  },
  {
@@ -435,19 +268,17 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/211M\/2020",
   "courses":[
-   "SCHIM223",
-   "SSPSM101",
    "SGOGB302",
-   "SPHYM106"
+   "SCHIM223"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
+   "climate",
+   "energy"
   ],
   "themes_scores":[
-   2,
-   2
+   1,
+   1
   ]
  },
  {
@@ -458,19 +289,17 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/21DM\/2020",
   "courses":[
-   "SCHIM223",
-   "SSPSM101",
    "SGOGB302",
-   "SPHYM106"
+   "SCHIM223"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
+   "climate",
+   "energy"
   ],
   "themes_scores":[
-   2,
-   2
+   1,
+   1
   ]
  },
  {
@@ -481,90 +310,16 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/21AM\/2020",
   "courses":[
-   "SCHIM223",
-   "SSPSM101",
    "SGOGB302",
-   "SPHYM106"
+   "SCHIM223"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
+   "climate",
+   "energy"
   ],
   "themes_scores":[
-   2,
-   2
-  ]
- },
- {
-  "id":"201M",
-  "name":"Master 120 en sciences math\u00e9matiques, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en perspectives professionnelles des math\u00e9matiques appliqu\u00e9es",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/201M\/2020",
-  "courses":[
-   "SSPSM101"
-  ],
-  "field":"sciences",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"202M",
-  "name":"Master 120 en sciences math\u00e9matiques, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en data science",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/202M\/2020",
-  "courses":[
-   "SSPSM101"
-  ],
-  "field":"sciences",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"20DM",
-  "name":"Master 120 en sciences math\u00e9matiques, \u00e0 finalit\u00e9 didactique",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/20DM\/2020",
-  "courses":[
-   "SSPSM101"
-  ],
-  "field":"sciences",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"20AM",
-  "name":"Master 120 en sciences math\u00e9matiques, \u00e0 finalit\u00e9 approfondie",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/20AM\/2020",
-  "courses":[
-   "SSPSM101"
-  ],
-  "field":"sciences",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
+   1,
    1
   ]
  },
@@ -576,19 +331,17 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/221M\/2020",
   "courses":[
-   "SCHIM229",
-   "SCHIM124",
-   "SSPSM101",
-   "SCHIM123"
+   "SCHIM115",
+   "SCHIM229"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
+   "climate",
+   "durability"
   ],
   "themes_scores":[
-   2,
-   3
+   1,
+   1
   ]
  },
  {
@@ -599,18 +352,14 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/22DM\/2020",
   "courses":[
-   "SCHIM124",
-   "SSPSM101",
-   "SCHIM123"
+   "SCHIM115"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "climatology"
+   "durability"
   ],
   "themes_scores":[
-   2,
-   2
+   1
   ]
  },
  {
@@ -621,235 +370,17 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/22AM\/2020",
   "courses":[
-   "SCHIM124",
-   "SSPSM101",
-   "SCHIM123",
-   "SCHIM223",
-   "SCHIM224"
+   "SCHIM115",
+   "SCHIM223"
   ],
   "field":"sciences",
   "themes":[
    "energy",
-   "climatology"
-  ],
-  "themes_scores":[
-   4,
-   2
-  ]
- },
- {
-  "id":"281M",
-  "name":"Master 120 en management de l'innovation et de la conception des aliments, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/281M\/2020",
-  "courses":[
-   "ECGEB284"
-  ],
-  "field":"sciences",
-  "themes":[
    "durability"
   ],
   "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"291M",
-  "name":"Master 120 en biologie des organismes et \u00e9cologie, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/291M\/2020",
-  "courses":[
-   "SSPSM101",
-   "SBIOM201",
-   "SBOEM112",
-   "SBOEM260",
-   "SBOEM237",
-   "SBOEM162",
-   "SBOEM108",
-   "SBOEM124",
-   "SBOEM142",
-   "SBOEM165"
-  ],
-  "field":"sciences",
-  "themes":[
-   "energy",
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
    1,
-   8,
    1
-  ]
- },
- {
-  "id":"29DM",
-  "name":"Master 120 en biologie des organismes et \u00e9cologie, \u00e0 finalit\u00e9 didactique",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/29DM\/2020",
-  "courses":[
-   "SSPSM101",
-   "SBIOM201",
-   "SBOEM112",
-   "SBOEM237",
-   "SBOEM162",
-   "SBOEM108",
-   "SBOEM124",
-   "SBOEM142",
-   "SBOEM165"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
-   8,
-   1
-  ]
- },
- {
-  "id":"29AM",
-  "name":"Master 120 en biologie des organismes et \u00e9cologie, \u00e0 finalit\u00e9 approfondie",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/29AM\/2020",
-  "courses":[
-   "SSPSM101",
-   "SBIOM201",
-   "SBOEM112",
-   "SBOEM237",
-   "SBOEM162",
-   "SBOEM108",
-   "SBOEM124",
-   "SBOEM142",
-   "SBOEM165"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
-   8,
-   1
-  ]
- },
- {
-  "id":"251M",
-  "name":"Master 120 en biochimie et biologie mol\u00e9culaire et cellulaire, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/251M\/2020",
-  "courses":[
-   "SBIOM131",
-   "SSPSM101",
-   "SBOEM165",
-   "SBIOM201"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
-   3,
-   1
-  ]
- },
- {
-  "id":"25DM",
-  "name":"Master 120 en biochimie et biologie mol\u00e9culaire et cellulaire, \u00e0 finalit\u00e9 didactique",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/25DM\/2020",
-  "courses":[
-   "SBIOM131",
-   "SSPSM101",
-   "SBOEM165",
-   "SBIOM201"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
-   3,
-   1
-  ]
- },
- {
-  "id":"25AM",
-  "name":"Master 120 en biochimie et biologie mol\u00e9culaire et cellulaire, \u00e0 finalit\u00e9 approfondie",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/25AM\/2020",
-  "courses":[
-   "SBIOM131",
-   "SSPSM101",
-   "SBOEM165",
-   "SBIOM201"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment",
-   "climatology"
-  ],
-  "themes_scores":[
-   3,
-   1
-  ]
- },
- {
-  "id":"210B",
-  "name":"Bachelier en sciences physiques",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/210B\/2020",
-  "courses":[
-   "SBIOB001",
-   "SCHIB111",
-   "SSPSB102"
-  ],
-  "field":"sciences",
-  "themes":[
-   "energy",
-   "environment"
-  ],
-  "themes_scores":[
-   1,
-   2
-  ]
- },
- {
-  "id":"200B",
-  "name":"Bachelier en sciences math\u00e9matiques",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/200B\/2020",
-  "courses":[
-   "SBIOB001",
-   "SSPSB102"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   2
   ]
  },
  {
@@ -860,27 +391,14 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/230B\/2020",
   "courses":[
-   "SGOLB304",
-   "SCHIB111",
-   "SGOLB303",
-   "SSPSB102",
-   "SGOGB101",
-   "SBIOB001",
-   "SBIOB207",
-   "SGOLB311"
+   "SGOLB303"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "environment",
-   "climatology",
    "durability"
   ],
   "themes_scores":[
-   1,
-   4,
-   2,
-   2
+   1
   ]
  },
  {
@@ -891,84 +409,15 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/240B\/2020",
   "courses":[
-   "SCHIB111",
-   "SGOGB310",
    "SGOGB302",
-   "SGOLB303",
-   "SSPSB102",
-   "SGOGB101",
-   "SBIOB001",
-   "SBIOB207",
-   "SBIOB212",
-   "SGOGB210"
+   "SGOLB303"
   ],
   "field":"sciences",
   "themes":[
-   "energy",
-   "environment",
-   "climatology",
+   "climate",
    "durability"
   ],
   "themes_scores":[
-   1,
-   6,
-   1,
-   3
-  ]
- },
- {
-  "id":"220B",
-  "name":"Bachelier en sciences chimiques",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/220B\/2020",
-  "courses":[
-   "SCHIB111",
-   "SSPSB102"
-  ],
-  "field":"sciences",
-  "themes":[
-   "energy",
-   "environment"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ]
- },
- {
-  "id":"250B",
-  "name":"Bachelier en sciences biologiques",
-  "faculty":"Facult\u00e9 des sciences",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/250B\/2020",
-  "courses":[
-   "SVETB310",
-   "SBIOB368",
-   "SBIOB229",
-   "SSPSB102",
-   "SBIOB309",
-   "SBIOB326",
-   "SBIOB344",
-   "SBIOB209",
-   "SBIOB208",
-   "SBIOB001",
-   "SBIOB362",
-   "SBIOB367",
-   "SSPSB208",
-   "SBIOB212",
-   "SBIOB346"
-  ],
-  "field":"sciences",
-  "themes":[
-   "environment",
-   "climatology",
-   "durability"
-  ],
-  "themes_scores":[
-   14,
    1,
    1
   ]
@@ -981,22 +430,14 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/270B\/2020",
   "courses":[
-   "SSPSB107",
-   "SVETB310",
-   "SBIOB001",
-   "SVETB205",
-   "SSPSB208"
+   "SVETB205"
   ],
   "field":"sciences",
   "themes":[
-   "environment",
-   "climatology",
-   "durability"
+   "environment"
   ],
   "themes_scores":[
-   4,
-   1,
-   2
+   1
   ]
  },
  {
@@ -1061,86 +502,11 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/800B\/2020",
   "courses":[
-   "ECGEB284",
    "FINT0039"
   ],
   "field":"applied sciences & engineering",
   "themes":[
-   "environment",
    "durability"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ]
- },
- {
-  "id":"720K",
-  "name":"Master de sp\u00e9cialisation en \u00e9conomie internationale et du d\u00e9veloppement",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/720K\/2020",
-  "courses":[
-   "EDEVM334"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "durability"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"721K",
-  "name":"Master de sp\u00e9cialisation en accompagnement des professionnels de l'\u00e9ducation, du management, de la sant\u00e9 et de l'action sociale",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/721K\/2020",
-  "courses":[
-   "FACCM301"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"771M",
-  "name":"Master 60 en sciences \u00e9conomiques (horaire d\u00e9cal\u00e9)",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/771M\/2020",
-  "courses":[
-   "EFAEM057"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
-  "id":"775M",
-  "name":"Master 60 en sciences de gestion (horaire d\u00e9cal\u00e9)",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/775M\/2020",
-  "courses":[
-   "EFAEM057"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "climatology"
   ],
   "themes_scores":[
    1
@@ -1167,24 +533,6 @@
   ]
  },
  {
-  "id":"772M",
-  "name":"Master 120 en sciences \u00e9conomiques, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e (horaire d\u00e9cal\u00e9)",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/772M\/2020",
-  "courses":[
-   "EFAEM057"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
-   1
-  ]
- },
- {
   "id":"751M",
   "name":"Master 120 en sciences de gestion, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en Business Analysis & Integration",
   "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
@@ -1201,24 +549,6 @@
   ],
   "themes_scores":[
    1,
-   1
-  ]
- },
- {
-  "id":"773M",
-  "name":"Master 120 en sciences de gestion, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e (horaire d\u00e9cal\u00e9)",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"master",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/773M\/2020",
-  "courses":[
-   "EFAEM057"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "climatology"
-  ],
-  "themes_scores":[
    1
   ]
  },
@@ -1254,33 +584,12 @@
   ],
   "field":"economy & management",
   "themes":[
-   "decarbonization",
-   "environment",
+   "climate",
    "durability"
   ],
   "themes_scores":[
-   1,
    1,
    1
-  ]
- },
- {
-  "id":"710B",
-  "name":"Bachelier en sciences \u00e9conomiques et de gestion",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/710B\/2020",
-  "courses":[
-   "ECGEB321",
-   "ECGEB284"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "durability"
-  ],
-  "themes_scores":[
-   2
   ]
  },
  {
@@ -1291,8 +600,7 @@
   "campus":"Namur",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/701B\/2020",
   "courses":[
-   "DROIB330",
-   "ECGEB321"
+   "DROIB330"
   ],
   "field":"economy & management",
   "themes":[
@@ -1301,50 +609,7 @@
   ],
   "themes_scores":[
    1,
-   2
-  ]
- },
- {
-  "id":"730B",
-  "name":"Bachelier en ing\u00e9nieur de gestion",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/730B\/2020",
-  "courses":[
-   "ECGEB321",
-   "EINGB221",
-   "ECGEB284"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "environment",
-   "climatology",
-   "durability"
-  ],
-  "themes_scores":[
-   1,
-   1,
-   2
-  ]
- },
- {
-  "id":"703B",
-  "name":"Bachelier en information et communication",
-  "faculty":"Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion",
-  "cycle":"bac",
-  "campus":"Namur",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/703B\/2020",
-  "courses":[
-   "ECGEB321",
-   "ECGEB284"
-  ],
-  "field":"economy & management",
-  "themes":[
-   "durability"
-  ],
-  "themes_scores":[
-   2
+   1
   ]
  }
 ]
