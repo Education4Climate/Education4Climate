@@ -7,29 +7,26 @@ cover certain *themes*.
 
 A theme is an abstract notions defined based on an ontology.
 While themes can be of any type, in the context of the Education4Climate project, we have defined
-7 such themes:
-- Climatology
-- Consumption
-- Decarbonization
+4 such themes:
+- Climate
 - Durability
 - Energy
 - Environment
-- Society
 
 A theme's ontology is composed of a list of regular expressions that match to compounds of terms. 
-For example, some compounds associated to the theme 'Climatology' could be 'climate action' and 'climate action**s**'.
+For example, some compounds associated to the theme 'Climatole' could be 'climate action' and 'climate action**s**'.
 A pattern ```climate actions?``` allows to capture both those compounds.
 
 In Belgium, courses are described in French, Dutch and English. Thus, each
 ontology is translated in those different languages.
 
-The ontologies of patterns (in each language) for the 7 themes cited above are listed in the file 
+The ontologies of patterns (in each language) for the 4 themes cited above are listed in the file 
 ```themes_patterns.json``` stored in [data/patterns/](../../data/patterns).
 
 ### Scoring courses
 
 One of the fields extracted for each course via the crawling is ```content``` (see [Crawling](../crawl/README.md)
-for more information). This field contains text describing the content of the course.
+for more information). We take this field and the name of the course as descriptive of the content of the course.
 
 This text is first analyzed using the [langdetect](https://pypi.org/project/langdetect/) library 
 to identify in which language the course is described. Then for each theme, 
