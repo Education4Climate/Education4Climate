@@ -75,6 +75,7 @@ def convert_faculty_to_fields(courses_df, programs_df, school: str):
             logger.warning(f"Warning: {faculty} was not found in faculty_to_fields")
             return ''
 
+    courses_df["faculty"] = courses_df["faculty"].apply(lambda x: sorted(x))
     courses_df["field"] = courses_df["faculty"].apply(lambda x: list(set([faculty_to_field(i) for i in x])))
     programs_df["field"] = programs_df["faculty"].apply(lambda x: faculty_to_field(x))
     return courses_df, programs_df
@@ -99,6 +100,14 @@ def main(school: str, year: int):
 
     # Convert faculties to disciplines
     courses_df, programs_df = convert_faculty_to_fields(courses_df, programs_df, school)
+
+    # Get all languages used to give course in each program
+    def programs_languages(courses_in_program):
+        courses_in_program = set(courses_in_program).intersection(set(courses_df.index))
+        if len(courses_in_program) != 0:
+            return sorted(list(set(courses_df.loc[courses_in_program].languages.sum())))
+        return []
+    programs_df["languages"] = programs_df.courses.apply(lambda x: programs_languages(x))
 
     # Load scoring output
     scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
@@ -133,7 +142,7 @@ def main(school: str, year: int):
     programs_df = programs_df.reset_index()
 
     # TODO: keep or remove ects?
-    programs_df = programs_df[['id', 'name', 'faculty', 'cycle', 'campus', 'url', 'courses',
+    programs_df = programs_df[['id', 'name', 'faculty', 'cycle', 'campus', 'url', 'languages', 'courses',
                                'field', 'themes', 'themes_scores']]
 
     programs_df.loc[programs_df.id.isin(programs_with_matches_index)] \

@@ -6,6 +6,10 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/poli4-j",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "POLI-D434",
    "POLI-O417"
@@ -27,10 +31,15 @@
   "cycle":"master",
   "campus":"Erasme",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-sapue",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
-   "SAPU-L4021",
+   "ENVI-F510",
    "ENVI-L505",
-   "ENVI-F510"
+   "SAPU-L4021"
   ],
   "field":"health",
   "themes":[
@@ -47,6 +56,10 @@
   "cycle":"master",
   "campus":"Erasme",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-sapuh",
+  "languages":[
+   "",
+   "fr"
+  ],
   "courses":[
    "SAPU-L4021"
   ],
@@ -65,6 +78,10 @@
   "cycle":"master",
   "campus":"Erasme",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-sapug",
+  "languages":[
+   "",
+   "fr"
+  ],
   "courses":[
    "SAPU-L4021"
   ],
@@ -83,6 +100,10 @@
   "cycle":"master",
   "campus":"Erasme",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-sapub",
+  "languages":[
+   "",
+   "fr"
+  ],
   "courses":[
    "SAPU-L4021"
   ],
@@ -101,12 +122,15 @@
   "cycle":"master",
   "campus":"Charleroi Ville Haute",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-tranl",
+  "languages":[
+   "fr"
+  ],
   "courses":[
-   "MSTL-F602",
-   "MSTL-F611",
    "MSTL-F603",
+   "MSTL-F604",
    "MSTL-F601",
-   "MSTL-F604"
+   "MSTL-F602",
+   "MSTL-F611"
   ],
   "field":"sciences",
   "themes":[
@@ -123,12 +147,16 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-urde",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
+   "ARCH-H502",
+   "URBA-H9009",
    "URBA-P9006",
    "URBA-P9009",
-   "URBA-H9009",
-   "ARCH-H400",
-   "ARCH-H502"
+   "ARCH-H400"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -149,6 +177,11 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-dint",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "DROI-C5150"
   ],
@@ -167,6 +200,11 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-dreu",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "DROI-C5150"
   ],
@@ -185,6 +223,10 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-phip",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "ENVI-D500",
    "DROI-C5100"
@@ -208,10 +250,15 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irma",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "CHIM-H504",
-   "PROJ-H417",
-   "CHIM-H522"
+   "CHIM-H522",
+   "PROJ-H417"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -228,9 +275,14 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irph",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
-   "GEST-H506",
-   "PROJ-H417"
+   "PROJ-H417",
+   "GEST-H506"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -249,11 +301,16 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-ircn",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "PROJ-H502",
-   "PROJ-H417",
+   "CNST-Y512",
    "CNST-Y504",
-   "CNST-Y512"
+   "PROJ-H417"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -272,14 +329,20 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irar",
+  "languages":[
+   "",
+   "en",
+   "fr",
+   "nl"
+  ],
   "courses":[
-   "MEMO-H507",
-   "ARCH-Y500",
-   "PROJ-H502",
-   "CNST-Y512",
-   "ARCH-H400",
    "ARCH-H502",
-   "CNST-Y504"
+   "PROJ-H502",
+   "MEMO-H507",
+   "CNST-Y504",
+   "ARCH-Y500",
+   "CNST-Y512",
+   "ARCH-H400"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -300,6 +363,11 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irif",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "PROJ-H417"
   ],
@@ -318,11 +386,16 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irem",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
+   "MECA-H414",
    "MECA-H417",
-   "GEST-H506",
    "PROJ-H417",
-   "MECA-H414"
+   "GEST-H506"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -343,19 +416,24 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irbe",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
+   "ENVI-F409",
+   "BIOL-F417",
+   "PROJ-H417",
+   "CHIM-H504",
+   "BING-F523",
+   "BIOL-F412",
+   "ENVI-F405",
    "ENVI-F454",
    "BING-H5001",
-   "BIOL-F412",
-   "ENVI-F409",
-   "ENVI-F405",
-   "CHIM-H504",
-   "PROJ-H417",
+   "BIOL-F441",
    "BING-F410",
    "ENVI-F510",
-   "BIOL-F417",
-   "BING-F523",
-   "BIOL-F441",
    "ENVI-F526"
   ],
   "field":"sciences",
@@ -379,19 +457,23 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irba",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "BING-H5001",
    "BING-F4003",
-   "BIOL-F412",
-   "BING-F4001",
-   "BING-F4005",
-   "BING-F5001",
-   "BING-F431",
-   "BIOL-F4001",
-   "BING-F403",
    "BIOL-F444",
    "BING-F4004",
-   "BING-F430"
+   "BING-F4005",
+   "BING-F431",
+   "BIOL-F412",
+   "BING-F4001",
+   "BING-H5001",
+   "BING-F430",
+   "BING-F403",
+   "BING-F5001",
+   "BIOL-F4001"
   ],
   "field":"sciences",
   "themes":[
@@ -410,6 +492,11 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-ircb",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "PROJ-H417"
   ],
@@ -428,6 +515,10 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-tour",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "TOUR-F425"
   ],
@@ -446,6 +537,11 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irbc",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "BING-H5001",
    "BIOL-F412"
@@ -467,15 +563,19 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-envie",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "ENVI-F409",
-   "ENVI-F405",
-   "BIOL-F417",
-   "ENVI-F510",
-   "GEOG-F410",
-   "BIOL-F444",
-   "BIOL-F441",
    "CHIM-F474",
+   "BIOL-F444",
+   "ENVI-F409",
+   "BIOL-F417",
+   "ENVI-F405",
+   "BIOL-F441",
+   "GEOG-F410",
+   "ENVI-F510",
    "ENVI-F526"
   ],
   "field":"sciences",
@@ -497,17 +597,21 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-envig",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "ENVI-F438",
-   "ENVI-F454",
-   "ENVI-F409",
    "ENVI-F531",
+   "ENVI-F409",
+   "ENVI-D500",
+   "ENVI-F438",
    "ENVI-F405",
+   "ENVI-F454",
+   "BING-F1001",
    "ENVI-L505",
    "ENVI-F510",
-   "BING-F1001",
-   "ENVI-F5001",
-   "ENVI-D500"
+   "ENVI-F5001"
   ],
   "field":"sciences",
   "themes":[
@@ -530,13 +634,18 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-geoge",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
   "courses":[
-   "ARCH-P7119",
-   "URBA-H9009",
-   "PROJ-H502",
-   "PROJ-P1002",
+   "ARCH-H502",
    "GEOG-Y035",
-   "ARCH-H502"
+   "PROJ-H502",
+   "URBA-H9009",
+   "PROJ-P1002",
+   "ARCH-P7119"
   ],
   "field":"sciences",
   "themes":[
@@ -557,11 +666,15 @@
   "cycle":"master",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-geogd",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "ENVI-F405",
-   "MSTL-F601",
+   "MSTL-H601",
    "ENVI-F1001",
-   "MSTL-H601"
+   "MSTL-F601",
+   "ENVI-F405"
   ],
   "field":"sciences",
   "themes":[
@@ -580,13 +693,17 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/m-geogt",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
+   "ENVI-F1001",
    "ENVI-F409",
    "ENVI-F405",
-   "ENVI-F1001",
-   "ENVI-F510",
+   "MSTL-H601",
    "MSTL-F601",
-   "MSTL-H601"
+   "ENVI-F510"
   ],
   "field":"sciences",
   "themes":[
@@ -605,9 +722,13 @@
   "cycle":"master",
   "campus":"Autre campus",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-geol",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "ENVI-F405",
    "CHIM-H302",
+   "ENVI-F405",
    "ENVI-F526"
   ],
   "field":"sciences",
@@ -627,6 +748,11 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-chim",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "CHIM-F474",
    "ENVI-F526"
@@ -648,10 +774,14 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-arch",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "ARCH-P8119",
-   "PROJ-P1002",
-   "ARCH-P7119"
+   "ARCH-P7119",
+   "PROJ-P1002"
   ],
   "field":"applied sciences & engineering",
   "themes":[
@@ -670,6 +800,15 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-gest",
+  "languages":[
+   "",
+   "ar",
+   "de",
+   "en",
+   "fr",
+   "jp",
+   "nl"
+  ],
   "courses":[
    "DROI-S400"
   ],
@@ -688,6 +827,12 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-droi",
+  "languages":[
+   "",
+   "en",
+   "fr",
+   "nl"
+  ],
   "courses":[
    "DROI-C5150",
    "DROI-C5100",
@@ -712,6 +857,10 @@
   "cycle":"master",
   "campus":"Charleroi Ville Haute",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-trav",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "ECON-S2002"
   ],
@@ -730,9 +879,13 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-eteu",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "SOCA-Y506",
-   "POLI-O417"
+   "POLI-O417",
+   "SOCA-Y506"
   ],
   "field":"social science",
   "themes":[
@@ -753,6 +906,10 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-poli",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "ECON-S2001"
   ],
@@ -771,6 +928,11 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-coop",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "BING-F430"
   ],
@@ -789,11 +951,16 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-pint",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
   "courses":[
-   "DROI-C5150",
-   "POLI-D445",
    "POLI-D434",
-   "POLI-O417"
+   "POLI-O417",
+   "POLI-D445",
+   "DROI-C5150"
   ],
   "field":"social science",
   "themes":[
@@ -814,6 +981,10 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-pphil",
+  "languages":[
+   "",
+   "fr"
+  ],
   "courses":[
    "DROI-C5100"
   ],
@@ -832,11 +1003,15 @@
   "cycle":"master",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-pethi",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "ENVI-D500",
+   "ENVI-F510",
    "ENVI-F1001",
-   "DROI-C5100",
-   "ENVI-F510"
+   "DROI-C5100"
   ],
   "field":"social science",
   "themes":[
@@ -857,6 +1032,9 @@
   "cycle":"bac",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-vete",
+  "languages":[
+   "fr"
+  ],
   "courses":[
    "VETE-G2206"
   ],
@@ -875,6 +1053,10 @@
   "cycle":"bac",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-irar",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "ARCH-H300"
   ],
@@ -893,13 +1075,17 @@
   "cycle":"bac",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-irbi",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "ENVI-F454",
-   "BIOL-F2001",
    "BING-F202",
+   "BING-F305",
+   "BIOL-F2001",
+   "ENVI-F454",
    "CHIM-H302",
-   "BING-F1001",
-   "BING-F305"
+   "BING-F1001"
   ],
   "field":"sciences",
   "themes":[
@@ -922,11 +1108,15 @@
   "cycle":"bac",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-biol",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "BIOL-F310",
    "ETHI-F1001",
+   "BING-F1001",
    "ENVI-F1001",
-   "BING-F1001"
+   "BIOL-F310"
   ],
   "field":"sciences",
   "themes":[
@@ -947,6 +1137,11 @@
   "cycle":"bac",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-math",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
   "courses":[
    "ETHI-F1001",
    "ENVI-F1001"
@@ -966,6 +1161,9 @@
   "cycle":"bac",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-phys",
+  "languages":[
+   "fr"
+  ],
   "courses":[
    "ETHI-F1001",
    "ENVI-F1001"
@@ -985,11 +1183,14 @@
   "cycle":"bac",
   "campus":"Flagey",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-geol",
+  "languages":[
+   "fr"
+  ],
   "courses":[
-   "GEOG-F203",
    "ETHI-F1001",
    "ENVI-F1001",
-   "GEOG-F102"
+   "GEOG-F102",
+   "GEOG-F203"
   ],
   "field":"sciences",
   "themes":[
@@ -1006,6 +1207,10 @@
   "cycle":"bac",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-irci",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "CHIM-H302"
   ],
@@ -1026,6 +1231,10 @@
   "cycle":"bac",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-info",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
    "ETHI-F1001",
    "ENVI-F1001"
@@ -1045,6 +1254,9 @@
   "cycle":"bac",
   "campus":"Plaine",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-chim",
+  "languages":[
+   "fr"
+  ],
   "courses":[
    "ETHI-F1001",
    "ENVI-F1001"
@@ -1064,11 +1276,15 @@
   "cycle":"bac",
   "campus":"Autre campus",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-geog",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "GEOG-F203",
    "ETHI-F1001",
    "ENVI-F1001",
-   "GEOG-F102"
+   "GEOG-F102",
+   "GEOG-F203"
   ],
   "field":"sciences",
   "themes":[
@@ -1085,10 +1301,16 @@
   "cycle":"bac",
   "campus":"UMons",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-inge",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
   "courses":[
    "PHYS-S201",
-   "GEST-S3002",
-   "CHIM-S201"
+   "CHIM-S201",
+   "GEST-S3002"
   ],
   "field":"economy & management",
   "themes":[
@@ -1107,12 +1329,18 @@
   "cycle":"bac",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-econ",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
   "courses":[
+   "ENVI-S101",
    "ECON-S307",
+   "CHIM-S201",
    "PHYS-S201",
    "ECON-S2002",
-   "CHIM-S201",
-   "ENVI-S101",
    "ECON-S2001"
   ],
   "field":"economy & management",
@@ -1134,10 +1362,14 @@
   "cycle":"bac",
   "campus":"Solbosch",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-arch",
+  "languages":[
+   "en",
+   "fr"
+  ],
   "courses":[
-   "ENVI-P1003",
+   "PROJ-P0602",
    "CNST-P3006",
-   "PROJ-P0602"
+   "ENVI-P1003"
   ],
   "field":"applied sciences & engineering",
   "themes":[
