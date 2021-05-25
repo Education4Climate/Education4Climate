@@ -28,6 +28,7 @@ def main(school: str, year: int):
         # Remove non-scored courses from list (could happen if the course was not crawlable)
         program_courses = list(set(program_courses).intersection(set(courses_scores_df.index)))
         programs_scores_df.loc[program_id] = courses_scores_df.loc[program_courses].sum()
+        programs_scores_df.loc[program_id, 'total'] = int(courses_scores_df.loc[program_courses].max(axis=1).sum())
 
     programs_scores_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv")
