@@ -137,7 +137,7 @@ def main(school: str, year: int):
     programs_with_matches_index = programs_scores_df[(programs_scores_df.sum(axis=1) != 0)].index
     # Get list of matched themes per program and associated scores
     programs_df = programs_df.set_index("id")
-    programs_df["themes"] = programs_scores_df.apply(lambda x: x[x > 0].index.tolist(), axis=1).to_frame()
+    programs_df["themes"] = programs_scores_df.apply(lambda x: x[x > 0].index.tolist()[:-1], axis=1).to_frame()
     programs_df["themes_scores"] = programs_scores_df.apply(lambda x: x[x > 0].values.tolist(), axis=1).to_frame()
     programs_df = programs_df.reset_index()
 
