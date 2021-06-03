@@ -22,7 +22,6 @@ var app = Vue.createApp({
             totalCoursesCounts: [],
             themes: [],
             languages: [],
-            selectedSchools: [],
             selectedThemes: [],
             selectedLanguages: [],
             searchedName: "",
@@ -126,7 +125,7 @@ var app = Vue.createApp({
 
             // sets the filters default selected schools / themes / languages
 
-            this.selectedSchools = searchedSchool ? [searchedSchool.id] : this.schools.map(school => { return school.id; });
+            this.selectedSchools = searchedSchool ? [searchedSchool.id] : this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
             this.selectedThemes = this.themes.map(theme => { return theme.id; });
             this.selectedLanguages = this.languages.map(language => { return language.id; });
 

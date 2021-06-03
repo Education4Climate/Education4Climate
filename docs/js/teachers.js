@@ -21,7 +21,6 @@ var app = Vue.createApp({
             teachers: [],
             displayedTeachers: [],
             themes: [],
-            selectedSchools: [],
             currentPage: 0,
             showResponsiveFilters: false,
             currentMenuItem: "teachers",
@@ -125,7 +124,7 @@ var app = Vue.createApp({
 
             // sets the filters default selected schools / themes
 
-            this.selectedSchools = this.schools.map(school => { return school.id; });
+            this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
             this.selectedThemes = this.themes.map(theme => { return theme.id; });
 
             // hides the loader

@@ -21,7 +21,6 @@ var app = Vue.createApp({
             themes: [],
             fields: [],
             languages: [],
-            selectedSchools: [],
             selectedThemes: [],
             selectedFields: [],
             selectedLanguages: [],
@@ -98,7 +97,7 @@ var app = Vue.createApp({
             });
 
             return programsCountsBySchool;
-        }     
+        }
     },
     mounted() {
 
@@ -129,11 +128,11 @@ var app = Vue.createApp({
 
             // sets the filters default selected schools / themes / fields
 
-            this.selectedSchools = this.schools.map(school => { return school.id; });
+            this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
             this.selectedThemes = this.themes.map(theme => { return theme.id; });
             this.selectedFields = this.fields.map(field => { return field.id; });
             this.selectedLanguages = this.languages.map(language => { return language.id; });
-            
+
             // hides the loader
 
             this.dataLoaded = true;
