@@ -2,16 +2,20 @@
 from abc import ABC
 from pathlib import Path
 
+import pandas as pd
+
 import scrapy
 
+from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-# TODO: check that we are not visiting several time the same courses
 
-
-BASE_URL = "https://paysage.henallux.be/"
-# TODO: check other languages
-LANGUAGE_DICT = {"F": "fr"}
+BASE_URL = "https://paysage.henallux.be/cursus/infoue/idUe/{}/idCursus/{}/anacad/{}"
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}henallux_programs_{YEAR}.json')
+LANGUAGE_DICT = {"F": "fr",
+                 "A": "en",
+                 "N": "nl"}
 
 
 class HENALLUXCourseSpider(scrapy.Spider, ABC):
@@ -26,59 +30,42 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        yield scrapy.Request(BASE_URL, self.parse_main)
+        courses_url_codes_ds = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_url_codes"]
 
-    def parse_main(self, response):
-        program_links = response.xpath("//section[@id='section_accueil']//a/@data-ref").getall()
-        for link in program_links:
-            if 'idCursusKey' in link:
-                yield response.follow(link, self.parse_aux)
-            else:
-                yield response.follow(link, self.parse_program)
-            break
-
-    def parse_aux(self, response):
-        subprogram_links = response.xpath("//div[@class='content']//a/@href")
-        for link in subprogram_links:
-            yield response.follow(link, self.parse_program)
-
-    def parse_program(self, response):
-        ue_links = response.xpath("//li[@class='uetableau-menu']/a/@href").getall()
-        for link in ue_links:
-            yield response.follow(link, self.parse_ue)
-            break
+        for program_id in courses_url_codes_ds.index:
+            courses_codes = courses_url_codes_ds.loc[program_id]
+            for course_code in courses_codes:
+                yield scrapy.Request(url=BASE_URL.format(course_code, program_id, YEAR),
+                                     callback=self.parse_ue)
 
     @staticmethod
     def parse_ue(response):
 
-        # TODO: should we consider UE or 'activités d'apprentissage constitutives'
-        #  -> maybe just for content? and teacher?
-
-        ue_name = response.xpath("//div[@class='intituleUE']/span/text()").get()
         ue_id = response.xpath("//span[@class='important']/text()").get()
+        ue_name = response.xpath("//div[@class='intituleUE']/span/text()").get()
         ue_div_txt = "//div[@class='identificationUE']"
         year = response.xpath(f"{ue_div_txt}//div[span[text()='Année académique']]/text()").get().split(": ")[1]
-        dep = response.xpath(f"{ue_div_txt}//div[span[text()='Département']]/text()").get().split(": ")[1]
-        ects = response.xpath(f"{ue_div_txt}//div[span[text()='Crédits']]/text()").get().split(": ")[1]
-        language = response.xpath(f"{ue_div_txt}//div[span[text()=\"Langue d'enseignement\"]]/text()").get().split(": ")[1]
-        # TODO: check if there cannot be different languages
-        language = LANGUAGE_DICT[language]
+        languages = response.xpath(f"{ue_div_txt}//div[span[text()=\"Langue d'enseignement\"]]/text()").get().split(": ")[1]
+        languages = [LANGUAGE_DICT[language] for language in languages]
         teachers = response.xpath(f"{ue_div_txt}//div[span[text()=\"Responsable de l'UE\"]]/text()").get().split(": ")[1]
         teachers = teachers.split(" - ")
-        # TODO: to be checked if 1 corresponds to bachelier and if there can be other numbers
-        cycle = response.xpath(f"{ue_div_txt}//div[span[text()='Cycle']]/text()").get().split(": ")[1]
+        add_teachers = response.xpath(f"{ue_div_txt}//span[contains(text(), \"Autres enseignants\")]/following::text()[2]").get()
+        if add_teachers is not None:
+            teachers += add_teachers.split(" - ")
+        teachers = list(set([" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0] for teacher in teachers]))
+        teachers = [t for t in teachers if t != " "]
 
-        # TODO: content
-        content = ""
+        sections = ['Acquis', 'Contenu']
+        contents = []
+        for section in sections:
+            contents += [cleanup(response.xpath(f"//div[contains(text(), \"{section}\")]/following::div[1]").get())]
+        content = "\n".join(contents).strip("\n")
 
-        yield {"name": ue_name,
-               "id": ue_id,
-               "teacher": teachers,
+        yield {"id": ue_id,
+               "name": ue_name,
                "year": year,
-               "faculty": dep,
-               "ects": ects,
-               "language": language,
-               "cycle": cycle,
-               "campus": "",  # No campus
+               "teachers": teachers,
+               "languages": languages,
+               "url": response.url,
                "content": content
                }

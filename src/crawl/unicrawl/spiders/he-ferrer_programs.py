@@ -41,7 +41,6 @@ class HEFERRERProgramSpider(scrapy.Spider, ABC):
     def start_requests(self):
         yield scrapy.Request(BASE_URL, self.parse_main)
 
-    # TODO: add cycle
     @staticmethod
     def parse_main(response):
         ue_codes = [url.split("id=")[1].split("&")[0] for url in response.xpath("//tr//td[1]/a/@href").getall()]
