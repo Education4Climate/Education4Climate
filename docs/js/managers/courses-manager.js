@@ -71,10 +71,6 @@ class CoursesManager {
 
             teachers.forEach(teacher => {
 
-                // teacher = teacher.replace("\u00a0", " ").trim();
-                // const toDelete = ["Prof. dr. ir. arch.", "dr. ir. ing.", "Prof. dr. ir.", "Prof. dr. dr.", "Prof. dr.", "Prof. Dr.", "Prof. ir.", "- NNB", "arch.", "Dr.", "dr.", "Mevrouw ", "De heer "];
-                // toDelete.forEach(str => { teacher = teacher.replace(str, ""); });
-
                 teacher = teacher.trim();
 
                 if (teacher.length > 0) {
@@ -167,9 +163,15 @@ class CoursesManager {
 
             for (var i = 0; i < languages.length; i++) {
 
-                if (languages[i] != "en" && languages[i] != "fr" && languages[i] != "nl") {
-                    languages[i] = "other";
-                }
+                // Take care of possible empty values
+
+                if (languages[i].length === 0) continue;
+
+                // Aggregate all languages other than fr/nl/en under "other"
+
+                if (languages[i] != "en" && languages[i] != "fr" && languages[i] != "nl") languages[i] = "other";
+
+                // Find the id of the language (if already in the programsLanguages dictionnary)
 
                 var id = -1;
 
@@ -181,6 +183,8 @@ class CoursesManager {
                         break;
                     }
                 }
+
+                // If the language is not yet in the coursesLanguages dictionnary, add it
 
                 if (id == -1) {
 
@@ -194,9 +198,13 @@ class CoursesManager {
                     });
                 }
 
-                this.coursesLanguages[id].totalCount++;
+                // If not yet present in the array that will be returned, add it and increment the language count
 
-                l.push(id);
+                if (!l.includes(id)) {
+                    
+                    this.coursesLanguages[id].totalCount++;
+                    l.push(id);
+                }
             }
         }
 
