@@ -15,12 +15,19 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
 # TODO: check languages
 LANGUAGES_DICT = {"Nederlands": 'nl',
                   "Dutch": 'nl',
+                  "Olandese": 'nl',
                   "Frans": 'fr',
                   "French": 'fr',
+                  "Français": 'fr',
                   "Engels": 'en',
                   "English": 'en',
                   "Deutsch": 'de',
-                  "Duits": 'de'}
+                  "Duits": 'de',
+                  "German": 'de',
+                  "Spanish": 'es',
+                  "Spaans": 'es',
+                  "Italiaans": 'it'
+                  }
 
 
 class VivesCourseSpider(scrapy.Spider, ABC):
@@ -44,22 +51,29 @@ class VivesCourseSpider(scrapy.Spider, ABC):
         course_name = response.xpath(f"{main_div}//h2/text()").get()
         course_id = response.xpath(f"{main_div}//h2/span/text()").get().strip(')').split(" (B-VIVZ-")[1]
         years = response.xpath("//div[@id='acjaar']/text()").get().strip("Academiejaar ").strip("Academic Year ")
-        teachers = response.xpath(f"{main_div}//span[contains(@class, 'Titularis')]//text()").getall()
-        teachers = [t.strip("\xa0|\xa0") for t in teachers]
-        teachers = [t for t in teachers if t != '']
-        languages = response.xpath(f"{main_div}//span[@class='taal']/text()").getall()
-        languages = [LANGUAGES_DICT[lang] for lang in languages]
+        teachers = cleanup(response.xpath(f"{main_div}//span[contains(@class, 'Titularis') "
+                                  f"or contains(@class, 'Coordinator')]").getall())
+        teachers = [t.strip("\xa0|\xa0").replace("  (coordinator) ", '').replace("  (coördinator) ", '')
+                    for t in teachers]
+        teachers = list(set([t for t in teachers if t != '']))
 
-        # TODO: maybe a bit barbaric
-        content = cleanup(response.xpath("//div[contains(@class, 'tab_content')]//text()").getall())
+        languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
+        languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
+
+        # Content
+        content = []
+        sections = ['Aims', 'Doelstellingen', 'Content', 'Inhoud']
+        for section in sections:
+            content += cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
+                                              f"and h2/text()='{section}']//text()").getall())
         content = " ".join(content)
 
         yield {
-            'name': course_name,
             'id': course_id,
+            'name': course_name,
             'year': years,
-            'teacher': teachers,
-            'language': languages,
-            'content': content,
+            'teachers': teachers,
+            'languages': languages,
             'url': response.url,
+            'content': content
         }

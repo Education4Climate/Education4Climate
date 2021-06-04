@@ -50,7 +50,6 @@ class KULeuvenCourseSpider(scrapy.Spider, ABC):
         courses_urls = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_urls"]
         courses_urls_list = sorted(list(set(courses_urls.sum())))
 
-        print(len(courses_urls_list))
         for course_url in courses_urls_list:
             yield scrapy.Request(BASE_URl.format(course_url), self.parse_main)
 
@@ -73,7 +72,6 @@ class KULeuvenCourseSpider(scrapy.Spider, ABC):
         for section in sections:
             content += cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
                                               f"and h2/text()='{section}']//text()").getall())
-
         content = " ".join(content)
 
         yield {
