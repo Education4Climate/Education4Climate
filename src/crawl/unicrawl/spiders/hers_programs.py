@@ -43,6 +43,8 @@ class HERSProgramSpider(scrapy.Spider, ABC):
                 cycle = 'bac'
             elif 'master' in cycle:
                 cycle = 'master'
+            elif 'certificat' in cycle:
+                cycle = 'certificate'
             else:
                 cycle = 'other'
 
@@ -54,15 +56,15 @@ class HERSProgramSpider(scrapy.Spider, ABC):
             yield response.follow(link, self.parse_program, cb_kwargs={'base_dict': base_dict})
 
     @staticmethod
-    def parse_program(reponse, base_dict):
+    def parse_program(response, base_dict):
 
-        ects = reponse.xpath("//td[contains(@class, 'ContColG')]/text()").getall()
-        ects = [e for e in ects if e != '\xa0']
-        # TODO: check if there are UEs
-        courses_ids = reponse.xpath("//nobr/text()").getall()
+        ects = response.xpath("//td[contains(@class, 'ContColG')]/text()").getall()
+        ects = [int(e) for e in ects if e != '\xa0']
+        courses_ids = response.xpath("//nobr/text()").getall()
 
-        cur_dict = {"ects": ects,
-                    "courses": courses_ids
+        cur_dict = {"url": response.url,
+                    "courses": courses_ids,
+                    "ects": ects
                     }
 
         yield {**base_dict, **cur_dict}
