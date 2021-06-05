@@ -12,7 +12,6 @@ BASE_URl = "http://progcours.heaj.be/cocoon/cours/{}.html"  # first format is co
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}heaj_programs_{YEAR}.json')
 
-# TODO: checker langues
 LANGUAGES_DICT = {"Langue française": 'fr',
                   "Langue anglaise": 'en',
                   "Langue néerlandaise": 'nl',

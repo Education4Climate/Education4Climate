@@ -37,7 +37,7 @@ class HERSProgramSpider(scrapy.Spider, ABC):
         programs_codes = [link.split("/")[-1].split("_")[0] for link in programs_links]
         programs_cycles = [name.split(" ")[0].lower() for name in programs_names]
 
-        for name, code, link, cycle in zip(programs_names, programs_codes, programs_links, programs_cycles):
+        for program_name, code, link, cycle in zip(programs_names, programs_codes, programs_links, programs_cycles):
 
             if 'bachelier' in cycle:
                 cycle = 'bac'
@@ -49,7 +49,7 @@ class HERSProgramSpider(scrapy.Spider, ABC):
                 cycle = 'other'
 
             base_dict = {'id': code,
-                         'name': name,
+                         'name': program_name,
                          'cycle': cycle,
                          'faculty': faculty,
                          'campus': ''}
