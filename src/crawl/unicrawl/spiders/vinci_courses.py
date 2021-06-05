@@ -12,7 +12,6 @@ BASE_URl = "http://progcours.vinci.be/cocoon/cours/{}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}vinci_programs_{YEAR}.json')
 
-# TODO: checker langues
 LANGUAGES_DICT = {"Langue française": 'fr',
                   "Langue anglaise": 'en'}
 
