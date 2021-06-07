@@ -50,6 +50,7 @@ class VivesCourseSpider(scrapy.Spider, ABC):
         course_name = response.xpath(f"{main_div}//h2/text()").get()
         course_id = response.xpath(f"{main_div}//h2/span/text()").get().strip(')').split(" (B-VIVZ-")[1]
         years = response.xpath("//div[@id='acjaar']/text()").get().strip("Academiejaar ").strip("Academic Year ")
+
         teachers = cleanup(response.xpath(f"{main_div}//span[contains(@class, 'Titularis') "
                                   f"or contains(@class, 'Coordinator')]").getall())
         teachers = [t.strip("\xa0|\xa0").replace("  (coordinator) ", '').replace("  (coördinator) ", '')

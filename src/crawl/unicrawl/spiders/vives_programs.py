@@ -46,7 +46,6 @@ class VivesProgramSpider(scrapy.Spider, ABC):
         if '(' in program_name:
             campus = program_name.split('(')[-1].split(')')[0]
 
-        # TODO: might need to add stuff
         if 'bachelor' in program_name or 'Bachelor' in program_name:
             cycle = 'bac'
         elif 'postgraduaat' in program_name or 'Postgraduaat' in program_name:
