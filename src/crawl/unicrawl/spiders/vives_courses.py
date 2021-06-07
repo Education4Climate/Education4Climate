@@ -12,7 +12,6 @@ BASE_URl = "http://onderwijsaanbod.vives-zuid.be/syllabi/{}.htm"  # first format
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}vives_programs_{YEAR}.json')
 
-# TODO: check languages
 LANGUAGES_DICT = {"Nederlands": 'nl',
                   "Dutch": 'nl',
                   "Olandese": 'nl',
@@ -55,7 +54,7 @@ class VivesCourseSpider(scrapy.Spider, ABC):
                                   f"or contains(@class, 'Coordinator')]").getall())
         teachers = [t.strip("\xa0|\xa0").replace("  (coordinator) ", '').replace("  (coördinator) ", '')
                     for t in teachers]
-        teachers = list(set([t for t in teachers if t != '']))
+        teachers = list(set([t.strip(" ") for t in teachers if t != '']))
 
         languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
