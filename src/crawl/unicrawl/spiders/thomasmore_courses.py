@@ -12,7 +12,6 @@ BASE_URl = "http://onderwijsaanbodmechelenantwerpen.thomasmore.be/syllabi/{}.htm
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}thomasmore_programs_{YEAR}.json')
 
-# TODO: check languages
 LANGUAGES_DICT = {"Nederlands": 'nl',
                   "Dutch": 'nl',
                   "Olandese": 'nl',
@@ -30,6 +29,7 @@ LANGUAGES_DICT = {"Nederlands": 'nl',
                   "Chinees": 'cn'
                   }
 
+
 class ThomasMoreCourseSpider(scrapy.Spider, ABC):
     name = "thomasmore-courses"
     custom_settings = {
@@ -42,7 +42,6 @@ class ThomasMoreCourseSpider(scrapy.Spider, ABC):
         courses_urls = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_urls"]
         courses_urls_list = sorted(list(set(courses_urls.sum())))
 
-        print(len(courses_urls_list))
         for course_url in courses_urls_list:
             yield scrapy.Request(BASE_URl.format(course_url), self.parse_main)
 
