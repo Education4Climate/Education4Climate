@@ -11,7 +11,7 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = "https://www.heldb.be/ficheue/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_programs_{YEAR}.json')
-# TODO: check languages
+
 LANGUAGE_DICT = {"Français": "fr",
                  "Anglais": "en",
                  "Allemand": "de",

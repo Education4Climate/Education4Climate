@@ -5,4 +5,4 @@ SCORING_OUTPUT_FOLDER = path.join('data', 'scoring-output', '')
 WEB_INPUT_FOLDER = path.join('docs', 'data', '')
 PATTERNS_PATH = path.join('data', 'patterns', 'themes_patterns.json')
 
-YEAR = "2020"
+YEAR = 2020
