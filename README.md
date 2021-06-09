@@ -1,8 +1,8 @@
 <a href="https://theshiftproject.org/equipe/#benevoles"><img src="https://theshiftproject.org/wp-content/uploads/2017/10/SHIFTERS-TSP-L500PX-BLANC.png" alt="The Shifters" width="230px"></a>
 
-# Education4climate
+# Education4Climate
 
-[Universities4climate](https://education4climate.be/) is a tool for crawling and analyzing data from higher education schools.
+[Education4Climate](https://education4climate.be/) is a tool for crawling and analyzing data from higher education schools.
 
 This tool is developed in the context of the project Education4Climate by the volunteering
 group 'The Shifters' - Belgium.
