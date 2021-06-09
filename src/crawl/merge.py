@@ -31,6 +31,8 @@ def merge_programs(school: str, year: int):
     programs_df_grouped = programs_df.groupby("id")
     programs_merged_df = programs_df_grouped["name"].unique().apply(lambda x: x[0]).to_frame()
     for key in ["campus", 'cycle', "faculty", "url"]:
+        if key not in programs_df.keys():
+            continue
         programs_merged_df[key] = programs_df_grouped[key].unique().apply(lambda x: x[0])
     keys_as_list = ['courses', 'ects']
     if school == 'ugent':
