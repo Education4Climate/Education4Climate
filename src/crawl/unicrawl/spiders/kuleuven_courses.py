@@ -80,6 +80,6 @@ class KULeuvenCourseSpider(scrapy.Spider, ABC):
             'year': years,
             'teachers': teachers,
             'languages': languages,
-            'content': content,
-            'url': response.url
+            'url': response.url,
+            'content': content
         }
