@@ -31,13 +31,13 @@ class IHECSProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        for progam_id, program_name in PROGRAMS_CODE.items():
-            BASE_DATA["choixsection"] = progam_id
+        for program_id, program_name in PROGRAMS_CODE.items():
+            BASE_DATA["choixsection"] = program_id
             yield scrapy.http.FormRequest(
                 BASE_URL,
                 callback=self.parse_main,
                 formdata=BASE_DATA,
-                cb_kwargs={'program_id': progam_id, 'program_name': program_name}
+                cb_kwargs={'program_id': program_id, 'program_name': program_name}
             )
 
     def parse_main(self, response, program_id, program_name):
