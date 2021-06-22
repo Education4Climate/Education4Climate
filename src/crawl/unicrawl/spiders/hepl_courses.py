@@ -48,7 +48,7 @@ class HEPLCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_ue(response, ue_id):
 
-        ue_name = response.xpath("//h4[contains(text(), 'Information')]/text()").get().split(": ")[1].strip('" ')
+        ue_name = response.xpath("//h4[contains(text(), 'Information')]/text()").get().split(": \"")[1].strip('" ')
 
         campus = response.xpath("//td[text()='Implantation(s)']/following::td[1]/text()").get().split(" - ")[1]
 
