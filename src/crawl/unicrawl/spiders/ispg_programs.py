@@ -6,7 +6,7 @@ import base64
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'http://www.galileonet.be/extranet/DescriptifsDeCours/getListeGestionUE'
+BASE_URL = 'http://www.galileonet.be/extranet/DescriptifsDeCours/getListeGestionUE?ec=4'
 
 BASE_DATA = {
     "section": "",

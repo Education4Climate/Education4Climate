@@ -10,9 +10,9 @@ import itertools
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-BASE_URL = "http://www.galileonet.be/extranet/DescriptifsDeCours/getViewGestionUE?cue={}&ec=2"
+BASE_URL = "http://www.galileonet.be/extranet/DescriptifsDeCours/getViewGestionUE?cue={}&ec=4"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../{CRAWLING_OUTPUT_FOLDER}ispg_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}issig_programs_{YEAR}.json')
 
 LANGUAGES_DICT = {"Français": ["fr"],
                   "Anglais": ["en"],
@@ -24,11 +24,11 @@ LANGUAGES_DICT = {"Français": ["fr"],
                   }
 
 
-class ISPGCourseSpider(scrapy.Spider, ABC):
-    name = "ispg-courses"
+class ISSIGCourseSpider(scrapy.Spider, ABC):
+    name = "issig-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ispg_courses_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}issig_courses_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):
