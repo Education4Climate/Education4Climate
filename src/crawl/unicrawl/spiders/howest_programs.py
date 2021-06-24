@@ -22,6 +22,18 @@ BASE_POST_DATA = {
 class HOWESTProgramSpider(scrapy.Spider, ABC):
     """
     Program crawler for Hogeschool West-Vlaanderen 
+
+    METHOD:
+    Information about programs at HOWEST are scattered between two sites.
+    The first one (https://www.howest.be/nl) provides the names, campuses, 
+    cycles, faculties and a description of programs. 
+    The second one (https://app.howest.be/bamaflex/ectssearch.aspx) provides 
+    the lists of courses (and ects) for each program.
+    The data from each site is merged based on the name of the program. 
+    Unfortunately, there are slight differences in program names across sites.
+    For each program on the first site, we try to find the closest match on the second site
+    using the 'difflib' package. Matches have been manually checked for 2020-21.
+    If no match is found, the program is not crawled.
     """
 
     name = "howest-programs"
@@ -79,8 +91,8 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
         # METHOD :
         # The titles of the programs are slightly different on both sites.
         # Find the closest match. Only the first match is kept.
-        # This method is not perfect. Some programs have a match that is not found (only one in my tests).
-        # Others have multiple valid matches, but only the first one is used.
+        # This method is not perfect. Some matches are not found (only one in my tests).
+        # Other programs have multiple valid matches, but only the first one is used.
         name = close_matches(base_dict["name"], programs)
 
         if name:
@@ -103,6 +115,7 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
     def parse_program_courses(self, response, base_dict):
         prog_paths_ids = response.css("#dropdownlistTrajecten option::attr(value)").getall()
 
+        # Scrape courses sequentially from every program 'path' and collect them in shared 'base_dict'
         if prog_paths_ids:
             base_dict["courses"] = []
             post_data = BASE_POST_DATA.copy()
@@ -117,9 +130,11 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
 
     def parse_paths_courses_recursively(self, response, base_dict, post_data, paths_ids):
         courses_urls = response.css("#panelProgramma > ul > li > a::attr(href)").getall()
+        # Collect courses ids while avoiding duplicates
         courses_ids = set([re.findall("\?a=(.+)&b", url)[-1] for url in courses_urls])
         base_dict["courses"] = list(set(base_dict["courses"]).union(courses_ids))
 
+        # Parse the next program 'path' or yield final result
         if paths_ids:
             post_data["dropdownlistTrajecten"] = paths_ids[0]
             yield scrapy.http.FormRequest.from_response(
