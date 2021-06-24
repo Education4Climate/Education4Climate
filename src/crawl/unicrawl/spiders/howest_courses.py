@@ -55,56 +55,20 @@ class HOWESTCourseSpider(scrapy.Spider, ABC):
         year = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblAcademiejaarOmschrijving::text").get()
         ects = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblInhoudStudieomvang::text").get()
         ects = ects.split("\xa0")[0] if ects else ""
-        teachers = body.xpath("//span[text()='Docenten: ']/following::span[1]/text()").get()
+        teachers = body.xpath("//span[text()='Coördinator: ' or text()='Docenten: ' or text()='Andere docenten: ']/following::span[1]/text()").getall()
+        teachers = ",".join(teachers).strip(", ") 
         teachers = [t.strip() for t in teachers.split(",")] if teachers else []
         languages = body.xpath("//span[text()='Onderwijstalen: ']/following::span[1]/text()").get()
         languages = [LANGUAGES_DICT[lang.strip()] for lang in languages.split(',')] if languages else ["nl"]
-        content = cleanup(body.xpath("//h4[text()='Inhoud']/following::div[1]").xpath("string(.)").get())
-        objectives = cleanup(body.xpath("//h4[text()='Doelstellingen']/following::div[1]").xpath("string(.)").get())
-        content = "{} {}".format(objectives, content)
+        content = cleanup(body.xpath("//h4[contains(text(),'Inhoud')]/following::div[1]").xpath("string(.)").get())
 
         yield {
             'id': base_dict['id'],
             'name': name,
             'year': year,
             'ects': ects,
-            'teachers': teachers,
             'languages': languages,
-            'content': content,
+            'teachers': teachers,
             'url': response.url,
+            'content': content,
         }
-
-
-
-    # def start_requests(self):
-
-    #     courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
-    #     courses_ids_list = sorted(list(set(courses_ids.sum())))
-
-    #     for course_id in courses_ids_list:
-    #         # Scrapy does not load the content of the page. Used 'requests' instead
-    #         r = requests.get(BASE_URl.format(course_id))
-    #         selector = scrapy.Selector(r)
-
-    #         body = selector.css("#content")
-    #         name = body.css("h2::text").get()
-    #         year = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblAcademiejaarOmschrijving::text").get()
-    #         ects = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblInhoudStudieomvang::text()").get()
-    #         ects = ects.split("\xa0")[0] if ects else ""
-    #         teachers = body.xpath("//span[text()='Docenten: ']/following::span[1]/text()").get()
-    #         languages = body.xpath("//span[text()='Onderwijstalen: ']/following::span[1]/text()").get()
-    #         languages = [LANGUAGES_DICT[lang.strip()] for lang in languages.split(',')] if languages else ["nl"]
-    #         content = cleanup(body.xpath("//h4[text()='Inhoud']/following::div[1]").xpath("string(.)").get())
-    #         objectives = cleanup(body.xpath("//h4[text()='Doelstellingen']/following::div[1]").xpath("string(.)").get())
-    #         content = "{} {}".format(objectives, content)
-
-    #         yield {
-    #             'id': course_id,
-    #             'name': name,
-    #             'year': year,
-    #             'ects': ects,
-    #             'teachers': teachers,
-    #             'languages': languages,
-    #             'content': content,
-    #             'url': response.url,
-    #         }
