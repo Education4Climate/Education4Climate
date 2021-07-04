@@ -8,7 +8,8 @@ from difflib import get_close_matches as close_matches
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://app.howest.be/bamaflex/ectssearch.aspx"
+BASE_URL_1 = "https://www.howest.be/nl"
+BASE_URL_2 = "https://app.howest.be/bamaflex/ectssearch.aspx"
 
 acad_year = "{}".format(YEAR)
 
@@ -43,9 +44,8 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        url = "https://www.howest.be/nl"
         yield scrapy.Request(
-            url=url,
+            url=BASE_URL_1,
             callback=self.parse_home_page
         )
 
@@ -59,7 +59,7 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
         campus = response.css(".oplfiche").xpath("div/strong[text()='Locatie:']/following::ul[1]/li/text()").getall()
         faculty = response.css(".oplfiche").xpath("div[strong[text()='Studiedomein:']]/a/text()").get()
         cycle = response.css(".oplfiche").xpath("div[strong[text()='Diploma:']]/a/text()").get()
-        if not(cycle):
+        if not cycle:
             cycle = response.css(".oplfiche").xpath("div[strong[text()='Diploma:']]/text()").get()
         if cycle:
             cycle = "bac" if ("Bachelor" in cycle) else ("master" if ("Master" in cycle) else "other")
@@ -78,7 +78,7 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
         # METHOD : 
         # The list of courses of each programs is listed on another website
         yield scrapy.Request(
-            url=BASE_URL,
+            url=BASE_URL_2,
             callback=self.parse_programs_ids,
             cb_kwargs={"base_dict": base_dict},
             dont_filter=True
