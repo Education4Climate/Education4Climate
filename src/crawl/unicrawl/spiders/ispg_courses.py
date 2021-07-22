@@ -33,7 +33,6 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        # Use Url codes as ids because ids are not unique otherwise
         ue_codes = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         ue_codes_list = sorted(list(set(ue_codes.sum())))
 
