@@ -23,7 +23,8 @@ export default {
             dataLoaded: false,
             errors: "",
             consentGoogleAnalytics: false,
-            consentLocalStorage: false
+            consentLocalStorage: false,
+            selectedSchools: null
         };
     },
     async created() {
@@ -36,6 +37,24 @@ export default {
         catch (error) {
             console.log(error);
             this.errors += error;
+        }
+    },
+    mounted() {
+
+        // Initialize the filters values from the sessionStorage so the
+        // selected values stay the same across pages
+
+        if (sessionStorage.selectedSchools) {
+            this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
+        }
+    },
+    watch: {
+
+        // Watch for the sessionStorage to update the filters values which
+        // stay the same across pages (hence the use of sessionStorage)
+
+        selectedSchools(value) {
+            sessionStorage.selectedSchools = JSON.stringify(value);
         }
     },
     methods: {
@@ -115,7 +134,7 @@ export default {
 
             var cookies = document.cookie.split(";");
 
-            for (var i = 0; i < cookies.length; i++) { 
+            for (var i = 0; i < cookies.length; i++) {
 
                 // Set every cookie as expired
 

@@ -15,6 +15,7 @@ class ProgramsManager {
         this.programsThemes = [];
         this.programsFields = [];
         this.programsCycles = [];
+        this.programsLanguages = [];
         this.schoolsManager = new SchoolsManager();
     }
 
@@ -57,7 +58,8 @@ class ProgramsManager {
                         themes: this._getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
                         fieldId: this._getFieldId(program.field ? program.field : "other"),
                         score: program.courses ? program.courses.length : 0,
-                        cycleId: this._getCycleId(program.cycle ? program.cycle : "other")
+                        cycleId: this._getCycleId(program.cycle ? program.cycle : "other"),
+                        languages: this._getLanguages(program.languages && program.languages.length > 0 ? program.languages : ["other"]),
                     });
 
                     this._debugProgramsErrors(schools[i].shortName, program);
@@ -67,6 +69,7 @@ class ProgramsManager {
             sessionStorage.programsThemes = JSON.stringify(this.programsThemes);
             sessionStorage.programsFields = JSON.stringify(this.programsFields);
             sessionStorage.programsCycles = JSON.stringify(this.programsCycles);
+            sessionStorage.programsLanguages = JSON.stringify(this.programsLanguages);
             sessionStorage.programs = JSON.stringify(programs);
         }
 
@@ -104,6 +107,17 @@ class ProgramsManager {
         }
 
         return JSON.parse(sessionStorage.programsCycles);
+    }
+
+    async getProgramsLanguages() {
+
+        if (!sessionStorage.programsLanguages) {
+
+            await getProgram();
+            sessionStorage.programsLanguages = JSON.stringify(this.programsLanguages);
+        }
+
+        return JSON.parse(sessionStorage.programsLanguages);
     }
 
     _getFieldId(field) {
@@ -227,6 +241,63 @@ class ProgramsManager {
         if (!program.themes || program.themes.length === 0) console.log(school + " : " + program.id + " has no themes");
         if (!program.themes_scores || program.themes_scores.length === 0) console.log(school + " : " + program.id + " has no themes_scores");
         if (program.themes && program.themes_scores && program.themes.length !== program.themes_scores.length) console.log(school + " : " + program.id + " has no score for all themes");
+        if (!program.languages || program.languages.length === 0) console.log(school + " : " + program.id + " has no languages");
+    }
+
+    _getLanguages(languages) {
+
+        var l = [];
+
+        if (languages) {
+
+            for (var i = 0; i < languages.length; i++) {
+
+                // Take care of possible empty values
+
+                if (languages[i].length === 0) continue;
+
+                // Aggregate all languages other than fr/nl/en under "other"
+
+                if (languages[i] != "en" && languages[i] != "fr" && languages[i] != "nl") languages[i] = "other";
+
+                // Find the id of the language (if already in the programsLanguages dictionnary)
+
+                var id = -1;
+
+                for (var j = 0; j < this.programsLanguages.length; j++) {
+
+                    if (this.programsLanguages[j].name == languages[i]) {
+
+                        id = j;
+                        break;
+                    }
+                }
+
+                // If the language is not yet in the programsLanguages dictionnary, add it
+
+                if (id == -1) {
+
+                    id = this.programsLanguages.length;
+
+                    this.programsLanguages.push({
+
+                        id: id,
+                        name: languages[i],
+                        totalCount: 0
+                    });
+                }
+
+                // If not yet present in the array that will be returned, add it and increment the language count
+
+                if (!l.includes(id)) {
+                    
+                    this.programsLanguages[id].totalCount++;
+                    l.push(id);
+                }
+            }
+        }
+
+        return l;
     }
 }
 

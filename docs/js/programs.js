@@ -20,9 +20,10 @@ var app = Vue.createApp({
             displayedPrograms: [],
             themes: [],
             fields: [],
-            selectedSchools: [],
+            languages: [],
             selectedThemes: [],
             selectedFields: [],
+            selectedLanguages: [],
             searchedName: "",
             currentPage: 0,
             showResponsiveFilters: false,
@@ -45,6 +46,10 @@ var app = Vue.createApp({
 
             return this.fields.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
+        sortedLanguages() { /* Sort the languages DESC on the total count for display */
+
+            return this.languages.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
+        },
         filteredPrograms() { /* Filter the sorted programs according to the schools/themes/fields selected and program name searched */
 
             if (this.dataLoaded) {
@@ -56,6 +61,7 @@ var app = Vue.createApp({
                     .filter(program => this.selectedSchools.includes(program.schoolId))
                     .filter(program => this.selectedThemes.some(theme => program.themes.map(theme => theme.id).includes(theme)))
                     .filter(program => this.selectedFields.includes(program.fieldId))
+                    .filter(program => this.selectedLanguages.some(language => program.languages.includes(language)))
                     .filter(program => program.name.toLowerCase().includes(searchedName));
             }
 
@@ -91,7 +97,7 @@ var app = Vue.createApp({
             });
 
             return programsCountsBySchool;
-        }     
+        }
     },
     mounted() {
 
@@ -118,12 +124,14 @@ var app = Vue.createApp({
             this.themes = await this.programsManager.getProgramsThemes();
             this.fields = await this.programsManager.getProgramsFields();
             this.cycles = await this.programsManager.getProgramsCycles();
+            this.languages = await this.programsManager.getProgramsLanguages();
 
             // sets the filters default selected schools / themes / fields
 
-            this.selectedSchools = this.schools.map(school => { return school.id; });
+            this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
             this.selectedThemes = this.themes.map(theme => { return theme.id; });
             this.selectedFields = this.fields.map(field => { return field.id; });
+            this.selectedLanguages = this.languages.map(language => { return language.id; });
 
             // hides the loader
 
