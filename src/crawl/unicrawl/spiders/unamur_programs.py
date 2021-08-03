@@ -33,15 +33,23 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 f"//div[@id='tab-{YEAR}']//h3[a[contains(text(), \"{faculty}\")]]"
                 f"//following::div[1]/div/a/text()").getall()
             for program_name, programs_link in zip(programs_names, programs_links):
-                # Scrap only bachelor and master programs
-                # TODO: should we add certificates?
-                if program_name.startswith("Bachelier") or program_name.startswith("Master"):
-                    cycle = 'bac' if program_name.startswith("Bachelier") else 'master'
+
+                if 'Doctorat' not in program_name and 'Cours' not in program_name:
+                    if 'Bachelier' in program_name:
+                        cycle = 'bac'
+                    elif 'Master' in program_name:
+                        cycle = 'master'
+                    elif 'Certificat' in program_name:
+                        cycle = 'certificate'
+                    else:
+                        cycle = 'other'
+
                     base_dict = {
                         "id": programs_link.split("/")[-2],
                         "name": program_name,
                         "faculty": faculty,
                         "cycle": cycle}
+
                     yield response.follow(
                         programs_link,
                         self.parse_program,
@@ -51,7 +59,7 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_program(response, base_dict):
         codes = cleanup(response.xpath("//div[@id='cycle']//tr//td[@class='code']").getall())
-        # links = u.cleanup(response.xpath("//tr//td[@class='name']/a/@href").getall()
+
         # Programs can be divided in 3, 2 or 1 blocks (or there is no ects)
         nb_blocks = 3
         ects = cleanup(response.xpath("//div[@id='cycle']//tr[not(@class='title')]"
@@ -75,11 +83,12 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 course_ects = [e for e in course_ects if len(e)]
                 # If there is still a different number of ects only keep the first one
                 ects_slimmed += [list(set(course_ects))[0]]
+        ects = [int(e) for e in ects_slimmed]
 
-        cur_dict = {'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked -> also gembloux or louvain-la-neuve
+        cur_dict = {# 'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked -> also gembloux or louvain-la-neuve
                     'url': response.url,
                     'courses': codes,
-                    'ects': ects_slimmed
+                    'ects': ects
                     }
 
         yield {**base_dict, **cur_dict}

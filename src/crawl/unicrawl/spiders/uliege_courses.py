@@ -36,15 +36,15 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_main(response):
 
-        class_name = cleanup(response.css("h1::text").get())
-        year_and_short_name = cleanup(
+        course_name = cleanup(response.css("h1::text").get())
+        year_and_id = cleanup(
             response.xpath("//div[@class='u-courses-header__headline']/text()")
             .get()).strip(" ").split("/")
-        short_name = year_and_short_name[1].strip(" ")
-        years = year_and_short_name[0]
+        course_id = year_and_id[1].strip(" ")
+        years = year_and_id[0]
 
         # Get teachers name (not an easy task because not a constant syntax)
-        teachers_para = response.xpath(".//section[h3[contains(text(),'Enseignant')"
+        teachers_para = response.xpath("//section[h3[contains(text(),'Enseignant')"
                                        " or contains(text(),'Suppléant')"
                                        " or contains(text(),'Coordinateur')]]/p")
         # Check first if there are links (to teachers page)
@@ -55,7 +55,7 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
             teachers = cleanup(teachers_links)
         teachers = [] if teachers == [""] else teachers
         # Replace strange characters
-        teachers = [t for t in teachers if "N..." in t]
+        teachers = [t for t in teachers if "N..." not in t]
         teachers = [t.replace(' ', ' ') for t in teachers]
         teachers = [t.replace('  ', ' ') for t in teachers]
         # Put surname first
@@ -68,6 +68,7 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         languages = [LANGUAGE_DICT[lang] for lang in languages]
 
         # Content of the class
+        # TODO: change
         sections = ["Contenus de l'unité d'enseignement",
                     "Acquis d'apprentissage (objectifs d'apprentissage) de l'unité d'enseignement",
                     "Activités d'apprentissage prévues et méthodes d'enseignement"]
@@ -76,12 +77,11 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
             content = cleanup(response.xpath(f".//section[h3[contains(text(), \"{section}\")]]").get())
             content = content.replace(f"{section}", "").strip("\n")
             contents += [content]
-        content = "\n".join(contents)
-        content = "" if content == "\n\n" else content
+        content = "\n".join(contents).strip("\n ")
 
         data = {
-            'id': short_name,
-            'name': class_name,
+            'id': course_id,
+            'name': course_name,
             'year': years,
             'teachers': teachers,
             'languages': languages,

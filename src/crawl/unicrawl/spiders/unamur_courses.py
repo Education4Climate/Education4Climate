@@ -37,7 +37,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_main(response):
-        name_and_id = response.xpath("//h1/text").get()
+        name_and_id = response.xpath("//h1/text()").get()
         name = name_and_id.split("[")[0].strip(" ")
         course_id = name_and_id.split("[")[1].strip("]")
 
@@ -49,32 +49,19 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         languages = [lang.split(":  ")[1] for lang in languages]
         languages = [LANGUAGES_DICT[lang] for lang in languages]
 
+        # TODO: refine ? possible ?
         content = cleanup(response.xpath("//div[@id='tab-introduction']").get())
 
-        # TODO: remove if not required anymore
-        # cycle_ects = cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
-        # cycles = []
-        # ects = []
-        # programs = []
-        # for i, el in enumerate(cycle_ects):
-        #     if i % 3 == 0:
-        #         programs += [el]
-        #         if "Bachelier" in el:
-        #             cycles += ["bac"]
-        #         elif "Master" in el:
-        #             cycles += ["master"]
-        #         else:
-        #             cycles += ["other"]
-        #     elif i % 3 == 2:
-        #         ects += [int(el)]
-
-        # ODO: need to check if there are not sometimes several campuses or faculties
-        # organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
-        # campus = ''
-        # if "Lieu de l'activité" in organisation:
-        #     campus = cleanup(
-        #         organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
-        # faculty = cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
+        # TODO: need to check if there are not sometimes several campuses or faculties
+        organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
+        campus = 'Namur'
+        if "Lieu de l'activité" in organisation:
+             campus = cleanup(
+                 organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
+        if campus == 'LOUVAIN-LA-NEUVE':
+            campus = 'Louvain-la-Neuve'
+        else:
+            campus = campus.lower().capitalize()
 
         data = {
             'id': course_id,
@@ -82,12 +69,8 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
             'year': years,
             'teachers': teachers,
             'languages': languages,
-            # 'cycle': cycles,
-            # 'ects': ects,
+            'campus': campus,
             'url': response.url,
-            # 'faculty': faculty,
-            # 'campus': campus,
-            # 'program': programs,
             'content': content
         }
         yield data

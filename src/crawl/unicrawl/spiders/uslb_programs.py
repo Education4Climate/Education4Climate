@@ -5,7 +5,7 @@ from pathlib import Path
 import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
-BASE_URL = "https://www.usaintlouis.be/sl/enseignement_prog2020.html"
+BASE_URL = f"https://www.usaintlouis.be/sl/enseignement_prog{YEAR}.html"
 
 PROGRAM_FACULTIES = \
     {"Master de spécialisation en droits de l'homme": "Faculté de droit",
@@ -31,8 +31,10 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
     def parse_offer(self, response):
 
         # Bachelor programs
-        faculties_names = response.xpath("//p[@class='p2']//a[contains(text(), 'Faculté')]/text()").getall()
-        bachelor_programs_links = response.xpath("//p[@class='p5']//a/@href").getall()[:-1]
+        faculty_p = f'p{2 + 1 if YEAR == "2021" else 0}'
+        program_p = f'p{5 + 1 if YEAR == "2021" else 0}'
+        faculties_names = response.xpath(f"//p[@class='{faculty_p}']//a[contains(text(), 'Faculté')]/text()").getall()
+        bachelor_programs_links = response.xpath(f"//p[@class='{program_p}']//a/@href").getall()[:-1]
         # A bit hand-made but the website is really badly done
         bachelor_programs_number = [4, 2, 6, 1]
         first_program = 0

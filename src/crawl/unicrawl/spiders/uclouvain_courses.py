@@ -11,7 +11,7 @@ from src.crawl.utils import cleanup
 
 BASE_URL = "https://uclouvain.be/cours-{}-{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../{CRAWLING_OUTPUT_FOLDER}ucl_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}.json')
 
 
 LANGUAGE_DICT = {"Français": "fr",
@@ -27,11 +27,11 @@ LANGUAGE_DICT = {"Français": "fr",
                  "Russe": "ru"}
 
 
-class UCLCourseSpider(scrapy.Spider, ABC):
-    name = "ucl-courses"
+class UCLouvainCourseSpider(scrapy.Spider, ABC):
+    name = "uclouvain-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ucl_courses_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_courses_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):
@@ -57,6 +57,7 @@ class UCLCourseSpider(scrapy.Spider, ABC):
         languages = [LANGUAGE_DICT[l] for l in languages if l != '']
         
         # content
+        # TODO: update
         sections = ["Thèmes", " Acquis", "Contenu"]
         content = "\n".join([cleanup(response.xpath(f"//div[div[contains(text(),'{section}')]]/div[2]").get())
                              for section in sections])
@@ -66,7 +67,6 @@ class UCLCourseSpider(scrapy.Spider, ABC):
             'id': course_id,
             'name': course_name,
             'year': year,
-            'campus': campus,
             'teachers': teachers,
             'languages': languages,
             'url': response.url,

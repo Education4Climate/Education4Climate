@@ -11,7 +11,7 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}uslb_programs_{YEAR}.json')
-BASE_URL = "https://www.usaintlouis.be/sl/2020/C{}.html"
+BASE_URL = f"https://www.usaintlouis.be/sl/{YEAR}" + "/C{}.html"
 LANGUAGE_DICT = {"français": 'fr',
                  "francais": 'fr',
                  "french": 'fr',
@@ -58,6 +58,7 @@ class USLBCoursesSpider(scrapy.Spider, ABC):
                 languages_codes += [code]
         languages_codes = list(set(languages_codes))
 
+        # TODO: update
         sections = ["Objectifs d'apprentissage", "Contenu de l'activité"]
         content = ''
         for section in sections:

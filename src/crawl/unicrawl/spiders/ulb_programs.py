@@ -34,7 +34,6 @@ class ULBProgramSpider(scrapy.Spider, ABC):
             )
 
     def parse_main(self, response, cycle):
-        # soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
         main_div = "//div[contains(@class, 'search-result__result-item')]"
         program_links = response.xpath(f"{main_div}/div[contains(@class, 'search-result__formations')]/a/@href").getall()

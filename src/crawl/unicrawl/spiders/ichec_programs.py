@@ -4,7 +4,7 @@ from pathlib import Path
 
 import scrapy
 
-from settings import YEAR
+from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.ichec.be/fr/programmes"
 

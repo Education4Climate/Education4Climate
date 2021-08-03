@@ -8,7 +8,7 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = "https://web.umons.ac.be/fr/enseignement/loffre-de-formation-de-lumons/"
 
 
-class UmonsProgramSpider(scrapy.Spider, ABC):
+class UMonsProgramSpider(scrapy.Spider, ABC):
     name = "umons-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -48,11 +48,10 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
         else:
             campus = response.xpath(
                 '//div[div/text()="Lieu"]').css('div.value::text').get()
-            # ects = response.xpath(
-            #     '//div[div/text()="Crédits ECTS"]').css('div.value::text').get()
-            yield response.follow(url=href, callback=self.parse_prog_detail, cb_kwargs={'campus': campus,
-                                                                                        'cycle': cycle,
-                                                                                        'url': response.url})
+            yield response.follow(url=href, callback=self.parse_prog_detail,
+                                  cb_kwargs={'campus': campus,
+                                             'cycle': cycle,
+                                             'url': response.url})
 
     @staticmethod
     def parse_prog_detail(response, campus, cycle, url):
@@ -64,12 +63,13 @@ class UmonsProgramSpider(scrapy.Spider, ABC):
         ects = cleanup(response.xpath("//td[@class='credits colnumber']").getall())
         ects = [int(e) if e != '' else 0 for e in ects]
 
-        program_dict = {'id': response.url.split("/")[-1].split(".")[0],
-                        'name': program_name,
-                        'faculty': faculty,
-                        'cycle': cycle,
-                        'campus': campus,
-                        'url': url,
-                        'courses': courses,
-                        'ects': ects}
-        yield program_dict
+        yield {
+            'id': response.url.split("/")[-1].split(".")[0],
+            'name': program_name,
+            'faculty': faculty,
+            'cycle': cycle,
+            'campus': campus,
+            'url': url,
+            'courses': courses,
+            'ects': ects
+        }

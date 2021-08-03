@@ -64,8 +64,12 @@ class ULBCourseSpider(scrapy.Spider, ABC):
     def parse_course(response, base_dict):
 
         name = response.xpath("//h1/text()").get()
+        if name is None:
+            return
+        name = name.replace("\n               ", '')
+
         teachers = cleanup(response.xpath("//h3[text()='Titulaire(s) du cours']/following::text()[1]").get())
-        teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ")
+        teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ").replace("\n               ", '')
         teachers = teachers.split(", ")
         teachers = [teacher for teacher in teachers if teacher != ""]
         # Put surname first
@@ -76,11 +80,11 @@ class ULBCourseSpider(scrapy.Spider, ABC):
             languages = [LANGUAGE_DICT[language] for language in languages.split(", ")]
         languages = ['fr'] if languages == [""] else languages
 
+        # TODO: update
         content_titles = ["Contenu du cours", "Objectifs (et/ou acquis d'apprentissages spécifiques)",
                           "Méthodes d'enseignement et activités d'apprentissages"]
         content = "\n".join([cleanup(response.xpath(f"//h2[text()=\"{title}\"]/following::div[1]").get())
-                             for title in content_titles])
-        content = "" if content == "\n\n" else content
+                             for title in content_titles]).strip("\n ")
 
         cur_dict = {
             "name": name,

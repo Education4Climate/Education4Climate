@@ -66,6 +66,7 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
 
         goal = cleanup(response.xpath(f"//div[p/text()="
                                       f"\"Objectifs par rapport aux acquis d'apprentissage du programme\"]/ul").get())
+        # TODO: change
         sections = ["Acquis d'apprentissage UE", "Contenu de l'UE"]
         contents = [cleanup(response.xpath(f"//div[p/text()=\"{section}\"]/p[@class='texteRubrique']").get())
                     for section in sections]
