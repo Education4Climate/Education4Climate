@@ -12,7 +12,6 @@ BASE_URl = "http://onderwijsaanbod.odisee.be/syllabi/{}.htm"  # first format is 
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}odisee_programs_{YEAR}.json')
 
-# TODO: check languages
 LANGUAGES_DICT = {"Nederlands": 'nl',
                   "Dutch": 'nl',
                   "Olandese": 'nl',
@@ -60,7 +59,7 @@ class OdiseeCourseSpider(scrapy.Spider, ABC):
         teachers = list(set([t.strip(" ") for t in teachers if t != '']))
 
         languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
-        languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
+        languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages else []
 
         # Content
         content = []

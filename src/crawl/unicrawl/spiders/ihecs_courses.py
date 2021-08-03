@@ -55,14 +55,14 @@ class IHECSCourseSpider(scrapy.Spider, ABC):
         teachers = list(set([t for t in teachers if t != '/']))
 
         languages = response.xpath(section_txt.format("Langue")).get()
-        languages = [LANGUAGES_DICT[lang] for lang in languages.split(" - ")] if languages is not None else []
+        languages = [LANGUAGES_DICT[lang] for lang in languages.split(" - ")] if languages else []
 
         # Content
         contents = []
         sections = ['Acquis', 'Dispositif']
         for section in sections:
             content = response.xpath(section_txt.format(section)).get()
-            contents += [content] if content is not None else [""]
+            contents += [content] if content else [""]
         content = "\n".join(contents)
         content = "" if content == '\n' else content
 

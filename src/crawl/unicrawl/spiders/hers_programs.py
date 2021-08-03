@@ -59,7 +59,7 @@ class HERSProgramSpider(scrapy.Spider, ABC):
     def parse_program(response, base_dict):
 
         ects = response.xpath("//td[contains(@class, 'ContColG')]/text()").getall()
-        ects = [int(e) for e in ects if e != '\xa0']
+        ects = [int(e) for e in ects if e != '\xa0']  # Remove elements which do not correspond to ects
         courses_ids = response.xpath("//nobr/text()").getall()
 
         cur_dict = {"url": response.url,

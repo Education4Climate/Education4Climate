@@ -8,7 +8,7 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-BASE_URL = "http://onderwijsaanbod.kuleuven.be/syllabi/{}.htm"  # first format is code course, second is year
+BASE_URL = "http://onderwijsaanbod.kuleuven.be/syllabi/{}.htm"  # first format is code course
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}kuleuven_programs_{YEAR}.json')
 

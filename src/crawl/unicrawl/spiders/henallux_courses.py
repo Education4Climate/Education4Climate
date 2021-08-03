@@ -50,7 +50,7 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
         teachers = response.xpath(f"{ue_div_txt}//div[span[text()=\"Responsable de l'UE\"]]/text()").get().split(": ")[1]
         teachers = teachers.split(" - ")
         add_teachers = response.xpath(f"{ue_div_txt}//span[contains(text(), \"Autres enseignants\")]/following::text()[2]").get()
-        if add_teachers is not None:
+        if add_teachers:
             teachers += add_teachers.split(" - ")
         teachers = list(set([" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0] for teacher in teachers]))
         teachers = [t for t in teachers if t != " "]

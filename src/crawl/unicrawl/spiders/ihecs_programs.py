@@ -42,7 +42,6 @@ class IHECSProgramSpider(scrapy.Spider, ABC):
 
     def parse_main(self, response, program_id, program_name):
 
-        # ues = response.xpath("//tr[@bgcolor='#e5f2f7']/td[1]/font/text()").getall()
         ects = response.xpath("//tr[@bgcolor='#e5f2f7']/td[4]/font/text()").getall()
         ects = [int(e) for e in ects]
         # Use Url codes as ids because ids are not unique otherwise

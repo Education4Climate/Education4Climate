@@ -48,12 +48,12 @@ class ArteveldeCourseSpider(scrapy.Spider, ABC):
         ects = int(response.xpath("//span[contains(@id, 'Inhoud')]/text()").get().split("\xa0")[0])
 
         teacher_text = response.xpath("//span[contains(text(), 'Coördinator')]/following::span[1]/text()").get()
-        teachers = [teacher_text] if teacher_text is not None else []
+        teachers = [teacher_text] if teacher_text else []
         teacher_text = response.xpath("//span[contains(text(), 'ocenten')]/following::span[1]/text()").get()
-        teachers += teacher_text.split(", ") if teacher_text is not None else []
+        teachers += teacher_text.split(", ") if teacher_text else []
 
         language_text = response.xpath("//span[contains(text(), 'Onderwijstalen')]/following::span[1]/text()").get()
-        languages = language_text.split(", ") if language_text is not None else []
+        languages = language_text.split(", ") if language_text else []
         languages = [LANGUAGES_DICT[l] for l in languages if l in LANGUAGES_DICT]
 
         # Content

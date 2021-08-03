@@ -143,7 +143,7 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
         for program_name in program_names:
             request_text = f"//div[div[h2[a[contains(text(), \'{program_name}\')]]]]/div[@class='field field-name-course-extraline']/text()"
             campus = response.xpath(request_text).get()
-            if campus is not None and 'Campus' in campus:
+            if campus and 'Campus' in campus:
                 programs_campus += ["Campus " + campus.split("Campus ")[1].strip(", ")]
             else:
                 programs_campus += [""]
