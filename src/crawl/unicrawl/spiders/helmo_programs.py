@@ -72,7 +72,8 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
         ue_codes = [url.split("ue=")[1].split("#")[0] for url in ue_urls]
         ue_url_codes = [url.split("Formations/")[-1].strip("#a ") for url in ue_urls]
 
-        cur_dict = {"courses": ue_codes,
+        cur_dict = {"url": response.url,
+                    "courses": ue_codes,
                     "ects": ue_ects,
                     "courses_urls": ue_url_codes
                     }

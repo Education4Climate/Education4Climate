@@ -94,9 +94,7 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
         progam_names = response.xpath("//select[2]//option/text()").getall()[1:]
         print(program_ids)
 
-        #BASE_DATA['__VIEWSTATE'] = soup.find(id='__VIEWSTATE')['value']
         BASE_DATA['__VIEWSTATE'] = response.xpath("//input[@id='__VIEWSTATE']/@value").get()
-        #BASE_DATA['__VIEWSTATEGENERATOR'] = soup.find(id='__VIEWSTATEGENERATOR')['value']
         BASE_DATA['__VIEWSTATEGENERATOR'] = response.xpath("//input[@id='__VIEWSTATEGENERATOR']/@value").get()
 
         for prog, prog_name in list_progs:
