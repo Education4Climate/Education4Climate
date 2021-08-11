@@ -67,26 +67,25 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
                                            "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
         languages = [LANGUAGE_DICT[lang] for lang in languages]
 
-        # Content of the class
-        # TODO: change
-        sections = ["Contenus de l'unité d'enseignement",
-                    "Acquis d'apprentissage (objectifs d'apprentissage) de l'unité d'enseignement",
-                    "Activités d'apprentissage prévues et méthodes d'enseignement"]
-        contents = []
-        for section in sections:
-            content = cleanup(response.xpath(f".//section[h3[contains(text(), \"{section}\")]]").get())
-            content = content.replace(f"{section}", "").strip("\n")
-            contents += [content]
-        content = "\n".join(contents).strip("\n ")
+        # Course description
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f".//section[h3[contains(text(), \"{section}\")]]").get())
+                     .replace(f"{section}", "").strip("\n")
+                     for section in sections_names]
+            return "\n".join(texts).strip("\n ")
+        content = get_sections_text(["Contenus de l'unité d'enseignement"])
+        goal = get_sections_text(["Acquis d'apprentissage (objectifs d'apprentissage) de l'unité d'enseignement"])
+        activity = get_sections_text(["Activités d'apprentissage prévues et méthodes d'enseignement"])
 
-        data = {
+        yield {
             'id': course_id,
             'name': course_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
             'content': content,
+            'goal': goal,
+            'activity': activity,
+            'other': ''
         }
-
-        yield data

@@ -49,27 +49,30 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
 
         course_name = cleanup(response.css("h1.header-school::text").get())
         year = cleanup(response.css("span.anacs::text").get())
-        campus = cleanup(response.css("span.location::text").get())
 
         teachers = response.xpath("//div[div[contains(text(),'Enseignants')]]/div/a/text()").getall()
         languages = cleanup(response.xpath("//div[div[contains(@class, 'fa_cell_1') and contains(text(), 'Langue')]]"
                                            "/div[2]/text()").getall())
         languages = [LANGUAGE_DICT[l] for l in languages if l != '']
         
-        # content
-        # TODO: update
-        sections = ["Thèmes", " Acquis", "Contenu"]
-        content = "\n".join([cleanup(response.xpath(f"//div[div[contains(text(),'{section}')]]/div[2]").get())
-                             for section in sections])
-        content = content.strip("\n ")
+        # Course description
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f"//div[div[contains(text(),'{section}')]]/div[2]").get())
+                     for section in sections_names]
+            return "\n".join(texts).strip("\n ")
+        content = get_sections_text(['Contenu'])
+        goal = get_sections_text(['Acquis'])
+        themes = get_sections_text(['Thèmes'])
 
-        data = {
+        yield {
             'id': course_id,
             'name': course_name,
             'year': year,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
             'content': content,
+            'goal': goal,
+            'activity': '',
+            'other': themes
         }
-        yield data

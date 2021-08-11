@@ -49,10 +49,9 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         languages = [lang.split(":  ")[1] for lang in languages]
         languages = [LANGUAGES_DICT[lang] for lang in languages]
 
-        # TODO: refine ? possible ?
+        # Could not find a way to separate sections # TODO: possible in post-processing ?
         content = cleanup(response.xpath("//div[@id='tab-introduction']").get())
 
-        # TODO: need to check if there are not sometimes several campuses or faculties
         organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
         campus = 'Namur'
         if "Lieu de l'activité" in organisation:
@@ -63,7 +62,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         else:
             campus = campus.lower().capitalize()
 
-        data = {
+        yield {
             'id': course_id,
             'name': name,
             'year': years,
@@ -71,6 +70,8 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
             'languages': languages,
             'campus': campus,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': '',
+            'activity': '',
+            'other': ''
         }
-        yield data

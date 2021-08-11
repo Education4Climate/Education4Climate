@@ -67,21 +67,24 @@ class KULeuvenCourseSpider(scrapy.Spider, ABC):
         languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
 
-        # Content
-        content = []
-        sections = ['Aims', 'Doelstellingen', 'Content', 'Inhoud']
-        for section in sections:
-            content += cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
-                                              f"and h2/text()='{section}']//text()").getall())
-
-        content = " ".join(content)
+        # Course description
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
+                                            f"and h2/text()='{section}']//text()").getall())
+                     for section in sections_names]
+            return "\n".join(texts).strip("\n")
+        content = get_sections_text(['Content', 'Inhoud'])
+        goal = get_sections_text(['Aims', 'Doelstellingen'])
 
         yield {
             'id': course_id,
             'name': course_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
+            'url': response.url,
             'content': content,
-            'url': response.url
+            'goal': goal,
+            'activity': '',
+            'other': ''
         }

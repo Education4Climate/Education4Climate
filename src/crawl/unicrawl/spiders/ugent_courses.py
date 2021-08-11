@@ -1,29 +1,31 @@
 # -*- coding: utf-8 -*-
 from pathlib import Path
+from abc import ABC
 from os import remove
 
-import numpy as np
 import pandas as pd
+
+import scrapy
 
 import urllib3
 from pdfminer.high_level import extract_text
 
-
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URl = "https://studiegids.ugent.be/2020/NL/studiefiches/{}.pdf"
+
+BASE_URL = "https://studiekiezer.ugent.be/ministudiefiche/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}.json')
 
 
 def download_pdf(pdf_url: str) -> str:
     urllib3.disable_warnings()
-    filePath = r"file.pdf"
+    file_path = r"file.pdf"
     with urllib3.PoolManager() as http:
         r = http.request('GET', pdf_url)
-        with open(filePath, 'wb') as fout:
+        with open(file_path, 'wb') as fout:
             fout.write(r.data)
-    return filePath
+    return file_path
 
 
 def extract_content(pdf_url: str) -> str:
@@ -33,48 +35,48 @@ def extract_content(pdf_url: str) -> str:
     return content
 
 
-def main(fn):
+class UGentCourseSpider(scrapy.Spider, ABC):
+    name = 'ugent-courses'
+    custom_settings = {
+        'FEED_URI': Path(__file__).parent.absolute().joinpath(
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_courses_{YEAR}.json').as_uri()
+    }
 
-    courses_df = pd.read_json(open(PROG_DATA_PATH, "r"))[["courses", "courses_names", "courses_teachers"]]
-    courses_ids_list = courses_df['courses'].sum()
-    courses_names_list = courses_df['courses_names'].sum()
-    courses_teachers_list = courses_df['courses_teachers'].sum()
-    unique_courses_ids_list = sorted(list(set(courses_ids_list)))
+    def start_requests(self):
 
-    data = []
-    for i, course_id in enumerate(unique_courses_ids_list):
-        if i % 10 == 0:
-            print(course_id, f'{i}/{len(unique_courses_ids_list)}')
-        courses_ids_positions = [i for i, c in enumerate(courses_ids_list) if c == course_id]
-        # Find name of the course
-        course_name = np.array(courses_names_list)[courses_ids_positions][0]
-        # Find teachers giving the course
-        unique_teachers = list(set(np.array(courses_teachers_list)[courses_ids_positions]))
-        unique_teachers = [t for t in unique_teachers if t is not None and 'N.' not in t]
-        # Languages
-        languages = ['nl']
-        if '[' in course_name and ']' in course_name:
-            languages = course_name.split("[")[-1].split(']')[0].replace(' ', '').split(',')
-            course_name = course_name.split("[")[0].strip(" ")
-        # Content
-        url = BASE_URl.format(course_id)
-        content = extract_content(url)
+        courses_df = pd.read_json(open(PROG_DATA_PATH, "r"))[["courses", "courses_names",
+                                                              "courses_languages", "courses_urls"]]
+        courses_ids_list = courses_df["courses"].sum()
+        courses_names_list = courses_df["courses_names"].sum()
+        courses_lang_list = courses_df["courses_languages"].sum()
+        courses_urls_list = courses_df["courses_urls"].sum()
 
-        data += [{
-            'id': course_id,
-            'name': course_name,
-            'year': f"{YEAR}-{int(YEAR) + 1}",
-            'teachers': unique_teachers,
-            'languages': languages,
-            'url': url,
-            'content': content
-        }]
+        courses_list = list(set(zip(courses_ids_list, courses_names_list, courses_lang_list, courses_urls_list)))
 
-    data = pd.DataFrame.from_dict(data)
-    data.to_json(fn, orient='records')
+        for course_id, course_name, course_lang, course_url in courses_list:
+            yield scrapy.Request(url=BASE_URL.format(course_url),
+                                 callback=self.parse_course_info,
+                                 cb_kwargs={"course_id": course_id,
+                                            "course_name": course_name,
+                                            "language": course_lang})
 
+    def parse_course_info(self, response, course_id, course_name, language):
 
-if __name__ == '__main__':
-    FEED_URI = Path(__file__).parent.absolute().joinpath(
-        f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_courses_{YEAR}_pre.json')
-    main(FEED_URI)
+        response_json = response.json()
+        teacher = response_json['lesgever']
+        # Course description
+        content_link = response_json['studieficheUrlNL']
+        content = extract_content(content_link)
+
+        yield {
+            "id": course_id,
+            "name": course_name,
+            "year": f"{YEAR}-{int(YEAR) + 1}",
+            "languages": [language],
+            "teachers": [teacher],
+            "url": content_link,
+            "content": content,
+            "goal": '',
+            "activity": '',
+            "other": ''
+        }

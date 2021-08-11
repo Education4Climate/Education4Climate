@@ -35,6 +35,8 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
         for url in study_programs_url:
             yield scrapy.Request(url=url, callback=self.parse_courses)
 
+    # TODO: Warning, some pages on the site return a code 404 which is not accepted by scrapy --> might create errors
+    #   further down in the process
     def parse_courses(self, response):
 
         main_panel = f"//section[contains(@id, '-{YEAR}')]//section[@class='course']"
@@ -66,14 +68,18 @@ class UantwerpCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_course(response, base_dict):
 
-        sections = ["Learning outcomes", "Course contents", "Eindcompetenties", "Inhoud"]
-        content = ""
-        for section in sections:
-            section_content = cleanup(response.xpath(f"//section[contains(header/h3/a/text(),"
-                                                     f" \"{section}\")]/div").get())
-            content += "\n" + section_content if len(section_content) != 0 else ""
-        content = content.strip("\n")
+        # Course description
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f"//section[contains(header/h3/a/text(),"
+                                            f" \"{section}\")]/div").get())
+                     for section in sections_names]
+            return "\n".join(texts).strip("\n")
+        contents = get_sections_text(["Course contents", "Inhoud"])
+        goals = get_sections_text(["Learning outcomes", "Eindcompetenties"])
 
         base_dict["url"] = response.url
-        base_dict["content"] = content
+        base_dict["content"] = contents
+        base_dict["goal"] = goals
+        base_dict["activity"] = ''
+        base_dict["other"] = ''
         yield base_dict

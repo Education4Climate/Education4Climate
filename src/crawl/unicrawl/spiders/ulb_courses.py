@@ -52,16 +52,14 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum()))) 
 
         for course_id in courses_ids_list:
-            base_dict = {'id': course_id}
-
             yield scrapy.Request(
                 url=f'{BASE_URL}{course_id.lower()}',
                 callback=self.parse_course,
-                cb_kwargs={'base_dict': base_dict}
+                cb_kwargs={'course_id': course_id}
             )
 
     @staticmethod
-    def parse_course(response, base_dict):
+    def parse_course(response, course_id):
 
         name = response.xpath("//h1/text()").get()
         if name is None:
@@ -80,19 +78,24 @@ class ULBCourseSpider(scrapy.Spider, ABC):
             languages = [LANGUAGE_DICT[language] for language in languages.split(", ")]
         languages = ['fr'] if languages == [""] else languages
 
-        # TODO: update
-        content_titles = ["Contenu du cours", "Objectifs (et/ou acquis d'apprentissages spécifiques)",
-                          "Méthodes d'enseignement et activités d'apprentissages"]
-        content = "\n".join([cleanup(response.xpath(f"//h2[text()=\"{title}\"]/following::div[1]").get())
-                             for title in content_titles]).strip("\n ")
+        # Course description
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f"//h2[text()=\"{section}\"]/following::div[1]").get())
+                     for section in sections_names]
+            return "\n".join(texts).strip("\n ")
+        content = get_sections_text(["Contenu du cours"])
+        goal = get_sections_text(["Objectifs (et/ou acquis d'apprentissages spécifiques)"])
+        activity = get_sections_text(["Méthodes d'enseignement et activités d'apprentissages"])
 
-        cur_dict = {
+        yield {
+            "id": course_id,
             "name": name,
-            "teachers": teachers,
             "year": f'{YEAR}-{int(YEAR) + 1}',
             "languages": languages,
+            "teachers": teachers,
             "url": response.url,
-            "content": content
+            "content": content,
+            "goal": goal,
+            "activity": activity,
+            "other": ''
         }
-
-        yield {**base_dict, **cur_dict}
