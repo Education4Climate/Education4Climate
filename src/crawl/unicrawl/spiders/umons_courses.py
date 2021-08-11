@@ -41,14 +41,13 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
         courses = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_list = sorted(list(set(courses.sum())))
 
-        for course in courses_list:
-            base_dict = {"id": course}
-            yield scrapy.Request(url=BASE_URL.format(course),
+        for course_id in courses_list:
+            yield scrapy.Request(url=BASE_URL.format(course_id),
                                  callback=self.parse_course,
-                                 cb_kwargs={"base_dict": base_dict})
+                                 cb_kwargs={"course_id": course_id})
 
     @staticmethod
-    def parse_course(response, base_dict):
+    def parse_course(response, course_id):
 
         course_name = response.css("td.UETitle::text").get()
         year = response.css('td.toptile::text').get().split(' ')[2]
@@ -64,21 +63,25 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
                 [LANGUAGE_DICT[l.replace(" niveau 1", '').replace(" niveau 2", '').replace(" niveau 3", '')]
                  for l in languages_list.split(', ')]
 
-        goal = cleanup(response.xpath(f"//div[p/text()="
-                                      f"\"Objectifs par rapport aux acquis d'apprentissage du programme\"]/ul").get())
-        # TODO: change
-        sections = ["Acquis d'apprentissage UE", "Contenu de l'UE"]
-        contents = [cleanup(response.xpath(f"//div[p/text()=\"{section}\"]/p[@class='texteRubrique']").get())
-                    for section in sections]
-        content = goal + "\n" + "\n".join(contents)
-        content = '' if content == "\n\n" else content
+        # Course description
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f"//div[p/text()=\"{section}\"]/p[@class='texteRubrique']").get())
+                     for section in sections_names]
+            return "\n".join(texts).strip("\n ")
+        content = get_sections_text(["Contenu de l'UE"])
+        goal = get_sections_text(["Acquis d'apprentissage UE"]) + "\n" \
+            + cleanup(response.xpath(f"//div[p/text()="
+                                     f"\"Objectifs par rapport aux acquis d'apprentissage du programme\"]/ul").get())
 
-        cur_dict = {
+        yield {
+            'id': course_id,
             'name':  course_name,
             'year':  year,
             'teachers': teachers,
             'languages': languages_codes,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': goal,
+            'activity': '',
+            'other': ''
         }
-        yield {**base_dict, **cur_dict}
