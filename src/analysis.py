@@ -140,7 +140,7 @@ def analyse_programs(schools: List[str], year: int, themes: List[str], matched: 
 
 
 if __name__ == '__main__':
-    schools_ = ["ucl", "uliege", "ulb", "umons", "unamur", "uslb", "kuleuven", "vub", "uantwerp", "ugent", "uhasselt"]
+    schools_ = ["ucl", "uliege", "ulb", "umons", "unamur", "uslb", "kuleuven", "vub", "uantwerpen", "ugent", "uhasselt"]
     themes_ = ["climatology", "decarbonization", "durability", "energy", "environment", "society"]
     # analyse_courses(schools_, 2020, themes_)
     analyse_programs(schools_, 2020, themes_, False)
