@@ -36,7 +36,8 @@ class ULBProgramSpider(scrapy.Spider, ABC):
     def parse_main(self, response, cycle):
 
         main_div = "//div[contains(@class, 'search-result__result-item')]"
-        program_links = response.xpath(f"{main_div}/div[contains(@class, 'search-result__formations')]/a/@href").getall()
+        program_links = response.xpath(f"{main_div}/div[contains(@class, 'search-result__formations')]"
+                                       f"/a/@href").getall()
         campuses = response.xpath(f"{main_div}/div[contains(@class, 'search-result__campus')]/span/text()").getall()
         for link, campus in zip(program_links, campuses):
             yield scrapy.Request(
@@ -65,13 +66,22 @@ class ULBProgramSpider(scrapy.Spider, ABC):
         # Otherwise extract information for the program
         program_id = response.url.split("/")[-1]
         program_name = response.xpath("//h1/text()").get()
-        faculty = response.xpath("//div[@class='zone-titre__surtitre']/a/text()").get()
-        base_dict = {'id': program_id.upper(),
-                     'name': program_name,
-                     'faculty': faculty,
-                     'cycle': cycle,
-                     'campus': campus,
-                     'url': response.url}
+        faculties = response.xpath("//div[@class='zone-titre__surtitre']/a/text()").getall()
+        # Remove some elements which are not faculties
+        faculties = [faculty for faculty in faculties
+                     if 'Universit' not in faculty
+                     and 'Haute Ecole' not in faculty
+                     and 'Militaire' not in faculty
+                     and 'Nucléaire' not in faculty]
+
+        base_dict = {
+            'id': program_id.upper(),
+            'name': program_name,
+            'cycle': cycle,
+            'faculties': faculties,
+            'campuses': [campus],
+            'url': response.url
+        }
 
         program_id = program_id.upper()
         if main_program_id is None:

@@ -44,11 +44,13 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
             program_links = bachelor_programs_links[first_program:last_program]
             first_program += bachelor_programs_number[i]
             for link in program_links:
-                base_dict = {"id": link.split("/")[-1].replace(".html", ''),
-                             "name": '',
-                             "faculty": fac,
-                             "cycle": 'bac',
-                             "campus": ''}  # couldn't find any campus information
+                base_dict = {
+                    "id": link.split("/")[-1].replace(".html", ''),
+                    "name": '',
+                    "cycle": 'bac',
+                    "faculties": [fac],
+                    "campuses": []
+                }  # couldn't find any campus information
                 yield response.follow(link, self.get_study_programme_link, cb_kwargs={'base_dict': base_dict})
 
         # Master programs
@@ -57,11 +59,13 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
             # Some masters are given at uclouvain and unamur
             if 'uclouvain.be' in link or 'unamur' in link:
                 continue
-            base_dict = {"id": link.split("/")[-1].replace(".html", ''),
-                         "name": '',
-                         "faculty": '',  # No fac for masters it seems
-                         "cycle": 'master',
-                         "campus": ''}  # couldn't find any campus information
+            base_dict = {
+                "id": link.split("/")[-1].replace(".html", ''),
+                "name": '',
+                "cycle": 'master',
+                "faculties": [],  # No faculties for masters it seems, added below
+                "campuses": []
+            }  # couldn't find any campus information
             yield response.follow(link, self.get_study_programme_link, cb_kwargs={'base_dict': base_dict})
 
     def get_study_programme_link(self, response, base_dict):
@@ -85,7 +89,7 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
 
         # Add some faculties 'by-hand'
         if program_name in PROGRAM_FACULTIES:
-            cur_dict['faculty'] = PROGRAM_FACULTIES[program_name]
+            cur_dict['faculties'] = [PROGRAM_FACULTIES[program_name]]
 
         # Find additional subprogram name
         subprogram_name = response.xpath("//div[@id='honglet1']//p[contains(text(), 'Majeure')][1]/text()").get()

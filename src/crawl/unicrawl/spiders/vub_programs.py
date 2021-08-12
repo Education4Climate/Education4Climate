@@ -38,20 +38,22 @@ class VUBProgramSpider(scrapy.Spider, ABC):
         main_program_id = response.url.split("id=")[1].split("&")[0]
         sub_program_id = response.url.split("anchor=")[1].split("&")[0]
 
-        name = response.xpath("//h1/text()").get()
+        program_name = response.xpath("//h1/text()").get()
 
         cycle = "other"
-        if "Bachelor" in name:
+        if "Bachelor" in program_name:
             cycle = "bac"
-        elif "Postgraduaat" in name or "Postgraduate" in name:
+        elif "Postgraduaat" in program_name or "Postgraduate" in program_name:
             cycle = 'postgrad'
-        elif "Schakelprogramma Master" in name or "Voorbereidingsprogramma Master" in name \
-                or 'Educatieve master' in name:
+        elif "Schakelprogramma Master" in program_name or "Voorbereidingsprogramma Master" in program_name \
+                or 'Educatieve master' in program_name:
             cycle = "other"
-        elif 'Master' in name:
+        elif 'Master' in program_name:
             cycle = "master"
 
-        faculty = response.xpath("//p[1]/text()").get()
+        # Can have multiple faculties
+        faculties = response.xpath("//p[1]/text()").getall()
+        faculties = [faculty.strip(".") for faculty in faculties]
 
         courses_links = response.xpath("//i/a/@href").getall()
         if len(courses_links) == 0:
@@ -60,11 +62,13 @@ class VUBProgramSpider(scrapy.Spider, ABC):
         courses_texts = response.xpath("//i/a/text()").getall()
         courses_ects = [int(text.split("ECTS")[0]) for text in courses_texts]
 
-        yield {"id": main_program_id + '-' + sub_program_id,  # don't think there are ids, so took one from url
-               "name": name,
-               "faculty": faculty,
-               "campus": "",  # didn't find information on campuses
-               "cycle": cycle,
-               "url": response.url,
-               "courses": courses_codes,
-               "ects": courses_ects}
+        yield {
+            "id": main_program_id + '-' + sub_program_id,  # don't think there are ids, so took one from url
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": faculties,
+            "campuses": [],  # didn't find information on campuses
+            "url": response.url,
+            "courses": courses_codes,
+            "ects": courses_ects
+        }

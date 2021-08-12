@@ -47,8 +47,9 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                     base_dict = {
                         "id": programs_link.split("/")[-2],
                         "name": program_name,
-                        "faculty": faculty,
-                        "cycle": cycle}
+                        "cycle": cycle,
+                        "faculties": [faculty],
+                    }
 
                     yield response.follow(
                         programs_link,
@@ -85,10 +86,11 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
                 ects_slimmed += [list(set(course_ects))[0]]
         ects = [int(e) for e in ects_slimmed]
 
-        cur_dict = {# 'campus': 'Namur',  # TODO: I think the campus is always Namur but to be checked -> also gembloux or louvain-la-neuve
-                    'url': response.url,
-                    'courses': codes,
-                    'ects': ects
-                    }
+        cur_dict = {
+            'campuses': [],  # campus information is obtained via the course crawler
+            'url': response.url,
+            'courses': codes,
+            'ects': ects
+            }
 
         yield {**base_dict, **cur_dict}

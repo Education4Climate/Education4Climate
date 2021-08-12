@@ -49,40 +49,53 @@ class UCLouvainProgramSpider(scrapy.Spider, ABC):
         else:  # 'Approfondissement', 'Agrégation', 'Filière', 'Mineure'
             cycle = 'other'
 
-        cur_dict = {"id": program_id,
-                    "name": program_name,
-                    "faculty": faculty,
-                    "campus": campus,
-                    "cycle": cycle,
-                    "url": response.url}
+        cur_dict = {
+            "id": program_id,
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": [campus],
+            "url": response.url,
+            "courses": [],
+            "ects": []
+        }
 
-        # TODO: peut aussi y avoir 'Finalités' où il faut parse une autre page avant d'arriver au programme spécialisé
-        pages_names = ["Tronc commun", "Programme par matière", "Finalité spécialisée", "Programme"]
+        pages_names = ["Programme détaillé par matière", "Programme détaillé"]
+        # print(response.xpath(f"//a[@class='dropdown-toggle' and contains(text(), 'Programme')]"
+        #       f"/following::ul[1]//a/text()").getall())
+        no_program_found = True
         for page_name in pages_names:
             course_list_link = \
-                response.xpath(f"//a[@class='dropdown-toggle' and contains(text(), 'Programme détaillé')]"
+                response.xpath(f"//a[@class='dropdown-toggle' and contains(text(), 'Programme')]"
                                f"/following::ul[1]//a[text()=\"{page_name}\"]/@href").get()
             if course_list_link is not None:
                 yield response.follow(course_list_link, self.parse_course_list,
                                       cb_kwargs={"base_dict": cur_dict})
+                no_program_found = False
+                break
+
+        if no_program_found:
+            yield cur_dict
 
     @staticmethod
     def parse_course_list(response, base_dict):
 
-        courses_ids = response.xpath("//tr[@class='composant-ligne1']/td[1]/span/text()").getall()
+        courses_txt = "//div[@class='row' and contains(@style, 'transparent')]//span[@style='font-size:smaller']/text()"
+        courses_ids = response.xpath(courses_txt).getall()
         if len(courses_ids) == 0:
-            return
+            return base_dict
+
         # Missing credit with one program
         if base_dict['id'] == "RXU2CE":
             courses_ids = courses_ids[:-1]
 
-        ects = response.xpath("//tr[@class='composant-ligne1']/td[5][contains(text(), 'crédit')]/text()").getall()
+        ects = response.xpath("//div[@class='row' and contains(@style, 'transparent')]"
+                              "//div[contains(@class, 'col-sm-6')]//span[contains(text(), 'crédit')]/text()").getall()
         ects = [int(cleanup(e).strip(" crédits")) for e in ects]
 
-        cur_dict = {"courses": courses_ids,
-                    "ects": ects}
+        cur_dict = {
+            "courses": courses_ids,
+            "ects": ects
+        }
 
         yield {**base_dict, **cur_dict}
-
-
-

@@ -9,18 +9,19 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = "https://www.programmes.uliege.be/cocoon/recherche.html?source=formation"
 PROGRAM_URL = "https://www.programmes.uliege.be{}"
 
-FACULTY_DICT = {"archi": "Faculté d'Architecture",
-                "droit": "Faculté de Droit, Science politique et Criminologie",
-                "gembloux": "Gembloux Agro-Bio Tech",
-                "hec": "HEC Liège - Ecole de Gestion",
-                "facmed": "Faculté de Médecine",
-                "fmv": "Faculté de Médecine Vétérinaire",
-                "facphl": "Faculté de Philosophie et Lettres",
-                "fapse": "Faculté de Psychologie, Logopédie et Sciences de l'Education",
-                "facsc": "Faculté des Sciences",
-                "facsa": "Faculté des Sciences Appliquées",
-                "ishs": "Faculté des Sciences Sociales"
-                }
+FACULTY_DICT = {
+    "archi": "Faculté d'Architecture",
+    "droit": "Faculté de Droit, Science politique et Criminologie",
+    "gembloux": "Gembloux Agro-Bio Tech",
+    "hec": "HEC Liège - Ecole de Gestion",
+    "facmed": "Faculté de Médecine",
+    "fmv": "Faculté de Médecine Vétérinaire",
+    "facphl": "Faculté de Philosophie et Lettres",
+    "fapse": "Faculté de Psychologie, Logopédie et Sciences de l'Education",
+    "facsc": "Faculté des Sciences",
+    "facsa": "Faculté des Sciences Appliquées",
+    "ishs": "Faculté des Sciences Sociales"
+}
 
 
 class ULiegeSpider(scrapy.Spider, ABC):
@@ -79,8 +80,8 @@ class ULiegeSpider(scrapy.Spider, ABC):
             "id": program_id,
             "name": program_name,
             "cycle": cycle,
-            "campus": campus,
-            "faculty": faculty,
+            "faculties": [faculty],
+            "campuses": [campus],
             "url": response.url,
             "courses": courses,
             "ects": ects
