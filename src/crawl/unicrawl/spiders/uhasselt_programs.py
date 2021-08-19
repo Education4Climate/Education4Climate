@@ -104,28 +104,28 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
         BASE_DATA['__VIEWSTATE'] = response.xpath("//input[@id='__VIEWSTATE']/@value").get()
         BASE_DATA['__VIEWSTATEGENERATOR'] = response.xpath("//input[@id='__VIEWSTATEGENERATOR']/@value").get()
 
-        for prog, prog_name in list_progs:
+        for program_id, program_name in list_progs:
             cur_data = BASE_DATA.copy()
-            cur_data['beschridDDL$ctl00'] = prog
+            cur_data['beschridDDL$ctl00'] = program_id
 
             cycle = ''
-            if 'bachelor' in prog_name:
+            if 'bachelor' in program_name:
                 cycle = 'bac'
-            elif 'master' in prog_name or 'Master' in prog_name:
+            elif 'master' in program_name or 'Master' in program_name:
                 cycle = 'master'
-            elif 'Postgraduaat' in prog_name:
+            elif 'Postgradua' in program_name:
                 cycle = 'postgrad'
 
             # Faculty not crawlable so had to hard-code it
             faculties = []
             for f in FACULTIES_PROGRAMS:
-                if prog_name in FACULTIES_PROGRAMS[f]:
+                if program_name in FACULTIES_PROGRAMS[f]:
                     faculties = [f]
                     break
 
             base_dict = {
-                "id": prog,
-                "name": prog_name,
+                "id": program_id,
+                "name": program_name,
                 "cycle": cycle,
                 "faculties": faculties
             }
@@ -145,17 +145,17 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
                     "/following::td[1]//table//table//tr"
         courses_list = response.xpath(f"{main_path}/td[1]/a/text()").getall()
         courses_ids = [course.split(" ")[0] for course in courses_list]
-        if len(courses_ids) == 0:
-            return
 
-        ects = response.xpath(f"{main_path}/td[5]/text()").getall()
-        ects = [int(e) for e in ects if e.isnumeric()]
-        # Some programs do not have a regular way of displaying ects... (some times 4th sometimes 5th column)
-        if len(ects) != len(courses_ids):
-            ects = [0]*len(courses_ids)
+        ects = []
+        if len(courses_ids) != 0:
+            ects = response.xpath(f"{main_path}/td[5]/text()").getall()
+            ects = [int(e) for e in ects if e.isnumeric()]
+            # Some programs do not have a regular way of displaying ects... (some times 4th sometimes 5th column)
+            if len(ects) != len(courses_ids):
+                ects = [0]*len(courses_ids)
 
-        # Remove duplicates
-        courses_ids, ects = zip(*list(set(zip(courses_ids, ects))))
+            # Remove duplicates
+            courses_ids, ects = zip(*list(set(zip(courses_ids, ects))))
 
         cur_dict = {
             "campuses": [],  # Didn't find any info on campus

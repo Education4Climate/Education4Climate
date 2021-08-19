@@ -18,10 +18,10 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-
         yield scrapy.Request(BASE_URL, self.parse_main)
 
     def parse_main(self, response):
+
         # Get list of faculties
         faculties = response.xpath(f"//div[@id='tab-{YEAR}']//h3/a/text()").getall()
         for faculty in faculties:
@@ -59,7 +59,9 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_program(response, base_dict):
-        codes = cleanup(response.xpath("//div[@id='cycle']//tr//td[@class='code']").getall())
+
+        courses_urls = response.xpath("//div[@id='cycle']//tr//td[@class='name']/a/@href").getall()
+        courses = [course_url.split("/")[-2] for course_url in courses_urls]
 
         # Programs can be divided in 3, 2 or 1 blocks (or there is no ects)
         nb_blocks = 3
@@ -77,7 +79,7 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
         if nb_blocks > 1:
             ects_slimmed = []
             # ects are given for each block -> keep only one value
-            for i in range(len(codes)):
+            for i in range(len(courses)):
                 course_ects = [ects[i * 3], ects[i * 3 + 1],
                                ects[i * 3 + 2]] if nb_blocks == 3 else [ects[i * 2],
                                                                         ects[i * 2 + 1]]
@@ -89,7 +91,7 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
         cur_dict = {
             'campuses': [],  # campus information is obtained via the course crawler
             'url': response.url,
-            'courses': codes,
+            'courses': courses,
             'ects': ects
             }
 

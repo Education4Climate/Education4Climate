@@ -8,7 +8,7 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "http://applications.umons.ac.be/web/fr/pde/2020-2021/ue/{}.htm"
+BASE_URL = f"http://applications.umons.ac.be/web/fr/pde/{YEAR}-{int(YEAR)+1}" + "/ue/{}.htm"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}umons_programs_{YEAR}.json')
 
@@ -38,6 +38,7 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
+
         courses = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_list = sorted(list(set(courses.sum())))
 
@@ -54,7 +55,7 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
 
         main_teacher = response.xpath("//table[@class='UETbl'][1]//td[3]//text()").get()
         teachers = list(set([main_teacher] + response.xpath("//table[@class='UETbl'][1]//td[5]//li/text()").getall()))
-        teachers = [teacher for teacher in teachers if 'N.' not in teacher]
+        teachers = [teacher.lower().title() for teacher in teachers if 'N.' not in teacher]
 
         languages = response.xpath("//table[@class='UETbl'][2]//td[1]//li/text()").getall()
         languages_codes = []
@@ -72,13 +73,14 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
         goal = get_sections_text(["Acquis d'apprentissage UE"]) + "\n" \
             + cleanup(response.xpath(f"//div[p/text()="
                                      f"\"Objectifs par rapport aux acquis d'apprentissage du programme\"]/ul").get())
+        goal = goal.strip("\n")
 
         yield {
             'id': course_id,
             'name':  course_name,
             'year':  year,
-            'teachers': teachers,
             'languages': languages_codes,
+            'teachers': teachers,
             'url': response.url,
             'content': content,
             'goal': goal,

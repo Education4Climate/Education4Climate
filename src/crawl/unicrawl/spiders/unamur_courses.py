@@ -33,13 +33,14 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse_main)
+            yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse_main,
+                                 cb_kwargs={'course_id': course_id})
 
     @staticmethod
-    def parse_main(response):
+    def parse_main(response, course_id):
+
         name_and_id = response.xpath("//h1/text()").get()
         name = name_and_id.split("[")[0].strip(" ")
-        course_id = name_and_id.split("[")[1].strip("]")
 
         years = cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         teachers = cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
@@ -55,7 +56,7 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
         campus = 'Namur'
         if "Lieu de l'activité" in organisation:
-             campus = cleanup(
+            campus = cleanup(
                  organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
         if campus == 'LOUVAIN-LA-NEUVE':
             campus = 'Louvain-la-Neuve'
@@ -66,9 +67,9 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
             'id': course_id,
             'name': name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
-            'campus': campus,
+            'teachers': teachers,
+            'campuses': [campus],
             'url': response.url,
             'content': content,
             'goal': '',

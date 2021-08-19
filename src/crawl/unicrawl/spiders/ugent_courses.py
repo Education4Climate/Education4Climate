@@ -9,9 +9,12 @@ import scrapy
 
 import urllib3
 from pdfminer.high_level import extract_text
+from pdfminer.pdfparser import PDFSyntaxError
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
+import logging
+logging.getLogger().setLevel(logging.INFO)
 
 BASE_URL = "https://studiekiezer.ugent.be/ministudiefiche/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
@@ -19,6 +22,7 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
 
 
 def download_pdf(pdf_url: str) -> str:
+
     urllib3.disable_warnings()
     file_path = r"file.pdf"
     with urllib3.PoolManager() as http:
@@ -29,9 +33,13 @@ def download_pdf(pdf_url: str) -> str:
 
 
 def extract_content(pdf_url: str) -> str:
-    pdf_path = download_pdf(pdf_url)
-    content = extract_text(pdf_path)
-    remove(pdf_path)
+
+    try:
+        pdf_path = download_pdf(pdf_url)
+        content = extract_text(pdf_path)
+        remove(pdf_path)
+    except PDFSyntaxError:
+        return ''
     return content
 
 
@@ -51,19 +59,29 @@ class UGentCourseSpider(scrapy.Spider, ABC):
         courses_lang_list = courses_df["courses_languages"].sum()
         courses_urls_list = courses_df["courses_urls"].sum()
 
-        courses_list = list(set(zip(courses_ids_list, courses_names_list, courses_lang_list, courses_urls_list)))
+        courses_df = pd.DataFrame({'id': courses_ids_list, 'name': courses_names_list,
+                                   'languages': courses_lang_list, 'url': courses_urls_list})
+        courses_df = courses_df.drop_duplicates(subset='id')
 
-        for course_id, course_name, course_lang, course_url in courses_list:
-            yield scrapy.Request(url=BASE_URL.format(course_url),
+        print(len(courses_df))
+        for _, courses_ds in courses_df.iterrows():
+            yield scrapy.Request(url=BASE_URL.format(courses_ds['url']),
                                  callback=self.parse_course_info,
-                                 cb_kwargs={"course_id": course_id,
-                                            "course_name": course_name,
-                                            "language": course_lang})
+                                 cb_kwargs={"course_id": courses_ds['id'],
+                                            "course_name": courses_ds['name'],
+                                            "languages": courses_ds['languages'].split(',')})
 
-    def parse_course_info(self, response, course_id, course_name, language):
+    @staticmethod
+    def parse_course_info(response, course_id, course_name, languages):
 
         response_json = response.json()
-        teacher = response_json['lesgever']
+        teachers = []
+        if 'lesgever' in response_json:
+            teachers = [response_json['lesgever']]
+        else:
+            print(course_name)
+            print(response_json)
+        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
         # Course description
         content_link = response_json['studieficheUrlNL']
         content = extract_content(content_link)
@@ -72,8 +90,8 @@ class UGentCourseSpider(scrapy.Spider, ABC):
             "id": course_id,
             "name": course_name,
             "year": f"{YEAR}-{int(YEAR) + 1}",
-            "languages": [language],
-            "teachers": [teacher],
+            "languages": languages,
+            "teachers": teachers,
             "url": content_link,
             "content": content,
             "goal": '',

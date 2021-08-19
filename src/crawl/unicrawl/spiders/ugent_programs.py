@@ -4,6 +4,7 @@ from pathlib import Path
 import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from src.crawl.utils import cleanup
 
 BASE_URL = f"https://studiekiezer.ugent.be/nl/zoek?zt=&aj={YEAR}" + "&loc={}"
 BASE_URL_2 = "https://studiekiezer.ugent.be/nl/incrementalsearch?target=zoek&ids={}"
@@ -17,6 +18,7 @@ class UGentProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
+
         campuses = ['Gent', 'Brugge', 'Oudenaarde', 'Kortrijk']
         for campus in campuses:
             yield scrapy.Request(
@@ -28,7 +30,6 @@ class UGentProgramSpider(scrapy.Spider, ABC):
     def parse_program_numbers(self, response, campus):
 
         program_numbers = response.xpath("//div[contains(@id, 'lazyLoadedChunk')]/@data").getall()
-
         for program_numbers_sublist in program_numbers:
             yield scrapy.Request(
                 url=BASE_URL_2.format(program_numbers_sublist),
@@ -37,6 +38,7 @@ class UGentProgramSpider(scrapy.Spider, ABC):
             )
 
     def parse_main(self, response, campus):
+
         program_links = response.xpath("//a[h2[@class='title']]/@href").getall()
         for link in program_links:
             programma_link = "/".join(link.split("/")[:-1]) + f"/programma/{YEAR}"
@@ -66,17 +68,50 @@ class UGentProgramSpider(scrapy.Spider, ABC):
         faculties = [faculty.strip(" \n") for faculty in faculties]
 
         # Course list
-        div_text = "//div[div[h4[.//span[contains(text(), 'Volledig') or contains(text(), 'Full')]]]]"
-        courses_text = "//td[@class='cursusnaam']"
+        div_text = "//div[div[h4[.//span[contains(text(), 'Volledig') or contains(text(), 'Full')]]]][1]"
+        courses_text = "//tr[not(@class='nietaangeboden')]//td[@class='cursusnaam']"
         courses_ids = response.xpath(f"{div_text}{courses_text}//span/@title").getall()
-        courses_names = response.xpath(f"{div_text}{courses_text}//span/text()").getall()
+        # courses_names = response.xpath(f"{div_text}{courses_text}//span/text()").getall()
         courses_urls = response.xpath(f"{div_text}{courses_text}//a/@ng-click").getall()
         courses_urls = [course_url.split(",")[4].strip(" '") + "/"
                         + '/'.join(course_url.split(",")[1:4]) for course_url in courses_urls]
-        ects = response.xpath(f"{div_text}//td[@class='SP']//span/text()").getall()
-        ects = [int(float(e.replace(',', '.'))) for e in ects]
+        # ects = response.xpath(f"{div_text}//td[@class='SP']//span/text()").getall()
+        # ects = [int(float(e.replace(',', '.'))) for e in ects]
 
-        courses_languages = response.xpath(f"{div_text}//td[@class='taal']//span/text()").getall()
+        # TODO: rerun and remove duplicates
+        # TODO: ugly, clean up
+        courses_languages = []
+        courses_names = []
+        ects = []
+        for course_id in courses_ids:
+            courses_text_2 = f"//tr[not(@class='nietaangeboden') and td[@class='cursusnaam' and .//span[@title='{course_id}']]]"
+            id_txt = f"{div_text}{courses_text}//span[@title='{course_id}']"
+            id_txt_2 = f"{div_text}{courses_text_2}"
+            courses_language = cleanup(response.xpath(f"{id_txt_2}//td[@class='taal']/div/div[1]").get())
+            courses_languages += [courses_language] if courses_language is not None else ["nl"]
+            course_name = response.xpath(f"{id_txt}/text()").get()
+            courses_names += [course_name] if courses_language is not None else ['']
+            e = response.xpath(f"{id_txt_2}//td[@class='SP']//span/text()").get()
+            ects += [int(float(e.replace(',', '.')))] if e is not None else [0]
+
+        # courses_languages = cleanup(response.xpath(f"{div_text}//td[@class='taal']/div").getall())
+        # print(courses_languages)
+        if len(courses_languages) != len(courses_ids):
+            print("taal")
+            print(program_name)
+            print(len(courses_languages), len(courses_ids))
+        if len(courses_names) != len(courses_ids):
+            print("name")
+            print(program_name)
+            print(len(courses_names), len(courses_ids))
+        if len(courses_urls) != len(courses_ids):
+            print("urls")
+            print(program_name)
+            print(len(courses_urls), len(courses_ids))
+        if len(ects) != len(courses_ids):
+            print("ects")
+            print(program_name)
+            print(len(ects), len(courses_ids))
 
         yield {
             'id': program_id,

@@ -48,6 +48,7 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
             teachers = [t.replace(text, '') for t in teachers]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
+        teachers = [t.lower().title() for t in teachers]
 
         languages = response.xpath("//td[contains(text(), 'Onderwijstaal') "
                                    "or contains(text(), 'Language of instruction')]/b/text()").getall()

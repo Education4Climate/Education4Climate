@@ -14,17 +14,19 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}.json')
 
 
-LANGUAGE_DICT = {"Français": "fr",
-                 "Anglais": "en",
-                 "Allemand": "de",
-                 "Neerlandais": "nl",
-                 "Italien": "it",
-                 "Espagnol": "es",
-                 "Portugais": "pt",
-                 "Arabe": 'ar',
-                 "Grec": "gr",
-                 "Japonais": 'jp',
-                 "Russe": "ru"}
+LANGUAGE_DICT = {
+    "Français": "fr",
+    "Anglais": "en",
+    "Allemand": "de",
+    "Neerlandais": "nl",
+    "Italien": "it",
+    "Espagnol": "es",
+    "Portugais": "pt",
+    "Arabe": 'ar',
+    "Grec": "gr",
+    "Japonais": 'jp',
+    "Russe": "ru"
+}
 
 
 class UCLouvainCourseSpider(scrapy.Spider, ABC):
@@ -53,7 +55,7 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
         teachers = response.xpath("//div[div[contains(text(),'Enseignants')]]/div/a/text()").getall()
         languages = cleanup(response.xpath("//div[div[contains(@class, 'fa_cell_1') and contains(text(), 'Langue')]]"
                                            "/div[2]/text()").getall())
-        languages = [LANGUAGE_DICT[l] for l in languages if l != '']
+        languages = [LANGUAGE_DICT[l] if l in LANGUAGE_DICT else 'other' for l in languages]
         
         # Course description
         def get_sections_text(sections_names):

@@ -19,6 +19,7 @@ class UMonsProgramSpider(scrapy.Spider, ABC):
         yield scrapy.Request(url=BASE_URL, callback=self.parse_offer)
 
     def parse_offer(self, response):
+
         formations = response.xpath('//span//a[not(contains(@href, "png"))]')
         urls = formations.xpath('@href').getall()
         cycles = formations.xpath('text()').getall()
@@ -41,14 +42,17 @@ class UMonsProgramSpider(scrapy.Spider, ABC):
 
     def parse_prog(self, response, cycle):
 
-        # Note: this leads to an error on the 'Bachelier en Droit' and 'Bachelier en Sciences Humaines et Sociales'
-        #  but anyways these programs are organised by the ULB
         href = response.xpath(
             '//a[contains(@class, "button-primary-alt scheme-background scheme-background-hover")]/@href').get()
         if not href:
             yield response.follow(response.url, self.parse_details, cb_kwargs={'cycle': cycle})
         else:
             campus = response.xpath('//div[div/text()="Lieu"]').css('div.value::text').get()
+            if 'mailto' in href:
+                # Note: this avoids an error on the 'Bachelier en Droit' and
+                # 'Bachelier en Sciences Humaines et Sociales'
+                #  but anyways these programs are organised by the ULB
+                return
             yield response.follow(url=href, callback=self.parse_prog_detail,
                                   cb_kwargs={'campus': campus,
                                              'cycle': cycle,

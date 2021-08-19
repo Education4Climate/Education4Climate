@@ -63,19 +63,25 @@ class ULBCourseSpider(scrapy.Spider, ABC):
 
         name = response.xpath("//h1/text()").get()
         if name is None:
+            yield {
+                "id": course_id, "name": '', "year": f'{YEAR}-{int(YEAR) + 1}',
+               "languages": [], "teachers": [], "url": response.url,
+               "content": '', "goal": '', "activity": '', "other": ''
+            }
             return
         name = name.replace("\n               ", '')
 
         teachers = cleanup(response.xpath("//h3[text()='Titulaire(s) du cours']/following::text()[1]").get())
         teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ").replace("\n               ", '')
         teachers = teachers.split(", ")
-        teachers = [teacher for teacher in teachers if teacher != ""]
+        teachers = [teacher.lower().title() for teacher in teachers if teacher != ""]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
         languages = response.xpath("//h3[text()=\"Langue(s) d'enseignement\"]/following::p[1]/text()").get()
         if languages is not None:
-            languages = [LANGUAGE_DICT[language] for language in languages.split(", ")]
+            languages = [LANGUAGE_DICT[language] if language in LANGUAGE_DICT else 'other'
+                         for language in languages.split(", ")]
         languages = ['fr'] if languages == [""] else languages
 
         # Course description

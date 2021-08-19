@@ -41,7 +41,7 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
             response.xpath("//div[@class='u-courses-header__headline']/text()")
             .get()).strip(" ").split("/")
         course_id = year_and_id[1].strip(" ")
-        years = year_and_id[0]
+        years = year_and_id[0].strip(" ")
 
         # Get teachers name (not an easy task because not a constant syntax)
         teachers_para = response.xpath("//section[h3[contains(text(),'Enseignant')"
@@ -65,7 +65,7 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         # Language
         languages = cleanup(response.xpath(".//section[h3[contains(text(), "
                                            "\"Langue(s) de l'unité d'enseignement\")]]/p").getall())
-        languages = [LANGUAGE_DICT[lang] for lang in languages]
+        languages = [LANGUAGE_DICT[lang] if lang in LANGUAGE_DICT.keys() else 'other' for lang in languages]
 
         # Course description
         def get_sections_text(sections_names):

@@ -61,8 +61,6 @@ class UCLouvainProgramSpider(scrapy.Spider, ABC):
         }
 
         pages_names = ["Programme détaillé par matière", "Programme détaillé"]
-        # print(response.xpath(f"//a[@class='dropdown-toggle' and contains(text(), 'Programme')]"
-        #       f"/following::ul[1]//a/text()").getall())
         no_program_found = True
         for page_name in pages_names:
             course_list_link = \
@@ -83,7 +81,7 @@ class UCLouvainProgramSpider(scrapy.Spider, ABC):
         courses_txt = "//div[@class='row' and contains(@style, 'transparent')]//span[@style='font-size:smaller']/text()"
         courses_ids = response.xpath(courses_txt).getall()
         if len(courses_ids) == 0:
-            return base_dict
+            yield base_dict
 
         # Missing credit with one program
         if base_dict['id'] == "RXU2CE":

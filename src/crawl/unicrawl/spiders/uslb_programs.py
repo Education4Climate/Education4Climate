@@ -7,15 +7,14 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = f"https://www.usaintlouis.be/sl/enseignement_prog{YEAR}.html"
 
-PROGRAM_FACULTIES = \
-    {"Master de spécialisation en droits de l'homme": "Faculté de droit",
-     "Master de spécialisation en droit de l'environnement et en droit public immobilier": "Faculté de droit",
-     "Master de spécialisation en analyse interdisciplinaire de la construction européenne":
-         "Institut d’études européennes",
-     "Master en stratégie de la communication et culture numérique":
-         "Faculté des sciences économiques, sociales, politiques et de la communication",
-     "Master de sp\u00e9cialisation en gestion des risques financiers":
-         "Faculté des sciences économiques, sociales, politiques et de la communication"}
+PROGRAM_FACULTIES = {
+    "Master de spécialisation en droits humains": "Faculté de droit",
+    "Master de spécialisation en droit de l'environnement et en droit public immobilier": "Faculté de droit",
+    "Master de spécialisation interdisciplinaire en études européennes": "Institut d’études européennes",
+    "Master en stratégie de la communication et culture numérique":
+        "Faculté des sciences économiques, sociales, politiques et de la communication",
+    "Master de sp\u00e9cialisation en gestion des risques financiers":
+        "Faculté des sciences économiques, sociales, politiques et de la communication"}
 
 
 class USLBProgramsSpider(scrapy.Spider, ABC):
@@ -64,8 +63,8 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
                 "name": '',
                 "cycle": 'master',
                 "faculties": [],  # No faculties for masters it seems, added below
-                "campuses": []
-            }  # couldn't find any campus information
+                "campuses": []  # couldn't find any campus information
+            }
             yield response.follow(link, self.get_study_programme_link, cb_kwargs={'base_dict': base_dict})
 
     def get_study_programme_link(self, response, base_dict):
@@ -85,6 +84,8 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
             return
 
         program_name = response.xpath("//p[@class='ProgrammeTitre']/text()").get()
+        if program_name is None:
+            return
         cur_dict["name"] = program_name
 
         # Add some faculties 'by-hand'
@@ -107,6 +108,8 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
         courses_codes = [code.strip("\r ") for code in courses_codes]
         cur_dict['courses'] = courses_codes
         if len(courses_codes) == 0:
+            cur_dict['ects'] = []
+            yield cur_dict
             return
 
         nb_columns = 3

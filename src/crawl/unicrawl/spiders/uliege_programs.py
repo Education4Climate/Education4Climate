@@ -49,7 +49,11 @@ class ULiegeSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_program(response, program_id):
+
         program_name = response.xpath("//h1/text()").get()
+        if program_name is None:
+            return
+
         cycle = response.xpath("//div[@class='u-courses-header__headline']/text()").get().split("/")[1][1:]
         if cycle == 'Bachelier':
             cycle = 'bac'
@@ -63,6 +67,7 @@ class ULiegeSpider(scrapy.Spider, ABC):
             cycle = 'other'
 
         campus = cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
+        campuses = [campus] if campus != "" else  []
 
         # Faculty
         faculty_link = cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
@@ -81,7 +86,7 @@ class ULiegeSpider(scrapy.Spider, ABC):
             "name": program_name,
             "cycle": cycle,
             "faculties": [faculty],
-            "campuses": [campus],
+            "campuses": campuses,
             "url": response.url,
             "courses": courses,
             "ects": ects

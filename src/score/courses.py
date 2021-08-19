@@ -27,27 +27,26 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
     pattern_matches_dict = {}
     score = 0
     for pattern in patterns:
-        if isinstance(pattern,list):
+        if isinstance(pattern, list):
             pattern_matches_dict["---".join(pattern)] = []
-            matches=[]
-            matches_text=[]
-            #check multi term matches
-            t=""
+            matches = []
+            # matches_text = []
+            # check multi term matches
+            t = ""
             for p in pattern:
-                m=re.search(p,text)
+                m = re.search(p, text)
                 matches.append(m is not None)
                 if m is not None:
                     start, end = m.span()
                     start = max(0, start - 20)
                     end = min(end + 20, len(text) - 1)
                     t += "---"
-                    t+=text[start:end]
+                    t += text[start:end]
             if False not in matches:
-                score=1
-                pattern_matches_dict["---".join(pattern)]+=[t]
+                score = 1
+                pattern_matches_dict["---".join(pattern)] += [t]
 
-
-        else :
+        else:
             matches = list(re.finditer(pattern, text))
             if len(matches) != 0:
                 score = 1
@@ -58,7 +57,8 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
                     start = max(0, start-20)
                     end = min(end+20, len(text)-1)
                     pattern_matches_dict[pattern] += [text[start:end]]
-        pattern_matches_dict={k:v for k,v in pattern_matches_dict.items() if len(v)>0}
+        pattern_matches_dict = {k: v for k, v in pattern_matches_dict.items() if len(v) > 0}
+
     return score, pattern_matches_dict
 
 

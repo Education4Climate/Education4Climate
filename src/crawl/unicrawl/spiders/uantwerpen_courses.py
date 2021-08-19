@@ -19,7 +19,10 @@ LANGUAGE_DICT = {"Dutch": 'nl',
                  "French": 'fr',
                  "Frans": 'fr',
                  "Duits": 'de',
-                 "Spaans": 'es'}
+                 "Spaans": 'es',
+                 "Italiaans": 'it'}
+
+# WARNING: don't forget to uncomment the line 'HTTPERROR_ALLOWED_CODES = ['404']' in settings.py
 
 
 class UAntwerpenCourseSpider(scrapy.Spider, ABC):
@@ -35,8 +38,6 @@ class UAntwerpenCourseSpider(scrapy.Spider, ABC):
         for url in study_programs_url:
             yield scrapy.Request(url=url, callback=self.parse_courses)
 
-    # TODO: Warning, some pages on the site return a code 404 which is not accepted by scrapy --> might create errors
-    #   further down in the process
     def parse_courses(self, response):
 
         main_panel = f"//section[contains(@id, '-{YEAR}')]//section[@class='course']"
@@ -44,9 +45,10 @@ class UAntwerpenCourseSpider(scrapy.Spider, ABC):
         courses_names = response.xpath(f"{main_panel}/header/h5/a/text()").getall()
         courses_links = response.xpath(f"{main_panel}/header/h5/a/@href").getall()
         for course_name, course_link in list(set(zip(courses_names, courses_links))):
+
+            course_id = course_link.split(f'{YEAR}-')[1].split("&")[0]
+
             course_info_panel = f"{main_panel}/header[h5/a[text()=\"{course_name}\"]][1]/following::div[1]"
-            course_id = response.xpath(f"{course_info_panel}//div[contains(@class, 'guideNr')]"
-                                       f"//div[@class='value']/text()").get().replace('\n', '').replace('\t', '')
             languages = response.xpath(f"{course_info_panel}//div[contains(@class, 'language')]"
                                        f"//div[@class='value']/text()").getall()
             languages = list(set([LANGUAGE_DICT[language.replace('\n', '').replace('\t', '')]
@@ -57,11 +59,13 @@ class UAntwerpenCourseSpider(scrapy.Spider, ABC):
             # Put surname first
             teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
-            base_dict = {"id": course_id,
-                         "name": course_name,
-                         "year": f"{YEAR}-{int(YEAR)+1}",
-                         "languages": languages,
-                         "teachers": teachers}
+            base_dict = {
+                "id": course_id,
+                "name": course_name,
+                "year": f"{YEAR}-{int(YEAR)+1}",
+                "languages": languages,
+                "teachers": teachers
+            }
 
             yield response.follow(COURSE_URL.format(course_link), self.parse_course, cb_kwargs={"base_dict": base_dict})
 
@@ -70,12 +74,18 @@ class UAntwerpenCourseSpider(scrapy.Spider, ABC):
 
         # Course description
         def get_sections_text(sections_names):
-            texts = [cleanup(response.xpath(f"//section[contains(header/h3/a/text(),"
+            texts = [cleanup(response.xpath(f"//details[contains(summary/h3/text(),"
                                             f" \"{section}\")]/div").get())
                      for section in sections_names]
             return "\n".join(texts).strip("\n")
-        contents = get_sections_text(["Course contents", "Inhoud"])
-        goals = get_sections_text(["Learning outcomes", "Eindcompetenties"])
+
+        # WARNING: don't forget to uncomment the line 'HTTPERROR_ALLOWED_CODES = ['404']' in settings.py
+        if response.status == '404':
+            contents = ''
+            goals = ''
+        else:
+            contents = get_sections_text(["Course contents", "Inhoud"])
+            goals = get_sections_text(["Learning outcomes", "Eindcompetenties"])
 
         base_dict["url"] = response.url
         base_dict["content"] = contents

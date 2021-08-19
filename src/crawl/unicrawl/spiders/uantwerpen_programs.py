@@ -146,18 +146,23 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
             return
 
         # Find cycle and update id and name based on url
-        # TODO: misses post-graduate, master na master, some masters
         cycle = 'other'
         if "master" in link:
             cycle = "master"
-            program_id += '-master'
+            if 'master' not in program_id:
+                program_id = 'master-' + program_id
             if not('master' in program_name or 'Master' in program_name):
                 program_name = f"Master in {program_name}"
         elif "bachelor" in link:
             cycle = "bac"
-            program_id += '-bac'
+            if 'bachelor' not in program_id:
+                program_id = 'bachelor-' + program_id
             if not('bachelor' in program_name or 'Bachelor' in program_name):
                 program_name = f"Bachelor in {program_name}"
+        elif "manama" in link:
+            cycle = 'master'
+        elif 'pavo' in link or 'Postgrad' in program_name:
+            cycle = 'postgrad'
 
         cur_dict = {
             'id': program_id,
@@ -182,7 +187,7 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
             return
         courses_codes = [link.split("-")[1].split("&")[0] for link in courses_links]
         ects = response.xpath(f"{main_tab}//div[@class='spec points']/div[@class='value']/text()").getall()
-        ects = [e.split(" ")[0].replace('\n', '').replace('\t', '') for e in ects]
+        ects = [int(e.split(" ")[0].replace('\n', '').replace('\t', '')) for e in ects]
 
         # One course can be several times in the same program
         courses_codes, ects = zip(*list(set(zip(courses_codes, ects))))
