@@ -48,7 +48,7 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
         main_teacher = response.xpath("//div[text()=\"Responsable de l'UE :\"]/following::span[1]/text()").get()
         sub_teachers = response.xpath("//div[text()=\"Autres intervenants :\"]/following::span[1]/text()").get()
         teachers = [main_teacher]
-        if sub_teachers is not None:
+        if sub_teachers:
             teachers += sub_teachers.split(",")
 
         years = response.xpath("//div[text()=\"Année académique :\"]/following::span[1]/text()").get()

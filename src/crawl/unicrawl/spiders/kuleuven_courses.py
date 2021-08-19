@@ -9,7 +9,7 @@ import itertools
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-BASE_URl = "http://onderwijsaanbod.kuleuven.be/syllabi/{}.htm"  # first format is code course, second is year
+BASE_URL = "http://onderwijsaanbod.kuleuven.be/syllabi/{}.htm"  # first format is code course
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}kuleuven_programs_{YEAR}.json')
 
@@ -53,9 +53,8 @@ class KULeuvenCourseSpider(scrapy.Spider, ABC):
         courses_urls = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_urls"]
         courses_urls_list = sorted(list(set(courses_urls.sum())))
 
-        print(len(courses_urls_list))
         for course_url in courses_urls_list:
-            yield scrapy.Request(BASE_URl.format(course_url), self.parse_main)
+            yield scrapy.Request(BASE_URL.format(course_url), self.parse_main)
 
     @staticmethod
     def parse_main(response):

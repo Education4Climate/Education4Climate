@@ -34,8 +34,13 @@ class ECAMProgramSpider(scrapy.Spider, ABC):
         ue_ids = [ue_id.split(":")[0].strip(" \n") for ue_id in ue_ids]
         ues_ects = response.xpath("//table//tr/td[2]/text()").getall()
 
-        yield {"name": program_name,
-               "id": base_dict['id'],
-               "faculty": "",  # only one faculty?
-               "courses": ue_ids,
-               "ects": ues_ects}
+        yield {
+            "name": program_name,
+            "id": base_dict['id'],
+            "cycle": "master", # master programs with shared bachelor
+            "campus": "Campus Woluwe", # only one campus
+            "faculty": "Ingénieur industriel",  # only one faculty
+            "courses": ue_ids,
+            "ects": ues_ects,
+            "url": response.url
+        }
