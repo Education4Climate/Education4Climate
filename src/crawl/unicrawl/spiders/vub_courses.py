@@ -8,18 +8,21 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'https://caliweb.vub.be/?page=course-offer&id={}&anchor=1'
+# warning: important to keep anchor as last argument
+BASE_URL = 'https://caliweb.vub.be/?page=course-offer&id={}' + f'&year={YEAR}' + '&anchor=1'
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}vub_programs_{YEAR}.json')
-LANGUAGE_DICT = {"Dutch": 'nl',
-                 "Nederlands": 'nl',
-                 "English": 'en',
-                 "Engels": 'en',
-                 "French": 'fr',
-                 "Frans": 'fr',
-                 "Italiaans": 'it',
-                 "Duits": 'de',
-                 'Spaans': 'es'}
+LANGUAGE_DICT = {
+    "Dutch": 'nl',
+    "Nederlands": 'nl',
+    "English": 'en',
+    "Engels": 'en',
+    "French": 'fr',
+    "Frans": 'fr',
+    "Italiaans": 'it',
+    "Duits": 'de',
+    'Spaans': 'es'
+}
 
 # Note: need to change the parameter ROBOTS_OBEY in the crawler settings.py to make the crawler work
 
@@ -40,19 +43,23 @@ class VUBCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            base_dict = {"id": str(course_id)}
-            yield scrapy.Request(BASE_URL.format(course_id), self.parse_course, cb_kwargs={"base_dict": base_dict})
+            yield scrapy.Request(BASE_URL.format(course_id), self.parse_course,
+                                 cb_kwargs={"course_id": str(course_id)})
 
-    def parse_course(self, response, base_dict):
+    def parse_course(self, response, course_id):
 
-        name = response.xpath("//h1/text()").get()
+        course_name = response.xpath("//h1/text()").get()
         # Some time the course is found at anchor=2, or 3
-        if name is None:
+        if course_name is None:
             anchor = int(response.url.split("anchor=")[1])
-            if anchor > 3:  # T avoid an infinite recursive call, stop at anchor 3
-                return
+            if anchor > 3:  # T avoid an infinite recursive call, stop at anchor 3 and return an quasi-empty entry
+                yield {
+                    "id": course_id, "name": '', "year": f"{YEAR}-{int(YEAR)+1}",
+                    "languages": [], "teachers": [], "url": response.url,
+                    "content": '', "goal": '', "activity": '', "other": ''
+                }
             url = response.url.strip(str(anchor)) + str(anchor+1)
-            yield scrapy.Request(url, self.parse_course, cb_kwargs={"base_dict": base_dict})
+            yield scrapy.Request(url, self.parse_course, cb_kwargs={"course_id": course_id})
             return
 
         languages = response.xpath("//dt[contains(text(), 'Onderwijsta') or text()='Taught in']"
@@ -66,23 +73,29 @@ class VUBCourseSpider(scrapy.Spider, ABC):
         teachers = teachers.strip('<dd>').strip("</dd>")
         teachers = teachers.replace("(titularis)\n", '').replace("(course titular)\n", '')
         teachers = [teacher.strip(" ").strip("\n") for teacher in teachers.split("<br>")]
-        teachers = [t for t in teachers if t != "Promotor ."]
+        teachers = [t.lower().title() for t in teachers if t != "Promotor ."]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
-        sections = ["Course content", "Additional info", "Learning outcomes",
-                    "Inhoud", "Bijkomende info", "Leerresultaten"]
-        content = ""
-        for section in sections:
-            section_content = cleanup(response.xpath(f"//dt[text()=\"{section}\"]/following::dd[1]").get())
-            content += "\n" + section_content if section_content is not None or len(section_content) != 0 else ""
-        content = content.strip("\n")
+        # Course description
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f"//dt[text()=\"{section}\"]/following::dd[1]").get())
+                     for section in sections_names]
+            return "\n".join(texts).strip("\n /")
+        content = get_sections_text(["Course content", "Inhoud"])
+        goal = get_sections_text(["Learning outcomes", "Leerresultaten"])
+        other = get_sections_text(["Additional info", "Bijkomende info"])
 
-        cur_dict = {"name": name,
-                    "year": f"{YEAR}-{int(YEAR)+1}",
-                    "languages": languages,
-                    "teachers": teachers,
-                    "url": response.url,
-                    "content": content}
+        yield {
+            "id": course_id,
+            "name": course_name,
+            "year": f"{YEAR}-{int(YEAR)+1}",
+            "languages": languages,
+            "teachers": teachers,
+            "url": response.url,
+            "content": content,
+            "goal": goal,
+            "activity": '',
+            "other": other
+        }
 
-        yield {**base_dict, **cur_dict}

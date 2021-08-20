@@ -4,87 +4,125 @@ from pathlib import Path
 import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from src.crawl.utils import cleanup
 
-BASE_URL = "https://studiegids.ugent.be/{year}/NL/FACULTY/{faculty}/{cycle}/{cycle}.html"
+BASE_URL = f"https://studiekiezer.ugent.be/nl/zoek?zt=&aj={YEAR}" + "&loc={}"
+BASE_URL_2 = "https://studiekiezer.ugent.be/nl/incrementalsearch?target=zoek&ids={}"
 
 
 class UGentProgramSpider(scrapy.Spider, ABC):
     name = 'ugent-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}_pre.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):
-        faculties_codes = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'J', 'K']
-        for faculty_code in faculties_codes:
-            for deg in ('BACH', 'MABA', 'EDMA'):
-                yield scrapy.Request(
-                    url=BASE_URL.format(year=YEAR, faculty=faculty_code, cycle=deg),
-                    callback=self.parse_main
-                )
 
-    def parse_main(self, response):
-        program_links = response.xpath("//li[a[@target='_top']]/a/@href").getall()
-        program_names = response.xpath("//li[a[@target='_top']]/a/text()").getall()
-        for link, program_name in zip(program_links, program_names):
-            program_name = program_name.replace("  ", '').replace("\n", '')\
-                .replace('-', ' - ').replace('  ', ' ').strip(" ")
-            yield response.follow(link, self.parse_programmes, cb_kwargs={'program_name': program_name})
+        campuses = ['Gent', 'Brugge', 'Oudenaarde', 'Kortrijk']
+        for campus in campuses:
+            yield scrapy.Request(
+                url=BASE_URL.format(campus.upper()),
+                callback=self.parse_program_numbers,
+                cb_kwargs={"campus": campus}
+            )
 
-    def parse_programmes(self, response, program_name):
-        program_id = response.url.split('/')[-2]
-        # program_name = response.xpath("//article//h1/text()").get()
-        cycle = 'bac' if 'Bachelor' in program_name else 'master'
-        faculty = response.xpath("//div/h2/text()").get()
-        # TODO: make faculty a list?
-        faculty = faculty.split('\n')[0].strip(" \n")
-        version = response.xpath("//div[@class='menuHeader'][contains(text(), 'Program')]/text()").get()
-        version = version.split(' ')[-2].strip(")")
+    def parse_program_numbers(self, response, campus):
 
-        base_dict = {'id': program_id,
-                     'name': program_name,
-                     'cycle': cycle,
-                     'faculty': faculty,
-                     'campus': '',  # Didn't find campus information
-                     'url': response.url,
-                     }
+        program_numbers = response.xpath("//div[contains(@id, 'lazyLoadedChunk')]/@data").getall()
+        for program_numbers_sublist in program_numbers:
+            yield scrapy.Request(
+                url=BASE_URL_2.format(program_numbers_sublist),
+                callback=self.parse_main,
+                cb_kwargs={"campus": campus}
+            )
 
-        link = f"{response.url.split('.html')[0]}{version}(0)/{program_id}.html"
-        yield response.follow(link, self.parse_course_list, cb_kwargs={"base_dict": base_dict})
+    def parse_main(self, response, campus):
 
-    def parse_course_list(self, response, base_dict):
+        program_links = response.xpath("//a[h2[@class='title']]/@href").getall()
+        for link in program_links:
+            programma_link = "/".join(link.split("/")[:-1]) + f"/programma/{YEAR}"
+            yield response.follow(programma_link, self.parse_program, cb_kwargs={'campus': campus})
 
-        # Get list of courses in this subprogram
-        courses_ids = [url.split('/')[-1].strip('.pdf')
-                       for url in response.xpath("//td[@class='cursus']//a/@href").getall()]
+    @staticmethod
+    def parse_program(response, campus):
+
+        program_id = response.xpath("//h1/@data-code").get()
+        program_name = response.xpath("//h1[@id='titleLabel']/text()").get()
+
+        cycle = response.xpath("//i[contains(@class, 'glyphicon-education')]/following::span[1]/text()").get()
+        if 'aster' in cycle:
+            cycle = 'master'
+        elif 'achelor' in cycle:
+            cycle = 'bac'
+        elif 'ostgradua' in cycle:
+            cycle = 'postgrad'
+        elif 'octor' in cycle:
+            cycle = 'doctor'
+        else:
+            cycle = 'other'
+
+        # Can have several faculties
+        faculties = response.xpath("//i[contains(@class, 'glyphicon-map-marker')]"
+                                   "/following::div[1]//span/text()").getall()
+        faculties = [faculty.strip(" \n") for faculty in faculties]
+
+        # Course list
+        div_text = "//div[div[h4[.//span[contains(text(), 'Volledig') or contains(text(), 'Full')]]]][1]"
+        courses_text = "//tr[not(@class='nietaangeboden')]//td[@class='cursusnaam']"
+        courses_ids = response.xpath(f"{div_text}{courses_text}//span/@title").getall()
+        # courses_names = response.xpath(f"{div_text}{courses_text}//span/text()").getall()
+        courses_urls = response.xpath(f"{div_text}{courses_text}//a/@ng-click").getall()
+        courses_urls = [course_url.split(",")[4].strip(" '") + "/"
+                        + '/'.join(course_url.split(",")[1:4]) for course_url in courses_urls]
+        # ects = response.xpath(f"{div_text}//td[@class='SP']//span/text()").getall()
+        # ects = [int(float(e.replace(',', '.'))) for e in ects]
+
+        # TODO: rerun and remove duplicates
+        # TODO: ugly, clean up
+        courses_languages = []
         courses_names = []
-        courses_ects = []
-        courses_teachers = []
-        for courses_id in courses_ids:
-            course_xpath = f"//td[@class='cursus']//a[contains(@href, '{courses_id}')]"
-            courses_names += [response.xpath(f"{course_xpath}/text()").get().strip(" ").replace(' ]', ']')]
-            courses_ects += [response.xpath(f"{course_xpath}"
-                                            f"/following::td[@class='studiepunten'][1]/text()").get()]
-            courses_teachers += [response.xpath(f"{course_xpath}"
-                                                f"/following::td[@class='lesgever'][1]//text()").get()]
-        courses_ects = [float(e) if '.' in e else int(e) for e in courses_ects]
-        courses_teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" if t is not None else None
-                            for t in courses_teachers]
-        print(len(courses_ids), len(courses_names), len(courses_ects), len(courses_teachers))
-        if len(courses_ids) != len(courses_names) or len(courses_ids) != len(courses_ects) or len(courses_teachers) != len(courses_ids):
-            exit()
-        # If there are any, create an entry in the output file
-        if len(courses_ids) != 0:
-            cur_dict = {'courses': courses_ids,
-                        'ects': courses_ects,
-                        'courses_names': courses_names,
-                        'courses_teachers': courses_teachers}
-            yield {**base_dict, **cur_dict}
+        ects = []
+        for course_id in courses_ids:
+            courses_text_2 = f"//tr[not(@class='nietaangeboden') and td[@class='cursusnaam' and .//span[@title='{course_id}']]]"
+            id_txt = f"{div_text}{courses_text}//span[@title='{course_id}']"
+            id_txt_2 = f"{div_text}{courses_text_2}"
+            courses_language = cleanup(response.xpath(f"{id_txt_2}//td[@class='taal']/div/div[1]").get())
+            courses_languages += [courses_language] if courses_language is not None else ["nl"]
+            course_name = response.xpath(f"{id_txt}/text()").get()
+            courses_names += [course_name] if courses_language is not None else ['']
+            e = response.xpath(f"{id_txt_2}//td[@class='SP']//span/text()").get()
+            ects += [int(float(e.replace(',', '.')))] if e is not None else [0]
 
-        # Open subprograms
-        subprograms = [content.split("'")[3] for content
-                       in response.xpath('//a[@onclick[contains(text(), toggleContent)]]/@onclick').getall()]
-        for subprogram in subprograms:
-            url = '/'.join(response.url.split("/")[:-1]) + "/" + subprogram
-            yield response.follow(url, self.parse_course_list, cb_kwargs={"base_dict": base_dict})
+        # courses_languages = cleanup(response.xpath(f"{div_text}//td[@class='taal']/div").getall())
+        # print(courses_languages)
+        if len(courses_languages) != len(courses_ids):
+            print("taal")
+            print(program_name)
+            print(len(courses_languages), len(courses_ids))
+        if len(courses_names) != len(courses_ids):
+            print("name")
+            print(program_name)
+            print(len(courses_names), len(courses_ids))
+        if len(courses_urls) != len(courses_ids):
+            print("urls")
+            print(program_name)
+            print(len(courses_urls), len(courses_ids))
+        if len(ects) != len(courses_ids):
+            print("ects")
+            print(program_name)
+            print(len(ects), len(courses_ids))
+
+        yield {
+            'id': program_id,
+            'name': program_name,
+            'cycle': cycle,
+            'faculties': faculties,
+            'campuses': [campus],
+            'url': response.url,
+            'courses': courses_ids,
+            'ects': ects,
+            'courses_names': courses_names,
+            'courses_languages': courses_languages,
+            'courses_urls': courses_urls
+        }

@@ -6,22 +6,22 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-# TODO: maybe it's possible to check the year?
 BASE_URL = "https://www.programmes.uliege.be/cocoon/recherche.html?source=formation"
 PROGRAM_URL = "https://www.programmes.uliege.be{}"
 
-FACULTY_DICT = {"archi": "Faculté d'Architecture",
-                "droit": "Faculté de Droit, Science politique et Criminologie",
-                "gembloux": "Gembloux Agro-Bio Tech",
-                "hec": "HEC Liège - Ecole de Gestion",
-                "facmed": "Faculté de Médecine",
-                "fmv": "Faculté de Médecine Vétérinaire",
-                "facphl": "Faculté de Philosophie et Lettres",
-                "fapse": "Faculté de Psychologie, Logopédie et Sciences de l'Education",
-                "facsc": "Faculté des Sciences",
-                "facsa": "Faculté des Sciences Appliquées",
-                "ishs": "Faculté des Sciences Sociales"
-                }
+FACULTY_DICT = {
+    "archi": "Faculté d'Architecture",
+    "droit": "Faculté de Droit, Science politique et Criminologie",
+    "gembloux": "Gembloux Agro-Bio Tech",
+    "hec": "HEC Liège - Ecole de Gestion",
+    "facmed": "Faculté de Médecine",
+    "fmv": "Faculté de Médecine Vétérinaire",
+    "facphl": "Faculté de Philosophie et Lettres",
+    "fapse": "Faculté de Psychologie, Logopédie et Sciences de l'Education",
+    "facsc": "Faculté des Sciences",
+    "facsa": "Faculté des Sciences Appliquées",
+    "ishs": "Faculté des Sciences Sociales"
+}
 
 
 class ULiegeSpider(scrapy.Spider, ABC):
@@ -43,14 +43,17 @@ class ULiegeSpider(scrapy.Spider, ABC):
         program_ids = [link.split("/")[-1].split(".")[0] for link in links]
 
         for program_id, link in zip(program_ids, links):
-            base_dict = {"id": program_id}
             yield scrapy.Request(url=PROGRAM_URL.format(link.replace('formations', 'programmes')),
                                  callback=self.parse_program,
-                                 cb_kwargs={'base_dict': base_dict})
+                                 cb_kwargs={'program_id': program_id})
 
     @staticmethod
-    def parse_program(response, base_dict):
-        name = response.xpath("//h1/text()").get()
+    def parse_program(response, program_id):
+
+        program_name = response.xpath("//h1/text()").get()
+        if program_name is None:
+            return
+
         cycle = response.xpath("//div[@class='u-courses-header__headline']/text()").get().split("/")[1][1:]
         if cycle == 'Bachelier':
             cycle = 'bac'
@@ -64,6 +67,7 @@ class ULiegeSpider(scrapy.Spider, ABC):
             cycle = 'other'
 
         campus = cleanup(response.xpath("//li[svg[@class='u-icon icon-icons-worldmap']]").get())
+        campuses = [campus] if campus != "" else  []
 
         # Faculty
         faculty_link = cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
@@ -73,14 +77,17 @@ class ULiegeSpider(scrapy.Spider, ABC):
         faculty = FACULTY_DICT[[key for key in FACULTY_DICT.keys() if key in faculty_link][0]]
 
         courses = response.xpath("//th[@class='u-courses-cell--code']/a/text()").getall()
-        ects = response.xpath("//td[@class='u-courses-cell--data--credits']/text()").getall()
+        ects = response.xpath("//th[@class='u-courses-cell--code']"
+                              "/following::td[@class='u-courses-cell--data--credits'][1]/text()").getall()
+        ects = [int(e) for e in ects]
 
-        cur_dict = {"name": name,
-                    "cycle": cycle,
-                    "campus": campus,
-                    "faculty": faculty,
-                    "url": response.url,
-                    "courses": courses,
-                    "ects": ects}
-
-        yield {**base_dict, **cur_dict}
+        yield {
+            "id": program_id,
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": campuses,
+            "url": response.url,
+            "courses": courses,
+            "ects": ects
+        }

@@ -14,7 +14,7 @@ SRC_WEB_FOLDER = 'src/web/'
 wildcard_constraints:
     year="[0-9]*",
     school="[-a-zA-Z]*",
-    special_schools="ucl"
+    special_schools="uclouvain"
 
 schools = ["vub", "kuleuven", "uliege", "umons", "unamur"]
 
@@ -45,16 +45,16 @@ rule crawl_programs:
         "python -m scrapy.cmdline runspider {CRAWLERS_FOLDER}{wildcards.school}_programs.py"
 
 rule crawl_programs_with_duplicates:
-    output: CRAWLING_OUTPUT_FOLDER + 'ucl_programs_{year}_pre.json'
+    output: CRAWLING_OUTPUT_FOLDER + 'uclouvain_programs_{year}_pre.json'
     shell:
-        "python -m scrapy.cmdline runspider {CRAWLERS_FOLDER}ucl_programs.py"
+        "python -m scrapy.cmdline runspider {CRAWLERS_FOLDER}uclouvain_programs.py"
 
 # TODO: probably need to update with ugent
 rule merge_duplicates:
-    input: CRAWLING_OUTPUT_FOLDER + 'ucl_programs_{year}_pre.json'
-    output: CRAWLING_OUTPUT_FOLDER + 'ucl_programs_{year}.json'
+    input: CRAWLING_OUTPUT_FOLDER + 'uclouvain_programs_{year}_pre.json'
+    output: CRAWLING_OUTPUT_FOLDER + 'uclouvain_programs_{year}.json'
     shell:
-        "python {SRC_CRAWL_FOLDER}merge_programs.py -s ucl -y {wildcards.year}"
+        "python {SRC_CRAWL_FOLDER}merge_programs.py -s uclouvain -y {wildcards.year}"
 
 
 rule crawl_courses:
