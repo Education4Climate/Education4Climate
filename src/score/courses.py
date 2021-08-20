@@ -11,14 +11,15 @@ import re
 
 from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
 
+# Languages for which a dictionary is defined
 ACCEPTED_LANGUAGES = ["fr", "en", "nl"]
 
 
 def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]]):
     """
     Compare text to a list of patterns
-    :param text: A string that has been lowerized
-    :param patterns: List of patterns matching lowerized strings
+    :param text: A string that has been lowered
+    :param patterns: List of patterns matching lowered strings
     :return:
     - 1 if any pattern is find, 0 otherwise
     - a dictionary associating the patterns that matched to what they matched
@@ -62,13 +63,14 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
     return score, pattern_matches_dict
 
 
-def main(school: str, year: int, fields: str) -> None:
+def score_school_courses(school: str, year: int, fields: str, output_dir: str) -> None:
     """
     Identifies for each course of a school whether they discuss a pre-defined set of thematics and saves the results.
 
     :param school: Code of the school whose courses will be scored.
     :param year: Year for which the scoring is done.
     :param fields: Data fields to be used for computing scores.
+    :param output_dir: Name of the main directory where the results should be saved
 
     :return: None
     """
@@ -110,7 +112,8 @@ def main(school: str, year: int, fields: str) -> None:
             courses_df.loc[idx, themes] = 0
             continue
 
-        # If we didn't identify a known language, use the first language in which the course is given
+        # If we didn't identify a language for which we have a dictionary,
+        # use the first language in which the course is given
         if language not in ACCEPTED_LANGUAGES:
             print(idx, language)
             course_languages = list(set(courses_df.loc[idx, 'languages']).intersection(set(ACCEPTED_LANGUAGES)))
@@ -133,11 +136,10 @@ def main(school: str, year: int, fields: str) -> None:
     courses_df = courses_df.astype(int)
 
     # Save scores
-    output_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
+    output_fn = f"{output_dir}/{school}_scoring_{year}.csv"
     courses_df.to_csv(output_fn, encoding="utf-8")
     # Save patterns
-    matches_output_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_matches_{year}.json")
+    matches_output_fn = f"{output_dir}/{school}_matches_{year}.json"
     with open(matches_output_fn, "w") as f:
         json.dump(patterns_matches_dict, f, indent=4)
 
@@ -151,4 +153,5 @@ if __name__ == "__main__":
                              " If several fields, they need to be separated by a ','")
 
     arguments = vars(parser.parse_args())
-    main(**arguments)
+    arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}")
+    score_school_courses(**arguments)
