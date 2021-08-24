@@ -84,6 +84,11 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
         # Check the navigation tab for programme info tabs
         match = False
         program_id = response.url.split("/")[-2]  # didn't find any id for programs so using url
+
+        # There is a problem of accessibility of the courses page of this program
+        if program_id == 'bachelor-geschiedenis-studeren':
+            return
+
         for text, url in zip(nav_tabs_text, nav_tabs_urls):
             if text in ["About the programme", "Programme info", "Opleidingsinfo", "Bachelor", "Master",
                         "Over de bachelor", "Over de master", "Tijdens een bachelor", "Opleindingsinfo en FAQ"]:
@@ -116,6 +121,8 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
 
         faculties = response.xpath("//div[contains(@class, 'managedContent')]"
                                    "//li/a[contains(text(), 'Facult') or contains(text(), 'Institu')]/text()").getall()
+        # Small fix for program manama-fiscaal-recht
+        faculties = [f for f in faculties if f != 'procedure van de Faculteit Rechten']
         # For the programs for which the faculty is not specified, we hard-coded it.
         if len(faculties) == 0:
             for faculty, programs_ in PROGRAMS_FACULTY.items():
