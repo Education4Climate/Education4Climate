@@ -84,13 +84,17 @@ def main(school: str, year: int, fields: str) -> None:
     courses_df = courses_df.dropna(subset=fields)
     # Concatenate the scoring fields
     courses_df["text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
-    courses_df = courses_df[["id", "languages", "text"]].set_index("id")
+    courses_df = courses_df[["id", "languages", "text","name"]].set_index("id")
 
     # Load patterns for different types of scores
     themes_fn = Path(__file__).parent.absolute().joinpath("../../data/patterns/themes_patterns.json")
     themes_patterns = json.load(open(themes_fn, 'r'))
+
+    dedicated_fn = Path(__file__).parent.absolute().joinpath("../../data/patterns/dedicated.json")
+    dedicated_patterns = json.load(open(dedicated_fn))
     themes = themes_patterns.keys()
     patterns_matches_dict = {theme: {} for theme in themes}
+    courses_df["dedicated"]=0
     for idx, text in courses_df.text.items():
 
         # Clean text
@@ -126,10 +130,14 @@ def main(school: str, year: int, fields: str) -> None:
             score, shift_patterns_matches_dict = compute_score(text, themes_patterns[theme][language])
             courses_df.loc[idx, theme] = score
             if score == 1:
+                if True in [re.search(p,courses_df.loc[idx]["name"]) is not None for p in dedicated_patterns]:
+                    courses_df.loc[idx,"dedicated"]=1
                 patterns_matches_dict[theme][idx] = shift_patterns_matches_dict
+
 
     courses_df = courses_df.drop("text", axis=1)
     courses_df = courses_df.drop("languages", axis=1)
+    courses_df = courses_df.drop("name", axis=1)
     courses_df = courses_df.astype(int)
 
     # Save scores
