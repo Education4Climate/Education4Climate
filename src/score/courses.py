@@ -92,14 +92,18 @@ def score_school_courses(school: str, year: int, fields: str, output_dir: str,
     courses_df["scoring_text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
     courses_df["full_text"] = courses_df[["name", "content", "goal", "activity", "other"]]\
         .apply(lambda x: "\n".join(x.values), axis=1)
-    courses_df = courses_df[["id", "languages", "scoring_text", "full_text"]].set_index("id")
+    courses_df = courses_df[["id", "languages", "name", "scoring_text", "full_text"]].set_index("id")
 
     # Load patterns for different types of scores
     themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/{dictionary_name}.json")
     themes_patterns = json.load(open(themes_fn, 'r'))
+
+    dedicated_fn = Path(__file__).parent.absolute().joinpath("../../data/patterns/dedicated.json")
+    dedicated_patterns = json.load(open(dedicated_fn))
     themes = themes_patterns.keys()
     patterns_matches_dict = {theme: {} for theme in themes}
-    scores_df = pd.DataFrame(0, index=courses_df.index, columns=themes, dtype=int)
+
+    scores_df = pd.DataFrame(0, index=courses_df.index, columns=themes + ["dedicated"], dtype=int)
     for idx, (scoring_text, full_text) in courses_df[["scoring_text", "full_text"]].iterrows():
 
         # Clean texts
@@ -137,6 +141,8 @@ def score_school_courses(school: str, year: int, fields: str, output_dir: str,
                 score, shift_patterns_matches_dict = compute_score(scoring_text, themes_patterns[theme][language])
                 scores_df.loc[idx, theme] |= score
                 if score == 1:
+                    if any([re.search(p, courses_df.loc[idx]["name"]) is not None for p in dedicated_patterns]):
+                        courses_df.loc[idx, "dedicated"] = 1
                     patterns_matches_dict[theme][idx] = {}
                     patterns_matches_dict[theme][idx][language] = shift_patterns_matches_dict
 
