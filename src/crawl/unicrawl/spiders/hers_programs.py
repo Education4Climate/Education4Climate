@@ -27,34 +27,44 @@ class HERSProgramSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
         for code in DEPARTMENTS_CODES.keys():
-            base_dict = {"faculty": DEPARTMENTS_CODES[code]}
-            yield scrapy.Request(BASE_URL.format(code), self.parse_main, cb_kwargs={'base_dict': base_dict})
+            yield scrapy.Request(BASE_URL.format(code), self.parse_main,
+                                 cb_kwargs={'faculty': DEPARTMENTS_CODES[code]})
 
-    def parse_main(self, response, base_dict):
-        # Get list of faculties
+    def parse_main(self, response, faculty):
+        # Get list of programs
         programs_names = response.xpath(f"//a[@class='LienProg']/text()").getall()
         programs_links = response.xpath(f"//a[@class='LienProg']/@href").getall()
         programs_codes = [link.split("/")[-1].split("_")[0] for link in programs_links]
         programs_cycles = [name.split(" ")[0].lower() for name in programs_names]
 
-        for name, code, link, cycle in zip(programs_names, programs_codes, programs_links, programs_cycles):
-            cur_dict = {'name': name,
-                        'id': code,
-                        'cycle': cycle}
-            yield response.follow(link, self.parse_program, cb_kwargs={'base_dict': {**base_dict, **cur_dict}})
+        for program_name, code, link, cycle in zip(programs_names, programs_codes, programs_links, programs_cycles):
+
+            if 'bachelier' in cycle:
+                cycle = 'bac'
+            elif 'master' in cycle:
+                cycle = 'master'
+            elif 'certificat' in cycle:
+                cycle = 'certificate'
+            else:
+                cycle = 'other'
+
+            base_dict = {'id': code,
+                         'name': program_name,
+                         'cycle': cycle,
+                         'faculty': faculty,
+                         'campus': ''}
+            yield response.follow(link, self.parse_program, cb_kwargs={'base_dict': base_dict})
 
     @staticmethod
-    def parse_program(reponse, base_dict):
+    def parse_program(response, base_dict):
 
-        ects = reponse.xpath("//td[contains(@class, 'ContColG')]/text()").getall()
-        ects = [e for e in ects if e != '\xa0']
-        # TODO: check if there are UEs
-        courses_ids = reponse.xpath("//nobr/text()").getall()
+        ects = response.xpath("//td[contains(@class, 'ContColG')]/text()").getall()
+        ects = [int(e) for e in ects if e != '\xa0']  # Remove elements which do not correspond to ects
+        courses_ids = response.xpath("//nobr/text()").getall()
 
-        cur_dict = {"ects": ects,
-                    "courses": courses_ids  # ,
-                    # "ectsnb": len(ects),
-                    # "coursesnb": len(courses_ids)
+        cur_dict = {"url": response.url,
+                    "courses": courses_ids,
+                    "ects": ects
                     }
 
         yield {**base_dict, **cur_dict}

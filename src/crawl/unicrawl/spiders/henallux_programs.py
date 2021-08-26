@@ -38,20 +38,29 @@ class HENALLUXProgramSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_program(response):
+        program_id = [s for s in response.url.split("/") if s.isnumeric()][0]
         program_name = response.xpath("//span[@class='intituleOfficiel']/text()").get()
         faculty = response.xpath("//th[text()='Département']/following::td[1]/text()").get()
         cycle = response.xpath("//th[text()='Type']/following::td[1]/text()").get()
-        # TODO: should we consider UE or 'activités d'apprentissage constitutives'
-        #  -> maybe just for content? and teacher?
+        if cycle == 'Bachelier':
+            cycle = 'bac'
+        elif cycle == 'Master':
+            cycle = 'master'
+        else:
+            cycle = 'other'
         ues = response.xpath("//li[@class='uetableau-menu']/a/text()").getall()
         ue_ids = [ue.split(" - ")[0].strip("\u00a0") for ue in ues]
-        ects = response.xpath("//li[@class='uetableau-menu']/a/div[2]/text()").getall()
+        ue_links = response.xpath("//li[@class='uetableau-menu']/a/@href").getall()
+        ue_links_codes = [ue_link.split("idUe/")[1].split("/")[0] for ue_link in ue_links]
+        ects = [int(float(e)) for e in response.xpath("//li[@class='uetableau-menu']/a/div[2]/text()").getall()]
 
-        yield {"name": program_name,
+        yield {"id": program_id,
+               "name": program_name,
                "faculty": faculty,
                "cycle": cycle,
+               "campus": "",
+               "url": response.url,
                "courses": ue_ids,
-               "ects": ects  # ,
-               # "nbcourses": len(ue_ids),
-               # "nbects": len(ects)}
+               "ects": ects,
+               "courses_url_codes": ue_links_codes
                }

@@ -25,28 +25,23 @@ class ULBProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        for deg in ('BA', 'MA', 'MA60', 'MS'):
-            cycle = 'bac' if deg == 'BA' else 'master'
-            yield scrapy.Request(
-                url=BASE_URL.format(deg),
-                callback=self.parse_main,
-                cb_kwargs={'cycle': cycle}
-            )
+        for deg in ('BA', 'MA', 'MA60', 'MS', 'AG', 'CAPAES'):
+            yield scrapy.Request(url=BASE_URL.format(deg), callback=self.parse_main)
 
-    def parse_main(self, response, cycle):
-        # soup = bs4.BeautifulSoup(response.text, 'html.parser')
+    def parse_main(self, response):
 
         main_div = "//div[contains(@class, 'search-result__result-item')]"
-        program_links = response.xpath(f"{main_div}/div[contains(@class, 'search-result__formations')]/a/@href").getall()
+        program_links = response.xpath(f"{main_div}/div[contains(@class, 'search-result__formations')]"
+                                       f"/a/@href").getall()
         campuses = response.xpath(f"{main_div}/div[contains(@class, 'search-result__campus')]/span/text()").getall()
         for link, campus in zip(program_links, campuses):
             yield scrapy.Request(
                 url=link,
                 callback=self.parse_secondary,
-                cb_kwargs={'main_program_id': None, 'cycle': cycle, 'campus': campus.strip(" \n")}
+                cb_kwargs={'main_program_id': None, 'campus': campus.strip(" \n")}
             )
 
-    def parse_secondary(self, response, main_program_id, cycle, campus):
+    def parse_secondary(self, response, main_program_id, campus):
 
         # Get subprograms if there are some
         main_div = "//div[contains(@class, 'search-result__result-item')]"
@@ -59,20 +54,41 @@ class ULBProgramSpider(scrapy.Spider, ABC):
                 yield scrapy.Request(
                     url=link,
                     callback=self.parse_secondary,
-                    cb_kwargs={'main_program_id': main_program_id, 'campus': campus.strip(" \n"), 'cycle': cycle}
+                    cb_kwargs={'main_program_id': main_program_id, 'campus': campus.strip(" \n")}
                 )
             return
 
         # Otherwise extract information for the program
         program_id = response.url.split("/")[-1]
         program_name = response.xpath("//h1/text()").get()
-        faculty = response.xpath("//div[@class='zone-titre__surtitre']/a/text()").get()
-        base_dict = {'id': program_id.upper(),
-                     'name': program_name,
-                     'faculty': faculty,
-                     'cycle': cycle,
-                     'campus': campus,
-                     'url': response.url}
+
+        if 'Bachelier' in program_name or 'bachelier' in program_name:
+            cycle = 'bac'
+        elif 'Master' in program_name or 'master' in program_name:
+            cycle = 'master'
+        elif 'Certificat' in program_name or 'certificat' in program_name:
+            cycle = 'certificate'
+        elif 'Agrégation' in program_name or 'Formation' in program_name:
+            cycle = 'other'
+        else:
+            cycle = 'other'
+
+        faculties = response.xpath("//div[@class='zone-titre__surtitre']/a/text()").getall()
+        # Remove some elements which are not faculties
+        faculties = [faculty for faculty in faculties
+                     if 'Universit' not in faculty
+                     and 'Haute Ecole' not in faculty
+                     and 'Militaire' not in faculty
+                     and 'Nucléaire' not in faculty]
+
+        base_dict = {
+            'id': program_id.upper(),
+            'name': program_name,
+            'cycle': cycle,
+            'faculties': faculties,
+            'campuses': [campus],
+            'url': response.url
+        }
 
         program_id = program_id.upper()
         if main_program_id is None:
