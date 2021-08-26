@@ -2,6 +2,7 @@ from pathlib import Path
 import argparse
 
 import pandas as pd
+import itertools
 
 from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, WEB_INPUT_FOLDER
 
@@ -104,18 +105,18 @@ def add_missing_fields_in_programs(programs_df: pd.DataFrame, courses_df: pd.Dat
 
 def convert_faculty_to_fields(programs_df, school: str):
 
-    fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
+    print("youhou")
+
+    fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields_new.csv")
     faculties_to_fields_df = pd.read_csv(fields_fn)
     faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
-    faculties_to_fields_ds = faculties_to_fields_df[["faculty", "field"]].set_index("faculty")
+    faculties_to_fields_ds = faculties_to_fields_df[["faculty", "fields"]].set_index("faculty")
 
     def faculty_to_field(faculties):
         for faculty in faculties:
             assert faculty in faculties_to_fields_ds.index, f'Error: {faculty} was not found in faculty_to_fields'
-        return [faculties_to_fields_ds.loc[faculty][0] for faculty in faculties]
+        return list(itertools.chain([faculties_to_fields_ds.loc[faculty][0].split(";") for faculty in faculties]))
 
-    # courses_df["faculty"] = courses_df["faculty"].apply(lambda x: sorted(x))
-    # courses_df["field"] = courses_df["faculty"].apply(lambda x: list(set([faculty_to_field(i) for i in x])))
     programs_df["fields"] = programs_df["faculties"].apply(lambda x: faculty_to_field(x))
     return programs_df
 
