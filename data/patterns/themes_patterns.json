@@ -4,8 +4,11 @@
 			["glaciolog", "climatolog", "modelisation"],
 			["glaciolog", "climatolog", "thermodynamiq"],
 			["glaciolog", "climatolog", "atmospher"],
-			["impacts? (?:de l'|des )(?:homme|humanité|industrie)", "cycles? bio-?geo-?(?:chimique|physique)"],
-			["[ée]l[ée]vation", " (?:mers? |oc[éé]ans?)", "clima[^ ]+"],
+			["impacts? (?:de l'|des )hommes?", "cycles? bio-?geo-?(?:chimique|physique)"],
+			["impacts? (?:de l')humanité", "cycles? bio-?geo-?(?:chimique|physique)"],
+			["impacts? (?:de l'|des )industries?", "cycles? bio-?geo-?(?:chimique|physique)"],
+			["[ée]l[ée]vation", "mers?", "clima[^ ]+"],
+			["[ée]l[ée]vation", "oc[éé]ans?", "clima[^ ]+"],
 			["[ée]cologi", "climat", "[ée]levage"],
 			["[ée]cologi", "climat", "agriculture"],
 			["[ée]cologi", "climat", "d[ée]veloppements? du territoire"],
@@ -173,7 +176,6 @@
 			"stock[^ ]* (?:du |de )?(?:co2|dioxyde de carbone)",
 			"bas[- ]carbon[^ ]+",
 			"d[ée]carbon[^ ]+",
-			"utilis[^ ]+ (?:d')?[ée]nerg[^ ]+",
 			"bilan[^ ]+ carbon[^ ]+",
 			"empreint[^ ]+ carbon[^ ]+"
 
