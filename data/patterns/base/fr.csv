@@ -3,6 +3,7 @@ patterns,themes
 (?:emissions? )?(?:de )?gaz (?:a )?(?:effets? )(?:de )?serre,['climate']
 (?:pertes?|fontes?|diminutions?|reductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol),"['climate', 'environment']"
 "[architectures? durab[^ ]+, ecologi, materiaux]",['sustainability']
+"[droit, environnement]",['test']
 "[basse energie, durabilite]",['energy']
 "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]",['environment']
 "[bio(?:diversite|sphere), ecolo[^ ]+]",['environment']
@@ -47,8 +48,8 @@ patterns,themes
 "[durabilite, analyse (?:de )?cycle (?:de )?vie]",['sustainability']
 "[ecologi, anthropocene]","['environment', 'misc']"
 "[ecologi, climat, agriculture]","['climate', 'environment']"
-"[ecologi, climat, amenagements? du territoire)]","['environment', 'climate']"
-"[ecologi, climat, developpements? du territoire)]","['environment', 'climate']"
+"[ecologi, climat, amenagements? du territoire]","['environment', 'climate']"
+"[ecologi, climat, developpements? du territoire]","['environment', 'climate']"
 "[ecologi, climat, elevage]","['climate', 'environment']"
 "[ecologi, etudes? multispecifiques?, environnement]",['environment']
 "[ecologi, transiti[^ ]+ climatiq[^ ]+","['environment', 'misc']"
@@ -99,7 +100,7 @@ patterns,themes
 "[performances? energ[^ ]+, durabilite, environnement]",['energy']
 "[performances? energ[^ ]+, solution durab[^ ]+, environnement]",['energy']
 "[plastique, ocean]",['environment']
-"[plastique, pollution)]",['environment']
+"[plastique, pollution]",['environment']
 "[pollution, aquifere]",['environment']
 "[pollution, cours d'eau]",['environment']
 "[pollution, ocean]",['environment']
@@ -202,7 +203,7 @@ questions? climat[^ ]+,['climate']
 rarefaction (des )?ressources naturelles,['resources']
 rechauffement climat[^ ]+,['climate']
 refugies? climatiques?,['climate']
-resist[^ ]+ climat[^ ]+,"['climat', 'sustainability']"
+resist[^ ]+ climat[^ ]+,"['climate', 'sustainability']"
 risques? (?:lies? )?(?:au )?climat[^ ]+,"['climate', 'sustainability']"
 sequestrat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone),"['climate', 'energy']"
 services? ecosystemiq,['misc']

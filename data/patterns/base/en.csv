@@ -42,7 +42,7 @@ patterns,themes
 "[ecology, climat[^ ]+ transition]","['environment', 'misc']"
 "[ecology, climat[^ ]+, agriculture]","['climate', 'environment']"
 "[ecology, climat[^ ]+, farming]","['climate', 'environment']"
-"[ecology, climat[^ ]+, territory development)]","['environment', 'climate']"
+"[ecology, climat[^ ]+, territory development]","['environment', 'climate']"
 "[ecology, energy transition]","['environment', 'misc']"
 "[ecology, multispecies stud(?:y|ies), environment]",['environment']
 "[ecology, social transition]","['environment', 'misc']"
@@ -84,7 +84,7 @@ patterns,themes
 "[material, life cycle analysis]",['sustainability']
 "[nuclear, pollu(?:tant|tion), environment]","['energy', 'environment']"
 "[plastic, ocean]",['environment']
-"[plastic, pollution)]",['environment']
+"[plastic, pollution]",['environment']
 "[political ecology, environment]",['environment']
 "[pollution, aquifer]",['environment']
 "[pollution, groundwater]",['environment']
@@ -150,11 +150,11 @@ climat[^ ]+(?: change)? issue,['climate']
 climat[^ ]+(?: change)? justice,['climate']
 climat[^ ]+(?: change)? management,"['climate', 'sustainability']"
 climat[^ ]+(?: change)? mitigation,['climate']
-climat[^ ]+(?: change)? polic(?:y|ies),"['climate', 'sustainability]"
+climat[^ ]+(?: change)? polic(?:y|ies),"['climate', 'sustainability']"
 climat[^ ]+(?: change)? refugee,['climate']
-climat[^ ]+(?: change)? resilience,"['climat', 'sustainability']"
-climat[^ ]+(?: change)? resistance,"['climat', 'sustainability']"
-climat[^ ]+(?: change)? risk,"['climat', 'sustainability']"
+climat[^ ]+(?: change)? resilience,"['climate', 'sustainability']"
+climat[^ ]+(?: change)? resistance,"['climate', 'sustainability']"
+climat[^ ]+(?: change)? risk,"['climate', 'sustainability']"
 climat[^ ]+(?: change)? strateg(?:y|ies),['climate']
 collapse theory,['sustainability']
 collapsology,['sustainability']
