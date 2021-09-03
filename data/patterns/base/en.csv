@@ -38,15 +38,15 @@ patterns,themes
 "[degradation, groundwater]",['environment']
 "[degradation, ocean]",['environment']
 "[degradation, stream]",['environment']
-"[ecology, anthropocene]","['environment', 'misc']"
-"[ecology, climat[^ ]+ transition]","['environment', 'misc']"
+"[ecology, anthropocene]",['environment']
+"[ecology, climat[^ ]+ transition]","['environment', 'climate']"
 "[ecology, climat[^ ]+, agriculture]","['climate', 'environment']"
 "[ecology, climat[^ ]+, farming]","['climate', 'environment']"
 "[ecology, climat[^ ]+, territory development]","['environment', 'climate']"
-"[ecology, energy transition]","['environment', 'misc']"
+"[ecology, energy transition]","['environment', 'energy']"
 "[ecology, multispecies stud(?:y|ies), environment]",['environment']
-"[ecology, social transition]","['environment', 'misc']"
-"[ecology, sustainability]","['environment', 'misc']"
+"[ecology, social transition]",['environment']
+"[ecology, sustainability]","['environment', 'sustainability']"
 "[ecosyst[^ ]+, degradation, anthrop(?:ogenic|ocene)]","['environment', 'resources']"
 "[ecosyst[^ ]+, perturbation, anthrop(?:ogenic|ocene)]","['environment', 'resources']"
 "[ecosyst[^ ]+, pollution, anthrop(?:ogenic|ocene)]","['environment', 'resources']"
@@ -122,11 +122,11 @@ patterns,themes
 "[sustainable solution, impact]",['sustainability']
 adaptations? to climate,['climate']
 agro-?ecolo[^ ]+,['environment']
-agro-?forestry,['misc']
+agro-?forestry,['environment']
 carbon assessment,['climate']
 carbon audit,['climate']
 carbon balance,['climate']
-carbon cycle,['misc']
+carbon cycle,['climate']
 carbon footprint,['climate']
 ccs,['climate']
 circular economy,['sustainability']
@@ -164,7 +164,7 @@ ecolog[^ ]+ economics,['sustainability']
 ecolog[^ ]+ material,['resources']
 ecolog[^ ]+ transition,['resources']
 economy of the commons,['sustainability']
-ecosystem[^ ]+ service,['misc']
+ecosystem[^ ]+ service,['environment']
 electric car,['energy']
 electric mobility,['energy']
 energy assessment,['energy']
@@ -198,11 +198,11 @@ hydrogen mobility,['energy']
 life cycle assessment,['resources']
 low[- ]carbon,['climate']
 low[- ]carbon energy,['energy']
-organic farming,['misc']
+organic farming,['environment']
 overfishing,['resources']
 paris agreement,['climate']
 peak oil,['resources']
-permaculture,['misc']
+permaculture,['environment']
 photovoltaic[- ]?(?:energy|power),['energy']
 photovoltaic[- ]?panel,['energy']
 regenerative economy,['sustainability']
@@ -224,5 +224,5 @@ sustainable operation,['resources']
 sustainable practice,['sustainability']
 sustainable production,['sustainability']
 sustainable transport,['sustainability']
-water purification,['misc']
+water purification,['resources']
 wind[- ]?power(?:energy|power),['energy']

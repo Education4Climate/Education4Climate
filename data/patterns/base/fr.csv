@@ -3,7 +3,6 @@ patterns,themes
 (?:emissions? )?(?:de )?gaz (?:a )?(?:effets? )(?:de )?serre,['climate']
 (?:pertes?|fontes?|diminutions?|reductions?) (?:glaces?|calottes?(?: polaires?)|permafrost|pergelisol),"['climate', 'environment']"
 "[architectures? durab[^ ]+, ecologi, materiaux]",['sustainability']
-"[droit, environnement]",['test']
 "[basse energie, durabilite]",['energy']
 "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]",['environment']
 "[bio(?:diversite|sphere), ecolo[^ ]+]",['environment']
@@ -35,9 +34,7 @@ patterns,themes
 "[developp[^ ]+ durab[^ ]+, anthropocene]",['sustainability']
 "[developp[^ ]+ durab[^ ]+, droits? (?:d'|de l')?environnement]",['sustainability']
 "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]",['sustainability']
-"[developp[^ ]+ durab[^ ]+, environnement|ecologie[^ ]+]",['sustainability']
-"[developp[^ ]+ durab[^ ]+, impact]",['sustainability']
-"[developp[^ ]+ durab[^ ]+, impacts? (?:d'|de l')?environnement]",['sustainability']
+"[developp[^ ]+ durab[^ ]+, impacts? (?:sur|de )(?:l')?environnement]",['sustainability']
 "[developp[^ ]+ durab[^ ]+, materiaux, gisement]",['sustainability']
 "[developp[^ ]+ durab[^ ]+, perturbations? (?:d'|de l')?environnement]",['sustainability']
 "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]",['sustainability']
@@ -46,15 +43,15 @@ patterns,themes
 "[developp[^ ]+ durab[^ ]+, transiti[^ ]+ social]",['sustainability']
 "[durab(?:le|ilite), mobilite]",['sustainability']
 "[durabilite, analyse (?:de )?cycle (?:de )?vie]",['sustainability']
-"[ecologi, anthropocene]","['environment', 'misc']"
+"[ecologi, anthropocene]",['environment']
 "[ecologi, climat, agriculture]","['climate', 'environment']"
 "[ecologi, climat, amenagements? du territoire]","['environment', 'climate']"
 "[ecologi, climat, developpements? du territoire]","['environment', 'climate']"
 "[ecologi, climat, elevage]","['climate', 'environment']"
 "[ecologi, etudes? multispecifiques?, environnement]",['environment']
-"[ecologi, transiti[^ ]+ climatiq[^ ]+","['environment', 'misc']"
-"[ecologi, transiti[^ ]+ energ[^ ]+]","['environment', 'misc']"
-"[ecologi, transiti[^ ]+ sociale]","['environment', 'misc']"
+"[ecologi, transiti[^ ]+ climatiq[^ ]+","['environment', 'climate']"
+"[ecologi, transiti[^ ]+ energ[^ ]+]","['environment', 'energy']"
+"[ecologi, transiti[^ ]+ sociale]",['environment']
 "[ecologie politique, environnement]",['environment']
 "[ecologie, durabilite]",['environment']
 "[economie sociale, transiti[^ ]+ ecolo[^ ]+]",['sustainability']
@@ -66,8 +63,8 @@ patterns,themes
 "[ecosyst[^ ]+, pollution]",['environment']
 "[ecosyst[^ ]+, pollutions?, anthrop(?:iq|ocene)]","['environment', 'resources']"
 "[ecosyst[^ ]+, resilience]",['environment']
-"[effets? (?:de )?serre, atmosphere]",['misc']
-"[effets? (?:de )?serre, climat]",['misc']
+"[effets? (?:de )?serre, atmosphere]",['climate']
+"[effets? (?:de )?serre, climat]",['climate']
 "[effondrement, climat, environnement]",['resources']
 "[effondrement, espece]",['environment']
 "[effondrement, insecte]",['environment']
@@ -117,14 +114,14 @@ accords? de paris(?:(?: sur| pour) le climat)?,['climate']
 actions? (?:pour )?(?:le )?climat[^ ]+,['climate']
 adaptations? (?:aux? )?(?:changements? )?climat[^ ]+,['climate']
 agglomeration durable,['sustainability']
-agriculture biologique,['misc']
+agriculture biologique,['environment']
 agriculture durable,['sustainability']
-agro-?ecologie,['misc']
-agro-?foresterie,['misc']
+agro-?ecologie,['environment']
+agro-?foresterie,['environment']
 agro[- ]?ecolo[^ ]+,['environment']
 analyse (?:de )?cycle (?:de )?vie,"['resources', 'sustainability']"
 architectures? durab[^ ]+,"['resources', 'sustainability']"
-assainissements? des eaux,['misc']
+assainissements? des eaux,['resources']
 attenu[^ ]+ climat[^ ]+,['climate']
 bas[- ]carbon[^ ]+,"['climate', 'energy']"
 bilan[^ ]+ carbon[^ ]+,"['climate', 'energy']"
@@ -140,7 +137,7 @@ context[^ ]+ climat[^ ]+,['climate']
 conversi[^ ]+(?:du |de )?(?:co2|dioxyde de carbone),"['climate', 'energy']"
 crises? ecologiqu,['environment']
 crises? environnement,['environment']
-cycle du carbone,['misc']
+cycle du carbone,['climate']
 decarbon[^ ]+,"['climate', 'energy']"
 defis? (?:environnement|ecolo[^ ]+),['environment']
 deforestation,['resources']
@@ -168,7 +165,7 @@ energ[^ ]+ verte,['energy']
 enjeux? climat[^ ]+,['climate']
 epuisement (?:des? )?ressources? naturelle,['resources']
 epuisement halieutique,['resources']
-epurations? des eaux,['misc']
+epurations? des eaux,['resources']
 evenements? meteo[^ ]+ extr[^ ]+,"['climate', 'environment']"
 exploitation durable,['resources']
 forcages? climat[^ ]+,['climate']
@@ -187,7 +184,7 @@ model[^ ]+ climat[^ ]+,['climate']
 objectifs? (de )?developpements? durables?,['sustainability']
 panneaux? photovol[^ ]+,['energy']
 peche durable,['resources']
-permaculture,['misc']
+permaculture,['environment']
 pertes? (?:ecosyst[^ ]+|ecolo[^ ]+),['environment']
 physique (?:du )?climat[^ ]+,['climate']
 pic (?:d')?extraction,['resources']
@@ -206,7 +203,7 @@ refugies? climatiques?,['climate']
 resist[^ ]+ climat[^ ]+,"['climate', 'sustainability']"
 risques? (?:lies? )?(?:au )?climat[^ ]+,"['climate', 'sustainability']"
 sequestrat[^ ]+ (?:du |de )?(?:co2|dioxyde de carbone),"['climate', 'energy']"
-services? ecosystemiq,['misc']
+services? ecosystemiq,['environment']
 stock[^ ]* (?:du |de )?(?:co2|dioxyde de carbone),"['climate', 'energy']"
 strategies? climat[^ ]+,['climate']
 surpeche,['resources']

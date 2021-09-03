@@ -64,15 +64,15 @@ patterns,themes
 "[duurzame ontwikkeling, transitie]",['sustainability']
 "[duurzame oplossing, impact]",['sustainability']
 "[duurzame oplossing, milieu|ecolo[^ ]+]",['sustainability']
-"[ecolo[^ ]+, antropoceen]","['environment', 'misc']"
-"[ecolo[^ ]+, duurzaamheid]","['environment', 'misc']"
-"[ecolo[^ ]+, energ[^ ]+ ?transitie]","['environment', 'misc']"
-"[ecolo[^ ]+, klima+t[^ ]* ?transitie]","['environment', 'misc']"
+"[ecolo[^ ]+, antropoceen]",['environment']
+"[ecolo[^ ]+, duurzaamheid]","['environment', 'sustainability']"
+"[ecolo[^ ]+, energ[^ ]+ ?transitie]","['environment', 'energy']"
+"[ecolo[^ ]+, klima+t[^ ]* ?transitie]","['environment', 'climate']"
 "[ecolo[^ ]+, klima+t[^ ]*, landbouw]","['climate', 'environment']"
 "[ecolo[^ ]+, klima+t[^ ]*, overgang]","['climate', 'environment']"
 "[ecolo[^ ]+, klima+t[^ ]*, territoriumontwikkeling]","['environment', 'climate']"
 "[ecolo[^ ]+, multispecies stud(?:y|ies), milieu]",['environment']
-"[ecolo[^ ]+, sociale ?transitie]","['environment', 'misc']"
+"[ecolo[^ ]+, sociale ?transitie]",['environment']
 "[ecosyst[^ ]+, degradatie, antropo(?:genic|ceen)]","['environment', 'resources']"
 "[ecosyst[^ ]+, pollutie, antropo(?:genic|ceen)]","['environment', 'resources']"
 "[ecosyst[^ ]+, pollutie]",['environment']
@@ -146,9 +146,9 @@ patterns,themes
 aanpassing aan klimaat(?:verandering)?,['climate']
 acties tegen klimaatverandering,['climate']
 acties voor het klimaat,['climate']
-agro-?bosbouw,['misc']
+agro-?bosbouw,['environment']
 agro-?ecologie,['environment']
-biologische landbouw,['misc']
+biologische landbouw,['environment']
 broeikasgas,['climate']
 circulaire economie,['sustainability']
 co2-audit,['climate']
@@ -173,7 +173,7 @@ ecolog[^ ]+ economie,['sustainability']
 ecolog[^ ]+ materiaal,['resources']
 ecolog[^ ]+ transitie,['resources']
 economie van de commons,['sustainability']
-ecosystem[^ ]+ ?dienst,['misc']
+ecosystem[^ ]+ ?dienst,['environment']
 efficiënt gebruik van hulpbronnen,['sustainability']
 elektri[^ ]+ auto,['energy']
 elektri[^ ]+ mobiliteit,['energy']
@@ -224,7 +224,7 @@ klimaatverandering(?:gerelateerd )? ?risico|risico van klimaatverandering,['clim
 klimaatveranderingsbeheer,['sustainability']
 klimaatveranderingsbeheer|beheer(?: inzaa?ke?)? van klimaatverandering,"['climate', 'sustainability']"
 klimaatveranderingsbeleid|beleid(?: inzaa?ke?)? van klimaatverandering,"['climate', 'sustainability']"
-koolstof ?cyclus,['misc']
+koolstof ?cyclus,['climate']
 koolstofarm,['climate']
 koolstofarm energie,['energy']
 koolstofbalans,['climate']
@@ -247,7 +247,7 @@ ontdooiend noordpoolgebied,"['climate', 'environment']"
 opwarming van de aarde,['climate']
 overbevissing,['resources']
 parijs akkoord,['climate']
-permacultuur,['misc']
+permacultuur,['environment']
 permafrostreductie,"['climate', 'climate', 'environment', 'environment']"
 piek olie,['resources']
 regeneratieve economie,['sustainability']
@@ -256,7 +256,7 @@ smelten pool(?:kap|ijs),"['environment', 'climate']"
 strategie voor klimaatverandering,['climate']
 uitputting van natuurlijke hulpbronnen,['resources']
 vis uitputting|uitputting van vis,['resources']
-water zuivering,['misc']
+water zuivering,['resources']
 waterkracht(?:energie),['energy']
 waterstof auto,['energy']
 waterstof mobiliteit,['energy']
