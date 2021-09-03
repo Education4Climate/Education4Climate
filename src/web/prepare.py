@@ -10,58 +10,6 @@ import logging
 logger = logging.getLogger()
 
 
-def exchange_fields_old(courses_df, programs_df):
-
-    # By default, courses should contain the following keys at minima (+ id + description fields)
-    keys_in_courses = ["name", "year", "languages", "teachers", "url"]
-    # If convenient, courses can also contain the following information. If they don't, we are adding them back in.
-    keys_in_programs = ["ects", "faculties", "campuses"]
-    keys_not_in_courses = ["ects", "faculties", "campuses"]
-    # First, we identify in which dataframes those 'programs keys' are and update the lists accordingly
-    for key in keys_in_programs:
-        if key in courses_df.columns:
-            keys_in_courses.append(key)
-            keys_not_in_courses.remove(key)
-    # Keep only those columns (drop for example the column 'content')
-    courses_df = courses_df[keys_in_courses]
-    # TODO: remove - actually change that in the crawler
-    # If 'program keys' were directly in courses, they might not be in list format
-    # for key in keys_in_programs:
-    #     if key in keys_in_courses:
-    #         courses_df[key] = courses_df[key].apply(lambda x: [x] if not isinstance(x, list) else x)
-    #         courses_df[key] = courses_df[key].apply(lambda x: list(set(x)))
-
-    # Finally, we add to the courses dataframe, the 'program data' that was not already in there
-    # TODO: maybe a more efficient way to do this
-    courses_aux_df = pd.DataFrame(index=courses_df.index, columns=keys_not_in_courses)
-    for course_id in courses_aux_df.index:
-        ects = []
-        faculties = []
-        campuses = []
-        # Check all programs to see if the course is in there and fetch info
-        for program_id in programs_df.index:
-            program_courses = programs_df.loc[program_id, 'courses']
-            if course_id in program_courses:
-                if 'ects' in keys_in_programs:
-                    # Ects should be in a list at the same position as the course in the courses list
-                    ects += [programs_df.loc[program_id, 'ects'][program_courses.index(course_id)]]
-                if 'faculties' in keys_in_programs:
-                    faculties += programs_df.loc[program_id, 'faculties']
-                if 'campuses' in keys_in_programs:
-                    campuses += programs_df.loc[program_id, 'campuses']
-        # Add the lists to the dataframe if required
-        if 'ects' in keys_in_programs:
-            courses_aux_df.loc[course_id]['ects'] = list(set(ects))
-        if 'faculties' in keys_in_programs:
-            courses_aux_df.loc[course_id]['faculties'] = list(set(faculties))
-        if 'campuses' in keys_in_programs:
-            courses_aux_df.loc[course_id]['campuses'] = list(set(campuses))
-
-    courses_df = pd.concat([courses_df, courses_aux_df], axis=1)
-
-    return courses_df
-
-
 def add_missing_fields_in_programs(programs_df: pd.DataFrame, courses_df: pd.DataFrame) -> pd.DataFrame:
     """
     Add missing fields to programs info DataFrame.
@@ -105,9 +53,7 @@ def add_missing_fields_in_programs(programs_df: pd.DataFrame, courses_df: pd.Dat
 
 def convert_faculty_to_fields(programs_df, school: str):
 
-    print("youhou")
-
-    fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields_new.csv")
+    fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
     faculties_to_fields_df = pd.read_csv(fields_fn)
     faculties_to_fields_df = faculties_to_fields_df[faculties_to_fields_df.school == school]
     faculties_to_fields_ds = faculties_to_fields_df[["faculty", "fields"]].set_index("faculty")
@@ -145,7 +91,8 @@ def main(school: str, year: int):
     programs_df = convert_faculty_to_fields(programs_df, school)
 
     # Load scoring output
-    scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
+    scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}"
+                                                          f"{school}_courses_scoring_{year}.csv")
     scores_df = pd.read_csv(scores_fn, dtype={'id': str}).set_index('id')
     courses_with_matches_index = scores_df[(scores_df.sum(axis=1) != 0)].index
 
@@ -177,7 +124,6 @@ def main(school: str, year: int):
     programs_df["themes_scores"] = programs_scores_df.apply(lambda x: x[x > 0].values.tolist()[:-1], axis=1).to_frame()
     programs_df = programs_df.reset_index()
 
-    # TODO: keep or remove ects?
     programs_df = programs_df[['id', 'name', 'cycle', 'url',
                                'languages', 'campuses', 'faculties', 'fields',
                                'themes', 'themes_scores', 'matched_courses'
