@@ -61,7 +61,7 @@ def convert_faculty_to_fields(programs_df, school: str):
     def faculty_to_field(faculties):
         for faculty in faculties:
             assert faculty in faculties_to_fields_ds.index, f'Error: {faculty} was not found in faculty_to_fields'
-        return list(itertools.chain([faculties_to_fields_ds.loc[faculty][0].split(";") for faculty in faculties]))
+        return list(itertools.chain.from_iterable([faculties_to_fields_ds.loc[faculty][0].split(";") for faculty in faculties]))
 
     programs_df["fields"] = programs_df["faculties"].apply(lambda x: faculty_to_field(x))
     return programs_df
@@ -80,14 +80,11 @@ def main(school: str, year: int):
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
     programs_df = pd.read_json(open(programs_fn, 'r'))
 
-    programs_df = add_missing_fields_in_programs(programs_df, courses_df)
-
     # By default, some keys like "ects", "faculties" and "campuses" should be associated to programs
     # But in some cases, they are associated to courses.
-    # courses_df = exchange_fields(courses_df, programs_df)
+    programs_df = add_missing_fields_in_programs(programs_df, courses_df)
 
     # Convert faculties to disciplines
-    # courses_df, programs_df = convert_faculty_to_fields(courses_df, programs_df, school)
     programs_df = convert_faculty_to_fields(programs_df, school)
 
     # Load scoring output
@@ -96,9 +93,11 @@ def main(school: str, year: int):
     scores_df = pd.read_csv(scores_fn, dtype={'id': str}).set_index('id')
     courses_with_matches_index = scores_df[(scores_df.sum(axis=1) != 0)].index
 
-    # Generating heavy version and light version (only courses with score > 0)
+    # Generating course file (only courses with score > 0)
     # Convert columns of scores to list of themes
-    courses_df["themes"] = scores_df.apply(lambda x: x[x == 1].index.tolist(), axis=1).to_frame()
+    courses_df["themes"] = scores_df.apply(lambda x: list(set(x[x == 1].index.tolist()) - {"dedicated"}),
+                                           axis=1).to_frame()
+    courses_df["dedicated"] = scores_df.apply(lambda x: x["dedicated"], axis=1).to_frame()
     courses_df = courses_df.reset_index()
     web_fn = Path(__file__).parent.absolute().joinpath(f"../../{WEB_INPUT_FOLDER}{school}_data_{year}_")
     # courses_df.to_json(f"{web_fn}heavy.json", orient='records')
@@ -120,13 +119,22 @@ def main(school: str, year: int):
     programs_with_matches_index = programs_scores_df[(programs_scores_df.sum(axis=1) != 0)].index
     # Get list of matched themes per program and associated scores
     programs_df = programs_df.set_index("id")
-    programs_df["themes"] = programs_scores_df.apply(lambda x: x[x > 0].index.tolist()[:-1], axis=1).to_frame()
-    programs_df["themes_scores"] = programs_scores_df.apply(lambda x: x[x > 0].values.tolist()[:-1], axis=1).to_frame()
+
+    def get_matched_themes(x):
+        x = x.drop(["dedicated", "total"])
+        return x[x > 0].index.tolist()
+    programs_df["themes"] = programs_scores_df.apply(lambda x: get_matched_themes(x), axis=1).to_frame()
+
+    def get_matched_themes_scores(x):
+        x = x.drop(["dedicated", "total"])
+        return x[x > 0].values.tolist()
+    programs_df["themes_scores"] = programs_scores_df.apply(lambda x: get_matched_themes_scores(x), axis=1).to_frame()
+    programs_df["nb_dedicated_courses"] = programs_scores_df["dedicated"]
     programs_df = programs_df.reset_index()
 
     programs_df = programs_df[['id', 'name', 'cycle', 'url',
                                'languages', 'campuses', 'faculties', 'fields',
-                               'themes', 'themes_scores', 'matched_courses'
+                               'themes', 'themes_scores', 'matched_courses', 'nb_dedicated_courses'
                                ]]
 
     programs_df.loc[programs_df.id.isin(programs_with_matches_index)] \
