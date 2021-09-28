@@ -5,9 +5,11 @@ from typing import List, Dict
 
 import json
 import pandas as pd
+from ast import literal_eval
+from unidecode import unidecode
 
 import langdetect
-from langdetect import DetectorFactory, detect
+from langdetect import DetectorFactory
 import re
 
 from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
@@ -17,42 +19,53 @@ ACCEPTED_LANGUAGES = ["fr", "en", "nl"]
 DetectorFactory.seed = 0
 
 
-def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]]):
+def compute_score(text: str, patterns_themes_df: pd.DataFrame) -> (int, Dict[str, List[str]]):
     """
     Compare text to a list of patterns
     :param text: A string that has been lowered
-    :param patterns: List of patterns matching lowered strings
+    :param patterns_themes_df: DataFrame containing all patterns in first column
+    and corresponding themes in second column
     :return:
     - 1 if any pattern is find, 0 otherwise
+    - a list of the themes that matched
     - a dictionary associating the patterns that matched to what they matched
     """
 
     pattern_matches_dict = {}
     score = 0
-    for pattern in patterns:
-        if isinstance(pattern, list):
-            pattern_matches_dict["---".join(pattern)] = []
-            matches = []
-            # matches_text = []
-            # check multi term matches
-            t = ""
-            for p in pattern:
-                m = re.search(p, text)
-                matches.append(m is not None)
-                if m is not None:
-                    start, end = m.span()
-                    start = max(0, start - 20)
-                    end = min(end + 20, len(text) - 1)
-                    t += "---"
-                    t += text[start:end]
-            if False not in matches:
-                score = 1
-                pattern_matches_dict["---".join(pattern)] += [t]
+    matched_themes = set()
+    for _, (pattern, themes) in patterns_themes_df.iterrows():
 
+        # Multi-pattern
+        if pattern.startswith("["):
+
+            sub_patterns = pattern[1:-1].split(", ")
+            # Check if all patterns in multi-pattern expression match
+            pattern_score = 1
+            patterns_matches_list = []
+            for sub_pattern in sub_patterns:
+                matches = list(re.finditer(sub_pattern, text))
+                # If there are no matches for a pattern stop the search
+                if len(matches) == 0:
+                    pattern_score = 0
+                    break
+                for match in matches:
+                    # For each match, retrieve a number of characters before and after to get the context
+                    start, end = match.span()
+                    start = max(0, start-20)
+                    end = min(end+20, len(text)-1)
+                    patterns_matches_list += [text[start:end]]
+
+            if pattern_score != 0:
+                matched_themes |= set(themes)
+                pattern_matches_dict[pattern] = patterns_matches_list
+
+        # Single pattern
         else:
             matches = list(re.finditer(pattern, text))
             if len(matches) != 0:
                 score = 1
+                matched_themes |= set(themes)
                 pattern_matches_dict[pattern] = []
                 for match in matches:
                     # For each match, retrieve a number of characters before and after to get the context
@@ -60,13 +73,14 @@ def compute_score(text: str, patterns: List[str]) -> (int, Dict[str, List[str]])
                     start = max(0, start-20)
                     end = min(end+20, len(text)-1)
                     pattern_matches_dict[pattern] += [text[start:end]]
+
         pattern_matches_dict = {k: v for k, v in pattern_matches_dict.items() if len(v) > 0}
 
-    return score, pattern_matches_dict
+    return score, list(matched_themes), pattern_matches_dict
 
 
 def score_school_courses(school: str, year: int, fields: str, output_dir: str,
-                         dictionary_name: str = 'themes_patterns') -> None:
+                         dictionary_name: str = 'base') -> None:
     """
     Identifies for each course of a school whether they discuss a pre-defined set of thematics and saves the results.
 
@@ -95,26 +109,35 @@ def score_school_courses(school: str, year: int, fields: str, output_dir: str,
     courses_df = courses_df[["id", "languages", "name", "scoring_text", "full_text"]].set_index("id")
 
     # Load patterns for different types of scores
-    themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/{dictionary_name}.json")
-    themes_patterns = json.load(open(themes_fn, 'r'))
+    patterns_dict = {}
+    themes = []
+    for lang in ACCEPTED_LANGUAGES:
+        themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/{dictionary_name}/{lang}.csv")
+        lang_patterns_df = pd.read_csv(themes_fn, converters={'themes': literal_eval})
+        patterns_dict[lang] = lang_patterns_df
+        themes = set(themes).union(set(lang_patterns_df["themes"].sum()))
+    themes = sorted(list(themes))
 
-    dedicated_fn = Path(__file__).parent.absolute().joinpath("../../data/patterns/dedicated.json")
-    dedicated_patterns = json.load(open(dedicated_fn))
-    themes = themes_patterns.keys()
-    patterns_matches_dict = {theme: {} for theme in themes}
+    # Dedicated patterns
+    dedicated_patterns_dict = {}
+    for lang in ACCEPTED_LANGUAGES:
+        themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/dedicated/{lang}.csv")
+        dedicated_patterns_dict[lang] = pd.read_csv(themes_fn, converters={'themes': literal_eval})
 
+    # Clean texts
+    def clean_text(text):
+        text = unidecode(text).lower()
+        chars_to_replace = ["\r", "\t", "\n", "\xa0", ":", ";", ".", ",", "?", "!", "(", ")", "…"]
+        for ch in chars_to_replace:
+            text = text.replace(ch, " ")
+        return text
+
+    patterns_matches_dict = {}
     scores_df = pd.DataFrame(0, index=courses_df.index, columns=themes + ["dedicated"], dtype=int)
-    for idx, (scoring_text, full_text) in courses_df[["scoring_text", "full_text"]].iterrows():
+    for idx, (name, scoring_text, full_text) in courses_df[["name", "scoring_text", "full_text"]].iterrows():
 
-        # Clean texts
-        def clan_text(text):
-            text = text.lower()
-            chars_to_replace = ["\r", "\t", "\n", "\xa0", ":", ";", ".", ",", "?", "!", "(", ")", "…"]
-            for ch in chars_to_replace:
-                text = text.replace(ch, " ")
-            return text
-        scoring_text = clan_text(scoring_text)
-        full_text = clan_text(full_text)
+        scoring_text = clean_text(scoring_text)
+        full_text = clean_text(full_text)
 
         if len(scoring_text.strip(" ")) == 0:
             continue
@@ -136,18 +159,18 @@ def score_school_courses(school: str, year: int, fields: str, output_dir: str,
                 continue
 
         # Match patterns and compute scores
-        for theme in themes:
-            for language in languages:
-                score, shift_patterns_matches_dict = compute_score(scoring_text, themes_patterns[theme][language])
-                scores_df.loc[idx, theme] |= score
-                if score == 1:
-                    if any([re.search(p, courses_df.loc[idx]["name"]) is not None for p in dedicated_patterns]):
-                        courses_df.loc[idx, "dedicated"] = 1
-                    patterns_matches_dict[theme][idx] = {}
-                    patterns_matches_dict[theme][idx][language] = shift_patterns_matches_dict
+        for language in languages:
+            score, matched_themes, shift_patterns_matches_dict = compute_score(scoring_text, patterns_dict[language])
+            scores_df.loc[idx, matched_themes] |= score
+            if score == 1:
+                patterns_matches_dict[f"{idx}: {name}"] = {}
+                patterns_matches_dict[f"{idx}: {name}"][language] = shift_patterns_matches_dict
+                # Check if course is dedicated
+                if any([re.search(p, clean_text(name)) is not None for p in dedicated_patterns_dict[language]["patterns"]]):
+                    scores_df.loc[idx, "dedicated"] |= 1
 
     # Save scores
-    output_fn = f"{output_dir}/{school}_scoring_{year}.csv"
+    output_fn = f"{output_dir}/{school}_courses_scoring_{year}.csv"
     scores_df.to_csv(output_fn, encoding="utf-8")
     # Save patterns
     matches_output_fn = f"{output_dir}/{school}_matches_{year}.json"

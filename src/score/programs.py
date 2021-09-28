@@ -17,7 +17,7 @@ def main(school: str, year: int):
 
     # Load scoring output for courses
     courses_scores_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_scoring_{year}.csv")
+        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_courses_scoring_{year}.csv")
     courses_scores_df = pd.read_csv(courses_scores_fn, dtype={'id': str})
     courses_scores_df = courses_scores_df.set_index('id')
     themes = courses_scores_df.columns

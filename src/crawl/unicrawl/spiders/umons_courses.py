@@ -51,6 +51,12 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
     def parse_course(response, course_id):
 
         course_name = response.css("td.UETitle::text").get()
+        if not course_name:
+            yield {'id': course_id, 'name': '', 'year':  f"{YEAR}-{YEAR+1}",
+                   'languages': [], 'teachers': [], 'url': response.url,
+                   'content': '', 'goal': '', 'activity': '', 'other': ''}
+            return
+
         year = response.css('td.toptile::text').get().split(' ')[2]
 
         main_teacher = response.xpath("//table[@class='UETbl'][1]//td[3]//text()").get()
