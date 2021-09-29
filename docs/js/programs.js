@@ -35,6 +35,21 @@ var app = Vue.createApp({
         };
     },
     computed: {
+        selectedAllSchools() {
+            return this.selectedSchools && this.selectedSchools.length == this.schools.length;
+        },
+        selectedAllThemes() {
+            return this.selectedThemes && this.selectedThemes.length == this.themes.length;
+        },
+        selectedAllFields() {
+            return this.selectedFields && this.selectedFields.length == this.fields.length;
+        },
+        selectedAllLanguages() {
+            return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
+        },   
+        selectedAllCycles() {
+            return this.selectedCycles && this.selectedCycles.length == this.cycles.length;
+        },               
         sortedSchools() { /* Sort the schools alphabetically for display */
 
             return this.schools.slice().sort((a, b) => { return a.shortName.localeCompare(b.shortName); });
@@ -153,7 +168,27 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.dataLoaded && this.displayedPrograms.length < this.sortedPrograms.length ? this.currentPage + 1 : this.currentPage;
-        }
+        },
+        toggleCheckAllSchools() {
+
+            this.selectedSchools = this.selectedAllSchools ? [] : this.schools.map(school => { return school.id; });
+        },
+        toggleCheckAllThemes() {
+
+            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.id; });
+        },
+        toggleCheckAllFields() {
+
+            this.selectedFields = this.selectedAllFields ? [] : this.fields.map(field => { return field.id; });
+        },
+        toggleCheckAllLanguages() {
+
+            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.id; });
+        },     
+        toggleCheckAllCycles() {
+            
+            this.selectedCycles = this.selectedAllCycles ? [] : this.cycles.map(cycle => { return cycle.id; });
+        }             
     }
 });
 
