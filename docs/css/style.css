@@ -164,7 +164,7 @@ a.btn:empty {
 
 .sidebar h6.title {
     color: #0d6efd;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
 }
 
 .sidebar h6.title.first {
@@ -183,6 +183,15 @@ a.btn:empty {
 
 main {
     padding-bottom: 3rem;
+}
+
+.check-all {
+    margin-right: .5rem;
+    margin-top: 1rem;
+}
+
+.sub-check {
+    margin-left: 1rem;
 }
 
 /* FOOTER */

@@ -38,6 +38,15 @@ var app = Vue.createApp({
         };
     },
     computed: {
+        selectedAllSchools() {
+            return this.selectedSchools && this.selectedSchools.length == this.schools.length;
+        },
+        selectedAllThemes() {
+            return this.selectedThemes && this.selectedThemes.length == this.themes.length;
+        },
+        selectedAllLanguages() {
+            return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
+        },                
         sortedSchools() { /* Sort the schools alphabetically for display */
 
             return this.schools.slice().sort((a, b) => { return a.shortName.localeCompare(b.shortName); });
@@ -142,6 +151,18 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.dataLoaded && this.displayedCourses.length < this.sortedCourses.length ? this.currentPage + 1 : this.currentPage;
+        },
+        toggleCheckAllSchools() {
+
+            this.selectedSchools = this.selectedAllSchools ? [] : this.schools.map(school => { return school.id; });
+        },
+        toggleCheckAllThemes() {
+
+            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.id; });
+        },
+        toggleCheckAllLanguages() {
+
+            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.id; });
         }
     }
 });
