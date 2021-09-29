@@ -24,6 +24,7 @@ var app = Vue.createApp({
             selectedThemes: [],
             selectedFields: [],
             selectedLanguages: [],
+            selectedCycles: [],
             searchedName: "",
             currentPage: 0,
             showResponsiveFilters: false,
@@ -50,6 +51,10 @@ var app = Vue.createApp({
 
             return this.languages.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
+        sortedCycles() { /* Sort the cycles DESC on the total count for display */
+
+            return this.cycles.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
+        },        
         filteredPrograms() { /* Filter the sorted programs according to the schools/themes/fields selected and program name searched */
 
             if (this.dataLoaded) {
@@ -60,8 +65,9 @@ var app = Vue.createApp({
                 return this.programs.slice()
                     .filter(program => this.selectedSchools.includes(program.schoolId))
                     .filter(program => this.selectedThemes.some(theme => program.themes.map(theme => theme.id).includes(theme)))
-                    .filter(program => this.selectedFields.includes(program.fieldId))
+                    .filter(program => this.selectedFields.some(field => program.fields.includes(field)))
                     .filter(program => this.selectedLanguages.some(language => program.languages.includes(language)))
+                    .filter(program => this.selectedCycles.includes(program.cycleId))
                     .filter(program => program.name.toLowerCase().includes(searchedName));
             }
 
@@ -132,6 +138,7 @@ var app = Vue.createApp({
             this.selectedThemes = this.themes.map(theme => { return theme.id; });
             this.selectedFields = this.fields.map(field => { return field.id; });
             this.selectedLanguages = this.languages.map(language => { return language.id; });
+            this.selectedCycles = this.cycles.map(cycle => { return cycle.id; });
 
             // hides the loader
 

@@ -51,12 +51,12 @@ class ProgramsManager {
                         code: program.id ? program.id : "",
                         name: program.name ? program.name : "",
                         url: program.url ? program.url : "",
-                        faculty: program.faculty ? program.faculty : "",
+                        faculties: program.faculties ? program.faculties : "",
                         campus: program.campus ? program.campus : "",
                         schoolId: schools[i].id,
                         courses: program.matched_courses && program.matched_courses.length > 0 ? program.matched_courses : [],
                         themes: this._getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
-                        fieldId: this._getFieldId(program.field ? program.field : "other"),
+                        fields: this._getFields(program.fields && program.fields.length > 0 ? program.fields : ["Other"]),
                         score: program.matched_courses ? program.matched_courses.length : 0,
                         cycleId: this._getCycleId(program.cycle ? program.cycle : "other"),
                         languages: this._getLanguages(program.languages && program.languages.length > 0 ? program.languages : ["other"]),
@@ -118,36 +118,7 @@ class ProgramsManager {
         }
 
         return JSON.parse(sessionStorage.programsLanguages);
-    }
-
-    _getFieldId(field) {
-
-        var id = -1;
-
-        for (var i = 0; i < this.programsFields.length; i++) {
-
-            if (this.programsFields[i].name == field) {
-
-                id = i;
-                break;
-            }
-        }
-
-        if (id == -1) {
-
-            id = this.programsFields.length;
-
-            this.programsFields.push({
-                id: id,
-                name: field,
-                totalCount: 0
-            });
-        }
-
-        this.programsFields[i].totalCount++;
-
-        return id;
-    }
+    } 
 
     _getThemes(themes, scores) {
 
@@ -299,6 +270,58 @@ class ProgramsManager {
 
         return l;
     }
+
+    _getFields(fields) {
+
+        var l = [];
+
+        if (fields) {
+
+            for (var i = 0; i < fields.length; i++) {
+
+                // Take care of possible empty values
+
+                if (fields[i].length === 0) continue;
+
+                // Find the id of the field (if already in the programsFields dictionnary)
+
+                var id = -1;
+
+                for (var j = 0; j < this.programsFields.length; j++) {
+
+                    if (this.programsFields[j].name == fields[i]) {
+
+                        id = j;
+                        break;
+                    }
+                }
+
+                // If the field is not yet in the programsFields dictionnary, add it
+
+                if (id == -1) {
+
+                    id = this.programsFields.length;
+
+                    this.programsFields.push({
+
+                        id: id,
+                        name: fields[i],
+                        totalCount: 0
+                    });
+                }
+
+                // If not yet present in the array that will be returned, add it and increment the field count
+
+                if (!l.includes(id)) {
+                    
+                    this.programsFields[id].totalCount++;
+                    l.push(id);
+                }
+            }
+        }
+
+        return l;
+    }    
 }
 
 export default ProgramsManager;

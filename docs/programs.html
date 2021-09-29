@@ -65,7 +65,7 @@
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                             data-bs-target="#modalCookies">Cookies</a></li>
-                                    <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                    <li><a href="https://github.com/Education4Climate/" target="_blank"
                                             rel="noopener">GitHub</a></li>
                                 </ul>
                             </div>
@@ -140,6 +140,18 @@
                         <span class="ml-auto count">{{language.totalCount}}</span>
                     </div>
 
+                    <h6 class="title">{{translate("shared.cycles")}}</h6>
+                    <div class="filter d-flex" v-for="cycle in sortedCycles">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" v-model="selectedCycles"
+                                :id="'checkbox-cycle-' + cycle.id" :value="cycle.id"><label
+                                class="form-check-label"
+                                :for="'checkbox-cycle-' + cycle.id">{{translate("cycles." +
+                                cycle.name, true)}}</label>
+                        </div>
+                        <span class="ml-auto count">{{cycle.totalCount}}</span>
+                    </div>                    
+
                     <label for="input-name-filter">
                         <h6 class="title">{{translate("shared.name")}}</h6>
                     </label>
@@ -160,7 +172,7 @@
                                 <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                 <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                         data-bs-target="#modalCookies">Cookies</a></li>
-                                <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                <li><a href="https://github.com/Education4Climate/" target="_blank"
                                         rel="noopener">GitHub</a></li>
                             </ul>
                         </div>
@@ -208,10 +220,10 @@
                                             <span v-if="program.url">&nbsp;(<a :href="program.url" target="_blank"
                                                     rel="noopener">{{translate("shared.external-website")}}</a>)</span>
                                         </div>
-                                        <div v-if="program.faculty">
+                                        <div v-if="program.faculties">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
-                                                {{translate("programs.detail-faculty")}}</h6>
-                                            <span>&nbsp;{{program.faculty}}</span>
+                                                {{translate("programs.detail-faculties")}}</h6>
+                                            <span>&nbsp;{{ program.faculties.slice().join(' / ') }}</span>
                                         </div>
                                         <div v-if="program.campus">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
@@ -225,9 +237,10 @@
                                         </div>
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
-                                                {{translate("programs.detail-field")}}</h6>
-                                            <span>&nbsp;{{translate("fields." + fields[program.fieldId].name)}}</span>
-                                        </div>
+                                                {{translate("programs.detail-fields")}}</h6>
+                                            <span>&nbsp;{{program.fields.map(field => translate("fields." +
+                                                fields[field].name)).slice().join(' / ')}}</span>
+                                        </div>                                        
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
                                                 {{translate("shared.detail-languages")}}</h6>
