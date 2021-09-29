@@ -220,10 +220,10 @@
                                             <span v-if="program.url">&nbsp;(<a :href="program.url" target="_blank"
                                                     rel="noopener">{{translate("shared.external-website")}}</a>)</span>
                                         </div>
-                                        <div v-if="program.faculty">
+                                        <div v-if="program.faculties">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
-                                                {{translate("programs.detail-faculty")}}</h6>
-                                            <span>&nbsp;{{program.faculty}}</span>
+                                                {{translate("programs.detail-faculties")}}</h6>
+                                            <span>&nbsp;{{ program.faculties.slice().join(' / ') }}</span>
                                         </div>
                                         <div v-if="program.campus">
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
@@ -237,9 +237,10 @@
                                         </div>
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
-                                                {{translate("programs.detail-field")}}</h6>
-                                            <span>&nbsp;{{translate("fields." + fields[program.fieldId].name)}}</span>
-                                        </div>
+                                                {{translate("programs.detail-fields")}}</h6>
+                                            <span>&nbsp;{{program.fields.map(field => translate("fields." +
+                                                fields[field].name)).slice().join(' / ')}}</span>
+                                        </div>                                        
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
                                                 {{translate("shared.detail-languages")}}</h6>

@@ -65,7 +65,7 @@ var app = Vue.createApp({
                 return this.programs.slice()
                     .filter(program => this.selectedSchools.includes(program.schoolId))
                     .filter(program => this.selectedThemes.some(theme => program.themes.map(theme => theme.id).includes(theme)))
-                    .filter(program => this.selectedFields.includes(program.fieldId))
+                    .filter(program => this.selectedFields.some(field => program.fields.includes(field)))
                     .filter(program => this.selectedLanguages.some(language => program.languages.includes(language)))
                     .filter(program => this.selectedCycles.includes(program.cycleId))
                     .filter(program => program.name.toLowerCase().includes(searchedName));
