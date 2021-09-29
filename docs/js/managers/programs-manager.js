@@ -54,10 +54,10 @@ class ProgramsManager {
                         faculty: program.faculty ? program.faculty : "",
                         campus: program.campus ? program.campus : "",
                         schoolId: schools[i].id,
-                        courses: program.courses && program.courses.length > 0 ? program.courses : [],
+                        courses: program.matched_courses && program.matched_courses.length > 0 ? program.matched_courses : [],
                         themes: this._getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
                         fieldId: this._getFieldId(program.field ? program.field : "other"),
-                        score: program.courses ? program.courses.length : 0,
+                        score: program.matched_courses ? program.matched_courses.length : 0,
                         cycleId: this._getCycleId(program.cycle ? program.cycle : "other"),
                         languages: this._getLanguages(program.languages && program.languages.length > 0 ? program.languages : ["other"]),
                     });
@@ -237,7 +237,7 @@ class ProgramsManager {
         if (!program.campus) console.log(school + " : " + program.id + " has no campus");
         if (!program.field) console.log(school + " : " + program.id + " has no field");
         if (!program.cycle) console.log(school + " : " + program.id + " has no cycle");
-        if (!program.courses || program.courses.length === 0) console.log(school + " : " + program.id + " has no courses");
+        if (!program.matched_courses || program.matched_courses.length === 0) console.log(school + " : " + program.id + " has no matched courses");
         if (!program.themes || program.themes.length === 0) console.log(school + " : " + program.id + " has no themes");
         if (!program.themes_scores || program.themes_scores.length === 0) console.log(school + " : " + program.id + " has no themes_scores");
         if (program.themes && program.themes_scores && program.themes.length !== program.themes_scores.length) console.log(school + " : " + program.id + " has no score for all themes");
