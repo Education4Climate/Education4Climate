@@ -70,7 +70,7 @@ var app = Vue.createApp({
         },
         sortedCourses() { /* Step 2 : sort the filtered courses DESC on their score for display */
 
-            return this.dataLoaded ? this.filteredCourses.slice().sort((a, b) => { return b.themes.length - a.themes.length; }) : true;
+            return this.dataLoaded ? this.filteredCourses.slice().sort((a, b) => b.dedicated - a.dedicated || b.themes.length - a.themes.length) : true;
         },
         paginatedCourses() { /* Step 3 : paginate the sorted courses */
 

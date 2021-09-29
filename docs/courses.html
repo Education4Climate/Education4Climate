@@ -184,8 +184,8 @@
                                         <div>
                                             <h5><span class="badge bg-success"></span>
                                                 {{course.name}}
-                                                <span
-                                                    class="badge bg-light text-body">{{schools[course.schoolId].shortName}}</span>
+                                                <span class="badge bg-light text-body">{{schools[course.schoolId].shortName}}</span>
+                                                &nbsp;<span v-if="course.dedicated" class="badge bg-warning text-body">{{translate("courses.dedicated-course")}}</span>
                                             </h5>
                                         </div>
                                         <div class="themes-badges">

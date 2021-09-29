@@ -45,7 +45,8 @@ class CoursesManager {
                         schoolId: schools[i].id,
                         url: course.url ? course.url : "",
                         languages: this._getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
-                        themes: this._getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
+                        themes: this._getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"]),
+                        dedicated: course.dedicated === 1
                     });
 
                     this._debugCoursesErrors(schools[i].shortName, course);
