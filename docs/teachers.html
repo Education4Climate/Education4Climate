@@ -95,8 +95,11 @@
 
                 <div class="col-xl-2 sidebar collapse">
 
-                    <h6 class="title first">{{translate("shared.schools")}}</h6>
-                    <div class="filter d-flex" v-for="school in sortedSchools">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-schools" v-model="selectedAllSchools" @click="toggleCheckAllSchools()">
+                        <label class="form-check-label" for="checkbox-all-schools"><h6 class="title">{{translate("shared.schools")}}</h6></label>                   
+                    </div>        
+                    <div class="filter d-flex sub-check" v-for="school in sortedSchools">
                         <div class="form-check" @click="firstLetterSearched=''">
                             <input type="checkbox" class="form-check-input" v-model="selectedSchools"
                                 :id="'checkbox-school-' + school.id" :value="school.id">
@@ -106,8 +109,11 @@
                         <span class="ml-auto count">{{teachersCountsBySchool[school.id]}}</span>
                     </div>
 
-                    <h6 class="title">{{translate("shared.themes")}}</h6>
-                    <div class="filter d-flex" v-for="theme in sortedThemes">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-themes" v-model="selectedAllThemes" @click="toggleCheckAllThemes()">
+                        <label class="form-check-label" for="checkbox-all-themes"><h6 class="title">{{translate("shared.themes")}}</h6></label>                                       
+                    </div>
+                    <div class="filter d-flex sub-check" v-for="theme in sortedThemes">
                         <div class="form-check" @click="firstLetterSearched=''">
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
                                 :id="'checkbox-theme-' + theme.id" :value="theme.id">
