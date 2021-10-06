@@ -46,7 +46,7 @@ var app = Vue.createApp({
         },
         selectedAllLanguages() {
             return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
-        },                
+        },
         sortedSchools() { /* Sort the schools alphabetically for display */
 
             return this.schools.slice().sort((a, b) => { return a.shortName.localeCompare(b.shortName); });
@@ -163,6 +163,31 @@ var app = Vue.createApp({
         toggleCheckAllLanguages() {
 
             this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.id; });
+        },
+        exportCSV() {
+
+            const separator = ",";
+
+            let csv = ["Name", "Code", "Year", "School", "Dedicated", "Themes", "Languages", "Teachers", "Url"].join(separator) + "\n";
+
+            this.sortedCourses.forEach((course) => {
+                csv += "\"" + course.name + "\"" + separator;
+                csv += "\"" + course.code + "\"" + separator;
+                csv += course.year + separator;
+                csv += this.schools[course.schoolId].shortName + separator;
+                csv += course.dedicated + separator;
+                csv += course.themes.map(theme => this.themes[theme].name).join("|") + separator;
+                csv += course.languages.map(language => this.languages[language].name).join("|") + separator;
+                csv += course.teachers.join("|") + separator;
+                csv += course.url;
+                csv += "\n";
+            });
+
+            const anchor = document.createElement('a');
+            anchor.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+            anchor.target = '_blank';
+            anchor.download = 'education4climate-courses.csv';
+            anchor.click();
         }
     }
 });

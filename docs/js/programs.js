@@ -188,7 +188,34 @@ var app = Vue.createApp({
         toggleCheckAllCycles() {
             
             this.selectedCycles = this.selectedAllCycles ? [] : this.cycles.map(cycle => { return cycle.id; });
-        }             
+        },
+        exportCSV() {
+
+            const separator = ",";
+
+            let csv = ["Name", "Code", "Faculties", "School", "Campus", "Themes", "Languages", "Fields", "Score", "Cycle", "Url"].join(separator) + "\n";
+
+            this.sortedPrograms.forEach((program) => {
+                csv += "\"" + program.name + "\"" + separator;
+                csv += "\"" + program.code + "\"" + separator;
+                csv += "\"" + program.faculties.join("|") + "\"" + separator;
+                csv += this.schools[program.schoolId].shortName + separator;
+                csv += "\"" + program.campuses.join("|") + "\"" + separator;
+                csv += program.themes.map(theme => this.themes[theme.id].name).join("|") + separator;
+                csv += program.languages.map(language => this.languages[language].name).join("|") + separator;
+                csv += program.fields.map(field => this.fields[field].name).join("|") + separator;
+                csv += program.score + separator;
+                csv += this.cycles[program.cycleId].name + separator;
+                csv += program.url;
+                csv += "\n";
+            });
+
+            const anchor = document.createElement('a');
+            anchor.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+            anchor.target = '_blank';
+            anchor.download = 'education4climate-programmes.csv';
+            anchor.click();
+        }
     }
 });
 

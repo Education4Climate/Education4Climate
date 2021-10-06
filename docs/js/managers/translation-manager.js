@@ -116,7 +116,7 @@ class TranslationManager {
 
             var urls = constants.AVAILABLE_LANGUAGES.map(language => constants.DATA_FOLDER + "/translations/" + language + ".json");
 
-            // Getting all the .json in parralel
+            // Getting all the .json in parallel
             var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
             data.forEach((language, i) => { translations.push({ language: constants.AVAILABLE_LANGUAGES[i], translations: language }); });

@@ -28,7 +28,7 @@ class CoursesManager {
 
             var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.coursesFile);
 
-            // Getting all the .json in parralel
+            // Getting all the .json in parallel
             var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
             data.forEach((c, i) => {

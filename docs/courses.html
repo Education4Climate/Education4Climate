@@ -181,8 +181,14 @@
 
                 <div class="col-lg-12 col-xl-10 pt-3 px-4s">
 
-                    <h6 class="results-count">
-                        {{sortedCourses.length}}{{translate("courses.courses-of")}}{{courses.length}}</h6>
+                    <div class="row">
+                        <div class="col text-start">
+                            <h6 class="results-count">{{sortedCourses.length}}{{translate("courses.courses-of")}}{{courses.length}}</h6>
+                        </div>
+                        <div class="col text-end">
+                            <a href="#" @click="exportCSV()">{{translate("shared.download-results")}}</a>
+                        </div>
+                    </div>
 
                     <div class="accordion accordion-flush overflow-hidden" id="coursesAccordion">
                         <div class="accordion-item" v-for="(course, i) in paginatedCourses">
