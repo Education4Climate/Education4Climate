@@ -169,16 +169,14 @@ var app = Vue.createApp({
             let csv = "\uFEFF"; // BOM : force UTF8 encoding
             csv += "Name" + separator + "Code" + separator + "Year" + separator + "School" + separator + "Dedicated" + separator;
 
-            console.log("this.themes : " + this.themes.length);
-
             this.themes.forEach((theme) => { csv += "Theme:" + theme.name + separator; });
             this.languages.forEach((language) => { csv += "Language:" + language.name + separator; });
 
-            csv += "Teachers" + separator + "Url" + "\n";
+            csv += "Teachers" + separator + "Url\n";
 
             this.sortedCourses.forEach((course) => {
 
-                csv += "\"" + course.name + "\"" + separator;
+                csv += "\"" + course.name.replaceAll("\"", "\"\"") + "\"" + separator;
                 csv += "\"" + course.code + "\"" + separator;
                 csv += course.year + separator;
                 csv += this.schools[course.schoolId].shortName + separator;
@@ -188,9 +186,7 @@ var app = Vue.createApp({
                 this.languages.forEach((language) => { csv += course.languages.map(language => this.languages[language].name).includes(language.name) ? "true" + separator : "false" + separator; })
 
                 csv += "\"" + course.teachers.join(",") + "\"" + separator;
-                csv += course.url;
-                csv += "\n";
-
+                csv += course.url + "\n";
             });
 
             const anchor = document.createElement('a');
