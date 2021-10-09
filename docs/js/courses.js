@@ -166,19 +166,31 @@ var app = Vue.createApp({
 
             const separator = ",";
 
-            let csv = ["Name", "Code", "Year", "School", "Dedicated", "Themes", "Languages", "Teachers", "Url"].join(separator) + "\n";
+            let csv = "\uFEFF"; // BOM : force UTF8 encoding
+            csv += "Name" + separator + "Code" + separator + "Year" + separator + "School" + separator + "Dedicated" + separator;
+
+            console.log("this.themes : " + this.themes.length);
+
+            this.themes.forEach((theme) => { csv += "Theme:" + theme.name + separator; });
+            this.languages.forEach((language) => { csv += "Language:" + language.name + separator; });
+
+            csv += "Teachers" + separator + "Url" + "\n";
 
             this.sortedCourses.forEach((course) => {
+
                 csv += "\"" + course.name + "\"" + separator;
                 csv += "\"" + course.code + "\"" + separator;
                 csv += course.year + separator;
                 csv += this.schools[course.schoolId].shortName + separator;
                 csv += course.dedicated + separator;
-                csv += course.themes.map(theme => this.themes[theme].name).join("|") + separator;
-                csv += course.languages.map(language => this.languages[language].name).join("|") + separator;
-                csv += course.teachers.join("|") + separator;
+
+                this.themes.forEach((theme) => { csv += course.themes.map(theme => this.themes[theme].name).includes(theme.name) ? "true" + separator : "false" + separator; })
+                this.languages.forEach((language) => { csv += course.languages.map(language => this.languages[language].name).includes(language.name) ? "true" + separator : "false" + separator; })
+
+                csv += "\"" + course.teachers.join(",") + "\"" + separator;
                 csv += course.url;
                 csv += "\n";
+
             });
 
             const anchor = document.createElement('a');
