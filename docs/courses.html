@@ -116,7 +116,7 @@
                     <div class="filter d-flex sub-check" v-for="theme in sortedThemes">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
-                                :id="'checkbox-theme-' + theme.id" :value="theme.id">
+                                :id="'checkbox-theme-' + theme.id" :value="theme.name">
                             <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
                                 theme.name, true)}}</label>
                         </div>

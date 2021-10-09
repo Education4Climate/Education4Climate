@@ -21,7 +21,6 @@ var app = Vue.createApp({
             themes: [],
             fields: [],
             languages: [],
-            selectedThemes: [],
             selectedFields: [],
             selectedLanguages: [],
             selectedCycles: [],
@@ -79,7 +78,7 @@ var app = Vue.createApp({
 
                 return this.programs.slice()
                     .filter(program => this.selectedSchools.includes(program.schoolId))
-                    .filter(program => this.selectedThemes.some(theme => program.themes.map(theme => theme.id).includes(theme)))
+                    .filter(program => this.selectedThemes.some(selectedTheme => program.themes.map(theme => this.themes[theme.id].name).includes(selectedTheme)))
                     .filter(program => this.selectedFields.some(field => program.fields.includes(field)))
                     .filter(program => this.selectedLanguages.some(language => program.languages.includes(language)))
                     .filter(program => this.selectedCycles.includes(program.cycleId))
@@ -150,7 +149,7 @@ var app = Vue.createApp({
             // sets the filters default selected schools / themes / fields
 
             this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
-            this.selectedThemes = this.themes.map(theme => { return theme.id; });
+            this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
             this.selectedFields = this.fields.map(field => { return field.id; });
             this.selectedLanguages = this.languages.map(language => { return language.id; });
             this.selectedCycles = this.cycles.map(cycle => { return cycle.id; });
@@ -175,7 +174,7 @@ var app = Vue.createApp({
         },
         toggleCheckAllThemes() {
 
-            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.id; });
+            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.name; });
         },
         toggleCheckAllFields() {
 

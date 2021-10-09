@@ -204,9 +204,9 @@ class ProgramsManager {
         if (!program.id) console.log(school + " : " + program.id + " has no id");
         if (!program.name) console.log(school + " : " + program.id + " has no name");
         if (!program.url) console.log(school + " : " + program.id + " has no url");
-        if (!program.faculty) console.log(school + " : " + program.id + " has no faculty");
+        if (!program.faculties || program.faculties.length === 0) console.log(school + " : " + program.id + " has no faculties");
         if (!program.campuses || program.campuses === 0) console.log(school + " : " + program.id + " has no campus");
-        if (!program.field) console.log(school + " : " + program.id + " has no field");
+        if (!program.fields || program.fields.length === 0) console.log(school + " : " + program.id + " has no fields");
         if (!program.cycle) console.log(school + " : " + program.id + " has no cycle");
         if (!program.matched_courses || program.matched_courses.length === 0) console.log(school + " : " + program.id + " has no matched courses");
         if (!program.themes || program.themes.length === 0) console.log(school + " : " + program.id + " has no themes");

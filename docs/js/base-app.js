@@ -24,7 +24,8 @@ export default {
             errors: "",
             consentGoogleAnalytics: false,
             consentLocalStorage: false,
-            selectedSchools: null
+            selectedSchools: null,
+            selectedThemes: null
         };
     },
     async created() {
@@ -44,9 +45,8 @@ export default {
         // Initialize the filters values from the sessionStorage so the
         // selected values stay the same across pages
 
-        if (sessionStorage.selectedSchools) {
-            this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
-        }
+        if (sessionStorage.selectedSchools) this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
+        if (sessionStorage.selectedThemes) this.selectedThemes = JSON.parse(sessionStorage.selectedThemes);
     },
     watch: {
 
@@ -55,6 +55,9 @@ export default {
 
         selectedSchools(value) {
             sessionStorage.selectedSchools = JSON.stringify(value);
+        },
+        selectedThemes(value) {
+            sessionStorage.selectedThemes = JSON.stringify(value);
         }
     },
     methods: {
