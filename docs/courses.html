@@ -130,7 +130,7 @@
                     <div class="filter d-flex sub-check" v-for="language in sortedLanguages">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedLanguages"
-                                :id="'checkbox-language-' + language.id" :value="language.id"><label
+                                :id="'checkbox-language-' + language.id" :value="language.name"><label
                                 class="form-check-label"
                                 :for="'checkbox-language-' + language.id">{{translate("languages." +
                                 language.name, true)}}</label>

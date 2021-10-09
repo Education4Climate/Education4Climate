@@ -22,7 +22,6 @@ var app = Vue.createApp({
             fields: [],
             languages: [],
             selectedFields: [],
-            selectedLanguages: [],
             selectedCycles: [],
             searchedName: "",
             currentPage: 0,
@@ -80,7 +79,7 @@ var app = Vue.createApp({
                     .filter(program => this.selectedSchools.includes(program.schoolId))
                     .filter(program => this.selectedThemes.some(selectedTheme => program.themes.map(theme => this.themes[theme.id].name).includes(selectedTheme)))
                     .filter(program => this.selectedFields.some(field => program.fields.includes(field)))
-                    .filter(program => this.selectedLanguages.some(language => program.languages.includes(language)))
+                    .filter(program => this.selectedLanguages.some(selectedLanguage => program.languages.map(language => this.languages[language].name).includes(selectedLanguage)))
                     .filter(program => this.selectedCycles.includes(program.cycleId))
                     .filter(program => program.name.toLowerCase().includes(searchedName));
             }
@@ -151,7 +150,7 @@ var app = Vue.createApp({
             this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
             this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
             this.selectedFields = this.fields.map(field => { return field.id; });
-            this.selectedLanguages = this.languages.map(language => { return language.id; });
+            this.selectedLanguages = this.selectedLanguages? this.selectedLanguages : this.languages.map(language => { return language.name; });
             this.selectedCycles = this.cycles.map(cycle => { return cycle.id; });
 
             // hides the loader
@@ -182,7 +181,7 @@ var app = Vue.createApp({
         },
         toggleCheckAllLanguages() {
 
-            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.id; });
+            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.name; });
         },     
         toggleCheckAllCycles() {
             

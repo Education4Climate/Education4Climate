@@ -22,7 +22,6 @@ var app = Vue.createApp({
             totalCoursesCounts: [],
             themes: [],
             languages: [],
-            selectedLanguages: [],
             searchedName: "",
             currentPage: 0,
             showResponsiveFilters: false,
@@ -69,7 +68,7 @@ var app = Vue.createApp({
                 return this.courses.slice()
                     .filter(course => this.selectedSchools.includes(course.schoolId))
                     .filter(course => this.selectedThemes.some(selectedTheme => course.themes.map(theme => this.themes[theme].name).includes(selectedTheme)))
-                    .filter(course => this.selectedLanguages.some(language => course.languages.includes(language)))
+                    .filter(course => this.selectedLanguages.some(selectedLanguage => course.languages.map(language => this.languages[language].name).includes(selectedLanguage)))
                     .filter(course => course.name.toLowerCase().includes(searchedName))
                     .filter(course => this.searchedProgram ? this.searchedProgram.courses.includes(course.code) : true);
             }
@@ -135,7 +134,7 @@ var app = Vue.createApp({
 
             this.selectedSchools = searchedSchool ? [searchedSchool.id] : this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
             this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
-            this.selectedLanguages = this.languages.map(language => { return language.id; });
+            this.selectedLanguages = this.selectedLanguages ? this.selectedLanguages : this.languages.map(language => { return language.id; });
 
             // hides the loader
 
@@ -161,7 +160,7 @@ var app = Vue.createApp({
         },
         toggleCheckAllLanguages() {
 
-            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.id; });
+            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.name; });
         },
         exportCSV() {
 

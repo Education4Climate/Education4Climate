@@ -25,7 +25,8 @@ export default {
             consentGoogleAnalytics: false,
             consentLocalStorage: false,
             selectedSchools: null,
-            selectedThemes: null
+            selectedThemes: null,
+            selectedLanguages: null
         };
     },
     async created() {
@@ -47,6 +48,7 @@ export default {
 
         if (sessionStorage.selectedSchools) this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
         if (sessionStorage.selectedThemes) this.selectedThemes = JSON.parse(sessionStorage.selectedThemes);
+        if (sessionStorage.selectedLanguages) this.selectedLanguages = JSON.parse(sessionStorage.selectedLanguages);
     },
     watch: {
 
@@ -58,7 +60,10 @@ export default {
         },
         selectedThemes(value) {
             sessionStorage.selectedThemes = JSON.stringify(value);
-        }
+        },
+        selectedLanguages(value) {
+            sessionStorage.selectedLanguages = JSON.stringify(value);
+        }        
     },
     methods: {
         translate(key, returnKeyIfNotFound) {
