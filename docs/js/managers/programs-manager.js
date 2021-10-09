@@ -213,6 +213,7 @@ class ProgramsManager {
         if (!program.themes_scores || program.themes_scores.length === 0) console.log(school + " : " + program.id + " has no themes_scores");
         if (program.themes && program.themes_scores && program.themes.length !== program.themes_scores.length) console.log(school + " : " + program.id + " has no score for all themes");
         if (!program.languages || program.languages.length === 0) console.log(school + " : " + program.id + " has no languages");
+        if (program.languages && program.languages.length > 0 && !program.languages[0]) console.log(school + " : " + program.id + " has an empty language");
     }
 
     _getLanguages(languages) {

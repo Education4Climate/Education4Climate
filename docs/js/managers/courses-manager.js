@@ -219,6 +219,7 @@ class CoursesManager {
         if (!course.name) console.log(school + " : " + course.id + " has no name");
         if (!course.url) console.log(school + " : " + course.id + " has no url");
         if (!course.languages || course.languages.length === 0) console.log(school + " : " + course.id + " has no languages");
+        if (course.languages && course.languages.length > 0 && !course.languages[0]) console.log(school + " : " + course.id + " has an empty language");
         if (!course.themes || course.themes.length === 0) console.log(school + " : " + course.id + " has no themes");
         if (!course.teachers || !Array.isArray(course.teachers) || course.teachers.length === 0) console.log(school + " : " + course.id + " has no teachers");
         if (course.teachers && course.teachers.length > 0 && !course.teachers[0]) console.log(school + " : " + course.id + " has an empty teacher");
