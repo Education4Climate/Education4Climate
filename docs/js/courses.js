@@ -182,8 +182,8 @@ var app = Vue.createApp({
                 csv += this.schools[course.schoolId].shortName + separator;
                 csv += course.dedicated + separator;
 
-                this.themes.forEach((theme) => { csv += course.themes.map(theme => this.themes[theme].name).includes(theme.name) ? "true" + separator : "false" + separator; })
-                this.languages.forEach((language) => { csv += course.languages.map(language => this.languages[language].name).includes(language.name) ? "true" + separator : "false" + separator; })
+                this.themes.forEach((theme) => { csv += course.themes.map(t => this.themes[t].name).includes(theme.name) ? "true" + separator : "false" + separator; })
+                this.languages.forEach((language) => { csv += course.languages.map(l => this.languages[l].name).includes(language.name) ? "true" + separator : "false" + separator; })
 
                 csv += "\"" + course.teachers.join(",") + "\"" + separator;
                 csv += course.url + "\n";

@@ -44,10 +44,10 @@ var app = Vue.createApp({
         },
         selectedAllLanguages() {
             return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
-        },   
+        },
         selectedAllCycles() {
             return this.selectedCycles && this.selectedCycles.length == this.cycles.length;
-        },               
+        },
         sortedSchools() { /* Sort the schools alphabetically for display */
 
             return this.schools.slice().sort((a, b) => { return a.shortName.localeCompare(b.shortName); });
@@ -67,7 +67,7 @@ var app = Vue.createApp({
         sortedCycles() { /* Sort the cycles DESC on the total count for display */
 
             return this.cycles.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
-        },        
+        },
         filteredPrograms() { /* Filter the sorted programs according to the schools/themes/fields selected and program name searched */
 
             if (this.dataLoaded) {
@@ -150,7 +150,7 @@ var app = Vue.createApp({
             this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
             this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
             this.selectedFields = this.fields.map(field => { return field.id; });
-            this.selectedLanguages = this.selectedLanguages? this.selectedLanguages : this.languages.map(language => { return language.name; });
+            this.selectedLanguages = this.selectedLanguages ? this.selectedLanguages : this.languages.map(language => { return language.name; });
             this.selectedCycles = this.cycles.map(cycle => { return cycle.id; });
 
             // hides the loader
@@ -182,30 +182,44 @@ var app = Vue.createApp({
         toggleCheckAllLanguages() {
 
             this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.name; });
-        },     
+        },
         toggleCheckAllCycles() {
-            
+
             this.selectedCycles = this.selectedAllCycles ? [] : this.cycles.map(cycle => { return cycle.id; });
         },
         exportCSV() {
 
             const separator = ",";
 
-            let csv = ["Name", "Code", "Faculties", "School", "Campus", "Themes", "Languages", "Fields", "Score", "Cycle", "Url"].join(separator) + "\n";
+            let csv = "\uFEFF"; // BOM : force UTF8 encoding
+            csv += "Name" + separator + "Code" + separator + "Faculties" + separator + "School" + separator + "Campuses" + separator;
+
+            this.themes.forEach((theme) => { csv += "Theme:" + theme.name + separator; });
+            this.languages.forEach((language) => { csv += "Language:" + language.name + separator; });
+            this.fields.forEach((field) => { csv += "Field:" + field.name + separator; });
+
+            csv += "Score" + separator + "Cycle" + separator + "Url\n";
 
             this.sortedPrograms.forEach((program) => {
-                csv += "\"" + program.name + "\"" + separator;
+
+                csv += "\"" + program.name.replaceAll("\"", "\"\"") + "\"" + separator;
                 csv += "\"" + program.code + "\"" + separator;
                 csv += "\"" + program.faculties.join("|") + "\"" + separator;
                 csv += this.schools[program.schoolId].shortName + separator;
                 csv += "\"" + program.campuses.join("|") + "\"" + separator;
-                csv += program.themes.map(theme => this.themes[theme.id].name).join("|") + separator;
-                csv += program.languages.map(language => this.languages[language].name).join("|") + separator;
-                csv += program.fields.map(field => this.fields[field].name).join("|") + separator;
+
+                this.themes.forEach((theme) => {
+                    
+                    var i = program.themes.findIndex((t) => this.themes[t.id].name == theme.name);
+                    csv += i>-1 ? program.themes[i].score + separator : 0 + separator;
+                });
+
+                this.languages.forEach((language) => { csv += program.languages.map(l => this.languages[l].name).includes(language.name) ? "true" + separator : "false" + separator; })
+                this.fields.forEach((field) => { csv += program.fields.map(f => this.fields[f].name).includes(field.name) ? "true" + separator : "false" + separator; })
+
                 csv += program.score + separator;
                 csv += this.cycles[program.cycleId].name + separator;
-                csv += program.url;
-                csv += "\n";
+                csv += program.url + "\n";
             });
 
             const anchor = document.createElement('a');
