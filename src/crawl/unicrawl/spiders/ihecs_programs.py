@@ -14,16 +14,22 @@ BASE_DATA = {
     "choixannee": "",
 }
 
-PROGRAMS_CODE = {"BCA": "Bachelier en Communication Appliquée",
-                 "PI": "Master en presse et information",
-                 "RP": "Master en relations publiques",
-                 "PUB": "Master en Publicité",
-                 "ASCEP": "Master en animation socio-culturelle et Education permanente",
-                 "EAM": "Master en education aux médias",
-                 "ME": "Master en Management d'événements"}
+PROGRAMS_CODE = {
+    "BCA": "Bachelier en Communication Appliquée",
+    "PI": "Master en presse et information",
+    "RP": "Master en relations publiques",
+    "PUB": "Master en Publicité",
+    "ASCEP": "Master en animation socio-culturelle et Education permanente",
+    "EAM": "Master en education aux médias",
+    "ME": "Master en Management d'événements"
+}
 
 
 class IHECSProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for Institut des Hautes Études des Communications Sociales (IHECS)
+    """
+
     name = 'ihecs-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -31,6 +37,7 @@ class IHECSProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
+
         for program_id, program_name in PROGRAMS_CODE.items():
             BASE_DATA["choixsection"] = program_id
             yield scrapy.http.FormRequest(
@@ -40,7 +47,8 @@ class IHECSProgramSpider(scrapy.Spider, ABC):
                 cb_kwargs={'program_id': program_id, 'program_name': program_name}
             )
 
-    def parse_main(self, response, program_id, program_name):
+    @staticmethod
+    def parse_main(response, program_id, program_name):
 
         ects = response.xpath("//tr[@bgcolor='#e5f2f7']/td[4]/font/text()").getall()
         ects = [int(e) for e in ects]
@@ -54,8 +62,9 @@ class IHECSProgramSpider(scrapy.Spider, ABC):
             "id": program_id,
             "name": program_name,
             "cycle": cycle,
-            "faculty": "Journalism & Communication",
-            "campus": "Bruxelles",
+            "faculties": ["Journalism & Communication"],
+            "campuses": ["Bruxelles"],
+            "url": response.url,
             "courses": ues_urls_codes,
             "ects": ects
         }

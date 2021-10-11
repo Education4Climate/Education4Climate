@@ -12,8 +12,10 @@ BASE_URl = "http://progcours.vinci.be/cocoon/cours/{}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}vinci_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Langue française": 'fr',
-                  "Langue anglaise": 'en'}
+LANGUAGES_DICT = {
+    "Langue française": 'fr',
+    "Langue anglaise": 'en'
+}
 
 
 class VINCICourseSpider(scrapy.Spider, ABC):
@@ -28,6 +30,8 @@ class VINCICourseSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
+
+        # Warning: COSV2430-1 leading to 500
 
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_ids_list = sorted(list(set(courses_ids.sum())))
@@ -48,25 +52,30 @@ class VINCICourseSpider(scrapy.Spider, ABC):
         teachers += cleanup(response.xpath(f"{course_rubric_txt.format('Coord')}/following::tr[1]//a").getall())
         teachers = [t.replace(" ", '') for t in teachers]
         teachers = list(set(teachers))
-        teachers = [" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0].strip(" ")
+        teachers = [" ".join(teacher.split(" ")[1:]).lower().title() + " " + teacher.split(" ")[0].strip(" ")
                     for teacher in teachers]
 
         languages = response.xpath(course_rubric_txt.format("Langue(s)") + "/following::td[2]/text()").getall()
         languages = [LANGUAGES_DICT[l] for l in languages]
 
-        contents = cleanup(response.xpath("//tr[preceding::tr[@id='rub_APER'] "
-                                          "and following::tr[@id='rub_OBJT']]").getall())
-        contents += cleanup(response.xpath("//tr[preceding::tr[@id='rub_OBJT']"
-                                           " and following::tr[@id='rub_PRER']]").getall())
-        content = '\n'.join(contents)
-        content = '' if content == '\n' else content
+        # Cours description
+        def get_sections_text(section_name_prec, section_name_follow):
+            texts = cleanup(response.xpath(f"//tr[preceding::tr[@id='rub_{section_name_prec}'] "
+                                           f"and following::tr[@id='rub_{section_name_follow}']]").getall())
+            return '\n'.join(texts).strip("\n")
+        content = get_sections_text('APER', 'OBJT')
+        goal = get_sections_text('OBJT', 'PRER')
+        activity = get_sections_text('TRPR', 'ORGA')
 
         yield {
             'id': course_id,
             'name': course_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            "content": content,
+            "goal": goal,
+            "activity": activity,
+            "other": ''
         }

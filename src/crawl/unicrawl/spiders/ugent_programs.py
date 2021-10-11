@@ -94,25 +94,6 @@ class UGentProgramSpider(scrapy.Spider, ABC):
             e = response.xpath(f"{id_txt_2}//td[@class='SP']//span/text()").get()
             ects += [int(float(e.replace(',', '.')))] if e is not None else [0]
 
-        # courses_languages = cleanup(response.xpath(f"{div_text}//td[@class='taal']/div").getall())
-        # print(courses_languages)
-        if len(courses_languages) != len(courses_ids):
-            print("taal")
-            print(program_name)
-            print(len(courses_languages), len(courses_ids))
-        if len(courses_names) != len(courses_ids):
-            print("name")
-            print(program_name)
-            print(len(courses_names), len(courses_ids))
-        if len(courses_urls) != len(courses_ids):
-            print("urls")
-            print(program_name)
-            print(len(courses_urls), len(courses_ids))
-        if len(ects) != len(courses_ids):
-            print("ects")
-            print(program_name)
-            print(len(ects), len(courses_ids))
-
         yield {
             'id': program_id,
             'name': program_name,

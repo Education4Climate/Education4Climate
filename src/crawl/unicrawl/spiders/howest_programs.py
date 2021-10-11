@@ -54,23 +54,33 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
         yield from response.follow_all(programs_urls, callback=self.parse_program_info)
 
     def parse_program_info(self, response):
+
         name = response.css("h1::text").get()
         sub_title = response.css("page-sub-title a::text").get()
-        campus = response.css(".oplfiche").xpath("div/strong[text()='Locatie:']/following::ul[1]/li/text()").getall()
+        campuses = response.css(".oplfiche").xpath("div/strong[text()='Locatie:']/following::ul[1]/li/text()").getall()
         faculty = response.css(".oplfiche").xpath("div[strong[text()='Studiedomein:']]/a/text()").get()
+
         cycle = response.css(".oplfiche").xpath("div[strong[text()='Diploma:']]/a/text()").get()
         if not cycle:
             cycle = response.css(".oplfiche").xpath("div[strong[text()='Diploma:']]/text()").get()
-        if cycle:
-            cycle = "bac" if ("Bachelor" in cycle) else ("master" if ("Master" in cycle) else "other")
+
+        print(cycle)
+        if cycle is not None:
+            if "Bachelor" in cycle:
+                cycle = 'bac'
+            elif "Master" in cycle:
+                cycle = 'master'
+            elif 'Graduaat' in cycle:
+                cycle = 'grad'
         else:
             cycle = "other"
 
         base_dict = {
+            "id": '',  # id is added in the next section
             "name": sub_title if sub_title else name,
-            "campus": ", ".join(campus),
-            "faculty": faculty,
             "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": campuses,
             # "ects" : [] # ECTS are extracted at the course level
             "url": response.url,
         }

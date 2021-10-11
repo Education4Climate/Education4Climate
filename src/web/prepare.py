@@ -35,7 +35,7 @@ def add_missing_fields_in_programs(programs_df: pd.DataFrame, courses_df: pd.Dat
     if len(keys_in_courses) == 0:
         return programs_df
 
-    # Create column if necessary
+    # Create column for each key to transfer from courses to programs
     for key in keys_in_courses:
         if key not in programs_df.keys():
             programs_df[key] = pd.Series([[]]*len(programs_df), index=programs_df.index)
@@ -61,7 +61,8 @@ def convert_faculty_to_fields(programs_df, school: str):
     def faculty_to_field(faculties):
         for faculty in faculties:
             assert faculty in faculties_to_fields_ds.index, f'Error: {faculty} was not found in faculty_to_fields'
-        return list(itertools.chain.from_iterable([faculties_to_fields_ds.loc[faculty][0].split(";") for faculty in faculties]))
+        return list(itertools.chain.from_iterable([faculties_to_fields_ds.loc[faculty][0].split(";")
+                                                   for faculty in faculties]))
 
     programs_df["fields"] = programs_df["faculties"].apply(lambda x: faculty_to_field(x))
     return programs_df
@@ -109,7 +110,7 @@ def main(school: str, year: int):
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv")
     programs_scores_df = pd.read_csv(program_scores_fn, index_col=0)
 
-    # Get for each program the list of courses that matched in at least one them
+    # Get for each program the list of courses that matched in at least one theme
     matched_courses = list(courses_df[courses_df.id.isin(courses_with_matches_index)].id)
     programs_df['matched_courses'] = pd.Series([[]]*len(programs_df), index=programs_df.index)
     for program_id, program_courses in programs_df['courses'].items():

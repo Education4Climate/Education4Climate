@@ -14,17 +14,22 @@ BASE_URL = "http://www.galileonet.be/extranet/DescriptifsDeCours/getViewGestionU
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}issig_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Français": ["fr"],
-                  "Anglais": ["en"],
-                  "Allemand": ["de"],
-                  "Néerlandais": ["nl"],
-                  "AnglaisNéerlandais": ["en", "nl"],
-                  "FrançaisAnglais": ["fr", "en"],
-                  "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"]
-                  }
+LANGUAGES_DICT = {
+    "Français": ["fr"],
+    "Anglais": ["en"],
+    "Allemand": ["de"],
+    "Néerlandais": ["nl"],
+    "AnglaisNéerlandais": ["en", "nl"],
+    "FrançaisAnglais": ["fr", "en"],
+    "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"]
+}
 
 
 class ISSIGCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Institut Supérieur de Soins Infirmiers Galilée (ISSIG)
+    """
+
     name = "issig-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -52,19 +57,24 @@ class ISSIGCourseSpider(scrapy.Spider, ABC):
         teachers = [t for t in teachers if t != '']
         teachers = [t.split(", ") for t in teachers]
         teachers = list(set(itertools.chain.from_iterable(teachers)))
+        teachers = [t.lower().title() for t in teachers]
 
         languages = response.xpath("//div[label[@for='langueenseignement']]/text()[2]").get().strip(" \n")
         languages = LANGUAGES_DICT[languages]
 
-        # Content
-        content = cleanup(response.xpath("//div[label[@for='aas']]/div").get())
+        # Course description
+        content = cleanup(response.xpath("//div[label[@for='descsynthUE']]/div").get())
+        goal = cleanup(response.xpath("//div[label[@for='aas']]/div").get())
 
         yield {
             'id': ue_id,
             'name': ue_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': goal,
+            'activity': '',
+            'other': ''
         }

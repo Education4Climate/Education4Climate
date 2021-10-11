@@ -12,24 +12,26 @@ BASE_URl = "http://onderwijsaanbod.vives-zuid.be/syllabi/{}.htm"  # first format
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}vives_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Nederlands": 'nl',
-                  "Dutch": 'nl',
-                  "Olandese": 'nl',
-                  "Frans": 'fr',
-                  "French": 'fr',
-                  "Français": 'fr',
-                  "Engels": 'en',
-                  "English": 'en',
-                  "Deutsch": 'de',
-                  "Duits": 'de',
-                  "German": 'de',
-                  "Spanish": 'es',
-                  "Spaans": 'es',
-                  "Italiaans": 'it'
-                  }
+LANGUAGES_DICT = {
+    "Nederlands": 'nl',
+    "Dutch": 'nl',
+    "Olandese": 'nl',
+    "Frans": 'fr',
+    "French": 'fr',
+    "Français": 'fr',
+    "Engels": 'en',
+    "English": 'en',
+    "Deutsch": 'de',
+    "Duits": 'de',
+    "German": 'de',
+    "Spanish": 'es',
+    "Spaans": 'es',
+    "Italiaans": 'it'
+}
 
 
 class VivesCourseSpider(scrapy.Spider, ABC):
+
     name = "vives-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -38,6 +40,7 @@ class VivesCourseSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
+        # TODO: restart crawling from missed
         courses_urls = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_urls"]
         courses_urls_list = sorted(list(set(courses_urls.sum())))
 
@@ -61,19 +64,26 @@ class VivesCourseSpider(scrapy.Spider, ABC):
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
 
         # Content
-        content = []
-        sections = ['Aims', 'Doelstellingen', 'Content', 'Inhoud']
-        for section in sections:
-            content += cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
-                                              f"and h2/text()='{section}']//text()").getall())
-        content = " ".join(content)
+        def get_sections_text(sections_names):
+            texts = []
+            for section in sections_names:
+                texts += cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
+                                                f"and h2/text()='{section}']//text()").getall())
+            return "\n".join(texts).strip("\n")
+
+        content = get_sections_text(['Content', 'Inhoud'])
+        goal = get_sections_text(['Aims', 'Doelstellingen'])
 
         yield {
             'id': course_id,
             'name': course_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            'content': content,
+            "goal": goal,
+            # TODO: check if nothing can be added here
+            "activity": '',
+            "other": ''
         }

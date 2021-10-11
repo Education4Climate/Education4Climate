@@ -5,10 +5,14 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'http://onderwijsaanbod.limburg.ucll.be/opleidingen/n/'
+BASE_URL = 'https://onderwijsaanbod.limburg.ucll.be/opleidingen/n/'
 
 
 class UCLLProgramSpider(scrapy.Spider, ABC):
+    """
+    Program crawler for UC Leuven-Limburg
+    """
+
     name = 'ucll-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -25,13 +29,13 @@ class UCLLProgramSpider(scrapy.Spider, ABC):
 
         # Get program groups for each faculty
         for faculty in faculties:
+            faculty_simple = faculty.split("Programma ")[1].split(' UC Limburg')[0]
             program_group_links = response.xpath(f"//h3/a[text()='{faculty}']/following::div[1]"
                                                  f"//li[contains(@class, 'taal_n') or "
                                                  f"contains(@class, 'taal_e')]/a/@href").getall()
             for link in program_group_links:
-                base_dict = {"faculty": faculty.split("Programma ")[1].split(' UC Limburg')[0]}
                 yield response.follow(link, self.parse_program_group,
-                                      cb_kwargs={"faculty": faculty.split("Programma ")[1].split(' UC Limburg')[0]})
+                                      cb_kwargs={"faculty": faculty_simple})
 
     def parse_program_group(self, response, faculty):
 
@@ -43,17 +47,18 @@ class UCLLProgramSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_program(response, program_id, faculty):
-        program_name = response.xpath("//h1/text()").get()
-        campus = ''
-        if '(' in program_name:
-            campus = program_name.split('(')[-1].split(')')[0]
 
-        # TODO: might need to add stuff
-        if 'bachelor' in program_name or 'Bachelor' in program_name:
+        program_name = response.xpath("//h1/text()").get()
+        campuses = []
+        if '(' in program_name:
+            campuses = [program_name.split('(')[-1].split(')')[0]]
+
+        if 'bachelor' in program_name.lower() or 'PBA' \
+                in program_name or 'BNB' in program_name or 'EBA' in program_name:
             cycle = 'bac'
-        elif 'postgraduaat' in program_name or 'Postgraduaat' in program_name:
+        elif 'postgraduaat' in program_name.lower() or 'PG' in program_name:
             cycle = 'postgrad'
-        elif 'graduaat' in program_name or 'Graduaat' in program_name:
+        elif 'graduaat' in program_name.lower():
             cycle = 'grad'
         else:
             cycle = 'other'
@@ -70,9 +75,10 @@ class UCLLProgramSpider(scrapy.Spider, ABC):
             'id': program_id,
             'name': program_name,
             'cycle': cycle,
-            'faculty': faculty,
-            'campus': campus,
+            'faculties': [faculty],
+            'campuses': campuses,
             'url': response.url,
             'courses': courses,
             'ects': ects,
-            'courses_urls': courses_url}
+            'courses_urls': courses_url
+        }
