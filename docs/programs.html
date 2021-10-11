@@ -61,7 +61,8 @@
                             <div>
                                 <div>The Shifters Belgium</div>
                                 <ul>
-                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7_WTtbBRkQxs-hBHNfWPGlwKVurvoHRgZR7kGlKbVxkQLJg/viewform" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
+                                    <li><a :href="translate('shared.google-form')" target="_blank"
+                                            rel="noopener">{{translate("footer.contact")}}</a></li>
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                             data-bs-target="#modalCookies">Cookies</a></li>
@@ -96,9 +97,12 @@
                 <div class="col-xl-2 sidebar collapse">
 
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-schools" v-model="selectedAllSchools" @click="toggleCheckAllSchools()">
-                        <label class="form-check-label" for="checkbox-all-schools"><h6 class="title">{{translate("shared.schools")}}</h6></label>                   
-                    </div>                 
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-schools"
+                            v-model="selectedAllSchools" @click="toggleCheckAllSchools()">
+                        <label class="form-check-label" for="checkbox-all-schools">
+                            <h6 class="title">{{translate("shared.schools")}}</h6>
+                        </label>
+                    </div>
                     <div class="filter d-flex sub-check" v-for="school in sortedSchools">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedSchools"
@@ -110,13 +114,16 @@
                     </div>
 
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-themes" v-model="selectedAllThemes" @click="toggleCheckAllThemes()">
-                        <label class="form-check-label" for="checkbox-all-themes"><h6 class="title">{{translate("shared.themes")}}</h6></label>                                       
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-themes"
+                            v-model="selectedAllThemes" @click="toggleCheckAllThemes()">
+                        <label class="form-check-label" for="checkbox-all-themes">
+                            <h6 class="title">{{translate("shared.themes")}}</h6>
+                        </label>
                     </div>
                     <div class="filter d-flex sub-check" v-for="theme in sortedThemes">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
-                                :id="'checkbox-theme-' + theme.id" :value="theme.id">
+                                :id="'checkbox-theme-' + theme.id" :value="theme.name">
                             <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
                                 theme.name, true)}}</label>
                         </div>
@@ -124,8 +131,11 @@
                     </div>
 
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-fields" v-model="selectedAllFields" @click="toggleCheckAllFields()">
-                        <label class="form-check-label" for="checkbox-all-fields"><h6 class="title">{{translate("shared.fields")}}</h6></label>     
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-fields"
+                            v-model="selectedAllFields" @click="toggleCheckAllFields()">
+                        <label class="form-check-label" for="checkbox-all-fields">
+                            <h6 class="title">{{translate("shared.fields")}}</h6>
+                        </label>
                     </div>
                     <div class="filter d-flex sub-check" v-for="field in sortedFields">
                         <div class="form-check">
@@ -138,13 +148,16 @@
                     </div>
 
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-languages" v-model="selectedAllLanguages" @click="toggleCheckAllLanguages()">
-                        <label class="form-check-label" for="checkbox-all-languages"><h6 class="title">{{translate("shared.languages")}}</h6></label>     
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-languages"
+                            v-model="selectedAllLanguages" @click="toggleCheckAllLanguages()">
+                        <label class="form-check-label" for="checkbox-all-languages">
+                            <h6 class="title">{{translate("shared.languages")}}</h6>
+                        </label>
                     </div>
                     <div class="filter d-flex sub-check" v-for="language in sortedLanguages">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedLanguages"
-                                :id="'checkbox-language-' + language.id" :value="language.id"><label
+                                :id="'checkbox-language-' + language.id" :value="language.name"><label
                                 class="form-check-label"
                                 :for="'checkbox-language-' + language.id">{{translate("languages." +
                                 language.name, true)}}</label>
@@ -153,26 +166,28 @@
                     </div>
 
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-cycles" v-model="selectedAllCycles" @click="toggleCheckAllCycles()">
-                        <label class="form-check-label" for="checkbox-all-cycles"><h6 class="title">{{translate("shared.cycles")}}</h6></label>     
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-cycles"
+                            v-model="selectedAllCycles" @click="toggleCheckAllCycles()">
+                        <label class="form-check-label" for="checkbox-all-cycles">
+                            <h6 class="title">{{translate("shared.cycles")}}</h6>
+                        </label>
                     </div>
                     <div class="filter d-flex sub-check" v-for="cycle in sortedCycles">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedCycles"
-                                :id="'checkbox-cycle-' + cycle.id" :value="cycle.id"><label
-                                class="form-check-label"
+                                :id="'checkbox-cycle-' + cycle.id" :value="cycle.id"><label class="form-check-label"
                                 :for="'checkbox-cycle-' + cycle.id">{{translate("cycles." +
                                 cycle.name, true)}}</label>
                         </div>
                         <span class="ml-auto count">{{cycle.totalCount}}</span>
-                    </div>                    
+                    </div>
 
                     <label for="input-name-filter">
                         <h6 class="title">{{translate("shared.name")}}</h6>
                     </label>
                     <div class="filter">
                         <input type="text" class="form-control name-search" v-model="searchedName"
-                        :placeholder="translate('shared.name-exemple')" id="input-name-filter">
+                            :placeholder="translate('shared.name-exemple')" id="input-name-filter">
                         <div class="form-text">
                             {{translate("programs.search-in-name")}}
                         </div>
@@ -183,7 +198,8 @@
                         <div>
                             <div>The Shifters Belgium</div>
                             <ul>
-                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7_WTtbBRkQxs-hBHNfWPGlwKVurvoHRgZR7kGlKbVxkQLJg/viewform" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
+                                <li><a :href="translate('shared.google-form')" target="_blank"
+                                        rel="noopener">{{translate("footer.contact")}}</a></li>
                                 <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                 <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                         data-bs-target="#modalCookies">Cookies</a></li>
@@ -197,8 +213,15 @@
 
                 <div class="col-lg-12 col-xl-10 pt-3 px-4s">
 
-                    <h6 class="results-count">{{sortedPrograms.length}}
-                        {{translate("programs.programs-of")}}{{programs.length}}</h6>
+                    <div class="row">
+                        <div class="col text-start">
+                            <h6 class="results-count">
+                                {{sortedPrograms.length}}{{translate("programs.programs-of")}}{{programs.length}}</h6>
+                        </div>
+                        <div class="col text-end">
+                            <a href="#" @click="exportCSV()">{{translate("shared.download-results")}}</a>
+                        </div>
+                    </div>
 
                     <div class="accordion accordion-flush overflow-hidden" id="programsAccordion">
                         <div class="accordion-item" v-for="(program, i) in paginatedPrograms">
@@ -255,7 +278,7 @@
                                                 {{translate("programs.detail-fields")}}</h6>
                                             <span>&nbsp;{{program.fields.map(field => translate("fields." +
                                                 fields[field].name)).slice().join(' / ')}}</span>
-                                        </div>                                        
+                                        </div>
                                         <div>
                                             <h6 class="text-primary" style="font-weight: 600;display:inline;">
                                                 {{translate("shared.detail-languages")}}</h6>
@@ -274,6 +297,8 @@
                                                 :href="'courses.html?schoolId=' + program.schoolId + '&programCode=' + program.code"
                                                 role="button">{{translate("programs.detail-courses-list")}}</a>
                                         </div>
+                                        <div class="text-end"><a :href="translate('shared.google-form')" target="_blank"
+                                                rel="noopener">{{translate("shared.report-result")}}</a></div>
                                     </div>
                                 </div>
                             </div>

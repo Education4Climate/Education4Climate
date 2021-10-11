@@ -22,8 +22,6 @@ var app = Vue.createApp({
             totalCoursesCounts: [],
             themes: [],
             languages: [],
-            selectedThemes: [],
-            selectedLanguages: [],
             searchedName: "",
             currentPage: 0,
             showResponsiveFilters: false,
@@ -46,7 +44,7 @@ var app = Vue.createApp({
         },
         selectedAllLanguages() {
             return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
-        },                
+        },
         sortedSchools() { /* Sort the schools alphabetically for display */
 
             return this.schools.slice().sort((a, b) => { return a.shortName.localeCompare(b.shortName); });
@@ -69,8 +67,8 @@ var app = Vue.createApp({
 
                 return this.courses.slice()
                     .filter(course => this.selectedSchools.includes(course.schoolId))
-                    .filter(course => this.selectedThemes.some(theme => course.themes.includes(theme)))
-                    .filter(course => this.selectedLanguages.some(language => course.languages.includes(language)))
+                    .filter(course => this.selectedThemes.some(selectedTheme => course.themes.map(theme => this.themes[theme].name).includes(selectedTheme)))
+                    .filter(course => this.selectedLanguages.some(selectedLanguage => course.languages.map(language => this.languages[language].name).includes(selectedLanguage)))
                     .filter(course => course.name.toLowerCase().includes(searchedName))
                     .filter(course => this.searchedProgram ? this.searchedProgram.courses.includes(course.code) : true);
             }
@@ -135,8 +133,8 @@ var app = Vue.createApp({
             // sets the filters default selected schools / themes / languages
 
             this.selectedSchools = searchedSchool ? [searchedSchool.id] : this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
-            this.selectedThemes = this.themes.map(theme => { return theme.id; });
-            this.selectedLanguages = this.languages.map(language => { return language.id; });
+            this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
+            this.selectedLanguages = this.selectedLanguages ? this.selectedLanguages : this.languages.map(language => { return language.name; });
 
             // hides the loader
 
@@ -158,11 +156,44 @@ var app = Vue.createApp({
         },
         toggleCheckAllThemes() {
 
-            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.id; });
+            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.name; });
         },
         toggleCheckAllLanguages() {
 
-            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.id; });
+            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.name; });
+        },
+        exportCSV() {
+
+            const separator = ",";
+
+            let csv = "\uFEFF"; // BOM : force UTF8 encoding
+            csv += "Name" + separator + "Code" + separator + "Year" + separator + "School" + separator + "Dedicated" + separator;
+
+            this.themes.forEach((theme) => { csv += "Theme:" + theme.name + separator; });
+            this.languages.forEach((language) => { csv += "Language:" + language.name + separator; });
+
+            csv += "Teachers" + separator + "Url\n";
+
+            this.sortedCourses.forEach((course) => {
+
+                csv += "\"" + course.name.replaceAll("\"", "\"\"") + "\"" + separator;
+                csv += "\"" + course.code + "\"" + separator;
+                csv += course.year + separator;
+                csv += this.schools[course.schoolId].shortName + separator;
+                csv += course.dedicated + separator;
+
+                this.themes.forEach((theme) => { csv += course.themes.map(t => this.themes[t].name).includes(theme.name) ? "true" + separator : "false" + separator; })
+                this.languages.forEach((language) => { csv += course.languages.map(l => this.languages[l].name).includes(language.name) ? "true" + separator : "false" + separator; })
+
+                csv += "\"" + course.teachers.join(",") + "\"" + separator;
+                csv += course.url + "\n";
+            });
+
+            const anchor = document.createElement('a');
+            anchor.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+            anchor.target = '_blank';
+            anchor.download = 'education4climate-courses.csv';
+            anchor.click();
         }
     }
 });

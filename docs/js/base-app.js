@@ -24,7 +24,9 @@ export default {
             errors: "",
             consentGoogleAnalytics: false,
             consentLocalStorage: false,
-            selectedSchools: null
+            selectedSchools: null,
+            selectedThemes: null,
+            selectedLanguages: null
         };
     },
     async created() {
@@ -44,9 +46,9 @@ export default {
         // Initialize the filters values from the sessionStorage so the
         // selected values stay the same across pages
 
-        if (sessionStorage.selectedSchools) {
-            this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
-        }
+        if (sessionStorage.selectedSchools) this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
+        if (sessionStorage.selectedThemes) this.selectedThemes = JSON.parse(sessionStorage.selectedThemes);
+        if (sessionStorage.selectedLanguages) this.selectedLanguages = JSON.parse(sessionStorage.selectedLanguages);
     },
     watch: {
 
@@ -55,7 +57,13 @@ export default {
 
         selectedSchools(value) {
             sessionStorage.selectedSchools = JSON.stringify(value);
-        }
+        },
+        selectedThemes(value) {
+            sessionStorage.selectedThemes = JSON.stringify(value);
+        },
+        selectedLanguages(value) {
+            sessionStorage.selectedLanguages = JSON.stringify(value);
+        }        
     },
     methods: {
         translate(key, returnKeyIfNotFound) {
