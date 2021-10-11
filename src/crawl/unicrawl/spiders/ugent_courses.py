@@ -65,11 +65,13 @@ class UGentCourseSpider(scrapy.Spider, ABC):
 
         print(len(courses_df))
         for _, courses_ds in courses_df.iterrows():
+            languages = courses_ds['languages'].split(',')
+            languages = [] if languages == [''] else languages
             yield scrapy.Request(url=BASE_URL.format(courses_ds['url']),
                                  callback=self.parse_course_info,
                                  cb_kwargs={"course_id": courses_ds['id'],
                                             "course_name": courses_ds['name'],
-                                            "languages": courses_ds['languages'].split(',')})
+                                            "languages": languages})
 
     @staticmethod
     def parse_course_info(response, course_id, course_name, languages):

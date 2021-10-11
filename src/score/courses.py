@@ -99,9 +99,9 @@ def score_school_courses(school: str, year: int, fields: str, output_dir: str,
     courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str})
     fields = fields.split(",")
     for field in fields:
-        assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contian a column {field}"
-    # Drop courses for which the scoring field is empty
-    courses_df = courses_df.dropna(subset=fields)
+        assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contain a column {field}"
+        # Convert Nans to "
+        courses_df[field] = courses_df[field].apply(lambda x: "" if x is None else x)
     # Concatenate the scoring fields
     courses_df["scoring_text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
     courses_df["full_text"] = courses_df[["name", "content", "goal", "activity", "other"]]\
