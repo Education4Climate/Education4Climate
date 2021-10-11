@@ -8,11 +8,10 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URl = "http://progcours.vinci.be/cocoon/cours/{}.html"  # first format is code course, second is year
+BASE_URl = "http://progcours.vinci.be/cocoon/cours/{}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}vinci_programs_{YEAR}.json')
 
-# TODO: checker langues
 LANGUAGES_DICT = {"Langue française": 'fr',
                   "Langue anglaise": 'en'}
 
@@ -34,30 +33,40 @@ class VINCICourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            base_dict = {"id": course_id}
-            yield scrapy.Request(BASE_URl.format(course_id), self.parse_main, cb_kwargs={"base_dict": base_dict})
-            break
+            yield scrapy.Request(BASE_URl.format(course_id), self.parse_main, cb_kwargs={"course_id": course_id})
 
     @staticmethod
-    def parse_main(response, base_dict):
+    def parse_main(response, course_id):
 
-        name = response.xpath("////td[@class='LibCours']/text()").get()
+        course_name = response.xpath("////td[@class='LibCours']/text()").get()
+        if course_name is None:
+            return
         years = response.xpath("//div[@id='TitrePrinc']/text()").get().split(" ")[-1]
-        teachers = cleanup(response.xpath("//div[@class='TitreRubCours' and contains(text(), 'prof')]"
-                                          "//following::a[1]").getall())
-        languages = response.xpath("//div[@class='TitreRubCours' and "
-                                   "contains(text(), \"Langue(s) de l'unité d'enseignement\")]"
-                                   "//following::td[2]/text()").getall()
-        languages = [LANGUAGES_DICT[l] for l in languages]
-        # TODO
-        content = ""
+        course_rubric_txt = "//div[@class='TitreRubCours' and contains(text(), \"{}\")]"
 
-        cur_dict = {
-            'name': name,
+        teachers = cleanup(response.xpath(f"{course_rubric_txt.format('prof')}/following::tr[1]//a").getall())
+        teachers += cleanup(response.xpath(f"{course_rubric_txt.format('Coord')}/following::tr[1]//a").getall())
+        teachers = [t.replace(" ", '') for t in teachers]
+        teachers = list(set(teachers))
+        teachers = [" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0].strip(" ")
+                    for teacher in teachers]
+
+        languages = response.xpath(course_rubric_txt.format("Langue(s)") + "/following::td[2]/text()").getall()
+        languages = [LANGUAGES_DICT[l] for l in languages]
+
+        contents = cleanup(response.xpath("//tr[preceding::tr[@id='rub_APER'] "
+                                          "and following::tr[@id='rub_OBJT']]").getall())
+        contents += cleanup(response.xpath("//tr[preceding::tr[@id='rub_OBJT']"
+                                           " and following::tr[@id='rub_PRER']]").getall())
+        content = '\n'.join(contents)
+        content = '' if content == '\n' else content
+
+        yield {
+            'id': course_id,
+            'name': course_name,
             'year': years,
-            'teacher': teachers,
-            'language': languages,
-            'content': content,
+            'teachers': teachers,
+            'languages': languages,
             'url': response.url,
+            'content': content
         }
-        yield {**base_dict, **cur_dict}

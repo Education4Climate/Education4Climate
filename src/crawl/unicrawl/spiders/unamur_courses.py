@@ -33,13 +33,14 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse_main)
+            yield scrapy.Request(BASE_URl.format(course_id, YEAR), self.parse_main,
+                                 cb_kwargs={'course_id': course_id})
 
     @staticmethod
-    def parse_main(response):
-        name_and_id = response.xpath("//h1/text").get()
+    def parse_main(response, course_id):
+
+        name_and_id = response.xpath("//h1/text()").get()
         name = name_and_id.split("[")[0].strip(" ")
-        course_id = name_and_id.split("[")[1].strip("]")
 
         years = cleanup(response.xpath("//div[@class='foretitle']").get()).strip("Cours ")
         teachers = cleanup(response.xpath("//div[contains(text(), 'Enseignant')]/a").getall())
@@ -49,45 +50,29 @@ class UNamurCourseSpider(scrapy.Spider, ABC):
         languages = [lang.split(":  ")[1] for lang in languages]
         languages = [LANGUAGES_DICT[lang] for lang in languages]
 
+        # Could not find a way to separate sections # TODO: possible in post-processing ?
         content = cleanup(response.xpath("//div[@id='tab-introduction']").get())
 
-        # TODO: remove if not required anymore
-        # cycle_ects = cleanup(response.xpath("//div[@id='tab-studies']/table/tbody//td").getall())
-        # cycles = []
-        # ects = []
-        # programs = []
-        # for i, el in enumerate(cycle_ects):
-        #     if i % 3 == 0:
-        #         programs += [el]
-        #         if "Bachelier" in el:
-        #             cycles += ["bac"]
-        #         elif "Master" in el:
-        #             cycles += ["master"]
-        #         else:
-        #             cycles += ["other"]
-        #     elif i % 3 == 2:
-        #         ects += [int(el)]
+        organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
+        campus = 'Namur'
+        if "Lieu de l'activité" in organisation:
+            campus = cleanup(
+                 organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
+        if campus == 'LOUVAIN-LA-NEUVE':
+            campus = 'Louvain-la-Neuve'
+        else:
+            campus = campus.lower().capitalize()
 
-        # ODO: need to check if there are not sometimes several campuses or faculties
-        # organisation = response.xpath("//div[@id='tab-practical-organisation']").get()
-        # campus = ''
-        # if "Lieu de l'activité" in organisation:
-        #     campus = cleanup(
-        #         organisation.split("Lieu de l'activité")[1].split("Faculté organisatrice")[0])
-        # faculty = cleanup(organisation.split("Faculté organisatrice")[1].split("<br>")[0])
-
-        data = {
+        yield {
             'id': course_id,
             'name': name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
-            # 'cycle': cycles,
-            # 'ects': ects,
+            'teachers': teachers,
+            'campuses': [campus],
             'url': response.url,
-            # 'faculty': faculty,
-            # 'campus': campus,
-            # 'program': programs,
-            'content': content
+            'content': content,
+            'goal': '',
+            'activity': '',
+            'other': ''
         }
-        yield data

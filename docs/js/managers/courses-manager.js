@@ -28,7 +28,7 @@ class CoursesManager {
 
             var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.coursesFile);
 
-            // Getting all the .json in parralel
+            // Getting all the .json in parallel
             var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
             data.forEach((c, i) => {
@@ -45,7 +45,8 @@ class CoursesManager {
                         schoolId: schools[i].id,
                         url: course.url ? course.url : "",
                         languages: this._getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
-                        themes: this._getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"])
+                        themes: this._getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"]),
+                        dedicated: course.dedicated === 1
                     });
 
                     this._debugCoursesErrors(schools[i].shortName, course);
@@ -218,6 +219,7 @@ class CoursesManager {
         if (!course.name) console.log(school + " : " + course.id + " has no name");
         if (!course.url) console.log(school + " : " + course.id + " has no url");
         if (!course.languages || course.languages.length === 0) console.log(school + " : " + course.id + " has no languages");
+        if (course.languages && course.languages.length > 0 && !course.languages[0]) console.log(school + " : " + course.id + " has an empty language");
         if (!course.themes || course.themes.length === 0) console.log(school + " : " + course.id + " has no themes");
         if (!course.teachers || !Array.isArray(course.teachers) || course.teachers.length === 0) console.log(school + " : " + course.id + " has no teachers");
         if (course.teachers && course.teachers.length > 0 && !course.teachers[0]) console.log(school + " : " + course.id + " has an empty teacher");

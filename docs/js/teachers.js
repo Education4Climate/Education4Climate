@@ -27,13 +27,18 @@ var app = Vue.createApp({
             alphabet: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"],
             firstLetterSearched: "",
             searchedName: "",
-            selectedThemes: [],
             teachersManager: new TeachersManager(),
             schoolsManager: new SchoolsManager(),
             coursesManager: new CoursesManager()
         };
     },
     computed: {
+        selectedAllSchools() {
+            return this.selectedSchools && this.selectedSchools.length == this.schools.length;
+        },
+        selectedAllThemes() {
+            return this.selectedThemes && this.selectedThemes.length == this.themes.length;
+        },        
         sortedSchools() { /* Sort the schools alphabetically for display */
 
             return this.schools.slice().sort((a, b) => { return a.shortName.localeCompare(b.shortName); });
@@ -51,7 +56,7 @@ var app = Vue.createApp({
 
                 return this.teachers.slice()
                     .filter(teacher => this.selectedSchools.includes(teacher.schoolId))
-                    .filter(teacher => this.selectedThemes.some(theme => teacher.themesIds.includes(theme)))
+                    .filter(teacher => this.selectedThemes.some(selectedTheme => teacher.themesIds.map(theme => this.themes[theme].name).includes(selectedTheme)))                    
                     .filter(teacher => teacher.name.toLowerCase().includes(searchedName))
                     .filter(teacher => !this.firstLetterSearched || !teacher.name[0] ? true : teacher.name[0].toUpperCase() === this.firstLetterSearched);
             }
@@ -125,7 +130,7 @@ var app = Vue.createApp({
             // sets the filters default selected schools / themes
 
             this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
-            this.selectedThemes = this.themes.map(theme => { return theme.id; });
+            this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
 
             // hides the loader
 
@@ -140,7 +145,15 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.dataLoaded && this.displayedTeachers.length < this.sortedTeachers.length ? this.currentPage + 1 : this.currentPage;
-        }
+        },
+        toggleCheckAllSchools() {
+
+            this.selectedSchools = this.selectedAllSchools ? [] : this.schools.map(school => { return school.id; });
+        },
+        toggleCheckAllThemes() {
+
+            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.name; });
+        }        
     }
 });
 

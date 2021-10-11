@@ -38,7 +38,7 @@ class ProgramsManager {
 
             var urls = schools.map(school => constants.DATA_FOLDER + "/" + school.programsFile);
 
-            // Getting all the .json in parralel
+            // Getting all the .json in parallel
             var data = await Promise.all(urls.map(url => fetch(url).then((response) => response.json())));
 
             data.forEach((p, i) => {
@@ -51,13 +51,13 @@ class ProgramsManager {
                         code: program.id ? program.id : "",
                         name: program.name ? program.name : "",
                         url: program.url ? program.url : "",
-                        faculty: program.faculty ? program.faculty : "",
-                        campus: program.campus ? program.campus : "",
+                        faculties: program.faculties ? program.faculties : "",
+                        campuses: program.campuses && program.campuses.length > 0 ? program.campuses : [],
                         schoolId: schools[i].id,
-                        courses: program.courses && program.courses.length > 0 ? program.courses : [],
+                        courses: program.matched_courses && program.matched_courses.length > 0 ? program.matched_courses : [],
                         themes: this._getThemes(program.themes && program.themes.length > 0 ? program.themes : ["other"], program.themes_scores),
-                        fieldId: this._getFieldId(program.field ? program.field : "other"),
-                        score: program.courses ? program.courses.length : 0,
+                        fields: this._getFields(program.fields && program.fields.length > 0 ? program.fields : ["Other"]),
+                        score: program.matched_courses ? program.matched_courses.length : 0,
                         cycleId: this._getCycleId(program.cycle ? program.cycle : "other"),
                         languages: this._getLanguages(program.languages && program.languages.length > 0 ? program.languages : ["other"]),
                     });
@@ -118,36 +118,7 @@ class ProgramsManager {
         }
 
         return JSON.parse(sessionStorage.programsLanguages);
-    }
-
-    _getFieldId(field) {
-
-        var id = -1;
-
-        for (var i = 0; i < this.programsFields.length; i++) {
-
-            if (this.programsFields[i].name == field) {
-
-                id = i;
-                break;
-            }
-        }
-
-        if (id == -1) {
-
-            id = this.programsFields.length;
-
-            this.programsFields.push({
-                id: id,
-                name: field,
-                totalCount: 0
-            });
-        }
-
-        this.programsFields[i].totalCount++;
-
-        return id;
-    }
+    } 
 
     _getThemes(themes, scores) {
 
@@ -233,15 +204,16 @@ class ProgramsManager {
         if (!program.id) console.log(school + " : " + program.id + " has no id");
         if (!program.name) console.log(school + " : " + program.id + " has no name");
         if (!program.url) console.log(school + " : " + program.id + " has no url");
-        if (!program.faculty) console.log(school + " : " + program.id + " has no faculty");
-        if (!program.campus) console.log(school + " : " + program.id + " has no campus");
-        if (!program.field) console.log(school + " : " + program.id + " has no field");
+        if (!program.faculties || program.faculties.length === 0) console.log(school + " : " + program.id + " has no faculties");
+        if (!program.campuses || program.campuses === 0) console.log(school + " : " + program.id + " has no campus");
+        if (!program.fields || program.fields.length === 0) console.log(school + " : " + program.id + " has no fields");
         if (!program.cycle) console.log(school + " : " + program.id + " has no cycle");
-        if (!program.courses || program.courses.length === 0) console.log(school + " : " + program.id + " has no courses");
+        if (!program.matched_courses || program.matched_courses.length === 0) console.log(school + " : " + program.id + " has no matched courses");
         if (!program.themes || program.themes.length === 0) console.log(school + " : " + program.id + " has no themes");
         if (!program.themes_scores || program.themes_scores.length === 0) console.log(school + " : " + program.id + " has no themes_scores");
         if (program.themes && program.themes_scores && program.themes.length !== program.themes_scores.length) console.log(school + " : " + program.id + " has no score for all themes");
         if (!program.languages || program.languages.length === 0) console.log(school + " : " + program.id + " has no languages");
+        if (program.languages && program.languages.length > 0 && !program.languages[0]) console.log(school + " : " + program.id + " has an empty language");
     }
 
     _getLanguages(languages) {
@@ -299,6 +271,58 @@ class ProgramsManager {
 
         return l;
     }
+
+    _getFields(fields) {
+
+        var l = [];
+
+        if (fields) {
+
+            for (var i = 0; i < fields.length; i++) {
+
+                // Take care of possible empty values
+
+                if (fields[i].length === 0) continue;
+
+                // Find the id of the field (if already in the programsFields dictionnary)
+
+                var id = -1;
+
+                for (var j = 0; j < this.programsFields.length; j++) {
+
+                    if (this.programsFields[j].name == fields[i]) {
+
+                        id = j;
+                        break;
+                    }
+                }
+
+                // If the field is not yet in the programsFields dictionnary, add it
+
+                if (id == -1) {
+
+                    id = this.programsFields.length;
+
+                    this.programsFields.push({
+
+                        id: id,
+                        name: fields[i],
+                        totalCount: 0
+                    });
+                }
+
+                // If not yet present in the array that will be returned, add it and increment the field count
+
+                if (!l.includes(id)) {
+                    
+                    this.programsFields[id].totalCount++;
+                    l.push(id);
+                }
+            }
+        }
+
+        return l;
+    }    
 }
 
 export default ProgramsManager;

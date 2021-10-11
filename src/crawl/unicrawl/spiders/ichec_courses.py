@@ -7,9 +7,8 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.ichec.be/fr/programmes"
-# TODO: check languages
-LANGUAGE_DICT = {"Français": "fr",
-                 "Anglais": "en"}
+
+LANGUAGE_DICT = {"Français": "fr", "Anglais": "en"}
 
 
 class ICHECCourseSpider(scrapy.Spider, ABC):
@@ -28,16 +27,11 @@ class ICHECCourseSpider(scrapy.Spider, ABC):
 
     def parse_main(self, response):
         links = response.xpath("//div[@class='formation-link']/a/@href").getall()
-        for link in links:
-            yield response.follow(link, self.parse_program)
-            break
+        yield from response.follow_all(links, self.parse_program)
 
     def parse_program(self, response):
-        ues_links = response.xpath("//div[@class='formation-tab-content structure']"
-                                   "//table//a[@class='modal-link']/@href").getall()
-        for link in ues_links:
-            yield response.follow(link, self.parse_ue)
-            break
+        ues_links = response.xpath("//a[@class='modal-link']/@href").getall()
+        yield from response.follow_all(ues_links, self.parse_ue)
 
     @staticmethod
     def parse_ue(response):
@@ -45,24 +39,20 @@ class ICHECCourseSpider(scrapy.Spider, ABC):
         ue_name = response.xpath("//h2[contains(text(), 'Intitulé')]/following::p[1]/text()").get()
         ue_id = response.xpath("//h2[contains(text(), 'Code')]/following::p[1]/text()").get()
         year = response.xpath("//h2[contains(text(), 'Année')]/following::p[1]/text()").get().replace(" - ", "-")
-        # TODO: convert cycle code?
-        cycle = response.xpath("//h2[contains(text(), 'Cycle')]/following::p[1]/text()").get()
-        ects = response.xpath("//h2[contains(text(), 'Nombre de crédits')]/following::p[1]/text()").get()
-        campus = response.xpath("//h2[contains(text(), 'Site')]/following::p[1]/text()").get()
-        # TODO: check if there can be several teachers
         teachers = response.xpath("//h2[contains(text(), 'Enseignant')]/following::p[1]/text()").getall()
         lang = response.xpath("//h2[contains(text(), 'Langue')]/following::p[1]/text()").get()
-        lang = LANGUAGE_DICT[lang]
+        lang = [LANGUAGE_DICT[lang]]
 
-        # TODO: content
-        content = ""
+        sections = ["Objectifs et contribution", "Description"]
+        content_query = "|".join(["//h2[contains(., \'{}\')]/following::p[1]/text()".format(section) for section in sections])
+        content = " ".join(response.xpath(content_query).getall())
 
-        yield {"name": ue_name,
-               "id": ue_id,
-               "teacher": teachers,
-               "year": year,
-               "ects": ects,
-               "language": lang,
-               "cycle": cycle,
-               "campus": campus,
-               "content": content}
+        yield {
+            "name": ue_name,
+            "id": ue_id,
+            "teachers": teachers,
+            "year": year,
+            "languages": lang,
+            "content": content,
+            "url": response.url
+        }

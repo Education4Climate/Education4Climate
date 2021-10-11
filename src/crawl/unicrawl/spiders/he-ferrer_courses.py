@@ -2,18 +2,22 @@
 from abc import ABC
 from pathlib import Path
 
+import pandas as pd
+
 import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from src.crawl.utils import cleanup
 
-BASE_URL = "https://fiches-ue.icampusferrer.eu/locked_list.php"
 
-# TODO: checker langues
+BASE_URL = "https://fiches-ue.icampusferrer.eu/etatV2.php?id={}&annee={}"
+PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}he-ferrer_programs_{YEAR}.json')
 LANGUAGES_DICT = {"Français": "fr",
                   "Anglais": "en"}
 
 
-class HECHCourseSpider(scrapy.Spider, ABC):
+class HEFERRERCourseSpider(scrapy.Spider, ABC):
     """
     Course crawler for Haute Ecole Francisco Ferrer
     """
@@ -25,37 +29,32 @@ class HECHCourseSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        yield scrapy.Request(BASE_URL, self.parse_main)
+        courses = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
+        courses_list = sorted(list(set(courses.sum())))
 
-    def parse_main(self, response):
-        ue_links = response.xpath("//tr//a/@href").getall()
-        for link in ue_links:
-            yield response.follow(link, self.parse_ue)
+        for course in courses_list:
+            yield scrapy.Request(url=BASE_URL.format(course, YEAR),
+                                 callback=self.parse_ue,
+                                 cb_kwargs={"ue_id": course})
 
-    def parse_ue(self, response):
-        name = response.xpath("//h3/text()").get()
+    def parse_ue(self, response, ue_id):
+        ue_name = response.xpath("//h3/text()").get()
         year = response.xpath("//h5[1]/text()").get().split(":")[1].strip(" ")
-        faculty = response.xpath("//h5[contains(text(), 'Catégorie')]/text()").get()
-        code = response.xpath("//td[contains(text(), 'Code')]//following::strong[1]/text()").get()
-        teacher = response.xpath("//td[contains(text(), \"Responsable de l'UE\")]//following::span[1]/text()").get()
-        program = response.xpath("//h2/text()").get()
+        teachers = response.xpath("//td[contains(text(), \"Responsable de l'UE\")]//following::span[1]/text()").getall()
+        teachers = [" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0] for teacher in teachers]
         ects = response.xpath("//td[contains(text(), 'Crédits ECTS')]//following::strong[1]/text()").get()
-        cycle = response.xpath("//td[contains(text(), 'Cycle')]//following::strong[1]/text()").get()
-        language = response.xpath("//td[contains(text(), \"Langue d'enseignement et d'évaluation\")]"
-                                  "//following::strong[1]/text()").get()
-        language = LANGUAGES_DICT[language]
+        ects = int(ects.strip(" "))
+        languages = response.xpath("//td[contains(text(), \"Langue d'enseignement et d'évaluation\")]"
+                                   "//following::strong[1]/text()").getall()
+        language = [LANGUAGES_DICT[language] for language in languages]
 
-        # TODO content
-        content = ""
+        content = cleanup(response.xpath("//h3[contains(text(), '2')]/following::div[@id='ue_objectifs_wrapper'][1]").get())
 
-        yield {"code": code,
-               "name": name,
-               "teacher": teacher,
-               "program": program,
-               "cycle": cycle,
-               "ects": ects,
+        yield {"id": ue_id,
+               "name": ue_name,
                "year": year,
-               "faculty": faculty,
-               "language": language,
-               "content": content,
-               "url": response.url}
+               "teachers": teachers,
+               "languages": language,
+               "ects": ects,
+               "url": response.url,
+               "content": content}

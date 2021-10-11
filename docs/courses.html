@@ -61,11 +61,11 @@
                             <div>
                                 <div>The Shifters Belgium</div>
                                 <ul>
-                                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7_WTtbBRkQxs-hBHNfWPGlwKVurvoHRgZR7kGlKbVxkQLJg/viewform" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
+                                    <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                             data-bs-target="#modalCookies">Cookies</a></li>
-                                    <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                    <li><a href="https://github.com/Education4Climate/" target="_blank"
                                             rel="noopener">GitHub</a></li>
                                 </ul>
                             </div>
@@ -95,8 +95,11 @@
 
                 <div class="col-xl-2 sidebar collapse">
 
-                    <h6 class="title first">{{translate("shared.schools")}}</h6>
-                    <div class="filter d-flex" v-for="school in sortedSchools">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-schools" v-model="selectedAllSchools" @click="toggleCheckAllSchools()">
+                        <label class="form-check-label" for="checkbox-all-schools"><h6 class="title">{{translate("shared.schools")}}</h6></label>                   
+                    </div>
+                    <div class="filter d-flex sub-check" v-for="school in sortedSchools">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedSchools"
                                 :id="'checkbox-school-' + school.id" :value="school.id">
@@ -106,22 +109,28 @@
                         <span class="ml-auto count">{{totalCoursesCounts[school.id]}}</span>
                     </div>
 
-                    <h6 class="title">{{translate("shared.themes")}}</h6>
-                    <div class="filter d-flex" v-for="theme in sortedThemes">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-themes" v-model="selectedAllThemes" @click="toggleCheckAllThemes()">
+                        <label class="form-check-label" for="checkbox-all-themes"><h6 class="title">{{translate("shared.themes")}}</h6></label>                                       
+                    </div>
+                    <div class="filter d-flex sub-check" v-for="theme in sortedThemes">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedThemes"
-                                :id="'checkbox-theme-' + theme.id" :value="theme.id">
+                                :id="'checkbox-theme-' + theme.id" :value="theme.name">
                             <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
                                 theme.name, true)}}</label>
                         </div>
                         <span class="ml-auto count">{{theme.totalCount}}</span>
                     </div>
 
-                    <h6 class="title">{{translate("shared.languages")}}</h6>
-                    <div class="filter d-flex" v-for="language in sortedLanguages">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-languages" v-model="selectedAllLanguages" @click="toggleCheckAllLanguages()">
+                        <label class="form-check-label" for="checkbox-all-languages"><h6 class="title">{{translate("shared.languages")}}</h6></label>     
+                    </div>
+                    <div class="filter d-flex sub-check" v-for="language in sortedLanguages">
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" v-model="selectedLanguages"
-                                :id="'checkbox-language-' + language.id" :value="language.id"><label
+                                :id="'checkbox-language-' + language.id" :value="language.name"><label
                                 class="form-check-label"
                                 :for="'checkbox-language-' + language.id">{{translate("languages." +
                                 language.name, true)}}</label>
@@ -158,11 +167,11 @@
                         <div>
                             <div>The Shifters Belgium</div>
                             <ul>
-                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf7_WTtbBRkQxs-hBHNfWPGlwKVurvoHRgZR7kGlKbVxkQLJg/viewform" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
+                                <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
                                 <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                 <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                         data-bs-target="#modalCookies">Cookies</a></li>
-                                <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                <li><a href="https://github.com/Education4Climate/" target="_blank"
                                         rel="noopener">GitHub</a></li>
                             </ul>
                         </div>
@@ -172,8 +181,14 @@
 
                 <div class="col-lg-12 col-xl-10 pt-3 px-4s">
 
-                    <h6 class="results-count">
-                        {{sortedCourses.length}}{{translate("courses.courses-of")}}{{courses.length}}</h6>
+                    <div class="row">
+                        <div class="col text-start">
+                            <h6 class="results-count">{{sortedCourses.length}}{{translate("courses.courses-of")}}{{courses.length}}</h6>
+                        </div>
+                        <div class="col text-end">
+                            <a href="#" @click="exportCSV()">{{translate("shared.download-results")}}</a>
+                        </div>
+                    </div>
 
                     <div class="accordion accordion-flush overflow-hidden" id="coursesAccordion">
                         <div class="accordion-item" v-for="(course, i) in paginatedCourses">
@@ -184,8 +199,8 @@
                                         <div>
                                             <h5><span class="badge bg-success"></span>
                                                 {{course.name}}
-                                                <span
-                                                    class="badge bg-light text-body">{{schools[course.schoolId].shortName}}</span>
+                                                <span class="badge bg-light text-body">{{schools[course.schoolId].shortName}}</span>
+                                                &nbsp;<span v-if="course.dedicated" class="badge bg-warning text-body">{{translate("courses.dedicated-course")}}</span>
                                             </h5>
                                         </div>
                                         <div class="themes-badges">
@@ -226,6 +241,7 @@
                                                 <li v-for="teacher in course.teachers">{{teacher}}</li>
                                             </ul>
                                         </div>
+                                        <div class="text-end"><a :href="translate('shared.google-form')" target="_blank" rel="noopener">{{translate("shared.report-result")}}</a></div>                                        
                                     </div>
                                 </div>
                             </div>

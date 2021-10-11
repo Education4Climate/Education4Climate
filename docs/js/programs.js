@@ -21,9 +21,8 @@ var app = Vue.createApp({
             themes: [],
             fields: [],
             languages: [],
-            selectedThemes: [],
             selectedFields: [],
-            selectedLanguages: [],
+            selectedCycles: [],
             searchedName: "",
             currentPage: 0,
             showResponsiveFilters: false,
@@ -34,6 +33,21 @@ var app = Vue.createApp({
         };
     },
     computed: {
+        selectedAllSchools() {
+            return this.selectedSchools && this.selectedSchools.length == this.schools.length;
+        },
+        selectedAllThemes() {
+            return this.selectedThemes && this.selectedThemes.length == this.themes.length;
+        },
+        selectedAllFields() {
+            return this.selectedFields && this.selectedFields.length == this.fields.length;
+        },
+        selectedAllLanguages() {
+            return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
+        },
+        selectedAllCycles() {
+            return this.selectedCycles && this.selectedCycles.length == this.cycles.length;
+        },
         sortedSchools() { /* Sort the schools alphabetically for display */
 
             return this.schools.slice().sort((a, b) => { return a.shortName.localeCompare(b.shortName); });
@@ -50,6 +64,10 @@ var app = Vue.createApp({
 
             return this.languages.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
+        sortedCycles() { /* Sort the cycles DESC on the total count for display */
+
+            return this.cycles.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
+        },
         filteredPrograms() { /* Filter the sorted programs according to the schools/themes/fields selected and program name searched */
 
             if (this.dataLoaded) {
@@ -59,9 +77,10 @@ var app = Vue.createApp({
 
                 return this.programs.slice()
                     .filter(program => this.selectedSchools.includes(program.schoolId))
-                    .filter(program => this.selectedThemes.some(theme => program.themes.map(theme => theme.id).includes(theme)))
-                    .filter(program => this.selectedFields.includes(program.fieldId))
-                    .filter(program => this.selectedLanguages.some(language => program.languages.includes(language)))
+                    .filter(program => this.selectedThemes.some(selectedTheme => program.themes.map(theme => this.themes[theme.id].name).includes(selectedTheme)))
+                    .filter(program => this.selectedFields.some(field => program.fields.includes(field)))
+                    .filter(program => this.selectedLanguages.some(selectedLanguage => program.languages.map(language => this.languages[language].name).includes(selectedLanguage)))
+                    .filter(program => this.selectedCycles.includes(program.cycleId))
                     .filter(program => program.name.toLowerCase().includes(searchedName));
             }
 
@@ -129,9 +148,10 @@ var app = Vue.createApp({
             // sets the filters default selected schools / themes / fields
 
             this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
-            this.selectedThemes = this.themes.map(theme => { return theme.id; });
+            this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
             this.selectedFields = this.fields.map(field => { return field.id; });
-            this.selectedLanguages = this.languages.map(language => { return language.id; });
+            this.selectedLanguages = this.selectedLanguages ? this.selectedLanguages : this.languages.map(language => { return language.name; });
+            this.selectedCycles = this.cycles.map(cycle => { return cycle.id; });
 
             // hides the loader
 
@@ -146,6 +166,67 @@ var app = Vue.createApp({
         loadMore() {
 
             this.currentPage = this.dataLoaded && this.displayedPrograms.length < this.sortedPrograms.length ? this.currentPage + 1 : this.currentPage;
+        },
+        toggleCheckAllSchools() {
+
+            this.selectedSchools = this.selectedAllSchools ? [] : this.schools.map(school => { return school.id; });
+        },
+        toggleCheckAllThemes() {
+
+            this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.name; });
+        },
+        toggleCheckAllFields() {
+
+            this.selectedFields = this.selectedAllFields ? [] : this.fields.map(field => { return field.id; });
+        },
+        toggleCheckAllLanguages() {
+
+            this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.name; });
+        },
+        toggleCheckAllCycles() {
+
+            this.selectedCycles = this.selectedAllCycles ? [] : this.cycles.map(cycle => { return cycle.id; });
+        },
+        exportCSV() {
+
+            const separator = ",";
+
+            let csv = "\uFEFF"; // BOM : force UTF8 encoding
+            csv += "Name" + separator + "Code" + separator + "Faculties" + separator + "School" + separator + "Campuses" + separator;
+
+            this.themes.forEach((theme) => { csv += "Theme:" + theme.name + separator; });
+            this.languages.forEach((language) => { csv += "Language:" + language.name + separator; });
+            this.fields.forEach((field) => { csv += "Field:" + field.name + separator; });
+
+            csv += "Score" + separator + "Cycle" + separator + "Url\n";
+
+            this.sortedPrograms.forEach((program) => {
+
+                csv += "\"" + program.name.replaceAll("\"", "\"\"") + "\"" + separator;
+                csv += "\"" + program.code + "\"" + separator;
+                csv += "\"" + program.faculties.join("|") + "\"" + separator;
+                csv += this.schools[program.schoolId].shortName + separator;
+                csv += "\"" + program.campuses.join("|") + "\"" + separator;
+
+                this.themes.forEach((theme) => {
+                    
+                    var i = program.themes.findIndex((t) => this.themes[t.id].name == theme.name);
+                    csv += i>-1 ? program.themes[i].score + separator : 0 + separator;
+                });
+
+                this.languages.forEach((language) => { csv += program.languages.map(l => this.languages[l].name).includes(language.name) ? "true" + separator : "false" + separator; })
+                this.fields.forEach((field) => { csv += program.fields.map(f => this.fields[f].name).includes(field.name) ? "true" + separator : "false" + separator; })
+
+                csv += program.score + separator;
+                csv += this.cycles[program.cycleId].name + separator;
+                csv += program.url + "\n";
+            });
+
+            const anchor = document.createElement('a');
+            anchor.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+            anchor.target = '_blank';
+            anchor.download = 'education4climate-programmes.csv';
+            anchor.click();
         }
     }
 });

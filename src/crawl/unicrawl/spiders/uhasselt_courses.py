@@ -28,11 +28,11 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            base_dict = {"id": str(course_id)}
-            yield scrapy.Request(BASE_URL.format(YEAR, course_id), self.parse_main, cb_kwargs={"base_dict": base_dict})
+            yield scrapy.Request(BASE_URL.format(YEAR, course_id), self.parse_main,
+                                 cb_kwargs={"course_id": str(course_id)})
 
     @staticmethod
-    def parse_main(response, base_dict):
+    def parse_main(response, course_id):
 
         course_name = response.xpath("//h4/text()").get().split(" (")[0]
 
@@ -48,20 +48,27 @@ class UHasseltCourseSpider(scrapy.Spider, ABC):
             teachers = [t.replace(text, '') for t in teachers]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
+        teachers = [t.lower().title() for t in teachers]
 
         languages = response.xpath("//td[contains(text(), 'Onderwijstaal') "
                                    "or contains(text(), 'Language of instruction')]/b/text()").getall()
         languages = [LANGUAGE_DICT[lang] for lang in languages]
 
+        # Course description
         content = cleanup(response.xpath("//span[text()='Inhoud' or text()='Content']//following::td[1]").get())
+        goals = response.xpath("//div[text()='Eindcompetenties' or text()='Learning outcomes']"
+                               "//following::div[1]//td[@colspan='3']/p/text()").getall()
+        goal = "\n".join(goals).strip("\n")
 
-        cur_dict = {
+        yield {
+            'id': course_id,
             'name': course_name,
             'year': f"{YEAR}-{int(YEAR)+1}",
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
             'content': content,
+            'goal': goal,
+            'activity': '',
+            'other': ''
         }
-
-        yield {**base_dict, **cur_dict}

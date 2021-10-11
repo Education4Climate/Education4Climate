@@ -6,7 +6,7 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://helue.azurewebsites.net/ListingPub"
+BASE_URL = f"http://p4580.phpnet.org/{YEAR}-{YEAR+1}/"
 
 
 class HELProgramSpider(scrapy.Spider, ABC):
@@ -23,14 +23,26 @@ class HELProgramSpider(scrapy.Spider, ABC):
     def start_requests(self):
         yield scrapy.Request(BASE_URL, self.parse_main)
 
-    def parse_main(self, response):
+    @staticmethod
+    def parse_main(response):
+
         faculties = response.xpath("//div[contains(@class, 'body-content')]/h3/text()").getall()
-        for faculty in faculties:
+        for i, faculty in enumerate(faculties):
+
             programs = response.xpath(f"//h3[text()=\"{faculty}\"]/following::div[1]/h3/text()").getall()
-            for program in programs:
-                courses_ids = response.xpath(f"//h3[text()=\"{program}\"]/following::div[1]//tr/td[1]/text()").getall()
-                yield {"name": program,
-                       "id": "",
-                       "faculty": faculty,
-                       "courses": [course_id.strip("\r\n ") for course_id in courses_ids]
-                       }
+            for j, program in enumerate(programs):
+
+                ue_ids = response.xpath(f"//h3[text()=\"{program}\"]/following::div[1]//tr/td[1]/text()").getall()
+                ue_ids = [ue_id.strip("\r\n ") for ue_id in ue_ids]
+                ue_urls = response.xpath(f"//h3[text()=\"{program}\"]/following::div[1]//tr//a/@href").getall()
+                ue_urls_ids = [link.split("/")[-1].strip(".html") for link in ue_urls]
+
+                yield {
+                    "id": f"{i}-{j}",
+                    "name": program,
+                    "cycle": 'bac',
+                    "faculty": faculty,
+                    "url": response.url,
+                    "courses": ue_ids,
+                    "ue_urls_ids": ue_urls_ids
+                }
