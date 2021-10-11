@@ -30,13 +30,13 @@
 
     <div id="app" v-if="dataLoaded" v-cloak>
 
-        <header>
-            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl navbar-light">
                 <div class="container-fluid">
-                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg"
                             alt="logo" id="logo"></a>
-                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
-                            4 CLIMATE</strong><sup class="beta"> BETA</sup></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                            4 <span class="accent">CLIMATE</span><sup class="beta"> BETA</sup></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -49,6 +49,11 @@
                                     :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img src="./img/theme-toggler-blue.svg">
+                            <span class="theme-light">Thème sombre</span>
+                            <span class="theme-dark">Thème clair</span>                            
+                        </div>                        
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
@@ -56,14 +61,87 @@
                                     href="javascript:void(0);">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
+                        <div class="navbar-footer text-muted">
+                            <hr>
+                            <div>
+                                <div>The Shifters Belgium</div>
+                                <ul>
+                                    <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
+                                    <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                    <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a></li>
+                                    <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main id="home">
+        <main>
 
-            <div class="beta-banner" v-html="translate('home.beta')"></div>
+            <div class="row" style="background-color: #F5F0F0;min-height: 50vh;">
+
+             
+
+                    <div class="col-xl-6">
+
+                        <div class="peeps">
+                            <img src="./img/peep-01.svg">
+                            <img src="./img/peep-02.svg">
+                            <img src="./img/peep-03.svg">
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-6" style="margin:auto;">
+
+                        <div class="intro">
+                            <h1>Où étudier</h1>
+                            <h2>pour contribuer à la transition carbone et avoir un impact sur le climat ?<h2>
+
+                            <div>
+                                    <div style="margin-bottom: 1rem;"><button type="button" class="btn btn-primary btn-lg">Trouver une formation</button></div>
+                                    <div style="margin-bottom: 1rem;"><button type="button" class="btn btn-primary btn-lg">Trouver un cours</button></div>
+                                    <div style="margin-bottom: 1rem;"><button type="button" class="btn btn-primary btn-lg">Trouver un enseignant</button></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+           
+
+
+
+            </div>
+
+            <div class="row" style="background-color: white;min-height:50vh;">
+
+                <div class="col-xl-6" style="margin:auto;">
+
+                    <h1>Notre vision, notre objectif</h1>
+                    <h2>un directeur de mémoire ou un promoteur de thèse ?</h2>
+
+                </div>
+
+                <div class="col-xl-6 paragraph">
+                    <div>La durabilité environnementale est devenue une préoccupation majeure pour tous les citoyens et pour les jeunes en particulier. La transition vers une société neutre en CO2 vers 2050 décidée par l'Union européenne est une étape majeure en faveur du climat et de notre environnement, qui nécessite non seulement des investissements massifs et des changements dans les domaines de l'industrie, des services ou des infrastructures, mais aussi de l'intelligence humaine, des aptitudes et des compétences pour conduire la transition écologique.</div>
+
+                    <div>Si l'éducation est la clé de la durabilité, de l'enfant aux adultes, les universités et les hautes écoles jouent un rôle particulier, puisqu'ils éduquent la plupart des décideurs, des acteurs clés et experts de notre communauté. Education4Climate vise à promouvoir l'éducation sur le climat et la durabilité environnementale dans les universités et les hautes écoles en facilitant l'accès à l'information sur les programmes et cours qui abordent ces sujets.</div>
+                    
+                    <div>Education4Climate aidera les futurs étudiants à sélectionner le programme ou l'université / la haute école qui répondra le mieux à leurs aspirations, et les gestionnaires de programmes trouvera un outil très utile pour suivre, confronter et améliorer leurs programmes d'éducation. Enfin, Education4Climate offre un accès facile pour identifier les professeurs ayant une expertise éprouvée en matière d’enseignement sur le climat et la durabilité environnementale, une première étape vers un partage efficace des connaissances et la création de réseau d’experts.</div>
+                </div>
+
+
+
+            
+            </div>
+
+        </main>
+
+        <!--main id="home">
 
             <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -155,12 +233,12 @@
 
             <div class="text-danger" v-cloak>{{errors}}</div>
 
-        </main>
+        </main!-->
 
-        <footer class="text-muted py-5 bg-secondary">
+        <footer class="text-muted py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">The Shifters Belgium</div>
+                    <div class="col-xl-6"><img class="logo" src="./img/logo_shifters_white.svg"></div>
                     <div class="col-xl-6 right">
                         <ul>
                             <li><a :href="translate('shared.google-form')" target="_blank"

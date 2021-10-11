@@ -1,3 +1,213 @@
+:root {
+    
+    /* Please see here for references and updates : 
+       https://initiatives.theshifters.org/boite-a-outils/
+    */
+
+	/* identity colors */
+	
+	--night-blue: #00004B;
+	--egyptian-blue: #0023AA;
+    --pale-teal: #4BD2AF;
+	--greenish-blue: #00788C;
+	
+	/* contrast colors */
+	
+	--chambray: #2D4182;
+	--faded-pink: #F091B9;
+	--tulip-pink: #DC4B78;
+	--seashell: #F5F0F0;
+	
+	/* neutral colors */
+	
+	--baltic-sea: #282828;
+	--white: #FFFFFF;
+
+    /* Light theme */
+  
+    --accent-color: var(--pale-teal);
+
+    --background-primary-color: var(--seashell);
+    --background-secondary-color: var(--white);
+
+    --font-color: var(--baltic-sea);
+    --header-color: var(--egyptian-blue);
+    --link-color: var(--egyptian-blue);
+
+    --checkbox-background-color: var(--egyptian-blue);
+    --checkbox-border-color: var(--egyptian-blue);
+
+    --badge-primary-color: var(--chambray);
+    --badge-secondary-color: var(--tulip-pink);
+    --badge-accent-color: var(--pale-teal);
+
+    --footer-background-color: var(--night-blue);
+    --footer-link-color: var(--white);
+
+    --button-color: var(--greenish-blue);
+}
+
+[data-theme="dark"] {
+
+    /* Dark theme */
+
+    --background-primary-color: var(--egyptian-blue);
+    --background-secondary-color: var(--night-blue);
+
+    --font-color: var(--seashell);
+    --header-color: var(--seashell);
+
+    --checkbox-background-color: var(--egyptian-blue);
+    --checkbox-border-color: var(--seashell);
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+/* Theme toggler */
+
+[data-theme="dark"] #theme-toggler .theme-light {
+    display: none;
+}
+
+[data-theme="light"] #theme-toggler .theme-dark {
+    display: none;
+}
+
+#theme-toggler {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#theme-toggler:hover {
+    cursor:pointer;
+}
+
+/* Navbar */
+
+nav {
+ font-weight: 700;   
+}
+
+.navbar-brand {
+    color: var(--egyptian-blue) !important;
+}
+
+/* Badges */
+
+.bg-primary {
+    background-color: var(--badge-primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--badge-secondary-color) !important;
+}
+
+.bg-success {
+    background-color: var(--badge-accent-color) !important;
+}
+
+/* Fonts */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-color);
+    font-size: 1rem;
+}
+
+.text-primary {
+    color: var(--font-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--header-color) !important;
+}
+
+a {
+    color: var(--link-color);
+}
+
+/* Badges */
+
+.badge-primary {
+    background-color: var(--chambray) !important;
+    color: var(--seashell) !important;
+}
+
+.badge-secondary {
+    background-color: var(--tulip-pink) !important;
+    color: var(--seashell) !important;
+}
+
+.accordion-button {
+    background-color: var(--background-secondary-color);
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: white;
+}
+
+.accordion-button:focus {
+	
+	box-shadow: 0 0 0 0.25rem var(--chambray);
+}
+
+/* Checkboxes */
+
+.form-check-input:checked {
+    background-color: var(--checkbox-background-color);
+    border-color: var(--checkbox-border-color);
+}
+
+.check-all {
+    margin-right: .5rem;
+    margin-top: 1rem;
+}
+
+.sub-check {
+    margin-left: 1rem;
+}
+
+/* Buttons */
+
+button.btn-primary {
+
+        color: white;
+        background-color: var(--button-color);
+        border-color: var(--button-color);
+        border-radius: 2rem;
+
+}
+
+/* MENU & NAVIGATION */
+
+nav,
+main {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--footer-background-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+footer .logo {
+    height: 3rem;
+}
+
+
+/********************/
+
 a {
     text-decoration: none;
 }
@@ -12,9 +222,6 @@ body.modal-open {
     padding-right: 0 !important;
 }
 
-.bg-secondary {
-    background-color: #f8f9fa !important;
-}
 
 body {
     /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
@@ -35,6 +242,23 @@ body {
 }
 
 /* HOME */
+
+.home h1 {
+
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.home .paragraph div {
+
+    margin: 2rem;
+
+}
+
+.peeps img {
+    height: 40vh;
+    margin-right: -12vh;
+}
 
 #carousel-item-students,
 #carousel-item-teachers {
@@ -114,12 +338,18 @@ a.btn:empty {
 
 #languages-selector {
     flex-direction: row;
+    justify-content: flex-end;
+}
+
+#languages-selector a,
+#menu a,
+#theme-toggler {
+    color: var(--header-color);
 }
 
 #languages-selector a.active,
 #menu a.active {
-    color: #0d6efd;
-    font-weight: 500;
+    color: var(--accent-color);
 }
 
 .accordion-body {
@@ -158,17 +388,20 @@ a.btn:empty {
 /* SIDEBAR */
 
 .sidebar {
-    background-color: #f8f9fa;
+    background-color: var(--background-primary-color);
     min-height: calc(100vh - 56px);
 }
 
+.results {
+    background-color: var(--background-primary-color);
+}
+
 .sidebar h6.title {
-    color: #0d6efd;
-    margin-top: 0.9rem;
+    margin-top: 1rem;
 }
 
 .sidebar h6.title.first {
-    margin-top: 0;
+    margin-top: 1rem;
 }
 
 .filter .count {
@@ -183,15 +416,6 @@ a.btn:empty {
 
 main {
     padding-bottom: 3rem;
-}
-
-.check-all {
-    margin-right: .5rem;
-    margin-top: 1rem;
-}
-
-.sub-check {
-    margin-left: 1rem;
 }
 
 /* FOOTER */
@@ -281,6 +505,10 @@ footer li {
     #programs-finder .sidebar {
         padding-top: 1rem;
         min-height: 0;
+    }
+
+    h6.results-count {
+        text-align: center;
     }
 
     .show-filters {
@@ -378,6 +606,11 @@ footer li {
 }
 
 @media (min-width: 1199.99px) {
+
+    #theme-toggler::after {
+        content: "\00a0|";
+    }
+
     .carousel-caption {
         top: 60%;
         transform: translateY(-50%);

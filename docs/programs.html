@@ -31,12 +31,12 @@
     <div id="app">
 
         <header v-if="dataLoaded" v-cloak>
-            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <nav class="navbar navbar-expand-xl navbar-light">
                 <div class="container-fluid">
-                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg"
                             alt="logo" id="logo"></a>
-                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
-                            4 CLIMATE</strong><sup class="beta"> BETA</sup></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                            4 <span class="accent">CLIMATE</span><sup class="beta"> BETA</sup></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -49,6 +49,11 @@
                                     :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img src="./img/theme-toggler-blue.svg">
+                            <span class="theme-light">Thème sombre</span>
+                            <span class="theme-dark">Thème clair</span>                            
+                        </div>                        
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
@@ -61,12 +66,11 @@
                             <div>
                                 <div>The Shifters Belgium</div>
                                 <ul>
-                                    <li><a :href="translate('shared.google-form')" target="_blank"
-                                            rel="noopener">{{translate("footer.contact")}}</a></li>
+                                    <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                             data-bs-target="#modalCookies">Cookies</a></li>
-                                    <li><a href="https://github.com/Education4Climate/" target="_blank"
+                                    <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
                                             rel="noopener">GitHub</a></li>
                                 </ul>
                             </div>
@@ -211,7 +215,7 @@
 
                 </div>
 
-                <div class="col-lg-12 col-xl-10 pt-3 px-4s">
+                <div class="results col-lg-12 col-xl-10 pt-3 px-4s">
 
                     <div class="row">
                         <div class="col text-start">
@@ -233,7 +237,7 @@
                                             <h5><span class="badge bg-success">{{program.score}}</span>
                                                 {{program.name}}
                                                 <span
-                                                    class="badge bg-light text-body">{{schools[program.schoolId].shortName}}</span>
+                                                    class="badge badge-secondary text-body">{{schools[program.schoolId].shortName}}</span>
                                             </h5>
                                         </div>
                                         <div class="themes-badges">

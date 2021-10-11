@@ -35,6 +35,13 @@ export default {
 
             this.currentLanguage = this.translationManager.getLanguage();
             this.translations = await this.translationManager.loadTranslations();
+
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+            currentTheme = currentTheme ? currentTheme : constants.DEFAULT_THEME;
+            document.documentElement.setAttribute("data-theme", currentTheme);
+            const themeToggler = document.querySelector("#theme-toggler");
+            
+            if (themeToggler) themeToggler.addEventListener("click", toggleTheme, false);
         }
         catch (error) {
             console.log(error);
@@ -63,7 +70,7 @@ export default {
         },
         selectedLanguages(value) {
             sessionStorage.selectedLanguages = JSON.stringify(value);
-        }        
+        }
     },
     methods: {
         translate(key, returnKeyIfNotFound) {
@@ -153,6 +160,21 @@ export default {
             }
 
             if (cookies.length > 1) console.log("Google Analytics cookies removed");
+        },
+        toggleTheme(e) {
+
+            console.log("toggleTheme()");
+
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+
+            console.log(currentTheme);
+
+            if (currentTheme == constants.DEFAULT_THEME) {
+                document.documentElement.setAttribute("data-theme", constants.ALTERNATE_THEME);
+            }
+            else {
+                document.documentElement.setAttribute("data-theme", constants.DEFAULT_THEME);
+            }
         }
     }
 };
