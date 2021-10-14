@@ -66,6 +66,7 @@ class UCLLCourseSpider(scrapy.Spider, ABC):
 
         languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
+        languages = ["nl"] if len(languages) == 0 else languages
 
         # Course description
         def get_sections_text(sections_names):

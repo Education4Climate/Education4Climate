@@ -64,7 +64,6 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
         if not cycle:
             cycle = response.css(".oplfiche").xpath("div[strong[text()='Diploma:']]/text()").get()
 
-        print(cycle)
         if cycle is not None:
             if "Bachelor" in cycle:
                 cycle = 'bac'

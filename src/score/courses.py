@@ -182,6 +182,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="School code")
     parser.add_argument("-y", "--year", help="Academic year", default=2020)
+
+    # TODO: need to specify which fields to use depending on the school
+
     parser.add_argument("-f", "--fields", default="name,content",
                         help="Specify the field(s) on which we compute the score."
                              " If several fields, they need to be separated by a ','")

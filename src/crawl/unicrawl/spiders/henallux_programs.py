@@ -6,12 +6,13 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://paysage.henallux.be/"
+BASE_URL = f"https://paysage.henallux.be/fr/{YEAR}"
+PROGRAM_URL = "https://paysage.henallux.be/fr/{}/{}/" + f"{YEAR}"
 
 
 class HENALLUXProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for Haute Ecole de Namur-Liège-Luxembourg
+    Programs crawler for Haute Ecole de Namur-Liège-Luxembourg
     """
 
     name = "henallux-programs"
@@ -24,43 +25,76 @@ class HENALLUXProgramSpider(scrapy.Spider, ABC):
         yield scrapy.Request(BASE_URL, self.parse_main)
 
     def parse_main(self, response):
-        program_links = response.xpath("//section[@id='section_accueil']//a/@data-ref").getall()
-        for link in program_links:
-            if 'idCursusKey' in link:
-                yield response.follow(link, self.parse_aux)
-            else:
-                yield response.follow(link, self.parse_program)
 
-    def parse_aux(self, response):
-        subprogram_links = response.xpath("//div[@class='content']//a/@href")
-        for link in subprogram_links:
-            yield response.follow(link, self.parse_program)
+        program_ids = response.xpath("//div[@class='cursus']/@id").getall()
+        program_data_u = response.xpath("//div[@class='cursus']/@data-u").getall()
+        for program_id, data_u in zip(program_ids, program_data_u):
+            if int(data_u) == 0:
+                link = PROGRAM_URL.format('dep-cursus', program_id)
+                yield response.follow(link, self.parse_aux, cb_kwargs={'program_id': program_id})
+            else:
+                link = PROGRAM_URL.format('cursus', program_id)
+                yield response.follow(link, self.parse_program, cb_kwargs={'program_id': program_id})
+
+    def parse_aux(self, response, program_id):
+
+        subprogram_ids = response.xpath("//div[contains(@class, 'orientation')]/@id").getall()
+        for subprogram_id in subprogram_ids:
+            updated_program_id = f"{program_id}-{subprogram_id}"
+            link = PROGRAM_URL.format('cursus', subprogram_id)
+            yield response.follow(link, self.parse_program, cb_kwargs={'program_id': updated_program_id})
 
     @staticmethod
-    def parse_program(response):
-        program_id = [s for s in response.url.split("/") if s.isnumeric()][0]
-        program_name = response.xpath("//span[@class='intituleOfficiel']/text()").get()
-        faculty = response.xpath("//th[text()='Département']/following::td[1]/text()").get()
-        cycle = response.xpath("//th[text()='Type']/following::td[1]/text()").get()
-        if cycle == 'Bachelier':
-            cycle = 'bac'
-        elif cycle == 'Master':
+    def parse_program(response, program_id):
+
+        program_name = response.xpath("//h3/text()").get()
+        faculty_campus = response.xpath("//div[span[text()='Département']]/text()").get().strip(" :")
+        if faculty_campus == "Département paramédical Sainte-Elisabeth":
+            faculty = "Département paramédical"
+            campuses = ["Sainte-Elisabeth"]
+        elif faculty_campus == "Département pédagogique de Namur - Site de Champion":
+            faculty = "Département pédagogique"
+            campuses = ["Namur - Site de Champion"]
+        elif faculty_campus == "Département pédagogique de Namur - Site de Malonne":
+            faculty = "Département pédagogique"
+            campuses = ["Namur - Site de Malonne"]
+        elif faculty_campus == "Départements sociaux de Cardijn et de Namur":
+            faculty = "Département social"
+            campuses = ["Cardijn", "Namur"]
+        elif faculty_campus == "Département technique d'Arlon":
+            faculty = "Département technique"
+            campuses = ["Arlon"]
+        elif ' de ' in faculty_campus:
+            faculty, campus = faculty_campus.split(" de ")
+            campuses = [campus]
+        elif ' - ' in faculty_campus:
+            faculty, campus = faculty_campus.split(" - ")
+            campuses = [campus]
+        else:
+            faculty = faculty_campus
+            campuses = []
+
+        if 'Spécialisation' in program_name:
+            cycle = 'other'
+        elif 'Master' in program_name:
             cycle = 'master'
         else:
-            cycle = 'other'
-        ues = response.xpath("//li[@class='uetableau-menu']/a/text()").getall()
-        ue_ids = [ue.split(" - ")[0].strip("\u00a0") for ue in ues]
-        ue_links = response.xpath("//li[@class='uetableau-menu']/a/@href").getall()
-        ue_links_codes = [ue_link.split("idUe/")[1].split("/")[0] for ue_link in ue_links]
-        ects = [int(float(e)) for e in response.xpath("//li[@class='uetableau-menu']/a/div[2]/text()").getall()]
+            cycle = 'bac'
 
-        yield {"id": program_id,
-               "name": program_name,
-               "faculty": faculty,
-               "cycle": cycle,
-               "campus": "",
-               "url": response.url,
-               "courses": ue_ids,
-               "ects": ects,
-               "courses_url_codes": ue_links_codes
-               }
+        main_lines_txt = "//table//tr[contains(@class, 'true') and contains(@class, 'unit')]"
+        ue_ids = response.xpath(f"{main_lines_txt}/td[1]/text()").getall()
+        ue_links_codes = response.xpath(f"{main_lines_txt}/@id").getall()
+        ue_links_codes = [code.strip("tr") for code in ue_links_codes]
+        ects = [int(float(e)) for e in response.xpath(f"{main_lines_txt}/td[3]/text()").getall()]
+
+        yield {
+            "id": program_id,
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": campuses,
+            "url": response.url,
+            "courses": ue_ids,
+            "ects": ects,
+            "courses_url_codes": ue_links_codes
+        }

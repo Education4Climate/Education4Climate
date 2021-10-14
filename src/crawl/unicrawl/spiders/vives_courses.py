@@ -40,7 +40,6 @@ class VivesCourseSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        # TODO: restart crawling from missed
         courses_urls = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_urls"]
         courses_urls_list = sorted(list(set(courses_urls.sum())))
 
@@ -49,6 +48,7 @@ class VivesCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_main(response):
+
         main_div = "//div[@id='hover_selectie_parent']"
         course_name = response.xpath(f"{main_div}//h2/text()").get()
         course_id = response.xpath(f"{main_div}//h2/span/text()").get().strip(')').split(" (B-VIVZ-")[1]
@@ -62,6 +62,7 @@ class VivesCourseSpider(scrapy.Spider, ABC):
 
         languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
+        languages = ["nl"] if len(languages) == 0 else languages
 
         # Content
         def get_sections_text(sections_names):
@@ -83,7 +84,6 @@ class VivesCourseSpider(scrapy.Spider, ABC):
             'url': response.url,
             'content': content,
             "goal": goal,
-            # TODO: check if nothing can be added here
             "activity": '',
             "other": ''
         }

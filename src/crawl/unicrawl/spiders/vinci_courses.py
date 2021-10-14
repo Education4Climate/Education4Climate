@@ -20,7 +20,7 @@ LANGUAGES_DICT = {
 
 class VINCICourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for Haute Ecole Léonard de Vinci
+    Courses crawler for Haute Ecole Léonard de Vinci
     """
 
     name = "vinci-courses"
@@ -44,7 +44,11 @@ class VINCICourseSpider(scrapy.Spider, ABC):
 
         course_name = response.xpath("////td[@class='LibCours']/text()").get()
         if course_name is None:
-            return
+            yield {
+                "id": course_id, "name": '', "year": f"{YEAR}-{int(YEAR) + 1}",
+                "languages": ["fr"], "teachers": [], "url": response.url,
+                "content": '', "goal": '', "activity": '', "other": ''
+            }
         years = response.xpath("//div[@id='TitrePrinc']/text()").get().split(" ")[-1]
         course_rubric_txt = "//div[@class='TitreRubCours' and contains(text(), \"{}\")]"
 
@@ -57,6 +61,7 @@ class VINCICourseSpider(scrapy.Spider, ABC):
 
         languages = response.xpath(course_rubric_txt.format("Langue(s)") + "/following::td[2]/text()").getall()
         languages = [LANGUAGES_DICT[l] for l in languages]
+        languages = ["fr"] if len(languages) == 0 else languages
 
         # Cours description
         def get_sections_text(section_name_prec, section_name_follow):

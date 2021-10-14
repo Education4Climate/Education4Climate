@@ -2,7 +2,6 @@ from pathlib import Path
 from abc import ABC
 
 import scrapy
-import base64
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
@@ -16,15 +15,21 @@ BASE_DATA = {
     "codemarcourtx": "19",
 }
 
-PROGRAMS_CODE = {"ECSEDI": "Bachelier Assitant de Direction",
-                 "ISALT": "Bachelier en Management du Tourisme et Loisirs"}
+PROGRAMS_CODE = {
+    "ECSEDI": "Bachelier Assitant de Direction",
+    "ISALT": "Bachelier en Management du Tourisme et Loisirs"
+}
 
 
 class ECSEDIISALTProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for ECSEDI-ISALT Bruxelles
+    """
+
     name = 'ecsedi-isalt-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ecsedi-isalt_programs_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ecsedi-isalt_programs_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):
@@ -41,7 +46,8 @@ class ECSEDIISALTProgramSpider(scrapy.Spider, ABC):
                     cb_kwargs={'program_id': program_id, 'program_name': program_name}
                 )
 
-    def parse_main(self, response, program_id, program_name):
+    @staticmethod
+    def parse_main(response, program_id, program_name):
 
         row_txt = "//tr[@bgcolor='#ffffff']"
         ue_links = response.xpath(f"{row_txt}/td[4]/a/@onclick").getall()
@@ -53,8 +59,9 @@ class ECSEDIISALTProgramSpider(scrapy.Spider, ABC):
             "id": program_id,
             "name": program_name,
             "cycle": 'bac',
-            "faculty": "Département Economique",
-            "campus": "Bruxelles",
+            "faculties": ["Département Economique"],
+            "campuses": ["Bruxelles"],
+            "url": response.url,
             "courses": ue_ids,
             "ects": ects
         }

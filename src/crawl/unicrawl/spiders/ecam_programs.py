@@ -6,13 +6,24 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://www.ecam.be/{}"
-PROGRAM_CODE_LIST = ["MAU", "MCO", "MEM", "MEO", "MGE", "MIN", "MIS", "MIC"]
+BASE_URL = f"https://plus.ecam.be/public/cursus/{YEAR}/" + "{}"
+BASE_URL_2 = "https://www.ecam.be/wp-content/uploads/2021/07/MIC.html"
+
+PROGRAM_CODES = {
+    "MAU": "automatisation",
+    "MCO": "construction",
+    "MEM": "electromecanique",
+    "MEO": "electronique",
+    "MGE": "geometre",
+    "MIN": "informatique",
+    "MIS": "sante",
+    "MIC": "master-en-sciences-de-lingenieur-industriel-et-ingenieur-commercial-6eme-annee"
+}
 
 
 class ECAMProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for ECAM Bruxelles
+    Programs crawler for ECAM Bruxelles
     """
 
     name = "ecam-programs"
@@ -22,25 +33,32 @@ class ECAMProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        for code in PROGRAM_CODE_LIST:
-            base_dict = {"id": code}
-            yield scrapy.Request(BASE_URL.format(code), self.parse_program, cb_kwargs={"base_dict": base_dict})
+
+        for program_id, url_code in PROGRAM_CODES.items():
+            link = BASE_URL_2 if program_id == 'MIC' else BASE_URL.format(program_id)
+            yield scrapy.Request(link, self.parse_program, cb_kwargs={"program_id": program_id})
 
     @staticmethod
-    def parse_program(response, base_dict):
+    def parse_program(response, program_id):
 
-        program_name = response.xpath("//h3/text()").get().split(" (")[0]
-        ue_ids = response.xpath("//table//a/text()").getall()
-        ue_ids = [ue_id.split(":")[0].strip(" \n") for ue_id in ue_ids]
+        if program_id != "MIC":
+            program_name = response.xpath("//h4/text()").get()
+            ue_ids = response.xpath("//table//a/text()").getall()
+            ue_ids = [ue_id.split(" ")[0].strip(" \n") for ue_id in ue_ids]
+        else:
+            program_name = response.xpath("//h3/text()").get()
+            ue_ids = response.xpath("//table//a/text()").getall()
+            ue_ids = [ue_id.split(":")[0].strip(" \n") for ue_id in ue_ids]
         ues_ects = response.xpath("//table//tr/td[2]/text()").getall()
+        ues_ects = [int(e) for e in ues_ects]
 
         yield {
+            "id": program_id,
             "name": program_name,
-            "id": base_dict['id'],
-            "cycle": "master", # master programs with shared bachelor
-            "campus": "Campus Woluwe", # only one campus
-            "faculty": "Ingénieur industriel",  # only one faculty
+            "cycle": "master",  # master programs with shared bachelor
+            "faculties": ["Ingénieur industriel"],  # only one faculty
+            "campuses": ["Campus Woluwe"],  # only one campus
+            "url": response.url,
             "courses": ue_ids,
-            "ects": ues_ects,
-            "url": response.url
+            "ects": ues_ects
         }

@@ -10,89 +10,95 @@ BASE_URL_1 = "https://www.arteveldehogeschool.be/opleidingen/type/bachelor/" \
              "type/postgraduaat/type/graduaat/type/bachelor-na-bachelor/categorie/{}"
 BASE_URL_2 = f"https://ects.arteveldehogeschool.be/ahsownapp/ects/ECTS.aspx?ac={YEAR}-{YEAR+1-2000}"
 
-FACULTIES = {'business-management': "Business en Management",
-             "coaching-en-begeleiding": "Coaching en Begeleiding",
-             "communicatie-media-en-design": "Communicatie, Media en Design",
-             "gezondheid-en-zorg": "Gezondhied en Zorg",
-             "hr-en-leiderschap": "HR en Leiderschap",
-             "mens-en-samenleving": "Mens en Samenleving",
-             "onderwijs": "Onderwijs"}
+FACULTIES = {
+    'business-management': "Business en Management",
+    "coaching-en-begeleiding": "Coaching en Begeleiding",
+    "communicatie-media-en-design": "Communicatie, Media en Design",
+    "gezondheid-en-zorg": "Gezondhied en Zorg",
+    "hr-en-leiderschap": "HR en Leiderschap",
+    "mens-en-samenleving": "Mens en Samenleving",
+    "onderwijs": "Onderwijs"
+}
 
-PROGRAMS_MAP = {"Bedrijfsmanagement": "Bachelor in het bedrijfsmanagement",
-                "International Business Management": "Bachelor of International Business Management",
-                "Organisatie en Management": "Bachelor in organisatie & management",
-                "Accounting Administration": "Graduaat in de accounting administration",
-                "Marketing- en Communicatiesupport": "Graduaat in de marketing- en communicatiesupport",
-                "Digital Business Transformation": "Postgraduaat Digital Business Transformation",
-                "Human Resources Management": "Postgraduaat HRM",
-                "Inspirerend Coachen": "Postgraduaat inspirerend coachen",
-                "Intercultureel werken en coachen": "Postgraduaat intercultureel werken en coachen",
-                "Leiderschap": "Postgraduaat Leiden en begeleiden",
-                "Ondernemen met impact": "Postgraduaat Ondernemen met impact",
-                "Rouw- en verliesconsulent": "Postgraduaat rouw- en verliesconsulent",
-                "Supply Chain Management & Business Analytics":
-                    "Postgraduaat Supply Chain Management & Business Analytics",
-                "The Human-Centered Organisation": "Postgraduaat The Human-Centered Organisation",
-                "Autisme": "Postgraduaat autisme",
-                "Leerstoornissen": "Postgraduaat leerstoornissen",
-                "Leescoach": "Postgraduaat Leescoach",
-                "Communicatiemanagement": "Bachelor in het communicatiemanagement",
-                "Grafische en Digitale Media": "Bachelor in de grafische en digitale media",
-                "International Communication Management": "Bachelor of International Communication Management",
-                "Journalistiek": "Bachelor in de journalistiek",
-                "Programmeren": "Graduaat in het programmeren",
-                "Conversational Design": "Postgraduaat Conversational Design",
-                "Digital Content Creation": "Postgraduaat Digital Content Creation",
-                "Digital Marketing Communication": "Postgraduaat Digital Marketing Communication",
-                "Experience Architect": "Postgraduaat Experience Architect",
-                "Podcasting": "Postgraduaat Podcasting",
-                "Ergotherapie": "Bachelor in de ergotherapie",
-                "Logopedie en Audiologie": "Bachelor in de logopedie en de audiologie",
-                "Mondzorg": "Bachelor in de mondzorg",
-                "Podologie": "Bachelor in de podologie",
-                "Verpleegkunde": "Bachelor in de verpleegkunde",
-                "Vroedkunde": "Bachelor in de vroedkunde",
-                "Creatieve Therapie": "Bachelor in de creatieve therapie",
-                "Acute Psychiatrische Zorg": "Postgraduaat acute psychiatrische zorg",
-                "Diabeteseducator": "Postgraduaat diabeteseducator",
-                "Dysfagie": "Postgraduaat dysfagie",
-                "Hippotherapie": "Postgraduaat hippotherapie",
-                "Kaderopleiding hoofdverpleegkundige": "Postgraduaat Kaderopleiding hoofdverpleegkundigen",
-                "Lactatiekunde": "Postgraduaat lactatiekunde",
-                "Neurogene communicatiestoornissen": "Postgraduaat neurogene communicatiestoornissen",
-                "Neurologische zorg": "Postgraduaat neurologische zorg",
-                "Oncologie": "Postgraduaat oncologie",
-                "Pediatrie en neonatologie": "Postgraduaat pediatrie en neonatologie",
-                "Stomatherapie en wondzorg": "Postgraduaat stomatherapie en wondzorg",
-                "Verpleegkundige in de huisartsenpraktijk":
-                    "Postgraduaat verpleegkundige in huisartsenpraktijk",
-                "Pedagogie van het Jonge Kind": "Bachelor in de pedagogie van het jonge kind",
-                "Sociaal Werk": "Bachelor in het sociaal werk",
-                "Informatiebeheer: Bibliotheek en Archief":
-                    "Graduaat in het informatiebeheer: bibliotheek en archief",
-                "Maatschappelijk werk": "Graduaat in het maatschappelijk werk",
-                "Orthopedagogie": "Graduaat in de orthopedagogie",
-                "Sociaal-Cultureel Werk": "Graduaat in het sociaal-cultureel werk",
-                "Tolk Vlaamse Gebarentaal": "Graduaat in de tolk Vlaamse Gebarentaal",
-                "Contextuele en Systemische Counseling": "Postgraduaat contextuele en systemische counseling",
-                "Politisering in het sociaal werk": "Postgraduaat politisering in het sociaal werk",
-                "Educatieve Bachelor Kleuteronderwijs": "Educatieve bachelor (Ba) in het kleuteronderwijs",
-                "Educatieve Bachelor Lager Onderwijs":
-                    "Educatieve bachelor in het onderwijs: lager onderwijs",
-                "Educatieve Bachelor Secundair Onderwijs": "Educatieve bachelor in het secundair onderwijs",
-                "Verkorte Educatieve Bachelor Secundair Onderwijs":
-                    "Educatieve bachelor in het onderwijs: secundair onderwijs (verkort)",
-                "Educatief Graduaat Secundair Onderwijs":
-                    "Educatieve graduaatsopleiding in het secundair onderwijs",
-                "Buitengewoon Onderwijs": "Bachelor in het onderwijs : buitengewoon onderwijs",
-                "Schoolontwikkeling": "Bachelor in het onderwijs : schoolontwikkeling",
-                "Zorgverbreding en Remediërend Leren":
-                    "Bachelor in het onderwijs  : zorgverbreding en remediërend leren",
-                "Zorgleraar": "Postgraduaat Zorgleraar",
-                "International Organisation and Management":
-                    "Bachelor of International Organisation & Management",
-                "International Graphic and Digital Media":
-                    "Bachelor of International Graphic and Digital Media"}
+# Warning not working for "European Clinical Specialization in Fluency Disorders (Engels)"
+
+PROGRAMS_MAP = {
+    "Bedrijfsmanagement": "Bachelor in het bedrijfsmanagement",
+    "International Business Management": "Bachelor of International Business Management",
+    "Organisatie en Management": "Bachelor in organisatie & management",
+    "Accounting Administration": "Graduaat in de accounting administration",
+    "Marketing- en Communicatiesupport": "Graduaat in de marketing- en communicatiesupport",
+    "Digital Business Transformation": "Postgraduaat Digital Business Transformation",
+    "Human Resources Management": "Postgraduaat HRM",
+    "Inspirerend Coachen": "Postgraduaat inspirerend coachen",
+    "Intercultureel werken en coachen": "Postgraduaat intercultureel werken en coachen",
+    "Leiderschap": "Postgraduaat Leiden en begeleiden",
+    "Ondernemen met impact": "Postgraduaat Ondernemen met impact",
+    "Rouw- en verliesconsulent": "Postgraduaat rouw- en verliesconsulent",
+    "Supply Chain Management & Business Analytics":
+        "Postgraduaat Supply Chain Management & Business Analytics",
+    "The Human-Centered Organisation": "Postgraduaat The Human-Centered Organisation",
+    "Autisme": "Postgraduaat autisme",
+    "Leerstoornissen": "Postgraduaat leerstoornissen",
+    "Leescoach": "Postgraduaat Leescoach",
+    "Communicatiemanagement": "Bachelor in het communicatiemanagement",
+    "Grafische en Digitale Media": "Bachelor in de grafische en digitale media",
+    "International Communication Management": "Bachelor of International Communication Management",
+    "Journalistiek": "Bachelor in de journalistiek",
+    "Programmeren": "Graduaat in het programmeren",
+    "Conversational Design": "Postgraduaat Conversational Design",
+    "Digital Content Creation": "Postgraduaat Digital Content Creation",
+    "Digital Marketing Communication": "Postgraduaat Digital Marketing Communication",
+    "Experience Architect": "Postgraduaat Experience Architect",
+    "Podcasting": "Postgraduaat Podcasting",
+    "Ergotherapie": "Bachelor in de ergotherapie",
+    "Logopedie en Audiologie": "Bachelor in de logopedie en de audiologie",
+    "Mondzorg": "Bachelor in de mondzorg",
+    "Podologie": "Bachelor in de podologie",
+    "Verpleegkunde": "Bachelor in de verpleegkunde",
+    "Vroedkunde": "Bachelor in de vroedkunde",
+    "Creatieve Therapie": "Bachelor in de creatieve therapie",
+    "Acute Psychiatrische Zorg": "Postgraduaat acute psychiatrische zorg",
+    "Diabeteseducator": "Postgraduaat diabeteseducator",
+    "Dysfagie": "Postgraduaat dysfagie",
+    "Hippotherapie": "Postgraduaat hippotherapie",
+    "Kaderopleiding hoofdverpleegkundige": "Postgraduaat Kaderopleiding hoofdverpleegkundigen",
+    "Lactatiekunde": "Postgraduaat lactatiekunde",
+    "Neurogene communicatiestoornissen": "Postgraduaat neurogene communicatiestoornissen",
+    "Neurologische zorg": "Postgraduaat neurologische zorg",
+    "Oncologie": "Postgraduaat oncologie",
+    "Pediatrie en neonatologie": "Postgraduaat pediatrie en neonatologie",
+    "Stomatherapie en wondzorg": "Postgraduaat stomatherapie en wondzorg",
+    "Verpleegkundige in de huisartsenpraktijk":
+        "Postgraduaat verpleegkundige in huisartsenpraktijk",
+    "Pedagogie van het Jonge Kind": "Bachelor in de pedagogie van het jonge kind",
+    "Sociaal Werk": "Bachelor in het sociaal werk",
+    "Informatiebeheer: Bibliotheek en Archief":
+        "Graduaat in het informatiebeheer: bibliotheek en archief",
+    "Maatschappelijk werk": "Graduaat in het maatschappelijk werk",
+    "Orthopedagogie": "Graduaat in de orthopedagogie",
+    "Sociaal-Cultureel Werk": "Graduaat in het sociaal-cultureel werk",
+    "Tolk Vlaamse Gebarentaal": "Graduaat in de tolk Vlaamse Gebarentaal",
+    "Contextuele en Systemische Counseling": "Postgraduaat contextuele en systemische counseling",
+    "Politisering in het sociaal werk": "Postgraduaat politisering in het sociaal werk",
+    "Educatieve Bachelor Kleuteronderwijs": "Educatieve bachelor (Ba) in het kleuteronderwijs",
+    "Educatieve Bachelor Lager Onderwijs":
+        "Educatieve bachelor in het onderwijs: lager onderwijs",
+    "Educatieve Bachelor Secundair Onderwijs": "Educatieve bachelor in het secundair onderwijs",
+    "Verkorte Educatieve Bachelor Secundair Onderwijs":
+        "Educatieve bachelor in het onderwijs: secundair onderwijs (verkort)",
+    "Educatief Graduaat Secundair Onderwijs":
+        "Educatieve graduaatsopleiding in het secundair onderwijs",
+    "Buitengewoon Onderwijs": "Bachelor in het onderwijs : buitengewoon onderwijs",
+    "Schoolontwikkeling": "Bachelor in het onderwijs : schoolontwikkeling",
+    "Zorgverbreding en Remediërend Leren":
+        "Bachelor in het onderwijs  : zorgverbreding en remediërend leren",
+    "Zorgleraar": "Postgraduaat Zorgleraar",
+    "International Organisation and Management":
+        "Bachelor of International Organisation & Management",
+    "International Graphic and Digital Media":
+        "Bachelor of International Graphic and Digital Media"
+}
 
 BASE_DATA = {
     "__EVENTTARGET": "ctl00$contentPlaceHolder$extendedSearchOLODS$btnZoekOpleidingsonderdelen",
@@ -109,7 +115,7 @@ BASE_DATA = {
 
 class ArteveldeProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for Artevelde Hogeschool
+    Programs crawler for Artevelde Hogeschool
     """
 
     name = "artevelde-programs"
@@ -119,6 +125,7 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
+
         programs_info = {}
         faculty_codes = list(FACULTIES.keys())
         yield scrapy.Request(BASE_URL_1.format(faculty_codes[0]), self.parse_faculties,
@@ -129,6 +136,8 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
     def parse_faculties(self, response, faculty, remaining_faculties, programs_info):
 
         all_programs_names = response.xpath("//h2/a/text()").getall()
+        print(faculty)
+        print(len(all_programs_names))
         # Remove subprograms
         program_names = []
         for program_name in all_programs_names:
@@ -141,17 +150,36 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
         # Campus
         programs_campus = []
         for program_name in program_names:
-            request_text = f"//div[div[h2[a[contains(text(), \'{program_name}\')]]]]/div[@class='field field-name-course-extraline']/text()"
+            request_text = f"//div[div[h2[a[contains(text(), \'{program_name}\')]]]]" \
+                           f"/div[@class='field field-name-course-extraline']/text()"
             campus = response.xpath(request_text).get()
             if campus and 'Campus' in campus:
                 programs_campus += ["Campus " + campus.split("Campus ")[1].strip(", ")]
             else:
-                programs_campus += [""]
+                programs_campus += []
+
+        # Cycle
+        programs_cycle = []
+        for program_name in program_names:
+            request_text = f"//div[div[h2[a[contains(text(), \'{program_name}\')]]]]" \
+                           f"//div[@class='field field-name-field-course-type']/text()"
+            cycle = response.xpath(request_text).get()
+            if cycle is not None and 'Bachelor' in cycle:
+                cycle = 'bac'
+            elif cycle == 'Postgraduaat':
+                cycle = 'postgrad'
+            elif cycle == 'Graduuat':
+                cycle = 'grad'
+            else:
+                cycle = 'other'
+            programs_cycle += [cycle]
 
         # Associate faculty
-        for program_name, program_campus in zip(program_names, programs_campus):
-            programs_info[program_name] = {"faculty": FACULTIES[faculty], "campus": program_campus}
+        for program_name, program_campus, program_cycle in zip(program_names, programs_campus, programs_cycle):
+            programs_info[program_name] = {"faculty": FACULTIES[faculty], "campus": program_campus,
+                                           "cycle": program_cycle}
 
+        # Iteratively crawl the other faculties
         if len(remaining_faculties) != 0:
             yield scrapy.Request(BASE_URL_1.format(remaining_faculties[0]), self.parse_faculties,
                                  cb_kwargs={"faculty": remaining_faculties[0],
@@ -173,6 +201,9 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
 
         for program_name in programs_info.keys():
 
+            if program_name not in PROGRAMS_MAP:
+                print(f"{program_name} was not in PROGRAM_MAP")
+                continue
             full_name = PROGRAMS_MAP[program_name]
             program_id_url = select_name_id_map[full_name]
             program_id = program_id_url.split(";")[1]
@@ -180,12 +211,14 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
             cur_data = BASE_DATA.copy()
             cur_data['ctl00$contentPlaceHolder$extendedSearchOLODS$ddlOpleiding'] = program_id_url
 
-            base_dict = {"id": program_id,
-                         "name": full_name,
-                         "faculty": programs_info[program_name]["faculty"],
-                         "campus": programs_info[program_name]["campus"],
-                         "url": BASE_URL_2
-                         }
+            base_dict = {
+                "id": program_id,
+                "name": full_name,
+                "cycle": programs_info[program_name]["cycle"],
+                "faculties": [programs_info[program_name]["faculty"]],
+                "campuses": [programs_info[program_name]["campus"]],
+                "url": BASE_URL_2
+            }
 
             yield scrapy.http.FormRequest(
                 BASE_URL_2,
@@ -205,5 +238,6 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
         print(courses_codes)
 
         base_dict["courses"] = courses_codes
+        base_dict["ects"] = []
 
         yield base_dict

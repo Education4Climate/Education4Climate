@@ -44,9 +44,9 @@ def add_missing_fields_in_programs(programs_df: pd.DataFrame, courses_df: pd.Dat
     for idx, courses in programs_df['courses'].items():
         for key in keys_in_courses:
             if len(courses) == 0:
-                programs_df.loc[idx][key] = []
+                programs_df[key].loc[idx] = []
                 continue
-            programs_df.loc[idx][key] = list(set(courses_df.loc[courses, key].sum()))
+            programs_df[key].loc[idx] = list(set(courses_df.loc[courses, key].sum()))
 
     return programs_df
 
@@ -114,7 +114,7 @@ def main(school: str, year: int):
     matched_courses = list(courses_df[courses_df.id.isin(courses_with_matches_index)].id)
     programs_df['matched_courses'] = pd.Series([[]]*len(programs_df), index=programs_df.index)
     for program_id, program_courses in programs_df['courses'].items():
-        programs_df.loc[program_id]['matched_courses'] = list(set(program_courses).intersection(set(matched_courses)))
+        programs_df["matched_courses"].loc[program_id] = list(set(program_courses).intersection(set(matched_courses)))
 
     # Get programs that matched at least one theme
     programs_with_matches_index = programs_scores_df[(programs_scores_df.sum(axis=1) != 0)].index

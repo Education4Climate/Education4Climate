@@ -19,7 +19,7 @@ LANGUAGES_DICT = {
     "Spaans": "es", 
     "Chinees": "cn",
     "Duits": "de",
-    "Mandarijn Chinees": "cn",
+    "Mandarijn Chinees": "cn"
 }
 
 
@@ -50,14 +50,19 @@ class EHBCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_course(response, base_dict):
+
         body = response.css("#content")
         name = body.css("h2::text").get()
         year = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblAcademiejaarOmschrijving::text").get()
+
         teachers = body.xpath("//span[text()='Coördinator: ' or text()='Docenten: ' or text()='Andere docenten: ']/following::span[1]/text()").getall()
         teachers = ",".join(teachers).strip(", ") 
         teachers = [t.strip() for t in teachers.split(",")] if teachers else []
+
         languages = body.xpath("//span[text()='Onderwijstalen: ']/following::span[1]/text()").get()
         languages = [LANGUAGES_DICT[lang.strip()] for lang in languages.split(',')] if languages else ["nl"]
+        languages = ["nl"] if len(languages) == 0 else languages
+
         content = cleanup(body.xpath("//h4[contains(text(),'Inhoud')]/following::div[1]").xpath("string(.)").get())
 
         yield {
@@ -68,4 +73,7 @@ class EHBCourseSpider(scrapy.Spider, ABC):
             'teachers': teachers,
             'url': response.url,
             'content': content,
+            'goal': '',
+            'activity': '',
+            'other': ''
         }

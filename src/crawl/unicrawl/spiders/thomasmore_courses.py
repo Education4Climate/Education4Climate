@@ -52,6 +52,7 @@ class ThomasMoreCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_main(response):
+
         main_div = "//div[@id='hover_selectie_parent']"
         course_name = response.xpath(f"{main_div}//h2/text()").get()
         course_id = response.xpath(f"{main_div}//h2/span/text()").get().strip(')').split(" (B-TM-")[1]
@@ -63,6 +64,7 @@ class ThomasMoreCourseSpider(scrapy.Spider, ABC):
         teachers = list(set([t.strip(" ") for t in teachers if t != '']))
         languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages is not None else []
+        languages = ["nl"] if len(languages) == 0 else languages
 
         # Course description
         def get_sections_text(sections_names):

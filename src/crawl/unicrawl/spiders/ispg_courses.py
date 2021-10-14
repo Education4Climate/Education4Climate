@@ -30,7 +30,7 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
     Courses crawler for Institut Supérieur de Pédagogie Galilée (ISPG)
     """
 
-    # TODO: missing: http://www.galileonet.be/extranet/DescriptifsDeCours/getViewGestionUE?cue=UFM1MDU=&ec=2
+    # WARNING: missing: PS102 and PS505 were not accesible on ISPG website when last crawled
 
     name = "ispg-courses"
     custom_settings = {
@@ -50,7 +50,12 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_main(response, ue_id):
 
-        ue_name = response.xpath("//h5[2]/strong/text()").get().strip(" ")
+        ue_name = response.xpath("//h5[2]/strong/text()").get()
+        if ue_name is None:
+            yield {'id': ue_id, 'name': ue_name, 'year': f"{YEAR}-{YEAR+1}", 'languages': [], 'teachers': [],
+                   'url': response.url, 'content': '', 'goal': '', 'activity': '', 'other': ''}
+            return
+        ue_name = ue_name.strip(" ")
         years = response.xpath("//h5[3]/text()").get().strip(" ").split(" ")[-1]
 
         teachers = response.xpath("//div[@class='col-md-9']/text()").getall()

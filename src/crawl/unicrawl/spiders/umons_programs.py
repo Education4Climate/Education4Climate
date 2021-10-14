@@ -59,7 +59,6 @@ class UMonsProgramSpider(scrapy.Spider, ABC):
     def parse_offer(self, response, cycle):
 
         program_links = response.xpath("//a[header]/@href").getall()
-        print(cycle, len(program_links))
         for link in program_links:
             yield response.follow(link, self.parse_prog, cb_kwargs={'cycle': cycle})
 
