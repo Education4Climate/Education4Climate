@@ -54,7 +54,11 @@ class UGentProgramSpider(scrapy.Spider, ABC):
         if 'aster' in cycle:
             cycle = 'master'
         elif 'achelor' in cycle:
-            cycle = 'bac'
+            if 'Bridging' in program_name or 'Brugprogramma' in program_name or\
+                    'List' in program_name or 'Lisjt' in program_name or 'Ritsweg' in program_name:
+                cycle = 'other'
+            else:
+                cycle = 'bac'
         elif 'ostgradua' in cycle:
             cycle = 'postgrad'
         elif 'octor' in cycle:
