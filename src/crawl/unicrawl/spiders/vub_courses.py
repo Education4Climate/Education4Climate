@@ -55,7 +55,7 @@ class VUBCourseSpider(scrapy.Spider, ABC):
             if anchor > 3:  # T avoid an infinite recursive call, stop at anchor 3 and return an quasi-empty entry
                 yield {
                     "id": course_id, "name": '', "year": f"{YEAR}-{int(YEAR)+1}",
-                    "languages": [], "teachers": [], "url": response.url,
+                    "languages": ["nl"], "teachers": [], "url": response.url,
                     "content": '', "goal": '', "activity": '', "other": ''
                 }
             url = response.url.strip(str(anchor)) + str(anchor+1)

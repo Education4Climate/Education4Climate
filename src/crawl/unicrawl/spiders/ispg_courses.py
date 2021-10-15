@@ -14,17 +14,24 @@ BASE_URL = "http://www.galileonet.be/extranet/DescriptifsDeCours/getViewGestionU
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ispg_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Français": ["fr"],
-                  "Anglais": ["en"],
-                  "Allemand": ["de"],
-                  "Néerlandais": ["nl"],
-                  "AnglaisNéerlandais": ["en", "nl"],
-                  "FrançaisAnglais": ["fr", "en"],
-                  "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"]
-                  }
+LANGUAGES_DICT = {
+    "Français": ["fr"],
+    "Anglais": ["en"],
+    "Allemand": ["de"],
+    "Néerlandais": ["nl"],
+    "AnglaisNéerlandais": ["en", "nl"],
+    "FrançaisAnglais": ["fr", "en"],
+    "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"]
+}
 
 
 class ISPGCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Institut Supérieur de Pédagogie Galilée (ISPG)
+    """
+
+    # WARNING: missing: PS102 and PS505 were not accesible on ISPG website when last crawled
+
     name = "ispg-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -43,7 +50,12 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_main(response, ue_id):
 
-        ue_name = response.xpath("//h5[2]/strong/text()").get().strip(" ")
+        ue_name = response.xpath("//h5[2]/strong/text()").get()
+        if ue_name is None:
+            yield {'id': ue_id, 'name': ue_name, 'year': f"{YEAR}-{YEAR+1}", 'languages': [], 'teachers': [],
+                   'url': response.url, 'content': '', 'goal': '', 'activity': '', 'other': ''}
+            return
+        ue_name = ue_name.strip(" ")
         years = response.xpath("//h5[3]/text()").get().strip(" ").split(" ")[-1]
 
         teachers = response.xpath("//div[@class='col-md-9']/text()").getall()
@@ -51,19 +63,24 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
         teachers = [t for t in teachers if t != '']
         teachers = [t.split(", ") for t in teachers]
         teachers = list(set(itertools.chain.from_iterable(teachers)))
+        teachers = [t.lower().title() for t in teachers]
 
         languages = response.xpath("//div[label[@for='langueenseignement']]/text()[2]").get().strip(" \n")
         languages = LANGUAGES_DICT[languages]
 
-        # Content
-        content = cleanup(response.xpath("//div[label[@for='aas']]/div").get())
+        # Course description
+        content = cleanup(response.xpath("//div[label[@for='descsynthUE']]/div").get())
+        goal = cleanup(response.xpath("//div[label[@for='aas']]/div").get())
 
         yield {
             'id': ue_id,
             'name': ue_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': goal,
+            'activity': '',
+            'other': ''
         }

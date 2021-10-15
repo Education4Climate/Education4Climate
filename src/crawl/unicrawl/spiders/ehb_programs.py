@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 from abc import ABC
 from pathlib import Path
-from src.crawl.unicrawl.spiders.issig_programs import BASE_DATA
 
 import scrapy
 import json
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://ects.ehb.be/#/training/1/{}" # format is program code
+BASE_URL = "https://ects.ehb.be/#/training/1/{}"  # format is program code
 
 acad_year = "{}".format(YEAR)
 
@@ -23,7 +22,7 @@ BASE_DATA = {
 
 class EHBProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for Erasmus Hogeschool Brussels
+    Programs crawler for Erasmus Hogeschool Brussels
 
     METHOD:
     -------
@@ -41,11 +40,13 @@ class EHBProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
+
         # First, let's extract programs ids from Ajax POST request
         url = "https://desiderius.ehb.be/index.php?application=Ehb\Application\Ects\Ajax&go=FilterTrainings"
         yield scrapy.http.FormRequest(url, formdata=BASE_DATA, callback=self.parse_main)
 
     def parse_main(self, response):
+
         # The Ajax POST request returns a Json datafile
         programs_data = json.loads(response.body)
         # Collect all programs objects independently of their types
@@ -54,16 +55,26 @@ class EHBProgramSpider(scrapy.Spider, ABC):
             programs += prog_type["training"]
         
         for program in programs:
-            cycle = "bac" if "bacheloropleiding" in program["type"] else None
-            if cycle == None:
-                cycle = "master" if "Master" in program["type"] else "other"
+
+            print(program["type"])
+            if 'bacheloropleiding' in program["type"]:
+                cycle = 'bac'
+            elif "Master" in program["type"]:
+                cycle = 'master'
+            elif "Postgraduaat" in program["type"]:
+                cycle = 'postgrad'
+            elif "Graduaat" in program["type"]:
+                cycle = 'grad'
+            else:
+                cycle = 'other'
 
             base_dict = {
-                "name": program["name"],
                 "id": program["id"],
-                "faculty": program["faculty"],
+                "name": program["name"],
                 "cycle": cycle,
-                "url": BASE_URL.format(program["id"]),
+                "faculties": [program["faculty"]],
+                "campuses": [],
+                "url": BASE_URL.format(program["id"])
             }
 
             # Each program can have several trajectories whose ids can be obtained via another Ajax POST request
@@ -71,6 +82,7 @@ class EHBProgramSpider(scrapy.Spider, ABC):
             yield scrapy.http.FormRequest(url, formdata={"training": base_dict["id"], "language": "1"}, callback=self.parse_program, cb_kwargs={"base_dict": base_dict})
 
     def parse_program(self, response, base_dict):
+
         # The Ajax POST request returns a Json datafile
         program_data = json.loads(response.body)
 
@@ -87,6 +99,7 @@ class EHBProgramSpider(scrapy.Spider, ABC):
             yield scrapy.http.FormRequest(url, formdata={"sub_trajectory": trajectories_ids[0], "language": "1"}, callback=self.parse_trajectories_recursively, cb_kwargs={"base_dict": base_dict, "trajectories_ids": trajectories_ids[1:]})
 
     def parse_trajectories_recursively(self, response, base_dict, trajectories_ids):
+
         # The Ajax POST request returns a Json datafile
         trajectory_data = json.loads(response.body)
         # Collect courses while avoiding duplicates
@@ -98,6 +111,8 @@ class EHBProgramSpider(scrapy.Spider, ABC):
         # Parse the next program trajectory or yield final result
         if trajectories_ids:
             url = "https://desiderius.ehb.be/index.php?application=Ehb\Application\Ects\Ajax&go=Trajectory"
-            yield scrapy.http.FormRequest(url, formdata={"sub_trajectory": trajectories_ids[0], "language": "1"}, callback=self.parse_trajectories_recursively, cb_kwargs={"base_dict": base_dict, "trajectories_ids": trajectories_ids[1:]})
+            yield scrapy.http.FormRequest(url, formdata={"sub_trajectory": trajectories_ids[0], "language": "1"},
+                                          callback=self.parse_trajectories_recursively,
+                                          cb_kwargs={"base_dict": base_dict, "trajectories_ids": trajectories_ids[1:]})
         else:
             yield base_dict

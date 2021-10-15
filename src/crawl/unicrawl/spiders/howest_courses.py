@@ -25,7 +25,7 @@ LANGUAGES_DICT = {
 
 class HOWESTCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for Hogeschool West-Vlaanderen
+    Courses crawler for Hogeschool West-Vlaanderen
     """
 
     name = "howest-courses"
@@ -50,25 +50,33 @@ class HOWESTCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_course(response, base_dict):
+
         body = response.css("#content")
         name = body.css("h2::text").get()
         year = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblAcademiejaarOmschrijving::text").get()
         ects = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblInhoudStudieomvang::text").get()
-        ects = ects.split("\xa0")[0] if ects else ""
-        teachers = body.xpath("//span[text()='Coördinator: ' or text()='Docenten: ' or text()='Andere docenten: ']/following::span[1]/text()").getall()
+        ects = int(ects.split("\xa0")[0]) if ects else ""
+
+        teachers = body.xpath("//span[text()='Coördinator: ' or text()='Docenten: ' or text()='Andere docenten: ']"
+                              "/following::span[1]/text()").getall()
         teachers = ",".join(teachers).strip(", ") 
         teachers = [t.strip() for t in teachers.split(",")] if teachers else []
+
         languages = body.xpath("//span[text()='Onderwijstalen: ']/following::span[1]/text()").get()
         languages = [LANGUAGES_DICT[lang.strip()] for lang in languages.split(',')] if languages else ["nl"]
+
         content = cleanup(body.xpath("//h4[contains(text(),'Inhoud')]/following::div[1]").xpath("string(.)").get())
 
         yield {
             'id': base_dict['id'],
             'name': name,
             'year': year,
-            'ects': ects,
+            'ects': ects, # TODO: does not work in prepare.py
             'languages': languages,
             'teachers': teachers,
             'url': response.url,
             'content': content,
+            'goal': '',
+            'activity': '',
+            'other': ''
         }

@@ -63,7 +63,6 @@ class UGentCourseSpider(scrapy.Spider, ABC):
                                    'languages': courses_lang_list, 'url': courses_urls_list})
         courses_df = courses_df.drop_duplicates(subset='id')
 
-        print(len(courses_df))
         for _, courses_ds in courses_df.iterrows():
             languages = courses_ds['languages'].split(',')
             languages = [] if languages == [''] else languages
