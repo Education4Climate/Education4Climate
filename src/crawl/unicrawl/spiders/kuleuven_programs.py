@@ -9,6 +9,10 @@ BASE_URL = 'https://onderwijsaanbod.kuleuven.be/opleidingen/n/'
 
 
 class KULeuvenProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for KULeuven
+    """
+
     name = 'kuleuven-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

@@ -19,6 +19,10 @@ LANGUAGE_DICT = {"Langue française": 'fr',
 
 
 class ULiegeCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for ULiège
+    """
+
     name = "uliege-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

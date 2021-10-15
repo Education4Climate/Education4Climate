@@ -51,6 +51,7 @@ class OdiseeCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_main(response):
+
         main_div = "//div[@id='hover_selectie_parent']"
         course_name = response.xpath(f"{main_div}//h2/text()").get()
         course_id = response.xpath(f"{main_div}//h2/span/text()").get().strip(')').split(" (B-ODISEE-")[1]

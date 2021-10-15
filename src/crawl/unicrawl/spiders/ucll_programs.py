@@ -10,7 +10,7 @@ BASE_URL = 'https://onderwijsaanbod.limburg.ucll.be/opleidingen/n/'
 
 class UCLLProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for UC Leuven-Limburg
+    Programs crawler for UC Leuven-Limburg
     """
 
     name = 'ucll-programs'

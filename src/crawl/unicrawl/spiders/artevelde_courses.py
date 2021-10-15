@@ -38,7 +38,6 @@ class ArteveldeCourseSpider(scrapy.Spider, ABC):
         ue_codes = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         ue_codes_list = sorted(list(set(ue_codes.sum())))
 
-        print(len(ue_codes_list))
         for ue_id in ue_codes_list:
             yield scrapy.Request(BASE_URL.format(ue_id), self.parse_main, cb_kwargs={"ue_id": ue_id})
 

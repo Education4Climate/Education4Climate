@@ -10,7 +10,7 @@ BASE_URL = 'http://onderwijsaanbod.vives-zuid.be/opleidingen/n/'
 
 class VivesProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for VIVES
+    Programs crawler for VIVES
     """
 
     name = 'vives-programs'

@@ -62,6 +62,10 @@ PROGRAMS_FACULTY = {
 
 
 class UAntwerpenProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for UAntwerpen
+    """
+
     name = "uantwerpen-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -72,6 +76,7 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
         yield scrapy.Request(url=BASE_URL, callback=self.parse_main)
 
     def parse_main(self, response):
+
         program_links = response.xpath("//section[contains(@class, 'courseItem')]/a/@href").getall()
         for href in program_links:
             yield response.follow(href, self.find_program_info_tab)

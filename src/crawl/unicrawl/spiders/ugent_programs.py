@@ -11,6 +11,10 @@ BASE_URL_2 = "https://studiekiezer.ugent.be/nl/incrementalsearch?target=zoek&ids
 
 
 class UGentProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for UGent
+    """
+
     name = 'ugent-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

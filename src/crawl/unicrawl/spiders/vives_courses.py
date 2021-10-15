@@ -31,6 +31,9 @@ LANGUAGES_DICT = {
 
 
 class VivesCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for VIVES
+    """
 
     name = "vives-courses"
     custom_settings = {

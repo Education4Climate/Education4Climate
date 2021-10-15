@@ -18,6 +18,10 @@ SUBPROG_URL = f'https://www.ulb.be/api/formation?path={PATH_SUBPROG_URL}'
 
 
 class ULBProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for Université Libre de Bruxelles
+    """
+
     name = 'ulb-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

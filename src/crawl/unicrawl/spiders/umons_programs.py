@@ -17,6 +17,9 @@ BASE_DATA = {
 
 
 class UMonsProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for University of Mons
+    """
 
     name = "umons-programs"
     custom_settings = {

@@ -11,6 +11,10 @@ BASE_URL = "https://directory.unamur.be/teaching/programmes"
 
 
 class UNamurProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for University of Namur
+    """
+
     name = "unamur-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

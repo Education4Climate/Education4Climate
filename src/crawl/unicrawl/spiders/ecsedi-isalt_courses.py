@@ -9,9 +9,9 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
 BASE_URL = "https://www.einet.be/ficheueprintable.php?code={}" + \
-           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=18"
+           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=19"
 ECTS_URL = "https://www.einet.be/ficheectsprintable.php?code={}" + \
-           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=18"
+           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=19"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ecsedi-isalt_programs_{YEAR}.json')
 

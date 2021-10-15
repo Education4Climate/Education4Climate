@@ -42,6 +42,10 @@ LANGUAGES_DICT = {
 
 
 class KULeuvenCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for KULeuven
+    """
+
     name = "kuleuven-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
