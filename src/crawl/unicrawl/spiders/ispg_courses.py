@@ -69,7 +69,6 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
         languages = LANGUAGES_DICT[languages]
 
         # Course description
-        content = cleanup(response.xpath("//div[label[@for='descsynthUE']]/div").get())
         goal = cleanup(response.xpath("//div[label[@for='aas']]/div").get())
 
         yield {
@@ -79,7 +78,7 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
             'languages': languages,
             'teachers': teachers,
             'url': response.url,
-            'content': content,
+            'content': '',
             'goal': goal,
             'activity': '',
             'other': ''

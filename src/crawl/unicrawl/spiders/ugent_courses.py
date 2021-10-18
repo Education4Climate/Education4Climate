@@ -44,6 +44,10 @@ def extract_content(pdf_url: str) -> str:
 
 
 class UGentCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for UGent
+    """
+
     name = 'ugent-courses'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

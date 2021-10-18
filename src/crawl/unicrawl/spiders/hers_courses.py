@@ -26,7 +26,7 @@ class HERSCourseSpider(scrapy.Spider, ABC):
     Courses crawler for Haute Ecole Robert Schuman
     """
 
-    # TODO: error on HVAC0001-1, http://progcours.hers.be/cocoon/cours/HVAC0001-1.html
+    # Warning: error on HVAC0001-1, http://progcours.hers.be/cocoon/cours/HVAC0001-1.html
 
     name = "hers-courses"
     custom_settings = {

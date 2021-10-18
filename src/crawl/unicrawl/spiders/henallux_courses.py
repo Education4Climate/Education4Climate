@@ -37,13 +37,7 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
         courses_url_codes_ds = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_url_codes"]
         courses_url_codes_list = sorted(list(set(courses_url_codes_ds.sum())))
 
-        fn = "/home/duboisa1/shifters/Education4Climate/data/crawling-output/henallux_courses_2021_first.json"
-        courses_url_codes_ds_old = pd.read_json(open(fn, "r"))["url"].apply(lambda x: x.split("/")[-1])
-        courses_url_codes_list_old = sorted(list(set(courses_url_codes_ds_old)))
-
         for course_code in courses_url_codes_list:
-            if course_code in courses_url_codes_list_old:
-                continue
             yield scrapy.Request(url=BASE_URL.format(course_code), callback=self.parse_ue)
 
     @staticmethod

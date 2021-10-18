@@ -33,7 +33,7 @@ LANGUAGES_DICT = {
 
 class UCLLCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for UC Leuven-Limburg
+    Courses crawler for UC Leuven-Limburg
     """
 
     # Warning https://onderwijsaanbod.limburg.ucll.be/syllabi/L/QD1610L.htm -> error 500
@@ -54,6 +54,7 @@ class UCLLCourseSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_main(response):
+
         main_div = "//div[@id='hover_selectie_parent']"
         course_name = response.xpath(f"{main_div}//h2/text()").get()
         course_id = response.xpath(f"{main_div}//h2/span/text()").get().strip(')').split(" (B-UCLL-")[1]

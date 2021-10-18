@@ -81,8 +81,10 @@ def merge_courses(school: str, year: int):
     else:
         courses_df_grouped = courses_df.groupby("name")
         courses_merged_df = courses_df_grouped["id"].unique().apply(lambda x: x[0]).to_frame()
-    for key in ["year", "url", "content", "goal", "activity", "other"]:
+    for key in ["year", "url"]:
         courses_merged_df[key] = courses_df_grouped[key].apply(lambda x: x.iloc[0])
+    for key in ["content", "goal", "activity", "other"]:
+        courses_merged_df[key] = courses_df_grouped[key].apply(lambda x: "\n".join(x.values))
     courses_merged_df['languages'] = courses_df_grouped["languages"].sum().apply(lambda x: list(set(x)))
     courses_merged_df['teachers'] = courses_df_grouped["teachers"].sum().apply(lambda x: list(set(x)))
 

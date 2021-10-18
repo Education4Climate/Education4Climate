@@ -12,20 +12,26 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}uslb_programs_{YEAR}.json')
 BASE_URL = f"https://www.usaintlouis.be/sl/{YEAR}" + "/C{}.html"
-LANGUAGE_DICT = {"français": 'fr',
-                 "francais": 'fr',
-                 "french": 'fr',
-                 "anglais": 'en',
-                 "english": 'en',
-                 "allemand": 'de',
-                 "espagnol": 'es',
-                 "italien": 'it',
-                 "néerlandais": 'nl',
-                 "nederlands": 'nl',
-                 "dutch": 'nl'}
+LANGUAGE_DICT = {
+    "français": 'fr',
+    "francais": 'fr',
+    "french": 'fr',
+    "anglais": 'en',
+    "english": 'en',
+    "allemand": 'de',
+    "espagnol": 'es',
+    "italien": 'it',
+    "néerlandais": 'nl',
+    "nederlands": 'nl',
+    "dutch": 'nl'
+}
 
 
 class USLBCoursesSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Université Saint-Louis Bruxelles
+    """
+
     name = "uslb-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

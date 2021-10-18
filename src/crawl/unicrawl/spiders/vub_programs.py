@@ -11,6 +11,10 @@ BASE_URL = 'https://caliweb.vub.be/'
 
 
 class VUBProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for VUB
+    """
+
     name = "vub-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

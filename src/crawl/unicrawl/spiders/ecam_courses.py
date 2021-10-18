@@ -70,7 +70,6 @@ class ECAMCourseSpider(scrapy.Spider, ABC):
         if mic:
             # Put family name first
             teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
-        print(teachers)
 
         languages = response.xpath("//th[text()=\"Langue\"]/following::td[1]/text()").get()
         languages = languages.split(" ") if languages else ["FR"]

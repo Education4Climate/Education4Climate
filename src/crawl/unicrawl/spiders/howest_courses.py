@@ -40,16 +40,14 @@ class HOWESTCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            base_dict = {"id": course_id}
-
             yield scrapy.Request(
                 url=BASE_URl.format(course_id), 
                 callback=self.parse_course, 
-                cb_kwargs={"base_dict": base_dict},
+                cb_kwargs={"course_id": course_id},
             )
 
     @staticmethod
-    def parse_course(response, base_dict):
+    def parse_course(response, course_id):
 
         body = response.css("#content")
         name = body.css("h2::text").get()
@@ -68,10 +66,10 @@ class HOWESTCourseSpider(scrapy.Spider, ABC):
         content = cleanup(body.xpath("//h4[contains(text(),'Inhoud')]/following::div[1]").xpath("string(.)").get())
 
         yield {
-            'id': base_dict['id'],
+            'id': course_id,
             'name': name,
             'year': year,
-            'ects': ects, # TODO: does not work in prepare.py
+            'ects': [ects],  # TODO: does not work in prepare.py
             'languages': languages,
             'teachers': teachers,
             'url': response.url,

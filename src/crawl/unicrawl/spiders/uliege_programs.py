@@ -25,6 +25,10 @@ FACULTY_DICT = {
 
 
 class ULiegeSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for ULiège
+    """
+
     name = 'uliege-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

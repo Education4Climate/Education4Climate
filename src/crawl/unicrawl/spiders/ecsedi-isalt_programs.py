@@ -6,6 +6,7 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = 'https://www.einet.be/ects/affichelisteects_public.php'
+PROGRAM_URL = 'https://www.einet.be/ects/index.php'
 
 BASE_DATA = {
     "anneeacaderef": f"{YEAR}_{YEAR+1}",
@@ -61,7 +62,7 @@ class ECSEDIISALTProgramSpider(scrapy.Spider, ABC):
             "cycle": 'bac',
             "faculties": ["Département Economique"],
             "campuses": ["Bruxelles"],
-            "url": response.url,
+            "url": PROGRAM_URL,
             "courses": ue_ids,
             "ects": ects
         }
