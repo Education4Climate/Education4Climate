@@ -5,10 +5,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-adpu2m",
   "languages":[
-   "de",
    "en",
+   "fr",
    "nl",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -33,10 +33,10 @@
   ],
   "matched_courses":[
    "LDVLP2325",
+   "LLSMX2001",
    "LENVI2010",
    "LDROP2061",
-   "LSPRI2225",
-   "LLSMX2001"
+   "LSPRI2225"
   ],
   "nb_dedicated_courses":4
  },
@@ -71,10 +71,10 @@
    1
   ],
   "matched_courses":[
-   "LANTR2090",
-   "LFILO2970",
+   "LDVLP2325",
    "LENVI2010",
-   "LDVLP2325"
+   "LFILO2970",
+   "LANTR2090"
   ],
   "nb_dedicated_courses":1
  },
@@ -170,8 +170,8 @@
    2
   ],
   "matched_courses":[
-   "LBARC2131",
    "LBARC2141",
+   "LBARC2131",
    "LBARC2147"
   ],
   "nb_dedicated_courses":0
@@ -207,10 +207,10 @@
    1
   ],
   "matched_courses":[
-   "LICAR2801",
    "LURBA2940",
-   "LTECO2200",
-   "LICAR2823"
+   "LICAR2801",
+   "LICAR2823",
+   "LTECO2200"
   ],
   "nb_dedicated_courses":1
  },
@@ -244,8 +244,8 @@
   ],
   "matched_courses":[
    "LBARC1366",
-   "LTARC1142",
-   "LTARC1340"
+   "LTARC1340",
+   "LTARC1142"
   ],
   "nb_dedicated_courses":1
  },
@@ -463,15 +463,15 @@
    3
   ],
   "matched_courses":[
+   "LPHYS2162",
+   "LBIRE2131",
+   "LEPL1804",
+   "LTECO2200",
+   "LENVI2007",
    "LGEO1321",
    "LBIRA2109",
-   "LPHYS2162",
    "LBIRA2107",
-   "LEPL1804",
-   "LBRAI2110",
-   "LENVI2007",
-   "LBIRE2131",
-   "LTECO2200"
+   "LBRAI2110"
   ],
   "nb_dedicated_courses":5
  },
@@ -508,16 +508,16 @@
    4
   ],
   "matched_courses":[
+   "LPHYS2162",
+   "LMAPR2647",
+   "LBIRE2131",
+   "LMAPR2430",
+   "LMAPR2001",
+   "LTECO2200",
+   "LENVI2007",
    "LENVI2007A",
    "LMAPR2001A",
-   "LMAPR2001",
-   "LMAPR2430",
-   "LMAPR2647",
-   "LPHYS2162",
-   "LEPL1804",
-   "LENVI2007",
-   "LBIRE2131",
-   "LTECO2200"
+   "LEPL1804"
   ],
   "nb_dedicated_courses":5
  },
@@ -554,18 +554,18 @@
    6
   ],
   "matched_courses":[
-   "LBIRE2130",
-   "LMAPR2001A",
-   "LENVI2007A",
-   "LBIRA2109",
    "LPHYS2162",
-   "LBIRE2105",
-   "LEPL1804",
-   "LENVI2007",
    "LBIRE2131",
-   "LBIRF2213",
    "LTECO2200",
-   "LLSMX2001"
+   "LENVI2007",
+   "LENVI2007A",
+   "LLSMX2001",
+   "LBIRF2213",
+   "LBIRE2105",
+   "LBIRA2109",
+   "LMAPR2001A",
+   "LBIRE2130",
+   "LEPL1804"
   ],
   "nb_dedicated_courses":7
  },
@@ -600,13 +600,13 @@
    3
   ],
   "matched_courses":[
-   "LBIRE2130",
-   "LBIRA2109",
-   "LBIRE2105",
-   "LBRAI2110",
    "LBIRE2131",
+   "LTECO2200",
    "LBIRF2213",
-   "LTECO2200"
+   "LBIRE2105",
+   "LBIRA2109",
+   "LBIRE2130",
+   "LBRAI2110"
   ],
   "nb_dedicated_courses":3
  },
@@ -642,8 +642,8 @@
   "matched_courses":[
    "LBOE2125",
    "LBIRE2105",
-   "LGEO2140",
-   "LDROP2061"
+   "LDROP2061",
+   "LGEO2140"
   ],
   "nb_dedicated_courses":2
  },
@@ -771,14 +771,14 @@
    1
   ],
   "matched_courses":[
+   "LPHYS2162",
+   "LGEO2210",
+   "LCLIM2020",
    "LGEO1321",
    "LCLIM2011",
-   "LGEO2140",
-   "LPHYS2162",
    "LPHYS2265",
-   "LCLIM2020",
+   "LGEO2140",
    "LPHYS2268",
-   "LGEO2210",
    "LGEO2290"
   ],
   "nb_dedicated_courses":6
@@ -791,8 +791,8 @@
   "languages":[
    "es",
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Mons"
@@ -854,8 +854,8 @@
   "url":"https:\/\/uclouvain.be\/prog-2021-drhd2m",
   "languages":[
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -884,8 +884,8 @@
   "url":"https:\/\/uclouvain.be\/prog-2021-droi2m",
   "languages":[
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -906,8 +906,8 @@
   ],
   "matched_courses":[
    "LLSMS2098",
-   "LLSMX2001",
    "LDROP2061",
+   "LLSMX2001",
    "LLSMS2398"
   ],
   "nb_dedicated_courses":2
@@ -918,10 +918,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-econ2m",
   "languages":[
-   "de",
    "en",
+   "fr",
    "nl",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -945,11 +945,11 @@
    2
   ],
   "matched_courses":[
-   "LECON2067",
    "LECSO2320",
-   "LECON2051",
+   "LECSO2330",
    "LECON2353",
-   "LECSO2330"
+   "LECON2067",
+   "LECON2051"
   ],
   "nb_dedicated_courses":1
  },
@@ -984,11 +984,11 @@
    2
   ],
   "matched_courses":[
-   "LECON2067",
    "LECSO2320",
-   "LECON2051",
+   "LECSO2330",
    "LECON2353",
-   "LECSO2330"
+   "LECON2067",
+   "LECON2051"
   ],
   "nb_dedicated_courses":1
  },
@@ -1020,9 +1020,9 @@
    3
   ],
   "matched_courses":[
-   "LECSO2330",
+   "EECSO2503",
    "LECSO2320",
-   "EECSO2503"
+   "LECSO2330"
   ],
   "nb_dedicated_courses":2
  },
@@ -1061,11 +1061,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-elec2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1083,9 +1083,9 @@
    3
   ],
   "matched_courses":[
+   "LELEC2520",
    "LELEC2103",
-   "LENVI2007",
-   "LELEC2520"
+   "LENVI2007"
   ],
   "nb_dedicated_courses":1
  },
@@ -1095,11 +1095,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-elme2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1123,10 +1123,10 @@
    1
   ],
   "matched_courses":[
-   "LINMA2415",
+   "LELEC2520",
    "LELME2420",
-   "LENVI2007",
-   "LELEC2520"
+   "LINMA2415",
+   "LENVI2007"
   ],
   "nb_dedicated_courses":3
  },
@@ -1163,19 +1163,19 @@
    2
   ],
   "matched_courses":[
-   "LMAPR2001A",
-   "LMAPR2001",
-   "LMAPR2647",
-   "LBIRA2109",
    "LPHYS2162",
-   "LBIRE2105",
-   "LENVI2010",
-   "LENVI2012",
-   "LENVI2007",
-   "LDROP2061",
+   "LMAPR2647",
+   "LMAPR2001",
    "LGEO2210",
+   "LBIR1140",
+   "LENVI2007",
+   "LENVI2012",
+   "LENVI2010",
+   "LBIRE2105",
+   "LDROP2061",
    "LSPRI2225",
-   "LBIR1140"
+   "LBIRA2109",
+   "LMAPR2001A"
   ],
   "nb_dedicated_courses":7
  },
@@ -1210,9 +1210,9 @@
    1
   ],
   "matched_courses":[
+   "LLSMS2098",
    "LFILO2360",
-   "LECON2067",
-   "LLSMS2098"
+   "LECON2067"
   ],
   "nb_dedicated_courses":0
  },
@@ -1245,10 +1245,10 @@
    1
   ],
   "matched_courses":[
-   "LFILO2360",
-   "LFILO2970",
    "LPHYS2162",
-   "LLSMS2098"
+   "LLSMS2098",
+   "LFILO2970",
+   "LFILO2360"
   ],
   "nb_dedicated_courses":1
  },
@@ -1289,11 +1289,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-euro2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1346,8 +1346,8 @@
    2
   ],
   "matched_courses":[
-   "LFILO2360",
-   "LFILO2970"
+   "LFILO2970",
+   "LFILO2360"
   ],
   "nb_dedicated_courses":0
  },
@@ -1357,10 +1357,10 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-filo1ba",
   "languages":[
-   "de",
    "en",
+   "fr",
    "nl",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1411,9 +1411,9 @@
    3
   ],
   "matched_courses":[
-   "LFILO2360",
+   "LPHYS2162",
    "LFILO2970",
-   "LPHYS2162"
+   "LFILO2360"
   ],
   "nb_dedicated_courses":1
  },
@@ -1485,11 +1485,11 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-fsa1ba",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1511,9 +1511,9 @@
    3
   ],
   "matched_courses":[
+   "LTECO2200",
    "LEPL1505",
-   "LEPL1804",
-   "LTECO2200"
+   "LEPL1804"
   ],
   "nb_dedicated_courses":1
  },
@@ -1523,11 +1523,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-gbio2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1555,11 +1555,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-gce2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1577,8 +1577,8 @@
    2
   ],
   "matched_courses":[
-   "LICAR2801",
-   "LICAR2823"
+   "LICAR2823",
+   "LICAR2801"
   ],
   "nb_dedicated_courses":1
  },
@@ -1739,13 +1739,13 @@
    1
   ],
   "matched_courses":[
+   "LPHYS2162",
+   "LGEO2210",
+   "LBOE2125",
+   "LDVLP2325",
    "LGEO1321",
    "LGEO2140",
-   "LBIRA2109",
-   "LPHYS2162",
-   "LDVLP2325",
-   "LGEO2210",
-   "LBOE2125"
+   "LBIRA2109"
   ],
   "nb_dedicated_courses":3
  },
@@ -1792,12 +1792,12 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-germ2m",
   "languages":[
-   "it",
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "es",
+   "de",
+   "en",
+   "nl",
+   "it"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1829,8 +1829,8 @@
   "languages":[
    "es",
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Mons"
@@ -1858,12 +1858,12 @@
   ],
   "matched_courses":[
    "LLSMS2284",
-   "LLSMX2001",
-   "LLSMS2398",
    "LLSMS2282",
    "LLSMS2281",
+   "LLSMX2001",
+   "MLSMM2253",
    "LLSMS2023",
-   "MLSMM2253"
+   "LLSMS2398"
   ],
   "nb_dedicated_courses":4
  },
@@ -1875,8 +1875,8 @@
   "languages":[
    "es",
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Mons"
@@ -1899,9 +1899,9 @@
    1
   ],
   "matched_courses":[
+   "MLSMM2253",
    "LLSMS2282",
-   "LLSMS2281",
-   "MLSMM2253"
+   "LLSMS2281"
   ],
   "nb_dedicated_courses":1
  },
@@ -1911,11 +1911,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-gest2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1943,12 +1943,12 @@
   ],
   "matched_courses":[
    "LLSMS2284",
-   "LLSMX2001",
-   "LLSMS2398",
    "LLSMS2282",
    "LLSMS2281",
+   "LLSMX2001",
+   "MLSMM2253",
    "LLSMS2023",
-   "MLSMM2253"
+   "LLSMS2398"
   ],
   "nb_dedicated_courses":4
  },
@@ -1959,8 +1959,8 @@
   "url":"https:\/\/uclouvain.be\/prog-2021-grh2m",
   "languages":[
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1990,10 +1990,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-hist2m",
   "languages":[
-   "de",
    "en",
+   "fr",
    "nl",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2023,10 +2023,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-hist2m1",
   "languages":[
-   "de",
    "en",
+   "fr",
    "nl",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2058,8 +2058,8 @@
   "languages":[
    "es",
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Mons"
@@ -2091,11 +2091,11 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-inge1ba",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2125,11 +2125,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-inge2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2154,11 +2154,11 @@
    3
   ],
   "matched_courses":[
-   "LLSMS2098",
    "LLSMS2284",
-   "LLSMX2001",
+   "LLSMS2098",
    "LLSMS2282",
    "LLSMS2281",
+   "LLSMX2001",
    "MLSMM2253"
   ],
   "nb_dedicated_courses":3
@@ -2171,8 +2171,8 @@
   "languages":[
    "es",
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Mons"
@@ -2197,11 +2197,11 @@
    3
   ],
   "matched_courses":[
-   "LLSMS2098",
    "LLSMS2284",
-   "LLSMX2001",
+   "LLSMS2098",
    "LLSMS2282",
    "LLSMS2281",
+   "LLSMX2001",
    "MLSMM2253"
   ],
   "nb_dedicated_courses":3
@@ -2212,13 +2212,13 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-intp2m",
   "languages":[
-   "es",
-   "nl",
-   "other",
-   "ru",
-   "en",
    "fr",
-   "de"
+   "ru",
+   "other",
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2248,11 +2248,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-kima2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2277,10 +2277,10 @@
   ],
   "matched_courses":[
    "LMAPR2647",
-   "LMAPR2001",
-   "LMAPR2021",
    "LMAPR2430",
-   "LENVI2007"
+   "LMAPR2001",
+   "LENVI2007",
+   "LMAPR2021"
   ],
   "nb_dedicated_courses":1
  },
@@ -2290,11 +2290,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-lafr2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2324,12 +2324,12 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-ling2m",
   "languages":[
-   "es",
-   "other",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "other",
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2351,8 +2351,8 @@
    1
   ],
   "matched_courses":[
-   "LFILO2970",
-   "LLSMX2001"
+   "LLSMX2001",
+   "LFILO2970"
   ],
   "nb_dedicated_courses":1
  },
@@ -2362,11 +2362,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-map2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2456,11 +2456,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-meca2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2657,11 +2657,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-mult2m",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2683,8 +2683,8 @@
    1
   ],
   "matched_courses":[
-   "LFILO2970",
-   "LLSMX2001"
+   "LLSMX2001",
+   "LFILO2970"
   ],
   "nb_dedicated_courses":1
  },
@@ -2808,9 +2808,9 @@
    3
   ],
   "matched_courses":[
-   "LPHYS2268",
    "LPHYS2162",
-   "LPHYS2265"
+   "LPHYS2265",
+   "LPHYS2268"
   ],
   "nb_dedicated_courses":3
  },
@@ -2840,9 +2840,9 @@
    3
   ],
   "matched_courses":[
-   "LPHYS2268",
    "LPHYS2162",
-   "LPHYS2265"
+   "LPHYS2265",
+   "LPHYS2268"
   ],
   "nb_dedicated_courses":3
  },
@@ -2852,11 +2852,11 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-ppe1ba",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2889,12 +2889,12 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-roge2m",
   "languages":[
-   "it",
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "it",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2949,11 +2949,11 @@
    1
   ],
   "matched_courses":[
+   "LBIRE2131",
    "LGEO1321",
-   "LBIRA2109",
    "LBIRE2105",
    "LECON2353",
-   "LBIRE2131"
+   "LBIRA2109"
   ],
   "nb_dedicated_courses":1
  },
@@ -2984,8 +2984,8 @@
    1
   ],
   "matched_courses":[
-   "LULG3330",
-   "LBIRE2131"
+   "LBIRE2131",
+   "LULG3330"
   ],
   "nb_dedicated_courses":1
  },
@@ -2995,11 +2995,11 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-sinf1ba",
   "languages":[
-   "es",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "de",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3054,8 +3054,8 @@
    1
   ],
   "matched_courses":[
-   "LANTR2090",
-   "LDVLP2325"
+   "LDVLP2325",
+   "LANTR2090"
   ],
   "nb_dedicated_courses":0
  },
@@ -3092,11 +3092,11 @@
    1
   ],
   "matched_courses":[
-   "LANTR2090",
+   "LGEO2210",
    "LDVLP2325",
-   "LENVI2010",
    "LSPED1221",
-   "LGEO2210"
+   "LANTR2090",
+   "LENVI2010"
   ],
   "nb_dedicated_courses":3
  },
@@ -3106,11 +3106,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-spol2m",
   "languages":[
-   "other",
-   "nl",
-   "en",
    "fr",
-   "de"
+   "other",
+   "de",
+   "en",
+   "nl"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3134,8 +3134,8 @@
    1
   ],
   "matched_courses":[
-   "LFILO2360",
-   "LSPRI2225"
+   "LSPRI2225",
+   "LFILO2360"
   ],
   "nb_dedicated_courses":1
  },
@@ -3147,8 +3147,8 @@
   "languages":[
    "es",
    "en",
-   "nl",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Mons"
@@ -3180,14 +3180,14 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-trad2m",
   "languages":[
-   "it",
-   "es",
-   "nl",
-   "other",
-   "ru",
-   "en",
    "fr",
-   "de"
+   "ru",
+   "other",
+   "de",
+   "it",
+   "en",
+   "nl",
+   "es"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3211,8 +3211,8 @@
    1
   ],
   "matched_courses":[
-   "LFILO2970",
-   "LTRAD2171"
+   "LTRAD2171",
+   "LFILO2970"
   ],
   "nb_dedicated_courses":0
  },
