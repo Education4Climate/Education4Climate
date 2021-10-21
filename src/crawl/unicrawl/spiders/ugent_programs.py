@@ -53,6 +53,12 @@ class UGentProgramSpider(scrapy.Spider, ABC):
 
         program_id = response.xpath("//h1/@data-code").get()
         program_name = response.xpath("//h1[@id='titleLabel']/text()").get()
+        # Don't keep programs for exchange students
+        if "exchange proramme" in program_name.lower():
+            return
+        # Just a list of courses, too generic
+        if "universiteitsbrede keuzevakken" in program_name.lower():
+            return
 
         cycle = response.xpath("//i[contains(@class, 'glyphicon-education')]/following::span[1]/text()").get()
         if 'aster' in cycle:
