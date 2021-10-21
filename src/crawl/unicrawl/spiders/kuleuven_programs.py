@@ -48,6 +48,9 @@ class KULeuvenProgramSpider(scrapy.Spider, ABC):
     def parse_program(response, program_id, faculty):
 
         program_name = response.xpath("//h1/text()").get()
+        # Don't keep exchange students program
+        if "exchange students" in program_name.lower():
+            return
 
         campus = ''
         if '(' in program_name:

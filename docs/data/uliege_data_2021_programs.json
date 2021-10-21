@@ -28,9 +28,9 @@
   ],
   "matched_courses":[
    "GBLX2131-2",
+   "HULG9393-1",
    "AGRO0001-1",
-   "FORE0001-2",
-   "HULG9393-1"
+   "FORE0001-2"
   ],
   "nb_dedicated_courses":1
  },
@@ -98,10 +98,10 @@
    3
   ],
   "matched_courses":[
-   "MECA0450-3",
-   "CHIM0699-2",
-   "CHIM9315-1",
    "MECA0526-1",
+   "MECA0450-3",
+   "CHIM9315-1",
+   "CHIM0699-2",
    "CHIM9303-1"
   ],
   "nb_dedicated_courses":2
@@ -140,10 +140,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A2UAEL01_C.html",
   "languages":[
+   "nl",
    "fr",
    "de",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -171,10 +171,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A2UGIN01_C.html",
   "languages":[
+   "nl",
    "fr",
    "de",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -199,124 +199,16 @@
   ],
   "matched_courses":[
    "MECA0450-3",
-   "ELEC0041-1",
-   "MECA0527-1",
-   "CHIM9315-1",
-   "MECA0034-1",
-   "MECA0037-1",
-   "ELEC0055-2",
    "MECA0515-1",
-   "ARCH3272-2"
+   "ARCH3272-2",
+   "CHIM9315-1",
+   "MECA0527-1",
+   "MECA0037-1",
+   "ELEC0041-1",
+   "ELEC0055-2",
+   "MECA0034-1"
   ],
   "nb_dedicated_courses":3
- },
- {
-  "id":"HZERAS01",
-  "name":"Cours suppl\u00e9mentaires destin\u00e9s aux \u00e9tudiants d'\u00e9change - Erasmus (Facult\u00e9 des Sciences sociales)",
-  "cycle":"other",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/HZERAS01_C.html",
-  "languages":[
-   "es",
-   "nl",
-   "fr",
-   "de",
-   "en"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences Sociales"
-  ],
-  "fields":[
-   "Sociology"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   3,
-   1,
-   3
-  ],
-  "matched_courses":[
-   "GEST7030-1",
-   "SOCI0022-1",
-   "SOCI0073-3",
-   "GEST3024-1"
-  ],
-  "nb_dedicated_courses":2
- },
- {
-  "id":"DZERAS01",
-  "name":"Cours suppl\u00e9mentaires destin\u00e9s aux \u00e9tudiants d'\u00e9change - Erasmus (Facult\u00e9 de Droit, de Sciences politique et de Criminologie)",
-  "cycle":"other",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/DZERAS01_C.html",
-  "languages":[
-   "fr",
-   "de",
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Facult\u00e9 de Droit, Science politique et Criminologie"
-  ],
-  "fields":[
-   "Law & Criminology",
-   "Political Sciences"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "ARCH0593-1"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"GZERAS01",
-  "name":"Cours suppl\u00e9mentaires destin\u00e9s aux \u00e9tudiants d'\u00e9change - Erasmus",
-  "cycle":"other",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/GZERAS01_C.html",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "HEC Li\u00e8ge - Ecole de Gestion"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   2,
-   1
-  ],
-  "matched_courses":[
-   "FINA9001-1",
-   "GEST3024-1"
-  ],
-  "nb_dedicated_courses":2
  },
  {
   "id":"SYEMES91",
@@ -403,42 +295,10 @@
    2
   ],
   "matched_courses":[
-   "GCER0097-1",
-   "GCER0094-1"
+   "GCER0094-1",
+   "GCER0097-1"
   ],
   "nb_dedicated_courses":2
- },
- {
-  "id":"AYFIST90",
-  "name":"Fiabilit\u00e9 des syst\u00e8mes de transport (non organis\u00e9 en 2021-2022)",
-  "cycle":"certificate",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/AYFIST90_C.html",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences Appliqu\u00e9es"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   1,
-   1
-  ],
-  "matched_courses":[
-   "ACER0075-1"
-  ],
-  "nb_dedicated_courses":1
  },
  {
   "id":"RYAUPU90",
@@ -621,15 +481,15 @@
    4
   ],
   "matched_courses":[
+   "ECON0945-1",
    "ENVT3057-1",
    "AGRO0016-1",
-   "ENVT0019-2",
-   "ENVT3042-1",
-   "ECON0945-1",
    "ENVT0846-2",
-   "ENVT0026-1",
    "STFE2004-1",
-   "ENVT0040-2"
+   "ENVT3042-1",
+   "ENVT0026-1",
+   "ENVT0040-2",
+   "ENVT0019-2"
   ],
   "nb_dedicated_courses":5
  },
@@ -660,8 +520,8 @@
    2
   ],
   "matched_courses":[
-   "GEST7026-1",
-   "GEST7030-1"
+   "GEST7030-1",
+   "GEST7026-1"
   ],
   "nb_dedicated_courses":2
  },
@@ -787,10 +647,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UTRA01_C.html",
   "languages":[
-   "es",
-   "nl",
-   "fr",
    "de",
+   "nl",
+   "es",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -901,12 +761,12 @@
    2
   ],
   "matched_courses":[
-   "ENVT3050-1",
-   "ENVT3061-2",
-   "HULG9377-1",
    "HULG9350-1",
+   "ENVT3061-2",
    "AGRO0001-1",
-   "ENVT0040-2"
+   "ENVT0040-2",
+   "HULG9377-1",
+   "ENVT3050-1"
   ],
   "nb_dedicated_courses":4
  },
@@ -935,9 +795,9 @@
    3
   ],
   "matched_courses":[
-   "SPAT0027-3",
    "SPAT0025-1",
-   "SPAT0026-1"
+   "SPAT0026-1",
+   "SPAT0027-3"
   ],
   "nb_dedicated_courses":1
  },
@@ -980,9 +840,9 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2UPOL01_C.html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -1032,8 +892,8 @@
    1
   ],
   "matched_courses":[
-   "PHYS0987-1",
-   "CHIM9234-1"
+   "CHIM9234-1",
+   "PHYS0987-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1064,8 +924,8 @@
    1
   ],
   "matched_courses":[
-   "PHYS0987-1",
-   "CHIM9234-1"
+   "CHIM9234-1",
+   "PHYS0987-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1214,10 +1074,10 @@
    1
   ],
   "matched_courses":[
+   "GEOL1050-1",
    "GEOL0224-2",
    "GEOL0008-2",
    "SPAT0027-3",
-   "GEOL1050-1",
    "GEOL1046-1"
   ],
   "nb_dedicated_courses":4
@@ -1251,10 +1111,10 @@
    1
   ],
   "matched_courses":[
+   "GEOL1050-1",
    "GEOL0224-2",
    "GEOL0008-2",
    "SPAT0027-3",
-   "GEOL1050-1",
    "GEOL1046-1"
   ],
   "nb_dedicated_courses":4
@@ -1284,18 +1144,18 @@
    12
   ],
   "matched_courses":[
-   "GEOG0662-1",
-   "CLIM0002-2",
-   "CLIM0017-2",
-   "GEOG2012-1",
-   "CLIM0002-1",
-   "ENVT3056-1",
-   "GEOG0630-5",
-   "GEOG0661-1",
-   "CLIM0007-2",
-   "SPAT0027-3",
    "GEOG0050-1",
-   "GEOG0048-1"
+   "GEOG0630-5",
+   "CLIM0007-2",
+   "GEOG0661-1",
+   "GEOG0048-1",
+   "CLIM0002-1",
+   "CLIM0017-2",
+   "ENVT3056-1",
+   "CLIM0002-2",
+   "SPAT0027-3",
+   "GEOG0662-1",
+   "GEOG2012-1"
   ],
   "nb_dedicated_courses":8
  },
@@ -1330,10 +1190,10 @@
    1
   ],
   "matched_courses":[
+   "GEST3024-1",
    "GEOG2012-1",
    "ARCH0560-1",
-   "GEOG0630-3",
-   "GEST3024-1"
+   "GEOG0630-3"
   ],
   "nb_dedicated_courses":2
  },
@@ -1370,26 +1230,26 @@
    4
   ],
   "matched_courses":[
-   "SMEM0042-1",
-   "ENVT3039-1",
-   "ENVT0846-2",
-   "ENVT3035-2",
-   "ENVT3059-1",
-   "ENVT3035-1",
    "SPOL0382-2",
-   "ENVT0068-2",
+   "ENVT0068-1",
    "LANG2973-1",
-   "ECON0945-1",
-   "ENVT0072-1",
+   "ENVT3059-2",
+   "ENVT3035-2",
    "ENVT3025-1",
    "ENVT0066-1",
-   "ENVT0040-2",
+   "ECON0945-1",
+   "ENVT3039-1",
    "ENVT0051-1",
+   "ENVT0846-2",
    "ELEC0080-1",
+   "ENVT0040-2",
+   "ENVT0071-1",
+   "ENVT0072-1",
+   "ENVT0068-2",
+   "ENVT3059-1",
    "LANG2972-1",
-   "ENVT3059-2",
-   "ENVT0068-1",
-   "ENVT0071-1"
+   "ENVT3035-1",
+   "SMEM0042-1"
   ],
   "nb_dedicated_courses":13
  },
@@ -1426,17 +1286,17 @@
    3
   ],
   "matched_courses":[
-   "ENVT0068-1",
    "ENVT0071-1",
-   "ENVT0066-1",
-   "ELEC0080-1",
+   "ENVT0068-1",
    "ENVT3039-1",
    "ENVT0072-1",
    "ENVT3057-2",
+   "ELEC0080-1",
    "ENVT3059-1",
-   "ENVT3025-1",
    "ENVT0040-2",
+   "ENVT3025-1",
    "ENVT0051-1",
+   "ENVT0066-1",
    "ENVT3035-1"
   ],
   "nb_dedicated_courses":10
@@ -1447,12 +1307,12 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UECO01_C.html",
   "languages":[
-   "es",
-   "nl",
-   "fr",
+   "it",
    "de",
-   "en",
-   "it"
+   "nl",
+   "es",
+   "fr",
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -1512,8 +1372,8 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H2UPOP01_C.html",
   "languages":[
-   "es",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -1538,9 +1398,9 @@
    3
   ],
   "matched_courses":[
+   "GEST7030-1",
    "ENVT0846-2",
-   "SOCI0073-3",
-   "GEST7030-1"
+   "SOCI0073-3"
   ],
   "nb_dedicated_courses":1
  },
@@ -1550,12 +1410,12 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UGES01_C.html",
   "languages":[
-   "es",
-   "nl",
-   "fr",
+   "it",
    "de",
-   "en",
-   "it"
+   "nl",
+   "es",
+   "fr",
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -1610,8 +1470,8 @@
    1
   ],
   "matched_courses":[
-   "PHYS0987-1",
-   "CHIM9234-1"
+   "CHIM9234-1",
+   "PHYS0987-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1642,8 +1502,8 @@
    1
   ],
   "matched_courses":[
-   "PHYS0987-1",
-   "CHIM9234-1"
+   "CHIM9234-1",
+   "PHYS0987-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1678,9 +1538,9 @@
    1
   ],
   "matched_courses":[
-   "CHIM9234-2",
    "CHIM0683-2",
-   "CHIM0699-2"
+   "CHIM0699-2",
+   "CHIM9234-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -1715,9 +1575,9 @@
    1
   ],
   "matched_courses":[
-   "CHIM9234-2",
    "CHIM0683-2",
-   "CHIM0699-2"
+   "CHIM0699-2",
+   "CHIM9234-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -1811,9 +1671,9 @@
    1
   ],
   "matched_courses":[
+   "OCEA0220-1",
    "GEOG2012-1",
    "DROI0725-1",
-   "OCEA0220-1",
    "OCEA0094-1"
   ],
   "nb_dedicated_courses":2
@@ -1847,9 +1707,9 @@
    1
   ],
   "matched_courses":[
-   "AGRO0001-1",
    "VETE0493-1",
-   "CHIM0699-2"
+   "CHIM0699-2",
+   "AGRO0001-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -1859,10 +1719,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UGER01_C.html",
   "languages":[
+   "nl",
    "fr",
    "de",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -1896,12 +1756,12 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UMOD01_C.html",
   "languages":[
-   "es",
-   "nl",
-   "fr",
+   "it",
    "de",
-   "en",
-   "it"
+   "nl",
+   "es",
+   "fr",
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -1935,9 +1795,9 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UING02_C.html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -1966,12 +1826,12 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UING01_C.html",
   "languages":[
-   "es",
-   "nl",
-   "fr",
+   "it",
    "de",
-   "en",
-   "it"
+   "nl",
+   "es",
+   "fr",
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -1992,8 +1852,8 @@
    1
   ],
   "matched_courses":[
-   "FINA9001-1",
-   "LOGI0012-1"
+   "LOGI0012-1",
+   "FINA9001-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -2003,10 +1863,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H2UGRH02_C.html",
   "languages":[
-   "es",
-   "nl",
-   "fr",
    "de",
+   "nl",
+   "es",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -2039,10 +1899,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2UDRO01_C.html",
   "languages":[
+   "nl",
    "fr",
    "de",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -2107,12 +1967,12 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UCMU01_C.html",
   "languages":[
-   "es",
-   "nl",
-   "fr",
+   "it",
    "de",
-   "en",
-   "it"
+   "nl",
+   "es",
+   "fr",
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -2137,8 +1997,8 @@
    1
   ],
   "matched_courses":[
-   "LGER0053-2",
-   "GEST3024-1"
+   "GEST3024-1",
+   "LGER0053-2"
   ],
   "nb_dedicated_courses":1
  },
@@ -2173,8 +2033,8 @@
    1
   ],
   "matched_courses":[
-   "BIOL2040-1",
-   "BIOL0852-1"
+   "BIOL0852-1",
+   "BIOL2040-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -2204,9 +2064,9 @@
    2
   ],
   "matched_courses":[
-   "ARCH0593-1",
-   "ARCH0567-1",
    "ARCH0560-1",
+   "ARCH0567-1",
+   "ARCH0593-1",
    "ARCH0591-1"
   ],
   "nb_dedicated_courses":0
@@ -2217,8 +2077,8 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H2UANT01_C.html",
   "languages":[
-   "es",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -2269,14 +2129,14 @@
   ],
   "matched_courses":[
    "ENVT3061-2",
-   "HULG0495-1",
-   "AGRO0002-1",
    "ANIM0024-1",
    "ENVT3062-1",
-   "AGRO0025-2",
+   "AGRO0002-1",
    "VEGE0036-1",
    "RSTG0010-1",
-   "ENVT0040-2"
+   "HULG0495-1",
+   "ENVT0040-2",
+   "AGRO0025-2"
   ],
   "nb_dedicated_courses":7
  },
@@ -2307,26 +2167,26 @@
    4
   ],
   "matched_courses":[
-   "ENVT3061-2",
+   "VEGE0042-1",
+   "ANIM0018-1",
    "ANIM0024-1",
-   "GBLX2131-2",
-   "RSTG0010-1",
-   "RTFE2006-1",
-   "AGRO0002-1",
    "ENVT3066-1",
+   "AGRO0002-1",
    "HULG9335-1",
+   "FORE0009-1",
+   "RTFE2006-1",
+   "MANA0007-1",
+   "VEGE0036-1",
    "AGRO0001-1",
    "ENVT0040-2",
-   "ENVT3067-1",
-   "ENVT3062-1",
-   "AGRO0025-2",
-   "ANIM0018-1",
-   "FORE0009-1",
    "HULG0491-1",
+   "GBLX2131-2",
+   "ENVT3061-2",
+   "ENVT3062-1",
+   "ENVT3067-1",
+   "RSTG0010-1",
    "HULG0492-1",
-   "VEGE0042-1",
-   "VEGE0036-1",
-   "MANA0007-1"
+   "AGRO0025-2"
   ],
   "nb_dedicated_courses":13
  },
@@ -2358,14 +2218,14 @@
    3
   ],
   "matched_courses":[
-   "HULG0380-2",
-   "FORE0001-2",
-   "ENVT0047-1",
-   "HULG9390-1",
-   "GBLX2131-2",
    "GBLX2144-1",
+   "HULG9201-1",
+   "FORE0001-2",
    "AGRO0001-1",
-   "HULG9201-1"
+   "HULG9390-1",
+   "ENVT0047-1",
+   "GBLX2131-2",
+   "HULG0380-2"
   ],
   "nb_dedicated_courses":3
  },
@@ -2404,10 +2264,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A2UMEC01_C.html",
   "languages":[
+   "nl",
    "fr",
    "de",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -2431,10 +2291,10 @@
    1
   ],
   "matched_courses":[
-   "CNAV0022-1",
    "ELEC0055-2",
+   "MECA0527-1",
    "CHIM0699-2",
-   "MECA0527-1"
+   "CNAV0022-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -2463,9 +2323,9 @@
    3
   ],
   "matched_courses":[
+   "ELEC0055-2",
    "MECA0450-3",
-   "ELEC0041-1",
-   "ELEC0055-2"
+   "ELEC0041-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -2502,13 +2362,13 @@
    2
   ],
   "matched_courses":[
+   "GEOL1050-1",
+   "UEEN0001-1",
+   "MECA0526-1",
+   "GEOL0008-4",
    "GEOL1044-1",
    "GEOL0281-4",
-   "UEEN0001-1",
-   "GEOL0008-4",
-   "GEOL1050-1",
-   "GEOL1046-1",
-   "MECA0526-1"
+   "GEOL1046-1"
   ],
   "nb_dedicated_courses":3
  },
@@ -2632,8 +2492,8 @@
   ],
   "matched_courses":[
    "GERE0038-1",
-   "AGRO0001-1",
-   "DROI1306-1"
+   "DROI1306-1",
+   "AGRO0001-1"
   ],
   "nb_dedicated_courses":2
  },
@@ -2666,16 +2526,16 @@
    3
   ],
   "matched_courses":[
+   "ANIM0024-1",
+   "ENVT3061-1",
+   "AGRO0002-1",
+   "VEGE0042-1",
+   "VEGE0036-1",
+   "ANIM0018-1",
+   "AGRO0001-1",
    "VEGE0034-1",
    "ECON2298-3",
-   "ANIM0024-1",
-   "AGRO0002-1",
-   "ENVT3061-1",
-   "VEGE0042-1",
-   "ANIM0018-1",
-   "VEGE0036-1",
-   "VEGE0028-1",
-   "AGRO0001-1"
+   "VEGE0028-1"
   ],
   "nb_dedicated_courses":5
  },
@@ -2708,12 +2568,12 @@
    1
   ],
   "matched_courses":[
+   "FORE0042-1",
    "ENVT3050-1",
    "ECON2255-4",
-   "FORE0042-1",
-   "FORE0009-1",
    "DROI0969-1",
    "AGRO0001-1",
+   "FORE0009-1",
    "FORE0043-1"
   ],
   "nb_dedicated_courses":2
@@ -2758,9 +2618,9 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D1POLI01_C.html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -2915,8 +2775,8 @@
    1
   ],
   "matched_courses":[
-   "OCEA0053-1",
-   "GEOG0630-3"
+   "GEOG0630-3",
+   "OCEA0053-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -2926,11 +2786,11 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G1ECGE01_C.html",
   "languages":[
+   "it",
+   "de",
    "es",
    "fr",
-   "de",
-   "en",
-   "it"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -2997,10 +2857,10 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A1ICIV01_C.html",
   "languages":[
+   "nl",
    "fr",
    "de",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman, Li\u00e8ge Centre-ville"
@@ -3026,9 +2886,9 @@
    3
   ],
   "matched_courses":[
-   "GENV0002-1",
-   "ARCH3275-1",
    "GENV0001-2",
+   "ARCH3275-1",
+   "GENV0002-1",
    "CHIM9315-1"
   ],
   "nb_dedicated_courses":4
@@ -3061,11 +2921,11 @@
    2
   ],
   "matched_courses":[
-   "VEGE0045-1",
    "FORE0001-2",
+   "VEGE0045-1",
    "AGRO0002-1",
-   "GBLX2131-2",
-   "AGRO0001-1"
+   "AGRO0001-1",
+   "GBLX2131-2"
   ],
   "nb_dedicated_courses":1
  },
@@ -3099,8 +2959,8 @@
   ],
   "matched_courses":[
    "OCEA0053-1",
-   "CHIM9283-2",
-   "CHIM9283-1"
+   "CHIM9283-1",
+   "CHIM9283-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -3134,8 +2994,8 @@
   ],
   "matched_courses":[
    "BIOL0031-1",
-   "OCEA0053-1",
-   "BIOL2003-1"
+   "BIOL2003-1",
+   "OCEA0053-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -3145,10 +3005,10 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D1DROI01_C.html",
   "languages":[
+   "nl",
    "fr",
    "de",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"

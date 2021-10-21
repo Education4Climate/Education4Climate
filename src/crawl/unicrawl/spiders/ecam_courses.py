@@ -97,7 +97,7 @@ class ECAMCourseSpider(scrapy.Spider, ABC):
         yield {
             'id': course_id,
             'name': name,
-            'year': f"{YEAR}-{YEAR-2000}",
+            'year': f"{YEAR}-{YEAR+1-2000}",
             'languages': languages,
             'teachers': teachers,
             'url': response.url,
