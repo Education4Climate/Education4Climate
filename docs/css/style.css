@@ -29,10 +29,15 @@
 
     --background-primary-color: var(--seashell);
     --background-secondary-color: var(--white);
+    --background-tertiary-color: var(--greenish-blue);
 
     --font-color: var(--baltic-sea);
     --header-color: var(--egyptian-blue);
     --link-color: var(--egyptian-blue);
+
+    --font-primary-color: var(--egyptian-blue);
+    --font-secondary-color: var(--baltic-sea);
+    --font-tertiary-color: var(--white);
 
     --checkbox-background-color: var(--egyptian-blue);
     --checkbox-border-color: var(--egyptian-blue);
@@ -44,18 +49,23 @@
     --footer-background-color: var(--night-blue);
     --footer-link-color: var(--white);
 
-    --button-color: var(--greenish-blue);
+    --button-color: var(--pale-teal);
 }
 
 [data-theme="dark"] {
 
     /* Dark theme */
 
-    --background-primary-color: var(--egyptian-blue);
-    --background-secondary-color: var(--night-blue);
+    --background-primary-color: var(--night-blue);
+    --background-secondary-color: var(--egyptian-blue);
+    --background-tertiary-color: var(--baltic-sea);
 
     --font-color: var(--seashell);
     --header-color: var(--seashell);
+
+    --font-primary-color: var(--white);
+    --font-secondary-color: var(--seashell);
+    --font-tertiary-color: var(--white);
 
     --checkbox-background-color: var(--egyptian-blue);
     --checkbox-border-color: var(--seashell);
@@ -121,7 +131,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--header-color) !important;
+    color: var(--header-color);
 }
 
 a {
@@ -243,20 +253,106 @@ body {
 
 /* HOME */
 
+/* .home section:first-of-type {
+    background-image: url('../img/background-students.jpg');
+    background-size: cover;
+    background-position-y: -30rem;
+    opacity: .5;
+} */
+
+.home .container {
+    max-width: 100%;
+}
+
 .home h1 {
 
     font-weight: 600;
     font-size: 4rem;
 }
 
-.home .paragraph div {
+.home section {
+    min-height: 50vh;
+}
 
-    margin: 2rem;
+.home section.primary, .home section.primary :is(h1, h2, h3, h4, h5) {
 
+    background-color: var(--background-primary-color);
+    color: var(--font-primary-color);
+}
+
+.home section.secondary, .home section.secondary :is(h1, h2, h3, h4, h5) {
+
+    background-color: var(--background-secondary-color);
+    color: var(--font-secondary-color);
+}
+
+.home section.tertiary, .home section.tertiary :is(h1, h2, h3, h4, h5) {
+
+    background-color: var(--background-tertiary-color);
+    color: var(--font-tertiary-color);
+}
+
+.home .team-pictures {
+
+    text-align: center;
+}
+
+.team-pictures img {
+    width: 8rem;
+    border-radius: 8rem;
+    margin-bottom: 1rem;
+}
+
+.team-pictures h2 {
+
+    font-weight: 800;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.team-pictures h3 {
+
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1199.98px) {
+
+    .home .intro {
+        text-align: center;
+    }
+
+    .home .peeps {
+        display: none;
+    }
+
+    .home section h1 {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .home section {
+        min-height: auto;
+        padding: 2rem;
+    }
+
+    .home section div.text {
+        text-align: justify;
+    }  
+
+    .home section div.text div {
+        margin-bottom: 1rem;
+    }  
+
+    .team-pictures img {
+        margin-top: 1rem;
+    }
 }
 
 .peeps img {
-    height: 40vh;
+    height: 43vh;
     margin-right: -12vh;
 }
 
@@ -356,6 +452,21 @@ a.btn:empty {
     background-color: #fdfefe;
 }
 
+.accordion-item {
+
+    margin-bottom: .3rem;
+    border-radius: .3rem !important;
+    /* border-bottom-left-radius: .3rem !important;
+    border-bottom-right-radius: .3rem !important; */
+}
+
+.accordion-button {
+
+    border-radius: .3rem !important;
+    /* border-top-left-radius: .3rem !important;
+    border-top-right-radius: .3rem !important; */
+}
+
 .accordion-item .accordion-collapse {
     border-right: 1px solid #d5dbdb;
     border-left: 1px solid #d5dbdb;
@@ -379,10 +490,13 @@ a.btn:empty {
 #alphabet .letter {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    background-color: var(--chambray);
+    border-color: var(--chambray);
 }
 
 #alphabet .letter.active {
-    background-color: #157347;
+    background-color: var(--pale-teal);
+    border-color: var(--pale-teal);
 }
 
 /* SIDEBAR */
@@ -415,7 +529,7 @@ a.btn:empty {
 }
 
 main {
-    padding-bottom: 3rem;
+    /*padding-bottom: 3rem;*/
 }
 
 /* FOOTER */

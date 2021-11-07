@@ -33,10 +33,10 @@
         <header v-if="dataLoaded" v-cloak>
             <nav class="navbar navbar-expand-xl navbar-light">
                 <div class="container-fluid">
-                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg"
-                            alt="logo" id="logo"></a>
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="logo"
+                            id="logo"></a>
                     <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
-                            4 <span class="accent">CLIMATE</span><sup class="beta"> BETA</sup></a>
+                        4 <span class="accent">CLIMATE</span><sup class="beta"> BETA</sup></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -52,8 +52,8 @@
                         <div id="theme-toggler" @click="toggleTheme()">
                             <img src="./img/theme-toggler-blue.svg">
                             <span class="theme-light">Thème sombre</span>
-                            <span class="theme-dark">Thème clair</span>                            
-                        </div>                        
+                            <span class="theme-dark">Thème clair</span>
+                        </div>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
@@ -66,7 +66,8 @@
                             <div>
                                 <div>The Shifters Belgium</div>
                                 <ul>
-                                    <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
+                                    <li><a :href="translate('shared.google-form')" target="_blank"
+                                            rel="noopener">{{translate("footer.contact")}}</a></li>
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                             data-bs-target="#modalCookies">Cookies</a></li>
@@ -82,158 +83,172 @@
 
         <main>
 
-            <div class="row" style="background-color: #F5F0F0;min-height: 50vh;">
+            <section class="intro primary container">
 
-             
+                <div class="row">
 
-                    <div class="col-xl-6">
+                    <div class="col-xl-6" style="position:relative;">
 
-                        <div class="peeps">
+                        <!--div class="peeps" style="position:absolute;bottom:0;margin-bottom:-5rem;margin-left: 7rem;">
                             <img src="./img/peep-01.svg">
                             <img src="./img/peep-02.svg">
                             <img src="./img/peep-03.svg">
-                        </div>
+                        </!--div-->
 
                     </div>
 
-                    <div class="col-xl-6" style="margin:auto;">
+                    <div class="col-xl-6">
 
                         <div class="intro">
                             <h1>Où étudier</h1>
                             <h2>pour contribuer à la transition carbone et avoir un impact sur le climat ?<h2>
 
-                            <div>
-                                    <div style="margin-bottom: 1rem;"><button type="button" class="btn btn-primary btn-lg">Trouver une formation</button></div>
-                                    <div style="margin-bottom: 1rem;"><button type="button" class="btn btn-primary btn-lg">Trouver un cours</button></div>
-                                    <div style="margin-bottom: 1rem;"><button type="button" class="btn btn-primary btn-lg">Trouver un enseignant</button></div>
+                                    <div style="margin-top: 4rem;">
+                                        <div style="margin-bottom: 1rem;"><button type="button"
+                                                class="btn btn-primary btn-lg">Trouver une formation</button></div>
+                                        <div style="margin-bottom: 1rem;"><button type="button"
+                                                class="btn btn-primary btn-lg">Trouver un cours</button></div>
+                                        <div style="margin-bottom: 1rem;"><button type="button"
+                                                class="btn btn-primary btn-lg">Trouver un enseignant</button></div>
+                                    </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="secondary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1>Notre vision</h1>
+                    </div>
+
+                    <div class="col-xl-6 text">
+
+                        <div>La durabilité environnementale est devenue une préoccupation majeure pour tous
+                            les citoyens et pour les étudiants en particulier. La transition vers une société
+                            neutre en CO2 en 2050 décidée par l'Union européenne ne nécessite pas seulement
+                            des investissements massifs et des changements dans l'industrie, les services ou les
+                            infrastructures, mais aussi des compétences pour conduire la transition écologique.</div>
+
+                        <div>Les universités et les hautes écoles ont un rôle particulier à jouer dans la
+                            formation des décideurs et des acteurs de notre communauté aux enjeux
+                            climatiques et environnementaux. Aussi, nous plaidons pour que celles-ci
+                            intègrent l’enseignement de ces enjeux, au sein de chaque filière de formation.</div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="tertiary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title order-xl-last">
+                        <h1>Comment ça fonctionne ?</h1>
+                    </div>
+
+                    <div class="col-xl-6 text order-xl-first">
+                        <div>Le site Education4Climate fonctionne sur un algorithme d’analyse automatisée du contenu des
+                            pages des cours disponibles sur le web, pour déterminer s’ils traitent des enjeux
+                            climatiques et environnementaux. Une description de l’algorithme peut être trouvée ici.
+                        </div>
+
+                        <div>Le site Education4Climate vous permet de trouver des cours, des formations qui traitent des
+                            enjeux climatiques et environnementaux, ainsi que les professeurs qui enseignent ces
+                            matières, en Belgique.</div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="primary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1>L'équipe</h1>
+                    </div>
+
+                    <div class="col-xl-6 container text">
+
+                        <div class="row team-pictures">
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/arthur.jpg">
+                                <h2>Arthur Prével</h2>
+                                <h3>Enquête auprès des étudiants</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/quentin2.jpg">
+                                <h2>Quentin Vantieghem</h2>
+                                <h3>Design site web</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/aymeric.jpg">
+                                <h2>Aymeric Lamant</h2>
+                                <h3>Optimisation algorithme</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/francois.jpg">
+                                <h2>François Collard</h2>
+                                <h3>Pilote du projet</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/robin.jpg">
+                                <h2>Robin De Gernier</h2>
+                                <h3>Développement algorithme</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/noel.jpg">
+                                <h2>Noël Schneider</h2>
+                                <h3>Développement algorithme</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/denis.jpg">
+                                <h2>Denis Lebailly</h2>
+                                <h3>Analyse de texte et méthode de scoring</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/antoine.jpg">
+                                <h2>Antoine Dubois</h2>
+                                <h3>Développement algorithme</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/david.jpg">
+                                <h2>David Steinmetz</h2>
+                                <h3>Développement algorithme</h3>
+                            </div>
+
+                            <div class="col-xl-2 col-6">
+                                <img src="./img/team/quentin.jpg">
+                                <h2>Quentin Lancrenon</h2>
+                                <h3>Soutien projet et stratégie</h3>
                             </div>
 
                         </div>
                     </div>
-
-           
-
-
-
-            </div>
-
-            <div class="row" style="background-color: white;min-height:50vh;">
-
-                <div class="col-xl-6" style="margin:auto;">
-
-                    <h1>Notre vision, notre objectif</h1>
-                    <h2>un directeur de mémoire ou un promoteur de thèse ?</h2>
-
                 </div>
-
-                <div class="col-xl-6 paragraph">
-                    <div>La durabilité environnementale est devenue une préoccupation majeure pour tous les citoyens et pour les jeunes en particulier. La transition vers une société neutre en CO2 vers 2050 décidée par l'Union européenne est une étape majeure en faveur du climat et de notre environnement, qui nécessite non seulement des investissements massifs et des changements dans les domaines de l'industrie, des services ou des infrastructures, mais aussi de l'intelligence humaine, des aptitudes et des compétences pour conduire la transition écologique.</div>
-
-                    <div>Si l'éducation est la clé de la durabilité, de l'enfant aux adultes, les universités et les hautes écoles jouent un rôle particulier, puisqu'ils éduquent la plupart des décideurs, des acteurs clés et experts de notre communauté. Education4Climate vise à promouvoir l'éducation sur le climat et la durabilité environnementale dans les universités et les hautes écoles en facilitant l'accès à l'information sur les programmes et cours qui abordent ces sujets.</div>
-                    
-                    <div>Education4Climate aidera les futurs étudiants à sélectionner le programme ou l'université / la haute école qui répondra le mieux à leurs aspirations, et les gestionnaires de programmes trouvera un outil très utile pour suivre, confronter et améliorer leurs programmes d'éducation. Enfin, Education4Climate offre un accès facile pour identifier les professeurs ayant une expertise éprouvée en matière d’enseignement sur le climat et la durabilité environnementale, une première étape vers un partage efficace des connaissances et la création de réseau d’experts.</div>
-                </div>
-
-
-
-            
-            </div>
+            </section>
 
         </main>
-
-        <!--main id="home">
-
-            <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" id="carousel-item-students">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6">
-                                        <h1>{{translate("home.headline-students")}}</h1>
-                                        <p><a class="btn btn-primary learn-more"
-                                                href="#home-intro">{{translate("shared.learn-more")}}</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item" id="carousel-item-teachers">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6">
-                                        <h1>{{translate("home.headline-teachers")}}
-                                        </h1>
-                                        <p><a class="btn btn-primary learn-more"
-                                                href="#home-intro">{{translate("shared.learn-more")}}</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-home"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div class="container " id="home-intro">
-                <div class="row text-center ">
-                    <div class="col-md-4 d-grid d-md-block">
-                        <a href="programs.html" type="button"
-                            class="btn btn-primary btn-lg">{{translate("menu.programs")}}</a>
-                    </div>
-                    <div class="col-md-4 d-grid d-md-block">
-                        <a href="courses.html" type="button"
-                            class="btn btn-primary btn-lg">{{translate("menu.courses")}}</a>
-                    </div>
-                    <div class="col-md-4 d-grid d-md-block">
-                        <a href="teachers.html" type="button"
-                            class="btn btn-primary btn-lg">{{translate("menu.teachers")}}</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container" id="home-project">
-                <div class="row" v-html="translate('home-text')">
-                </div>
-            </div>
-
-            <div class="container" id="home-logos">
-                <div class="row text-center">
-                    <div class="col-xl-3 col-md-6 logo">
-                        <a href="https://www.unsdsn.org" target="_blank" rel="noopener">
-                            <img src="img/sdsn-logo.png" width="200" height="80" alt="SDSN logo">
-                        </a>
-                    </div>
-                    <div class="col-xl-3 col-md-6 logo">
-                        <a href="https://theshiftproject.org" target="_blank" rel="noopener">
-                            <img src="img/the-shift-project-logo.png" width="200" height="113"
-                                alt="The Shift Project logo">
-                        </a>
-                    </div>
-                    <div class="col-xl-3 col-md-6 logo">
-                        <img src="img/the-shifters.png" width="200" height="99" alt="The Shifters logo">
-                    </div>
-                    <div class="col-xl-3 col-md-6 logo">
-                        <a href="https://theshift.be" target="_blank" rel="noopener">
-                            <img src="img/the-shift-logo.svg" width="200" height="75" alt="The Shift logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-danger" v-cloak>{{errors}}</div>
-
-        </main!-->
 
         <footer class="text-muted py-5">
             <div class="container">
