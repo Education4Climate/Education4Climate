@@ -68,8 +68,15 @@ body {
     margin: 1rem 0 0rem 0;
 }
 
-#home-project {
+#home-project{
     padding: 2rem;
+    padding-bottom: 0;
+    max-width: 60rem;
+}
+
+#home-team {
+    padding: 2rem;
+    padding-top: 0;
     max-width: 60rem;
 }
 
@@ -412,4 +419,33 @@ footer li {
     .navbar-brand {
         font-size: 0.8rem;
     }
+}
+
+
+/* Team gallery */
+
+.home .team-pictures {
+
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.team-pictures img {
+    width: 8rem;
+    border-radius: 8rem;
+    margin-bottom: 1rem;
+}
+
+.team-pictures h2 {
+
+    font-weight: 800;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.team-pictures h3 {
+
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
 }
