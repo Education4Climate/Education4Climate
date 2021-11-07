@@ -12,22 +12,27 @@ BASE_URL = "http://extranet.ihecs.be/?ects=go&act=showfiche&codeue={}" + f"&anne
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ihecs_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Français": "fr",
-                  "Fr": "fr",
-                  "Anglais": "en",
-                  "English": "en",
-                  "Allemand": "de",
-                  "Deutsch": "de",
-                  "Néerlandais": "nl",
-                  "Nederlands": "nl",
-                  "Espagnol": 'es',
-                  "Español": 'es',
-                  "Italien": 'it',
-                  "Italiano": 'it'
-                  }
+LANGUAGES_DICT = {
+    "Français": "fr",
+    "Fr": "fr",
+    "Anglais": "en",
+    "English": "en",
+    "Allemand": "de",
+    "Deutsch": "de",
+    "Néerlandais": "nl",
+    "Nederlands": "nl",
+    "Espagnol": 'es',
+    "Español": 'es',
+    "Italien": 'it',
+    "Italiano": 'it'
+}
 
 
 class IHECSCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Institut des Hautes Études des Communications Sociales (IHECS)
+    """
+
     name = "ihecs-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -52,26 +57,28 @@ class IHECSCourseSpider(scrapy.Spider, ABC):
 
         section_txt = "//b[contains(text(), '{}')]/following::td[1]//text()"
         teachers = response.xpath(section_txt.format("Enseignant")).getall()
-        teachers = list(set([t for t in teachers if t != '/']))
+        teachers = list(set([t.lower().title() for t in teachers if t != '/']))
 
         languages = response.xpath(section_txt.format("Langue")).get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(" - ")] if languages else []
 
-        # Content
-        contents = []
-        sections = ['Acquis', 'Dispositif']
-        for section in sections:
-            content = response.xpath(section_txt.format(section)).get()
-            contents += [content] if content else [""]
-        content = "\n".join(contents)
-        content = "" if content == '\n' else content
+        # Course description
+        def get_section_text(section_name):
+            text = response.xpath(section_txt.format(section_name)).get()
+            return text if text is not None else ""
+        content = get_section_text("Résumé")
+        goal = get_section_text("Acquis")
+        activity = get_section_text("Organisation")
 
         yield {
             'id': ue_id,
             'name': ue_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': goal,
+            'activity': activity,
+            'other': ''
         }

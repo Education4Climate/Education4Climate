@@ -8,28 +8,33 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-BASE_URl = "http://onderwijsaanbod.odisee.be/syllabi/{}.htm"  # first format is code course, second is year
+BASE_URl = "http://onderwijsaanbod.odisee.be/syllabi/{}.htm"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}odisee_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Nederlands": 'nl',
-                  "Dutch": 'nl',
-                  "Olandese": 'nl',
-                  "Frans": 'fr',
-                  "French": 'fr',
-                  "Français": 'fr',
-                  "Engels": 'en',
-                  "English": 'en',
-                  "Deutsch": 'de',
-                  "Duits": 'de',
-                  "German": 'de',
-                  "Spanish": 'es',
-                  "Spaans": 'es',
-                  "Italiaans": 'it'
-                  }
+LANGUAGES_DICT = {
+    "Nederlands": 'nl',
+    "Dutch": 'nl',
+    "Olandese": 'nl',
+    "Frans": 'fr',
+    "French": 'fr',
+    "Français": 'fr',
+    "Engels": 'en',
+    "English": 'en',
+    "Deutsch": 'de',
+    "Duits": 'de',
+    "German": 'de',
+    "Spanish": 'es',
+    "Spaans": 'es',
+    "Italiaans": 'it'
+}
 
 
 class OdiseeCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Odisee
+    """
+
     name = "odisee-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -41,12 +46,12 @@ class OdiseeCourseSpider(scrapy.Spider, ABC):
         courses_urls = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_urls"]
         courses_urls_list = sorted(list(set(courses_urls.sum())))
 
-        print(len(courses_urls_list))
         for course_url in courses_urls_list:
             yield scrapy.Request(BASE_URl.format(course_url), self.parse_main)
 
     @staticmethod
     def parse_main(response):
+
         main_div = "//div[@id='hover_selectie_parent']"
         course_name = response.xpath(f"{main_div}//h2/text()").get()
         course_id = response.xpath(f"{main_div}//h2/span/text()").get().strip(')').split(" (B-ODISEE-")[1]
@@ -61,21 +66,25 @@ class OdiseeCourseSpider(scrapy.Spider, ABC):
         languages = response.xpath(f"{main_div}//span[@class='taal']/text()").get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(", ")] if languages else []
 
-        # Content
-        content = []
-        sections = ['Aims', 'Doelstellingen', 'Content', 'Inhoud']
-        for section in sections:
-            content += cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
-                                              f"and h2/text()='{section}']//text()").getall())
-        content = " ".join(content)
+        # Course description
+        def get_sections_text(sections_names):
+            texts = []
+            for section in sections_names:
+                texts += cleanup(response.xpath(f"//div[contains(@class, 'tab_content') "
+                                                f"and h2/text()='{section}']//text()").getall())
+            return "\n".join(texts).strip("\n")
+        content = get_sections_text(['Content', 'Inhoud'])
+        goal = get_sections_text(['Aims', 'Doelstellingen'])
 
         yield {
             'id': course_id,
             'name': course_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': goal,
+            'activity': '',
+            'other': ''
         }
-

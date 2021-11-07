@@ -63,8 +63,6 @@
 
         <main id="home">
 
-            <div class="beta-banner" v-html="translate('home.beta')"></div>
-
             <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" id="carousel-item-students">
@@ -107,7 +105,7 @@
                 </button>
             </div>
 
-            <div class="container " id="home-intro">
+            <div class="container" id="home-intro">
                 <div class="row text-center ">
                     <div class="col-md-4 d-grid d-md-block">
                         <a href="programs.html" type="button"
@@ -129,21 +127,24 @@
                 </div>
             </div>
 
+            <div class="container" id="home-team" v-html="translate('home-team')">
+            </div>
+
             <div class="container" id="home-logos">
                 <div class="row text-center">
                     <div class="col-xl-3 col-md-6 logo">
-                        <a href="https://www.unsdsn.org" target="_blank" rel="noopener">
-                            <img src="img/sdsn-logo.png" width="200" height="80" alt="SDSN logo">
+                        <a href="https://www.sdsnbelgium.be" target="_blank" rel="noopener">
+                            <img src="img/sdsn-logo.png" width="200" height="108" alt="SDSN logo">
                         </a>
                     </div>
                     <div class="col-xl-3 col-md-6 logo">
                         <a href="https://theshiftproject.org" target="_blank" rel="noopener">
-                            <img src="img/the-shift-project-logo.png" width="200" height="113"
+                            <img src="img/the-shift-project-logo.png" width="200" height="116"
                                 alt="The Shift Project logo">
                         </a>
                     </div>
                     <div class="col-xl-3 col-md-6 logo">
-                        <img src="img/the-shifters.png" width="200" height="99" alt="The Shifters logo">
+                        <img src="img/the-shifters.png" width="200" height="101" alt="The Shifters logo">
                     </div>
                     <div class="col-xl-3 col-md-6 logo">
                         <a href="https://theshift.be" target="_blank" rel="noopener">

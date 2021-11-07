@@ -79,14 +79,12 @@ def compute_score(text: str, patterns_themes_df: pd.DataFrame) -> (int, Dict[str
     return score, list(matched_themes), pattern_matches_dict
 
 
-def score_school_courses(school: str, year: int, fields: str, output_dir: str,
-                         dictionary_name: str = 'base') -> None:
+def score_school_courses(school: str, year: int, output_dir: str, dictionary_name: str = 'base') -> None:
     """
     Identifies for each course of a school whether they discuss a pre-defined set of thematics and saves the results.
 
     :param school: Code of the school whose courses will be scored.
     :param year: Year for which the scoring is done.
-    :param fields: Data fields to be used for computing scores.
     :param output_dir: Name of the main directory where the results should be saved
     :param dictionary_name: Name of the dictionary that should be used to score the courses without the extnsion '.json'.
 
@@ -97,11 +95,15 @@ def score_school_courses(school: str, year: int, fields: str, output_dir: str,
     courses_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
     courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str})
-    fields = fields.split(",")
+
+    # Load fields on which the scoring has to be done
+    scoring_fields_fn = Path(__file__).parent.absolute().joinpath(f"../../data/scoring_fields.csv")
+    fields = ["name"] + pd.read_csv(scoring_fields_fn, index_col=0).loc[school, 'fields'].split(";")
     for field in fields:
         assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contain a column {field}"
         # Convert Nans to "
         courses_df[field] = courses_df[field].apply(lambda x: "" if x is None else x)
+
     # Concatenate the scoring fields
     courses_df["scoring_text"] = courses_df[fields].apply(lambda x: "\n".join(x.values), axis=1)
     courses_df["full_text"] = courses_df[["name", "content", "goal", "activity", "other"]]\
@@ -182,9 +184,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="School code")
     parser.add_argument("-y", "--year", help="Academic year", default=2020)
-    parser.add_argument("-f", "--fields", default="name,content",
-                        help="Specify the field(s) on which we compute the score."
-                             " If several fields, they need to be separated by a ','")
 
     arguments = vars(parser.parse_args())
     arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}/")

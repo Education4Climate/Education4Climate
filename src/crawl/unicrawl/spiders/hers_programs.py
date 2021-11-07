@@ -7,16 +7,18 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "http://progcours.hers.be/cocoon/fac/fac{}"
-DEPARTMENTS_CODES = {"M": "Département Paramédicale",
-                     "P": "Département Pédagogique",
-                     "E": "Département Economique",
-                     "T": "Département Technique",
-                     "S": "Département Social"}
+DEPARTMENTS_CODES = {
+    "M": "Département Paramédicale",
+    "P": "Département Pédagogique",
+    "E": "Département Economique",
+    "T": "Département Technique",
+    "S": "Département Social"
+}
 
 
 class HERSProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for Haute Ecole Robert Schuman
+    Programs crawler for Haute Ecole Robert Schuman
     """
 
     name = "hers-programs"
@@ -26,11 +28,13 @@ class HERSProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
+
         for code in DEPARTMENTS_CODES.keys():
             yield scrapy.Request(BASE_URL.format(code), self.parse_main,
                                  cb_kwargs={'faculty': DEPARTMENTS_CODES[code]})
 
     def parse_main(self, response, faculty):
+
         # Get list of programs
         programs_names = response.xpath(f"//a[@class='LienProg']/text()").getall()
         programs_links = response.xpath(f"//a[@class='LienProg']/@href").getall()
@@ -48,11 +52,13 @@ class HERSProgramSpider(scrapy.Spider, ABC):
             else:
                 cycle = 'other'
 
-            base_dict = {'id': code,
-                         'name': program_name,
-                         'cycle': cycle,
-                         'faculty': faculty,
-                         'campus': ''}
+            base_dict = {
+                'id': code,
+                'name': program_name,
+                'cycle': cycle,
+                'faculties': [faculty],
+                'campuses': []
+            }
             yield response.follow(link, self.parse_program, cb_kwargs={'base_dict': base_dict})
 
     @staticmethod
@@ -62,9 +68,10 @@ class HERSProgramSpider(scrapy.Spider, ABC):
         ects = [int(e) for e in ects if e != '\xa0']  # Remove elements which do not correspond to ects
         courses_ids = response.xpath("//nobr/text()").getall()
 
-        cur_dict = {"url": response.url,
-                    "courses": courses_ids,
-                    "ects": ects
-                    }
+        cur_dict = {
+            'url': response.url,
+            'courses': courses_ids,
+            'ects': ects
+        }
 
         yield {**base_dict, **cur_dict}

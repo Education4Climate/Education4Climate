@@ -6,7 +6,7 @@ import base64
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'http://www.galileonet.be/extranet/DescriptifsDeCours/getListeGestionUE?ec=4'
+BASE_URL = 'http://www.galileonet.be/extranet/DescriptifsDeCours/index/'
 
 BASE_DATA = {
     "section": "",
@@ -15,14 +15,22 @@ BASE_DATA = {
     "annee": "",
 }
 
-YEARS = {'2020-2021': 'MTIw',
-         '2021-2022': 'MTIx'}
+YEARS = {
+    '2020-2021': 'MTIw',
+    '2021-2022': 'MTIx'
+}
 
-PROGRAMS_CODE = {"SC": "Spécialisation en santé communautaire",
-                 "BIRSG (N)": "Bachelier infirmier responsable en soins généraux"}
+PROGRAMS_CODE = {
+    "SC": "Spécialisation en santé communautaire",
+    "BIRSG (N)": "Bachelier infirmier responsable en soins généraux"
+}
 
 
 class ISSIGProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for Institut Supérieur de Soins Infirmiers Galilée (ISSIG)
+    """
+
     name = 'issig-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -34,7 +42,6 @@ class ISSIGProgramSpider(scrapy.Spider, ABC):
 
         for program_id, program_name in PROGRAMS_CODE.items():
             BASE_DATA["section"] = str(base64.b64encode(program_id.encode("utf-8")), 'utf-8')
-            print(BASE_DATA)
             yield scrapy.http.FormRequest(
                 BASE_URL,
                 callback=self.parse_main,
@@ -42,15 +49,13 @@ class ISSIGProgramSpider(scrapy.Spider, ABC):
                 cb_kwargs={'program_id': program_id, 'program_name': program_name}
             )
 
-    def parse_main(self, response, program_id, program_name):
+    @staticmethod
+    def parse_main(response, program_id, program_name):
 
-        print(response.xpath("//tr[@data-id]").getall())
-        print(response.xpath("//h3").get())
         row_txt = '//tr[@data-id]'
-        print(f"{row_txt}/td[1]/text()")
         ue_ids = response.xpath(f"{row_txt}/td[1]/text()").getall()
         ects = response.xpath(f"{row_txt}/td[5]/text()").getall()
-        ects = [int(e) for e in ects]
+        ects = [int(float(e)) for e in ects]
 
         cycle = 'bac' if 'Bachelier' in program_name else 'other'
 
@@ -58,8 +63,9 @@ class ISSIGProgramSpider(scrapy.Spider, ABC):
             "id": program_id,
             "name": program_name,
             "cycle": cycle,
-            "faculty": "Soins infirmiers",
-            "campus": "Bruxelles",
+            "faculties": ["Soins infirmiers"],
+            "campuses": ["Bruxelles"],
+            "url": response.url,
             "courses": ue_ids,
             "ects": ects
         }

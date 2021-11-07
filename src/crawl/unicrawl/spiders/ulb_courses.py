@@ -17,29 +17,35 @@ BASE_URL = 'https://www.ulb.be/fr/programme/'
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ulb_programs_{YEAR}.json')
 
-LANGUAGE_DICT = {"français": "fr",
-                 "anglais": "en",
-                 "Inconnu": "",
-                 "Néerlandais": "nl",
-                 "Allemand": "de",
-                 "Chinois": "cn",
-                 "Arabe": "ar",
-                 "Russe": "ru",
-                 "Italien": "it",
-                 "Espagnol": "es",
-                 "Grec moderne": "gr",
-                 "Japonais": "jp",
-                 "Turc": "tr",
-                 "Persan": "fa",
-                 "Roumain": "ro",
-                 "Portugais": "pt",
-                 "Polonais": "pl",
-                 "Tchèque": "cz",
-                 "Slovène": "si",
-                 "Croate": "hr"}
+LANGUAGE_DICT = {
+    "français": "fr",
+    "anglais": "en",
+    "Inconnu": "",
+    "Néerlandais": "nl",
+    "Allemand": "de",
+    "Chinois": "cn",
+    "Arabe": "ar",
+    "Russe": "ru",
+    "Italien": "it",
+    "Espagnol": "es",
+    "Grec moderne": "gr",
+    "Japonais": "jp",
+    "Turc": "tr",
+    "Persan": "fa",
+    "Roumain": "ro",
+    "Portugais": "pt",
+    "Polonais": "pl",
+    "Tchèque": "cz",
+    "Slovène": "si",
+    "Croate": "hr"
+}
 
 
 class ULBCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Université Libre de Bruxelles
+    """
+
     name = 'ulb-courses'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -65,8 +71,8 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         if name is None:
             yield {
                 "id": course_id, "name": '', "year": f'{YEAR}-{int(YEAR) + 1}',
-               "languages": [], "teachers": [], "url": response.url,
-               "content": '', "goal": '', "activity": '', "other": ''
+                "languages": [], "teachers": [], "url": response.url,
+                "content": '', "goal": '', "activity": '', "other": ''
             }
             return
         name = name.replace("\n               ", '')
@@ -82,7 +88,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         if languages is not None:
             languages = [LANGUAGE_DICT[language] if language in LANGUAGE_DICT else 'other'
                          for language in languages.split(", ")]
-        languages = ['fr'] if languages == [""] else languages
+        languages = ['fr'] if languages == [""] or len(languages) == 0 else languages
 
         # Course description
         def get_sections_text(sections_names):

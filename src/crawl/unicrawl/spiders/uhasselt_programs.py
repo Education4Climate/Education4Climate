@@ -85,6 +85,9 @@ FACULTIES_PROGRAMS = {
 
 
 class UHasseltProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for UHasselt
+    """
     name = 'uhasselt-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

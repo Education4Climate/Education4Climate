@@ -9,6 +9,10 @@ BASE_URL = 'http://onderwijsaanbodmechelenantwerpen.thomasmore.be/opleidingen/n/
 
 
 class ThomasMoreProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for Thomes More
+    """
+
     name = 'thomasmore-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -42,9 +46,9 @@ class ThomasMoreProgramSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_program(response, program_id, faculty):
         program_name = response.xpath("//h1/text()").get()
-        campus = ''
+        campuses = []
         if '(' in program_name:
-            campus = program_name.split('(')[-1].split(')')[0]
+            campuses = [program_name.split('(')[-1].split(')')[0]]
 
         if 'bachelor' in program_name or 'Bachelor' in program_name:
             cycle = 'bac'
@@ -63,12 +67,14 @@ class ThomasMoreProgramSpider(scrapy.Spider, ABC):
         # Get list of unique courses and ects
         courses, courses_url, ects = zip(*set(zip(courses, courses_url, ects)))
 
-        yield {'id': program_id,
-               'name': program_name,
-               'cycle': cycle,
-               'faculty': faculty,
-               'campus': campus,
-               'url': response.url,
-               'courses': courses,
-               'ects': ects,
-               'courses_urls': courses_url}
+        yield {
+            'id': program_id,
+            'name': program_name,
+            'cycle': cycle,
+            'faculties': [faculty],
+            'campuses': campuses,
+            'url': response.url,
+            'courses': courses,
+            'ects': ects,
+            'courses_urls': courses_url
+        }

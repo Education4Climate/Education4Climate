@@ -12,25 +12,30 @@ BASE_URL = f"http://applications.umons.ac.be/web/fr/pde/{YEAR}-{int(YEAR)+1}" + 
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}umons_programs_{YEAR}.json')
 
-LANGUAGE_DICT = {"Français": "fr",
-                 "Anglais": "en",
-                 "Néerlandais": "nl",
-                 "Allemand": "de",
-                 "Espagnol": "es",
-                 "Danois": "dk",
-                 "Italien": "it",
-                 "Russe": "ru",
-                 "Arabe": "ar",
-                 "Chinois": "cn",
-                 "Japonais": "jp",
-                 "Norvégien": "no",
-                 "Polonais": "po",
-                 "Portugais": "pt",
-                 "Suédois": "se"
-                 }
+LANGUAGE_DICT = {
+    "Français": "fr",
+    "Anglais": "en",
+    "Néerlandais": "nl",
+    "Allemand": "de",
+    "Espagnol": "es",
+    "Danois": "dk",
+    "Italien": "it",
+    "Russe": "ru",
+    "Arabe": "ar",
+    "Chinois": "cn",
+    "Japonais": "jp",
+    "Norvégien": "no",
+    "Polonais": "po",
+    "Portugais": "pt",
+    "Suédois": "se"
+}
 
 
 class UmonsCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for University of Mons
+    """
+
     name = "umons-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -69,6 +74,7 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
             languages_codes += \
                 [LANGUAGE_DICT[l.replace(" niveau 1", '').replace(" niveau 2", '').replace(" niveau 3", '')]
                  for l in languages_list.split(', ')]
+        languages_codes = ["fr"] if len(languages_codes) == 0 else languages_codes
 
         # Course description
         def get_sections_text(sections_names):

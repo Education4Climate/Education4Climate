@@ -12,17 +12,19 @@ BASE_URL = "https://www.heldb.be/ficheue/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_programs_{YEAR}.json')
 
-LANGUAGE_DICT = {"Français": "fr",
-                 "Anglais": "en",
-                 "Allemand": "de",
-                 "Néerlandais": "nl",
-                 "Espagnol": 'es',
-                 "Italien": 'it'}
+LANGUAGE_DICT = {
+    "Français": "fr",
+    "Anglais": "en",
+    "Allemand": "de",
+    "Néerlandais": "nl",
+    "Espagnol": 'es',
+    "Italien": 'it'
+}
 
 
 class HELDBCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for Haute Ecole Lucia de Brouckère
+    Courses crawler for Haute Ecole Lucia de Brouckère
     """
 
     name = "heldb-courses"
@@ -36,7 +38,6 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
         ue_urls_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["ue_urls_ids"]
         ue_urls_ids_list = sorted(list(set(ue_urls_ids.sum())))
 
-        print(len(ue_urls_ids_list))
         for ue_url_id in ue_urls_ids_list:
             yield scrapy.Request(BASE_URL.format(ue_url_id), self.parse_ue)
 
@@ -51,34 +52,36 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
                               f"/following::span[1]/text()").get()
         languages = lang.strip(" \n").split(" ")
         languages = [LANGUAGE_DICT[l.strip("\n")] for l in languages if l != '']
+        languages = ["fr"] if len(languages) == 0 else languages
 
         teachers = response.xpath(f"{div_txt}//strong[text()='Enseignant responsable : ']"
                                   f"/following::a[1]/text()").getall()
         sup_teachers = response.xpath(f"{div_txt}//strong[contains(text(), \"Autre(s) enseignant(s) de l'UE\")]"
                                       f"/following::a[1]/text()").getall()
         teachers += sup_teachers
+        teachers = [t.lower().title() for t in teachers]
 
         year = cleanup(response.xpath(f"{div_txt}//div[@id='anac']//i").get()).split("Année académique ")[1]
 
         campus = cleanup(response.xpath(f"{div_txt}//p[span[contains(text(), \"Coordonnées du service\")]]").get())
         campus = 'Jodoigne' if 'Jodoigne' in campus else 'Anderlecht'
 
-        sections = ['Contribution', 'Descriptif']
-        contents = []
-        for section in sections:
-            contents += [cleanup(response.xpath(f"{div_txt}//div[p/span[contains(text(), '{section}')]]"
-                                                f"/following::div[1]").get())]
-        content = "\n".join(contents)
-        content = "" if content == "\n" else content
-        content = content.replace("\n             ", ' ')
+        def get_section_text(section_name):
+            return cleanup(response.xpath(f"{div_txt}//div[p/span[contains(text(), '{section_name}')]]"
+                                          f"/following::div[1]").get()).replace("\n             ", ' ')
+        content = get_section_text('Descriptif')
+        goal = get_section_text('Contribution')
 
         yield {
             "id": ue_id,
             "name": ue_name,
             "year": year,
-            "teachers": teachers,
             "languages": languages,
-            "campus": campus,
+            "teachers": teachers,
             "url": response.url,
-            "content": content
+            "campuses": [campus],
+            "content": content,
+            "goal": goal,
+            "activity": '',
+            "other": ''
         }

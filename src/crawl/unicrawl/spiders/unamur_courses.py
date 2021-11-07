@@ -12,15 +12,21 @@ BASE_URl = "https://directory.unamur.be/teaching/courses/{}/{}"  # first format 
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}unamur_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Français": 'fr',
-                  "Anglais / English": 'en',
-                  "Allemand / Deutsch": 'de',
-                  "Néerlandais / Nederlands": 'nl',
-                  "Italien": "it",
-                  "Espagnol / Español": "es"}
+LANGUAGES_DICT = {
+    "Français": 'fr',
+    "Anglais / English": 'en',
+    "Allemand / Deutsch": 'de',
+    "Néerlandais / Nederlands": 'nl',
+    "Italien": "it",
+    "Espagnol / Español": "es"
+}
 
 
 class UNamurCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for University of Namur
+    """
+
     name = "unamur-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

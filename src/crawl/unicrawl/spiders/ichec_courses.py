@@ -8,12 +8,15 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.ichec.be/fr/programmes"
 
-LANGUAGE_DICT = {"Français": "fr", "Anglais": "en"}
+LANGUAGE_DICT = {
+    "Français": "fr",
+    "Anglais": "en"
+}
 
 
 class ICHECCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for ICHEC Brussel Management School
+    Courses crawler for ICHEC Brussel Management School
     """
 
     name = "ichec-courses"
@@ -40,19 +43,25 @@ class ICHECCourseSpider(scrapy.Spider, ABC):
         ue_id = response.xpath("//h2[contains(text(), 'Code')]/following::p[1]/text()").get()
         year = response.xpath("//h2[contains(text(), 'Année')]/following::p[1]/text()").get().replace(" - ", "-")
         teachers = response.xpath("//h2[contains(text(), 'Enseignant')]/following::p[1]/text()").getall()
+        teachers = [t.lower().title() for t in teachers]
         lang = response.xpath("//h2[contains(text(), 'Langue')]/following::p[1]/text()").get()
         lang = [LANGUAGE_DICT[lang]]
 
-        sections = ["Objectifs et contribution", "Description"]
-        content_query = "|".join(["//h2[contains(., \'{}\')]/following::p[1]/text()".format(section) for section in sections])
-        content = " ".join(response.xpath(content_query).getall())
+        def get_section_text(section_name):
+            texts = response.xpath(f"//h2[contains(., \'{section_name}\')]/following::p[1]/text()").getall()
+            return "\n".join(texts).strip("\n")
+        content = get_section_text("Description")
+        goal = get_section_text("Objectifs et contribution")
 
         yield {
-            "name": ue_name,
             "id": ue_id,
-            "teachers": teachers,
+            "name": ue_name,
             "year": year,
             "languages": lang,
+            "teachers": teachers,
+            "url": response.url,
             "content": content,
-            "url": response.url
+            'goal': goal,
+            'activity': '',
+            'other': ''
         }

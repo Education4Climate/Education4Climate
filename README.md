@@ -1,4 +1,4 @@
-<a href="https://theshiftproject.org/equipe/#benevoles"><img src="https://theshiftproject.org/wp-content/uploads/2017/10/SHIFTERS-TSP-L500PX-BLANC.png" alt="The Shifters" width="230px"></a>
+<a href="https://theshiftproject.org/equipe/#benevoles"><img src="https://theshiftproject.org/wp-content/uploads/2021/09/Fichier-1@2x-300x152.png" alt="The Shifters" width="230px"></a>
 
 # Education4Climate
 

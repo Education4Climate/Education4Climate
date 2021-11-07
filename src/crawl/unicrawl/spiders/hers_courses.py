@@ -12,18 +12,21 @@ BASE_URl = "http://progcours.hers.be/cocoon/cours/{}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}hers_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Langue française": 'fr',
-                  "Langue anglaise": 'en',
-                  "Langue allemande": 'de',
-                  "Langue néerlandaise": 'nl',
-                  "Langue espagnole": 'es'
-                  }
+LANGUAGES_DICT = {
+    "Langue française": 'fr',
+    "Langue anglaise": 'en',
+    "Langue allemande": 'de',
+    "Langue néerlandaise": 'nl',
+    "Langue espagnole": 'es'
+}
 
 
 class HERSCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for Haute Ecole Robert Schuman
+    Courses crawler for Haute Ecole Robert Schuman
     """
+
+    # Warning: error on HVAC0001-1, http://progcours.hers.be/cocoon/cours/HVAC0001-1.html
 
     name = "hers-courses"
     custom_settings = {
@@ -44,7 +47,11 @@ class HERSCourseSpider(scrapy.Spider, ABC):
 
         course_name = response.xpath("////td[@class='LibCours']/text()").get()
         if course_name is None:
-            return
+            yield {
+                "id": course_id, "name": '', "year": f"{YEAR}-{int(YEAR) + 1}",
+                "languages": ["fr"], "teachers": [], "url": response.url,
+                "content": '', "goal": '', "activity": '', "other": ''
+            }
         years = response.xpath("//div[@id='TitrePrinc']/text()").get().split(" ")[-1]
         course_rubric_txt = "//div[@class='TitreRubCours' and contains(text(), \"{}\")]"
 
@@ -57,20 +64,26 @@ class HERSCourseSpider(scrapy.Spider, ABC):
 
         languages = response.xpath(course_rubric_txt.format("Langue(s)") + "/following::td[2]/text()").getall()
         languages = [LANGUAGES_DICT[l] for l in languages]
+        languages = ['fr'] if len(languages) == 0 else languages
 
-        contents = cleanup(response.xpath("//tr[preceding::tr[@id='rub_APER'] "
-                                          "and following::tr[@id='rub_OBJT']]").getall())
-        contents += cleanup(response.xpath("//tr[preceding::tr[@id='rub_OBJT']"
-                                           " and following::tr[@id='rub_PRER']]").getall())
-        content = '\n'.join(contents)
-        content = '' if content == '\n' else content
+        # Cours description
+        def get_sections_text(section_name_prec, section_name_follow):
+            texts = cleanup(response.xpath(f"//tr[preceding::tr[@id='rub_{section_name_prec}'] "
+                                           f"and following::tr[@id='rub_{section_name_follow}']]").getall())
+            return '\n'.join(texts).strip("\n")
+        content = get_sections_text('APER', 'OBJT')
+        goal = get_sections_text('OBJT', 'PRER')
+        activity = get_sections_text('TRPR', 'ORGA')
 
         yield {
             'id': course_id,
             'name': course_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': goal,
+            'activity': activity,
+            'other': ''
         }

@@ -4,31 +4,34 @@ from pathlib import Path
 
 import pandas as pd
 import scrapy
+import itertools
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-BASE_URL = f"http://p4580.phpnet.org/{YEAR}-{YEAR+1}/XtractUE/DetailsUE/" + "{}.html"
+# BASE_URL = f"http://p4580.phpnet.org/{YEAR}-{YEAR+1}/XtractUE/DetailsUE/" + "{}.html" -> for 2020-21
+BASE_URL = "https://helue.azurewebsites.net/XtractUE/DetailsUE/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}hel_programs_{YEAR}.json')
 
-LANGUAGE_DICT = {"Français": "fr",
-                 "Anglais": "en",
-                 "English": "en",
-                 "Allemand": "de",
-                 "Deutsch": "de",
-                 "Néerlandais": "nl",
-                 "Nederlands": "nl",
-                 "Espagnol": 'es',
-                 "Español": 'es',
-                 "Italien": 'it',
-                 "Italiano": 'it'
-                 }
+LANGUAGE_DICT = {
+    "Français": "fr",
+    "Anglais": "en",
+    "English": "en",
+    "Allemand": "de",
+    "Deutsch": "de",
+    "Néerlandais": "nl",
+    "Nederlands": "nl",
+    "Espagnol": 'es',
+    "Español": 'es',
+    "Italien": 'it',
+    "Italiano": 'it'
+}
 
 
 class HELCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for Haute Ecole de la Ville de Liège
+    Courses crawler for Haute Ecole de la Ville de Liège
     """
 
     name = "hel-courses"
@@ -57,15 +60,15 @@ class HELCourseSpider(scrapy.Spider, ABC):
         campus = info_par.split("Implantation(s)</b> : ")[1].split('<br>')[0].strip(" ")
 
         teachers = cleanup(response.xpath("//table[@class='table_aa_profs_heures']/tbody/tr/td[2]").getall())
-        teachers = [t.strip(",").replace(" ", " ").strip(" ") for t in teachers]
+        teachers = [t.strip(",").replace(" ", " ").strip(" ").split(", ") for t in teachers]
+        teachers = list(itertools.chain.from_iterable(teachers))
+        teachers = [t.lower().title() for t in teachers]
 
         languages = response.xpath("//b[contains(text(), 'Langue')]/following::text()[1]").getall()
         languages = [LANGUAGE_DICT[l.strip(" ")] for l in languages]
+        languages = ["fr"] if len(languages) == 0 else languages
 
-        contents = [cleanup(response.xpath("//div[@id='liste_capacites_retenues']").get()),
-                    cleanup(response.xpath("//div[@class='module_aa']").get())]
-        content = "\n".join(contents)
-        content = "" if content == "\n" else content
+        content = cleanup(response.xpath("//div[@class='module_aa']").get())
 
         yield {
             "id": ue_id,
@@ -73,10 +76,13 @@ class HELCourseSpider(scrapy.Spider, ABC):
             "year": year,
             "languages": languages,
             "teachers": teachers,
-            "ects": ects,
-            "campus": campus,
+            "ects": [ects],
+            "campus": [campus],
             "url": response.url,
-            "content": content
+            "content": content,
+            "goal": '',
+            "activity": '',
+            "other": ''
         }
 
 

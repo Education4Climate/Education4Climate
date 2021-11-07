@@ -14,10 +14,15 @@ PROGRAM_FACULTIES = {
     "Master en stratégie de la communication et culture numérique":
         "Faculté des sciences économiques, sociales, politiques et de la communication",
     "Master de sp\u00e9cialisation en gestion des risques financiers":
-        "Faculté des sciences économiques, sociales, politiques et de la communication"}
+        "Faculté des sciences économiques, sociales, politiques et de la communication"
+}
 
 
 class USLBProgramsSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for Université Saint-Louis Bruxelles
+    """
+
     name = "uslb-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

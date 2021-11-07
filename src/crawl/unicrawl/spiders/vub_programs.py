@@ -11,6 +11,10 @@ BASE_URL = 'https://caliweb.vub.be/'
 
 
 class VUBProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for VUB
+    """
+
     name = "vub-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -39,17 +43,21 @@ class VUBProgramSpider(scrapy.Spider, ABC):
         sub_program_id = response.url.split("anchor=")[1].split("&")[0]
 
         program_name = response.xpath("//h1/text()").get()
+        if "Startplan" in program_name:
+            program_name = program_name.split(" Startplan")[0]
+        elif "Standaard traject" in program_name:
+            program_name = program_name.split(" Standaard traject")[0]
 
         cycle = "other"
-        if "Bachelor" in program_name:
-            cycle = "bac"
-        elif "Postgraduaat" in program_name or "Postgraduate" in program_name:
+        if "Postgraduaat" in program_name or "Postgraduate" in program_name:
             cycle = 'postgrad'
-        elif "Schakelprogramma Master" in program_name or "Voorbereidingsprogramma Master" in program_name \
-                or 'Educatieve master' in program_name:
+        elif "Schakelprogramma" in program_name or "Voorbereidingsprogramma" in program_name \
+                or "Preparatory Programme" in program_name:
             cycle = "other"
-        elif 'Master' in program_name:
+        elif 'Master' in program_name or 'Educatieve master' in program_name:
             cycle = "master"
+        elif "Bachelor" in program_name:
+            cycle = "bac"
 
         # Can have multiple faculties
         faculties = response.xpath("//p[1]/text()").getall()

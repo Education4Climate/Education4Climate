@@ -11,6 +11,10 @@ BASE_URL_2 = "https://studiekiezer.ugent.be/nl/incrementalsearch?target=zoek&ids
 
 
 class UGentProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for UGent
+    """
+
     name = 'ugent-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -49,12 +53,22 @@ class UGentProgramSpider(scrapy.Spider, ABC):
 
         program_id = response.xpath("//h1/@data-code").get()
         program_name = response.xpath("//h1[@id='titleLabel']/text()").get()
+        # Don't keep programs for exchange students
+        if "exchange proramme" in program_name.lower():
+            return
+        # Just a list of courses, too generic
+        if "universiteitsbrede keuzevakken" in program_name.lower():
+            return
 
         cycle = response.xpath("//i[contains(@class, 'glyphicon-education')]/following::span[1]/text()").get()
         if 'aster' in cycle:
             cycle = 'master'
         elif 'achelor' in cycle:
-            cycle = 'bac'
+            if 'Bridging' in program_name or 'Brugprogramma' in program_name or\
+                    'List' in program_name or 'Lisjt' in program_name or 'Ritsweg' in program_name:
+                cycle = 'other'
+            else:
+                cycle = 'bac'
         elif 'ostgradua' in cycle:
             cycle = 'postgrad'
         elif 'octor' in cycle:
@@ -93,25 +107,6 @@ class UGentProgramSpider(scrapy.Spider, ABC):
             courses_names += [course_name] if courses_language is not None else ['']
             e = response.xpath(f"{id_txt_2}//td[@class='SP']//span/text()").get()
             ects += [int(float(e.replace(',', '.')))] if e is not None else [0]
-
-        # courses_languages = cleanup(response.xpath(f"{div_text}//td[@class='taal']/div").getall())
-        # print(courses_languages)
-        if len(courses_languages) != len(courses_ids):
-            print("taal")
-            print(program_name)
-            print(len(courses_languages), len(courses_ids))
-        if len(courses_names) != len(courses_ids):
-            print("name")
-            print(program_name)
-            print(len(courses_names), len(courses_ids))
-        if len(courses_urls) != len(courses_ids):
-            print("urls")
-            print(program_name)
-            print(len(courses_urls), len(courses_ids))
-        if len(ects) != len(courses_ids):
-            print("ects")
-            print(program_name)
-            print(len(ects), len(courses_ids))
 
         yield {
             'id': program_id,

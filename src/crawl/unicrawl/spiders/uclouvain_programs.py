@@ -11,6 +11,10 @@ UCLOUVAIN_URL = f"https://uclouvain.be/fr/catalogue-formations/formations-par-fa
 
 
 class UCLouvainProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for Université Catholique de Louvain
+    """
+
     name = "uclouvain-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
