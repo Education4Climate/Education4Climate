@@ -31,12 +31,12 @@
     <div id="app">
 
         <header v-if="dataLoaded" v-cloak>
-            <nav class="navbar navbar-expand-xl navbar-light">
+            <nav class="navbar navbar-expand-xl" :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}" >
                 <div class="container-fluid">
                     <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg"
                             alt="logo" id="logo"></a>
                     <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
-                            4 <span class="accent">CLIMATE</span><sup class="beta"> BETA</sup></a>
+                            4 <span class="accent">CLIMATE</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
                             </li>
                         </ul>
                         <div id="theme-toggler" @click="toggleTheme()">
-                            <img src="./img/theme-toggler-blue.svg">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'">
                             <span class="theme-light">Thème sombre</span>
                             <span class="theme-dark">Thème clair</span>                            
                         </div>                        
@@ -245,7 +245,7 @@
                                                 <span class="badge bg-primary bg-theme">{{translate("themes." +
                                                     themes[theme.id].name)}}&nbsp;&nbsp;&nbsp;
                                                     <span
-                                                        class="badge rounded-pill bg-white text-primary">{{theme.score}}</span>
+                                                        class="badge rounded-pill sub-badge">{{theme.score}}</span>
                                                 </span>
                                             </span>
                                         </div>

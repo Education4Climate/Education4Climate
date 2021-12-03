@@ -1,30 +1,29 @@
 :root {
-    
     /* Please see here for references and updates : 
        https://initiatives.theshifters.org/boite-a-outils/
     */
 
-	/* identity colors */
-	
-	--night-blue: #00004B;
-	--egyptian-blue: #0023AA;
-    --pale-teal: #4BD2AF;
-	--greenish-blue: #00788C;
-	
-	/* contrast colors */
-	
-	--chambray: #2D4182;
-	--faded-pink: #F091B9;
-	--tulip-pink: #DC4B78;
-	--seashell: #F5F0F0;
-	
-	/* neutral colors */
-	
-	--baltic-sea: #282828;
-	--white: #FFFFFF;
+    /* identity colors */
+
+    --night-blue: #00004b;
+    --egyptian-blue: #0023aa;
+    --pale-teal: #4bd2af;
+    --greenish-blue: #00788c;
+
+    /* contrast colors */
+
+    --chambray: #2d4182;
+    --faded-pink: #f091b9;
+    --tulip-pink: #dc4b78;
+    --seashell: #f5f0f0;
+
+    /* neutral colors */
+
+    --baltic-sea: #282828;
+    --white: #ffffff;
 
     /* Light theme */
-  
+
     --accent-color: var(--pale-teal);
 
     --background-primary-color: var(--seashell);
@@ -49,13 +48,15 @@
     --footer-background-color: var(--night-blue);
     --footer-link-color: var(--white);
 
-    --button-color: var(--pale-teal);
+    --button-color: var(--greenish-blue);
+    --button-hover-color: var(--pale-teal);
+
+    --navbar-color: var(--white);
 }
 
+/* Dark theme */
+
 [data-theme="dark"] {
-
-    /* Dark theme */
-
     --background-primary-color: var(--night-blue);
     --background-secondary-color: var(--egyptian-blue);
     --background-tertiary-color: var(--baltic-sea);
@@ -69,6 +70,40 @@
 
     --checkbox-background-color: var(--egyptian-blue);
     --checkbox-border-color: var(--seashell);
+
+    --badge-primary-color: var(--greenish-blue);
+    --badge-secondary-color: var(--tulip-pink);
+
+    --navbar-color: var(--night-blue);
+}
+
+/* Fonts */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-color);
+    font-size: 1rem;
+    background-color: var(--background-primary-color);
+
+    /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
+    overflow-y: scroll !important;
+}
+
+.text-primary {
+    color: var(--font-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--header-color);
+}
+
+a {
+    color: var(--link-color);
 }
 
 .accent {
@@ -91,13 +126,23 @@
 }
 
 #theme-toggler:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
-/* Navbar */
+#theme-toggler img {
+    margin-right: 0.3rem;
+}
+
+/* MENU & NAVIGATION */
+
+[data-theme="light"] nav,
+main {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
 
 nav {
- font-weight: 700;   
+    font-weight: 700;
+    background-color: var(--navbar-color);
 }
 
 .navbar-brand {
@@ -118,28 +163,6 @@ nav {
     background-color: var(--badge-accent-color) !important;
 }
 
-/* Fonts */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--font-color);
-    font-size: 1rem;
-}
-
-.text-primary {
-    color: var(--font-color) !important;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: var(--header-color);
-}
-
-a {
-    color: var(--link-color);
-}
-
-/* Badges */
-
 .badge-primary {
     background-color: var(--chambray) !important;
     color: var(--seashell) !important;
@@ -150,17 +173,24 @@ a {
     color: var(--seashell) !important;
 }
 
-.accordion-button {
+.sub-badge {
+    background-color: var(--background-primary-color) !important;
+    color: var(--font-primary-color) !important;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-item {
     background-color: var(--background-secondary-color);
 }
 
+.accordion-button:focus,
 .accordion-button:not(.collapsed) {
-	background-color: white;
+    box-shadow: unset;
 }
 
-.accordion-button:focus {
-	
-	box-shadow: 0 0 0 0.25rem var(--chambray);
+.accordion-item .accordion-collapse {
+    border: 0 !important;
 }
 
 /* Checkboxes */
@@ -171,7 +201,7 @@ a {
 }
 
 .check-all {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     margin-top: 1rem;
 }
 
@@ -181,20 +211,18 @@ a {
 
 /* Buttons */
 
-button.btn-primary {
-
-        color: white;
-        background-color: var(--button-color);
-        border-color: var(--button-color);
-        border-radius: 2rem;
-
+button.btn-primary,
+a.btn-primary {
+    color: white;
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    border-radius: 2rem;
 }
 
-/* MENU & NAVIGATION */
-
-nav,
-main {
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+button.btn-primary:hover,
+a.btn-primary:hover {
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
 }
 
 /* Footer */
@@ -215,8 +243,10 @@ footer .logo {
     height: 3rem;
 }
 
-
-/********************/
+footer .container .row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 a {
     text-decoration: none;
@@ -232,12 +262,6 @@ body.modal-open {
     padding-right: 0 !important;
 }
 
-
-body {
-    /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
-    overflow-y: scroll !important;
-}
-
 /* MENU & NAVIGATION */
 
 #logo {
@@ -246,84 +270,170 @@ body {
     margin-left: 0.3rem;
 }
 
-#preload-background-images {
-    /* Permet de précharger les 2 images du slideshow pour ne pas avoir un effet de flicker au chargement */
-    display: none;
-}
-
 /* HOME */
-
-/* .home section:first-of-type {
-    background-image: url('../img/background-students.jpg');
-    background-size: cover;
-    background-position-y: -30rem;
-    opacity: .5;
-} */
 
 .home .container {
     max-width: 100%;
 }
 
-.home h1 {
+.home section .text a {
+    text-decoration: underline;
+}
 
+.home section.primary.text a {
+    color: var(--font-primary-color);
+}
+
+.home section.secondary a {
+    color: var(--font-secondary-color);
+}
+
+.home section.tertiary a {
+    color: var(--font-tertiary-color);
+}
+
+.home h1 {
     font-weight: 600;
     font-size: 4rem;
 }
 
 .home section {
-    min-height: 50vh;
+    display: flex;
+    min-height: 40vh;
 }
 
-.home section.primary, .home section.primary :is(h1, h2, h3, h4, h5) {
+.home section .text.order-xl-first {
+    padding-right: 10rem;
+}
 
+.home section.primary,
+.home section.primary :is(h1, h2, h3, h4, h5) {
     background-color: var(--background-primary-color);
     color: var(--font-primary-color);
 }
 
-.home section.secondary, .home section.secondary :is(h1, h2, h3, h4, h5) {
-
+.home section.secondary,
+.home section.secondary :is(h1, h2, h3, h4, h5) {
     background-color: var(--background-secondary-color);
     color: var(--font-secondary-color);
 }
 
-.home section.tertiary, .home section.tertiary :is(h1, h2, h3, h4, h5) {
-
+.home section.tertiary,
+.home section.tertiary :is(h1, h2, h3, h4, h5) {
     background-color: var(--background-tertiary-color);
     color: var(--font-tertiary-color);
 }
 
 .home .team-pictures {
-
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.team-pictures img {
+.home .team-pictures img {
     width: 8rem;
     border-radius: 8rem;
     margin-bottom: 1rem;
 }
 
-.team-pictures h2 {
-
+.home .team-pictures h2 {
     font-weight: 800;
     font-size: 1.1rem;
     white-space: nowrap;
 }
 
-.team-pictures h3 {
-
+.home .team-pictures h3 {
     font-weight: 400;
     font-size: 0.9rem;
 }
 
+.home .team-pictures div {
+    margin: 1rem;
+}
+
+.home section.intro .row {
+    padding: 5rem;
+}
+
+.home section .row {
+    padding: 5rem;
+    flex-basis: 100%;
+}
+
+.home section .row {
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+}
+
+.home section .text {
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home section .title {
+    display: flex;
+    align-items: center;
+}
+
+.home .intro .peeps {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.home .intro .peeps img {
+    width: 25vw;
+    position: relative;
+}
+
+.home .intro .peeps img:nth-child(1) {
+    margin-right: -15vw;
+    z-index: 2;
+}
+
+.home .intro .peeps img:nth-child(2) {
+    margin-right: -15vw;
+    z-index: 1;
+}
+
+.home .intro .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .intro .headline .buttons-container {
+    margin-top: 4rem;
+}
+
+.home .intro .headline .buttons-container div {
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+
 @media (max-width: 1199.98px) {
+    .home section.intro .row,
+    .home section .row {
+        padding: 0;
+    }
+
+    .home section .title {
+        justify-content: center;
+    }
+
+    .home section .text.order-xl-first {
+        padding-right: 0;
+    }
 
     .home .intro {
         text-align: center;
-    }
-
-    .home .peeps {
-        display: none;
     }
 
     .home section h1 {
@@ -336,47 +446,34 @@ body {
     .home section {
         min-height: auto;
         padding: 2rem;
+        justify-content: center;
+    }
+
+    .home section .text {
+        font-size: 1rem;
+    }
+
+    .home section .text,
+    .home section .title {
+        padding: 0;
     }
 
     .home section div.text {
         text-align: justify;
-    }  
+    }
 
     .home section div.text div {
         margin-bottom: 1rem;
-    }  
+    }
 
     .team-pictures img {
         margin-top: 1rem;
     }
-}
 
-.peeps img {
-    height: 43vh;
-    margin-right: -12vh;
-}
-
-#carousel-item-students,
-#carousel-item-teachers {
-    background-size: cover;
-    background-position: center;
-    padding: 16rem 0;
-}
-
-#carousel-home .carousel-caption h1 {
-    font-weight: bold;
-}
-
-#carousel-item-students {
-    /* Original free picture by Nathan Dumlao under Unsplash Licence : https://unsplash.com/photos/ewGMqs2tmJI */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/background-students.jpg);
-}
-
-#carousel-item-teachers {
-    /* Original free picture by ThisisEngineering RAEng under Unsplash Licence : https://unsplash.com/photos/mF6gB6hV5OU */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/background-teachers.jpg);
+    .accordion-header {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    }
 }
 
 #home-intro {
@@ -388,26 +485,8 @@ body {
     margin: 1rem 0 0rem 0;
 }
 
-#home-project {
-    padding: 2rem;
-    max-width: 60rem;
-}
-
-#home-project p {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-}
-
-#home-project h3 {
-    font-size: 1.2rem;
-}
-
 #home-intro h2 {
     font-weight: bold;
-}
-
-#carousel-home .learn-more {
-    display: none;
 }
 
 a.btn:empty {
@@ -448,23 +527,13 @@ a.btn:empty {
     color: var(--accent-color);
 }
 
-.accordion-body {
-    background-color: #fdfefe;
-}
-
 .accordion-item {
-
-    margin-bottom: .3rem;
-    border-radius: .3rem !important;
-    /* border-bottom-left-radius: .3rem !important;
-    border-bottom-right-radius: .3rem !important; */
+    margin-bottom: 0.3rem;
+    border-radius: 0.3rem !important;
 }
 
 .accordion-button {
-
-    border-radius: .3rem !important;
-    /* border-top-left-radius: .3rem !important;
-    border-top-right-radius: .3rem !important; */
+    border-radius: 0.3rem !important;
 }
 
 .accordion-item .accordion-collapse {
@@ -581,38 +650,13 @@ footer li {
     text-align: right;
 }
 
-/* BETA BANNER */
-
-.beta-banner {
-    background-color: #dc3545;
-    padding: 0.5rem;
-    text-align: center;
-    color: white;
-}
-
-.beta-banner a {
-    color: white;
-    text-decoration: underline;
-}
-
-.beta {
-    color: #6c757d;
-    font-size: 0.8rem;
-}
-
-/* RESPONSIVE */
-
 .show-filters {
     display: none;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 1199.98px) {
-    /* HOME */
-
-    #home-logos .logo {
-        margin-bottom: 3rem;
-    }
-
     /* MENU & NAVIGATION */
 
     #courses-finder .sidebar,
@@ -627,22 +671,8 @@ footer li {
 
     .show-filters {
         display: block;
-    }
-
-    .show-filters-container {
-        background-color: #f8f9fa;
-    }
-
-    #carousel-item-students,
-    #carousel-item-teachers {
-        /*.carousel-caption */
-        height: calc(100vh - 56px);
-    }
-
-    .carousel-caption {
-        height: calc(100vh - 56px);
-        align-items: center !important;
-        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .bg-theme {
@@ -652,11 +682,6 @@ footer li {
     .accordion-button {
         padding-left: 0.2rem;
         padding-right: 0.2rem;
-    }
-
-    #carousel-home .learn-more {
-        margin-top: 2rem;
-        display: inline-block;
     }
 
     #languages-selector .nav-item {
@@ -720,14 +745,8 @@ footer li {
 }
 
 @media (min-width: 1199.99px) {
-
     #theme-toggler::after {
         content: "\00a0|";
-    }
-
-    .carousel-caption {
-        top: 60%;
-        transform: translateY(-50%);
     }
 
     #courses-finder .sidebar,

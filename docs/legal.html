@@ -30,13 +30,14 @@
 
     <div id="app" v-if="dataLoaded" v-cloak>
 
-        <header>
-            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl"
+                :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}">
                 <div class="container-fluid">
-                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
-                            alt="logo" id="logo"></a>
-                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
-                            4 CLIMATE</strong><sup class="beta"> BETA</sup></a>
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="Logo"
+                            id="logo"></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                        4 <span class="accent">CLIMATE</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -49,6 +50,11 @@
                                     :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'" alt="Dark/Light theme">
+                            <span class="theme-light">Thème sombre</span>
+                            <span class="theme-dark">Thème clair</span>
+                        </div>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
@@ -56,6 +62,21 @@
                                     href="javascript:void(0);">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
+                        <div class="navbar-footer text-muted">
+                            <hr>
+                            <div>
+                                <div>The Shifters Belgium</div>
+                                <ul>
+                                    <li><a :href="translate('shared.google-form')" target="_blank"
+                                            rel="noopener">{{translate("footer.contact")}}</a></li>
+                                    <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                                    <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a></li>
+                                    <li><a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -71,16 +92,19 @@
 
         </main>
 
-        <footer class="text-muted py-5 bg-secondary">
+        <footer class="text-muted py-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">The Shifters Belgium</div>
+                <div class="row" style="padding-left: 2rem; padding-right: 2rem;">
+                    <div class="col-xl-6"><img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                    </div>
                     <div class="col-xl-6 right">
                         <ul>
                             <li><a :href="translate('shared.google-form')" target="_blank"
                                     rel="noopener">{{translate("footer.contact")}}</a>
                             </li>
-                            <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
+                            <li>
+                                <a href="legal.html">{{translate("footer.legal")}}</a>
+                            </li>
                             <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                     data-bs-target="#modalCookies">Cookies</a></li>
                             <li><a href="https://github.com/Education4Climate/" target="_blank"
@@ -91,11 +115,6 @@
                 </div>
             </div>
         </footer>
-
-        <div id="preload-background-images">
-            <img src="./img/background-students.jpg" width="1" height="1" />
-            <img src="./img/background-teachers.jpg" width="1" height="1" />
-        </div>
 
         <cookie-manager :translations="translations" :current-language="currentLanguage"
             @change-cookies-consent="changeCookiesConsent">

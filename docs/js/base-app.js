@@ -26,7 +26,8 @@ export default {
             consentLocalStorage: false,
             selectedSchools: null,
             selectedThemes: null,
-            selectedLanguages: null
+            selectedLanguages: null,
+            currentTheme: constants.DEFAULT_THEME
         };
     },
     async created() {
@@ -36,11 +37,14 @@ export default {
             this.currentLanguage = this.translationManager.getLanguage();
             this.translations = await this.translationManager.loadTranslations();
 
-            var currentTheme = document.documentElement.getAttribute("data-theme");
-            currentTheme = currentTheme ? currentTheme : constants.DEFAULT_THEME;
-            document.documentElement.setAttribute("data-theme", currentTheme);
+            //var currentTheme = document.documentElement.getAttribute("data-theme");
+            //currentTheme = currentTheme ? currentTheme : constants.DEFAULT_THEME;
+
+            this.setTheme(this.getTheme());
+
+            //document.documentElement.setAttribute("data-theme", currentTheme);
             const themeToggler = document.querySelector("#theme-toggler");
-            
+
             if (themeToggler) themeToggler.addEventListener("click", toggleTheme, false);
         }
         catch (error) {
@@ -56,11 +60,11 @@ export default {
         if (sessionStorage.selectedSchools) this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
         if (sessionStorage.selectedThemes) this.selectedThemes = JSON.parse(sessionStorage.selectedThemes);
         if (sessionStorage.selectedLanguages) this.selectedLanguages = JSON.parse(sessionStorage.selectedLanguages);
+        if (sessionStorage.currentTheme) this.currentTheme = JSON.parse(sessionStorage.currentTheme);
     },
     watch: {
 
-        // Watch for the sessionStorage to update the filters values which
-        // stay the same across pages (hence the use of sessionStorage)
+        // Watch for the sessionStorage values which are shared across pages
 
         selectedSchools(value) {
             sessionStorage.selectedSchools = JSON.stringify(value);
@@ -70,6 +74,9 @@ export default {
         },
         selectedLanguages(value) {
             sessionStorage.selectedLanguages = JSON.stringify(value);
+        },
+        currentTheme(value) {
+            sessionStorage.currentTheme = JSON.stringify(value);
         }
     },
     methods: {
@@ -161,20 +168,19 @@ export default {
 
             if (cookies.length > 1) console.log("Google Analytics cookies removed");
         },
+        getTheme() {
+
+            return sessionStorage.currentTheme ? JSON.parse(sessionStorage.currentTheme) : constants.DEFAULT_THEME;
+        },
+        setTheme(theme) {
+
+            sessionStorage.currentTheme = JSON.stringify(theme);
+            document.documentElement.setAttribute("data-theme", theme);
+            this.currentTheme = theme;
+        },
         toggleTheme(e) {
 
-            console.log("toggleTheme()");
-
-            var currentTheme = document.documentElement.getAttribute("data-theme");
-
-            console.log(currentTheme);
-
-            if (currentTheme == constants.DEFAULT_THEME) {
-                document.documentElement.setAttribute("data-theme", constants.ALTERNATE_THEME);
-            }
-            else {
-                document.documentElement.setAttribute("data-theme", constants.DEFAULT_THEME);
-            }
+            this.setTheme(this.getTheme() == constants.DEFAULT_THEME ? constants.ALTERNATE_THEME : constants.DEFAULT_THEME);
         }
     }
 };
