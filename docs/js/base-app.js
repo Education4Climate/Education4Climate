@@ -36,13 +36,8 @@ export default {
 
             this.currentLanguage = this.translationManager.getLanguage();
             this.translations = await this.translationManager.loadTranslations();
-
-            //var currentTheme = document.documentElement.getAttribute("data-theme");
-            //currentTheme = currentTheme ? currentTheme : constants.DEFAULT_THEME;
-
             this.setTheme(this.getTheme());
 
-            //document.documentElement.setAttribute("data-theme", currentTheme);
             const themeToggler = document.querySelector("#theme-toggler");
 
             if (themeToggler) themeToggler.addEventListener("click", toggleTheme, false);

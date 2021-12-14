@@ -50,8 +50,13 @@
 
     --button-color: var(--greenish-blue);
     --button-hover-color: var(--pale-teal);
+    
+    --accordions-color: var(--white);
 
     --navbar-color: var(--white);
+    --logo-color: var(--egyptian-blue);
+
+    --hr-color: var(--egyptian-blue);
 }
 
 /* Dark theme */
@@ -63,18 +68,28 @@
 
     --font-color: var(--seashell);
     --header-color: var(--seashell);
+    --link-color: var(--seashell);
 
     --font-primary-color: var(--white);
     --font-secondary-color: var(--seashell);
     --font-tertiary-color: var(--white);
 
-    --checkbox-background-color: var(--egyptian-blue);
-    --checkbox-border-color: var(--seashell);
+    --checkbox-background-color: var(--greenish-blue);
+    --checkbox-border-color: var(--greenish-blue);
 
     --badge-primary-color: var(--greenish-blue);
     --badge-secondary-color: var(--tulip-pink);
 
+    --button-color: var(--pale-teal);
+    --button-hover-color: var(--greenish-blue);
+
+    --accordions-color: var(--night-blue);
+    --accordions-border-color: var(--chambray);
+
     --navbar-color: var(--night-blue);
+    --logo-color: var(--seashell);
+
+    --hr-color: var(--chambray);
 }
 
 /* Fonts */
@@ -110,6 +125,17 @@ a {
     color: var(--accent-color);
 }
 
+hr {
+    opacity: 1;
+    color: var(--hr-color);
+}
+
+/* Icons */
+
+.icon.target {
+    content: url(/img/target-green.svg);
+}
+
 /* Theme toggler */
 
 [data-theme="dark"] #theme-toggler .theme-light {
@@ -135,8 +161,7 @@ a {
 
 /* MENU & NAVIGATION */
 
-[data-theme="light"] nav,
-main {
+[data-theme="light"] nav {
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
 }
 
@@ -146,7 +171,7 @@ nav {
 }
 
 .navbar-brand {
-    color: var(--egyptian-blue) !important;
+    color: var(--logo-color) !important;
 }
 
 /* Badges */
@@ -181,7 +206,7 @@ nav {
 .accordion-button,
 .accordion-button:not(.collapsed),
 .accordion-item {
-    background-color: var(--background-secondary-color);
+    background-color: var(--accordions-color);
 }
 
 .accordion-button:focus,
@@ -191,6 +216,14 @@ nav {
 
 .accordion-item .accordion-collapse {
     border: 0 !important;
+}
+
+[data-theme="dark"] .accordion-button::after {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .accordion-item, [data-theme="dark"] .accordion-flush .accordion-item:first-child {
+    border : 2px solid var(--accordions-border-color);
 }
 
 /* Checkboxes */
@@ -212,16 +245,38 @@ nav {
 /* Buttons */
 
 button.btn-primary,
+a.btn-primary,
+button.btn-secondary,
+a.btn-secondary {
+    font-weight: 600;
+    border-radius: 2rem;
+}
+
+button.btn-primary,
 a.btn-primary {
-    color: white;
+    color: var(--background-primary-color);
     background-color: var(--button-color);
     border-color: var(--button-color);
-    border-radius: 2rem;
 }
 
 button.btn-primary:hover,
 a.btn-primary:hover {
     background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+}
+
+button.btn-secondary,
+a.btn-secondary {
+    color: var(--button-color);
+    background-color: unset;
+    border-color: var(--button-color);
+    border: 2px solid var(--button-color);
+}
+
+button.btn-secondary:hover,
+a.btn-secondary:hover {
+    color: var(--button-hover-color);
+    background-color: unset;
     border-color: var(--button-hover-color);
 }
 
@@ -248,7 +303,9 @@ footer .container .row {
     padding-right: 2rem;
 }
 
-a {
+footer a,
+.sidebar-footer a,
+.navbar-footer a {
     text-decoration: none;
 }
 
@@ -276,10 +333,6 @@ body.modal-open {
     max-width: 100%;
 }
 
-.home section .text a {
-    text-decoration: underline;
-}
-
 .home section.primary.text a {
     color: var(--font-primary-color);
 }
@@ -292,7 +345,8 @@ body.modal-open {
     color: var(--font-tertiary-color);
 }
 
-.home h1 {
+.home h1,
+.legal h1 {
     font-weight: 600;
     font-size: 4rem;
 }
@@ -416,64 +470,21 @@ body.modal-open {
     margin-bottom: 1rem;
 }
 
-/* Responsive */
+.search-results-intro {
+    margin-left: 0.5rem;
+    border-bottom: 1px solid var(--hr-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
 
-@media (max-width: 1199.98px) {
-    .home section.intro .row,
-    .home section .row {
-        padding: 0;
-    }
+.search-results-intro h1 {
+    font-weight: 600;
+}
 
-    .home section .title {
-        justify-content: center;
-    }
-
-    .home section .text.order-xl-first {
-        padding-right: 0;
-    }
-
-    .home .intro {
-        text-align: center;
-    }
-
-    .home section h1 {
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        font-size: 3rem;
-    }
-
-    .home section {
-        min-height: auto;
-        padding: 2rem;
-        justify-content: center;
-    }
-
-    .home section .text {
-        font-size: 1rem;
-    }
-
-    .home section .text,
-    .home section .title {
-        padding: 0;
-    }
-
-    .home section div.text {
-        text-align: justify;
-    }
-
-    .home section div.text div {
-        margin-bottom: 1rem;
-    }
-
-    .team-pictures img {
-        margin-top: 1rem;
-    }
-
-    .accordion-header {
-        padding-right: 0.8rem;
-        padding-left: 0.8rem;
-    }
+.search-results-intro h1,
+.search-results-intro div {
+    padding-left: 0;
 }
 
 #home-intro {
@@ -494,7 +505,7 @@ a.btn:empty {
     display: none !important;
 }
 
-/* TROUVER UN COURS/PROGRAMME */
+/* Find a course/programme */
 
 #courses-finder h6,
 #programs-finder h6 {
@@ -549,6 +560,16 @@ a.btn:empty {
     margin-right: 0.8rem;
 }
 
+.courses-of,
+.programs-of {
+    text-align: left;
+}
+
+.download-results {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
 /* Teachers directory */
 
 #alphabet {
@@ -559,8 +580,8 @@ a.btn:empty {
 #alphabet .letter {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
-    background-color: var(--chambray);
-    border-color: var(--chambray);
+    background-color: var(--badge-primary-color);
+    border-color: var(--badge-primary-color);
 }
 
 #alphabet .letter.active {
@@ -597,8 +618,8 @@ a.btn:empty {
     width: 100%;
 }
 
-main {
-    /*padding-bottom: 3rem;*/
+.legal main {
+    padding-bottom: 3rem;
 }
 
 /* FOOTER */
@@ -639,6 +660,11 @@ footer li {
 
 #cookieBar {
     width: 95%;
+    background-color: var(--background-secondary-color);
+}
+
+.modal-content {
+    background-color: var(--background-primary-color);
 }
 
 #toggleAnalyticsCookies,
@@ -665,14 +691,10 @@ footer li {
         min-height: 0;
     }
 
-    h6.results-count {
-        text-align: center;
-    }
-
     .show-filters {
         display: block;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: .3rem;
     }
 
     .bg-theme {
@@ -742,6 +764,77 @@ footer li {
     .navbar-brand {
         font-size: 1.2rem;
     }
+
+    .home section.intro .row,
+    .home section .row {
+        padding: 0;
+    }
+
+    .home section .title {
+        justify-content: center;
+    }
+
+    .home section .text.order-xl-first {
+        padding-right: 0;
+    }
+
+    .home .intro {
+        text-align: center;
+    }
+
+    .home section h1 {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .home section {
+        min-height: auto;
+        padding: 2rem;
+        justify-content: center;
+    }
+
+    .home section .text {
+        font-size: 1rem;
+    }
+
+    .home section .text,
+    .home section .title {
+        padding: 0;
+    }
+
+    .home section div.text {
+        text-align: justify;
+    }
+
+    .home section div.text div {
+        margin-bottom: 1rem;
+    }
+
+    .team-pictures img {
+        margin-top: 1rem;
+    }
+
+    .accordion-header {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    }
+
+    .search-results-intro {
+        margin-left: 0;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    /* Find a course/programme */
+
+    .courses-of,
+    .programs-of,
+    .download-results {
+        text-align: center;
+    }
 }
 
 @media (min-width: 1199.99px) {
@@ -752,10 +845,6 @@ footer li {
     #courses-finder .sidebar,
     #programs-finder .sidebar {
         display: block;
-    }
-
-    h6.results-count {
-        padding-left: 20px;
     }
 
     /* Footer */
@@ -778,4 +867,10 @@ footer li {
     .navbar-brand {
         font-size: 0.8rem;
     }
+}
+
+/* MODALS */
+
+[data-theme="dark"] .modal-content .btn-close {
+    filter: invert(1);
 }

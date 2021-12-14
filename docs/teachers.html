@@ -7,15 +7,16 @@
     <meta name="description"
         content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <link rel="manifest" href="./favicons/site.webmanifest">
-    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Education 4 Climate">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#4bd2af">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f5f0f0">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f5f0f0">
     <meta name="application-name" content="Education 4 Climate">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <meta property="og:title" content="Education 4 Climate" />
     <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
@@ -29,14 +30,15 @@
 <body class="teachers">
 
     <div id="app">
-        
+
         <header v-if="dataLoaded" v-cloak>
-            <nav class="navbar navbar-expand-xl" :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}" >
+            <nav class="navbar navbar-expand-xl"
+                :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}">
                 <div class="container-fluid">
-                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg"
-                            alt="logo" id="logo"></a>
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="logo"
+                            id="logo"></a>
                     <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
-                            4 <span class="accent">CLIMATE</span></a>
+                        4 <span class="accent">CLIMATE</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -50,10 +52,11 @@
                             </li>
                         </ul>
                         <div id="theme-toggler" @click="toggleTheme()">
-                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'"
+                                alt="Dark/Light theme">
                             <span class="theme-light">Thème sombre</span>
-                            <span class="theme-dark">Thème clair</span>                            
-                        </div>                        
+                            <span class="theme-dark">Thème clair</span>
+                        </div>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
@@ -61,12 +64,13 @@
                                     href="javascript:void(0);">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
-                        <div class="navbar-footer text-muted">
+                        <div class="navbar-footer">
                             <hr>
                             <div>
-                                <div>The Shifters Belgium</div>
+                                <div class="accent">The Shifters Belgium</div>
                                 <ul>
-                                    <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener">{{translate("footer.contact")}}</a></li>
+                                    <li><a :href="translate('shared.google-form')" target="_blank"
+                                            rel="noopener">{{translate("footer.contact")}}</a></li>
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
                                             data-bs-target="#modalCookies">Cookies</a></li>
@@ -84,7 +88,6 @@
             class="d-flex flex-column justify-content-center align-items-center">
             <div class="spinner-border text-primary"></div>
             <h4 v-if="translations.length > 0" v-cloak>{{translate("shared.loading")}}</h4>
-            <div class="text-danger" v-cloak>{{errors}}</div>
         </div>
 
         <div class="container-fluid" id="programs-finder" v-if="dataLoaded" v-cloak>
@@ -92,7 +95,7 @@
             <div class="row">
 
                 <div class="d-grid show-filters-container">
-                    <button type="button" class="btn btn-primary show-filters" data-bs-toggle="collapse"
+                    <button type="button" class="btn btn-primary btn-sm show-filters" data-bs-toggle="collapse"
                         data-bs-target=".sidebar" @click="showResponsiveFilters = !showResponsiveFilters">
                         {{ showResponsiveFilters ? translate("shared.hide-filters") : translate("shared.show-filters")
                         }}</button>
@@ -146,10 +149,10 @@
                         </div>
                     </div>
 
-                    <div class="sidebar-footer text-muted">
+                    <div class="sidebar-footer">
                         <hr>
                         <div>
-                            <div>The Shifters Belgium</div>
+                            <div class="accent">The Shifters Belgium</div>
                             <ul>
                                 <li><a :href="translate('shared.google-form')" target="_blank"
                                         rel="noopener">{{translate("footer.contact")}}</a></li>
@@ -165,6 +168,11 @@
                 </div>
 
                 <div class="results col-lg-12 col-xl-10 pt-3 px-4s">
+
+                    <div class="row search-results-intro">
+                        <h1 v-html="translate('menu.teachers')"></h1>
+                        <div v-html="translate('teachers.intro')"></div>
+                    </div>
 
                     <div id="alphabet">
                         <button type="button" class="btn btn-primary letter"
@@ -186,7 +194,8 @@
                                     <div class="d-flex flex-column">
                                         <div>
                                             <h5>{{teacher?teacher.name:''}}
-                                                <span class="badge badge-secondary text-body">{{schools[teacher.schoolId]?
+                                                <span
+                                                    class="badge badge-secondary text-body">{{schools[teacher.schoolId]?
                                                     schools[teacher.schoolId].shortName:''}}</span>
                                             </h5>
                                         </div>
@@ -219,8 +228,10 @@
                                                 target="_blank"
                                                 rel="noopener">{{translate("teachers.external-website")}}</a>
                                         </div>
-                                        <div class="text-end"><a :href="translate('shared.google-form')" target="_blank"
-                                                rel="noopener">{{translate("shared.report-result")}}</a></div>
+                                        <div class="text-end">
+                                            <a :href="translate('shared.google-form')" class="btn btn-secondary btn-sm"
+                                                target="_blank" rel="noopener">{{translate("shared.report-issue")}}</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
