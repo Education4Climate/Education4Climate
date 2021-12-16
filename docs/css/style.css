@@ -1,4 +1,311 @@
+:root {
+    /* Please see here for references and updates : 
+       https://initiatives.theshifters.org/boite-a-outils/
+    */
+
+    /* identity colors */
+
+    --night-blue: #00004b;
+    --egyptian-blue: #0023aa;
+    --pale-teal: #4bd2af;
+    --greenish-blue: #00788c;
+
+    /* contrast colors */
+
+    --chambray: #2d4182;
+    --faded-pink: #f091b9;
+    --tulip-pink: #dc4b78;
+    --seashell: #f5f0f0;
+
+    /* neutral colors */
+
+    --baltic-sea: #282828;
+    --white: #ffffff;
+
+    /* Light theme */
+
+    --accent-color: var(--pale-teal);
+
+    --background-primary-color: var(--seashell);
+    --background-secondary-color: var(--white);
+    --background-tertiary-color: var(--greenish-blue);
+
+    --font-color: var(--baltic-sea);
+    --header-color: var(--egyptian-blue);
+    --link-color: var(--egyptian-blue);
+
+    --font-primary-color: var(--egyptian-blue);
+    --font-secondary-color: var(--baltic-sea);
+    --font-tertiary-color: var(--white);
+
+    --checkbox-background-color: var(--egyptian-blue);
+    --checkbox-border-color: var(--egyptian-blue);
+
+    --badge-primary-color: var(--chambray);
+    --badge-secondary-color: var(--tulip-pink);
+    --badge-accent-color: var(--pale-teal);
+
+    --footer-background-color: var(--night-blue);
+    --footer-link-color: var(--white);
+
+    --button-color: var(--greenish-blue);
+    --button-hover-color: var(--pale-teal);
+    
+    --accordions-color: var(--white);
+
+    --navbar-color: var(--white);
+    --logo-color: var(--egyptian-blue);
+
+    --hr-color: var(--egyptian-blue);
+}
+
+/* Dark theme */
+
+[data-theme="dark"] {
+    --background-primary-color: var(--night-blue);
+    --background-secondary-color: var(--egyptian-blue);
+    --background-tertiary-color: var(--baltic-sea);
+
+    --font-color: var(--seashell);
+    --header-color: var(--seashell);
+    --link-color: var(--seashell);
+
+    --font-primary-color: var(--white);
+    --font-secondary-color: var(--seashell);
+    --font-tertiary-color: var(--white);
+
+    --checkbox-background-color: var(--greenish-blue);
+    --checkbox-border-color: var(--greenish-blue);
+
+    --badge-primary-color: var(--greenish-blue);
+    --badge-secondary-color: var(--tulip-pink);
+
+    --button-color: var(--pale-teal);
+    --button-hover-color: var(--greenish-blue);
+
+    --accordions-color: var(--night-blue);
+    --accordions-border-color: var(--chambray);
+
+    --navbar-color: var(--night-blue);
+    --logo-color: var(--seashell);
+
+    --hr-color: var(--chambray);
+}
+
+/* Fonts */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-color);
+    font-size: 1rem;
+    background-color: var(--background-primary-color);
+
+    /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
+    overflow-y: scroll !important;
+}
+
+.text-primary {
+    color: var(--font-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--header-color);
+}
+
 a {
+    color: var(--link-color);
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+hr {
+    opacity: 1;
+    color: var(--hr-color);
+}
+
+/* Icons */
+
+.icon.target {
+    content: url(/img/target-green.svg);
+}
+
+/* Theme toggler */
+
+[data-theme="dark"] #theme-toggler .theme-light {
+    display: none;
+}
+
+[data-theme="light"] #theme-toggler .theme-dark {
+    display: none;
+}
+
+#theme-toggler {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#theme-toggler:hover {
+    cursor: pointer;
+}
+
+#theme-toggler img {
+    margin-right: 0.3rem;
+}
+
+/* MENU & NAVIGATION */
+
+[data-theme="light"] nav {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+
+nav {
+    font-weight: 700;
+    background-color: var(--navbar-color);
+}
+
+.navbar-brand {
+    color: var(--logo-color) !important;
+}
+
+/* Badges */
+
+.bg-primary {
+    background-color: var(--badge-primary-color) !important;
+}
+
+.bg-secondary {
+    background-color: var(--badge-secondary-color) !important;
+}
+
+.bg-success {
+    background-color: var(--badge-accent-color) !important;
+}
+
+.badge-primary {
+    background-color: var(--chambray) !important;
+    color: var(--seashell) !important;
+}
+
+.badge-secondary {
+    background-color: var(--tulip-pink) !important;
+    color: var(--seashell) !important;
+}
+
+.sub-badge {
+    background-color: var(--background-primary-color) !important;
+    color: var(--font-primary-color) !important;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-item {
+    background-color: var(--accordions-color);
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: unset;
+}
+
+.accordion-item .accordion-collapse {
+    border: 0 !important;
+}
+
+[data-theme="dark"] .accordion-button::after {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .accordion-item, [data-theme="dark"] .accordion-flush .accordion-item:first-child {
+    border : 2px solid var(--accordions-border-color);
+}
+
+/* Checkboxes */
+
+.form-check-input:checked {
+    background-color: var(--checkbox-background-color);
+    border-color: var(--checkbox-border-color);
+}
+
+.check-all {
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.sub-check {
+    margin-left: 1rem;
+}
+
+/* Buttons */
+
+button.btn-primary,
+a.btn-primary,
+button.btn-secondary,
+a.btn-secondary {
+    font-weight: 600;
+    border-radius: 2rem;
+}
+
+button.btn-primary,
+a.btn-primary {
+    color: var(--background-primary-color);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+button.btn-primary:hover,
+a.btn-primary:hover {
+    background-color: var(--button-hover-color);
+    border-color: var(--button-hover-color);
+}
+
+button.btn-secondary,
+a.btn-secondary {
+    color: var(--button-color);
+    background-color: unset;
+    border-color: var(--button-color);
+    border: 2px solid var(--button-color);
+}
+
+button.btn-secondary:hover,
+a.btn-secondary:hover {
+    color: var(--button-hover-color);
+    background-color: unset;
+    border-color: var(--button-hover-color);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--footer-background-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+footer .logo {
+    height: 3rem;
+}
+
+footer .container .row {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+footer a,
+.sidebar-footer a,
+.navbar-footer a {
     text-decoration: none;
 }
 
@@ -12,15 +319,6 @@ body.modal-open {
     padding-right: 0 !important;
 }
 
-.bg-secondary {
-    background-color: #f8f9fa !important;
-}
-
-body {
-    /* force scrollbar on courses/programs/teachers to avoid reflow on infrequent results pages with too few results */
-    overflow-y: scroll !important;
-}
-
 /* MENU & NAVIGATION */
 
 #logo {
@@ -29,34 +327,164 @@ body {
     margin-left: 0.3rem;
 }
 
-#preload-background-images {
-    /* Permet de précharger les 2 images du slideshow pour ne pas avoir un effet de flicker au chargement */
-    display: none;
-}
-
 /* HOME */
 
-#carousel-item-students,
-#carousel-item-teachers {
-    background-size: cover;
-    background-position: center;
-    padding: 16rem 0;
+.home .container {
+    max-width: 100%;
 }
 
-#carousel-home .carousel-caption h1 {
-    font-weight: bold;
+.home section.primary.text a {
+    color: var(--font-primary-color);
 }
 
-#carousel-item-students {
-    /* Original free picture by Nathan Dumlao under Unsplash Licence : https://unsplash.com/photos/ewGMqs2tmJI */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/background-students.jpg);
+.home section.secondary a {
+    color: var(--font-secondary-color);
 }
 
-#carousel-item-teachers {
-    /* Original free picture by ThisisEngineering RAEng under Unsplash Licence : https://unsplash.com/photos/mF6gB6hV5OU */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(../img/background-teachers.jpg);
+.home section.tertiary a {
+    color: var(--font-tertiary-color);
+}
+
+.home h1,
+.legal h1 {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.home section {
+    display: flex;
+    min-height: 40vh;
+}
+
+.home section .text.order-xl-first {
+    padding-right: 10rem;
+}
+
+.home section.primary,
+.home section.primary :is(h1, h2, h3, h4, h5) {
+    background-color: var(--background-primary-color);
+    color: var(--font-primary-color);
+}
+
+.home section.secondary,
+.home section.secondary :is(h1, h2, h3, h4, h5) {
+    background-color: var(--background-secondary-color);
+    color: var(--font-secondary-color);
+}
+
+.home section.tertiary,
+.home section.tertiary :is(h1, h2, h3, h4, h5) {
+    background-color: var(--background-tertiary-color);
+    color: var(--font-tertiary-color);
+}
+
+.home .team-pictures {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home .team-pictures img {
+    width: 8rem;
+    border-radius: 8rem;
+    margin-bottom: 1rem;
+}
+
+.home .team-pictures h2 {
+    font-weight: 800;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.home .team-pictures h3 {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.home .team-pictures div {
+    margin: 1rem;
+}
+
+.home section.intro .row {
+    padding: 5rem;
+}
+
+.home section .row {
+    padding: 5rem;
+    flex-basis: 100%;
+}
+
+.home section .row {
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    display: flex;
+}
+
+.home section .text {
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home section .title {
+    display: flex;
+    align-items: center;
+}
+
+.home .intro .peeps {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.home .intro .peeps img {
+    width: 25vw;
+    position: relative;
+}
+
+.home .intro .peeps img:nth-child(1) {
+    margin-right: -15vw;
+    z-index: 2;
+}
+
+.home .intro .peeps img:nth-child(2) {
+    margin-right: -15vw;
+    z-index: 1;
+}
+
+.home .intro .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .intro .headline .buttons-container {
+    margin-top: 4rem;
+}
+
+.home .intro .headline .buttons-container div {
+    margin-bottom: 1rem;
+}
+
+.search-results-intro {
+    margin-left: 0.5rem;
+    border-bottom: 1px solid var(--hr-color);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
+
+.search-results-intro h1 {
+    font-weight: 600;
+}
+
+.search-results-intro h1,
+.search-results-intro div {
+    padding-left: 0;
 }
 
 #home-intro {
@@ -68,33 +496,8 @@ body {
     margin: 1rem 0 0rem 0;
 }
 
-#home-project{
-    padding: 2rem;
-    padding-bottom: 0;
-    max-width: 60rem;
-}
-
-#home-team {
-    padding: 2rem;
-    padding-top: 0;
-    max-width: 60rem;
-}
-
-#home-project p {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-}
-
-#home-project h3 {
-    font-size: 1.2rem;
-}
-
 #home-intro h2 {
     font-weight: bold;
-}
-
-#carousel-home .learn-more {
-    display: none;
 }
 
 a.btn:empty {
@@ -102,7 +505,7 @@ a.btn:empty {
     display: none !important;
 }
 
-/* TROUVER UN COURS/PROGRAMME */
+/* Find a course/programme */
 
 #courses-finder h6,
 #programs-finder h6 {
@@ -121,16 +524,27 @@ a.btn:empty {
 
 #languages-selector {
     flex-direction: row;
+    justify-content: flex-end;
+}
+
+#languages-selector a,
+#menu a,
+#theme-toggler {
+    color: var(--header-color);
 }
 
 #languages-selector a.active,
 #menu a.active {
-    color: #0d6efd;
-    font-weight: 500;
+    color: var(--accent-color);
 }
 
-.accordion-body {
-    background-color: #fdfefe;
+.accordion-item {
+    margin-bottom: 0.3rem;
+    border-radius: 0.3rem !important;
+}
+
+.accordion-button {
+    border-radius: 0.3rem !important;
 }
 
 .accordion-item .accordion-collapse {
@@ -146,6 +560,16 @@ a.btn:empty {
     margin-right: 0.8rem;
 }
 
+.courses-of,
+.programs-of {
+    text-align: left;
+}
+
+.download-results {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
 /* Teachers directory */
 
 #alphabet {
@@ -156,26 +580,32 @@ a.btn:empty {
 #alphabet .letter {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+    background-color: var(--badge-primary-color);
+    border-color: var(--badge-primary-color);
 }
 
 #alphabet .letter.active {
-    background-color: #157347;
+    background-color: var(--pale-teal);
+    border-color: var(--pale-teal);
 }
 
 /* SIDEBAR */
 
 .sidebar {
-    background-color: #f8f9fa;
+    background-color: var(--background-primary-color);
     min-height: calc(100vh - 56px);
 }
 
+.results {
+    background-color: var(--background-primary-color);
+}
+
 .sidebar h6.title {
-    color: #0d6efd;
-    margin-top: 0.9rem;
+    margin-top: 1rem;
 }
 
 .sidebar h6.title.first {
-    margin-top: 0;
+    margin-top: 1rem;
 }
 
 .filter .count {
@@ -188,17 +618,8 @@ a.btn:empty {
     width: 100%;
 }
 
-main {
+.legal main {
     padding-bottom: 3rem;
-}
-
-.check-all {
-    margin-right: .5rem;
-    margin-top: 1rem;
-}
-
-.sub-check {
-    margin-left: 1rem;
 }
 
 /* FOOTER */
@@ -239,6 +660,11 @@ footer li {
 
 #cookieBar {
     width: 95%;
+    background-color: var(--background-secondary-color);
+}
+
+.modal-content {
+    background-color: var(--background-primary-color);
 }
 
 #toggleAnalyticsCookies,
@@ -250,38 +676,13 @@ footer li {
     text-align: right;
 }
 
-/* BETA BANNER */
-
-.beta-banner {
-    background-color: #dc3545;
-    padding: 0.5rem;
-    text-align: center;
-    color: white;
-}
-
-.beta-banner a {
-    color: white;
-    text-decoration: underline;
-}
-
-.beta {
-    color: #6c757d;
-    font-size: 0.8rem;
-}
-
-/* RESPONSIVE */
-
 .show-filters {
     display: none;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 1199.98px) {
-    /* HOME */
-
-    #home-logos .logo {
-        margin-bottom: 3rem;
-    }
-
     /* MENU & NAVIGATION */
 
     #courses-finder .sidebar,
@@ -292,22 +693,8 @@ footer li {
 
     .show-filters {
         display: block;
-    }
-
-    .show-filters-container {
-        background-color: #f8f9fa;
-    }
-
-    #carousel-item-students,
-    #carousel-item-teachers {
-        /*.carousel-caption */
-        height: calc(100vh - 56px);
-    }
-
-    .carousel-caption {
-        height: calc(100vh - 56px);
-        align-items: center !important;
-        display: flex;
+        margin-top: 1rem;
+        margin-bottom: .3rem;
     }
 
     .bg-theme {
@@ -317,11 +704,6 @@ footer li {
     .accordion-button {
         padding-left: 0.2rem;
         padding-right: 0.2rem;
-    }
-
-    #carousel-home .learn-more {
-        margin-top: 2rem;
-        display: inline-block;
     }
 
     #languages-selector .nav-item {
@@ -382,21 +764,87 @@ footer li {
     .navbar-brand {
         font-size: 1.2rem;
     }
+
+    .home section.intro .row,
+    .home section .row {
+        padding: 0;
+    }
+
+    .home section .title {
+        justify-content: center;
+    }
+
+    .home section .text.order-xl-first {
+        padding-right: 0;
+    }
+
+    .home .intro {
+        text-align: center;
+    }
+
+    .home section h1 {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .home section {
+        min-height: auto;
+        padding: 2rem;
+        justify-content: center;
+    }
+
+    .home section .text {
+        font-size: 1rem;
+    }
+
+    .home section .text,
+    .home section .title {
+        padding: 0;
+    }
+
+    .home section div.text {
+        text-align: justify;
+    }
+
+    .home section div.text div {
+        margin-bottom: 1rem;
+    }
+
+    .team-pictures img {
+        margin-top: 1rem;
+    }
+
+    .accordion-header {
+        padding-right: 0.8rem;
+        padding-left: 0.8rem;
+    }
+
+    .search-results-intro {
+        margin-left: 0;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    /* Find a course/programme */
+
+    .courses-of,
+    .programs-of,
+    .download-results {
+        text-align: center;
+    }
 }
 
 @media (min-width: 1199.99px) {
-    .carousel-caption {
-        top: 60%;
-        transform: translateY(-50%);
+    #theme-toggler::after {
+        content: "\00a0|";
     }
 
     #courses-finder .sidebar,
     #programs-finder .sidebar {
         display: block;
-    }
-
-    h6.results-count {
-        padding-left: 20px;
     }
 
     /* Footer */
@@ -421,31 +869,8 @@ footer li {
     }
 }
 
+/* MODALS */
 
-/* Team gallery */
-
-.home .team-pictures {
-
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.team-pictures img {
-    width: 8rem;
-    border-radius: 8rem;
-    margin-bottom: 1rem;
-}
-
-.team-pictures h2 {
-
-    font-weight: 800;
-    font-size: 1.1rem;
-    white-space: nowrap;
-}
-
-.team-pictures h3 {
-
-    font-weight: 400;
-    font-size: 0.9rem;
-    margin-bottom: 3rem;
+[data-theme="dark"] .modal-content .btn-close {
+    filter: invert(1);
 }

@@ -4,25 +4,28 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
     <meta name="google-site-verification" content="Mb7RsnQF9bZkOcVENvQRaOTaDVqxgp56L8lwi_ICEzg" />
     <link rel="alternate" hreflang="nl" href="/index.html?lang=nl" />
     <link rel="alternate" hreflang="en" href="/index.html?lang=en" />
     <link rel="canonical" href="/index.html?lang=fr" />
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-    <link rel="manifest" href="./favicons/site.webmanifest">
-    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="apple-mobile-web-app-title" content="Education 4 Climate">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#4bd2af">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f5f0f0">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f5f0f0">
     <meta name="application-name" content="Education 4 Climate">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <meta property="og:title" content="Education 4 Climate" />
     <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
     <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
+    <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -33,13 +36,14 @@
 
     <div id="app" v-if="dataLoaded" v-cloak>
 
-        <header>
-            <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl"
+                :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}">
                 <div class="container-fluid">
-                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/icon-education4climate.svg"
-                            alt="logo" id="logo"></a>
-                    <a class="navbar-brand text-primary" :href="'index.html?lang=' + currentLanguage"><strong>EDUCATION
-                            4 CLIMATE</strong><sup class="beta"> BETA</sup></a>
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="Logo"
+                            id="logo"></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                        4 <span class="accent">CLIMATE</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -52,6 +56,12 @@
                                     :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
                             </li>
                         </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'"
+                                alt="Dark/Light theme">
+                            <span class="theme-light">{{translate("menu.dark-theme")}}</span>
+                            <span class="theme-dark">{{translate("menu.light-theme")}}</span>
+                        </div>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
@@ -59,111 +69,195 @@
                                     href="javascript:void(0);">{{language.toUpperCase()}}</a>
                             </li>
                         </ul>
+                        <div class="navbar-footer">
+                            <hr>
+                            <div>
+                                <div class="accent">The Shifters Belgium</div>
+                                <ul>
+                                    <li>
+                                        <a :href="translate('shared.google-form')" target="_blank"
+                                            rel="noopener">{{translate("footer.contact")}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="legal.html">{{translate("footer.legal")}}</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <main id="home">
+        <main>
 
-            <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" id="carousel-item-students">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6">
-                                        <h1 v-html="translate('home.headline-students')">Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?</h1>
-                                        <p><a class="btn btn-primary learn-more"
-                                                href="#home-intro">{{translate("shared.learn-more")}}</a></p>
-                                    </div>
+            <section class="intro primary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 peeps">
+                        <img :src="this.currentTheme === 'light' ? './img/peep3.svg' : './img/peep3-dark.svg'"
+                            alt="Petit bonhomme">
+                        <img :src="this.currentTheme === 'light' ? './img/peep1.svg' : './img/peep1-dark.svg'"
+                            alt="Petit bonhomme">
+                        <img :src="this.currentTheme === 'light' ? './img/peep2.svg' : './img/peep2-dark.svg'"
+                            alt="Petit bonhomme">
+                    </div>
+
+                    <div class="col-xl-6 headline">
+
+                        <h1 v-html="translate('home.intro-headline')"></h1>
+                        <h2 v-html="translate('home.intro-subheadline')"></h2>
+
+                        <h2>
+                            <div class="buttons-container">
+                                <div>
+                                    <a class="btn btn-primary btn-lg"
+                                        href="/programs.html">{{translate("menu.programs")}}</a>
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary btn-lg"
+                                        href="/courses.html">{{translate("menu.courses")}}</a>
+                                </div>
+                                <div>
+                                    <a class="btn btn-primary btn-lg"
+                                        href="/teachers.html">{{translate("menu.teachers")}}</a>
                                 </div>
                             </div>
-                        </div>
+                        </h2>
+
                     </div>
-                    <div class="carousel-item" id="carousel-item-teachers">
-                        <div class="carousel-caption">
-                            <div class="container">
-                                <div class="row justify-content-center">
-                                    <div class="col-md-6">
-                                        <h1 v-html="translate('home.headline-teachers')">Où trouver un collègue, un directeur de mémoire ou un promoteur de thèse ?</h1>
-                                        <p><a class="btn btn-primary learn-more"
-                                                href="#home-intro">{{translate("shared.learn-more")}}</a></p>
-                                    </div>
-                                </div>
+                </div>
+
+            </section>
+
+            <section class="secondary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1 v-html="translate('home.section1-title')"></h1>
+                    </div>
+
+                    <div class="col-xl-6 text" v-html="translate('home.section1-text')"></div>
+
+                </div>
+
+            </section>
+
+            <section class="tertiary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title order-xl-last">
+                        <h1 v-html="translate('home.section2-title')"></h1>
+                    </div>
+
+                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section2-text')"></div>
+
+                </div>
+
+            </section>
+
+            <section class="secondary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1 v-html="translate('home.section3-title')"></h1>
+                    </div>
+
+                    <div class="col-xl-6 text" v-html="translate('home.section3-text')"></div>
+
+                </div>
+
+            </section>
+
+            <section class="tertiary container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title order-xl-last">
+                        <h1 v-html="translate('home.section4-title')"></h1>
+                    </div>
+
+                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section4-text')"></div>
+
+                </div>
+
+            </section>
+
+            <section class="secondary container" id="home-team">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1 v-html="translate('home.team-title')"></h1>
+                    </div>
+
+                    <div class="col-xl-6 container text">
+
+                        <div class="team-pictures">
+                            <div>
+                                <img src="./img/team/antoine.jpg" alt="Antoine Dubois">
+                                <h2>Antoine Dubois</h2>
+                                <h3>{{translate("team.algorithm")}}</h3>
+                            </div>
+                            <div>
+                                <img src="./img/team/arthur.jpg" alt="Arthur Prével">
+                                <h2>Arthur Prével</h2>
+                                <h3>{{translate("team.survey")}}</h3>
+                            </div>
+                            <div>
+                                <img src="./img/team/denis.jpg" alt="Denis Lebailly">
+                                <h2>Denis Lebailly</h2>
+                                <h3>{{translate("team.algorithm")}}</h3>
+                            </div>
+                            <div>
+                                <img src="./img/team/francois.jpg" alt="François Collard">
+                                <h2>François Collard</h2>
+                                <h3>{{translate("team.project")}}</h3>
+                            </div>
+                            <div>
+                                <img src="./img/team/noel.jpg" alt="Noël Schneider">
+                                <h2>Noël Schneider</h2>
+                                <h3>{{translate("team.algorithm")}}</h3>
+                            </div>
+                            <div>
+                                <img src="./img/team/quentin.jpg" alt="Quentin Lancrenon">
+                                <h2>Quentin Lancrenon</h2>
+                                <h3>{{translate("team.strategy")}}</h3>
+                            </div>
+                            <div>
+                                <img src="./img/team/quentin2.jpg" alt="Quentin Vantieghem">
+                                <h2>Quentin Vantieghem</h2>
+                                <h3>{{translate("team.web")}}</h3>
                             </div>
                         </div>
+                        <div class="thanks" v-html="translate('home.team-thanks')"></div>
                     </div>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-home"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-home"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div class="container" id="home-intro">
-                <div class="row text-center ">
-                    <div class="col-md-4 d-grid d-md-block">
-                        <a href="programs.html" type="button"
-                            class="btn btn-primary btn-lg">{{translate("menu.programs")}}</a>
-                    </div>
-                    <div class="col-md-4 d-grid d-md-block">
-                        <a href="courses.html" type="button"
-                            class="btn btn-primary btn-lg">{{translate("menu.courses")}}</a>
-                    </div>
-                    <div class="col-md-4 d-grid d-md-block">
-                        <a href="teachers.html" type="button"
-                            class="btn btn-primary btn-lg">{{translate("menu.teachers")}}</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container" id="home-project">
-                <div class="row" v-html="translate('home-text')">
-                </div>
-            </div>
-
-            <div class="container" id="home-team" v-html="translate('home-team')">
-            </div>
-
-            <div class="container" id="home-logos">
-                <div class="row text-center">
-                    <div class="col-xl-3 col-md-6 logo">
-                        <a href="https://www.sdsnbelgium.be" target="_blank" rel="noopener">
-                            <img src="img/sdsn-logo.png" width="200" height="108" alt="SDSN logo">
-                        </a>
-                    </div>
-                    <div class="col-xl-3 col-md-6 logo">
-                        <a href="https://theshiftproject.org" target="_blank" rel="noopener">
-                            <img src="img/the-shift-project-logo.png" width="200" height="116"
-                                alt="The Shift Project logo">
-                        </a>
-                    </div>
-                    <div class="col-xl-3 col-md-6 logo">
-                        <img src="img/the-shifters.png" width="200" height="101" alt="The Shifters logo">
-                    </div>
-                    <div class="col-xl-3 col-md-6 logo">
-                        <a href="https://www.theshift.be" target="_blank" rel="noopener">
-                            <img src="img/the-shift-logo.svg" width="200" height="75" alt="The Shift logo">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-danger" v-cloak>{{errors}}</div>
+            </section>
 
         </main>
 
-        <footer class="text-muted py-5 bg-secondary">
+        <footer class="text-muted py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6">The Shifters Belgium</div>
+                    <div class="col-xl-6">
+                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                        </a>
+                    </div>
                     <div class="col-xl-6 right">
                         <ul>
                             <li><a :href="translate('shared.google-form')" target="_blank"
@@ -182,11 +276,6 @@
                 </div>
             </div>
         </footer>
-
-        <div id="preload-background-images">
-            <img src="./img/background-students.jpg" width="1" height="1" />
-            <img src="./img/background-teachers.jpg" width="1" height="1" />
-        </div>
 
         <cookie-manager :translations="translations" :current-language="currentLanguage"
             @change-cookies-consent="changeCookiesConsent">
