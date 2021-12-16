@@ -25,6 +25,10 @@ FACULTY_DICT = {
 
 
 class ULiegeSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for ULiège
+    """
+
     name = 'uliege-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -52,6 +56,12 @@ class ULiegeSpider(scrapy.Spider, ABC):
 
         program_name = response.xpath("//h1/text()").get()
         if program_name is None:
+            return
+        # Don't keep list of course for exchange students
+        if "étudiants d'échange" in program_name:
+            return
+        # Programs that are not organised in the year of interest
+        if f"non organisé en {YEAR}-{YEAR+1-2000}" in program_name:
             return
 
         cycle = response.xpath("//div[@class='u-courses-header__headline']/text()").get().split("/")[1][1:]

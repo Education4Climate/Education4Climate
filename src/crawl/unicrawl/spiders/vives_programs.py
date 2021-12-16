@@ -9,6 +9,10 @@ BASE_URL = 'http://onderwijsaanbod.vives-zuid.be/opleidingen/n/'
 
 
 class VivesProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for VIVES
+    """
+
     name = 'vives-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -41,10 +45,12 @@ class VivesProgramSpider(scrapy.Spider, ABC):
 
     @staticmethod
     def parse_program(response, program_id, faculty):
+
         program_name = response.xpath("//h1/text()").get()
-        campus = ''
+        campuses = []
         if '(' in program_name:
             campus = program_name.split('(')[-1].split(')')[0]
+            campuses = [] if campus == 'niet inschrijven' or campus == 'Spring' else [campus]
 
         if 'bachelor' in program_name or 'Bachelor' in program_name:
             cycle = 'bac'
@@ -67,9 +73,10 @@ class VivesProgramSpider(scrapy.Spider, ABC):
             'id': program_id,
             'name': program_name,
             'cycle': cycle,
-            'faculty': faculty,
-            'campus': campus,
+            'faculties': [faculty],
+            'campuses': campuses,
             'url': response.url,
             'courses': courses,
             'ects': ects,
-            'courses_urls': courses_url}
+            'courses_urls': courses_url
+        }

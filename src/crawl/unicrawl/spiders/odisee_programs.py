@@ -9,6 +9,10 @@ BASE_URL = 'http://onderwijsaanbod.odisee.be/opleidingen/n/'
 
 
 class OdiseeProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for Odisee
+    """
+
     name = 'odisee-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -30,7 +34,7 @@ class OdiseeProgramSpider(scrapy.Spider, ABC):
                                                  f"contains(@class, 'taal_e')]/a/@href").getall()
             for link in program_group_links:
                 yield response.follow(link, self.parse_program_group,
-                                      cb_kwargs={"faculty": faculty.split("Studiegebied ")[1]})
+                                      cb_kwargs={"faculty": faculty.split("Cluster ")[1]})
 
     def parse_program_group(self, response, faculty):
 
@@ -44,9 +48,9 @@ class OdiseeProgramSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_program(response, program_id, faculty):
         program_name = response.xpath("//h1/text()").get()
-        campus = ''
+        campuses = []
         if '(' in program_name:
-            campus = program_name.split('(')[-1].split(')')[0]
+            campuses = [program_name.split('(')[-1].split(')')[0]]
 
         if 'bachelor' in program_name or 'Bachelor' in program_name:
             cycle = 'bac'
@@ -67,8 +71,8 @@ class OdiseeProgramSpider(scrapy.Spider, ABC):
             'id': program_id,
             'name': program_name,
             'cycle': cycle,
-            'faculty': faculty,
-            'campus': campus,
+            'faculties': [faculty],
+            'campuses': campuses,
             'url': response.url,
             'courses': courses,
             'ects': ects,

@@ -4,34 +4,37 @@ from pathlib import Path
 
 import pandas as pd
 import scrapy
-import base64
-import itertools
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
 BASE_URL = "https://www.einet.be/ficheueprintable.php?code={}" + \
-           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=18"
+           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=19"
 ECTS_URL = "https://www.einet.be/ficheectsprintable.php?code={}" + \
-           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=18"
+           f"&anneeaca={YEAR}_{YEAR+1}&codemarcourt=19"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ecsedi-isalt_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"français": "fr",
-                  "Français": "fr",
-                  "Langue française": "fr",
-                  "Anglais": "en",
-                  "Allemand": "de",
-                  "Néerlandais": "nl",
-                  "Italien": "it",
-                  "chinois": 'cn',
-                  "Chinois": 'cn',
-                  "espagnol": 'es',
-                  "Espagnol": 'es'
-                  }
+LANGUAGES_DICT = {
+    "français": "fr",
+    "Français": "fr",
+    "Langue française": "fr",
+    "Anglais": "en",
+    "Allemand": "de",
+    "Néerlandais": "nl",
+    "Italien": "it",
+    "chinois": 'cn',
+    "Chinois": 'cn',
+    "espagnol": 'es',
+    "Espagnol": 'es'
+}
 
 
 class ECSEDIISALTCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for ECSEDI-ISALT Bruxelles
+    """
+
     name = "ecsedi-isalt-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -58,16 +61,19 @@ class ECSEDIISALTCourseSpider(scrapy.Spider, ABC):
         languages = response.xpath("//i[contains(text(), 'Langue')]"
                                    "/following::font[1]/text()").get()
         languages = [LANGUAGES_DICT[l] for l in languages.split(" - ") if l in LANGUAGES_DICT]
-        languages = ["fr"] if len(languages) else languages
+        languages = ["fr"] if len(languages) == 0 else languages
 
         base_dict = {
             'id': ue_id,
             'name': ue_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': ''
+            'content': '',
+            'goal': '',
+            'activity': '',
+            'other': ''
         }
 
         # Content
@@ -80,11 +86,12 @@ class ECSEDIISALTCourseSpider(scrapy.Spider, ABC):
                                      cb_kwargs={"base_dict": base_dict})
 
         else:
-            base_dict['content'] = cleanup(response.xpath("//i[contains(text(), 'Acquis')]/following::font[1]").get())
+            base_dict['content'] = cleanup(response.xpath("//i[contains(text(), 'Contenu')]/following::font[1]").get())
+            base_dict['goal'] = cleanup(response.xpath("//i[contains(text(), 'Acquis')]/following::font[1]").get())
             yield base_dict
 
     @staticmethod
     def parse_content(response, base_dict):
-        print("zky ")
-        base_dict['content'] = cleanup(response.xpath("//i[contains(text(), 'Acquis')]/following::font[1]").get())
+        base_dict['content'] = cleanup(response.xpath("//i[contains(text(), 'Contenu')]/following::font[1]").get())
+        base_dict['goal'] = cleanup(response.xpath("//i[contains(text(), 'Acquis')]/following::font[1]").get())
         yield base_dict

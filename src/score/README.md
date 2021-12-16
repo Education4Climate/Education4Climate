@@ -1,9 +1,12 @@
 ## Scoring
 
-The goal of the scoring part of unicrawl is to identify which courses and programs in each school
+The goal of the scoring part of Education4Climate is to identify which courses and programs in each school
 cover certain *themes*.
 
 ### Themes, ontologies and patterns
+
+TODO: update
+Warning: This section is not fixed for now as the methodology is still evolving.
 
 A theme is an abstract notions defined based on an ontology.
 While themes can be of any type, in the context of the Education4Climate project, we have defined
@@ -14,7 +17,7 @@ While themes can be of any type, in the context of the Education4Climate project
 - Environment
 
 A theme's ontology is composed of a list of regular expressions that match to compounds of terms. 
-For example, some compounds associated to the theme 'Climatole' could be 'climate action' and 'climate action**s**'.
+For example, some compounds associated to the theme 'Climate' could be 'climate action' and 'climate action**s**'.
 A pattern ```climate actions?``` allows to capture both those compounds.
 
 In Belgium, courses are described in French, Dutch and English. Thus, each
@@ -34,11 +37,13 @@ all patterns in the corresponding ontology are searched in the text. If at least
 the course is given a score of 1 for that theme, otherwise it scores 0.
 
 The first output of the courses scoring is a table (courses x themes) that is saved in
-[data/scoring-output/](../../data/scoring-output) under the name ```{SchoolCode}_scoring_{YEAR}.csv```.
+[data/scoring-output/](../../data/scoring-output) under the name ```{SchoolCode}_courses_scoring_{YEAR}.csv```.
 
 The second output is a json file containing for each theme, the courses that scored 1, which patterns 
 were found in each course description and to what compounds these patterns matched.
 This output is saved in the same directory under the name ```{SchoolCode}_matches_{YEAR}.json```.
+
+TODO: add explanation on dedicated courses
 
 ### Scoring programs
 

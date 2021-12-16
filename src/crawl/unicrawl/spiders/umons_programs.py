@@ -17,6 +17,9 @@ BASE_DATA = {
 
 
 class UMonsProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for University of Mons
+    """
 
     name = "umons-programs"
     custom_settings = {
@@ -59,7 +62,6 @@ class UMonsProgramSpider(scrapy.Spider, ABC):
     def parse_offer(self, response, cycle):
 
         program_links = response.xpath("//a[header]/@href").getall()
-        print(cycle, len(program_links))
         for link in program_links:
             yield response.follow(link, self.parse_prog, cb_kwargs={'cycle': cycle})
 

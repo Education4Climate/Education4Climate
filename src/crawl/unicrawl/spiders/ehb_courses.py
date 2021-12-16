@@ -19,7 +19,7 @@ LANGUAGES_DICT = {
     "Spaans": "es", 
     "Chinees": "cn",
     "Duits": "de",
-    "Mandarijn Chinees": "cn",
+    "Mandarijn Chinees": "cn"
 }
 
 
@@ -40,32 +40,38 @@ class EHBCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            base_dict = {"id": course_id}
-
             yield scrapy.Request(
                 url=BASE_URl.format(course_id), 
                 callback=self.parse_course, 
-                cb_kwargs={"base_dict": base_dict},
+                cb_kwargs={"course_id": course_id},
             )
 
     @staticmethod
-    def parse_course(response, base_dict):
+    def parse_course(response, course_id):
+
         body = response.css("#content")
         name = body.css("h2::text").get()
         year = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblAcademiejaarOmschrijving::text").get()
+
         teachers = body.xpath("//span[text()='Coördinator: ' or text()='Docenten: ' or text()='Andere docenten: ']/following::span[1]/text()").getall()
         teachers = ",".join(teachers).strip(", ") 
         teachers = [t.strip() for t in teachers.split(",")] if teachers else []
+
         languages = body.xpath("//span[text()='Onderwijstalen: ']/following::span[1]/text()").get()
         languages = [LANGUAGES_DICT[lang.strip()] for lang in languages.split(',')] if languages else ["nl"]
+        languages = ["nl"] if len(languages) == 0 else languages
+
         content = cleanup(body.xpath("//h4[contains(text(),'Inhoud')]/following::div[1]").xpath("string(.)").get())
 
         yield {
-            'id': base_dict['id'],
+            'id': course_id,
             'name': name,
             'year': year,
             'languages': languages,
             'teachers': teachers,
             'url': response.url,
             'content': content,
+            'goal': '',
+            'activity': '',
+            'other': ''
         }

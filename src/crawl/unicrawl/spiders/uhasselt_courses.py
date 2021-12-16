@@ -10,12 +10,18 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = "https://uhintra03.uhasselt.be/studiegidswww/opleidingsonderdeel.aspx?a={}&i={}&n=4&t=01"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}uhasselt_programs_{YEAR}.json')
-LANGUAGE_DICT = {'Nederlands': 'nl',
-                 'Engels': 'en',
-                 'English': 'en'}
+LANGUAGE_DICT = {
+    'Nederlands': 'nl',
+    'Engels': 'en',
+    'English': 'en'
+}
 
 
 class UHasseltCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for UHasselt
+    """
+
     name = "uhasselt-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(

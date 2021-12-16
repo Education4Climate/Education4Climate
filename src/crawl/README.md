@@ -2,8 +2,8 @@
 
 The goal of crawling is to extract automatically information from web content.
 
-In the context of this project, what we seek is information about higher education school.
-More particularly, information about their courses and programs.
+In the context of this project, what we seek is information about higher education schools.
+More particularly, information about the courses and programs they offer.
 
 For each school, we therefore develop two crawlers (i.e. scripts for crawling): one for programs and one for courses.
 
@@ -24,11 +24,14 @@ The programs crawlers are contained in [src/crawl/unicrawl/spiders](unicrawl/spi
 For each program, we retrieve:
 - ```id```: the code of the program (note: if there is none, we make up one)
 - ```name```: the name of the program
-- ```faculty```: the faculty/institute organising the program
-- ```campus```: the campus where it is organised
 - ```cycle```: its cycle (bac, master, ...)
+- ```faculties```: the list of faculties/institutes organising the program
+- ```campuses```: the list of campuses where it is organised
+- ```url```: the url of the web page of the program
 - ```courses```: the list of courses that are offered in this program
 - ```ects```: the list of ECTS associated to these courses in the program
+
+For the fields requiring a list, a list needs to be provided even if it contains only one or no elements.
 
 The output of the crawler is saved in the directory [data/crawling-output/](../../data/crawling-output) 
 under the name ```{SchoolCode}_programs_{YEAR}.json```.
@@ -40,8 +43,8 @@ to this program in the output file
 
 In that case (see for example the program crawler for [UCLouvain](unicrawl/spiders/ucl_programs.py)), the output
 of the program crawler is saved to a file named ```{SchoolCode}_programs_{YEAR}_pre.csv```.
-The duplicate program lines are then merged using the script [*merge_programs.py*](merge_programs.py) which 
-saves the final results in the ```{SchoolCode}_programs_{YEAR}.json``` file.
+The duplicate program lines are then merged using the script [*merge.py*](merge.py) with arguments
+```-t program -s {SchoolCode} -y {YEAR}```. The final results in the ```{SchoolCode}_programs_{YEAR}.json``` file.
 
 
 ### Course crawler
@@ -61,19 +64,37 @@ For each course, we retrieve:
 - ```id```: the id of the course
 - ```name```: the name of the course
 - ```year```: the academic year (e.g. 2020-2021) (TODO: remove?)  
-- ```teacher```: the list of teachers giving/organising the course (TODO: change to teachers?)
-- ```language```: the list of languages in which the course is given/evaluated (TODO: change to languages?)
+- ```languages```: the list of languages in which the course is given/evaluated
+- ```teachers```: the list of teachers giving/organising the course
 - ```url```: the url of the web page where the course is described
 - ```content```: text describing the content of the course
+- ```goal```: text describing the goals of the course
+- ```activity```: text describing the activities organised during the course
+- ```other```: other textual information deemed interesting
+
+The last four fields can be crawled or not depending on the elements describing
+the course on the course web page.
 
 The output of the crawler is saved in the directory [data/crawling-output/](../../data/crawling-output) 
 under the name ```{SchoolCode}_courses_{YEAR}.json```.
 
-#### Mixed fields
+#### Duplicate courses outputs
+As for programs, the script [*merge.py*](merge.py) can be used to update the output of some
+course crawlers with the 'pre' suffix 
+(see for example [UAntwerpen](unicrawl/spiders/uantwerpen_courses.py)).
+The duplicate course lines can be merged using the arguments
+```-t course -s {SchoolCode} -y {YEAR}```.
 
-For some schools, some fields mentioned earlier are more easily accessed at the courses or program level.
-For example, some schools will only specify ECTS at the course level and thus an *ects* field is generated
-in the output of the corresponding crawler.
+
+### Program fields in course crawling (and vice-versa)
+
+For some schools, it can be the case that a field supposed to be crawled for programs (e.g. ```faculties```)
+is more easily accessible from the course web pages.
+In that case, the field is crawled and added to the corresponding
+course file in the same name and format as it would have been in the program file.
+For example, for the field ```faculties```, a list has to be provided even if the
+course is only associated to one faculty.
+The same logic applies when a course field is more easily accessible at the program level.
 
 
 ### Scrapy

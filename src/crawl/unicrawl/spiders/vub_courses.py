@@ -12,6 +12,7 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = 'https://caliweb.vub.be/?page=course-offer&id={}' + f'&year={YEAR}' + '&anchor=1'
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}vub_programs_{YEAR}.json')
+
 LANGUAGE_DICT = {
     "Dutch": 'nl',
     "Nederlands": 'nl',
@@ -28,6 +29,10 @@ LANGUAGE_DICT = {
 
 
 class VUBCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for VUB
+    """
+
     name = "vub-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -55,7 +60,7 @@ class VUBCourseSpider(scrapy.Spider, ABC):
             if anchor > 3:  # T avoid an infinite recursive call, stop at anchor 3 and return an quasi-empty entry
                 yield {
                     "id": course_id, "name": '', "year": f"{YEAR}-{int(YEAR)+1}",
-                    "languages": [], "teachers": [], "url": response.url,
+                    "languages": ["nl"], "teachers": [], "url": response.url,
                     "content": '', "goal": '', "activity": '', "other": ''
                 }
             url = response.url.strip(str(anchor)) + str(anchor+1)

@@ -8,10 +8,12 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = f"https://ecolevirtuelle.provincedeliege.be/docStatique/ects/formationsHEPL-{YEAR}.html"
 
+# TODO: description of courses seem to have disappeared in 2021
+
 
 class HEPLProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for Haute Ecole de la Province de Liège
+    Programs crawler for Haute Ecole de la Province de Liège
     """
 
     name = "hepl-programs"
@@ -28,7 +30,7 @@ class HEPLProgramSpider(scrapy.Spider, ABC):
         number_of_rows = len(response.xpath("//tr[@class='list-row']").getall())
         for i in range(number_of_rows):
             row_txt = f"//tr[@class='list-row'][{i+1}]"
-            faculty = response.xpath(f"{row_txt}/td[1]/span/text()").get()
+            faculty = response.xpath(f"{row_txt}/td[1]/text()").get()
 
             cycle = response.xpath(f"{row_txt}/td[2]/text()").get()
             cycle = 'bac' if cycle == 'Bachelier' else 'master'
@@ -41,8 +43,9 @@ class HEPLProgramSpider(scrapy.Spider, ABC):
             base_dict = {
                 "id": program_id,
                 "name": program_name,
-                "faculty": faculty,
-                "cycle": cycle
+                "cycle": cycle,
+                "faculties": [faculty],
+                "campuses": []
             }
 
             for link in sub_program_links:

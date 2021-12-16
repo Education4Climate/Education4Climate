@@ -10,17 +10,20 @@ from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 
-BASE_URL = "https://paysage.henallux.be/cursus/infoue/idUe/{}/idCursus/{}/anacad/{}"
+BASE_URL = "https://paysage.henallux.be/ue-apercu/fr/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}henallux_programs_{YEAR}.json')
-LANGUAGE_DICT = {"F": "fr",
-                 "A": "en",
-                 "N": "nl"}
+
+LANGUAGE_DICT = {
+    "français": "fr",
+    "anglais": "en",
+    "néerlandais": "nl"
+}
 
 
 class HENALLUXCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for Haute Ecole de Namur-Liège-Luxembourg
+    Courses crawler for Haute Ecole de Namur-Liège-Luxembourg
     """
 
     name = "henallux-courses"
@@ -30,42 +33,49 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        courses_url_codes_ds = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_url_codes"]
 
-        for program_id in courses_url_codes_ds.index:
-            courses_codes = courses_url_codes_ds.loc[program_id]
-            for course_code in courses_codes:
-                yield scrapy.Request(url=BASE_URL.format(course_code, program_id, YEAR),
-                                     callback=self.parse_ue)
+        courses_url_codes_ds = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_url_codes"]
+        courses_url_codes_list = sorted(list(set(courses_url_codes_ds.sum())))
+
+        for course_code in courses_url_codes_list:
+            yield scrapy.Request(url=BASE_URL.format(course_code), callback=self.parse_ue)
 
     @staticmethod
     def parse_ue(response):
 
-        ue_id = response.xpath("//span[@class='important']/text()").get()
-        ue_name = response.xpath("//div[@class='intituleUE']/span/text()").get()
+        ue_id = cleanup(response.xpath("//div[@id='codeue']").get()).split(": ")[1]
+        ue_name = response.xpath("//div[@class='intituleUE']/text()").get().strip(" \n")
+
         ue_div_txt = "//div[@class='identificationUE']"
         year = response.xpath(f"{ue_div_txt}//div[span[text()='Année académique']]/text()").get().split(": ")[1]
-        languages = response.xpath(f"{ue_div_txt}//div[span[text()=\"Langue d'enseignement\"]]/text()").get().split(": ")[1]
-        languages = [LANGUAGE_DICT[language] for language in languages]
+
+        language = response.xpath(f"{ue_div_txt}//div[span[text()=\"Langue d'enseignement\"]]/text()").get()
+        languages = ['fr'] if language is None or language == ' : ' else [LANGUAGE_DICT[language.split(": ")[1]]]
+
         teachers = response.xpath(f"{ue_div_txt}//div[span[text()=\"Responsable de l'UE\"]]/text()").get().split(": ")[1]
-        teachers = teachers.split(" - ")
-        add_teachers = response.xpath(f"{ue_div_txt}//span[contains(text(), \"Autres enseignants\")]/following::text()[2]").get()
+        teachers = teachers.split(", ")
+        add_teachers = response.xpath(f"{ue_div_txt}//span[contains(text(), \"nseignants\")]/following::text()[1]").get().split(": ")[1]
         if add_teachers:
-            teachers += add_teachers.split(" - ")
+            teachers += add_teachers.split(", ")
         teachers = list(set([" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0] for teacher in teachers]))
-        teachers = [t for t in teachers if t != " "]
+        teachers = [t.lower().title() for t in teachers if t != " "]
 
-        sections = ['Acquis', 'Contenu']
-        contents = []
-        for section in sections:
-            contents += [cleanup(response.xpath(f"//div[contains(text(), \"{section}\")]/following::div[1]").get())]
-        content = "\n".join(contents).strip("\n")
+        # Goals
+        content = cleanup(response.xpath("//div[@id='section5']//p[text()='Contenus']/following::div[1]").get())
+        goal = cleanup(response.xpath("//div[@id='section3']").get())\
+            .replace("Acquis d’apprentissage spécifiques", '').strip(" \n")
+        activity = cleanup(response.xpath("//div[@id='section6']").get())\
+            .replace("Activité(s) d'apprentissage de cette UE", '').strip(" \n")
 
-        yield {"id": ue_id,
-               "name": ue_name,
-               "year": year,
-               "teachers": teachers,
-               "languages": languages,
-               "url": response.url,
-               "content": content
-               }
+        yield {
+            "id": ue_id,
+            "name": ue_name,
+            "year": year,
+            "languages": languages,
+            "teachers": teachers,
+            "url": response.url,
+            "content": content,
+            "goal": goal,
+            "activity": activity,
+            "other": ''
+        }

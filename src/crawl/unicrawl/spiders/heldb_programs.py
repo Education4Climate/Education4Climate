@@ -7,14 +7,16 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://www.heldb.be/fr"
-DEPARTMENTS_NAMES = {0: "Sciences économiques et de gestion",
-                     1: "Sciences de l'éducation",
-                     2: "Sciences et techniques"}
+DEPARTMENTS_NAMES = {
+    0: "Sciences économiques et de gestion",
+    1: "Sciences de l'éducation",
+    2: "Sciences et techniques"
+}
 
 
 class HELDBProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for Haute Ecole Lucia de Brouckère
+    Programs crawler for Haute Ecole Lucia de Brouckère
     """
 
     name = "heldb-programs"
@@ -33,7 +35,6 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
             program_links = set(response.xpath(f"//tbody//td[{faculty_id+1}]//a/@href").getall())
             program_links = [link for link in program_links if len(link.split("/")) > 5]
             for program_id, link in enumerate(program_links):
-                print(link)
                 link = f"{link}/programme-cursus" if 'dietetique' not in link else f"{link}/programme-du-cursus"
                 yield response.follow(link, self.parse_program,
                                       cb_kwargs={"program_id": f"{faculty_id}-{program_id}",
@@ -57,12 +58,14 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
         ue_links = response.xpath("//table[1]//tr[contains(@class, 'ue')]/td[@class='ue-lib']/a[1]/@href").getall()
         ue_urls_ids = [link.split("/")[-1] for link in ue_links]
 
-        yield {"id": program_id,
-               "name": program_name,
-               "cycle": cycle,
-               "faculty": faculty,
-               "campus": '',
-               "url": response.url,
-               "courses": ue_ids,
-               "ects": ue_ects,
-               "ue_urls_ids": ue_urls_ids}
+        yield {
+            "id": program_id,
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": [],
+            "url": response.url,
+            "courses": ue_ids,
+            "ects": ue_ects,
+            "ue_urls_ids": ue_urls_ids
+        }

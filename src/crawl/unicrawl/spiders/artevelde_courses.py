@@ -12,16 +12,21 @@ BASE_URL = "https://bamaflexweb.arteveldehs.be/BMFUIDetailxOLOD.aspx?a={}&b=1&c=
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}artevelde_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Nederlands": "nl",
-                  "Engels": "en",
-                  "Frans": "fr",
-                  "Duits": "de",
-                  "Spaans": "es",
-                  "Latijn": "la",
-                  "Chinees": "cn"}
+LANGUAGES_DICT = {
+    "Nederlands": "nl",
+    "Engels": "en",
+    "Frans": "fr",
+    "Duits": "de",
+    "Spaans": "es",
+    "Latijn": "la",
+    "Chinees": "cn"
+}
 
 
 class ArteveldeCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Artevelde Hogeschool
+    """
     name = "artevelde-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -33,7 +38,6 @@ class ArteveldeCourseSpider(scrapy.Spider, ABC):
         ue_codes = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         ue_codes_list = sorted(list(set(ue_codes.sum())))
 
-        print(len(ue_codes_list))
         for ue_id in ue_codes_list:
             yield scrapy.Request(BASE_URL.format(ue_id), self.parse_main, cb_kwargs={"ue_id": ue_id})
 
@@ -55,6 +59,7 @@ class ArteveldeCourseSpider(scrapy.Spider, ABC):
         language_text = response.xpath("//span[contains(text(), 'Onderwijstalen')]/following::span[1]/text()").get()
         languages = language_text.split(", ") if language_text else []
         languages = [LANGUAGES_DICT[l] for l in languages if l in LANGUAGES_DICT]
+        languages = ['nl'] if len(languages) == 0 else languages
 
         # Content
         content = cleanup(response.xpath("//h4[contains(text(), 'Omschrijving Inhoud')]"
@@ -64,9 +69,12 @@ class ArteveldeCourseSpider(scrapy.Spider, ABC):
             'id': ue_id,
             'name': ue_name,
             'year': years,
-            'teachers': teachers,
             'languages': languages,
-            'ects': ects,
+            'teachers': teachers,
+            'ects': [ects],
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': '',
+            'activity': '',
+            'other': ''
         }

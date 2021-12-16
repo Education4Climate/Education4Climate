@@ -9,6 +9,10 @@ BASE_URL = 'https://onderwijsaanbod.kuleuven.be/opleidingen/n/'
 
 
 class KULeuvenProgramSpider(scrapy.Spider, ABC):
+    """
+    Programs crawler for KULeuven
+    """
+
     name = 'kuleuven-programs'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -44,6 +48,9 @@ class KULeuvenProgramSpider(scrapy.Spider, ABC):
     def parse_program(response, program_id, faculty):
 
         program_name = response.xpath("//h1/text()").get()
+        # Don't keep exchange students program
+        if "exchange students" in program_name.lower():
+            return
 
         campus = ''
         if '(' in program_name:

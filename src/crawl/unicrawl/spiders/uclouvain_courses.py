@@ -30,6 +30,10 @@ LANGUAGE_DICT = {
 
 
 class UCLouvainCourseSpider(scrapy.Spider, ABC):
+    """
+    Courses crawler for Université Catholique de Louvain
+    """
+
     name = "uclouvain-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
@@ -56,7 +60,8 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
         languages = cleanup(response.xpath("//div[div[contains(@class, 'fa_cell_1') and contains(text(), 'Langue')]]"
                                            "/div[2]/text()").getall())
         languages = [LANGUAGE_DICT[l] if l in LANGUAGE_DICT else 'other' for l in languages]
-        
+        languages = ["fr"] if len(languages) == 0 else languages
+
         # Course description
         def get_sections_text(sections_names):
             texts = [cleanup(response.xpath(f"//div[div[contains(text(),'{section}')]]/div[2]").get())

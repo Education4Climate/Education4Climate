@@ -12,13 +12,15 @@ BASE_URl = "https://www.helmo.be/Formations/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_programs_{YEAR}.json')
 
-LANGUAGES_DICT = {"Français": 'fr',
-                  "Anglais": 'en'}
+LANGUAGES_DICT = {
+    "Français": 'fr',
+    "Anglais": 'en'
+}
 
 
 class HELMOCourseSpider(scrapy.Spider, ABC):
     """
-    Course crawler for Haute Ecole Libre Mosane
+    Courses crawler for Haute Ecole Libre Mosane
     """
 
     name = "helmo-courses"
@@ -37,37 +39,43 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
         courses_ds = pd.Series(courses_ids_list, courses_urls_list).drop_duplicates()
 
         for course_url, course_id in courses_ds.items():
-            base_dict = {"id": str(course_id)}
-            yield scrapy.Request(BASE_URl.format(course_url), self.parse_main, cb_kwargs={"base_dict": base_dict})
+            yield scrapy.Request(BASE_URl.format(course_url), self.parse_main, cb_kwargs={"ue_id": str(course_id)})
 
     @staticmethod
-    def parse_main(response, base_dict):
+    def parse_main(response, ue_id):
 
         ue_name = cleanup(response.xpath("//section[@id='helmoContent']//h3/text()").get())
-        # TODO: check if there cannot be more than one main teacher
         main_teacher = response.xpath("//div[text()=\"Responsable de l'UE :\"]/following::span[1]/text()").get()
         sub_teachers = response.xpath("//div[text()=\"Autres intervenants :\"]/following::span[1]/text()").get()
         teachers = [main_teacher]
         if sub_teachers:
             teachers += sub_teachers.split(",")
+        teachers = [t.strip(" ").lower().title() for t in teachers]
+        # Put surname first
+        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
         years = response.xpath("//div[text()=\"Année académique :\"]/following::span[1]/text()").get()
 
         languages = response.xpath("//div[text()=\"Langue d'enseignement :\"]/following::span[1]/text()").get()
         languages = [LANGUAGES_DICT[languages]]
 
-        sections = ["Objectifs", "Acquis", "Contenu", "Dispositif"]
-        contents = [cleanup(response.xpath(f"//h4[contains(text(), \"{section}\")]/following::div[1]").get())
-                    for section in sections]
-        content = "\n".join(contents)
-        content = "" if content == "\n\n" else content
+        def get_sections_text(sections_names):
+            texts = [cleanup(response.xpath(f"//h4[contains(text(), \"{section_name}\")]/following::div[1]").get())
+                     for section_name in sections_names]
+            return "\n".join(texts).strip("\n")
+        content = get_sections_text(['Contenu'])
+        goal = get_sections_text(['Objectifs', 'Acquis'])
+        activity = get_sections_text('Dispositif')
 
-        cur_dict = {
+        yield {
+            'id': ue_id,
             'name': ue_name,
             'year': years,
-            'teacher': teachers,
-            'language': languages,
+            'languages': languages,
+            'teachers': teachers,
             'url': response.url,
-            'content': content
+            'content': content,
+            'goal': goal,
+            'activity': activity,
+            'other': ''
         }
-        yield {**base_dict, **cur_dict}
