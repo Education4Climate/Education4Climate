@@ -21,7 +21,7 @@ var CookieManager = {
         };
     },
     props: ['translations', 'currentLanguage'],
-    template: `<div class="container bg-white shadow p-3 mb-4 rounded fixed-bottom" id="cookieBar" v-if="displayCookieBar" v-cloak>
+    template: `<div class="container shadow p-3 mb-4 rounded fixed-bottom" id="cookieBar" v-if="displayCookieBar" v-cloak>
         <div class="row">
             <div class="col-md-6">{{translate("cookies.use-cookies")}}</div>
             <div class="col-md-6 mt-2 buttons">
