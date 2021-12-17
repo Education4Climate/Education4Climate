@@ -62,7 +62,7 @@ class ULBProgramSpider(scrapy.Spider, ABC):
                 )
             return
 
-        # Otherwise extract information for the program
+        # Otherwise, extract information for the program
         program_id = response.url.split("/")[-1]
         program_name = response.xpath("//h1/text()").get()
 
@@ -109,10 +109,11 @@ class ULBProgramSpider(scrapy.Spider, ABC):
 
         courses_ects = []
         for bloc in json_obj['blocs']:
-            if bloc['anac'] == YEAR:
+            if int(bloc['anac']) == YEAR:
                 courses_ects += [(course['id'], course['credits']) for course in bloc['progCourses']]
 
         if len(courses_ects) == 0:
+            print(f"Length of courses was 0 for {base_dict['id']}.")
             return
 
         courses, ects = zip(*list(set(courses_ects)))

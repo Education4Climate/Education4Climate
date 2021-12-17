@@ -8,11 +8,6 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-# PATH_COURS_URL = urllib.parse.quote(
-#    '/ws/ksup/course-programmes?anac={}&mnemonic={}&lang=fr',
-#    safe='{}'
-# )
-# COURS_URL = f'https://www.ulb.be/api/formation?path={PATH_COURS_URL}'
 BASE_URL = 'https://www.ulb.be/fr/programme/'
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ulb_programs_{YEAR}.json')
@@ -57,7 +52,14 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_ids_list = sorted(list(set(courses_ids.sum()))) 
 
+        # Read old list
+        a = pd.read_json("/home/duboisa1/shifters/Education4Climate/data/crawling-output/ulb_courses_2021_1.json")
+        a = a["id"].values.tolist()
+        print(a)
+
         for course_id in courses_ids_list:
+            if course_id in a:
+                continue
             yield scrapy.Request(
                 url=f'{BASE_URL}{course_id.lower()}',
                 callback=self.parse_course,
