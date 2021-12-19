@@ -55,20 +55,21 @@
                         <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
                             <li class="nav-item" v-for="item in menuItems">
                                 <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
-                                    :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
+                                    :href="item + '.html?lang=' + currentLanguage"
+                                    v-html="translate('menu.' + item)"></a>
                             </li>
                         </ul>
                         <div id="theme-toggler" @click="toggleTheme()">
                             <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'"
                                 alt="Dark/Light theme">
-                            <span class="theme-light">{{translate("menu.dark-theme")}}</span>
-                            <span class="theme-dark">{{translate("menu.light-theme")}}</span>
+                            <span class="theme-light" v-html="translate('menu.dark-theme')"></span>
+                            <span class="theme-dark" v-html="translate('menu.light-theme')"></span>
                         </div>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item" v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
-                                    @click="setLanguage(language)"
-                                    href="javascript:void(0);">{{language.toUpperCase()}}</a>
+                                    @click="setLanguage(language)" href="javascript:void(0);"
+                                    v-html="language.toUpperCase()"></a>
                             </li>
                         </ul>
                         <div class="navbar-footer">
@@ -77,11 +78,11 @@
                                 <div class="accent">The Shifters Belgium</div>
                                 <ul>
                                     <li>
-                                        <a :href="translate('shared.google-form')" target="_blank"
-                                            rel="noopener">{{translate("footer.contact")}}</a>
+                                        <a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                            v-html="translate('footer.contact')"></a>
                                     </li>
                                     <li>
-                                        <a href="legal.html">{{translate("footer.legal")}}</a>
+                                        <a href="legal.html" v-html="translate('footer.legal')"></a>
                                     </li>
                                     <li>
                                         <a href="javascript:void(0);" data-bs-toggle="modal"
@@ -116,22 +117,23 @@
 
                     <div class="col-xl-6 headline">
 
-                        <h1 v-html="translate('home.intro-headline')"></h1>
-                        <h2 v-html="translate('home.intro-subheadline')"></h2>
+                        <h1 v-html="translate('home.intro-headline')">Où étudier</h1>
+                        <h2 v-html="translate('home.intro-subheadline')">pour contribuer à la transition carbone et
+                            avoir un impact sur le climat ?</h2>
 
                         <h2>
                             <div class="buttons-container">
                                 <div>
-                                    <a class="btn btn-primary btn-lg"
-                                        href="/programs.html">{{translate("menu.programs")}}</a>
+                                    <a class="btn btn-primary btn-lg" href="/programs.html"
+                                        v-html="translate('menu.programs')">Trouver une formation</a>
                                 </div>
                                 <div>
-                                    <a class="btn btn-primary btn-lg"
-                                        href="/courses.html">{{translate("menu.courses")}}</a>
+                                    <a class="btn btn-primary btn-lg" href="/courses.html"
+                                        v-html="translate('menu.courses')">Trouver un cours</a>
                                 </div>
                                 <div>
-                                    <a class="btn btn-primary btn-lg"
-                                        href="/teachers.html">{{translate("menu.teachers")}}</a>
+                                    <a class="btn btn-primary btn-lg" href="/teachers.html"
+                                        v-html="translate('menu.teachers')">Trouver un professeur</a>
                                 </div>
                             </div>
                         </h2>
@@ -146,10 +148,22 @@
                 <div class="row">
 
                     <div class="col-xl-6 title">
-                        <h1 v-html="translate('home.section1-title')"></h1>
+                        <h1 v-html="translate('home.section1-title')">Notre vision</h1>
                     </div>
 
-                    <div class="col-xl-6 text" v-html="translate('home.section1-text')"></div>
+                    <div class="col-xl-6 text" v-html="translate('home.section1-text')">
+                        <p>La durabilité environnementale est devenue une préoccupation majeure pour tous les citoyens
+                            et pour les étudiants en particulier. <strong>La transition vers une société neutre en
+                                CO<sub>2</sub> en 2050</strong> décidée par l'Union européenne ne nécessite pas
+                            seulement des investissements massifs et des changements dans l'industrie, les services ou
+                            les infrastructures, mais aussi <strong>des compétences</strong> pour conduire la transition
+                            écologique.</p>
+                        <p><strong>En Belgique, les universités</strong> et <strong>les hautes écoles</strong> ont donc
+                            un rôle majeur dans la <strong>formation des futurs décideurs et des acteurs</strong> aux
+                            enjeux <strong>climatiques et environnementaux.</strong> Nous plaidons pour que chaque
+                            établissement intègre l’enseignement de ces enjeux au sein de chacune des filières de
+                            formation.</p>
+                    </div>
 
                 </div>
 
@@ -160,10 +174,20 @@
                 <div class="row">
 
                     <div class="col-xl-6 title order-xl-last">
-                        <h1 v-html="translate('home.section2-title')"></h1>
+                        <h1 v-html="translate('home.section2-title')">Comment ça fonctionne ?</h1>
                     </div>
 
-                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section2-text')"></div>
+                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section2-text')">
+                        <p>Le site Education4Climate vous permet de <strong>trouver des cours, des formations</strong>
+                            qui traitent des enjeux climatiques et environnementaux, ainsi que <strong>les
+                                professeur.e.s</strong> qui enseignent ces matières, en Belgique.</p>
+                        <p>Le site Education4Climate fonctionne sur <strong>un algorithme d’analyse automatisée</strong>
+                            du contenu des pages des cours disponibles sur le site web des établissements, pour
+                            déterminer s’ils traitent des enjeux climatiques et environnementaux. Une description de
+                            l’algorithme peut être trouvée <a
+                                href="https://github.com/Education4Climate/Education4Climate/tree/master/src/score"
+                                target="_blank" rel="noopener">ici</a>.</p>
+                    </div>
 
                 </div>
 
@@ -174,10 +198,26 @@
                 <div class="row">
 
                     <div class="col-xl-6 title">
-                        <h1 v-html="translate('home.section3-title')"></h1>
+                        <h1 v-html="translate('home.section3-title')">Qui sommes-nous ?</h1>
                     </div>
 
-                    <div class="col-xl-6 text" v-html="translate('home.section3-text')"></div>
+                    <div class="col-xl-6 text" v-html="translate('home.section3-text')">
+                        <p><strong>Education4Climate</strong> vise à <strong>promouvoir</strong> l'éducation sur le
+                            climat et la durabilité environnementale dans les universités et les hautes écoles en
+                            Belgique. Son objectif est de faciliter <strong>l'accès à l'information</strong> sur les
+                            programmes et les cours qui abordent ces sujets, d’<strong>analyser</strong> l’offre de
+                            formation et de proposer des pistes de <strong>solutions</strong> concrètes, reprises dans
+                            notre rapport (à paraître).</p>
+                        <p>Education4Climate est porté par une <a href="#home-team">équipe bénévole</a> de l’asbl
+                            <strong>The Shifters Belgium</strong>, avec le soutien de la branche belge du <a
+                                href="https://www.sdsnbelgium.be" target="_blank" rel="noopener">SDSN</a>, <a
+                                href="https://www.theshift.be/" target="_blank" rel="noopener">The Shift</a> et <a
+                                href="https://theshiftproject.org/" target="_blank" rel="noopener">The Shift
+                                Project</a>.
+                        </p>
+                        <p>Envie d’en savoir plus ou de contribuer&nbsp;? <a
+                                href='mailto:education4climate@theshifters.org'>Contactez-nous&nbsp;!</a></p>
+                    </div>
 
                 </div>
 
@@ -188,10 +228,16 @@
                 <div class="row">
 
                     <div class="col-xl-6 title order-xl-last">
-                        <h1 v-html="translate('home.section4-title')"></h1>
+                        <h1 v-html="translate('home.section4-title')">Aidez-nous à nous améliorer !</h1>
                     </div>
 
-                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section4-text')"></div>
+                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section4-text')">
+                        <p>L’amélioration continue de Education4Climate est notre priorité. Si vous souhaitez signaler
+                            un cours ou une formation, ou nous suggérer des améliorations, vous pouvez le faire via
+                            notre <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSf7_WTtbBRkQxs-hBHNfWPGlwKVurvoHRgZR7kGlKbVxkQLJg/viewform"
+                                target="_blank" rel="noopener">formulaire</a>.</p>
+                    </div>
 
                 </div>
 
@@ -202,7 +248,7 @@
                 <div class="row">
 
                     <div class="col-xl-6 title">
-                        <h1 v-html="translate('home.team-title')"></h1>
+                        <h1 v-html="translate('home.team-title')">L'équipe</h1>
                     </div>
 
                     <div class="col-xl-6 container text">
@@ -211,77 +257,85 @@
                             <div>
                                 <img src="./img/team/antoine.jpg" alt="Antoine Dubois">
                                 <h2>Antoine Dubois</h2>
-                                <h3>{{translate("team.algorithm")}}</h3>
+                                <h3 v-html="translate('team.algorithm')">Développement algorithme</h3>
                             </div>
                             <div>
                                 <img src="./img/team/arthur.jpg" alt="Arthur Prével">
                                 <h2>Arthur Prével</h2>
-                                <h3>{{translate("team.survey")}}</h3>
+                                <h3 v-html="translate('team.survey')">Enquête</h3>
                             </div>
                             <div>
                                 <img src="./img/team/denis.jpg" alt="Denis Lebailly">
                                 <h2>Denis Lebailly</h2>
-                                <h3>{{translate("team.algorithm")}}</h3>
+                                <h3 v-html="translate('team.algorithm')">Développement algorithme</h3>
                             </div>
                             <div>
                                 <img src="./img/team/francois.jpg" alt="François Collard">
                                 <h2>François Collard</h2>
-                                <h3>{{translate("team.project")}}</h3>
+                                <h3 v-html="translate('team.project')">Pilote du projet</h3>
                             </div>
                             <div>
                                 <img src="./img/team/noel.jpg" alt="Noël Schneider">
                                 <h2>Noël Schneider</h2>
-                                <h3>{{translate("team.algorithm")}}</h3>
+                                <h3 v-html="translate('team.algorithm')">Développement algorithme</h3>
                             </div>
                             <div>
                                 <img src="./img/team/quentin.jpg" alt="Quentin Lancrenon">
                                 <h2>Quentin Lancrenon</h2>
-                                <h3>{{translate("team.strategy")}}</h3>
+                                <h3 v-html="translate('team.strategy')">Soutien projet et stratégie</h3>
                             </div>
                             <div>
                                 <img src="./img/team/quentin2.jpg" alt="Quentin Vantieghem">
                                 <h2>Quentin Vantieghem</h2>
-                                <h3>{{translate("team.web")}}</h3>
+                                <h3 v-html="translate('team.web')">Développement web</h3>
                             </div>
                         </div>
-                        <div class="thanks" v-html="translate('home.team-thanks')"></div>
+                        <div class="thanks" v-html="translate('home.team-thanks')">Avec l’aide de : David Steinmetz,
+                            Robin De Gernier, Aymeric Lamant, Laurent Eschenauer, Aric Wizenberg, Antoine Qian, Cédric
+                            Brusselmans, Martin Vermeiren, Hugo Poitoux, Luna Janssens, Laura Valgaeren, Noël van
+                            Boxtel, Luka Rüder, Ine Tryssesoone, Tine Meulemans, Anurag Sinha, Hülya Altinok et Cédric
+                            Cassiers.</p>
+                            <p>Elles et ils nous ont soutenus : Inge Willems (SDSN Belgium), Bart Corijn (The Shift),
+                                Clémence Vorreux (Le Shift Project) et Edwin Zaccai (ULB).</p>
+                        </div>
                     </div>
-
                 </div>
-            </section>
+    </div>
 
-        </main>
+    </div>
+    </section>
 
-        <footer class="text-muted py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
-                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
-                        </a>
-                    </div>
-                    <div class="col-xl-6 right">
-                        <ul>
-                            <li><a :href="translate('shared.google-form')" target="_blank"
-                                    rel="noopener">{{translate("footer.contact")}}</a>
-                            </li>
-                            <li>
-                                <a href="legal.html">{{translate("footer.legal")}}</a>
-                            </li>
-                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
-                                    data-bs-target="#modalCookies">Cookies</a></li>
-                            <li><a href="https://github.com/Education4Climate/" target="_blank"
-                                    rel="noopener">GitHub</a>
-                            </li>
-                        </ul>
-                    </div>
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                        <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                    </a>
+                </div>
+                <div class="col-xl-6 right">
+                    <ul>
+                        <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                v-html="translate('footer.contact')"></a>
+                        </li>
+                        <li>
+                            <a href="legal.html" v-html="translate('footer.legal')"></a>
+                        </li>
+                        <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                data-bs-target="#modalCookies">Cookies</a></li>
+                        <li><a href="https://github.com/Education4Climate/" target="_blank" rel="noopener">GitHub</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <cookie-manager :translations="translations" :current-language="currentLanguage"
-            @change-cookies-consent="changeCookiesConsent">
-        </cookie-manager>
+    <cookie-manager :translations="translations" :current-language="currentLanguage"
+        @change-cookies-consent="changeCookiesConsent">
+    </cookie-manager>
 
     </div>
 
