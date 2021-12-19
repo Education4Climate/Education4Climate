@@ -300,42 +300,39 @@
                         </div>
                     </div>
                 </div>
-    </div>
 
-    </div>
-    </section>
+            </section>
 
-    </main>
+        </main>
 
-    <footer class="text-muted py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <a href="https://www.theshifters.org" target="_blank" rel="noopener">
-                        <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
-                    </a>
-                </div>
-                <div class="col-xl-6 right">
-                    <ul>
-                        <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
-                                v-html="translate('footer.contact')"></a>
-                        </li>
-                        <li>
-                            <a href="legal.html" v-html="translate('footer.legal')"></a>
-                        </li>
-                        <li><a href="javascript:void(0);" data-bs-toggle="modal"
-                                data-bs-target="#modalCookies">Cookies</a></li>
-                        <li><a href="https://github.com/Education4Climate/" target="_blank" rel="noopener">GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <footer class="text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 right">
+                        <ul>
+                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                    v-html="translate('footer.contact')"></a>
+                            </li>
+                            <li>
+                                <a href="legal.html" v-html="translate('footer.legal')"></a>
+                            </li>
+                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                    data-bs-target="#modalCookies">Cookies</a></li>
+                            <li><a href="https://github.com/Education4Climate/" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+        </footer>
 
-    <cookie-manager :translations="translations" :current-language="currentLanguage"
-        @change-cookies-consent="changeCookiesConsent">
-    </cookie-manager>
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
 
     </div>
 
