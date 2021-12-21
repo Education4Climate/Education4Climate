@@ -45,21 +45,21 @@
    "Compernolle Tine"
   ],
   "cycles":[
-   "bac",
-   "master"
+   "master",
+   "bac"
   ],
   "fields":[
    "Philosophy",
-   "Economy",
-   "Management",
-   "Veterinary",
-   "Sociology",
+   "Engineering",
    "Pharmacy",
    "Science",
    "Medecine & Health",
+   "Sociology",
+   "Economy",
+   "Architecture",
+   "Veterinary",
    "Letters",
-   "Engineering",
-   "Architecture"
+   "Management"
   ],
   "themes":[
    "environment",
@@ -86,17 +86,17 @@
   ],
   "fields":[
    "Philosophy",
-   "Economy",
-   "Management",
-   "Law & Criminology",
-   "Veterinary",
-   "Sociology",
+   "Engineering",
    "Pharmacy",
    "Science",
+   "Law & Criminology",
    "Medecine & Health",
+   "Sociology",
+   "Economy",
+   "Architecture",
+   "Veterinary",
    "Letters",
-   "Engineering",
-   "Architecture"
+   "Management"
   ],
   "themes":[
    "climate",
@@ -127,6 +127,123 @@
   "dedicated":0
  },
  {
+  "id":"1001WETBOP",
+  "name":"Bodemprocessen",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETBOP&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Joris Ingeborg"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1001WETCDL",
+  "name":"Chemie in het dagelijks leven, incl. practicum",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETCDL&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bogaerts Annemie",
+   "Slaets Sofie"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1001WETCEC",
+  "name":"Culturele ecologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETCEC&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Beyens Louis"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"1001WETCHS",
+  "name":"Chemie in het dagelijks leven",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETCHS&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bogaerts Annemie",
+   "Slaets Sofie"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1001WETDON",
+  "name":"Duurzame ontwikkeling",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETDON&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Hecken Gert",
+   "Staes Jan",
+   "Gielen Bert",
+   "Titeca Kristof"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"1001WETDVM",
   "name":"Duurzaamheid, veiligheid en milieu",
   "year":"2021-2022",
@@ -151,6 +268,101 @@
   "dedicated":1
  },
  {
+  "id":"1001WETECO",
+  "name":"Ecologie I",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETECO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Ceulemans Reinhart",
+   "Matthysen Erik",
+   "Nijs Ivan"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"1001WETESB",
+  "name":"Ecosysteembeheer",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETESB&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Meire Patrick"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1001WETGMT",
+  "name":"Ge\u00efntegreerd practicum milieutechnologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETGMT&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Juliaan Timmer Marijn",
+   "Michiels Katrien",
+   "Van Malderen Veerle",
+   "Tytgat Tom"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"1001WETHYK",
+  "name":"Hydrologie en meteorologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETHYK&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Joris Ingeborg",
+   "Tytgat Tom",
+   "Samson Roeland"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"1001WETLAB",
   "name":"Laboratoriumwerk",
   "year":"2021-2022",
@@ -171,6 +383,81 @@
    "climate"
   ],
   "dedicated":0
+ },
+ {
+  "id":"1001WETMBI",
+  "name":"Microbiologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETMBI&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Celis Niko",
+   "Lebeer Sarah"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1001WETMIC",
+  "name":"Microbiologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETMIC&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenheuvel Dieter",
+   "Michiels Katrien",
+   "Lebeer Sarah",
+   "Vlaeminck Siegfried",
+   "Dox Kris"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1001WETMIL",
+  "name":"Milieutechnologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1001WETMIL&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vlaeminck Siegfried",
+   "Tytgat Tom",
+   "C M Vrancken Karl"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability",
+   "resources"
+  ],
+  "dedicated":1
  },
  {
   "id":"1001WETPCT",
@@ -211,21 +498,21 @@
    "Crabb\u00e9 Ann"
   ],
   "cycles":[
-   "bac",
-   "master"
+   "master",
+   "bac"
   ],
   "fields":[
    "Philosophy",
-   "Economy",
-   "Management",
-   "Veterinary",
-   "Sociology",
+   "Engineering",
    "Pharmacy",
    "Science",
    "Medecine & Health",
+   "Sociology",
+   "Economy",
+   "Architecture",
+   "Veterinary",
    "Letters",
-   "Engineering",
-   "Architecture"
+   "Management"
   ],
   "themes":[
    "climate",
@@ -233,6 +520,30 @@
    "sustainability"
   ],
   "dedicated":1
+ },
+ {
+  "id":"1002WETECT",
+  "name":"Ecotoxicologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1002WETECT&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Celis Niko",
+   "Blust Ronny",
+   "Bervoets Lieven"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
  },
  {
   "id":"1002WETMIC",
@@ -282,6 +593,29 @@
   "dedicated":0
  },
  {
+  "id":"1003WETECO",
+  "name":"Ecologie II",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1003WETECO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Campioli Matteo",
+   "Nijs Ivan"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"1003WETOCH",
   "name":"Organische chemie I",
   "year":"2021-2022",
@@ -297,14 +631,37 @@
    "bac"
   ],
   "fields":[
+   "Science",
    "Veterinary",
-   "Pharmacy",
-   "Science"
+   "Pharmacy"
   ],
   "themes":[
    "environment"
   ],
   "dedicated":0
+ },
+ {
+  "id":"1005WETECO",
+  "name":"Ecologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1005WETECO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Campioli Matteo",
+   "Nijs Ivan"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
  },
  {
   "id":"1006WETECO",
@@ -325,8 +682,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":1
  },
@@ -347,6 +704,59 @@
   ],
   "fields":[
    "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1024FTIACV",
+  "name":"2-Academische vaardigheden",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1024FTIACV&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vuye Cedric",
+   "De Meulenaere Paul",
+   "Vanlanduit Steve",
+   "Altantzis Thomas",
+   "Denil Joachim",
+   "Stoop Jan"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1027FTIPRO",
+  "name":"4-Productontwikkeling",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1027FTIPRO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Du Bois Els",
+   "Standaert Achiel",
+   "Van Doorsselaer Karine"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
   ],
   "themes":[
    "environment",
@@ -379,6 +789,31 @@
   "dedicated":0
  },
  {
+  "id":"1030FOWPOW",
+  "name":"Bachelorproef",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1030FOWPOW&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhoof Stina",
+   "Van Son Bruno",
+   "Scheelen Linda",
+   "Dos Santos Antonio David"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"1031FTIFRA",
   "name":"6-Frans",
   "year":"2021-2022",
@@ -399,6 +834,36 @@
   ],
   "themes":[
    "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1038FOWIAR",
+  "name":"Casestudie morfologie en typologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1038FOWIAR&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Echelpoel Gert",
+   "Plasmans Eva",
+   "Gabri\u00ebl Saskia",
+   "Michels Marjan",
+   "Nackaerts Johan",
+   "Storgaard Eva",
+   "Vallet Nathalie",
+   "De Vos Els",
+   "Martens Stefan"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "energy"
   ],
   "dedicated":0
  },
@@ -424,7 +889,9 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "environment",
+   "sustainability",
+   "resources"
   ],
   "dedicated":0
  },
@@ -451,6 +918,29 @@
   "dedicated":0
  },
  {
+  "id":"1048FOWARC",
+  "name":"Initiatie materiaalleer",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1048FOWARC&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Belmans Bert"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"1050FLWGES",
   "name":"Ecologische geschiedenis",
   "year":"2021-2022",
@@ -469,8 +959,33 @@
    "Philosophy"
   ],
   "themes":[
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"1053FBDDIE",
+  "name":"Veterinaire volksgezondheid partim 2: Voedsel en milieuchemie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1053FBDDIE&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Knapen Dries",
+   "Covaci Adrian"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Veterinary",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":1
  },
@@ -494,6 +1009,89 @@
   ],
   "themes":[
    "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1065FOWARC",
+  "name":"Architectuur en constructie: casus",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1065FOWARC&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Vos Elsie",
+   "Pasmans Carolien",
+   "De Bie Jan",
+   "Doms Lieselot",
+   "Petillon Nicolas",
+   "Mys Christiaan",
+   "Heyvaert Koen"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1065FOWIAR",
+  "name":"Casestudie materiaal en textuur",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1065FOWIAR&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Plasmans Eva",
+   "Gabri\u00ebl Saskia",
+   "Van Doorsselaer Karine",
+   "Nackaerts Johan",
+   "Storgaard Eva"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1066FBDDIE",
+  "name":"Dierhygi\u00ebne, huisvesting, economie en dierenwelzijn",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1066FBDDIE&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Leroy Jo",
+   "van Dierendonck Machteld",
+   "Hendrickx Sarah",
+   "De Ridder Annemieke"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Veterinary",
+   "Pharmacy"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "energy"
   ],
   "dedicated":0
  },
@@ -526,6 +1124,29 @@
   ],
   "themes":[
    "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1073FBDBMW",
+  "name":"Epidemiologie en volksgezondheid",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1073FBDBMW&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Brusselaers Nele"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Veterinary",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -602,6 +1223,54 @@
   "dedicated":0
  },
  {
+  "id":"1119FTIASF",
+  "name":"2-Asfalttechnologie en Bouwmaterialen",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1119FTIASF&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Belmans Bert",
+   "Van den bergh Wim"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1120FTIEDS",
+  "name":"3-Elektriciteit, verlichting, domotica en sanitair",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1120FTIEDS&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Winter Augustinus",
+   "Belmans Bert",
+   "Catthoor Raf"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"1125FTIENE",
   "name":"5-Energieprestatie van gebouwen",
   "year":"2021-2022",
@@ -620,8 +1289,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "sustainability"
+   "sustainability",
+   "energy"
   ],
   "dedicated":1
  },
@@ -700,6 +1369,30 @@
   "dedicated":0
  },
  {
+  "id":"1300PSWASO",
+  "name":"Arbeidssociologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1300PSWASO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Henderickx Erik"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"1300PSWSDT",
   "name":"Milieusociologie",
   "year":"2021-2022",
@@ -738,12 +1431,36 @@
    "bac"
   ],
   "fields":[
-   "Economy",
    "Sociology",
+   "Economy",
    "Management"
   ],
   "themes":[
    "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1304TEWSBT",
+  "name":"Luchtvervoer",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1304TEWSBT&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dewulf Wouter",
+   "Buyle Sven"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -791,10 +1508,101 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "climate"
+   "climate",
+   "energy"
   ],
   "dedicated":1
+ },
+ {
+  "id":"1331FTITSL",
+  "name":"4-Toegepaste stromingsleer",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1331FTITSL&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Jorens Sandy"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"1332FTIKLI",
+  "name":"6-Klimatisering: HVAC-calculaties",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1332FTIKLI&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van de Paer Jan",
+   "Verhaert Ivan",
+   "Jorens Sandy"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"1507FTINWA",
+  "name":"3-Netwerkarchitectuur",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1507FTINWA&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Kaya Abdil",
+   "Van Landeghem Guido"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2000WETHSS",
+  "name":"History of science and society",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2000WETHSS&lang=nl",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "De Munck Bert"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
  },
  {
   "id":"2001FOWSRP",
@@ -815,7 +1623,55 @@
    "Architecture"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2001WETCAS",
+  "name":"Conservation and society",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETCAS&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "van Diggelen Ruurd",
+   "Miko Ladislav"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2001WETDPH",
+  "name":"Device physics",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETDPH&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Sor\u00e9e Bart",
+   "Magnus Wim"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy"
   ],
   "dedicated":0
  },
@@ -837,10 +1693,32 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":1
+ },
+ {
+  "id":"2001WETENT",
+  "name":"Entomology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETENT&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "De Bruyn Luc"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
  },
  {
   "id":"2001WETMKG",
@@ -866,6 +1744,142 @@
   "dedicated":1
  },
  {
+  "id":"2001WETMOB",
+  "name":"Methods in environmental biology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETMOB&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Nijs Ivan"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2001WETORN",
+  "name":"Ornithology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETORN&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Matthysen Erik",
+   "Eens Marcel"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2001WETPAL",
+  "name":"Palaeo-ecology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETPAL&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Van De Vijver Bart"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2001WETPEC",
+  "name":"Plant and soil ecology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETPEC&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Nijs Ivan",
+   "Verbruggen Erik"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2001WETREC",
+  "name":"Restoration ecology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETREC&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Emsens Willem-Jan",
+   "van Diggelen Ruurd"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2001WETSSP",
+  "name":"Quantum many-body theory of the solid state",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETSSP&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Tempere Jacques"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"2001WETTDT",
   "name":"Remote sensing",
   "year":"2021-2022",
@@ -884,9 +1898,129 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
+ },
+ {
+  "id":"2001WETTPO",
+  "name":"Species conservation and management",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETTPO&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Leirs Herwig",
+   "Matthysen Erik"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2002FOWERF",
+  "name":"Erfgoed: beleid en regelgeving",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2002FOWERF&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vercauteren Gregory"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2003FOWSRP",
+  "name":"Ruimte en mobiliteit",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2003FOWSRP&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanoutrive Thomas"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2006FLWMPC",
+  "name":"Professionelle Kommunikation",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2006FLWMPC&lang=nl",
+  "languages":[
+   "de"
+  ],
+  "teachers":[
+   "Strobl Carola",
+   "Dusar Ingeborg"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2009FBDBMW",
+  "name":"Ecology, epidemiology and control of infectious diseases",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2009FBDBMW&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Van Bortel Wim",
+   "Leirs Herwig"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
  },
  {
   "id":"2010RECJPB",
@@ -903,9 +2037,9 @@
    "master"
   ],
   "fields":[
+   "Law & Criminology",
    "Economy",
-   "Management",
-   "Law & Criminology"
+   "Management"
   ],
   "themes":[
    "climate"
@@ -932,8 +2066,9 @@
    "Science"
   ],
   "themes":[
-   "energy",
-   "climate"
+   "climate",
+   "environment",
+   "energy"
   ],
   "dedicated":0
  },
@@ -960,6 +2095,29 @@
   "dedicated":1
  },
  {
+  "id":"2025FBDBMW",
+  "name":"Humane en ecotoxicologische milieurisicobeoordeling",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2025FBDBMW&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vergauwen Lucia",
+   "Mertens Birgit"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"2027FOWERF",
   "name":"Heritage: an Introduction",
   "year":"2021-2022",
@@ -977,6 +2135,183 @@
    "Architecture"
   ],
   "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2029FOWERF",
+  "name":"Museology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2029FOWERF&lang=nl",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Cattersel Vincent",
+   "Verreyke H\u00e9l\u00e8ne"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2029TEWMHI",
+  "name":"Sustainability management",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2029TEWMHI&lang=nl",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Compernolle Tine"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2030GENEP1",
+  "name":"Workplace Visits",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2030GENEP1&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Van Hal Guido"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2032FOWPOW",
+  "name":"Masterproef",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2032FOWPOW&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Braet Johan",
+   "Neyrinck Johan",
+   "Vaes Kristof",
+   "Van Campenhout Lukas",
+   "van Gogh Dirk",
+   "Du Bois Els",
+   "Jacoby Alexis",
+   "Scheelen Linda",
+   "Casper Verlinden Jouke",
+   "Watts Regan",
+   "Verwulgen Stijn",
+   "Goethijn Frank",
+   "Dams Francis",
+   "Bailleul Paul"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2041FOWPOW",
+  "name":"Onderzoeks-en productdefinitie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2041FOWPOW&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Braet Johan",
+   "Neyrinck Johan",
+   "Vaes Kristof",
+   "Van Campenhout Lukas",
+   "van Gogh Dirk",
+   "Du Bois Els",
+   "Jacoby Alexis",
+   "Scheelen Linda",
+   "Casper Verlinden Jouke",
+   "Watts Regan",
+   "Verwulgen Stijn",
+   "Goethijn Frank",
+   "Dams Francis",
+   "Bailleul Paul"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2042FOWPOW",
+  "name":"Onderzoeks-en productdefinitie met in begrip van stage",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2042FOWPOW&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Braet Johan",
+   "Neyrinck Johan",
+   "Vaes Kristof",
+   "Van Campenhout Lukas",
+   "van Gogh Dirk",
+   "Du Bois Els",
+   "Jacoby Alexis",
+   "Scheelen Linda",
+   "Casper Verlinden Jouke",
+   "Watts Regan",
+   "Verwulgen Stijn",
+   "Goethijn Frank",
+   "Dams Francis",
+   "Bailleul Paul"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
    "sustainability"
   ],
   "dedicated":0
@@ -1005,6 +2340,31 @@
   "dedicated":1
  },
  {
+  "id":"2075FBDBMW",
+  "name":"Laboratory Animal Science (core module)",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2075FBDBMW&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Van Dam Debby",
+   "Van Ginneken Chris"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"2100FSWMDD",
   "name":"Media and Democratic Debate",
   "year":"2021-2022",
@@ -1023,6 +2383,175 @@
   ],
   "themes":[
    "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2100RECHRJ",
+  "name":"Advanced Course on Human Rights and Global Justice",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2100RECHRJ&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Vandenhole Wouter"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2100RECIDM",
+  "name":"Advanced Course on International Law and Sustainable Development",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2100RECIDM&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Popelier Patricia",
+   "De Feyter Koen"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2100RECSCL",
+  "name":"Advanced Course on Constitutional Law of the European Union",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2100RECSCL&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "van Zimmeren Esther",
+   "De Somer St\u00e9phanie",
+   "De Feyter Koen",
+   "Meeusen Johan"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2101MDOBSF",
+  "name":"Biosfeer: lucht, water, bodem en biota",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2101MDOBSF&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lenaerts Silvia",
+   "Janssens Ivan",
+   "Tytgat Tom",
+   "Van Damme Stefan"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2101TEWKOO",
+  "name":"International consulting bootcamp GOA",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2101TEWKOO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbempt Koen",
+   "Guiette Alain"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2101TEWMBA",
+  "name":"Strategic management",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2101TEWMBA&lang=nl",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Verhezen Peter"
+  ],
+  "cycles":[
+   "other",
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2101TEWVPK",
+  "name":"Strategisch management",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2101TEWVPK&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbempt Koen"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -1051,6 +2580,54 @@
   "dedicated":1
  },
  {
+  "id":"2102TEWVPK",
+  "name":"Ethisch en duurzaam ondernemen",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2102TEWVPK&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Liedekerke Luc"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other",
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2103FTIBTB",
+  "name":"I-Bruggen- en tunnelbouw",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2103FTIBTB&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anastasiades Kostas",
+   "Blom Johan"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"2103MDOESB",
   "name":"Ecosysteembeheer",
   "year":"2021-2022",
@@ -1068,6 +2645,28 @@
   "fields":[
    "Other",
    "Architecture"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2104GENEP1",
+  "name":"Werkplekbezoeken",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2104GENEP1&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Hal Guido"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
   ],
   "themes":[
    "environment"
@@ -1093,7 +2692,8 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -1116,9 +2716,78 @@
    "master"
   ],
   "fields":[
-   "Economy",
    "Sociology",
+   "Economy",
    "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2106FTIRWZ",
+  "name":"II-Riolering en waterzuivering",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2106FTIRWZ&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Gerards Ron"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2106MDOMBL",
+  "name":"Milieubeleid",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2106MDOMBL&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Loots Ilse"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other",
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2107MDOMEC",
+  "name":"Milieu-economie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2107MDOMEC&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Passel Steven"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other"
   ],
   "themes":[
    "environment",
@@ -1145,7 +2814,31 @@
    "Other"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2109MDOMRT",
+  "name":"Milieurecht",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2109MDOMRT&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Ann"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -1165,12 +2858,83 @@
    "master"
   ],
   "fields":[
-   "Engineering",
-   "Architecture"
+   "Architecture",
+   "Engineering"
   ],
   "themes":[
-   "resources",
+   "sustainability",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2110TEWTEL",
+  "name":"Operationele aspecten van maritiem transport",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2110TEWTEL&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Sys Christa"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2112MDOMTN",
+  "name":"Methoden en technieken voor Interdisciplinair Onderzoek",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2112MDOMTN&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Marchand Fleur"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other",
+   "Sociology"
+  ],
+  "themes":[
+   "environment",
    "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2112TEWTEL",
+  "name":"Luchttransport",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2112TEWTEL&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dewulf Wouter",
+   "Buyle Sven"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -1193,6 +2957,103 @@
    "Other"
   ],
   "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2116TEWKOO",
+  "name":"Havenstrategie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2116TEWKOO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Blomme Jan"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2139TEWKOO",
+  "name":"Summer school Beijing 'The business environment in China'",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2139TEWKOO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbempt Koen"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2140TEWKOO",
+  "name":"Summer school Washington 'American business environment'",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2140TEWKOO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbempt Koen"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2141TEWKOO",
+  "name":"Summer school Chongqing, China 'Transport and logistics in a changing economy'",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2141TEWKOO&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verhetsel Ann",
+   "Buyle Sven"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
    "sustainability"
   ],
   "dedicated":0
@@ -1216,7 +3077,8 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
  },
@@ -1241,8 +3103,8 @@
    "Law & Criminology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "sustainability",
+   "resources"
   ],
   "dedicated":1
  },
@@ -1288,9 +3150,7 @@
    "Other"
   ],
   "themes":[
-   "resources",
-   "energy",
-   "sustainability"
+   "energy"
   ],
   "dedicated":1
  },
@@ -1334,10 +3194,32 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
+ },
+ {
+  "id":"2201WETENB",
+  "name":"Environmental biophysics",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2201WETENB&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Nijs Ivan"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
  },
  {
   "id":"2201WETERG",
@@ -1363,6 +3245,30 @@
   "dedicated":0
  },
  {
+  "id":"2201WETESE",
+  "name":"Environmental stress and ecotoxicology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2201WETESE&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Van Assche Frank",
+   "Bervoets Lieven",
+   "Diels Ludo"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"2201WETESS",
   "name":"Ecosystem services",
   "year":"2021-2022",
@@ -1381,7 +3287,33 @@
    "Science"
   ],
   "themes":[
-   "environment",
+   "climate",
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2201WETFEF",
+  "name":"Freshwater ecosystem functioning",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2201WETFEF&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Meire Patrick",
+   "Okruszko Tomasz",
+   "Schoelynck Jonas"
+  ],
+  "cycles":[
+   "other",
+   "master"
+  ],
+  "fields":[
+   "Other",
+   "Science"
+  ],
+  "themes":[
    "climate"
   ],
   "dedicated":0
@@ -1406,7 +3338,30 @@
    "Science"
   ],
   "themes":[
-   "environment",
+   "climate",
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2201WETGCP",
+  "name":"Global change physiology",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2201WETGCP&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "De Boeck Gudrun",
+   "Asard Han"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
    "climate"
   ],
   "dedicated":0
@@ -1467,6 +3422,30 @@
   "dedicated":1
  },
  {
+  "id":"2201WETTEF",
+  "name":"Terrestrial ecosystem functioning",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2201WETTEF&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Nijs Ivan",
+   "Verbruggen Erik"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"2202MDODOW",
   "name":"Duurzame ontwikkeling: capita selecta",
   "year":"2021-2022",
@@ -1485,8 +3464,77 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "sustainability",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2203MDOETC",
+  "name":"Ecotoxicologie",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2203MDOETC&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bervoets Lieven"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2204MDOEMB",
+  "name":"EU-milieubeleid",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2204MDOEMB&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bursens Peter",
+   "Loots Ilse"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other",
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"2205MDOMER",
+  "name":"Milieueffectrapportage",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2205MDOMER&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Deweerdt Hildegard"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":1
  },
@@ -1511,6 +3559,28 @@
   ],
   "themes":[
    "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2207MDOIWB",
+  "name":"Integraal waterbeheer",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2207MDOIWB&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Damme Stefan"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -1557,6 +3627,7 @@
    "Other"
   ],
   "themes":[
+   "sustainability",
    "resources"
   ],
   "dedicated":0
@@ -1585,6 +3656,53 @@
   "dedicated":0
  },
  {
+  "id":"2300PSWKES",
+  "name":"Sociology of science and knowledge",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2300PSWKES&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Verschraegen Gert",
+   "Vandermoere Frederic"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2300PSWRMS",
+  "name":"City and environment  (state-of-the-art)",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2300PSWRMS&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Oosterlynck Stijn",
+   "Vandermoere Frederic",
+   "Crabb\u00e9 Ann"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"2300RECEXA",
   "name":"Harmonised Private Law",
   "year":"2021-2022",
@@ -1607,6 +3725,28 @@
    "climate"
   ],
   "dedicated":0
+ },
+ {
+  "id":"2300RECMIL",
+  "name":"Milieurecht",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2300RECMIL&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Ann"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
  },
  {
   "id":"2301MDOMPM",
@@ -1727,8 +3867,67 @@
   "themes":[
    "climate",
    "environment",
-   "resources",
+   "sustainability",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"3007IOBLPR",
+  "name":"Local institutions and poverty reduction",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3007IOBLPR&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Holvoet Nathalie",
+   "Huybrechs Fr\u00e9d\u00e9ric",
+   "Bastiaensen Johan",
+   "Belloni Milena",
+   "Moshonas Stylianos",
+   "Windey Catherine",
+   "De Herdt Tom",
+   "Krishnan Kolinjivadi Vijay",
+   "Vancluysen Sarah",
+   "Geenen Sara",
+   "Katz-Lavigne Sarah",
+   "Augustin Samnick Denis",
+   "Titeca Kristof"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Political Sciences"
+  ],
+  "themes":[
+   "climate",
+   "environment",
    "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"3011KULZHF",
+  "name":"Farmaceutische technologie voor het ziekenhuis",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3011KULZHF&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Janssen Renaud"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -1757,6 +3956,97 @@
   "dedicated":0
  },
  {
+  "id":"3019UGEARB",
+  "name":"Milieugezondheidkunde",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3019UGEARB&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"3101WETGWP",
+  "name":"Global water problems and integrated water management",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3101WETGWP&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Meire Patrick",
+   "Van Damme Stefan"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"3102WETIAW",
+  "name":"Integrated assessment of water and sediment quality",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3102WETIAW&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Town Raewyn",
+   "Blust Ronny"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"3103WETIMD",
+  "name":"Integrated modelling and design of basin management plans",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3103WETIMD&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Dfe Seuntjens Piet"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"3104WETR21",
   "name":"Integrated water management: advanced case River 21",
   "year":"2021-2022",
@@ -1776,9 +4066,80 @@
    "Other"
   ],
   "themes":[
+   "sustainability",
    "resources"
   ],
   "dedicated":0
+ },
+ {
+  "id":"3200HZSWSH",
+  "name":"Water and shipping",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3200HZSWSH&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Verstraelen Helen",
+   "Candries Maxim",
+   "Potters Geert"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "sustainability",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"3200WETGMR",
+  "name":"Groundwater management & remediation",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3200WETGMR&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Verreydt Goedele"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"3202WETSMT",
+  "name":"Sediments: sustainable building blocks",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3202WETSMT&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Huygens Marc"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
  },
  {
   "id":"3203WETNBS",
@@ -1801,6 +4162,28 @@
    "climate",
    "environment",
    "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"3205WETRMH",
+  "name":"River morphology & hydrodynamics",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-3205WETRMH&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Temmerman Stijn"
+  ],
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Other"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -1916,8 +4299,8 @@
    "Other"
   ],
   "themes":[
-   "energy",
-   "climate"
+   "climate",
+   "energy"
   ],
   "dedicated":1
  },
@@ -1955,6 +4338,28 @@
    "Somers Inge",
    "Coen Ann",
    "Du Tr\u00e9 Kurt"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"9131FOWKEU",
+  "name":"Advanced Eco-Design",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-9131FOWKEU&lang=nl",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Doorsselaer Karine"
   ],
   "cycles":[
    "master"

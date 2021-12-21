@@ -44,6 +44,7 @@ def compute_score(text: str, patterns_themes_df: pd.DataFrame) -> (int, Dict[str
             pattern_score = 1
             patterns_matches_list = []
             for sub_pattern in sub_patterns:
+
                 matches = list(re.finditer(sub_pattern, text))
                 # If there are no matches for a pattern stop the search
                 if len(matches) == 0:
@@ -57,6 +58,7 @@ def compute_score(text: str, patterns_themes_df: pd.DataFrame) -> (int, Dict[str
                     patterns_matches_list += [text[start:end]]
 
             if pattern_score != 0:
+                score = 1
                 matched_themes |= set(themes)
                 pattern_matches_dict[pattern] = patterns_matches_list
 
@@ -136,10 +138,14 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
 
     patterns_matches_dict = {}
     scores_df = pd.DataFrame(0, index=courses_df.index, columns=themes + ["dedicated"], dtype=int)
-    for idx, (name, scoring_text, full_text) in courses_df[["name", "scoring_text", "full_text"]].iterrows():
+    for i, (idx, name, scoring_text, full_text) \
+            in courses_df.reset_index()[["id", "name", "scoring_text", "full_text"]].iterrows():
 
         scoring_text = clean_text(scoring_text)
         full_text = clean_text(full_text)
+
+        if i % 100 == 0:
+            print(f"{i}/{len(courses_df.index)}")
 
         if len(scoring_text.strip(" ")) == 0:
             continue
@@ -187,4 +193,5 @@ if __name__ == "__main__":
 
     arguments = vars(parser.parse_args())
     arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}/")
+    arguments['dictionary_name'] = 'v1.1'
     score_school_courses(**arguments)
