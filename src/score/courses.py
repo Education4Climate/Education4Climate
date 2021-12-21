@@ -158,7 +158,7 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
             courses_df.loc[idx, themes] = 0
             continue
 
-        # If we didn't identify a language for which we have a dictionary,
+        # If we didn't identify a language for which we have a dictionary
         # use the first language in which the course is given
         languages = [l for l in languages if l in ACCEPTED_LANGUAGES]
         if len(languages) == 0:
@@ -194,4 +194,9 @@ if __name__ == "__main__":
     arguments = vars(parser.parse_args())
     arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}/")
     arguments['dictionary_name'] = 'v1.1'
-    score_school_courses(**arguments)
+
+    schools = ["he-ferrer"]
+    for school in schools:
+        arguments['school'] = school
+        print(school)
+        score_school_courses(**arguments)

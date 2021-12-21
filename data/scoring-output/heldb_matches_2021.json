@@ -1,4 +1,13 @@
 {
+    "TOU12TOR: Tourisme Responsable": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "nteractions entre l'environnement  l'economie et la s",
+                "sme inscrit dans la durabilite      le tourisme au",
+                "trois piliers de la durabilite   economique  cultu"
+            ]
+        }
+    },
     "TOU31LG10: Langue \u00e9trang\u00e8re X - N\u00e9erlandais": {
         "fr": {
             "rechauffement climat[^ ]+": [
@@ -28,10 +37,81 @@
             ]
         }
     },
+    "AJU12ECO: Ecologie et Paysage": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "ysages  pollutions  biodiversite  degradation des ha",
+                "ecologie et paysage paysage ",
+                "                    ecologie      objectifs     ",
+                "oduire aux concepts ecologiques de base afin de per",
+                "s aux sciences de l'ecologie dans la conception ",
+                "      1 - notions d'ecologie generale orientee  "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ysages  pollutions  biodiversite  degradation des ha",
+                "ilieux anthropises  ecosystemes urbains et espaces "
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ysages  pollutions  biodiversite  degradation des ha",
+                " potentiellement un impact dans la conception ",
+                "ecologie et paysage paysage ",
+                "                    ecologie      objectifs     ",
+                "oduire aux concepts ecologiques de base afin de per",
+                "s aux sciences de l'ecologie dans la conception ",
+                "      1 - notions d'ecologie generale orientee  ",
+                "ilieux anthropises  ecosystemes urbains et espaces ",
+                "x principaux enjeux environnementaux ayant potentiell"
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ysages  pollutions  biodiversite  degradation des ha",
+                "es de solutions aux problemes lies a l'anthropis",
+                "ecologie et paysage paysage ",
+                "                    ecologie      objectifs     ",
+                "oduire aux concepts ecologiques de base afin de per",
+                "s aux sciences de l'ecologie dans la conception ",
+                "      1 - notions d'ecologie generale orientee  ",
+                "ilieux anthropises  ecosystemes urbains et espaces ",
+                "x principaux enjeux environnementaux ayant potentiell"
+            ],
+            "[degradation, ecosyst[^ ]+, environnement]": [
+                "ions  biodiversite  degradation des habitats       ",
+                "ilieux anthropises  ecosystemes urbains et espaces ",
+                "x principaux enjeux environnementaux ayant potentiell"
+            ],
+            "[ecosyst[^ ]+, pollution]": [
+                "ilieux anthropises  ecosystemes urbains et espaces ",
+                "ts et des paysages  pollutions  biodiversite  deg"
+            ]
+        }
+    },
     "TLU41CCO: Chimie organique III et identification spectrom\u00e9trique": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
                 "nthese asymetrique  chimie verte  microchimie  chimi"
+            ]
+        }
+    },
+    "GEU12MIC2: Microbiologie II": {
+        "fr": {
+            "questions? environnement": [
+                "organismes dans les questions environnementales      contenu   "
+            ]
+        }
+    },
+    "GEU12EAG: Ecosyst\u00e8mes aquatiques et gestion de l'eau": {
+        "fr": {
+            "gestion (?:de l'|des )?eaux?": [
+                "temes aquatiques et gestion de l'eau hydrologie      obj",
+                "s outils de base de gestion de l'eau    etre capable de "
+            ]
+        }
+    },
+    "GEU21PHY: Phytopharmacie": {
+        "fr": {
+            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                " preservation de la biodiversite        contenu     ",
+                " de   - reperer les problemes phytosanitaires da",
+                "les plantes et leur environnement  notions de stress "
             ]
         }
     },
@@ -110,6 +190,10 @@
             ],
             "services? ecosystemiq": [
                 "ironnementale et de services ecosystemiques  ces differents "
+            ],
+            "[environnemental, ethique]": [
+                "- notions d'ethique environnementale et de services eco",
+                "oraines - notions d'ethique environnementale et"
             ]
         }
     },
@@ -131,6 +215,110 @@
             ]
         }
     },
+    "GEU23STA1: Stages I": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "ou a l'alimentation durable  les permis d'envir",
+                "aussi varies que la mobilite  l'amenagement du t"
+            ]
+        }
+    },
+    "GEU31ECSYS2: Ecosyst\u00e8mes II": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                " des ecosystemes et biodiversite      objectifs     ",
+                "ique des parametres ecologiques d'un territoire    "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                " des ecosystemes et biodiversite      objectifs     ",
+                "ecosystemes ii questions de pol",
+                "rbains et etude des ecosystemes et de leurs evoluti",
+                "on  impacts sur les ecosystemes et sur la sante  su",
+                "          etude des ecosystemes et biodiversite    ",
+                "dre a connaitre les ecosystemes belges les plus typ",
+                "ses dans le cadre d'ecosystemes preserves a l'etude",
+                "eserves a l'etude d'ecosystemes anthropises    deve",
+                "     rencontrer des ecosystemes belges representati",
+                " utilisees dans des ecosystemes exceptionnels pour ",
+                "ls pour etudier les ecosystemes urbains"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                " des ecosystemes et biodiversite      objectifs     ",
+                "ystemes et de leurs evolutions 3       objectifs ",
+                "ecosystemes ii questions de pol",
+                "rbains et etude des ecosystemes et de leurs evoluti",
+                "on  impacts sur les ecosystemes et sur la sante  su",
+                "olitiques et normes environnementales pour envisager ",
+                "ger la gestion de l'environnement urbain dans toute s",
+                "ger la gestion de l'environnement dans toute sa compl",
+                "r differents enjeux environnementaux globaux ou speci",
+                "fique traitant de l'environnement  de la pollution ou",
+                "          etude des ecosystemes et biodiversite    ",
+                "dre a connaitre les ecosystemes belges les plus typ",
+                "ses dans le cadre d'ecosystemes preserves a l'etude",
+                "eserves a l'etude d'ecosystemes anthropises    deve",
+                "     rencontrer des ecosystemes belges representati",
+                "ique des parametres ecologiques d'un territoire    ",
+                " utilisees dans des ecosystemes exceptionnels pour ",
+                "ls pour etudier les ecosystemes urbains"
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                " des ecosystemes et biodiversite      objectifs     ",
+                "tion  modelisation  impacts sur les ecosysteme",
+                "ecosystemes ii questions de pol",
+                "rbains et etude des ecosystemes et de leurs evoluti",
+                "on  impacts sur les ecosystemes et sur la sante  su",
+                "olitiques et normes environnementales pour envisager ",
+                "ger la gestion de l'environnement urbain dans toute s",
+                "ger la gestion de l'environnement dans toute sa compl",
+                "r differents enjeux environnementaux globaux ou speci",
+                "fique traitant de l'environnement  de la pollution ou",
+                "          etude des ecosystemes et biodiversite    ",
+                "dre a connaitre les ecosystemes belges les plus typ",
+                "ses dans le cadre d'ecosystemes preserves a l'etude",
+                "eserves a l'etude d'ecosystemes anthropises    deve",
+                "     rencontrer des ecosystemes belges representati",
+                "ique des parametres ecologiques d'un territoire    ",
+                " utilisees dans des ecosystemes exceptionnels pour ",
+                "ls pour etudier les ecosystemes urbains"
+            ],
+            "[ecosyst[^ ]+, pollution]": [
+                "ecosystemes ii questions de pol",
+                "rbains et etude des ecosystemes et de leurs evoluti",
+                "on  impacts sur les ecosystemes et sur la sante  su",
+                "          etude des ecosystemes et biodiversite    ",
+                "dre a connaitre les ecosystemes belges les plus typ",
+                "ses dans le cadre d'ecosystemes preserves a l'etude",
+                "eserves a l'etude d'ecosystemes anthropises    deve",
+                "     rencontrer des ecosystemes belges representati",
+                " utilisees dans des ecosystemes exceptionnels pour ",
+                "ls pour etudier les ecosystemes urbains",
+                "mes ii questions de pollution et d'eco-toxicologi",
+                "ons complexes entre pollution  modelisation  impa",
+                "nvironnement  de la pollution ou de l'ecotoxicolo"
+            ],
+            "[gestion (?:de l')environnement, ecolog[^ ]+, impact]": [
+                "s pour envisager la gestion de l'environnement urbain dans toute s",
+                "fique  envisager la gestion de l'environnement dans toute sa compl",
+                "ique des parametres ecologiques d'un territoire    ",
+                "tion  modelisation  impacts sur les ecosysteme"
+            ],
+            "[impact, pesticide]": [
+                "tion  modelisation  impacts sur les ecosysteme",
+                "v  ozone  cfc  hap  pesticides  perturbateurs end"
+            ],
+            "[pollution, pesticide]": [
+                "mes ii questions de pollution et d'eco-toxicologi",
+                "ons complexes entre pollution  modelisation  impa",
+                "nvironnement  de la pollution ou de l'ecotoxicolo",
+                "v  ozone  cfc  hap  pesticides  perturbateurs end"
+            ],
+            "ecotoxicologie": [
+                "chets       et leur ecotoxicologie specifique  envisag",
+                "a pollution ou de l'ecotoxicologie                   e"
+            ]
+        }
+    },
     "GEU31DRO2: Droit II": {
         "fr": {
             "(?:^|[^a-z])cop ?[0-9]+": [
@@ -146,6 +334,18 @@
             "protection (?:de l')?environnement": [
                 " contenu         la protection de l'environnement au niveau internati",
                 "r les politiques de protection de l'environnement appliquees en belgi"
+            ],
+            "protection de l'environnement": [
+                " contenu         la protection de l'environnement au niveau internati",
+                "r les politiques de protection de l'environnement appliquees en belgi"
+            ]
+        }
+    },
+    "GEU33STA2: Stage II": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "ou a l'alimentation durable  les permis d'envir",
+                "aussi varies que la mobilite  l'amenagement du t"
             ]
         }
     },
@@ -156,9 +356,24 @@
             ]
         }
     },
+    "GEU21MOB: Mobilit\u00e9": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "ue de developpement durable       contenu      ",
+                "mobilite environnement et de",
+                "grands enjeux de la mobilite dans une societe ur",
+                "aux problemes de la mobilite urbaine   4deg  ame",
+                "sme et politique de mobilite   5deg  la problema",
+                "ue specifique de la mobilite en zones peri-urbai"
+            ]
+        }
+    },
     "TLU51IBBIOCHIND: Biochimie industrielle et g\u00e9nie biochimique": {
         "fr": {
             "protection (?:de l')?environnement": [
+                " l'energie et de la protection de l'environnement      contenu       "
+            ],
+            "protection de l'environnement": [
                 " l'energie et de la protection de l'environnement      contenu       "
             ]
         }
@@ -167,6 +382,9 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 " l'energie et de la protection de l'environnement      contenu       "
+            ],
+            "protection de l'environnement": [
+                " l'energie et de la protection de l'environnement      contenu       "
             ]
         }
     },
@@ -174,6 +392,16 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 " l'energie et de la protection de l'environnement      contenu       "
+            ],
+            "protection de l'environnement": [
+                " l'energie et de la protection de l'environnement      contenu       "
+            ]
+        }
+    },
+    "TLU51IA: Industries alimentaires": {
+        "fr": {
+            "eco-?conception": [
+                " les principes de l'ecoconception dans une production"
             ]
         }
     },
@@ -198,6 +426,16 @@
             ],
             "rechauffement climat[^ ]+": [
                 "a effet de serre et rechauffement climatique  analyse critique  "
+            ],
+            "ecotoxicologie": [
+                "e sur le theme de l'ecotoxicologie de composes organiq"
+            ]
+        }
+    },
+    "TLU51ACGEBUR: Bureau d'\u00e9tudes": {
+        "fr": {
+            "politique environnement": [
+                "e de la demarche de politique environnementale en general      "
             ]
         }
     }

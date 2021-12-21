@@ -7,6 +7,20 @@
             ]
         }
     },
+    "AU239: Innovations de l'automobile": {
+        "fr": {
+            "[climat, environnement, ecolog[^ ]+]": [
+                "mment le systeme de climatisation  le gps  le ",
+                "ux complexites de l'environnement technique       sen",
+                "chematiser l'impact environnemental des moyens de tra",
+                "rts sur l'empreinte ecologique  effet de serre    "
+            ],
+            "[effets? (?:de )?serre, climat]": [
+                "preinte ecologique  effet de serre         5   vehicul",
+                "mment le systeme de climatisation  le gps  le "
+            ]
+        }
+    },
     "AV305: Empreinte \u00e9cologique": {
         "fr": {
             "[electri[^ ]+, stockage]": [
@@ -21,6 +35,21 @@
             ],
             "energ[^ ]+ fossile": [
                 "'utilisant plus les energies fossiles       savoir estim"
+            ]
+        }
+    },
+    "AV312: Stockage de l'\u00e9nergie \u00e9lectrique et piles \u00e0 combustible": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "ockage de l'energie electrique et piles a combusti",
+                "ockage de l'energie electrique et piles a combusti",
+                "stockage de l'energie electr",
+                "s a combustible 1   stockage de l'energie electr",
+                "ferents systemes de stockage d'energie et de pui",
+                "ries et systemes de stockage d'energie et de pui",
+                "a la production  le stockage et l'utilisation de",
+                "ferents systemes de stockage d'energie et de pui",
+                "ferents systemes de stockage d'energie et de pui"
             ]
         }
     },
@@ -50,6 +79,90 @@
             ]
         }
     },
+    "CE205: Ecologie g\u00e9n\u00e9rale th\u00e9orie": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "ques     cosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "ergie au sein de la biosphere        savoir etre ",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "ecologie generale theorie 1 ",
+                "enerale theorie 1   ecologie generale theorie   ",
+                "x     biomes     autecologie - facteurs abiotiqu",
+                " abiotiques     demoecologie - facteurs biotique",
+                "rs biotiques     synecologie - niche ecologique ",
+                "synecologie - niche ecologique - biodiversite     ",
+                "ution - successions ecologiques     cycles biogeoch",
+                "bulaire relatif a l'ecologie generale       decr"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ques     cosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "ergie au sein de la biosphere        savoir etre ",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "nerale     sols     ecosysteme - definition   repa",
+                " - biodiversite     ecosysteme - structure - fonct",
+                " fonctionnement     ecosysteme - flux d'energie - ",
+                " - productivite     ecosysteme - evolution - succe",
+                "fonctionnement d'un ecosysteme      analyser le me",
+                " la degradation des ecosystemes  a l'eradication de"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ques     cosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "ergie au sein de la biosphere        savoir etre ",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "te     ecosysteme - evolution - successions ecolo",
+                "ecologie generale theorie 1 ",
+                "enerale theorie 1   ecologie generale theorie   ",
+                "nerale     sols     ecosysteme - definition   repa",
+                "x     biomes     autecologie - facteurs abiotiqu",
+                " abiotiques     demoecologie - facteurs biotique",
+                "rs biotiques     synecologie - niche ecologique ",
+                "synecologie - niche ecologique - biodiversite     ",
+                " - biodiversite     ecosysteme - structure - fonct",
+                " fonctionnement     ecosysteme - flux d'energie - ",
+                " - productivite     ecosysteme - evolution - succe",
+                "ution - successions ecologiques     cycles biogeoch",
+                "bulaire relatif a l'ecologie generale       decr",
+                "fonctionnement d'un ecosysteme      analyser le me",
+                " la degradation des ecosystemes  a l'eradication de"
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ques     cosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "ergie au sein de la biosphere        savoir etre ",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "en rapport avec les problemes lies a la degradat",
+                "ecologie generale theorie 1 ",
+                "enerale theorie 1   ecologie generale theorie   ",
+                "nerale     sols     ecosysteme - definition   repa",
+                "x     biomes     autecologie - facteurs abiotiqu",
+                " abiotiques     demoecologie - facteurs biotique",
+                "rs biotiques     synecologie - niche ecologique ",
+                "synecologie - niche ecologique - biodiversite     ",
+                " - biodiversite     ecosysteme - structure - fonct",
+                " fonctionnement     ecosysteme - flux d'energie - ",
+                " - productivite     ecosysteme - evolution - succe",
+                "ution - successions ecologiques     cycles biogeoch",
+                "bulaire relatif a l'ecologie generale       decr",
+                "fonctionnement d'un ecosysteme      analyser le me",
+                " la degradation des ecosystemes  a l'eradication de"
+            ]
+        }
+    },
     "CE212: Sources et formes d'\u00e9nergie th\u00e9orie": {
         "fr": {
             "energ[^ ]+ fossile": [
@@ -62,10 +175,116 @@
             ]
         }
     },
+    "CE213: Ecologie appliqu\u00e9e th\u00e9orie": {
+        "fr": {
+            "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "s polluants dans la biosphere       la pollution ",
+                "es pollutions de la biosphere       analyser leur",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "n thermique         consequences ecologiques global",
+                "     analyser leurs consequences sur les ecosysteme",
+                "ecologie appliquee theorie 1",
+                "pliquee theorie 1   ecologie appliquee theorie  ",
+                "ue des degradations ecologiques       la demographi",
+                "       consequences ecologiques globales       savo",
+                "onsequences sur les ecosystemes et les cycles bioge",
+                " la degradation des ecosystemes  a l'eradication de"
+            ],
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "s polluants dans la biosphere       la pollution ",
+                "es pollutions de la biosphere       analyser leur",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "ecologie appliquee theorie 1",
+                "pliquee theorie 1   ecologie appliquee theorie  ",
+                "ue des degradations ecologiques       la demographi",
+                "       consequences ecologiques globales       savo"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "s polluants dans la biosphere       la pollution ",
+                "es pollutions de la biosphere       analyser leur",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "onsequences sur les ecosystemes et les cycles bioge",
+                " la degradation des ecosystemes  a l'eradication de"
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "s polluants dans la biosphere       la pollution ",
+                "es pollutions de la biosphere       analyser leur",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere  particulierement l",
+                "en rapport avec les problemes lies a la degradat",
+                "ecologie appliquee theorie 1",
+                "pliquee theorie 1   ecologie appliquee theorie  ",
+                "ue des degradations ecologiques       la demographi",
+                "       consequences ecologiques globales       savo",
+                "onsequences sur les ecosystemes et les cycles bioge",
+                " la degradation des ecosystemes  a l'eradication de"
+            ],
+            "[ecosyst[^ ]+, pollution]": [
+                "onsequences sur les ecosystemes et les cycles bioge",
+                " la degradation des ecosystemes  a l'eradication de",
+                " biosphere       la pollution atmospherique      ",
+                "   les effets de la pollution atmospherique sur l",
+                "eochmiques       la pollution des sols           ",
+                " pesticides     les pollutions industrielles     ",
+                "trielles         la pollution des eaux           ",
+                " eaux            la pollution par les matieres fe",
+                "ts chimiques     la pollution thermique         c",
+                "e       definir les pollutions de la biosphere   ",
+                " quantification des pollutions       definir les "
+            ],
+            "[pollution, pesticide]": [
+                " biosphere       la pollution atmospherique      ",
+                "   les effets de la pollution atmospherique sur l",
+                "eochmiques       la pollution des sols           ",
+                " pesticides     les pollutions industrielles     ",
+                "trielles         la pollution des eaux           ",
+                " eaux            la pollution par les matieres fe",
+                "ts chimiques     la pollution thermique         c",
+                "e       definir les pollutions de la biosphere   ",
+                " quantification des pollutions       definir les ",
+                "les engrais     les pesticides     les pollutions"
+            ]
+        }
+    },
+    "CE303: Traitement des eaux th\u00e9orie": {
+        "fr": {
+            "[pollution, pesticide]": [
+                "re       definir la pollution d'une eau et apprec",
+                "preparation et de depollution des eaux    acqueri",
+                "   elimination de   pesticides   fer-manganese   "
+            ],
+            "gestion (?:de l'|des )?eaux?": [
+                "  introduction   la gestion de l'eau en region wallonne "
+            ]
+        }
+    },
+    "CE304: Cycle de combustible nucl\u00e9aire th\u00e9orie": {
+        "fr": {
+            "[extraction, impact, environnement]": [
+                "du combustible      extraction      concentration ",
+                " et argumentee de l'impact environnemental de ",
+                " de sociologie de l'environnement          categories",
+                "umentee de l'impact environnemental de l'industrie nu"
+            ]
+        }
+    },
     "CE306: Ecologie industrielle th\u00e9orie": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
                 "tiquement modifies  chimie verte        savoir faire"
+            ]
+        }
+    },
+    "CE307: Ecologie urbaine et rurale th\u00e9orie": {
+        "fr": {
+            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+                "    savoir       le developpement durable   comprendre pour a",
+                " d'incidence sur l' environnement    le reseau natura",
+                "ecologie urbaine et rurale t",
+                " rurale theorie 1   ecologie urbaine et rurale t"
             ]
         }
     },
@@ -87,6 +306,9 @@
             "rechauffement climat[^ ]+": [
                 "   chapitre 12   le rechauffement climatique         savoir fair",
                 "onale en matiere de rechauffement climatique et de son applicati"
+            ],
+            "gestion (?:de l'|des )?eaux?": [
+                "ables en matiere de gestion de l'eau et de protection de"
             ]
         }
     },
@@ -99,6 +321,89 @@
                 "ode d'existence des energies renouvelables       chapitre ii [",
                 "des d'existence des energies renouvelables       chapitre iii ",
                 "marginalisation des energies renouvelables       chapitre iv ["
+            ]
+        }
+    },
+    "EA125: Ecologie g\u00e9n\u00e9rale": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "ues     ecosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere",
+                "ecologie generale 1   ecolog",
+                "ologie generale 1   ecologie generale  theorie  ",
+                "x     biomes     autecologie - facteurs abiotiqu",
+                " abiotiques     demoecologie - facteurs biotique",
+                "rs biotiques     synecologie - niche ecologique ",
+                "synecologie - niche ecologique - biodiversite     ",
+                "ution - successions ecologiques     cycles biogeoch",
+                "bulaire relatif a l'ecologie generale       decr"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ues     ecosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere",
+                "nerale     sols     ecosysteme - definition - repa",
+                " - biodiversite     ecosysteme - structure - fonct",
+                " fonctionnement     ecosysteme - flux d'energie - ",
+                " - productivite     ecosysteme - evolution - succe",
+                "fonctionnement d'un ecosysteme      analyser le me",
+                "de l'energie dans l'ecosysteme et situer l'homme m",
+                " la degradation des ecosystemes  a l'eradication de"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ues     ecosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere",
+                "te     ecosysteme - evolution - successions ecolo",
+                "ecologie generale 1   ecolog",
+                "ologie generale 1   ecologie generale  theorie  ",
+                "nerale     sols     ecosysteme - definition - repa",
+                "x     biomes     autecologie - facteurs abiotiqu",
+                " abiotiques     demoecologie - facteurs biotique",
+                "rs biotiques     synecologie - niche ecologique ",
+                "synecologie - niche ecologique - biodiversite     ",
+                " - biodiversite     ecosysteme - structure - fonct",
+                " fonctionnement     ecosysteme - flux d'energie - ",
+                " - productivite     ecosysteme - evolution - succe",
+                "ution - successions ecologiques     cycles biogeoch",
+                "bulaire relatif a l'ecologie generale       decr",
+                "fonctionnement d'un ecosysteme      analyser le me",
+                "de l'energie dans l'ecosysteme et situer l'homme m",
+                " la degradation des ecosystemes  a l'eradication de"
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ues     ecosphere - biosphere     climat     elem",
+                " niche ecologique - biodiversite     ecosysteme - st",
+                "re l'histoire de la biosphere       comprendre le",
+                " subdivisions de la biosphere et les principaux b",
+                "l'eradication de la biodiversite et a la conservatio",
+                "es ressources de la biosphere",
+                "en rapport avec les problemes lies a la degradat",
+                "ecologie generale 1   ecolog",
+                "ologie generale 1   ecologie generale  theorie  ",
+                "nerale     sols     ecosysteme - definition - repa",
+                "x     biomes     autecologie - facteurs abiotiqu",
+                " abiotiques     demoecologie - facteurs biotique",
+                "rs biotiques     synecologie - niche ecologique ",
+                "synecologie - niche ecologique - biodiversite     ",
+                " - biodiversite     ecosysteme - structure - fonct",
+                " fonctionnement     ecosysteme - flux d'energie - ",
+                " - productivite     ecosysteme - evolution - succe",
+                "ution - successions ecologiques     cycles biogeoch",
+                "bulaire relatif a l'ecologie generale       decr",
+                "fonctionnement d'un ecosysteme      analyser le me",
+                "de l'energie dans l'ecosysteme et situer l'homme m",
+                " la degradation des ecosystemes  a l'eradication de"
             ]
         }
     },
@@ -116,6 +421,14 @@
             ]
         }
     },
+    "EA309: Philosophie \u00e9co-\u00e9thique et d\u00e9veloppement durable": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "rise en compte de l'environnement social  economique ",
+                "ement durable ou la durabilite sont potentiellemen"
+            ]
+        }
+    },
     "EA310: Int\u00e9gration harmonieuse des \u00e9nergies alternatives": {
         "fr": {
             "energ[^ ]+ renouvelab[^ ]+": [
@@ -127,6 +440,28 @@
             ],
             "utilis[^ ]+ (?:d')?energ[^ ]+": [
                 "peuvent engendrer l'utilisation d'energies renouvelables      "
+            ]
+        }
+    },
+    "EL126: Electricit\u00e9 appliqu\u00e9e laboratoire 1": {
+        "fr": {
+            "[electri[^ ]+, verte]": [
+                "electricite appliquee laboratoi",
+                "e laboratoire 1 1   electricite appl  labo 1   les ",
+                " cours theorique d' electricite et de rgie   reglem",
+                "l des installations electriques - sorte de bible de",
+                "sorte de bible de l'electricien belge moderne   cel",
+                "ands principes de l'electricite et du rgie     assi",
+                "iler les concepts d'electricite d'un point de vue e",
+                "               decouverte et utilisation de l"
+            ]
+        }
+    },
+    "L334: Psychologie": {
+        "fr": {
+            "[ecosyst[^ ]+, resilience]": [
+                "a fournir un modele ecosystemique du handicap en priv",
+                "raitance      6  la resilience      7  le deuil   "
             ]
         }
     }

@@ -1,8 +1,108 @@
 {
+    "13UST12: Electricit\u00e9": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "electricite le programme du cou",
+                "amment    * charges electriques et champs electrost",
+                "ion  * le potentiel electrique  * les dielectrique",
+                "electrique  * les dielectriques et capacitances  * ",
+                "ands principes de l'electricite en tant que branche",
+                "tement des circuits electriques en regimes continus",
+                "teurs et recepteurs electriques  le cours doit perm",
+                " comprehension de l'electricite et des circuits ele",
+                "ite et des circuits electriques dans des situations",
+                "cepts generaux de l'electricite et de ses applicati",
+                "lution des circuits electriques en courant continu ",
+                "ement de composants electriques de base  resistance",
+                "sous-jacents  champ electrique  champ magnetique  ",
+                " celle de sources d'electricite   - comprendre et d",
+                "pation de l'energie electrique   - expliquer le fo",
+                "rnatif  de circuits electriques simples mettant en ",
+                "uvre des composants electriques de base et des sour",
+                "lignes de transport electrique en regime alternati",
+                " d'application de l'electricite au quotidien et du ",
+                "es caracteristiques electriques en regime continu d",
+                "continu de circuits electriques simples contenant d",
+                " calculer l'energie electrique emmagasinee dans de",
+                "teurs et recepteurs electriques dans differentes si",
+                "ller les notions de stockage et de dissipation d"
+            ]
+        }
+    },
+    "13UXP16: Projet interdisciplinaire": {
+        "fr": {
+            "[environnement, durabilite]": [
+                " analysera le macro-environnement dans lequel evoluen",
+                "ntifier les impacts environnementaux des produits a c",
+                "de vie  mais  si la durabilite et l'eco-efficience"
+            ],
+            "[extraction, impact, environnement]": [
+                " \"c'est-a-dire de l'extraction des matieres premie",
+                "t de quantifier les impacts environnementaux d",
+                " analysera le macro-environnement dans lequel evoluen",
+                "ntifier les impacts environnementaux des produits a c"
+            ]
+        }
+    },
+    "12UEC30: Micro\u00e9conomie et macro\u00e9conomie": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "conomique  sociale  environnementale  d'un pays     3",
+                "ique general et a l'environnement concurrentiel du me",
+                "t de mieux saisir l'environnement des entreprises    ",
+                "endre et analyser l'environnement macroeconomique et ",
+                "aisir l'impact de l'environnement economique  structu",
+                "ise confrontee a un environnement plus ou moins concu",
+                "ver et d'analyser l'environnement economique general ",
+                "omique general et l'environnement concurrentiel d'un ",
+                "iques misant sur la durabilite   7  recherche des "
+            ]
+        }
+    },
+    "11UEC10: Economie politique": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "tions relatives a l'environnement macroeconomique nat",
+                "ous les themes   la durabilite et la pandemie     "
+            ]
+        }
+    },
     "22MGD40: Contexte Soci\u00e9tal et Outils d'analyse des Business": {
         "fr": {
             "gestio[^ ]+ durab[^ ]+": [
                 " de la rse et de la gestion durable   - decouverte et c"
+            ]
+        }
+    },
+    "21FFM12: Gestion de portefeuille et durabilit\u00e9": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "si que les criteres environnementaux  societaux et de",
+                " de portefeuille et durabilite 1  contexte actuel ",
+                "e risque  return et durabilite  l'etudiant est con"
+            ],
+            "gestio[^ ]+ durab[^ ]+": [
+                "ouvernance pour une gestion durable  le cours montre co"
+            ]
+        }
+    },
+    "22MPD10: Gestion de projet Nord-Sud": {
+        "fr": {
+            "[environnemental, ethique]": [
+                "estions ethiques et environnementales et les consequenc",
+                "ifier les questions ethiques et environnemental",
+                "ees sur une analyse ethique des situations et d"
+            ]
+        }
+    },
+    "22SH032: Ethique et RSE": {
+        "fr": {
+            "[environnemental, ethique]": [
+                "estions ethiques et environnementales et les consequenc",
+                "ethique et rse 1  etude phi",
+                "ue et critique de l'ethique  de la rse et de th",
+                "ifier les questions ethiques et environnemental",
+                "ees sur une analyse ethique des situations et d"
             ]
         }
     },
@@ -13,6 +113,16 @@
             ]
         }
     },
+    "22EC012: Topics in Economics and Environment": {
+        "en": {
+            "environment[^ ]+ polic[^ ]+": [
+                "ms or otherwise   - environmental policies and their effects o"
+            ],
+            "environment[^ ]+ issue": [
+                "and significance of environmental issues in economic theori"
+            ]
+        }
+    },
     "21IDM26: International Marketing": {
         "en": {
             "circular economy": [
@@ -20,13 +130,68 @@
             ]
         }
     },
+    "21EC015: Topics in Economics and Environment": {
+        "en": {
+            "environment[^ ]+ polic[^ ]+": [
+                "ms or otherwise   - environmental policies and their effects o"
+            ],
+            "environment[^ ]+ issue": [
+                "and significance of environmental issues in economic theori"
+            ]
+        }
+    },
+    "21SH033: Ethique et RSE": {
+        "fr": {
+            "[environnemental, ethique]": [
+                " des problematiques environnementales concretes  3  par",
+                "ethique et rse 1  etude phi",
+                "ue et critique de l'ethique  de la rse et de th"
+            ]
+        }
+    },
+    "21EC014: Topics in Economics and Environment": {
+        "en": {
+            "environment[^ ]+ polic[^ ]+": [
+                "ms or otherwise   - environmental policies and their effects o"
+            ],
+            "environment[^ ]+ issue": [
+                "and significance of environmental issues in economic theori"
+            ]
+        }
+    },
+    "31DCG10: Economie": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "du capitalisme  les problemes environnementaux ou encore les cr"
+            ]
+        }
+    },
+    "21ST040: Science et technologie des mat\u00e9riaux": {
+        "fr": {
+            "chimie (?:[^ ]+ ){0,4}verte": [
+                "ordant la notion de chimie verte     en termes de sa"
+            ]
+        }
+    },
     "21ST030: Environnement": {
         "fr": {
             "droits? (?:d'|de l')?environnement": [
-                "ementaires    aa2   droit de l'environnement  chapitre 1   intro"
+                "ementaires    aa2   droit de l'environnement  chapitre 1   intro",
+                " l'environnement et droit de l'environnement  contribution au pr",
+                "ants aux rouages du droit de l'environnement et de les former au"
             ],
             "epurations? des eaux": [
                 "lution de l'eau  5  epuration des eaux usees et production"
+            ],
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ce et ethique   les problemes environnementaux occupent une pla",
+                "que constituent les problemes environnementaux en lien avec leu"
+            ],
+            "[environnemental, ethique]": [
+                "n de responsabilite environnementale  chapitre 2   le p",
+                " question de nature environnementale uniquement par le ",
+                "ncrete  efficace et ethique   les problemes env",
+                "ncrete  efficace et ethique   de nos jours  les"
             ]
         }
     },
@@ -38,7 +203,58 @@
             "[electri[^ ]+, stockage]": [
                 "ves   eolien  hydro-electricite/stockage  technologies en de",
                 "erre sur le secteur electrique et energetique au s",
+                "on de la chaleur en electricite incluant les cycles",
+                "les de production d'electricite  a vapeur  a gaz  c",
+                "l'energie mecanique/electricite et identifier les d",
+                "les de production d'electricite    - definir et eva",
+                "on energie-primaire/electricite et les technologies",
                 "  hydro-electricite/stockage  technologies en de"
+            ]
+        }
+    },
+    "12UEC21: Micro\u00e9conomie et macro-\u00e9conomie : Th\u00e9orie et applications": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "conomique  sociale  environnementale  d'un pays     3",
+                "ique general et a l'environnement concurrentiel de l'",
+                "t de mieux saisir l'environnement des entreprises    ",
+                "endre et analyser l'environnement macroeconomique et ",
+                "aisir l'impact de l'environnement economique  structu",
+                "ise confrontee a un environnement plus ou moins concu",
+                "ver et d'analyser l'environnement economique general ",
+                "omique general et l'environnement concurrentiel d'un ",
+                "iques misant sur la durabilite     pour la microec"
+            ]
+        }
+    },
+    "11UDR11: Fondements du droit": {
+        "fr": {
+            "[extinction, espece]": [
+                "on forcee      2 5  extinction des obligations    ",
+                "ations  definition  especes et modalites   les"
+            ]
+        }
+    },
+    "11UEC11: Economie politique": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "tions relatives a l'environnement macroeconomique nat",
+                "ous les themes   la durabilite et la pandemie     "
+            ]
+        }
+    },
+    "12UEC20: Micro\u00e9conomie et macro\u00e9conomie : Th\u00e9orie et applications": {
+        "fr": {
+            "[environnement, durabilite]": [
+                "conomique  sociale  environnementale  d'un pays     3",
+                "ique general et a l'environnement concurrentiel du me",
+                "t de mieux saisir l'environnement des entreprises    ",
+                "endre et analyser l'environnement macroeconomique et ",
+                "aisir l'impact de l'environnement economique  structu",
+                "ise confrontee a un environnement plus ou moins concu",
+                "ver et d'analyser l'environnement economique general ",
+                "omique general et l'environnement concurrentiel d'un ",
+                "iques misant sur la durabilite   7  recherche des "
             ]
         }
     },
@@ -48,6 +264,9 @@
                 "artie   catalyse et chimie verte  * chimie verte et ",
                 " et chimie verte  * chimie verte et developpement du",
                 " et applications en chimie verte  - generalites  - c"
+            ],
+            "ressources? (?:non-?)?renouvelable": [
+                "t du petrole et des ressources renouvelables  les grandes voies"
             ]
         }
     }

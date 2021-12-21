@@ -40,4 +40,8 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--school", help="input json file path")
     parser.add_argument("-y", "--year", help="academic year", default=2020)
     arguments = vars(parser.parse_args())
-    main(**arguments)
+    # main(**arguments)
+
+    schools = ["he-ferrer"]
+    for school in schools:
+        main(school, arguments['year'])
