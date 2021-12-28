@@ -50,7 +50,7 @@
 
     --button-color: var(--greenish-blue);
     --button-hover-color: var(--pale-teal);
-    
+
     --accordions-color: var(--white);
 
     --navbar-color: var(--white);
@@ -134,6 +134,18 @@ hr {
 
 .icon.target {
     content: url(/img/target-green.svg);
+}
+
+.icon.caret-down {
+    content: url(/img/caret-down-blue.svg);
+}
+
+.icon.caret-up {
+    content: url(/img/caret-up-blue.svg);
+}
+
+.icon.checked-box {
+    content: url(/img/checked-box-green.svg);
 }
 
 /* Theme toggler */
@@ -222,8 +234,9 @@ nav {
     filter: invert(1);
 }
 
-[data-theme="dark"] .accordion-item, [data-theme="dark"] .accordion-flush .accordion-item:first-child {
-    border : 2px solid var(--accordions-border-color);
+[data-theme="dark"] .accordion-item,
+[data-theme="dark"] .accordion-flush .accordion-item:first-child {
+    border: 2px solid var(--accordions-border-color);
 }
 
 /* Checkboxes */
@@ -694,7 +707,7 @@ footer li {
     .show-filters {
         display: block;
         margin-top: 1rem;
-        margin-bottom: .3rem;
+        margin-bottom: 0.3rem;
     }
 
     .bg-theme {
@@ -873,4 +886,58 @@ footer li {
 
 [data-theme="dark"] .modal-content .btn-close {
     filter: invert(1);
+}
+
+/* Collapsible filters */
+
+.programs .sidebar {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.filter-group {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid #0023aa;
+}
+
+.filter-group h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.filter-group-header:hover h3 {
+    color: var(--accent-color);
+}
+
+.filter-group-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-group-header:hover {
+    cursor: pointer;
+}
+
+.filter-group-header img {
+    content: url(/img/caret-up-blue.svg);   
+}
+
+.filter-group-header.collapsed img {
+    content: url(/img/caret-down-blue.svg);
+}
+
+#nameFilterCollapse {
+    padding-top: .8rem;
+}
+
+.filter-group-header:hover img {
+    content: url(/img/caret-up-green.svg);  
+}
+
+.filter-group-header.collapsed:hover img {
+    content: url(/img/caret-down-green.svg);  
 }

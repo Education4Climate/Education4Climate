@@ -103,101 +103,213 @@
 
                 <div class="col-xl-2 sidebar collapse">
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-schools"
-                            v-model="selectedAllSchools" @click="toggleCheckAllSchools()">
-                        <label class="form-check-label" for="checkbox-all-schools">
-                            <h6 class="title">{{translate("shared.schools")}}</h6>
-                        </label>
-                    </div>
-                    <div class="filter d-flex sub-check" v-for="school in sortedSchools">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" v-model="selectedSchools"
-                                :id="'checkbox-school-' + school.id" :value="school.id">
-                            <label class="form-check-label"
-                                :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
+                    <div class="filter-group">
+
+                        <div class="filter-group-header" data-bs-toggle="collapse"
+                            data-bs-target="#schoolsFilterCollapse">
+
+                            <h3 v-html="translate('shared.schools')"></h3>
+                            <img class="icon">
+
                         </div>
-                        <span class="ml-auto count">{{programsCountsBySchool[school.id]}}</span>
+
+                        <div class="filter-group-content collapse show" id="schoolsFilterCollapse">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input check-all" id="checkbox-all-universities"
+                                    v-model="selectedAllUniversities" @click="toggleCheckAllUniversities()">
+                                <label class="form-check-label" for="checkbox-all-universities">
+                                    <h6 class="title" v-html="translate('shared.universities')"></h6>
+                                </label>
+                            </div>
+                            <div class="filter d-flex sub-check" v-for="school in sortedSchools">
+                                <div class="form-check" v-if="school.type == 'university'">
+                                    <input type="checkbox" class="form-check-input" v-model="selectedUniversities"
+                                        :id="'checkbox-school-' + school.id" :value="school.id">
+                                    <label class="form-check-label"
+                                        :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
+                                </div>
+                                <span class="ml-auto count" v-if="school.type == 'university'">{{programsCountsBySchool[school.id]}}</span>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input check-all" id="checkbox-all-high-schools"
+                                    v-model="selectedAllHighSchools" @click="toggleCheckAllHighSchools()">
+                                <label class="form-check-label" for="checkbox-all-high-schools">
+                                    <h6 class="title" v-html="translate('shared.highschools')"></h6>
+                                </label>
+                            </div>
+                            <div class="filter d-flex sub-check" v-for="school in sortedSchools">
+                                <div class="form-check" v-if="school.type == 'highschool'">
+                                    <input type="checkbox" class="form-check-input" v-model="selectedHighSchools"
+                                        :id="'checkbox-school-' + school.id" :value="school.id">
+                                    <label class="form-check-label"
+                                        :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
+                                </div>
+                                <span class="ml-auto count" v-if="school.type == 'highschool'">{{programsCountsBySchool[school.id]}}</span>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-themes"
-                            v-model="selectedAllThemes" @click="toggleCheckAllThemes()">
-                        <label class="form-check-label" for="checkbox-all-themes">
-                            <h6 class="title">{{translate("shared.themes")}}</h6>
-                        </label>
-                    </div>
-                    <div class="filter d-flex sub-check" v-for="theme in sortedThemes">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" v-model="selectedThemes"
-                                :id="'checkbox-theme-' + theme.id" :value="theme.name">
-                            <label class="form-check-label" :for="'checkbox-theme-' + theme.id">{{translate("themes." +
-                                theme.name, true)}}</label>
+                    <div class="filter-group">
+
+                        <div class="filter-group-header collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#themesFilterCollapse">
+
+                            <h3 v-html="translate('shared.themes')"></h3>
+                            <img class="icon">
+
                         </div>
-                        <span class="ml-auto count">{{theme.totalCount}}</span>
+
+                        <div class="filter-group-content collapse" id="themesFilterCollapse">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input check-all" id="checkbox-all-themes"
+                                    v-model="selectedAllThemes" @click="toggleCheckAllThemes()">
+                                <label class="form-check-label" for="checkbox-all-themes">
+                                    <h6 class="title">{{translate("shared.all")}}</h6>
+                                </label>
+                            </div>
+                            <div class="filter d-flex sub-check" v-for="theme in sortedThemes">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" v-model="selectedThemes"
+                                        :id="'checkbox-theme-' + theme.id" :value="theme.name">
+                                    <label class="form-check-label"
+                                        :for="'checkbox-theme-' + theme.id">{{translate("themes." +
+                                        theme.name, true)}}</label>
+                                </div>
+                                <span class="ml-auto count">{{theme.totalCount}}</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-fields"
-                            v-model="selectedAllFields" @click="toggleCheckAllFields()">
-                        <label class="form-check-label" for="checkbox-all-fields">
-                            <h6 class="title">{{translate("shared.fields")}}</h6>
-                        </label>
-                    </div>
-                    <div class="filter d-flex sub-check" v-for="field in sortedFields">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" v-model="selectedFields"
-                                :id="'checkbox-field-' + field.id" :value="field.id">
-                            <label class="form-check-label" :for="'checkbox-field-' + field.id">{{translate("fields." +
-                                field.name, true)}}</label>
+                    <div class="filter-group">
+
+                        <div class="filter-group-header collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#fieldsFilterCollapse">
+
+                            <h3>{{translate("shared.fields")}}</h3>
+                            <img class="icon">
+
                         </div>
-                        <span class="ml-auto count">{{field.totalCount}}</span>
+
+                        <div class="filter-group-content collapse" id="fieldsFilterCollapse">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input check-all" id="checkbox-all-fields"
+                                    v-model="selectedAllFields" @click="toggleCheckAllFields()">
+                                <label class="form-check-label" for="checkbox-all-fields">
+                                    <h6 class="title">{{translate("shared.all")}}</h6>
+                                </label>
+                            </div>
+                            <div class="filter d-flex sub-check" v-for="field in sortedFields">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" v-model="selectedFields"
+                                        :id="'checkbox-field-' + field.id" :value="field.id">
+                                    <label class="form-check-label"
+                                        :for="'checkbox-field-' + field.id">{{translate("fields." +
+                                        field.name, true)}}</label>
+                                </div>
+                                <span class="ml-auto count">{{field.totalCount}}</span>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-languages"
-                            v-model="selectedAllLanguages" @click="toggleCheckAllLanguages()">
-                        <label class="form-check-label" for="checkbox-all-languages">
-                            <h6 class="title">{{translate("shared.languages")}}</h6>
-                        </label>
-                    </div>
-                    <div class="filter d-flex sub-check" v-for="language in sortedLanguages">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" v-model="selectedLanguages"
-                                :id="'checkbox-language-' + language.id" :value="language.name"><label
-                                class="form-check-label"
-                                :for="'checkbox-language-' + language.id">{{translate("languages." +
-                                language.name, true)}}</label>
+                    <div class="filter-group">
+
+                        <div class="filter-group-header collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#languagesFilterCollapse">
+
+                            <h3 v-html="translate('shared.languages')"></h3>
+                            <img class="icon">
+
                         </div>
-                        <span class="ml-auto count">{{language.totalCount}}</span>
+
+                        <div class="filter-group-content collapse" id="languagesFilterCollapse">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input check-all" id="checkbox-all-languages"
+                                    v-model="selectedAllLanguages" @click="toggleCheckAllLanguages()">
+                                <label class="form-check-label" for="checkbox-all-languages">
+                                    <h6 class="title">{{translate("shared.all")}}</h6>
+                                </label>
+                            </div>
+                            <div class="filter d-flex sub-check" v-for="language in sortedLanguages">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" v-model="selectedLanguages"
+                                        :id="'checkbox-language-' + language.id" :value="language.name"><label
+                                        class="form-check-label"
+                                        :for="'checkbox-language-' + language.id">{{translate("languages." +
+                                        language.name, true)}}</label>
+                                </div>
+                                <span class="ml-auto count">{{language.totalCount}}</span>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input check-all" id="checkbox-all-cycles"
-                            v-model="selectedAllCycles" @click="toggleCheckAllCycles()">
-                        <label class="form-check-label" for="checkbox-all-cycles">
-                            <h6 class="title">{{translate("shared.cycles")}}</h6>
-                        </label>
-                    </div>
-                    <div class="filter d-flex sub-check" v-for="cycle in sortedCycles">
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" v-model="selectedCycles"
-                                :id="'checkbox-cycle-' + cycle.id" :value="cycle.id"><label class="form-check-label"
-                                :for="'checkbox-cycle-' + cycle.id">{{translate("cycles." +
-                                cycle.name, true)}}</label>
+                    <div class="filter-group">
+
+                        <div class="filter-group-header collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#cyclesFilterCollapse">
+
+                            <h3 v-html="translate('shared.cycles')"></h3>
+
+                            <img class="icon">
+
                         </div>
-                        <span class="ml-auto count">{{cycle.totalCount}}</span>
+
+                        <div class="filter-group-content collapse" id="cyclesFilterCollapse">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input check-all" id="checkbox-all-cycles"
+                                    v-model="selectedAllCycles" @click="toggleCheckAllCycles()">
+                                <label class="form-check-label" for="checkbox-all-cycles">
+                                    <h6 class="title">{{translate("shared.all")}}</h6>
+                                </label>
+                            </div>
+                            <div class="filter d-flex sub-check" v-for="cycle in sortedCycles">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" v-model="selectedCycles"
+                                        :id="'checkbox-cycle-' + cycle.id" :value="cycle.id"><label
+                                        class="form-check-label"
+                                        :for="'checkbox-cycle-' + cycle.id">{{translate("cycles." +
+                                        cycle.name, true)}}</label>
+                                </div>
+                                <span class="ml-auto count">{{cycle.totalCount}}</span>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <label for="input-name-filter">
-                        <h6 class="title">{{translate("shared.name")}}</h6>
-                    </label>
-                    <div class="filter">
-                        <input type="text" class="form-control name-search" v-model="searchedName"
-                            :placeholder="translate('shared.name-exemple')" id="input-name-filter">
-                        <div class="form-text">
-                            {{translate("programs.search-in-name")}}
+                    <div class="filter-group">
+
+                        <div class="filter-group-header collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#nameFilterCollapse">
+
+                            <h3 v-html="translate('shared.name')"></h3>
+                            <img class="icon">
+
                         </div>
+
+                        <div class="filter-group-content collapse" id="nameFilterCollapse">
+
+                            <div class="filter">
+                                <input type="text" class="form-control name-search" v-model="searchedName"
+                                    :placeholder="translate('shared.name-exemple')" id="input-name-filter">
+                                <div class="form-text">
+                                    {{translate("programs.search-in-name")}}
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
 
                     <div class="sidebar-footer">

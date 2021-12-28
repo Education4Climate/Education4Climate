@@ -27,7 +27,9 @@ export default {
             selectedSchools: null,
             selectedThemes: null,
             selectedLanguages: null,
-            currentTheme: constants.DEFAULT_THEME
+            currentTheme: constants.DEFAULT_THEME,
+            selectedUniversities: null,
+            selectedHighSchools: null
         };
     },
     async created() {
@@ -53,6 +55,8 @@ export default {
         // selected values stay the same across pages
 
         if (sessionStorage.selectedSchools) this.selectedSchools = JSON.parse(sessionStorage.selectedSchools);
+        if (sessionStorage.selectedUniversities) this.selectedUniversities = JSON.parse(sessionStorage.selectedUniversities);
+        if (sessionStorage.selectedHighSchools) this.selectedHighSchools = JSON.parse(sessionStorage.selectedHighSchools);
         if (sessionStorage.selectedThemes) this.selectedThemes = JSON.parse(sessionStorage.selectedThemes);
         if (sessionStorage.selectedLanguages) this.selectedLanguages = JSON.parse(sessionStorage.selectedLanguages);
         if (sessionStorage.currentTheme) this.currentTheme = JSON.parse(sessionStorage.currentTheme);
@@ -64,6 +68,12 @@ export default {
         selectedSchools(value) {
             sessionStorage.selectedSchools = JSON.stringify(value);
         },
+        selectedUniversities(value) {
+            sessionStorage.selectedUniversities = JSON.stringify(value);
+        },
+        selectedHighSchools(value) {
+            sessionStorage.selectedHighSchools = JSON.stringify(value);
+        },                
         selectedThemes(value) {
             sessionStorage.selectedThemes = JSON.stringify(value);
         },
