@@ -1,13 +1,4 @@
 {
-    "TOU12TOR: Tourisme Responsable": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "nteractions entre l'environnement  l'economie et la s",
-                "sme inscrit dans la durabilite      le tourisme au",
-                "trois piliers de la durabilite   economique  cultu"
-            ]
-        }
-    },
     "TOU31LG10: Langue \u00e9trang\u00e8re X - N\u00e9erlandais": {
         "fr": {
             "rechauffement climat[^ ]+": [
@@ -51,25 +42,19 @@
                 "ysages  pollutions  biodiversite  degradation des ha",
                 "ilieux anthropises  ecosystemes urbains et espaces "
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ysages  pollutions  biodiversite  degradation des ha",
                 " potentiellement un impact dans la conception ",
-                "ecologie et paysage paysage ",
-                "                    ecologie      objectifs     ",
-                "oduire aux concepts ecologiques de base afin de per",
-                "s aux sciences de l'ecologie dans la conception ",
-                "      1 - notions d'ecologie generale orientee  ",
+                "                     ecologie      objectifs     ",
+                "roduire aux concepts ecologiques de base afin de per",
                 "ilieux anthropises  ecosystemes urbains et espaces ",
                 "x principaux enjeux environnementaux ayant potentiell"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ysages  pollutions  biodiversite  degradation des ha",
                 "es de solutions aux problemes lies a l'anthropis",
-                "ecologie et paysage paysage ",
-                "                    ecologie      objectifs     ",
-                "oduire aux concepts ecologiques de base afin de per",
-                "s aux sciences de l'ecologie dans la conception ",
-                "      1 - notions d'ecologie generale orientee  ",
+                "                     ecologie      objectifs     ",
+                "roduire aux concepts ecologiques de base afin de per",
                 "ilieux anthropises  ecosystemes urbains et espaces ",
                 "x principaux enjeux environnementaux ayant potentiell"
             ],
@@ -91,6 +76,14 @@
             ]
         }
     },
+    "GEU12ECO: Ecologie": {
+        "fr": {
+            "biologie de la conservation": [
+                "cientifique et a la biologie de la conservation        contenu     ",
+                "ions d'ecologie  de biologie de la conservation et d'ecologisme    "
+            ]
+        }
+    },
     "GEU12MIC2: Microbiologie II": {
         "fr": {
             "questions? environnement": [
@@ -108,7 +101,7 @@
     },
     "GEU21PHY: Phytopharmacie": {
         "fr": {
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " preservation de la biodiversite        contenu     ",
                 " de   - reperer les problemes phytosanitaires da",
                 "les plantes et leur environnement  notions de stress "
@@ -164,7 +157,7 @@
                 " fonctionnement des ecosystemes - la crise de la bi",
                 "tale et de services ecosystemiques  ces differents cha"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "en quoi consiste la biodiversite et comment elle se ",
                 " qui existent entre biodiversite et l'evolution des ",
                 "teractions entre la biodiversite  la stabilite des e",
@@ -177,23 +170,18 @@
                 "ecosystemes i etude des ecosyst",
                 "ystemes i etude des ecosystemes et de leurs evoluti",
                 "s des sciences de l'environnement et en particulier d",
-                "ode scientifique en ecologie   connaitre et comp",
+                "hode scientifique en ecologie   connaitre et comp",
                 " et l'evolution des ecosystemes  caracteriser les d",
                 "iser les differents ecosystemes a differentes echel",
                 "e  la stabilite des ecosystemes et le developpement",
                 "ales de l'etude des ecosystemes et des enjeux lies ",
-                "che scientifique en ecologie - la biodiversite  ",
+                "rche scientifique en ecologie - la biodiversite  ",
                 " fonctionnement des ecosystemes - la crise de la bi",
                 "- notions d'ethique environnementale et de services e",
-                "tale et de services ecosystemiques  ces differents cha",
-                "saires en matiere d'ecologie et de biologie de l"
+                "tale et de services ecosystemiques  ces differents cha"
             ],
             "services? ecosystemiq": [
                 "ironnementale et de services ecosystemiques  ces differents "
-            ],
-            "[environnemental, ethique]": [
-                "- notions d'ethique environnementale et de services eco",
-                "oraines - notions d'ethique environnementale et"
             ]
         }
     },
@@ -242,7 +230,7 @@
                 " utilisees dans des ecosystemes exceptionnels pour ",
                 "ls pour etudier les ecosystemes urbains"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " des ecosystemes et biodiversite      objectifs     ",
                 "ystemes et de leurs evolutions 3       objectifs ",
                 "ecosystemes ii questions de pol",
@@ -258,11 +246,11 @@
                 "ses dans le cadre d'ecosystemes preserves a l'etude",
                 "eserves a l'etude d'ecosystemes anthropises    deve",
                 "     rencontrer des ecosystemes belges representati",
-                "ique des parametres ecologiques d'un territoire    ",
+                "hique des parametres ecologiques d'un territoire    ",
                 " utilisees dans des ecosystemes exceptionnels pour ",
                 "ls pour etudier les ecosystemes urbains"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " des ecosystemes et biodiversite      objectifs     ",
                 "tion  modelisation  impacts sur les ecosysteme",
                 "ecosystemes ii questions de pol",
@@ -278,7 +266,7 @@
                 "ses dans le cadre d'ecosystemes preserves a l'etude",
                 "eserves a l'etude d'ecosystemes anthropises    deve",
                 "     rencontrer des ecosystemes belges representati",
-                "ique des parametres ecologiques d'un territoire    ",
+                "hique des parametres ecologiques d'un territoire    ",
                 " utilisees dans des ecosystemes exceptionnels pour ",
                 "ls pour etudier les ecosystemes urbains"
             ],
@@ -297,10 +285,10 @@
                 "ons complexes entre pollution  modelisation  impa",
                 "nvironnement  de la pollution ou de l'ecotoxicolo"
             ],
-            "[gestion (?:de l')environnement, ecolog[^ ]+, impact]": [
+            "[gestion (?:de l')environnement, [ ]ecolo[^ ]+, impact]": [
                 "s pour envisager la gestion de l'environnement urbain dans toute s",
                 "fique  envisager la gestion de l'environnement dans toute sa compl",
-                "ique des parametres ecologiques d'un territoire    ",
+                "hique des parametres ecologiques d'un territoire    ",
                 "tion  modelisation  impacts sur les ecosysteme"
             ],
             "[impact, pesticide]": [
@@ -332,10 +320,6 @@
                 "de l'application du droit de l'environnement  en cela  le cours "
             ],
             "protection (?:de l')?environnement": [
-                " contenu         la protection de l'environnement au niveau internati",
-                "r les politiques de protection de l'environnement appliquees en belgi"
-            ],
-            "protection de l'environnement": [
                 " contenu         la protection de l'environnement au niveau internati",
                 "r les politiques de protection de l'environnement appliquees en belgi"
             ]
@@ -372,9 +356,6 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 " l'energie et de la protection de l'environnement      contenu       "
-            ],
-            "protection de l'environnement": [
-                " l'energie et de la protection de l'environnement      contenu       "
             ]
         }
     },
@@ -382,18 +363,12 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 " l'energie et de la protection de l'environnement      contenu       "
-            ],
-            "protection de l'environnement": [
-                " l'energie et de la protection de l'environnement      contenu       "
             ]
         }
     },
     "TLU51IABIOCHIND: Biochimie industrielle et g\u00e9nie biochimique": {
         "fr": {
             "protection (?:de l')?environnement": [
-                " l'energie et de la protection de l'environnement      contenu       "
-            ],
-            "protection de l'environnement": [
                 " l'energie et de la protection de l'environnement      contenu       "
             ]
         }

@@ -7,10 +7,7 @@ from collections import defaultdict
 from ast import literal_eval
 from pathlib import Path
 
-from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, PATTERNS_PATH, YEAR
-
-# TODO: change to make ACCEPTED_LANGUAGES macro in settings
-ACCEPTED_LANGUAGES = ['fr', 'nl', 'en']
+from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, PATTERNS_PATH, YEAR, ACCEPTED_LANGUAGES
 
 # TODO noting patterns problems here
 # [environnement, durabilite] AND durabilite environnement --> remove one
@@ -117,10 +114,10 @@ def old_stuff():
     writer.close()
 
 
-def get_matched_patterns_per_course(schools):
+def get_matched_patterns_per_course(schools, scoring_folder=SCORING_OUTPUT_FOLDER):
     """
     TODO:
-     - Output an excel file with one page per school, and for each courses the list of patterns
+     - Output an excel file with one page per school, and for each course the list of patterns
        that matched in each language
     """
 
@@ -131,27 +128,30 @@ def get_matched_patterns_per_course(schools):
 
             # Read matches file
             matches_fn = Path(os.path.abspath('')).parent.absolute().joinpath(
-                f"../{SCORING_OUTPUT_FOLDER}{school}_matches_{YEAR}.json")
+                f"../{scoring_folder}{school}_matches_{YEAR}.json")
             matches_json = json.load(open(matches_fn, 'r'))
 
             # Read course file to get course name
             courses_fn = Path(os.path.abspath('')).parent.absolute().joinpath(
                 f"../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{YEAR}.json")
-            courses_df = pd.read_json(courses_fn, orient='records').set_index('id')[['name', 'url']]
-            empty_patterns_df = pd.DataFrame(index=courses_df.index, columns=ACCEPTED_LANGUAGES)
+            print(courses_fn)
+            courses_df = pd.read_json(courses_fn, orient='records', dtype=str).set_index('id')[['name', 'url']]
+            empty_patterns_df = pd.DataFrame(index=courses_df.index, columns=['matched'] + ACCEPTED_LANGUAGES)
             courses_df = pd.concat((courses_df['name'], empty_patterns_df, courses_df['url']), axis=1)
+            courses_df['matched'] = 0
 
             # For each matched courses in the matched dictionary, get the matched patterns in each language
             for courses_id_name in matches_json.keys():
                 course_id = courses_id_name.split(':')[0]
                 for lang in matches_json[courses_id_name].keys():
                     courses_df.loc[course_id, lang] = " // ".join(list(matches_json[courses_id_name][lang].keys()))
-
+                    courses_df.loc[course_id, 'matched'] = 1
+            print(courses_df)
             # Write output
             courses_df.to_excel(writer, sheet_name=school)
 
 
-def get_number_of_matches_per_pattern(schools):
+def get_number_of_matches_per_pattern(schools, dictionary_name, scoring_folder=SCORING_OUTPUT_FOLDER):
     """
     TODO:
      - output a file with number of matches for each pattern per uni and total
@@ -161,14 +161,13 @@ def get_number_of_matches_per_pattern(schools):
     matches_json_dict = dict.fromkeys(schools)
     for school in schools:
         matches_fn = Path(os.path.abspath('')).parent.absolute().joinpath(
-            f"../{SCORING_OUTPUT_FOLDER}{school}_matches_{YEAR}.json")
+            f"../{scoring_folder}{school}_matches_{YEAR}.json")
         matches_json_dict[school] = json.load(open(matches_fn, 'r'))
 
     # Get list of patterns
     patterns_dict = {}
     for lang in ACCEPTED_LANGUAGES:
-        # TODO: change to add dictionary_name as parameter
-        themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/base/{lang}.csv")
+        themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/{dictionary_name}/{lang}.csv")
         lang_patterns_df = pd.read_csv(themes_fn, converters={'themes': literal_eval})
         patterns_dict[lang] = lang_patterns_df
 
@@ -205,5 +204,9 @@ if __name__ == "__main__":
 
     schools_ = ["kuleuven", "uantwerpen", "uclouvain", "ugent", "uhasselt",
                 "ulb", "uliege", "umons", "unamur", "uslb", "vub"]
-    get_number_of_matches_per_pattern(schools_)
-    # get_matched_patterns_per_course(schools_)
+    schools_ = ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
+                "henallux", "hers", "howest", "ichec", "ihecs", "ispg", "issig", "odisee", "thomasmore", "ucll",
+                "vinci", "vives"]
+    # get_number_of_matches_per_pattern(schools_, 'sdgs')
+    schools_ = ['ulb']
+    get_matched_patterns_per_course(schools_, scoring_folder="/data/dictionary-comparison/sdgs/")

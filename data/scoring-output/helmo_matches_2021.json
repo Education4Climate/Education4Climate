@@ -1,24 +1,36 @@
 {
-    "15755: UE305 Etre un citoyen lucide et engag\u00e9": {
+    "21501: UE16 Q1 Environnement": {
+        "fr": {
+            "(?:emissions? )?(?:de )?gaz (?:a )?(?:effets? )(?:de )?serre": [
+                "  air et limitation de gaz a effet de serre  etc         enfin "
+            ],
+            "droits? (?:d'|de l')?environnement": [
+                "endre ce qu'est le \"droit de l'environnement\" et de donner un ap",
+                "grands principes du droit de l'environnement  prevention  precau",
+                " des instruments du droit de l'environnement  les instruments a "
+            ]
+        }
+    },
+    "21330: 123 - Expertise De L'Eveil & Didactique": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "teme     *       la biodiversite animale dans le mil",
+                "       le concept d'ecosysteme     *       la biod"
+            ]
+        }
+    },
+    "19880: UE305 Etre un citoyen lucide et engag\u00e9": {
         "fr": {
             "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
                 "pes phreatiques  la biodiversite  l'energie  nucleai",
                 "s perturbations des ecosystemes marins et forestier",
-                "nd respect de notre ecosysteme << terre >>        "
+                "nd respect de notre ecosysteme << terre >>       t"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "pes phreatiques  la biodiversite  l'energie  nucleai",
                 " et forestiers  les problemes lies a l'agricultu",
-                "cation relative a l'environnement et au developpement",
                 "s perturbations des ecosystemes marins et forestier",
-                "nd respect de notre ecosysteme << terre >>        "
-            ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
-                "environnement et au developpement durable        - les trois ",
-                "es trois piliers du developpement durable    - la thematique ",
-                "cation relative a l'environnement et au developpement",
-                "s perturbations des ecosystemes marins et forestier",
-                "nd respect de notre ecosysteme << terre >>        "
+                "nd respect de notre ecosysteme << terre >>       t"
             ],
             "[effets? (?:de )?serre, climat]": [
                 "l'augmentation de l'effet de serre    - diverses probl",
@@ -29,16 +41,134 @@
             ]
         }
     },
-    "20742: 1I15 RESEAU ELECTRIQUE - IND": {
+    "20497: Appropriation De Savoirs Et Didactique 4": {
         "fr": {
-            "[nucleaire, pollu(?:ant|tion), environnement]": [
-                "ques  \"classiques\"  nucleaires  tvd  cogeneration",
-                " ecologiques  moins polluant pour l'environnemen",
-                "ins polluant pour l'environnement    eoliennes  photo"
+            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
+                "cation relative a l'environnement  ere   notamment pa",
+                "ent des ressources  pollution       afin de degag",
+                "nera l'education au developpement durable  edd   la comprehen"
+            ],
+            "rechauffement climat[^ ]+": [
+                "tuelles sera visee  rechauffement climatique  epuisement des res"
             ]
         }
     },
-    "21379: Ethique et d\u00e9veloppement durable": {
+    "17505: Education \u00c0 La Gestion Durable": {
+        "fr": {
+            "consom[^ ]+ durab[^ ]+": [
+                "rs d'education a la consommation durable analysera les compo",
+                "quotidienne via une consommation durable  l'application de c"
+            ],
+            "gestio[^ ]+ durab[^ ]+": [
+                "education a la gestion durable le cours de technol"
+            ]
+        }
+    },
+    "17639: Technologie De L'Habitat": {
+        "fr": {
+            "consom[^ ]+ durab[^ ]+": [
+                "rs d'education a la consommation durable analysera les compo",
+                "quotidienne via une consommation durable  l'application de c"
+            ]
+        }
+    },
+    "17635: Technologies Et Sciences Int\u00e9gr\u00e9es": {
+        "fr": {
+            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
+                "rable  respect de l'environnement / societe / economi",
+                "eviter les diverses pollutions commerce equitable",
+                " les trois poles du developpement durable  respect de l'envir"
+            ]
+        }
+    },
+    "17682: Technologies Int\u00e9gr\u00e9es": {
+        "fr": {
+            "consom[^ ]+ durab[^ ]+": [
+                "age \"education a la consommation durable\" developpe certains "
+            ]
+        }
+    },
+    "17589: Ressources Externes Et Didactique Des Sciences": {
+        "fr": {
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "nvironnememnt et au developpement durable    citoyennete     ",
+                " les problematiques environnementales et citoyennes d",
+                "     biologie      - ecologie humaine    - approc"
+            ],
+            "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]": [
+                "nvironnememnt et au developpement durable    citoyennete     ",
+                "questionner sur les problematiques environnementales et citoyennes d"
+            ]
+        }
+    },
+    "17586: Former Un Citoyen": {
+        "fr": {
+            "rechauffement climat[^ ]+": [
+                "la consommation  le rechauffement climatique           en franca"
+            ]
+        }
+    },
+    "17581: Former Un Citoyen": {
+        "fr": {
+            "rechauffement climat[^ ]+": [
+                "la consommation  le rechauffement climatique           en franca"
+            ]
+        }
+    },
+    "19796: Mh011: Genie Electrique Durable - Mihec": {
+        "fr": {
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "ns energetique  les energies renouvelables et la politique ene"
+            ]
+        }
+    },
+    "20907: UE23 - Cr\u00e9ation et gestion d'entreprise": {
+        "fr": {
+            "economie circulaire": [
+                "es pour appliquer l'economie circulaire dans le secteur de "
+            ]
+        }
+    },
+    "19090: Sociologie Et Gestion Des Ressources Humaines": {
+        "fr": {
+            "transiti[^ ]+ ecolo[^ ]+": [
+                "  introduction a la transition ecologique dans le cadre de la"
+            ]
+        }
+    },
+    "17569: Economie G\u00e9n\u00e9rale Et Appliqu\u00e9e": {
+        "fr": {
+            "economie circulaire": [
+                "la croissance   * l'economie circulaire   * le commerce int"
+            ]
+        }
+    },
+    "17566: Notions D'\u00c9thique Et De Rse Appliqu\u00e9es Au Secteur De L'\u00c9conomie Sociale Et Solidaire": {
+        "fr": {
+            "economie circulaire": [
+                "  economie sociale  economie circulaire  economie collabora"
+            ]
+        }
+    },
+    "21341: Economie": {
+        "fr": {
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "sur 2008     crises climatiques    crises envi",
+                "imatiques    crises environnementales    crises socia",
+                "ces rares  empreinte ecologique avec analyse mondia"
+            ],
+            "crises? environnement": [
+                "ises climatiques    crises environnementales    crises socia"
+            ],
+            "economie circulaire": [
+                "nter paulie       l'economie circulaire  dossier agoria    "
+            ],
+            "empreint[^ ]+ carbon[^ ]+": [
+                "sequences nord/sud  empreinte carbone      analyse des be"
+            ]
+        }
+    },
+    "21379: Ethique Et D\u00e9veloppement Durable": {
         "fr": {
             "economie circulaire": [
                 " la robotisation  l'economie circulaire  la finance et le m"

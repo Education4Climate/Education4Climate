@@ -1,12 +1,44 @@
 [
  {
+  "id":"67",
+  "name":"M\u00e9catronique et robotique",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/67\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Seraing"
+  ],
+  "faculties":[
+   "D\u00e9partement \u00e9lectrom\u00e9canique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "MR231",
+   "MR365",
+   "MR111"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"52",
   "name":"Ing\u00e9nieur industriel \u00c9lectrom\u00e9canique (Master)",
   "cycle":"master",
   "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/52\/2021",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Pierrard-Virton"
@@ -15,21 +47,27 @@
    "D\u00e9partement ing\u00e9nieur industriel"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
+   "climate",
+   "energy",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   1,
+   2,
    2,
    2
   ],
   "matched_courses":[
+   "IE238",
+   "IE240",
    "IE185",
-   "IE238"
+   "IE239"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"51",
@@ -37,8 +75,8 @@
   "cycle":"master",
   "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/51\/2021",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Pierrard-Virton"
@@ -47,20 +85,53 @@
    "D\u00e9partement ing\u00e9nieur industriel"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
+   "energy",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   2,
    1,
    1
   ],
   "matched_courses":[
-   "IA238"
+   "IA238",
+   "IA239",
+   "IA240"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"54",
+  "name":"Ing\u00e9nieur industriel (Bac)",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/54\/2021",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Pierrard-Virton"
+  ],
+  "faculties":[
+   "D\u00e9partement ing\u00e9nieur industriel"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SC117"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"1",
@@ -77,7 +148,7 @@
    "D\u00e9partement technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "climate",
@@ -91,6 +162,280 @@
    "AU2O9"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"12",
+  "name":"Sp\u00e9cialisation en sant\u00e9 communautaire",
+  "cycle":"other",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/12\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Sainte-Elisabeth"
+  ],
+  "faculties":[
+   "D\u00e9partement param\u00e9dical"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SA422"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"13",
+  "name":"Sage-femme",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/13\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Sainte-Elisabeth"
+  ],
+  "faculties":[
+   "D\u00e9partement param\u00e9dical"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SF431"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"66",
+  "name":"Bachelier infirmier responsable de soins g\u00e9n\u00e9raux",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/66\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Sainte-Elisabeth"
+  ],
+  "faculties":[
+   "D\u00e9partement param\u00e9dical"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "SR121",
+   "SR442"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"50-49",
+  "name":"Electrom\u00e9canique",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/49\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Arlon"
+  ],
+  "faculties":[
+   "D\u00e9partement technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment"
+  ],
+  "themes_scores":[
+   6,
+   2
+  ],
+  "matched_courses":[
+   "EM143",
+   "EM315",
+   "EM322",
+   "EM230"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"50-50",
+  "name":"Electrom\u00e9canique",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/50\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Seraing"
+  ],
+  "faculties":[
+   "D\u00e9partement \u00e9lectrom\u00e9canique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment"
+  ],
+  "themes_scores":[
+   6,
+   2
+  ],
+  "matched_courses":[
+   "EM143",
+   "EM315",
+   "EM322",
+   "EM230"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"18",
+  "name":"\u00c9ducation physique",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/18\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur - Site de Malonne"
+  ],
+  "faculties":[
+   "D\u00e9partement p\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "EP304"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"23-17",
+  "name":"Normale primaire",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/17\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur - Site de Malonne"
+  ],
+  "faculties":[
+   "D\u00e9partement p\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   3
+  ],
+  "matched_courses":[
+   "PM308",
+   "PM208"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"23-23",
+  "name":"Normale primaire",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/23\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur - Site de Champion"
+  ],
+  "faculties":[
+   "D\u00e9partement p\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   3
+  ],
+  "matched_courses":[
+   "PM308",
+   "PM208"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"23-36",
+  "name":"Normale primaire",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/36\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Bastogne"
+  ],
+  "faculties":[
+   "D\u00e9partement p\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   3
+  ],
+  "matched_courses":[
+   "PM308",
+   "PM208"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"9",
@@ -107,7 +452,7 @@
    "D\u00e9partement p\u00e9dagogique"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "environment",

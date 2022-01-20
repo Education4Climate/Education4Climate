@@ -11,23 +11,6 @@
             ]
         }
     },
-    "AU201: Asservissement": {
-        "fr": {
-            "[electri[^ ]+, verte]": [
-                "ques des processus  electrique  mecanique  electro",
-                "analyse en boucle ouverte  avance de phase et",
-                "cielles en boucle ouverte ou en boucle fermee"
-            ]
-        }
-    },
-    "SC304: Commande de processus industriels 2": {
-        "fr": {
-            "[electri[^ ]+, verte]": [
-                "ditionner le signal electrique issu d'un capteur e",
-                "ts integres  a/d converter  instrumentation a"
-            ]
-        }
-    },
     "MR111: Introduction \u00e0 l'\u00e9lectricit\u00e9": {
         "fr": {
             "utilis[^ ]+ (?:d')?energ[^ ]+": [
@@ -66,17 +49,6 @@
             ]
         }
     },
-    "BC213: Maitriser les fondements des disciplines et de leur didactique : Physique 2": {
-        "fr": {
-            "[electri[^ ]+, verte]": [
-                "e de coulomb  champ electrique  potentiel electriq",
-                "ectrique  potentiel electrique    electrocinetique",
-                "inetique  *circuits electriques  resistances  inten",
-                " courant  tension   electricite a la maison    pris",
-                "marche pour la decouverte de ces notions par "
-            ]
-        }
-    },
     "MR231: Electrotechnique 1": {
         "fr": {
             "panneaux? photovol[^ ]+": [
@@ -108,9 +80,6 @@
     "MR365: Travail de fin d'\u00e9tudes": {
         "fr": {
             "protection (?:de l')?environnement": [
-                "s de securite et de protection de l'environnement  l'etudiant elabore"
-            ],
-            "protection de l'environnement": [
                 "s de securite et de protection de l'environnement  l'etudiant elabore"
             ]
         }
@@ -167,36 +136,11 @@
             ]
         }
     },
-    "SF159: Sant\u00e9 primaire": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "sante collective et environnementale  a  repere les str",
-                "sante collective et environnementale  a  repere les str",
-                "mpte des dimensions ethiques  deontologiques  r"
-            ]
-        }
-    },
-    "SF428: D\u00e9marche, raisonnement clinique et pratique r\u00e9flexive": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "s  bio-psycho-socio-environnemental  de la femme  du co",
-                "ologiques  legales  ethiques et reglementaires "
-            ]
-        }
-    },
     "SR121: Sant\u00e9 primaire": {
         "fr": {
             "sante environnement": [
                 "tale  - place de la sante environnementale dans la sante pu",
                 "e des politiques en sante environnementale communs de cette"
-            ],
-            "[environnemental, ethique]": [
-                "cepts cles en sante-environnementale  - place de la san",
-                "- place de la sante environnementale dans la sante publ",
-                "politiques en sante environnementale communs de cette u",
-                "sante collective et environnementale  a  repere les str",
-                "sante collective et environnementale  a  repere les str",
-                "mpte des dimensions ethiques  deontologiques  r"
             ]
         }
     },
@@ -218,35 +162,11 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 "s de securite et de protection de l'environnement  l'etudiant elabore"
-            ],
-            "protection de l'environnement": [
-                "s de securite et de protection de l'environnement  l'etudiant elabore"
             ]
         }
     },
     "EF315: Ma\u00eftriser les fondements et la didactique de l'\u00e9ducation \u00e0 l'environnement et \u00e0 la sant\u00e9": {
         "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
-                "ie  dechets  sante  climat  inegalites sociale",
-                "taux et a l'urgence climatique  - analyser un ",
-                " de l'education a l'environnement et a la sante 1deg ",
-                "uction a l'ecologie environnement et developpement du",
-                "que l'education a l'environnement  au developpement d",
-                "                    environnement et consommation dur",
-                "tives aux problemes environnementaux et a l'urgence c",
-                "es introduction a l'ecologie environnement et de"
-            ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
-                "ie environnement et developpement durable les defis du siecle",
-                "l'environnement  au developpement durable et aux odd  methodo",
-                "if aux objectifs de developpement durable de  - construire un",
-                " de l'education a l'environnement et a la sante 1deg ",
-                "uction a l'ecologie environnement et developpement du",
-                "que l'education a l'environnement  au developpement d",
-                "                    environnement et consommation dur",
-                "tives aux problemes environnementaux et a l'urgence c",
-                "es introduction a l'ecologie environnement et de"
-            ],
             "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]": [
                 "ie environnement et developpement durable les defis du siecle",
                 "l'environnement  au developpement durable et aux odd  methodo",
@@ -271,14 +191,6 @@
             "empreint[^ ]+ carbon[^ ]+": [
                 "tive     1  climat  empreinte carbone - quel chemin devon",
                 "s de reduction de l'empreinte carbone  court et long term"
-            ]
-        }
-    },
-    "EM3O4: Domotique, immotique": {
-        "fr": {
-            "[electri[^ ]+, verte]": [
-                "nce d'installations electriques domestiques et/ou i",
-                "applications   decouverte du serveur domovea "
             ]
         }
     },

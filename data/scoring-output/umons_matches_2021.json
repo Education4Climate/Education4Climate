@@ -14,10 +14,8 @@
                 " et edaphiques d'un ecosysteme      - expliquer l'",
                 "la matiere dans les ecosystemes      - expliquer le"
             ],
-            "[bioclimat[^ ]+, construction]": [
-                "ents d'architecture bioclimatique   strategie du chau",
-                "er les principes du bioclimatisme     - critiquer un ",
-                "isons passives  eco-construction   eco-quartiers   a"
+            "architectur[^ ]+ bioclimatique": [
+                "nertie   elements d'architecture bioclimatique   strategie du chau"
             ],
             "[bioclimat[^ ]+, energ[^ ]+]": [
                 "ents d'architecture bioclimatique   strategie du chau",
@@ -78,29 +76,9 @@
     },
     "UA-M1-ARCHIT-016-M: Conception environnementale, du b\u00e2timent \u00e0 la ville": {
         "fr": {
-            "[environnemental, ethique]": [
-                "conception environnementale  du batiment a la ",
-                " dans les questions environnementales     specificite d",
-                "ojet a haute valeur environnementale     approche d'arg",
-                "ation du dispositif environnemental du projet     etude",
-                " dans les questions environnementales     se constituer",
-                "s caracteristiques  environnementales d'un site     app",
-                "hender les qualites environnementales d'un projet archi",
-                " des preoccupations environnementales     se saisir d'o",
-                "ive  faire preuve d'ethique  faire preuve d'aut"
-            ],
             "questions? environnement": [
                 "s concepts dans les questions environnementales     specificite",
                 " entendues dans les questions environnementales     se constitu"
-            ]
-        }
-    },
-    "UA-M1-FINADB-003-M: Architecture et arts contemporains": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ocial      5  l'art environnemental       6  l'art part",
-                "es   faire preuve d'ethique  faire preuve d'aut",
-                "es   faire preuve d'ethique  faire preuve d'aut"
             ]
         }
     },
@@ -138,7 +116,7 @@
     },
     "UA-M2-FINURB-004-M: Approche environnementale de l'am\u00e9nagement du territoire": {
         "fr": {
-            "[bio(?:diversite|sphere), erosion, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "serre  preserver la biodiversite    a travers la ges",
                 " des dechets  de la biodiversite   avec quelles dema",
                 "  a l'erosion de la biodiversite et aux risques envi",
@@ -156,7 +134,7 @@
                 "ncidences et notice environnementale   - comprendre l",
                 "s differents enjeux environnementaux peuvent etre mes"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "serre  preserver la biodiversite    a travers la ges",
                 " des dechets  de la biodiversite   avec quelles dema",
                 "  a l'erosion de la biodiversite et aux risques envi",
@@ -175,7 +153,7 @@
                 "ncidences et notice environnementale   - comprendre l",
                 "s differents enjeux environnementaux peuvent etre mes"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "serre  preserver la biodiversite    a travers la ges",
                 " des dechets  de la biodiversite   avec quelles dema",
                 "  a l'erosion de la biodiversite et aux risques envi",
@@ -193,7 +171,7 @@
                 "ncidences et notice environnementale   - comprendre l",
                 "s differents enjeux environnementaux peuvent etre mes"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "serre  preserver la biodiversite    a travers la ges",
                 " des dechets  de la biodiversite   avec quelles dema",
                 "  a l'erosion de la biodiversite et aux risques envi",
@@ -222,26 +200,15 @@
             ]
         }
     },
-    "UH-BM-SCHUMS-824-M: Question de socio-anthropologie": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "\" et des politiques environnementales  l'ue \" socio ant",
-                "'esprit critique  d'ethique et d'independance d"
-            ]
-        }
-    },
     "UH-M1-METISS-003-M: Socio-\u00e9cologie des transitions": {
         "fr": {
-            "[ecologi, transiti[^ ]+ sociale]": [
-                "socio-ecologie des transitions ce",
-                "s sur la transition ecologique a partir d'une a",
-                "s sur la transition ecologique ainsi que leurs ",
-                "aux modeles sociaux ecologiques du point de vue",
-                "erelle au sein de l'ecologie   conscience ecolo",
-                "ologie   conscience ecologique   les approches ",
-                "ion   la transition ecologique   les nouveaux m",
-                "veaux modeles socio-ecologiques   les perspecti",
-                " les problematiques ecologiques  les aspects id",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "ls sur la transition ecologique a partir d'une appr",
+                "ls sur la transition ecologique ainsi que leurs cri",
+                "eaux modeles sociaux ecologiques du point de vue the",
+                "cologie   conscience ecologique   les approches de ",
+                "tion   la transition ecologique   les nouveaux mode",
+                "c les problematiques ecologiques  les aspects ideolo",
                 "ser et analyser les transitions sociales en mobilisant les ",
                 "ser et analyser les transitions sociales en mobilisant les ",
                 "ser et analyser les transitions sociales en mobilisant les "
@@ -255,8 +222,8 @@
     },
     "UH-M1-METISS-007-M: M\u00e9thodologie et \u00e9pist\u00e9mologie": {
         "fr": {
-            "[ecologi, transiti[^ ]+ sociale]": [
-                " les problematiques ecologiques  les aspects id",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "c les problematiques ecologiques  les aspects ideolo",
                 "vec une question de transition/innovation sociale  avec encadrement e"
             ]
         }
@@ -272,8 +239,8 @@
     },
     "UH-M1-METISS-036-M: Inclusion sociale et scolaire CH (non organis\u00e9 \u00e0 Charleroi en 2021-2022)": {
         "fr": {
-            "[ecologi, transiti[^ ]+ sociale]": [
-                "tions de l'approche ecologique en sciences de l",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "ations de l'approche ecologique en sciences de l'ed",
                 "ser et analyser les transitions sociales en mobilisant les ",
                 "ser et analyser les transitions sociales en mobilisant les ",
                 "ser et analyser les transitions sociales en mobilisant les "
@@ -282,11 +249,11 @@
     },
     "UH-M1-METISS-042-M: Socio-anthropologie et transformations \u00e9cologiques": {
         "fr": {
-            "[ecologi, transiti[^ ]+ sociale]": [
-                " et transformations ecologiques analyse  sur ba",
-                " de transformations ecologiques observees en di",
-                "les transformations ecologiques auxquelles font",
-                "des transformations ecologiques pour nous ramen",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "e et transformations ecologiques analyse  sur base d",
+                "  de transformations ecologiques observees en differ",
+                " les transformations ecologiques auxquelles font fac",
+                " des transformations ecologiques pour nous ramener a",
                 "ser et analyser les transitions sociales en mobilisant les "
             ],
             "[impact, oceans?]": [
@@ -297,45 +264,13 @@
     },
     "UH-M1-METISS-050-M: Socio-anthropologie et transformations \u00e9cologiques": {
         "fr": {
-            "[ecologi, transiti[^ ]+ sociale]": [
-                " et transformations ecologiques analyse  sur ba",
-                " de transformations ecologiques observees en di",
-                "les transformations ecologiques auxquelles font",
-                "des transformations ecologiques pour nous ramen",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "e et transformations ecologiques analyse  sur base d",
+                "  de transformations ecologiques observees en differ",
+                " les transformations ecologiques auxquelles font fac",
+                " des transformations ecologiques pour nous ramener a",
                 "ser et analyser les transitions sociales en mobilisant les ",
                 "ser et analyser les transitions sociales en mobilisant les "
-            ]
-        }
-    },
-    "UI-B1-IRCIVA-001-M: Introduction aux comp\u00e9tences de l'Ing\u00e9nieur architecte": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    connaitre les ",
-                "contextes et enjeux ethiques  culturels  humain"
-            ]
-        }
-    },
-    "UI-B1-IRCIVA-008-M: Projet d'architecture & Communication orale": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    concevoir  eva",
-                "contextes et enjeux ethiques  culturels  humain"
-            ]
-        }
-    },
-    "UI-B1-IRCIVA-009-M: Projet d'architecture & Communication graphique": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    identifier et ",
-                "contextes et enjeux ethiques  culturels  humain"
-            ]
-        }
-    },
-    "UI-B1-IRCIVI-001-M: Introduction \u00e0 l'Art de l'Ing\u00e9nieur": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    connaitre les ",
-                "e un questionnement ethique simple    utiliser "
             ]
         }
     },
@@ -359,7 +294,7 @@
                 "ports energetiques  degradations energetiques  reje",
                 "e l'eau  les nappes phreatiques  les processus de "
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "edes industriels et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "vironnement  \" et \" developpement durable \" sont souvent empl",
@@ -465,17 +400,9 @@
             ]
         }
     },
-    "UI-B1-IRCIVI-102-C: Projet multidisciplinaire 1": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    connaitre les ",
-                "e un questionnement ethique simple    utiliser "
-            ]
-        }
-    },
     "UI-B1-IRCIVI-110-C: \u00c9nergie, environnement et d\u00e9veloppement durable": {
         "fr": {
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "e  environnement et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "   \"energie\" \" et \" developpement durable \" sont souvent empl",
@@ -588,30 +515,6 @@
             ]
         }
     },
-    "UI-B2-IRCIVA-001-M: Projet int\u00e9gr\u00e9 d'architecture et design soutenable": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    identifier et ",
-                "contextes et enjeux ethiques  culturels  humain"
-            ]
-        }
-    },
-    "UI-B3-IRCIVA-001-M: Projet int\u00e9gr\u00e9 d'architecture et conception des enveloppes": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    connaitre les ",
-                "contextes et enjeux ethiques  culturels  humain"
-            ]
-        }
-    },
-    "UI-B3-IRCIVA-003-M: Cr\u00e9er dans le v\u00e9cu": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    identifier et ",
-                "contextes et enjeux ethiques  culturels  humain"
-            ]
-        }
-    },
     "UI-B3-IRCIVA-010-M: \u00c9lectricit\u00e9 du b\u00e2timent": {
         "fr": {
             "energ[^ ]+ renouvelab[^ ]+": [
@@ -621,11 +524,6 @@
     },
     "UI-B3-IRCIVA-011-M: Mat\u00e9riaux et \u00e9coconception": {
         "fr": {
-            "[environnement, durabilite]": [
-                "oncerne leur impact environnemental  interpreter les ",
-                "ues  economiques et environnementales    connaitre le",
-                "ication et emplois  durabilite du beton et applica"
-            ],
             "[recyclage, environnement]": [
                 "   mise en oeuvre   recyclage  selection des mate",
                 "oncerne leur impact environnemental  interpreter les ",
@@ -651,17 +549,6 @@
             ]
         }
     },
-    "UI-B3-IRCIVI-309-M: D\u00e9cisions efficaces et \u00e9thiques": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ues  economiques et environnementales    concevoir  eva",
-                "isions efficaces et ethiques - decision   theor",
-                "sque    - notions d'ethique et de deontologie  ",
-                "ches principales en ethique  vertus  devoirs  c",
-                "rimer une reflexion ethique sur une problematiq"
-            ]
-        }
-    },
     "UI-M1-IRARCH-102-M: Int\u00e9gration des \u00e9nergies renouvelables dans les syst\u00e8mes - le solaire passif": {
         "fr": {
             "energ[^ ]+ renouvelab[^ ]+": [
@@ -671,15 +558,6 @@
             "energ[^ ]+ solaire": [
                 " l'utilisation de l'energie solaire dans les systemes d",
                 "tion \"passive\" de l'energie solaire  quantifier l'utili"
-            ]
-        }
-    },
-    "UI-M1-IRCHIM-002-M: Projet en chimie et science des mat\u00e9riaux": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ntes economiques et environnementales  valorisation de ",
-                "omiques  societaux  ethiques  de securite et en",
-                "omiques  societaux  ethiques  de securite et en"
             ]
         }
     },
@@ -713,13 +591,6 @@
             ],
             "ecoresponsab[^ ]+": [
                 "uvre  lexploitation ecoresponsable des materiauxau com"
-            ],
-            "[environnemental, ethique]": [
-                "ques et de l'impact environnemental de la production de",
-                "omiques  societaux  ethiques  de securite et en",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques  de securite et en",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -761,9 +632,6 @@
     "UI-M1-IRELEC-101-M: Energetics of Modern Power Systems": {
         "fr": {
             "protection (?:de l')?environnement": [
-                " contexte actuel de protection de l'environnement et de liberalisatio"
-            ],
-            "protection de l'environnement": [
                 " contexte actuel de protection de l'environnement et de liberalisatio"
             ]
         }
@@ -842,26 +710,6 @@
             ]
         }
     },
-    "UI-M1-IRMECA-009-M: Projet de construction des machines": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ocio-economiques et environnementales  imaginer  concev",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
-            ]
-        }
-    },
-    "UI-M1-IRMECA-209-M: Projet de conception m\u00e9canique": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ocio-economiques et environnementales  imaginer  concev",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
-            ]
-        }
-    },
     "UI-M1-IRMIGE-003-M: Camp de terrain de g\u00e9ologie": {
         "fr": {
             "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
@@ -887,12 +735,6 @@
         "fr": {
             "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
                 "ues naturels et les problemes environnementaux  analyser et mod"
-            ],
-            "[environnemental, ethique]": [
-                "gie et applications environnementales  travaux pratique",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -945,11 +787,6 @@
                 "tieres premieres et developpement durable cours matieres seco",
                 "ion des ressources  developpement durable  environnement   as",
                 "et l'evaluation des gisements des matieres miner"
-            ],
-            "[environnemental, ethique]": [
-                "ours considerations environnementales   filieres de pro",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -959,12 +796,6 @@
                 "ces de la terre aux problemes environnementaux et a la gestion ",
                 "es composantes d'un probleme environnemental en relation avec ",
                 "ues naturels et les problemes environnementaux  analyser et mod"
-            ],
-            "[environnemental, ethique]": [
-                "antes d'un probleme environnemental en relation avec le",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -972,12 +803,6 @@
         "fr": {
             "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
                 "ues naturels et les problemes environnementaux  analyser et mod"
-            ],
-            "[environnemental, ethique]": [
-                "ant les contraintes environnementales  faire un chronog",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1002,11 +827,6 @@
         "fr": {
             "transiti[^ ]+ energ[^ ]+": [
                 "er lieu  l'actuelle transition energetique sera envisagee d'un"
-            ],
-            "[environnemental, ethique]": [
-                "nt dans un contexte environnemental  et politique  tend",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1064,28 +884,10 @@
             ]
         }
     },
-    "UI-M2-IRELAI-006-M: Advanced Electronics": {
-        "fr": {
-            "[electri[^ ]+, verte]": [
-                "ans le domaine de l'electricite    agir en professi",
-                "ans le domaine de l'electricite en tant que vecteur",
-                "'ingenieur civil en electricite a finalite multimed",
-                "tifs aux bases de l'electricite  de l'electronique ",
-                "ans le domaine de l'electricite   communiquer et ec",
-                "ans le domaine de l'electricite    agir en professi",
-                "es ou la revolution verte  tout est aujourd'h"
-            ]
-        }
-    },
     "UI-M2-IRELEC-561-M: Energy Markets": {
         "fr": {
             "transiti[^ ]+ energ[^ ]+": [
                 "er lieu  l'actuelle transition energetique sera envisagee d'un"
-            ],
-            "[environnemental, ethique]": [
-                "nt dans un contexte environnemental  et politique  tend",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1146,11 +948,6 @@
         "fr": {
             "transiti[^ ]+ energ[^ ]+": [
                 "er lieu  l'actuelle transition energetique sera envisagee d'un"
-            ],
-            "[environnemental, ethique]": [
-                "nt dans un contexte environnemental  et politique  tend",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1168,11 +965,6 @@
         "fr": {
             "transiti[^ ]+ energ[^ ]+": [
                 "er lieu  l'actuelle transition energetique sera envisagee d'un"
-            ],
-            "[environnemental, ethique]": [
-                "nt dans un contexte environnemental  et politique  tend",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1220,12 +1012,6 @@
         "fr": {
             "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
                 "ues naturels et les problemes environnementaux  analyser et mod"
-            ],
-            "[environnemental, ethique]": [
-                "tres considerations environnementales  vibrations  brui",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1268,11 +1054,6 @@
         "fr": {
             "transiti[^ ]+ energ[^ ]+": [
                 "er lieu  l'actuelle transition energetique sera envisagee d'un"
-            ],
-            "[environnemental, ethique]": [
-                "nt dans un contexte environnemental  et politique  tend",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1295,11 +1076,6 @@
         "fr": {
             "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
                 "ues naturels et les problemes environnementaux  identifier et e"
-            ],
-            "[environnemental, ethique]": [
-                "le  aux contraintes environnementales locales  aux plan",
-                "omiques  societaux  ethiques et environnementau",
-                "omiques  societaux  ethiques et environnementau"
             ]
         }
     },
@@ -1319,20 +1095,11 @@
     },
     "UM-M1-BIOMED-039-M: Biochimie g\u00e9n\u00e9rale": {
         "fr": {
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ouchent l'homme  la biodiversite  l'environnement et",
                 "ues  -interpreter l'impact de variations de ph",
                 "  se situer dans un environnement hierarchique et pro",
                 " la biodiversite  l'environnement et la societe  etre"
-            ]
-        }
-    },
-    "UM-M2-BIOMFA-002-M: \u00c9valuation du risque, \u00e9tude d'impact sanitaire": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "que de l'exposition environnementale et humaine a une s",
-                "egrer une dimension ethique dans son raisonneme",
-                "egrer une dimension ethique dans son raisonneme"
             ]
         }
     },
@@ -1376,7 +1143,7 @@
                 " jusqu'a celle de l'ecosysteme ou de la biosphere ",
                 "s 4   dynamique des ecosystemes      *cours 5   bio"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "biodiversite  evolution et ecolo",
                 "cologie le cours de biodiversite  evolution et ecolo",
                 "n peut avoir sur la biodiversite locale et mondiale ",
@@ -1390,20 +1157,18 @@
                 "de l'ecologie  de l'evolution et du fonctionnemen",
                 "es de biodiversite  evolution et ecologie  l'etud",
                 " la biodiversite  l'evolution des organismes et l",
-                "rsite  evolution et ecologie le cours de biodive",
-                "rsite  evolution et ecologie investigue les inte",
-                " liant les facteurs ecologiques  la selection qu'il",
-                "ssance globale de l'ecologie  de l'evolution et ",
+                "ersite  evolution et ecologie le cours de biodive",
+                "ersite  evolution et ecologie investigue les inte",
+                "s liant les facteurs ecologiques  la selection qu'il",
                 "nteraction avec son environnement depuis l'echelle in",
                 " jusqu'a celle de l'ecosysteme ou de la biosphere ",
-                "tie biodiversite et ecologie           *cours 1 ",
-                "ere      *cours 2   ecologie des individus et de",
-                "ons      *cours 3   ecologie des communautes    ",
+                "rtie biodiversite et ecologie           *cours 1 ",
+                "here      *cours 2   ecologie des individus et de",
+                "ions      *cours 3   ecologie des communautes    ",
                 "s 4   dynamique des ecosystemes      *cours 5   bio",
-                "rsite  evolution et ecologie  l'etudiant aura ac",
-                "des organismes et l'ecologie generale  une appro"
+                "ersite  evolution et ecologie  l'etudiant aura ac"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "biodiversite  evolution et ecolo",
                 "cologie le cours de biodiversite  evolution et ecolo",
                 "n peut avoir sur la biodiversite locale et mondiale ",
@@ -1413,20 +1178,18 @@
                 "ravaux pratiques de biodiversite  evolution et ecolo",
                 "rnant l'etude de la biodiversite  l'evolution des or",
                 "es organismes  et l'impact que cette selection",
-                "rsite  evolution et ecologie le cours de biodive",
-                "rsite  evolution et ecologie investigue les inte",
-                " liant les facteurs ecologiques  la selection qu'il",
-                "ssance globale de l'ecologie  de l'evolution et ",
+                "ersite  evolution et ecologie le cours de biodive",
+                "ersite  evolution et ecologie investigue les inte",
+                "s liant les facteurs ecologiques  la selection qu'il",
                 "nteraction avec son environnement depuis l'echelle in",
                 " jusqu'a celle de l'ecosysteme ou de la biosphere ",
-                "tie biodiversite et ecologie           *cours 1 ",
-                "ere      *cours 2   ecologie des individus et de",
-                "ons      *cours 3   ecologie des communautes    ",
+                "rtie biodiversite et ecologie           *cours 1 ",
+                "here      *cours 2   ecologie des individus et de",
+                "ions      *cours 3   ecologie des communautes    ",
                 "s 4   dynamique des ecosystemes      *cours 5   bio",
-                "rsite  evolution et ecologie  l'etudiant aura ac",
-                "des organismes et l'ecologie generale  une appro"
+                "ersite  evolution et ecologie  l'etudiant aura ac"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "biodiversite  evolution et ecolo",
                 "cologie le cours de biodiversite  evolution et ecolo",
                 "n peut avoir sur la biodiversite locale et mondiale ",
@@ -1436,18 +1199,19 @@
                 "ravaux pratiques de biodiversite  evolution et ecolo",
                 "rnant l'etude de la biodiversite  l'evolution des or",
                 "ire    resoudre des problemes a composante biolo",
-                "rsite  evolution et ecologie le cours de biodive",
-                "rsite  evolution et ecologie investigue les inte",
-                " liant les facteurs ecologiques  la selection qu'il",
-                "ssance globale de l'ecologie  de l'evolution et ",
+                "ersite  evolution et ecologie le cours de biodive",
+                "ersite  evolution et ecologie investigue les inte",
+                "s liant les facteurs ecologiques  la selection qu'il",
                 "nteraction avec son environnement depuis l'echelle in",
                 " jusqu'a celle de l'ecosysteme ou de la biosphere ",
-                "tie biodiversite et ecologie           *cours 1 ",
-                "ere      *cours 2   ecologie des individus et de",
-                "ons      *cours 3   ecologie des communautes    ",
+                "rtie biodiversite et ecologie           *cours 1 ",
+                "here      *cours 2   ecologie des individus et de",
+                "ions      *cours 3   ecologie des communautes    ",
                 "s 4   dynamique des ecosystemes      *cours 5   bio",
-                "rsite  evolution et ecologie  l'etudiant aura ac",
-                "des organismes et l'ecologie generale  une appro"
+                "ersite  evolution et ecologie  l'etudiant aura ac"
+            ],
+            "biologie de la conservation": [
+                "mes      *cours 5   biologie de la conservation         *tp 1   ini"
             ]
         }
     },
@@ -1463,11 +1227,9 @@
     },
     "US-B3-SCBIOL-010-M: Excursions de zoologie et \u00e9co\u00e9thologie m\u00e9dit\u00e9ran\u00e9ennes": {
         "fr": {
-            "[ecologi, climat, amenagements? du territoire]": [
-                "etale  cartographie ecologique  utilisation du ",
-                "on de zoologie et d'ecologie se deroule a vidau",
-                "ndre contact avec l'ecologie terrestre d'une re",
-                "ion de la structure ecologique de la faune et d",
+            "[[ ]ecolo[^ ]+, climat, amenagements? du territoire]": [
+                "getale  cartographie ecologique  utilisation du gns",
+                "tion de la structure ecologique de la faune et de l",
                 " topographie  sols  climat  vegetation  faune ",
                 "r toute operation d'amenagement du territoire    au vu des diffic"
             ]
@@ -1475,14 +1237,19 @@
     },
     "US-M1-BIOECO-018-M: Biologie de la conservation": {
         "fr": {
-            "[ecologi, anthropocen[^ ]+]": [
-                " organismes et de l'ecologie  des connaissances",
-                "es organismes et en ecologie   -etre capable d'",
-                "es organismes et en ecologie et de ses applicat",
+            "[[ ]ecolo[^ ]+, anthropocen[^ ]+]": [
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie et de ses applicati",
                 "racteristiques de l'anthropocene  3h    methodes en "
             ],
             "anthropocen(?:e|ique)": [
                 "racteristiques de l'anthropocene  3h    methodes en "
+            ],
+            "biologie de la conservation": [
+                "biologie de la conservation le contenu est divi",
+                "  3h    methodes en biologie de la conservation  8h    monitoring d",
+                "rmation pratique en biologie de la conservation pour les eco-consei",
+                "specialiser dans la biologie de la conservation avoir acquis  dans "
             ]
         }
     },
@@ -1497,16 +1264,6 @@
             ]
         }
     },
-    "US-M1-BIOECO-042-M: Microbiologie environnementale": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "microbiologie environnementale echantillonnage de",
-                "e cellules et d'adn environnemental  pour divers types ",
-                "de la microbiologie environnementale  particulierement ",
-                "llectuelle  de sens ethique et deontologiqu"
-            ]
-        }
-    },
     "US-M1-BIOECO-050-M: Stage de biodiversit\u00e9 et \u00e9cologie des r\u00e9cifs coralliens 02": {
         "fr": {
             "[bio(?:diversite|sphere), ecolo[^ ]+]": [
@@ -1515,26 +1272,10 @@
             ]
         }
     },
-    "US-M1-BIOL60-008-M: Biotechnologie microbienne": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "e   5  applications environnementales   traitement des ",
-                "llectuelle  de sens ethique et deontologiqu"
-            ]
-        }
-    },
     "US-M1-BIOL60-012-M: Introduction aux biotechnologies industrielles": {
         "fr": {
             "epurations? des eaux": [
                 "bioethanol  biogaz  epuration des eaux urbaines  le cours "
-            ]
-        }
-    },
-    "US-M1-SCBBMC-008-M: Biotechnologie microbienne": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "e   5  applications environnementales   traitement des ",
-                "llectuelle  de sens ethique et deontologiqu"
             ]
         }
     },
@@ -1559,24 +1300,6 @@
             "[bio(?:diversite|sphere), ecolo[^ ]+]": [
                 "stage de biodiversite et ecologie des rec",
                 " de biodiversite et ecologie des recifs corallie"
-            ]
-        }
-    },
-    "US-M2-BBMCFA-027-M: Evaluation du risque": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "que de l'exposition environnementale et humaine a une s",
-                "llectuelle  de sens ethique et deontologique   ",
-                "llectuelle  de sens ethique et deontologique   "
-            ]
-        }
-    },
-    "US-M2-BBMCFS-031-M: Evaluation du risque": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "que de l'exposition environnementale et humaine a une s",
-                "llectuelle  de sens ethique et deontologique   ",
-                "llectuelle  de sens ethique et deontologiqu"
             ]
         }
     },
@@ -1613,24 +1336,21 @@
                 " et edaphiques d'un ecosysteme     - expliquer l'e",
                 "la matiere dans les ecosystemes     - expliquer les"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "preinte ecologique  biosphere  ecosysteme  biogen",
                 "xion critique sur l'impact de leur discipline ",
-                "ecologie et architecture dur",
-                "arbone  l'empreinte ecologique     la biogenese   ",
+                "carbone  l'empreinte ecologique     la biogenese   ",
                 " la respiration   l'ecosysteme   relation trophiqu",
-                " carbone  empreinte ecologique  biosphere  ecosyst",
+                "n carbone  empreinte ecologique  biosphere  ecosyst",
                 "logique  biosphere  ecosysteme  biogenese    - def",
                 " et edaphiques d'un ecosysteme     - expliquer l'e",
                 "la matiere dans les ecosystemes     - expliquer les",
-                "es organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie   -etre capable d'a",
                 " s'integrer dans un environnement professionnel et co",
-                "es organismes et en ecologie   -etre capable d'a"
+                "des organismes et en ecologie   -etre capable d'a"
             ],
-            "[bioclimat[^ ]+, construction]": [
-                "ents d'architecture bioclimatique   strategie du chau",
-                "er les principes du bioclimatisme     - critiquer un ",
-                "isons passives  eco-construction   eco-quartiers   a"
+            "architectur[^ ]+ bioclimatique": [
+                "inertie  elements d'architecture bioclimatique   strategie du chau"
             ],
             "[bioclimat[^ ]+, energ[^ ]+]": [
                 "ents d'architecture bioclimatique   strategie du chau",
@@ -1638,17 +1358,16 @@
                 "sol et le flux de l'energie et de la matiere   ",
                 "- expliquer le flux energetique et les cycles de la"
             ],
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "tion trophique   le climat  le sol et le flux ",
                 "s d'architecture bioclimatique   strategie du ",
                 "liquer les facteurs climatiques  biotiques et ",
                 "les principes du bioclimatisme     - critiquer",
                 " s'integrer dans un environnement professionnel et co",
-                "ecologie et architecture dur",
-                "arbone  l'empreinte ecologique     la biogenese   ",
-                " carbone  empreinte ecologique  biosphere  ecosyst",
-                "es organismes et en ecologie   -etre capable d'a",
-                "es organismes et en ecologie   -etre capable d'a"
+                "carbone  l'empreinte ecologique     la biogenese   ",
+                "n carbone  empreinte ecologique  biosphere  ecosyst",
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie   -etre capable d'a"
             ],
             "[effets? (?:de )?serre, climat]": [
                 "    la biogenese    effet de serre   la photosynthese ",
@@ -1685,7 +1404,7 @@
                 "ports energetiques  degradations energetiques  reje",
                 "e l'eau  les nappes phreatiques  les processus de "
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "edes industriels et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "vironnement  \" et \" developpement durable \" sont souvent empl",
@@ -1787,10 +1506,6 @@
             ],
             "eco-?conception": [
                 "ptique  la notion d'eco-conception est abordee  connai"
-            ],
-            "[environnemental, ethique]": [
-                "energie   incidence environnementale des procedes indus",
-                "llectuelle  de sens ethique et deontologique   "
             ]
         }
     },
@@ -1806,55 +1521,30 @@
             "impacts? (?:ecosyst[^ ]+|ecolo[^ ]+)": [
                 "impacts ecologiques et traitement des e",
                 "le l'enseignement d'impacts ecologiques et traitements des "
-            ],
-            "[environnemental, ethique]": [
-                "  de la legislation environnementale dans le domaine de",
-                "llectuelle  de sens ethique et deontologique   "
-            ]
-        }
-    },
-    "US-M2-BIOEFS-038-M: Risque sanitaire": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "que de l'exposition environnementale et humaine a une s",
-                "llectuelle  de sens ethique et deontologique   "
             ]
         }
     },
     "US-M2-BIOEFS-040-M: Sciences et soci\u00e9t\u00e9": {
         "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "tes energetiques et climatiques qui pesent sur",
                 " s'integrer dans un environnement professionnel et co",
-                " une interpretation ecologique de la nature du suc"
+                "s une interpretation ecologique de la nature du suc"
             ]
         }
     },
     "US-M2-BIOEFS-065-M: Agriculture urbaine": {
         "fr": {
-            "[ecologie, durabilite]": [
-                "ieres alimentaires  ecologie urbaine  economie s",
-                "ementale  empreinte ecologie  services ecosytemi",
-                " organismes et de l'ecologie  des connaissances ",
-                "es organismes et en ecologie   -etre capable d'a",
-                "es organismes et en ecologie et de ses applicati",
-                " organismes et de l'ecologie  des connaissances ",
-                "es organismes et en ecologie   -etre capable d'a",
-                "es organismes et en ecologie et de ses applicati",
+            "[[ ]ecolo[^ ]+, durabilite]": [
+                "lieres alimentaires  ecologie urbaine  economie s",
+                "nementale  empreinte ecologie  services ecosytemi",
+                "nants et l'empreinte ecologique qui en decoule   - ",
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie et de ses applicati",
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie et de ses applicati",
                 "nalyse    - enjeux  durabilite  techniques de prod",
                 "cial et economique  durabilite  de la mise en plac"
-            ],
-            "[environnement, durabilite]": [
-                "ale    - evaluation environnementale  empreinte ecolo",
-                " - etablir l'impact environnemental  social et econom",
-                " s'integrer dans un environnement professionnel et co",
-                "nalyse    - enjeux  durabilite  techniques de prod",
-                "cial et economique  durabilite  de la mise en plac"
-            ],
-            "[environnemental, ethique]": [
-                "ale    - evaluation environnementale  empreinte ecologi",
-                " - etablir l'impact environnemental  social et economiq",
-                "llectuelle  de sens ethique et deontologiqu"
             ]
         }
     },
@@ -1870,14 +1560,6 @@
             "analyse (?:de )?cycle (?:de )?vie": [
                 " et reglementation  analyse de cycle de vie  acv  des materiaux",
                 "e recyclage  et a l'analyse de cycle de vie  contribuer  seuls "
-            ]
-        }
-    },
-    "US-M2-SCCHIM-001-M: Histoire de la pens\u00e9e scientifique": {
-        "fr": {
-            "[electri[^ ]+, verte]": [
-                "apitre 6   chaleur  electricite et industrie   chap",
-                "e de nouvelles decouvertes remettent en quest"
             ]
         }
     },
@@ -1959,14 +1641,6 @@
             "objectifs? (de )?developpements? durables?": [
                 "people  planet     -objectifs de developpement durable des nations unis   ",
                 "es etudiants aux 17 objectifs de developpement durable des nations unis et"
-            ],
-            "[environnemental, ethique]": [
-                " dimension sociale  environnementale et societale des e",
-                "social  societal et environnemental    comprendre et ap",
-                "lite societale et d'ethique des affaires  mettr",
-                "la critique et de l'ethique par rapport aux div",
-                "la critique et de l'ethique par rapport aux div",
-                "la critique et de l'ethique par rapport aux div"
             ]
         }
     },
@@ -1975,12 +1649,6 @@
             "objectifs? (de )?developpements? durables?": [
                 "people  planet     -objectifs de developpement durable des nations unis   ",
                 "es etudiants aux 17 objectifs de developpement durable des nations unis et"
-            ],
-            "[environnemental, ethique]": [
-                " dimension sociale  environnementale et societale des e",
-                "social  societal et environnemental    comprendre et ap",
-                "lite societale et d'ethique des affaires  mettr",
-                "la critique et de l'ethique par rapport aux div"
             ]
         }
     },
@@ -2010,16 +1678,6 @@
             ],
             "politique environnement": [
                 "on d'instruments de politique environnementale  reglementations"
-            ]
-        }
-    },
-    "UW-M2-IGGEST-105-M: Management environnemental": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "management environnemental outils de managemen",
-                "utils de management environnemental  etre capable d'app",
-                "utils de management environnemental en adequation avec ",
-                "rer a des principes ethiques et appliquer dans "
             ]
         }
     }

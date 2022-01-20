@@ -118,7 +118,7 @@ if __name__ == '__main__':
     parser.add_argument("-d2", "--dictionary2_name", help="Name of the second dictionary")
     parser.add_argument("-y", "--year", help="Academic year", default=YEAR)
 
-    schools = ["uliege", "ulb", "unamur", "uslb", "uclouvain", "umons"]
+    schools = ["ulb"]
 
     arguments = vars(parser.parse_args())
     arguments['schools'] = schools

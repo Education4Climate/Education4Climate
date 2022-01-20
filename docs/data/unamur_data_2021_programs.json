@@ -26,14 +26,15 @@
   ],
   "themes_scores":[
    1,
-   2,
+   3,
    1,
    3
   ],
   "matched_courses":[
-   "DROIB330",
    "FINT0039",
-   "ECGEB284"
+   "ECGEB284",
+   "DROIB330",
+   "DROIB310"
   ],
   "nb_dedicated_courses":2
  },
@@ -90,9 +91,11 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -119,9 +122,11 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -154,9 +159,9 @@
    3
   ],
   "matched_courses":[
-   "SCHIM223",
+   "SPHYM134",
    "SCHIM224",
-   "SPHYM134"
+   "SCHIM223"
   ],
   "nb_dedicated_courses":1
  },
@@ -218,10 +223,10 @@
    2
   ],
   "matched_courses":[
-   "SCHIM202",
-   "SCHIM124",
+   "SCHIM103",
    "SCHIM224",
-   "SCHIM103"
+   "SCHIM124",
+   "SCHIM202"
   ],
   "nb_dedicated_courses":0
  },
@@ -252,8 +257,8 @@
    1
   ],
   "matched_courses":[
-   "SPHYM119",
    "SGOGB302_25599",
+   "SPHYM119",
    "SSPSM101",
    "SCHIM223"
   ],
@@ -321,8 +326,8 @@
   ],
   "matched_courses":[
    "SCHIM115",
-   "SSPSM101",
    "SCHIM103",
+   "SSPSM101",
    "SCHIM124"
   ],
   "nb_dedicated_courses":0
@@ -356,8 +361,8 @@
    1
   ],
   "matched_courses":[
-   "SSPSM101",
-   "SBOEM163"
+   "SBOEM163",
+   "SSPSM101"
   ],
   "nb_dedicated_courses":0
  },
@@ -372,8 +377,8 @@
   "campuses":[
    "Namur",
    "Li\u00e8ge",
-   "Louvain-la-Neuve",
-   "Gembloux"
+   "Gembloux",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -389,18 +394,18 @@
   ],
   "themes_scores":[
    1,
-   4,
+   3,
    1,
    5
   ],
   "matched_courses":[
-   "SSPSM101",
-   "DROIB330",
    "SSMRM101",
-   "ENVT3050-1",
    "SSMRM103",
+   "SSMRM102",
+   "SSPSM101",
    "SSMRM104",
-   "SSMRM102"
+   "DROIB330",
+   "ENVT3050-1"
   ],
   "nb_dedicated_courses":3
  },
@@ -413,10 +418,142 @@
    "fr"
   ],
   "campuses":[
-   "Gembloux",
+   "Li\u00e8ge",
    "Arlon",
+   "Gembloux",
+   "Louvain-la-Neuve",
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   3,
+   1,
+   6
+  ],
+  "matched_courses":[
+   "SSMRM101",
+   "SSMRM103",
+   "SSMRM102",
+   "SSPSM101",
+   "SSMRM104",
+   "DROIB330",
+   "ENVT0040-2",
+   "ENVT3050-1"
+  ],
+  "nb_dedicated_courses":4
+ },
+ {
+  "id":"244M",
+  "name":"Master 120 en smart rurality, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en enjeux et m\u00e9thodes g\u00e9ographiques",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/244M\/2021",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
    "Namur",
    "Li\u00e8ge",
+   "Gembloux",
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   3,
+   1,
+   5
+  ],
+  "matched_courses":[
+   "SSMRM101",
+   "SSMRM103",
+   "SSMRM102",
+   "SSPSM101",
+   "SSMRM104",
+   "DROIB330",
+   "ENVT3050-1"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"242M",
+  "name":"Master 120 en smart rurality, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en diagnostic et prospective territoriale",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/242M\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur",
+   "Li\u00e8ge",
+   "Gembloux",
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   3,
+   1,
+   5
+  ],
+  "matched_courses":[
+   "SSMRM101",
+   "SSMRM103",
+   "SSMRM102",
+   "SSPSM101",
+   "SSMRM104",
+   "DROIB330",
+   "ENVT3050-1"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"245M",
+  "name":"Master 120 en smart rurality, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en analyse et gestion de l'information",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/245M\/2021",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Namur",
+   "Li\u00e8ge",
+   "Gembloux",
    "Louvain-la-Neuve"
   ],
   "faculties":[
@@ -435,149 +572,17 @@
    1,
    4,
    1,
-   6
-  ],
-  "matched_courses":[
-   "SSPSM101",
-   "DROIB330",
-   "SSMRM101",
-   "ENVT3050-1",
-   "SSMRM103",
-   "ENVT0040-2",
-   "SSMRM104",
-   "SSMRM102"
-  ],
-  "nb_dedicated_courses":4
- },
- {
-  "id":"244M",
-  "name":"Master 120 en smart rurality, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en enjeux et m\u00e9thodes g\u00e9ographiques",
-  "cycle":"master",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/244M\/2021",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-   "Namur",
-   "Li\u00e8ge",
-   "Louvain-la-Neuve",
-   "Gembloux"
-  ],
-  "faculties":[
-   "Facult\u00e9 des sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   4,
-   1,
    5
   ],
   "matched_courses":[
-   "SSPSM101",
-   "DROIB330",
    "SSMRM101",
-   "ENVT3050-1",
    "SSMRM103",
-   "SSMRM104",
-   "SSMRM102"
-  ],
-  "nb_dedicated_courses":3
- },
- {
-  "id":"242M",
-  "name":"Master 120 en smart rurality, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en diagnostic et prospective territoriale",
-  "cycle":"master",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/242M\/2021",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Namur",
-   "Li\u00e8ge",
-   "Louvain-la-Neuve",
-   "Gembloux"
-  ],
-  "faculties":[
-   "Facult\u00e9 des sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   4,
-   1,
-   5
-  ],
-  "matched_courses":[
+   "SSMRM102",
    "SSPSM101",
-   "DROIB330",
-   "SSMRM101",
-   "ENVT3050-1",
-   "SSMRM103",
    "SSMRM104",
-   "SSMRM102"
-  ],
-  "nb_dedicated_courses":3
- },
- {
-  "id":"245M",
-  "name":"Master 120 en smart rurality, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en analyse et gestion de l'information",
-  "cycle":"master",
-  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/245M\/2021",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-   "Namur",
-   "Li\u00e8ge",
-   "Louvain-la-Neuve",
-   "Gembloux"
-  ],
-  "faculties":[
-   "Facult\u00e9 des sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   5,
-   1,
-   5
-  ],
-  "matched_courses":[
-   "SSPSM101",
    "DROIB330",
-   "SSMRM101",
-   "LBRAI2110",
    "ENVT3050-1",
-   "SSMRM103",
-   "SSMRM104",
-   "SSMRM102"
+   "LBRAI2110"
   ],
   "nb_dedicated_courses":4
  },
@@ -608,8 +613,8 @@
    1
   ],
   "matched_courses":[
-   "SPHYM119",
    "SGOGB302_25599",
+   "SPHYM119",
    "SSPSM101",
    "SCHIM223"
   ],
@@ -642,8 +647,8 @@
    1
   ],
   "matched_courses":[
-   "SPHYM119",
    "SGOGB302_25599",
+   "SPHYM119",
    "SSPSM101",
    "SCHIM223"
   ],
@@ -676,8 +681,8 @@
    1
   ],
   "matched_courses":[
-   "SPHYM119",
    "SGOGB302_25599",
+   "SPHYM119",
    "SSPSM101",
    "SCHIM223"
   ],
@@ -710,10 +715,10 @@
    2
   ],
   "matched_courses":[
-   "SSPSM101",
    "SPHYM119",
-   "SGOGB302_25599",
+   "SSPSM101",
    "SCHIM223",
+   "SGOGB302_25599",
    "SPHYM134"
   ],
   "nb_dedicated_courses":2
@@ -863,12 +868,12 @@
    1
   ],
   "matched_courses":[
-   "SSPSM101",
    "SCHIM229",
-   "SCHIM202",
    "SCHIM103",
    "SCHIM124",
-   "SCHIM115"
+   "SCHIM115",
+   "SSPSM101",
+   "SCHIM202"
   ],
   "nb_dedicated_courses":1
  },
@@ -905,11 +910,11 @@
    1
   ],
   "matched_courses":[
-   "SSPSM101",
-   "SCHIM202",
    "SCHIM103",
    "SCHIM124",
-   "SCHIM115"
+   "SCHIM115",
+   "SSPSM101",
+   "SCHIM202"
   ],
   "nb_dedicated_courses":0
  },
@@ -946,14 +951,14 @@
    1
   ],
   "matched_courses":[
-   "SSPSM101",
-   "SCHIM223_25583",
-   "SCHIM202",
-   "SCHIM224",
    "SCHIM103",
    "SCHIM124",
+   "SCHIM223_25583",
    "SCHIM115",
-   "SCHIM223_25584"
+   "SSPSM101",
+   "SCHIM224",
+   "SCHIM223_25584",
+   "SCHIM202"
   ],
   "nb_dedicated_courses":2
  },
@@ -984,8 +989,8 @@
    1
   ],
   "matched_courses":[
-   "SBIOB347",
-   "ECGEB284_26016"
+   "ECGEB284_26016",
+   "SBIOB347"
   ],
   "nb_dedicated_courses":0
  },
@@ -1018,20 +1023,20 @@
   "themes_scores":[
    2,
    2,
-   4,
+   5,
    1,
    1
   ],
   "matched_courses":[
+   "SGOLM146",
+   "SBOEM163",
+   "SGOLB210",
+   "SBOEM165",
+   "SBOEM238",
+   "SGOLM145",
    "SSPSM101",
    "SBOEM144",
-   "SGOLB210",
-   "SBOEM163",
-   "SBOEM238",
-   "SBOEM260",
-   "SGOLM145",
-   "SGOLM146",
-   "SBOEM165"
+   "SBOEM260"
   ],
   "nb_dedicated_courses":0
  },
@@ -1064,19 +1069,19 @@
   "themes_scores":[
    2,
    1,
-   4,
+   5,
    1,
    1
   ],
   "matched_courses":[
-   "SSPSM101",
-   "SBOEM144",
-   "SGOLB210",
+   "SGOLM146",
    "SBOEM163",
+   "SGOLB210",
+   "SBOEM165",
    "SBOEM238",
    "SGOLM145",
-   "SGOLM146",
-   "SBOEM165"
+   "SSPSM101",
+   "SBOEM144"
   ],
   "nb_dedicated_courses":0
  },
@@ -1109,19 +1114,19 @@
   "themes_scores":[
    2,
    1,
-   4,
+   5,
    1,
    1
   ],
   "matched_courses":[
-   "SSPSM101",
-   "SBOEM144",
-   "SGOLB210",
+   "SGOLM146",
    "SBOEM163",
+   "SGOLB210",
+   "SBOEM165",
    "SBOEM238",
    "SGOLM145",
-   "SGOLM146",
-   "SBOEM165"
+   "SSPSM101",
+   "SBOEM144"
   ],
   "nb_dedicated_courses":0
  },
@@ -1230,17 +1235,13 @@
    "Science"
   ],
   "themes":[
-   "energy",
    "environment"
   ],
   "themes_scores":[
-   2,
    1
   ],
   "matched_courses":[
-   "SPHYB302",
-   "SSPSB102",
-   "SPHYB305"
+   "SSPSB102"
   ],
   "nb_dedicated_courses":0
  },
@@ -1301,8 +1302,8 @@
   ],
   "matched_courses":[
    "SSPSB102",
-   "SGOLB210",
    "SGOLB306",
+   "SGOLB210",
    "SGOLB106",
    "SGOLB303"
   ],
@@ -1336,11 +1337,11 @@
    2
   ],
   "matched_courses":[
+   "SSPSB102",
+   "SGOLB106",
    "SGOGB210",
    "SGOGB302",
-   "SSPSB102",
    "SGOGB303",
-   "SGOLB106",
    "SGOLB303"
   ],
   "nb_dedicated_courses":2
@@ -1397,15 +1398,15 @@
   ],
   "themes_scores":[
    1,
-   5
+   6
   ],
   "matched_courses":[
-   "SBIOB212",
    "SSPSB102",
-   "SBIOB346",
-   "SBIOB347",
+   "SBIOB212",
+   "SBIOB229",
    "SBIOB208",
-   "SBIOB229"
+   "SBIOB346",
+   "SBIOB347"
   ],
   "nb_dedicated_courses":3
  },
@@ -1428,11 +1429,9 @@
    "Science"
   ],
   "themes":[
-   "climate",
    "environment"
   ],
   "themes_scores":[
-   1,
    2
   ],
   "matched_courses":[
@@ -1472,8 +1471,8 @@
    2
   ],
   "matched_courses":[
-   "FINT0039",
-   "ECGEB284_26016"
+   "ECGEB284_26016",
+   "FINT0039"
   ],
   "nb_dedicated_courses":1
  },
@@ -1612,11 +1611,11 @@
   "cycle":"master",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/750M\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1681,11 +1680,11 @@
   "cycle":"master",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/711M\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur",
@@ -1716,11 +1715,11 @@
   "cycle":"master",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/71DM\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur",
@@ -1751,11 +1750,11 @@
   "cycle":"master",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/751M\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1820,11 +1819,11 @@
   "cycle":"master",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/75DM\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1856,11 +1855,11 @@
   "cycle":"master",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/731M\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1896,11 +1895,11 @@
   "cycle":"bac",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/710B\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1930,11 +1929,11 @@
   "cycle":"bac",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/701B\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1966,11 +1965,11 @@
   "cycle":"bac",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/730B\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1994,9 +1993,9 @@
    1
   ],
   "matched_courses":[
+   "EINGB221",
    "EITGB116",
-   "ECGEB284",
-   "EINGB221"
+   "ECGEB284"
   ],
   "nb_dedicated_courses":1
  },
@@ -2006,11 +2005,11 @@
   "cycle":"bac",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/703B\/2021",
   "languages":[
+   "nl",
    "de",
-   "en",
-   "es",
    "fr",
-   "nl"
+   "es",
+   "en"
   ],
   "campuses":[
    "Namur"

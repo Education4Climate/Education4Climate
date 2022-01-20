@@ -6,14 +6,6 @@
             ]
         }
     },
-    "1169: Macro-economie": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "eld op het vlak van milieu-impact en sociale d",
-                "het perspectief van duurzaamheid"
-            ]
-        }
-    },
     "1559: Geografische informatiesystemen": {
         "nl": {
             "milieu[- ]?wet": [
@@ -23,29 +15,29 @@
     },
     "1568: Milieukunde": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), ecolog]": [
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
                 "ngen beinvloeden de biosfeer  ons welzijn  onze ",
-                "eid van water  onze ecologische voetafdruk  du"
+                "heid van water  onze ecologische voetafdruk  duurzaa"
             ],
-            "[bio(?:diversiteit|sfeer), impact, milieu|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversiteit|sfeer), impact, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ngen beinvloeden de biosfeer  ons welzijn  onze ",
                 "kkelingen groeit de impact van de mens op het ",
                 "milieukunde dit opleidings",
                 "en van onze globale milieuproblemen  onder dru",
-                "eid van water  onze ecologische voetafdruk  duurzaa"
+                "heid van water  onze ecologische voetafdruk  duurzaa"
             ],
-            "[bio(?:diversiteit|sfeer), proble+m, milieu|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ngen beinvloeden de biosfeer  ons welzijn  onze ",
                 " onze globale milieuproblemen  onder druk van d",
                 "milieukunde dit opleidings",
                 "en van onze globale milieuproblemen  onder dru",
-                "eid van water  onze ecologische voetafdruk  duurzaa"
+                "heid van water  onze ecologische voetafdruk  duurzaa"
             ],
-            "[klima+t[^ ]*, milieu, ecolo[^ ]+": [
+            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
                 " aan bod komen zijn klimaatverandering  beschikbaarheid va",
                 "milieukunde dit opleidings",
                 "en van onze globale milieuproblemen  onder dru",
-                "eid van water  onze ecologische voetafdruk  du"
+                "heid van water  onze ecologische voetafdruk  du"
             ],
             "klimaatverandering": [
                 " aan bod komen zijn klimaatverandering  beschikbaarheid va"
@@ -53,7 +45,7 @@
             "milieuproble+m": [
                 "en van onze globale milieuproblemen  onder druk van d"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "en van onze globale milieuproblemen  onder druk van d"
             ]
         }
@@ -78,7 +70,7 @@
                 "n complexitieit van duurzame ontwikkeling   2  het kunnen ond",
                 "leidsbeginselen  de milieueffectrapportage  de omgev"
             ],
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "oordelingsmethodes  duurzame ontwikkeling is ontwikkeling die",
                 "n complexitieit van duurzame ontwikkeling   2  het kunnen ond",
                 "milieubeleid het onderdeel",
@@ -91,18 +83,6 @@
                 "oordelingsmethodes  duurzame ontwikkeling is ontwikkeling die",
                 "n complexitieit van duurzame ontwikkeling   2  het kunnen ond",
                 "unnen verklaren hoe transitie  management  in zij"
-            ],
-            "[milieu, duurzaamheid]": [
-                "milieubeleid het onderdeel",
-                "eleid het onderdeel milieurecht wil de student",
-                "strumentendebat  de milieubeleidsbeginselen  d",
-                "leidsbeginselen  de milieueffectrapportage  de",
-                "      het onderdeel milieu-economie introducee",
-                "onomie introduceert duurzaamheid en duurzaamheidsbeo",
-                "ert duurzaamheid en duurzaamheidsbeoordelingsmethode",
-                "en sterke visies op duurzaamheid en het kunnen verkl",
-                "n van een geschikte duurzaamheidsbeoordelingsmethode",
-                " resultaten van een duurzaamheidsbeoordelingsmethode"
             ],
             "milieubeleid": [
                 "milieubeleid het onderdeel milie",
@@ -123,12 +103,12 @@
                 "ether it be loss of biodiversity and ecosystem funct",
                 "of biodiversity and ecosystem functions  climate "
             ],
-            "[bio(?:diversity|sphere), impact, environnement|ecolog[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversity|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ether it be loss of biodiversity and ecosystem funct",
                 "iew on the possible impact of new developments",
                 "of biodiversity and ecosystem functions  climate "
             ],
-            "[bio(?:diversity|sphere), problem, environnement|ecolog[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversity|sphere), problem, environnement|[ ][ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ether it be loss of biodiversity and ecosystem funct",
                 "es on environmental problems with the focus on ",
                 "since environmental problems - whether it be lo",
@@ -154,7 +134,7 @@
                 "ncreasingly serious environmental problems we face ",
                 "r dealings with our environment   they learn about "
             ],
-            "[sustainable development, environment, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[sustainable development, environment, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "s determine whether sustainable development can provide a way f",
                 "environmental ethics in this co",
                 "human activities on environmental problems with the",
@@ -176,14 +156,6 @@
             ],
             "climat[^ ]+ change": [
                 "cosystem functions  climate change   food crisis or th"
-            ],
-            "[environmental, ethic]": [
-                "environmental ethics in this cour",
-                "human activities on environmental problems with the f",
-                "ocial issues  since environmental problems - whether ",
-                "ncreasingly serious environmental problems we face  s",
-                "environmental ethics in this course stu",
-                "th the focus on the ethical and social issues"
             ]
         }
     },
@@ -209,27 +181,27 @@
     },
     "2000: Problematiek van 'Global change'": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), ecolog]": [
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
                 "ngen beinvloeden de biosfeer  ons welzijn  onze ",
-                "eid van water  onze ecologische voetafdruk  du"
+                "heid van water  onze ecologische voetafdruk  duurzaa"
             ],
-            "[bio(?:diversiteit|sfeer), impact, milieu|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversiteit|sfeer), impact, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ngen beinvloeden de biosfeer  ons welzijn  onze ",
                 "kkelingen groeit de impact van de mens op het ",
                 "en van onze globale milieuproblemen  onder dru",
-                "eid van water  onze ecologische voetafdruk  duurzaa"
+                "heid van water  onze ecologische voetafdruk  duurzaa"
             ],
-            "[bio(?:diversiteit|sfeer), proble+m, milieu|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ngen beinvloeden de biosfeer  ons welzijn  onze ",
                 "problematiek van 'global ch",
                 " onze globale milieuproblemen  onder druk van d",
                 "en van onze globale milieuproblemen  onder dru",
-                "eid van water  onze ecologische voetafdruk  duurzaa"
+                "heid van water  onze ecologische voetafdruk  duurzaa"
             ],
-            "[klima+t[^ ]*, milieu, ecolo[^ ]+": [
+            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
                 " aan bod komen zijn klimaatverandering  beschikbaarheid va",
                 "en van onze globale milieuproblemen  onder dru",
-                "eid van water  onze ecologische voetafdruk  du"
+                "heid van water  onze ecologische voetafdruk  du"
             ],
             "klimaatverandering": [
                 " aan bod komen zijn klimaatverandering  beschikbaarheid va"
@@ -237,15 +209,15 @@
             "milieuproble+m": [
                 "en van onze globale milieuproblemen  onder druk van d"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "en van onze globale milieuproblemen  onder druk van d"
             ]
         }
     },
     "2055: Sustainable entrepreneurship": {
         "en": {
-            "(?:ecosyst[^ ]+|ecolo[^ ]+) impact": [
-                "positive social and ecological impacts  doing well by doi"
+            "(?:ecosyst[^ ]+|[ ]ecolo[^ ]+) impact": [
+                " positive social and ecological impacts  doing well by doi"
             ],
             "[sustainable development, impact]": [
                 "rriculum for the un sustainable development goals  sdgs  and bu",
@@ -302,14 +274,14 @@
     },
     "2355: Bouwkunde": {
         "nl": {
-            "[duurzame architectuur, ecolo[^ ]+, materia+l]": [
+            "[duurzame architectuur, [ ]ecolo[^ ]+, materia+l]": [
                 "ept als drager voor duurzame architectuur wordt speciaal aand",
-                "ch/milieutechnisch  ecologisch  bouwconcept     bi",
+                "sch/milieutechnisch  ecologisch  bouwconcept     bi",
                 "  brand  akoestiek  materialen  energiegebruik  ",
                 "op het vlak van het materiaal-  energie- en water"
             ],
-            "[ecolo[^ ]+, duurzaamheid]": [
-                "ch/milieutechnisch  ecologisch  bouwconcept     bi",
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                "sch/milieutechnisch  ecologisch  bouwconcept     bi",
                 "geacht aspecten van duurzaamheid en technische insta",
                 "        mate waarin duurzaamheid in het ontwerp word"
             ],
@@ -320,17 +292,11 @@
                 "iteit van het binnenmilieu  etc       een gein",
                 " en het energetisch/milieutechnisch  ecologisc"
             ],
-            "[klima+t[^ ]*, milieu, ecolo[^ ]+": [
+            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
                 "maatregelen voor de klimatisering van het gebouw     ",
                 "iteit van het binnenmilieu  etc       een gein",
                 " en het energetisch/milieutechnisch  ecologisc",
-                "ch/milieutechnisch  ecologisch  bouwconcept   "
-            ],
-            "[milieu, duurzaamheid]": [
-                "iteit van het binnenmilieu  etc       een gein",
-                " en het energetisch/milieutechnisch  ecologisc",
-                "geacht aspecten van duurzaamheid en technische insta",
-                "        mate waarin duurzaamheid in het ontwerp word"
+                "sch/milieutechnisch  ecologisch  bouwconcept   "
             ],
             "duurzame architectuur": [
                 "ept als drager voor duurzame architectuur wordt speciaal aand"
@@ -340,34 +306,10 @@
             ]
         }
     },
-    "2385: Inleiding tot de materiaalleer": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "    duurzaamheid en milieu-impact van material",
-                "pen per klasse      duurzaamheid en milieu-impact va"
-            ]
-        }
-    },
     "2363: Onderzoeksseminarie 2 Circulair Bouwen": {
         "nl": {
             "circulaire economie": [
                 "sche reflectie over circulaire economi"
-            ]
-        }
-    },
-    "2314: Materiaalleer 1": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "en  duurzaamheid en milieu-impact van material",
-                "riaaleigenschappen  duurzaamheid en milieu-impact va"
-            ]
-        }
-    },
-    "2801: Stralingsbescherming & dosimetrie": {
-        "nl": {
-            "[milieu, ethi[^ ]+]": [
-                "emers  bevolking en milieu  ethische en econom",
-                "evolking en milieu  ethische en economische aspe"
             ]
         }
     },
@@ -392,22 +334,12 @@
             ]
         }
     },
-    "3123: Ecologie: organismen in hun milieu": {
-        "nl": {
-            "[klima+t[^ ]*, milieu, ecolo[^ ]+": [
-                "n organismen leven  klimaat en de andere belang",
-                "  organismen in hun milieu de student e  heeft",
-                " van het abiotische milieu       de student e ",
-                "ecologie  organismen in hu"
-            ]
-        }
-    },
     "3139: Mediterrane veldstage": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), ecolog]": [
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
                 "nen de domeinen van biodiversiteit  identificatie van ",
-                "ora   biogeografie  ecologie  ecologische aanp",
-                "eografie  ecologie  ecologische aanpassingen v"
+                "lora   biogeografie  ecologie  ecologische aanpas",
+                "geografie  ecologie  ecologische aanpassingen van fa"
             ]
         }
     },
@@ -458,22 +390,6 @@
             ]
         }
     },
-    "3517: Business ethics and corporate governance": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "ering  marketing en milieueconomie  de cursus ",
-                " als aangeschroefde duurzaamheid  real-life cases  b"
-            ],
-            "[milieu, ethi[^ ]+]": [
-                "ering  marketing en milieueconomie  de cursus ",
-                "business ethics and corporate gover",
-                "cursus bespreekt de ethische filosofieen en best",
-                " bestudeert diverse ethische cases vanuit de ver",
-                "nverantwoord' of 'onethisch' gedrag stellen bij ",
-                "atie te leren uit onethisch gedrag  lerende org"
-            ]
-        }
-    },
     "3558: Multicampus Module - Sustainable Energy Production": {
         "en": {
             "energy efficiency": [
@@ -493,14 +409,14 @@
                 "ondig inzicht in de biosfeerprocessen en verstor",
                 "en impact hebben op ecosystemen en gezondheid"
             ],
-            "[bio(?:diversiteit|sfeer), impact, milieu|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversiteit|sfeer), impact, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ondig inzicht in de biosfeerprocessen en verstor",
                 "limaatproblemen een impact hebben op ecosystem",
                 "algemene milieukunde en klimaat in ",
                 "tudent begrijpt hoe milieu- en klimaatprobleme",
                 "en impact hebben op ecosystemen en gezondheid"
             ],
-            "[bio(?:diversiteit|sfeer), proble+m, milieu|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ondig inzicht in de biosfeerprocessen en verstor",
                 "e milieu- en klimaatproblemen een impact hebben",
                 "algemene milieukunde en klimaat in ",
@@ -516,21 +432,16 @@
                 "nstrumenten die een duurzame ontwikkeling van de mobiliteit b",
                 "limaatproblemen een impact hebben op ecosystem"
             ],
-            "[duurzame ontwikkeling, milieu, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[duurzame ontwikkeling, milieu, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "nstrumenten die een duurzame ontwikkeling van de mobiliteit b",
                 "algemene milieukunde en klimaat in ",
                 "tudent begrijpt hoe milieu- en klimaatprobleme",
                 "en impact hebben op ecosystemen en gezondheid"
             ],
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "nstrumenten die een duurzame ontwikkeling van de mobiliteit b",
                 "algemene milieukunde en klimaat in ",
                 "tudent begrijpt hoe milieu- en klimaatprobleme"
-            ],
-            "[milieu, duurzaamheid]": [
-                "algemene milieukunde en klimaat in ",
-                "tudent begrijpt hoe milieu- en klimaatprobleme",
-                "zicht in het begrip duurzaamheid en in de beleidsmaa"
             ]
         }
     },
@@ -547,15 +458,6 @@
                 "onderdeel wordt een duurzame  multimodale keten",
                 "e  multimodale ketenmobiliteit voor personenvervoe",
                 "leidsmaatregelen om mobiliteit en verkeer te beinv"
-            ]
-        }
-    },
-    "3742: Epidemiologie": {
-        "nl": {
-            "[milieu, ethi[^ ]+]": [
-                "gsepidemiologie  en milieu-epidemiologie     d",
-                "gsepidemiologie  en milieu-epidemiologie",
-                "rekening houden met ethische aspecten    iv stud"
             ]
         }
     },
@@ -585,37 +487,15 @@
     },
     "3860: Sociaal ondernemerschap": {
         "nl": {
-            "[ecolo[^ ]+, duurzaamheid]": [
-                "verkleinding van de ecologische voetafdruk  co-hous",
-                "t en van sociale en ecologische doeleinden te voldo",
-                "- zowel sociale als ecologische - steeds meer opgen",
-                "oor principes zoals duurzaamheid  in de waardeketen ",
-                "  post-kapitalisme  duurzaamheid  mvo  mecenaat  fil"
-            ],
-            "[milieu, duurzaamheid]": [
-                "nier dat sociale en milieukosten worden geinte",
-                "n hogere sociale en milieunormen voldoen  prec",
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                " verkleinding van de ecologische voetafdruk  co-hous",
+                "kt en van sociale en ecologische doeleinden te voldo",
+                " - zowel sociale als ecologische - steeds meer opgen",
                 "oor principes zoals duurzaamheid  in de waardeketen ",
                 "  post-kapitalisme  duurzaamheid  mvo  mecenaat  fil"
             ],
             "groene energie": [
                 "d cooperatieven die groene energie produceren en distr"
-            ]
-        }
-    },
-    "3871: Transport Management": {
-        "nl": {
-            "[impact, stro+m]": [
-                "taan bij de fiscale impact van het douanerecht",
-                "nitoren van goederenstromen  het douanerecht "
-            ]
-        }
-    },
-    "3873: Macro-economie": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "eld op het vlak van milieu-impact en sociale d",
-                "het perspectief van duurzaamheid"
             ]
         }
     },
@@ -653,7 +533,7 @@
             "milieuproble+m": [
                 "ifieke  context van milieuproblematieken  zowel in he"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "ifieke  context van milieuproblematieken  zowel in he"
             ]
         }
@@ -690,11 +570,6 @@
     },
     "4210: Vakdidactiek biologie": {
         "nl": {
-            "[milieu, duurzaamheid]": [
-                "zondheidsopvoeding  milieueducatie - samenwerk",
-                "king  duurzaamheid  milieuzorg op school  mos ",
-                " - vakgroepwerking  duurzaamheid  milieuzorg op scho"
-            ],
             "milieueducatie": [
                 "zondheidsopvoeding  milieueducatie - samenwerking met "
             ]
@@ -729,7 +604,7 @@
     },
     "4281: Clean technologies": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "en   3  aanpak voor duurzame ontwikkeling en duurzaam materia",
                 " in de trend van de duurzame ontwikkeling  sdgs           dee",
                 "             deel 3 duurzame ontwikkeling  materialen en ener",
@@ -817,23 +692,14 @@
             ]
         }
     },
-    "4441: Professionele vaardigheden 2.2": {
-        "nl": {
-            "[impact, stro+m]": [
-                " en psychologische  impact van een neuropsycho",
-                "kkelt inzicht in de impact van het leven met e",
-                "nt de belangrijkste stromingen binnen de psyc"
-            ]
-        }
-    },
     "4470: Duurzame processen en materialen": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "gsinstallatie    6  duurzame ontwikkeling    7  beoordelen va",
-                "alen 1  industriele ecologie en de rol van een i"
+                "ialen 1  industriele ecologie en de rol van een i"
             ],
-            "[ecolo[^ ]+, duurzaamheid]": [
-                "alen 1  industriele ecologie en de rol van een i",
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                "ialen 1  industriele ecologie en de rol van een i",
                 "  7  beoordelen van duurzaamheid    8  instrumenten ",
                 " het beoordelen van duurzaamheid    9  duurzaamheid ",
                 " duurzaamheid    9  duurzaamheid van processen en ma"
@@ -856,7 +722,7 @@
                 "ische aerosollen en milieuproblemen verbonden aan spe",
                 "en in de bodem      milieuproblemen verbonden met bod"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "milieuproblematiek het opleidings",
                 "pleidingsonderdeel 'milieuproblematiek' is opgebouwd ",
                 "ische aerosollen en milieuproblemen verbonden aan spe",
@@ -896,16 +762,6 @@
     },
     "4533: Electric vehicles": {
         "en": {
-            "[electri[^ ]+, green]": [
-                "electric vehicles the increa",
-                "gies  although  the electric vehicle has had an ",
-                "r transportation    electric and hybrid vehicles",
-                "s    light rail and electric ships    electric a",
-                "d electric ships    electric aircrafts    electr",
-                "ectric aircrafts    electric vehicle design meth",
-                "ython  design of an electric vehicle  storage te",
-                "ming issues and the greenhouse emission of tr"
-            ],
             "[electri[^ ]+, storage]": [
                 "electric vehicles the increa",
                 "gies  although  the electric vehicle has had an ",
@@ -985,14 +841,6 @@
             ],
             "renewable energy": [
                 "n trading scheme    renewable energy generation    energ"
-            ]
-        }
-    },
-    "4603: Nier en spijsvertering ": {
-        "nl": {
-            "[milieu, ethi[^ ]+]": [
-                "biel extracellulair milieu tot stand gebracht ",
-                "verwerft inzicht in ethische aspecten van de nie"
             ]
         }
     }

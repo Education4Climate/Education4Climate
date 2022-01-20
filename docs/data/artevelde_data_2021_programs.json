@@ -5,10 +5,10 @@
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
+   "nl",
    "fr",
-   "de",
    "en",
-   "nl"
+   "de"
   ],
   "campuses":[
    "Campus Kantienberg"
@@ -17,7 +17,7 @@
    "Business en Management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
    "climate",
@@ -33,17 +33,45 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"PGROMI",
+  "name":"Postgraduaat Ondernemen met impact",
+  "cycle":"postgrad",
+  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Campus Sint-Annaplein"
+  ],
+  "faculties":[
+   "Mens en Samenleving"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "154391"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"PBAIBM",
   "name":"Bachelor of International Business Management",
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
-   "de",
-   "cn",
-   "en",
    "nl",
+   "de",
    "fr",
-   "es"
+   "es",
+   "en",
+   "cn"
   ],
   "campuses":[
    "Campus Stropkaai"
@@ -52,7 +80,7 @@
    "Business en Management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
    "climate",
@@ -65,10 +93,10 @@
    3
   ],
   "matched_courses":[
-   "158431",
    "160874",
-   "158235",
-   "158228"
+   "158228",
+   "158431",
+   "158235"
   ],
   "nb_dedicated_courses":0
  },
@@ -78,12 +106,12 @@
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
-   "de",
-   "cn",
-   "en",
    "nl",
+   "de",
    "fr",
-   "es"
+   "es",
+   "en",
+   "cn"
   ],
   "campuses":[
    "Campus Kantienberg"
@@ -92,7 +120,7 @@
    "Business en Management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
    "environment"
@@ -111,12 +139,12 @@
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
-   "de",
-   "cn",
-   "en",
    "nl",
+   "de",
    "fr",
-   "es"
+   "es",
+   "en",
+   "cn"
   ],
   "campuses":[
    "Campus Kantienberg"
@@ -125,7 +153,7 @@
    "Business en Management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
    "climate",
@@ -159,7 +187,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "sustainability"
@@ -187,7 +215,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "sustainability"
@@ -201,14 +229,52 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"PBAOSO",
+  "name":"Educatieve bachelor in het secundair onderwijs",
+  "cycle":"bac",
+  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "la"
+  ],
+  "campuses":[
+   "Campus Kattenberg"
+  ],
+  "faculties":[
+   "Onderwijs"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   6,
+   2
+  ],
+  "matched_courses":[
+   "158121",
+   "158120",
+   "156950",
+   "158128",
+   "156949",
+   "158129"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"PBAOLO",
   "name":"Educatieve bachelor in het onderwijs: lager onderwijs",
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Campus Brusselsepoortstraat"
@@ -217,18 +283,21 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
-   3
+   3,
+   1
   ],
   "matched_courses":[
-   "159940",
    "159150",
-   "154221"
+   "154221",
+   "159158",
+   "159940"
   ],
   "nb_dedicated_courses":0
  },
@@ -238,9 +307,9 @@
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Campus Sint-Annaplein"
@@ -249,19 +318,22 @@
    "Mens en Samenleving"
   ],
   "fields":[
-   "TODO"
+   "Sociology"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2
+   1,
+   3
   ],
   "matched_courses":[
-   "159230",
-   "161178"
+   "161179",
+   "161178",
+   "159230"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"PBAERG",
@@ -269,8 +341,8 @@
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Campus Kantienberg"
@@ -279,7 +351,7 @@
    "Gezondhied en Zorg"
   ],
   "fields":[
-   "TODO"
+   "Medecine & Health"
   ],
   "themes":[
    "sustainability"
@@ -293,14 +365,45 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"PBAJOU",
+  "name":"Bachelor in de journalistiek",
+  "cycle":"bac",
+  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Campus Kantienberg"
+  ],
+  "faculties":[
+   "Communicatie, Media en Design"
+  ],
+  "fields":[
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "158048",
+   "158049"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"PBAIGM",
   "name":"Bachelor of International Graphic and Digital Media",
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Campus Mariakerke"
@@ -309,7 +412,7 @@
    "Communicatie, Media en Design"
   ],
   "fields":[
-   "TODO"
+   "Communication"
   ],
   "themes":[
    "resources",
@@ -320,8 +423,8 @@
    1
   ],
   "matched_courses":[
-   "158327",
    "156103",
+   "158327",
    "155999"
   ],
   "nb_dedicated_courses":0
@@ -332,9 +435,9 @@
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Campus Mariakerke"
@@ -343,7 +446,7 @@
    "Communicatie, Media en Design"
   ],
   "fields":[
-   "TODO"
+   "Communication"
   ],
   "themes":[
    "resources",
@@ -354,8 +457,8 @@
    1
   ],
   "matched_courses":[
-   "158327",
    "156103",
+   "158327",
    "155999"
   ],
   "nb_dedicated_courses":0
@@ -366,9 +469,9 @@
   "cycle":"bac",
   "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2021-22",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Campus Leeuwstraat"
@@ -377,7 +480,7 @@
    "Communicatie, Media en Design"
   ],
   "fields":[
-   "TODO"
+   "Communication"
   ],
   "themes":[
    "sustainability"

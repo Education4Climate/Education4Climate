@@ -5,11 +5,11 @@
   "cycle":"bac",
   "url":"https:\/\/www.heldb.be\/fr\/formations-et-enseignement\/formations\/economique\/hotellerie\/programme-cursus",
   "languages":[
-   "fr",
+   "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Anderlecht"
@@ -18,7 +18,8 @@
    "Sciences \u00e9conomiques et de gestion"
   ],
   "fields":[
-   "TODO"
+   "Economy",
+   "Management"
   ],
   "themes":[
    "energy"
@@ -38,11 +39,11 @@
   "cycle":"bac",
   "url":"https:\/\/www.heldb.be\/fr\/formations-et-enseignement\/formations\/economique\/bachelier-tourisme\/programme-cursus",
   "languages":[
-   "fr",
+   "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Anderlecht"
@@ -51,7 +52,8 @@
    "Sciences \u00e9conomiques et de gestion"
   ],
   "fields":[
-   "TODO"
+   "Economy",
+   "Management"
   ],
   "themes":[
    "climate"
@@ -70,9 +72,9 @@
   "cycle":"bac",
   "url":"https:\/\/www.heldb.be\/fr\/formations-et-enseignement\/formations\/economique\/bachelier-droit\/programme-cursus",
   "languages":[
+   "fr",
    "nl",
    "en",
-   "fr",
    "de"
   ],
   "campuses":[
@@ -82,7 +84,8 @@
    "Sciences \u00e9conomiques et de gestion"
   ],
   "fields":[
-   "TODO"
+   "Economy",
+   "Management"
   ],
   "themes":[
    "environment"
@@ -110,7 +113,8 @@
    "Sciences et techniques"
   ],
   "fields":[
-   "TODO"
+   "Engineering",
+   "Science"
   ],
   "themes":[
    "climate",
@@ -122,20 +126,28 @@
   "themes_scores":[
    1,
    1,
-   4,
+   8,
    1,
-   1
+   5
   ],
   "matched_courses":[
-   "GEU31DRO2",
-   "GEU22ECO1",
-   "GEU21EPU",
-   "GEU22DRO1",
    "GEU22ATAU1",
+   "GEU22ECO1",
+   "GEU21PHY",
+   "GEU21MOB",
+   "GEU21EPU",
+   "GEU33STA2",
+   "GEU12ECO",
    "GEU12EFCGP",
-   "GEU21ENE"
+   "GEU22DRO1",
+   "GEU23STA1",
+   "GEU21ENE",
+   "GEU12EAG",
+   "GEU31ECSYS2",
+   "GEU31DRO2",
+   "GEU12MIC2"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"2-6",
@@ -143,7 +155,46 @@
   "cycle":"master",
   "url":"https:\/\/www.heldb.be\/fr\/formations-et-enseignement\/formations\/technique\/technique-type-long\/master-ingenieur-industriel-chimie\/programme-cursus",
   "languages":[
-   "en",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Anderlecht"
+  ],
+  "faculties":[
+   "Sciences et techniques"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   6,
+   1
+  ],
+  "matched_courses":[
+   "TLU41CCO",
+   "TLU51IABIOCHIND",
+   "TLU51ACGEBUR",
+   "TLU51IBBIOCHIND",
+   "TLU51IA",
+   "TLU51BPBIOCHIND",
+   "TLU51ACGECHV"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"2-3",
+  "name":"Bachelier en Architecture des jardins et du paysage",
+  "cycle":"bac",
+  "url":"https:\/\/www.heldb.be\/fr\/formations-et-enseignement\/formations\/technique\/technique-type-court\/bachelier-architecte-paysagiste\/programme-cursus",
+  "languages":[
    "fr"
   ],
   "campuses":[
@@ -153,22 +204,17 @@
    "Sciences et techniques"
   ],
   "fields":[
-   "TODO"
+   "Engineering",
+   "Science"
   ],
   "themes":[
-   "climate",
    "environment"
   ],
   "themes_scores":[
-   1,
-   5
+   1
   ],
   "matched_courses":[
-   "TLU41CCO",
-   "TLU51IABIOCHIND",
-   "TLU51IBBIOCHIND",
-   "TLU51ACGECHV",
-   "TLU51BPBIOCHIND"
+   "AJU12ECO"
   ],
   "nb_dedicated_courses":1
  },
@@ -178,8 +224,8 @@
   "cycle":"master",
   "url":"https:\/\/www.heldb.be\/fr\/formations-et-enseignement\/formations\/technique\/technique-type-long\/ecole-biochimie\/programme-cursus",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Anderlecht"
@@ -188,22 +234,27 @@
    "Sciences et techniques"
   ],
   "fields":[
-   "TODO"
+   "Engineering",
+   "Science"
   ],
   "themes":[
    "climate",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
-   5
+   6,
+   1
   ],
   "matched_courses":[
    "TLU41CCO",
    "TLU51IABIOCHIND",
+   "TLU51ACGEBUR",
    "TLU51IBBIOCHIND",
-   "TLU51ACGECHV",
-   "TLU51BPBIOCHIND"
+   "TLU51IA",
+   "TLU51BPBIOCHIND",
+   "TLU51ACGECHV"
   ],
   "nb_dedicated_courses":1
  }

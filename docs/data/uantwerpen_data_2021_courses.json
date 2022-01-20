@@ -45,25 +45,25 @@
    "Compernolle Tine"
   ],
   "cycles":[
-   "master",
-   "bac"
+   "bac",
+   "master"
   ],
   "fields":[
-   "Philosophy",
+   "Letters",
    "Engineering",
    "Pharmacy",
-   "Science",
-   "Medecine & Health",
-   "Sociology",
+   "Philosophy",
    "Economy",
    "Architecture",
+   "Science",
+   "Management",
    "Veterinary",
-   "Letters",
-   "Management"
+   "Sociology",
+   "Medecine & Health"
   ],
   "themes":[
-   "environment",
    "energy",
+   "environment",
    "sustainability"
   ],
   "dedicated":1
@@ -85,22 +85,22 @@
    "bac"
   ],
   "fields":[
-   "Philosophy",
+   "Law & Criminology",
+   "Letters",
    "Engineering",
    "Pharmacy",
-   "Science",
-   "Law & Criminology",
-   "Medecine & Health",
-   "Sociology",
+   "Philosophy",
    "Economy",
    "Architecture",
+   "Science",
+   "Management",
    "Veterinary",
-   "Letters",
-   "Management"
+   "Sociology",
+   "Medecine & Health"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":0
  },
@@ -189,8 +189,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":1
  },
@@ -238,7 +238,6 @@
    "Science"
   ],
   "themes":[
-   "environment",
    "sustainability"
   ],
   "dedicated":1
@@ -498,26 +497,25 @@
    "Crabb\u00e9 Ann"
   ],
   "cycles":[
-   "master",
-   "bac"
+   "bac",
+   "master"
   ],
   "fields":[
-   "Philosophy",
+   "Letters",
    "Engineering",
    "Pharmacy",
-   "Science",
-   "Medecine & Health",
-   "Sociology",
+   "Philosophy",
    "Economy",
    "Architecture",
+   "Science",
+   "Management",
    "Veterinary",
-   "Letters",
-   "Management"
+   "Sociology",
+   "Medecine & Health"
   ],
   "themes":[
-   "climate",
-   "environment",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":1
  },
@@ -564,8 +562,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "energy"
+   "energy",
+   "environment"
   ],
   "dedicated":1
  },
@@ -631,8 +629,8 @@
    "bac"
   ],
   "fields":[
-   "Science",
    "Veterinary",
+   "Science",
    "Pharmacy"
   ],
   "themes":[
@@ -682,8 +680,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":1
  },
@@ -955,13 +953,13 @@
    "bac"
   ],
   "fields":[
-   "Letters",
-   "Philosophy"
+   "Philosophy",
+   "Letters"
   ],
   "themes":[
-   "climate",
    "environment",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":1
  },
@@ -1089,9 +1087,9 @@
    "Pharmacy"
   ],
   "themes":[
-   "climate",
+   "energy",
    "environment",
-   "energy"
+   "climate"
   ],
   "dedicated":0
  },
@@ -1124,29 +1122,6 @@
   ],
   "themes":[
    "climate"
-  ],
-  "dedicated":0
- },
- {
-  "id":"1073FBDBMW",
-  "name":"Epidemiologie en volksgezondheid",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1073FBDBMW&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Brusselaers Nele"
-  ],
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Veterinary",
-   "Pharmacy"
-  ],
-  "themes":[
-   "environment"
   ],
   "dedicated":0
  },
@@ -1241,32 +1216,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
    "resources"
-  ],
-  "dedicated":0
- },
- {
-  "id":"1120FTIEDS",
-  "name":"3-Elektriciteit, verlichting, domotica en sanitair",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1120FTIEDS&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "De Winter Augustinus",
-   "Belmans Bert",
-   "Catthoor Raf"
-  ],
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "environment"
   ],
   "dedicated":0
  },
@@ -1289,8 +1239,8 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability",
-   "energy"
+   "energy",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -1369,30 +1319,6 @@
   "dedicated":0
  },
  {
-  "id":"1300PSWASO",
-  "name":"Arbeidssociologie",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1300PSWASO&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Henderickx Erik"
-  ],
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Sociology",
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
   "id":"1300PSWSDT",
   "name":"Milieusociologie",
   "year":"2021-2022",
@@ -1410,9 +1336,9 @@
    "Sociology"
   ],
   "themes":[
-   "climate",
    "environment",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":1
  },
@@ -1508,8 +1434,8 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "energy",
+   "climate"
   ],
   "dedicated":1
  },
@@ -1560,51 +1486,6 @@
   "dedicated":1
  },
  {
-  "id":"1507FTINWA",
-  "name":"3-Netwerkarchitectuur",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-1507FTINWA&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Kaya Abdil",
-   "Van Landeghem Guido"
-  ],
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
-  "id":"2000WETHSS",
-  "name":"History of science and society",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2000WETHSS&lang=nl",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "De Munck Bert"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
   "id":"2001FOWSRP",
   "name":"Maatschappij en ruimte",
   "year":"2021-2022",
@@ -1623,8 +1504,7 @@
    "Architecture"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "climate"
   ],
   "dedicated":0
  },
@@ -1653,29 +1533,6 @@
   "dedicated":0
  },
  {
-  "id":"2001WETDPH",
-  "name":"Device physics",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETDPH&lang=en",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Sor\u00e9e Bart",
-   "Magnus Wim"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
- },
- {
   "id":"2001WETECI",
   "name":"Infectious disease ecology",
   "year":"2021-2022",
@@ -1693,8 +1550,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":1
  },
@@ -1708,6 +1565,29 @@
   ],
   "teachers":[
    "De Bruyn Luc"
+  ],
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"2001WETHAB",
+  "name":"Habitat conservation",
+  "year":"2021-2022",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETHAB&lang=en",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "van Diggelen Ruurd",
+   "De Iongh Hans"
   ],
   "cycles":[
    "master"
@@ -1829,8 +1709,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":1
  },
@@ -1858,28 +1738,6 @@
   "dedicated":1
  },
  {
-  "id":"2001WETSSP",
-  "name":"Quantum many-body theory of the solid state",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETSSP&lang=en",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Tempere Jacques"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
- },
- {
   "id":"2001WETTDT",
   "name":"Remote sensing",
   "year":"2021-2022",
@@ -1898,22 +1756,21 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
  {
-  "id":"2001WETTPO",
-  "name":"Species conservation and management",
+  "id":"2001WETTGD",
+  "name":"Applied and conservation behaviour",
   "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETTPO&lang=en",
+  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2001WETTGD&lang=en",
   "languages":[
    "en"
   ],
   "teachers":[
-   "Leirs Herwig",
-   "Matthysen Erik"
+   "Eens Marcel"
   ],
   "cycles":[
    "master"
@@ -1987,9 +1844,9 @@
    "master"
   ],
   "fields":[
-   "Letters",
    "Philosophy",
    "Economy",
+   "Letters",
    "Management"
   ],
   "themes":[
@@ -2066,9 +1923,9 @@
    "Science"
   ],
   "themes":[
-   "climate",
+   "energy",
    "environment",
-   "energy"
+   "climate"
   ],
   "dedicated":0
  },
@@ -2140,29 +1997,6 @@
   "dedicated":0
  },
  {
-  "id":"2029FOWERF",
-  "name":"Museology",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2029FOWERF&lang=nl",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Cattersel Vincent",
-   "Verreyke H\u00e9l\u00e8ne"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Architecture"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
   "id":"2029TEWMHI",
   "name":"Sustainability management",
   "year":"2021-2022",
@@ -2181,32 +2015,9 @@
    "Management"
   ],
   "themes":[
-   "environment",
    "sustainability"
   ],
   "dedicated":1
- },
- {
-  "id":"2030GENEP1",
-  "name":"Workplace Visits",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2030GENEP1&lang=en",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Van Hal Guido"
-  ],
-  "cycles":[
-   "other"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
  },
  {
   "id":"2032FOWPOW",
@@ -2338,31 +2149,6 @@
    "climate"
   ],
   "dedicated":1
- },
- {
-  "id":"2075FBDBMW",
-  "name":"Laboratory Animal Science (core module)",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2075FBDBMW&lang=en",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Van Dam Debby",
-   "Van Ginneken Chris"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science",
-   "Veterinary",
-   "Pharmacy"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
  },
  {
   "id":"2100FSWMDD",
@@ -2507,55 +2293,6 @@
   "dedicated":0
  },
  {
-  "id":"2101TEWMBA",
-  "name":"Strategic management",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2101TEWMBA&lang=nl",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Verhezen Peter"
-  ],
-  "cycles":[
-   "other",
-   "master"
-  ],
-  "fields":[
-   "Letters",
-   "Philosophy",
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
-  "id":"2101TEWVPK",
-  "name":"Strategisch management",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2101TEWVPK&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Vandenbempt Koen"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
   "id":"2102MDODOW",
   "name":"Duurzame ontwikkeling",
   "year":"2021-2022",
@@ -2578,31 +2315,6 @@
    "sustainability"
   ],
   "dedicated":1
- },
- {
-  "id":"2102TEWVPK",
-  "name":"Ethisch en duurzaam ondernemen",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2102TEWVPK&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Van Liedekerke Luc"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Other",
-   "Sociology",
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
  },
  {
   "id":"2103FTIBTB",
@@ -2652,28 +2364,6 @@
   "dedicated":0
  },
  {
-  "id":"2104GENEP1",
-  "name":"Werkplekbezoeken",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2104GENEP1&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Van Hal Guido"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
   "id":"2104TEWTEL",
   "name":"Vervoerbeleid",
   "year":"2021-2022",
@@ -2692,8 +2382,8 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":0
  },
@@ -2725,28 +2415,6 @@
    "sustainability"
   ],
   "dedicated":1
- },
- {
-  "id":"2106FTIRWZ",
-  "name":"II-Riolering en waterzuivering",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2106FTIRWZ&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Gerards Ron"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
  },
  {
   "id":"2106MDOMBL",
@@ -2814,8 +2482,8 @@
    "Other"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":1
  },
@@ -2868,29 +2536,6 @@
   "dedicated":0
  },
  {
-  "id":"2110TEWTEL",
-  "name":"Operationele aspecten van maritiem transport",
-  "year":"2021-2022",
-  "url":"https:\/\/www.uantwerpen.be\/ajax\/courseInfo?id=2021-2110TEWTEL&lang=nl",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Sys Christa"
-  ],
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
   "id":"2112MDOMTN",
   "name":"Methoden en technieken voor Interdisciplinair Onderzoek",
   "year":"2021-2022",
@@ -2905,8 +2550,8 @@
    "master"
   ],
   "fields":[
-   "Other",
-   "Sociology"
+   "Sociology",
+   "Other"
   ],
   "themes":[
    "environment",
@@ -3077,8 +2722,7 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "climate"
   ],
   "dedicated":0
  },
@@ -3194,8 +2838,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -3287,8 +2931,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -3338,8 +2982,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -3440,8 +3084,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -3463,9 +3107,9 @@
    "Other"
   ],
   "themes":[
-   "climate",
+   "resources",
    "sustainability",
-   "resources"
+   "climate"
   ],
   "dedicated":1
  },
@@ -3507,8 +3151,8 @@
    "master"
   ],
   "fields":[
-   "Other",
    "Sociology",
+   "Other",
    "Political Sciences"
   ],
   "themes":[
@@ -3553,8 +3197,8 @@
    "master"
   ],
   "fields":[
-   "Other",
    "Sociology",
+   "Other",
    "Political Sciences"
   ],
   "themes":[
@@ -3647,8 +3291,8 @@
    "master"
   ],
   "fields":[
-   "Other",
-   "Sociology"
+   "Sociology",
+   "Other"
   ],
   "themes":[
    "environment"
@@ -3865,10 +3509,10 @@
    "Political Sciences"
   ],
   "themes":[
-   "climate",
+   "resources",
    "environment",
    "sustainability",
-   "resources"
+   "climate"
   ],
   "dedicated":0
  },
@@ -3902,9 +3546,9 @@
    "Political Sciences"
   ],
   "themes":[
-   "climate",
    "environment",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":0
  },
@@ -3949,7 +3593,6 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
    "energy",
    "sustainability"
   ],
@@ -4159,9 +3802,9 @@
    "Other"
   ],
   "themes":[
-   "climate",
    "environment",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":0
  },
@@ -4227,8 +3870,8 @@
    "Other"
   ],
   "themes":[
-   "climate",
    "energy",
+   "climate",
    "sustainability"
   ],
   "dedicated":1
@@ -4274,8 +3917,8 @@
    "Other"
   ],
   "themes":[
-   "climate",
    "energy",
+   "climate",
    "sustainability"
   ],
   "dedicated":1
@@ -4299,8 +3942,8 @@
    "Other"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "energy",
+   "climate"
   ],
   "dedicated":1
  },

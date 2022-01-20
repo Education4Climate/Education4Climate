@@ -13,17 +13,13 @@
             "[impact, pesticide]": [
                 "how do these events impact on a non-profits op",
                 "s have used fear of pesticides and gmos to create"
-            ],
-            "[environmental, ethic]": [
-                "      case study 4  environmental ngos how to market ",
-                "y 7  fair trade and ethical trade groups did "
             ]
         }
     },
     "HBG49A: Sociologie en samenleving": {
         "nl": {
-            "[ecolo[^ ]+, klima+t[^ ]*, overgang]": [
-                "en uitdagingen   1  ecologische risico's wereldwijd",
+            "[[ ]ecolo[^ ]+, klima+t[^ ]*, overgang]": [
+                " en uitdagingen   1  ecologische risico's wereldwijd",
                 "ijd en bij ons  van klimaatrisico's tot corona    2  so",
                 "ief  we schetsen de overgang naar een mondiale r",
                 "atieprocessen en de overgang naar een superdiver"
@@ -32,21 +28,21 @@
     },
     "HBS14G: Biologie: Plantenfysiologie en ecologie": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), ecolog]": [
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
                 "lieuproblematieken  biodiversiteit en duurzaamheid mos",
-                "lantenfysiologie en ecologie inhoud fysiologie",
-                "etting fotosynthese ecologie relaties tussen o"
+                "plantenfysiologie en ecologie inhoud fysiologie e",
+                "zetting fotosynthese ecologie relaties tussen org"
             ],
             "[bio(?:diversiteit|sfeer), ecosyst[^ ]+]": [
                 "lieuproblematieken  biodiversiteit en duurzaamheid mos",
                 "oren  biotoopstudie ecosystemen en kringlopen  inte",
                 " en dynamiek in een ecosysteem materie- en energie"
             ],
-            "[bio(?:diversiteit|sfeer), proble+m, milieu|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "lieuproblematieken  biodiversiteit en duurzaamheid mos",
                 "  reducenten  milieuproblematieken  biodiversit",
-                "lantenfysiologie en ecologie inhoud fysiologie e",
-                "etting fotosynthese ecologie relaties tussen org",
+                "plantenfysiologie en ecologie inhoud fysiologie e",
+                "zetting fotosynthese ecologie relaties tussen org",
                 "n en dieren aan het milieu samenhang tussen or",
                 "n organismen en het milieu  biotische en abiot",
                 "oren  biotoopstudie ecosystemen en kringlopen  inte",
@@ -55,23 +51,15 @@
                 "menten  reducenten  milieuproblematieken  biod",
                 "n duurzaamheid mos  milieu op school doelstell"
             ],
-            "[ecolo[^ ]+, duurzaamheid]": [
-                "lantenfysiologie en ecologie inhoud fysiologie e",
-                "etting fotosynthese ecologie relaties tussen org",
-                "  biodiversiteit en duurzaamheid mos  milieu op scho"
-            ],
-            "[milieu, duurzaamheid]": [
-                "n en dieren aan het milieu samenhang tussen or",
-                "n organismen en het milieu  biotische en abiot",
-                "n organismen en hun milieu successie   climax ",
-                "menten  reducenten  milieuproblematieken  biod",
-                "n duurzaamheid mos  milieu op school doelstell",
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                "plantenfysiologie en ecologie inhoud fysiologie e",
+                "zetting fotosynthese ecologie relaties tussen org",
                 "  biodiversiteit en duurzaamheid mos  milieu op scho"
             ],
             "milieuproble+m": [
                 "menten  reducenten  milieuproblematieken  biodiversit"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "menten  reducenten  milieuproblematieken  biodiversit"
             ]
         }
@@ -99,12 +87,8 @@
     },
     "JPBWE1: Plantenbescherming": {
         "nl": {
-            "[ecolo[^ ]+, duurzaamheid]": [
-                "ng  duurzaamheid op ecologisch en sociaal vlak kom",
-                "plantenbescherming  duurzaamheid op ecologisch en so"
-            ],
-            "[milieu, duurzaamheid]": [
-                "s-  gezondheids- en milieuaspecten van planten",
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                "ing  duurzaamheid op ecologisch en sociaal vlak kom",
                 "plantenbescherming  duurzaamheid op ecologisch en so"
             ],
             "biologische landbouw": [
@@ -112,23 +96,6 @@
             ],
             "duurzame productie": [
                 " een hoeksteen voor duurzame productie in land- en tuinbou"
-            ]
-        }
-    },
-    "JPBWE9: Ethiek 2": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "n bod  duurzaamheid milieu-ethiek maatschappel",
-                "omen zeker aan bod  duurzaamheid milieu-ethiek maats"
-            ],
-            "[milieu, ethi[^ ]+]": [
-                "n bod  duurzaamheid milieu-ethiek maatschappel",
-                "ethiek 2 inhoud komen zeke",
-                "duurzaamheid milieu-ethiek maatschappelijke en",
-                "maatschappelijke en ethische aspecten van techno",
-                "an technologie food ethics - consumenten & pro",
-                "rpen aan bod komen  ethiek in actie wereldvoed",
-                "sofie professionele ethiek actuele thema's  of"
             ]
         }
     },
@@ -168,7 +135,7 @@
     },
     "JPOW14: NW+EL+TE3-2 Milieukunde": {
         "nl": {
-            "[duurzame ontwikkeling, milieu, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[duurzame ontwikkeling, milieu, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf",
                 "nw+el+te3-2 milieukunde inhoud leerpla",
                 "viteit op de natuur milieuproblemen als gevolg",
@@ -180,7 +147,7 @@
                 "uproblemen mondiale milieuproblemen   global c",
                 "osfeer continentale milieuproblemen   toename ",
                 "uviale en regionale milieuproblemen   vermesti",
-                "rzame ontwikkeling  ecologische voetafdruk en draag"
+                "urzame ontwikkeling  ecologische voetafdruk en draag"
             ],
             "[duurzame ontwikkeling, milieu-?proble+m]": [
                 "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf",
@@ -190,11 +157,11 @@
                 "osfeer continentale milieuproblemen   toename van ozo",
                 "uviale en regionale milieuproblemen   vermesting van "
             ],
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf",
                 "nw+el+te3-2 milieukunde inhoud leerpla",
                 "viteit op de natuur milieuproblemen als gevolg",
-                "rzame ontwikkeling  ecologische voetafdruk en draag",
+                "urzame ontwikkeling  ecologische voetafdruk en draag",
                 "van de aarde  basis milieukunde als begrip in ",
                 " de wetenschappen - milieurelevante maatschapp",
                 "lstellingen van het milieubeleid - de milieuco",
@@ -218,6 +185,11 @@
                 "water en rivieren   vervuiling door materialen en ",
                 "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf"
             ],
+            "[vervuiling, rivier]": [
+                "water en rivieren   vervuiling door materialen en ",
+                "em   grond water en rivieren   vergiftiging va",
+                "em   grond water en rivieren   vervuiling door"
+            ],
             "duurzame landbouw": [
                 "leven in de steden  duurzame landbouw  duurzaam toerisme "
             ],
@@ -231,7 +203,7 @@
                 "osfeer continentale milieuproblemen   toename van ozo",
                 "uviale en regionale milieuproblemen   vermesting van "
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "viteit op de natuur milieuproblemen als gevolg van la",
                 "em  indeling van de milieuproblemen mondiale milieupr",
                 "uproblemen mondiale milieuproblemen   global climate ",
@@ -242,25 +214,20 @@
     },
     "JPOW40: PAV2-1b Wetenschap en techniek": {
         "nl": {
-            "[klima+t[^ ]*, milieu, ecolo[^ ]+": [
+            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
                 "ilieuzorg op school klimaatverandering leereenheid 10  nat",
                 "heid 9  ecologie en milieu planten dieren ecos",
                 " dieren ecosystemen milieuzorg op school klima",
-                "lden leereenheid 9  ecologie en milieu planten"
+                "elden leereenheid 9  ecologie en milieu planten"
             ],
             "klimaatverandering": [
                 "ilieuzorg op school klimaatverandering leereenheid 10  nat"
-            ],
-            "[milieu, ethi[^ ]+]": [
-                "heid 9  ecologie en milieu planten dieren ecos",
-                " dieren ecosystemen milieuzorg op school klima",
-                "lkerntransplantatie ethiek doelstellingen kern"
             ]
         }
     },
     "JPOWC3: EC3-1a Alg econ5 - vakdid": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "r  groei  milieu en duurzame ontwikkeling overheid doelstelli",
                 "conjunctuur  groei  milieu en duurzame ontwikk"
             ]
@@ -337,7 +304,7 @@
             "milieuproble+m": [
                 " fluviale en lokale milieuproblemen milieuregelgeving"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 " fluviale en lokale milieuproblemen milieuregelgeving"
             ]
         }
@@ -411,19 +378,17 @@
     },
     "JPW355: Ecologie - Milieubeheer": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), ecolog]": [
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
                 " componenten van de biosfeer  de natuurlijke cyc",
                 "pij uitvoeren op de biosfeer en verschillende ec",
                 "ogeochemische cycli biosfeer - hydrosfeer - lith",
-                "ecologie - milieubeheer in",
-                "ecosysteem  het vak ecologie is daarom opgedee",
-                "llende ecosystemen  ecologisch functioneren  e",
-                " relaties populatie-ecologie successie ecologi",
-                "-ecologie successie ecologische hulpbronnen  t",
-                "bronnen  toegepaste ecologie  verbruik van eco",
-                "logie  verbruik van ecologische hulpbronnen ve",
-                "nnen vervuiling van ecologische bronnen ecosys",
-                " ecosysteemdiensten ecological solutions  inno"
+                " ecosysteem  het vak ecologie is daarom opgedeeld",
+                "illende ecosystemen  ecologisch functioneren  energ",
+                "e-ecologie successie ecologische hulpbronnen  toegep",
+                "pbronnen  toegepaste ecologie  verbruik van ecolo",
+                "ologie  verbruik van ecologische hulpbronnen vervuil",
+                "onnen vervuiling van ecologische bronnen ecosysteemd",
+                "n ecosysteemdiensten ecological solutions  innovati"
             ],
             "[bio(?:diversiteit|sfeer), ecosyst[^ ]+]": [
                 " componenten van de biosfeer  de natuurlijke cyc",
@@ -479,11 +444,10 @@
     },
     "OAC04A: 5 Summer school": {
         "en": {
-            "[sustainable solution, environment|ecolo[^ ]+]": [
+            "[sustainable solution, environment|[ ]ecolo[^ ]+]": [
                 "s have to formulate sustainable solutions and advices for th",
                 "imulate innovative  sustainable solutions  the participants ",
-                "t domains  society  environment  economy  etc   and",
-                "ice  equity  social-ecological integrity  and ethi"
+                "t domains  society  environment  economy  etc   and"
             ],
             "[sustainable solution, impact]": [
                 "s have to formulate sustainable solutions and advices for th",
@@ -510,7 +474,7 @@
             "milieuproble+m": [
                 "nderwijs 8 4        milieuproblemen 9   ordenen van d"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "nderwijs 8 4        milieuproblemen 9   ordenen van d"
             ]
         }
@@ -520,14 +484,14 @@
             "milieuproble+m": [
                 "nderwijs 8 4        milieuproblemen 9   ordenen van d"
             ],
-            "(?:milieu|ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
                 "nderwijs 8 4        milieuproblemen 9   ordenen van d"
             ]
         }
     },
     "OAK35A: Schoolbeleid 3.2": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "eleid' scholen voor duurzame ontwikkeling   milieuzorg op sch",
                 "zame ontwikkeling   milieuzorg op school  mos "
             ]
@@ -535,7 +499,7 @@
     },
     "OAK50A: HAO Schoolbeleid 3.2": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "eleid' scholen voor duurzame ontwikkeling   milieuzorg op sch",
                 "zame ontwikkeling   milieuzorg op school  mos "
             ]
@@ -543,7 +507,7 @@
     },
     "OAK57A: Natuur 3": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "ratie met kinderen  duurzame ontwikkeling en milieuzorg   bas",
                 "ame ontwikkeling en milieuzorg   basisprincipe"
             ]
@@ -551,7 +515,7 @@
     },
     "OAK65A: HAO Natuur 3": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "oratie met kinderen duurzame ontwikkeling en milieuzorg   bas",
                 "ame ontwikkeling en milieuzorg   basisprincipe"
             ]
@@ -559,7 +523,7 @@
     },
     "OAK70A: Vakdidactiek 1.1": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "n de kleuterschool/ duurzame ontwikkeling/ educatie voor duur",
                 "ling/ educatie voor duurzame ontwikkeling  b  levende natuur ",
                 "ipes van natuur- en milieueducatie in de kleut"
@@ -571,7 +535,7 @@
     },
     "OAK78A: HAO Vakdidactiek 1.1": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "n de kleuterschool/ duurzame ontwikkeling/ educatie voor duur",
                 "ling/ educatie voor duurzame ontwikkeling b  levende natuur v",
                 "ipes van natuur- en milieueducatie in de kleut"
@@ -583,66 +547,42 @@
     },
     "OAL51A: Natuurbeleving: kinderen en natuur in de kijker 3": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "ratie met kinderen  duurzame ontwikkeling en milieuzorg   bas",
                 "sie rond natuur- en milieueducatie  relevante ",
                 "ame ontwikkeling en milieuzorg   basisprincipe"
             ],
             "milieueducatie": [
                 "sie rond natuur- en milieueducatie  relevante literatu"
-            ]
-        }
-    },
-    "OAL54A: Gezondheidseducatie en -beleid op school 3": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                " met betrekking tot milieu  gezondheidseducati",
-                "ondheidseducatie en duurzaamheid  cursorisch worden "
             ]
         }
     },
     "OAL58A: Schoolbeleid 3.2": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "id en educatie voor duurzame ontwikkeling binnen 'schoolbelei",
                 "nen 'schoolbeleid'  milieuzorg op school  mos "
-            ],
-            "[milieu, duurzaamheid]": [
-                "nen 'schoolbeleid'  milieuzorg op school  mos ",
-                "ping 'schoolbeleid' duurzaamheid en educatie voor du"
             ]
         }
     },
     "OAL68A: HAO Schoolbeleid 3.2": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "id en educatie voor duurzame ontwikkeling binnen 'schoolbelei",
                 "leid'  scholen voor duurzame ontwikkeling  milieuzorg op scho",
                 "rzame ontwikkeling  milieuzorg op school  mos "
-            ],
-            "[milieu, duurzaamheid]": [
-                "rzame ontwikkeling  milieuzorg op school  mos ",
-                "ping 'schoolbeleid' duurzaamheid en educatie voor du"
             ]
         }
     },
     "OAL73A: HAO Natuurbeleving: kinderen en natuur in de kijker 3": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "ratie met kinderen  duurzame ontwikkeling en milieuzorg   bas",
                 "sie rond natuur- en milieueducatie  relevante ",
                 "ame ontwikkeling en milieuzorg   basisprincipe"
             ],
             "milieueducatie": [
                 "sie rond natuur- en milieueducatie  relevante literatu"
-            ]
-        }
-    },
-    "OAL75A: HAO Gezondheidseducatie en -beleid op school 3": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                " met betrekking tot milieu  gezondheidseducati",
-                "ondheidseducatie en duurzaamheid  cursorisch worden "
             ]
         }
     },
@@ -663,14 +603,6 @@
             ],
             "levenscyclusanalyse": [
                 "#   duurzaam bouwen levenscyclusanalyse  inhoud grafische i"
-            ]
-        }
-    },
-    "OBK02A: Wereldori\u00ebntatie - Wiskunde 1.1": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "seizoenen- omgeving/milieu   biotopen  heelal ",
-                " leren in de natuur duurzaamheid dieren in de kleute"
             ]
         }
     },
@@ -701,6 +633,9 @@
         "nl": {
             "milieubeleid": [
                 "ms  norm 4 1  3 3 7 milieubeleid  norm 4 2  3 3 8 pl"
+            ],
+            "milieuverantwoordelijk": [
+                "ilieucoordinator vs milieuverantwoordelijke en milieudeskundig"
             ]
         }
     },
@@ -752,15 +687,6 @@
         "nl": {
             "duurzame ontwikkelingsdoel(?:en|stelling)?": [
                 "lk project staan de duurzame ontwikkelingsdoelstellingen of sustainable de"
-            ]
-        }
-    },
-    "OH4104: Werkveldervaring en POP 1": {
-        "nl": {
-            "[milieu, duurzaamheid]": [
-                "espect voor mens en milieu  tijdens de kijksta",
-                "lgens een planning  duurzaamheid is in belangrijke c",
-                "iverse aspecten van duurzaamheid waarmee het bedrijf"
             ]
         }
     },
@@ -818,7 +744,7 @@
     },
     "OO3150: Economie: Algemene economie 2.2": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "r  groei  milieu en duurzame ontwikkeling sociaal recht doels",
                 "conjunctuur  groei  milieu en duurzame ontwikk"
             ]
@@ -826,12 +752,12 @@
     },
     "OWA00S: Agro- en Biotechnologie voor de 21e eeuw": {
         "nl": {
-            "[duurzame ontwikkeling, milieu, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[duurzame ontwikkeling, milieu, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "in zijn ecosysteem  duurzame ontwikkeling  duurzaam onderneme",
                 "rende maatschappij  milieu en klimaat  voedsel",
                 "jn  de mens in zijn ecosysteem  duurzame ontwikkel"
             ],
-            "[duurzame ontwikkeling, milieu|ecolo[^ ]+]": [
+            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
                 "in zijn ecosysteem  duurzame ontwikkeling  duurzaam onderneme",
                 "rende maatschappij  milieu en klimaat  voedsel"
             ]
@@ -839,12 +765,12 @@
     },
     "OWA01R: Plantaardige productie": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), ecolog]": [
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
                 "urdoelen samengaan  biodiversiteit en bodembeheer spel",
-                "lantenvoeding in de ecologische teeltwijze wor"
+                "plantenvoeding in de ecologische teeltwijze worden t"
             ],
-            "[ecolo[^ ]+, klima+t[^ ]*, landbouw]": [
-                "lantenvoeding in de ecologische teeltwijze worden t",
+            "[[ ]ecolo[^ ]+, klima+t[^ ]*, landbouw]": [
+                "plantenvoeding in de ecologische teeltwijze worden t",
                 "aan het veranderend klimaat  daarom worden nieu",
                 "d zal staan  inhoud landbouw zorgt voor ons dage",
                 "regelmatig strijden landbouw en natuur om hun gr",
@@ -854,10 +780,10 @@
                 "n natuur inclusieve landbouw  ook plantenveredel",
                 "basis voor duurzame landbouw  in dit onderdeel i"
             ],
-            "[klima+t[^ ]*, milieu, ecolo[^ ]+": [
+            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
                 "aan het veranderend klimaat  daarom worden nieu",
                 "ap  de natuur en de milieukwaliteit  regelmati",
-                "lantenvoeding in de ecologische teeltwijze wor"
+                "plantenvoeding in de ecologische teeltwijze wor"
             ],
             "duurzame landbouw": [
                 "tuurontwikkeling en duurzame landbouw  kunnen agrarische ",
