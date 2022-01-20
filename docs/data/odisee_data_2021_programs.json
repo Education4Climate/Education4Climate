@@ -5,8 +5,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531527.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -15,7 +15,7 @@
    "Gezondheidszorg"
   ],
   "fields":[
-   "TODO"
+   "Medecine & Health"
   ],
   "themes":[
    "sustainability"
@@ -34,8 +34,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603845.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -44,7 +44,7 @@
    "Biotechnologie"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -56,14 +56,15 @@
    1,
    2,
    2,
-   4
+   5
   ],
   "matched_courses":[
-   "JPBWE1",
-   "JPBWB7",
-   "OWA01R",
+   "JPBWB6",
    "JPBWG5",
-   "JPBWB6"
+   "OWA01R",
+   "OWA00S",
+   "JPBWB7",
+   "JPBWE1"
   ],
   "nb_dedicated_courses":1
  },
@@ -73,8 +74,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531524.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -83,7 +84,7 @@
    "Biotechnologie"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -95,14 +96,15 @@
    1,
    2,
    2,
-   4
+   5
   ],
   "matched_courses":[
-   "JPBWE1",
-   "JPBWB7",
-   "OWA01R",
+   "JPBWB6",
    "JPBWG5",
-   "JPBWB6"
+   "OWA01R",
+   "OWA00S",
+   "JPBWB7",
+   "JPBWE1"
   ],
   "nb_dedicated_courses":1
  },
@@ -112,9 +114,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_55008535.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Brussel"
@@ -123,22 +125,26 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   2
+   1,
+   4
   ],
   "matched_courses":[
+   "OO3144",
    "HBS32F",
+   "HBS14G",
    "OBK21A",
-   "OO3144"
+   "OO3150"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_53368903",
@@ -146,10 +152,10 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_53368903.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "de",
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -158,7 +164,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -169,15 +175,17 @@
   "themes_scores":[
    1,
    2,
-   1,
-   2
+   3,
+   3
   ],
   "matched_courses":[
+   "JPOWC3",
    "JPO0XC",
+   "JPO0TK",
+   "OBK21A",
    "JPOW14",
    "JPOW40",
-   "JPO0TK",
-   "OBK21A"
+   "JPO0WT"
   ],
   "nb_dedicated_courses":1
  },
@@ -187,9 +195,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603420.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -198,7 +206,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "sustainability"
@@ -217,9 +225,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531552.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -228,7 +236,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "sustainability"
@@ -242,14 +250,13 @@
   "nb_dedicated_courses":0
  },
  {
-  "id":"SC_51531551",
-  "name":"Educatieve bacheloropleiding voor lager onderwijs - in dagonderwijs (Aalst)",
+  "id":"SC_51603450",
+  "name":"Educatieve bacheloropleiding voor lager onderwijs - in afstandsonderwijs (Aalst)",
   "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531551.htm",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603450.htm",
   "languages":[
-   "en",
-   "fr",
-   "nl"
+   "nl",
+   "fr"
   ],
   "campuses":[
    "Aalst"
@@ -258,15 +265,52 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "OAL73A",
+   "OAL68A"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_51531551",
+  "name":"Educatieve bacheloropleiding voor lager onderwijs - in dagonderwijs (Aalst)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531551.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Aalst"
+  ],
+  "faculties":[
+   "Onderwijs"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "OAL51A",
+   "OAL58A",
    "OBK21A"
   ],
   "nb_dedicated_courses":0
@@ -277,9 +321,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858257.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Brussel"
@@ -288,7 +332,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "sustainability"
@@ -307,10 +351,10 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51604563.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "de",
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -319,7 +363,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -330,15 +374,17 @@
   "themes_scores":[
    1,
    2,
-   1,
-   2
+   3,
+   3
   ],
   "matched_courses":[
+   "JPOWC3",
    "JPO0XC",
+   "JPO0TK",
+   "OBK21A",
    "JPOW14",
    "JPOW40",
-   "JPO0TK",
-   "OBK21A"
+   "JPO0WT"
   ],
   "nb_dedicated_courses":1
  },
@@ -348,10 +394,10 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531553.htm",
   "languages":[
-   "en",
-   "fr",
    "nl",
-   "de"
+   "fr",
+   "de",
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -360,7 +406,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -371,15 +417,17 @@
   "themes_scores":[
    1,
    2,
-   1,
-   2
+   3,
+   3
   ],
   "matched_courses":[
+   "JPOWC3",
    "JPO0XC",
+   "JPO0TK",
+   "OBK21A",
    "JPOW14",
    "JPOW40",
-   "JPO0TK",
-   "OBK21A"
+   "JPO0WT"
   ],
   "nb_dedicated_courses":1
  },
@@ -389,9 +437,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_53368908.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Dilbeek"
@@ -400,18 +448,21 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "HBS14G",
    "OBK21A"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_51858262",
@@ -419,9 +470,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858262.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Dilbeek"
@@ -430,22 +481,26 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   2
+   1,
+   4
   ],
   "matched_courses":[
+   "OO3144",
    "HBS32F",
+   "HBS14G",
    "OBK21A",
-   "OO3144"
+   "OO3150"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_53368900",
@@ -453,9 +508,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_53368900.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Brussel"
@@ -464,22 +519,26 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   2
+   1,
+   4
   ],
   "matched_courses":[
+   "OO3144",
    "HBS32F",
+   "HBS14G",
    "OBK21A",
-   "OO3144"
+   "OO3150"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_51858259",
@@ -487,9 +546,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858259.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Brussel"
@@ -498,22 +557,26 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   2
+   1,
+   4
   ],
   "matched_courses":[
+   "OO3144",
    "HBS32F",
+   "HBS14G",
    "OBK21A",
-   "OO3144"
+   "OO3150"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_54991097",
@@ -521,10 +584,10 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_54991097.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "de",
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -533,7 +596,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -544,15 +607,17 @@
   "themes_scores":[
    1,
    2,
-   1,
-   2
+   3,
+   3
   ],
   "matched_courses":[
+   "JPOWC3",
    "JPO0XC",
+   "JPO0TK",
+   "OBK21A",
    "JPOW14",
    "JPOW40",
-   "JPO0TK",
-   "OBK21A"
+   "JPO0WT"
   ],
   "nb_dedicated_courses":1
  },
@@ -562,10 +627,10 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_54985410.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "de",
+   "en"
   ],
   "campuses":[
    "Sint-Niklaas"
@@ -574,7 +639,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -585,17 +650,82 @@
   "themes_scores":[
    1,
    2,
-   1,
-   2
+   2,
+   3
   ],
   "matched_courses":[
+   "JPOWC3",
    "JPO0XC",
-   "JPOW14",
-   "JPOW40",
    "JPO0TK",
-   "OBK21A"
+   "OBK21A",
+   "JPOW14",
+   "JPOW40"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"SC_51858217",
+  "name":"Bachelor in de gezinswetenschappen - Traject voor volwassen studenten (Schaarbeek)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858217.htm",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Schaarbeek"
+  ],
+  "faculties":[
+   "Sociaal-agogisch werk"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "HBG49A"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_51603494",
+  "name":"Educatieve bacheloropleiding voor kleuteronderwijs - in afstandsonderwijs (Aalst)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603494.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Aalst"
+  ],
+  "faculties":[
+   "Onderwijs"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   3
+  ],
+  "matched_courses":[
+   "OAK78A",
+   "OAK21A",
+   "OAK50A",
+   "OAK65A"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"SC_51604132",
@@ -603,9 +733,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51604132.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -614,14 +744,16 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    2,
+   1,
    1
   ],
   "matched_courses":[
@@ -632,14 +764,14 @@
   "nb_dedicated_courses":3
  },
  {
-  "id":"SC_51531546",
-  "name":"Bachelor in de energietechnologie (Gent)",
+  "id":"SC_51531547",
+  "name":"Bachelor in de ontwerp- en productietechnologie (Gent)",
   "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531546.htm",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531547.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -648,7 +780,38 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "OGP00R",
+   "OGP01C"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_51531546",
+  "name":"Bachelor in de energietechnologie (Gent)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531546.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Technologie"
+  ],
+  "fields":[
+   "Engineering"
   ],
   "themes":[
    "energy"
@@ -658,11 +821,11 @@
   ],
   "matched_courses":[
    "OGE01G",
-   "JPW134",
    "JPW295",
    "JPW294",
-   "OGE01L",
-   "JPW325"
+   "JPW325",
+   "JPW134",
+   "OGE01L"
   ],
   "nb_dedicated_courses":2
  },
@@ -672,8 +835,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531544.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -682,7 +845,7 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "climate",
@@ -693,20 +856,26 @@
   ],
   "themes_scores":[
    1,
-   3,
-   1,
+   4,
+   7,
    1,
    2
   ],
   "matched_courses":[
+   "JPW253",
+   "JPW0LS",
+   "OGC00N",
    "JPW357",
    "JPW260",
+   "OGC00Y",
    "OGC00D",
-   "JPW0LS",
-   "JPW258",
-   "JPW355"
+   "OGC00L",
+   "JPW355",
+   "JPW0JD",
+   "JPW0IN",
+   "JPW258"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":9
  },
  {
   "id":"SC_51603360",
@@ -714,11 +883,11 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603360.htm",
   "languages":[
-   "es",
-   "fr",
-   "en",
+   "nl",
    "de",
-   "nl"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -727,7 +896,7 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "climate",
@@ -749,11 +918,11 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51975227.htm",
   "languages":[
-   "en",
+   "nl",
+   "de",
    "fr",
    "es",
-   "de",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -762,7 +931,7 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy"
@@ -781,11 +950,11 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51975226.htm",
   "languages":[
-   "en",
+   "nl",
+   "de",
    "fr",
    "es",
-   "de",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -794,7 +963,7 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy"
@@ -813,11 +982,11 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531543.htm",
   "languages":[
-   "es",
-   "fr",
-   "en",
+   "nl",
    "de",
-   "nl"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -826,7 +995,7 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "climate",
@@ -848,9 +1017,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51604131.htm",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -859,14 +1028,16 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    2,
+   1,
    1
   ],
   "matched_courses":[
@@ -882,9 +1053,9 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531550.htm",
   "languages":[
-   "en",
    "fr",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -893,16 +1064,22 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   2,
+   4
   ],
   "matched_courses":[
-   "OBK21A"
+   "OAK70A",
+   "OBK21A",
+   "OAK35A",
+   "OAK57A",
+   "OAK05A"
   ],
   "nb_dedicated_courses":0
  },
@@ -912,8 +1089,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858254.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Brussel"
@@ -922,7 +1099,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "sustainability"
@@ -941,8 +1118,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858252.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Brussel"
@@ -951,7 +1128,7 @@
    "Onderwijs"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "sustainability"
@@ -970,10 +1147,10 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603333.htm",
   "languages":[
-   "es",
-   "fr",
    "nl",
-   "en"
+   "fr",
+   "en",
+   "es"
   ],
   "campuses":[
    "Aalst"
@@ -982,15 +1159,18 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "OAR01C",
    "JPWD29"
   ],
   "nb_dedicated_courses":1
@@ -1010,7 +1190,7 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
@@ -1021,10 +1201,10 @@
    4
   ],
   "matched_courses":[
-   "OKW00R",
-   "OKW00J",
+   "OKW00P",
    "OKW00I",
-   "OKW00P"
+   "OKW00J",
+   "OKW00R"
   ],
   "nb_dedicated_courses":0
  },
@@ -1034,11 +1214,11 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603676.htm",
   "languages":[
-   "es",
-   "fr",
-   "en",
+   "nl",
    "de",
-   "nl"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -1047,12 +1227,14 @@
    "Bedrijfskunde"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -1066,11 +1248,11 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603610.htm",
   "languages":[
-   "en",
+   "nl",
+   "de",
    "fr",
    "es",
-   "de",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -1079,7 +1261,7 @@
    "Bedrijfskunde"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
    "resources"
@@ -1093,16 +1275,51 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"SC_53235052",
+  "name":"Bachelor of Business Management (Brussels)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/e\/SC_53235052.htm",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Brussels"
+  ],
+  "faculties":[
+   "Bedrijfskunde"
+  ],
+  "fields":[
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "HEB07A",
+   "OBF14A"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"SC_51531531",
   "name":"Bachelor in het bedrijfsmanagement - in dagonderwijs (Aalst)",
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531531.htm",
   "languages":[
-   "en",
+   "nl",
+   "de",
    "fr",
    "es",
-   "de",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -1111,7 +1328,7 @@
    "Bedrijfskunde"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
    "resources"
@@ -1130,11 +1347,11 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531532.htm",
   "languages":[
-   "es",
-   "fr",
-   "en",
+   "nl",
    "de",
-   "nl"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Aalst"
@@ -1143,12 +1360,14 @@
    "Bedrijfskunde"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -1171,7 +1390,7 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy"
@@ -1190,10 +1409,10 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531541.htm",
   "languages":[
-   "es",
-   "fr",
    "nl",
-   "en"
+   "fr",
+   "en",
+   "es"
   ],
   "campuses":[
    "Aalst"
@@ -1202,15 +1421,18 @@
    "Technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "OAR01C",
    "JPWD29"
   ],
   "nb_dedicated_courses":1
@@ -1221,8 +1443,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51600773.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -1231,7 +1453,7 @@
    "Gezondheidszorg"
   ],
   "fields":[
-   "TODO"
+   "Medecine & Health"
   ],
   "themes":[
    "sustainability"
@@ -1250,8 +1472,8 @@
   "cycle":"bac",
   "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531528.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -1260,7 +1482,7 @@
    "Gezondheidszorg"
   ],
   "fields":[
-   "TODO"
+   "Medecine & Health"
   ],
   "themes":[
    "sustainability"

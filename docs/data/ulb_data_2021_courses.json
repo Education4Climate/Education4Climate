@@ -144,9 +144,9 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "environment",
    "sustainability",
+   "environment",
+   "climate",
    "resources"
   ],
   "dedicated":1
@@ -430,9 +430,9 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
    "environment",
-   "sustainability"
+   "sustainability",
+   "climate"
   ],
   "dedicated":0
  },
@@ -526,8 +526,8 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -784,6 +784,28 @@
   "dedicated":1
  },
  {
+  "id":"BIOL-Y149",
+  "name":"Enjeux professionnels en Ing\u00e9nierie \u00e9cologique et biologie de la conservation",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-y149",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"BIOL-Y159",
   "name":"Tropical biodiversity and ecosystems field school: Caribbean insular ecosystems",
   "year":"2021-2022",
@@ -850,6 +872,28 @@
   "dedicated":1
  },
  {
+  "id":"BIOL-Y181",
+  "name":"Applied Conservation Biology",
+  "year":"2021-2022",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-y181",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"BIOL-Y190",
   "name":"Tropical biodiversity and ecosystems field school: Sri Lankan terrestrial and aquatic ecosystems",
   "year":"2021-2022",
@@ -914,31 +958,6 @@
    "environment"
   ],
   "dedicated":1
- },
- {
-  "id":"CHIM-F101",
-  "name":"Chimie g\u00e9n\u00e9rale",
-  "year":"2021-2022",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Reniers Fran\u00e7ois",
-   "Rongy Laurence",
-   "Visart De Bocarme Thierry"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-f101",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Science",
-   "Engineering"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
  },
  {
   "id":"CHIM-F415",
@@ -1052,8 +1071,8 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -1121,7 +1140,6 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
    "resources"
   ],
   "dedicated":0
@@ -1192,8 +1210,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "energy"
+   "energy",
+   "environment"
   ],
   "dedicated":1
  },
@@ -1354,8 +1372,8 @@
    "Law & Criminology"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -1398,8 +1416,8 @@
   ],
   "fields":[
    "Law & Criminology",
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "climate"
@@ -1515,9 +1533,9 @@
    "master"
   ],
   "fields":[
+   "Sociology",
    "Philosophy",
    "Economy",
-   "Sociology",
    "Management"
   ],
   "themes":[
@@ -1541,9 +1559,9 @@
    "master"
   ],
   "fields":[
-   "Management",
    "Economy",
-   "Political Sciences"
+   "Political Sciences",
+   "Management"
   ],
   "themes":[
    "environment"
@@ -1565,8 +1583,8 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "environment"
@@ -1636,9 +1654,9 @@
   ],
   "fields":[
    "Science",
-   "Philosophy",
+   "Sociology",
    "Medecine & Health",
-   "Sociology"
+   "Philosophy"
   ],
   "themes":[
    "environment",
@@ -1665,13 +1683,13 @@
    "master"
   ],
   "fields":[
-   "Science",
    "Sociology",
-   "Philosophy"
+   "Philosophy",
+   "Science"
   ],
   "themes":[
-   "climate",
    "environment",
+   "climate",
    "resources"
   ],
   "dedicated":1
@@ -1713,11 +1731,11 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
    "Law & Criminology",
+   "Philosophy",
    "Science",
-   "Medecine & Health",
-   "Sociology"
+   "Sociology",
+   "Medecine & Health"
   ],
   "themes":[
    "environment"
@@ -1744,8 +1762,8 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
    "energy",
+   "climate",
    "sustainability"
   ],
   "dedicated":0
@@ -1790,12 +1808,12 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
-   "Engineering",
    "Law & Criminology",
+   "Engineering",
+   "Philosophy",
    "Science",
-   "Medecine & Health",
-   "Sociology"
+   "Sociology",
+   "Medecine & Health"
   ],
   "themes":[
    "environment"
@@ -1820,8 +1838,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
    "environment",
+   "climate",
    "resources"
   ],
   "dedicated":1
@@ -1868,8 +1886,8 @@
    "master"
   ],
   "fields":[
-   "Science",
    "Medecine & Health",
+   "Science",
    "Engineering"
   ],
   "themes":[
@@ -1899,7 +1917,6 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
    "energy"
   ],
   "dedicated":1
@@ -1946,10 +1963,10 @@
    "master"
   ],
   "fields":[
-   "Science",
-   "Medecine & Health",
+   "Philosophy",
    "Sociology",
-   "Philosophy"
+   "Medecine & Health",
+   "Science"
   ],
   "themes":[
    "environment",
@@ -2018,11 +2035,11 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
    "Engineering",
+   "Philosophy",
    "Science",
-   "Medecine & Health",
-   "Sociology"
+   "Sociology",
+   "Medecine & Health"
   ],
   "themes":[
    "environment",
@@ -2094,9 +2111,9 @@
    "master"
   ],
   "fields":[
-   "Science",
    "Sociology",
-   "Philosophy"
+   "Philosophy",
+   "Science"
   ],
   "themes":[
    "environment",
@@ -2190,8 +2207,8 @@
    "master"
   ],
   "fields":[
-   "Science",
-   "Medecine & Health"
+   "Medecine & Health",
+   "Science"
   ],
   "themes":[
    "environment"
@@ -2238,8 +2255,8 @@
    "master"
   ],
   "fields":[
-   "Science",
-   "Medecine & Health"
+   "Medecine & Health",
+   "Science"
   ],
   "themes":[
    "environment"
@@ -2355,10 +2372,10 @@
    "master"
   ],
   "fields":[
-   "Science",
    "Sociology",
-   "Engineering",
-   "Philosophy"
+   "Philosophy",
+   "Science",
+   "Engineering"
   ],
   "themes":[
    "sustainability"
@@ -2633,8 +2650,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":0
  },
@@ -2682,8 +2699,8 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
    "energy",
+   "climate",
    "sustainability"
   ],
   "dedicated":1
@@ -2709,30 +2726,6 @@
   ],
   "themes":[
    "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"GEST-S4005",
-  "name":"Organisational behaviour, leadership and ethics",
-  "year":"2021-2022",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Verstraeten Michel",
-   "Hudon Marek"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-s4005",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment"
   ],
   "dedicated":0
  },
@@ -2779,29 +2772,6 @@
   ],
   "themes":[
    "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"GEST-S454",
-  "name":"Business and economics ethics",
-  "year":"2021-2022",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Hudon Marek"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-s454",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Philosophy",
-   "Sociology"
-  ],
-  "themes":[
-   "environment"
   ],
   "dedicated":0
  },
@@ -2872,7 +2842,6 @@
    "Management"
   ],
   "themes":[
-   "environment",
    "sustainability"
   ],
   "dedicated":0
@@ -2892,8 +2861,8 @@
    "bac"
   ],
   "fields":[
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "environment"
@@ -2917,8 +2886,8 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "environment",
@@ -2943,8 +2912,8 @@
    "bac"
   ],
   "fields":[
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "environment"
@@ -3163,28 +3132,6 @@
   "dedicated":0
  },
  {
-  "id":"PHAR-J652",
-  "name":"Unit\u00e9 d'enseignement 4 : Aspects r\u00e9glementaires, \u00e9thiques et commerciaux",
-  "year":"2021-2022",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Meunier Jo\u00eblle"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/phar-j652",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Pharmacy"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
   "id":"PHAR-J653",
   "name":"Unit\u00e9 d\u2019enseignement 5 : Effets ind\u00e9sirables et risques toxiques",
   "year":"2021-2022",
@@ -3208,29 +3155,6 @@
   "dedicated":0
  },
  {
-  "id":"PHYS-F202",
-  "name":"Relativit\u00e9, \u00e9lectromagn\u00e9tisme et optique ondulatoire",
-  "year":"2021-2022",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Tiniakov Petr",
-   "Tytgat Michel"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/phys-f202",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
- },
- {
   "id":"PHYS-H515",
   "name":"Radioecology and environmental  radioactivity monitoring",
   "year":"2021-2022",
@@ -3249,8 +3173,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "energy"
+   "energy",
+   "environment"
   ],
   "dedicated":1
  },
@@ -3292,8 +3216,8 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "climate"
@@ -3316,8 +3240,8 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "environment"
@@ -3368,8 +3292,8 @@
    "master"
   ],
   "fields":[
-   "Science",
-   "Architecture"
+   "Architecture",
+   "Science"
   ],
   "themes":[
    "environment",
@@ -3442,9 +3366,9 @@
    "master"
   ],
   "fields":[
-   "Science",
+   "Sociology",
    "Philosophy",
-   "Sociology"
+   "Science"
   ],
   "themes":[
    "environment"
@@ -3466,8 +3390,8 @@
    "master"
   ],
   "fields":[
-   "Philosophy",
-   "Sociology"
+   "Sociology",
+   "Philosophy"
   ],
   "themes":[
    "sustainability"
@@ -3490,36 +3414,14 @@
    "master"
   ],
   "fields":[
-   "Science",
    "Sociology",
-   "Philosophy"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":1
- },
- {
-  "id":"TOUR-F424",
-  "name":"Projets touristiques",
-  "year":"2021-2022",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Cloquet Isabelle"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/tour-f424",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
+   "Philosophy",
    "Science"
   ],
   "themes":[
    "environment"
   ],
-  "dedicated":0
+  "dedicated":1
  },
  {
   "id":"TOUR-F425",
@@ -3558,6 +3460,7 @@
    "bac"
   ],
   "fields":[
+   "Communication",
    "Letters"
   ],
   "themes":[
@@ -3582,11 +3485,12 @@
    "bac"
   ],
   "fields":[
+   "Communication",
    "Letters"
   ],
   "themes":[
-   "environment",
-   "energy"
+   "energy",
+   "environment"
   ],
   "dedicated":0
  },
@@ -3749,8 +3653,8 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "environment",
+   "climate"
   ],
   "dedicated":1
  }

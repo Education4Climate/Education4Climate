@@ -1,5 +1,139 @@
 [
  {
+  "id":"ADAA0002-1",
+  "name":"\u00c9conomie 1",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Berger Olivier"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/ADAA0002-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL2039-2",
+  "name":"Biologie 1, Biologie",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gilbert Val\u00e9rie",
+   "Daugimont Anne"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/BIOL2039-2.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BOIS0002-1",
+  "name":"Mat\u00e9riau bois 1, Connaissance et technologie du mat\u00e9riau bois 1",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gilbert Val\u00e9rie"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/BOIS0002-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHIM9286-1",
+  "name":"Laboratoire d'\u00e9lectrochimie et chimie organique",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vandersmissen Fr\u00e9d\u00e9ric",
+   "Louis J\u00e9r\u00f4me"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/CHIM9286-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHIM9288-1",
+  "name":"Compl\u00e9ments de laboratoire",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Louis J\u00e9r\u00f4me"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/CHIM9288-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"COAP0001-1",
+  "name":"Economie 2, Economie politique",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Berger Olivier"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/COAP0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"COEN0001-1",
   "name":"Coordination environnementale , Coordination environnementale",
   "year":"2021-2022",
@@ -10,6 +144,12 @@
    "Iguerb Ourida"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/COEN0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
    "environment"
   ],
@@ -27,11 +167,17 @@
    "Iguerb Ourida"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/CONS0004-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
+   "energy",
    "environment",
-   "resources",
    "sustainability",
-   "energy"
+   "resources"
   ],
   "dedicated":1
  },
@@ -47,9 +193,38 @@
    "Pety G\u00e9raldine"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/CONS0010-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
-   "resources",
-   "sustainability"
+   "sustainability",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"CONS0026-2",
+  "name":"Construction durable 2",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Pety G\u00e9raldine",
+   "Iguerb Ourida"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/CONS0026-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":1
  },
@@ -66,10 +241,40 @@
    "Iguerb Ourida"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/ECOL0002-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ECOL0003-1",
+  "name":"Etude du vivant",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Daugimont Anne"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/ECOL0003-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "climate"
+  ],
+  "dedicated":0
  },
  {
   "id":"ELEC0456-3",
@@ -83,6 +288,12 @@
    "Franck Yves-Dominique"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/ELEC0456-3.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
    "energy"
   ],
@@ -99,9 +310,15 @@
    "Franck Yves-Dominique"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/ENER0003-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
-   "climate",
-   "energy"
+   "energy",
+   "climate"
   ],
   "dedicated":1
  },
@@ -118,12 +335,112 @@
    "VanParijs Edouard"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/ENVI0829-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
    "energy",
+   "environment",
    "climate",
-   "environment"
+   "sustainability"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ENVI0833-1",
+  "name":"Analyse et traitement de l'eau, Analyse et traitement de l'eau",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hanson Alain",
+   "Daugimont Anne"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/ENVI0833-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEST3751-2",
+  "name":"Notions de gestion",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Chamillard Maureen",
+   "Durieux Marc",
+   "Pety G\u00e9raldine",
+   "Serre Christine"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/GEST3751-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEST3759-1",
+  "name":"Sciences humaines et gestion 2",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Capelle Patricia",
+   "Teuwa Hugues"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/GEST3759-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"INBB0001-1",
+  "name":"Sciences \u00e9conomiques 2, Economie g\u00e9n\u00e9rale",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Berger Olivier"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/INBB0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
  },
  {
   "id":"MATE0001-1",
@@ -137,6 +454,12 @@
    "Jacquemin Patricia"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/MATE0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
    "resources"
   ],
@@ -153,6 +476,12 @@
    "Durieux Marc"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/MATE0009-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
   "themes":[
    "resources"
   ],
@@ -170,8 +499,177 @@
    "Jusseret Val\u00e9rie"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/PRBF0002-2.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
   "themes":[
    "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SCAP0002-1",
+  "name":"Sciences appliqu\u00e9es 2",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Daugimont Anne",
+   "Vandersmissen Fr\u00e9d\u00e9ric",
+   "VanParijs Edouard"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/SCAP0002-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SCEN0002-2",
+  "name":"Sciences de l'environnement 2",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hanson Alain"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/SCEN0002-2.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SCET0001-2",
+  "name":"NTIC appliqu\u00e9es aux disciplines",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Thiry Alain",
+   "Demily Fabian",
+   "Gruslin Christine",
+   "Collet Louis"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/SCET0001-2.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SCEU0003-1",
+  "name":"Biologie 3, Biologie",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gruslin Christine"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/SCEU0003-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPEC0003-1",
+  "name":"Techniques sp\u00e9ciales du b\u00e2timent 3, Techniques sp\u00e9ciales 3 - Chauffage",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gobin Thierry"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/SPEC0003-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPEC0005-2",
+  "name":"Techniques sp\u00e9ciales du b\u00e2timent 5",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gobin Thierry",
+   "Durieux Marc",
+   "Pierre Judith"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/SPEC0005-2.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"TDAL0001-1",
+  "name":"Economie g\u00e9n\u00e9rale, Economie g\u00e9n\u00e9rale",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Berger Olivier"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/TDAL0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "resources"
   ],
   "dedicated":0
  },
@@ -186,11 +684,17 @@
    "DeBeer Hadelin"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/TDBE0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy"
+  ],
   "themes":[
-   "resources",
-   "climate",
    "sustainability",
-   "environment"
+   "environment",
+   "climate",
+   "resources"
   ],
   "dedicated":1
  },
@@ -205,9 +709,15 @@
    "DeBeer Hadelin"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/TDEH0002-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy"
+  ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -222,9 +732,37 @@
    "Dachelet Philippe"
   ],
   "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/TDER0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy"
+  ],
   "themes":[
    "environment"
   ],
   "dedicated":1
+ },
+ {
+  "id":"TECH0769-1",
+  "name":"Techniques sp\u00e9ciales du b\u00e2timent, Techniques sp\u00e9ciales du b\u00e2timent",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "deHalleux Lisa"
+  ],
+  "url":"http:\/\/progcours.hers.be\/cocoon\/cours\/TECH0769-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
  }
 ]

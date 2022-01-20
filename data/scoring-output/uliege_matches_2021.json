@@ -13,13 +13,6 @@
             "(?:emissions? )?(?:de )?gaz (?:a )?(?:effets? )(?:de )?serre": [
                 "n carbone et autres gaz a effets de serre ou polluants    pre"
             ],
-            "[environnement, durabilite]": [
-                "isation de l'impact environnemental du transport ce c",
-                "luation des impacts environnementaux du transport    ",
-                "vention des risques environnementaux    durabilite en",
-                "ntaux    durabilite environnementale de la chaine de ",
-                "environnementaux    durabilite environnementale de"
-            ],
             "durabilite environnement": [
                 "environnementaux    durabilite environnementale de la chaine de "
             ]
@@ -42,14 +35,6 @@
     },
     "AGRO0001-1: Fondement d'agriculture": {
         "fr": {
-            "[ecologie, durabilite]": [
-                "environnement  de l'ecologie  de l'histoire  et ",
-                "r autonomie et leur durabilite     a l'issue du co"
-            ],
-            "[environnement, durabilite]": [
-                "omme resultant de l'environnement  de l'ecologie  de ",
-                "r autonomie et leur durabilite     a l'issue du co"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "uverte du continuum agro-ecologique et de la diversites",
                 "tiques agricoles et agro-ecologiques  a l'echelle de la "
@@ -83,30 +68,15 @@
     },
     "AGRO0025-2: S\u00e9minaires sur la dimension territoriale en Agro\u00e9cologie": {
         "fr": {
-            "agro-?ecologie": [
-                "ion territoriale en agroecologie "
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "ion territoriale en agroecologie "
             ]
         }
     },
-    "ANIM0011-3: Welfare and ethics in animal productions": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "osantes du contexte environnemental  socio-economique e",
-                "urs acquises      * ethique et bien-etre des an",
-                "aux de ferme      * ethique et bien-etre des an",
-                "nale   commission d'ethique      * recherche pa",
-                "adictoire  placer l'ethique au coeur de la rela",
-                "er une appreciation ethique sur les systemes de"
-            ]
-        }
-    },
     "ANIM0018-1: Bromatologie et culture fourrag\u00e8re": {
         "fr": {
-            "[environnement, durabilite]": [
-                "et de la durabilite environnementale des activites d'",
+            "[[ ]ecolo[^ ]+, durabilite]": [
+                "animale et les bases ecologiques du processus de pat",
                 "economique et de la durabilite environnementale de"
             ],
             "agro[- ]?ecolo[^ ]+": [
@@ -142,51 +112,25 @@
                 "egres dans les agro-ecosystemes et les systemes ali",
                 "sitif dans les agro-ecosystemes  dans ce cours nous"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ls   3  presever la biodiversite via des pratiques a",
                 "tions traitant de l'impact environnemental des",
-                "'elevage pour l'agroecologie contexte justifiant",
-                " cours        l'agroecologie etudie les systemes",
                 "e culture comme des ecosystemes particuliers  dans ",
-                "l'agronomie et de l'ecologie pour permettre de m",
                 " concevoir des agro-ecosystemes plus durables   dan",
-                "n plus large  l'agroecologie est consideree comm",
-                " consideree comme l'ecologie d'un systeme alimen",
                 "miques  sociales et environnementales  faisant l'arti",
-                "ion   l'elevage agroecologique est peu etudie dans",
                 "raitant de l'impact environnemental des productions a",
                 "egres dans les agro-ecosystemes et les systemes ali",
-                "sitif dans les agro-ecosystemes  dans ce cours nous",
-                " principes de l'agroecologie aux productions ani",
-                " une transition agroecologique dans les systemes d",
-                " principes de l'agroecologie appliques a l'eleva",
-                " une transition agroecologique du systeme etudie  ",
-                "e de l'approche agroecologique appliquee aux syste",
-                " principes de l'agroecologie afin de devenir de ",
-                "e la transition agroecologique"
+                "sitif dans les agro-ecosystemes  dans ce cours nous"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ls   3  presever la biodiversite via des pratiques a",
                 "bles   pourtant  le probleme ne reside pas dans ",
-                "'elevage pour l'agroecologie contexte justifiant",
-                " cours        l'agroecologie etudie les systemes",
                 "e culture comme des ecosystemes particuliers  dans ",
-                "l'agronomie et de l'ecologie pour permettre de m",
                 " concevoir des agro-ecosystemes plus durables   dan",
-                "n plus large  l'agroecologie est consideree comm",
-                " consideree comme l'ecologie d'un systeme alimen",
                 "miques  sociales et environnementales  faisant l'arti",
-                "ion   l'elevage agroecologique est peu etudie dans",
                 "raitant de l'impact environnemental des productions a",
                 "egres dans les agro-ecosystemes et les systemes ali",
-                "sitif dans les agro-ecosystemes  dans ce cours nous",
-                " principes de l'agroecologie aux productions ani",
-                " une transition agroecologique dans les systemes d",
-                " principes de l'agroecologie appliques a l'eleva",
-                " une transition agroecologique du systeme etudie  ",
-                "e de l'approche agroecologique appliquee aux syste",
-                " principes de l'agroecologie afin de devenir de ",
-                "e la transition agroecologique"
+                "sitif dans les agro-ecosystemes  dans ce cours nous"
             ],
             "[ecosyst[^ ]+, pollution]": [
                 "e culture comme des ecosystemes particuliers  dans ",
@@ -194,21 +138,6 @@
                 "egres dans les agro-ecosystemes et les systemes ali",
                 "sitif dans les agro-ecosystemes  dans ce cours nous",
                 "mes pour reduire la pollution   ensuite les etudi"
-            ],
-            "[ecosyst[^ ]+, resilience]": [
-                "e culture comme des ecosystemes particuliers  dans ",
-                " concevoir des agro-ecosystemes plus durables   dan",
-                "egres dans les agro-ecosystemes et les systemes ali",
-                "sitif dans les agro-ecosystemes  dans ce cours nous",
-                "e pour augmenter la resilience  et  5  optimiser l"
-            ],
-            "agro-?ecologie": [
-                "me d'elevage pour l'agroecologie contexte justifiant",
-                "e ce cours        l'agroecologie etudie les systemes",
-                "ision plus large  l'agroecologie est consideree comm",
-                " des principes de l'agroecologie aux productions ani",
-                "es 5 principes de l'agroecologie appliques a l'eleva",
-                " les principes de l'agroecologie afin de devenir de "
             ],
             "agro[- ]?ecolo[^ ]+": [
                 "me d'elevage pour l'agroecologie contexte justifiant",
@@ -232,22 +161,10 @@
             ]
         }
     },
-    "APPR0160-2: S\u00e9minaires de d\u00e9veloppement professionnel": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "rdre ethique  socio-environnemental  economique  juridi",
-                " mais aussi d'ordre ethique  socio-environnemen",
-                " socio-economiques  ethiques  juridiques     d'"
-            ]
-        }
-    },
     "ARCH0006-2: M\u00e9thodologie du projet architectural II : composition bioclimatique": {
         "fr": {
-            "[bioclimat[^ ]+, construction]": [
-                "al ii   composition bioclimatique le cours de methodo",
-                "ons architecturales bioclimatiques pour habitations  u",
-                "teristiques  projet bioclimatique final sous climat b",
-                " approche visuelle  construction sur terrain en pent"
+            "architectur[^ ]+ bioclimatique": [
+                "tiques  compostions architecturales bioclimatiques pour habitations  "
             ]
         }
     },
@@ -275,15 +192,15 @@
     },
     "ARCH0560-1: Urbanisme : culture et conception territoriale, urbaine et paysag\u00e8re m\u00e9thodologie": {
         "fr": {
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "les territoires  le developpement durable et ecoresponsable e",
                 "ocio-economiques et environnementaux  sur la concepti",
                 "ans le respect de l'environnement   bati et non bati ",
                 "ocio-economiques et environnementaux  sur la concepti",
                 "ans le respect de l'environnement bati et non bati",
-                "lement   de la deep ecology et/ou du genie ecol",
-                "logy et/ou du genie ecologique  etc    - donne les",
-                "lement   de la deep ecology et/ou de pratiques "
+                "clement   de la deep ecology et/ou du genie ecol",
+                "ology et/ou du genie ecologique  etc    - donne les",
+                "clement   de la deep ecology et/ou de pratiques "
             ],
             "ecoresponsab[^ ]+": [
                 "oppement durable et ecoresponsable est au centre des q"
@@ -292,18 +209,16 @@
     },
     "ARCH0567-1: Projets d'architecture Q1 - th\u00e9matique 1 - Architectures critiques": {
         "fr": {
-            "crises? ecologiqu": [
-                "ure en lien avec la crise ecologique     l'atelier ente",
-                "ls  en lien avec la crise ecologique dans le but d'expo"
+            "crises? ecolo[^ ]+": [
+                "ure en lien avec la crise ecologique     l'atelier enten",
+                "ls  en lien avec la crise ecologique dans le but d'expos"
             ]
         }
     },
     "ARCH0574-1: Projets d'architecture Q2 - Th\u00e9matique 2 Habitat / Postures d'Habiter": {
         "fr": {
-            "[environnement, durabilite]": [
-                "    face aux enjeux environnementaux globaux  l'etudi",
-                "du projet  l'impact environnemental de la materialite",
-                "repondre aux enjeux environnementaux a travers plusie",
+            "[[ ]ecolo[^ ]+, durabilite]": [
+                "ier       l'approche ecologique techniciste n'est p",
                 "jusqu'au detail  la durabilite en architecture  l'"
             ]
         }
@@ -340,21 +255,6 @@
     },
     "ARCH2007-2: Conception architecturale et urbaine durable": {
         "fr": {
-            "[environnement, durabilite]": [
-                "ation de la qualite environnementale et de la durabil",
-                "l'etude des impacts environnementaux  a l'aide de l'a",
-                "  - la qualite de l'environnement interieur  confort ",
-                "mpactant la qualite environnementale et la durabilite",
-                "ecturale et qualite environnementale     ces competen",
-                " respectueux de son environnement  tout en preservant",
-                "rent la performance environnementale des batiments et",
-                "fier les techniques environnementales les plus approp",
-                "ecturale et qualite environnementale     - developper",
-                " et de ses qualites environnementales     - etre capa",
-                "nnementale et de la durabilite des batiments  hqe ",
-                "ironnementale et la durabilite des batiments et qu",
-                "abels concernant la durabilite des batiments et de"
-            ],
             "[recyclage, environnement]": [
                 "ion  energie grise  recyclage / reemploi  etc    ",
                 "ation de la qualite environnementale et de la durabil",
@@ -373,21 +273,11 @@
             ]
         }
     },
-    "ARCH2019-1: Ing\u00e9nierie des ambiances urbaines": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "a la conception des environnements batis  simulations",
-                "endre a evaluer des environnements urbains projetes o",
-                "ue les performances environnementales et de durabilit",
-                "urbaine et l'aspect environnemental de ces choix     ",
-                "ronnementales et de durabilite du milieu bati     ",
-                " d'evaluation de la durabilite des quartiers      ",
-                " l'evaluation de la durabilite des quartiers  refe"
-            ]
-        }
-    },
     "ARCH3262-1: Ateliers d'architecture III A": {
         "fr": {
+            "architectur[^ ]+ bioclimatique": [
+                "ant des principes d'architecture bioclimatique et de developper de"
+            ],
             "[bioclimat[^ ]+, energ[^ ]+]": [
                 "ipes d'architecture bioclimatique et de developper de",
                 "bilite concernant l'energie  l'eau et les mater",
@@ -400,14 +290,6 @@
     },
     "ARCH3272-1: Building performance simulation and monitoring": {
         "fr": {
-            "[environnement, durabilite]": [
-                "e durabilite dans l'environnement bati et de la compl",
-                "'integration dans l'environnement urbain  les objecti",
-                "e et la performance environnementale  un modele energ",
-                "mance energetique / environnementale dans le secteur ",
-                "e et la performance environnementale      * mettre en",
-                "eaux plus eleves de durabilite dans l'environnemen"
-            ],
             "[performances? energ[^ ]+, durabilite, environnement]": [
                 "te croissante de la performance energetique / environnementale ",
                 "eaux plus eleves de durabilite dans l'environnemen",
@@ -424,14 +306,6 @@
     },
     "ARCH3272-2: Building performance simulation and monitoring, Partim 1": {
         "fr": {
-            "[environnement, durabilite]": [
-                "e durabilite dans l'environnement bati et de la compl",
-                "'integration dans l'environnement urbain  les objecti",
-                "e et la performance environnementale  un modele energ",
-                "mance energetique / environnementale dans le secteur ",
-                "e et la performance environnementale      * mettre en",
-                "eaux plus eleves de durabilite dans l'environnemen"
-            ],
             "[performances? energ[^ ]+, durabilite, environnement]": [
                 "te croissante de la performance energetique / environnementale ",
                 "eaux plus eleves de durabilite dans l'environnemen",
@@ -514,11 +388,9 @@
                 "aune et pedofaune - biodiversite animale     cette s",
                 "tituant les  paleo- ecosystemes qu'ils seront appel"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "aune et pedofaune - biodiversite animale     cette s",
                 "e la vie  notions d'evolution et de phylogenie  d",
-                "e partie  notions d'ecologie            les tp s",
-                "ifferents aspects d'ecologie  a definir   presen",
                 "tituant les  paleo- ecosystemes qu'ils seront appel"
             ]
         }
@@ -615,26 +487,31 @@
                 "nes especes dans un ecosysteme donne  et quelles s",
                 " croissante sur les ecosystemes qu'il occupe     -l"
             ],
-            "[bio(?:diversite|sphere), erosion, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "structuration de la biodiversite dans nos regions et",
                 "s qui pesent sur la biodiversite dans nos regions et",
                 "ien l'erosion de la biodiversite dans nos regions es",
                 "a montrer combien l'erosion de la biodiversite ",
-                " des principes de l'ecologie  etude des ecosyste",
                 "ecologie  etude des ecosystemes   il s'agit de dete",
                 "nes especes dans un ecosysteme donne  et quelles s",
                 " croissante sur les ecosystemes qu'il occupe     -l"
+            ],
+            "biologie de la conservation": [
+                "biologie de la conservation la biologie de la c",
+                " la conservation la biologie de la conservation peut etre vue comme",
+                "rents aspects de la biologie de la conservation  notamment     -les",
+                "nir les bases de la biologie de la conservation  des concepts de va"
             ]
         }
     },
     "BIOL0812-2: Biog\u00e9ographie": {
         "fr": {
-            "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "biogeographie de la biosphere    2 1 variation de",
                 "e a l'echelle de la biosphere    2 3 variation de",
                 "sulaires     1 3 3  consequences evolutives des syn",
-                "orie neutraliste en ecologie  de faire realiser ",
-                "ent due a la derive ecologique  facteurs demograph"
+                "eorie neutraliste en ecologie  de faire realiser ",
+                "ment due a la derive ecologique  facteurs demograph"
             ],
             "[bio(?:diversite|sphere), ecolo[^ ]+]": [
                 "biogeographie de la biosphere    2 1 variation de",
@@ -642,45 +519,37 @@
                 "orie neutraliste en ecologie  de faire realiser ",
                 "ent due a la derive ecologique  facteurs demograph"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "biogeographie de la biosphere    2 1 variation de",
                 "e a l'echelle de la biosphere    2 3 variation de",
                 "climatiques    1 3  evolution insulaire     1 3 1",
-                "orie neutraliste en ecologie  de faire realiser ",
-                "ent due a la derive ecologique  facteurs demograph"
+                "eorie neutraliste en ecologie  de faire realiser ",
+                "ment due a la derive ecologique  facteurs demograph"
             ],
-            "[bio(?:diversity|sphere), extinction, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversity|sphere), extinction, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "d neutral theory of biodiversity and biogeography >>",
                 "biogeographie de la biosphere    2 1 variation de",
                 "e a l'echelle de la biosphere    2 3 variation de",
                 "rs demographiques d'extinction et d'immigration  e",
-                "orie neutraliste en ecologie  de faire realiser ",
-                "ent due a la derive ecologique  facteurs demograph"
+                "eorie neutraliste en ecologie  de faire realiser ",
+                "ment due a la derive ecologique  facteurs demograph"
             ],
-            "[extinction, espece]": [
-                "rs demographiques d'extinction et d'immigration  e",
-                " la repartition des especes appartenant un mem",
-                " intrinseques entre especes  segregation de ni",
-                "ue la frequence des especes est identique quel",
-                "te dispersive entre especes  sont testees  les",
-                " 2 1  relation aire-espece    1 2 2  modele de",
-                "la problematiquedes especes invasives      3 2",
-                "ment identifier les especes a risque       3 3"
+            "biologie de la conservation": [
+                "des invasions et la biologie de la conservation seront passes en re"
             ]
         }
     },
     "BIOL0852-1: Ecosyst\u00e8mes et changements climatiques": {
         "fr": {
-            "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "rs d'ecologie et de biodiversite du bachelier en bio",
                 "limatiques et leurs consequences pour le fonctionne",
                 "global du carbone   consequences ecologiques des ch",
                 "ecosystemes et changements clim",
                 " fonctionnement des ecosystemes des cours d'ecologi",
-                "ystemes des cours d'ecologie et de biodiversite ",
                 "la perturbation des ecosystemes par les activites a",
                 " fonctionnement des ecosystemes       table des mat",
-                "bone   consequences ecologiques des changements cli"
+                "rbone   consequences ecologiques des changements cli"
             ],
             "[bio(?:diversite|sphere), ecolo[^ ]+]": [
                 "rs d'ecologie et de biodiversite du bachelier en bio",
@@ -701,13 +570,6 @@
                 " fonctionnement des ecosystemes       table des mat",
                 "problematique de la perturbation des ecosystemes par",
                 "s par les activites anthropiques sans qu'elle ait"
-            ],
-            "[ecosyst[^ ]+, resilience]": [
-                "ecosystemes et changements clim",
-                " fonctionnement des ecosystemes des cours d'ecologi",
-                "la perturbation des ecosystemes par les activites a",
-                " fonctionnement des ecosystemes       table des mat",
-                "chauffement global  resilience  resistance  giec  "
             ],
             "cycle du carbone": [
                 " des matieres       cycle du carbone et les changements "
@@ -748,10 +610,10 @@
                 "oncentrerons sur la pollution metallique  les mec",
                 "ieres adaptees a la pollution par les metaux sera"
             ],
-            "[gestion (?:de l')environnement, ecolog[^ ]+, impact]": [
+            "[gestion (?:de l')environnement, [ ]ecolo[^ ]+, impact]": [
                 "-organismes dans la gestion de l'environnement    comprendre l'uti",
-                "lantes  les raisons ecologiques de cette strategie ",
-                "luation des risques ecologiques    analyser et inte",
+                "plantes  les raisons ecologiques de cette strategie ",
+                "aluation des risques ecologiques    analyser et inte",
                 "'evaluation de leur impact sur les organismes "
             ],
             "services? ecosystemiq": [
@@ -777,7 +639,7 @@
                 "squ'aux analyses de biodiversite auront ete apprehen",
                 "ntale de differents ecosystemes aura ete developpee"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "tion integree de la biodiversite entomologique ce co",
                 "et la gestion de la biodiversite et dans de la gesti",
                 "et de gestion de la biodiversite  les methodes de su",
@@ -788,10 +650,6 @@
                 "e l'adaptation de l'environnement     apres avoir abo",
                 "dees  la gestion de environnementale de differents ec",
                 "ntale de differents ecosystemes aura ete developpee"
-            ],
-            "[extinction, espece]": [
-                " rares et en voie d'extinction  les impacts des ch",
-                "ement les notions d'especes invasives  rares e"
             ],
             "[extinction, insecte]": [
                 " rares et en voie d'extinction  les impacts des ch",
@@ -820,6 +678,11 @@
                 "especes au sein des ecosystemes  et la grande influ",
                 " de l'homme sur ces ecosystemes      il s'agit auss",
                 "ration actuelle des ecosystemes s'inscrit dans un t"
+            ],
+            "biologie de la conservation": [
+                "introduction a la biologie de la conservation la biologie de la c",
+                " la conservation la biologie de la conservation peut etre vue comme",
+                "che des concepts de biologie de la conservation  il abordera notamm"
             ]
         }
     },
@@ -840,11 +703,10 @@
                 " et dynamique de la biosphere  et de la place de ",
                 "de l'homme dans les ecosystemes  voir avant-propos "
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et dynamique de la biosphere  et de la place de ",
                 " et de la vie  de l'evolution des organismes  de ",
                 "rents stades de son evolution  de l'unite et de l",
-                "anite et enfin de l'ecologie  equilibres et dyna",
                 "de l'homme dans les ecosystemes  voir avant-propos "
             ]
         }
@@ -858,22 +720,14 @@
                 "au monitoring de la biodiversite des poissons d'eau ",
                 "n a la diversite  l'ecologie et au monitoring de"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "monitoring de la biodiversite et dynamique des po",
                 "1  monitoring de la biodiversite en milieu terrestre",
                 "hantillonnage de la biodiversite repose sur une conn",
                 "au monitoring de la biodiversite des poissons d'eau ",
                 "emps et d'argent  l'impact des reintroductions",
-                "n a la diversite  l'ecologie et au monitoring de",
                 "et de facteurs de l'environnement sur la richesse en ",
                 "r gestionnaire de l'environnement et de la vie sauvag"
-            ],
-            "[extinction, espece]": [
-                "st la probabilite d'extinction d'une population   ",
-                "lonnage calibre des especes de gasteropodes en",
-                " sur la richesse en especes en utilisant un mo",
-                "detectabilite d'une espece    - savoir evaluer",
-                "ues en fonction des especes considerees et du "
             ],
             "[impact, cours d'eau]": [
                 "emps et d'argent  l'impact des reintroductions",
@@ -883,7 +737,7 @@
     },
     "BIOL2035-1: Journ\u00e9es d'excursion sur les th\u00e9matiques de la conservation et l'utilisation du territoire": {
         "fr": {
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " conservation de la biodiversite     le cours sera a",
                 "nt protection de la biodiversite et exploitation dur",
                 "ete ont en effet un impact non negligeable sur",
@@ -898,7 +752,7 @@
     },
     "BIOL2036-1: La biodiversit\u00e9 de l'Anthropoc\u00e8ne": {
         "fr": {
-            "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "la biodiversite de l'anthropocene l",
                 "e l'anthropocene la biodiversite est la diversite  n",
                 " dans le temps   la biodiversite represente un enjeu",
@@ -944,7 +798,7 @@
                 "es  pour differents ecosystemes     l'enseignement ",
                 " de remediation des ecosystemes      ceci  a partir"
             ],
-            "[bio(?:diversite|sphere), erosion, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "la biodiversite de l'anthropocene l",
                 "e l'anthropocene la biodiversite est la diversite  n",
                 " dans le temps   la biodiversite represente un enjeu",
@@ -968,7 +822,7 @@
                 "es  pour differents ecosystemes     l'enseignement ",
                 " de remediation des ecosystemes      ceci  a partir"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "la biodiversite de l'anthropocene l",
                 "e l'anthropocene la biodiversite est la diversite  n",
                 " dans le temps   la biodiversite represente un enjeu",
@@ -996,7 +850,7 @@
                 "x dans le cadre du \"developpement durable\"     les cours theor",
                 "a biodiversite de l'anthropocene la biodiversite est"
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "x dans le cadre du \"developpement durable\"     les cours theor",
                 "site    indicateurs environnementaux    enjeux dans l",
                 "nt la diversite des ecosystemes  des especes  et de",
@@ -1017,15 +871,6 @@
             ],
             "anthropocen(?:e|ique)": [
                 "a biodiversite de l'anthropocene la biodiversite est"
-            ]
-        }
-    },
-    "BIOL2037-1: Introduction \u00e0 la biologie \u00e9volutive": {
-        "fr": {
-            "[extinction, espece]": [
-                "es grandes crises d'extinction     -introduction a",
-                "i y-a-t'il autant d'especes sur terre  quels s",
-                " les plus riches en especes et pourquoi  ou se"
             ]
         }
     },
@@ -1093,13 +938,6 @@
                 "onctionnels pour la depollution de l'environnement ",
                 "ie des materiaux et developpement durable ce cours vise a sen",
                 "rendre la notion de developpement durable  dd   les impacts l"
-            ],
-            "[environnement, durabilite]": [
-                " plus faible impact environnemental seront envisagees",
-                "la depollution de l'environnement  la production et l",
-                "ion  de leur impact environnemental lors de son usage",
-                "rche les notions de durabilite  ceci implique de c",
-                "orde les notions de durabilite et de cycle de vie "
             ],
             "[recyclage, environnement]": [
                 "a fabrication et au recyclage des materiaux  et a",
@@ -1185,12 +1023,6 @@
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
                 "onomie d'atomes  de chimie verte et de procedes a fa"
-            ],
-            "[environnemental, ethique]": [
-                " a faible empreinte environnementale          le cours ",
-                " a faible empreinte environnementale pour des transform",
-                " avec une empreinte environnementale plus raisonne",
-                "es pratiques et a l'ethique du travail en labor"
             ]
         }
     },
@@ -1308,7 +1140,7 @@
     },
     "CLIM0009-1: Mod\u00e9lisation des cycles biog\u00e9ochimiques et changements globaux": {
         "fr": {
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "atmosphere et de la biosphere terrestre a diverse",
                 "  modelisation de l'evolution geochimique a long ",
                 "us qui gouvernent l'evolution de la composition c",
@@ -1341,17 +1173,6 @@
                 "et communication en sante environnementale   etude d'une si",
                 "ation relative a la sante environnementale et posant des qu",
                 "et communication en sante environnementale        identifie"
-            ],
-            "[environnemental, ethique]": [
-                "munication en sante environnementale   etude d'une situ",
-                "relative a la sante environnementale et posant des ques",
-                "munication en sante environnementale        identifier ",
-                "ethique  communication et t",
-                "nterdisciplinaire l'ethique et communication en",
-                "osant des questions ethiques au moyen d'un outi",
-                "'un outil d'analyse ethique et d'apports theori",
-                "ports theoriques  l'ethique et communication en",
-                "posant une question ethique    l'analyser au mo"
             ]
         }
     },
@@ -1365,13 +1186,12 @@
                 " et dynamique de la biosphere  et de la place de ",
                 "de l'homme dans les ecosystemes  perspective evolut"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et dynamique de la biosphere  et de la place de ",
                 "ntation rapide de l'evolution de la communication",
                 "plus recentes sur l'evolution de la communication",
                 " et de la vie  de l'evolution des organismes  de ",
                 "rents stades de son evolution  de l'unite et de l",
-                "anite et enfin de l'ecologie  equilibres et dyna",
                 "de l'homme dans les ecosystemes  perspective evolut"
             ]
         }
@@ -1387,9 +1207,6 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 "la restructuration  protection de l'environnement  energie  aeroports"
-            ],
-            "protection de l'environnement": [
-                "la restructuration  protection de l'environnement  energie  aeroports"
             ]
         }
     },
@@ -1399,9 +1216,6 @@
                 "xieme  consacree au droit de l'environnement marin  sont abordee"
             ],
             "protection (?:de l')?environnement": [
-                "essources que de la protection de l'environnement"
-            ],
-            "protection de l'environnement": [
                 "essources que de la protection de l'environnement"
             ]
         }
@@ -1450,6 +1264,9 @@
                 "omaines d'action du droit de l'environnement   protection de la ",
                 "e encyclopedique du droit de l'environnement  il vise a faire co",
                 "se qui regissent le droit de l'environnement  appliquer ces prin"
+            ],
+            "responsabilite environnement[^ ]+": [
+                "ronnementales et de responsabilite environnementale     cette jeunesse "
             ]
         }
     },
@@ -1480,19 +1297,10 @@
             ]
         }
     },
-    "ECON0942-1: Economie rurale et gestion des entreprises agricoles": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "osantes du contexte environnemental  socio-economique",
-                "efinis en termes de durabilite  resilience et inte"
-            ]
-        }
-    },
     "ECON0945-1: Economie, \u00e9nergie et environnement": {
         "fr": {
-            "[extinction, espece]": [
-                "ent des ressources  extinction des especes et deve",
-                "ces  extinction des especes et developpement d"
+            "extinction (?:des |de l')espece": [
+                "ent des ressources  extinction des especes et developpement d"
             ],
             "energ[^ ]+ renouvelab[^ ]+": [
                 "e developpement des energies renouvelables       - transport e"
@@ -1502,22 +1310,8 @@
                 "re de politiques de protection de l'environnement contribuant ainsi a",
                 "r les politiques de protection de l'environnement"
             ],
-            "protection de l'environnement": [
-                "plus conformes a la protection de l'environnement  on montre les avan",
-                "re de politiques de protection de l'environnement contribuant ainsi a",
-                "r les politiques de protection de l'environnement"
-            ],
             "questions? environnement": [
                 "mique a l'etude des questions environnementales et a la politiq"
-            ]
-        }
-    },
-    "ECON2246-2: Economie des pays en d\u00e9veloppement": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "oppement durable et environnement 6  croissance  deve",
-                "ransversales genre  environnement   ",
-                "e - developpement - durabilite 1 2  historique-con"
             ]
         }
     },
@@ -1532,10 +1326,6 @@
     },
     "ECON2298-3: Transition et nouveaux mod\u00e8les \u00e9conomiques": {
         "fr": {
-            "agro-?ecologie": [
-                "lexif  circularite  agroecologie  ecosystemique  etc",
-                "heme 'meta' comme l'agroecologie en mobilisant tant "
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "lexif  circularite  agroecologie  ecosystemique  etc",
                 "heme 'meta' comme l'agroecologie en mobilisant tant "
@@ -1545,26 +1335,16 @@
             ]
         }
     },
-    "ECON2299-1: Aide \u00e0 la d\u00e9cision \u00e9conomique": {
-        "fr": {
-            "[environnement, durabilite]": [
-                " interne ou de leur environnement externe      le cha",
-                "hnique  economique  environnemental et social      le",
-                "es techniques et/ou environnementales et/ou economiqu",
-                "efinis en termes de durabilite  resilience et inte"
-            ]
-        }
-    },
     "ECON2301-1: Economic growth and sustainable development": {
         "fr": {
-            "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "emissions de co2 et biodiversite  les etudiants devr",
                 "tes humaines et ses consequences environnementales ",
                 "et ses consequences environnementales  nous aborderon",
                 "s technologiques et environnementales  la relation en",
                 "s technologiques et environnementales du processus de"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "emissions de co2 et biodiversite  les etudiants devr",
                 " initie lors de la revolution industrielle  les t",
                 "et ses consequences environnementales  nous aborderon",
@@ -1578,11 +1358,6 @@
     },
     "ELEC0041-1: Modelling and design of electromagnetic systems": {
         "fr": {
-            "[electri[^ ]+, verte]": [
-                "mecanique  circuits electriques et electroniques   ",
-                "  moteur de voiture electrique  antenne de micro-s",
-                "ues applications couvertes au cours des derni"
-            ],
             "voitures? electriques?": [
                 "terrains  moteur de voiture electrique  antenne de micro-s"
             ]
@@ -1597,9 +1372,9 @@
     },
     "ELEC0080-1: R\u00e9seaux d'\u00e9nergie": {
         "fr": {
-            "[ecologi, transiti[^ ]+ energ[^ ]+]": [
-                "n pleine transition ecologique ou ces derniers ",
-                "texte de transition ecologique  il aura egaleme",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ energ[^ ]+]": [
+                "en pleine transition ecologique ou ces derniers doi",
+                "ntexte de transition ecologique  il aura egalement ",
                 "rastructure dans la transition energetique  une courte introdu"
             ],
             "energ[^ ]+ renouvelab[^ ]+": [
@@ -1669,8 +1444,8 @@
                 "gent dans une crise ecologique globale qui impose ",
                 "rer   la transition ecologique   l'objectif du cou"
             ],
-            "crises? ecologiqu": [
-                "s plongent dans une crise ecologique globale qui impose"
+            "crises? ecolo[^ ]+": [
+                "s plongent dans une crise ecologique globale qui impose "
             ],
             "transiti[^ ]+ ecolo[^ ]+": [
                 "ies et gestions des transitions ecologiques les crises multiple",
@@ -1680,10 +1455,6 @@
     },
     "ENVT0047-1: Services \u00e9cosyst\u00e9miques et paysages": {
         "fr": {
-            "agro-?ecologie": [
-                " se  agriculture et agroecologie ils seront capables",
-                "e du paysage ou a l'agroecologie"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 " se  agriculture et agroecologie ils seront capables",
                 "e du paysage ou a l'agroecologie"
@@ -1727,7 +1498,7 @@
     },
     "ENVT0057-1: El\u00e9ments d'\u00e9cotoxicologie aquatique": {
         "fr": {
-            "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "nts qui peuplent la biosphere  ramade  1977      ",
                 "milieu marin et les consequences de ses particulari",
                 " contamination de l'environnement par les agents poll"
@@ -1773,7 +1544,7 @@
                 "a philosophie  de l'ecologie  des sciences de ge",
                 "a philosophie  de l'ecologie  des sciences de ge"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ls de gestion de la biodiversite qui alimentent un t",
                 "de nature  celui de biodiversite     - l'histoire de",
                 " de la nature et la biodiversite  comment elle perme",
@@ -1803,21 +1574,8 @@
                 " par les situations-problemes  a partir d'etudes",
                 " par les situations-problemes  a partir d'etudes",
                 "s gestionnaire de l'environnement pour les rendre cap",
-                "a philosophie  de l'ecologie  des sciences de ge",
                 "s gestionnaire de l'environnement pour les rendre cap",
-                "a philosophie  de l'ecologie  des sciences de ge",
-                "s gestionnaire de l'environnement pour les rendre cap",
-                "a philosophie  de l'ecologie  des sciences de ge"
-            ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
-                " la biodiversite et developpement durable   le cours apprehen",
-                " la biodiversite et developpement durable   le cours vise a o",
-                "s gestionnaire de l'environnement pour les rendre cap",
-                "s gestionnaire de l'environnement pour les rendre cap",
-                "s gestionnaire de l'environnement pour les rendre cap",
-                "a philosophie  de l'ecologie  des sciences de ge",
-                "a philosophie  de l'ecologie  des sciences de ge",
-                "a philosophie  de l'ecologie  des sciences de ge"
+                "s gestionnaire de l'environnement pour les rendre cap"
             ]
         }
     },
@@ -1834,7 +1592,7 @@
                 "er la gestion de la biodiversite par les situations-",
                 "a philosophie  de l'ecologie  des sciences de ge"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " conservation de la biodiversite et developpement du",
                 "ls de gestion de la biodiversite qui alimentent un t",
                 "de nature  celui de biodiversite     - l'histoire de",
@@ -1844,13 +1602,7 @@
                 "s problematiques de biodiversite en croisant les dis",
                 "er la gestion de la biodiversite par les situations-",
                 " par les situations-problemes  a partir d'etudes",
-                "s gestionnaire de l'environnement pour les rendre cap",
-                "a philosophie  de l'ecologie  des sciences de ge"
-            ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
-                " la biodiversite et developpement durable le cours apprehende",
-                "s gestionnaire de l'environnement pour les rendre cap",
-                "a philosophie  de l'ecologie  des sciences de ge"
+                "s gestionnaire de l'environnement pour les rendre cap"
             ]
         }
     },
@@ -1858,21 +1610,6 @@
         "fr": {
             "rechauffement climat[^ ]+": [
                 "ossiers tels que le rechauffement climatique  les nouvelles init"
-            ]
-        }
-    },
-    "ENVT0067-1: Communication et d\u00e9veloppement durable": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "ns la communication environnementale    enjeux de la co",
-                "et la communication environnementale relative au develo",
-                "de la communication environnementale  communication des",
-                "de la communication environnementale a l'issue du cours",
-                "us de communication environnementale      determiner le",
-                "de la communication environnementale relative au develo",
-                "he de communication environnementale    evaluer des str",
-                "pement durable    l'ethique et la communication",
-                "hension des valeurs ethiques au cur de la commu"
             ]
         }
     },
@@ -2025,33 +1762,21 @@
                 "ystemes  les grands ecosystemes mondiaux et leurs c",
                 " fonctionnement des ecosystemes     identifier les "
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "s composantes de la biodiversite selon ses niveaux d",
                 "e quantitative d'un probleme ecologique  en vue ",
-                "ecologie generale themes    ",
-                "orelle des systemes ecologiques de l'individu aux e",
+                "porelle des systemes ecologiques de l'individu aux e",
                 "s de l'individu aux ecosystemes / methodes d'etudes",
-                "sation des systemes ecologiques / interaction entre",
-                "maines et processus ecologiques     structure du co",
-                "perception    2  autecologie  organisme    la no",
-                "ation  les facteurs ecologiques  illustration de la",
-                " sol          3  demecologie  populations    not",
+                "isation des systemes ecologiques / interaction entre",
+                "umaines et processus ecologiques     structure du co",
+                "tation  les facteurs ecologiques  illustration de la",
                 " specifique      5  ecosystemologie  ecosystemes    def",
                 "5  ecosystemologie  ecosystemes    definitions  str",
                 "ce et stabilite des ecosystemes  les grands ecosyst",
                 "ystemes  les grands ecosystemes mondiaux et leurs c",
                 " fonctionnement des ecosystemes     identifier les ",
-                "iables d'un systeme ecologique et developper une a",
-                "ative d'un probleme ecologique  en vue de l'utilis"
-            ],
-            "[ecosyst[^ ]+, resilience]": [
-                "s de l'individu aux ecosystemes / methodes d'etudes",
-                " specifique      5  ecosystemologie  ecosystemes    def",
-                "5  ecosystemologie  ecosystemes    definitions  str",
-                "ce et stabilite des ecosystemes  les grands ecosyst",
-                "ystemes  les grands ecosystemes mondiaux et leurs c",
-                " fonctionnement des ecosystemes     identifier les ",
-                "es biogeochimiques  resilience et stabilite des ec"
+                "riables d'un systeme ecologique et developper une a",
+                "tative d'un probleme ecologique  en vue de l'utilis"
             ],
             "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
                 "e quantitative d'un probleme ecologique  en vue de l'utilis"
@@ -2082,7 +1807,7 @@
                 "nts au niveau de la biosphere  transport  partiti",
                 "s compartiments des ecosystemes terrestres et aquat"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "nts au niveau de la biosphere  transport  partiti",
                 " l'environnement et impacts sur la sante   apr",
                 " l'environnement et impacts sur la sante   l'o",
@@ -2129,27 +1854,27 @@
                 "n general et sur la biodiversite en particulier     ",
                 "nctionnement de ces ecosystemes en general et sur l"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "adation des sols et biosphere dans le cours sont ",
                 "n general et sur la biodiversite en particulier     ",
                 "ne de l'eau et leur evolution durant ces derniere",
                 "sure des parametres environnementaux   hydrosphere  g",
                 "nes et les permis d'environnement      les  reseaux d",
                 "nctionnement de ces ecosystemes en general et sur l",
-                "ation de la qualite ecologique et d une gestion du",
-                "ntit un << bon etat ecologique >> de l'eau et des "
+                "ration de la qualite ecologique et d une gestion du",
+                "antit un << bon etat ecologique >> de l'eau et des "
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "adation des sols et biosphere dans le cours sont ",
                 "n general et sur la biodiversite en particulier     ",
                 " aquatiques et leur impact sur le fonctionneme",
                 "sure des parametres environnementaux   hydrosphere  g",
                 "nes et les permis d'environnement      les  reseaux d",
                 "nctionnement de ces ecosystemes en general et sur l",
-                "ation de la qualite ecologique et d une gestion du",
-                "ntit un << bon etat ecologique >> de l'eau et des "
+                "ration de la qualite ecologique et d une gestion du",
+                "antit un << bon etat ecologique >> de l'eau et des "
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "adation des sols et biosphere dans le cours sont ",
                 "n general et sur la biodiversite en particulier     ",
                 "s a la solution des problemes de gestion de l'ea",
@@ -2157,8 +1882,8 @@
                 "sure des parametres environnementaux   hydrosphere  g",
                 "nes et les permis d'environnement      les  reseaux d",
                 "nctionnement de ces ecosystemes en general et sur l",
-                "ation de la qualite ecologique et d une gestion du",
-                "ntit un << bon etat ecologique >> de l'eau et des "
+                "ration de la qualite ecologique et d une gestion du",
+                "antit un << bon etat ecologique >> de l'eau et des "
             ],
             "[degradation, ecosyst[^ ]+, environnement]": [
                 " - contamination et degradation des sols et biosphe",
@@ -2230,7 +1955,7 @@
                 "er la gestion de la biodiversite par les situations-",
                 "a philosophie  de l'ecologie  des sciences de ge"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "es de gestion de la biodiversite le cours apprehende",
                 "ls de gestion de la biodiversite qui alimentent un t",
                 "de nature  celui de biodiversite     - l'histoire de",
@@ -2240,8 +1965,7 @@
                 "s problematiques de biodiversite en croisant les dis",
                 "er la gestion de la biodiversite par les situations-",
                 " par les situations-problemes  a partir d'etudes",
-                "s gestionnaire de l'environnement pour les rendre cap",
-                "a philosophie  de l'ecologie  des sciences de ge"
+                "s gestionnaire de l'environnement pour les rendre cap"
             ]
         }
     },
@@ -2292,9 +2016,6 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 "out d'exploitation  protection de l'environnement  et presente les sy"
-            ],
-            "protection de l'environnement": [
-                "out d'exploitation  protection de l'environnement  et presente les sy"
             ]
         }
     },
@@ -2309,7 +2030,7 @@
                 "radation des biomes/ecosystemes  ils doivent pouvoi",
                 "iques et les biomes/ecosystemes les plus menaces  i"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ues exercent sur la biosphere en considerant ces ",
                 "s qui pesent sur la biosphere  de leurs causes et",
                 "cts anthropiques  l'evolution temporelle et spati",
@@ -2319,7 +2040,7 @@
                 "radation des biomes/ecosystemes  ils doivent pouvoi",
                 "iques et les biomes/ecosystemes les plus menaces  i"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ues exercent sur la biosphere en considerant ces ",
                 "s qui pesent sur la biosphere  de leurs causes et",
                 "cosystemes   etats  impacts anthropiques et ge",
@@ -2332,7 +2053,7 @@
                 "radation des biomes/ecosystemes  ils doivent pouvoi",
                 "iques et les biomes/ecosystemes les plus menaces  i"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ues exercent sur la biosphere en considerant ces ",
                 "s qui pesent sur la biosphere  de leurs causes et",
                 "e la gestion de ces problemes",
@@ -2458,9 +2179,6 @@
     },
     "ENVT3067-1: Accompagnement de la transition vers l'agro\u00e9cologie": {
         "fr": {
-            "agro-?ecologie": [
-                "a transition vers l'agroecologie "
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "a transition vers l'agroecologie "
             ]
@@ -2472,24 +2190,13 @@
                 "ien l'erosion de la biodiversite dans nos regions es",
                 "ecologie appliquee a l'urban"
             ],
-            "[bio(?:diversite|sphere), erosion, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ien l'erosion de la biodiversite dans nos regions es",
                 "a montrer combien l'erosion de la biodiversite ",
-                "ecologie appliquee a l'urban",
                 "lyse l'interface << environnement  nature et amenagem"
-            ]
-        }
-    },
-    "FINA0085-1: Ethics, Regulation and Compliance in Finance": {
-        "fr": {
-            "[environnemental, ethique]": [
-                "e institutionnel qu'environnemental  du fait du positio",
-                " 1  importance de l'ethique en finance        e",
-                "es problematiques d'ethique  ce cours proposera",
-                "atiques de dilemmes ethiques  couvrant des cas ",
-                "exigences du code d'ethique du cfa       partie",
-                "al de 2008       -  ethique   comment la profes",
-                "oir un comportement ethique  permettant aux cir"
+            ],
+            "biologie de la conservation": [
+                "nir les bases de la biologie de la conservation  des concepts de va"
             ]
         }
     },
@@ -2510,7 +2217,7 @@
                 "pace et de services ecosystemiques       ils trouveron",
                 "fonctionnement de l'ecosysteme foret les bases de "
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "e co2  reservoir de biodiversite  facteur de develop",
                 "aclimax  origine et evolution des forets tropical",
                 "gestion des ecosystemes forestiers introduc",
@@ -2519,7 +2226,7 @@
                 "pace et de services ecosystemiques       ils trouveron",
                 "fonctionnement de l'ecosysteme foret les bases de "
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "e co2  reservoir de biodiversite  facteur de develop",
                 "forets tropicales   impacts de l'exploitation ",
                 "gestion des ecosystemes forestiers introduc",
@@ -2549,13 +2256,13 @@
                 " une exceptionnelle biodiversite  constituent d'impo",
                 "ent africain     3  ecologie des especes ligneus"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " une exceptionnelle biodiversite  constituent d'impo",
                 "ne africaine     5  impacts anthropiques sur l",
                 "ploitation a faible impact  a l'issue du cours",
                 "   2  d'evaluer les impacts de l'exploitation ",
                 "ploitation a faible impact     7  d'integrer l",
-                "ent africain     3  ecologie des especes ligneus"
+                "nent africain     3  ecologie des especes ligneus"
             ],
             "gestio[^ ]+ durab[^ ]+": [
                 "gestion durable des forets tropical"
@@ -2605,7 +2312,7 @@
                 "  - la diversite de ecosystemes et l'organisation d",
                 "ices rendus par les ecosystemes     l'etudiant est "
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "biosphere  agriculture et soc",
                 " organisation de la biosphere    fonctionnement d",
                 "'organisation de la biosphere   - l'evolution de ",
@@ -2616,12 +2323,8 @@
                 "icoles     services ecosystemiques a l'issue du cours ",
                 " fonctionnement des ecosystemes   - la diversite de",
                 "  - la diversite de ecosystemes et l'organisation d",
-                "r la voie de l'agro-ecologie   - les services re",
                 "ices rendus par les ecosystemes     l'etudiant est ",
                 " l'agriculture et l'environnemen"
-            ],
-            "agro-?ecologie": [
-                "le sur la voie de l'agro-ecologie   - les services re"
             ],
             "agro[- ]?ecolo[^ ]+": [
                 "le sur la voie de l'agro-ecologie   - les services re"
@@ -2654,30 +2357,6 @@
             ]
         }
     },
-    "GCER0077-1: Economic and Ethical Impacts of Digital Transformation": {
-        "en": {
-            "[environmental, ethic]": [
-                "considering social  environmental and economic impact",
-                "economic and ethical impacts of digita",
-                "nd it economics and ethical impact  it is the",
-                "nd its economic and ethical dimensions  in th",
-                "ng the economic and ethical impact associated",
-                "d lead to troubling ethical problems  student",
-                "ss the economic and ethical challenges they r",
-                "expansion           ethical foundation     in",
-                "e will review basic ethical aspects regarding",
-                "on illustrating the ethical concepts on the b",
-                "ng business-related ethical decisions in the ",
-                "s for analyzing the ethical dimensions of bus",
-                "nd its economic and ethical impact\"    analyz",
-                "ruments of business ethics  using them to exa",
-                "nt and economic and ethical aspects     evalu",
-                " emerging issues in ethical knowledge related",
-                "udgments concerning ethical values in the dig",
-                "gical  economic and ethical considerations in"
-            ]
-        }
-    },
     "GCER0094-1: Droit de l'environnement et de l'urbanisme": {
         "fr": {
             "droits? (?:d'|de l')?environnement": [
@@ -2707,14 +2386,6 @@
                 "les de transport et mobilite  il s'agit des tech",
                 "es [de transport et mobilite]     la cinquieme p",
                 "res de transport et mobilite  deux approches son"
-            ]
-        }
-    },
-    "GCIV0626-1: Constructions : mat\u00e9riaux et pathologies": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "es materiaux avec l'environnement  analyser et interp",
-                "ateriaux silicates  durabilite des materiaux  path"
             ]
         }
     },
@@ -2758,11 +2429,6 @@
     },
     "GENU2000-1: Nuclear energy : introduction": {
         "en": {
-            "[electri[^ ]+, green]": [
-                "ciple of generating electricity by nuclear means  f",
-                "overview of nuclear electricity generation and an o",
-                " developing world   greenhouse effect   liber"
-            ],
             "environment[^ ]+ issue": [
                 "dence of the eu     environmental issues    birds-eye view "
             ]
@@ -2934,36 +2600,18 @@
                 "griculture et de la biodiversite  particulierement f",
                 "evaluer le role des ecosystemes     - comprendre le"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "griculture et de la biodiversite  particulierement f",
                 "   - reconstituer l'evolution d'un relief contine",
                 "ans la gestion de l'environnement  de l'agriculture e",
-                "orphologiques sur l'ecologie et la biogeographie",
                 "evaluer le role des ecosystemes     - comprendre le"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "griculture et de la biodiversite  particulierement f",
                 "ocenose ainsi que l'impact de l'homme sur ces ",
                 "es      - evaluer l'impact des processus geomo",
                 "ans la gestion de l'environnement  de l'agriculture e",
-                "orphologiques sur l'ecologie et la biogeographie",
                 "evaluer le role des ecosystemes     - comprendre le"
-            ],
-            "[climat, environnement, ecolog[^ ]+]": [
-                " defi du changement climatique  la comprehensi",
-                "ans la gestion de l'environnement  de l'agriculture e",
-                "orphologiques sur l'ecologie et la biogeographie"
-            ],
-            "[ecologi, climat, agriculture]": [
-                "orphologiques sur l'ecologie et la biogeographi",
-                " defi du changement climatique  la comprehensi",
-                "environnement  de l'agriculture et de la biodiversi"
-            ],
-            "[gestion (?:de l')environnement, ecolog[^ ]+, impact]": [
-                " importante dans la gestion de l'environnement  de l'agriculture e",
-                "orphologiques sur l'ecologie et la biogeographie",
-                "ocenose ainsi que l'impact de l'homme sur ces ",
-                "es      - evaluer l'impact des processus geomo"
             ],
             "[impact, cours d'eau]": [
                 "ocenose ainsi que l'impact de l'homme sur ces ",
@@ -3204,7 +2852,7 @@
     },
     "GEOP0003-2: P\u00e9dogen\u00e8se, r\u00e9f\u00e9rentiels internationaux de classification et hydrodynamique des sols": {
         "fr": {
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "tre la lithosphere  biosphere  hydrosphere et atm",
                 "thropiques sur leur evolution  dans la partie ped",
                 "bordes les cycles d'evolution et sequences de sol",
@@ -3215,22 +2863,13 @@
                 "ans un contexte agroenvironnemental     - recueillir ",
                 "ions de remediation environnementale dans les systeme"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "tre la lithosphere  biosphere  hydrosphere et atm",
                 " et d'apprehender l'impact de l'homme sur ceux",
                 "'effet des facteurs environnementaux et anthropiques ",
                 "ons agronomiques et environnementales en s'appuyant s",
                 "ans un contexte agroenvironnemental     - recueillir ",
                 "ions de remediation environnementale dans les systeme"
-            ]
-        }
-    },
-    "GEOP0010-1: Evaluation de la qualit\u00e9 des sols": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "systemes de gestion environnementale sur base de donn",
-                "ntifier les menaces environnementales dans les system",
-                "s      * evaluer la durabilite de systemes de gest"
             ]
         }
     },
@@ -3243,11 +2882,6 @@
     },
     "GERE0025-1: Evaluation pratique des ressources en sols et en eau": {
         "fr": {
-            "[environnement, durabilite]": [
-                "ions de remediation environnementale dans les systeme",
-                "systemes de gestion environnementale en fonction sur ",
-                "he     - evaluer la durabilite de systemes de gest"
-            ],
             "gestion (?:de l'|des )?eaux?": [
                 "onnements lies a la gestion des eaux et des sols en belg"
             ]
@@ -3313,7 +2947,7 @@
                 "- l'entreprise et l'environnement naturel            ",
                 "ques  politiques et environnementaux d'une situation "
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "entreprise et developpement durable description du cour",
                 "'inscrivent dans le developpement durable     ce cours offre ",
                 "onstat de crises    developpement durable    transition manag",
@@ -3330,26 +2964,12 @@
             ],
             "objectifs? (de )?developpements? durables?": [
                 "   financing-mix et objectifs de developpement durable    investissement s"
-            ],
-            "[environnemental, ethique]": [
-                "pations sociales et environnementales a leurs objectifs",
-                " regard critique et ethique sur leurs pratiques"
-            ]
-        }
-    },
-    "GEST3028-2: Comptabilit\u00e9 et gestion des entreprises": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "valuation des couts environnementaux     2 2 principe",
-                "annexes sociales et environnementales     realiser un",
-                " une perspective de durabilite economique    plani",
-                " une perspective de durabilite economique    redig"
             ]
         }
     },
     "GEST3047-1: Environmental Management": {
         "fr": {
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "estion des dechets  biodiversite  qualite de l'air  ",
                 " les reponses a ces impacts environnementaux s",
                 "es problematiques d'environnement et de ressources na",
@@ -3362,7 +2982,7 @@
                 "tique et de gestion environnementales    2   apprendr",
                 "odes  de la gestion environnementale"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "estion des dechets  biodiversite  qualite de l'air  ",
                 "tion des principaux problemes environnementaux  ",
                 "portunites lies aux problemes environnementaux p",
@@ -3382,48 +3002,9 @@
             ]
         }
     },
-    "GEST3063-1: Economic and Ethical Impacts of Digital Transformation": {
-        "en": {
-            "[environmental, ethic]": [
-                "considering social  environmental and economic impact",
-                "economic and ethical impacts of digita",
-                "nd it economics and ethical impact  it is the",
-                "nd its economic and ethical dimensions  in th",
-                "ng the economic and ethical impact associated",
-                "d lead to troubling ethical problems  student",
-                "ss the economic and ethical challenges they r",
-                "expansion           ethical foundation     in",
-                "e will review basic ethical aspects regarding",
-                "on illustrating the ethical concepts on the b",
-                "ng business-related ethical decisions in the ",
-                "s for analyzing the ethical dimensions of bus",
-                "nd its economic and ethical impact\"     analy",
-                "ruments of business ethics  using them to exa",
-                "nt and economic and ethical aspects      eval",
-                " emerging issues in ethical knowledge related",
-                "udgments concerning ethical values in the dig",
-                "gical  economic and ethical considerations in"
-            ]
-        }
-    },
-    "GEST3763-1: Financement de la durabilit\u00e9": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "nterieur de limites environnementales et sociales  le",
-                "omiques  sociaux et environnementau",
-                "financement de la durabilite description du cour",
-                " \"financement de la durabilite\" analyse pourquoi l",
-                "analyse pourquoi la durabilite des entreprises imp",
-                "eviers vers plus de durabilite  au terme de ce cou",
-                "endre la notion de  durabilite   au niveau du syst",
-                "es aux ambitions de durabilite    acquerir une   c",
-                " financement  de la durabilite     ces acquis s'in"
-            ]
-        }
-    },
     "GEST6002-1: Entreprises sociales et business mod\u00e8les durables : mode d'organisation et de gestion": {
         "fr": {
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "la protection de la biodiversite  la regulation du s",
                 " monde en constante evolution  en developpant a l",
                 "pations sociales ou environnementales au point d'en f",
@@ -3469,32 +3050,31 @@
                 "limatiques ou de la biodiversite    discussion de la",
                 "n sous-systeme d'un ecosysteme  local ou global  p"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "limatiques ou de la biodiversite    discussion de la",
                 "ropie  circularite  evolution  etc     apports co",
                 "economie ecologique et gestion de la tr",
-                "ies a la transition ecologique et sociale  il s'ag",
+                "lies a la transition ecologique et sociale  il s'ag",
                 "eres economiques et environnementales  une fois posee",
-                " le nom d' economie ecologique    ecological econo",
-                "nomie ecologique    ecological economics  en angla",
-                "es et des questions ecologiques  y compris dans leu",
-                "iels de l' economie ecologique  peuvent etre assoc",
+                "s le nom d' economie ecologique    ecological econo",
+                "onomie ecologique    ecological economics  en angla",
+                "ues et des questions ecologiques  y compris dans leu",
+                "tiels de l' economie ecologique  peuvent etre assoc",
                 "n sous-systeme d'un ecosysteme  local ou global  p",
                 "eres economiques et environnementales    analyse des ",
                 "-cles de l'economie environnementale   externalites  ",
                 "aluation des actifs environnementaux    presentation ",
                 " gestion des actifs environnementaux  importance de l",
                 "nomique  la qualite environnementale et le bien-etre ",
-                "s du debat economie/ecologie   entropie  circula",
-                " dans la transition ecologique et sociale ce cours",
+                "e dans la transition ecologique et sociale ce cours",
                 "eres economiques et environnementales  ce faisant  l'",
-                "ux de la transition ecologique et sociale     au s",
-                "ansition sociale et ecologique          analyser l",
-                "ansition sociale et ecologique et percevoir les ob",
-                "ns cles en economie ecologique et de mobiliser les",
-                "ux de la transition ecologique et sociale     - de"
+                "eux de la transition ecologique et sociale     au s",
+                "ransition sociale et ecologique          analyser l",
+                "ransition sociale et ecologique et percevoir les ob",
+                "ons cles en economie ecologique et de mobiliser les",
+                "eux de la transition ecologique et sociale     - de"
             ],
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "ant des changements climatiques ou de la biodi",
                 "eres economiques et environnementales  une fois posee",
                 "eres economiques et environnementales    analyse des ",
@@ -3504,20 +3084,19 @@
                 "nomique  la qualite environnementale et le bien-etre ",
                 "eres economiques et environnementales  ce faisant  l'",
                 "economie ecologique et gestion de la tr",
-                "ies a la transition ecologique et sociale  il s'ag",
-                " le nom d' economie ecologique    ecological econo",
-                "nomie ecologique    ecological economics  en angla",
-                "es et des questions ecologiques  y compris dans leu",
-                "iels de l' economie ecologique  peuvent etre assoc",
-                "s du debat economie/ecologie   entropie  circula",
-                " dans la transition ecologique et sociale ce cours",
-                "ux de la transition ecologique et sociale     au s",
-                "ansition sociale et ecologique          analyser l",
-                "ansition sociale et ecologique et percevoir les ob",
-                "ns cles en economie ecologique et de mobiliser les",
-                "ux de la transition ecologique et sociale     - de"
+                "lies a la transition ecologique et sociale  il s'ag",
+                "s le nom d' economie ecologique    ecological econo",
+                "onomie ecologique    ecological economics  en angla",
+                "ues et des questions ecologiques  y compris dans leu",
+                "tiels de l' economie ecologique  peuvent etre assoc",
+                "e dans la transition ecologique et sociale ce cours",
+                "eux de la transition ecologique et sociale     au s",
+                "ransition sociale et ecologique          analyser l",
+                "ransition sociale et ecologique et percevoir les ob",
+                "ons cles en economie ecologique et de mobiliser les",
+                "eux de la transition ecologique et sociale     - de"
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "es a un objectif de developpement durable dans sa double dime",
                 "eres economiques et environnementales  une fois posee",
                 "eres economiques et environnementales    analyse des ",
@@ -3527,39 +3106,37 @@
                 "nomique  la qualite environnementale et le bien-etre ",
                 "eres economiques et environnementales  ce faisant  l'",
                 "economie ecologique et gestion de la tr",
-                "ies a la transition ecologique et sociale  il s'ag",
-                " le nom d' economie ecologique    ecological econo",
-                "nomie ecologique    ecological economics  en angla",
-                "es et des questions ecologiques  y compris dans leu",
-                "iels de l' economie ecologique  peuvent etre assoc",
+                "lies a la transition ecologique et sociale  il s'ag",
+                "s le nom d' economie ecologique    ecological econo",
+                "onomie ecologique    ecological economics  en angla",
+                "ues et des questions ecologiques  y compris dans leu",
+                "tiels de l' economie ecologique  peuvent etre assoc",
                 "n sous-systeme d'un ecosysteme  local ou global  p",
-                "s du debat economie/ecologie   entropie  circula",
-                " dans la transition ecologique et sociale ce cours",
-                "ux de la transition ecologique et sociale     au s",
-                "ansition sociale et ecologique          analyser l",
-                "ansition sociale et ecologique et percevoir les ob",
-                "ns cles en economie ecologique et de mobiliser les",
-                "ux de la transition ecologique et sociale     - de"
+                "e dans la transition ecologique et sociale ce cours",
+                "eux de la transition ecologique et sociale     au s",
+                "ransition sociale et ecologique          analyser l",
+                "ransition sociale et ecologique et percevoir les ob",
+                "ons cles en economie ecologique et de mobiliser les",
+                "eux de la transition ecologique et sociale     - de"
             ],
             "[developp[^ ]+ durab[^ ]+, transiti[^ ]+ social]": [
                 "es a un objectif de developpement durable dans sa double dime",
                 "uer a construire la transition sociale et ecologique     ",
                 "rises sociales a la transition sociale et ecologique et p"
             ],
-            "[ecologi, transiti[^ ]+ sociale]": [
-                "economie ecologique et gestion de la",
-                "ies a la transition ecologique et sociale  il s",
-                " le nom d' economie ecologique    ecological ec",
-                "nomie ecologique    ecological economics  en an",
-                "es et des questions ecologiques  y compris dans",
-                "iels de l' economie ecologique  peuvent etre as",
-                "s du debat economie/ecologie   entropie  circul",
-                " dans la transition ecologique et sociale ce co",
-                "ux de la transition ecologique et sociale     a",
-                "ansition sociale et ecologique          analyse",
-                "ansition sociale et ecologique et percevoir les",
-                "ns cles en economie ecologique et de mobiliser ",
-                "ux de la transition ecologique et sociale     -",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "economie ecologique et gestion de la tr",
+                "lies a la transition ecologique et sociale  il s'ag",
+                "s le nom d' economie ecologique    ecological econo",
+                "onomie ecologique    ecological economics  en angla",
+                "ues et des questions ecologiques  y compris dans leu",
+                "tiels de l' economie ecologique  peuvent etre assoc",
+                "e dans la transition ecologique et sociale ce cours",
+                "eux de la transition ecologique et sociale     au s",
+                "ransition sociale et ecologique          analyser l",
+                "ransition sociale et ecologique et percevoir les ob",
+                "ons cles en economie ecologique et de mobiliser les",
+                "eux de la transition ecologique et sociale     - de",
                 "uer a construire la transition sociale et ecologique      ",
                 "rises sociales a la transition sociale et ecologique et pe"
             ],
@@ -3606,20 +3183,12 @@
                 "siaux  n  moula     biodiversite domestique et risqu",
                 "rmifuges  zoonoses  ecosystemes et sante  approche "
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "siaux  n  moula     biodiversite domestique et risqu",
                 "l and environmental impacts 1  nutriments  ali",
                 "  hornick           environnement d'elevage - environ",
                 "nnement d'elevage - environnement humain  j f  cabara",
                 "rmifuges  zoonoses  ecosystemes et sante  approche "
-            ]
-        }
-    },
-    "GIRI9002-1: Cadres conceptuels de l'interdisciplinarit\u00e9 en gestion sanitaire": {
-        "fr": {
-            "[ecosyst[^ ]+, resilience]": [
-                "itoire  gestion des ecosystemes     d'autre part  a",
-                "omplexite  systeme  resilience  prevention  precau"
             ]
         }
     },
@@ -3658,25 +3227,25 @@
                 "lle  l'economie  la biodiversite  les valeurs cultur",
                 "urable  l'empreinte ecologique  les mobilites alte"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "lle  l'economie  la biodiversite  les valeurs cultur",
                 "res  en regard de l'evolution des directives euro",
                 "a construction et l'evolution des paysages       ",
                 "gies    impacts des evolutions technologies dans ",
                 "rre et modification/evolution des paysages       ",
                 "e  les legislations environnementale  paysagere  urba",
-                "urable  l'empreinte ecologique  les mobilites alte"
+                "durable  l'empreinte ecologique  les mobilites alte"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "lle  l'economie  la biodiversite  les valeurs cultur",
                 " et technologies    impacts des evolutions tec",
                 "e  les legislations environnementale  paysagere  urba",
-                "urable  l'empreinte ecologique  les mobilites alte"
+                "durable  l'empreinte ecologique  les mobilites alte"
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "porains tels que le developpement durable  l'empreinte ecolog",
                 "e  les legislations environnementale  paysagere  urba",
-                "urable  l'empreinte ecologique  les mobilites alte"
+                "durable  l'empreinte ecologique  les mobilites alte"
             ],
             "[durab(?:le|ilite), mobilite]": [
                 "ue le developpement durable  l'empreinte ecolog",
@@ -3745,10 +3314,6 @@
     },
     "HULG0492-1: Recherche et d\u00e9veloppement en agro\u00e9cologie": {
         "fr": {
-            "agro-?ecologie": [
-                "et developpement en agroecologie les engagements du ",
-                "et developpement en agroecologie\" peuvent etre consu"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "et developpement en agroecologie les engagements du ",
                 "et developpement en agroecologie\" peuvent etre consul"
@@ -3777,7 +3342,7 @@
                 "er dans les reseaux ecologiques     - comprendre  c",
                 "es dans les reseaux ecologiques   - communiquer ave"
             ],
-            "[bio(?:diversite|sphere), erosion, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "paysage et biodiversite   applications le c",
                 "ur l'approche de la biodiversite dans son ensemble  ",
                 "dans son ensemble   biodiversite  degradation des ha",
@@ -3786,14 +3351,13 @@
                 "tre l'erosion de la biodiversit",
                 "ats et des especes  erosion de la biodiversite ",
                 "e la lutte contre l'erosion de la biodiversit",
-                "s specificites de l'ecologie du paysage et les p",
-                "tion a une approche ecologiquement et paysagerement re",
+                "ution a une approche ecologiquement et paysagerement re",
                 "t de la gestion des environnements ruraux  urbains et",
-                "t les potentialites ecologiques et paysageres preal",
-                "er dans les reseaux ecologiques     - comprendre  c",
-                "es dans les reseaux ecologiques   - communiquer ave"
+                "nt les potentialites ecologiques et paysageres preal",
+                "rer dans les reseaux ecologiques     - comprendre  c",
+                "res dans les reseaux ecologiques   - communiquer ave"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "paysage et biodiversite   applications le c",
                 "ur l'approche de la biodiversite dans son ensemble  ",
                 "dans son ensemble   biodiversite  degradation des ha",
@@ -3801,14 +3365,13 @@
                 "ation du concept de biodiversite     - comprendre  c",
                 "tre l'erosion de la biodiversit",
                 "nt a l'analyse de l'evolution historique de l'act",
-                "s specificites de l'ecologie du paysage et les p",
-                "tion a une approche ecologiquement et paysagerement re",
+                "ution a une approche ecologiquement et paysagerement re",
                 "t de la gestion des environnements ruraux  urbains et",
-                "t les potentialites ecologiques et paysageres preal",
-                "er dans les reseaux ecologiques     - comprendre  c",
-                "es dans les reseaux ecologiques   - communiquer ave"
+                "nt les potentialites ecologiques et paysageres preal",
+                "rer dans les reseaux ecologiques     - comprendre  c",
+                "res dans les reseaux ecologiques   - communiquer ave"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "paysage et biodiversite   applications le c",
                 "ur l'approche de la biodiversite dans son ensemble  ",
                 "dans son ensemble   biodiversite  degradation des ha",
@@ -3816,12 +3379,11 @@
                 "ation du concept de biodiversite     - comprendre  c",
                 "tre l'erosion de la biodiversit",
                 " pour comprendre un probleme multidisciplinaire ",
-                "s specificites de l'ecologie du paysage et les p",
-                "tion a une approche ecologiquement et paysagerement re",
+                "ution a une approche ecologiquement et paysagerement re",
                 "t de la gestion des environnements ruraux  urbains et",
-                "t les potentialites ecologiques et paysageres preal",
-                "er dans les reseaux ecologiques     - comprendre  c",
-                "es dans les reseaux ecologiques   - communiquer ave"
+                "nt les potentialites ecologiques et paysageres preal",
+                "rer dans les reseaux ecologiques     - comprendre  c",
+                "res dans les reseaux ecologiques   - communiquer ave"
             ]
         }
     },
@@ -3850,10 +3412,6 @@
     },
     "HULG9335-1: Agro\u00e9cologie": {
         "fr": {
-            "agro-?ecologie": [
-                "agroecologie les engagements du ",
-                "cours hulg9335-1   \"agroecologie\" peuvent etre consu"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "agroecologie les engagements du ",
                 "cours hulg9335-1   \"agroecologie\" peuvent etre consul"
@@ -3892,7 +3450,7 @@
                 "istiques   services ecosystemiques rendus   sols const",
                 "rniers au sein de l'ecosysteme et de lui donner le"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " atmosphere du sol  biodiversite du sol        3  pr",
                 "    5  formation et evolution des sols   facteurs",
                 "istiques   services ecosystemiques rendus   sols const",
@@ -3923,13 +3481,12 @@
                 "e    cours d'eau et biodiversite    cours d'eau et a",
                 "e base associes aux ecosystemes aquatiques  par le "
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "e    cours d'eau et biodiversite    cours d'eau et a",
                 "allonnes qui ont un impact direct ou indirect ",
-                "caracteristiques et ecologie d'une riviere    qu",
+                " caracteristiques et ecologie d'une riviere    qu",
                 "e base associes aux ecosystemes aquatiques  par le ",
-                "le prisme tant de l'ecologie que de la gestion e",
-                "tions  hydraulique  ecologique  socio-economique e"
+                "ctions  hydraulique  ecologique  socio-economique e"
             ],
             "[impact, cours d'eau]": [
                 "allonnes qui ont un impact direct ou indirect ",
@@ -3944,13 +3501,8 @@
     },
     "INFO2038-1: Informatique et algorithmique": {
         "fr": {
-            "[ecosyst[^ ]+, resilience]": [
-                "ire et analyser les ecosystemes forestiers  naturel",
-                "rmes de durabilite  resilience et integration\"    "
-            ],
-            "[environnement, durabilite]": [
-                "odeliser un systeme environnemental dynamique existan",
-                "rpreter des donnees environnementales  sociales et ec",
+            "[[ ]ecolo[^ ]+, durabilite]": [
+                "nnement d'un systeme ecologique  forets  milieux na",
                 "efinis en termes de durabilite  resilience et inte"
             ]
         }
@@ -3975,9 +3527,6 @@
             ],
             "protection (?:de l')?environnement": [
                 "des    recyclage    protection de l'environnement    les changements "
-            ],
-            "protection de l'environnement": [
-                "des    recyclage    protection de l'environnement    les changements "
             ]
         }
     },
@@ -4001,26 +3550,6 @@
             ],
             "protection (?:de l')?environnement": [
                 "des    recyclage    protection de l'environnement    les changements "
-            ],
-            "protection de l'environnement": [
-                "des    recyclage    protection de l'environnement    les changements "
-            ]
-        }
-    },
-    "LEGI1004-1: Aspects r\u00e9glementaires, \u00e9thiques et commerciaux": {
-        "fr": {
-            "[environnement, durabilite]": [
-                "ne   revendications environnementales et/ou de durabi",
-                "e humaine et pour l'environnement           4  commun",
-                "nementales et/ou de durabilite     4   methodes d'"
-            ],
-            "[environnemental, ethique]": [
-                "ne   revendications environnementales et/ou de durabili",
-                "cts reglementaires  ethiques et commerciaux 1  ",
-                "protocoles de test  ethique des tests sur volon",
-                " 5  agir de maniere ethique et responsable     ",
-                "ans le respect de l'ethique           6  actual",
-                "mentation  de facon ethique et responsable     "
             ]
         }
     },
@@ -4046,9 +3575,6 @@
     },
     "MANA0007-1: Portfolio d'introduction aux sciences du vivant": {
         "fr": {
-            "agro-?ecologie": [
-                "s dans le master en agroecologie   pour ce faire  il"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "s dans le master en agroecologie   pour ce faire  il"
             ]
@@ -4126,13 +3652,6 @@
     },
     "MECA0526-1: High Temperature Processes in Recycling & Remanufacturing": {
         "fr": {
-            "[environnement, durabilite]": [
-                "etalliques dans des environnements extremes les etudi",
-                "acts economiques et environnementaux pour des flux do",
-                " corrosion dans des environnements extremes et dans d",
-                "ature  questions de durabilite des materiaux metal",
-                " et caracteriser la durabilite des materiaux"
-            ],
             "[recyclage, environnement]": [
                 "    - production et recyclage du fer et des acier",
                 "    - production et recyclage du cuivre et de l'a",
@@ -4175,7 +3694,7 @@
                 " et vivent dans des ecosystemes tres varies et comp",
                 "dans les differents ecosystemes et celui de l'homme"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et protegent notre biosphere  une minorite est r",
                 "nnement influence l'evolution des microorganismes",
                 "e  a l'origine de l'evolution des formes de vie q",
@@ -4188,7 +3707,7 @@
                 "e survie  dans leur environnement les microorganismes",
                 " sur notre planete  environnement  pathologie infecti"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et protegent notre biosphere  une minorite est r",
                 "sont developpes   l'impact des microorganismes",
                 " et vivent dans des ecosystemes tres varies et comp",
@@ -4207,7 +3726,7 @@
                 " et vivent dans des ecosystemes tres varies et comp",
                 "dans les differents ecosystemes et celui de l'homme"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et protegent notre biosphere  une minorite est r",
                 "nnement influence l'evolution des microorganismes",
                 "e  a l'origine de l'evolution des formes de vie q",
@@ -4220,7 +3739,7 @@
                 "e survie  dans leur environnement les microorganismes",
                 " sur notre planete  environnement  pathologie infecti"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et protegent notre biosphere  une minorite est r",
                 "sont developpes   l'impact des microorganismes",
                 " et vivent dans des ecosystemes tres varies et comp",
@@ -4238,7 +3757,7 @@
                 " et protegent notre biosphere  une minorite est r",
                 " et vivent dans des ecosystemes tres varies et comp"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et protegent notre biosphere  une minorite est r",
                 "e  a l'origine de l'evolution des formes de vie q",
                 "ue a l'origine de l'evolution mais aussi de l'eme",
@@ -4276,11 +3795,11 @@
     },
     "OCEA0049-1: Oc\u00e9anographie p\u00e9lagique": {
         "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "  les courants  les climats et l'homme affecte",
                 "graphie pelagique l'environnement pelagique  occupe l",
                 "cts des changements environnementaux sur l'ecosysteme",
-                "e biologique  et d' ecologie marine      - des e"
+                "ue biologique  et d' ecologie marine      - des e"
             ],
             "[impact, oceans?]": [
                 "poissons      - les impacts des changements en",
@@ -4297,7 +3816,7 @@
     },
     "OCEA0053-1: Etude des oc\u00e9ans et gestion du littoral": {
         "fr": {
-            "[bio(?:diversite|sphere), consequence, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "nes sur les oceans  biodiversite  tourrisme  polluti",
                 "   aura aborder les consequences des activites huma",
                 "s organismes et les ecosystemes marins  les liens e"
@@ -4306,12 +3825,12 @@
                 "nes sur les oceans  biodiversite  tourrisme  polluti",
                 "s organismes et les ecosystemes marins  les liens e"
             ],
-            "[bio(?:diversite|sphere), erosion, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "nes sur les oceans  biodiversite  tourrisme  polluti",
                 "urrisme  pollution  erosion         aura apppri",
                 "s organismes et les ecosystemes marins  les liens e"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "nes sur les oceans  biodiversite  tourrisme  polluti",
                 "ent des oceans et l'impact de l'homme sur celu",
                 "s organismes et les ecosystemes marins  les liens e"
@@ -4418,43 +3937,43 @@
                 "roduction to marine ecosystems modelling   the mai",
                 "processes in marine ecosystems     conducting obse"
             ],
-            "[bio(?:diversity|sphere), impact, environnement|ecolog[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversity|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "argest biome on the biosphere  and the place wher",
                 " ecosystems and the biosphere         the course ",
                 "imiques ainsi que l'impact de l'environnement ",
                 "marine ecology see ocea0057-b-a an",
-                "ription      marine ecology   the ocean is the ",
+                "cription      marine ecology   the ocean is the ",
                 " and functioning of ecosystems  impinging on all r",
-                "relevant aspects of ecology  including the spat",
+                " relevant aspects of ecology  including the spat",
                 "een populations and ecosystems      the  marine ec",
-                "ms      the  marine ecology  is the scientific ",
-                "eatures      marine ecology is a subset of the ",
+                "ems      the  marine ecology  is the scientific ",
+                "features      marine ecology is a subset of the ",
                 "the study of marine ecosystems and the biosphere  ",
-                "e course of  marine ecology  provides an introd",
-                " an introduction to ecology focuses on specific",
-                " on specific marine ecological concept  covering i",
+                "he course of  marine ecology  provides an introd",
+                "s an introduction to ecology focuses on specific",
+                "s on specific marine ecological concept  covering i",
                 "s  communities  and ecosystems       outline conte",
-                "general concepts in ecology applied to marine e",
-                "y applied to marine ecology  definitions  ecolo",
-                "ology  definitions  ecological factors  production",
-                "of organisms        ecology of the some marine ",
-                " concepts in marine ecology  colonization  clim",
+                " general concepts in ecology applied to marine e",
+                "gy applied to marine ecology  definitions  ecolo",
+                "cology  definitions  ecological factors  production",
+                " of organisms        ecology of the some marine ",
+                "c concepts in marine ecology  colonization  clim",
                 "roduction to marine ecosystems modelling   le but ",
-                "rmes d'interactions ecologiques et des taux de reac",
+                "ermes d'interactions ecologiques et des taux de reac",
                 "i que l'impact de l'environnement physique sur la for",
                 "bles d'etat dans un environnement 0d ou 1d  e g  expe",
-                "ription      marine ecology   the course will  ",
-                " basic knowledge of ecological characteristics and",
-                "  be abble to apply ecological principles    be ab",
-                "tively about marine ecology  issues and ideas  ",
-                "s applied in marine ecology during the field tr",
-                "nd interpret marine ecological data            int",
+                "cription      marine ecology   the course will  ",
+                "a basic knowledge of ecological characteristics and",
+                "   be abble to apply ecological principles    be ab",
+                "ctively about marine ecology  issues and ideas  ",
+                "ds applied in marine ecology during the field tr",
+                "and interpret marine ecological data            int",
                 "roduction to marine ecosystems modelling   the mai",
-                " biogeochemical and ecological processes       mar",
-                "cesses       marine ecology fieldtrip   student",
-                "nd models in marine ecology     identifying and",
+                "e biogeochemical and ecological processes       mar",
+                "ocesses       marine ecology fieldtrip   student",
+                "and models in marine ecology     identifying and",
                 "processes in marine ecosystems     conducting obse",
-                "al and experimental ecological research"
+                "nal and experimental ecological research"
             ]
         }
     },
@@ -4642,13 +4161,11 @@
                 "er la diversite des ecosystemes cotiers de regions ",
                 " anthropisation des ecosystemes tropicaux   c'est e"
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "arine  aquaculture  developpement durable  conservation  anth",
                 "quaculture  et de l'environnement marin et littoral  ",
                 "es provenant de ces environnements  les organismes re",
                 "er la diversite des ecosystemes cotiers de regions ",
-                "e  la phylogenie  l'ecologie  la physiologie et ",
-                "egrer des notions d'ecologie et de biodiversite ",
                 " anthropisation des ecosystemes tropicaux   c'est e"
             ]
         }
@@ -4736,9 +4253,6 @@
     },
     "PEDA0056-1: Conception, gestion et \u00e9valuation des dispositifs de formation": {
         "fr": {
-            "agro-?ecologie": [
-                " developpement de l'agroecologie dans les pays du su"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 " developpement de l'agroecologie dans les pays du su"
             ]
@@ -4788,19 +4302,27 @@
             ]
         }
     },
+    "RAVT0002-1: Eco-\u00e9thologie et conservation de la faune": {
+        "fr": {
+            "biologie de la conservation": [
+                "mportementale et la biologie de la conservation  le cours comporte ",
+                "s  eco-ethologie et biologie de la conservation  et demonstration d"
+            ]
+        }
+    },
     "RCER0035-1: PRODUIRE en ville": {
         "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "mentaux tels que le climat  la qualite des sol",
                 "mes d'exigences pedoclimatiques  de leurs deve",
                 "e et durable avec l'environnement urbain  il s'agit d",
                 "rt soumis aux aleas environnementaux tels que le clim",
-                "ctions nourriciere  ecologique  economique et soci",
-                "iales  economiques  ecologiques  techniques  legisl"
+                "nctions nourriciere  ecologique  economique et soci",
+                "ciales  economiques  ecologiques  techniques  legisl"
             ],
-            "[ecologi, climat, agriculture]": [
-                "ctions nourriciere  ecologique  economique et s",
-                "iales  economiques  ecologiques  techniques  le",
+            "[[ ]ecolo[^ ]+, climat, agriculture]": [
+                "nctions nourriciere  ecologique  economique et soci",
+                "ciales  economiques  ecologiques  techniques  legisl",
                 "mentaux tels que le climat  la qualite des sol",
                 "mes d'exigences pedoclimatiques  de leurs deve",
                 "le introduction a l'agriculture urbaine   concepts ",
@@ -4842,7 +4364,7 @@
                 "en ville   services ecosystemiques  biophilie  infrast",
                 "ure verte  nouveaux ecosystemes  batiments vegetali"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "r son environnement biodiversite et ecologie urbaine",
                 "cologie urbaine     biodiversite et ecologie urbaine",
                 "ux themes lies a la biodiversite en ville   services",
@@ -4850,17 +4372,17 @@
                 "re les enjeux de la biodiversite en ville et pouvoir",
                 "ne introduction a l'evolution de la pensee et de ",
                 "respecter son environnement biodiversite et eco",
-                "ent biodiversite et ecologie urbaine     biodive",
-                "    biodiversite et ecologie urbaine       apres",
-                "nsee et de l'action ecologique depuis les milieux ",
+                "ment biodiversite et ecologie urbaine     biodive",
+                "     biodiversite et ecologie urbaine       apres",
+                "ensee et de l'action ecologique depuis les milieux ",
                 "en ville   services ecosystemiques  biophilie  infrast",
                 "ure verte  nouveaux ecosystemes  batiments vegetali",
                 " sont adaptees a un environnement urbain  ces methode",
                 "de la sante et de l'environnement   lutte biologique ",
-                "el  biodiversite et ecologie urbaine   comprendr",
+                "iel  biodiversite et ecologie urbaine   comprendr",
                 "es d'adaptation des environnements urbains pour favor"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "r son environnement biodiversite et ecologie urbaine",
                 "cologie urbaine     biodiversite et ecologie urbaine",
                 "ux themes lies a la biodiversite en ville   services",
@@ -4868,14 +4390,14 @@
                 "re les enjeux de la biodiversite en ville et pouvoir",
                 "es     -connaitre l'impact des polluants sur l",
                 "respecter son environnement biodiversite et eco",
-                "ent biodiversite et ecologie urbaine     biodive",
-                "    biodiversite et ecologie urbaine       apres",
-                "nsee et de l'action ecologique depuis les milieux ",
+                "ment biodiversite et ecologie urbaine     biodive",
+                "     biodiversite et ecologie urbaine       apres",
+                "ensee et de l'action ecologique depuis les milieux ",
                 "en ville   services ecosystemiques  biophilie  infrast",
                 "ure verte  nouveaux ecosystemes  batiments vegetali",
                 " sont adaptees a un environnement urbain  ces methode",
                 "de la sante et de l'environnement   lutte biologique ",
-                "el  biodiversite et ecologie urbaine   comprendr",
+                "iel  biodiversite et ecologie urbaine   comprendr",
                 "es d'adaptation des environnements urbains pour favor"
             ],
             "[ecosyst[^ ]+, pollution]": [
@@ -4904,9 +4426,6 @@
     },
     "RSTG0010-1: Stage (d\u00e9couvrir le monde professionnel / de la recherche)": {
         "fr": {
-            "agro-?ecologie": [
-                "a ou des masters en agroecologie sont susceptibles d"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "a ou des masters en agroecologie sont susceptibles d"
             ]
@@ -4914,9 +4433,6 @@
     },
     "RTFE2006-1: Stage / M\u00e9moire": {
         "fr": {
-            "agro-?ecologie": [
-                " en relation avec l'agroecologie et les enseignement"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 " en relation avec l'agroecologie et les enseignement"
             ]
@@ -4929,7 +4445,7 @@
                 " et vivent dans des ecosystemes tres varies et comp",
                 "dans les differents ecosystemes et celui de l'homme"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et protegent notre biosphere  une minorite est r",
                 "nnement influence l'evolution des microorganismes",
                 "a complexite et a l'evolution dans le domaine de ",
@@ -4942,7 +4458,7 @@
                 " risques infectieux environnementaux elements d'immun",
                 " sur notre planete  environnement  pathologie infecti"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " et protegent notre biosphere  une minorite est r",
                 "otions concernant l'impact des microorganismes",
                 " et vivent dans des ecosystemes tres varies et comp",
@@ -4984,7 +4500,7 @@
     },
     "SCER0013-1: Applied Entomology in natural management and biodiversity": {
         "fr": {
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "et la gestion de la biodiversite       methodes de s",
                 "uantification de la biodiversite            aspects ",
                 "et la gestion de la biodiversite  gestion de la faun",
@@ -4993,15 +4509,11 @@
                 "            aspects environnementaux       les bio-in",
                 "ectes en adaptant l'environnement comprendre et mieux"
             ],
-            "[bio(?:diversity|sphere), extinction, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversity|sphere), extinction, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ural management and biodiversity definitions       o",
                 " rares et en voie d'extinction  impact des changem",
                 "            aspects environnementaux       les bio-in",
                 "ectes en adaptant l'environnement comprendre et mieux"
-            ],
-            "[extinction, espece]": [
-                " rares et en voie d'extinction  impact des changem",
-                "articulierement des especes invasives  rares e"
             ],
             "[extinction, insecte]": [
                 " rares et en voie d'extinction  impact des changem",
@@ -5027,8 +4539,8 @@
     },
     "SOCI0022-1: Epist\u00e9mologie des sciences sociales": {
         "fr": {
-            "crises? ecologiqu": [
-                "aitable       3  la crise ecologique met-elle fin a l'a"
+            "crises? ecolo[^ ]+": [
+                "aitable       3  la crise ecologique met-elle fin a l'as"
             ],
             "questions? environnement": [
                 "ciences sociales et questions environnementales  a travers le c"
@@ -5042,14 +4554,6 @@
             ],
             "objectifs? (de )?developpements? durables?": [
                 "ration sud-sud  les objectifs de developpement durable et la justice clima"
-            ]
-        }
-    },
-    "SPAT0009-1: High-energy astrophysics": {
-        "fr": {
-            "[electri[^ ]+, verte]": [
-                "ir  absorption photoelectrique  effet auger  desin",
-                "agnetique se sont ouvertes aux astrophysicien"
             ]
         }
     },
@@ -5209,13 +4713,10 @@
                 "de la genomique a l'ecologie des organismes mari",
                 "erses facettes de l'ecologie sont abordees  tant"
             ],
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "e  biogeographique  climatique  geologique  hy",
                 "s de caracteriser l'environnement  de quantifier la b",
-                "site  phylogenie et ecologie ce voyage d'etude a",
-                " fonctionnelle et l'ecologie  il n'est donc pas ",
-                "de la genomique a l'ecologie des organismes mari",
-                "erses facettes de l'ecologie sont abordees  tant"
+                "rsite  phylogenie et ecologie ce voyage d'etude a"
             ]
         }
     },
@@ -5228,13 +4729,13 @@
                 "s des organismes et ecologie proviennent d'horiz",
                 "ques geologiques et ecologiques des lieux visites  "
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " scientifique de la biodiversite de nos regions   le",
                 "nt de quantifier la biodiversite a un moment donne e",
                 "ons de preserver la biodiversite dans nos regions   ",
                 "ne et de suivre son evolution au cours des annees",
-                "s des organismes et ecologie proviennent d'horiz",
-                "ques geologiques et ecologiques des lieux visites  "
+                "es des organismes et ecologie proviennent d'horiz",
+                "iques geologiques et ecologiques des lieux visites  "
             ]
         }
     },
@@ -5254,7 +4755,7 @@
                 " de references de l'ecologie de montagne  en par",
                 "s   les contraintes ecologiques que rencontrent les"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "stage   biodiversite et ecologie de mont",
                 "t pelouses avec une biodiversite tres importante  sa",
                 "mpact direct sur la biodiversite  la conservation et",
@@ -5264,25 +4765,19 @@
                 "crire rapidement la biodiversite vegetale d'un lieu ",
                 "nte decrivant cette biodiversite      2  comprendre ",
                 "xeme siecle  ont un impact direct sur la biodi",
-                "e   biodiversite et ecologie de montagne l'objec",
-                "ons ayant trait a l'ecologie specifique de ce ty",
-                " de references de l'ecologie de montagne  en par",
-                "s   les contraintes ecologiques que rencontrent les"
+                "ge   biodiversite et ecologie de montagne l'objec",
+                "es   les contraintes ecologiques que rencontrent les"
             ],
-            "[ecologi, climat, agriculture]": [
-                "e   biodiversite et ecologie de montagne l'obje",
-                "ons ayant trait a l'ecologie specifique de ce t",
-                " de references de l'ecologie de montagne  en pa",
-                "s   les contraintes ecologiques que rencontrent",
+            "[[ ]ecolo[^ ]+, climat, agriculture]": [
+                "ge   biodiversite et ecologie de montagne l'objec",
+                "es   les contraintes ecologiques que rencontrent les",
                 "resent   l'histoire climatique de ces sites   ",
                 "t le resultat d'une agriculture extensive avec fauc",
                 "x  en particulier l'agriculture de semi-subistance "
             ],
-            "[ecologi, climat, amenagements? du territoire]": [
-                "e   biodiversite et ecologie de montagne l'obje",
-                "ons ayant trait a l'ecologie specifique de ce t",
-                " de references de l'ecologie de montagne  en pa",
-                "s   les contraintes ecologiques que rencontrent",
+            "[[ ]ecolo[^ ]+, climat, amenagements? du territoire]": [
+                "ge   biodiversite et ecologie de montagne l'objec",
+                "es   les contraintes ecologiques que rencontrent les",
                 "resent   l'histoire climatique de ces sites   ",
                 "a conservation et l'amenagement du territoire  la coexistence ave"
             ]
@@ -5314,10 +4809,8 @@
                 " en toile de fond l'ecologie fonctionnelle et la",
                 " de la recherche en ecologie des milieux d'eau d"
             ],
-            "[electri[^ ]+, verte]": [
-                "entuellement peches electriques  de maillons de la ",
-                "rophique tels les invertebres  poissons et am",
-                "uverture et de decouvertes au-dela de la prob"
+            "biologie de la conservation": [
+                "posante orientee en biologie de la conservation au travers de visit"
             ]
         }
     },
@@ -5345,9 +4838,6 @@
             ],
             "transiti[^ ]+ energ[^ ]+": [
                 "hemes   energies et transition energetique  sylviculture  amen"
-            ],
-            "protection de l'environnement": [
-                "sources naturelles  protection de l'environnement  mobilite    - la  "
             ]
         }
     },
@@ -5388,9 +4878,6 @@
     },
     "VEGE0028-1: M\u00e9thodes de protection des v\u00e9g\u00e9taux": {
         "fr": {
-            "agro-?ecologie": [
-                "urales  y compris l'agroecologie  et genetiques  les"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "urales  y compris l'agroecologie  et genetiques  les"
             ],
@@ -5420,16 +4907,6 @@
     },
     "VEGE0036-1: Agro\u00e9cologie tropicale et temp\u00e9r\u00e9e": {
         "fr": {
-            "agro-?ecologie": [
-                "agroecologie tropicale et temper",
-                "urs et du concept d'agroecologie    ii  illustration",
-                "cettes du concept d'agroecologie et de pratiques agr",
-                " scientifiques de l'agroecologie et de leur applicat",
-                "cettes du concept d'agroecologie et leur faire acque",
-                " des competences en agroecologie afin de leur permet",
-                " les principes de l'agro-ecologie et discuter la faco",
-                " des competences en agroecologie afin de leur permet"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "agroecologie tropicale et temper",
                 "urs et du concept d'agroecologie    ii  illustration",
@@ -5448,14 +4925,6 @@
     },
     "VEGE0036-2: Agro\u00e9cologie tropicale et temp\u00e9r\u00e9e, Introduction": {
         "fr": {
-            "agro-?ecologie": [
-                "agroecologie tropicale et temper",
-                "urs et du concept d'agroecologie    ii  illustration",
-                "cettes du concept d'agroecologie et de pratiques agr",
-                "cettes du concept d'agroecologie et leur faire acque",
-                " des competences en agroecologie afin de leur permet",
-                " les principes de l'agro-ecologie et discuter la faco"
-            ],
             "agro[- ]?ecolo[^ ]+": [
                 "agroecologie tropicale et temper",
                 "urs et du concept d'agroecologie    ii  illustration",
@@ -5470,23 +4939,21 @@
     },
     "VEGE0041-1: Fondements de biologie et d'\u00e9cologie des bioagresseurs": {
         "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "ronnement  facteurs climatiques et biotiques t",
                 "ec leurs hotes et l'environnement  facteurs climatiqu",
                 "nsectes auxiliaires/environnement    sa connaissance ",
-                "ts de biologie et d'ecologie des bioagresseurs t",
-                "ntes biologiques et ecologiques  contraintes reglem"
+                "intes biologiques et ecologiques  contraintes reglem"
             ]
         }
     },
     "VEGE0041-2: Fondements de biologie et d'\u00e9cologie des bioagresseurs, Introduction": {
         "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
                 "ronnement  facteurs climatiques et biotiques t",
                 "ec leurs hotes et l'environnement  facteurs climatiqu",
                 "nsectes auxiliaires/environnement    sa connaissance ",
-                "ts de biologie et d'ecologie des bioagresseurs  ",
-                "ntes biologiques et ecologiques  contraintes reglem"
+                "intes biologiques et ecologiques  contraintes reglem"
             ]
         }
     },
@@ -5496,7 +4963,7 @@
                 "ate du sol et de la biodiversite vegetales seront de",
                 "opulations dans des ecosystemes agricoles et non ag"
             ],
-            "[bio(?:diversite|sphere), evolution, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "ate du sol et de la biodiversite vegetales seront de",
                 "ssement refletant l'evolution epidemiologique des",
                 "hes de gestion agri-environnementales de la parcelle ",
@@ -5526,26 +4993,6 @@
     },
     "VETE0036-6: Ecologie appliqu\u00e9e aux animaux domestiques": {
         "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
-                "ge  le bruit  la bioclimatologie  l'isolation ",
-                "alite generale de l'environnement            le cours",
-                "   de l'impact de l'environnement sur la sante animal",
-                "animal sur la sante environnementale            les t",
-                "es composantes de l'environnement des animaux suscept",
-                "discuter des enjeux environnementaux lies aux animaux",
-                "ecologie appliquee aux anima",
-                "cipes generaux de l'ecologie et continue ensuite",
-                "cipes generaux de l'ecologie      du logement de",
-                "objectif du cours d'ecologie appliquee aux anima"
-            ],
-            "[ecologi, climat, elevage]": [
-                "ecologie appliquee aux anim",
-                "cipes generaux de l'ecologie et continue ensuit",
-                "cipes generaux de l'ecologie      du logement d",
-                "objectif du cours d'ecologie appliquee aux anim",
-                "ge  le bruit  la bioclimatologie  l'isolation ",
-                "es animaux dans les elevages specialises en mon"
-            ],
             "sante environnement": [
                 " de l'animal sur la sante environnementale            les t"
             ]
@@ -5573,28 +5020,8 @@
             ]
         }
     },
-    "VETE2087-1: Comp\u00e9tences transversales (d\u00e9cisionnelles et relationnelles)": {
-        "fr": {
-            "[climat, environnement, ecolog[^ ]+]": [
-                "mment creation d'un climat de confiance et ges",
-                "efis et contraintes environnementaux et en se basant ",
-                "on de l'animal    l'environnement est social  economi",
-                "tique  d'ethique  d'ecologie et de science du bi"
-            ]
-        }
-    },
     "ZOOL2000-1: Ecologie, production et gestion des \u00e9cosyst\u00e8mes aquatiques": {
         "fr": {
-            "[electri[^ ]+, verte]": [
-                "s cours d'eau  hydroelectricite  navigation  irriga",
-                "im zooplancton et invertebres   ce partim du ",
-                " productivite des invertebres dans les ecosys",
-                "e la biologie des invertebres planctoniques  ",
-                "la production des invertebres sont presentees",
-                "uction en masse d'invertebres  aquaculture  n",
-                "im zooplancton et invertebres   l'objectif de",
-                " de populations d'invertebres    les etudiant"
-            ],
             "[impact, cours d'eau]": [
                 "opiques qui ont des impacts majeurs sur les re",
                 "ices rendus par les cours d'eau  hydroelectricite  "

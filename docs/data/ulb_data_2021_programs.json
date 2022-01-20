@@ -90,21 +90,21 @@
    5
   ],
   "matched_courses":[
-   "ENVI-L510",
-   "ENVI-L505",
-   "MEMO-L503",
-   "ENVI-F452",
-   "ENVI-F510",
-   "ENVI-F403",
-   "ENVI-D500",
-   "ENVI-L4111",
-   "ENVI-L4110",
-   "SAPU-L4021",
-   "ENVI-L5210",
-   "ENVI-L5211",
    "ENVI-F5002",
+   "ENVI-F510",
+   "ENVI-L5210",
+   "ENVI-L504",
+   "ENVI-F452",
+   "ENVI-L4110",
+   "ENVI-L505",
+   "ENVI-F403",
    "ENVI-F434",
-   "ENVI-L504"
+   "ENVI-L4111",
+   "ENVI-D500",
+   "SAPU-L4021",
+   "ENVI-L510",
+   "MEMO-L503",
+   "ENVI-L5211"
   ],
   "nb_dedicated_courses":13
  },
@@ -250,11 +250,10 @@
    "environment"
   ],
   "themes_scores":[
-   2
+   1
   ],
   "matched_courses":[
-   "PHAR-J653",
-   "PHAR-J652"
+   "PHAR-J653"
   ],
   "nb_dedicated_courses":0
  },
@@ -282,8 +281,8 @@
    3
   ],
   "matched_courses":[
-   "MSTL-F602",
    "MSTL-F607",
+   "MSTL-F602",
    "MSTL-F611"
   ],
   "nb_dedicated_courses":1
@@ -347,11 +346,11 @@
    4
   ],
   "matched_courses":[
-   "ARCH-H400",
-   "ARCH-H502",
    "URBA-H9009",
+   "URBA-H9002",
+   "ARCH-H502",
    "URBA-P9009",
-   "URBA-H9002"
+   "ARCH-H400"
   ],
   "nb_dedicated_courses":3
  },
@@ -384,8 +383,8 @@
   ],
   "matched_courses":[
    "URBA-Y707",
-   "URBA-Y701",
-   "URBA-Y700"
+   "URBA-Y700",
+   "URBA-Y701"
   ],
   "nb_dedicated_courses":0
  },
@@ -408,11 +407,9 @@
    "Management"
   ],
   "themes":[
-   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -541,8 +538,8 @@
    1
   ],
   "matched_courses":[
-   "ENVI-D500",
-   "DROI-C5100"
+   "DROI-C5100",
+   "ENVI-D500"
   ],
   "nb_dedicated_courses":1
  },
@@ -658,8 +655,8 @@
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irar",
   "languages":[
    "",
-   "fr",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -684,9 +681,9 @@
    3
   ],
   "matched_courses":[
+   "ARCH-H502",
    "ARCH-H400",
-   "CHIM-H528",
-   "ARCH-H502"
+   "CHIM-H528"
   ],
   "nb_dedicated_courses":1
  },
@@ -748,22 +745,20 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
    "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   1,
    2,
    2,
    2
   ],
   "matched_courses":[
    "CHIM-H409",
-   "GEST-S471",
-   "CHIM-H522",
    "CHIM-H504",
+   "CHIM-H522",
+   "GEST-S471",
    "CHIM-H528"
   ],
   "nb_dedicated_courses":1
@@ -775,8 +770,8 @@
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irif",
   "languages":[
    "",
-   "fr",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -806,8 +801,8 @@
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irem",
   "languages":[
    "",
-   "fr",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -833,12 +828,12 @@
   ],
   "matched_courses":[
    "MECA-H418",
-   "GEST-S471",
+   "MECA-H417",
    "MECA-H414",
-   "ELEC-Y502",
    "GEST-H506",
+   "GEST-S471",
    "CHIM-H528",
-   "MECA-H417"
+   "ELEC-Y502"
   ],
   "nb_dedicated_courses":4
  },
@@ -905,18 +900,18 @@
    2
   ],
   "matched_courses":[
-   "GEOL-F426",
-   "BIOL-F4002",
+   "ENVI-F405",
+   "GEOL-F428",
+   "GEOG-F408",
    "GEOL-F414",
+   "BIOL-F4002",
+   "GEOG-F410",
    "GEOL-F4004",
+   "GEOG-F400",
+   "ENVI-F526",
    "CHIM-H302",
    "GEOL-F432",
-   "ENVI-F405",
-   "GEOG-F408",
-   "GEOL-F428",
-   "ENVI-F526",
-   "GEOG-F400",
-   "GEOG-F410"
+   "GEOL-F426"
   ],
   "nb_dedicated_courses":4
  },
@@ -926,8 +921,8 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-chim",
   "languages":[
-   "",
    "fr",
+   "",
    "en"
   ],
   "campuses":[
@@ -952,9 +947,9 @@
    1
   ],
   "matched_courses":[
-   "CHIM-F430",
-   "CHIM-F423",
    "CHIM-F474",
+   "CHIM-F423",
+   "CHIM-F430",
    "CHIM-F415",
    "ENVI-F526"
   ],
@@ -993,10 +988,10 @@
    1
   ],
   "matched_courses":[
-   "GEOG-F400",
    "ENVI-F1001",
+   "ENVI-F405",
    "ENVI-F437",
-   "ENVI-F405"
+   "GEOG-F400"
   ],
   "nb_dedicated_courses":2
  },
@@ -1034,13 +1029,13 @@
   ],
   "matched_courses":[
    "ENVI-F1001",
+   "ENVI-F405",
    "ENVI-F510",
    "ENVI-F403",
-   "ENVI-F437",
-   "ENVI-F409",
-   "ENVI-F405",
-   "ENVI-F4001",
    "ENVI-F434",
+   "ENVI-F4001",
+   "ENVI-F409",
+   "ENVI-F437",
    "GEOG-F400"
   ],
   "nb_dedicated_courses":6
@@ -1075,11 +1070,11 @@
    5
   ],
   "matched_courses":[
-   "GEOG-Y035",
-   "ARCH-H400",
+   "PROJ-P4311",
    "URBA-H9009",
    "ARCH-H502",
-   "PROJ-P4311"
+   "GEOG-Y035",
+   "ARCH-H400"
   ],
   "nb_dedicated_courses":3
  },
@@ -1145,19 +1140,19 @@
    2
   ],
   "matched_courses":[
-   "BIOL-F441",
-   "ENVI-Y029",
-   "BIOL-F4002",
+   "ENVI-Y018",
    "BING-F410",
    "BIOL-F449",
-   "ENVI-Y018",
-   "BIOL-Y020",
+   "ENVI-Y029",
+   "BIOL-F4002",
    "BIOL-Y114",
-   "BIOL-F461",
    "BIOL-Y001",
-   "BIOL-F450",
    "BIOL-Y023",
-   "BIOL-Y030"
+   "BIOL-Y030",
+   "BIOL-F461",
+   "BIOL-F441",
+   "BIOL-F450",
+   "BIOL-Y020"
   ],
   "nb_dedicated_courses":8
  },
@@ -1188,28 +1183,30 @@
   "themes_scores":[
    4,
    1,
-   13,
+   15,
    3
   ],
   "matched_courses":[
-   "BIOL-Y190",
-   "BIOL-Y178",
-   "BIOL-Y088",
-   "ENVI-F452",
-   "BIOL-F4002",
+   "ENVI-F405",
+   "BIOL-Y149",
+   "BIOL-Y181",
    "BIOL-Y010",
-   "BIOL-Y020",
-   "BIOL-Y191",
+   "ENVI-F452",
+   "BIOL-F417",
+   "BIOL-Y190",
+   "BIOL-F4002",
+   "ENVI-F409",
    "BIOL-Y114",
    "BIOL-Y001",
-   "ENVI-F405",
-   "BIOL-Y159",
+   "BIOL-Y191",
    "BIOL-Y176",
-   "BIOL-F417",
-   "ENVI-F409",
-   "GEOG-F400"
+   "BIOL-Y159",
+   "GEOG-F400",
+   "BIOL-Y088",
+   "BIOL-Y178",
+   "BIOL-Y020"
   ],
-  "nb_dedicated_courses":10
+  "nb_dedicated_courses":11
  },
  {
   "id":"M-BIORD",
@@ -1263,15 +1260,14 @@
    "sustainability"
   ],
   "themes_scores":[
-   4,
+   3,
    2
   ],
   "matched_courses":[
-   "ENVI-F452",
    "TOUR-F407",
+   "ENVI-F452",
    "ENVI-F403",
-   "TOUR-F425",
-   "TOUR-F424"
+   "TOUR-F425"
   ],
   "nb_dedicated_courses":1
  },
@@ -1305,26 +1301,26 @@
   "themes_scores":[
    5,
    2,
-   11,
+   10,
    2,
    6
   ],
   "matched_courses":[
-   "BIOL-F441",
-   "ENVI-F452",
    "BING-F410",
-   "BING-H5001",
-   "GEOL-F414",
-   "GEOG-F400",
-   "ENVI-F510",
-   "ENVI-F454",
-   "CHIM-H504",
-   "ENVI-F409",
    "ENVI-F405",
+   "ENVI-F510",
+   "BIOL-F441",
+   "ENVI-F454",
+   "ENVI-F452",
+   "GEOL-F414",
    "ENVI-F434",
-   "BIOL-F417",
+   "ENVI-F409",
+   "CHIM-H504",
    "ENVI-F526",
-   "BING-F525"
+   "BING-F525",
+   "BIOL-F417",
+   "GEOG-F400",
+   "BING-H5001"
   ],
   "nb_dedicated_courses":6
  },
@@ -1394,14 +1390,14 @@
    1
   ],
   "matched_courses":[
-   "BING-H5001",
-   "BING-F430",
-   "BING-F4004",
-   "BING-F5001",
-   "BING-F4006",
    "BING-F403",
+   "BING-F5001",
+   "BING-F431",
+   "BING-F4004",
+   "BING-F4006",
+   "BING-H5001",
    "BING-F4001",
-   "BING-F431"
+   "BING-F430"
   ],
   "nb_dedicated_courses":3
  },
@@ -1434,12 +1430,12 @@
    4
   ],
   "matched_courses":[
+   "ARCH-P7111",
    "ARCH-P8119",
    "PROJ-P4311",
-   "PROJ-P5311",
-   "ARCH-P7111",
    "ARCH-P7120",
-   "PROJ-P4307"
+   "PROJ-P4307",
+   "PROJ-P5311"
   ],
   "nb_dedicated_courses":2
  },
@@ -1476,24 +1472,24 @@
    5
   ],
   "matched_courses":[
+   "CHIM-F474",
+   "ENVI-F405",
+   "ENVI-F510",
    "BIOL-F441",
    "GEOL-F428",
-   "ENVI-F452",
-   "GEOL-F414",
-   "GEOG-F400",
-   "ENVI-F510",
-   "ENVI-F501",
-   "CHIM-F474",
-   "GEOL-F432",
-   "ENVI-F437",
-   "ENVI-F409",
-   "ENVI-F405",
    "GEOG-F408",
+   "ENVI-F452",
+   "ENVI-F501",
+   "GEOL-F414",
+   "ENVI-F409",
+   "GEOG-F410",
+   "ENVI-F437",
+   "BING-F525",
    "BIOL-F417",
+   "GEOG-F400",
    "ENVI-F526",
    "GEOG-Y001",
-   "BING-F525",
-   "GEOG-F410"
+   "GEOL-F432"
   ],
   "nb_dedicated_courses":9
  },
@@ -1525,35 +1521,35 @@
   "themes_scores":[
    3,
    2,
-   19,
+   18,
    5,
    12
   ],
   "matched_courses":[
-   "ENVI-F529",
-   "ENVI-F452",
-   "ENVI-F5001",
-   "ENVI-F510",
-   "ENVI-F501",
-   "ENVI-F531",
-   "ENVI-F437",
-   "ENVI-F405",
    "ENVI-F504",
-   "ENVI-D500",
-   "ENVI-L4110",
-   "ENVI-F5002",
-   "ENVI-F434",
-   "ENVI-F438",
-   "SOCA-D4996",
-   "TOUR-F407",
-   "ENVI-F403",
-   "ENVI-F454",
-   "ENVI-L5210",
+   "ENVI-F510",
    "ENVI-F4001",
+   "ENVI-F437",
+   "ENVI-F438",
+   "ENVI-F5002",
    "BING-F1001",
-   "ETHI-F201",
+   "ENVI-L5210",
+   "ENVI-L4110",
    "ENVI-F409",
-   "ENVI-L505"
+   "SOCA-D4996",
+   "ENVI-D500",
+   "ENVI-F405",
+   "ENVI-F452",
+   "ENVI-F501",
+   "ENVI-F529",
+   "ENVI-F403",
+   "ENVI-F531",
+   "ENVI-F434",
+   "TOUR-F407",
+   "ENVI-F5001",
+   "ENVI-L505",
+   "ETHI-F201",
+   "ENVI-F454"
   ],
   "nb_dedicated_courses":17
  },
@@ -1581,14 +1577,13 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   2,
    1
   ],
   "matched_courses":[
    "GEST-S471",
    "GEST-S407",
-   "GEST-S442",
-   "GEST-S4005"
+   "GEST-S442"
   ],
   "nb_dedicated_courses":0
  },
@@ -1598,11 +1593,11 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-econ",
   "languages":[
+   "nl",
    "",
    "de",
-   "en",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -1632,12 +1627,12 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-gest",
   "languages":[
-   "de",
-   "ar",
-   "en",
-   "fr",
    "nl",
-   "jp"
+   "de",
+   "jp",
+   "fr",
+   "ar",
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -1658,8 +1653,8 @@
    1
   ],
   "matched_courses":[
-   "GEST-S472",
    "DROI-S400",
+   "GEST-S472",
    "GEST-S471"
   ],
   "nb_dedicated_courses":0
@@ -1670,8 +1665,8 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-droi",
   "languages":[
-   "",
    "fr",
+   "",
    "en"
   ],
   "campuses":[
@@ -1696,14 +1691,14 @@
    2
   ],
   "matched_courses":[
-   "DROI-C5150",
-   "DROI-C4014",
    "DROI-C5100",
-   "DROI-C5021",
-   "ENVI-F403",
    "DROI-C5125",
-   "DROI-C5153",
-   "ENVI-F434"
+   "DROI-C5021",
+   "DROI-C4014",
+   "ENVI-F403",
+   "ENVI-F434",
+   "DROI-C5150",
+   "DROI-C5153"
   ],
   "nb_dedicated_courses":2
  },
@@ -1713,8 +1708,8 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-phys",
   "languages":[
-   "",
    "fr",
+   "",
    "en"
   ],
   "campuses":[
@@ -1828,9 +1823,9 @@
    2
   ],
   "matched_courses":[
-   "POLI-O417",
    "DROI-C5150",
-   "POLI-D445"
+   "POLI-D445",
+   "POLI-O417"
   ],
   "nb_dedicated_courses":1
  },
@@ -1890,21 +1885,20 @@
   ],
   "themes_scores":[
    2,
-   8,
+   7,
    2,
    5
   ],
   "matched_courses":[
-   "HIST-D401",
-   "DROI-C5100",
-   "ETHI-F201",
+   "ENVI-F5002",
    "ENVI-F1001",
+   "DROI-C5100",
    "ENVI-F510",
    "ENVI-F403",
+   "ETHI-F201",
+   "ENVI-F434",
    "ENVI-D500",
-   "ENVI-F5002",
-   "GEST-S454",
-   "ENVI-F434"
+   "HIST-D401"
   ],
   "nb_dedicated_courses":6
  },
@@ -1937,8 +1931,8 @@
    1
   ],
   "matched_courses":[
-   "HIST-D401",
-   "ENVI-F434"
+   "ENVI-F434",
+   "HIST-D401"
   ],
   "nb_dedicated_courses":2
  },
@@ -2000,8 +1994,8 @@
   ],
   "matched_courses":[
    "POLI-O417",
-   "ECON-Y506",
-   "SOCA-Y506"
+   "SOCA-Y506",
+   "ECON-Y506"
   ],
   "nb_dedicated_courses":3
  },
@@ -2031,9 +2025,9 @@
    3
   ],
   "matched_courses":[
+   "TOUR-F407",
    "SOCA-D4996",
-   "ENVI-F403",
-   "TOUR-F407"
+   "ENVI-F403"
   ],
   "nb_dedicated_courses":2
  },
@@ -2217,50 +2211,21 @@
   "themes_scores":[
    3,
    2,
-   6,
+   4,
    1,
    2
   ],
   "matched_courses":[
-   "BING-F1001",
-   "CHIM-F101",
-   "ETHI-F201",
-   "ETHI-F301",
-   "ENVI-F454",
-   "CHIM-H302",
    "ELEC-H201",
    "BING-F202",
-   "BING-F305"
+   "BING-F1001",
+   "ETHI-F201",
+   "BING-F305",
+   "CHIM-H302",
+   "ETHI-F301",
+   "ENVI-F454"
   ],
   "nb_dedicated_courses":3
- },
- {
-  "id":"BA-SCIE",
-  "name":"Bachelier en sciences (1e ann\u00e9e polyvalente)",
-  "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-scie",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "CHIM-F101"
-  ],
-  "nb_dedicated_courses":0
  },
  {
   "id":"BA-PHYS",
@@ -2282,7 +2247,6 @@
   ],
   "themes":[
    "climate",
-   "energy",
    "environment",
    "resources",
    "sustainability"
@@ -2290,16 +2254,13 @@
   "themes_scores":[
    2,
    1,
-   2,
    1,
    1
   ],
   "matched_courses":[
-   "CHIM-F101",
-   "ETHI-F201",
    "ETHI-F301",
    "ENVI-F1001",
-   "PHYS-F202"
+   "ETHI-F201"
   ],
   "nb_dedicated_courses":1
  },
@@ -2309,8 +2270,8 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-math",
   "languages":[
-   "",
    "fr",
+   "",
    "en"
   ],
   "campuses":[
@@ -2324,7 +2285,6 @@
   ],
   "themes":[
    "climate",
-   "energy",
    "environment",
    "resources",
    "sustainability"
@@ -2332,16 +2292,13 @@
   "themes_scores":[
    2,
    1,
-   2,
    1,
    1
   ],
   "matched_courses":[
-   "CHIM-F101",
-   "ETHI-F201",
    "ETHI-F301",
    "ENVI-F1001",
-   "PHYS-F202"
+   "ETHI-F201"
   ],
   "nb_dedicated_courses":1
  },
@@ -2351,8 +2308,8 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-info",
   "languages":[
-   "",
    "fr",
+   "",
    "en"
   ],
   "campuses":[
@@ -2412,17 +2369,16 @@
   ],
   "themes_scores":[
    4,
-   2,
+   1,
    1,
    1
   ],
   "matched_courses":[
-   "CHIM-F101",
-   "ETHI-F201",
-   "ETHI-F301",
    "ENVI-F1001",
    "GEOG-F102",
-   "GEOG-F203"
+   "GEOG-F203",
+   "ETHI-F201",
+   "ETHI-F301"
   ],
   "nb_dedicated_courses":2
  },
@@ -2452,17 +2408,16 @@
   ],
   "themes_scores":[
    3,
-   3,
+   2,
    1,
    1
   ],
   "matched_courses":[
-   "CHIM-F101",
-   "ETHI-F201",
-   "BIOL-F305",
    "ENVI-F1001",
    "GEOG-F102",
-   "GEOG-F203"
+   "GEOG-F203",
+   "BIOL-F305",
+   "ETHI-F201"
   ],
   "nb_dedicated_courses":3
  },
@@ -2492,14 +2447,13 @@
   ],
   "themes_scores":[
    2,
-   2,
+   1,
    1,
    1
   ],
   "matched_courses":[
    "ETHI-F301",
    "ENVI-F1001",
-   "CHIM-F101",
    "ETHI-F201"
   ],
   "nb_dedicated_courses":1
@@ -2559,17 +2513,16 @@
   ],
   "themes_scores":[
    2,
-   4,
+   3,
    1,
    1
   ],
   "matched_courses":[
-   "CHIM-F101",
-   "ETHI-F201",
-   "ETHI-F301",
    "ENVI-F1001",
+   "BIOL-F305",
+   "ETHI-F201",
    "BIOL-F310",
-   "BIOL-F305"
+   "ETHI-F301"
   ],
   "nb_dedicated_courses":3
  },
@@ -2607,11 +2560,11 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-econ",
   "languages":[
-   "de",
+   "nl",
    "",
-   "en",
+   "de",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "UMons"
@@ -2633,8 +2586,8 @@
   ],
   "matched_courses":[
    "PHYS-S201",
-   "ECON-S2002",
-   "ENVI-S101"
+   "ENVI-S101",
+   "ECON-S2002"
   ],
   "nb_dedicated_courses":1
  },
@@ -2644,11 +2597,11 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-inge",
   "languages":[
-   "de",
+   "nl",
    "",
-   "en",
+   "de",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -2669,9 +2622,9 @@
    2
   ],
   "matched_courses":[
+   "CHIM-S101",
    "PHYS-S201",
-   "GEST-S204",
-   "CHIM-S101"
+   "GEST-S204"
   ],
   "nb_dedicated_courses":0
  },
@@ -2701,8 +2654,8 @@
    2
   ],
   "matched_courses":[
-   "DROI-C2004",
-   "DROI-C2002"
+   "DROI-C2002",
+   "DROI-C2004"
   ],
   "nb_dedicated_courses":0
  },
@@ -2712,15 +2665,15 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-trad",
   "languages":[
+   "nl",
    "de",
+   "it",
+   "ru",
+   "fr",
    "ar",
-   "cn",
    "en",
    "es",
-   "it",
-   "fr",
-   "nl",
-   "ru"
+   "cn"
   ],
   "campuses":[
    "Solbosch"
@@ -2729,7 +2682,8 @@
    "Facult\u00e9 de Lettres, Traduction et Communication"
   ],
   "fields":[
-   "Letters"
+   "Letters",
+   "Communication"
   ],
   "themes":[
    "energy",
@@ -2744,8 +2698,8 @@
    1
   ],
   "matched_courses":[
-   "TRAN-B2000",
-   "TRAD-B2060"
+   "TRAD-B2060",
+   "TRAN-B2000"
   ],
   "nb_dedicated_courses":0
  },
@@ -2755,8 +2709,8 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-soca",
   "languages":[
-   "fr",
    "nl",
+   "fr",
    "en",
    "es"
   ],
@@ -2787,21 +2741,21 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-pphil",
   "languages":[
-   "de",
-   "pl",
-   "ar",
-   "ro",
-   "en",
-   "es",
-   "si",
-   "pt",
-   "it",
-   "tr",
-   "cz",
-   "fr",
    "nl",
+   "de",
+   "cz",
+   "it",
+   "ru",
+   "pt",
+   "pl",
    "jp",
-   "ru"
+   "fr",
+   "es",
+   "ar",
+   "si",
+   "tr",
+   "en",
+   "ro"
   ],
   "campuses":[
    "Solbosch"
@@ -2830,17 +2784,17 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-lgerm",
   "languages":[
-   "de",
-   "ar",
-   "pl",
-   "cn",
-   "en",
-   "es",
-   "it",
-   "cz",
-   "fr",
    "nl",
-   "ru"
+   "de",
+   "cz",
+   "it",
+   "ru",
+   "pl",
+   "fr",
+   "cn",
+   "es",
+   "ar",
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -2849,7 +2803,8 @@
    "Facult\u00e9 de Lettres, Traduction et Communication"
   ],
   "fields":[
-   "Letters"
+   "Letters",
+   "Communication"
   ],
   "themes":[
    "resources",
@@ -2892,8 +2847,8 @@
    2
   ],
   "matched_courses":[
-   "HIST-D2704",
-   "LANG-D314"
+   "LANG-D314",
+   "HIST-D2704"
   ],
   "nb_dedicated_courses":0
  },
@@ -2903,18 +2858,18 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-llang",
   "languages":[
-   "de",
-   "ar",
-   "pl",
-   "cn",
-   "en",
-   "es",
-   "it",
-   "cz",
-   "fr",
    "nl",
+   "de",
+   "cz",
+   "it",
+   "ru",
    "jp",
-   "ru"
+   "pl",
+   "fr",
+   "cn",
+   "es",
+   "ar",
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -2923,7 +2878,8 @@
    "Facult\u00e9 de Lettres, Traduction et Communication"
   ],
   "fields":[
-   "Letters"
+   "Letters",
+   "Communication"
   ],
   "themes":[
    "resources",

@@ -45,6 +45,8 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
     def parse_main(response, ue_id):
 
         ue_name = cleanup(response.xpath("//section[@id='helmoContent']//h3/text()").get())
+        if not ue_name.startswith("UE"):
+            ue_name = ue_name.title()
         main_teacher = response.xpath("//div[text()=\"Responsable de l'UE :\"]/following::span[1]/text()").get()
         sub_teachers = response.xpath("//div[text()=\"Autres intervenants :\"]/following::span[1]/text()").get()
         teachers = [main_teacher]

@@ -12,10 +12,8 @@ import langdetect
 from langdetect import DetectorFactory
 import re
 
-from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
+from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, ACCEPTED_LANGUAGES
 
-# Languages for which a dictionary is defined
-ACCEPTED_LANGUAGES = ["fr", "en", "nl"]
 DetectorFactory.seed = 0
 
 
@@ -158,7 +156,7 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
             courses_df.loc[idx, themes] = 0
             continue
 
-        # If we didn't identify a language for which we have a dictionary,
+        # If we didn't identify a language for which we have a dictionary
         # use the first language in which the course is given
         languages = [l for l in languages if l in ACCEPTED_LANGUAGES]
         if len(languages) == 0:
@@ -187,6 +185,7 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
 
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="School code")
     parser.add_argument("-y", "--year", help="Academic year", default=2020)
@@ -194,4 +193,13 @@ if __name__ == "__main__":
     arguments = vars(parser.parse_args())
     arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}/")
     arguments['dictionary_name'] = 'v1.1'
-    score_school_courses(**arguments)
+
+    schools = ["kuleuven", "uantwerpen", "uclouvain", "ugent", "uhasselt",
+               "ulb", "uliege", "umons", "unamur", "uslb", "vub"]
+    schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
+                "henallux", "hers", "howest", "ichec", "ihecs", "ispg", "issig", "odisee", "thomasmore", "ucll",
+                "vinci", "vives"]
+    for school in schools:
+        arguments['school'] = school
+        print(school)
+        score_school_courses(**arguments)

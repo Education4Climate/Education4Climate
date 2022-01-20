@@ -5,11 +5,11 @@
   "cycle":"bac",
   "url":"http:\/\/progcours.hers.be\/cocoon\/programmes\/E1TOFC01_C.html",
   "languages":[
-   "fr",
    "nl",
+   "de",
+   "fr",
    "es",
-   "en",
-   "de"
+   "en"
   ],
   "campuses":[
 
@@ -18,7 +18,7 @@
    "D\u00e9partement Economique"
   ],
   "fields":[
-   "TODO"
+   "Economy"
   ],
   "themes":[
    "climate",
@@ -29,13 +29,14 @@
   "themes_scores":[
    1,
    3,
-   1,
+   2,
    2
   ],
   "matched_courses":[
-   "TDBE0001-1",
    "TDEH0002-1",
-   "TDER0001-1"
+   "TDER0001-1",
+   "TDBE0001-1",
+   "TDAL0001-1"
   ],
   "nb_dedicated_courses":3
  },
@@ -54,7 +55,7 @@
    "D\u00e9partement Technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
@@ -63,16 +64,18 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
+   2,
    2,
    2
   ],
   "matched_courses":[
    "CONS0004-2",
+   "GEST3751-2",
+   "CONS0026-2",
    "CONS0010-3"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
  },
  {
   "id":"T1ININ01",
@@ -89,17 +92,21 @@
    "D\u00e9partement Technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "environment"
   ],
   "themes_scores":[
    1,
+   2,
    1
   ],
   "matched_courses":[
+   "GEST3759-1",
+   "TECH0769-1",
    "ENER0003-2"
   ],
   "nb_dedicated_courses":1
@@ -119,18 +126,25 @@
    "D\u00e9partement Technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   4,
+   1,
    1
   ],
   "matched_courses":[
-   "COEN0001-1"
+   "COEN0001-1",
+   "BIOL2039-2",
+   "SCEN0002-2",
+   "SCAP0002-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"T1INFC01",
@@ -147,7 +161,7 @@
    "D\u00e9partement Technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy"
@@ -175,15 +189,23 @@
    "D\u00e9partement Technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   4,
+   2
   ],
   "matched_courses":[
+   "CHIM9288-1",
+   "ECOL0003-1",
+   "ENVI0833-1",
+   "CHIM9286-1",
    "ECOL0002-1"
   ],
   "nb_dedicated_courses":1
@@ -203,23 +225,25 @@
    "D\u00e9partement Technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "climate",
    "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1,
    1
   ],
   "matched_courses":[
-   "MATE0001-1",
-   "ENVI0829-1"
+   "ENVI0829-1",
+   "MATE0001-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -239,7 +263,45 @@
    "D\u00e9partement Technique"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "SPEC0003-1",
+   "SPEC0005-2",
+   "MATE0009-1",
+   "BOIS0002-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"E1ADIR01",
+  "name":"Bachelier - Assistant(e) de direction",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hers.be\/cocoon\/programmes\/E1ADIR01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement Economique"
+  ],
+  "fields":[
+   "Economy"
   ],
   "themes":[
    "resources"
@@ -248,7 +310,93 @@
    1
   ],
   "matched_courses":[
-   "MATE0009-1"
+   "ADAA0002-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"E1COFC01",
+  "name":"Bachelier en comptabilit\u00e9",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hers.be\/cocoon\/programmes\/E1COFC01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement Economique"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "COAP0001-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"E1INFO01",
+  "name":"Bachelier en informatique de gestion",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hers.be\/cocoon\/programmes\/E1INFO01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement Economique"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "INBB0001-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1AESC01",
+  "name":"Bachelier\u00a0: agr\u00e9g\u00e9(e) de l'enseignement secondaire inf\u00e9rieur, orientation sciences\u00a0: biologie, chimie, physique",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hers.be\/cocoon\/programmes\/P1AESC01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "SCET0001-2",
+   "SCEU0003-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -267,7 +415,7 @@
    "D\u00e9partement P\u00e9dagogique"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "energy"
