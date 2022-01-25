@@ -127,8 +127,8 @@
                                     v-if="school.type == 'university' && totalCoursesCounts[school.id] > 0">
                                     <input type="checkbox" class="form-check-input" v-model="selectedUniversities"
                                         :id="'checkbox-school-' + school.id" :value="school.id">
-                                    <label class="form-check-label"
-                                        :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
+                                    <label class="form-check-label" :for="'checkbox-school-' + school.id"
+                                        :title="school.name">{{school.shortName}}</label>
                                 </div>
                                 <span class="ml-auto count"
                                     v-if="school.type == 'university' && totalCoursesCounts[school.id] > 0">{{totalCoursesCounts[school.id]}}</span>
@@ -146,8 +146,8 @@
                                     v-if="school.type == 'highschool' && totalCoursesCounts[school.id] > 0">
                                     <input type="checkbox" class="form-check-input" v-model="selectedHighSchools"
                                         :id="'checkbox-school-' + school.id" :value="school.id">
-                                    <label class="form-check-label"
-                                        :for="'checkbox-school-' + school.id">{{school.shortName}}</label>
+                                    <label class="form-check-label" :for="'checkbox-school-' + school.id"
+                                        :title="school.name">{{school.shortName}}</label>
                                 </div>
                                 <span class="ml-auto count"
                                     v-if="school.type == 'highschool' && totalCoursesCounts[school.id] > 0">{{totalCoursesCounts[school.id]}}</span>
