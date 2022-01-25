@@ -51,12 +51,10 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1,
@@ -98,13 +96,14 @@
    1,
    3,
    1,
-   2
+   1
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "E039060",
-   "K001339"
+   "K001339",
+   "E065460",
+   "E078751"
   ],
   "nb_dedicated_courses":1
  },
@@ -138,17 +137,17 @@
    3,
    3,
    4,
-   2,
-   4
+   1,
+   3
   ],
   "matched_courses":[
+   "I002702",
+   "K001339",
+   "E721046",
    "E745027",
    "E755050",
    "E755008",
-   "E721046",
-   "E755040",
-   "K001339",
-   "I002702"
+   "E755040"
   ],
   "nb_dedicated_courses":4
  },
@@ -181,9 +180,9 @@
    2
   ],
   "matched_courses":[
-   "I000417",
+   "C003061",
    "F000752",
-   "C003061"
+   "I000417"
   ],
   "nb_dedicated_courses":2
  },
@@ -211,12 +210,13 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1
+   2,
+   2
   ],
   "matched_courses":[
    "E630110",
-   "E630067"
+   "E630067",
+   "E630058"
   ],
   "nb_dedicated_courses":0
  },
@@ -250,6 +250,37 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"IZ6BIV",
+  "name":"Voorbereidingsprogramma tot Master of Science in de bio-industri\u00eble wetenschappen: circulaire bioprocestechnologie",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-bio-industriele-wetenschappen-circulaire-bioprocestechnologie\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "I620023",
+   "I630055"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"IZ6MIS",
   "name":"Schakelprogramma tot Master of Science in de industri\u00eble wetenschappen: milieukunde",
   "cycle":"other",
@@ -264,7 +295,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -279,12 +310,149 @@
    2
   ],
   "matched_courses":[
-   "I630028",
    "I630013",
-   "I630035",
-   "E620032"
+   "I630040",
+   "I630028",
+   "E620032",
+   "I630035"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"HOWETIBE",
+  "name":"Educatieve Master of Science in de wetenschappen en technologie (verkort traject) (bio-engineering)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-bio-engineering-HOWETIBE\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Brugge"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Bio-ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HOWETCCH",
+  "name":"Educatieve Master of Science in de wetenschappen en technologie (verkort traject) (chemie)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-chemie-HOWETCCH\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Brugge"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HOWETCBI",
+  "name":"Educatieve Master of Science in de wetenschappen en technologie (verkort traject) (biologie)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-biologie-HOWETCBI\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Brugge"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HOWETCBB",
+  "name":"Educatieve Master of Science in de wetenschappen en technologie (verkort traject) (biochemie en biotechologie)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-biochemie-en-biotechologie\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Brugge"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"CMGLOG",
@@ -307,18 +475,26 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
+   1,
+   5,
    1,
    1
   ],
   "matched_courses":[
    "C002664",
-   "C004255"
+   "C002615",
+   "C004255",
+   "C003994",
+   "C002654",
+   "C002646"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"CMGEOI",
@@ -346,19 +522,24 @@
   ],
   "themes_scores":[
    5,
-   4,
+   9,
    1,
    5
   ],
   "matched_courses":[
-   "K001013",
    "E066012",
-   "C002664",
    "F000752",
+   "C002664",
+   "C002615",
+   "K001339",
+   "C003994",
    "C002275",
-   "K001339"
+   "C002654",
+   "E078920",
+   "C002646",
+   "K001013"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":5
  },
  {
   "id":"CMGEOG",
@@ -385,19 +566,23 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   2,
    1,
-   3,
+   7,
    3
   ],
   "matched_courses":[
-   "C001158",
-   "F000752",
    "K000253",
    "C003534",
+   "F000752",
+   "C001032",
+   "C001158",
+   "C003538",
+   "C003387",
+   "C003068",
    "C001623"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":5
  },
  {
   "id":"CMGEOF",
@@ -426,23 +611,26 @@
   ],
   "themes_scores":[
    6,
-   2,
-   7,
    1,
-   6
+   8,
+   1,
+   7
   ],
   "matched_courses":[
-   "I002697",
-   "C004175",
-   "E084580",
+   "C003534",
+   "I002691",
+   "C001032",
    "E084970",
    "K001339",
-   "C003534",
+   "C004175",
+   "I002697",
    "B001319",
-   "I002691",
+   "E084580",
+   "C003068",
+   "E086611",
    "C001623"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":5
  },
  {
   "id":"JMGEMI",
@@ -463,11 +651,9 @@
    "Pharmacy"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "climate"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -482,8 +668,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-gender-en-diversiteit\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -507,10 +693,11 @@
   "themes_scores":[
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "A005523"
+   "A005523",
+   "A004401"
   ],
   "nb_dedicated_courses":0
  },
@@ -560,16 +747,18 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
-   "I002760"
+   "I002755",
+   "I002760",
+   "I002756"
   ],
   "nb_dedicated_courses":0
  },
@@ -599,10 +788,14 @@
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   4,
+   2
   ],
   "matched_courses":[
+   "K001259",
+   "K001016",
+   "K001223",
+   "K000288",
    "K001111"
   ],
   "nb_dedicated_courses":1
@@ -622,21 +815,27 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
    "energy",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
+   2,
+   1,
    1
   ],
   "matched_courses":[
-   "I002403",
-   "I000675"
+   "I000675",
+   "I002404",
+   "I002775",
+   "I002403"
   ],
   "nb_dedicated_courses":0
  },
@@ -655,7 +854,7 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -667,30 +866,39 @@
   "themes_scores":[
    4,
    1,
-   10,
-   4,
-   11
+   21,
+   3,
+   13
   ],
   "matched_courses":[
-   "I002701",
-   "I002586",
-   "I001439",
-   "I002591",
-   "I002851",
-   "I001542",
-   "I002604",
-   "C003870",
-   "I000928",
-   "I002600",
-   "I001571",
-   "I002608",
-   "I002535",
-   "I002607",
    "I002702",
+   "I000928",
+   "I002508",
+   "I002606",
+   "I002851",
+   "I001439",
+   "I002597",
+   "I002603",
+   "I002698",
+   "I002600",
+   "I002608",
+   "I002591",
+   "I001571",
+   "I002504",
+   "I002585",
+   "I002607",
+   "I002604",
+   "I002535",
+   "I002590",
+   "I002586",
    "C003534",
-   "I002603"
+   "C003870",
+   "I002701",
+   "I002589",
+   "I001542",
+   "I002609"
   ],
-  "nb_dedicated_courses":9
+  "nb_dedicated_courses":14
  },
  {
   "id":"FMEECO",
@@ -719,14 +927,17 @@
   ],
   "themes_scores":[
    1,
-   2,
+   3,
    1,
-   3
+   5
   ],
   "matched_courses":[
+   "F000935",
    "I002685",
-   "F000679",
-   "F000935"
+   "F000181",
+   "F000627",
+   "F000636",
+   "F000679"
   ],
   "nb_dedicated_courses":2
  },
@@ -749,12 +960,15 @@
    "Veterinary"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "G000836",
    "G000925"
   ],
   "nb_dedicated_courses":0
@@ -766,8 +980,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-veterinary-medicine-in-de-diergeneeskunde-paard\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -779,15 +993,19 @@
    "Veterinary"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   3
+   2,
+   5
   ],
   "matched_courses":[
    "G000913",
+   "G000836",
+   "G000925",
    "G000911",
-   "G000925"
+   "G000912"
   ],
   "nb_dedicated_courses":0
  },
@@ -798,8 +1016,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-veterinary-medicine-in-de-diergeneeskunde-onderzoek\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -811,12 +1029,15 @@
    "Veterinary"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "G000836",
    "G000925"
   ],
   "nb_dedicated_courses":0
@@ -851,18 +1072,108 @@
    3,
    2,
    4,
-   2,
-   4
+   1,
+   3
   ],
   "matched_courses":[
+   "I002702",
+   "K001339",
+   "E721046",
    "E745027",
    "E755008",
-   "E721046",
-   "E755040",
-   "K001339",
-   "I002702"
+   "E755040"
   ],
   "nb_dedicated_courses":3
+ },
+ {
+  "id":"EM7ELIES",
+  "name":"Master of Science in de industri\u00eble wetenschappen: elektronica-ICT (ingebedde systemen)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-industriele-wetenschappen-elektronica-ict-ingebedde-systemen-EM7ELIES\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E735025"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EM7ELIIC",
+  "name":"Master of Science in de industri\u00eble wetenschappen: elektronica-ICT (ICT)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-industriele-wetenschappen-elektronica-ict-ict\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E735025"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EM7ELIEL",
+  "name":"Master of Science in de industri\u00eble wetenschappen: elektronica-ICT (elektronica)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-industriele-wetenschappen-elektronica-ict-elektronica-EM7ELIEL\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E735025"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"EM7ELM",
@@ -893,17 +1204,17 @@
   "themes_scores":[
    3,
    2,
-   3,
-   2,
-   4
+   4,
+   1,
+   3
   ],
   "matched_courses":[
-   "E745027",
-   "E755008",
+   "I002702",
    "E731018",
-   "E721046",
    "K001339",
-   "I002702"
+   "E721046",
+   "E745027",
+   "E755008"
   ],
   "nb_dedicated_courses":3
  },
@@ -930,10 +1241,11 @@
    "environment"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "E072302"
+   "E072302",
+   "E066661"
   ],
   "nb_dedicated_courses":1
  },
@@ -964,15 +1276,17 @@
   ],
   "themes_scores":[
    1,
-   3,
+   4,
    2,
-   1
+   3
   ],
   "matched_courses":[
-   "E711047",
-   "E711051",
+   "E715032",
+   "E715030",
    "E711065",
-   "E715030"
+   "E711051",
+   "E715026",
+   "E711047"
   ],
   "nb_dedicated_courses":1
  },
@@ -992,17 +1306,22 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
+   1,
+   1,
    2
   ],
   "matched_courses":[
    "I002632",
-   "I002607"
+   "I002607",
+   "I002623"
   ],
   "nb_dedicated_courses":0
  },
@@ -1021,7 +1340,7 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
@@ -1029,13 +1348,16 @@
    "sustainability"
   ],
   "themes_scores":[
+   3,
    2,
-   1,
-   1
+   2
   ],
   "matched_courses":[
-   "I002086",
-   "I002871"
+   "I002861",
+   "I002756",
+   "I002871",
+   "I002859",
+   "I002086"
   ],
   "nb_dedicated_courses":1
  },
@@ -1069,17 +1391,82 @@
    "sustainability"
   ],
   "themes_scores":[
+   1,
    2,
-   2,
-   3,
-   3
+   4,
+   4
   ],
   "matched_courses":[
    "K001298",
-   "K001338",
-   "K001111"
+   "K001016",
+   "K001223",
+   "K001111",
+   "K001338"
   ],
   "nb_dedicated_courses":2
+ },
+ {
+  "id":"AMSHIE",
+  "name":"Master of Arts in de geschiedenis",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-geschiedenis\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "A005533"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"EMFIRE",
+  "name":"International Master of Science in Fire Safety Engineering",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/international-master-of-science-in-fire-safety-engineering-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Engineering and Architecture"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E900529"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"EMPHYS",
@@ -1112,14 +1499,15 @@
    1,
    4,
    2,
-   3
+   2
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "E039060",
+   "E025700",
    "K001339",
-   "E025700"
+   "E065460",
+   "E078751"
   ],
   "nb_dedicated_courses":1
  },
@@ -1152,26 +1540,30 @@
   "themes_scores":[
    6,
    8,
-   11,
-   6,
-   8
+   12,
+   5,
+   7
   ],
   "matched_courses":[
-   "E078010",
-   "E039211",
+   "E065410",
    "E065460",
    "E035421",
-   "E039060",
-   "K001339",
    "E071131",
-   "E069040",
-   "E065410",
+   "E078010",
+   "K001339",
+   "E078751",
+   "E039211",
    "E028700",
+   "F000627",
+   "E069040",
+   "I002700",
+   "E078060",
+   "B001375",
    "C002275",
    "E064960",
-   "B001375",
    "E073760",
-   "I002700"
+   "E066661",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -1205,26 +1597,30 @@
    6,
    9,
    11,
-   6,
-   8
+   5,
+   7
   ],
   "matched_courses":[
-   "E078010",
-   "E037820",
+   "E065410",
+   "E035050",
    "E065460",
    "E035421",
-   "E039060",
-   "K001339",
    "E071131",
-   "E069040",
-   "E065410",
+   "E078010",
+   "K001339",
+   "E078751",
    "E028700",
+   "F000627",
+   "E037820",
+   "E069040",
+   "I002700",
+   "E078060",
+   "B001375",
    "C002275",
    "E064960",
-   "B001375",
-   "E035050",
    "E073760",
-   "I002700"
+   "E066661",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -1258,26 +1654,30 @@
    6,
    9,
    11,
-   6,
-   8
+   5,
+   7
   ],
   "matched_courses":[
-   "E078010",
-   "E037820",
+   "E065410",
+   "E035050",
    "E065460",
    "E035421",
-   "E039060",
-   "K001339",
    "E071131",
-   "E069040",
-   "E065410",
+   "E078010",
+   "K001339",
+   "E078751",
    "E028700",
+   "F000627",
+   "E037820",
+   "E069040",
+   "I002700",
+   "E078060",
+   "B001375",
    "C002275",
    "E064960",
-   "B001375",
-   "E035050",
    "E073760",
-   "I002700"
+   "E066661",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -1311,25 +1711,29 @@
    6,
    8,
    11,
-   6,
-   8
+   5,
+   7
   ],
   "matched_courses":[
-   "E078010",
-   "E037820",
+   "E065410",
+   "E035050",
    "E065460",
    "E035421",
-   "E039060",
-   "K001339",
    "E071131",
+   "E078010",
+   "K001339",
+   "E078751",
+   "F000627",
+   "E037820",
    "E069040",
-   "E065410",
+   "I002700",
+   "E078060",
+   "B001375",
    "C002275",
    "E064960",
-   "B001375",
-   "E035050",
    "E073760",
-   "I002700"
+   "E066661",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -1363,26 +1767,30 @@
    6,
    9,
    11,
-   6,
-   8
+   5,
+   7
   ],
   "matched_courses":[
-   "E078010",
-   "E037820",
+   "E065410",
+   "E035050",
    "E065460",
    "E035421",
-   "E039060",
-   "K001339",
    "E071131",
-   "E069040",
-   "E065410",
+   "E078010",
+   "K001339",
+   "E078751",
    "E028700",
+   "F000627",
+   "E037820",
+   "E069040",
+   "I002700",
+   "E078060",
+   "B001375",
    "C002275",
    "E064960",
-   "B001375",
-   "E035050",
    "E073760",
-   "I002700"
+   "E066661",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -1415,17 +1823,19 @@
   "themes_scores":[
    3,
    3,
-   4,
+   3,
    2,
    2
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "E039060",
-   "E039042",
    "K001339",
-   "E031420"
+   "E065460",
+   "E031420",
+   "F000627",
+   "E078751",
+   "E039042"
   ],
   "nb_dedicated_courses":2
  },
@@ -1464,9 +1874,11 @@
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "E039060",
-   "K001339"
+   "K001339",
+   "E065460",
+   "F000627",
+   "E078751"
   ],
   "nb_dedicated_courses":1
  },
@@ -1505,10 +1917,12 @@
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "E039060",
-   "E034500",
-   "K001339"
+   "K001339",
+   "E065460",
+   "F000627",
+   "E078751",
+   "E034500"
   ],
   "nb_dedicated_courses":1
  },
@@ -1541,17 +1955,23 @@
   "themes_scores":[
    4,
    2,
-   4,
+   6,
    2,
-   3
+   5
   ],
   "matched_courses":[
+   "E065480",
+   "E045621",
    "E078010",
-   "E065460",
    "E039060",
-   "K001339",
    "E044666",
-   "E065480"
+   "K001339",
+   "E065460",
+   "E054680",
+   "E053560",
+   "F000627",
+   "E078751",
+   "E086602"
   ],
   "nb_dedicated_courses":1
  },
@@ -1584,31 +2004,38 @@
   "themes_scores":[
    5,
    10,
-   13,
+   16,
    8,
    9
   ],
   "matched_courses":[
-   "E078010",
+   "E065471",
+   "E065410",
    "I002679",
+   "E072302",
+   "I002754",
+   "E066170",
+   "E065460",
+   "I002683",
    "I002507",
+   "C004157",
+   "E071131",
+   "E078010",
+   "I002681",
+   "K001339",
+   "E078751",
+   "E073770",
+   "I002776",
+   "E028700",
+   "C004140",
+   "F000627",
+   "I002700",
+   "E078060",
+   "I002752",
    "C002275",
    "E064960",
    "E073760",
-   "C004140",
-   "E073770",
-   "E039060",
-   "C004157",
-   "I002700",
-   "I002681",
-   "E072302",
-   "K001339",
-   "I002776",
-   "E065460",
-   "E071131",
-   "E065410",
-   "E028700",
-   "E065471"
+   "E039060"
   ],
   "nb_dedicated_courses":3
  },
@@ -1640,23 +2067,24 @@
   ],
   "themes_scores":[
    5,
-   5,
-   7,
+   4,
+   6,
    5,
    6
   ],
   "matched_courses":[
+   "E065410",
+   "E065480",
+   "E084970",
    "E078010",
-   "E711047",
    "E050340",
    "E037820",
    "E065460",
-   "E039060",
    "E051162",
    "E084580",
-   "E065410",
-   "E084970",
-   "E065480"
+   "E039060",
+   "E086611",
+   "E711047"
   ],
   "nb_dedicated_courses":4
  },
@@ -1719,23 +2147,24 @@
   ],
   "themes_scores":[
    5,
-   5,
-   7,
+   4,
+   6,
    5,
    6
   ],
   "matched_courses":[
+   "E065410",
+   "E065480",
+   "E084970",
    "E078010",
-   "E711047",
    "E050340",
    "E037820",
    "E065460",
-   "E039060",
    "E051162",
    "E084580",
-   "E065410",
-   "E084970",
-   "E065480"
+   "E039060",
+   "E086611",
+   "E711047"
   ],
   "nb_dedicated_courses":4
  },
@@ -1765,13 +2194,15 @@
   ],
   "themes_scores":[
    1,
+   3,
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
    "E711051",
-   "E711047"
+   "E775001",
+   "E711047",
+   "E715033"
   ],
   "nb_dedicated_courses":1
  },
@@ -1797,7 +2228,6 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
    "resources",
    "sustainability"
   ],
@@ -1805,12 +2235,11 @@
    1,
    2,
    1,
-   1,
    1
   ],
   "matched_courses":[
-   "E035421",
-   "E028700"
+   "E028700",
+   "E035421"
   ],
   "nb_dedicated_courses":1
  },
@@ -1836,12 +2265,10 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1,
@@ -1874,12 +2301,10 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1,
@@ -1921,14 +2346,15 @@
    1,
    4,
    2,
-   3
+   2
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "E039060",
+   "E025700",
    "K001339",
-   "E025700"
+   "E065460",
+   "E078751"
   ],
   "nb_dedicated_courses":1
  },
@@ -1959,14 +2385,16 @@
   ],
   "themes_scores":[
    2,
-   2,
+   3,
    2,
    1
   ],
   "matched_courses":[
-   "E065471",
    "E069040",
-   "E064960"
+   "E065471",
+   "E066170",
+   "E064960",
+   "E066661"
   ],
   "nb_dedicated_courses":0
  },
@@ -2023,11 +2451,9 @@
   ],
   "themes":[
    "energy",
-   "environment",
    "resources"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
@@ -2071,10 +2497,12 @@
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "E039060",
-   "E034500",
-   "K001339"
+   "K001339",
+   "E065460",
+   "F000627",
+   "E078751",
+   "E034500"
   ],
   "nb_dedicated_courses":1
  },
@@ -2107,31 +2535,38 @@
   "themes_scores":[
    5,
    10,
-   13,
+   16,
    8,
    9
   ],
   "matched_courses":[
-   "E078010",
+   "E065471",
+   "E065410",
    "I002679",
+   "E072302",
+   "I002754",
+   "E066170",
+   "E065460",
+   "I002683",
    "I002507",
+   "C004157",
+   "E071131",
+   "E078010",
+   "I002681",
+   "K001339",
+   "E078751",
+   "E073770",
+   "I002776",
+   "E028700",
+   "C004140",
+   "F000627",
+   "I002700",
+   "E078060",
+   "I002752",
    "C002275",
    "E064960",
    "E073760",
-   "C004140",
-   "E073770",
-   "E039060",
-   "C004157",
-   "I002700",
-   "I002681",
-   "E072302",
-   "K001339",
-   "I002776",
-   "E065460",
-   "E071131",
-   "E065410",
-   "E028700",
-   "E065471"
+   "E039060"
   ],
   "nb_dedicated_courses":3
  },
@@ -2164,16 +2599,19 @@
   "themes_scores":[
    4,
    1,
-   4,
+   5,
    2,
    3
   ],
   "matched_courses":[
+   "E065480",
+   "E045621",
    "E078010",
-   "E065460",
    "E039060",
    "K001339",
-   "E065480"
+   "E065460",
+   "E053560",
+   "E078751"
   ],
   "nb_dedicated_courses":1
  },
@@ -2210,11 +2648,82 @@
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "F000892",
-   "K001339"
+   "K001339",
+   "E065460",
+   "F000627"
   ],
   "nb_dedicated_courses":0
+ },
+ {
+  "id":"EMTEXT",
+  "name":"Master of Science in Textile Engineering",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-textile-engineering-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Engineering and Architecture"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "resources"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "E064931",
+   "E064701"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"EMITEX",
+  "name":"International Master of Science in Textile Engineering",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/international-master-of-science-in-textile-engineering-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Engineering and Architecture"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "resources"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "E064931",
+   "E064701"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"EMMAEN",
@@ -2245,26 +2754,32 @@
   "themes_scores":[
    4,
    7,
-   11,
-   7,
+   14,
+   6,
    8
   ],
   "matched_courses":[
-   "E078010",
-   "E065460",
-   "E073770",
-   "I002679",
-   "E039060",
-   "K001339",
-   "E071131",
-   "E069040",
+   "E065471",
    "E065410",
+   "I002679",
+   "I002754",
+   "E066170",
+   "E065460",
+   "E071131",
+   "E078010",
+   "K001339",
+   "E078751",
+   "E073770",
+   "C004140",
+   "F000627",
+   "E069040",
+   "I002700",
+   "E078060",
    "C002275",
    "E064960",
-   "E065471",
    "E073760",
-   "C004140",
-   "I002700"
+   "E066661",
+   "E039060"
   ],
   "nb_dedicated_courses":2
  },
@@ -2295,12 +2810,13 @@
   "themes_scores":[
    1,
    2,
-   1
+   2
   ],
   "matched_courses":[
    "E030730",
-   "F000892",
-   "E900132"
+   "E066170",
+   "E900132",
+   "F000892"
   ],
   "nb_dedicated_courses":1
  },
@@ -2331,14 +2847,45 @@
   "themes_scores":[
    1,
    2,
-   1
+   2
   ],
   "matched_courses":[
    "E030730",
-   "F000892",
-   "E900132"
+   "E066170",
+   "E900132",
+   "F000892"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"EMFUSI",
+  "name":"European Master of Science in Nuclear Fusion and Engineering Physics",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/european-master-of-science-in-nuclear-fusion-and-engineering-physics-EMFUSI-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Engineering and Architecture"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E066170"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"EMIEOR",
@@ -2367,16 +2914,18 @@
   ],
   "themes_scores":[
    3,
-   2,
+   3,
    1,
    4
   ],
   "matched_courses":[
+   "C003534",
    "E078010",
-   "E065460",
    "F000892",
    "K001339",
-   "C003534"
+   "E065460",
+   "E066661",
+   "F000627"
   ],
   "nb_dedicated_courses":0
  },
@@ -2415,8 +2964,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-criminologische-wetenschappen\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -2432,10 +2981,11 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1
+   2,
+   2
   ],
   "matched_courses":[
+   "B001643",
    "B001640"
   ],
   "nb_dedicated_courses":0
@@ -2459,16 +3009,22 @@
    "Veterinary"
   ],
   "themes":[
-   "energy"
+   "climate",
+   "energy",
+   "environment"
   ],
   "themes_scores":[
+   1,
+   2,
    2
   ],
   "matched_courses":[
+   "G000862",
    "G000710",
-   "G000862"
+   "G000860",
+   "G000727"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"FBECON",
@@ -2476,11 +3032,11 @@
   "cycle":"bac",
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-economische-wetenschappen\/programma\/2021",
   "languages":[
+   "nl",
+   "de",
    "fr",
    "es",
-   "nl",
-   "en",
-   "de"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -2499,13 +3055,19 @@
   ],
   "themes_scores":[
    3,
-   2,
-   1
+   4,
+   5
   ],
   "matched_courses":[
+   "B001339",
+   "K001339",
+   "K001223",
+   "F000627",
    "F000933",
-   "F000919",
-   "K001339"
+   "K000288",
+   "I002779",
+   "F000980",
+   "F000919"
   ],
   "nb_dedicated_courses":1
  },
@@ -2536,16 +3098,17 @@
   ],
   "themes_scores":[
    1,
-   2,
+   3,
    5,
    1,
    1
   ],
   "matched_courses":[
-   "C003969",
-   "C003970",
    "C003991",
+   "C003970",
    "C003990",
+   "C003969",
+   "C003980",
    "C003982"
   ],
   "nb_dedicated_courses":1
@@ -2566,7 +3129,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -2575,15 +3138,17 @@
   ],
   "themes_scores":[
    2,
-   1,
+   3,
    1
   ],
   "matched_courses":[
    "I700231",
    "I700219",
+   "I700201",
+   "I700218",
    "I700220"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"CBBIOL",
@@ -2605,17 +3170,30 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "environment",
+   "resources"
   ],
   "themes_scores":[
    2,
-   2
+   13,
+   1
   ],
   "matched_courses":[
+   "C000602",
+   "C003181",
+   "C002346",
+   "C000322",
+   "C003223",
    "C001796",
-   "C003185"
+   "C000534",
+   "C003936",
+   "C002782",
+   "C003185",
+   "C001365",
+   "C003224",
+   "C003021"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":5
  },
  {
   "id":"CBBIBI",
@@ -2642,15 +3220,17 @@
   ],
   "themes_scores":[
    1,
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "C003943",
    "O000167",
-   "C003365"
+   "C003377",
+   "C003761",
+   "C003365",
+   "C003943"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"IBBIORMT",
@@ -2668,7 +3248,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2678,25 +3258,33 @@
    "sustainability"
   ],
   "themes_scores":[
-   5,
-   4,
    6,
+   5,
+   11,
    1,
-   4
+   5
   ],
   "matched_courses":[
-   "I002701",
-   "I002423",
-   "I002426",
-   "I002439",
-   "I002505",
-   "I002427",
-   "E039060",
-   "I002507",
    "I002434",
+   "I002505",
+   "I002418",
+   "I002701",
+   "E039060",
+   "I002424",
+   "I002425",
+   "I002426",
+   "I002504",
+   "I002420",
+   "I002429",
+   "I002508",
+   "I002439",
+   "I002427",
+   "I002507",
+   "I002503",
+   "I002423",
    "I002442"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":6
  },
  {
   "id":"IBBIORBN",
@@ -2713,7 +3301,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2722,17 +3310,24 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   2,
    4,
-   2
+   3,
+   9,
+   3
   ],
   "matched_courses":[
-   "I002423",
+   "I002434",
+   "I002457",
+   "I002418",
+   "I002751",
    "I002426",
+   "I002425",
+   "I002429",
+   "I002420",
    "I002439",
    "I002427",
-   "I002434",
+   "I002424",
+   "I002423",
    "I002442"
   ],
   "nb_dedicated_courses":2
@@ -2753,7 +3348,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2762,18 +3357,23 @@
    "sustainability"
   ],
   "themes_scores":[
+   5,
    4,
-   3,
-   4,
+   7,
    2
   ],
   "matched_courses":[
-   "I002423",
-   "I002426",
-   "I002439",
-   "I002505",
-   "I002427",
    "I002434",
+   "I002505",
+   "I002418",
+   "I002425",
+   "I002426",
+   "I002429",
+   "I002420",
+   "I002439",
+   "I002427",
+   "I002424",
+   "I002423",
    "I002442"
   ],
   "nb_dedicated_courses":3
@@ -2794,7 +3394,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2803,17 +3403,23 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   2,
    4,
+   3,
+   8,
    2
   ],
   "matched_courses":[
-   "I002423",
+   "I002434",
+   "I002418",
+   "I002425",
    "I002426",
+   "I002429",
+   "I002420",
+   "I002508",
    "I002439",
    "I002427",
-   "I002434",
+   "I002424",
+   "I002423",
    "I002442"
   ],
   "nb_dedicated_courses":2
@@ -2834,7 +3440,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2843,19 +3449,26 @@
    "sustainability"
   ],
   "themes_scores":[
-   4,
-   3,
    5,
+   4,
+   10,
    2
   ],
   "matched_courses":[
-   "I002423",
-   "I002426",
-   "I002439",
-   "I002427",
-   "I002451",
    "I002434",
+   "I002418",
+   "I002448",
+   "I002426",
+   "I002425",
+   "I002429",
+   "I002420",
+   "I002424",
    "I002449",
+   "I002439",
+   "I002451",
+   "I002427",
+   "I002453",
+   "I002423",
    "I002442"
   ],
   "nb_dedicated_courses":3
@@ -2875,7 +3488,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2884,19 +3497,24 @@
    "sustainability"
   ],
   "themes_scores":[
+   4,
    3,
-   2,
-   5,
+   8,
    3
   ],
   "matched_courses":[
-   "I002423",
-   "I002426",
-   "I002439",
-   "I002427",
    "I002434",
-   "I002515",
-   "I002442"
+   "I002418",
+   "I002425",
+   "I002426",
+   "I002429",
+   "I002420",
+   "I002439",
+   "I002442",
+   "I002427",
+   "I002424",
+   "I002423",
+   "I002515"
   ],
   "nb_dedicated_courses":2
  },
@@ -2907,9 +3525,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-bestuurskunde-en-het-publiek-management\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -2964,11 +3582,16 @@
   ],
   "themes_scores":[
    2,
-   2,
+   7,
    1
   ],
   "matched_courses":[
    "A004069",
+   "C003869",
+   "C003858",
+   "A003309",
+   "A003310",
+   "C003868",
    "A003308"
   ],
   "nb_dedicated_courses":2
@@ -2979,11 +3602,11 @@
   "cycle":"bac",
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-arts-in-de-afrikaanse-talen-en-culturen\/programma\/2021",
   "languages":[
-   "fr",
    "nl",
    "ln",
-   "en",
-   "ar"
+   "fr",
+   "ar",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -3013,6 +3636,41 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"EZ6IOS",
+  "name":"Schakelprogramma tot Master of Science in de industri\u00eble wetenschappen: industrieel ontwerpen",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-industriele-wetenschappen-industrieel-ontwerpen\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "E630058",
+   "E610014"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"CYWECL",
   "name":"Postgraduate Studies in Weather and Climate Modeling",
   "cycle":"postgrad",
@@ -3030,21 +3688,23 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
-   9
+   9,
+   1
   ],
   "matched_courses":[
+   "C002866",
+   "C002875",
+   "C002867",
+   "C002873",
    "C002874",
+   "C002871",
    "C002870",
    "C002872",
-   "C002871",
-   "C002866",
-   "C002873",
-   "C002875",
-   "C002868",
-   "C002867"
+   "C002868"
   ],
   "nb_dedicated_courses":1
  },
@@ -3067,7 +3727,7 @@
   "fields":[
    "Architecture",
    "Engineering",
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -3079,11 +3739,11 @@
    2,
    2,
    1,
-   3
+   2
   ],
   "matched_courses":[
-   "E065460",
    "E745027",
+   "E065460",
    "K001339"
   ],
   "nb_dedicated_courses":1
@@ -3110,7 +3770,6 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
    "resources",
    "sustainability"
   ],
@@ -3118,13 +3777,12 @@
    1,
    3,
    1,
-   1,
    1
   ],
   "matched_courses":[
    "E037820",
-   "E035421",
-   "E035050"
+   "E035050",
+   "E035421"
   ],
   "nb_dedicated_courses":1
  },
@@ -3149,16 +3807,47 @@
   ],
   "themes":[
    "energy",
-   "environment",
    "resources"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
   "matched_courses":[
    "E031420"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EHCIVI",
+  "name":"Bridging Programme Master of Science in Civil Engineering",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/bridging-programme-master-of-science-in-civil-engineering-EHCIVI\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Engineering and Architecture"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "E045621",
+   "E053560"
   ],
   "nb_dedicated_courses":0
  },
@@ -3189,16 +3878,81 @@
   ],
   "themes_scores":[
    2,
+   1,
    3,
-   3,
-   3
+   1
   ],
   "matched_courses":[
-   "E078320",
    "E071131",
-   "E078310",
    "E028700",
-   "E073760"
+   "E073760",
+   "E078310",
+   "E078320"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"CHBIOIEN",
+  "name":"Bridging Programme Master of Science in Bioinformatics (Engineering)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/bridging-programme-master-of-science-in-bioinformatics-engineering\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Sciences",
+   "Faculty of Bioscience Engineering",
+   "Faculty of Engineering and Architecture"
+  ],
+  "fields":[
+   "Science",
+   "Agronomy & Biotechnology",
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "C003695"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EHRIND",
+  "name":"Ritsweg naar industrieel ingenieur",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/ritsweg-naar-industrieel-ingenieur\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E617014"
   ],
   "nb_dedicated_courses":0
  },
@@ -3262,17 +4016,24 @@
   "themes_scores":[
    3,
    1,
-   4,
+   11,
    2,
    1
   ],
   "matched_courses":[
    "C003294",
-   "C003299",
+   "C003283",
+   "C003287",
    "C003281",
-   "C003283"
+   "C003286",
+   "C003299",
+   "C003279",
+   "C003288",
+   "C003297",
+   "C003289",
+   "C003280"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":4
  },
  {
   "id":"EHMAEN",
@@ -3296,11 +4057,9 @@
   "themes":[
    "energy",
    "environment",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1
@@ -3341,8 +4100,8 @@
   ],
   "matched_courses":[
    "E030730",
-   "F000892",
-   "E900132"
+   "E900132",
+   "F000892"
   ],
   "nb_dedicated_courses":1
  },
@@ -3368,11 +4127,9 @@
   "themes":[
    "energy",
    "environment",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1
@@ -3415,8 +4172,8 @@
   ],
   "matched_courses":[
    "E071131",
-   "E028700",
-   "E073760"
+   "E073760",
+   "E028700"
   ],
   "nb_dedicated_courses":0
  },
@@ -3447,12 +4204,14 @@
   ],
   "themes_scores":[
    1,
+   2,
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
-   "E065480"
+   "E065480",
+   "E045621",
+   "E053560"
   ],
   "nb_dedicated_courses":0
  },
@@ -3489,9 +4248,10 @@
   ],
   "matched_courses":[
    "E078010",
-   "E065460",
    "F000892",
-   "K001339"
+   "K001339",
+   "E065460",
+   "F000627"
   ],
   "nb_dedicated_courses":0
  },
@@ -3522,16 +4282,18 @@
   ],
   "themes_scores":[
    3,
-   2,
+   3,
    1,
    4
   ],
   "matched_courses":[
+   "C003534",
    "E078010",
-   "E065460",
    "F000892",
    "K001339",
-   "C003534"
+   "E065460",
+   "E066661",
+   "F000627"
   ],
   "nb_dedicated_courses":0
  },
@@ -3569,9 +4331,9 @@
    1
   ],
   "matched_courses":[
+   "E039211",
    "E028700",
-   "E035421",
-   "E039211"
+   "E035421"
   ],
   "nb_dedicated_courses":1
  },
@@ -3582,8 +4344,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-industriele-wetenschappen-milieukunde\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Kortrijk"
@@ -3592,7 +4354,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -3607,10 +4369,46 @@
    1
   ],
   "matched_courses":[
+   "I640035",
    "I630053",
    "I640063"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"EM6ION",
+  "name":"Master of Science in de industri\u00eble wetenschappen: industrieel ontwerpen",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-industriele-wetenschappen-industrieel-ontwerpen\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   3
+  ],
+  "matched_courses":[
+   "C004103",
+   "H001576",
+   "K001067"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"EM6ELTET",
@@ -3638,11 +4436,11 @@
    5
   ],
   "matched_courses":[
-   "E640088",
-   "E640105",
-   "E640014",
    "E640104",
-   "E640089"
+   "E640088",
+   "E640089",
+   "E640105",
+   "E640014"
   ],
   "nb_dedicated_courses":2
  },
@@ -3672,8 +4470,8 @@
    2
   ],
   "matched_courses":[
-   "E640105",
-   "E640014"
+   "E640014",
+   "E640105"
   ],
   "nb_dedicated_courses":1
  },
@@ -3703,8 +4501,8 @@
    2
   ],
   "matched_courses":[
-   "E640105",
-   "E640014"
+   "E640014",
+   "E640105"
   ],
   "nb_dedicated_courses":1
  },
@@ -3723,7 +4521,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -3733,15 +4531,16 @@
   ],
   "themes_scores":[
    1,
-   3,
    2,
-   3
+   3,
+   2
   ],
   "matched_courses":[
    "I640042",
    "I640043",
-   "I640041",
-   "I640038"
+   "I640038",
+   "I640044",
+   "I640041"
   ],
   "nb_dedicated_courses":1
  },
@@ -3752,8 +4551,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-industriele-wetenschappen-chemie-IM6CHE\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Kortrijk"
@@ -3762,14 +4561,12 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -3784,8 +4581,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-industriele-wetenschappen-biochemie\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Kortrijk"
@@ -3794,16 +4591,14 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
    "environment",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1
@@ -3832,17 +4627,16 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   3,
-   1
+   4
   ],
   "matched_courses":[
-   "E610054",
+   "E630500",
    "E620032",
-   "E630500"
+   "E610054",
+   "E610014"
   ],
   "nb_dedicated_courses":2
  },
@@ -3872,16 +4666,18 @@
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   2,
    1,
-   3,
-   1,
-   2
+   3
   ],
   "matched_courses":[
-   "E620032",
+   "E630058",
+   "E630067",
    "E630110",
+   "E610014",
    "I610015",
-   "E630067"
+   "E620032"
   ],
   "nb_dedicated_courses":2
  },
@@ -3900,7 +4696,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -3909,22 +4705,162 @@
    "sustainability"
   ],
   "themes_scores":[
-   4,
-   4,
+   6,
+   3,
    1,
    4
   ],
   "matched_courses":[
-   "I630058",
+   "I620023",
    "I620026",
-   "I610015",
    "I620025",
    "I630053",
+   "I630058",
    "I630044",
-   "E620032",
-   "I620020"
+   "I610015",
+   "E610014",
+   "I630059",
+   "I630055",
+   "I620020",
+   "E620032"
   ],
   "nb_dedicated_courses":5
+ },
+ {
+  "id":"HOBSED",
+  "name":"Educatieve Master of Science in de lichamelijke opvoeding (verkort traject)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-lichamelijke-opvoeding-HOBSED\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Geneeskunde en Gezondheidswetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HOGEZDMW",
+  "name":"Educatieve Master of Science in de gezondheidswetenschappen (verkort traject) (medische wetenschappen)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-gezondheidswetenschappen-medische-wetenschappen-HOGEZDMW\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Geneeskunde en Gezondheidswetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HOGEZJFW",
+  "name":"Educatieve Master of Science in de gezondheidswetenschappen (verkort traject) (farmaceutische wetenschappen)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-gezondheidswetenschappen-farmacetische-wetenschappen\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Farmaceutische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HOGEZGDI",
+  "name":"Educatieve Master of Science in de gezondheidswetenschappen (verkort traject) (diergeneeskunde)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-gezondheidswetenschappen-diergeneeskunde\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen",
+   "Faculteit Diergeneeskunde"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy",
+   "Veterinary"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"IZ6BCS",
@@ -3941,14 +4877,12 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -4000,7 +4934,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -4008,17 +4942,78 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   5,
    1,
    1
   ],
   "matched_courses":[
+   "I620023",
    "I620025",
    "I630058",
-   "E620032",
-   "I620020"
+   "E610014",
+   "I630059",
+   "I620020",
+   "E620032"
   ],
   "nb_dedicated_courses":2
+ },
+ {
+  "id":"DNSPGENR",
+  "name":"Master of Medicine in de specialistische geneeskunde (neurologie)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-medicine-in-de-specialistische-geneeskunde-neurologie-DNSPGENR\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Gezondheidswetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "D013347"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"DNSPECNR",
+  "name":"Master of Medicine in de specialistische geneeskunde (neurologie)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-medicine-in-de-specialistische-geneeskunde-neurologie\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Gezondheidswetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "D002548"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"DNZIHI",
@@ -4040,16 +5035,42 @@
   ],
   "themes":[
    "energy",
-   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
   "matched_courses":[
    "D012991"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"JNZIFA",
+  "name":"Master of Science in de ziekenhuisfarmacie",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-ziekenhuisfarmacie\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Farmaceutische Wetenschappen"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "J000411"
   ],
   "nb_dedicated_courses":0
  },
@@ -4068,7 +5089,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4096,7 +5117,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4124,7 +5145,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4152,7 +5173,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4180,7 +5201,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4208,7 +5229,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4236,7 +5257,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4264,7 +5285,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4292,7 +5313,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4320,7 +5341,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4348,7 +5369,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
@@ -4379,15 +5400,47 @@
    "Medecine & Health"
   ],
   "themes":[
+   "environment",
    "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "D001439",
+   "D000425"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"KZEUST",
+  "name":"Voorbereidingsprogramma tot Master of Science in de EU-Studies",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-eu-studies\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Politieke en Sociale Wetenschappen"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "D001439"
+   "K000316"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
  },
  {
   "id":"CZBIOY",
@@ -4413,12 +5466,18 @@
   ],
   "themes_scores":[
    1,
-   1
+   7
   ],
   "matched_courses":[
-   "C001796"
+   "C000602",
+   "C000322",
+   "C001796",
+   "C000534",
+   "C003936",
+   "C002782",
+   "C001365"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"CZBIOIBE",
@@ -4438,7 +5497,7 @@
   ],
   "fields":[
    "Science",
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Architecture",
    "Engineering"
   ],
@@ -4452,6 +5511,35 @@
   ],
   "matched_courses":[
    "I002442"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"FZBECOFI",
+  "name":"Voorbereidingsprogramma tot Master of Science in de bedrijfseconomie (fiscaliteit )",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-bedrijfseconomie-fiscaliteit\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Economie en Bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "B001332"
   ],
   "nb_dedicated_courses":0
  },
@@ -4481,9 +5569,11 @@
   ],
   "themes_scores":[
    1,
-   1
+   3
   ],
   "matched_courses":[
+   "A003309",
+   "A003310",
    "A003308"
   ],
   "nb_dedicated_courses":1
@@ -4508,15 +5598,45 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
    "F000933"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"CZCHMIMN",
+  "name":"Voorbereidingsprogramma tot Master of Science in Chemistry (Materials and Nano Chemistry)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-chemistry-materials-and-nano-chemistry\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E070310"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"EZ7CHE",
@@ -4537,16 +5657,22 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "environment",
+   "resources"
   ],
   "themes_scores":[
+   2,
+   1,
    2
   ],
   "matched_courses":[
-   "E721024",
-   "E702080"
+   "E721044",
+   "E702080",
+   "E721033",
+   "E721024"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"EZ7BOU",
@@ -4573,12 +5699,13 @@
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "E711024",
    "E715027",
-   "E711024"
+   "E711067"
   ],
   "nb_dedicated_courses":0
  },
@@ -4597,7 +5724,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -4637,15 +5764,18 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1
   ],
   "matched_courses":[
-   "A004069"
+   "A004069",
+   "A005441"
   ],
   "nb_dedicated_courses":1
  },
@@ -4674,12 +5804,137 @@
   ],
   "themes_scores":[
    1,
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "C003957",
-   "C001159"
+   "C001159",
+   "C003962",
+   "C000884",
+   "C003957"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"CZGEOF",
+  "name":"Voorbereidingsprogramma tot Master of Science in de geografie en de geomatica",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-geografie-en-de-geomatica\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   1
+  ],
+  "matched_courses":[
+   "C003058",
+   "C003869",
+   "C003859",
+   "C003858",
+   "C003868"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EZSHCH",
+  "name":"Voorbereidingsprogramma tot Master of Science in de ingenieurswetenschappen: chemische technologie en tot Master of Science in Chemical Engineering",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-ingenieurswetenschappen-chemische-technologie-en-tot-master-of-science-in-chemical-engineering\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E070310"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EZBIOE",
+  "name":"Voorbereidingsprogramma tot Master of Science in de ingenieurswetenschappen: biomedische ingenieurstechnieken en tot Master of Science in Biomedical Engineering",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-ingenieurswetenschappen-biomedische-ingenieurstechnieken-en-tot-master-of-science-in-biomedical-engineering\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E070310"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EZBKIE",
+  "name":"Voorbereidingsprogramma tot Master of Science in de ingenieurswetenschappen: bedrijfskundige systeemtechnieken en operationeel onderzoek en tot Master of Science in Industrial Engineering and Operations Research",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-ingenieurswetenschappen-bedrijfskundige-systeemtechnieken-en-operationeel-onderzoek-en-tot-master-of-science-in-industrial-engineering-and-operations-research\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "E063130"
   ],
   "nb_dedicated_courses":0
  },
@@ -4745,16 +6000,14 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   2,
-   1
+   2
   ],
   "matched_courses":[
-   "E051222",
-   "E050310"
+   "E050310",
+   "E051222"
   ],
   "nb_dedicated_courses":0
  },
@@ -4777,16 +6030,14 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   2,
-   1
+   2
   ],
   "matched_courses":[
-   "E051222",
-   "E050310"
+   "E050310",
+   "E051222"
   ],
   "nb_dedicated_courses":0
  },
@@ -4811,19 +6062,53 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
+   3,
+   1
+  ],
+  "matched_courses":[
+   "E702080",
+   "E711067",
+   "E715027",
+   "E701024",
+   "E711059"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EZRUST",
+  "name":"Voorbereidingsprogramma tot Master of Science in de stedenbouw en de ruimtelijke planning",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-stedenbouw-en-de-ruimtelijke-planning\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
    2
   ],
   "matched_courses":[
-   "E715027",
-   "E711059",
-   "E702080"
+   "C003058",
+   "C001294"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"HZSOCW",
@@ -4852,9 +6137,10 @@
   "themes_scores":[
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "H002391",
    "H002013"
   ],
   "nb_dedicated_courses":1
@@ -4881,11 +6167,108 @@
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   2
+  ],
+  "matched_courses":[
+   "B001332",
+   "B001337",
+   "B001661"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HZPSYCTH",
+  "name":"Voorbereidingsprogramma tot Master of Science in de psychologie (theoretische en experimentele psychologie)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-psychologie-theoretische-en-experimentele-psychologie\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "B001661"
+   "H001576"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HZPSYCKL",
+  "name":"Voorbereidingsprogramma tot Master of Science in de psychologie (klinische psychologie)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-psychologie-klinische-psychologie\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "H001576"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HZPSYCBD",
+  "name":"Voorbereidingsprogramma tot Master of Science in de psychologie (bedrijfspsychologie en personeelsbeleid)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/voorbereidingsprogramma-tot-master-of-science-in-de-psychologie-bedrijfspsychologie-en-personeelsbeleid\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "H001576"
   ],
   "nb_dedicated_courses":0
  },
@@ -4908,13 +6291,16 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "H001864"
+   "H001864",
+   "H001025"
   ],
   "nb_dedicated_courses":0
  },
@@ -4924,8 +6310,8 @@
   "cycle":"master",
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-laws-in-international-business-law-en\/programma\/2021",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -4941,10 +6327,11 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   2,
    1
   ],
   "matched_courses":[
+   "B001751",
    "B001699"
   ],
   "nb_dedicated_courses":0
@@ -4956,8 +6343,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-laws-in-international-and-european-law-en\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -4974,14 +6361,15 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   3,
    1,
    3
   ],
   "matched_courses":[
    "B001361",
-   "B001699",
-   "B001579"
+   "B001751",
+   "B001579",
+   "B001699"
   ],
   "nb_dedicated_courses":1
  },
@@ -5005,16 +6393,19 @@
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   1,
    1
   ],
   "matched_courses":[
-   "E038840"
+   "E038840",
+   "E038540"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"DNGLOB",
@@ -5041,12 +6432,14 @@
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   3,
+   2
   ],
   "matched_courses":[
-   "D013095",
-   "D013099"
+   "I002784",
+   "D013099",
+   "D013262",
+   "D013095"
   ],
   "nb_dedicated_courses":0
  },
@@ -5057,8 +6450,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-laws-in-european-union-law-en\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -5075,15 +6468,45 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   3,
    1,
    2
   ],
   "matched_courses":[
-   "B001699",
-   "B001579"
+   "B001751",
+   "B001579",
+   "B001699"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"CNSPAC",
+  "name":"Master of Science in Space Studies",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-space-studies-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "C003742"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"CNPLBT",
@@ -5138,16 +6561,47 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   3,
    1,
    3
   ],
   "matched_courses":[
    "B001432",
    "B001579",
+   "B001428",
+   "B001435",
    "B001439"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"KZEUSS",
+  "name":"Schakelprogramma tot Master of Science in de EU-Studies",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-eu-studies\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Politieke en Sociale Wetenschappen"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "K000316"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"FZEECS",
@@ -5169,9 +6623,11 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -5186,9 +6642,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-maatschappijwetenschappen-rechten\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5212,20 +6668,54 @@
   "themes_scores":[
    1,
    1,
-   4,
+   5,
    1,
-   6
+   8
   ],
   "matched_courses":[
-   "B001703",
+   "B001728",
    "B001695",
    "B001579",
-   "B001699",
-   "B001361",
+   "B001375",
    "B001700",
-   "B001375"
+   "B001361",
+   "B001372",
+   "B001703",
+   "B001699",
+   "B001751"
   ],
   "nb_dedicated_courses":4
+ },
+ {
+  "id":"DMVEVR",
+  "name":"Master of Science in de verpleegkunde en de vroedkunde",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-verpleegkunde-en-de-vroedkunde\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Gezondheidswetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "D002830"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"KOMAATPO",
@@ -5234,9 +6724,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-maatschappijwetenschappen-politieke-wetenschappen\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5258,15 +6748,19 @@
    "sustainability"
   ],
   "themes_scores":[
+   1,
    2,
-   2,
-   3,
-   3
+   6,
+   4
   ],
   "matched_courses":[
+   "K001259",
    "K001298",
-   "K001338",
-   "K001111"
+   "K001016",
+   "K001223",
+   "K000288",
+   "K001111",
+   "K001338"
   ],
   "nb_dedicated_courses":2
  },
@@ -5277,9 +6771,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-maatschappijwetenschappen-communicatiewetenschappen\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5302,11 +6796,80 @@
   "themes_scores":[
    2,
    1,
-   2
+   3
   ],
   "matched_courses":[
+   "K001354",
    "F000892",
    "K001339"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"DOBSEM",
+  "name":"Educatieve Master of Science in de lichamelijke opvoeding",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-lichamelijke-opvoeding\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Gezondheidswetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"DOGEZOMW",
+  "name":"Educatieve Master of Science in de gezondheidswetenschappen (medische wetenschappen)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-gezondheidswetenschappen-medische-wetenschappen\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Gezondheidswetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "H002220"
   ],
   "nb_dedicated_courses":0
  },
@@ -5317,9 +6880,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-gezondheidswetenschappen-farmaceutische-wetenschappen\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5342,7 +6905,45 @@
    1
   ],
   "matched_courses":[
-   "J000458"
+   "J000458",
+   "H002220"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"GOGEZODI",
+  "name":"Educatieve Master of Science in de gezondheidswetenschappen (diergeneeskunde)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-gezondheidswetenschappen-diergeneeskunde-GOGEZODI\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Diergeneeskunde",
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Veterinary",
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "G000836",
+   "H002220"
   ],
   "nb_dedicated_courses":0
  },
@@ -5353,9 +6954,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-economie-toegepaste-economische-wetenschappen\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5379,9 +6980,9 @@
    2
   ],
   "matched_courses":[
-   "F000695",
    "F000935",
-   "F000752"
+   "F000752",
+   "F000695"
   ],
   "nb_dedicated_courses":2
  },
@@ -5392,9 +6993,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-economie-economische-wetenschappen\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5420,6 +7021,7 @@
    1
   ],
   "matched_courses":[
+   "F000636",
    "F000679"
   ],
   "nb_dedicated_courses":1
@@ -5431,9 +7033,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-cultuurwetenschappen-kunstwetenschappen\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5461,49 +7063,53 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"AOCULTGE",
+  "name":"Educatieve Master of Science in de cultuurwetenschappen (geschiedenis)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-cultuurwetenschappen-geschiedenis\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte",
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts",
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "A005533"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
   "id":"COWETEGL",
   "name":"Educatieve Master of Science in de wetenschappen en technologie (geologie)",
   "cycle":"master",
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-geologie\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
-  ],
-  "campuses":[
-   "Gent"
-  ],
-  "faculties":[
-   "Faculteit Wetenschappen",
-   "Faculteit Psychologie en Pedagogische Wetenschappen"
-  ],
-  "fields":[
-   "Science",
-   "Psychology",
-   "Pedagogy"
-  ],
-  "themes":[
-   "climate"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "C002664"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"COWETEGF",
-  "name":"Educatieve Master of Science in de wetenschappen en technologie (geografie en geomatica)",
-  "cycle":"master",
-  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-geografie-en-geomatica\/programma\/2021",
-  "languages":[
-   "nl",
-   "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5519,34 +7125,33 @@
   ],
   "themes":[
    "climate",
-   "energy",
    "environment",
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   2,
-   2,
-   2
+   1,
+   4,
+   1
   ],
   "matched_courses":[
-   "E084580",
-   "C003534",
-   "C004175",
-   "C001623"
+   "C002664",
+   "C002615",
+   "C003994",
+   "C002654",
+   "C002646"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":1
  },
  {
-  "id":"COWETEGG",
-  "name":"Educatieve Master of Science in de wetenschappen en technologie (geografie)",
+  "id":"COWETEGF",
+  "name":"Educatieve Master of Science in de wetenschappen en technologie (geografie en geomatica)",
   "cycle":"master",
-  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-geografie\/programma\/2021",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-geografie-en-geomatica\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5569,16 +7174,64 @@
   "themes_scores":[
    3,
    1,
+   3,
+   2
+  ],
+  "matched_courses":[
+   "C003534",
+   "C001032",
+   "C004175",
+   "E084580",
+   "C003068",
+   "C001623"
+  ],
+  "nb_dedicated_courses":4
+ },
+ {
+  "id":"COWETEGG",
+  "name":"Educatieve Master of Science in de wetenschappen en technologie (geografie)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-geografie\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Science",
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
    2,
+   1,
+   5,
    2
   ],
   "matched_courses":[
    "K000253",
-   "C001158",
    "C003534",
+   "C001032",
+   "C001158",
+   "C003538",
+   "C003068",
    "C001623"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":4
  },
  {
   "id":"COWETECH",
@@ -5587,9 +7240,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-chemie\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5613,20 +7266,23 @@
   "themes_scores":[
    6,
    3,
-   5,
-   3,
-   5
+   6,
+   4,
+   4
   ],
   "matched_courses":[
-   "C004148",
-   "E065460",
-   "E039060",
-   "F000892",
    "C004157",
-   "I001571",
    "F000752",
+   "I001571",
+   "F000892",
+   "C004146",
+   "C004140",
    "C002275",
-   "C004140"
+   "C004164",
+   "E065460",
+   "C004148",
+   "E039060",
+   "H002220"
   ],
   "nb_dedicated_courses":4
  },
@@ -5637,9 +7293,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-biologie\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5663,18 +7319,34 @@
   "themes_scores":[
    5,
    1,
+   19,
    4,
-   1,
-   1
+   2
   ],
   "matched_courses":[
    "C003315",
-   "C003307",
-   "C003320",
+   "C003223",
+   "C002387",
    "C003322",
-   "I002691"
+   "C003323",
+   "C003307",
+   "C002782",
+   "C003874",
+   "I002691",
+   "C003320",
+   "C003314",
+   "C003224",
+   "C003327",
+   "C002777",
+   "H002220",
+   "I002457",
+   "C004081",
+   "C004103",
+   "C003331",
+   "C002772",
+   "C003313"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":6
  },
  {
   "id":"COWETEBB",
@@ -5683,9 +7355,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-biochemie-en-biotechnologie\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5700,13 +7372,53 @@
    "Pedagogy"
   ],
   "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   5,
+   1
+  ],
+  "matched_courses":[
+   "C003377",
+   "C003671",
+   "C002724",
+   "H002220",
+   "C003695"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"IOWETEBE",
+  "name":"Educatieve Master of Science in de wetenschappen en technologie (bio-engineering)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-wetenschappen-en-technologie-bio-engineering\/programma\/2021",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Bio-ingenieurswetenschappen",
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
    "environment"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "C003671"
+   "H002220"
   ],
   "nb_dedicated_courses":0
  },
@@ -5716,15 +7428,15 @@
   "cycle":"master",
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-talen-taal-en-letterkunde\/programma\/2021",
   "languages":[
-   "fr",
-   "es",
    "nl",
-   "sv",
    "el",
+   "de",
    "it",
+   "fr",
+   "sv",
+   "es",
    "af",
-   "en",
-   "de"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -5759,9 +7471,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/educatieve-master-of-science-in-de-maatschappijwetenschappen-sociologie\/programma\/2021",
   "languages":[
    "nl",
+   "fr",
    "en",
-   "de",
-   "fr"
+   "de"
   ],
   "campuses":[
    "Gent"
@@ -5783,17 +7495,105 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   2,
    1,
    3,
-   3
+   4
   ],
   "matched_courses":[
+   "K001223",
    "K001298",
    "K001338",
    "K001013"
   ],
   "nb_dedicated_courses":2
+ },
+ {
+  "id":"CZCHMSMN",
+  "name":"Schakelprogramma tot Master of Science in Chemistry (Materials and Nano Chemistry)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-chemistry-materials-and-nano-chemistry\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "C003980"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"CZCHMSAE",
+  "name":"Schakelprogramma tot Master of Science in Chemistry (Analytical and Environmental Chemistry)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-chemistry-analytical-and-environmental-chemistry\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "C003980"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"CZCHMSBP",
+  "name":"Schakelprogramma tot Master of Science in Chemistry ((Bio)Organic and Polymer Chemistry)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-chemistry-bio-organic-and-polymer-chemistry\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "C003980"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"IZ7BVS",
@@ -5810,7 +7610,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy"
@@ -5871,15 +7671,19 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "C003365"
+   "C003377",
+   "C003365",
+   "C003826"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"EZ7LAS",
@@ -5902,7 +7706,7 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "resources"
   ],
   "themes_scores":[
    1,
@@ -5910,8 +7714,9 @@
    1
   ],
   "matched_courses":[
+   "E702080",
    "E715027",
-   "E702080"
+   "E711067"
   ],
   "nb_dedicated_courses":0
  },
@@ -5937,10 +7742,11 @@
    "energy"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "E731018"
+   "E731018",
+   "E701024"
   ],
   "nb_dedicated_courses":0
  },
@@ -5966,10 +7772,40 @@
    "energy"
   ],
   "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "E731018",
+   "E701024"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EZ7EMS",
+  "name":"Schakelprogramma tot Master of Science in de industri\u00eble wetenschappen: elektromechanica",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-industriele-wetenschappen-elektromechanica-EZ7EMS\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "E731018"
+   "E701024"
   ],
   "nb_dedicated_courses":0
  },
@@ -5992,15 +7828,20 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "environment",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
+   "E721044",
    "E702080"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"EZ7BOS",
@@ -6022,17 +7863,15 @@
   ],
   "themes":[
    "climate",
-   "energy",
-   "environment"
+   "energy"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
   "matched_courses":[
-   "E715027",
-   "E702080"
+   "E702080",
+   "E715027"
   ],
   "nb_dedicated_courses":0
  },
@@ -6052,7 +7891,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -6065,10 +7904,40 @@
    1
   ],
   "matched_courses":[
-   "I700219",
-   "I700220"
+   "I700220",
+   "I700219"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"DZGEBS",
+  "name":"Schakelprogramma tot Master of Science in de gezondheidsbevordering",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-gezondheidsbevordering\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Gezondheidswetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "D002830"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"AZSHIS",
@@ -6092,15 +7961,121 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1
   ],
   "matched_courses":[
-   "A004069"
+   "A004069",
+   "A005441"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"CZGEOS",
+  "name":"Schakelprogramma tot Master of Science in de geografie en de geomatica",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-geografie-en-de-geomatica\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   5,
+   2
+  ],
+  "matched_courses":[
+   "C003058",
+   "C001294",
+   "C003869",
+   "C003859",
+   "C003858",
+   "C003868"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"AZGEDS",
+  "name":"Schakelprogramma tot Master of Arts in gender en diversiteit",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-arts-in-gender-en-diversiteit\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte",
+   "Faculteit Politieke en Sociale Wetenschappen"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts",
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "H001894",
+   "H002113"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"EZRUSS",
+  "name":"Schakelprogramma tot Master of Science in de stedenbouw en de ruimtelijke planning",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-stedenbouw-en-de-ruimtelijke-planning\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen en Architectuur"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "C003058",
+   "C001294"
   ],
   "nb_dedicated_courses":1
  },
@@ -6130,9 +8105,10 @@
   "themes_scores":[
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "H002391",
    "H002013"
   ],
   "nb_dedicated_courses":1
@@ -6159,11 +8135,138 @@
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   2
+  ],
+  "matched_courses":[
+   "B001332",
+   "B001661",
+   "B001337"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HZPSYSTH",
+  "name":"Schakelprogramma tot Master of Science in de psychologie (theoretische en experimentele psychologie)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-psychologie-theoretische-en-experimentele-psychologie\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "B001661"
+   "H001576"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HZPSYSKL",
+  "name":"Schakelprogramma tot Master of Science in de psychologie (klinische psychologie)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-psychologie-klinische-psychologie\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "H001576"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HZPSYSBD",
+  "name":"Schakelprogramma tot Master of Science in de psychologie (bedrijfspsychologie en personeelsbeleid)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-psychologie-bedrijfspsychologie-en-personeelsbeleid\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "H001576"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"KZPOLSIP",
+  "name":"Schakelprogramma tot Master of Science in de politieke wetenschappen (internationale politiek)",
+  "cycle":"other",
+  "url":"https:\/\/studiekiezer.ugent.be\/schakelprogramma-tot-master-of-science-in-de-politieke-wetenschappen-internationale-politiek\/programma\/2021",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Politieke en Sociale Wetenschappen"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "K000316"
   ],
   "nb_dedicated_courses":0
  },
@@ -6186,13 +8289,16 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "H001864"
+   "H001864",
+   "H001025"
   ],
   "nb_dedicated_courses":0
  },
@@ -6249,28 +8355,29 @@
   ],
   "themes":[
    "climate",
-   "energy",
    "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    4,
+   6,
    1,
-   5,
-   1,
-   6
+   7
   ],
   "matched_courses":[
-   "K001013",
-   "I002697",
-   "E084580",
-   "E086620",
-   "E084970",
    "C003534",
-   "I002691"
+   "I002691",
+   "E084970",
+   "C003062",
+   "I002697",
+   "K001013",
+   "E084580",
+   "E078920",
+   "E086611",
+   "E086620"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":4
  },
  {
   "id":"IM7BWV",
@@ -6288,15 +8395,16 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "sustainability"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "I002755",
    "I002673"
   ],
   "nb_dedicated_courses":0
@@ -6320,15 +8428,19 @@
    "Veterinary"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   3
+   2,
+   5
   ],
   "matched_courses":[
    "G000913",
+   "G000836",
+   "G000925",
    "G000911",
-   "G000925"
+   "G000912"
   ],
   "nb_dedicated_courses":0
  },
@@ -6338,14 +8450,14 @@
   "cycle":"bac",
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-toegepaste-economische-wetenschappen\/programma\/2021",
   "languages":[
-   "fr",
-   "es",
    "nl",
-   "ja",
-   "it",
-   "en",
+   "zh",
    "de",
-   "zh"
+   "it",
+   "fr",
+   "ja",
+   "es",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -6364,13 +8476,17 @@
   ],
   "themes_scores":[
    3,
-   2,
-   1
+   3,
+   5
   ],
   "matched_courses":[
-   "F000933",
+   "B001339",
+   "K001339",
+   "K001067",
+   "F000627",
    "F000919",
-   "K001339"
+   "F000933",
+   "I002779"
   ],
   "nb_dedicated_courses":1
  },
@@ -6432,8 +8548,8 @@
    1
   ],
   "matched_courses":[
-   "F000695",
-   "F000892"
+   "F000892",
+   "F000695"
   ],
   "nb_dedicated_courses":0
  },
@@ -6453,7 +8569,7 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -6465,17 +8581,23 @@
   "themes_scores":[
    1,
    1,
-   3,
-   1,
-   1
+   8,
+   2,
+   3
   ],
   "matched_courses":[
-   "I002086",
-   "I002535",
+   "I002756",
+   "I001579",
+   "C002490",
    "I002792",
-   "I001579"
+   "I002504",
+   "I002718",
+   "I002535",
+   "C002499",
+   "I002787",
+   "I002086"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":6
  },
  {
   "id":"FMALEC",
@@ -6505,14 +8627,18 @@
   "themes_scores":[
    2,
    1,
-   4,
-   3
+   3,
+   6
   ],
   "matched_courses":[
-   "F000919",
-   "F000679",
    "F000752",
-   "K001339"
+   "K001339",
+   "F000627",
+   "F000919",
+   "B001339",
+   "I002779",
+   "F000636",
+   "F000679"
   ],
   "nb_dedicated_courses":2
  },
@@ -6538,18 +8664,25 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    2,
-   2
+   5,
+   3
   ],
   "matched_courses":[
-   "B001326",
+   "K000967",
+   "B001332",
    "C001796",
-   "K000967"
+   "C003761",
+   "K001259",
+   "H001576",
+   "B001326",
+   "B001339"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"IM7BWLTB",
@@ -6567,7 +8700,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -6576,20 +8709,25 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
-   7,
+   3,
+   11,
    1,
-   4
+   6
   ],
   "matched_courses":[
-   "I700179",
-   "I700252",
+   "I700257",
    "I700076",
-   "I700077",
    "I700251",
+   "I700077",
+   "I700079",
+   "I002731",
+   "I700070",
    "I700071",
+   "I700175",
    "I700256",
-   "I002731"
+   "I700179",
+   "I700187",
+   "I700252"
   ],
   "nb_dedicated_courses":2
  },
@@ -6609,7 +8747,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -6618,19 +8756,25 @@
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   11,
    1,
-   6,
-   1,
-   4
+   7
   ],
   "matched_courses":[
-   "I700179",
+   "I700259",
    "I700077",
+   "I700261",
+   "I700079",
+   "I700175",
+   "I002731",
    "I700071",
    "I700256",
-   "I700063",
    "I700260",
-   "I002731"
+   "I700179",
+   "I700187",
+   "I700257",
+   "I700063"
   ],
   "nb_dedicated_courses":2
  },
@@ -6649,7 +8793,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -6658,18 +8802,24 @@
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   10,
    1,
-   5,
-   1,
-   4
+   7
   ],
   "matched_courses":[
-   "I700179",
+   "I700259",
    "I700251",
-   "I700071",
+   "I700261",
+   "I700263",
+   "I700175",
    "I700256",
-   "I700063",
-   "I700260"
+   "I700071",
+   "I700260",
+   "I700179",
+   "I700187",
+   "I700257",
+   "I700063"
   ],
   "nb_dedicated_courses":2
  },
@@ -6700,27 +8850,77 @@
   ],
   "themes_scores":[
    9,
-   2,
-   8,
-   4,
-   9
+   1,
+   21,
+   6,
+   7
   ],
   "matched_courses":[
-   "K001013",
    "C003315",
    "E066012",
-   "E065460",
-   "E084580",
-   "C003307",
-   "F000752",
-   "C003320",
-   "K001339",
    "I002702",
-   "I002674",
+   "C002387",
+   "E065460",
    "C003322",
-   "I002691"
+   "C003323",
+   "I002606",
+   "C003307",
+   "K001339",
+   "C003874",
+   "I002674",
+   "I002691",
+   "C003320",
+   "C003314",
+   "C003327",
+   "I002718",
+   "E084580",
+   "C002777",
+   "K001013",
+   "I002457",
+   "C004081",
+   "C004103",
+   "F000752",
+   "C003331",
+   "C002772",
+   "C003313"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":9
+ },
+ {
+  "id":"CMBIOIEN",
+  "name":"Master of Science in Bioinformatics (Engineering)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-bioinformatics-engineering-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Sciences",
+   "Faculty of Bioscience Engineering",
+   "Faculty of Engineering and Architecture"
+  ],
+  "fields":[
+   "Science",
+   "Agronomy & Biotechnology",
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "C003695"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"CMBIOIBE",
@@ -6741,20 +8941,23 @@
   ],
   "fields":[
    "Science",
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Architecture",
    "Engineering"
   ],
   "themes":[
    "energy",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   2,
    1
   ],
   "matched_courses":[
-   "I002442"
+   "I002442",
+   "C003695"
   ],
   "nb_dedicated_courses":0
  },
@@ -6777,22 +8980,28 @@
   ],
   "fields":[
    "Science",
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Architecture",
    "Engineering"
   ],
   "themes":[
    "energy",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   2,
+   1,
+   2
   ],
   "matched_courses":[
-   "I002403"
+   "I002403",
+   "C002724",
+   "C003695"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"CMBCBT",
@@ -6821,15 +9030,17 @@
   "themes_scores":[
    1,
    1,
-   2,
-   1
+   4,
+   2
   ],
   "matched_courses":[
-   "C003163",
    "F000752",
-   "C003671"
+   "C003163",
+   "C003671",
+   "C002724",
+   "C003695"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"IMMITE",
@@ -6847,7 +9058,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -6859,29 +9070,35 @@
   "themes_scores":[
    3,
    4,
-   10,
+   17,
    2,
-   9
+   10
   ],
   "matched_courses":[
-   "I002685",
-   "I002681",
-   "I002586",
-   "I002890",
-   "I001439",
-   "I002702",
-   "I002684",
-   "I002679",
-   "I002604",
-   "F000752",
-   "I002608",
-   "I002535",
-   "I002607",
-   "I002748",
    "I002668",
-   "I002691"
+   "I002679",
+   "I002702",
+   "I002685",
+   "I002683",
+   "I002606",
+   "I002681",
+   "I001439",
+   "I002684",
+   "I002698",
+   "I002890",
+   "I002748",
+   "I002608",
+   "I002691",
+   "I002604",
+   "I002607",
+   "I002535",
+   "I002586",
+   "F000752",
+   "I002751",
+   "I002752",
+   "I002750"
   ],
-  "nb_dedicated_courses":6
+  "nb_dedicated_courses":7
  },
  {
   "id":"IMLEMI",
@@ -6899,22 +9116,24 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   5
+   3,
+   6
   ],
   "matched_courses":[
-   "I002673",
-   "I002701",
-   "I002669",
    "I002674",
-   "I002668"
+   "I002668",
+   "I002669",
+   "I002701",
+   "I002652",
+   "I002623",
+   "I002673"
   ],
   "nb_dedicated_courses":0
  },
@@ -6934,7 +9153,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -6944,22 +9163,29 @@
    "sustainability"
   ],
   "themes_scores":[
-   4,
+   5,
    2,
-   4,
+   11,
    1,
-   2
+   3
   ],
   "matched_courses":[
-   "I002740",
-   "I002732",
-   "I002744",
+   "I002734",
    "I002646",
    "I002643",
+   "I002744",
+   "I002740",
+   "I002652",
+   "I002735",
    "I002731",
+   "I002718",
+   "I002713",
+   "I002739",
+   "I002715",
+   "I002732",
    "I002654"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
  },
  {
   "id":"IMLWKL",
@@ -6977,7 +9203,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -6987,28 +9213,36 @@
    "sustainability"
   ],
   "themes_scores":[
-   10,
-   2,
-   7,
-   2,
-   5
+   11,
+   1,
+   14,
+   3,
+   9
   ],
   "matched_courses":[
    "I002685",
-   "I002712",
-   "I002655",
+   "I002508",
    "I002708",
-   "E084580",
    "I002646",
-   "I002665",
-   "C002664",
-   "I002656",
-   "I002535",
+   "I002655",
+   "I002666",
+   "I002698",
    "I002710",
+   "I002712",
+   "C002664",
+   "I002718",
+   "I002535",
+   "I002662",
+   "E084580",
+   "I002715",
    "I002699",
-   "I002664"
+   "I002664",
+   "I002657",
+   "I002713",
+   "I002656",
+   "I002665"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":6
  },
  {
   "id":"IMCHEM",
@@ -7026,32 +9260,34 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
    "energy",
    "environment",
-   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    4,
-   4,
-   1,
-   6
+   7,
+   7
   ],
   "matched_courses":[
-   "I002673",
-   "I002680",
-   "I002669",
-   "E039060",
-   "I002679",
-   "I002607",
-   "I002776",
+   "I002734",
    "I002668",
-   "I002700"
+   "I002700",
+   "I002679",
+   "I002669",
+   "I002652",
+   "I002680",
+   "I002776",
+   "I002754",
+   "I002607",
+   "I002750",
+   "E039060",
+   "I002673"
   ],
   "nb_dedicated_courses":1
  },
@@ -7071,24 +9307,27 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    2,
-   2,
+   3,
+   1,
    3
   ],
   "matched_courses":[
+   "I002623",
+   "I002627",
    "I002630",
-   "I002632",
    "I002607",
-   "I002515",
-   "I002627"
+   "I002632",
+   "I002515"
   ],
   "nb_dedicated_courses":1
  },
@@ -7108,7 +9347,7 @@
    "Faculteit Bio-ingenieurswetenschappen"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -7119,31 +9358,38 @@
   ],
   "themes_scores":[
    12,
-   3,
-   14,
-   4,
-   5
+   2,
+   20,
+   6,
+   9
   ],
   "matched_courses":[
+   "I002696",
+   "I700070",
+   "I002697",
+   "I002646",
+   "I002655",
+   "I002689",
+   "K001339",
+   "I002731",
+   "I002705",
+   "I002698",
+   "I002710",
    "I002732",
    "I002515",
-   "I002697",
-   "I002689",
-   "I002705",
-   "I002655",
-   "K001298",
-   "E084580",
-   "I002646",
    "I002691",
-   "I002731",
-   "I002656",
+   "I002504",
+   "I002718",
+   "E084580",
    "I002693",
-   "K001339",
-   "I002710",
+   "I002453",
    "I002699",
-   "I002664"
+   "K001298",
+   "I002664",
+   "I002713",
+   "I002656"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":5
  },
  {
   "id":"GMDIERGD",
@@ -7163,15 +9409,19 @@
    "Veterinary"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   3
+   2,
+   5
   ],
   "matched_courses":[
    "G000913",
+   "G000836",
+   "G000925",
    "G000911",
-   "G000925"
+   "G000912"
   ],
   "nb_dedicated_courses":0
  },
@@ -7201,14 +9451,15 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   2,
    1,
-   3,
+   4,
    3
   ],
   "matched_courses":[
-   "K001298",
+   "K001016",
    "K001338",
+   "K001298",
    "K001339"
   ],
   "nb_dedicated_courses":1
@@ -7240,9 +9491,10 @@
   "themes_scores":[
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "K001354",
    "K001339"
   ],
   "nb_dedicated_courses":0
@@ -7274,9 +9526,10 @@
   "themes_scores":[
    2,
    1,
-   2
+   3
   ],
   "matched_courses":[
+   "K001354",
    "F000892",
    "K001339"
   ],
@@ -7309,9 +9562,10 @@
   "themes_scores":[
    2,
    1,
-   2
+   3
   ],
   "matched_courses":[
+   "K001354",
    "F000892",
    "K001339"
   ],
@@ -7344,9 +9598,10 @@
   "themes_scores":[
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "K001354",
    "K001339"
   ],
   "nb_dedicated_courses":0
@@ -7378,22 +9633,29 @@
   ],
   "themes_scores":[
    7,
-   3,
-   6,
-   2,
+   4,
+   9,
+   5,
    5
   ],
   "matched_courses":[
-   "C002564",
-   "C004013",
-   "E065460",
-   "E039060",
-   "F000892",
-   "I001571",
    "C002553",
+   "C003768",
+   "C004013",
+   "C004088",
+   "I001571",
+   "C002580",
+   "F000892",
    "C002275",
+   "C002545",
    "C002556",
-   "C002580"
+   "C002560",
+   "E065460",
+   "C002562",
+   "C002564",
+   "C002952",
+   "E039060",
+   "C002953"
   ],
   "nb_dedicated_courses":3
  },
@@ -7425,17 +9687,17 @@
   "themes_scores":[
    4,
    1,
-   4,
+   3,
    2,
-   5
+   4
   ],
   "matched_courses":[
-   "E065460",
-   "E039060",
-   "F000892",
-   "I001571",
    "F000752",
-   "C002275"
+   "I001571",
+   "F000892",
+   "C002275",
+   "E065460",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -7467,19 +9729,20 @@
   "themes_scores":[
    5,
    2,
-   4,
    3,
-   5
+   4,
+   4
   ],
   "matched_courses":[
-   "C004148",
-   "E065460",
-   "E039060",
-   "F000892",
-   "I001571",
    "F000752",
+   "I001571",
+   "F000892",
+   "C004146",
+   "C004140",
    "C002275",
-   "C004140"
+   "E065460",
+   "C004148",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -7513,16 +9776,17 @@
    2,
    5,
    2,
-   5
+   4
   ],
   "matched_courses":[
-   "E065460",
-   "E039060",
-   "F000892",
    "C004157",
-   "I001571",
    "F000752",
-   "C002275"
+   "I001571",
+   "F000892",
+   "C002275",
+   "C004164",
+   "E065460",
+   "E039060"
   ],
   "nb_dedicated_courses":4
  },
@@ -7555,18 +9819,19 @@
   "themes_scores":[
    3,
    2,
-   4,
-   3,
+   5,
+   2,
    6
   ],
   "matched_courses":[
-   "E065460",
-   "F000896",
-   "F000933",
    "F000935",
+   "I002700",
    "F000892",
    "K001339",
-   "I002700"
+   "E065460",
+   "F000933",
+   "B001339",
+   "F000896"
   ],
   "nb_dedicated_courses":2
  },
@@ -7640,18 +9905,19 @@
   "themes_scores":[
    3,
    2,
-   4,
-   3,
+   5,
+   2,
    6
   ],
   "matched_courses":[
-   "E065460",
-   "F000896",
-   "F000933",
    "F000935",
+   "I002700",
    "F000892",
    "K001339",
-   "I002700"
+   "E065460",
+   "F000933",
+   "B001339",
+   "F000896"
   ],
   "nb_dedicated_courses":2
  },
@@ -7683,9 +9949,9 @@
    2
   ],
   "matched_courses":[
-   "F000695",
    "F000935",
-   "F000752"
+   "F000752",
+   "F000695"
   ],
   "nb_dedicated_courses":2
  },
@@ -7717,9 +9983,9 @@
    2
   ],
   "matched_courses":[
-   "F000695",
    "F000935",
-   "F000752"
+   "F000752",
+   "F000695"
   ],
   "nb_dedicated_courses":2
  },
@@ -7751,9 +10017,9 @@
    2
   ],
   "matched_courses":[
-   "F000695",
    "F000935",
-   "F000752"
+   "F000752",
+   "F000695"
   ],
   "nb_dedicated_courses":2
  },
@@ -7782,19 +10048,32 @@
   ],
   "themes_scores":[
    5,
+   18,
    5,
-   1,
    1
   ],
   "matched_courses":[
+   "C004025",
+   "C004028",
+   "C004021",
    "C003887",
    "C004018",
+   "C004031",
+   "C004019",
+   "C003874",
+   "C004026",
+   "C003888",
+   "C003919",
+   "C004024",
+   "C004027",
    "C004030",
    "C003870",
-   "C004024",
-   "C003873"
+   "C003889",
+   "C004015",
+   "C003873",
+   "C003871"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":4
  },
  {
   "id":"CMRSEAFU",
@@ -7816,23 +10095,41 @@
   "themes":[
    "climate",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    7,
-   7,
-   2
+   23,
+   4,
+   3
   ],
   "matched_courses":[
+   "C004025",
+   "C004028",
+   "C004021",
+   "C003932",
    "C004018",
+   "C004031",
+   "C004019",
+   "C003892",
+   "C003874",
+   "C004026",
+   "C003900",
+   "C003933",
+   "C003891",
+   "C003919",
+   "C004024",
+   "C004027",
    "C004030",
    "C003870",
-   "C004024",
-   "C003891",
-   "C003932",
-   "C003873"
+   "C003901",
+   "C003931",
+   "C004015",
+   "C003873",
+   "C003871"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":10
  },
  {
   "id":"CMRSEAPR",
@@ -7853,23 +10150,40 @@
   ],
   "themes":[
    "climate",
+   "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    6,
-   5,
+   1,
+   18,
+   4,
    1
   ],
   "matched_courses":[
+   "C004025",
+   "C004028",
+   "C004021",
+   "C003882",
    "C004018",
+   "C004031",
+   "C004019",
+   "C003874",
+   "C003881",
+   "C004026",
+   "C004024",
+   "C004027",
    "C004030",
    "C003883",
    "C003870",
-   "C004024",
-   "C003873"
+   "C004015",
+   "C003880",
+   "C003873",
+   "C003871"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":5
  },
  {
   "id":"CMIMBR",
@@ -7890,40 +10204,85 @@
   ],
   "themes":[
    "climate",
+   "energy",
    "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    15,
-   20,
-   4,
-   7
+   1,
+   61,
+   12,
+   12
   ],
   "matched_courses":[
-   "C003870",
-   "I002086",
-   "C004018",
-   "C004298",
-   "C004310",
-   "C004299",
-   "C003891",
-   "C004242",
-   "C003873",
+   "C004230",
+   "C004025",
+   "C004028",
+   "C004309",
+   "C004021",
    "C003887",
+   "C004018",
+   "C003897",
+   "C004031",
+   "C004377",
+   "C004297",
+   "C004338",
+   "C004323",
+   "C004344",
+   "C004019",
+   "C004292",
+   "C004380",
+   "C004303",
+   "C004281",
+   "C004325",
+   "C004311",
+   "C004232",
+   "C004300",
+   "C004299",
+   "C003871",
+   "C004244",
+   "C004231",
+   "C004286",
+   "C004389",
+   "C003892",
+   "C003874",
+   "C004337",
+   "C004288",
+   "C004026",
+   "C003881",
+   "C004287",
+   "C003891",
    "C004024",
+   "C004330",
+   "C004027",
+   "C004301",
+   "C004346",
+   "C004030",
+   "C004388",
+   "C004345",
+   "C003894",
+   "C004353",
+   "C004390",
+   "C004351",
+   "C004379",
+   "C004329",
+   "C004284",
+   "C004310",
+   "C003870",
+   "C004242",
    "C004352",
    "C004354",
-   "C004230",
-   "C004379",
+   "C004015",
+   "C004298",
+   "C004282",
    "C004376",
-   "C003894",
-   "C004311",
-   "C004030",
-   "C004286",
-   "C004281"
+   "I002086",
+   "C003873",
+   "C004355"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":21
  },
  {
   "id":"CMRSEACO",
@@ -7950,23 +10309,38 @@
   ],
   "themes_scores":[
    8,
-   10,
-   1,
+   25,
+   5,
    2
   ],
   "matched_courses":[
+   "C004025",
+   "C004028",
+   "C003927",
+   "C004021",
+   "C003896",
    "C004018",
-   "C003895",
-   "C003894",
+   "C004031",
    "C003928",
-   "C004030",
-   "C003870",
+   "C004019",
+   "C003926",
+   "C003892",
+   "C003874",
+   "C004026",
    "C003891",
+   "C003919",
    "C004024",
+   "C004027",
+   "C004030",
+   "C003894",
+   "C003870",
+   "C003922",
+   "C004015",
+   "C003895",
    "C003873",
-   "C003926"
+   "C003871"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":7
  },
  {
   "id":"CMRSEAEN",
@@ -7987,25 +10361,45 @@
   ],
   "themes":[
    "climate",
+   "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    7,
-   7,
+   1,
+   23,
+   5,
    1
   ],
   "matched_courses":[
+   "C004025",
+   "C004028",
+   "C003927",
+   "C004021",
+   "C003882",
    "C004018",
+   "C003897",
+   "C004031",
    "C003928",
+   "C004019",
+   "C003926",
+   "C003874",
+   "C003881",
+   "C004026",
+   "C004024",
+   "C004027",
    "C004030",
    "C003883",
    "C003870",
-   "C004024",
+   "C003899",
+   "C004015",
+   "C003880",
    "C003873",
-   "C003926"
+   "C003871"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":7
  },
  {
   "id":"CMMASM",
@@ -8029,21 +10423,38 @@
    "climate",
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    3,
    1,
+   15,
    1,
-   2
+   3
   ],
   "matched_courses":[
-   "C002500",
+   "C002473",
+   "C002485",
+   "C002476",
+   "C004047",
+   "C004046",
    "C004050",
+   "C004045",
+   "C002500",
+   "C003355",
+   "C003807",
    "C004374",
-   "C002473"
+   "C004271",
+   "C003354",
+   "C004043",
+   "C004373",
+   "C002499",
+   "C002772",
+   "C002491",
+   "C002493"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":5
  },
  {
   "id":"DMLOBWSB",
@@ -8052,8 +10463,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-de-lichamelijke-opvoeding-en-de-bewegingswetenschappen-sportbeleid-en-sportmanagement\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -8128,7 +10539,6 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
    "resources",
    "sustainability"
   ],
@@ -8136,11 +10546,193 @@
    1,
    1,
    1,
-   1,
    1
   ],
   "matched_courses":[
    "E035421"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"AMOOTCAI",
+  "name":"Master of Arts in de Oosterse talen en culturen (Midden-Oosten Studies)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-oosterse-talen-en-culturen-midden-oosten-studies\/programma\/2021",
+  "languages":[
+   "nl",
+   "zh",
+   "de",
+   "hi",
+   "fr",
+   "ja",
+   "ar",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "K000288"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"AMOOTCJA",
+  "name":"Master of Arts in de Oosterse talen en culturen (Japan)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-oosterse-talen-en-culturen-japan\/programma\/2021",
+  "languages":[
+   "nl",
+   "zh",
+   "de",
+   "hi",
+   "fr",
+   "ja",
+   "ar",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "K000288"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"AMOOTCIN",
+  "name":"Master of Arts in de Oosterse talen en culturen (India)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-oosterse-talen-en-culturen-india\/programma\/2021",
+  "languages":[
+   "nl",
+   "zh",
+   "de",
+   "hi",
+   "fr",
+   "ja",
+   "ar",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "K000288"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"AMOOTCCH",
+  "name":"Master of Arts in de Oosterse talen en culturen (China)",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-oosterse-talen-en-culturen-china\/programma\/2021",
+  "languages":[
+   "nl",
+   "zh",
+   "de",
+   "hi",
+   "fr",
+   "ja",
+   "ar",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "K000288"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"IMNURD",
+  "name":"Master of Science in Nutrition and Rural Development",
+  "cycle":"master",
+  "url":"https:\/\/studiekiezer.ugent.be\/master-of-science-in-nutrition-and-rural-development-en\/programma\/2021",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Bioscience Engineering"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   2
+  ],
+  "matched_courses":[
+   "I002779",
+   "I002784",
+   "I002718",
+   "I002756"
   ],
   "nb_dedicated_courses":1
  },
@@ -8164,18 +10756,31 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    1,
    1,
+   9,
+   1,
    2
   ],
   "matched_courses":[
+   "C003954",
+   "C003951",
+   "I002404",
+   "I002606",
+   "I002756",
+   "C002812",
+   "C003948",
+   "I002718",
+   "I002779",
    "C003952",
-   "C003954"
+   "C002801"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":3
  },
  {
   "id":"IMSOGLPL",
@@ -8193,7 +10798,7 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -8205,24 +10810,29 @@
   "themes_scores":[
    8,
    1,
-   7,
-   2,
-   3
+   9,
+   3,
+   7
   ],
   "matched_courses":[
-   "I002468",
-   "I002465",
-   "I002712",
    "I002466",
-   "I002464",
+   "I002468",
+   "I002756",
+   "I002699",
+   "I002775",
+   "C003320",
+   "I002465",
+   "I002774",
+   "I002463",
+   "I002718",
+   "I002657",
    "I002708",
+   "I002464",
    "I002470",
    "I002477",
-   "C003320",
-   "I002463",
-   "I002699"
+   "I002712"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":4
  },
  {
   "id":"IMSOGLSB",
@@ -8239,7 +10849,7 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -8250,21 +10860,27 @@
   "themes_scores":[
    7,
    1,
-   4,
-   3
+   6,
+   7
   ],
   "matched_courses":[
-   "I002486",
-   "I002476",
-   "I002482",
-   "I002489",
-   "I002483",
    "I002487",
-   "I002472",
+   "I002479",
+   "I002756",
    "I002474",
+   "I002775",
+   "I002485",
+   "I002483",
+   "I002473",
+   "I002476",
+   "I002774",
+   "I002657",
    "I002484",
+   "I002489",
+   "I002482",
    "I002477",
-   "I002479"
+   "I002472",
+   "I002486"
   ],
   "nb_dedicated_courses":3
  },
@@ -8293,12 +10909,14 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
    1,
-   2,
-   2
+   1,
+   3,
+   3
   ],
   "matched_courses":[
+   "K001016",
+   "K001223",
    "K001298",
    "K001338"
   ],
@@ -8330,12 +10948,13 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   2,
    1,
    3,
-   3
+   4
   ],
   "matched_courses":[
+   "K001223",
    "K001298",
    "K001338",
    "K001013"
@@ -8348,9 +10967,9 @@
   "cycle":"master",
   "url":"https:\/\/studiekiezer.ugent.be\/international-master-of-science-in-rural-development-IMRDVC-en\/programma\/2021",
   "languages":[
-   "en",
-   "ko",
    "fr",
+   "ko",
+   "en",
    "es"
   ],
   "campuses":[
@@ -8360,7 +10979,7 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -8371,28 +10990,32 @@
   ],
   "themes_scores":[
    7,
-   2,
-   7,
-   2,
-   12
+   1,
+   10,
+   3,
+   14
   ],
   "matched_courses":[
-   "I002314",
-   "I002802",
-   "I002817",
-   "I002803",
-   "I002827",
-   "I002807",
-   "I002324",
-   "I002801",
-   "I002265",
-   "I002259",
-   "I002260",
    "I002266",
-   "I002542",
-   "I002810",
    "I002814",
-   "I002320"
+   "I002810",
+   "I002819",
+   "I002807",
+   "I002265",
+   "I002817",
+   "I002259",
+   "I002314",
+   "I002756",
+   "I002320",
+   "I002801",
+   "I002779",
+   "I002803",
+   "I002260",
+   "I002802",
+   "I002827",
+   "K001016",
+   "I002324",
+   "I002542"
   ],
   "nb_dedicated_courses":10
  },
@@ -8403,8 +11026,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-laws-in-de-rechten\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -8425,18 +11048,21 @@
   "themes_scores":[
    1,
    1,
-   4,
+   5,
    1,
-   6
+   8
   ],
   "matched_courses":[
-   "B001703",
+   "B001728",
    "B001695",
    "B001579",
-   "B001699",
-   "B001361",
+   "B001375",
    "B001700",
-   "B001375"
+   "B001361",
+   "B001372",
+   "B001703",
+   "B001699",
+   "B001751"
   ],
   "nb_dedicated_courses":4
  },
@@ -8466,11 +11092,14 @@
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   3,
+   2
   ],
   "matched_courses":[
-   "K001111"
+   "K000288",
+   "K001111",
+   "K001223",
+   "K001259"
   ],
   "nb_dedicated_courses":1
  },
@@ -8495,13 +11124,9 @@
   ],
   "themes":[
    "climate",
-   "energy",
-   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1,
    1,
    1
   ],
@@ -8527,7 +11152,7 @@
    "Faculty of Sciences"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
@@ -8564,7 +11189,7 @@
    "Faculty of Sciences"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
@@ -8590,8 +11215,8 @@
   "cycle":"master",
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-frans-engels-AMTALKFE\/programma\/2021",
   "languages":[
-   "nl",
    "fr",
+   "nl",
    "en"
   ],
   "campuses":[
@@ -8655,8 +11280,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-engels-scandinavistiek-AMTALKEZ\/programma\/2021",
   "languages":[
    "sv",
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -8719,8 +11344,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-engels-italiaans-AMTALKEI\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "it"
+   "it",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -8751,8 +11376,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-engels-grieks-AMTALKEG\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "el"
+   "el",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -8897,22 +11522,40 @@
    "sustainability"
   ],
   "themes_scores":[
-   6,
-   1,
    5,
    1,
-   3
+   17,
+   1,
+   20
   ],
   "matched_courses":[
+   "C004270",
+   "C004258",
+   "C004257",
    "C004273",
-   "C004266",
+   "C001032",
+   "C002615",
+   "C004264",
+   "C004259",
+   "C003994",
+   "C003068",
+   "C004272",
    "I002712",
-   "K001298",
+   "C004267",
+   "I002756",
    "C003320",
+   "C004260",
+   "C004271",
+   "I002715",
+   "C004268",
+   "C004266",
    "I002699",
-   "I002664"
+   "K001298",
+   "I002774",
+   "I002664",
+   "I002657"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":3
  },
  {
   "id":"CMLAMALG",
@@ -8939,22 +11582,40 @@
    "sustainability"
   ],
   "themes_scores":[
-   6,
-   1,
    5,
    1,
-   4
+   17,
+   1,
+   21
   ],
   "matched_courses":[
+   "C004270",
+   "C004258",
+   "C004257",
    "C004273",
+   "C001032",
+   "C002615",
+   "C004264",
+   "C004259",
+   "C003994",
+   "C003068",
+   "C004272",
    "I002712",
-   "I002708",
-   "K001298",
+   "C004267",
+   "I002756",
    "C003320",
+   "C004260",
+   "C004271",
+   "I002715",
+   "C004268",
    "I002699",
-   "I002664"
+   "K001298",
+   "I002774",
+   "I002664",
+   "I002657",
+   "I002708"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":3
  },
  {
   "id":"IMSINR",
@@ -8972,7 +11633,7 @@
    "Faculty of Bioscience Engineering"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -8982,36 +11643,40 @@
    "sustainability"
   ],
   "themes_scores":[
-   7,
    6,
-   9,
-   12,
-   15
+   6,
+   11,
+   13,
+   16
   ],
   "matched_courses":[
-   "I002679",
-   "K001298",
-   "I002771",
-   "I002591",
-   "E039060",
-   "I001571",
-   "I002700",
-   "I002886",
-   "I002882",
-   "I002408",
-   "B001439",
-   "I002530",
-   "E065460",
-   "E071131",
-   "I002850",
-   "I002846",
-   "I002607",
-   "I002766",
-   "I002772",
    "E065471",
-   "E065480"
+   "I002679",
+   "E065480",
+   "I002772",
+   "I002767",
+   "E065460",
+   "I002850",
+   "E071131",
+   "I002194",
+   "I002846",
+   "I002886",
+   "I002530",
+   "I002192",
+   "I002591",
+   "I001571",
+   "I002607",
+   "B001439",
+   "I002771",
+   "I002882",
+   "I002700",
+   "K001298",
+   "E066661",
+   "I002766",
+   "I002408",
+   "E039060"
   ],
-  "nb_dedicated_courses":7
+  "nb_dedicated_courses":8
  },
  {
   "id":"AMTALKNZ",
@@ -9020,9 +11685,9 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-nederlands-scandinavistiek-AMTALKNZ\/programma\/2021",
   "languages":[
    "nl",
+   "af",
    "sv",
-   "en",
-   "af"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -9053,8 +11718,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-nederlands-engels-AMTALKNE\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "af"
+   "af",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -9085,8 +11750,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-latijn-scandinavistiek-AMTALKLZ\/programma\/2021",
   "languages":[
    "nl",
-   "en",
-   "sv"
+   "sv",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -9116,10 +11781,10 @@
   "cycle":"master",
   "url":"https:\/\/studiekiezer.ugent.be\/master-of-arts-in-de-taal-en-letterkunde-frans-scandinavistiek-AMTALKFZ\/programma\/2021",
   "languages":[
-   "sv",
    "fr",
-   "en",
-   "nl"
+   "nl",
+   "sv",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -9163,13 +11828,80 @@
    "Political Sciences"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   3,
+   2
+  ],
+  "matched_courses":[
+   "C003858",
+   "K001064",
+   "K001067",
+   "C001294"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"KBSOSCCS",
+  "name":"Bachelor of Science in Social Sciences (Communication Studies)",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-social-sciences-communication-studies-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Political and Social Sciences"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "K001064"
+   "K001125"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"KBSOSCSO",
+  "name":"Bachelor of Science in Social Sciences (Sociology)",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-social-sciences-sociology-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Political and Social Sciences"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "K001125"
   ],
   "nb_dedicated_courses":0
  },
@@ -9196,12 +11928,15 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
-   1
+   3,
+   4
   ],
   "matched_courses":[
+   "B001332",
    "B001690",
-   "B001661"
+   "B001313",
+   "B001661",
+   "B001339"
   ],
   "nb_dedicated_courses":0
  },
@@ -9232,14 +11967,15 @@
   "themes_scores":[
    2,
    1,
-   2,
-   2
+   3,
+   1
   ],
   "matched_courses":[
+   "E066012",
+   "E063130",
    "E037010",
    "E099151",
-   "E076040",
-   "E066012"
+   "E076040"
   ],
   "nb_dedicated_courses":1
  },
@@ -9264,13 +12000,11 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   2
   ],
   "matched_courses":[
    "E076040",
@@ -9299,13 +12033,11 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   2
   ],
   "matched_courses":[
    "E076040",
@@ -9333,13 +12065,11 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   2
   ],
   "matched_courses":[
    "E076040",
@@ -9369,20 +12099,19 @@
   "themes":[
    "climate",
    "environment",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
-   4,
-   3
+   1,
+   4
   ],
   "matched_courses":[
-   "E078320",
+   "E066012",
+   "E070310",
    "E078310",
-   "E076040",
-   "E066012"
+   "E078320",
+   "E076040"
   ],
   "nb_dedicated_courses":1
  },
@@ -9408,21 +12137,17 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
-   1,
-   3,
-   1
+   3
   ],
   "matched_courses":[
    "E066012",
-   "E050410",
    "E051222",
+   "E050410",
    "E050310",
    "E076040"
   ],
@@ -9449,17 +12174,18 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "environment",
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   1,
+   2
   ],
   "matched_courses":[
    "E076040",
-   "E066012"
+   "E066012",
+   "E070310"
   ],
   "nb_dedicated_courses":1
  },
@@ -9484,18 +12210,16 @@
   ],
   "themes":[
    "energy",
-   "environment",
    "resources"
   ],
   "themes_scores":[
    2,
-   1,
    1
   ],
   "matched_courses":[
+   "E050410",
    "E050310",
-   "E051222",
-   "E050410"
+   "E051222"
   ],
   "nb_dedicated_courses":0
  },
@@ -9522,10 +12246,11 @@
    "energy"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "E701054"
+   "E701054",
+   "E701024"
   ],
   "nb_dedicated_courses":1
  },
@@ -9551,11 +12276,12 @@
    "energy"
   ],
   "themes_scores":[
-   2
+   3
   ],
   "matched_courses":[
+   "E731018",
    "E701054",
-   "E731018"
+   "E701024"
   ],
   "nb_dedicated_courses":1
  },
@@ -9578,16 +12304,20 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "sustainability"
   ],
   "themes_scores":[
-   4
+   5,
+   1
   ],
   "matched_courses":[
-   "E702080",
-   "E701054",
+   "E741059",
    "E731018",
-   "E741059"
+   "E701054",
+   "E741053",
+   "E702080",
+   "E701024"
   ],
   "nb_dedicated_courses":2
  },
@@ -9619,18 +12349,21 @@
   ],
   "themes_scores":[
    1,
+   4,
+   2,
    3,
-   1,
-   1,
    1
   ],
   "matched_courses":[
    "E721024",
-   "E702080",
+   "E721046",
+   "E721044",
    "E701054",
-   "E721046"
+   "E702080",
+   "E701024",
+   "E721033"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
  },
  {
   "id":"EB7INWBO",
@@ -9655,20 +12388,26 @@
    "climate",
    "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   4,
    3,
-   3,
-   1
+   2,
+   2
   ],
   "matched_courses":[
    "E715027",
+   "E711067",
    "E711024",
-   "E711059",
+   "E711069",
    "E701054",
-   "E702080"
+   "E711060",
+   "E702080",
+   "E701024",
+   "E711059"
   ],
   "nb_dedicated_courses":1
  },
@@ -9678,11 +12417,11 @@
   "cycle":"bac",
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-handelswetenschappen\/programma\/2021",
   "languages":[
+   "nl",
+   "de",
    "fr",
    "es",
-   "nl",
-   "en",
-   "de"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -9702,12 +12441,14 @@
   "themes_scores":[
    1,
    2,
-   2
+   4
   ],
   "matched_courses":[
-   "F710292",
    "F710289",
-   "F710225"
+   "F710292",
+   "F000181",
+   "F710225",
+   "F000627"
   ],
   "nb_dedicated_courses":0
  },
@@ -9718,8 +12459,8 @@
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-arts-in-de-geschiedenis\/programma\/2021",
   "languages":[
    "nl",
-   "en",
    "ln",
+   "en",
    "de"
   ],
   "campuses":[
@@ -9736,17 +12477,22 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
-   2,
-   1
+   3,
+   1,
+   2
   ],
   "matched_courses":[
    "A004069",
+   "K000967",
+   "B001332",
    "B001326",
-   "K000967"
+   "B001337",
+   "A005441"
   ],
   "nb_dedicated_courses":1
  },
@@ -9776,14 +12522,55 @@
   ],
   "themes_scores":[
    2,
-   2,
+   6,
    1,
    1
   ],
   "matched_courses":[
+   "C001159",
+   "C000705",
    "C003957",
+   "C002459",
+   "C003962",
    "C004252",
-   "C001159"
+   "C000884"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"CBGEOF",
+  "name":"Bachelor of Science in de geografie en de geomatica",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-geografie-en-de-geomatica\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   6,
+   2
+  ],
+  "matched_courses":[
+   "C003058",
+   "C001421",
+   "C001294",
+   "C003869",
+   "C003858",
+   "C003859",
+   "C003868"
   ],
   "nb_dedicated_courses":1
  },
@@ -9816,6 +12603,139 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"HBPSYCTH",
+  "name":"Bachelor of Science in de psychologie (theoretische en experimentele psychologie)",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-psychologie-theoretische-en-experimentele-psychologie\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "H001576",
+   "H002113"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HBPSYCON",
+  "name":"Bachelor of Science in de psychologie (onderwijs)",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-psychologie-onderwijs\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "H001576",
+   "H001894",
+   "H002113"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HBPSYCKL",
+  "name":"Bachelor of Science in de psychologie (klinische psychologie)",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-psychologie-klinische-psychologie\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "H001576",
+   "H002113"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"HBPSYCBD",
+  "name":"Bachelor of Science in de psychologie (bedrijfspsychologie en personeelsbeleid)",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-de-psychologie-bedrijfspsychologie-en-personeelsbeleid\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculteit Psychologie en Pedagogische Wetenschappen"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "H001576",
+   "H002113"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"HBPEDASA",
   "name":"Bachelor of Science in de pedagogische wetenschappen (sociale agogiek)",
   "cycle":"bac",
@@ -9835,12 +12755,16 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "H002391",
+   "H001894",
    "H001864"
   ],
   "nb_dedicated_courses":0
@@ -9872,15 +12796,17 @@
   ],
   "themes_scores":[
    3,
-   3,
+   5,
    1,
-   2
+   3
   ],
   "matched_courses":[
    "A004069",
-   "K001013",
+   "K000967",
+   "K001067",
    "B001661",
-   "K000967"
+   "K000316",
+   "K001013"
   ],
   "nb_dedicated_courses":2
  },
@@ -9904,12 +12830,15 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "H001894",
    "H001864"
   ],
   "nb_dedicated_courses":0
@@ -9934,12 +12863,15 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "H001894",
    "H001864"
   ],
   "nb_dedicated_courses":0
@@ -9952,9 +12884,9 @@
   "languages":[
    "nl",
    "ko",
-   "en",
+   "zh",
    "ja",
-   "zh"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -9968,12 +12900,15 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "K000316",
    "K000967"
   ],
   "nb_dedicated_courses":0
@@ -9984,13 +12919,13 @@
   "cycle":"bac",
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-arts-in-de-oosterse-talen-en-culturen-india\/programma\/2021",
   "languages":[
-   "fr",
    "nl",
-   "hi",
+   "zh",
    "ko",
-   "en",
+   "hi",
+   "fr",
    "ar",
-   "zh"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -10004,12 +12939,15 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "K000316",
    "K000967"
   ],
   "nb_dedicated_courses":0
@@ -10021,12 +12959,12 @@
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-arts-in-de-oosterse-talen-en-culturen-china-china-traject\/programma\/2021",
   "languages":[
    "nl",
-   "hi",
+   "zh",
    "ko",
-   "en",
+   "hi",
    "ja",
    "ar",
-   "zh"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -10040,12 +12978,15 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "K000316",
    "K000967"
   ],
   "nb_dedicated_courses":0
@@ -10057,13 +12998,13 @@
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-arts-in-de-oosterse-talen-en-culturen-china-ugent-traject\/programma\/2021",
   "languages":[
    "nl",
-   "ru",
-   "hi",
+   "zh",
    "ko",
-   "en",
+   "hi",
+   "ru",
    "ja",
    "ar",
-   "zh"
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -10077,12 +13018,15 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "K000316",
    "K000967"
   ],
   "nb_dedicated_courses":0
@@ -10093,13 +13037,13 @@
   "cycle":"bac",
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-arts-in-de-oosterse-talen-en-culturen-arabistiek-en-islamkunde\/programma\/2021",
   "languages":[
-   "tr",
    "nl",
-   "hi",
+   "zh",
    "ko",
-   "en",
+   "hi",
    "ar",
-   "zh"
+   "tr",
+   "en"
   ],
   "campuses":[
    "Gent"
@@ -10113,13 +13057,16 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
-   2
+   2,
+   1
   ],
   "matched_courses":[
    "K001064",
+   "K000316",
    "K000967"
   ],
   "nb_dedicated_courses":0
@@ -10130,15 +13077,15 @@
   "cycle":"bac",
   "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-arts-in-de-oost-europese-talen-en-culturen\/programma\/2021",
   "languages":[
-   "tr",
-   "bg",
    "nl",
-   "sh",
-   "ru",
-   "sl",
    "el",
+   "de",
+   "ru",
+   "bg",
+   "tr",
+   "sl",
    "en",
-   "de"
+   "sh"
   ],
   "campuses":[
    "Gent"
@@ -10152,12 +13099,15 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "K000316",
    "K000967"
   ],
   "nb_dedicated_courses":0
@@ -10184,15 +13134,50 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   3,
+   2
+  ],
+  "matched_courses":[
+   "K000967",
+   "B001332",
+   "K001259",
+   "H001576",
+   "B001326"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"KBSOSCPS",
+  "name":"Bachelor of Science in Social Sciences (Political Sciences)",
+  "cycle":"bac",
+  "url":"https:\/\/studiekiezer.ugent.be\/bachelor-of-science-in-social-sciences-political-sciences-en\/programma\/2021",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Faculty of Political and Social Sciences"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "B001326",
-   "K000967"
+   "K001125"
   ],
   "nb_dedicated_courses":0
  }

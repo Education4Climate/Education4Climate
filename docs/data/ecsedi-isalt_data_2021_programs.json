@@ -1,17 +1,17 @@
 [
  {
-  "id":"ISALT",
-  "name":"Bachelier en Management du Tourisme et Loisirs",
+  "id":"ECSEDI",
+  "name":"Bachelier Assitant de Direction",
   "cycle":"bac",
-  "url":"https:\/\/www.einet.be\/ects\/affichelisteects_public.php",
+  "url":"https:\/\/www.einet.be\/ects\/index.php",
   "languages":[
-   "fr",
    "nl",
    "de",
    "it",
+   "fr",
    "cn",
-   "en",
-   "es"
+   "es",
+   "en"
   ],
   "campuses":[
    "Bruxelles"
@@ -20,7 +20,41 @@
    "D\u00e9partement Economique"
   ],
   "fields":[
-   "TODO"
+   "Economy"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "52"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"ISALT",
+  "name":"Bachelier en Management du Tourisme et Loisirs",
+  "cycle":"bac",
+  "url":"https:\/\/www.einet.be\/ects\/index.php",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en",
+   "cn"
+  ],
+  "campuses":[
+   "Bruxelles"
+  ],
+  "faculties":[
+   "D\u00e9partement Economique"
+  ],
+  "fields":[
+   "Economy"
   ],
   "themes":[
    "resources",

@@ -14,26 +14,40 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   3,
    5,
-   3
+   8,
+   1,
+   10
   ],
   "matched_courses":[
-   "QD1162",
-   "QD07CD",
+   "QD1106",
+   "QD1184",
    "QD1163",
+   "QD1348",
+   "QD07CE",
+   "QD07QB",
+   "QD1192",
+   "QD1027",
+   "QD1046",
+   "QD1139",
+   "QD1187",
+   "QD07CD",
+   "QD1109",
+   "QD1198",
+   "QD1167",
    "QD07C9",
-   "QD07CE"
+   "QD1162"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":5
  },
  {
   "id":"SC_55009204",
@@ -50,22 +64,39 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2,
-   1
+   16,
+   1,
+   2
   ],
   "matched_courses":[
+   "QD1284",
+   "QD1289",
+   "QD1294",
+   "QD1303",
+   "QD1304",
+   "QD1301",
    "QD1300",
+   "QD1291",
+   "QD1308",
+   "QD1286",
+   "QD1288",
+   "QD1299",
+   "QD1296",
+   "QD1298",
+   "QD1287",
+   "QD1295",
    "QD1293",
-   "QD1289"
+   "QD1305"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":7
  },
  {
   "id":"SC_55009070",
@@ -82,17 +113,21 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
+   "energy",
    "sustainability"
   ],
   "themes_scores":[
+   2,
    2
   ],
   "matched_courses":[
    "QD1271",
-   "QD1262"
+   "QD1262",
+   "QD1273",
+   "QD1257"
   ],
   "nb_dedicated_courses":2
  },
@@ -111,7 +146,7 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "sustainability"
@@ -125,22 +160,21 @@
   "nb_dedicated_courses":1
  },
  {
-  "id":"SC_52448872",
-  "name":"PBA Orthopedagogie, stuwer\/CVO (Hasselt)",
-  "cycle":"bac",
-  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_52448872.htm",
+  "id":"SC_52428067",
+  "name":"Incoming exchange students UC Limburg Welfare",
+  "cycle":"other",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_52428067.htm",
   "languages":[
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
-   "Hasselt"
+
   ],
   "faculties":[
    "welzijn"
   ],
   "fields":[
-   "TODO"
+   "Medecine & Health"
   ],
   "themes":[
    "sustainability"
@@ -149,7 +183,70 @@
    1
   ],
   "matched_courses":[
-   "QE1456"
+   "QE1641"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_51846570",
+  "name":"EBA Lager onderwijs (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846570.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "lerarenopleiding"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "QB1600"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_52448872",
+  "name":"PBA Orthopedagogie, stuwer\/CVO (Hasselt)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_52448872.htm",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Hasselt"
+  ],
+  "faculties":[
+   "welzijn"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   3
+  ],
+  "matched_courses":[
+   "QE1459",
+   "QE1456",
+   "QE1464"
   ],
   "nb_dedicated_courses":0
  },
@@ -159,8 +256,8 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846599.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Hasselt"
@@ -169,7 +266,42 @@
    "welzijn"
   ],
   "fields":[
-   "TODO"
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   5
+  ],
+  "matched_courses":[
+   "QE1459",
+   "QE1464",
+   "QE1456",
+   "QE1449",
+   "QE1457"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_55039998",
+  "name":"PBA Orthopedagogie (Hasselt)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55039998.htm",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Hasselt"
+  ],
+  "faculties":[
+   "welzijn"
+  ],
+  "fields":[
+   "Medecine & Health"
   ],
   "themes":[
    "sustainability"
@@ -178,7 +310,7 @@
    1
   ],
   "matched_courses":[
-   "QE1456"
+   "QE1641"
   ],
   "nb_dedicated_courses":0
  },
@@ -197,7 +329,7 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
@@ -219,10 +351,10 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846563.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "en",
+   "de"
   ],
   "campuses":[
    "Diepenbeek"
@@ -231,7 +363,7 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy"
@@ -245,13 +377,41 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"SC_56143294",
+  "name":"PBA Elektromechanica (Automatisering 113 sp), na Graduaat Elektromechanische Systemen (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_56143294.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "QD3063"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"SC_52428058",
   "name":"Incoming exchange students UC Limburg Management",
   "cycle":"other",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_52428058.htm",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -260,7 +420,7 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
    "sustainability"
@@ -274,15 +434,12 @@
   "nb_dedicated_courses":0
  },
  {
-  "id":"SC_51846562",
-  "name":"PBA Elektromechanica (Diepenbeek)",
+  "id":"SC_56143289",
+  "name":"PBA Elektromechanica (Onderhoudstechnologie 114 sp), na Graduaat Elektromechanische Systemen (Diepenbeek)",
   "cycle":"bac",
-  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846562.htm",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_56143289.htm",
   "languages":[
-   "en",
-   "de",
-   "nl",
-   "fr"
+   "nl"
   ],
   "campuses":[
    "Diepenbeek"
@@ -291,7 +448,7 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy"
@@ -300,8 +457,43 @@
    2
   ],
   "matched_courses":[
+   "QD3032",
+   "QD3046"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_51846562",
+  "name":"PBA Elektromechanica (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846562.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "de",
+   "en"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   5
+  ],
+  "matched_courses":[
+   "QD1097",
+   "QD1085",
    "QD1224",
-   "QD1085"
+   "QD07B7",
+   "QD1228"
   ],
   "nb_dedicated_courses":1
  },
@@ -320,7 +512,7 @@
    "technologie"
   ],
   "fields":[
-   "TODO"
+   "Engineering"
   ],
   "themes":[
    "energy",
@@ -338,15 +530,42 @@
   "nb_dedicated_courses":3
  },
  {
-  "id":"SC_54088811",
-  "name":"PBA Organisatie en Management: Business and Languages (Diepenbeek)",
+  "id":"SC_51846560",
+  "name":"PBA Biomedische laboratoriumtechnologie (Diepenbeek)",
   "cycle":"bac",
-  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_54088811.htm",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846560.htm",
   "languages":[
-   "en",
-   "de",
-   "nl",
-   "fr"
+   "nl"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "gezondheid"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "QD1392"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_51846557",
+  "name":"BNB Boekhoudkundige en fiscale expertise (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846557.htm",
+  "languages":[
+   "nl"
   ],
   "campuses":[
    "Diepenbeek"
@@ -355,18 +574,90 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "QA1471"
+   "QA1591"
   ],
   "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_54088811",
+  "name":"PBA Organisatie en Management: Business and Languages (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_54088811.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "management"
+  ],
+  "fields":[
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   5
+  ],
+  "matched_courses":[
+   "QA1597",
+   "QA1471",
+   "QA1598",
+   "QA1593",
+   "QA1595"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_51846597",
+  "name":"PBA Bedrijfsmanagement, werktraject accountancy-fiscaliteit (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_51846597.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "management"
+  ],
+  "fields":[
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "QA1673"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_55007261",
@@ -374,10 +665,10 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55007261.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "en",
+   "de"
   ],
   "campuses":[
    "Diepenbeek"
@@ -386,19 +677,23 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2
+   2,
+   4
   ],
   "matched_courses":[
+   "QA1504",
    "QA1505",
-   "QA1504"
+   "QA1642",
+   "QA1636"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"SC_55007143",
@@ -406,10 +701,10 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55007143.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "en",
+   "de"
   ],
   "campuses":[
    "Diepenbeek"
@@ -418,19 +713,25 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2
+   4,
+   4
   ],
   "matched_courses":[
+   "QA1504",
+   "QA07MY",
+   "QA1636",
    "QA1505",
-   "QA1504"
+   "QA1642",
+   "QA1076"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"SC_55007134",
@@ -438,10 +739,10 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55007134.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "en",
+   "de"
   ],
   "campuses":[
    "Diepenbeek"
@@ -450,19 +751,24 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2
+   3,
+   5
   ],
   "matched_courses":[
+   "QA1504",
+   "QA1314",
+   "QA1636",
    "QA1505",
-   "QA1504"
+   "QA1642"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"SC_55007048",
@@ -470,11 +776,11 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55007048.htm",
   "languages":[
-   "de",
    "nl",
+   "de",
    "fr",
-   "en",
-   "es"
+   "es",
+   "en"
   ],
   "campuses":[
    "Diepenbeek"
@@ -483,19 +789,22 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2
+   1,
+   3
   ],
   "matched_courses":[
+   "QA1504",
    "QA1505",
-   "QA1504"
+   "QA1642"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_55006968",
@@ -503,10 +812,10 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55006968.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "en",
+   "de"
   ],
   "campuses":[
    "Diepenbeek"
@@ -515,19 +824,23 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2
+   2,
+   4
   ],
   "matched_courses":[
+   "QA1504",
    "QA1505",
-   "QA1504"
+   "QA1642",
+   "QA1636"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"SC_55006958",
@@ -535,10 +848,10 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55006958.htm",
   "languages":[
-   "en",
-   "de",
    "nl",
-   "fr"
+   "fr",
+   "en",
+   "de"
   ],
   "campuses":[
    "Diepenbeek"
@@ -547,7 +860,42 @@
    "management"
   ],
   "fields":[
-   "TODO"
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "QA1504",
+   "QA1505",
+   "QA1636"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"SC_54088257",
+  "name":"PBA Organisatie en Management: Business Translation and Interpreting (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_54088257.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "management"
+  ],
+  "fields":[
+   "Management"
   ],
   "themes":[
    "sustainability"
@@ -556,38 +904,7 @@
    2
   ],
   "matched_courses":[
-   "QA1505",
-   "QA1504"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"SC_54088257",
-  "name":"PBA Organisatie en Management: Business Translation and Interpreting (Diepenbeek)",
-  "cycle":"bac",
-  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_54088257.htm",
-  "languages":[
-   "en",
-   "de",
-   "nl",
-   "fr"
-  ],
-  "campuses":[
-   "Diepenbeek"
-  ],
-  "faculties":[
-   "management"
-  ],
-  "fields":[
-   "TODO"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
+   "QA1918",
    "QA1471"
   ],
   "nb_dedicated_courses":0
@@ -609,7 +926,7 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -617,9 +934,11 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "QC1462",
+   "QC1208",
    "QC1468"
   ],
   "nb_dedicated_courses":0
@@ -641,7 +960,7 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -649,9 +968,11 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "QC1462",
+   "QC1208",
    "QC1468"
   ],
   "nb_dedicated_courses":0
@@ -673,7 +994,7 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -681,9 +1002,11 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "QC1462",
+   "QC1208",
    "QC1468"
   ],
   "nb_dedicated_courses":0
@@ -705,7 +1028,7 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -713,9 +1036,11 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "QC1462",
+   "QC1208",
    "QC1468"
   ],
   "nb_dedicated_courses":0
@@ -726,8 +1051,8 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55647637.htm",
   "languages":[
-   "fr",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -737,7 +1062,7 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -745,9 +1070,11 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "QC1462",
+   "QC1208",
    "QC1468"
   ],
   "nb_dedicated_courses":0
@@ -758,8 +1085,8 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_53263069.htm",
   "languages":[
-   "fr",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -769,7 +1096,7 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -777,9 +1104,11 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "QC1462",
+   "QC1208",
    "QC1468"
   ],
   "nb_dedicated_courses":0
@@ -790,8 +1119,8 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55646196.htm",
   "languages":[
-   "fr",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -801,7 +1130,7 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
@@ -809,12 +1138,53 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "QC1462",
+   "QC1208",
    "QC1468"
   ],
   "nb_dedicated_courses":0
+ },
+ {
+  "id":"SC_55651042",
+  "name":"EBA Secundair onderwijs, extra lesbevoegdheid vanaf 2020(Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55651042.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "lerarenopleiding"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   5,
+   2
+  ],
+  "matched_courses":[
+   "QC1675",
+   "QC1671",
+   "QC07SD",
+   "QC1494",
+   "QC07FH",
+   "QC07EL"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"SC_54059027",
@@ -822,8 +1192,8 @@
   "cycle":"bac",
   "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_54059027.htm",
   "languages":[
-   "fr",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -833,18 +1203,67 @@
    "lerarenopleiding"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
-   "environment"
+   "energy",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   5,
+   2
   ],
   "matched_courses":[
-   "QC1450"
+   "QC1675",
+   "QC1671",
+   "QC1450",
+   "QC07SD",
+   "QC1494",
+   "QC07FH",
+   "QC07EL"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"SC_55642134",
+  "name":"EBA Secundair onderwijs vanaf 2020 (Diepenbeek)",
+  "cycle":"bac",
+  "url":"https:\/\/onderwijsaanbod.limburg.ucll.be\/opleidingen\/n\/SC_55642134.htm",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Diepenbeek"
+  ],
+  "faculties":[
+   "lerarenopleiding"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   5,
+   2
+  ],
+  "matched_courses":[
+   "QC1675",
+   "QC1671",
+   "QC07SD",
+   "QC1494",
+   "QC07FH",
+   "QC07EL"
   ],
   "nb_dedicated_courses":1
  }

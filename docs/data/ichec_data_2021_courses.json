@@ -1,5 +1,74 @@
 [
  {
+  "id":"13UST12",
+  "name":"Electricit\u00e9",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Francis Laurent"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/9156",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"13UXP16",
+  "name":"Projet interdisciplinaire",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Wattier Sylvie"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/9155",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"11UEC10",
+  "name":"Economie politique",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Wattier Sylvie"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/5432",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"22MGD40",
   "name":"Contexte Soci\u00e9tal et Outils d'analyse des Business",
   "year":"2021-2022",
@@ -10,10 +79,40 @@
    "Hudlot Brigitte"
   ],
   "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/7885",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
   "themes":[
    "sustainability"
   ],
   "dedicated":0
+ },
+ {
+  "id":"21FFM12",
+  "name":"Gestion de portefeuille et durabilit\u00e9",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Delouche Gr\u00e9goire"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/9168",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "dedicated":1
  },
  {
   "id":"22MEP20",
@@ -26,10 +125,40 @@
    "Godts-Peters Sabine"
   ],
   "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/5270",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
   "themes":[
    "climate"
   ],
   "dedicated":0
+ },
+ {
+  "id":"22EC012",
+  "name":"Topics in Economics and Environment",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Roman Philippe"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/9277",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
  },
  {
   "id":"21IDM26",
@@ -42,8 +171,107 @@
    "Zynga Andrea"
   ],
   "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/5496",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
   "themes":[
    "sustainability"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"21EC015",
+  "name":"Topics in Economics and Environment",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Roman Philippe"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/9276",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"21EC014",
+  "name":"Topics in Economics and Environment",
+  "year":"2021-2022",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Roman Philippe"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/9315",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"31DCG10",
+  "name":"Economie",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Thiry G\u00e9raldine"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/7917",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"21ST040",
+  "name":"Science et technologie des mat\u00e9riaux",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dubois Vincent"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/5551",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
   ],
   "dedicated":0
  },
@@ -58,9 +286,16 @@
    "Verhasselt Pascal"
   ],
   "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/5255",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
   "themes":[
-   "resources",
-   "environment"
+   "environment",
+   "resources"
   ],
   "dedicated":1
  },
@@ -75,11 +310,41 @@
    "Bartosiewicz Yann"
   ],
   "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/5586",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
   "themes":[
    "energy",
    "climate"
   ],
   "dedicated":1
+ },
+ {
+  "id":"11UEC11",
+  "name":"Economie politique",
+  "year":"2021-2022",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Khatibi Arastou"
+  ],
+  "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/6797",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "dedicated":0
  },
  {
   "id":"21ST010",
@@ -92,8 +357,16 @@
    "Verhasselt Pascal"
   ],
   "url":"https:\/\/www.ichec.be\/fr\/unite-enseignement\/5254",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
   "themes":[
-   "environment"
+   "environment",
+   "resources"
   ],
   "dedicated":0
  }

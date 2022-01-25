@@ -890,7 +890,7 @@ footer li {
 
 /* Collapsible filters */
 
-.programs .sidebar {
+.programs .sidebar, .courses .sidebar, .teachers .sidebar {
     padding-left: .5rem;
     padding-right: .5rem;
 }
@@ -930,7 +930,7 @@ footer li {
     content: url(/img/caret-down-blue.svg);
 }
 
-#nameFilterCollapse {
+#nameFilterCollapse > .filter, #programCodeFilterCollapse > .filter, #courseNameFilterCollapse > .filter {
     padding-top: .8rem;
 }
 

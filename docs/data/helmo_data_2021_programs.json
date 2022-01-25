@@ -1,5 +1,64 @@
 [
  {
+  "id":"Economique - 6",
+  "name":"Bachelier en Droit",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Economique\/Bachelier-en-Droit\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Campus Guillemins"
+  ],
+  "faculties":[
+   "D\u00e9partement Economique et Juridique"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Economy"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "21501"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"Pedagogique - 12",
+  "name":"Instituteur.trice Primaire en Horaire Adapt\u00e9",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Pedagogique\/Instituteur-primaire-horaire-adapte\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Sainte-Croix"
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "21330"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"Pedagogique - 11",
   "name":"Instituteur.trice Primaire (Theux)",
   "cycle":"bac",
@@ -14,20 +73,315 @@
    "D\u00e9partement P\u00e9dagogique"
   ],
   "fields":[
-   "TODO"
+   "Pedagogy"
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "environment"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
   "matched_courses":[
-   "15755"
+   "19880"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"Pedagogique - 9",
+  "name":"Instituteur.trice Primaire (Li\u00e8ge)",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Pedagogique\/Instituteur-Primaire-(Liege)\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Sainte-Croix"
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "20497"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"Pedagogique - 7",
+  "name":"Enseignant.e en  Economie familiale et sociale",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Pedagogique\/Enseignant(e)-en-Economie-familiale-et-sociale\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Sainte-Croix"
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   4
+  ],
+  "matched_courses":[
+   "17639",
+   "17682",
+   "17505",
+   "17635"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"Pedagogique - 5",
+  "name":"Enseignant.e en  Sciences",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Pedagogique\/Enseignant(e)-en-Sciences\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Sainte-Croix"
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "17589"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"Pedagogique - 2",
+  "name":"Enseignant.e en Fran\u00e7ais  Option FLE Option Religion",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Pedagogique\/Enseignant(e)-en-Francais\/Grille-de-cours-(1).aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Sainte-Croix"
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "17581"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"Technique - 9",
+  "name":"Industrial and business engineering",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Industrial-and-business-engineering\/IBE-Programme-d-etudes.aspx",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "HELMo Gramme"
+  ],
+  "faculties":[
+   "D\u00e9partement Informatique et Technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "19796"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"Technique - 10",
+  "name":"Master Ing\u00e9nieur.e Industriel.le en g\u00e9nie \u00e9nerg\u00e9tique durable ",
+  "cycle":"master",
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-en-genie-energetique-durable\/Grille-de-cours.aspx",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "HELMo Gramme"
+  ],
+  "faculties":[
+   "D\u00e9partement Informatique et Technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "19796"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"Technique - 8",
+  "name":"Master Ing\u00e9nieur.e Industriel.le en industrie ",
+  "cycle":"master",
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-polyvalent\/Grille-de-cours.aspx",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "HELMo Gramme"
+  ],
+  "faculties":[
+   "D\u00e9partement Informatique et Technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "19796"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"Technique - 7",
+  "name":"Bachelier de transition en Sciences industrielles",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-bac\/Grille-de-cours.aspx",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "HELMo Gramme"
+  ],
+  "faculties":[
+   "D\u00e9partement Informatique et Technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "19796"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"Technique - 6",
+  "name":"Bachelier en Textile - Techniques de Mode",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Modeliste-Styliste\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Mode"
+  ],
+  "faculties":[
+   "D\u00e9partement Informatique et Technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "20907"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"Economique - 5",
+  "name":"Bachelier en Coop\u00e9ration internationale",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Economique\/Bachelier-en-Cooperation-internationale\/Grille-de-cours.aspx",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "HELMo Campus Guillemins"
+  ],
+  "faculties":[
+   "D\u00e9partement Economique et Juridique"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Economy"
+  ],
+  "themes":[
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   3
+  ],
+  "matched_courses":[
+   "17566",
+   "19090",
+   "17569"
   ],
   "nb_dedicated_courses":0
  },
@@ -47,18 +401,26 @@
    "D\u00e9partement Economique et Juridique"
   ],
   "fields":[
-   "TODO"
+   "Law & Criminology",
+   "Economy"
   ],
   "themes":[
+   "climate",
+   "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   1,
+   2,
+   2
   ],
   "matched_courses":[
-   "21379"
+   "21379",
+   "21341"
   ],
   "nb_dedicated_courses":1
  }

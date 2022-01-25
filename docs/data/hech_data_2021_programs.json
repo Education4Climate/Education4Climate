@@ -14,7 +14,7 @@
    "D\u00e9partement Agronomique"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
@@ -24,18 +24,27 @@
   ],
   "themes_scores":[
    1,
-   1,
+   9,
    2,
-   3
+   10
   ],
   "matched_courses":[
+   "MAGE1009-1",
+   "MAGE1013-1",
+   "MAGE1011-1",
    "MAGE1012-1",
-   "MAGE2014-1",
-   "MAGE2007-1",
    "MAGE2016-1",
-   "MAGE2015-1"
+   "MAGE2002-1",
+   "MAGE2007-1",
+   "AGRO1001-1",
+   "MAGE1010-1",
+   "MAGE1006-1",
+   "MAGE1003-1",
+   "MAGE2015-1",
+   "MAGE2010-1",
+   "MAGE2014-1"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":7
  },
  {
   "id":"A1MAGI01",
@@ -52,19 +61,23 @@
    "D\u00e9partement Agronomique"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   3,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "MBIN2009-1",
+   "MBIN2004-1",
    "MBIN2002-1",
-   "MBIN2004-1"
+   "AGRO1001-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -83,22 +96,25 @@
    "D\u00e9partement Agronomique"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
    "sustainability"
   ],
   "themes_scores":[
-   4,
-   1
+   7,
+   4
   ],
   "matched_courses":[
    "MAGT2005-1",
-   "AGRO1023-1",
-   "MAGT2004-1",
+   "MAGT2003-1",
+   "AGRO1001-1",
+   "MAGT2002-1",
    "AGRO1017-1",
-   "MAGT2003-1"
+   "MADI2002-1",
+   "AGRO1023-1",
+   "MAGT2004-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -117,21 +133,31 @@
    "D\u00e9partement Agronomique"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
+   "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   6,
+   2,
+   5
   ],
   "matched_courses":[
+   "ASCA2036-1",
    "ASCA3055-1",
-   "ASCA3060-1"
+   "ASCA3044-1",
+   "ASCA3048-1",
+   "ASCA3047-1",
+   "ASCA2023-1",
+   "ASCA3060-1",
+   "ASCA3059-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"A1TGHO01",
@@ -148,18 +174,23 @@
    "D\u00e9partement Agronomique"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
+   "climate",
    "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "ATGH2059-1"
+   "ATGH2027-1",
+   "ATGH2059-1",
+   "ATGH1016-1",
+   "ATGH1003-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"A1TGAA01",
@@ -176,7 +207,7 @@
    "D\u00e9partement Agronomique"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -186,22 +217,61 @@
    "sustainability"
   ],
   "themes_scores":[
+   3,
    1,
+   9,
+   3,
+   3
+  ],
+  "matched_courses":[
+   "ATGA3063-1",
+   "ATGA3081-1",
+   "ATGA3065-1",
+   "ATGA3080-1",
+   "ATGA1015-1",
+   "ATGA2022-1",
+   "ATGA3056-1",
+   "ATGA2033-1",
+   "ATGA3076-1",
+   "ATGA2053-1",
+   "ATGA2038-1",
+   "ATGA2054-1",
+   "ATGA1011-1",
+   "ATGA1013-1"
+  ],
+  "nb_dedicated_courses":6
+ },
+ {
+  "id":"M1BIOM01",
+  "name":"Bachelier en biologie m\u00e9dicale",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/M1BIOM01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement Param\u00e9dicale"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
    1,
-   4,
    1,
    1
   ],
   "matched_courses":[
-   "ATGA2054-1",
-   "ATGA3081-1",
-   "ATGA1011-1",
-   "ATGA2022-1",
-   "ATGA3063-1",
-   "ATGA3076-1",
-   "ATGA3080-1"
+   "BMED0006-1"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":1
  },
  {
   "id":"E1TOUR01",
@@ -218,7 +288,7 @@
    "D\u00e9partement Economique"
   ],
   "fields":[
-   "TODO"
+   "Economy"
   ],
   "themes":[
    "climate",
@@ -228,14 +298,15 @@
   ],
   "themes_scores":[
    1,
+   2,
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
+   "TOUR0098-1",
    "TOUR0125-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"E1IMMO01",
@@ -252,18 +323,21 @@
    "D\u00e9partement Economique"
   ],
   "fields":[
-   "TODO"
+   "Economy"
   ],
   "themes":[
    "energy",
+   "environment",
    "resources"
   ],
   "themes_scores":[
    1,
+   1,
    1
   ],
   "matched_courses":[
-   "IMMO0019-1"
+   "IMMO0019-1",
+   "IMMO0115-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -282,7 +356,7 @@
    "D\u00e9partement Economique"
   ],
   "fields":[
-   "TODO"
+   "Economy"
   ],
   "themes":[
    "sustainability"
@@ -310,17 +384,25 @@
    "D\u00e9partement Agronomique"
   ],
   "fields":[
-   "TODO"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
+   1,
+   1,
    1
   ],
   "matched_courses":[
-   "ARJP1006-1"
+   "ARJP1006-1",
+   "ARJP2040-1",
+   "ARJP3053-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  }
 ]

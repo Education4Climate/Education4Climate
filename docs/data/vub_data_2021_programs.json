@@ -5,8 +5,8 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00184&anchor=0000000960&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -15,21 +15,28 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
+   "climate",
    "energy",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   1,
+   3,
    1
   ],
   "matched_courses":[
-   "010411"
+   "010411",
+   "007614",
+   "010414",
+   "010404"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"00156-0000000430",
@@ -37,9 +44,9 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00156&anchor=0000000430&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -51,15 +58,35 @@
    "Engineering"
   ],
   "themes":[
+   "energy",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   4,
+   11,
+   14
   ],
   "matched_courses":[
-   "009163"
+   "006427",
+   "009163",
+   "003987",
+   "009080",
+   "006728",
+   "006726",
+   "003643",
+   "006716",
+   "006729",
+   "006724",
+   "006720",
+   "003076",
+   "007976",
+   "003221",
+   "006719"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"00155-0000000993",
@@ -67,7 +94,46 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00155&anchor=0000000993&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   3,
+   4
+  ],
+  "matched_courses":[
+   "003106",
+   "009163",
+   "003987",
+   "003077",
+   "003105",
+   "003104"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"00515-0000001182",
+  "name":"Bachelor in de industri\u00eble wetenschappen",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00515&anchor=0000001182&target=pr&year=2021&language=nl&output=html",
+  "languages":[
    "nl"
   ],
   "campuses":[
@@ -81,17 +147,23 @@
   ],
   "themes":[
    "energy",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
+   3,
+   1,
    1,
    1
   ],
   "matched_courses":[
-   "003104",
-   "009163"
+   "007995",
+   "009447",
+   "009446",
+   "003987"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"00066-0000000093",
@@ -99,11 +171,11 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00066&anchor=0000000093&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "it",
    "nl",
+   "de",
+   "it",
    "fr",
    "es",
-   "de",
    "en"
   ],
   "campuses":[
@@ -118,13 +190,17 @@
    "Arts"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "009163"
+   "009163",
+   "010975",
+   "009795"
   ],
   "nb_dedicated_courses":0
  },
@@ -134,9 +210,9 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00183&anchor=0000000482&target=pr&year=2021&language=nl&output=html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -145,25 +221,174 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
    "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   1,
+   5,
+   2
+  ],
+  "matched_courses":[
+   "001172",
+   "009544",
+   "009163",
+   "006369",
+   "003877",
+   "006321",
+   "006799",
+   "003990",
+   "007976"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"00413-0000000791",
+  "name":"Master of Chemical and Materials Engineering Profile Materials",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00413&anchor=0000000791&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Engineering"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    2,
+   4,
+   2,
+   14
+  ],
+  "matched_courses":[
+   "007077",
+   "009055",
+   "009051",
+   "007494",
+   "009052",
+   "007314",
+   "007086",
+   "007100",
+   "007087",
+   "007300",
+   "007083",
+   "007095",
+   "006275",
+   "007495",
+   "007082"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"00680-0000001989",
+  "name":"Preparatory Programme Master of Science in Business Engineering: Business and Technology Default track",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00680&anchor=0000001989&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Social Sciences & SolvayBusinessSchool"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy",
+   "environment"
+  ],
+  "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "001172",
-   "006799",
-   "009163"
+   "006500",
+   "011273"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00404-0000000780",
+  "name":"Preparatory Programme Master of Science in Biomedical Engineering",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00404&anchor=0000000780&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Engineering"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "003652"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00632-0000001806",
+  "name":"Postgraduate Certificate Media Economics",
+  "cycle":"postgrad",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00632&anchor=0000001806&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Economic & Social Sciences & Solvay BS"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "010433"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"00540-0000001404",
@@ -185,12 +410,15 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "009312",
    "007121"
   ],
   "nb_dedicated_courses":0
@@ -215,12 +443,15 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "009312",
    "007121"
   ],
   "nb_dedicated_courses":0
@@ -256,6 +487,35 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"00294-0000000671",
+  "name":"Master of Urban Studies 4CITIES Classical track",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00294&anchor=0000000671&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Science and Bio-engineering Sciences"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "006209"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
   "id":"00634-0000001811",
   "name":"Master of Political Science: European and International Governance",
   "cycle":"master",
@@ -279,10 +539,11 @@
    "energy"
   ],
   "themes_scores":[
-   1,
+   2,
    2
   ],
   "matched_courses":[
+   "007214",
    "005689",
    "009670"
   ],
@@ -294,8 +555,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00538&anchor=0000001392&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -304,7 +565,7 @@
    "Faculty of Science and Bio-engineering Sciences"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
@@ -336,12 +597,15 @@
    "Engineering"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "004515",
    "011077"
   ],
   "nb_dedicated_courses":1
@@ -352,8 +616,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00292&anchor=0000000640&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -376,6 +640,63 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"00173-0000000448",
+  "name":"Master of Nuclear Engineering",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00173&anchor=0000000448&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Engineering"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "003593"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"00192-0000000507",
+  "name":"Master of Molecular Biology",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00192&anchor=0000000507&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Science and Bio-engineering Sciences"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "003007"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
   "id":"00392-0000000765",
   "name":"Master of Marine and Lacustrine Science and Management",
   "cycle":"master",
@@ -390,7 +711,7 @@
    "Faculty of Science and Bio-engineering Sciences"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
@@ -400,20 +721,27 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
-   4,
+   3,
+   10,
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "001951",
-   "006541",
+   "006550",
    "010138",
+   "006711",
+   "011228",
+   "006555",
    "006556",
+   "009599",
+   "001951",
    "006535",
-   "007744"
+   "003554",
+   "007744",
+   "006541",
+   "011213"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":5
  },
  {
   "id":"00224-0000000550",
@@ -451,11 +779,11 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00531&anchor=0000001767&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "it",
    "nl",
+   "de",
+   "it",
    "fr",
    "es",
-   "de",
    "en"
   ],
   "campuses":[
@@ -486,8 +814,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00235&anchor=0000000561&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -517,8 +845,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00244&anchor=0000001265&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -527,24 +855,29 @@
    "Faculty of Science and Bio-engineering Sciences"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    5,
-   3
+   1,
+   2,
+   6
   ],
   "matched_courses":[
-   "011172",
-   "007973",
+   "006823",
+   "010402",
    "011173",
    "004617",
-   "006823",
-   "010402"
+   "011172",
+   "007973",
+   "002262"
   ],
   "nb_dedicated_courses":4
  },
@@ -597,13 +930,70 @@
    "Engineering"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2,
+   3,
+   13
   ],
   "matched_courses":[
-   "006959"
+   "006955",
+   "007494",
+   "001633",
+   "006917",
+   "006994",
+   "006943",
+   "006919",
+   "006940",
+   "006959",
+   "006950",
+   "006947",
+   "006948",
+   "006937",
+   "007495"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00589-0000001695",
+  "name":"Master of Electrical Engineering",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00589&anchor=0000001695&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Engineering"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   2,
+   7
+  ],
+  "matched_courses":[
+   "007392",
+   "007041",
+   "006955",
+   "007494",
+   "007278",
+   "007425",
+   "007495"
   ],
   "nb_dedicated_courses":0
  },
@@ -613,8 +1003,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00419&anchor=0000000800&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -634,8 +1024,8 @@
   ],
   "matched_courses":[
    "009181",
-   "010375",
-   "009163"
+   "009163",
+   "010375"
   ],
   "nb_dedicated_courses":0
  },
@@ -646,8 +1036,8 @@
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00415&anchor=0000000797&target=pr&year=2021&language=en&output=html",
   "languages":[
    "fr",
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -660,18 +1050,38 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    5,
-   1
+   5,
+   8,
+   1,
+   17
   ],
   "matched_courses":[
-   "004617",
+   "010133",
+   "007468",
+   "004388",
+   "007471",
+   "007494",
+   "009632",
+   "006275",
+   "007054",
+   "007495",
+   "007505",
    "001853",
-   "010442",
    "001675",
-   "007471"
+   "007026",
+   "008176",
+   "010442",
+   "007025",
+   "004617",
+   "009634",
+   "007475"
   ],
   "nb_dedicated_courses":2
  },
@@ -681,8 +1091,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00537&anchor=0000001995&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -691,20 +1101,29 @@
    "Faculty of Science and Bio-engineering Sciences"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
+   "energy",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   6,
+   2
   ],
   "matched_courses":[
+   "011283",
+   "011228",
+   "002952",
    "001951",
-   "002952"
+   "011371",
+   "011320",
+   "011315"
   ],
   "nb_dedicated_courses":1
  },
@@ -714,8 +1133,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00532&anchor=0000001280&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -730,14 +1149,17 @@
   ],
   "themes":[
    "climate",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    2,
-   1
+   1,
+   2
   ],
   "matched_courses":[
    "006823",
+   "006502",
    "004310"
   ],
   "nb_dedicated_courses":1
@@ -748,8 +1170,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00646&anchor=0000001840&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -764,20 +1186,61 @@
   "themes":[
    "climate",
    "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
+   2,
    1,
    2
   ],
   "matched_courses":[
-   "010880",
-   "009163"
+   "004743",
+   "009163",
+   "010897",
+   "010880"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"00399-0000002012",
+  "name":"Master of Biomedical Engineering",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00399&anchor=0000002012&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Engineering"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   3
+  ],
+  "matched_courses":[
+   "007077",
+   "006769",
+   "007087",
+   "009043",
+   "011411"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"00397-0000001398",
@@ -785,9 +1248,9 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00397&anchor=0000001398&target=pr&year=2021&language=en&output=html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -796,7 +1259,7 @@
    "Faculty of Sciences and Bioengineering Sciences"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
@@ -807,18 +1270,40 @@
   ],
   "themes_scores":[
    2,
-   2,
+   26,
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "006541",
-   "008203",
-   "008264",
+   "010204",
+   "008901",
+   "006711",
+   "008250",
+   "008217",
+   "008255",
+   "009566",
+   "011229",
+   "008266",
+   "009293",
+   "008187",
    "011374",
-   "008259"
+   "006541",
+   "010828",
+   "010830",
+   "010829",
+   "008251",
+   "008259",
+   "010188",
+   "008178",
+   "009290",
+   "008203",
+   "008209",
+   "003554",
+   "008248",
+   "008264",
+   "008260"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":18
  },
  {
   "id":"00416-0000000798",
@@ -826,9 +1311,9 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00416&anchor=0000000798&target=pr&year=2021&language=en&output=html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -843,20 +1328,39 @@
    "climate",
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   5,
-   2,
-   2
+   12,
+   12,
+   1,
+   21
   ],
   "matched_courses":[
+   "010133",
+   "007468",
+   "009631",
    "007058",
+   "007471",
+   "007064",
+   "007494",
+   "006433",
+   "007060",
+   "009632",
+   "006275",
+   "007054",
+   "007495",
+   "007505",
+   "008441",
    "007057",
    "007061",
-   "007064",
-   "007471"
+   "007026",
+   "009633",
+   "009330",
+   "007062",
+   "007475"
   ],
   "nb_dedicated_courses":5
  },
@@ -866,8 +1370,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00243&anchor=0000000574&target=pr&year=2021&language=en&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -880,18 +1384,26 @@
   ],
   "themes":[
    "climate",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    3,
-   1
+   1,
+   1,
+   5
   ],
   "matched_courses":[
    "006823",
+   "001675",
+   "011410",
    "010442",
-   "001675"
+   "009100",
+   "006502",
+   "007041"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
  },
  {
   "id":"00058-0000000073",
@@ -917,17 +1429,50 @@
    "sustainability"
   ],
   "themes_scores":[
+   2,
    1,
-   1,
-   1,
+   2,
    3
   ],
   "matched_courses":[
-   "007271",
+   "000471",
    "007272",
-   "000471"
+   "007271"
   ],
   "nb_dedicated_courses":2
+ },
+ {
+  "id":"00262-0000000613",
+  "name":"Master of Applied Sciences and Engineering: Computer Science Artificial Intelligence",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00262&anchor=0000000613&target=pr&year=2021&language=en&output=html",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculty of Science and Bio-engineering Sciences",
+   "Faculty of Engineering"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "007041"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"00232-0000000558",
@@ -952,11 +1497,14 @@
   ],
   "themes_scores":[
    1,
-   1
+   4
   ],
   "matched_courses":[
+   "006955",
+   "007425",
    "004648",
-   "009221"
+   "009221",
+   "007041"
   ],
   "nb_dedicated_courses":1
  },
@@ -978,13 +1526,16 @@
    "Medecine & Health"
   ],
   "themes":[
+   "energy",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "009181"
+   "009181",
+   "000249"
   ],
   "nb_dedicated_courses":0
  },
@@ -1006,13 +1557,46 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "003104",
+   "001466"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00354-0000000727",
+  "name":"Voorbereidingsprogramma Master of Science in de ingenieurswetenschappen: fotonica",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00354&anchor=0000000727&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "003104"
+   "003652"
   ],
   "nb_dedicated_courses":0
  },
@@ -1022,8 +1606,8 @@
   "cycle":"other",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00328&anchor=0000000702&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1037,13 +1621,16 @@
    "Management"
   ],
   "themes":[
+   "energy",
    "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "006494"
+   "006494",
+   "006500"
   ],
   "nb_dedicated_courses":0
  },
@@ -1078,6 +1665,129 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"00323-0000000697",
+  "name":"Voorbereidingsprogramma Master of Arts in de kunstwetenschappen en de archeologie",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00323&anchor=0000000697&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "010975"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00361-0000000731",
+  "name":"Voorbereidingsprogramma European Master of Science in Photonics",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00361&anchor=0000000731&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "003652"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00401-0000001383",
+  "name":"Schakelprogramma\u00a0Master of Science in de biologie Standaard (53 SP)",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00401&anchor=0000001383&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen en Bio-ingenieurswetensch"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "004114"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"00509-0000001166",
+  "name":"Schakelprogramma Master of Science in de stedenbouw en de ruimtelijke planning",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00509&anchor=0000001166&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen en Bio-ingenieurswetensch"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "009080"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"00305-0000000680",
   "name":"Schakelprogramma Master of Science in de revalidatiewetenschappen en de kinesitherapie",
   "cycle":"other",
@@ -1095,13 +1805,16 @@
    "Medecine & Health"
   ],
   "themes":[
+   "energy",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "009181"
+   "009181",
+   "000249"
   ],
   "nb_dedicated_courses":0
  },
@@ -1136,6 +1849,39 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"00297-0000000674",
+  "name":"Schakelprogramma Master of Arts in de kunstwetenschappen en de archeologie",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00297&anchor=0000000674&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "010975"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"00704-0000002047",
   "name":"Postgraduaat Praktisch humanisme",
   "cycle":"postgrad",
@@ -1166,13 +1912,42 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"00107-0000000325",
+  "name":"Master in het management en het beleid van de gezondheidszorg",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00107&anchor=0000000325&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Farmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "001347"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"00056-0000000071",
   "name":"Master in het internationaal en Europees recht",
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00056&anchor=0000000071&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1204,8 +1979,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00512&anchor=0000001175&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1214,7 +1989,7 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
@@ -1226,16 +2001,18 @@
   "themes_scores":[
    4,
    1,
-   1,
-   4
+   2,
+   7
   ],
   "matched_courses":[
-   "007973",
-   "006799",
-   "007863",
    "006823",
+   "010357",
+   "009163",
+   "007863",
+   "006799",
+   "007976",
    "007971",
-   "009163"
+   "007973"
   ],
   "nb_dedicated_courses":1
  },
@@ -1245,8 +2022,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00127&anchor=0000000355&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1276,9 +2053,9 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00049&anchor=0000000055&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
+   "nl",
    "fr",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -1304,8 +2081,8 @@
    2
   ],
   "matched_courses":[
-   "010794",
-   "010880"
+   "010880",
+   "010794"
   ],
   "nb_dedicated_courses":2
  },
@@ -1315,8 +2092,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00040&anchor=0000000018&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1346,8 +2123,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00131&anchor=0000001837&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1369,8 +2146,8 @@
    1
   ],
   "matched_courses":[
-   "010852",
-   "009181"
+   "009181",
+   "010852"
   ],
   "nb_dedicated_courses":0
  },
@@ -1380,8 +2157,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00035&anchor=0000000001&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1403,9 +2180,40 @@
   ],
   "matched_courses":[
    "009181",
+   "009163",
    "007863",
-   "010375",
-   "009163"
+   "010375"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00071-0000000123",
+  "name":"Master in de kunstwetenschappen en de archeologie",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00071&anchor=0000000123&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "007362"
   ],
   "nb_dedicated_courses":0
  },
@@ -1415,9 +2223,9 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00176&anchor=0000000456&target=pr&year=2021&language=nl&output=html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -1435,18 +2243,23 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
    3,
-   1,
-   1
+   3,
+   3,
+   9
   ],
   "matched_courses":[
-   "009337",
-   "006927",
    "006973",
-   "009334"
+   "006930",
+   "006972",
+   "009334",
+   "009337",
+   "006931",
+   "006928",
+   "006927",
+   "009336"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":4
  },
  {
   "id":"00166-0000000442",
@@ -1454,8 +2267,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00166&anchor=0000000442&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1468,14 +2281,17 @@
   ],
   "themes":[
    "climate",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "006823"
+   "006823",
+   "007041"
   ],
   "nb_dedicated_courses":1
  },
@@ -1485,8 +2301,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00164&anchor=0000000440&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1500,16 +2316,126 @@
   "themes":[
    "climate",
    "energy",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   3,
    1,
+   2
+  ],
+  "matched_courses":[
+   "004648",
+   "004218",
+   "006822",
+   "007041",
+   "001579"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"00162-0000000438",
+  "name":"Master in de ingenieurswetenschappen: elektronica en informatietechnologie",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00162&anchor=0000000438&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   4
+  ],
+  "matched_courses":[
+   "007041",
+   "007278",
+   "006955",
+   "007425"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00259-0000000606",
+  "name":"Master in de ingenieurswetenschappen: computerwetenschappen afstudeerrichting Artifici\u00eble Intelligentie",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00259&anchor=0000000606&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen en Bio-ingenieurswetensch",
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "006822",
-   "004648"
+   "007041"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00160-0000000988",
+  "name":"Master in de ingenieurswetenschappen: chemie en materialen profiel materialen",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00160&anchor=0000000988&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   1,
+   7
+  ],
+  "matched_courses":[
+   "007077",
+   "009055",
+   "009052",
+   "007314",
+   "003667",
+   "007300",
+   "007095",
+   "006275"
   ],
   "nb_dedicated_courses":2
  },
@@ -1519,76 +2445,9 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00157&anchor=0000000431&target=pr&year=2021&language=nl&output=html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculteit Ingenieurswetenschappen"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "climate",
-   "energy"
-  ],
-  "themes_scores":[
-   4,
-   2
-  ],
-  "matched_courses":[
-   "006914",
-   "001853",
-   "010442",
-   "001675",
-   "007471"
-  ],
-  "nb_dedicated_courses":2
- },
- {
-  "id":"00167-0000000443",
-  "name":"Master in de ingenieurswetenschappen: biomedische ingenieurstechnieken",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00167&anchor=0000000443&target=pr&year=2021&language=nl&output=html",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculteit Ingenieurswetenschappen"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "climate",
-   "environment"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ],
-  "matched_courses":[
-   "004806"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"00159-0000000432",
-  "name":"Master in de ingenieurswetenschappen: architectuur",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00159&anchor=0000000432&target=pr&year=2021&language=nl&output=html",
-  "languages":[
-   "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -1602,17 +2461,120 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   4,
+   6,
+   1,
+   14
+  ],
+  "matched_courses":[
+   "007505",
+   "001853",
+   "007025",
+   "007471",
+   "001675",
+   "010133",
+   "007468",
+   "006914",
+   "004388",
+   "009632",
+   "007026",
+   "009634",
+   "008176",
+   "006275",
+   "007054",
+   "010442",
+   "007475"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"00167-0000000443",
+  "name":"Master in de ingenieurswetenschappen: biomedische ingenieurstechnieken",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00167&anchor=0000000443&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   3,
    2,
-   1
+   4
   ],
   "matched_courses":[
-   "001974",
+   "007077",
+   "010159",
+   "010160",
+   "004218",
+   "006760",
+   "006761",
+   "009108",
+   "004806",
+   "001579"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"00159-0000000432",
+  "name":"Master in de ingenieurswetenschappen: architectuur",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00159&anchor=0000000432&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Ingenieurswetenschappen"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   4,
+   6,
+   6
+  ],
+  "matched_courses":[
+   "008441",
    "007471",
-   "007064"
+   "007064",
+   "009715",
+   "007054",
+   "007475",
+   "001974"
   ],
   "nb_dedicated_courses":2
  },
@@ -1622,8 +2584,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00513&anchor=0000001176&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1651,8 +2613,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00514&anchor=0000001178&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1674,9 +2636,9 @@
    1
   ],
   "matched_courses":[
-   "009386",
    "009385",
-   "009163"
+   "009163",
+   "009386"
   ],
   "nb_dedicated_courses":1
  },
@@ -1686,8 +2648,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00207&anchor=0000000532&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1696,21 +2658,27 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    2,
-   3
+   1,
+   2,
+   4
   ],
   "matched_courses":[
-   "007973",
    "006823",
-   "011173"
+   "011173",
+   "006321",
+   "007976",
+   "007973"
   ],
   "nb_dedicated_courses":2
  },
@@ -1733,12 +2701,15 @@
    "Pharmacy"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "004743",
    "009163"
   ],
   "nb_dedicated_courses":0
@@ -1778,8 +2749,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00059&anchor=0000000074&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1814,8 +2785,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00076&anchor=0000000279&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1845,8 +2816,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00391&anchor=0000000763&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1855,17 +2826,21 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
-   2
+   2,
+   3
   ],
   "matched_courses":[
    "006366",
+   "006590",
+   "006585",
    "006784"
   ],
   "nb_dedicated_courses":2
@@ -1876,8 +2851,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00103&anchor=0000000322&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1892,6 +2867,7 @@
   "themes":[
    "climate",
    "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
@@ -1899,11 +2875,13 @@
    1,
    1,
    1,
+   1,
    2
   ],
   "matched_courses":[
-   "010880",
-   "009163"
+   "004743",
+   "009163",
+   "010880"
   ],
   "nb_dedicated_courses":1
  },
@@ -1913,8 +2891,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00202&anchor=0000000521&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1923,22 +2901,31 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
-   2,
-   1
+   3,
+   8,
+   3
   ],
   "matched_courses":[
    "001180",
-   "005022"
+   "006550",
+   "002892",
+   "006711",
+   "001131",
+   "006787",
+   "005022",
+   "003554",
+   "007113"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":4
  },
  {
   "id":"00186-0000001218",
@@ -1946,8 +2933,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00186&anchor=0000001218&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1956,24 +2943,31 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
    "energy",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
+   2,
+   2,
    2
   ],
   "matched_courses":[
-   "002952",
    "006366",
    "009163",
-   "000275"
+   "002952",
+   "000275",
+   "001215",
+   "001131",
+   "011404"
   ],
   "nb_dedicated_courses":2
  },
@@ -1983,8 +2977,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00185&anchor=0000001146&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -1993,23 +2987,62 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   2,
+   1,
    2
   ],
   "matched_courses":[
-   "002952",
    "006366",
-   "009163"
+   "009163",
+   "002952",
+   "001215",
+   "001131"
   ],
   "nb_dedicated_courses":2
+ },
+ {
+  "id":"00673-0000001976",
+  "name":"Master in de bewegings- en sportwetenschappen Afstudeerrichting fysieke activiteit, fitheid en gezondheid - profiel onderwijs",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00673&anchor=0000001976&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Lichamelijke Opvoeding & Kinesitherapie"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   5
+  ],
+  "matched_courses":[
+   "004114",
+   "003877",
+   "004139",
+   "009468",
+   "004143"
+  ],
+  "nb_dedicated_courses":5
  },
  {
   "id":"00044-0000000044",
@@ -2017,8 +3050,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00044&anchor=0000000044&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
    "nl",
+   "en",
    "es"
   ],
   "campuses":[
@@ -2049,8 +3082,8 @@
   "cycle":"master",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00135&anchor=0000000380&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2072,25 +3105,26 @@
   "themes_scores":[
    3,
    1,
-   1,
-   4
+   2,
+   5
   ],
   "matched_courses":[
-   "006823",
    "010880",
+   "006823",
    "009181",
-   "010038"
+   "010038",
+   "006502"
   ],
   "nb_dedicated_courses":3
  },
  {
-  "id":"00661-0000001874",
-  "name":"Educatieve master in de gezondheidswetenschappen standaard traject (120 ECTS, Etterbeek)",
+  "id":"00664-0000001875",
+  "name":"Educatieve master in de lichamelijke opvoeding standaard traject (120 ECTS, Etterbeek)",
   "cycle":"master",
-  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00661&anchor=0000001874&target=pr&year=2021&language=nl&output=html",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00664&anchor=0000001875&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2102,12 +3136,48 @@
    "Pedagogy"
   ],
   "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   5
+  ],
+  "matched_courses":[
+   "004114",
+   "003877",
+   "004139",
+   "009468",
+   "004143"
+  ],
+  "nb_dedicated_courses":5
+ },
+ {
+  "id":"00661-0000001874",
+  "name":"Educatieve master in de gezondheidswetenschappen standaard traject (120 ECTS, Etterbeek)",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00661&anchor=0000001874&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Multidisciplinair Instituut Lerarenopleiding"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "004743",
    "004990"
   ],
   "nb_dedicated_courses":1
@@ -2118,8 +3188,8 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00683&anchor=0000001993&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2128,7 +3198,7 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
@@ -2148,11 +3218,11 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00062&anchor=0000000081&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "it",
    "nl",
+   "de",
+   "it",
    "fr",
    "es",
-   "de",
    "en"
   ],
   "campuses":[
@@ -2167,13 +3237,16 @@
    "Arts"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "009181"
+   "009181",
+   "010975"
   ],
   "nb_dedicated_courses":0
  },
@@ -2183,11 +3256,11 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00518&anchor=0000001209&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "it",
    "nl",
+   "de",
+   "it",
    "fr",
    "es",
-   "de",
    "en"
   ],
   "campuses":[
@@ -2218,9 +3291,9 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00137&anchor=0000000394&target=pr&year=2021&language=nl&output=html",
   "languages":[
+   "nl",
    "fr",
-   "en",
-   "nl"
+   "en"
   ],
   "campuses":[
 
@@ -2251,13 +3324,50 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"00074-0000000126",
+  "name":"Bachelor in de taal- en letterkunde Duits-Frans",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00074&anchor=0000000126&target=pr&year=2021&language=nl&output=html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "010975"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"00090-0000000298",
   "name":"Bachelor in de revalidatiewetenschappen en de kinesitherapie",
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00090&anchor=0000000298&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2276,13 +3386,14 @@
   ],
   "themes_scores":[
    1,
-   1,
+   2,
    1,
    2
   ],
   "matched_courses":[
    "010880",
-   "009163"
+   "009163",
+   "000249"
   ],
   "nb_dedicated_courses":1
  },
@@ -2292,8 +3403,8 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00580&anchor=0000001640&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2351,8 +3462,8 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00180&anchor=0000000465&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2361,20 +3472,24 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
+   "energy",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "009163",
    "006799",
-   "009163"
+   "001579",
+   "003652"
   ],
   "nb_dedicated_courses":0
  },
@@ -2384,8 +3499,8 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00187&anchor=0000000494&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2394,20 +3509,23 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
+   "energy",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   1,
    1
   ],
   "matched_courses":[
+   "009163",
    "006799",
-   "009163"
+   "006500"
   ],
   "nb_dedicated_courses":0
  },
@@ -2417,8 +3535,8 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00182&anchor=0000000475&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2427,12 +3545,13 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
    "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
@@ -2440,13 +3559,15 @@
    3,
    1,
    1,
+   1,
    2
   ],
   "matched_courses":[
-   "006366",
-   "006799",
    "010880",
-   "009163"
+   "006366",
+   "009163",
+   "006321",
+   "006799"
   ],
   "nb_dedicated_courses":2
  },
@@ -2456,8 +3577,8 @@
   "cycle":"bac",
   "url":"https:\/\/caliweb.vub.be\/?page=plan&id=00181&anchor=0000000468&target=pr&year=2021&language=nl&output=html",
   "languages":[
-   "en",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -2466,25 +3587,35 @@
    "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Bio-Engineering",
+   "Agronomy & Biotechnology",
    "Science"
   ],
   "themes":[
    "climate",
    "energy",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   3,
    1,
+   8,
    2
   ],
   "matched_courses":[
    "001172",
-   "006799",
+   "009544",
+   "009163",
+   "006370",
+   "004114",
+   "003877",
    "009181",
-   "009163"
+   "004139",
+   "006321",
+   "009468",
+   "006799",
+   "004143"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":7
  }
 ]
