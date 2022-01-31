@@ -29,7 +29,8 @@ export default {
             selectedLanguages: null,
             currentTheme: constants.DEFAULT_THEME,
             selectedUniversities: null,
-            selectedHighSchools: null
+            selectedHighSchools: null,
+            isSmallScreen: window.innerWidth < 1199.99 // Never updated, only says if the website has been started with a small screen
         };
     },
     async created() {

@@ -941,3 +941,10 @@ footer li {
 .filter-group-header.collapsed:hover img {
     content: url(/img/caret-down-green.svg);  
 }
+
+@media (max-width: 1199.98px) {
+
+    .filter-group {
+        padding-right: 1rem;
+    }
+}

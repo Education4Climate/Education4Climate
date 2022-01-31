@@ -105,15 +105,16 @@
 
                     <div class="filter-group">
 
-                        <div class="filter-group-header" data-bs-toggle="collapse"
-                            data-bs-target="#schoolsFilterCollapse">
+                        <div class="filter-group-header" :class="isSmallScreen ? 'collapsed' : ''"
+                            data-bs-toggle="collapse" data-bs-target="#schoolsFilterCollapse">
 
                             <h3 v-html="translate('shared.schools')"></h3>
                             <img class="icon">
 
                         </div>
 
-                        <div class="filter-group-content collapse show" id="schoolsFilterCollapse">
+                        <div class="filter-group-content collapse" :class="!isSmallScreen ? 'show' : ''"
+                            id="schoolsFilterCollapse">
 
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input check-all" id="checkbox-all-universities"
