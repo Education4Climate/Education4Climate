@@ -36,12 +36,15 @@ var app = Vue.createApp({
         };
     },
     computed: {
-        selectedAllSchools() {
-            return this.selectedSchools && this.selectedSchools.length == this.schools.length;
+        selectedAllUniversities() {
+            return this.selectedUniversities && this.selectedUniversities.length >= this.schools.filter(school => school.type == "university").length;
+        },
+        selectedAllHighSchools() {
+            return this.selectedHighSchools && this.selectedHighSchools.length >= this.schools.filter(school => school.type == "highschool").length;
         },
         selectedAllThemes() {
             return this.selectedThemes && this.selectedThemes.length == this.themes.length;
-        },
+        },        
         selectedAllLanguages() {
             return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
         },
@@ -66,7 +69,7 @@ var app = Vue.createApp({
                 this.searchedProgram = this.programs.find(program => program.code === this.searchedProgramCode);
 
                 return this.courses.slice()
-                    .filter(course => this.selectedSchools.includes(course.schoolId))
+                    .filter(course => this.selectedUniversities.includes(course.schoolId) || this.selectedHighSchools.includes(course.schoolId))
                     .filter(course => this.selectedThemes.some(selectedTheme => course.themes.map(theme => this.themes[theme].name).includes(selectedTheme)))
                     .filter(course => this.selectedLanguages.some(selectedLanguage => course.languages.map(language => this.languages[language].name).includes(selectedLanguage)))
                     .filter(course => course.name.toLowerCase().includes(searchedName))
@@ -132,7 +135,9 @@ var app = Vue.createApp({
 
             // sets the filters default selected schools / themes / languages
 
-            this.selectedSchools = searchedSchool ? [searchedSchool.id] : this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
+            this.selectedUniversities = searchedSchool ? [searchedSchool.id] : this.selectedUniversities ? this.selectedUniversities : this.schools.filter(school => school.type == "university").map(school => { return school.id; });
+            this.selectedHighSchools = searchedSchool ? [searchedSchool.id] : this.selectedHighSchools ? this.selectedHighSchools : this.schools.filter(school => school.type == "highschool").map(school => { return school.id; });
+
             this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
             this.selectedLanguages = this.selectedLanguages ? this.selectedLanguages : this.languages.map(language => { return language.name; });
 
@@ -150,10 +155,14 @@ var app = Vue.createApp({
 
             this.currentPage = this.dataLoaded && this.displayedCourses.length < this.sortedCourses.length ? this.currentPage + 1 : this.currentPage;
         },
-        toggleCheckAllSchools() {
+        toggleCheckAllUniversities() {
 
-            this.selectedSchools = this.selectedAllSchools ? [] : this.schools.map(school => { return school.id; });
+            this.selectedUniversities = this.selectedAllUniversities ? [] : this.schools.filter(school => school.type == "university").map(school => { return school.id; });
         },
+        toggleCheckAllHighSchools() {
+
+            this.selectedHighSchools = this.selectedAllHighSchools ? [] : this.schools.filter(school => school.type == "highschool").map(school => { return school.id; });
+        },        
         toggleCheckAllThemes() {
 
             this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.name; });
