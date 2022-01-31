@@ -10,12 +10,14 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 BASE_URL = "https://www.programmes.uliege.be/cocoon/cours/{}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}uliege_programs_{YEAR}.json')
-LANGUAGE_DICT = {"Langue française": 'fr',
-                 "Langue anglaise": 'en',
-                 "Langue allemande": 'de',
-                 "Langue néerlandaise": 'nl',
-                 "Langue italienne": "it",
-                 "Langue espagnole": "es"}
+LANGUAGE_DICT = {
+    "Langue française": 'fr',
+    "Langue anglaise": 'en',
+    "Langue allemande": 'de',
+    "Langue néerlandaise": 'nl',
+    "Langue italienne": "it",
+    "Langue espagnole": "es"
+}
 
 
 class ULiegeCourseSpider(scrapy.Spider, ABC):

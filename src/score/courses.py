@@ -12,10 +12,8 @@ import langdetect
 from langdetect import DetectorFactory
 import re
 
-from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER
+from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, ACCEPTED_LANGUAGES
 
-# Languages for which a dictionary is defined
-ACCEPTED_LANGUAGES = ["fr", "en", "nl"]
 DetectorFactory.seed = 0
 
 
@@ -44,6 +42,7 @@ def compute_score(text: str, patterns_themes_df: pd.DataFrame) -> (int, Dict[str
             pattern_score = 1
             patterns_matches_list = []
             for sub_pattern in sub_patterns:
+
                 matches = list(re.finditer(sub_pattern, text))
                 # If there are no matches for a pattern stop the search
                 if len(matches) == 0:
@@ -57,6 +56,7 @@ def compute_score(text: str, patterns_themes_df: pd.DataFrame) -> (int, Dict[str
                     patterns_matches_list += [text[start:end]]
 
             if pattern_score != 0:
+                score = 1
                 matched_themes |= set(themes)
                 pattern_matches_dict[pattern] = patterns_matches_list
 
@@ -136,10 +136,14 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
 
     patterns_matches_dict = {}
     scores_df = pd.DataFrame(0, index=courses_df.index, columns=themes + ["dedicated"], dtype=int)
-    for idx, (name, scoring_text, full_text) in courses_df[["name", "scoring_text", "full_text"]].iterrows():
+    for i, (idx, name, scoring_text, full_text) \
+            in courses_df.reset_index()[["id", "name", "scoring_text", "full_text"]].iterrows():
 
         scoring_text = clean_text(scoring_text)
         full_text = clean_text(full_text)
+
+        if i % 100 == 0:
+            print(f"{i}/{len(courses_df.index)}")
 
         if len(scoring_text.strip(" ")) == 0:
             continue
@@ -152,7 +156,7 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
             courses_df.loc[idx, themes] = 0
             continue
 
-        # If we didn't identify a language for which we have a dictionary,
+        # If we didn't identify a language for which we have a dictionary
         # use the first language in which the course is given
         languages = [l for l in languages if l in ACCEPTED_LANGUAGES]
         if len(languages) == 0:
@@ -181,10 +185,21 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
 
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="School code")
     parser.add_argument("-y", "--year", help="Academic year", default=2020)
 
     arguments = vars(parser.parse_args())
     arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}/")
-    score_school_courses(**arguments)
+    arguments['dictionary_name'] = 'v1.1'
+
+    schools = ["kuleuven", "uantwerpen", "uclouvain", "ugent", "uhasselt",
+               "ulb", "uliege", "umons", "unamur", "uslb", "vub"]
+    schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
+                "henallux", "hers", "howest", "ichec", "ihecs", "ispg", "issig", "odisee", "thomasmore", "ucll",
+                "vinci", "vives"]
+    for school in schools:
+        arguments['school'] = school
+        print(school)
+        score_school_courses(**arguments)

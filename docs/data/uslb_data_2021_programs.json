@@ -1,5 +1,531 @@
 [
  {
+  "id":"sphd1ba",
+  "name":"Bachelier en sciences politiques, orientation g\u00e9n\u00e9rale (horaire d\u00e9cal\u00e9)",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/prog_sphd1ba.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "de"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "HDPO1312"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"soca1ba_tr",
+  "name":"Bachelier en sociologie et anthropologie Majeure : Trilingue fran\u00e7ais-n\u00e9erlandais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_soca1ba_tr.html",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 de traduction et interpr\u00e9tation Marie Haps"
+  ],
+  "fields":[
+   "Letters"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "HDPO1312",
+   "SOCA1314"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"comu1ba_tr",
+  "name":"Bachelier en information et communication Majeure : Trilingue fran\u00e7ais-n\u00e9erlandais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_comu1ba_tr.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "HDPO1312",
+   "SOCA1314"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"comu1ba_fa",
+  "name":"Bachelier en information et communication Majeure : Bilingue fran\u00e7ais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_comu1ba_fa.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "HDPO1312",
+   "SOCA1314"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"spol1ba_tr",
+  "name":"Bachelier en sciences politiques, orientation g\u00e9n\u00e9rale Majeure : Trilingue fran\u00e7ais-n\u00e9erlandais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_spol1ba_tr.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SOCA1314"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"spol1ba_fa",
+  "name":"Bachelier en sciences politiques, orientation g\u00e9n\u00e9rale Majeure : Bilingue fran\u00e7ais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_spol1ba_fa.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "SOCA1314",
+   "HDPO1321"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"ecge1ba_tr",
+  "name":"Bachelier en sciences \u00e9conomiques et de gestion Majeure : Trilingue fran\u00e7ais-n\u00e9erlandais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_ecge1ba_tr.html",
+  "languages":[
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ECGE1313"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"ecge1ba_fa",
+  "name":"Bachelier en sciences \u00e9conomiques et de gestion Majeure : Bilingue fran\u00e7ais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_ecge1ba_fa.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ECGE1313"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"ecge1ba_un",
+  "name":"Bachelier en sciences \u00e9conomiques et de gestion Majeure : Unilingue",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_ecge1ba_un.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ECGE1313"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"inge1ba_fa",
+  "name":"Bachelier : ing\u00e9nieur de gestion Majeure : Bilingue fran\u00e7ais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_inge1ba_fa.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ECGE1313"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"inge1ba_un",
+  "name":"Bachelier : ing\u00e9nieur de gestion Majeure : Unilingue",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_inge1ba_un.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ECGE1313"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"spol1ba_un",
+  "name":"Bachelier en sciences politiques, orientation g\u00e9n\u00e9rale Majeure : Unilingue",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_spol1ba_un.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "HDPO1312",
+   "SOCA1314",
+   "HDPO1321"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"comu1ba_un",
+  "name":"Bachelier en information et communication Majeure : Unilingue",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_comu1ba_un.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de la communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Communication"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "HDPO1312",
+   "SOCA1314"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"soca1ba_fa",
+  "name":"Bachelier en sociologie et anthropologie Majeure : Bilingue fran\u00e7ais-anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_soca1ba_fa.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 de traduction et interpr\u00e9tation Marie Haps"
+  ],
+  "fields":[
+   "Letters"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "HDPO1312"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"soca1ba_un",
+  "name":"Bachelier en sociologie et anthropologie Majeure : Unilingue",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_soca1ba_un.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 de traduction et interpr\u00e9tation Marie Haps"
+  ],
+  "fields":[
+   "Letters"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "HDPO1312",
+   "SOCA1314"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"drho2mc",
   "name":"Master de sp\u00e9cialisation en droits humains",
   "cycle":"master",
@@ -47,18 +573,23 @@
    "Law & Criminology"
   ],
   "themes":[
+   "climate",
    "environment"
   ],
   "themes_scores":[
-   4
+   1,
+   7
   ],
   "matched_courses":[
-   "DPIM2150",
-   "DPIM2122",
    "DPIM2113",
-   "DPIM2131"
+   "DPIM2112",
+   "DPIM2122",
+   "DPIM2150",
+   "DPIM2121",
+   "DPIM2131",
+   "DPIM2163"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":4
  },
  {
   "id":"droi1ba_fn",
@@ -66,10 +597,10 @@
   "cycle":"bac",
   "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_droi1ba_fn.html",
   "languages":[
-   "en",
    "fr",
-   "de",
-   "nl"
+   "nl",
+   "en",
+   "de"
   ],
   "campuses":[
 
@@ -81,25 +612,28 @@
    "Law & Criminology"
   ],
   "themes":[
+   "climate",
    "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "DROI1365"
+   "POLS1321",
+   "DROI1365",
+   "HDPO1321"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
-  "id":"droi1ba_un",
-  "name":"Bachelier en droit Majeure : Unilingue",
+  "id":"droi1ba_a3",
+  "name":"Bachelier en droit Majeure : Bilingue fran\u00e7ais-anglais, 3e langue : n\u00e9erlandais",
   "cycle":"bac",
-  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_droi1ba_un.html",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_droi1ba_a3.html",
   "languages":[
-   "nl",
    "fr",
-   "de",
+   "nl",
    "en"
   ],
   "campuses":[
@@ -118,20 +652,19 @@
    1
   ],
   "matched_courses":[
-   "DROI1365"
+   "POLS1321"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
  },
  {
-  "id":"droi1ba_n3",
-  "name":"Bachelier en droit Majeure : Bilingue fran\u00e7ais-n\u00e9erlandais, 3e langue : anglais",
+  "id":"droi1ba_fa",
+  "name":"Bachelier en droit Majeure : Bilingue fran\u00e7ais-anglais",
   "cycle":"bac",
-  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_droi1ba_n3.html",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_droi1ba_fa.html",
   "languages":[
-   "en",
    "fr",
-   "de",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
 
@@ -149,8 +682,78 @@
    1
   ],
   "matched_courses":[
-   "DROI1365"
+   "POLS1321"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"droi1ba_un",
+  "name":"Bachelier en droit Majeure : Unilingue",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_droi1ba_un.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "de"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "DROI1365",
+   "HDPO1321"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"droi1ba_n3",
+  "name":"Bachelier en droit Majeure : Bilingue fran\u00e7ais-n\u00e9erlandais, 3e langue : anglais",
+  "cycle":"bac",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2021\/maj_droi1ba_n3.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "de"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "POLS1321",
+   "DROI1365",
+   "HDPO1321"
+  ],
+  "nb_dedicated_courses":2
  }
 ]

@@ -22,14 +22,15 @@
   ],
   "themes_scores":[
    2,
-   1
+   2
   ],
   "matched_courses":[
-   "UA-M2-FINADB-006-M",
+   "UA-M2-ARCHIT-004-M",
    "UA-M1-ARCHIT-004-M",
-   "UA-M2-ARCHIT-004-M"
+   "UA-M2-FINADB-006-M",
+   "UA-M1-ARCHIT-016-M"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"MEL1_S226",
@@ -38,10 +39,10 @@
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irelai\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -57,13 +58,15 @@
    "environment"
   ],
   "themes_scores":[
-   2,
+   4,
    1
   ],
   "matched_courses":[
-   "UI-M1-IRELAI-004-M",
+   "UI-M1-IRELEC-103-M",
+   "UI-M1-IRELEC-101-M",
+   "UI-M1-IRELEC-303-M",
    "UI-M2-IRELEC-561-M",
-   "UI-M1-IRELEC-101-M"
+   "UI-M1-IRELAI-004-M"
   ],
   "nb_dedicated_courses":2
  },
@@ -74,10 +77,10 @@
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irelbs\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -93,11 +96,13 @@
    "environment"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ],
   "matched_courses":[
+   "UI-M1-IRELEC-103-M",
    "UI-M2-IRELEC-561-M",
+   "UI-M1-IRELEC-303-M",
    "UI-M1-IRELEC-101-M"
   ],
   "nb_dedicated_courses":2
@@ -108,8 +113,8 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/eshs\/fr\/formations\/m2-metiss\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -121,16 +126,56 @@
    "Sociology"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
+   5,
    2
   ],
   "matched_courses":[
+   "UH-M1-METISS-042-M",
+   "UH-M1-METISS-007-M",
    "UH-M1-METISS-003-M",
+   "UH-M1-METISS-050-M",
+   "UH-M1-METISS-036-M",
    "UH-M1-METISS-009-M"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"MIS1_S210",
+  "name":"Master : ing\u00e9nieur de gestion, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/m2-iggest\/",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "es"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "UW-M1-IGGEST-080-M"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"MEL1_S227",
@@ -139,10 +184,10 @@
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irelee\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -158,12 +203,22 @@
    "environment"
   ],
   "themes_scores":[
-   1,
-   1
+   11,
+   9
   ],
   "matched_courses":[
+   "UI-M1-IRELEC-103-M",
+   "UI-M2-IRELEE-002-M",
+   "UI-M2-IRELEE-001-M",
+   "UI-M1-IRELEC-101-M",
+   "UI-M1-IRELEE-004-M",
+   "UI-M1-IRELEE-005-M",
+   "UI-M1-IRELEE-001-M",
+   "UI-M1-IRELEE-002-M",
+   "UI-M2-IRELEE-003-M",
+   "UI-M1-IRELEC-303-M",
    "UI-M2-IRELEC-561-M",
-   "UI-M1-IRELEC-101-M"
+   "UI-M2-IRELEE-006-M"
   ],
   "nb_dedicated_courses":2
  },
@@ -174,47 +229,10 @@
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irmeme\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Mons"
-  ],
-  "faculties":[
-   "Facult\u00e9 Polytechnique"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "climate",
-   "energy",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   1,
-   1
-  ],
-  "matched_courses":[
-   "UI-M2-IRMECA-531-M",
-   "UI-M2-IRMECA-561-M"
-  ],
-  "nb_dedicated_courses":1
- },
- {
-  "id":"MEC1_S232",
-  "name":"Master : ing\u00e9nieur civil m\u00e9canicien, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en g\u00e9nie \u00e9nerg\u00e9tique (Mons)",
-  "cycle":"master",
-  "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irmege\/",
-  "languages":[
-   "nl",
+   "fr",
    "es",
-   "de",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -236,23 +254,23 @@
    1
   ],
   "matched_courses":[
-   "UI-M2-IRMECA-531-M",
-   "UI-M2-IRMEGE-003-M",
-   "UI-M2-IRMECA-561-M"
+   "UI-M1-IRMECA-002-M",
+   "UI-M2-IRMECA-561-M",
+   "UI-M2-IRMECA-531-M"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":1
  },
  {
-  "id":"MEC1_S233",
-  "name":"Master : ing\u00e9nieur civil m\u00e9canicien, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en conception et production (Mons)",
+  "id":"MEC1_S232",
+  "name":"Master : ing\u00e9nieur civil m\u00e9canicien, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en g\u00e9nie \u00e9nerg\u00e9tique (Mons)",
   "cycle":"master",
-  "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irmecp\/",
+  "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irmege\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -270,12 +288,52 @@
   ],
   "themes_scores":[
    1,
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "UI-M2-IRMECA-531-M",
-   "UI-M2-IRMECA-561-M"
+   "UI-M1-IRMECA-002-M",
+   "UI-M2-IRMECA-561-M",
+   "UI-M2-IRMEGE-003-M",
+   "UI-M2-IRMECA-531-M"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MEC1_S233",
+  "name":"Master : ing\u00e9nieur civil m\u00e9canicien, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en conception et production (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irmecp\/",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 Polytechnique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   2,
+   1
+  ],
+  "matched_courses":[
+   "UI-M1-IRMECA-002-M",
+   "UI-M2-IRMECA-561-M",
+   "UI-M2-IRMECA-531-M"
   ],
   "nb_dedicated_courses":1
  },
@@ -286,10 +344,10 @@
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irigia\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -317,9 +375,9 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irchpe\/",
   "languages":[
-   "en",
    "fr",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -331,14 +389,17 @@
    "Engineering"
   ],
   "themes":[
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    2,
    1
   ],
   "matched_courses":[
+   "UI-M2-IRCHIM-006-M",
    "UI-M1-IRCHPI-006-M",
    "UI-M2-IRCHIM-004-M"
   ],
@@ -350,9 +411,9 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irchsm\/",
   "languages":[
-   "en",
    "fr",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -364,15 +425,26 @@
    "Engineering"
   ],
   "themes":[
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   9,
+   2,
    1
   ],
   "matched_courses":[
-   "UI-M2-IRCHIM-004-M"
+   "UI-M2-IRCHSM-004-M",
+   "UI-M2-IRCHIM-004-M",
+   "UI-M1-IRCHSM-002-M",
+   "UI-M1-IRCHSM-001-M",
+   "UI-M2-IRCHSM-005-M",
+   "UI-M2-IRCHIM-006-M",
+   "UI-M1-IRCHSM-004-M",
+   "UI-M1-IRCHSM-003-M",
+   "UI-M2-IRCHSM-003-M",
+   "UI-M1-IRCHSM-005-M"
   ],
   "nb_dedicated_courses":1
  },
@@ -383,10 +455,10 @@
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irmige\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -400,18 +472,44 @@
   "themes":[
    "climate",
    "energy",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
-   1
+   22,
+   1,
+   3
   ],
   "matched_courses":[
+   "UI-M1-IRMIGE-009-M",
+   "UI-M1-IRMIGE-013-M",
+   "UI-M2-IRMIGE-002-M",
+   "UI-M1-IRMIGE-010-M",
+   "UI-M1-IRMIGE-004-M",
+   "UI-M2-IRMIGE-531-M",
+   "UI-M2-IRMIGE-520-M",
+   "UI-M1-IRMIGE-014-M",
+   "UI-M1-IRMIGE-011-M",
+   "UI-M2-IRMIGE-007-M",
+   "UI-M2-IRMIGE-563-M",
+   "UI-M1-IRMIGE-006-M",
+   "UI-M2-IRMIGE-001-M",
+   "UI-M1-IRMIGE-003-M",
+   "UI-M2-IRMIGE-564-M",
+   "UI-M2-IRMIGE-723-M",
+   "UI-M2-IRMIGE-519-M",
+   "UI-M2-IRMIGE-005-M",
+   "UI-M1-IRMIGE-005-M",
+   "UI-M1-IRMIGE-008-M",
    "UI-M2-IRMIGE-561-M",
-   "UI-M2-IRMIGE-531-M"
+   "UI-M2-IRMIGE-722-M",
+   "UI-M2-IRMIGE-006-M",
+   "UI-M2-IRMIGE-010-M"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":4
  },
  {
   "id":"MAH1",
@@ -420,10 +518,10 @@
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/m2-irarch\/",
   "languages":[
    "nl",
-   "es",
    "de",
-   "en",
-   "fr"
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -446,8 +544,8 @@
   ],
   "matched_courses":[
    "UI-M1-IRARCH-102-M",
-   "UI-M2-IRARCH-561-M",
-   "UI-M2-IRARCH-531-M"
+   "UI-M2-IRARCH-531-M",
+   "UI-M2-IRARCH-561-M"
   ],
   "nb_dedicated_courses":2
  },
@@ -469,14 +567,82 @@
    "Architecture"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
+   2,
+   2,
    2
   ],
   "matched_courses":[
+   "UA-M2-ARCHIT-004-M",
+   "UA-M2-FINURB-006-M",
+   "UA-M1-ARCHIT-016-M",
+   "UA-M2-FINURB-004-M",
    "UA-M1-ARCHIT-004-M",
-   "UA-M2-ARCHIT-004-M"
+   "UA-M1-FINURB-003-M"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MBD1_S282",
+  "name":"Master en sciences biom\u00e9dicales, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en neuroscience (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/m2-biomfs\/",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine et de Pharmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UM-M1-BIOMED-039-M"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"MBD1_S237",
+  "name":"Master en sciences biom\u00e9dicales, \u00e0 finalit\u00e9 approfondie (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/m2-biomfa\/",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine et de Pharmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UM-M1-BIOMED-039-M"
   ],
   "nb_dedicated_courses":0
  },
@@ -486,9 +652,9 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-scecge\/",
   "languages":[
-   "en",
    "fr",
    "nl",
+   "en",
    "es"
   ],
   "campuses":[
@@ -518,9 +684,9 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-scgest\/",
   "languages":[
-   "en",
    "fr",
    "nl",
+   "en",
    "es"
   ],
   "campuses":[
@@ -550,9 +716,9 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-scgest-c\/",
   "languages":[
-   "en",
    "fr",
    "nl",
+   "en",
    "es"
   ],
   "campuses":[
@@ -582,9 +748,9 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-iggest\/",
   "languages":[
-   "en",
    "fr",
    "nl",
+   "en",
    "es"
   ],
   "campuses":[
@@ -612,9 +778,9 @@
    2
   ],
   "matched_courses":[
+   "UW-B3-SGEGIG-007-M",
    "UW-B3-IGGEST-003-M",
-   "UW-B2-IGGEST-003-M",
-   "UW-B3-SGEGIG-007-M"
+   "UW-B2-IGGEST-003-M"
   ],
   "nb_dedicated_courses":2
  },
@@ -624,8 +790,8 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/ba-scbioc-c\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Charleroi"
@@ -637,15 +803,50 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "US-B2-SCBIOC-923-C"
+   "US-B2-SCBIOC-923-C",
+   "US-B3-SCBIOC-933-C"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"BSB1",
+  "name":"Bachelier en sciences biologiques (Mons)",
+  "cycle":"bac",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/ba-scbiol\/",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "US-B3-SCBIOL-004-M",
+   "US-B3-SCBIOL-010-M"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"BIN1",
@@ -653,8 +854,8 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/ba-ircivi\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -690,8 +891,8 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/ba-ircivi-c\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Charleroi"
@@ -727,8 +928,8 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fpms\/fr\/formations\/ba-irciva\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -741,15 +942,18 @@
   ],
   "themes":[
    "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
+   1,
    1
   ],
   "matched_courses":[
+   "UI-B3-IRCIVA-012-M",
    "UI-B3-IRCIVA-011-M",
    "UI-B3-IRCIVA-010-M"
   ],
@@ -761,8 +965,8 @@
   "cycle":"bac",
   "url":"https:\/\/web.umons.ac.be\/fau\/fr\/formations\/ba-archit\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -776,19 +980,51 @@
   "themes":[
    "climate",
    "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   2,
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "UA-B3-ARCHIT-013-M",
+   "UA-B3-ARCHIT-001-M",
    "UA-B1-ARCHIT-012-M"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"C831",
+  "name":"Certificat d'Universit\u00e9 en biologie marine (Mons)",
+  "cycle":"certificate",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/cu-biomar\/",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "US-U1-BIOMAR-002-M"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"MCH1_S201",
@@ -796,8 +1032,8 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-chimfa\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -825,8 +1061,8 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-chimfs\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -856,8 +1092,8 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m1-biol60\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -880,13 +1116,81 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"MOE1_S243",
+  "name":"Master en biologie des organismes et \u00e9cologie, \u00e0 finalit\u00e9 approfondie (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-bioefa\/",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   5,
+   1
+  ],
+  "matched_courses":[
+   "US-M2-BIOEFA-008-M",
+   "US-M1-BIOECO-050-M",
+   "US-M1-BIOECO-018-M",
+   "US-M2-BIOEFA-006-M",
+   "US-M1-BIOECO-032-M"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MOE1_S245",
+  "name":"Master en biologie des organismes et \u00e9cologie, \u00e0 finalit\u00e9 didactique (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-bioefd\/",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   1
+  ],
+  "matched_courses":[
+   "US-M1-BIOECO-032-M",
+   "US-M1-BIOECO-050-M",
+   "US-M1-BIOECO-018-M"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
   "id":"MOE1_S244",
   "name":"Master en biologie des organismes et \u00e9cologie, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e dans les m\u00e9tiers de l'\u00e9co-conseil (Mons)",
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-bioefs\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -907,16 +1211,21 @@
   "themes_scores":[
    2,
    2,
+   8,
    2,
-   2,
-   2
+   3
   ],
   "matched_courses":[
-   "US-M2-BIOEFS-027-M",
    "US-M2-BIOEFS-031-M",
-   "US-M2-BIOEFS-028-M"
+   "US-M2-BIOEFS-040-M",
+   "US-M1-BIOECO-050-M",
+   "US-M1-BIOECO-018-M",
+   "US-M2-BIOEFS-028-M",
+   "US-M2-BIOEFS-027-M",
+   "US-M1-BIOECO-032-M",
+   "US-M2-BIOEFS-065-M"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":5
  },
  {
   "id":"MBM1_S219",
@@ -924,8 +1233,8 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-bbmcfa\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -937,15 +1246,19 @@
    "Science"
   ],
   "themes":[
+   "environment",
    "resources"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "US-M1-SCBBMC-012-M"
+   "US-M1-SCBBMC-032-M",
+   "US-M1-SCBBMC-012-M",
+   "US-M1-SCBBMC-052-M"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"MBM1_S221",
@@ -953,8 +1266,8 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-bbmcfd\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -966,15 +1279,19 @@
    "Science"
   ],
   "themes":[
+   "environment",
    "resources"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "US-M1-SCBBMC-012-M"
+   "US-M1-SCBBMC-032-M",
+   "US-M1-SCBBMC-012-M",
+   "US-M1-SCBBMC-052-M"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"MBM1_S220",
@@ -982,8 +1299,8 @@
   "cycle":"master",
   "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-bbmcfs\/",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Mons"
@@ -995,14 +1312,18 @@
    "Science"
   ],
   "themes":[
+   "environment",
    "resources"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "US-M1-SCBBMC-012-M"
+   "US-M1-SCBBMC-032-M",
+   "US-M1-SCBBMC-012-M",
+   "US-M1-SCBBMC-052-M"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  }
 ]

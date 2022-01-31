@@ -14,7 +14,7 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
@@ -27,10 +27,10 @@
    1
   ],
   "matched_courses":[
-   "GBLX2131-2",
-   "HULG9393-1",
    "AGRO0001-1",
-   "FORE0001-2"
+   "FORE0001-2",
+   "GBLX2131-2",
+   "HULG9393-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -92,17 +92,17 @@
   ],
   "themes_scores":[
    1,
-   2,
-   2,
    3,
+   1,
+   4,
    3
   ],
   "matched_courses":[
    "MECA0526-1",
-   "MECA0450-3",
+   "CHIM9303-1",
    "CHIM9315-1",
-   "CHIM0699-2",
-   "CHIM9303-1"
+   "MECA0450-3",
+   "CHIM0699-2"
   ],
   "nb_dedicated_courses":2
  },
@@ -140,10 +140,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A2UAEL01_C.html",
   "languages":[
-   "nl",
    "fr",
-   "de",
-   "en"
+   "nl",
+   "en",
+   "de"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -155,15 +155,18 @@
    "Engineering"
   ],
   "themes":[
+   "climate",
    "energy"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "SPAT0048-4",
    "AERO0032-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"A2UGIN01",
@@ -171,10 +174,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A2UGIN01_C.html",
   "languages":[
-   "nl",
    "fr",
-   "de",
-   "en"
+   "nl",
+   "en",
+   "de"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -189,24 +192,27 @@
    "climate",
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    3,
-   8,
-   3,
+   10,
+   2,
+   1,
    1
   ],
   "matched_courses":[
-   "MECA0450-3",
    "MECA0515-1",
-   "ARCH3272-2",
-   "CHIM9315-1",
-   "MECA0527-1",
-   "MECA0037-1",
    "ELEC0041-1",
-   "ELEC0055-2",
-   "MECA0034-1"
+   "MECA0527-1",
+   "CHIM9315-1",
+   "MECA0034-1",
+   "MECA0006-1",
+   "ARCH3272-2",
+   "MECA0450-3",
+   "MECA0037-1",
+   "ELEC0055-2"
   ],
   "nb_dedicated_courses":3
  },
@@ -229,16 +235,48 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "environment"
   ],
   "themes_scores":[
    1,
+   1,
+   3
+  ],
+  "matched_courses":[
+   "SCER0012-1",
+   "SCER0013-1",
+   "SCER0010-1"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"AYELEN90",
+  "name":"\u00c9lectronique de l'Energie",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/AYELEN90_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "SCER0010-1"
+   "ACER0078-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"AYAUTO00",
@@ -301,6 +339,34 @@
   "nb_dedicated_courses":2
  },
  {
+  "id":"MYCUSE90",
+  "name":"Sant\u00e9 environnementale : approche \u00e9cosyst\u00e9mique",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/MYCUSE90_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "COMM0010-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"RYAUPU90",
   "name":"Agriculture Urbaine et P\u00e9ri-Urbaine",
   "cycle":"certificate",
@@ -315,7 +381,7 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -330,6 +396,62 @@
    "RCER0035-1"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"AYCCPR90",
+  "name":"Conseiller en pr\u00e9vention de niveau 1",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/AYCCPR90_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "ACER0016-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"MYPAPR00",
+  "name":"Comp\u00e9tence en pathologie professionnelle",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/MYPAPR00_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "TOXI0002-1"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"S4SCSC01",
@@ -378,15 +500,47 @@
    "Engineering"
   ],
   "themes":[
+   "environment",
    "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "ARCH2002-3",
+   "SPOL2341-1",
+   "ESHY0016-1"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"A3TLOG01",
+  "name":"Transport et logistique",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A3TLOG01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "ARCH2002-3"
+   "GCIV2025-2"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
  },
  {
   "id":"S3ENVI01",
@@ -406,18 +560,33 @@
    "Science"
   ],
   "themes":[
+   "climate",
+   "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   3,
    1,
+   6,
+   3,
    1
   ],
   "matched_courses":[
+   "HULG0484-1",
+   "ENVT0063-1",
+   "ENVT2011-2",
+   "ENVT2065-1",
+   "HULG0483-1",
+   "HULG0487-1",
    "HULG0490-1",
-   "ENVT3035-1"
+   "ENVT2009-1",
+   "ENVT3035-1",
+   "ENVT2027-1",
+   "ENVT2023-2"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":6
  },
  {
   "id":"R3PROD01",
@@ -434,19 +603,83 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   4,
+   1
+  ],
+  "matched_courses":[
+   "VEGE0036-2",
+   "BIOD0001-3",
+   "VEGE0042-1",
+   "VEGE0041-2",
+   "GERE0029-1"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"M3MTRA01",
+  "name":"M\u00e9decine du travail",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M3MTRA01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
   ],
   "themes":[
    "environment"
   ],
   "themes_scores":[
-   2
+   1
   ],
   "matched_courses":[
-   "VEGE0042-1",
-   "VEGE0036-2"
+   "TOXI0002-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"V3SANI01",
+  "name":"Gestion int\u00e9gr\u00e9e des risques sanitaires dans les pays du sud",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/V3SANI01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine V\u00e9t\u00e9rinaire"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GIRI0004-1"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"S3ENER01",
@@ -478,20 +711,107 @@
    5,
    3,
    2,
-   4
+   5
   ],
   "matched_courses":[
    "ECON0945-1",
-   "ENVT3057-1",
-   "AGRO0016-1",
    "ENVT0846-2",
-   "STFE2004-1",
+   "ENVT3057-1",
+   "GCIV0008-2",
    "ENVT3042-1",
-   "ENVT0026-1",
+   "STFE2004-1",
    "ENVT0040-2",
-   "ENVT0019-2"
+   "AGRO0016-1",
+   "ENVT0019-2",
+   "ENVT0026-1"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":6
+ },
+ {
+  "id":"S3GRCA01",
+  "name":"Gestion des risques et des catastrophes",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/S3GRCA01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Arlon"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "RISQ2015-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"S3GEAQ01",
+  "name":"Gestion des ressources aquatiques et aquaculture",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/S3GEAQ01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "ZOOL2000-1",
+   "ENVT0057-1"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"A3GENU01",
+  "name":"G\u00e9nie nucl\u00e9aire",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A3GENU01_C.html",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GENU2000-1"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"G3ECON01",
@@ -570,20 +890,21 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   2,
    1
   ],
   "matched_courses":[
+   "ENVT0010-1",
    "ENVT0040-2"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"S3COSM01",
@@ -606,12 +927,13 @@
    "climate"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "SPAT0077-1"
+   "SPAT0077-1",
+   "SPAT0055-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"V2UVET01",
@@ -647,10 +969,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UTRA01_C.html",
   "languages":[
-   "de",
    "nl",
-   "es",
+   "de",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -698,9 +1020,10 @@
    "environment"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "ANTH0057-1",
    "SOCI0022-1"
   ],
   "nb_dedicated_courses":0
@@ -750,25 +1073,31 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   6,
-   2
+   8,
+   1,
+   5
   ],
   "matched_courses":[
-   "HULG9350-1",
+   "BIOD0001-3",
+   "HULG9377-1",
    "ENVT3061-2",
+   "HULG9350-1",
+   "PAYS0014-1",
    "AGRO0001-1",
    "ENVT0040-2",
-   "HULG9377-1",
-   "ENVT3050-1"
+   "HULG9346-1",
+   "ENVT3050-1",
+   "ENVT2049-2"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":7
  },
  {
   "id":"S2USPA01",
@@ -792,12 +1121,44 @@
    "climate"
   ],
   "themes_scores":[
-   3
+   4
   ],
   "matched_courses":[
    "SPAT0025-1",
+   "SPAT0055-1",
    "SPAT0026-1",
    "SPAT0027-3"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"Y2UPSY01",
+  "name":"Sciences psychologiques, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/Y2UPSY01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Psychologie, Logop\u00e9die et Sciences de l'Education"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "PSYC1004-1",
+   "PEDA0056-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -826,21 +1187,21 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "SPOL0099-1",
    "SOCI0022-1",
-   "SPOL0099-1"
+   "SPOL2328-1"
   ],
   "nb_dedicated_courses":0
  },
  {
-  "id":"D2UPOL01",
-  "name":"Sciences politiques, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9",
+  "id":"D2UPOL02",
+  "name":"Sciences politiques, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9 (CATANE (OUT))",
   "cycle":"master",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2UPOL01_C.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2UPOL02_C.html",
   "languages":[
-   "nl",
    "fr",
    "en"
   ],
@@ -861,7 +1222,100 @@
    1
   ],
   "matched_courses":[
-   "SOCI0022-1"
+   "SPOL2328-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"D2UPOL04",
+  "name":"Sciences politiques, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9 (CATANE (IN))",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2UPOL04_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit, Science politique et Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SPOL2328-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"D2UPOL01",
+  "name":"Sciences politiques, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2UPOL01_C.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit, Science politique et Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "SOCI0022-1",
+   "SPOL2328-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"D2XPOL01",
+  "name":"Sciences politiques, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2XPOL01_C.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit, Science politique et Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SPOL2328-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -892,8 +1346,8 @@
    1
   ],
   "matched_courses":[
-   "CHIM9234-1",
-   "PHYS0987-1"
+   "PHYS0987-1",
+   "CHIM9234-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -924,8 +1378,8 @@
    1
   ],
   "matched_courses":[
-   "CHIM9234-1",
-   "PHYS0987-1"
+   "PHYS0987-1",
+   "CHIM9234-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1009,10 +1463,11 @@
    "climate"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "LOGI0012-1"
+   "LOGI0012-1",
+   "ASTR0204-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -1038,10 +1493,11 @@
    "climate"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "LOGI0012-1"
+   "LOGI0012-1",
+   "ASTR0204-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -1066,19 +1522,26 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    4,
    3,
+   5,
    1
   ],
   "matched_courses":[
+   "GEOL1046-1",
    "GEOL1050-1",
+   "CLIM0009-1",
    "GEOL0224-2",
+   "GEOL0020-7",
    "GEOL0008-2",
-   "SPAT0027-3",
-   "GEOL1046-1"
+   "GEOL0256-1",
+   "GEOL0313-1",
+   "GEOG0212-1",
+   "SPAT0027-3"
   ],
   "nb_dedicated_courses":4
  },
@@ -1103,19 +1566,26 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    4,
    3,
+   5,
    1
   ],
   "matched_courses":[
+   "GEOL1046-1",
    "GEOL1050-1",
+   "CLIM0009-1",
    "GEOL0224-2",
+   "GEOL0020-7",
    "GEOL0008-2",
-   "SPAT0027-3",
-   "GEOL1046-1"
+   "GEOL0256-1",
+   "GEOL0313-1",
+   "GEOG0212-1",
+   "SPAT0027-3"
   ],
   "nb_dedicated_courses":4
  },
@@ -1138,24 +1608,32 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
-   12
+   13,
+   3,
+   1
   ],
   "matched_courses":[
-   "GEOG0050-1",
-   "GEOG0630-5",
    "CLIM0007-2",
+   "GEOG0633-2",
+   "GEOG2020-1",
+   "GEOG2012-1",
+   "GEOG0217-2",
    "GEOG0661-1",
-   "GEOG0048-1",
    "CLIM0002-1",
+   "GEOG0050-1",
+   "GEOG0055-1",
+   "CLIM0002-2",
    "CLIM0017-2",
    "ENVT3056-1",
-   "CLIM0002-2",
-   "SPAT0027-3",
+   "GEOG0048-1",
    "GEOG0662-1",
-   "GEOG2012-1"
+   "GEOG0630-5",
+   "SPAT0027-3"
   ],
   "nb_dedicated_courses":8
  },
@@ -1184,16 +1662,17 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   3,
    2,
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "GEST3024-1",
+   "GEOG2020-1",
    "GEOG2012-1",
+   "GEOG0630-3",
    "ARCH0560-1",
-   "GEOG0630-3"
+   "GEST3024-1"
   ],
   "nb_dedicated_courses":2
  },
@@ -1223,35 +1702,54 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   3,
+   13,
+   19,
    11,
-   6,
-   8,
-   4
+   13
   ],
   "matched_courses":[
-   "SPOL0382-2",
-   "ENVT0068-1",
-   "LANG2973-1",
-   "ENVT3059-2",
-   "ENVT3035-2",
-   "ENVT3025-1",
-   "ENVT0066-1",
-   "ECON0945-1",
-   "ENVT3039-1",
-   "ENVT0051-1",
-   "ENVT0846-2",
-   "ELEC0080-1",
-   "ENVT0040-2",
+   "ENVT0010-1",
+   "GEOL1031-1",
+   "ENVT3022-1",
+   "ENVT3016-1",
    "ENVT0071-1",
-   "ENVT0072-1",
-   "ENVT0068-2",
-   "ENVT3059-1",
-   "LANG2972-1",
+   "ENVT0040-2",
+   "ENVT3059-2",
+   "ENVT0063-2",
+   "ENVT3039-1",
+   "ENVT3038-1",
+   "ELEC0080-1",
+   "ENVT3021-1",
+   "ENVT3035-2",
+   "ENVT3041-1",
+   "ENVT0068-1",
    "ENVT3035-1",
-   "SMEM0042-1"
+   "ENVT3027-1",
+   "ENVT0049-1",
+   "LANG2972-1",
+   "ENVT2027-3",
+   "ENVT3025-1",
+   "ENVT0072-1",
+   "ENVT0069-1",
+   "ENVT2009-1",
+   "ENVT0056-1",
+   "SMEM0042-1",
+   "ENVT3059-1",
+   "ECON0945-1",
+   "ENVT3045-1",
+   "ENVT0056-2",
+   "LANG2973-1",
+   "ENVT2011-2",
+   "ENVT0846-2",
+   "ENVT0051-1",
+   "SPOL0382-2",
+   "ENVT3020-1",
+   "ENVT0070-1",
+   "ENVT0068-2",
+   "ENVT0066-1"
   ],
-  "nb_dedicated_courses":13
+  "nb_dedicated_courses":25
  },
  {
   "id":"S2XENV01",
@@ -1279,27 +1777,42 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   6,
    2,
-   4,
-   3
+   8,
+   12,
+   6,
+   11
   ],
   "matched_courses":[
+   "GEOL1031-1",
+   "ENVT3022-1",
+   "ENVT3016-1",
    "ENVT0071-1",
-   "ENVT0068-1",
-   "ENVT3039-1",
-   "ENVT0072-1",
-   "ENVT3057-2",
-   "ELEC0080-1",
-   "ENVT3059-1",
    "ENVT0040-2",
+   "ENVT3057-2",
+   "ENVT0063-2",
+   "ENVT3038-1",
+   "ENVT3039-1",
+   "ELEC0080-1",
+   "ENVT3021-1",
+   "ENVT3041-1",
+   "ENVT0068-1",
+   "ENVT3035-1",
+   "ENVT3027-1",
+   "ENVT2027-3",
    "ENVT3025-1",
+   "ENVT0072-1",
+   "ENVT0069-1",
+   "ENVT2009-1",
+   "ENVT0056-1",
+   "ENVT3059-1",
+   "ENVT2011-2",
    "ENVT0051-1",
-   "ENVT0066-1",
-   "ENVT3035-1"
+   "ENVT3020-1",
+   "ENVT0070-1",
+   "ENVT0066-1"
   ],
-  "nb_dedicated_courses":10
+  "nb_dedicated_courses":20
  },
  {
   "id":"G2UECO01",
@@ -1307,11 +1820,11 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UECO01_C.html",
   "languages":[
-   "it",
-   "de",
    "nl",
-   "es",
+   "de",
+   "it",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -1356,13 +1869,45 @@
    "Sociology"
   ],
   "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "PEDA0056-1",
+   "GEST6002-1",
+   "SOCI0022-1"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"M2USAN03",
+  "name":"Sciences de la sant\u00e9 publique, \u00e0 finalit\u00e9 (nouveau programme)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M2USAN03_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
    "environment"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "SOCI0022-1"
+   "COMM0010-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -1373,8 +1918,8 @@
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H2UPOP01_C.html",
   "languages":[
    "fr",
-   "es",
-   "en"
+   "en",
+   "es"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -1392,17 +1937,51 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
+   5,
    1,
    3
   ],
   "matched_courses":[
-   "GEST7030-1",
+   "ENVT0008-1",
+   "PEDA0056-1",
+   "SOCI0073-3",
    "ENVT0846-2",
-   "SOCI0073-3"
+   "ANTH0057-1",
+   "GEST6002-1",
+   "GEST7030-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"Y2UEDU01",
+  "name":"Sciences de l'\u00e9ducation, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/Y2UEDU01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Psychologie, Logop\u00e9die et Sciences de l'Education"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PEDA0056-1"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"G2UGES01",
@@ -1410,11 +1989,11 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UGES01_C.html",
   "languages":[
-   "it",
-   "de",
    "nl",
-   "es",
+   "de",
+   "it",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -1433,15 +2012,16 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
+   2,
    1
   ],
   "matched_courses":[
+   "GEST6002-1",
    "LOGI0012-1",
    "GEST7030-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"S2UCHI04",
@@ -1470,8 +2050,8 @@
    1
   ],
   "matched_courses":[
-   "CHIM9234-1",
-   "PHYS0987-1"
+   "PHYS0987-1",
+   "CHIM9234-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1502,8 +2082,8 @@
    1
   ],
   "matched_courses":[
-   "CHIM9234-1",
-   "PHYS0987-1"
+   "PHYS0987-1",
+   "CHIM9234-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1533,16 +2113,18 @@
   ],
   "themes_scores":[
    1,
-   1,
-   3,
-   1
+   2,
+   4,
+   2
   ],
   "matched_courses":[
-   "CHIM0683-2",
+   "CHIM0742-1",
+   "CHIM9234-2",
+   "CHIM0724-1",
    "CHIM0699-2",
-   "CHIM9234-2"
+   "CHIM0683-2"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"S2XCHI01",
@@ -1570,16 +2152,18 @@
   ],
   "themes_scores":[
    1,
-   1,
-   3,
-   1
+   2,
+   4,
+   2
   ],
   "matched_courses":[
-   "CHIM0683-2",
+   "CHIM0742-1",
+   "CHIM9234-2",
+   "CHIM0724-1",
    "CHIM0699-2",
-   "CHIM9234-2"
+   "CHIM0683-2"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"S2UOCE02",
@@ -1601,17 +2185,25 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "environment",
+   "resources"
   ],
   "themes_scores":[
-   2,
+   3,
+   1,
+   4,
    1
   ],
   "matched_courses":[
+   "OCEA0082-1",
    "OCEA0055-5",
-   "OCEA0056-1"
+   "OCEA0057-7",
+   "OCEA0056-1",
+   "OCEA0063-1",
+   "OCEA0062-6"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"S2UOCE03",
@@ -1632,15 +2224,24 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment",
+   "resources"
   ],
   "themes_scores":[
+   2,
+   5,
    1
   ],
   "matched_courses":[
-   "OCEA0055-5"
+   "OCEA0228-1",
+   "OCEA0082-1",
+   "OCEA0055-5",
+   "OCEA0057-9",
+   "OCEA0063-1",
+   "OCEA0062-6"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"S2UOCE01",
@@ -1663,20 +2264,37 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   3,
+   5,
    1,
-   1
+   12,
+   2,
+   3
   ],
   "matched_courses":[
+   "OCEA0011-2",
    "OCEA0220-1",
+   "OCEA0223-1",
    "GEOG2012-1",
+   "OCEA0090-1",
+   "OCEA0094-1",
+   "OCEA0227-1",
+   "OCEA0084-1",
    "DROI0725-1",
-   "OCEA0094-1"
+   "OCEA0063-1",
+   "OCEA0158-1",
+   "OCEA0049-1",
+   "GEOL0256-1",
+   "OCEA0086-1",
+   "OCEA0027-1",
+   "OCEA0088-1",
+   "OCEA0085-1"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":5
  },
  {
   "id":"R2UICA01",
@@ -1694,7 +2312,7 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
@@ -1702,14 +2320,15 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   3,
    1,
    1
   ],
   "matched_courses":[
+   "AGRO0001-1",
    "VETE0493-1",
-   "CHIM0699-2",
-   "AGRO0001-1"
+   "HULG9304-1",
+   "CHIM0699-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -1719,10 +2338,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UGER01_C.html",
   "languages":[
-   "nl",
    "fr",
-   "de",
-   "en"
+   "nl",
+   "en",
+   "de"
   ],
   "campuses":[
    "Li\u00e8ge Centre-ville"
@@ -1745,8 +2364,8 @@
    1
   ],
   "matched_courses":[
-   "TRAD0202-1",
-   "LGER0053-2"
+   "LGER0053-2",
+   "TRAD0202-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1756,11 +2375,11 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UMOD01_C.html",
   "languages":[
-   "it",
-   "de",
    "nl",
-   "es",
+   "de",
+   "it",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -1784,10 +2403,41 @@
    1
   ],
   "matched_courses":[
-   "TRAD0202-1",
-   "LGER0053-2"
+   "LGER0053-2",
+   "TRAD0202-1"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"P2UJOU01",
+  "name":"Journalisme, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UJOU01_C.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GEOG0055-2"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"G2UING02",
@@ -1795,8 +2445,8 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UING02_C.html",
   "languages":[
-   "nl",
    "fr",
+   "nl",
    "en"
   ],
   "campuses":[
@@ -1826,11 +2476,11 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G2UING01_C.html",
   "languages":[
-   "it",
-   "de",
    "nl",
-   "es",
+   "de",
+   "it",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -1845,15 +2495,19 @@
   ],
   "themes":[
    "climate",
+   "environment",
    "resources"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "LOGI0012-1",
-   "FINA9001-1"
+   "HULG9280-1",
+   "GEST3047-1",
+   "FINA9001-1",
+   "LOGI0012-1"
   ],
   "nb_dedicated_courses":1
  },
@@ -1863,10 +2517,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H2UGRH02_C.html",
   "languages":[
-   "de",
    "nl",
-   "es",
+   "de",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -1894,15 +2548,47 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"H2UGRH01",
+  "name":"Gestion des ressources humaines, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H2UGRH01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Sociales"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GRHO0035-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"D2UDRO01",
   "name":"Droit, \u00e0 finalit\u00e9",
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D2UDRO01_C.html",
   "languages":[
-   "nl",
    "fr",
-   "de",
-   "en"
+   "nl",
+   "en",
+   "de"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -1920,13 +2606,14 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   2,
    3,
    1
   ],
   "matched_courses":[
-   "DROI0960-1",
    "DROI0091-1",
+   "DROI0960-1",
+   "DROI2335-1",
    "DROI0954-1"
   ],
   "nb_dedicated_courses":1
@@ -1967,11 +2654,11 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UCMU01_C.html",
   "languages":[
-   "it",
-   "de",
    "nl",
-   "es",
+   "de",
+   "it",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -2003,6 +2690,39 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"P2UCOM01",
+  "name":"Communication, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P2UCOM01_C.html",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "GEST6002-1"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
   "id":"S2UBOE01",
   "name":"Biologie des organismes et \u00e9cologie, \u00e0 finalit\u00e9",
   "cycle":"master",
@@ -2024,19 +2744,43 @@
    "climate",
    "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   3,
    1,
-   1,
-   1,
-   1
+   22,
+   4,
+   3
   ],
   "matched_courses":[
+   "OCEA0223-1",
    "BIOL0852-1",
-   "BIOL2040-1"
+   "SSTG0024-1",
+   "BIOL2040-1",
+   "SSTG0047-2",
+   "OCEA0084-1",
+   "SSTG0062-1",
+   "GEOG2013-1",
+   "BIOL0860-1",
+   "BIOL0812-2",
+   "OCEA0227-1",
+   "SSTG0054-1",
+   "BIOL0854-1",
+   "SSTG0046-1",
+   "BIOD0007-1",
+   "BIOL2033-1",
+   "ENVT3045-1",
+   "BIOL0810-2",
+   "BIOL2035-1",
+   "ANTH0057-1",
+   "BIOL0518-2",
+   "BIOL0861-1",
+   "OCEA0027-1",
+   "OCEA0085-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":10
  },
  {
   "id":"T2UARC01",
@@ -2060,14 +2804,15 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
-   2
+   3,
+   3
   ],
   "matched_courses":[
-   "ARCH0560-1",
-   "ARCH0567-1",
    "ARCH0593-1",
-   "ARCH0591-1"
+   "ARCH0574-1",
+   "ARCH0560-1",
+   "ARCH0591-1",
+   "ARCH0567-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -2078,8 +2823,8 @@
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H2UANT01_C.html",
   "languages":[
    "fr",
-   "es",
-   "en"
+   "en",
+   "es"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -2094,10 +2839,13 @@
    "environment"
   ],
   "themes_scores":[
-   1
+   4
   ],
   "matched_courses":[
-   "SOCI0022-1"
+   "ANTH0057-1",
+   "COMU2144-2",
+   "SOCI0022-1",
+   "BIOL0810-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -2117,7 +2865,7 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
@@ -2128,15 +2876,15 @@
    2
   ],
   "matched_courses":[
-   "ENVT3061-2",
+   "AGRO0002-1",
    "ANIM0024-1",
    "ENVT3062-1",
-   "AGRO0002-1",
-   "VEGE0036-1",
-   "RSTG0010-1",
+   "ENVT3061-2",
    "HULG0495-1",
+   "AGRO0025-2",
+   "RSTG0010-1",
    "ENVT0040-2",
-   "AGRO0025-2"
+   "VEGE0036-1"
   ],
   "nb_dedicated_courses":7
  },
@@ -2156,39 +2904,40 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "environment",
    "sustainability"
   ],
   "themes_scores":[
-   19,
+   20,
    4
   ],
   "matched_courses":[
-   "VEGE0042-1",
-   "ANIM0018-1",
-   "ANIM0024-1",
-   "ENVT3066-1",
    "AGRO0002-1",
-   "HULG9335-1",
-   "FORE0009-1",
-   "RTFE2006-1",
-   "MANA0007-1",
-   "VEGE0036-1",
-   "AGRO0001-1",
-   "ENVT0040-2",
-   "HULG0491-1",
-   "GBLX2131-2",
-   "ENVT3061-2",
+   "ANIM0024-1",
    "ENVT3062-1",
+   "HULG0491-1",
+   "MANA0007-1",
+   "VEGE0042-1",
+   "ENVT0040-2",
    "ENVT3067-1",
-   "RSTG0010-1",
+   "ENVT3066-1",
+   "FORE0009-1",
+   "VEGE0036-1",
+   "ENVT2044-1",
+   "ENVT3061-2",
+   "HULG9335-1",
    "HULG0492-1",
-   "AGRO0025-2"
+   "AGRO0001-1",
+   "RSTG0010-1",
+   "RTFE2006-1",
+   "AGRO0025-2",
+   "ANIM0018-1",
+   "GBLX2131-2"
   ],
-  "nb_dedicated_courses":13
+  "nb_dedicated_courses":14
  },
  {
   "id":"R2UARC01",
@@ -2205,29 +2954,38 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
+   "climate",
    "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   6,
    1,
-   3
+   11,
+   1,
+   6
   ],
   "matched_courses":[
-   "GBLX2144-1",
-   "HULG9201-1",
-   "FORE0001-2",
-   "AGRO0001-1",
-   "HULG9390-1",
    "ENVT0047-1",
+   "GBLX2147-1",
+   "GBLX2144-1",
+   "HULG0364-1",
+   "HULG9390-1",
+   "HULG0362-2",
+   "HULG9201-1",
+   "HULG9409-1",
+   "PAYS0014-1",
+   "HULG0365-1",
+   "HULG0380-2",
+   "AGRO0001-1",
+   "HULG9199-1",
    "GBLX2131-2",
-   "HULG0380-2"
+   "FORE0001-2"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":5
  },
  {
   "id":"A2UPHY01",
@@ -2248,13 +3006,16 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "ELEC0041-1"
+   "ELEC0041-1",
+   "MECA0518-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -2264,10 +3025,10 @@
   "cycle":"master",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A2UMEC01_C.html",
   "languages":[
-   "nl",
    "fr",
-   "de",
-   "en"
+   "nl",
+   "en",
+   "de"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman"
@@ -2285,16 +3046,17 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
    1,
    1
   ],
   "matched_courses":[
-   "ELEC0055-2",
    "MECA0527-1",
-   "CHIM0699-2",
-   "CNAV0022-1"
+   "CNAV0022-1",
+   "MECA0006-1",
+   "ELEC0055-2",
+   "CHIM0699-2"
   ],
   "nb_dedicated_courses":0
  },
@@ -2317,15 +3079,17 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "resources"
   ],
   "themes_scores":[
-   3
+   3,
+   1
   ],
   "matched_courses":[
    "ELEC0055-2",
-   "MECA0450-3",
-   "ELEC0041-1"
+   "ELEC0041-1",
+   "MECA0450-3"
   ],
   "nb_dedicated_courses":1
  },
@@ -2356,19 +3120,25 @@
   ],
   "themes_scores":[
    2,
-   4,
-   2,
-   3,
-   2
+   5,
+   5,
+   5,
+   3
   ],
   "matched_courses":[
-   "GEOL1050-1",
+   "GEOL0315-1",
+   "GEOL1046-1",
+   "GEOL0013-5",
    "UEEN0001-1",
-   "MECA0526-1",
-   "GEOL0008-4",
-   "GEOL1044-1",
    "GEOL0281-4",
-   "GEOL1046-1"
+   "GEOL1050-1",
+   "GEOL0008-4",
+   "GEOL0083-3",
+   "MECA0526-1",
+   "GEOL0020-7",
+   "GEOL1044-1",
+   "GEOL0313-1",
+   "GEOL1045-1"
   ],
   "nb_dedicated_courses":3
  },
@@ -2391,12 +3161,19 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "climate",
+   "energy",
+   "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   2,
+   2
   ],
   "matched_courses":[
+   "GCIV2035-1",
+   "GCIV2178-1",
+   "GCIV2065-1",
    "UEEN0001-1"
   ],
   "nb_dedicated_courses":1
@@ -2451,18 +3228,24 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   4,
    1,
-   1
+   3
   ],
   "matched_courses":[
    "UEEN0001-1",
-   "ARCH3272-1"
+   "GCIV0008-2",
+   "ARCH3272-1",
+   "ARCH3262-1",
+   "ARCH0006-2",
+   "ARCH2007-2"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":4
  },
  {
   "id":"R2UENV01",
@@ -2480,22 +3263,37 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
-   "environment"
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   1,
-   2
+   3,
+   7,
+   2,
+   3
   ],
   "matched_courses":[
+   "GEOP0003-2",
+   "ENVT2044-1",
+   "GERE0024-1",
+   "GERE0037-1",
+   "GERE0025-1",
    "GERE0038-1",
+   "CHIM9248-1",
+   "PHYS3010-2",
+   "GERE0036-1",
+   "AGRO0001-1",
+   "INFO2038-1",
+   "ENVT2049-2",
    "DROI1306-1",
-   "AGRO0001-1"
+   "GERE0029-1"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":6
  },
  {
   "id":"R2UAGR01",
@@ -2513,7 +3311,7 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2522,22 +3320,26 @@
   ],
   "themes_scores":[
    1,
-   8,
+   13,
    3
   ],
   "matched_courses":[
-   "ANIM0024-1",
-   "ENVT3061-1",
    "AGRO0002-1",
-   "VEGE0042-1",
-   "VEGE0036-1",
-   "ANIM0018-1",
-   "AGRO0001-1",
+   "VEGE0028-1",
    "VEGE0034-1",
+   "ANIM0024-1",
+   "VEGE0027-1",
+   "VEGE0041-1",
+   "ENVT2044-1",
+   "AGRO0001-1",
+   "VEGE0042-1",
+   "ANIM0018-1",
+   "INFO2038-1",
+   "VEGE0036-1",
    "ECON2298-3",
-   "VEGE0028-1"
+   "ENVT3061-1"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":7
  },
  {
   "id":"R2UFOR01",
@@ -2555,28 +3357,106 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   6,
+   16,
+   1,
+   4
+  ],
+  "matched_courses":[
+   "FORE0043-1",
+   "BIOD0001-3",
+   "DROI0969-1",
+   "VEGE0021-1",
+   "ENVT2044-1",
+   "FORE0009-1",
+   "ENVT3050-1",
+   "PAYS0014-1",
+   "PHYS3010-2",
+   "AGRO0001-1",
+   "ECON2255-4",
+   "BIOD0007-1",
+   "RAVT0002-1",
+   "INFO2038-1",
+   "FORE0025-1",
+   "FORE0042-1",
+   "PAYS0001-2"
+  ],
+  "nb_dedicated_courses":8
+ },
+ {
+  "id":"R2UCHI01",
+  "name":"Bioing\u00e9nieur en chimie et bioindustries, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/R2UCHI01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Gembloux"
+  ],
+  "faculties":[
+   "Gembloux Agro-Bio Tech"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1,
    1
   ],
   "matched_courses":[
-   "FORE0042-1",
-   "ENVT3050-1",
-   "ECON2255-4",
-   "DROI0969-1",
-   "AGRO0001-1",
-   "FORE0009-1",
-   "FORE0043-1"
+   "ENVT2044-1",
+   "CHIM0718-1",
+   "CHIM0692-1",
+   "INFO2038-1"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"Y1LOGO01",
+  "name":"Sciences psychologiques et de l'\u00e9ducation, orientation logop\u00e9die",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/Y1LOGO01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Psychologie, Logop\u00e9die et Sciences de l'Education"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"Y1PSYG01",
@@ -2603,14 +3483,16 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   3,
    1,
    1
   ],
   "matched_courses":[
+   "PSYC1004-1",
+   "BIOL2032-1",
    "GEST3024-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"D1POLI01",
@@ -2618,8 +3500,8 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D1POLI01_C.html",
   "languages":[
-   "nl",
    "fr",
+   "nl",
    "en"
   ],
   "campuses":[
@@ -2638,12 +3520,13 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   2,
    1,
    1
   ],
   "matched_courses":[
-   "GEST3024-1"
+   "GEST3024-1",
+   "PSYC1131-2"
   ],
   "nb_dedicated_courses":1
  },
@@ -2667,16 +3550,49 @@
   ],
   "themes":[
    "climate",
+   "energy",
    "environment",
    "resources"
   ],
   "themes_scores":[
+   2,
    1,
    1,
    1
   ],
   "matched_courses":[
-   "OCEA0053-1"
+   "OCEA0053-1",
+   "PHYS0936-2",
+   "ASTR0204-2"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"M1PHAR01",
+  "name":"Sciences pharmaceutiques",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M1PHAR01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MICR1717-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -2714,6 +3630,35 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"H1HUMS02",
+  "name":"Sciences humaines et sociales (Nouveau programme)",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/H1HUMS02_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Sociales"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "COMU2144-2"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"S1GEOL01",
   "name":"Sciences g\u00e9ologiques",
   "cycle":"bac",
@@ -2738,11 +3683,13 @@
   ],
   "themes_scores":[
    1,
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "OCEA0053-1"
+   "OCEA0053-1",
+   "GEOL0013-5",
+   "BIOL0027-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -2770,15 +3717,20 @@
    "resources"
   ],
   "themes_scores":[
-   2,
-   1,
+   3,
+   5,
    1
   ],
   "matched_courses":[
+   "ENVT0010-1",
+   "GEOG2020-1",
+   "GEOG0217-2",
    "GEOG0630-3",
+   "GEOG0055-1",
+   "BIOL0027-1",
    "OCEA0053-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"G1ECGE01",
@@ -2786,10 +3738,10 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/G1ECGE01_C.html",
   "languages":[
-   "it",
    "de",
-   "es",
+   "it",
    "fr",
+   "es",
    "en"
   ],
   "campuses":[
@@ -2810,12 +3762,69 @@
   "themes_scores":[
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "GRHO0035-1",
    "GEST3024-1"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"M1DENT01",
+  "name":"Sciences dentaires",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M1DENT01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MICR0120-8"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"M1MOTR01",
+  "name":"Sciences de la motricit\u00e9, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M1MOTR01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SBIM0493-2"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"A1ICAR01",
@@ -2841,15 +3850,17 @@
    "sustainability"
   ],
   "themes_scores":[
+   3,
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
+   "ARCH0006-2",
    "ARCH3275-1",
-   "ARCH0009-3"
+   "ARCH0009-3",
+   "ARCH3262-1"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
  },
  {
   "id":"A1ICIV01",
@@ -2857,10 +3868,10 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/A1ICIV01_C.html",
   "languages":[
-   "nl",
    "fr",
-   "de",
-   "en"
+   "nl",
+   "en",
+   "de"
   ],
   "campuses":[
    "Li\u00e8ge Sart-Tilman, Li\u00e8ge Centre-ville"
@@ -2881,15 +3892,17 @@
   "themes_scores":[
    2,
    3,
-   2,
+   4,
    2,
    3
   ],
   "matched_courses":[
-   "GENV0001-2",
    "ARCH3275-1",
    "GENV0002-1",
-   "CHIM9315-1"
+   "GEOL0013-5",
+   "CHIM9315-1",
+   "GEOL0020-7",
+   "GENV0001-2"
   ],
   "nb_dedicated_courses":4
  },
@@ -2908,26 +3921,35 @@
    "Gembloux Agro-Bio Tech"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
+   "energy",
    "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   4,
-   1,
-   2
+   2,
+   8,
+   2,
+   3
   ],
   "matched_courses":[
-   "FORE0001-2",
-   "VEGE0045-1",
    "AGRO0002-1",
+   "ZOOL2019-1",
+   "ENVT2044-1",
+   "INFO2038-1",
+   "PHYS3010-2",
+   "MECA0519-1",
+   "GERE0036-1",
+   "GBLX2131-2",
+   "VEGE0045-1",
+   "CHIM9239-2",
    "AGRO0001-1",
-   "GBLX2131-2"
+   "FORE0001-2"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":4
  },
  {
   "id":"S1CHIM01",
@@ -2959,8 +3981,37 @@
   ],
   "matched_courses":[
    "OCEA0053-1",
-   "CHIM9283-1",
-   "CHIM9283-2"
+   "CHIM9283-2",
+   "CHIM9283-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"M1BIOM01",
+  "name":"Sciences biom\u00e9dicales",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M1BIOM01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MICR0120-9"
   ],
   "nb_dedicated_courses":0
  },
@@ -2985,17 +4036,485 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
-   3,
+   6,
+   2,
    1
   ],
   "matched_courses":[
-   "BIOL0031-1",
+   "BIOL0865-1",
+   "BIOL0518-1",
+   "BIOL2036-1",
    "BIOL2003-1",
+   "BIOL0031-1",
    "OCEA0053-1"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"P1PHIL01",
+  "name":"Philosophie",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1PHIL01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"V1VETE01",
+  "name":"M\u00e9decine v\u00e9t\u00e9rinaire",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/V1VETE01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine V\u00e9t\u00e9rinaire"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "environment",
+   "resources"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "VETE2059-1",
+   "VETE0036-6"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"M1MEDE01",
+  "name":"M\u00e9decine",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M1MEDE01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MICR0120-8"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1GERM01",
+  "name":"Langues et lettres modernes, orientation germaniques",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1GERM01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1MODE01",
+  "name":"Langues et lettres modernes, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1MODE01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1ROMA01",
+  "name":"Langues et lettres fran\u00e7aises et romanes, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1ROMA01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1ANMO01",
+  "name":"Langues et lettres anciennes et modernes",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1ANMO01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1ORIE01",
+  "name":"Langues et lettres anciennes, orientation orientales",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1ORIE01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1CLAS01",
+  "name":"Langues et lettres anciennes, orientation classiques",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1CLAS01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"M1KINE01",
+  "name":"Kin\u00e9sith\u00e9rapie et r\u00e9adaptation",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/M1KINE01_C.html",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SBIM0493-2"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1COMU01",
+  "name":"Information et communication",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1COMU01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1MUSI01",
+  "name":"Histoire de l'art et arch\u00e9ologie, orientation musicologie",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1MUSI01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1HISA01",
+  "name":"Histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1HISA01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"P1HIST01",
+  "name":"Histoire",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/P1HIST01_C.html",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL2032-1"
   ],
   "nb_dedicated_courses":0
  },
@@ -3005,8 +4524,8 @@
   "cycle":"bac",
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/D1DROI01_C.html",
   "languages":[
-   "nl",
    "fr",
+   "nl",
    "de",
    "en"
   ],
@@ -3028,6 +4547,41 @@
   ],
   "matched_courses":[
    "DROI0954-1"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"T1ARCH01",
+  "name":"Architecture",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20212022\/programmes\/T1ARCH01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 d'Architecture"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "energy",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   2
+  ],
+  "matched_courses":[
+   "ARCH0231-2",
+   "TSTG0002-1",
+   "ARCH0090-2",
+   "ARCH3334-1"
   ],
   "nb_dedicated_courses":0
  }

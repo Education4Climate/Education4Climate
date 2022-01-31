@@ -4,6 +4,7 @@ import argparse
 from typing import List
 from os.path import isfile, isdir
 from os import makedirs
+import json
 
 import pandas as pd
 
@@ -11,8 +12,7 @@ from src.score.courses import score_school_courses
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 
-def compare_dictionaries(dictionary1_name: str, dictionary2_name: str,
-                         schools: List[str], year: int, fields: str):
+def compare_dictionaries(dictionary1_name: str, dictionary2_name: str, schools: List[str], year: int):
     """
     Compute scores for a list of schools using two different dictionaries and compares the results
 
@@ -20,7 +20,6 @@ def compare_dictionaries(dictionary1_name: str, dictionary2_name: str,
     :param dictionary2_name: Name of the second dictionary
     :param schools: List of codes of schools for which the comparison is made
     :param year: Year for which the scoring is done
-    :param fields: Data fields to be used for computing scores
 
     :notes:
     Both dictionaries are considered to be stored in data/patterns.
@@ -35,10 +34,10 @@ def compare_dictionaries(dictionary1_name: str, dictionary2_name: str,
             makedirs(output_dir)
         for school in schools:
             # Check whether the output file already exists
-            if isfile(f"{output_dir}/{school}_scoring_{year}.csv"):
+            if isfile(f"{output_dir}/{school}_courses_scoring_{year}.csv"):
                 continue
             print(f"Computing scores for school {school}")
-            score_school_courses(school, year, fields, output_dir, dictionary_name)
+            score_school_courses(school, year, output_dir, dictionary_name)
 
     print(f"Computing scores for dictionary {dictionary1_name}\n--------------------------------")
     output_dir_1 = str(
@@ -59,7 +58,7 @@ def compare_dictionaries(dictionary1_name: str, dictionary2_name: str,
         for school in schools:
 
             # Load scores
-            courses_scores_ds = pd.read_csv(f"{output_dir}/{school}_scoring_{year}.csv",
+            courses_scores_ds = pd.read_csv(f"{output_dir}/{school}_courses_scoring_{year}.csv",
                                             dtype={'id': str}).set_index("id")
             # Keep only courses with a positive score
             courses_scores_ds = courses_scores_ds[courses_scores_ds.sum(axis=1) > 0]
@@ -68,12 +67,27 @@ def compare_dictionaries(dictionary1_name: str, dictionary2_name: str,
             courses_fn = \
                 Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
             courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str}).set_index("id")
-            courses_df = courses_df.loc[courses_scores_ds.index, "name"]
+            courses_df = courses_df.loc[courses_scores_ds.index, ["name", 'url']]
+
+            # Get pattern that matched
+            courses_df["patterns"] = pd.Series(index=courses_df.index, dtype=object)
+            matches = json.load(open(f"{output_dir}/{school}_matches_{year}.json"))
+            for course_id, name in courses_df["name"].items():
+                course_matches = matches[f"{course_id}: {name}"]
+                patterns_list = []
+                for language in course_matches.keys():
+                    # print(list(course_matches[language].keys()))
+                     patterns_list += list(course_matches[language].keys())
+                courses_df["patterns"].loc[course_id] = patterns_list
 
             # Add to the main dataframe
             courses_df = pd.DataFrame({"university": pd.Series([school]*len(courses_df), dtype=str),
                                        "id": courses_df.index,
-                                       "name": courses_df.values}, dtype=str)
+                                       "name": courses_df['name'].values,
+                                       "url": courses_df['url'].values,
+                                       "patterns": courses_df['patterns'].values
+                                       },
+                                      dtype=str)
             results_df = pd.concat((results_df, courses_df), axis=0)
 
         return results_df
@@ -103,13 +117,8 @@ if __name__ == '__main__':
     parser.add_argument("-d1", "--dictionary1_name", help="Name of the first dictionary")
     parser.add_argument("-d2", "--dictionary2_name", help="Name of the second dictionary")
     parser.add_argument("-y", "--year", help="Academic year", default=YEAR)
-    # TODO: this will need to change if use different fields for each school ==> need to create a file for this
-    parser.add_argument("-f", "--fields", default="name,content",
-                        help="Specify the field(s) on which we compute the score."
-                             " If several fields, they need to be separated by a ','")
 
-    # TODO: add kuleuven, uantwerp, uclouvain
-    schools = ["ugent", "uhasselt", "ulb", "uliege", "umons", "unamur", "uslb", "vub"]
+    schools = ["ulb"]
 
     arguments = vars(parser.parse_args())
     arguments['schools'] = schools

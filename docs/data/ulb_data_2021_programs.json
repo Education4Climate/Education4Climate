@@ -1,5 +1,67 @@
 [
  {
+  "id":"POLI4-J",
+  "name":"Master en sciences politiques (60 cr\u00e9dits) , option JOUR",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/poli4-j",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "POLI-O417"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"M-SAPUH",
+  "name":"Master en sciences de la sant\u00e9 publique \u00e0 finalit\u00e9 Politiques, syst\u00e8mes et promotion de la sant\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-sapuh",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Erasme"
+  ],
+  "faculties":[
+   "\u00c9cole de Sant\u00e9 publique"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   2
+  ],
+  "matched_courses":[
+   "ENVI-F5002",
+   "SAPU-L4021",
+   "ENVI-L5211"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
   "id":"M-SAPUE",
   "name":"Master en sciences de la sant\u00e9 publique \u00e0 finalit\u00e9 Sant\u00e9 environnementale",
   "cycle":"master",
@@ -23,15 +85,235 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   14,
    1,
+   5
+  ],
+  "matched_courses":[
+   "ENVI-F5002",
+   "ENVI-F510",
+   "ENVI-L5210",
+   "ENVI-L504",
+   "ENVI-F452",
+   "ENVI-L4110",
+   "ENVI-L505",
+   "ENVI-F403",
+   "ENVI-F434",
+   "ENVI-L4111",
+   "ENVI-D500",
+   "SAPU-L4021",
+   "ENVI-L510",
+   "MEMO-L503",
+   "ENVI-L5211"
+  ],
+  "nb_dedicated_courses":13
+ },
+ {
+  "id":"M-PHARS",
+  "name":"Master en sciences pharmaceutiques \u00e0 finalit\u00e9 Sp\u00e9cialis\u00e9e",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-phars",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Pharmacie"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MEDI-J401"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"M-SAPUG",
+  "name":"Master en sciences de la sant\u00e9 publique \u00e0 finalit\u00e9 Gestion des \u00e9tablissements et services de soins",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-sapug",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Erasme"
+  ],
+  "faculties":[
+   "\u00c9cole de Sant\u00e9 publique"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
    2
   ],
   "matched_courses":[
-   "ENVI-F510",
-   "ENVI-D500"
+   "ENVI-F5002",
+   "SAPU-L4021",
+   "ENVI-L5211"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"M-SAPUB",
+  "name":"Master en sciences de la sant\u00e9 publique \u00e0 finalit\u00e9 Epid\u00e9miologie et biostatistique",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-sapub",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Erasme"
+  ],
+  "faculties":[
+   "\u00c9cole de Sant\u00e9 publique"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   2
+  ],
+  "matched_courses":[
+   "ENVI-F5002",
+   "SAPU-L4021",
+   "ENVI-L5211"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"MS-METRA",
+  "name":"Master de sp\u00e9cialisation en m\u00e9decine du travail",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-metra",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Erasme"
+  ],
+  "faculties":[
+   "\u00c9cole de Sant\u00e9 publique"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "ENVI-L504"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MS-COSM",
+  "name":"Master  de sp\u00e9cialisation en Dermopharmacie et cosm\u00e9tologie",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-cosm",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Erasme"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Pharmacie"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHAR-J653"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"MS-TRANL",
+  "name":"Master de sp\u00e9cialisation en transport et logistique",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-tranl",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Flagey"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "MSTL-F607",
+   "MSTL-F602",
+   "MSTL-F611"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MS-EURI",
+  "name":"Master de sp\u00e9cialisation interdisciplinaire en \u00e9tudes europ\u00e9ennes",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-euri",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "UMons"
+  ],
+  "faculties":[
+   "Institut d'\u00c9tudes europ\u00e9ennes"
+  ],
+  "fields":[
+   "Political Sciences"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "ECON-S418"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"MS-URDE",
@@ -43,7 +325,7 @@
    "en"
   ],
   "campuses":[
-   "UMons"
+   "Autre campus"
   ],
   "faculties":[
    "\u00c9cole polytechnique de Bruxelles",
@@ -54,19 +336,23 @@
    "Architecture"
   ],
   "themes":[
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    2,
-   3
+   1,
+   4
   ],
   "matched_courses":[
-   "URBA-P9006",
    "URBA-H9009",
+   "URBA-H9002",
+   "ARCH-H502",
+   "URBA-P9009",
    "ARCH-H400"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
  },
  {
   "id":"MS-MTDU",
@@ -77,7 +363,7 @@
    "fr"
   ],
   "campuses":[
-   "Solbosch"
+   "UMons"
   ],
   "faculties":[
    "Facult\u00e9 d'Architecture La Cambre Horta"
@@ -86,45 +372,48 @@
    "Architecture"
   ],
   "themes":[
+   "climate",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   1,
    1
   ],
   "matched_courses":[
-   "URBA-Y701",
-   "URBA-Y700"
+   "URBA-Y707",
+   "URBA-Y700",
+   "URBA-Y701"
   ],
   "nb_dedicated_courses":0
  },
  {
-  "id":"MS-DINT",
-  "name":"Master de sp\u00e9cialisation en droit international",
+  "id":"MS-FINA",
+  "name":"Master de sp\u00e9cialisation en microfinance",
   "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-dint",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-fina",
   "languages":[
-   "fr",
    "en"
   ],
   "campuses":[
    "Solbosch"
   ],
   "faculties":[
-   "Facult\u00e9 de Droit et de Criminologie"
+   "Solvay Brussels School of Economics and Management"
   ],
   "fields":[
-   "Law & Criminology"
+   "Economy",
+   "Management"
   ],
   "themes":[
-   "environment"
+   "sustainability"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "DROI-C5150"
+   "GEST-S604"
   ],
   "nb_dedicated_courses":0
  },
@@ -166,7 +455,7 @@
    "fr"
   ],
   "campuses":[
-   "UMons"
+   "Solbosch"
   ],
   "faculties":[
    "Facult\u00e9 de Droit et de Criminologie"
@@ -186,6 +475,38 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"MS-DINT",
+  "name":"Master de sp\u00e9cialisation en droit international",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-dint",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit et de Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "DROI-C5150",
+   "DROI-C4014"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"MS-PHIP",
   "name":"Master de sp\u00e9cialisation en Philosophie et Th\u00e9orie Politiques",
   "cycle":"master",
@@ -195,7 +516,7 @@
    "en"
   ],
   "campuses":[
-   "Solbosch"
+   "Hors campus ULB"
   ],
   "faculties":[
    "Facult\u00e9 de Philosophie et Sciences sociales"
@@ -205,6 +526,7 @@
    "Sociology"
   ],
   "themes":[
+   "climate",
    "environment",
    "resources",
    "sustainability"
@@ -212,19 +534,94 @@
   "themes_scores":[
    1,
    1,
+   1,
    1
   ],
   "matched_courses":[
+   "DROI-C5100",
    "ENVI-D500"
   ],
   "nb_dedicated_courses":1
  },
  {
-  "id":"MA-BIMED",
-  "name":"Master en sciences biom\u00e9dicales",
+  "id":"MS-SOCA",
+  "name":"Master de sp\u00e9cialisation en sociologie-anthropologie",
   "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-bimed",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-soca",
   "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Autre campus"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SOCA-D4996"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MA-IRCN",
+  "name":"Master : ing\u00e9nieur civil des constructions",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-ircn",
+  "languages":[
+   "",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "\u00c9cole polytechnique de Bruxelles",
+   "Bruface"
+  ],
+  "fields":[
+   "Engineering",
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   2,
+   1,
+   3
+  ],
+  "matched_courses":[
+   "CNST-H422",
+   "CNST-H517",
+   "CNST-Y503",
+   "CNST-H306",
+   "CHIM-H528"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MA-IRCB",
+  "name":"Master : ing\u00e9nieur civil biom\u00e9dical",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-ircb",
+  "languages":[
+   "",
    "fr",
    "en"
   ],
@@ -232,38 +629,10 @@
    "Solbosch"
   ],
   "faculties":[
-   "Facult\u00e9 de M\u00e9decine"
+   "\u00c9cole polytechnique de Bruxelles"
   ],
   "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "BIME-G5505"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"M-PHARS",
-  "name":"Master en sciences pharmaceutiques \u00e0 finalit\u00e9 Sp\u00e9cialis\u00e9e",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-phars",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Plaine"
-  ],
-  "faculties":[
-   "Facult\u00e9 de Pharmacie"
-  ],
-  "fields":[
-   "Pharmacy"
+   "Engineering"
   ],
   "themes":[
    "environment",
@@ -274,73 +643,8 @@
    1
   ],
   "matched_courses":[
-   "MEDI-J401",
-   "PHAR-J902"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"MA-IRPH",
-  "name":"Master : ing\u00e9nieur civil physicien",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irph",
-  "languages":[
-   "fr",
-   "",
-   "en"
-  ],
-  "campuses":[
-   "Plaine"
-  ],
-  "faculties":[
-   "\u00c9cole polytechnique de Bruxelles"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "BIME-G5505"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"MA-IRMA",
-  "name":"Master : ing\u00e9nieur civil en chimie et science des mat\u00e9riaux",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irma",
-  "languages":[
-   "fr",
-   "",
-   "en"
-  ],
-  "campuses":[
-   "Plaine"
-  ],
-  "faculties":[
-   "\u00c9cole polytechnique de Bruxelles"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   2,
-   3
-  ],
-  "matched_courses":[
-   "CHIM-H522",
-   "BIME-G5505",
-   "CHIM-H504",
-   "CHIM-H409"
+   "CHIM-H528",
+   "ENVI-L4110"
   ],
   "nb_dedicated_courses":1
  },
@@ -350,8 +654,9 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irar",
   "languages":[
-   "fr",
+   "",
    "nl",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -366,18 +671,128 @@
    "Engineering"
   ],
   "themes":[
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   1,
+   3
+  ],
+  "matched_courses":[
+   "ARCH-H502",
+   "ARCH-H400",
+   "CHIM-H528"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MA-IRPH",
+  "name":"Master : ing\u00e9nieur civil physicien",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irph",
+  "languages":[
+   "",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   2,
+   1,
    2
   ],
   "matched_courses":[
-   "ARCH-H400",
-   "BIME-G5505"
+   "PHYS-H515",
+   "CHIM-H528",
+   "GEST-H506"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MA-IRMA",
+  "name":"Master : ing\u00e9nieur civil en chimie et science des mat\u00e9riaux",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irma",
+  "languages":[
+   "",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   2,
+   2
+  ],
+  "matched_courses":[
+   "CHIM-H409",
+   "CHIM-H504",
+   "CHIM-H522",
+   "GEST-S471",
+   "CHIM-H528"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"MA-IRIF",
+  "name":"Master :  ing\u00e9nieur civil en informatique",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irif",
+  "languages":[
+   "",
+   "nl",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "CHIM-H528"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"MA-IREM",
@@ -385,13 +800,13 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irem",
   "languages":[
-   "fr",
+   "",
    "nl",
-   "en",
-   ""
+   "fr",
+   "en"
   ],
   "campuses":[
-   "Plaine"
+   "Solbosch"
   ],
   "faculties":[
    "\u00c9cole polytechnique de Bruxelles"
@@ -400,18 +815,27 @@
    "Engineering"
   ],
   "themes":[
+   "climate",
    "energy",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
-   1
+   3,
+   2,
+   3
   ],
   "matched_courses":[
    "MECA-H418",
-   "MECA-H414"
+   "MECA-H417",
+   "MECA-H414",
+   "GEST-H506",
+   "GEST-S471",
+   "CHIM-H528",
+   "ELEC-Y502"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":4
  },
  {
   "id":"MA-IREL",
@@ -419,39 +843,8 @@
   "cycle":"master",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irel",
   "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "\u00c9cole polytechnique de Bruxelles",
-   "Bruface"
-  ],
-  "fields":[
-   "Engineering",
-   "Engineering"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "BIME-G5505"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"MA-IRCN",
-  "name":"Master : ing\u00e9nieur civil des constructions",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-ircn",
-  "languages":[
-   "fr",
    "",
+   "fr",
    "en"
   ],
   "campuses":[
@@ -472,37 +865,7 @@
    1
   ],
   "matched_courses":[
-   "BIME-G5505"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"MA-IRCB",
-  "name":"Master : ing\u00e9nieur civil biom\u00e9dical",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-ircb",
-  "languages":[
-   "fr",
-   "",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "\u00c9cole polytechnique de Bruxelles"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "BIME-G5505"
+   "CHIM-H528"
   ],
   "nb_dedicated_courses":0
  },
@@ -516,213 +879,6 @@
    "en"
   ],
   "campuses":[
-   "Plaine"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "energy",
-   "environment",
-   "sustainability"
-  ],
-  "themes_scores":[
-   4,
-   1,
-   2,
-   1
-  ],
-  "matched_courses":[
-   "ENVI-F405",
-   "GEOG-F400",
-   "GEOL-F428",
-   "CHIM-H302"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"MA-IRBE",
-  "name":"Master : bioing\u00e9nieur en sciences et technologies de l'environnement",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irbe",
-  "languages":[
-   "fr",
-   "",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences",
-   "\u00c9cole polytechnique de Bruxelles"
-  ],
-  "fields":[
-   "Science",
-   "Engineering"
-  ],
-  "themes":[
-   "climate",
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   3,
-   2,
-   4,
-   1,
-   5
-  ],
-  "matched_courses":[
-   "ENVI-F454",
-   "ENVI-F409",
-   "GEOG-F400",
-   "BIOL-F417",
-   "CHIM-H504",
-   "ENVI-F510",
-   "ENVI-F405",
-   "BING-H5001"
-  ],
-  "nb_dedicated_courses":4
- },
- {
-  "id":"MA-IRBC",
-  "name":"Master : bioing\u00e9nieur en chimie et bioindustries",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irbc",
-  "languages":[
-   "fr",
-   "",
-   "en"
-  ],
-  "campuses":[
-   "Plaine"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences",
-   "\u00c9cole polytechnique de Bruxelles"
-  ],
-  "fields":[
-   "Science",
-   "Engineering"
-  ],
-  "themes":[
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   1,
-   1
-  ],
-  "matched_courses":[
-   "BING-H5001"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"M-GEOGT",
-  "name":"Master en sciences g\u00e9ographiques, orientation g\u00e9n\u00e9rale \u00e0 finalit\u00e9 D\u00e9veloppement territorial",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-geogt",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   4,
-   1,
-   3,
-   1,
-   3
-  ],
-  "matched_courses":[
-   "GEOG-F400",
-   "ENVI-F437",
-   "ENVI-F1001",
-   "ENVI-F510",
-   "ENVI-F405",
-   "ENVI-F409"
-  ],
-  "nb_dedicated_courses":4
- },
- {
-  "id":"M-ENVIG",
-  "name":"Master en sciences et gestion de l'environnement \u00e0 finalit\u00e9 Gestion de l'environnement",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-envig",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-   "Plaine"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   3,
-   2,
-   5,
-   3,
-   5
-  ],
-  "matched_courses":[
-   "ENVI-F454",
-   "ENVI-D500",
-   "ENVI-F437",
-   "ENVI-F438",
-   "ENVI-F510",
-   "ENVI-F405",
-   "BING-F1001",
-   "ENVI-F409"
-  ],
-  "nb_dedicated_courses":6
- },
- {
-  "id":"M-ENVIE",
-  "name":"Master en sciences et gestion de l'environnement \u00e0 finalit\u00e9 Sciences de l'environnement",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-envie",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
    "Solbosch"
   ],
   "faculties":[
@@ -738,59 +894,64 @@
    "sustainability"
   ],
   "themes_scores":[
+   7,
+   1,
    6,
-   1,
-   5,
-   4
+   2
   ],
   "matched_courses":[
-   "GEOG-F400",
-   "BIOL-F417",
-   "ENVI-F437",
-   "CHIM-F474",
-   "GEOL-F428",
-   "ENVI-F510",
    "ENVI-F405",
-   "GEOG-Y001",
-   "ENVI-F409"
+   "GEOL-F428",
+   "GEOG-F408",
+   "GEOL-F414",
+   "BIOL-F4002",
+   "GEOG-F410",
+   "GEOL-F4004",
+   "GEOG-F400",
+   "ENVI-F526",
+   "CHIM-H302",
+   "GEOL-F432",
+   "GEOL-F426"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":4
  },
  {
-  "id":"MA-IRBA",
-  "name":"Master : bioing\u00e9nieur en sciences agronomiques",
+  "id":"MA-CHIM",
+  "name":"Master en sciences chimiques",
   "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irba",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-chim",
   "languages":[
    "fr",
+   "",
    "en"
   ],
   "campuses":[
-   "Plaine"
+   "Hors campus ULB"
   ],
   "faculties":[
-   "Facult\u00e9 des Sciences",
-   "\u00c9cole polytechnique de Bruxelles"
+   "Facult\u00e9 des Sciences"
   ],
   "fields":[
-   "Science",
-   "Engineering"
+   "Science"
   ],
   "themes":[
+   "climate",
+   "energy",
    "environment",
-   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   4,
    1,
+   2,
+   2,
    1
   ],
   "matched_courses":[
-   "BING-F430",
-   "BING-F4001",
-   "BING-F431",
-   "BING-H5001"
+   "CHIM-F474",
+   "CHIM-F423",
+   "CHIM-F430",
+   "CHIM-F415",
+   "ENVI-F526"
   ],
   "nb_dedicated_courses":2
  },
@@ -823,16 +984,61 @@
    4,
    1,
    2,
-   1,
+   2,
    1
   ],
   "matched_courses":[
    "ENVI-F1001",
    "ENVI-F405",
-   "GEOG-F400",
-   "ENVI-F437"
+   "ENVI-F437",
+   "GEOG-F400"
   ],
   "nb_dedicated_courses":2
+ },
+ {
+  "id":"M-GEOGT",
+  "name":"Master en sciences g\u00e9ographiques, orientation g\u00e9n\u00e9rale \u00e0 finalit\u00e9 D\u00e9veloppement territorial",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-geogt",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   1,
+   7,
+   2,
+   3
+  ],
+  "matched_courses":[
+   "ENVI-F1001",
+   "ENVI-F405",
+   "ENVI-F510",
+   "ENVI-F403",
+   "ENVI-F434",
+   "ENVI-F4001",
+   "ENVI-F409",
+   "ENVI-F437",
+   "GEOG-F400"
+  ],
+  "nb_dedicated_courses":6
  },
  {
   "id":"M-GEOGE",
@@ -854,25 +1060,29 @@
    "Science"
   ],
   "themes":[
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    2,
-   3
+   2,
+   5
   ],
   "matched_courses":[
-   "URBA-P9006",
-   "ARCH-H400",
-   "URBA-H9009"
+   "PROJ-P4311",
+   "URBA-H9009",
+   "ARCH-H502",
+   "GEOG-Y035",
+   "ARCH-H400"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
  },
  {
-  "id":"MA-TOUR",
-  "name":"Master en sciences et gestion du tourisme",
+  "id":"MA-BINF",
+  "name":"Master en bioinformatique et mod\u00e9lisation",
   "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-tour",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-binf",
   "languages":[
    "fr",
    "en"
@@ -887,51 +1097,17 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "TOUR-F425"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"MA-CHIM",
-  "name":"Master en sciences chimiques",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-chim",
-  "languages":[
-   "fr",
-   "",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy",
    "environment",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
    1
   ],
   "matched_courses":[
-   "CHIM-F474",
-   "CHIM-F423",
-   "CHIM-F430"
+   "BING-F525"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
  },
  {
   "id":"M-BIORA",
@@ -954,20 +1130,31 @@
   "themes":[
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   10,
+   1,
+   2
   ],
   "matched_courses":[
    "ENVI-Y018",
-   "BIOL-Y030",
+   "BING-F410",
+   "BIOL-F449",
+   "ENVI-Y029",
+   "BIOL-F4002",
+   "BIOL-Y114",
+   "BIOL-Y001",
    "BIOL-Y023",
-   "ENVI-Y029"
+   "BIOL-Y030",
+   "BIOL-F461",
+   "BIOL-F441",
+   "BIOL-F450",
+   "BIOL-Y020"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":8
  },
  {
   "id":"M-BIORE",
@@ -996,60 +1183,382 @@
   "themes_scores":[
    4,
    1,
-   1,
+   15,
+   3
+  ],
+  "matched_courses":[
+   "ENVI-F405",
+   "BIOL-Y149",
+   "BIOL-Y181",
+   "BIOL-Y010",
+   "ENVI-F452",
+   "BIOL-F417",
+   "BIOL-Y190",
+   "BIOL-F4002",
+   "ENVI-F409",
+   "BIOL-Y114",
+   "BIOL-Y001",
+   "BIOL-Y191",
+   "BIOL-Y176",
+   "BIOL-Y159",
+   "GEOG-F400",
+   "BIOL-Y088",
+   "BIOL-Y178",
+   "BIOL-Y020"
+  ],
+  "nb_dedicated_courses":11
+ },
+ {
+  "id":"M-BIORD",
+  "name":"Master en biologie des organismes et \u00e9cologie \u00e0 finalit\u00e9 Didactique",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-biord",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    2
   ],
   "matched_courses":[
-   "GEOG-F400",
-   "BIOL-F417",
-   "BIOL-Y088",
-   "ENVI-F405",
-   "ENVI-F409"
+   "BIOL-F450",
+   "BIOL-F449"
   ],
   "nb_dedicated_courses":2
  },
  {
-  "id":"MA-ECON",
-  "name":"Master en sciences \u00e9conomiques",
+  "id":"MA-TOUR",
+  "name":"Master en sciences et gestion du tourisme",
   "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-econ",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-tour",
   "languages":[
    "fr",
-   "nl",
-   "en",
-   "de"
+   "en"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   2
+  ],
+  "matched_courses":[
+   "TOUR-F407",
+   "ENVI-F452",
+   "ENVI-F403",
+   "TOUR-F425"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MA-IRBE",
+  "name":"Master : bioing\u00e9nieur en sciences et technologies de l'environnement",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irbe",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Autre campus"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences",
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "fields":[
+   "Science",
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   5,
+   2,
+   10,
+   2,
+   6
+  ],
+  "matched_courses":[
+   "BING-F410",
+   "ENVI-F405",
+   "ENVI-F510",
+   "BIOL-F441",
+   "ENVI-F454",
+   "ENVI-F452",
+   "GEOL-F414",
+   "ENVI-F434",
+   "ENVI-F409",
+   "CHIM-H504",
+   "ENVI-F526",
+   "BING-F525",
+   "BIOL-F417",
+   "GEOG-F400",
+   "BING-H5001"
+  ],
+  "nb_dedicated_courses":6
+ },
+ {
+  "id":"MA-IRBC",
+  "name":"Master : bioing\u00e9nieur en chimie et bioindustries",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irbc",
+  "languages":[
+   "fr",
+   "en"
   ],
   "campuses":[
    "Solbosch"
   ],
   "faculties":[
-   "Solvay Brussels School of Economics and Management"
+   "Facult\u00e9 des Sciences",
+   "\u00c9cole polytechnique de Bruxelles"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Science",
+   "Engineering"
   ],
   "themes":[
+   "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
-   "BIME-G5505"
+   "BING-H5001"
   ],
   "nb_dedicated_courses":0
  },
  {
-  "id":"MA-GEST",
-  "name":"Master en sciences de gestion",
+  "id":"MA-IRBA",
+  "name":"Master : bioing\u00e9nieur en sciences agronomiques",
   "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-gest",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-irba",
   "languages":[
-   "de",
-   "nl",
-   "jp",
-   "ar",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Flagey"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences",
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "fields":[
+   "Science",
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   8,
+   1
+  ],
+  "matched_courses":[
+   "BING-F403",
+   "BING-F5001",
+   "BING-F431",
+   "BING-F4004",
+   "BING-F4006",
+   "BING-H5001",
+   "BING-F4001",
+   "BING-F430"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"MA-ARCH",
+  "name":"Master en architecture",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-arch",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 d'Architecture La Cambre Horta"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   5,
+   2,
+   4
+  ],
+  "matched_courses":[
+   "ARCH-P7111",
+   "ARCH-P8119",
+   "PROJ-P4311",
+   "ARCH-P7120",
+   "PROJ-P4307",
+   "PROJ-P5311"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"M-ENVIE",
+  "name":"Master en sciences et gestion de l'environnement \u00e0 finalit\u00e9 Sciences de l'environnement",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-envie",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   9,
+   1,
+   12,
+   2,
+   5
+  ],
+  "matched_courses":[
+   "CHIM-F474",
+   "ENVI-F405",
+   "ENVI-F510",
+   "BIOL-F441",
+   "GEOL-F428",
+   "GEOG-F408",
+   "ENVI-F452",
+   "ENVI-F501",
+   "GEOL-F414",
+   "ENVI-F409",
+   "GEOG-F410",
+   "ENVI-F437",
+   "BING-F525",
+   "BIOL-F417",
+   "GEOG-F400",
+   "ENVI-F526",
+   "GEOG-Y001",
+   "GEOL-F432"
+  ],
+  "nb_dedicated_courses":9
+ },
+ {
+  "id":"M-ENVIG",
+  "name":"Master en sciences et gestion de l'environnement \u00e0 finalit\u00e9 Gestion de l'environnement",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/m-envig",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   2,
+   18,
+   5,
+   12
+  ],
+  "matched_courses":[
+   "ENVI-F504",
+   "ENVI-F510",
+   "ENVI-F4001",
+   "ENVI-F437",
+   "ENVI-F438",
+   "ENVI-F5002",
+   "BING-F1001",
+   "ENVI-L5210",
+   "ENVI-L4110",
+   "ENVI-F409",
+   "SOCA-D4996",
+   "ENVI-D500",
+   "ENVI-F405",
+   "ENVI-F452",
+   "ENVI-F501",
+   "ENVI-F529",
+   "ENVI-F403",
+   "ENVI-F531",
+   "ENVI-F434",
+   "TOUR-F407",
+   "ENVI-F5001",
+   "ENVI-L505",
+   "ETHI-F201",
+   "ENVI-F454"
+  ],
+  "nb_dedicated_courses":17
+ },
+ {
+  "id":"MA-INGE",
+  "name":"Master en ing\u00e9nieur de gestion",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-inge",
+  "languages":[
    "fr",
    "en"
   ],
@@ -1064,13 +1573,89 @@
    "Management"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "DROI-S400"
+   "GEST-S471",
+   "GEST-S407",
+   "GEST-S442"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"MA-ECON",
+  "name":"Master en sciences \u00e9conomiques",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-econ",
+  "languages":[
+   "nl",
+   "",
+   "de",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Solvay Brussels School of Economics and Management"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "GEST-S472",
+   "ECON-S418"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"MA-GEST",
+  "name":"Master en sciences de gestion",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-gest",
+  "languages":[
+   "nl",
+   "de",
+   "jp",
+   "fr",
+   "ar",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Solvay Brussels School of Economics and Management"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "DROI-S400",
+   "GEST-S472",
+   "GEST-S471"
   ],
   "nb_dedicated_courses":0
  },
@@ -1081,7 +1666,7 @@
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-droi",
   "languages":[
    "fr",
-   "nl",
+   "",
    "en"
   ],
   "campuses":[
@@ -1094,25 +1679,64 @@
    "Law & Criminology"
   ],
   "themes":[
+   "climate",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   2,
+   6,
+   1,
+   2
+  ],
+  "matched_courses":[
+   "DROI-C5100",
+   "DROI-C5125",
+   "DROI-C5021",
+   "DROI-C4014",
+   "ENVI-F403",
+   "ENVI-F434",
+   "DROI-C5150",
+   "DROI-C5153"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MA-PHYS",
+  "name":"Master en sciences physiques",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-phys",
+  "languages":[
+   "fr",
+   "",
+   "en"
+  ],
+  "campuses":[
+   "Autre campus"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "DROI-C5150",
-   "DROI-C5021",
-   "DROI-C5153"
+   "GEOL-F4004"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
  },
  {
-  "id":"MA-ETEU",
-  "name":"Master en \u00e9tudes europ\u00e9ennes",
+  "id":"MA-POLI",
+  "name":"Master en sciences politiques, orientation g\u00e9n\u00e9rale",
   "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-eteu",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-poli",
   "languages":[
    "fr",
    "en"
@@ -1128,13 +1752,80 @@
    "Sociology"
   ],
   "themes":[
+   "environment",
    "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ENVI-F531"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MA-PPHIL",
+  "name":"Master en philosophie",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-pphil",
+  "languages":[
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "SOCA-Y506"
+   "DROI-C5100"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"MA-PINT",
+  "name":"Master en sciences politiques, orientation relations internationales",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-pint",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Charleroi Ville Haute"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "DROI-C5150",
+   "POLI-D445",
+   "POLI-O417"
   ],
   "nb_dedicated_courses":1
  },
@@ -1168,40 +1859,6 @@
   "nb_dedicated_courses":0
  },
  {
-  "id":"MA-PINT",
-  "name":"Master en sciences politiques, orientation relations internationales",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-pint",
-  "languages":[
-   "fr",
-   "nl",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Facult\u00e9 de Philosophie et Sciences sociales"
-  ],
-  "fields":[
-   "Philosophy",
-   "Sociology"
-  ],
-  "themes":[
-   "climate",
-   "environment"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ],
-  "matched_courses":[
-   "DROI-C5150",
-   "POLI-D445"
-  ],
-  "nb_dedicated_courses":0
- },
- {
   "id":"MA-PETHI",
   "name":"Master en \u00e9thique",
   "cycle":"master",
@@ -1227,17 +1884,271 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   3,
    2,
-   2
+   7,
+   2,
+   5
   ],
   "matched_courses":[
+   "ENVI-F5002",
    "ENVI-F1001",
+   "DROI-C5100",
+   "ENVI-F510",
+   "ENVI-F403",
+   "ETHI-F201",
+   "ENVI-F434",
    "ENVI-D500",
-   "ENVI-F510"
+   "HIST-D401"
+  ],
+  "nb_dedicated_courses":6
+ },
+ {
+  "id":"MA-HHIST",
+  "name":"Master en histoire",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-hhist",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "ENVI-F434",
+   "HIST-D401"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MA-HHAAR",
+  "name":"Master en histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-hhaar",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SOCA-D4996"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MA-ETEU",
+  "name":"Master en \u00e9tudes europ\u00e9ennes",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-eteu",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "POLI-O417",
+   "SOCA-Y506",
+   "ECON-Y506"
   ],
   "nb_dedicated_courses":3
+ },
+ {
+  "id":"MA-COOP",
+  "name":"Master en sciences de la population et du d\u00e9veloppement",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-coop",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "TOUR-F407",
+   "SOCA-D4996",
+   "ENVI-F403"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MA-ANTR",
+  "name":"Master en anthropologie",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-antr",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SOCA-D4996"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"BA-VETE",
+  "name":"Bachelier en m\u00e9decine v\u00e9t\u00e9rinaire",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-vete",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "VETE-G2206"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"BA-MEDI",
+  "name":"Bachelier en m\u00e9decine",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-medi",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MEDI-G3605"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"BA-IRAR",
+  "name":"Bachelier en sciences de l'ing\u00e9nieur, orientation ing\u00e9nieur civil architecte",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-irar",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "CNST-H306"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"BA-IRCI",
@@ -1271,107 +2182,6 @@
   "nb_dedicated_courses":0
  },
  {
-  "id":"BA-GEOG",
-  "name":"Bachelier en sciences g\u00e9ographiques, orientation g\u00e9n\u00e9rale",
-  "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-geog",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "resources"
-  ],
-  "themes_scores":[
-   2,
-   1,
-   1
-  ],
-  "matched_courses":[
-   "ENVI-F1001",
-   "GEOG-F102"
-  ],
-  "nb_dedicated_courses":1
- },
- {
-  "id":"BA-CHIM",
-  "name":"Bachelier en sciences chimiques",
-  "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-chim",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Plaine"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "resources"
-  ],
-  "themes_scores":[
-   2,
-   1,
-   1
-  ],
-  "matched_courses":[
-   "ETHI-F301",
-   "ENVI-F1001"
-  ],
-  "nb_dedicated_courses":1
- },
- {
-  "id":"BA-MATH",
-  "name":"Bachelier en sciences math\u00e9matiques",
-  "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-math",
-  "languages":[
-   "fr",
-   "en"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "environment",
-   "resources"
-  ],
-  "themes_scores":[
-   2,
-   1,
-   1
-  ],
-  "matched_courses":[
-   "ETHI-F301",
-   "ENVI-F1001"
-  ],
-  "nb_dedicated_courses":1
- },
- {
   "id":"BA-IRBI",
   "name":"Bachelier en sciences de l'ing\u00e9nieur, orientation bioing\u00e9nieur",
   "cycle":"bac",
@@ -1395,29 +2205,33 @@
    "climate",
    "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    3,
    2,
    4,
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "ENVI-F454",
-   "ETHI-F301",
-   "BING-F305",
    "ELEC-H201",
+   "BING-F202",
+   "BING-F1001",
+   "ETHI-F201",
+   "BING-F305",
    "CHIM-H302",
-   "BING-F1001"
+   "ETHI-F301",
+   "ENVI-F454"
   ],
   "nb_dedicated_courses":3
  },
  {
-  "id":"BA-INFO",
-  "name":"Bachelier en sciences informatiques",
+  "id":"BA-PHYS",
+  "name":"Bachelier en sciences physiques",
   "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-info",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-phys",
   "languages":[
    "fr",
    "en"
@@ -1433,9 +2247,9 @@
   ],
   "themes":[
    "climate",
-   "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
@@ -1445,18 +2259,20 @@
   ],
   "matched_courses":[
    "ETHI-F301",
-   "ELEC-H201",
-   "ENVI-F1001"
+   "ENVI-F1001",
+   "ETHI-F201"
   ],
   "nb_dedicated_courses":1
  },
  {
-  "id":"BA-GEOL",
-  "name":"Bachelier en sciences g\u00e9ologiques",
+  "id":"BA-MATH",
+  "name":"Bachelier en sciences math\u00e9matiques",
   "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-geol",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-math",
   "languages":[
-   "fr"
+   "fr",
+   "",
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -1470,27 +2286,110 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   3,
+   2,
+   1,
    1,
    1
   ],
   "matched_courses":[
    "ETHI-F301",
    "ENVI-F1001",
-   "GEOG-F102"
+   "ETHI-F201"
   ],
   "nb_dedicated_courses":1
  },
  {
-  "id":"BA-PHYS",
-  "name":"Bachelier en sciences physiques",
+  "id":"BA-INFO",
+  "name":"Bachelier en sciences informatiques",
   "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-phys",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-info",
   "languages":[
-   "fr"
+   "fr",
+   "",
+   "en"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ETHI-F301",
+   "ENVI-F1001",
+   "ELEC-H201",
+   "ETHI-F201"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"BA-GEOL",
+  "name":"Bachelier en sciences g\u00e9ologiques",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-geol",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Flagey"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ENVI-F1001",
+   "GEOG-F102",
+   "GEOG-F203",
+   "ETHI-F201",
+   "ETHI-F301"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"BA-GEOG",
+  "name":"Bachelier en sciences g\u00e9ographiques, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-geog",
+  "languages":[
+   "fr",
+   "en"
   ],
   "campuses":[
    "Autre campus"
@@ -1504,16 +2403,87 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   3,
    2,
    1,
    1
   ],
   "matched_courses":[
+   "ENVI-F1001",
+   "GEOG-F102",
+   "GEOG-F203",
+   "BIOL-F305",
+   "ETHI-F201"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"BA-CHIM",
+  "name":"Bachelier en sciences chimiques",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-chim",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
    "ETHI-F301",
-   "ENVI-F1001"
+   "ENVI-F1001",
+   "ETHI-F201"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"BA-ARCH",
+  "name":"Bachelier en architecture",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-arch",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 d'Architecture La Cambre Horta"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "CNST-P2302"
   ],
   "nb_dedicated_courses":1
  },
@@ -1538,19 +2508,88 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
-   2,
+   3,
+   1,
    1
   ],
   "matched_courses":[
-   "ETHI-F301",
    "ENVI-F1001",
-   "BIOL-F310"
+   "BIOL-F305",
+   "ETHI-F201",
+   "BIOL-F310",
+   "ETHI-F301"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"BA-BIOLC",
+  "name":"Bachelier en sciences biologiques , option Charleroi",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-biolc",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Charleroi Gosselies"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL-Y207"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"BA-ECON",
+  "name":"Bachelier en sciences \u00e9conomiques, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-econ",
+  "languages":[
+   "nl",
+   "",
+   "de",
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "UMons"
+  ],
+  "faculties":[
+   "Solvay Brussels School of Economics and Management"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "climate",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "PHYS-S201",
+   "ENVI-S101",
+   "ECON-S2002"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"BA-INGE",
@@ -1558,13 +2597,14 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-inge",
   "languages":[
-   "fr",
    "nl",
-   "en",
-   "de"
+   "",
+   "de",
+   "fr",
+   "en"
   ],
   "campuses":[
-   "UMons"
+   "Solbosch"
   ],
   "faculties":[
    "Solvay Brussels School of Economics and Management"
@@ -1579,46 +2619,43 @@
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "CHIM-S101",
    "PHYS-S201",
-   "CHIM-S101"
+   "GEST-S204"
   ],
   "nb_dedicated_courses":0
  },
  {
-  "id":"BA-ECON",
-  "name":"Bachelier en sciences \u00e9conomiques, orientation g\u00e9n\u00e9rale",
+  "id":"BA-DROI",
+  "name":"Bachelier en droit",
   "cycle":"bac",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-econ",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-droi",
   "languages":[
    "fr",
    "nl",
-   "en",
-   "de"
+   "en"
   ],
   "campuses":[
-   "Solbosch"
+   "Uccle"
   ],
   "faculties":[
-   "Solvay Brussels School of Economics and Management"
+   "Facult\u00e9 de Droit et de Criminologie"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Law & Criminology"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   1,
-   1
+   2
   ],
   "matched_courses":[
-   "ECON-S2002",
-   "PHYS-S201"
+   "DROI-C2002",
+   "DROI-C2004"
   ],
   "nb_dedicated_courses":0
  },
@@ -1628,15 +2665,15 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-trad",
   "languages":[
-   "de",
    "nl",
-   "ar",
-   "fr",
+   "de",
+   "it",
    "ru",
-   "cn",
-   "es",
+   "fr",
+   "ar",
    "en",
-   "it"
+   "es",
+   "cn"
   ],
   "campuses":[
    "Solbosch"
@@ -1645,21 +2682,99 @@
    "Facult\u00e9 de Lettres, Traduction et Communication"
   ],
   "fields":[
-   "Letters"
+   "Letters",
+   "Communication"
   ],
   "themes":[
-   "climate",
+   "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
+   1,
    1
   ],
   "matched_courses":[
    "TRAD-B2060",
-   "ORIE-B2071"
+   "TRAN-B2000"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"BA-SOCA",
+  "name":"Bachelier en sociologie et anthropologie",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-soca",
+  "languages":[
+   "nl",
+   "fr",
+   "en",
+   "es"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LANG-D314"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"BA-PPHIL",
+  "name":"Bachelier en philosophie",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-pphil",
+  "languages":[
+   "nl",
+   "de",
+   "cz",
+   "it",
+   "ru",
+   "pt",
+   "pl",
+   "jp",
+   "fr",
+   "es",
+   "ar",
+   "si",
+   "tr",
+   "en",
+   "ro"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "DROI-C2004"
   ],
   "nb_dedicated_courses":0
  },
@@ -1669,17 +2784,17 @@
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-lgerm",
   "languages":[
-   "de",
    "nl",
-   "ar",
-   "fr",
-   "ru",
-   "cn",
+   "de",
    "cz",
-   "es",
+   "it",
+   "ru",
    "pl",
-   "en",
-   "it"
+   "fr",
+   "cn",
+   "es",
+   "ar",
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -1688,7 +2803,8 @@
    "Facult\u00e9 de Lettres, Traduction et Communication"
   ],
   "fields":[
-   "Letters"
+   "Letters",
+   "Communication"
   ],
   "themes":[
    "resources",
@@ -1704,23 +2820,56 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"BA-SHUM",
+  "name":"Bachelier en sciences humaines et sociales",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-shum",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "es"
+  ],
+  "campuses":[
+   "Charleroi Ville Haute"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LANG-D314",
+   "HIST-D2704"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"BA-LLANG",
   "name":"Bachelier en langues et lettres modernes, orientation g\u00e9n\u00e9rale",
   "cycle":"bac",
   "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-llang",
   "languages":[
-   "de",
    "nl",
-   "jp",
-   "ar",
-   "fr",
-   "ru",
-   "cn",
+   "de",
    "cz",
-   "es",
+   "it",
+   "ru",
+   "jp",
    "pl",
-   "en",
-   "it"
+   "fr",
+   "cn",
+   "es",
+   "ar",
+   "en"
   ],
   "campuses":[
    "Solbosch"
@@ -1729,7 +2878,8 @@
    "Facult\u00e9 de Lettres, Traduction et Communication"
   ],
   "fields":[
-   "Letters"
+   "Letters",
+   "Communication"
   ],
   "themes":[
    "resources",

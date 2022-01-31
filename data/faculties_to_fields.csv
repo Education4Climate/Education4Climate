@@ -5,16 +5,16 @@ uclouvain,"Faculté de santé publique",Medecine & Health
 uclouvain,"Faculté des sciences de la motricité",Medecine & Health
 uclouvain,"Ecole Polytechnique de Louvain",Engineering
 uclouvain,"Faculté d'architecture, d'ingénierie architecturale, d'urbanisme",Architecture
-uclouvain,"Faculté des bioingénieurs",Bio-Engineering
+uclouvain,"Faculté des bioingénieurs",Agronomy & Biotechnology
 uclouvain,"Faculté des sciences",Veterinary;Science
 uclouvain,"Faculté de droit et de criminologie",Law & Criminology
 uclouvain,"Faculté de philosophie, arts et lettres",Philosophy;Letters;Arts
 uclouvain,"Faculté de théologie",Theology
-uclouvain,"Faculté des sciences économiques, sociales, politiques et de communication",Sociology;Political Sciences;Economy
+uclouvain,"Faculté des sciences économiques, sociales, politiques et de communication",Sociology;Political Sciences;Economy;Management;Communication
 uclouvain,"Louvain School of Management",Economy;Management
 uclouvain,"Faculté de psychologie et des sciences de l'éducation",Psychology;Pedagogy
 ulb,"Faculté de Philosophie et Sciences sociales",Philosophy;Sociology
-ulb,"Faculté de Lettres, Traduction et Communication",Letters
+ulb,"Faculté de Lettres, Traduction et Communication",Letters;Communication
 ulb,"Faculté de Droit et de Criminologie",Law & Criminology
 ulb,"Solvay Brussels School of Economics and Management",Economy;Management
 ulb,"Faculté des Sciences psychologiques et de l'Éducation",Psychology;Pedagogy
@@ -27,14 +27,14 @@ ulb,"École de Santé publique",Medecine & Health
 ulb,"Faculté de Pharmacie",Pharmacy
 ulb,"Faculté des Sciences de la motricité",Medecine & Health
 ulb,"Ecole de Traduction et Interprétation ISTI-Coremans",Letters
-ulb,"Ecole Interfacultaire de Bioingénieurs",Bio-Engineering
+ulb,"Ecole Interfacultaire de Bioingénieurs",Agronomy & Biotechnology
 ulb,"Pole Santé",Medecine & Health
 ulb,"Institut d'Études européennes",Political Sciences
 ulb,"Centre de Formation continue en Sciences humaines et sociales",Sociology
-ulb,"Institut des Sciences et Industries du Vivant et de l'Environnement",Bio-Engineering;Science
+ulb,"Institut des Sciences et Industries du Vivant et de l'Environnement",Agronomy & Biotechnology;Science
 uliege,"Faculté d'Architecture",Architecture
 uliege,"Faculté de Droit, Science politique et Criminologie",Law & Criminology;Political Sciences
-uliege,"Gembloux Agro-Bio Tech",Bio-Engineering
+uliege,"Gembloux Agro-Bio Tech",Agronomy & Biotechnology
 uliege,"HEC Liège - Ecole de Gestion",Economy;Management
 uliege,"Faculté de Médecine",Medecine & Health
 uliege,"Faculté de Médecine Vétérinaire",Veterinary
@@ -64,7 +64,7 @@ umons,"Ecole des Sciences Humaines et Sociales",Sociology
 umons,"Institut de Recherche en Sciences et Technologies du Langage",Letters
 uslb,"Faculté de philosophie, lettres et sciences humaines",Philosophy;Letters;Sociology
 uslb,"Faculté de traduction et interprétation Marie Haps",Letters
-uslb,"Faculté des sciences économiques, sociales, politiques et de la communication",Sociology;Political Sciences;Economy
+uslb,"Faculté des sciences économiques, sociales, politiques et de la communication",Sociology;Political Sciences;Economy;Communication
 uslb,"Faculté de droit",Law & Criminology
 uslb,"Institut d’études européennes",Political Sciences
 kuleuven,"Faculteit Theologie en Religiewetenschappen",Theology
@@ -78,7 +78,7 @@ kuleuven,"Faculteit Psychologie en Pedagogische Wetenschappen",Psychology;Pedago
 kuleuven,"Faculteit Wetenschappen",Science
 kuleuven,"Faculteit Ingenieurswetenschappen",Engineering
 kuleuven,"Faculteit Industriële Ingenieurswetenschappen",Engineering
-kuleuven,"Faculteit Bio-ingenieurswetenschappen",Bio-Engineering
+kuleuven,"Faculteit Bio-ingenieurswetenschappen",Agronomy & Biotechnology
 kuleuven,"Faculteit Architectuur",Architecture
 kuleuven,"Faculteit Geneeskunde",Medecine & Health
 kuleuven,"Faculteit Farmaceutische Wetenschappen",Pharmacy
@@ -99,8 +99,8 @@ ugent,"Faculteit Diergeneeskunde",Veterinary
 ugent,"Faculty of Veterinary Medicine",Veterinary
 ugent,"Faculteit Psychologie en Pedagogische Wetenschappen",Psychology;Pedagogy
 ugent,"Faculty of Psychology and Educational Sciences",Psychology;Pedagogy
-ugent,"Faculteit Bio-ingenieurswetenschappen",Bio-Engineering
-ugent,"Faculty of Bioscience Engineering",Bio-Engineering
+ugent,"Faculteit Bio-ingenieurswetenschappen",Agronomy & Biotechnology
+ugent,"Faculty of Bioscience Engineering",Agronomy & Biotechnology
 ugent,"Faculteit Farmaceutische Wetenschappen",Pharmacy
 ugent,"Faculty of Pharmaceutical Sciences",Pharmacy
 ugent,"Faculteit Politieke en Sociale Wetenschappen",Sociology;Political Sciences
@@ -147,10 +147,10 @@ vub,"Multidisciplinair Instituut Lerarenopleiding",Pedagogy
 vub,"Interfacultair Departement Lerarenopleiding",Pedagogy
 vub,"Faculteit Letteren en Wijsbegeerte",Philosophy;Letters;Arts
 vub,"Faculty of Arts and Philosophy",Philosophy;Letters;Arts
-vub,"Faculteit Wetenschappen en Bio-ingenieurswetensch",Bio-Engineering;Science
-vub,"Faculty of Sciences and Bioengineering Sciences",Bio-Engineering;Science
-vub,"Faculty of Science and Bioengineering Sciences",Bio-Engineering;Science
-vub,"Faculty of Science and Bio-engineering Sciences",Bio-Engineering;Science
+vub,"Faculteit Wetenschappen en Bio-ingenieurswetensch",Agronomy & Biotechnology;Science
+vub,"Faculty of Sciences and Bioengineering Sciences",Agronomy & Biotechnology;Science
+vub,"Faculty of Science and Bioengineering Sciences",Agronomy & Biotechnology;Science
+vub,"Faculty of Science and Bio-engineering Sciences",Agronomy & Biotechnology;Science
 vub,"Faculteit Geneeskunde en Farmacie",Medecine & Health;Pharmacy
 vub,"Faculty of Medicine and Pharmacy",Medecine & Health;Pharmacy
 vub,"Faculteit Ingenieurswetenschappen",Engineering
@@ -168,90 +168,89 @@ uhasselt,"Faculteit Wetenschappen",Science
 uhasselt,"School voor Mobiliteitswetenschappen",Engineering
 uhasselt,"School voor educatieve studies",Pedagogy
 uhasselt,"School of Expert Education",Pedagogy
-artevelde,"Business en Management",TODO
-artevelde,"Coaching en Begeleiding",TODO
-artevelde,"Communicatie, Media en Design",TODO
-artevelde,"Gezondhied en Zorg",TODO
-artevelde,"HR en Leiderschap",TODO
-artevelde,"Mens en Samenleving",TODO
-artevelde,"Onderwijs",TODO
-ecam,"Ingénieur industriel",TODO
-ecsedi-isalt,"Département Economique",TODO
-ehb,"RITCS - School of Arts",TODO
-ehb,"Koninklijk Conservatorium Brussel - School of Arts",TODO
-ehb,"Gezondheidszorg, Design & Technologie",TODO
-ehb,"Mens & Maatschappij",TODO
-ehb,"HOB",TODO
-he-ferrer,"Arts Appliqués",TODO
-he-ferrer,"Economique",TODO
-he-ferrer,"Paramédical",TODO
-he-ferrer,"Pédagogique",TODO
-he-ferrer,"Social",TODO
-he-ferrer,"Technique",TODO
-heaj,"Département Economique",TODO
-heaj,"Département Pédagogique",TODO
-heaj,"Département Technique",TODO
-hech,"Département Agronomique",TODO
-hech,"Département Economique",TODO
-hech,"Département Paramédicale",TODO
-hech,"Département Pédagogique",TODO
-hel,"Sciences de l'éducation",TODO
-hel,"Sciences économiques et de gestion",TODO
-hel,"Sciences paramédicales",TODO
-hel,"Sciences et techniques",TODO
-heldb,"Sciences de l'éducation",TODO
-heldb,"Sciences économiques et de gestion",TODO
-heldb,"Sciences et techniques",TODO
-helmo,"Economique et Juridique",TODO
-helmo,"Département Economique et Juridique",TODO
-helmo,"Département Social",TODO
-helmo,"Département Pédagogique",TODO
-helmo,"Département Paramédical",TODO
-helmo,"Département Informatique et Technique",TODO
-henallux,"Département économique",TODO
-henallux,"Département électromécanique",TODO
-henallux,"Département ingénieur industriel",TODO
-henallux,"Département paramédical",TODO
-henallux,"Département pédagogique",TODO
-henallux,"Département social",TODO
-henallux,"Département technique",TODO
-hers,"Département Economique",TODO
-hers,"Département Paramédicale",TODO
-hers,"Département Pédagogique",TODO
-hers,"Département Social",TODO
-hers,"Département Technique",TODO
-howest,"bedrijf & organisatie",TODO
-howest,"design & technologie",TODO
-howest,"mens & welzijn",TODO
-ichec,"Ecole de gestion et commerce",TODO
-ihecs,"Journalism & Communication",TODO
-ispg,"Pédagogie",TODO
-issig,"Soins infirmiers",TODO
-odisee,"Bedrijfskunde",TODO
-odisee,"Biotechnologie",TODO
-odisee,"Gezondheidszorg",TODO
-odisee,"Onderwijs",TODO
-odisee,"Sociaal-agogisch werk",TODO
-odisee,"Technologie",TODO
-thomasmore,"Business & Tourism",TODO
-thomasmore,"Education & Sport",TODO
-thomasmore,"Interior & Design",TODO
-thomasmore,"Media & Communication",TODO
-thomasmore,"People & Health",TODO
-thomasmore,"Tech & IT",TODO
-ucll,"gezondheid",TODO
-ucll,"lerarenopleiding",TODO
-ucll,"management",TODO
-ucll,"technologie",TODO
-ucll,"welzijn",TODO
-vinci,"Département Paramédicale",TODO
-vinci,"Département Pédagogique",TODO
-vinci,"Département Economique",TODO
-vinci,"Département Technique",TODO
-vinci,"Département Social",TODO
-vives,"Biotechniek",TODO
-vives,"Gezondheidszorg",TODO
-vives,"Handelswetenschappen en bedrijfskunde",TODO
-vives,"Industriële wetenschappen en technologie",TODO
-vives,"Onderwijs",TODO
-vives,"Sociaal-agogisch Werk",TODO
+artevelde,"Business en Management",Management
+artevelde,"Communicatie, Media en Design",Communication
+artevelde,"Gezondhied en Zorg",Medecine & Health
+artevelde,"HR en Leiderschap",Management
+artevelde,"Mens en Samenleving",Sociology
+artevelde,"Onderwijs",Pedagogy
+ecam,"Ingénieur industriel",Engineering
+ecsedi-isalt,"Département Economique",Economy
+ehb,"RITCS - School of Arts",Arts
+ehb,"Koninklijk Conservatorium Brussel - School of Arts",Arts
+ehb,"Gezondheidszorg, Design & Technologie",Medecine & Health;Engineering
+ehb,"Mens & Maatschappij",Pedagogy;Sociology;Management;Communication
+ehb,"HOB",Other
+he-ferrer,"Arts Appliqués",Arts
+he-ferrer,"Economique",Economy
+he-ferrer,"Paramédical",Medecine & Health
+he-ferrer,"Pédagogique",Pedagogy
+he-ferrer,"Social",Sociology
+he-ferrer,"Technique",Engineering
+heaj,"Département Economique",Economy
+heaj,"Département Pédagogique",Pedagogy
+heaj,"Département Technique",Engineering
+hech,"Département Agronomique",Agronomy & Biotechnology
+hech,"Département Economique",Economy
+hech,"Département Paramédicale",Medecine & Health
+hech,"Département Pédagogique",Pedagogy
+hel,"Sciences de l'éducation",Pedagogy
+hel,"Sciences économiques et de gestion",Economy;Management
+hel,"Sciences paramédicales",Medecine & Health
+hel,"Sciences et techniques",Engineering
+heldb,"Sciences de l'éducation",Pedagogy
+heldb,"Sciences économiques et de gestion",Economy;Management
+heldb,"Sciences et techniques",Engineering;Science
+helmo,"Economique et Juridique",Law & Criminology;Economy
+helmo,"Département Economique et Juridique",Law & Criminology;Economy
+helmo,"Département Social",Sociology
+helmo,"Département Pédagogique",Pedagogy
+helmo,"Département Paramédical",Medecine & Health
+helmo,"Département Informatique et Technique",Engineering
+henallux,"Département économique",Economy
+henallux,"Département électromécanique",Engineering
+henallux,"Département ingénieur industriel",Engineering
+henallux,"Département paramédical",Medecine & Health
+henallux,"Département pédagogique",Pedagogy
+henallux,"Département social",Sociology
+henallux,"Département technique",Engineering
+hers,"Département Economique",Economy
+hers,"Département Paramédicale",Medecine & Health
+hers,"Département Pédagogique",Pedagogy
+hers,"Département Social",Sociology
+hers,"Département Technique",Engineering
+howest,"bedrijf & organisatie",Management;Communication
+howest,"design & technologie",Architecture;Engineering
+howest,"mens & welzijn",Medecine & Health;Law & Criminology;Psychology;Pedagogy;Sociology
+ichec,"Ecole de gestion et commerce",Economy;Management
+ihecs,"Journalism & Communication",Communication
+ispg,"Pédagogie",Pedagogy
+issig,"Soins infirmiers",Medecine & Health
+odisee,"Bedrijfskunde",Management
+odisee,"Biotechnologie",Agronomy & Biotechnology
+odisee,"Gezondheidszorg",Medecine & Health
+odisee,"Onderwijs",Pedagogy
+odisee,"Sociaal-agogisch werk",Sociology
+odisee,"Technologie",Engineering
+thomasmore,"Business & Tourism",Management;Communication
+thomasmore,"Education & Sport",Medecine & Health;Pedagogy
+thomasmore,"Interior & Design",Architecture
+thomasmore,"Media & Communication",Communication
+thomasmore,"People & Health",Medecine & Health
+thomasmore,"Tech & IT",Engineering
+ucll,"gezondheid",Medecine & Health
+ucll,"lerarenopleiding",Pedagogy
+ucll,"management",Management
+ucll,"technologie",Engineering
+ucll,"welzijn",Medecine & Health
+vinci,"Département Paramédicale",Medecine & Health
+vinci,"Département Pédagogique",Pedagogy
+vinci,"Département Economique",Economy
+vinci,"Département Technique",Engineering
+vinci,"Département Social",Sociology
+vives,"Biotechniek",Agronomy & Biotechnology
+vives,"Gezondheidszorg",Medecine & Health
+vives,"Handelswetenschappen en bedrijfskunde",Economy;Management
+vives,"Industriële wetenschappen en technologie",Engineering
+vives,"Onderwijs",Pedagogy
+vives,"Sociaal-agogisch Werk",Sociology

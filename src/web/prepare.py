@@ -51,6 +51,29 @@ def add_missing_fields_in_programs(programs_df: pd.DataFrame, courses_df: pd.Dat
     return programs_df
 
 
+def add_fields_to_courses(courses_df: pd.DataFrame, programs_df: pd.DataFrame) -> pd.DataFrame:
+
+    # Add every cycle and field in which each course is given
+
+    # Create new columns
+    courses_df["cycles"] = pd.Series([[]]*len(courses_df), index=courses_df.index)
+    courses_df["fields"] = pd.Series([[]]*len(courses_df), index=courses_df.index)
+
+    # Loop on programs
+    for program_id in programs_df.index:
+        cycle = programs_df.loc[program_id, "cycle"]
+        fields = programs_df.loc[program_id, "fields"]
+        courses = programs_df.loc[program_id, "courses"]
+        courses_df.loc[courses, "cycles"] = courses_df.loc[courses, "cycles"].apply(lambda x: x + [cycle])
+        courses_df.loc[courses, "fields"] = courses_df.loc[courses, "fields"].apply(lambda x: x + fields)
+
+    # Remove duplicates
+    courses_df["cycles"] = courses_df["cycles"].apply(lambda x: list(set(x)))
+    courses_df["fields"] = courses_df["fields"].apply(lambda x: list(set(x)))
+
+    return courses_df
+
+
 def convert_faculty_to_fields(programs_df, school: str):
 
     fields_fn = Path(__file__).parent.absolute().joinpath("../../data/faculties_to_fields.csv")
@@ -87,6 +110,9 @@ def main(school: str, year: int):
 
     # Convert faculties to disciplines
     programs_df = convert_faculty_to_fields(programs_df, school)
+
+    # Add fields to course df
+    courses_df = add_fields_to_courses(courses_df, programs_df)
 
     # Load scoring output
     scores_fn = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}"
@@ -145,6 +171,15 @@ def main(school: str, year: int):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="input json file path")
-    parser.add_argument("-y", "--year", help="academic year", default=2020)
+    parser.add_argument("-y", "--year", help="academic year", default=2021)
     arguments = vars(parser.parse_args())
-    main(**arguments)
+    # main(**arguments)
+
+    schools = ["kuleuven", "uantwerpen", "uclouvain", "ugent", "uhasselt",
+               "ulb", "uliege", "umons", "unamur", "uslb", "vub"]
+    schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
+                "henallux", "hers", "howest", "ichec", "ihecs", "ispg", "issig", "odisee", "thomasmore", "ucll",
+                "vinci", "vives"]
+    for school in schools:
+        print(school)
+        main(school, arguments['year'])

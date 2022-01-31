@@ -5,10 +5,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-adpu2m",
   "languages":[
-   "de",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -19,26 +19,33 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "climate",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   2,
    3,
-   3
+   5,
+   1,
+   5
   ],
   "matched_courses":[
-   "LDVLP2325",
+   "LLSMX2001",
+   "LDEMO2610",
    "LENVI2010",
-   "LDROP2061",
+   "LDVLP2325",
+   "LDVLP2675",
    "LSPRI2225",
-   "LLSMX2001"
+   "LENVI2006",
+   "LDROP2061"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":5
  },
  {
   "id":"ANTR2M",
@@ -46,8 +53,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-antr2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -58,7 +65,58 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   5,
+   6,
+   2,
+   10
+  ],
+  "matched_courses":[
+   "LENVI2101",
+   "LENVI2010",
+   "LDVLP2325",
+   "LANTR2010",
+   "LFILO2970",
+   "LDVLP2675",
+   "LBIR1230A",
+   "LGEO2110",
+   "LANTR2090",
+   "LGERM2726",
+   "LDVLP2315",
+   "LENVI2006",
+   "LENVI2005",
+   "LDROI1309"
+  ],
+  "nb_dedicated_courses":7
+ },
+ {
+  "id":"APPBIOL",
+  "name":"Approfondissement en sciences biologiques",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-appbiol",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
   ],
   "themes":[
    "climate",
@@ -66,17 +124,85 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   2,
+   1,
+   4,
    1
   ],
   "matched_courses":[
-   "LANTR2090",
-   "LFILO2970",
-   "LENVI2010",
-   "LDVLP2325"
+   "LBIR1230A",
+   "LBIO1356",
+   "LGEO1332A",
+   "LBIO1315"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"APPCHIM",
+  "name":"Approfondissement en sciences chimiques",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-appchim",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LCHM1311"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"APPGEOG",
+  "name":"Approfondissement en sciences g\u00e9ographiques",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-appgeog",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   2,
+   2
+  ],
+  "matched_courses":[
+   "LBIR1328",
+   "LBIR1230",
+   "LBIR1336"
+  ],
+  "nb_dedicated_courses":2
  },
  {
   "id":"APPHYS",
@@ -84,8 +210,8 @@
   "cycle":"other",
   "url":"https:\/\/uclouvain.be\/prog-2021-apphys",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-La-Neuve"
@@ -109,13 +235,41 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"APPSBIM",
+  "name":"Approfondissement en sciences biom\u00e9dicales",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-appsbim",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de pharmacie et des sciences biom\u00e9dicales"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "WSBIM1205"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"ARCB1BA",
   "name":"Bachelier en architecture\/BXL",
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-arcb1ba",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Bruxelles Saint-Gilles"
@@ -127,18 +281,24 @@
    "Architecture"
   ],
   "themes":[
+   "climate",
+   "energy",
    "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   1,
    1,
    1,
    1
   ],
   "matched_courses":[
+   "LBARC1360",
+   "LBARC1142",
    "LBARC1366",
-   "LBARC1142"
+   "LBARC1347"
   ],
   "nb_dedicated_courses":1
  },
@@ -161,70 +321,42 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   1,
-   2
-  ],
-  "matched_courses":[
-   "LBARC2131",
-   "LBARC2141",
-   "LBARC2147"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"ARCH2M",
-  "name":"Master [120] : ing\u00e9nieur civil architecte",
-  "cycle":"master",
-  "url":"https:\/\/uclouvain.be\/prog-2021-arch2m",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Louvain-la-Neuve"
-  ],
-  "faculties":[
-   "Facult\u00e9 d'architecture, d'ing\u00e9nierie architecturale, d'urbanisme"
-  ],
-  "fields":[
-   "Architecture"
-  ],
-  "themes":[
-   "climate",
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    2,
-   1,
-   1
+   4,
+   2,
+   5
   ],
   "matched_courses":[
-   "LICAR2801",
-   "LURBA2940",
-   "LTECO2200",
-   "LICAR2823"
+   "LBARC2131",
+   "LBARC2060",
+   "LBARC2147",
+   "LBARC2236",
+   "LBARC2141",
+   "LBARC2061"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
-  "id":"ARCT1BA",
-  "name":"Bachelier en architecture\/TRN",
+  "id":"ARCH1BA",
+  "name":"Bachelier en sciences de l'ing\u00e9nieur, orientation ing\u00e9nieur civil architecte",
   "cycle":"bac",
-  "url":"https:\/\/uclouvain.be\/prog-2021-arct1ba",
+  "url":"https:\/\/uclouvain.be\/prog-2021-arch1ba",
   "languages":[
-   "en",
-   "fr"
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
   ],
   "campuses":[
-   "Tournai"
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 d'architecture, d'ing\u00e9nierie architecturale, d'urbanisme"
@@ -240,14 +372,97 @@
   "themes_scores":[
    1,
    1,
+   1
+  ],
+  "matched_courses":[
+   "LICAR1605"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"ARCH2M",
+  "name":"Master [120] : ing\u00e9nieur civil architecte",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-arch2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 d'architecture, d'ing\u00e9nierie architecturale, d'urbanisme"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   2,
+   3,
+   1,
    2
   ],
   "matched_courses":[
-   "LBARC1366",
-   "LTARC1142",
-   "LTARC1340"
+   "LICAR2901",
+   "LURBA2940",
+   "LGCIV2056",
+   "LICAR2801",
+   "LICAR2603",
+   "LTECO2200",
+   "LICAR2823"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"ARCT1BA",
+  "name":"Bachelier en architecture\/TRN",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2021-arct1ba",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Tournai"
+  ],
+  "faculties":[
+   "Facult\u00e9 d'architecture, d'ing\u00e9nierie architecturale, d'urbanisme"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   2,
+   1,
+   3
+  ],
+  "matched_courses":[
+   "LTARC1340",
+   "LTARC1142",
+   "LBARC1347",
+   "LTARC1360",
+   "LBARC1366",
+   "LTARC1250"
+  ],
+  "nb_dedicated_courses":2
  },
  {
   "id":"ARCT2M",
@@ -267,15 +482,25 @@
    "Architecture"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   2,
+   2,
+   2,
+   2
   ],
   "matched_courses":[
-   "LBARC2147"
+   "LBARC2147",
+   "LBARC2060",
+   "LBARC2061"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":2
  },
  {
   "id":"ARKE2M",
@@ -283,8 +508,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-arke2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -298,13 +523,19 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
-   1
+   2,
+   3
   ],
   "matched_courses":[
-   "LFILO2970"
+   "LBIR1336",
+   "LFILO2970",
+   "LBIR1130",
+   "LBIO1110",
+   "LGEO1332A"
   ],
   "nb_dedicated_courses":0
  },
@@ -314,8 +545,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-arke2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -340,13 +571,44 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"BBMC2M",
+  "name":"Master [120] en biochimie et biologie mol\u00e9culaire et cellulaire",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-bbmc2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LBRTE2201",
+   "LBBMC2107"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"BIOL1BA",
   "name":"Bachelier en sciences biologiques",
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-biol1ba",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -360,16 +622,22 @@
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1
+   3,
+   3,
+   2
   ],
   "matched_courses":[
-   "LTECO2200"
+   "LBIO1117",
+   "LBIR1130",
+   "LBIO1110",
+   "LTECO2200",
+   "LBIO1310"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"BIOL2M1",
@@ -377,8 +645,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-biol2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -391,15 +659,32 @@
    "Science"
   ],
   "themes":[
-   "resources"
+   "climate",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   12,
+   1,
+   2
   ],
   "matched_courses":[
-   "LBOE2125"
+   "LBOE2140",
+   "ESBOE2238",
+   "LBOE2120",
+   "LBBMC2107",
+   "ESBOE2162",
+   "LBOE2185",
+   "LBOE2165",
+   "LBOE2125",
+   "ESBOE2163",
+   "LBOE2111",
+   "LBOE2161",
+   "LBOE2141"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":5
  },
  {
   "id":"BIR1BA",
@@ -407,8 +692,8 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-bir1ba",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -417,18 +702,34 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   4,
+   2,
+   4,
+   1,
+   3
   ],
   "matched_courses":[
-   "LBIR1140"
+   "LBIR1328A",
+   "LBIR1140",
+   "LBIR1230",
+   "LBIR1325A",
+   "LBIR1336",
+   "LBIR1130",
+   "LBIR1328",
+   "LBIR1336B",
+   "LANGL1882"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":4
  },
  {
   "id":"BIRA2M",
@@ -436,8 +737,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-bira2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -446,7 +747,7 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -456,24 +757,36 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   1,
+   6,
+   5,
+   9,
    4,
-   2,
-   3
+   10
   ],
   "matched_courses":[
-   "LGEO1321",
-   "LBIRA2109",
-   "LPHYS2162",
+   "LBIR1328A",
+   "LBRAI2221",
    "LBIRA2107",
+   "LBIR1230",
+   "LBRES2203",
+   "LBIR1325A",
+   "LBIR1336B",
    "LEPL1804",
-   "LBRAI2110",
-   "LENVI2007",
+   "LGEO2110B",
+   "LBIRA2108B",
+   "LBRAI2201",
+   "LPHYS2162",
+   "LBIRA2109",
+   "LBRES2204",
    "LBIRE2131",
-   "LTECO2200"
+   "LTECO2200",
+   "LBRAI2110",
+   "LGEO1321",
+   "LDVLP2675",
+   "LENVI2007",
+   "LBRTE2201"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":9
  },
  {
   "id":"BIRC2M",
@@ -481,8 +794,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-birc2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -491,7 +804,7 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -501,25 +814,35 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   4,
-   1,
-   4,
-   4
+   6,
+   6,
+   8,
+   5,
+   7
   ],
   "matched_courses":[
-   "LENVI2007A",
-   "LMAPR2001A",
-   "LMAPR2001",
-   "LMAPR2430",
    "LMAPR2647",
-   "LPHYS2162",
+   "LBIR1325A",
+   "LBIR1130",
    "LEPL1804",
-   "LENVI2007",
+   "LBRES2102",
+   "LMAPR2001A",
+   "LPHYS2162",
+   "LENVI2007A",
+   "LMAPR2001",
    "LBIRE2131",
-   "LTECO2200"
+   "LTECO2200",
+   "LMAPR2016",
+   "LMAPR2430",
+   "LBIR1336",
+   "LPHYS2267",
+   "LGCIV2073",
+   "LENVI2007",
+   "LBRNA2201",
+   "LBRTE2201",
+   "LBRTE2101"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":7
  },
  {
   "id":"BIRE2M",
@@ -527,8 +850,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-bire2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -537,7 +860,7 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -547,27 +870,39 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
-   2,
-   3,
    5,
-   6
+   5,
+   12,
+   5,
+   11
   ],
   "matched_courses":[
    "LBIRE2130",
+   "LBRAT2101",
+   "LBRES2203",
+   "LBIR1325A",
+   "LEPL1804",
+   "LBRES2102",
    "LMAPR2001A",
+   "LBIRE2105",
+   "LPHYS2162",
    "LENVI2007A",
    "LBIRA2109",
-   "LPHYS2162",
-   "LBIRE2105",
-   "LEPL1804",
-   "LENVI2007",
+   "LBRES2204",
    "LBIRE2131",
-   "LBIRF2213",
    "LTECO2200",
-   "LLSMX2001"
+   "LLSMX2001",
+   "LBOE2120",
+   "LBIR1336",
+   "LBIRF2106A",
+   "LGCIV2073",
+   "LBIRF2213",
+   "LBIR1328",
+   "LENVI2007",
+   "LBRTE2201",
+   "LBRTE2101"
   ],
-  "nb_dedicated_courses":7
+  "nb_dedicated_courses":10
  },
  {
   "id":"BIRF2M",
@@ -575,8 +910,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-birf2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -585,7 +920,65 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   2,
+   12,
+   5,
+   8
+  ],
+  "matched_courses":[
+   "LBIRE2130",
+   "LBRES2203",
+   "LBIR1325A",
+   "LBRTE2101",
+   "LBIRF2203",
+   "LBIRF2102",
+   "LBIRF2104",
+   "LBIRE2105",
+   "LBIRF2202",
+   "LBIRA2109",
+   "LBRES2204",
+   "LBIRE2131",
+   "LTECO2200",
+   "LBRAI2110",
+   "LBRAT2101B",
+   "LBRAT2101C",
+   "LBIR1336",
+   "LDVLP2675",
+   "LBIRF2213",
+   "LBIR1328",
+   "LBIRF2106"
+  ],
+  "nb_dedicated_courses":6
+ },
+ {
+  "id":"BOE2M",
+  "name":"Master [120] en biologie des organismes et \u00e9cologie",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-boe2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
   ],
   "themes":[
    "climate",
@@ -594,30 +987,105 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   4,
+   5,
+   21,
    3,
-   3
+   4
   ],
   "matched_courses":[
-   "LBIRE2130",
-   "LBIRA2109",
+   "LBRAT2101",
+   "LBOE2125",
+   "LGEO2140",
+   "LBOE2191",
+   "LBOE2148",
+   "LBOE2165",
    "LBIRE2105",
-   "LBRAI2110",
-   "LBIRE2131",
-   "LBIRF2213",
-   "LTECO2200"
+   "LBOE2111",
+   "LBOE2161",
+   "LBOE2140",
+   "ESBOE2163",
+   "LBOE2141",
+   "LBOE2143",
+   "ESBOE2238",
+   "LBOE2120",
+   "LBIR1336",
+   "ESBOE2162",
+   "LBOE2185",
+   "LBIR1328",
+   "LDROP2063",
+   "LDROP2061",
+   "LBIRF2106"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":10
  },
  {
-  "id":"BOE2M",
-  "name":"Master [120] en biologie des organismes et \u00e9cologie",
+  "id":"BRAS2MC",
+  "name":"Master de sp\u00e9cialisation en g\u00e9nie brassicole",
   "cycle":"master",
-  "url":"https:\/\/uclouvain.be\/prog-2021-boe2m",
+  "url":"https:\/\/uclouvain.be\/prog-2021-bras2mc",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des bioing\u00e9nieurs"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LBRAS2305"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"BSTA2M",
+  "name":"Master [120] en statistique, orientation biostatistiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-bsta2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LBIO1110",
+   "LBIO1114"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"CHIM1BA",
+  "name":"Bachelier en sciences chimiques",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2021-chim1ba",
+  "languages":[
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -632,50 +1100,17 @@
   "themes":[
    "climate",
    "environment",
-   "resources"
-  ],
-  "themes_scores":[
-   1,
-   3,
-   3
-  ],
-  "matched_courses":[
-   "LBOE2125",
-   "LBIRE2105",
-   "LGEO2140",
-   "LDROP2061"
-  ],
-  "nb_dedicated_courses":2
- },
- {
-  "id":"CHIM1BA",
-  "name":"Bachelier en sciences chimiques",
-  "cycle":"bac",
-  "url":"https:\/\/uclouvain.be\/prog-2021-chim1ba",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Louvain-la-Neuve"
-  ],
-  "faculties":[
-   "Facult\u00e9 des sciences"
-  ],
-  "fields":[
-   "Veterinary",
-   "Science"
-  ],
-  "themes":[
-   "climate",
    "sustainability"
   ],
   "themes_scores":[
+   2,
    1,
    1
   ],
   "matched_courses":[
-   "LTECO2200"
+   "LBIR1130",
+   "LTECO2200",
+   "LBIO1110"
   ],
   "nb_dedicated_courses":0
  },
@@ -685,8 +1120,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-chim2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -699,13 +1134,20 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "environment",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   3,
    1
   ],
   "matched_courses":[
-   "LCHM2140"
+   "LCHM2140",
+   "LMAPR2016",
+   "LEPL1803",
+   "LCHM1311"
   ],
   "nb_dedicated_courses":0
  },
@@ -715,8 +1157,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-chim2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -729,13 +1171,16 @@
    "Science"
   ],
   "themes":[
+   "climate",
    "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "LCHM2140"
+   "LCHM2140",
+   "LCHM1311"
   ],
   "nb_dedicated_courses":0
  },
@@ -745,8 +1190,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-clim2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -762,26 +1207,35 @@
    "climate",
    "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   7,
+   10,
    1,
+   5,
    2,
-   1
+   2
   ],
   "matched_courses":[
-   "LGEO1321",
-   "LCLIM2011",
-   "LGEO2140",
-   "LPHYS2162",
-   "LPHYS2265",
-   "LCLIM2020",
-   "LPHYS2268",
    "LGEO2210",
-   "LGEO2290"
+   "LGEO2230",
+   "LPHYS2265",
+   "LGEO1332",
+   "LGEO1321",
+   "LPHYS2267",
+   "LPHYS2268",
+   "LGEO2110",
+   "LCLIM2020",
+   "LPHYS2163",
+   "LPHYS2162",
+   "LGEO2120",
+   "LGEO2140",
+   "LGEO2290",
+   "LENVI2005",
+   "LCLIM2011"
   ],
-  "nb_dedicated_courses":6
+  "nb_dedicated_courses":10
  },
  {
   "id":"COMM1BA",
@@ -789,10 +1243,10 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-comm1ba",
   "languages":[
-   "es",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "es"
   ],
   "campuses":[
    "Mons"
@@ -803,7 +1257,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "resources",
@@ -819,13 +1275,149 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"COMM2M",
+  "name":"Master [120] en communication",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-comm2m",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MSPRI2160"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"CORP2M",
+  "name":"Master [120] en communication",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-corp2m",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LGERM2726"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"DATE2M",
+  "name":"Master [120] : ing\u00e9nieur civil en science des donn\u00e9es",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-date2m",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LLSMS2280"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"DATI2M",
+  "name":"Master [120] en science des donn\u00e9es, orientation technologies de l'information",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-dati2m",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LLSMS2280"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"DENT1BA",
   "name":"Bachelier en sciences dentaires",
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-dent1ba",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Bruxelles Woluwe"
@@ -853,9 +1445,9 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-drhd2m",
   "languages":[
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -865,6 +1457,114 @@
   ],
   "fields":[
    "Law & Criminology"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   3,
+   2
+  ],
+  "matched_courses":[
+   "LDROP2063",
+   "LDROP2061",
+   "LDROI1309"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"DROI1BA",
+  "name":"Bachelier en droit",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2021-droi1ba",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit et de criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LDROI1309"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"DROI2M",
+  "name":"Master [120] en droit",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-droi2m",
+  "languages":[
+   "fr",
+   "nl",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit et de criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   5,
+   7
+  ],
+  "matched_courses":[
+   "LLSMS2397",
+   "LLSMX2001",
+   "LLSMS2098",
+   "LLSMS2280",
+   "LLSMS2398",
+   "LDROP2063",
+   "LDROP2061",
+   "LDROI1309"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"DVLP2MC",
+  "name":"Master de sp\u00e9cialisation en d\u00e9veloppement, environnement et soci\u00e9t\u00e9s",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-dvlp2mc",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "environment"
@@ -873,44 +1573,9 @@
    1
   ],
   "matched_courses":[
-   "LDROP2061"
+   "LDEMO2610"
   ],
-  "nb_dedicated_courses":1
- },
- {
-  "id":"DROI2M",
-  "name":"Master [120] en droit",
-  "cycle":"master",
-  "url":"https:\/\/uclouvain.be\/prog-2021-droi2m",
-  "languages":[
-   "en",
-   "nl",
-   "fr"
-  ],
-  "campuses":[
-   "Louvain-la-Neuve"
-  ],
-  "faculties":[
-   "Facult\u00e9 de droit et de criminologie"
-  ],
-  "fields":[
-   "Law & Criminology"
-  ],
-  "themes":[
-   "environment",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   3
-  ],
-  "matched_courses":[
-   "LLSMS2098",
-   "LLSMX2001",
-   "LDROP2061",
-   "LLSMS2398"
-  ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":0
  },
  {
   "id":"ECON2M",
@@ -918,10 +1583,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-econ2m",
   "languages":[
-   "de",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -932,26 +1597,35 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
+   "climate",
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   3,
-   2
+   1,
+   6,
+   1,
+   3
   ],
   "matched_courses":[
-   "LECON2067",
-   "LECSO2320",
-   "LECON2051",
+   "LECON2486",
+   "LESPO2103",
    "LECON2353",
-   "LECSO2330"
+   "LECSO2330",
+   "LESPO2104",
+   "LECSO2320",
+   "LECON2067",
+   "LECON2051"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":3
  },
  {
   "id":"ECON2M1",
@@ -959,8 +1633,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-econ2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -971,26 +1645,32 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
-   3,
-   2
+   6,
+   1,
+   3
   ],
   "matched_courses":[
-   "LECON2067",
-   "LECSO2320",
-   "LECON2051",
+   "LESPO2103",
    "LECON2353",
-   "LECSO2330"
+   "LECSO2330",
+   "LESPO2104",
+   "LECSO2320",
+   "LECON2067",
+   "LECON2051"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":3
  },
  {
   "id":"ECSO2MC",
@@ -1009,20 +1689,22 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "environment",
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   2,
    3
   ],
   "matched_courses":[
-   "LECSO2330",
+   "EECSO2503",
    "LECSO2320",
-   "EECSO2503"
+   "LECSO2330"
   ],
   "nb_dedicated_courses":2
  },
@@ -1032,8 +1714,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-edph2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1056,16 +1738,51 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"EJL2M",
+  "name":"Master [120] en journalisme",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-ejl2m",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LGERM2726"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"ELEC2M",
   "name":"Master [120] : ing\u00e9nieur civil \u00e9lectricien",
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-elec2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1077,13 +1794,22 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "climate",
+   "energy",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   3
+   1,
+   4,
+   2,
+   1
   ],
   "matched_courses":[
+   "LELEC2102",
    "LELEC2103",
+   "LELEC2753",
+   "LLSMS2280",
    "LENVI2007",
    "LELEC2520"
   ],
@@ -1095,11 +1821,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-elme2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1117,18 +1843,23 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
    3,
-   1,
-   1
+   5,
+   3,
+   3
   ],
   "matched_courses":[
-   "LINMA2415",
+   "LINMA2510",
    "LELME2420",
+   "LINMA2415",
+   "LMECA2322",
+   "LELEC2753",
+   "LMAPR2483",
+   "LLSMS2280",
    "LENVI2007",
    "LELEC2520"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":4
  },
  {
   "id":"ENVI2MC",
@@ -1136,8 +1867,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-envi2mc",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1146,7 +1877,7 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -1156,28 +1887,75 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   3,
-   7,
+   8,
    4,
-   2
+   19,
+   7,
+   12
   ],
   "matched_courses":[
-   "LMAPR2001A",
-   "LMAPR2001",
+   "LENVI2101",
+   "LBRAT2101",
+   "LBIO1114",
    "LMAPR2647",
-   "LBIRA2109",
-   "LPHYS2162",
-   "LBIRE2105",
+   "LENVI2002",
+   "LGEO2120",
+   "LENVI2005",
+   "LGEO2210",
    "LENVI2010",
    "LENVI2012",
-   "LENVI2007",
-   "LDROP2061",
-   "LGEO2210",
+   "LMAPR2001A",
+   "LBIRE2105",
    "LSPRI2225",
-   "LBIR1140"
+   "LPHYS2162",
+   "LENVI2007",
+   "LINMA2510",
+   "LMAPR2001",
+   "LBIRA2109",
+   "LDEMO2610",
+   "LBIR1140",
+   "LGEO2110",
+   "LENVI2006",
+   "LGEO2230",
+   "LBIO1117",
+   "LBOE2120",
+   "LGCIV2073",
+   "LBIR1328",
+   "LANGL1882",
+   "LBRTE2201",
+   "LDROP2063",
+   "LDROP2061"
   ],
-  "nb_dedicated_courses":7
+  "nb_dedicated_courses":17
+ },
+ {
+  "id":"ESP2M",
+  "name":"Master [120] en sciences de la sant\u00e9 publique",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-esp2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de sant\u00e9 publique"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LGEO2230"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"ETES9CE",
@@ -1185,8 +1963,8 @@
   "cycle":"certificate",
   "url":"https:\/\/uclouvain.be\/prog-2021-etes9ce",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1197,7 +1975,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "climate",
@@ -1206,13 +1986,14 @@
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   3,
+   2
   ],
   "matched_courses":[
-   "LFILO2360",
    "LECON2067",
-   "LLSMS2098"
+   "LDROI1309",
+   "LLSMS2098",
+   "LFILO2360"
   ],
   "nb_dedicated_courses":0
  },
@@ -1222,8 +2003,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-ethi2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1238,17 +2019,20 @@
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    3,
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "LLSMS2098",
    "LFILO2360",
    "LFILO2970",
-   "LPHYS2162",
-   "LLSMS2098"
+   "LGERM2726",
+   "LPHYS2162"
   ],
   "nb_dedicated_courses":1
  },
@@ -1258,8 +2042,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-etri2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1270,7 +2054,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "environment"
@@ -1289,11 +2075,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-euro2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1304,13 +2090,17 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
+   "climate",
    "environment",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
@@ -1320,13 +2110,44 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"FEHC2M",
+  "name":"Master [120] en sciences de gestion (horaire d\u00e9cal\u00e9 2)",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-fehc2m",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Charleroi"
+  ],
+  "faculties":[
+   "Louvain School of Management"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "MGEHC2113"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"FILA9CE",
   "name":"Certificat universitaire en philosophie (approfondissement)",
   "cycle":"certificate",
   "url":"https:\/\/uclouvain.be\/prog-2021-fila9ce",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1346,8 +2167,8 @@
    2
   ],
   "matched_courses":[
-   "LFILO2360",
-   "LFILO2970"
+   "LFILO2970",
+   "LFILO2360"
   ],
   "nb_dedicated_courses":0
  },
@@ -1357,10 +2178,10 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-filo1ba",
   "languages":[
-   "de",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1390,8 +2211,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-filo2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1405,15 +2226,18 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "themes_scores":[
-   3
+   3,
+   1
   ],
   "matched_courses":[
-   "LFILO2360",
+   "LGERM2726",
    "LFILO2970",
-   "LPHYS2162"
+   "LPHYS2162",
+   "LFILO2360"
   ],
   "nb_dedicated_courses":1
  },
@@ -1423,8 +2247,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-filo2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1454,8 +2278,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-fle2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1480,16 +2304,46 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"FOPA2M",
+  "name":"Master [120] en sciences de l'\u00e9ducation",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-fopa2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de psychologie et des sciences de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LFOPA2611"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"FSA1BA",
   "name":"Bachelier en sciences de l'ing\u00e9nieur, orientation ing\u00e9nieur civil",
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-fsa1ba",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1502,10 +2356,14 @@
   ],
   "themes":[
    "climate",
+   "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   1,
    1,
    2,
    3
@@ -1513,21 +2371,22 @@
   "matched_courses":[
    "LEPL1505",
    "LEPL1804",
-   "LTECO2200"
+   "LTECO2200",
+   "LEPL1803"
   ],
   "nb_dedicated_courses":1
  },
  {
-  "id":"GBIO2M",
-  "name":"Master [120] : ing\u00e9nieur civil biom\u00e9dical",
+  "id":"FYAP2M",
+  "name":"Master [120] : ing\u00e9nieur civil physicien",
   "cycle":"master",
-  "url":"https:\/\/uclouvain.be\/prog-2021-gbio2m",
+  "url":"https:\/\/uclouvain.be\/prog-2021-fyap2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1539,12 +2398,56 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
+   2,
+   1,
+   2
+  ],
+  "matched_courses":[
+   "LMAPR2483",
+   "LLSMS2280",
+   "LPHYS2246"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"GBIO2M",
+  "name":"Master [120] : ing\u00e9nieur civil biom\u00e9dical",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-gbio2m",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
+   "LBRTE2201",
+   "LLSMS2280",
    "LMAPR2430"
   ],
   "nb_dedicated_courses":0
@@ -1555,11 +2458,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-gce2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1571,13 +2474,27 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   2
+   4,
+   5,
+   1,
+   5
   ],
   "matched_courses":[
+   "LICAR2901",
+   "LBRES2204",
+   "LGCIV2056",
+   "LGCIV2055",
+   "LBIR1336",
    "LICAR2801",
+   "LGCIV2073",
+   "LMAPR2483",
+   "LLSMS2280",
    "LICAR2823"
   ],
   "nb_dedicated_courses":1
@@ -1601,13 +2518,49 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
+   "MGEHC2113",
    "MGEHD2222"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"GEHC2M1",
+  "name":"Master [60] en sciences de gestion (horaire d\u00e9cal\u00e9)",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-gehc2m1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Charleroi"
+  ],
+  "faculties":[
+   "Louvain School of Management"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "MGEHC2113"
   ],
   "nb_dedicated_courses":0
  },
@@ -1641,13 +2594,44 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"GENR2MC",
+  "name":"Master de sp\u00e9cialisation en \u00e9tudes de genre",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-genr2mc",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   ""
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LGERM2726"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"GENT2M",
   "name":"Master [120] en gestion de l'entreprise",
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-gent2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    ""
@@ -1676,8 +2660,8 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-geog1ba",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1695,15 +2679,20 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
-   1,
+   3,
+   5,
    1
   ],
   "matched_courses":[
+   "LGEO1111",
+   "LBIO1117",
+   "LGEO1332",
    "LGEO1321",
+   "LBIR1130",
+   "LBIO1110",
    "LTECO2200"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"GEOG2M",
@@ -1711,8 +2700,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-geog2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1732,22 +2721,29 @@
    "sustainability"
   ],
   "themes_scores":[
-   3,
-   1,
    4,
-   2,
-   1
+   1,
+   10,
+   3,
+   5
   ],
   "matched_courses":[
-   "LGEO1321",
-   "LGEO2140",
    "LBIRA2109",
-   "LPHYS2162",
-   "LDVLP2325",
+   "LGEO2160",
    "LGEO2210",
-   "LBOE2125"
+   "LGEO2230",
+   "LBOE2140",
+   "LGEO1332",
+   "LGEO1321",
+   "LDVLP2325",
+   "LBOE2125",
+   "LGEO2110",
+   "LGEO2120",
+   "LGEO2140",
+   "LPHYS2162",
+   "LENVI2005"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":6
  },
  {
   "id":"GEOG2M1",
@@ -1755,8 +2751,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-geog2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1772,19 +2768,25 @@
    "climate",
    "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    1,
    1,
-   1,
-   1
+   4,
+   2,
+   2
   ],
   "matched_courses":[
+   "LGEO2160",
    "LGEO2210",
+   "LGEO2230",
+   "LGEO2110",
+   "LGEO2120",
    "LGEO2140"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"GERM2M",
@@ -1792,12 +2794,12 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-germ2m",
   "languages":[
-   "it",
-   "es",
    "nl",
-   "en",
+   "de",
+   "it",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1811,13 +2813,49 @@
    "Arts"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LGERM2726",
+   "LGERM2872"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"GERM2M1",
+  "name":"Master [60] en langues et lettres modernes, orientation germaniques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-germ2m1",
+  "languages":[
+   "fr",
+   "nl",
+   "de",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "sustainability"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LGERM2872"
+   "LGERM2726"
   ],
   "nb_dedicated_courses":0
  },
@@ -1827,10 +2865,61 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-gesm2m",
   "languages":[
-   "es",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "es"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Louvain School of Management"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   3,
+   3,
+   8
+  ],
+  "matched_courses":[
+   "LLSMS2397",
+   "LLSMX2001",
+   "LLSMS2281",
+   "LLSMS2284",
+   "LCEMS2108",
+   "LLSMS2023",
+   "MLSMM2253",
+   "LLSMS2280",
+   "LLSMS2282",
+   "LLSMS2283",
+   "LLSMS2112",
+   "LLSMS2398"
+  ],
+  "nb_dedicated_courses":5
+ },
+ {
+  "id":"GESM2M1",
+  "name":"Master [60] en sciences de gestion",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-gesm2m1",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "es"
   ],
   "campuses":[
    "Mons"
@@ -1853,55 +2942,14 @@
    1,
    1,
    1,
-   2,
-   4
-  ],
-  "matched_courses":[
-   "LLSMS2284",
-   "LLSMX2001",
-   "LLSMS2398",
-   "LLSMS2282",
-   "LLSMS2281",
-   "LLSMS2023",
-   "MLSMM2253"
-  ],
-  "nb_dedicated_courses":4
- },
- {
-  "id":"GESM2M1",
-  "name":"Master [60] en sciences de gestion",
-  "cycle":"master",
-  "url":"https:\/\/uclouvain.be\/prog-2021-gesm2m1",
-  "languages":[
-   "es",
-   "en",
-   "nl",
-   "fr"
-  ],
-  "campuses":[
-   "Mons"
-  ],
-  "faculties":[
-   "Louvain School of Management"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "climate",
-   "energy",
-   "resources"
-  ],
-  "themes_scores":[
-   1,
    1,
    1
   ],
   "matched_courses":[
-   "LLSMS2282",
+   "MLSMM2253",
    "LLSMS2281",
-   "MLSMM2253"
+   "LLSMS2280",
+   "LLSMS2282"
   ],
   "nb_dedicated_courses":1
  },
@@ -1911,11 +2959,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-gest2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1937,20 +2985,55 @@
   "themes_scores":[
    1,
    1,
-   1,
-   2,
-   4
+   3,
+   3,
+   8
   ],
   "matched_courses":[
-   "LLSMS2284",
+   "LLSMS2397",
    "LLSMX2001",
-   "LLSMS2398",
-   "LLSMS2282",
    "LLSMS2281",
+   "LLSMS2284",
+   "LCEMS2108",
    "LLSMS2023",
-   "MLSMM2253"
+   "MLSMM2253",
+   "LLSMS2280",
+   "LLSMS2282",
+   "LLSMS2283",
+   "LLSMS2112",
+   "LLSMS2398"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":5
+ },
+ {
+  "id":"GNUC2MC",
+  "name":"Master de sp\u00e9cialisation en g\u00e9nie nucl\u00e9aire",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-gnuc2mc",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   ""
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LBNEN2024"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"GRH2M",
@@ -1958,9 +3041,9 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-grh2m",
   "languages":[
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -1971,7 +3054,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "environment"
@@ -1990,10 +3075,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-hist2m",
   "languages":[
-   "de",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2007,12 +3092,15 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "LGERM2726",
    "LFILO2970"
   ],
   "nb_dedicated_courses":0
@@ -2023,10 +3111,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-hist2m1",
   "languages":[
-   "de",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "de"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2056,10 +3144,10 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-husm1ba",
   "languages":[
-   "es",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "es"
   ],
   "campuses":[
    "Mons"
@@ -2070,7 +3158,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "resources",
@@ -2086,16 +3176,48 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"INFO2M",
+  "name":"Master [120] : ing\u00e9nieur civil en informatique",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-info2m",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LLSMS2280"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"INGE1BA",
   "name":"Bachelier : ing\u00e9nieur de gestion",
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-inge1ba",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2106,16 +3228,19 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "energy"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "LINGE1317"
+   "LINGE1317",
+   "LALLE1532"
   ],
   "nb_dedicated_courses":1
  },
@@ -2125,11 +3250,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-inge2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2144,24 +3269,31 @@
   "themes":[
    "climate",
    "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
-   1,
-   3
+   2,
+   2,
+   7
   ],
   "matched_courses":[
+   "LLSMS2397",
+   "LLSMX2001",
+   "LLSMS2281",
    "LLSMS2098",
    "LLSMS2284",
-   "LLSMX2001",
+   "LCEMS2108",
+   "MLSMM2253",
+   "LLSMS2280",
    "LLSMS2282",
-   "LLSMS2281",
-   "MLSMM2253"
+   "LLSMS2283",
+   "LLSMS2112"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":4
  },
  {
   "id":"INGM2M",
@@ -2169,10 +3301,10 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-ingm2m",
   "languages":[
-   "es",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "es"
   ],
   "campuses":[
    "Mons"
@@ -2187,24 +3319,31 @@
   "themes":[
    "climate",
    "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
    1,
    1,
-   1,
-   3
+   2,
+   2,
+   7
   ],
   "matched_courses":[
+   "LLSMS2397",
+   "LLSMX2001",
+   "LLSMS2281",
    "LLSMS2098",
    "LLSMS2284",
-   "LLSMX2001",
+   "LCEMS2108",
+   "MLSMM2253",
+   "LLSMS2280",
    "LLSMS2282",
-   "LLSMS2281",
-   "MLSMM2253"
+   "LLSMS2283",
+   "LLSMS2112"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":4
  },
  {
   "id":"INTP2M",
@@ -2212,13 +3351,13 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-intp2m",
   "languages":[
-   "es",
    "nl",
+   "de",
    "other",
    "ru",
-   "en",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2248,11 +3387,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-kima2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2267,22 +3406,29 @@
    "climate",
    "energy",
    "environment",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   5,
    3,
-   2,
-   1
+   3,
+   5
   ],
   "matched_courses":[
-   "LMAPR2647",
    "LMAPR2001",
+   "LENVI2101",
+   "LMAPR2320",
    "LMAPR2021",
+   "LMAPR2647",
    "LMAPR2430",
-   "LENVI2007"
+   "LMAPR2483",
+   "LLSMS2280",
+   "LENVI2007",
+   "LMAPR2016"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"LAFR2M",
@@ -2290,11 +3436,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-lafr2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2324,12 +3470,12 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-ling2m",
   "languages":[
-   "es",
-   "other",
    "nl",
-   "en",
+   "de",
+   "other",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2351,10 +3497,45 @@
    1
   ],
   "matched_courses":[
-   "LFILO2970",
-   "LLSMX2001"
+   "LLSMX2001",
+   "LFILO2970"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"LITT9CE",
+  "name":"Certificat universitaire en litt\u00e9rature",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2021-litt9ce",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LGERM2726"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"MAP2M",
@@ -2362,11 +3543,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-map2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2379,16 +3560,23 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   1,
+   2,
    1
   ],
   "matched_courses":[
-   "LINMA2415"
+   "LINMA2510",
+   "LINMA2415",
+   "LGCIV2056",
+   "LLSMS2280"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"MATH1BA",
@@ -2396,8 +3584,8 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-math1ba",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2411,14 +3599,18 @@
   ],
   "themes":[
    "climate",
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
    1,
+   2,
    1
   ],
   "matched_courses":[
-   "LTECO2200"
+   "LGEO1111",
+   "LTECO2200",
+   "LBIO1110"
   ],
   "nb_dedicated_courses":0
  },
@@ -2456,11 +3648,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-meca2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2479,24 +3671,27 @@
   ],
   "themes_scores":[
    1,
-   1,
-   1,
-   1
+   2,
+   2,
+   3
   ],
   "matched_courses":[
    "LELME2420",
+   "LMECA2322",
+   "LMAPR2483",
+   "LLSMS2280",
    "LENVI2007"
   ],
   "nb_dedicated_courses":2
  },
  {
-  "id":"MINCULTS",
-  "name":"Mineure en culture scientifique",
+  "id":"MINBIOL",
+  "name":"Mineure en biologie",
   "cycle":"other",
-  "url":"https:\/\/uclouvain.be\/prog-2021-mincults",
+  "url":"https:\/\/uclouvain.be\/prog-2021-minbiol",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-La-Neuve"
@@ -2509,15 +3704,95 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   2,
+   2
+  ],
+  "matched_courses":[
+   "LBIO1117",
+   "LCHM1311"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MINCHIM",
+  "name":"Mineure en chimie",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-minchim",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "LCHM1311"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"MINCULTS",
+  "name":"Mineure en culture scientifique",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-mincults",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   1,
+   7,
+   2
+  ],
+  "matched_courses":[
+   "LBIO1114",
+   "LGEO1111",
+   "LBIR1230",
+   "LBIO1117",
+   "LGEO1332",
+   "LBIR1336",
+   "LBIR1130",
+   "LBIR1328",
+   "LBIO1110",
    "LINGE1317"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":4
  },
  {
   "id":"MINDD",
@@ -2525,8 +3800,8 @@
   "cycle":"other",
   "url":"https:\/\/uclouvain.be\/prog-2021-mindd",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-La-Neuve"
@@ -2537,23 +3812,29 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "climate",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   3,
    1,
-   1,
-   1
+   3
   ],
   "matched_courses":[
-   "LDVLD1300",
-   "LSPED1221"
+   "LBIR1230A",
+   "LSPED1221",
+   "LESPO2103",
+   "LDVLD1300"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":4
  },
  {
   "id":"MINDENV",
@@ -2561,8 +3842,8 @@
   "cycle":"other",
   "url":"https:\/\/uclouvain.be\/prog-2021-mindenv",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-La-Neuve"
@@ -2571,7 +3852,7 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
    "climate",
@@ -2579,15 +3860,17 @@
    "sustainability"
   ],
   "themes_scores":[
-   2,
-   2,
-   1
+   3,
+   4,
+   2
   ],
   "matched_courses":[
-   "LDVLP2325",
-   "LSPED1221"
+   "LBIR1230A",
+   "LSPED1221",
+   "LGEO1332",
+   "LDVLP2325"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":2
  },
  {
   "id":"MINGEOG",
@@ -2595,8 +3878,8 @@
   "cycle":"other",
   "url":"https:\/\/uclouvain.be\/prog-2021-mingeog",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-La-Neuve"
@@ -2609,13 +3892,50 @@
    "Science"
   ],
   "themes":[
+   "climate",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   2,
+   3,
+   1
+  ],
+  "matched_courses":[
+   "LGEO1111",
+   "LGEO1332",
+   "LGEO1321",
+   "LBIR1130",
+   "LBIR1328"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"MINSBIM",
+  "name":"Mineure en sciences biom\u00e9dicales (ouverture)",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-minsbim",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de pharmacie et des sciences biom\u00e9dicales"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
    "environment"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LGEO1321"
+   "WSBIM1205"
   ],
   "nb_dedicated_courses":0
  },
@@ -2636,20 +3956,53 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "climate",
    "environment"
   ],
   "themes_scores":[
-   1,
+   2,
+   2
+  ],
+  "matched_courses":[
+   "LSPED1221",
+   "LBIO1117"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"MINSTAT",
+  "name":"Mineure en statistique, sciences actuarielles et science des donn\u00e9es",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2021-minstat",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LSPED1221"
+   "LBIO1110"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
  },
  {
   "id":"MULT2M",
@@ -2657,11 +4010,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-mult2m",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2683,8 +4036,8 @@
    1
   ],
   "matched_courses":[
-   "LFILO2970",
-   "LLSMX2001"
+   "LLSMX2001",
+   "LFILO2970"
   ],
   "nb_dedicated_courses":1
  },
@@ -2694,8 +4047,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-musi2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2725,8 +4078,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-musi2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2751,13 +4104,70 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"NANO2MC",
+  "name":"Master de sp\u00e9cialisation en nanotechnologies",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-nano2mc",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LBRNA2201"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"NOTA2MC",
+  "name":"Master de sp\u00e9cialisation en notariat",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-nota2mc",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit et de criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LNOTA2004"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"PHYS1BA",
   "name":"Bachelier en sciences physiques",
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-phys1ba",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2788,8 +4198,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-phys2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2802,17 +4212,27 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy",
+   "environment"
   ],
   "themes_scores":[
-   3
+   6,
+   1,
+   2
   ],
   "matched_courses":[
+   "LINMA2510",
+   "LPHYS2246",
+   "LGCIV2056",
+   "LPHYS2267",
    "LPHYS2268",
+   "LPHYS2163",
+   "LPHYS2265",
    "LPHYS2162",
-   "LPHYS2265"
+   "LENVI2005"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":7
  },
  {
   "id":"PHYS2M1",
@@ -2820,8 +4240,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-phys2m1",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2834,17 +4254,22 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy"
   ],
   "themes_scores":[
-   3
+   5,
+   1
   ],
   "matched_courses":[
+   "LPHYS2267",
    "LPHYS2268",
+   "LPHYS2163",
+   "LPHYS2265",
    "LPHYS2162",
-   "LPHYS2265"
+   "LPHYS2246"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":5
  },
  {
   "id":"PPE1BA",
@@ -2852,11 +4277,11 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-ppe1ba",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2867,7 +4292,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "environment",
@@ -2884,17 +4311,89 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"PRIM2M",
+  "name":"Master [120] en sciences politiques, orientation relations internationales",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-prim2m",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "es"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MSPRI2160"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"PSY2M",
+  "name":"Master [120] en sciences psychologiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-psy2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de psychologie et des sciences de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LGERM2726",
+   "LPSYS2824"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"ROGE2M",
   "name":"Master [120] en langues et lettres modernes, orientation g\u00e9n\u00e9rale",
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-roge2m",
   "languages":[
-   "it",
-   "es",
    "nl",
-   "en",
+   "de",
+   "it",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2908,13 +4407,51 @@
    "Arts"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LGERM2726",
+   "LGERM2872"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"ROGE2M1",
+  "name":"Master [60] en langues et lettres modernes, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-roge2m1",
+  "languages":[
+   "nl",
+   "de",
+   "it",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "sustainability"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LGERM2872"
+   "LGERM2726"
   ],
   "nb_dedicated_courses":0
  },
@@ -2924,8 +4461,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-saiv2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2934,28 +4471,134 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
+   "climate",
    "energy",
    "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   2,
+   2,
+   10,
+   2,
+   7
+  ],
+  "matched_courses":[
+   "LBIRA2109",
+   "LBRES2102",
+   "LECON2353",
+   "LBRES2204",
+   "LBRES2203",
+   "LBRAI2218",
+   "LSGED2210",
+   "LBIR1336",
+   "LGEO1321",
+   "LBIR1328",
+   "LGCIV2073",
+   "LBIRE2105",
+   "LBIRE2131",
+   "LGEO2120",
+   "LENVI2005",
+   "LBRTE2101"
+  ],
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"SBIM1BA",
+  "name":"Bachelier en sciences biom\u00e9dicales",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2021-sbim1ba",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de pharmacie et des sciences biom\u00e9dicales"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "WSBIM1205"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"SBIM2M",
+  "name":"Master [120] en sciences biom\u00e9dicales",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-sbim2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de pharmacie et des sciences biom\u00e9dicales"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "climate",
+   "environment",
+   "sustainability"
+  ],
+  "themes_scores":[
    1,
-   3,
    2,
    1
   ],
   "matched_courses":[
-   "LGEO1321",
-   "LBIRA2109",
-   "LBIRE2105",
-   "LECON2353",
-   "LBIRE2131"
+   "WSBIM1205",
+   "WSBIM2135"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"SEX2M",
+  "name":"Master [120] en sciences de la famille et de la sexualit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-sex2m",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de psychologie et des sciences de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LDEMO2610"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"SGED2MC",
@@ -2963,8 +4606,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-sged2mc",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -2973,19 +4616,58 @@
    "Facult\u00e9 des bioing\u00e9nieurs"
   ],
   "fields":[
-   "Bio-Engineering"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
+   "climate",
+   "energy",
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
+   1,
+   3,
+   2
+  ],
+  "matched_courses":[
+   "LBRES2203",
+   "LSGED2210",
+   "LDVLP2675",
+   "LBIRE2131",
+   "LULG3330",
+   "LENVI2005"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"SINC1BA",
+  "name":"Bachelier en sciences informatiques",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2021-sinc1ba",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Charleroi"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LULG3330",
-   "LBIRE2131"
+   "LSINC1233"
   ],
   "nb_dedicated_courses":1
  },
@@ -2995,11 +4677,11 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-sinf1ba",
   "languages":[
-   "es",
    "nl",
-   "en",
+   "de",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3024,13 +4706,45 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"SINF2M",
+  "name":"Master [120] en sciences informatiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-sinf2m",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LLSMS2280"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"SOC2M",
   "name":"Master [120] en sociologie",
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-soc2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3041,7 +4755,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "climate",
@@ -3049,15 +4765,54 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
    2,
-   1
+   4,
+   5
   ],
   "matched_courses":[
+   "LBOE2120",
+   "LDVLP2325",
    "LANTR2090",
-   "LDVLP2325"
+   "LGERM2726",
+   "LDVLP2315",
+   "LENVI2006",
+   "LENVI2005"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":4
+ },
+ {
+  "id":"SOCA2M1",
+  "name":"Master [60] en sociologie et anthropologie",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-soca2m1",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LENVI2006",
+   "LANTR2010"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"SPED2M",
@@ -3065,8 +4820,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-sped2m",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3077,28 +4832,40 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "climate",
    "energy",
    "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   3,
-   1
+   7,
+   2,
+   7
   ],
   "matched_courses":[
-   "LANTR2090",
-   "LDVLP2325",
+   "LDEMO2610",
+   "LGEO2210",
+   "LGEO2230",
    "LENVI2010",
+   "LDVLP2325",
+   "LDVLP2675",
    "LSPED1221",
-   "LGEO2210"
+   "LANTR2090",
+   "LENVI2002",
+   "LGERM2726",
+   "LDVLP2315",
+   "LENVI2006",
+   "LENVI2005"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":7
  },
  {
   "id":"SPOL2M",
@@ -3106,11 +4873,11 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-spol2m",
   "languages":[
-   "other",
    "nl",
-   "en",
+   "de",
+   "other",
    "fr",
-   "de"
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3121,7 +4888,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "climate",
@@ -3129,7 +4898,7 @@
    "sustainability"
   ],
   "themes_scores":[
-   1,
+   2,
    1,
    1
   ],
@@ -3145,10 +4914,10 @@
   "cycle":"bac",
   "url":"https:\/\/uclouvain.be\/prog-2021-spom1ba",
   "languages":[
-   "es",
-   "en",
+   "fr",
    "nl",
-   "fr"
+   "en",
+   "es"
   ],
   "campuses":[
    "Mons"
@@ -3159,7 +4928,9 @@
   "fields":[
    "Sociology",
    "Political Sciences",
-   "Economy"
+   "Economy",
+   "Management",
+   "Communication"
   ],
   "themes":[
    "resources",
@@ -3175,19 +4946,87 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"SPOM2M1",
+  "name":"Master [60] en sciences politiques, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-spom2m1",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MSPRI2160"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"SPRI2M",
+  "name":"Master [120] en sciences politiques, orientation relations internationales",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2021-spri2m",
+  "languages":[
+   "fr",
+   "nl",
+   "en",
+   "de"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LSPRI2311"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"TRAD2M",
   "name":"Master [120] en traduction",
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-trad2m",
   "languages":[
-   "it",
-   "es",
    "nl",
+   "de",
+   "it",
    "other",
    "ru",
-   "en",
    "fr",
-   "de"
+   "es",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"
@@ -3234,14 +5073,53 @@
    "Architecture"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   2
+   3,
+   1,
+   1
   ],
   "matched_courses":[
-   "LURBA2940",
-   "LDROP2061"
+   "LDVLP2675",
+   "LDROP2061",
+   "LDROP2063",
+   "LURBA2940"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"VETE1BA",
+  "name":"Bachelier en m\u00e9decine v\u00e9t\u00e9rinaire",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2021-vete1ba",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "resources"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LVET1312",
+   "LVETE1201"
   ],
   "nb_dedicated_courses":1
  },
@@ -3251,8 +5129,8 @@
   "cycle":"master",
   "url":"https:\/\/uclouvain.be\/prog-2021-visu2mc",
   "languages":[
-   "en",
-   "fr"
+   "fr",
+   "en"
   ],
   "campuses":[
    "Louvain-la-Neuve"

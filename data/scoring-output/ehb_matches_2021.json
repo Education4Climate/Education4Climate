@@ -1,4 +1,20 @@
 {
+    "140991: Semester 1 Ontwerpatelier tuin": {
+        "nl": {
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                "e toepassing van een ecologische siervijver",
+                " gedaan naar enkele duurzaamheidsprincipes  het verw"
+            ]
+        }
+    },
+    "141010: Semester 2F Ontwerpatelier tuin": {
+        "nl": {
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                "de inpassing van een ecologische siervijver",
+                " gedaan naar enkele duurzaamheidsprincipes  het verw"
+            ]
+        }
+    },
     "141045: Semester 4 Ontwerpatelier ge\u00efntegreerd project publieke ruimte": {
         "nl": {
             "duurzaam beheer": [
@@ -6,16 +22,48 @@
             ]
         }
     },
+    "141122: Vierde taal: Duits 3": {
+        "nl": {
+            "milieuproble+m": [
+                "   * veiligheid   * milieuproblematiek    tenslotte l"
+            ],
+            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
+                "   * veiligheid   * milieuproblematiek    tenslotte l"
+            ]
+        }
+    },
+    "141881: Filosofie : onderzoek": {
+        "en": {
+            "anthropocen[^ ]+": [
+                "w  book  ending the anthropocene  essays on activism"
+            ]
+        }
+    },
+    "141882: Filosofie : onderzoek": {
+        "en": {
+            "anthropocen[^ ]+": [
+                "w  book  ending the anthropocene  essays on activism"
+            ]
+        }
+    },
+    "142140: Sociale Economie": {
+        "nl": {
+            "[[ ]ecolo[^ ]+, duurzaamheid]": [
+                "ge werkloosheid  een ecologische -en duurzaamheidscr",
+                "een ecologische -en duurzaamheidscrisis      naast e"
+            ]
+        }
+    },
     "142698: Bedrijfsmanagement": {
         "nl": {
-            "ecolog[^ ]+ economie": [
+            "ecolo[^ ]+ economie": [
                 "begrippen * sociale ecologische economie * de arbeidsmarkt *"
             ]
         }
     },
     "142705: Bedrijfsmanagement": {
         "nl": {
-            "ecolog[^ ]+ economie": [
+            "ecolo[^ ]+ economie": [
                 "begrippen * sociale ecologische economie * de arbeidsmarkt *"
             ]
         }
@@ -27,10 +75,26 @@
             ]
         }
     },
+    "143212: Design thinking, concepting, prototyping": {
+        "nl": {
+            "[impact, ocea+n]": [
+                "ibuten en wat is de impact ervan   de verschil",
+                " polariteit  - blue ocean kansen  l3 & l4  de"
+            ]
+        }
+    },
     "143362: Innovation today": {
         "nl": {
             "circulaire economie": [
                 "eid tot voedsel  de circulaire economie en het innovatielan"
+            ]
+        }
+    },
+    "143532: Techniek 1: Basiskennis informatica, netwerken en hardware": {
+        "nl": {
+            "[elektri[^ ]+, opslag]": [
+                "schakelingen *basis elektriciteit en elektronica een ",
+                "an communicatie- en opslagmedia allerhande *se"
             ]
         }
     },
@@ -44,6 +108,11 @@
             ],
             "collapsology": [
                 " a look at ecology  collapsology  accelerationism  c"
+            ],
+            "anthropocen[^ ]+": [
+                "ew book  ending the anthropocene  essays on activism",
+                " heterotopia in the anthropocene  identity  etc  bes",
+                "elevant art for the anthropocene  the age of the ove"
             ]
         }
     },
@@ -61,6 +130,14 @@
             ],
             "collapsology": [
                 " a look at ecology  collapsology  accelerationism  c"
+            ],
+            "anthropocen[^ ]+": [
+                "ew book  ending the anthropocene  essays on activism",
+                " heterotopia in the anthropocene  identity  etc    b",
+                "elevant art for the anthropocene  the age of the ove",
+                "ew book  ending the anthropocene  essays on activism",
+                " heterotopia in the anthropocene  etc  besides this ",
+                "elevant art for the anthropocene  the age of the ove"
             ]
         }
     },
@@ -71,10 +148,72 @@
             ]
         }
     },
+    "144161: Semester 3 Ecologie en gezondheid van plant en bodem": {
+        "nl": {
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
+                "anuit het ontwerp - biodiversiteit  plantenkeuze  fyto",
+                "semester 3 ecologie en gezondheid van p",
+                "iciden in een ruimer ecologisch verband - ecologisc",
+                "ecologisch verband - ecologisch verantwoorde oploss",
+                "ogelijkheden met een ecologische meerwaarde - algeme",
+                "mene aandachtspunten ecologisch verantwoorde ingrep",
+                "het toepassen van de ecologische voetafdruk vanuit h",
+                " aandacht voor fauna ecologie in de stad - klimaa",
+                "pecten  - sepcifieke ecologische aandachtspunten in "
+            ],
+            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "anuit het ontwerp - biodiversiteit  plantenkeuze  fyto",
+                "n pesticidentoets - problematiek bij het gebrui",
+                "semester 3 ecologie en gezondheid van p",
+                "iciden in een ruimer ecologisch verband - ecologisc",
+                "ecologisch verband - ecologisch verantwoorde oploss",
+                "ogelijkheden met een ecologische meerwaarde - algeme",
+                "mene aandachtspunten ecologisch verantwoorde ingrep",
+                "het toepassen van de ecologische voetafdruk vanuit h",
+                " aandacht voor fauna ecologie in de stad - klimaa",
+                "pecten  - sepcifieke ecologische aandachtspunten in "
+            ]
+        }
+    },
     "144162: Semester 1F Bodem en ecologie": {
         "nl": {
             "klimaatverandering": [
                 "ndschap in s2/s3f - klimaatverandering  wat is dit precies"
+            ]
+        }
+    },
+    "144164: Semester 3F Ecologie en gezondheid van plant en bodem": {
+        "nl": {
+            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
+                "anuit het ontwerp - biodiversiteit  plantenkeuze  fyto",
+                "semester 3f ecologie en gezondheid van p",
+                "iciden in een ruimer ecologisch verband - ecologisc",
+                "ecologisch verband - ecologisch verantwoorde oploss",
+                "ogelijkheden met een ecologische meerwaarde - algeme",
+                "mene aandachtspunten ecologisch verantwoorde ingrep",
+                "het toepassen van de ecologische voetafdruk vanuit h",
+                " aandacht voor fauna ecologie in de stad - klimaa",
+                "pecten  - sepcifieke ecologische aandachtspunten in "
+            ],
+            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "anuit het ontwerp - biodiversiteit  plantenkeuze  fyto",
+                "n pesticidentoets - problematiek bij het gebrui",
+                "semester 3f ecologie en gezondheid van p",
+                "iciden in een ruimer ecologisch verband - ecologisc",
+                "ecologisch verband - ecologisch verantwoorde oploss",
+                "ogelijkheden met een ecologische meerwaarde - algeme",
+                "mene aandachtspunten ecologisch verantwoorde ingrep",
+                "het toepassen van de ecologische voetafdruk vanuit h",
+                " aandacht voor fauna ecologie in de stad - klimaa",
+                "pecten  - sepcifieke ecologische aandachtspunten in "
+            ]
+        }
+    },
+    "144953: IT Lab": {
+        "nl": {
+            "[elektri[^ ]+, opslag]": [
+                "/-begrippen van een elektrische installati",
+                "erdelen voor netwerkopslag apparaten kennen  e"
             ]
         }
     },

@@ -5,8 +5,8 @@
   "cycle":"bac",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/100B\/2021",
   "languages":[
-   "nl",
    "fr",
+   "nl",
    "en"
   ],
   "campuses":[
@@ -26,14 +26,15 @@
   ],
   "themes_scores":[
    1,
-   2,
+   3,
    1,
    3
   ],
   "matched_courses":[
-   "ECGEB284",
    "FINT0039",
-   "DROIB330"
+   "ECGEB284",
+   "DROIB330",
+   "DROIB310"
   ],
   "nb_dedicated_courses":2
  },
@@ -90,9 +91,11 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -119,9 +122,11 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -154,11 +159,40 @@
    3
   ],
   "matched_courses":[
-   "SCHIM223",
+   "SPHYM134",
    "SCHIM224",
-   "SPHYM134"
+   "SCHIM223"
   ],
   "nb_dedicated_courses":1
+ },
+ {
+  "id":"251K",
+  "name":"Master de sp\u00e9cialisation en gestion des ressources aquatiques et aquaculture",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/251K\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur",
+   "Li\u00e8ge"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "ENVT0057-1"
+  ],
+  "nb_dedicated_courses":0
  },
  {
   "id":"224M",
@@ -189,10 +223,10 @@
    2
   ],
   "matched_courses":[
-   "SCHIM202",
    "SCHIM103",
    "SCHIM224",
-   "SCHIM124"
+   "SCHIM124",
+   "SCHIM202"
   ],
   "nb_dedicated_courses":0
  },
@@ -224,9 +258,9 @@
   ],
   "matched_courses":[
    "SGOGB302_25599",
-   "SCHIM223",
    "SPHYM119",
-   "SSPSM101"
+   "SSPSM101",
+   "SCHIM223"
   ],
   "nb_dedicated_courses":2
  },
@@ -317,12 +351,17 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy",
+   "environment"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
+   "SBOEM163",
    "SSPSM101"
   ],
   "nb_dedicated_courses":0
@@ -336,10 +375,10 @@
    "fr"
   ],
   "campuses":[
-   "Louvain-la-Neuve",
-   "Li\u00e8ge",
    "Namur",
-   "Gembloux"
+   "Li\u00e8ge",
+   "Gembloux",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -357,15 +396,16 @@
    1,
    3,
    1,
-   3
+   5
   ],
   "matched_courses":[
-   "ENVT3050-1",
-   "SSMRM102",
-   "DROIB330",
+   "SSMRM101",
    "SSMRM103",
+   "SSMRM102",
    "SSPSM101",
-   "SSMRM104"
+   "SSMRM104",
+   "DROIB330",
+   "ENVT3050-1"
   ],
   "nb_dedicated_courses":3
  },
@@ -378,11 +418,11 @@
    "fr"
   ],
   "campuses":[
-   "Namur",
-   "Gembloux",
+   "Li\u00e8ge",
    "Arlon",
+   "Gembloux",
    "Louvain-la-Neuve",
-   "Li\u00e8ge"
+   "Namur"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -400,16 +440,17 @@
    1,
    3,
    1,
-   4
+   6
   ],
   "matched_courses":[
-   "ENVT3050-1",
-   "ENVT0040-2",
-   "SSMRM102",
-   "DROIB330",
+   "SSMRM101",
    "SSMRM103",
+   "SSMRM102",
    "SSPSM101",
-   "SSMRM104"
+   "SSMRM104",
+   "DROIB330",
+   "ENVT0040-2",
+   "ENVT3050-1"
   ],
   "nb_dedicated_courses":4
  },
@@ -423,10 +464,10 @@
    "en"
   ],
   "campuses":[
-   "Louvain-la-Neuve",
-   "Li\u00e8ge",
    "Namur",
-   "Gembloux"
+   "Li\u00e8ge",
+   "Gembloux",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -444,15 +485,16 @@
    1,
    3,
    1,
-   3
+   5
   ],
   "matched_courses":[
-   "ENVT3050-1",
-   "SSMRM102",
-   "DROIB330",
+   "SSMRM101",
    "SSMRM103",
+   "SSMRM102",
    "SSPSM101",
-   "SSMRM104"
+   "SSMRM104",
+   "DROIB330",
+   "ENVT3050-1"
   ],
   "nb_dedicated_courses":3
  },
@@ -465,10 +507,10 @@
    "fr"
   ],
   "campuses":[
-   "Louvain-la-Neuve",
-   "Li\u00e8ge",
    "Namur",
-   "Gembloux"
+   "Li\u00e8ge",
+   "Gembloux",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -486,15 +528,16 @@
    1,
    3,
    1,
-   3
+   5
   ],
   "matched_courses":[
-   "ENVT3050-1",
-   "SSMRM102",
-   "DROIB330",
+   "SSMRM101",
    "SSMRM103",
+   "SSMRM102",
    "SSPSM101",
-   "SSMRM104"
+   "SSMRM104",
+   "DROIB330",
+   "ENVT3050-1"
   ],
   "nb_dedicated_courses":3
  },
@@ -508,10 +551,10 @@
    "en"
   ],
   "campuses":[
-   "Louvain-la-Neuve",
-   "Li\u00e8ge",
    "Namur",
-   "Gembloux"
+   "Li\u00e8ge",
+   "Gembloux",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -529,16 +572,17 @@
    1,
    4,
    1,
-   3
+   5
   ],
   "matched_courses":[
-   "ENVT3050-1",
-   "SSMRM102",
-   "DROIB330",
-   "LBRAI2110",
+   "SSMRM101",
    "SSMRM103",
+   "SSMRM102",
    "SSPSM101",
-   "SSMRM104"
+   "SSMRM104",
+   "DROIB330",
+   "ENVT3050-1",
+   "LBRAI2110"
   ],
   "nb_dedicated_courses":4
  },
@@ -570,9 +614,9 @@
   ],
   "matched_courses":[
    "SGOGB302_25599",
-   "SCHIM223",
    "SPHYM119",
-   "SSPSM101"
+   "SSPSM101",
+   "SCHIM223"
   ],
   "nb_dedicated_courses":2
  },
@@ -604,9 +648,9 @@
   ],
   "matched_courses":[
    "SGOGB302_25599",
-   "SCHIM223",
    "SPHYM119",
-   "SSPSM101"
+   "SSPSM101",
+   "SCHIM223"
   ],
   "nb_dedicated_courses":2
  },
@@ -638,9 +682,9 @@
   ],
   "matched_courses":[
    "SGOGB302_25599",
-   "SCHIM223",
    "SPHYM119",
-   "SSPSM101"
+   "SSPSM101",
+   "SCHIM223"
   ],
   "nb_dedicated_courses":2
  },
@@ -671,11 +715,11 @@
    2
   ],
   "matched_courses":[
-   "SCHIM223",
    "SPHYM119",
-   "SPHYM134",
+   "SSPSM101",
+   "SCHIM223",
    "SGOGB302_25599",
-   "SSPSM101"
+   "SPHYM134"
   ],
   "nb_dedicated_courses":2
  },
@@ -819,18 +863,19 @@
   "themes_scores":[
    2,
    1,
-   3,
+   4,
    1,
    1
   ],
   "matched_courses":[
-   "SCHIM202",
-   "SCHIM115",
+   "SCHIM229",
    "SCHIM103",
    "SCHIM124",
-   "SSPSM101"
+   "SCHIM115",
+   "SSPSM101",
+   "SCHIM202"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"22DM",
@@ -865,11 +910,11 @@
    1
   ],
   "matched_courses":[
-   "SCHIM202",
-   "SCHIM115",
    "SCHIM103",
    "SCHIM124",
-   "SSPSM101"
+   "SCHIM115",
+   "SSPSM101",
+   "SCHIM202"
   ],
   "nb_dedicated_courses":0
  },
@@ -906,14 +951,14 @@
    1
   ],
   "matched_courses":[
-   "SCHIM202",
-   "SCHIM223_25584",
-   "SCHIM115",
    "SCHIM103",
-   "SCHIM224",
-   "SCHIM223_25583",
    "SCHIM124",
-   "SSPSM101"
+   "SCHIM223_25583",
+   "SCHIM115",
+   "SSPSM101",
+   "SCHIM224",
+   "SCHIM223_25584",
+   "SCHIM202"
   ],
   "nb_dedicated_courses":2
  },
@@ -936,13 +981,16 @@
    "Science"
   ],
   "themes":[
+   "environment",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "ECGEB284_26016"
+   "ECGEB284_26016",
+   "SBIOB347"
   ],
   "nb_dedicated_courses":0
  },
@@ -956,8 +1004,8 @@
    "en"
   ],
   "campuses":[
-   "Louvain-la-Neuve",
-   "Namur"
+   "Namur",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -968,18 +1016,27 @@
   "themes":[
    "climate",
    "energy",
-   "resources"
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
+   2,
+   5,
    1,
    1
   ],
   "matched_courses":[
-   "SBOEM144",
-   "SBOEM260",
+   "SGOLM146",
+   "SBOEM163",
+   "SGOLB210",
+   "SBOEM165",
+   "SBOEM238",
+   "SGOLM145",
    "SSPSM101",
-   "SGOLM145"
+   "SBOEM144",
+   "SBOEM260"
   ],
   "nb_dedicated_courses":0
  },
@@ -993,8 +1050,8 @@
    "en"
   ],
   "campuses":[
-   "Louvain-la-Neuve",
-   "Namur"
+   "Namur",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -1004,16 +1061,27 @@
   ],
   "themes":[
    "climate",
-   "resources"
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
+   1,
+   5,
+   1,
    1
   ],
   "matched_courses":[
-   "SBOEM144",
+   "SGOLM146",
+   "SBOEM163",
+   "SGOLB210",
+   "SBOEM165",
+   "SBOEM238",
+   "SGOLM145",
    "SSPSM101",
-   "SGOLM145"
+   "SBOEM144"
   ],
   "nb_dedicated_courses":0
  },
@@ -1027,8 +1095,8 @@
    "en"
   ],
   "campuses":[
-   "Louvain-la-Neuve",
-   "Namur"
+   "Namur",
+   "Louvain-la-Neuve"
   ],
   "faculties":[
    "Facult\u00e9 des sciences"
@@ -1038,16 +1106,27 @@
   ],
   "themes":[
    "climate",
-   "resources"
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
    2,
+   1,
+   5,
+   1,
    1
   ],
   "matched_courses":[
-   "SBOEM144",
+   "SGOLM146",
+   "SBOEM163",
+   "SGOLB210",
+   "SBOEM165",
+   "SBOEM238",
+   "SGOLM145",
    "SSPSM101",
-   "SGOLM145"
+   "SBOEM144"
   ],
   "nb_dedicated_courses":0
  },
@@ -1139,6 +1218,98 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"210B",
+  "name":"Bachelier en sciences physiques",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/210B\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SSPSB102"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"200B",
+  "name":"Bachelier en sciences math\u00e9matiques",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/200B\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SSPSB102"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"230B",
+  "name":"Bachelier en sciences g\u00e9ologiques",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/230B\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment",
+   "resources",
+   "sustainability"
+  ],
+  "themes_scores":[
+   4,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "SSPSB102",
+   "SGOLB306",
+   "SGOLB210",
+   "SGOLB106",
+   "SGOLB303"
+  ],
+  "nb_dedicated_courses":1
+ },
+ {
   "id":"240B",
   "name":"Bachelier en sciences g\u00e9ographiques, orientation g\u00e9n\u00e9rale",
   "cycle":"bac",
@@ -1157,17 +1328,51 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
    1,
+   4,
+   2
+  ],
+  "matched_courses":[
+   "SSPSB102",
+   "SGOLB106",
+   "SGOGB210",
+   "SGOGB302",
+   "SGOGB303",
+   "SGOLB303"
+  ],
+  "nb_dedicated_courses":2
+ },
+ {
+  "id":"220B",
+  "name":"Bachelier en sciences chimiques",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/220B\/2021",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "SGOGB302",
-   "SGOGB210"
+   "SSPSB102"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":0
  },
  {
   "id":"250B",
@@ -1188,15 +1393,52 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   6
   ],
   "matched_courses":[
-   "SBIOB229"
+   "SSPSB102",
+   "SBIOB212",
+   "SBIOB229",
+   "SBIOB208",
+   "SBIOB346",
+   "SBIOB347"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":3
+ },
+ {
+  "id":"270B",
+  "name":"Bachelier en m\u00e9decine v\u00e9t\u00e9rinaire",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/270B\/2021",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "SVETB205",
+   "SSPSB107"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"800B",
@@ -1235,6 +1477,37 @@
   "nb_dedicated_courses":1
  },
  {
+  "id":"720K",
+  "name":"Master de sp\u00e9cialisation en \u00e9conomie internationale et du d\u00e9veloppement",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/720K\/2021",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Namur",
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "EDEVM334"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"771M",
   "name":"Master 60 en sciences \u00e9conomiques (horaire d\u00e9cal\u00e9)",
   "cycle":"master",
@@ -1254,15 +1527,50 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "EFAEM051",
+   "EFAEM057"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"710M",
+  "name":"Master 60 en sciences \u00e9conomiques",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/710M\/2021",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "campuses":[
+   "Namur",
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "EFAEM057"
+   "LESPO2104"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"775M",
@@ -1284,12 +1592,15 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "EFAEM051",
    "EFAEM057"
   ],
   "nb_dedicated_courses":0
@@ -1302,9 +1613,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1350,15 +1661,88 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "EFAEM051",
+   "EFAEM057"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"711M",
+  "name":"Master 120 en sciences \u00e9conomiques, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/711M\/2021",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Namur",
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "EFAEM057"
+   "LESPO2104"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
+ },
+ {
+  "id":"71DM",
+  "name":"Master 120 en sciences \u00e9conomiques, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9 didactique",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/71DM\/2021",
+  "languages":[
+   "nl",
+   "de",
+   "fr",
+   "es",
+   "en"
+  ],
+  "campuses":[
+   "Namur",
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales et de gestion"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LESPO2104"
+  ],
+  "nb_dedicated_courses":1
  },
  {
   "id":"751M",
@@ -1368,9 +1752,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1416,12 +1800,15 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "EFAEM051",
    "EFAEM057"
   ],
   "nb_dedicated_courses":0
@@ -1434,9 +1821,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1470,9 +1857,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1510,9 +1897,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1544,9 +1931,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1580,9 +1967,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1602,12 +1989,13 @@
   ],
   "themes_scores":[
    1,
-   1,
+   2,
    1
   ],
   "matched_courses":[
-   "ECGEB284",
-   "EINGB221"
+   "EINGB221",
+   "EITGB116",
+   "ECGEB284"
   ],
   "nb_dedicated_courses":1
  },
@@ -1619,9 +2007,9 @@
   "languages":[
    "nl",
    "de",
+   "fr",
    "es",
-   "en",
-   "fr"
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1651,9 +2039,9 @@
   "cycle":"bac",
   "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/000B\/2021",
   "languages":[
-   "en",
    "fr",
-   "nl"
+   "nl",
+   "en"
   ],
   "campuses":[
    "Namur"
@@ -1666,14 +2054,19 @@
    "Letters"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
+   "LPHIB103",
    "SSPSM101"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  }
 ]

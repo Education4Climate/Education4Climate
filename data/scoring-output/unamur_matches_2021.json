@@ -1,4 +1,11 @@
 {
+    "DROIB310: Droit compar\u00e9 et terminologie juridique anglaise": {
+        "fr": {
+            "responsabilite environnement[^ ]+": [
+                "    nuisance  &amp  responsabilite environnementale     titre iii      "
+            ]
+        }
+    },
     "DROIB330: Droit de l'environnement et du d\u00e9veloppement durable": {
         "fr": {
             "[developp[^ ]+ durab[^ ]+, droits? (?:d'|de l')?environnement]": [
@@ -15,7 +22,7 @@
                 "du cours definit le droit de l'environnement  degage ses caracte",
                 "2        sources du droit de l'environnement     titre 3        "
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "environnement et du developpement durable acquis d'apprentiss",
                 "environnement et au developpement durable        comprendre l",
                 "notion nouvelle  le developpement durable           contenu  ",
@@ -47,7 +54,7 @@
                 "tre 1  le droit a l'environnement comme droit fondame",
                 "a la responsabilite environnementale      chapitre 1 ",
                 "'une responsabilite environnementale a veni",
-                "civile au prejudice ecologique font l'objet de la "
+                " civile au prejudice ecologique font l'objet de la "
             ],
             "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]": [
                 "environnement et du developpement durable acquis d'apprentiss",
@@ -70,6 +77,11 @@
                 " analyse comment la protection de l'environnement et le developpement",
                 "te a trouve dans la protection de l'environnement et le developpement",
                 "      iieme partie  protection de l'environnement et activites de l'h"
+            ],
+            "responsabilite environnement[^ ]+": [
+                "a son expansion  la responsabilite environnementale instauree par la di",
+                "abilite civile a la responsabilite environnementale      chapitre 1  l'",
+                "e 3  contours d'une responsabilite environnementale a veni"
             ]
         }
     },
@@ -84,6 +96,27 @@
         "fr": {
             "objectifs? (de )?developpements? durables?": [
                 "tique au regard des objectifs de developpement durable  odd  definis par l"
+            ]
+        }
+    },
+    "EDEVM334: Evaluation of Public Interventions": {
+        "en": {
+            "[sustainable development, (?:environment|ecology)]": [
+                " makers and promote sustainable development  this course will r",
+                "icy  as well as the environment in which it is impl"
+            ],
+            "[sustainable development, impact]": [
+                " makers and promote sustainable development  this course will r",
+                "sic methods used in impact evaluation  and thi",
+                "not  evaluating the impact of  policies and pr",
+                "used to analyze the impact of public policy in"
+            ]
+        }
+    },
+    "EFAEM051: Finances publiques": {
+        "fr": {
+            "questions? environnement": [
+                " au choix  entre la question environnementale  le federalisme "
             ]
         }
     },
@@ -106,7 +139,7 @@
     },
     "EINGM107: Technologie et soutenabilit\u00e9": {
         "fr": {
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "es pour soutenir le developpement durable     - reflexion cri",
                 "ature systemique du developpement durable      - comprehensio",
                 "er des objectifs de developpement durable     - analyse des o",
@@ -115,7 +148,7 @@
                 "t 2  technologie et developpement durable [5h]         method",
                 "stiques des impacts environnementaux des technologies",
                 "ogres technologique environnement et pollutio",
-                "e cas       part 3  ecologie industrielle et the"
+                "de cas       part 3  ecologie industrielle et the"
             ],
             "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
                 "stiques des impacts environnementaux des technologies",
@@ -140,10 +173,24 @@
             ]
         }
     },
+    "EITGB116: Projet : diagnostic sectoriel": {
+        "fr": {
+            "controles? de la pollution": [
+                " de l'environnement controle de la pollutio"
+            ]
+        }
+    },
     "ENVT0040-2: Th\u00e9ories et gestions des transitions \u00e9cologiques": {
         "fr": {
             "transiti[^ ]+ ecolo[^ ]+": [
                 "ies et gestions des transitions ecologiques contenu  le descrip"
+            ]
+        }
+    },
+    "ENVT0057-1: El\u00e9ments d'\u00e9cotoxicologie aquatique": {
+        "fr": {
+            "ecotoxicologie": [
+                "elements d'ecotoxicologie aquatique"
             ]
         }
     },
@@ -156,8 +203,8 @@
     },
     "FINT0039: Quelle transition vers un monde plus juste et plus durable ? Approche scientifique et philosophique": {
         "fr": {
-            "[ecologi, transiti[^ ]+ energ[^ ]+]": [
-                "  crise economique  ecologique  sociale  politi",
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ energ[^ ]+]": [
+                "s  crise economique  ecologique  sociale  politique",
                 "u nucleaire dans la transition energetique en question  p  lan"
             ],
             "collapsologie": [
@@ -178,10 +225,54 @@
             ]
         }
     },
+    "LESPO2104: S\u00e9minaire de gestion des questions environnementales": {
+        "fr": {
+            "questions? environnement": [
+                "aire de gestion des questions environnementales"
+            ]
+        }
+    },
+    "LPHIB103: Anthropologie philosophique et \u00e9cologies": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, anthropocen[^ ]+]": [
+                "gie philosophique et ecologies acquis d'apprentiss",
+                "prehender les enjeux ecologiques contemporains  et c",
+                "ents  comme celui d'anthropocene   en ce sens  le co"
+            ],
+            "anthropocen(?:e|ique)": [
+                "ents  comme celui d'anthropocene   en ce sens  le co"
+            ]
+        }
+    },
     "SBIOB153: Biologie des organismes": {
         "fr": {
             "rechauffement climat[^ ]+": [
                 "oxyde de carbone et rechauffement climatique     7  biologie de "
+            ],
+            "biologie de la conservation": [
+                "t climatique     7  biologie de la conservation   exemple du costa "
+            ]
+        }
+    },
+    "SBIOB208: Stage de biologie et d'\u00e9cologie marine": {
+        "fr": {
+            "biologie de la conservation": [
+                "ogie marine et a la biologie de la conservation  la visite du centr"
+            ]
+        }
+    },
+    "SBIOB212: \u00c9cologie g\u00e9n\u00e9rale": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "e de l'homme sur la biosphere                 con",
+                "ecologie generale acquis d'a",
+                " et pratiques  de l'ecologie          objectifs ",
+                "issances de base en ecologie generale  leur perm",
+                "       contenu    l'ecologie precise les relatio"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "e de l'homme sur la biosphere                 con",
+                " leur milieu   et l'ecosysteme qui constitue le pl"
             ]
         }
     },
@@ -189,6 +280,97 @@
         "fr": {
             "rechauffement climat[^ ]+": [
                 "ternationale sur le rechauffement climatique  etc  pratiquement "
+            ],
+            "biologie de la conservation": [
+                "le  d'ethologie  de biologie de la conservation et d'ecologie pourr"
+            ]
+        }
+    },
+    "SBIOB346: Biodiversit\u00e9 et esp\u00e8ces invasives": {
+        "fr": {
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "biodiversite et especes invasive",
+                "ssage        partie biodiversite        -de comprend",
+                "es classiques de la biodiversite  theories de niche ",
+                "ifferents effets de biodiversite sur le fonctionneme",
+                "objectifs    partie biodiversite      - faire compre",
+                "e de deux parties   biodiversite  donnee par f  de l",
+                "tants controlant la biodiversite et la presence des ",
+                "  theorie partim i  biodiversite                 bio",
+                "ite                 biodiversite - theorie de niche ",
+                "niche               biodiversite - theorie neutre   ",
+                "eutre               biodiversite et le fonctionnemen",
+                "cices        partie biodiversite        modele de co",
+                "  et comprendre les consequences de ces processus p",
+                " fonctionnement des ecosystemes        partie espec",
+                " fonctionnement des ecosystemes      - entrainer le",
+                "a utiliser un modele ecologique simple      partie ",
+                " fonctionnement des ecosystemes                    "
+            ],
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "biodiversite et especes invasive",
+                "ssage        partie biodiversite        -de comprend",
+                "es classiques de la biodiversite  theories de niche ",
+                "ifferents effets de biodiversite sur le fonctionneme",
+                "objectifs    partie biodiversite      - faire compre",
+                "e de deux parties   biodiversite  donnee par f  de l",
+                "tants controlant la biodiversite et la presence des ",
+                "  theorie partim i  biodiversite                 bio",
+                "ite                 biodiversite - theorie de niche ",
+                "niche               biodiversite - theorie neutre   ",
+                "eutre               biodiversite et le fonctionnemen",
+                "cices        partie biodiversite        modele de co",
+                "fferentes notions d'ecologie liees au phenomene ",
+                " utiliser un modele ecologique simple      partie "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "biodiversite et especes invasive",
+                "ssage        partie biodiversite        -de comprend",
+                "es classiques de la biodiversite  theories de niche ",
+                "ifferents effets de biodiversite sur le fonctionneme",
+                "objectifs    partie biodiversite      - faire compre",
+                "e de deux parties   biodiversite  donnee par f  de l",
+                "tants controlant la biodiversite et la presence des ",
+                "  theorie partim i  biodiversite                 bio",
+                "ite                 biodiversite - theorie de niche ",
+                "niche               biodiversite - theorie neutre   ",
+                "eutre               biodiversite et le fonctionnemen",
+                "cices        partie biodiversite        modele de co",
+                " fonctionnement des ecosystemes        partie espec",
+                " fonctionnement des ecosystemes      - entrainer le",
+                " fonctionnement des ecosystemes                    "
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "biodiversite et especes invasive",
+                "ssage        partie biodiversite        -de comprend",
+                "es classiques de la biodiversite  theories de niche ",
+                "ifferents effets de biodiversite sur le fonctionneme",
+                "objectifs    partie biodiversite      - faire compre",
+                "e de deux parties   biodiversite  donnee par f  de l",
+                "tants controlant la biodiversite et la presence des ",
+                "  theorie partim i  biodiversite                 bio",
+                "ite                 biodiversite - theorie de niche ",
+                "niche               biodiversite - theorie neutre   ",
+                "eutre               biodiversite et le fonctionnemen",
+                "cices        partie biodiversite        modele de co",
+                "  - de comprendre l'impact potentiel des invas",
+                " fonctionnement des ecosystemes        partie espec",
+                " fonctionnement des ecosystemes      - entrainer le",
+                "a utiliser un modele ecologique simple      partie ",
+                " fonctionnement des ecosystemes                    "
+            ]
+        }
+    },
+    "SBIOB347: Introduction \u00e0 l'\u00e9cotoxicologie": {
+        "fr": {
+            "ecotoxicologie": [
+                "introduction a l'ecotoxicologie acquis d'apprentiss",
+                "ncepts de base de l'ecotoxicologie et pouvoir les appl",
+                "eg introduction a l'ecotoxicologie   definitions  hist",
+                "toxicologie et de l'ecotoxicologie   champ et finalite",
+                "*les objectifs de l'ecotoxicologie  scientifique  tech",
+                "que     *societes d'ecotoxicologie   beltox et setac  ",
+                "     *finalite de l'ecotoxicologie   l'evaluation du r"
             ]
         }
     },
@@ -197,6 +379,74 @@
             "exploitation durable": [
                 "ation des niveaux d'exploitation durable des ressources aqua",
                 "de niveau optimum d'exploitation durable  developpement de l"
+            ]
+        }
+    },
+    "SBOEM163: Ecotoxicology": {
+        "fr": {
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "rs composants de la biosphere presenter les metho",
+                " de pollution de la biosphere 2 1  la production ",
+                "r les etudiants aux problemes environnementaux m",
+                "iants aux problemes environnementaux majeurs lies aux",
+                "lluants a l'echelle environnementale                 "
+            ],
+            "[nucleaire, pollu(?:ant|tion), environnement]": [
+                "s fossiles  energie nucleaire  2 2  l'industrie c",
+                "et au transfert des polluants dans les divers co",
+                "rer la toxicite des polluants a l'echelle enviro",
+                "ncipales sources de pollution de la biosphere 2 1",
+                "metaux lourds  micropolluants industriels  2 3  ",
+                "et de transfert des polluants 3 1  circulation a",
+                " 3 2  transfert des polluants et contamination d",
+                " 3  circulation des polluants dans les reseaux t",
+                "iques 4  effets des polluants sur les population",
+                "de la toxicite d'un polluant  tests d'ecotoxicit",
+                "es  4 2  effets des polluants sur l'interaction ",
+                "des populations aux polluants   tolerance et res",
+                "e 5  monitoring des polluants 5 1  monitoring de",
+                "5 1  monitoring des polluants dans les biotopes ",
+                "iants aux problemes environnementaux majeurs lies aux",
+                "lluants a l'echelle environnementale                 "
+            ],
+            "[pollution, pesticide]": [
+                "ncipales sources de pollution de la biosphere 2 1",
+                "griculture moderne  pesticides organochlores et o",
+                "ophosphores  autres pesticides  3  mecanismes de "
+            ],
+            "ecotoxicologie": [
+                "issage    -situer l'ecotoxicologie au sein des differe",
+                "uelles utilisees en ecotoxicologie pour mesurer la tox",
+                "e en toxicologie et ecotoxicologie ou presentent de ma",
+                "s en toxicologie et ecotoxicologie           table des",
+                "ipes et enjeux de l'ecotoxicologie 2  principales sour",
+                "et histologiques en ecotoxicologie 5 4  ecotoxicogenom",
+                "e bioindicateurs en ecotoxicologie   test de toxicite ",
+                "s physiologiques en ecotoxicologie   utilisation des m"
+            ],
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "r les etudiants aux problemes environnementaux majeurs lies aux"
+            ]
+        }
+    },
+    "SBOEM165: Evolutionary genomics and transcriptomics": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, anthropocen[^ ]+]": [
+                "ess in evolution and ecology  methodology  exper",
+                "mics in evolutionary ecology with a focus on stu",
+                "r understanding the anthropocene  stickleback fishes"
+            ],
+            "anthropocen(?:e|ique)": [
+                "r understanding the anthropocene  stickleback fishes"
+            ]
+        }
+    },
+    "SBOEM238: Applied ecotoxicology": {
+        "fr": {
+            "ecotoxicologie": [
+                "uees rencontrees en ecotoxicologie  aussi bien dans le",
+                "e du risque       - ecotoxicologie industrielle       ",
+                "ndustrielle       - ecotoxicologie reglementaire      "
             ]
         }
     },
@@ -245,10 +495,6 @@
     },
     "SCHIM223: Mati\u00e8re et Energie": {
         "fr": {
-            "[electri[^ ]+, verte]": [
-                "enouvelables  thermoelectrique organique  ~2h     ",
-                "uction aux energies vertes  presentation du p"
-            ],
             "energ[^ ]+ fossile": [
                 "s  presentation des energies fossiles  petrole  gaz natu",
                 "      1  matiere et energies fossiles  petrole  gaz natu"
@@ -266,10 +512,6 @@
     },
     "SCHIM223_25583: Mati\u00e8re et Energie  - Partie 1 : Concept et production de l'\u00e9nergie": {
         "fr": {
-            "[electri[^ ]+, verte]": [
-                "enouvelables  thermoelectrique organique  ~2h     ",
-                "uction aux energies vertes  presentation du p"
-            ],
             "energ[^ ]+ fossile": [
                 "s  presentation des energies fossiles  petrole  gaz natu",
                 "      1  matiere et energies fossiles  petrole  gaz natu"
@@ -291,10 +533,6 @@
                 "enouvelables  thermoelectrique organique  ~2h     ",
                 "e 2   conversion et stockage de l'energie acquis"
             ],
-            "[electri[^ ]+, verte]": [
-                "enouvelables  thermoelectrique organique  ~2h     ",
-                "uction aux energies vertes  presentation du p"
-            ],
             "energ[^ ]+ fossile": [
                 "s  presentation des energies fossiles  petrole  gaz natu",
                 "      1  matiere et energies fossiles  petrole  gaz natu"
@@ -314,6 +552,13 @@
         "en": {
             "solar[- ]?(?:energy|power)": [
                 "ronic materials and solar energy conversio"
+            ]
+        }
+    },
+    "SCHIM229: Chimie et environnement": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "itions precises des problemes environnementaux actuels et refle"
             ]
         }
     },
@@ -404,10 +649,89 @@
             ]
         }
     },
+    "SGOGB303: Am\u00e9nagement du territoire et SIG": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "ement du territoire durable         appliquera ",
+                " villes et communes durables         interventi",
+                "mobilite  quartiers durables               un a",
+                "     un amenagement durable pour la wallonie   ",
+                "ntions exterieures  mobilite  quartiers durables"
+            ]
+        }
+    },
+    "SGOLB106: G\u00e9ographie et g\u00e9ologie de la Belgique": {
+        "fr": {
+            "[environnement, ressource, effondrement]": [
+                "guer les influences environnementales  y compris geol",
+                "s ressources de son environnement et notamment celles",
+                " implications socio-environnementales                ",
+                "ndre les enjeux des ressources minerales exploite",
+                "a geothermie et les ressources qui ne sont plus e",
+                "ujours exploite les ressources de son environneme",
+                "     applications   ressources du sous-sol  risqu",
+                "ement  inondations  effondrements                   "
+            ]
+        }
+    },
+    "SGOLB210: Pal\u00e9ontologie": {
+        "fr": {
+            "extinction (?:des |de l')espece": [
+                "on d'evolution et d'extinction des especes en insistant sur l"
+            ]
+        }
+    },
+    "SGOLB303: Environnement et g\u00e9ologie": {
+        "fr": {
+            "[degradation, aquifere]": [
+                "fils pedologiques - degradation des sols - carte pe",
+                "otection des nappes aquiferes et des sols  le co",
+                "ssoutes au sein des aquiferes sont quantitfies a"
+            ],
+            "[degradation, ecosyst[^ ]+, environnement]": [
+                "fils pedologiques - degradation des sols - carte pe",
+                "sol - le sol dans l'ecosysteme - phenomenes de mig",
+                "environnement et geologie acquis ",
+                "ours de geologie et environnement a pour objectif de "
+            ],
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ne reflexion sur le developpement durable           objectifs",
+                "environnement et geologie acquis ",
+                "ours de geologie et environnement a pour objectif de ",
+                "sol - le sol dans l'ecosysteme - phenomenes de mig"
+            ],
+            "[protection, aquifere]": [
+                "la gestion et de la protection des nappes aquifere",
+                "es de prospection - protection des captages et des",
+                "otection des nappes aquiferes et des sols  le co",
+                "ssoutes au sein des aquiferes sont quantitfies a"
+            ]
+        }
+    },
+    "SGOLB306: M\u00e9tallog\u00e9nie et industrie min\u00e9rale": {
+        "fr": {
+            "ressources? (?:non-?)?renouvelable": [
+                "s          geologie ressources renouvelables et non-renouvelabl"
+            ]
+        }
+    },
     "SGOLM145: P\u00e9dologie": {
         "fr": {
             "conditions? climat[^ ]+": [
                 "ineralogique et des conditions climatiques   - la seconde part"
+            ]
+        }
+    },
+    "SGOLM146: Hydrog\u00e9ologie": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "r les etudiants aux problemes environnementaux lies a la protec"
+            ],
+            "[protection, aquifere]": [
+                "nementaux lies a la protection et a l'exploitation",
+                "'exploitation et de protection des nappes sont int",
+                "oitation des nappes aquiferes  leur permettant d",
+                " differents types d'aquiferes et les methodes d'"
             ]
         }
     },
@@ -425,6 +749,16 @@
             ]
         }
     },
+    "SSMRM101: Introduction \u00e0 la ruralit\u00e9": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "ur en croissance et durabilite socio-environnement",
+                "ne du developpement durable",
+                "e flux y compris de mobilite et la metropolisati",
+                "du territoire et de mobilite en milieu rural  a "
+            ]
+        }
+    },
     "SSMRM102: Changement global et anthropoc\u00e8ne": {
         "fr": {
             "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
@@ -433,7 +767,7 @@
                 "concept de services ecosystemiques  dans le contexte i",
                 "concept de services ecosystemiques est introduit comme"
             ],
-            "[bio(?:diversite|sphere), impact, environnement|ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "invasives  perte de biodiversite  changements d'util",
                 "azote  declin de la biodiversite  changements d'util",
                 " naturels  et leurs impacts sur l'environnemen",
@@ -455,6 +789,10 @@
             "services? ecosystemiq": [
                 "tique le concept de services ecosystemiques  dans le context",
                 "tees  le concept de services ecosystemiques est introduit co"
+            ],
+            "anthropocen(?:e|ique)": [
+                "hangement global et anthropocene acquis d'apprentiss",
+                "nition du concept d'anthropocene et une reflexion su"
             ]
         }
     },
@@ -472,10 +810,38 @@
             ]
         }
     },
+    "SSPSB102: Questions de sciences religieuses": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                " monde de la vie ou biosphere  le mal  le salut  ",
+                " en biologie  ou en ecologie  plus generalement "
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                " monde de la vie ou biosphere  le mal  le salut  ",
+                "ealite globale et l'evolution de la fluidite ment",
+                "  en biologie  ou en ecologie  plus generalement "
+            ]
+        }
+    },
+    "SSPSB107: Philosophie et sciences religieuses": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ecosystemes dans la biosphere et dans la perspect",
+                " de l'animal et des ecosystemes dans la biosphere e"
+            ]
+        }
+    },
     "SSPSM101: Sciences, \u00e9thique et d\u00e9veloppement": {
         "fr": {
             "rechauffement climat[^ ]+": [
                 "ette problematique  rechauffement climatique  epuisement des res"
+            ]
+        }
+    },
+    "SVETB205: Ecologie appliqu\u00e9e aux animaux domestiques : e learning": {
+        "fr": {
+            "sante environnement": [
+                " de l'animal sur la sante environnementale        les trava"
             ]
         }
     }

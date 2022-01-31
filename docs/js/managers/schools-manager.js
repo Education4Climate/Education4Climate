@@ -33,7 +33,8 @@ class SchoolsManager {
                             shortName: school.shortName,
                             coursesFile: school.coursesFile,
                             programsFile: school.programsFile,
-                            teachersDirectoryUrl: school.teachersDirectoryUrl
+                            teachersDirectoryUrl: school.teachersDirectoryUrl,
+                            type: school.type
                         });
                     });
                 });

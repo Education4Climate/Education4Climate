@@ -1,24 +1,65 @@
 {
     "UA-B1-ARCHIT-012-M: Ecologie et architecture durable": {
         "fr": {
-            "[bioclimat[^ ]+, construction]": [
-                "ents d'architecture bioclimatique   strategie du chau",
-                "isons passives  eco-construction   eco-quartiers "
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "preinte ecologique  biosphere  ecosysteme  biogen",
+                "ecologie et architecture dur",
+                "arbone  l'empreinte ecologique      la biogenese  ",
+                " carbone  empreinte ecologique  biosphere  ecosyst"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "preinte ecologique  biosphere  ecosysteme  biogen",
+                " la respiration   l'ecosysteme   relation trophiqu",
+                "logique  biosphere  ecosysteme  biogenese    - def",
+                " et edaphiques d'un ecosysteme      - expliquer l'",
+                "la matiere dans les ecosystemes      - expliquer le"
+            ],
+            "architectur[^ ]+ bioclimatique": [
+                "nertie   elements d'architecture bioclimatique   strategie du chau"
             ],
             "[bioclimat[^ ]+, energ[^ ]+]": [
                 "ents d'architecture bioclimatique   strategie du chau",
-                "sol et le flux de l'energie et de la matiere   "
+                "er les principes du bioclimatisme     - critiquer un ",
+                "sol et le flux de l'energie et de la matiere   ",
+                "- expliquer le flux energetique et les cycles de la"
             ],
             "[effets? (?:de )?serre, climat]": [
                 "   la biogenese     effet de serre   la photosynthese ",
+                "      - expliquer l'effet de serre sur la planete et d",
                 "tion trophique   le climat  le sol et le flux ",
-                "s d'architecture bioclimatique   strategie du "
+                "s d'architecture bioclimatique   strategie du ",
+                "liquer les facteurs climatiques  biotiques et ",
+                "les principes du bioclimatisme     - critiquer"
             ],
             "architectures? durab[^ ]+": [
                 "ecologie et architecture durable le bilan carbone  l"
             ],
             "cycle du carbone": [
                 "ycle de l'eau    le cycle du carbone  transfert de chale"
+            ]
+        }
+    },
+    "UA-B3-ARCHIT-001-M: Conception architecturale et urbanistique III": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "ssources et du sol  durabilite  eco-construction  ",
+                "s  densite  mixite  mobilite  paysage  composant"
+            ]
+        }
+    },
+    "UA-B3-ARCHIT-013-M: Equipement du b\u00e2timent III": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "batiment iii normes electriques dans une habitation",
+                " d'une installation electrique standard  d'appliqu",
+                "r la reglementation electrique  de decrire et crit",
+                "uction de chaleur   stockage   cheminees   chauf"
+            ],
+            "energ[^ ]+ fossile": [
+                "t inconvenients des energies fossiles et sources d'energ"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "ssiles et sources d'energies renouvelables pour le chauffage  "
             ]
         }
     },
@@ -30,6 +71,28 @@
             "[effets? (?:de )?serre, climat]": [
                 " emissions de gaz a effet de serre a l'horizon 2050 ou",
                 "ixite le changement climatique et les inegalit"
+            ]
+        }
+    },
+    "UA-M1-ARCHIT-016-M: Conception environnementale, du b\u00e2timent \u00e0 la ville": {
+        "fr": {
+            "questions? environnement": [
+                "s concepts dans les questions environnementales     specificite",
+                " entendues dans les questions environnementales     se constitu"
+            ]
+        }
+    },
+    "UA-M1-FINURB-003-M: Ing\u00e9nierie urbaine": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "te et developpement durable  de reseaux urbains",
+                "e cours de mobilite durable definit de maniere ",
+                "ale ou urbanistique durable  faire preuve d'inn",
+                "ale ou urbanistique durable  faire preuve d'inn",
+                "inclus les cours de mobilite et developpement du",
+                "usages  le cours de mobilite durable definit de ",
+                "llee les modeles de mobilite et leurs applicatio",
+                "on aux questions de mobilite  de reseaux techniq"
             ]
         }
     },
@@ -51,12 +114,117 @@
             ]
         }
     },
+    "UA-M2-FINURB-004-M: Approche environnementale de l'am\u00e9nagement du territoire": {
+        "fr": {
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "serre  preserver la biodiversite    a travers la ges",
+                " des dechets  de la biodiversite   avec quelles dema",
+                "  a l'erosion de la biodiversite et aux risques envi",
+                "aux pollutions  a l'erosion de la biodiversite ",
+                "approche environnementale de l'amenagement",
+                "see des thematiques environnementales et de leurs enj",
+                "sur les evaluations environnementales strategiques  l",
+                "mesurer les impacts environnementaux de l'implantatio",
+                "nces sur les enjeux environnementaux approfondis lors",
+                "prendre en compte l'environnement dans l'outil commun",
+                "egrer les objectifs environnementaux dans les politiq",
+                "ueux a la fois de l'environnement mais aussi du paysa",
+                "site et aux risques environnementaux   - connaitre le",
+                "enus de evaluations environnementales strategiques  e",
+                "ncidences et notice environnementale   - comprendre l",
+                "s differents enjeux environnementaux peuvent etre mes"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "serre  preserver la biodiversite    a travers la ges",
+                " des dechets  de la biodiversite   avec quelles dema",
+                "  a l'erosion de la biodiversite et aux risques envi",
+                "tions en constantes evolution   interagir avec l'",
+                "tions en constantes evolution   interagir avec l'",
+                "approche environnementale de l'amenagement",
+                "see des thematiques environnementales et de leurs enj",
+                "sur les evaluations environnementales strategiques  l",
+                "mesurer les impacts environnementaux de l'implantatio",
+                "nces sur les enjeux environnementaux approfondis lors",
+                "prendre en compte l'environnement dans l'outil commun",
+                "egrer les objectifs environnementaux dans les politiq",
+                "ueux a la fois de l'environnement mais aussi du paysa",
+                "site et aux risques environnementaux   - connaitre le",
+                "enus de evaluations environnementales strategiques  e",
+                "ncidences et notice environnementale   - comprendre l",
+                "s differents enjeux environnementaux peuvent etre mes"
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "serre  preserver la biodiversite    a travers la ges",
+                " des dechets  de la biodiversite   avec quelles dema",
+                "  a l'erosion de la biodiversite et aux risques envi",
+                "comment mesurer les impacts environnementaux d",
+                "approche environnementale de l'amenagement",
+                "see des thematiques environnementales et de leurs enj",
+                "sur les evaluations environnementales strategiques  l",
+                "mesurer les impacts environnementaux de l'implantatio",
+                "nces sur les enjeux environnementaux approfondis lors",
+                "prendre en compte l'environnement dans l'outil commun",
+                "egrer les objectifs environnementaux dans les politiq",
+                "ueux a la fois de l'environnement mais aussi du paysa",
+                "site et aux risques environnementaux   - connaitre le",
+                "enus de evaluations environnementales strategiques  e",
+                "ncidences et notice environnementale   - comprendre l",
+                "s differents enjeux environnementaux peuvent etre mes"
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "serre  preserver la biodiversite    a travers la ges",
+                " des dechets  de la biodiversite   avec quelles dema",
+                "  a l'erosion de la biodiversite et aux risques envi",
+                "il par rapport a un probleme d'urbanisme  degage",
+                "approche environnementale de l'amenagement",
+                "see des thematiques environnementales et de leurs enj",
+                "sur les evaluations environnementales strategiques  l",
+                "mesurer les impacts environnementaux de l'implantatio",
+                "nces sur les enjeux environnementaux approfondis lors",
+                "prendre en compte l'environnement dans l'outil commun",
+                "egrer les objectifs environnementaux dans les politiq",
+                "ueux a la fois de l'environnement mais aussi du paysa",
+                "site et aux risques environnementaux   - connaitre le",
+                "enus de evaluations environnementales strategiques  e",
+                "ncidences et notice environnementale   - comprendre l",
+                "s differents enjeux environnementaux peuvent etre mes"
+            ]
+        }
+    },
+    "UA-M2-FINURB-006-M: D\u00e9veloppement territorial": {
+        "fr": {
+            "[durab(?:le|ilite), mobilite]": [
+                "ale ou urbanistique durable  faire preuve d'inn",
+                "ale ou urbanistique durable  faire preuve d'inn",
+                "d'environnement  de mobilite  d'espaces publics "
+            ]
+        }
+    },
     "UH-M1-METISS-003-M: Socio-\u00e9cologie des transitions": {
         "fr": {
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "ls sur la transition ecologique a partir d'une appr",
+                "ls sur la transition ecologique ainsi que leurs cri",
+                "eaux modeles sociaux ecologiques du point de vue the",
+                "cologie   conscience ecologique   les approches de ",
+                "tion   la transition ecologique   les nouveaux mode",
+                "c les problematiques ecologiques  les aspects ideolo",
+                "ser et analyser les transitions sociales en mobilisant les ",
+                "ser et analyser les transitions sociales en mobilisant les ",
+                "ser et analyser les transitions sociales en mobilisant les "
+            ],
             "transiti[^ ]+ ecolo[^ ]+": [
                 "bats actuels sur la transition ecologique a partir d'une appr",
                 "bats actuels sur la transition ecologique ainsi que leurs cri",
                 " la transition   la transition ecologique   les nouveaux mode"
+            ]
+        }
+    },
+    "UH-M1-METISS-007-M: M\u00e9thodologie et \u00e9pist\u00e9mologie": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "c les problematiques ecologiques  les aspects ideolo",
+                "vec une question de transition/innovation sociale  avec encadrement e"
             ]
         }
     },
@@ -66,6 +234,43 @@
                 "bats actuels sur la transition ecologique a partir d'une appr",
                 "bats actuels sur la transition ecologique ainsi que leurs cri",
                 " la transition   la transition ecologique   les nouveaux mode"
+            ]
+        }
+    },
+    "UH-M1-METISS-036-M: Inclusion sociale et scolaire CH (non organis\u00e9 \u00e0 Charleroi en 2021-2022)": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "ations de l'approche ecologique en sciences de l'ed",
+                "ser et analyser les transitions sociales en mobilisant les ",
+                "ser et analyser les transitions sociales en mobilisant les ",
+                "ser et analyser les transitions sociales en mobilisant les "
+            ]
+        }
+    },
+    "UH-M1-METISS-042-M: Socio-anthropologie et transformations \u00e9cologiques": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "e et transformations ecologiques analyse  sur base d",
+                "  de transformations ecologiques observees en differ",
+                " les transformations ecologiques auxquelles font fac",
+                " des transformations ecologiques pour nous ramener a",
+                "ser et analyser les transitions sociales en mobilisant les "
+            ],
+            "[impact, oceans?]": [
+                "ique la portee  les impacts potentiels et les ",
+                " deserts  montages  oceans   et contextes  rur"
+            ]
+        }
+    },
+    "UH-M1-METISS-050-M: Socio-anthropologie et transformations \u00e9cologiques": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, transiti[^ ]+ sociale]": [
+                "e et transformations ecologiques analyse  sur base d",
+                "  de transformations ecologiques observees en differ",
+                " les transformations ecologiques auxquelles font fac",
+                " des transformations ecologiques pour nous ramener a",
+                "ser et analyser les transitions sociales en mobilisant les ",
+                "ser et analyser les transitions sociales en mobilisant les "
             ]
         }
     },
@@ -80,18 +285,22 @@
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e"
             ],
             "[degradation, phreatique]": [
                 "ports energetiques  degradations energetiques  reje",
                 "e l'eau  les nappes phreatiques  les processus de "
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "edes industriels et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "vironnement  \" et \" developpement durable \" sont souvent empl",
                 "de definir le terme developpement durable   \" un developpemen",
                 "ment durable   \" un developpement durable est un developpemen",
+                "ans l'optique d'un  developpement durable    comparer differe",
                 "environnement  procedes industrie",
                 "energie   incidence environnementale des procedes ind",
                 "jours  les termes \" environnement  \" et \" developpeme",
@@ -99,6 +308,9 @@
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
                 "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e",
                 "la dynamique   de l'ecosysteme  les generalites  l"
             ],
             "[ecosyst[^ ]+, pollution]": [
@@ -128,16 +340,21 @@
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
                 "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e",
                 "loppe  la notion de depollution  principalement des",
                 "edes industriels et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "vironnement  \" et \" developpement durable \" sont souvent empl",
                 "de definir le terme developpement durable   \" un developpemen",
-                "ment durable   \" un developpement durable est un developpemen"
+                "ment durable   \" un developpement durable est un developpemen",
+                "ans l'optique d'un  developpement durable    comparer differe"
             ],
             "[impact, phreatique]": [
                 " de ces systemes  l'impact sur l'environnement",
                 "hets  ainsi que son impact sur l'environnement",
+                "ntaux    evaluer l'iimpact des procedes indust",
                 "e l'eau  les nappes phreatiques  les processus de "
             ],
             "[nucleaire, pollu(?:ant|tion), environnement]": [
@@ -149,7 +366,10 @@
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e"
             ],
             "[pollution, phreatique]": [
                 "ppe  la notion de depollution  principalement des",
@@ -164,30 +384,40 @@
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e"
             ],
             "cycle du carbone": [
                 "les generalites  le cycle du carbone  les ressources ene"
             ],
             "energ[^ ]+ renouvelab[^ ]+": [
                 "in de la matiere  d'energie renouvelable  de consommation de"
+            ],
+            "eco-?conception": [
+                "ptique  la notion d'eco-conception est abordee  connai"
             ]
         }
     },
     "UI-B1-IRCIVI-110-C: \u00c9nergie, environnement et d\u00e9veloppement durable": {
         "fr": {
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "e  environnement et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "   \"energie\" \" et \" developpement durable \" sont souvent empl",
                 "de definir le terme developpement durable   \" un developpemen",
                 "ment durable   \" un developpement durable est un developpemen",
+                "ans l'optique d'un  developpement durable et reflichier a l'u",
                 "energie  environnement et developpement du",
                 "energie   incidence environnementale des procedes ind",
                 "jours  les termes \" environnement    \"energie\" \" et \"",
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "es   l'impact sur l'environnement est analyse  air  e",
+                "principaux concepts environnementaux et energetiques ",
+                " energetiques sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e",
                 "la dynamique   de l'ecosysteme  les generalites  l"
             ],
             "[developp[^ ]+ durab[^ ]+, transiti[^ ]+ energ[^ ]+]": [
@@ -196,6 +426,7 @@
                 "   \"energie\" \" et \" developpement durable \" sont souvent empl",
                 "de definir le terme developpement durable   \" un developpemen",
                 "ment durable   \" un developpement durable est un developpemen",
+                "ans l'optique d'un  developpement durable et reflichier a l'u",
                 "mat  dechets     la transition energetique sera mise en avant "
             ],
             "[ecosyst[^ ]+, pollution]": [
@@ -224,15 +455,20 @@
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "es   l'impact sur l'environnement est analyse  air  e",
+                "principaux concepts environnementaux et energetiques ",
+                " energetiques sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e",
                 "loppe  la notion de depollution  principalement des",
                 "e  environnement et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "   \"energie\" \" et \" developpement durable \" sont souvent empl",
                 "de definir le terme developpement durable   \" un developpemen",
-                "ment durable   \" un developpement durable est un developpemen"
+                "ment durable   \" un developpement durable est un developpemen",
+                "ans l'optique d'un  developpement durable et reflichier a l'u"
             ],
             "[impact, phreatique]": [
                 "ystemes etudies   l'impact sur l'environnement",
+                "iques     evaluer l'impact des procedes indust",
                 "e l'eau  les nappes phreatiques  les processus de "
             ],
             "[nucleaire, pollu(?:ant|tion), environnement]": [
@@ -243,7 +479,10 @@
                 "jours  les termes \" environnement    \"energie\" \" et \"",
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
-                "es   l'impact sur l'environnement est analyse  air  e"
+                "es   l'impact sur l'environnement est analyse  air  e",
+                "principaux concepts environnementaux et energetiques ",
+                " energetiques sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e"
             ],
             "[pollution, phreatique]": [
                 "ppe  la notion de depollution  principalement des",
@@ -257,7 +496,10 @@
                 "jours  les termes \" environnement    \"energie\" \" et \"",
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
-                "es   l'impact sur l'environnement est analyse  air  e"
+                "es   l'impact sur l'environnement est analyse  air  e",
+                "principaux concepts environnementaux et energetiques ",
+                " energetiques sur l'environnement et reflechir a mett",
+                "ues  economiques et environnementales    identifier e"
             ],
             "cycle du carbone": [
                 "les generalites  le cycle du carbone  les ressources ene"
@@ -267,24 +509,43 @@
             ],
             "transiti[^ ]+ energ[^ ]+": [
                 "mat  dechets     la transition energetique sera mise en avant "
+            ],
+            "eco-?conception": [
+                "ptique  la notion d'eco-conception est abordee  connai"
             ]
         }
     },
     "UI-B3-IRCIVA-010-M: \u00c9lectricit\u00e9 du b\u00e2timent": {
         "fr": {
             "energ[^ ]+ renouvelab[^ ]+": [
-                "ue  le systeme knx  energies renouvelables"
+                "ue  le systeme knx  energies renouvelables  mesurer l'importan"
             ]
         }
     },
     "UI-B3-IRCIVA-011-M: Mat\u00e9riaux et \u00e9coconception": {
         "fr": {
-            "[durabilite, analyse (?:de )?cycle (?:de )?vie]": [
-                "ication et emplois  durabilite du beton et applica",
-                "struction  notion d'analyse de cycle de vie d'un batiement  con"
+            "[recyclage, environnement]": [
+                "   mise en oeuvre   recyclage  selection des mate",
+                "oncerne leur impact environnemental  interpreter les ",
+                "ues  economiques et environnementales    connaitre le"
             ],
             "analyse (?:de )?cycle (?:de )?vie": [
                 "struction  notion d'analyse de cycle de vie d'un batiement  con"
+            ],
+            "eco-?conception": [
+                "materiaux et ecoconception bois et materiaux a",
+                " de construction et ecoconception des batiments\" l'et"
+            ]
+        }
+    },
+    "UI-B3-IRCIVA-012-M: \u00c9l\u00e9ments de chimie et traitements des eaux": {
+        "fr": {
+            "[ecosyst[^ ]+, pollution]": [
+                " la description des ecosystemes  des pollutions aqu",
+                "onnement et sur les ecosystemes    - la troisieme p",
+                "es ecosystemes  des pollutions aqueuses et gazeus",
+                "naturelles et de la pollution aqueuse  de la legi",
+                "ncipales sources de pollution  - interpreter des "
             ]
         }
     },
@@ -293,13 +554,71 @@
             "energ[^ ]+ renouvelab[^ ]+": [
                 "integration des energies renouvelables dans les systemes -",
                 " aa integration des energies renouvelables dans les systemes -"
+            ],
+            "energ[^ ]+ solaire": [
+                " l'utilisation de l'energie solaire dans les systemes d",
+                "tion \"passive\" de l'energie solaire  quantifier l'utili"
             ]
         }
     },
     "UI-M1-IRCHPI-006-M: Microbiologie et biotechnologie": {
         "fr": {
             "epurations? des eaux": [
-                "bioethanol  biogaz  epuration des eaux urbaines"
+                "bioethanol  biogaz  epuration des eaux urbaines  le cours "
+            ]
+        }
+    },
+    "UI-M1-IRCHSM-001-M: Process Metallurgy": {
+        "fr": {
+            "[extraction, impact, environnement]": [
+                "isation des voies d'extraction pour divers metaux ",
+                "nergetiques et de l'impact environnemental de ",
+                "uits   respect de l'environnement  justifier l'utilis",
+                "ques et de l'impact environnemental de la production ",
+                "ues  de securite et environnementaux     identifier l",
+                "ietaux  ethiques et environnementaux     mobiliser un",
+                "ues  de securite et environnementaux     identifier l",
+                "ietaux  ethiques et environnementaux     mobiliser un"
+            ],
+            "[recyclage, environnement]": [
+                "ciers inoxydables   recyclage de l'acier au four ",
+                "uits   respect de l'environnement  justifier l'utilis",
+                "ques et de l'impact environnemental de la production ",
+                "ues  de securite et environnementaux     identifier l",
+                "ietaux  ethiques et environnementaux     mobiliser un",
+                "ues  de securite et environnementaux     identifier l",
+                "ietaux  ethiques et environnementaux     mobiliser un"
+            ],
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
+            ]
+        }
+    },
+    "UI-M1-IRCHSM-002-M: Proc\u00e9d\u00e9s de fabrication m\u00e9canique": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
+            ]
+        }
+    },
+    "UI-M1-IRCHSM-003-M: Ing\u00e9nierie des mat\u00e9riaux m\u00e9talliques": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
+            ]
+        }
+    },
+    "UI-M1-IRCHSM-004-M: Mat\u00e9riaux m\u00e9talliques avanc\u00e9s": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
+            ]
+        }
+    },
+    "UI-M1-IRCHSM-005-M: Analyse des risques de rupture m\u00e9canique des mat\u00e9riaux": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
             ]
         }
     },
@@ -314,6 +633,183 @@
         "fr": {
             "protection (?:de l')?environnement": [
                 " contexte actuel de protection de l'environnement et de liberalisatio"
+            ]
+        }
+    },
+    "UI-M1-IRELEC-103-M: Power Electronics": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "rs caracteristiques electriques  cerner les differe",
+                "ans le domaine de l'electricite en tant que vecteur",
+                " ingenieur civil en electricite    maitriser et mob",
+                "ifs au domaine de l'electricite   analyser et model",
+                "ans le domaine de l'electricite  evaluer la validit",
+                "ans le domaine de l'electricite",
+                "rvolteur  montage a stockage inductif  conductio"
+            ]
+        }
+    },
+    "UI-M1-IRELEC-303-M: Power Electronics": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "rs caracteristiques electriques  cerner les differe",
+                "ans le domaine de l'electricite en tant que vecteur",
+                " ingenieur civil en electricite    maitriser et mob",
+                "ifs au domaine de l'electricite   analyser et model",
+                "ans le domaine de l'electricite  evaluer la validit",
+                "ans le domaine de l'electricite",
+                "rvolteur  montage a stockage inductif  conductio"
+            ]
+        }
+    },
+    "UI-M1-IRELEE-001-M: Electric Vehicles Drives": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
+            ]
+        }
+    },
+    "UI-M1-IRELEE-002-M: Steady-State and Transient Operation of Synchronous Machines": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
+            ]
+        }
+    },
+    "UI-M1-IRELEE-004-M: High Voltage Engineering": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
+            ]
+        }
+    },
+    "UI-M1-IRELEE-005-M: Special Machines and Actuators": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
+            ]
+        }
+    },
+    "UI-M1-IRMECA-002-M: Power Electronics": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "rs caracteristiques electriques  cerner les differe",
+                "rvolteur  montage a stockage inductif  conductio"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-003-M: Camp de terrain de g\u00e9ologie": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-004-M: Applied Mineralogy and Petrography": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-005-M: Mod\u00e9lisation g\u00e9ologique et g\u00e9ostatistique": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-006-M: G\u00e9ophysique appliqu\u00e9e": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-008-M: Hydrog\u00e9ologie": {
+        "fr": {
+            "[pollution, aquifere]": [
+                " traiter les cas de pollution  -mener a bien des ",
+                "tion geologique des aquiferes  definition hydrau",
+                "ion hydraulique des aquiferes  caracterisation d",
+                "caracterisation des aquiferes  equation generale",
+                "s  modelisation des aquiferes et simulation math",
+                "tions relatives aux aquiferes et aux ressources ",
+                "ur caracteriser les aquiferes et les exploiter  ",
+                "ter  -modeliser les aquiferes pour y simuler les"
+            ],
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-009-M: Karst et risques naturels": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-010-M: Mati\u00e8res premi\u00e8res et d\u00e9veloppement durable": {
+        "fr": {
+            "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]": [
+                "tieres premieres et developpement durable cours matieres seco",
+                "ion des ressources  developpement durable  environnement   as",
+                "ues naturels et les problemes environnementaux  evaluer la vali"
+            ],
+            "[recyclage, environnement]": [
+                "t biomethanisation  recyclage   etude du cycle de",
+                "eloppement durable  environnement   aspects reglement",
+                "ours considerations environnementales   filieres de p",
+                "ques  impacts sur l'environnement  affaissements mini",
+                "aspects techniques  environnementaux  economiques  ju",
+                "r les impacts sur l'environnement des industries extr",
+                "ietaux  ethiques et environnementaux     identifier l",
+                "ietaux  ethiques et environnementaux     mobiliser un",
+                "ls et les problemes environnementaux  evaluer la vali"
+            ],
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  evaluer la vali"
+            ],
+            "[developp[^ ]+ durab[^ ]+, gisement]": [
+                "tieres premieres et developpement durable cours matieres seco",
+                "ion des ressources  developpement durable  environnement   as",
+                "et l'evaluation des gisements des matieres miner"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-011-M: Projet en environnement et risques naturels": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ces de la terre aux problemes environnementaux et a la gestion ",
+                "es composantes d'un probleme environnemental en relation avec ",
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-013-M: Mod\u00e9lisation et construction des ouvrages du g\u00e9nie minier": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M1-IRMIGE-014-M: Voyage Mines": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  identifier et e"
             ]
         }
     },
@@ -337,10 +833,54 @@
     "UI-M2-IRCHIM-004-M: Gestion durable des mat\u00e9riaux": {
         "fr": {
             "analyse (?:de )?cycle (?:de )?vie": [
-                " et reglementation  analyse de cycle de vie  acv  des materiaux"
+                " et reglementation  analyse de cycle de vie  acv  des materiaux",
+                "e recyclage  et a l'analyse de cycle de vie  mobiliser un ensem"
             ],
             "gestio[^ ]+ durab[^ ]+": [
                 "gestion durable des materiaux enjeu"
+            ]
+        }
+    },
+    "UI-M2-IRCHIM-006-M: Traitement des eaux": {
+        "fr": {
+            "[ecosyst[^ ]+, pollution]": [
+                "ion aqueuse sur les ecosystemes  cette partie est i",
+                "   des effets de la pollution aqueuse sur les eco",
+                "ples specifiques de pollution aqueuse   nutriment",
+                "attements donnes de pollutions    pour les eaux i",
+                "matiques liees a la pollution aqueuse et aux solu",
+                "r et identifier des pollutions aqueuses suivant l",
+                "ment concernant les pollutions d'origine industri"
+            ],
+            "[pollution, pesticide]": [
+                "   des effets de la pollution aqueuse sur les eco",
+                "ples specifiques de pollution aqueuse   nutriment",
+                "attements donnes de pollutions    pour les eaux i",
+                "matiques liees a la pollution aqueuse et aux solu",
+                "r et identifier des pollutions aqueuses suivant l",
+                "ment concernant les pollutions d'origine industri",
+                "ueuse   nutriments  pesticides  hap  ions metalli"
+            ]
+        }
+    },
+    "UI-M2-IRCHSM-003-M: C\u00e9ramiques avanc\u00e9es": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
+            ]
+        }
+    },
+    "UI-M2-IRCHSM-004-M: Nanotechnologies et mat\u00e9riaux nouveaux": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
+            ]
+        }
+    },
+    "UI-M2-IRCHSM-005-M: Polym\u00e8res industriels - Polym\u00e8res nouveaux": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "uvre  lexploitation ecoresponsable des materiauxau com"
             ]
         }
     },
@@ -348,6 +888,59 @@
         "fr": {
             "transiti[^ ]+ energ[^ ]+": [
                 "er lieu  l'actuelle transition energetique sera envisagee d'un"
+            ]
+        }
+    },
+    "UI-M2-IRELEE-001-M: Power System Dynamics and Stability": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
+            ]
+        }
+    },
+    "UI-M2-IRELEE-002-M: Computational Electromagnetics": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
+            ]
+        }
+    },
+    "UI-M2-IRELEE-003-M: Electrical Networks and Protection": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
+            ]
+        }
+    },
+    "UI-M2-IRELEE-006-M: Smart Grids": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "nomique des reseaux electriques production et stock",
+                "eux de distribution electrique systemes de communi",
+                " ingenieur civil en electricite    maitriser et mob",
+                "ifs au domaine de l'electricite   analyser et model",
+                "'ingenieur civil en electricite a finalite energie ",
+                " a finalite energie electrique   maitriser et mobi",
+                "tifs aux bases de l'electricite  de l'electronique ",
+                "technique  machines electriques  electronique de pu",
+                "enierie des reseaux electriques  production  transp",
+                "nsable des systemes electriques   aux techniques sp",
+                "iques production et stockage dans les reseux de "
+            ],
+            "ecoresponsab[^ ]+": [
+                "vre  l'exploitation ecoresponsable des systemes electr"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "essor des sources d'energies renouvelables  eolien  photovolta"
             ]
         }
     },
@@ -378,10 +971,72 @@
     "UI-M2-IRMEGE-003-M: Strat\u00e9gie et Ressources \u00e9nerg\u00e9tiques - Syst\u00e8mes de production d'\u00e9nergie": {
         "fr": {
             "energ[^ ]+ eolien": [
-                " solaire i-flma-012 energie eolienn"
+                " solaire i-flma-012 energie eolienne integrer les prin",
+                "l de recuperation d'energie eolienne  maitriser les pr"
             ],
             "energ[^ ]+ solaire": [
-                "011 conversion de l'energie solaire i-flma-012 energie "
+                "011 conversion de l'energie solaire i-flma-012 energie ",
+                "ons thermiques de l'energie solaire  choisir le capteur"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-001-M: Travail de fin d'\u00e9tudes": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-002-M: Stage": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-005-M: Seminars of Applied Geology and Bibliographic Research": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-006-M: Caract\u00e9risation et traitement des sites pollu\u00e9s": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-007-M: Projet de planification et optimisation des exploitations et s\u00e9minaires en G\u00e9nie minier": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-010-M: Ressources min\u00e9rales et \u00e9nerg\u00e9tiques": {
+        "fr": {
+            "gestio[^ ]+ durab[^ ]+": [
+                "- discuter l'aspect gestion durable des ressources  mob"
+            ],
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "specter et certains problemes environnementaux et d'approvision",
+                "ues naturels et les problemes environnementaux  identifier et e"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-519-M: Stage long (avec travail valid\u00e9 avant stage)": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-520-M: TFE avec s\u00e9jour dans un centre de recherche ou en entreprise": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
             ]
         }
     },
@@ -402,6 +1057,52 @@
             ]
         }
     },
+    "UI-M2-IRMIGE-563-M: Impacts des ouvrages souterrains sur l'urbanisme": {
+        "fr": {
+            "[environnement, ressource, effondrement]": [
+                "ans le respect de l'environnement et de l'acceptation",
+                "ietaux  ethiques et environnementaux     identifier l",
+                "ietaux  ethiques et environnementaux    sur base d ex",
+                "ls et les problemes environnementaux  analyser et mod",
+                " l'exploitation des ressources minerales et energ",
+                "otions de risques d'effondrement et de determination"
+            ],
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-564-M: Voyage Mines II": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  identifier et e"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-722-M: Questions scientifiques dans le domaine des mines et g\u00e9ologie": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UI-M2-IRMIGE-723-M: Questions scientifiques avanc\u00e9es dans le domaine des mines et g\u00e9ologie": {
+        "fr": {
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "ues naturels et les problemes environnementaux  analyser et mod"
+            ]
+        }
+    },
+    "UM-M1-BIOMED-039-M: Biochimie g\u00e9n\u00e9rale": {
+        "fr": {
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ouchent l'homme  la biodiversite  l'environnement et",
+                "ues  -interpreter l'impact de variations de ph",
+                "  se situer dans un environnement hierarchique et pro",
+                " la biodiversite  l'environnement et la societe  etre"
+            ]
+        }
+    },
     "US-B2-SCBIOC-923-C: Sciences de la terre et g\u00e9obiologie": {
         "fr": {
             "cycle du carbone": [
@@ -409,34 +1110,272 @@
             ]
         }
     },
+    "US-B3-SCBIOC-933-C: Biodiversit\u00e9, \u00e9volution et \u00e9cologie": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "biodiversite  evolution et ecolo",
+                "cologie le cours de biodiversite  evolution et ecolo",
+                "n peut avoir sur la biodiversite locale et mondiale ",
+                "ecosysteme ou de la biosphere  ce cours implique ",
+                "e l'ulb      partie biodiversite et ecologie        ",
+                "tion generale de la biosphere      *cours 2   eco",
+                "ravaux pratiques de biodiversite  evolution et ecolo",
+                "rnant l'etude de la biodiversite  l'evolution des or",
+                "rsite  evolution et ecologie le cours de biodive",
+                "rsite  evolution et ecologie investigue les inte",
+                " liant les facteurs ecologiques  la selection qu'il",
+                "ssance globale de l'ecologie  de l'evolution et ",
+                "tie biodiversite et ecologie           *cours 1 ",
+                "ere      *cours 2   ecologie des individus et de",
+                "ons      *cours 3   ecologie des communautes    ",
+                "rsite  evolution et ecologie  l'etudiant aura ac",
+                "des organismes et l'ecologie generale  une appro"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "biodiversite  evolution et ecolo",
+                "cologie le cours de biodiversite  evolution et ecolo",
+                "n peut avoir sur la biodiversite locale et mondiale ",
+                "ecosysteme ou de la biosphere  ce cours implique ",
+                "e l'ulb      partie biodiversite et ecologie        ",
+                "tion generale de la biosphere      *cours 2   eco",
+                "ravaux pratiques de biodiversite  evolution et ecolo",
+                "rnant l'etude de la biodiversite  l'evolution des or",
+                " jusqu'a celle de l'ecosysteme ou de la biosphere ",
+                "s 4   dynamique des ecosystemes      *cours 5   bio"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "biodiversite  evolution et ecolo",
+                "cologie le cours de biodiversite  evolution et ecolo",
+                "n peut avoir sur la biodiversite locale et mondiale ",
+                "ecosysteme ou de la biosphere  ce cours implique ",
+                "e l'ulb      partie biodiversite et ecologie        ",
+                "tion generale de la biosphere      *cours 2   eco",
+                "ravaux pratiques de biodiversite  evolution et ecolo",
+                "rnant l'etude de la biodiversite  l'evolution des or",
+                "biodiversite  evolution et ecologie le cour",
+                "rs de biodiversite  evolution et ecologie investi",
+                "de l'ecologie  de l'evolution et du fonctionnemen",
+                "es de biodiversite  evolution et ecologie  l'etud",
+                " la biodiversite  l'evolution des organismes et l",
+                "ersite  evolution et ecologie le cours de biodive",
+                "ersite  evolution et ecologie investigue les inte",
+                "s liant les facteurs ecologiques  la selection qu'il",
+                "nteraction avec son environnement depuis l'echelle in",
+                " jusqu'a celle de l'ecosysteme ou de la biosphere ",
+                "rtie biodiversite et ecologie           *cours 1 ",
+                "here      *cours 2   ecologie des individus et de",
+                "ions      *cours 3   ecologie des communautes    ",
+                "s 4   dynamique des ecosystemes      *cours 5   bio",
+                "ersite  evolution et ecologie  l'etudiant aura ac"
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "biodiversite  evolution et ecolo",
+                "cologie le cours de biodiversite  evolution et ecolo",
+                "n peut avoir sur la biodiversite locale et mondiale ",
+                "ecosysteme ou de la biosphere  ce cours implique ",
+                "e l'ulb      partie biodiversite et ecologie        ",
+                "tion generale de la biosphere      *cours 2   eco",
+                "ravaux pratiques de biodiversite  evolution et ecolo",
+                "rnant l'etude de la biodiversite  l'evolution des or",
+                "es organismes  et l'impact que cette selection",
+                "ersite  evolution et ecologie le cours de biodive",
+                "ersite  evolution et ecologie investigue les inte",
+                "s liant les facteurs ecologiques  la selection qu'il",
+                "nteraction avec son environnement depuis l'echelle in",
+                " jusqu'a celle de l'ecosysteme ou de la biosphere ",
+                "rtie biodiversite et ecologie           *cours 1 ",
+                "here      *cours 2   ecologie des individus et de",
+                "ions      *cours 3   ecologie des communautes    ",
+                "s 4   dynamique des ecosystemes      *cours 5   bio",
+                "ersite  evolution et ecologie  l'etudiant aura ac"
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "biodiversite  evolution et ecolo",
+                "cologie le cours de biodiversite  evolution et ecolo",
+                "n peut avoir sur la biodiversite locale et mondiale ",
+                "ecosysteme ou de la biosphere  ce cours implique ",
+                "e l'ulb      partie biodiversite et ecologie        ",
+                "tion generale de la biosphere      *cours 2   eco",
+                "ravaux pratiques de biodiversite  evolution et ecolo",
+                "rnant l'etude de la biodiversite  l'evolution des or",
+                "ire    resoudre des problemes a composante biolo",
+                "ersite  evolution et ecologie le cours de biodive",
+                "ersite  evolution et ecologie investigue les inte",
+                "s liant les facteurs ecologiques  la selection qu'il",
+                "nteraction avec son environnement depuis l'echelle in",
+                " jusqu'a celle de l'ecosysteme ou de la biosphere ",
+                "rtie biodiversite et ecologie           *cours 1 ",
+                "here      *cours 2   ecologie des individus et de",
+                "ions      *cours 3   ecologie des communautes    ",
+                "s 4   dynamique des ecosystemes      *cours 5   bio",
+                "ersite  evolution et ecologie  l'etudiant aura ac"
+            ],
+            "biologie de la conservation": [
+                "mes      *cours 5   biologie de la conservation         *tp 1   ini"
+            ]
+        }
+    },
+    "US-B3-SCBIOL-004-M: Biodiversit\u00e9 et adaptations au monde marin": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "biodiversite et adaptations au m",
+                "nisms marins   v  l'ecosysteme littoral   vi  l'ec",
+                "me littoral   vi  l'ecosysteme subtidal   vii  l'e",
+                "e subtidal   vii  l'ecosysteme corallien  introduc"
+            ]
+        }
+    },
+    "US-B3-SCBIOL-010-M: Excursions de zoologie et \u00e9co\u00e9thologie m\u00e9dit\u00e9ran\u00e9ennes": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, climat, amenagements? du territoire]": [
+                "getale  cartographie ecologique  utilisation du gns",
+                "tion de la structure ecologique de la faune et de l",
+                " topographie  sols  climat  vegetation  faune ",
+                "r toute operation d'amenagement du territoire    au vu des diffic"
+            ]
+        }
+    },
+    "US-M1-BIOECO-018-M: Biologie de la conservation": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, anthropocen[^ ]+]": [
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie et de ses applicati",
+                "racteristiques de l'anthropocene  3h    methodes en "
+            ],
+            "anthropocen(?:e|ique)": [
+                "racteristiques de l'anthropocene  3h    methodes en "
+            ],
+            "biologie de la conservation": [
+                "biologie de la conservation le contenu est divi",
+                "  3h    methodes en biologie de la conservation  8h    monitoring d",
+                "rmation pratique en biologie de la conservation pour les eco-consei",
+                "specialiser dans la biologie de la conservation avoir acquis  dans "
+            ]
+        }
+    },
+    "US-M1-BIOECO-032-M: Stage de biodiversit\u00e9 et \u00e9cologie des r\u00e9cifs coralliens 01": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "stage de biodiversite et ecologie des rec",
+                " connaissance de la biodiversite et de l'ecologie de",
+                " de biodiversite et ecologie des recifs corallie",
+                "iodiversite et de l'ecologie des recifs corallie",
+                " organismes et de l'ecologie  des connaissances "
+            ]
+        }
+    },
+    "US-M1-BIOECO-050-M: Stage de biodiversit\u00e9 et \u00e9cologie des r\u00e9cifs coralliens 02": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "stage de biodiversite et ecologie des rec",
+                " de biodiversite et ecologie des recifs corallie"
+            ]
+        }
+    },
     "US-M1-BIOL60-012-M: Introduction aux biotechnologies industrielles": {
         "fr": {
             "epurations? des eaux": [
-                "bioethanol  biogaz  epuration des eaux urbaines"
+                "bioethanol  biogaz  epuration des eaux urbaines  le cours "
             ]
         }
     },
     "US-M1-SCBBMC-012-M: Introduction aux biotechnologies industrielles": {
         "fr": {
             "epurations? des eaux": [
-                "bioethanol  biogaz  epuration des eaux urbaines"
+                "bioethanol  biogaz  epuration des eaux urbaines  le cours "
+            ]
+        }
+    },
+    "US-M1-SCBBMC-032-M: Stage de biodiversit\u00e9 et \u00e9cologie des r\u00e9cifs coralliens 01": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "stage de biodiversite et ecologie des rec",
+                " connaissance de la biodiversite des recifs corallie",
+                " de biodiversite et ecologie des recifs corallie"
+            ]
+        }
+    },
+    "US-M1-SCBBMC-052-M: Stage de biodiversit\u00e9 et \u00e9cologie des r\u00e9cifs coralliens 02": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "stage de biodiversite et ecologie des rec",
+                " de biodiversite et ecologie des recifs corallie"
+            ]
+        }
+    },
+    "US-M2-BIOEFA-006-M: Biologie des invert\u00e9br\u00e9s marins": {
+        "fr": {
+            "ecotoxicologie": [
+                "lothuriculture   5  ecotoxicologie   6  coevolution le"
+            ]
+        }
+    },
+    "US-M2-BIOEFA-008-M: Gestion des espaces naturels": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "s qui pesent sur la biodiversite  le cours aborde le",
+                "ses de declin de la biodiversite   3  connaitre les ",
+                "des organismes et l'ecologi"
             ]
         }
     },
     "US-M2-BIOEFS-027-M: Ecologie et architecture durable": {
         "fr": {
-            "[bioclimat[^ ]+, construction]": [
-                "ents d'architecture bioclimatique   strategie du chau",
-                "isons passives  eco-construction   eco-quartiers "
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "preinte ecologique  biosphere  ecosysteme  biogen",
+                "ecologie et architecture dur",
+                "arbone  l'empreinte ecologique     la biogenese   ",
+                " carbone  empreinte ecologique  biosphere  ecosyst",
+                "es organismes et en ecologie   -etre capable d'a",
+                "es organismes et en ecologie   -etre capable d'a"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "preinte ecologique  biosphere  ecosysteme  biogen",
+                " la respiration   l'ecosysteme   relation trophiqu",
+                "logique  biosphere  ecosysteme  biogenese    - def",
+                " et edaphiques d'un ecosysteme     - expliquer l'e",
+                "la matiere dans les ecosystemes     - expliquer les"
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "preinte ecologique  biosphere  ecosysteme  biogen",
+                "xion critique sur l'impact de leur discipline ",
+                "carbone  l'empreinte ecologique     la biogenese   ",
+                " la respiration   l'ecosysteme   relation trophiqu",
+                "n carbone  empreinte ecologique  biosphere  ecosyst",
+                "logique  biosphere  ecosysteme  biogenese    - def",
+                " et edaphiques d'un ecosysteme     - expliquer l'e",
+                "la matiere dans les ecosystemes     - expliquer les",
+                "des organismes et en ecologie   -etre capable d'a",
+                " s'integrer dans un environnement professionnel et co",
+                "des organismes et en ecologie   -etre capable d'a"
+            ],
+            "architectur[^ ]+ bioclimatique": [
+                "inertie  elements d'architecture bioclimatique   strategie du chau"
             ],
             "[bioclimat[^ ]+, energ[^ ]+]": [
                 "ents d'architecture bioclimatique   strategie du chau",
-                "sol et le flux de l'energie et de la matiere   "
+                "er les principes du bioclimatisme     - critiquer un ",
+                "sol et le flux de l'energie et de la matiere   ",
+                "- expliquer le flux energetique et les cycles de la"
+            ],
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "tion trophique   le climat  le sol et le flux ",
+                "s d'architecture bioclimatique   strategie du ",
+                "liquer les facteurs climatiques  biotiques et ",
+                "les principes du bioclimatisme     - critiquer",
+                " s'integrer dans un environnement professionnel et co",
+                "carbone  l'empreinte ecologique     la biogenese   ",
+                "n carbone  empreinte ecologique  biosphere  ecosyst",
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie   -etre capable d'a"
             ],
             "[effets? (?:de )?serre, climat]": [
                 "    la biogenese    effet de serre   la photosynthese ",
+                "e     - expliquer l'effet de serre sur la planete     ",
                 "tion trophique   le climat  le sol et le flux ",
-                "s d'architecture bioclimatique   strategie du "
+                "s d'architecture bioclimatique   strategie du ",
+                "liquer les facteurs climatiques  biotiques et ",
+                "les principes du bioclimatisme     - critiquer"
             ],
             "architectures? durab[^ ]+": [
                 "ecologie et architecture durable le bilan carbone  l"
@@ -457,18 +1396,21 @@
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett"
             ],
             "[degradation, phreatique]": [
                 "ports energetiques  degradations energetiques  reje",
                 "e l'eau  les nappes phreatiques  les processus de "
             ],
-            "[developp[^ ]+ durab[^ ]+, environnement, ecolo[^ ]+|ecosyst[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "edes industriels et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "vironnement  \" et \" developpement durable \" sont souvent empl",
                 "de definir le terme developpement durable   \" un developpemen",
                 "ment durable   \" un developpement durable est un developpemen",
+                "ans l'optique d'un  developpement durable    comparer differe",
                 "environnement  procedes industrie",
                 "energie   incidence environnementale des procedes ind",
                 "jours  les termes \" environnement  \" et \" developpeme",
@@ -476,6 +1418,8 @@
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
                 "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett",
                 "la dynamique   de l'ecosysteme  les generalites  l"
             ],
             "[ecosyst[^ ]+, pollution]": [
@@ -507,16 +1451,21 @@
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
                 "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett",
                 "loppe  la notion de depollution  principalement des",
                 "edes industriels et developpement durable etude du milieu nat",
                 "ources    notion de developpement durable   etude des systeme",
                 "vironnement  \" et \" developpement durable \" sont souvent empl",
                 "de definir le terme developpement durable   \" un developpemen",
-                "ment durable   \" un developpement durable est un developpemen"
+                "ment durable   \" un developpement durable est un developpemen",
+                "ans l'optique d'un  developpement durable    comparer differe"
             ],
             "[impact, phreatique]": [
                 " de ces systemes  l'impact sur l'environnement",
                 "hets  ainsi que son impact sur l'environnement",
+                "ntaux    evaluer l'iimpact des procedes indust",
+                "xion critique sur l'impact de leur discipline ",
                 "e l'eau  les nappes phreatiques  les processus de "
             ],
             "[nucleaire, pollu(?:ant|tion), environnement]": [
@@ -528,7 +1477,9 @@
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett"
             ],
             "[pollution, phreatique]": [
                 "ppe  la notion de depollution  principalement des",
@@ -543,13 +1494,18 @@
                 "definition du terme environnement  definition de l'at",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "cepts et parametres environnementaux    evaluer l'iim",
+                "s industriels sur l'environnement et reflechir a mett"
             ],
             "cycle du carbone": [
                 "les generalites  le cycle du carbone  les ressources ene"
             ],
             "energ[^ ]+ renouvelab[^ ]+": [
                 "in de la matiere  d'energie renouvelable  de consommation de"
+            ],
+            "eco-?conception": [
+                "ptique  la notion d'eco-conception est abordee  connai"
             ]
         }
     },
@@ -559,10 +1515,36 @@
                 " la description des ecosystemes  des pollutions aqu",
                 "onnement et sur les ecosystemes    la seconde parti",
                 "es ecosystemes  des pollutions aqueuses et gazeus",
-                "naturelles et de la pollution aqueuse  de la legi"
+                "naturelles et de la pollution aqueuse  de la legi",
+                "ncipales sources de pollution    - interpreter de"
             ],
             "impacts? (?:ecosyst[^ ]+|ecolo[^ ]+)": [
-                "impacts ecologiques et traitement des e"
+                "impacts ecologiques et traitement des e",
+                "le l'enseignement d'impacts ecologiques et traitements des "
+            ]
+        }
+    },
+    "US-M2-BIOEFS-040-M: Sciences et soci\u00e9t\u00e9": {
+        "fr": {
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "tes energetiques et climatiques qui pesent sur",
+                " s'integrer dans un environnement professionnel et co",
+                "s une interpretation ecologique de la nature du suc"
+            ]
+        }
+    },
+    "US-M2-BIOEFS-065-M: Agriculture urbaine": {
+        "fr": {
+            "[[ ]ecolo[^ ]+, durabilite]": [
+                "lieres alimentaires  ecologie urbaine  economie s",
+                "nementale  empreinte ecologie  services ecosytemi",
+                "nants et l'empreinte ecologique qui en decoule   - ",
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie et de ses applicati",
+                "des organismes et en ecologie   -etre capable d'a",
+                "des organismes et en ecologie et de ses applicati",
+                "nalyse    - enjeux  durabilite  techniques de prod",
+                "cial et economique  durabilite  de la mise en plac"
             ]
         }
     },
@@ -576,7 +1558,15 @@
     "US-M2-CHIMFS-011-M: Recyclage et gestion des d\u00e9chets": {
         "fr": {
             "analyse (?:de )?cycle (?:de )?vie": [
-                " et reglementation  analyse de cycle de vie  acv  des materiaux"
+                " et reglementation  analyse de cycle de vie  acv  des materiaux",
+                "e recyclage  et a l'analyse de cycle de vie  contribuer  seuls "
+            ]
+        }
+    },
+    "US-U1-BIOMAR-002-M: Biologie des invert\u00e9br\u00e9s marins": {
+        "fr": {
+            "ecotoxicologie": [
+                "othuriculture   5   ecotoxicologie   6  coevolution le"
             ]
         }
     },
@@ -614,9 +1604,11 @@
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
                 "ue son impact sur l'environnement est analyse  a part",
+                "s industriels sur l'environnement et reflechir a leur",
                 "       la notion de depollution  principalement des",
                 "de definir le terme developpement durable   \" un developpemen",
-                "ment durable   \" un developpement durable est un developpemen"
+                "ment durable   \" un developpement durable est un developpemen",
+                "dans l'optique d'un developpement durable    comparer differe"
             ],
             "[nucleaire, pollu(?:ant|tion), environnement]": [
                 "s \" classiques \" ou nucleaires  solaire  hydrauli",
@@ -624,7 +1616,8 @@
                 "environnement  concepts et applic",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "s industriels sur l'environnement et reflechir a leur"
             ],
             "[recyclage, environnement]": [
                 "ion de la notion de recyclage   l'ensemble de ces",
@@ -632,24 +1625,59 @@
                 "environnement  concepts et applic",
                 "industrielles sur l'environnement   consommation de r",
                 "mes  l'impact sur l'environnement est analyse  air  e",
-                "ue son impact sur l'environnement est analyse  a part"
+                "ue son impact sur l'environnement est analyse  a part",
+                "s industriels sur l'environnement et reflechir a leur"
             ],
             "energ[^ ]+ renouvelab[^ ]+": [
                 "in de la matiere  d'energie renouvelable  de consommation de"
+            ],
+            "eco-?conception": [
+                "ptique  la notion d'ecoconception est abordee   cela "
             ]
         }
     },
     "UW-B3-SCGEST-027-C: Responsabilit\u00e9 soci\u00e9tale des entreprises": {
         "fr": {
             "objectifs? (de )?developpements? durables?": [
-                "people  planet     -objectifs de developpement durable des nations unis   "
+                "people  planet     -objectifs de developpement durable des nations unis   ",
+                "es etudiants aux 17 objectifs de developpement durable des nations unis et"
             ]
         }
     },
     "UW-B3-SGEGIG-007-M: Responsabilit\u00e9 soci\u00e9tale des entreprises": {
         "fr": {
             "objectifs? (de )?developpements? durables?": [
-                "people  planet     -objectifs de developpement durable des nations unis   "
+                "people  planet     -objectifs de developpement durable des nations unis   ",
+                "es etudiants aux 17 objectifs de developpement durable des nations unis et"
+            ]
+        }
+    },
+    "UW-M1-IGGEST-080-M: Environmental Economics": {
+        "fr": {
+            "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]": [
+                "alculs d'empreinte  developpement durable  negociations inter",
+                "rnationales sur des problemes environnementaux et aspects insti",
+                "lyser le lien entre problemes environnementaux et activite econ",
+                "e dans l'analyse de problemes environnementaux sera examinee de"
+            ],
+            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
+                "are economics  et l'environnement  le niveau optimal ",
+                "uments de politique environnementale  reglementations",
+                "ptes economiques et environnementaux  calculs d'empre",
+                "s sur des problemes environnementaux et aspects insti",
+                "bases de l'economie environnementale afin de leur per",
+                "ien entre problemes environnementaux et activite econ",
+                "nalyse de problemes environnementaux sera examinee de",
+                "e niveau optimal de pollution  evaluation d'instr",
+                "alculs d'empreinte  developpement durable  negociations inter"
+            ],
+            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+                "rnationales sur des problemes environnementaux et aspects insti",
+                "lyser le lien entre problemes environnementaux et activite econ",
+                "e dans l'analyse de problemes environnementaux sera examinee de"
+            ],
+            "politique environnement": [
+                "on d'instruments de politique environnementale  reglementations"
             ]
         }
     }
