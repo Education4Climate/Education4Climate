@@ -130,6 +130,11 @@ hr {
     color: var(--hr-color);
 }
 
+.btn + .subtitle {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
 /* Icons */
 
 .icon.target {
@@ -602,6 +607,69 @@ a.btn:empty {
     border-color: var(--pale-teal);
 }
 
+/* Report */
+
+.report .intro {
+    background: linear-gradient(to right, transparent, white 70%),
+        url(/img/background-report.webp);
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+    background-size: cover;
+}
+
+[data-theme="dark"] .report .intro {
+    background: linear-gradient(to right, transparent, var(--night-blue) 70%),
+        url(/img/background-report.webp);
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+    background-size: 100%;
+    color: white !important;
+}
+
+[data-theme="dark"] .report section.secondary, [data-theme="dark"] .report section.secondary h1 {
+    color: white;
+    background-color: var(--night-blue);
+}
+
+@media (orientation: portrait) {
+    .report .intro .headline {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .report .intro {
+        background: linear-gradient(to top, transparent, white 80%),
+            url(/img/background-report2.webp);
+        background-repeat: no-repeat;
+        background-position-y: 90%;
+        padding: 1rem;
+        min-height: calc(100vh - 56px);
+    }
+
+    [data-theme="dark"] .report .intro {
+        background: linear-gradient(to top, transparent, var(--night-blue) 80%),
+            url(/img/background-report2.webp);
+        background-repeat: no-repeat;
+        background-position-y: 90%;
+        color: white !important;
+    }
+
+    .report .intro h1 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .report .intro h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    .buttons-container {
+        margin-top: 1rem !important;
+    }
+}
+
 /* SIDEBAR */
 
 .sidebar {
@@ -890,9 +958,11 @@ footer li {
 
 /* Collapsible filters */
 
-.programs .sidebar, .courses .sidebar, .teachers .sidebar {
-    padding-left: .5rem;
-    padding-right: .5rem;
+.programs .sidebar,
+.courses .sidebar,
+.teachers .sidebar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .filter-group {
@@ -923,27 +993,28 @@ footer li {
 }
 
 .filter-group-header img {
-    content: url(/img/caret-up-blue.svg);   
+    content: url(/img/caret-up-blue.svg);
 }
 
 .filter-group-header.collapsed img {
     content: url(/img/caret-down-blue.svg);
 }
 
-#nameFilterCollapse > .filter, #programCodeFilterCollapse > .filter, #courseNameFilterCollapse > .filter {
-    padding-top: .8rem;
+#nameFilterCollapse > .filter,
+#programCodeFilterCollapse > .filter,
+#courseNameFilterCollapse > .filter {
+    padding-top: 0.8rem;
 }
 
 .filter-group-header:hover img {
-    content: url(/img/caret-up-green.svg);  
+    content: url(/img/caret-up-green.svg);
 }
 
 .filter-group-header.collapsed:hover img {
-    content: url(/img/caret-down-green.svg);  
+    content: url(/img/caret-down-green.svg);
 }
 
 @media (max-width: 1199.98px) {
-
     .filter-group {
         padding-right: 1rem;
     }
