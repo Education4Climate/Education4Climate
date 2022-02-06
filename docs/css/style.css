@@ -131,8 +131,8 @@ hr {
 }
 
 .btn + .subtitle {
-    padding-top: 1rem;
-    font-size: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 /* Icons */
@@ -316,6 +316,12 @@ footer .logo {
     height: 3rem;
 }
 
+@media (max-width: 1199.98px) {
+    footer .logo {
+        margin-bottom: 1rem;
+    }
+}
+
 footer .container .row {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -347,7 +353,8 @@ body.modal-open {
 
 /* HOME */
 
-.home .container {
+.home .container,
+.legal .container {
     max-width: 100%;
 }
 
@@ -588,6 +595,12 @@ a.btn:empty {
     margin-bottom: 1rem;
 }
 
+.courses #coursesAccordion .accordion-body h6,
+.programs #programsAccordion .accordion-body h6 {
+    font-weight: 600;
+    display: inline;
+}
+
 /* Teachers directory */
 
 #alphabet {
@@ -626,9 +639,18 @@ a.btn:empty {
     color: white !important;
 }
 
-[data-theme="dark"] .report section.secondary, [data-theme="dark"] .report section.secondary h1 {
+[data-theme="dark"] .report section.secondary,
+[data-theme="dark"] .report section.secondary h1 {
     color: white;
     background-color: var(--night-blue);
+}
+
+.report .intro .subtitle {
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
 }
 
 @media (orientation: portrait) {
@@ -640,7 +662,7 @@ a.btn:empty {
 @media (max-width: 1199.98px) {
     .report .intro {
         background: linear-gradient(to top, transparent, white 80%),
-            url(/img/background-report2.webp);
+            url(/img/background-report.webp);
         background-repeat: no-repeat;
         background-position-y: 90%;
         padding: 1rem;
@@ -649,7 +671,7 @@ a.btn:empty {
 
     [data-theme="dark"] .report .intro {
         background: linear-gradient(to top, transparent, var(--night-blue) 80%),
-            url(/img/background-report2.webp);
+            url(/img/background-report.webp);
         background-repeat: no-repeat;
         background-position-y: 90%;
         color: white !important;
@@ -658,6 +680,7 @@ a.btn:empty {
     .report .intro h1 {
         font-size: 2.3rem;
         margin-bottom: 1rem;
+        margin-top: 0;
     }
 
     .report .intro h2 {
@@ -668,6 +691,15 @@ a.btn:empty {
     .buttons-container {
         margin-top: 1rem !important;
     }
+
+    .report .intro .subtitle {
+        width: 100%;
+    }
+}
+
+[data-theme="dark"] .report .intro .subtitle,
+[data-theme="dark"] .report .intro .subtitle a {
+    color: var(--night-blue) !important;
 }
 
 /* SIDEBAR */
@@ -820,7 +852,7 @@ footer li {
 
     footer li {
         display: block;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
     }
 
     .sidebar-footer {
