@@ -67,7 +67,7 @@
                         </div>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item"
-                                v-for="language in availableLanguages.filter(language => language != 'en')">
+                                v-for="language in availableLanguages.filter(language => language != 'en' && language != 'nl')">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
                                     @click="setLanguage(language)" href="javascript:void(0);"
                                     v-html="language.toUpperCase()"></a>

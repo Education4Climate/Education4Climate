@@ -659,6 +659,29 @@ a.btn:empty {
     }
 }
 
+@media (min-width: 1200px) and (max-width: 1399.98px) and (orientation: landscape) {
+
+    .report section.intro .row {
+        padding-top: 2rem;
+    }
+
+    .report .intro .headline .buttons-container {
+        margin-top: 1rem;
+    }
+
+    .report .intro .subtitle {
+        width: 100%;
+    }
+
+    .report h1 {
+        font-size:2.4rem;
+    }
+
+    .report h2 {
+        font-size: 1.4rem;
+    }
+}
+
 @media (max-width: 1199.98px) {
     .report .intro {
         background: linear-gradient(to top, transparent, white 80%),
