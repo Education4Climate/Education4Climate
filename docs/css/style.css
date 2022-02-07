@@ -130,6 +130,11 @@ hr {
     color: var(--hr-color);
 }
 
+.btn + .subtitle {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
 /* Icons */
 
 .icon.target {
@@ -311,6 +316,12 @@ footer .logo {
     height: 3rem;
 }
 
+@media (max-width: 1199.98px) {
+    footer .logo {
+        margin-bottom: 1rem;
+    }
+}
+
 footer .container .row {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -342,7 +353,8 @@ body.modal-open {
 
 /* HOME */
 
-.home .container {
+.home .container,
+.legal .container {
     max-width: 100%;
 }
 
@@ -583,6 +595,12 @@ a.btn:empty {
     margin-bottom: 1rem;
 }
 
+.courses #coursesAccordion .accordion-body h6,
+.programs #programsAccordion .accordion-body h6 {
+    font-weight: 600;
+    display: inline;
+}
+
 /* Teachers directory */
 
 #alphabet {
@@ -600,6 +618,111 @@ a.btn:empty {
 #alphabet .letter.active {
     background-color: var(--pale-teal);
     border-color: var(--pale-teal);
+}
+
+/* Report */
+
+.report .intro {
+    background: linear-gradient(to right, transparent, white 70%),
+        url(/img/background-report.webp);
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+    background-size: cover;
+}
+
+[data-theme="dark"] .report .intro {
+    background: linear-gradient(to right, transparent, var(--night-blue) 70%),
+        url(/img/background-report.webp);
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+    background-size: 100%;
+    color: white !important;
+}
+
+[data-theme="dark"] .report section.secondary,
+[data-theme="dark"] .report section.secondary h1 {
+    color: white;
+    background-color: var(--night-blue);
+}
+
+.report .intro .subtitle {
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+
+@media (orientation: portrait) {
+    .report .intro .headline {
+        justify-content: start;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) and (orientation: landscape) {
+
+    .report section.intro .row {
+        padding-top: 2rem;
+    }
+
+    .report .intro .headline .buttons-container {
+        margin-top: 1rem;
+    }
+
+    .report .intro .subtitle {
+        width: 100%;
+    }
+
+    .report h1 {
+        font-size:2.4rem;
+    }
+
+    .report h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .report .intro {
+        background: linear-gradient(to top, transparent, white 80%),
+            url(/img/background-report.webp);
+        background-repeat: no-repeat;
+        background-position-y: 90%;
+        padding: 1rem;
+        min-height: calc(100vh - 56px);
+    }
+
+    [data-theme="dark"] .report .intro {
+        background: linear-gradient(to top, transparent, var(--night-blue) 80%),
+            url(/img/background-report.webp);
+        background-repeat: no-repeat;
+        background-position-y: 90%;
+        color: white !important;
+    }
+
+    .report .intro h1 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .report .intro h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    .buttons-container {
+        margin-top: 1rem !important;
+    }
+
+    .report .intro .subtitle {
+        width: 100%;
+    }
+}
+
+[data-theme="dark"] .report .intro .subtitle,
+[data-theme="dark"] .report .intro .subtitle a {
+    color: var(--night-blue) !important;
 }
 
 /* SIDEBAR */
@@ -752,7 +875,7 @@ footer li {
 
     footer li {
         display: block;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
     }
 
     .sidebar-footer {
@@ -890,9 +1013,11 @@ footer li {
 
 /* Collapsible filters */
 
-.programs .sidebar, .courses .sidebar, .teachers .sidebar {
-    padding-left: .5rem;
-    padding-right: .5rem;
+.programs .sidebar,
+.courses .sidebar,
+.teachers .sidebar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .filter-group {
@@ -923,27 +1048,28 @@ footer li {
 }
 
 .filter-group-header img {
-    content: url(/img/caret-up-blue.svg);   
+    content: url(/img/caret-up-blue.svg);
 }
 
 .filter-group-header.collapsed img {
     content: url(/img/caret-down-blue.svg);
 }
 
-#nameFilterCollapse > .filter, #programCodeFilterCollapse > .filter, #courseNameFilterCollapse > .filter {
-    padding-top: .8rem;
+#nameFilterCollapse > .filter,
+#programCodeFilterCollapse > .filter,
+#courseNameFilterCollapse > .filter {
+    padding-top: 0.8rem;
 }
 
 .filter-group-header:hover img {
-    content: url(/img/caret-up-green.svg);  
+    content: url(/img/caret-up-green.svg);
 }
 
 .filter-group-header.collapsed:hover img {
-    content: url(/img/caret-down-green.svg);  
+    content: url(/img/caret-down-green.svg);
 }
 
 @media (max-width: 1199.98px) {
-
     .filter-group {
         padding-right: 1rem;
     }

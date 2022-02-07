@@ -336,25 +336,25 @@
                                 <div class="accordion-body">
                                     <div class="col-12">
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("shared.code")}}
                                             </h6><span>&nbsp;{{course.code}}</span>
                                             <span v-if="course.url != ''">&nbsp;(<a :href="course.url" target="_blank"
                                                     rel="noopener">{{translate("shared.external-website")}}</a>)</span>
                                         </div>
                                         <div v-if="course.year">
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("courses.detail-year")}}</h6>
                                             <span>&nbsp;{{course.year}}</span>
                                         </div>
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("shared.detail-languages")}}</h6>
                                             <span>&nbsp;{{course.languages.map(language => translate("languages." +
                                                 languages[language].name)).slice().join(' / ')}}</span>
                                         </div>
                                         <div v-if="course.teachers.length > 0">
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("courses.detail-teachers")}}</h6>
                                             <ul>
                                                 <li v-for="teacher in course.teachers">{{teacher}}</li>
