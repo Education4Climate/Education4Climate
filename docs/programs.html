@@ -384,40 +384,40 @@
                                 <div class="accordion-body">
                                     <div class="col-12">
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">Code :
+                                            <h6 class="text-primary">Code :
                                             </h6><span>&nbsp;{{program.code}}</span>
                                             <span v-if="program.url">&nbsp;(<a :href="program.url" target="_blank"
                                                     rel="noopener">{{translate("shared.external-website")}}</a>)</span>
                                         </div>
                                         <div v-if="program.faculties">
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("programs.detail-faculties")}}</h6>
                                             <span>&nbsp;{{ program.faculties.slice().join(' / ') }}</span>
                                         </div>
                                         <div v-if="program.campus">
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("programs.detail-campus")}}</h6>
                                             <span>&nbsp;{{program.campus}}</span>
                                         </div>
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("programs.detail-cycle")}}</h6>
                                             <span>&nbsp;{{translate("cycles." + cycles[program.cycleId].name)}}</span>
                                         </div>
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("programs.detail-fields")}}</h6>
                                             <span>&nbsp;{{program.fields.map(field => translate("fields." +
                                                 fields[field].name)).slice().join(' / ')}}</span>
                                         </div>
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("shared.detail-languages")}}</h6>
                                             <span>&nbsp;{{program.languages.map(language => translate("languages." +
                                                 languages[language].name)).slice().join(' / ')}}</span>
                                         </div>
                                         <div>
-                                            <h6 class="text-primary" style="font-weight: 600;display:inline;">
+                                            <h6 class="text-primary">
                                                 {{translate("programs.detail-score")}}</h6>
                                             <span>&nbsp;{{program.score}}</span>&nbsp;
                                             <span type="button" data-bs-toggle="modal" data-bs-target="#modalScore"
