@@ -26,11 +26,11 @@ var CookieManager = {
             <div class="col-md-6">{{translate("cookies.use-cookies")}}</div>
             <div class="col-md-6 mt-2 buttons">
                 <button type="button" class="btn btn-light me-2 btn-sm" data-bs-toggle="modal"
-                    data-bs-target="#modalCookies">{{translate("cookies.customize")}}</button>
+                    data-bs-target="#modalCookies" :aria-label="translate('cookies.customize')">{{translate("cookies.customize")}}</button>
                 <button type="button" class="btn btn-danger me-2 btn-sm"
-                    @click="changeCookiesConsent(false, false)">{{translate("cookies.reject-all")}}</button>
+                    @click="changeCookiesConsent(false, false)" :aria-label="translate('cookies.reject-all')">{{translate("cookies.reject-all")}}</button>
                 <button type="button" class="btn btn-primary btn-sm"
-                    @click="changeCookiesConsent(true, true)">{{translate("cookies.accept-all")}}</button>
+                    @click="changeCookiesConsent(true, true)" :aria-label="translate('cookies.accept-all')">{{translate("cookies.accept-all")}}</button>
             </div>
         </div>
     </div>

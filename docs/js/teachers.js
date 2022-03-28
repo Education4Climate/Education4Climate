@@ -33,9 +33,12 @@ var app = Vue.createApp({
         };
     },
     computed: {
-        selectedAllSchools() {
-            return this.selectedSchools && this.selectedSchools.length == this.schools.length;
+        selectedAllUniversities() {
+            return this.selectedUniversities && this.selectedUniversities.length >= this.schools.filter(school => school.type == "university").length;
         },
+        selectedAllHighSchools() {
+            return this.selectedHighSchools && this.selectedHighSchools.length >= this.schools.filter(school => school.type == "highschool").length;
+        },        
         selectedAllThemes() {
             return this.selectedThemes && this.selectedThemes.length == this.themes.length;
         },        
@@ -55,7 +58,7 @@ var app = Vue.createApp({
                 let searchedName = this.searchedName.toLowerCase();
 
                 return this.teachers.slice()
-                    .filter(teacher => this.selectedSchools.includes(teacher.schoolId))
+                    .filter(teacher => this.selectedUniversities.includes(teacher.schoolId) || this.selectedHighSchools.includes(teacher.schoolId))
                     .filter(teacher => this.selectedThemes.some(selectedTheme => teacher.themesIds.map(theme => this.themes[theme].name).includes(selectedTheme)))                    
                     .filter(teacher => teacher.name.toLowerCase().includes(searchedName))
                     .filter(teacher => !this.firstLetterSearched || !teacher.name[0] ? true : teacher.name[0].toUpperCase() === this.firstLetterSearched);
@@ -129,7 +132,8 @@ var app = Vue.createApp({
 
             // sets the filters default selected schools / themes
 
-            this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
+            this.selectedUniversities = this.selectedUniversities ? this.selectedUniversities : this.schools.filter(school => school.type == "university").map(school => { return school.id; });
+            this.selectedHighSchools = this.selectedHighSchools ? this.selectedHighSchools : this.schools.filter(school => school.type == "highschool").map(school => { return school.id; });            
             this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
 
             // hides the loader
@@ -146,9 +150,13 @@ var app = Vue.createApp({
 
             this.currentPage = this.dataLoaded && this.displayedTeachers.length < this.sortedTeachers.length ? this.currentPage + 1 : this.currentPage;
         },
-        toggleCheckAllSchools() {
+        toggleCheckAllUniversities() {
 
-            this.selectedSchools = this.selectedAllSchools ? [] : this.schools.map(school => { return school.id; });
+            this.selectedUniversities = this.selectedAllUniversities ? [] : this.schools.filter(school => school.type == "university").map(school => { return school.id; });
+        },
+        toggleCheckAllHighSchools() {
+
+            this.selectedHighSchools = this.selectedAllHighSchools ? [] : this.schools.filter(school => school.type == "highschool").map(school => { return school.id; });
         },
         toggleCheckAllThemes() {
 

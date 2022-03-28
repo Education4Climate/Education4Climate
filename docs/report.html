@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+    <meta name="google-site-verification" content="Mb7RsnQF9bZkOcVENvQRaOTaDVqxgp56L8lwi_ICEzg" />
+    <link rel="alternate" hreflang="fr" href="https://education4climate.be/report.html?lang=fr" />
+    <link rel="alternate" hreflang="nl" href="https://education4climate.be/report.html?lang=nl" />
+    <link rel="alternate" hreflang="en" href="https://education4climate.be/report.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://education4climate.be/report.html?lang=fr" />
+    <link rel="canonical" href="https://education4climate.be/report.html?lang=fr" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#4bd2af">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f5f0f0">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f5f0f0">
+    <meta name="application-name" content="Education 4 Climate">
+
+    <meta property="og:title" content="Education 4 Climate" />
+    <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
+    <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Education 4 Climate</title>
+</head>
+
+<body class="home report">
+
+    <div id="app" v-if="dataLoaded" v-cloak>
+
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl"
+                :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}">
+                <div class="container-fluid">
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="Logo"
+                            id="logo"></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                        4 <span class="accent">CLIMATE</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
+                            <li class="nav-item" v-for="item in menuItems">
+                                <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
+                                    :href="item + '.html?lang=' + currentLanguage"
+                                    v-html="translate('menu.' + item)"></a>
+                            </li>
+                        </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'"
+                                alt="Dark/Light theme">
+                            <span class="theme-light" v-html="translate('menu.dark-theme')"></span>
+                            <span class="theme-dark" v-html="translate('menu.light-theme')"></span>
+                        </div>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item"
+                                v-for="language in availableLanguages.filter(language => language != 'en')">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)" href="javascript:void(0);"
+                                    v-html="language.toUpperCase()"></a>
+                            </li>
+                        </ul>
+                        <div class="navbar-footer">
+                            <hr>
+                            <div>
+                                <div class="accent">The Shifters Belgium</div>
+                                <ul>
+                                    <li>
+                                        <a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                            v-html="translate('footer.contact')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="legal.html" v-html="translate('footer.legal')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="intro container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 d-none d-xl-block"></div>
+
+                    <div class="col-xl-6 headline">
+
+                        <h1 v-html="translate('report.intro-headline')">Mobiliser l'enseignement supérieur pour la
+                            transition vers la neutralité carbone</h1>
+                        <h2 v-html="translate('report.intro-subheadline')">Préparer les futurs diplômé.e.s aux enjeux
+                            climatiques et environnementaux dans les
+                            universités et les hautes écoles belges</h2>
+
+                        <h2>
+                            <div class="buttons-container">
+                                <div>
+                                    <a class="btn btn-primary btn-lg" :href="translate('report.pdf')"
+                                        v-html="translate('report.download')">Télécharger le rapport</a>
+                                    <div class="subtitle" v-html="translate('report.button-subtitle')">
+                                        Ce document est un <strong>rapport intermédiaire</strong> à diffusion
+                                        restreinte, sa version finale est prévue pour fin mars 2022. Nous vous invitons
+                                        à en prendre connaissance et à nous faire part de vos remarques et observations
+                                        avant le 1er mars en nous contactant <a
+                                            href="mailto:contact@education4climate.org?subject=Remarques rapport education4climate">par
+                                            email</a>.
+                                    </div>
+                                </div>
+                            </div>
+                        </h2>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="container secondary">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1 v-html="translate('report.section1-title')">Le contexte</h1>
+                    </div>
+
+                    <div class="col-xl-6 text" v-html="translate('report.section1-text')">
+                        <p><strong>Les jeunes manifestent</strong> en masse en <strong>faveur du climat</strong> en
+                            Belgique et dans le monde.<br /><strong>L’Union européenne</strong> s’est fixée un objectif
+                            ambitieux de <strong>neutralité carbone</strong> d’ici à 2050. Celui-ci ne nécessite pas
+                            seulement des investissements importants, mais aussi <strong>des connaissances et des
+                                compétences</strong>.</p>
+                        <p>Face à ce constat, <strong>Education4Climate</strong> a mené une enquête pour comprendre
+                            <strong>les attentes des étudiants</strong>, et analysé l’offre de cours et de formations
+                            sur <strong>les enjeux climatiques et environnementaux</strong> dans <strong>les universités
+                                et les hautes écoles belges</strong>.<br />Les résultats sont publiés dans le rapport
+                            <strong>"Mobiliser l’enseignement supérieur pour la transition vers la neutralité
+                                carbone"</strong>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="container tertiary">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title order-xl-last">
+                        <h1 v-html="translate('report.section2-title')">Notre vision</h1>
+                    </div>
+
+                    <div class="col-xl-6 text order-xl-first" v-html="translate('report.section2-text')">
+                        <p>Education4Climate est né de la conviction que <strong>les universités</strong> et <strong>les
+                                hautes écoles</strong> ont un rôle particulier à jouer dans la formation des citoyens,
+                            des décideurs et des talents dont notre société et nos entreprises ont besoin pour
+                            <strong>relever le défi de la transition vers la neutralité carbone et la
+                                durabilité</strong>.
+                        </p>
+                        <p>C’est pourquoi, Education4Climate plaide pour que l’enseignement des enjeux climatiques et
+                            environnementaux soient intégrés dans le plus de formations possibles et propose des pistes
+                            de solution pour atteindre ce but.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 right">
+                        <ul>
+                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                    v-html="translate('footer.contact')"></a>
+                            </li>
+                            <li>
+                                <a href="legal.html" v-html="translate('footer.legal')"></a>
+                            </li>
+                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                    data-bs-target="#modalCookies">Cookies</a></li>
+                            <li><a href="https://github.com/Education4Climate/" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+        </footer>
+
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
+
+    </div>
+
+    <script src="js/vue.global.prod.js"></script>
+    <script type="module" src="js/home.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

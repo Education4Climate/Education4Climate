@@ -33,8 +33,11 @@ var app = Vue.createApp({
         };
     },
     computed: {
-        selectedAllSchools() {
-            return this.selectedSchools && this.selectedSchools.length == this.schools.length;
+        selectedAllUniversities() {
+            return this.selectedUniversities && this.selectedUniversities.length >= this.schools.filter(school => school.type == "university").length;
+        },
+        selectedAllHighSchools() {
+            return this.selectedHighSchools && this.selectedHighSchools.length >= this.schools.filter(school => school.type == "highschool").length;
         },
         selectedAllThemes() {
             return this.selectedThemes && this.selectedThemes.length == this.themes.length;
@@ -76,7 +79,7 @@ var app = Vue.createApp({
                 let searchedName = this.searchedName.toLowerCase();
 
                 return this.programs.slice()
-                    .filter(program => this.selectedSchools.includes(program.schoolId))
+                    .filter(program => this.selectedUniversities.includes(program.schoolId) || this.selectedHighSchools.includes(program.schoolId))
                     .filter(program => this.selectedThemes.some(selectedTheme => program.themes.map(theme => this.themes[theme.id].name).includes(selectedTheme)))
                     .filter(program => this.selectedFields.some(field => program.fields.includes(field)))
                     .filter(program => this.selectedLanguages.some(selectedLanguage => program.languages.map(language => this.languages[language].name).includes(selectedLanguage)))
@@ -147,7 +150,8 @@ var app = Vue.createApp({
 
             // sets the filters default selected schools / themes / fields
 
-            this.selectedSchools = this.selectedSchools ? this.selectedSchools : this.schools.map(school => { return school.id; });
+            this.selectedUniversities = this.selectedUniversities ? this.selectedUniversities : this.schools.filter(school => school.type == "university").map(school => { return school.id; });
+            this.selectedHighSchools = this.selectedHighSchools ? this.selectedHighSchools : this.schools.filter(school => school.type == "highschool").map(school => { return school.id; });
             this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
             this.selectedFields = this.fields.map(field => { return field.id; });
             this.selectedLanguages = this.selectedLanguages ? this.selectedLanguages : this.languages.map(language => { return language.name; });
@@ -167,9 +171,13 @@ var app = Vue.createApp({
 
             this.currentPage = this.dataLoaded && this.displayedPrograms.length < this.sortedPrograms.length ? this.currentPage + 1 : this.currentPage;
         },
-        toggleCheckAllSchools() {
+        toggleCheckAllUniversities() {
 
-            this.selectedSchools = this.selectedAllSchools ? [] : this.schools.map(school => { return school.id; });
+            this.selectedUniversities = this.selectedAllUniversities ? [] : this.schools.filter(school => school.type == "university").map(school => { return school.id; });
+        },
+        toggleCheckAllHighSchools() {
+
+            this.selectedHighSchools = this.selectedAllHighSchools ? [] : this.schools.filter(school => school.type == "highschool").map(school => { return school.id; });
         },
         toggleCheckAllThemes() {
 
@@ -209,9 +217,9 @@ var app = Vue.createApp({
                 csv += "\"" + program.campuses.join("|") + "\"" + separator;
 
                 this.themes.forEach((theme) => {
-                    
+
                     var i = program.themes.findIndex((t) => this.themes[t.id].name == theme.name);
-                    csv += i>-1 ? program.themes[i].score + separator : 0 + separator;
+                    csv += i > -1 ? program.themes[i].score + separator : 0 + separator;
                 });
 
                 this.languages.forEach((language) => { csv += program.languages.map(l => this.languages[l].name).includes(language.name) ? "true" + separator : "false" + separator; })
