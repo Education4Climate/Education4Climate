@@ -8,7 +8,7 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URl = "https://bamaflexweb.howest.be/bamaflexweb/BMFUIDetailxOLOD.aspx?a={}&b=5&c=1"  # format is code course
+BASE_URL = "https://bamaflexweb.howest.be/bamaflexweb/BMFUIDetailxOLOD.aspx?a={}&b=5&c=1"  # format is code course
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}howest_programs_{YEAR}.json')
 
@@ -41,7 +41,7 @@ class HOWESTCourseSpider(scrapy.Spider, ABC):
 
         for course_id in courses_ids_list:
             yield scrapy.Request(
-                url=BASE_URl.format(course_id), 
+                url=BASE_URL.format(course_id),
                 callback=self.parse_course, 
                 cb_kwargs={"course_id": course_id},
             )
