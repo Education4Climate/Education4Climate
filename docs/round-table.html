@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+    <meta name="google-site-verification" content="Mb7RsnQF9bZkOcVENvQRaOTaDVqxgp56L8lwi_ICEzg" />
+    <link rel="alternate" hreflang="fr" href="https://education4climate.be/report.html?lang=fr" />
+    <link rel="alternate" hreflang="nl" href="https://education4climate.be/report.html?lang=nl" />
+    <link rel="alternate" hreflang="en" href="https://education4climate.be/report.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://education4climate.be/report.html?lang=fr" />
+    <link rel="canonical" href="https://education4climate.be/report.html?lang=fr" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#4bd2af">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f5f0f0">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f5f0f0">
+    <meta name="application-name" content="Education 4 Climate">
+
+    <meta property="og:title" content="Education 4 Climate" />
+    <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
+    <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Education 4 Climate</title>
+</head>
+
+<body class="home report">
+
+    <div id="app" v-if="dataLoaded" v-cloak>
+
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl"
+                :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}">
+                <div class="container-fluid">
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="Logo"
+                            id="logo"></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                        4 <span class="accent">CLIMATE</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
+                            <li class="nav-item" v-for="item in menuItems">
+                                <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
+                                    :href="item + '.html?lang=' + currentLanguage"
+                                    v-html="translate('menu.' + item)"></a>
+                            </li>
+                        </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'"
+                                alt="Dark/Light theme">
+                            <span class="theme-light" v-html="translate('menu.dark-theme')"></span>
+                            <span class="theme-dark" v-html="translate('menu.light-theme')"></span>
+                        </div>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item"
+                                v-for="language in availableLanguages.filter(language => language == 'en')">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)" href="javascript:void(0);"
+                                    v-html="language.toUpperCase()"></a>
+                            </li>
+                        </ul>
+                        <div class="navbar-footer">
+                            <hr>
+                            <div>
+                                <div class="accent">The Shifters Belgium</div>
+                                <ul>
+                                    <li>
+                                        <a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                            v-html="translate('footer.contact')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="legal.html" v-html="translate('footer.legal')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="intro container">
+
+                <div class="row">
+
+                    <div class="col-xl-6 d-none d-xl-block"></div>
+
+                    <div class="col-xl-6 headline">
+
+                        <h1>Mobilising higher education for the transition to carbon neutrality</h1>
+                        <h2>Round-table</h2>
+
+                        <p class="pt-3"><strong>Friday XX of June from XX AM to YY AM<br />Université Catholique de Louvain
+                                (UCL)</strong>
+                        <p>
+
+                        <h2>
+                            <div class="buttons-container mt-0">
+                                <div>
+                                    <a class="btn btn-primary btn-lg" href="#register">Register to the
+                                        event</a>
+                                    <div class="subtitle">
+                                        Following the publication of its final report, Education4Climate and its
+                                        partners, The
+                                        Shift.be and the belgian branch of the SDNS are organising a round-table to
+                                        discuss the
+                                        imperative and needs to transition the courses and program content towards
+                                        environmental
+                                        sustainbility across all faculties in belgian university and high schools.
+                                    </div>
+                                </div>
+                            </div>
+                        </h2>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="container secondary">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1>Agenda</h1>
+                    </div>
+
+                    <div class="col-xl-6 text">
+
+
+                        <p>During the event,
+                            several speakers will delve further into the topic and some collective
+                            discussions will be held between the participants.</p>
+
+                        <p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="width: 50%;"></th>
+                                    <th scope="col">Speaker</th>
+                                    <th scope="col">Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Welcome + Presentation of the agenda and the project</td>
+                                    <td>
+                                        Quentin Lancrenon</td>
+                                    <td>10 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Education4Climate Presentation and
+                                            conclusions</strong><br />Including Q&A</td>
+                                    <td>François Collard</td>
+                                    <td>35 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>How to train the engineers of the 21st century
+                                            ?</strong><br />
+                                        <div class="subtitle">Presentation of the The Shift Project last publications
+                                            showcasing an example of a successful program transition (see here)</d>
+                                    </td>
+                                    <td>Clémence Vorreux</td>
+                                    <td>35 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Coffee break</td>
+                                    <td></td>
+                                    <td>15 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Proposals to impulse the transition of programs in Belgian
+                                            high school</strong></td>
+                                    <td>François Collard</td>
+                                    <td>10 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>What would it cost to finance the transition of the programs
+                                            in Belgian high-schools and universities ?</strong><br />Presentation of a
+                                        budget evaluation. </td>
+                                    <td>Marte Nyssen<br />Vice Rector at the transition</td>
+                                    <td>10 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Open Exchanges</td>
+                                    <td></td>
+                                    <td>20 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Green Deal, transition and higher
+                                            education</strong><br />Concluding Remarks</td>
+                                    <td>Thomas Dermine</td>
+                                    <td>20 min</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="container tertiary" id="register">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title order-xl-last">
+                        <h1>Register</h1>
+                    </div>
+
+                    <div class="col-xl-6 text order-xl-first">
+
+                        <form ref="roundTableForm" @submit.prevent="registerToRoundTable()"
+                            :class="isSuccessfullyRegistered ? 'collapse': ''" data-bs-toggle="collapse">
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="roundTableFormFirstName">First name</label>
+                                <input type="text" class="form-control" id="roundTableFormFirstName" name="firstname"
+                                    aria-describedby="First name" placeholder="Please enter your first name" required
+                                    :readonly="sendingRegistration ? true : false">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="roundTableFormLastName">Name</label>
+                                <input type="text" class="form-control" id="roundTableFormLastName" name="lastname"
+                                    aria-describedby="Last name" placeholder="Please enter your last name" required
+                                    :readonly="sendingRegistration ? true : false">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="roundTableFormSchool">Representing the school</label>
+                                <input type="text" class="form-control" id="roundTableFormSchool" name="school"
+                                    aria-describedby="School" placeholder="Please enter the school you are representing"
+                                    required :readonly="sendingRegistration ? true : false">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1rem;">
+                                <label for="roundTableFormsSchoolRole">Role in this school</label>
+                                <input type="text" class="form-control" id="roundTableFormsSchoolRole" name="role"
+                                    aria-describedby="Role" placeholder="Please enter your role in this school" required
+                                    :readonly="sendingRegistration ? true : false">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 2rem;">
+                                <label for="roundTableFormEmail">Email</label>
+                                <input type="email" class="form-control" id="roundTableFormEmail" name="email"
+                                    aria-describedby="Email" placeholder="Please enter your email address" required
+                                    :readonly="sendingRegistration ? true : false">
+                            </div>
+                            <div style="text-align:right;">
+                                <button type="submit" class="btn btn-primary" style="border: 2px solid white;">Register
+                                    to the event</button>
+                                <div style="color:var(--faded-pink);" class="m-2" v-if="errorWhileRegistering">An error
+                                    occured while sending your registration.<br />If this error persist, please send
+                                    your registration to <a
+                                        href='mailto:contact@education4climate.org'>contact@education4climate.org</a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div v-if="isSuccessfullyRegistered">We have well received your registration, see you soon.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer class="text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 right">
+                        <ul>
+                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                    v-html="translate('footer.contact')"></a>
+                            </li>
+                            <li>
+                                <a href="legal.html" v-html="translate('footer.legal')"></a>
+                            </li>
+                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                    data-bs-target="#modalCookies">Cookies</a></li>
+                            <li><a href="https://github.com/Education4Climate/" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+        </footer>
+
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
+
+    </div>
+
+    <script src="js/vue.global.prod.js"></script>
+    <script type="module" src="js/round-table.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
