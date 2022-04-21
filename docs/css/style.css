@@ -672,7 +672,6 @@ a.btn:empty {
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) and (orientation: landscape) {
-
     .report section.intro .row {
         padding-top: 2rem;
     }
@@ -686,7 +685,7 @@ a.btn:empty {
     }
 
     .report h1 {
-        font-size:2.4rem;
+        font-size: 2.4rem;
     }
 
     .report h2 {
@@ -1084,5 +1083,30 @@ footer li {
 @media (max-width: 1199.98px) {
     .filter-group {
         padding-right: 1rem;
+    }
+}
+
+/* Round table */
+
+.logos-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    text-align: center;
+}
+
+.logos-container img {
+    width: 25%;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .logos-container {
+        flex-direction: column;
+    }
+
+    .logos-container img {
+        width: 50%;
     }
 }
