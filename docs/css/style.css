@@ -661,6 +661,10 @@ a.btn:empty {
     text-align: left;
 }
 
+.table .subtitle {
+    font-size: 1rem;
+}
+
 @media (orientation: portrait) {
     .report .intro .headline {
         justify-content: start;

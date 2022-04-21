@@ -114,114 +114,45 @@
                         <h1>Mobilising higher education for the transition to carbon neutrality</h1>
                         <h2>Round-table</h2>
 
-                        <p class="pt-3"><strong>Friday XX of June from XX AM to YY AM<br />Université Catholique de Louvain
-                                (UCL)</strong>
+                        <p class="pt-3">Université Catholique de Louvain (UCL)<br />Louvain-la-Neuve<strong><br/>Tuesday 14th
+                                of June<br />From 9:00 till 12:30</strong>
                         <p>
 
-                        <h2>
-                            <div class="buttons-container mt-0">
-                                <div>
-                                    <a class="btn btn-primary btn-lg" href="#register">Register to the
-                                        event</a>
-                                    <div class="subtitle">
-                                        Following the publication of its final report, Education4Climate and its
-                                        partners, The
-                                        Shift.be and the belgian branch of the SDNS are organising a round-table to
-                                        discuss the
-                                        imperative and needs to transition the courses and program content towards
-                                        environmental
-                                        sustainbility across all faculties in belgian university and high schools.
-                                    </div>
-                                </div>
-                            </div>
-                        </h2>
+
+
+                        <div class="buttons-container  mt-0 d-grid gap-2 col-xl-3">
+                            <a class="btn btn-primary" href="#register">Register</a>
+                            <a class="btn btn-primary" href="#agenda">Agenda</a>
+                        </div>
+
 
                     </div>
                 </div>
 
             </section>
 
-            <section class="container secondary">
+            <section class="container secondary" style="min-height: unset;">
 
                 <div class="row">
-
-                    <div class="col-xl-6 title">
-                        <h1>Agenda</h1>
-                    </div>
-
-                    <div class="col-xl-6 text">
-
-
-                        <p>During the event,
-                            several speakers will delve further into the topic and some collective
-                            discussions will be held between the participants.</p>
-
-                        <p>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col" style="width: 50%;"></th>
-                                    <th scope="col">Speaker</th>
-                                    <th scope="col">Duration</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row">Welcome + Presentation of the agenda and the project</td>
-                                    <td>
-                                        Quentin Lancrenon</td>
-                                    <td>10 min</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row"><strong>Education4Climate Presentation and
-                                            conclusions</strong><br />Including Q&A</td>
-                                    <td>François Collard</td>
-                                    <td>35 min</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row"><strong>How to train the engineers of the 21st century
-                                            ?</strong><br />
-                                        <div class="subtitle">Presentation of the The Shift Project last publications
-                                            showcasing an example of a successful program transition (see here)</d>
-                                    </td>
-                                    <td>Clémence Vorreux</td>
-                                    <td>35 min</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">Coffee break</td>
-                                    <td></td>
-                                    <td>15 min</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row"><strong>Proposals to impulse the transition of programs in Belgian
-                                            high school</strong></td>
-                                    <td>François Collard</td>
-                                    <td>10 min</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row"><strong>What would it cost to finance the transition of the programs
-                                            in Belgian high-schools and universities ?</strong><br />Presentation of a
-                                        budget evaluation. </td>
-                                    <td>Marte Nyssen<br />Vice Rector at the transition</td>
-                                    <td>10 min</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">Open Exchanges</td>
-                                    <td></td>
-                                    <td>20 min</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row"><strong>Green Deal, transition and higher
-                                            education</strong><br />Concluding Remarks</td>
-                                    <td>Thomas Dermine</td>
-                                    <td>20 min</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="col-xl-6" style="text-align:center;">
+                        Following the publication of <a href="report.html">its report</a>, Education4Climate and its
+                        partners,
+                        The
+                        Shift.be, the
+                        Belgian branch of the Sustainable Development Solution Network (SDSN) and the Shift Project
+                        are
+                        organising a roundtable with representatives from Belgian universities and High Schools to
+                        discuss
+                        <strong>how to make Belgium's higher education programs a key enabler of the carbon neutrality
+                            transition,
+                            adapting their content to better include all aspects of environmental
+                            sustainability.</strong>
+                        <p class="pt-5"> <img class="p-2" style="width:20%" src="./img/logo_shifters_blue_blue.svg">
+                            <img class="p-2" style="width:20%" src="./img/sdsn-logo.png">
+                            <img class="p-2" style="width:20%" src="./img/the-shift-logo.svg">
+                            <img class="p-2" style="width:20%" src="./img/the-shift-project-logo.png">
                         </p>
-
                     </div>
-
                 </div>
 
             </section>
@@ -251,16 +182,17 @@
                                     :readonly="sendingRegistration ? true : false">
                             </div>
                             <div class="form-group" style="margin-bottom: 1rem;">
-                                <label for="roundTableFormSchool">Representing the school</label>
-                                <input type="text" class="form-control" id="roundTableFormSchool" name="school"
-                                    aria-describedby="School" placeholder="Please enter the school you are representing"
-                                    required :readonly="sendingRegistration ? true : false">
+                                <label for="roundTableFormInstitution">Institution</label>
+                                <input type="text" class="form-control" id="roundTableFormInstitution" name="institution"
+                                    aria-describedby="Institution"
+                                    placeholder="Please enter the institution you are representing" required
+                                    :readonly="sendingRegistration ? true : false">
                             </div>
                             <div class="form-group" style="margin-bottom: 1rem;">
-                                <label for="roundTableFormsSchoolRole">Role in this school</label>
-                                <input type="text" class="form-control" id="roundTableFormsSchoolRole" name="role"
-                                    aria-describedby="Role" placeholder="Please enter your role in this school" required
-                                    :readonly="sendingRegistration ? true : false">
+                                <label for="roundTableFormsInstitutionRole">Role</label>
+                                <input type="text" class="form-control" id="roundTableFormsInstitutionRole" name="role"
+                                    aria-describedby="Role" placeholder="Please enter your role in this institution"
+                                    required :readonly="sendingRegistration ? true : false">
                             </div>
                             <div class="form-group" style="margin-bottom: 2rem;">
                                 <label for="roundTableFormEmail">Email</label>
@@ -281,6 +213,96 @@
 
                         <div v-if="isSuccessfullyRegistered">We have well received your registration, see you soon.
                         </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="container secondary" id="agenda">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1>Agenda</h1>
+                    </div>
+
+                    <div class="col-xl-6 text">
+
+                        <table class="table">
+
+                            <colgroup>
+                                <col span="1" style="width: 50%;">
+                                <col span="1">
+                                <col span="1">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td scope="row"><strong>Education4Climate</strong>
+                                        <div class="subtitle">Introduction @ presentation of the report</div>
+                                    </td>
+                                    <td>François Collard<div class="subtitle">The Shifters</div>
+                                    </td>
+                                    <td style="white-space: nowrap;">35 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Discussion panel - How to transform and integrate climate
+                                            and environmental sustainability in programs ?</td>
+                                    <td>Quentin Lancrenon<div class="subtitle">The Shifters</div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>How to train the engineers of the 21st century?</strong>
+                                        <div class="subtitle">Presentation of the The Shift Project <a
+                                                href="report.html">last publication</a> showcasing an example of a
+                                            successful program transition</div>
+                                    </td>
+                                    </td>
+                                    <td>Damien Amichaud<div class="subtitle">The Shift Project</div>
+                                    </td>
+                                    <td style="white-space: nowrap;">35 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Coffee break</strong></td>
+                                    <td></td>
+                                    <td style="white-space: nowrap;">15 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Topic to be determined</strong></td>
+                                    <td>Green Office<div class="subtitle">UGent</div>
+                                    </td>
+                                    <td>10 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>What would it cost to finance the transition of the programs
+                                            in Belgian high-schools and universities ?</strong>
+                                        <div class="subtitle">Presentation of a
+                                            budget evaluation</div>
+                                    </td>
+                                    <td>Marthe Nyssens<div class="subtitle">Vice-rectrice à la transition (UCLouvain)
+                                        </div>
+                                    </td>
+                                    <td style="white-space: nowrap;">10 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Open Exchanges</strong></td>
+                                    <td></td>
+                                    <td>50 min</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><strong>Green Deal, transition and higher
+                                            education</strong>
+                                        <div class="subtitle">Concluding Remarks</div>
+                                    </td>
+                                    <td>Thomas Dermine<div class="subtitle">Secrétaire d'état</div>
+                                    </td>
+                                    <td style="white-space: nowrap;">20 min</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
 
                     </div>
 
