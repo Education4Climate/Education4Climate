@@ -114,7 +114,7 @@
                         <h1>Mobilising higher education for the transition to carbon neutrality</h1>
                         <h2>Round-table</h2>
 
-                        <p class="pt-3">UCLouvain<br />Louvain-la-Neuve<strong><br/>Tuesday 14th
+                        <p class="pt-3">UCLouvain<br />Louvain-la-Neuve<strong><br />Tuesday 14th
                                 of June<br />From 9:00 till 12:30</strong>
                         <p>
 
@@ -184,8 +184,8 @@
                             </div>
                             <div class="form-group" style="margin-bottom: 1rem;">
                                 <label for="roundTableFormInstitution">Institution</label>
-                                <input type="text" class="form-control" id="roundTableFormInstitution" name="institution"
-                                    aria-describedby="Institution"
+                                <input type="text" class="form-control" id="roundTableFormInstitution"
+                                    name="institution" aria-describedby="Institution"
                                     placeholder="Please enter the institution you are representing" required
                                     :readonly="sendingRegistration ? true : false">
                             </div>
@@ -250,7 +250,9 @@
                                 <tr>
                                     <td scope="row"><strong>How to train the engineers of the 21st century ?</strong>
                                         <div class="subtitle">Presentation of the The Shift Project <a
-                                                href="report.html">last publication</a> showcasing an example of a
+                                                href="https://theshiftproject.org/article/publication-rapport-former-lingenieur-du-21esiecle/"
+                                                target="_blank" rel="noopener">last publication</a> showcasing an
+                                            example of a
                                             successful program transition</div>
                                     </td>
                                     <td>Damien Amichaud<div class="subtitle">The Shift Project</div>
@@ -264,67 +266,71 @@
                                 </tr>
                                 <tr>
                                     <td scope="row"><strong>Gearing up for sustainability: initiatives,
-                                        obstacles and needs to better integrate
-                                        climate and environmental issues into higher
-                                        education</strong><div class="subtitle">Discussion panel</div></td>
-                                    <td>Quentin Lancrenon<div class="subtitle">The Shifters</div><div>&</div>Stakeholders from Belgian Universities and High Schools</div>
-                                    </td>
-                                    <td class="subtitle" style="white-space: nowrap;">10:15-11:15</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row"><strong>Open Exchanges</strong></td>
-                                    <td></td>
-                                    <td class="subtitle" style="white-space: nowrap;">11:15-11:40</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row"><strong>Green Deal, transition and higher
+                                            obstacles and needs to better integrate
+                                            climate and environmental issues into higher
                                             education</strong>
-                                        <div class="subtitle">Concluding Remarks</div>
+                                        <div class="subtitle">Discussion panel</div>
                                     </td>
-                                    <td>Thomas Dermine <span class="badge bg-success">to be confirmed</span><div class="subtitle">Secrétaire d'état</div>
-                                    </td>
-                                    <td class="subtitle" style="white-space: nowrap;">11:40-12:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </p>
-
+                                    <td>Quentin Lancrenon<div class="subtitle">The Shifters</div>
+                                        <div>&</div>Stakeholders from Belgian Universities and High Schools
                     </div>
+                    </td>
+                    <td class="subtitle" style="white-space: nowrap;">10:15-11:15</td>
+                    </tr>
+                    <tr>
+                        <td scope="row"><strong>Open Exchanges</strong></td>
+                        <td></td>
+                        <td class="subtitle" style="white-space: nowrap;">11:15-11:40</td>
+                    </tr>
+                    <tr>
+                        <td scope="row"><strong>Green Deal, transition and higher
+                                education</strong>
+                            <div class="subtitle">Concluding Remarks</div>
+                        </td>
+                        <td>Thomas Dermine <span class="badge bg-success">to be confirmed</span>
+                            <div class="subtitle">Secrétaire d'état</div>
+                        </td>
+                        <td class="subtitle" style="white-space: nowrap;">11:40-12:00</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </p>
 
                 </div>
 
-            </section>
+    </div>
 
-        </main>
+    </section>
 
-        <footer class="text-muted py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
-                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
-                        </a>
-                    </div>
-                    <div class="col-xl-6 right">
-                        <ul>
-                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
-                                    v-html="translate('footer.contact')"></a>
-                            </li>
-                            <li>
-                                <a href="legal.html" v-html="translate('footer.legal')"></a>
-                            </li>
-                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
-                                    data-bs-target="#modalCookies">Cookies</a></li>
-                            <li><a href="https://github.com/Education4Climate/" target="_blank"
-                                    rel="noopener">GitHub</a>
-                            </li>
-                        </ul>
-                    </div>
-        </footer>
+    </main>
 
-        <cookie-manager :translations="translations" :current-language="currentLanguage"
-            @change-cookies-consent="changeCookiesConsent">
-        </cookie-manager>
+    <footer class="text-muted py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                        <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                    </a>
+                </div>
+                <div class="col-xl-6 right">
+                    <ul>
+                        <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                v-html="translate('footer.contact')"></a>
+                        </li>
+                        <li>
+                            <a href="legal.html" v-html="translate('footer.legal')"></a>
+                        </li>
+                        <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                data-bs-target="#modalCookies">Cookies</a></li>
+                        <li><a href="https://github.com/Education4Climate/" target="_blank" rel="noopener">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+    </footer>
+
+    <cookie-manager :translations="translations" :current-language="currentLanguage"
+        @change-cookies-consent="changeCookiesConsent">
+    </cookie-manager>
 
     </div>
 
