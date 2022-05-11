@@ -124,6 +124,10 @@
                         <h2>
                             <div class="buttons-container">
                                 <div>
+                                    <a class="btn btn-super-accent btn-lg" href="#report"
+                                        v-html="translate('menu.report')">Lire le rapport</a>
+                                </div>
+                                <div>
                                     <a class="btn btn-primary btn-lg" href="/programs.html"
                                         v-html="translate('menu.programs')">Trouver une formation</a>
                                 </div>
@@ -135,10 +139,42 @@
                                     <a class="btn btn-primary btn-lg" href="/teachers.html"
                                         v-html="translate('menu.teachers')">Trouver un professeur</a>
                                 </div>
+
                             </div>
                         </h2>
 
                     </div>
+                </div>
+
+            </section>
+
+            <section class="tertiary container" id="report">
+
+                <div class="row">
+
+                    <div class="col-xl-6 title">
+                        <h1 v-html="translate('home.section0-title')">Notre vision</h1>
+                    </div>
+
+                    <div class="col-xl-6 text" v-html="translate('home.section0-text')">
+                        <p>À l’aide de l’algorithme que nous avons développé, nous avons analysé l’offre de cours et de
+                            formation de l’enseignement supérieur en Belgique (universités et hautes écoles).</p>
+                        <p>Notre analyse révèle que plus de 60% des formations ne comportent aucun cours qui traitent
+                            des enjeux climatiques et environnementaux, et que seuls 5% des cours traitent de ces
+                            sujets. L’offre de formation est en outre très cloisonnée et concentrée surtout auprès des
+                            sciences et sciences appliquées.</p>
+                        <p>Enfin, une enquête que nous avons réalisée auprès d’un échantillon d’étudiants révèle que
+                            plus de 87% d’entre eux souhaitent être formés à ces enjeux.</p>
+                        <p>Face à ce constat, nous proposons des pistes de réflexion pour soutenir la transition et
+                            l’adaptation des formations de l’enseignement supérieur.</p>
+                        <p>
+                        <div class='buttons-container'>
+                            <div><a class='btn btn-super-accent btn-lg'
+                                    href='/education4climate_rapport_final_fr.pdf'>Télécharger le rapport</a></div>
+                        </div>
+                        </p>
+                    </div>
+
                 </div>
 
             </section>
@@ -178,7 +214,7 @@
                     </div>
 
                     <div class="col-xl-6 text order-xl-first" v-html="translate('home.section2-text')">
-                        <p>Le site Education4Climate vous permet de <strong>trouver des cours, des formations</strong>
+                        <p>Le site Education4Climate vous permet de <strong>trouver des cours, des formations, des études</strong>
                             qui traitent des enjeux climatiques et environnementaux, ainsi que <strong>les
                                 professeur.e.s</strong> qui enseignent ces matières, en Belgique.</p>
                         <p>Le site Education4Climate fonctionne sur <strong>un algorithme d’analyse automatisée</strong>
@@ -207,7 +243,7 @@
                             Belgique. Son objectif est de faciliter <strong>l'accès à l'information</strong> sur les
                             programmes et les cours qui abordent ces sujets, d’<strong>analyser</strong> l’offre de
                             formation et de proposer des pistes de <strong>solutions</strong> concrètes, reprises dans
-                            notre rapport (à paraître).</p>
+                            notre rapport.</p>
                         <p>Education4Climate est porté par une <a href="#home-team">équipe bénévole</a> de l’asbl
                             <strong>The Shifters Belgium</strong>, avec le soutien de la branche belge du <a
                                 href="https://www.sdsnbelgium.be" target="_blank" rel="noopener">SDSN</a>, <a
