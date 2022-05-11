@@ -67,7 +67,7 @@
                         </div>
                         <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
                             <li class="nav-item"
-                                v-for="language in availableLanguages.filter(language => language != 'en')">
+                                v-for="language in availableLanguages">
                                 <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
                                     @click="setLanguage(language)" href="javascript:void(0);"
                                     v-html="language.toUpperCase()"></a>
@@ -122,14 +122,7 @@
                                 <div>
                                     <a class="btn btn-primary btn-lg" :href="translate('report.pdf')"
                                         v-html="translate('report.download')">Télécharger le rapport</a>
-                                    <div class="subtitle" v-html="translate('report.button-subtitle')">
-                                        Ce document est un <strong>rapport intermédiaire</strong> à diffusion
-                                        restreinte, sa version finale est prévue pour le 8 mai 2022. Nous vous invitons
-                                        à en prendre connaissance et à nous faire part de vos remarques et observations
-                                        avant le 1er mars en nous contactant <a
-                                            href="mailto:contact@education4climate.org?subject=Remarques rapport education4climate">par
-                                            email</a>.
-                                    </div>
+                                    <p class="pt-3" style="font-size: 1rem;" v-html="translate('report.download-subtitle')"></p>
                                 </div>
                             </div>
                         </h2>
