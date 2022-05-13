@@ -8,22 +8,23 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-BASE_URL = "https://ecolevirtuelle.provincedeliege.be/docStatique/ects/{}" + f"-{YEAR}.html"
+BASE_URL = "https://hepl.be/static/{}" + f"-{YEAR}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}hepl_programs_{YEAR}.json')
 
-LANGUAGE_DICT = {"Français": "fr",
-                 "Anglais": "en",
-                 "English": "en",
-                 "Allemand": "de",
-                 "Deutsch": "de",
-                 "Néerlandais": "nl",
-                 "Nederlands": "nl",
-                 "Espagnol": 'es',
-                 "Español": 'es',
-                 "Italien": 'it',
-                 "Italiano": 'it'
-                 }
+LANGUAGE_DICT = {
+    "Français": "fr",
+    "Anglais": "en",
+    "English": "en",
+    "Allemand": "de",
+    "Deutsch": "de",
+    "Néerlandais": "nl",
+    "Nederlands": "nl",
+    "Espagnol": 'es',
+    "Español": 'es',
+    "Italien": 'it',
+    "Italiano": 'it'
+}
 
 
 class HEPLCourseSpider(scrapy.Spider, ABC):
@@ -48,24 +49,29 @@ class HEPLCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_ue(response, ue_id):
 
-        ue_name = response.xpath("//h4[contains(text(), 'Information')]/text()").get().split(": \"")[1].strip('" ')
+        ue_name = response.xpath("//h1/text()").get().strip(" ")
 
-        campus = response.xpath("//td[text()='Implantation(s)']/following::td[1]/text()").get().split(" - ")[1]
-
-        teacher = response.xpath("//td[contains(text(), 'Responsable')]/following::td[1]/text()").get()
-        teachers = [" ".join(teacher.split(", "))]
+        teacher = response.xpath("//td[contains(text(), 'Responsable')]/following::td[1]/text()").get().title()
+        teachers = [" ".join(teacher.split(", ")) if ',' in teacher
+                    else f"{teacher.split(' ')[1]} {teacher.split(' ')[0]}"]
 
         languages = response.xpath("//ul[li/h4[contains(text(), 'Langue')]]/li/text()").getall()
         languages = [l.strip(" \n") for l in languages]
         languages = [LANGUAGE_DICT[l] for l in languages if (l != '' and l != 'Aucun responsable ECTS')]
 
-        sections = ["Acquis", "Objectifs", "Contenus"]
-        contents = []
-        for section in sections:
-            contents += [cleanup(response.xpath(f"//ul[li/h4[contains(text(), '{section}')]]").get())]
-        content = "\n".join(contents)
-        content = "" if content == "\n\n" else content
+        content = cleanup(response.xpath(f"//ul[li/h4[contains(text(), 'Contenu')]]").get())
         content = content.replace("\n                    ", ' ')
+        content = content.replace("Contenus          ", '')
+
+        sections = ["Acquis", "Objectifs"]
+        goals = []
+        for section in sections:
+            goals += [cleanup(response.xpath(f"//ul[li/h4[contains(text(), '{section}')]]").get())]
+        goal = "\n".join(goals).strip("\n")
+        goal = goal.replace("\n                    ", ' ')
+        goal = goal.replace("Acquis d'apprentissage spécifiques sanctionnés par l'évaluation                         ",
+                            "")
+        goal = goal.replace("Objectifs          ", " ")
 
         yield {
             "id": ue_id,
@@ -73,9 +79,11 @@ class HEPLCourseSpider(scrapy.Spider, ABC):
             "year": f"{YEAR}-{YEAR+1}",
             "languages": languages,
             "teachers": teachers,
-            "campus": campus,
             "url": response.url,
-            "content": content
+            "content": content,
+            "goal": goal,
+            "activity": '',
+            "other": ''
         }
 
 

@@ -5,10 +5,9 @@ from pathlib import Path
 import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from src.crawl.utils import cleanup
 
-BASE_URL = f"https://ecolevirtuelle.provincedeliege.be/docStatique/ects/formationsHEPL-{YEAR}.html"
-
-# TODO: description of courses seem to have disappeared in 2021
+BASE_URL = "https://www.hepl.be/fr/formations"
 
 
 class HEPLProgramSpider(scrapy.Spider, ABC):
@@ -19,7 +18,7 @@ class HEPLProgramSpider(scrapy.Spider, ABC):
     name = "hepl-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}hepl_programs_{YEAR}_pre.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}hepl_programs_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):
@@ -27,39 +26,64 @@ class HEPLProgramSpider(scrapy.Spider, ABC):
 
     def parse_main(self, response):
 
-        number_of_rows = len(response.xpath("//tr[@class='list-row']").getall())
-        for i in range(number_of_rows):
-            row_txt = f"//tr[@class='list-row'][{i+1}]"
-            faculty = response.xpath(f"{row_txt}/td[1]/text()").get()
+        program_links = response.xpath("//div[@class='formation']/a/@href").getall()
+        for link in program_links:
+            yield response.follow(link, self.parse_secondary, cb_kwargs={'program_id': ''})
 
-            cycle = response.xpath(f"{row_txt}/td[2]/text()").get()
-            cycle = 'bac' if cycle == 'Bachelier' else 'master'
+    def parse_secondary(self, response, program_id):
 
-            program_name = response.xpath(f"{row_txt}/td[3]/text()").get()
-
-            sub_program_links = response.xpath(f"{row_txt}/td[position()>3]/a/@href").getall()
-            program_id = "-".join(sub_program_links[0].split("/")[-1].split("-")[:2])
-
-            base_dict = {
-                "id": program_id,
-                "name": program_name,
-                "cycle": cycle,
-                "faculties": [faculty],
-                "campuses": []
-            }
-
-            for link in sub_program_links:
-                yield response.follow(link, self.parse_sub_program, cb_kwargs={"base_dict": base_dict})
+        link_to_list_of_courses = response.xpath("//a[@class='bloc-parcours-grille-cours']/@href").get()
+        if link_to_list_of_courses is not None:
+            sub_program_id = response.url.split("/")[-1].replace(f"-{YEAR}", "")
+            program_id = f"{program_id}-{sub_program_id}" if program_id != '' else sub_program_id
+            campus = response.xpath("//a[@class='site']/text()").get()
+            yield response.follow(link_to_list_of_courses, self.parse_program,
+                                  cb_kwargs={"url": response.url, "program_id": program_id, "campus": campus})
+        else:
+            links_sub_programs = response.xpath("//div[@class='formations-teaser']//a/@href").getall()
+            program_id = response.url.split("/")[-1]
+            for link in links_sub_programs:
+                yield response.follow(link, self.parse_secondary, cb_kwargs={'program_id': program_id})
 
     @staticmethod
-    def parse_sub_program(response, base_dict):
+    def parse_program(response, url, program_id, campus):
 
-        base_dict["url"] = response.url
+        program_name = " ".join(cleanup(response.xpath("//span[@class='bottom']//text()").getall()))\
+            .strip(" ").replace("  ", " ")
+        faculty = response.xpath("//span[@class='top']/text()").getall()
+        faculty = " ".join([f.strip(" \n\r") for f in faculty])
 
-        line_txt = "//tr[@class='info']"
-        courses_links = response.xpath(f"{line_txt}/td[1]/a/@href").getall()
-        base_dict["courses"] = [link.split("/")[-1].replace(f"-{YEAR}.html", '') for link in courses_links]
-        courses_ects = response.xpath(f"{line_txt}/td[3]/text()").getall()
-        base_dict["ects"] = [int(e) for e in courses_ects]
+        cycle = response.xpath("//span[@class='diplome']/text()").get()
+        if cycle == 'Bachelier':
+            cycle = 'bac'
+        elif cycle == 'Master':
+            cycle = 'master'
+        elif cycle == 'Spécialisation':
+            cycle = 'other'  # TODO: à mettre dans other ou master ?
 
-        yield base_dict
+        courses = [link.split("/")[-1].split(".")[0] for link in
+                   response.xpath("//tr[@class='info']/td[1]/a/@href").getall()]
+        if len(courses) == 0:
+            return
+        ects = [int(e) for e in response.xpath("//tr[@class='info']/td[3]/text()").getall()]
+
+        # It is not possible to differentiate directly the master courses from the bachelor once on the html pages
+        #  so we do a manual removal of the courses which are in the wrong cycle (master and ohter = 2, bachelor = 1)
+        courses_corrected, ects_corrected = [], []
+        for c, e in zip(courses, ects):
+            cycle_code = int(c.split('-')[1])
+            if (cycle == 'bac' and cycle_code == 1) or (cycle == 'master' and cycle_code == 2) or \
+                    (cycle == 'other' and cycle_code == 2):
+                courses_corrected += [c.replace(f"-{YEAR}", '')]
+                ects_corrected += [e]
+
+        yield {
+            "id": program_id,
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": [campus],
+            "url": url,
+            "courses": courses_corrected,
+            "ects": ects_corrected
+        }
