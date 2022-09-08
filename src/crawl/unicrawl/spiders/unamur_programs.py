@@ -97,6 +97,6 @@ class UNamurProgramSpider(scrapy.Spider, ABC):
             'url': response.url,
             'courses': courses,
             'ects': ects
-            }
+        }
 
         yield {**base_dict, **cur_dict}

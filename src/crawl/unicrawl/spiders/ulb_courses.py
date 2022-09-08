@@ -82,7 +82,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         teachers = cleanup(response.xpath("//h3[text()='Titulaire(s) du cours']/following::text()[1]").get())
         teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ").replace("\n               ", '')
         teachers = teachers.split(", ")
-        teachers = [teacher.lower().title() for teacher in teachers if teacher != ""]
+        teachers = [teacher.title() for teacher in teachers if teacher != ""]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 

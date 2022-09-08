@@ -32,16 +32,16 @@ FACULTIES_DICT = {
 }
 
 CYCLES_DICT = {
-    'ABA': 'bac',
-    'BIJNA': 'other',
-    'BNB': 'bac',
-    'GRAD': 'grad',
-    'GRDU': 'grad',
-    'INT': 'other',
-    'MA': 'master',
-    'MNM': 'master',
-    'PBA': 'bac',
-    'PGR': 'postgrad'
+    'ABA': 'bac',  # Academisch gerichte bacheloropleiding
+    'BNB': 'bac',  # Bacheloropleiding die volgt op een bacheloropleiding
+    'GRAD': 'grad',  # Graduaatsopleiding
+    'INT': 'other',  # Programma voor inkomende uitwisselingsstudenten
+    'MA': 'master',  # Masteropleiding
+    'MNM': 'master',  # Masteropleiding die volgt op een masteropleiding
+    'PBA': 'bac',  # Professioneel gerichte bacheloropleiding
+    'PGR': 'postgrad',  # Postgraduaatopleiding
+    'SCH': 'other',  # Schakelprogramma
+    'VBP': 'other'  # Voorbereidingsprogramma
 }
 
 

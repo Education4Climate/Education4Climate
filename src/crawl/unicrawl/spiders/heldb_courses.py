@@ -59,7 +59,7 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
         sup_teachers = response.xpath(f"{div_txt}//strong[contains(text(), \"Autre(s) enseignant(s) de l'UE\")]"
                                       f"/following::a[1]/text()").getall()
         teachers += sup_teachers
-        teachers = [t.lower().title() for t in teachers]
+        teachers = [t.title() for t in teachers]
 
         year = cleanup(response.xpath(f"{div_txt}//div[@id='anac']//i").get()).split("Année académique ")[1]
 

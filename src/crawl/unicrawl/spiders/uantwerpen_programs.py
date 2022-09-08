@@ -113,7 +113,7 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
 
         # Two programs have subprograms: 'Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)' and
         #  'Toegepaste taalkunde'
-        programs_with_subprograms = ["Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)",
+        programs_with_subprograms = ["Industriële wetenschappen (industrieel ingenieur): chemie en biochemie",
                                      "Toegepaste taalkunde"]
         if program_name in programs_with_subprograms:
             subprograms_links = response.xpath("//nav[contains(@class, 'navSub')]/ul/li/a/@href").getall()

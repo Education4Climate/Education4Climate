@@ -57,7 +57,7 @@ class IHECSCourseSpider(scrapy.Spider, ABC):
 
         section_txt = "//b[contains(text(), '{}')]/following::td[1]//text()"
         teachers = response.xpath(section_txt.format("Enseignant")).getall()
-        teachers = list(set([t.lower().title() for t in teachers if t != '/']))
+        teachers = list(set([t.title() for t in teachers if t != '/']))
 
         languages = response.xpath(section_txt.format("Langue")).get()
         languages = [LANGUAGES_DICT[lang] for lang in languages.split(" - ")] if languages else []

@@ -21,6 +21,8 @@ FACULTIES = {
 }
 
 # Warning not working for "European Clinical Specialization in Fluency Disorders (Engels)"
+# Not working for Digitaal Transformeren, Gecertificeerd accountant, Communicatie,
+# Management Centrale Sterilisatie Afdeling (CSA)
 
 PROGRAMS_MAP = {
     "Bedrijfsmanagement": "Bachelor in het bedrijfsmanagement",
@@ -30,11 +32,11 @@ PROGRAMS_MAP = {
     "Marketing- en Communicatiesupport": "Graduaat in de marketing- en communicatiesupport",
     "Digital Business Transformation": "Postgraduaat Digital Business Transformation",
     "Human Resources Management": "Postgraduaat HRM",
-    "Inspirerend Coachen": "Postgraduaat inspirerend coachen",
+    "Inspirerend Coachen": "Postgraduaat Inspirerend coachen",
     "Intercultureel werken en coachen": "Postgraduaat intercultureel werken en coachen",
     "Leiderschap": "Postgraduaat Leiden en begeleiden",
-    "Ondernemen met impact": "Postgraduaat Ondernemen met impact",
-    "Rouw- en verliesconsulent": "Postgraduaat rouw- en verliesconsulent",
+    "Ondernemen met Impact": "Postgraduaat Ondernemen met impact",
+    "Rouw- en Verliesconsulent": "Postgraduaat Rouw- en verliesconsulent",
     "Supply Chain Management & Business Analytics":
         "Postgraduaat Supply Chain Management & Business Analytics",
     "The Human-Centered Organisation": "Postgraduaat The Human-Centered Organisation",
@@ -62,10 +64,10 @@ PROGRAMS_MAP = {
     "Diabeteseducator": "Postgraduaat diabeteseducator",
     "Dysfagie": "Postgraduaat dysfagie",
     "Hippotherapie": "Postgraduaat hippotherapie",
-    "Kaderopleiding hoofdverpleegkundige": "Postgraduaat Kaderopleiding hoofdverpleegkundigen",
+    "Kaderopleiding Hoofdverpleegkundige": "Postgraduaat Kaderopleiding hoofdverpleegkundige",
     "Lactatiekunde": "Postgraduaat lactatiekunde",
-    "Neurogene communicatiestoornissen": "Postgraduaat neurogene communicatiestoornissen",
-    "Neurologische zorg": "Postgraduaat neurologische zorg",
+    "Neurogene Communicatiestoornissen": "Postgraduaat neurogene communicatiestoornissen",
+    "Neurologische Zorg": "Postgraduaat neurologische zorg",
     "Oncologie": "Postgraduaat oncologie",
     "Pediatrie en neonatologie": "Postgraduaat pediatrie en neonatologie",
     "Stomatherapie en wondzorg": "Postgraduaat stomatherapie en wondzorg",
@@ -73,14 +75,13 @@ PROGRAMS_MAP = {
         "Postgraduaat verpleegkundige in huisartsenpraktijk",
     "Pedagogie van het Jonge Kind": "Bachelor in de pedagogie van het jonge kind",
     "Sociaal Werk": "Bachelor in het sociaal werk",
-    "Informatiebeheer: Bibliotheek en Archief":
-        "Graduaat in het informatiebeheer: bibliotheek en archief",
+    "Informatiebeheer": "Graduaat in het informatiebeheer",
     "Maatschappelijk werk": "Graduaat in het maatschappelijk werk",
-    "Orthopedagogie": "Graduaat in de orthopedagogie",
+    "Orthopedagogische Begeleiding": "Graduaat in de orthopedagogische begeleiding",
     "Sociaal-Cultureel Werk": "Graduaat in het sociaal-cultureel werk",
     "Tolk Vlaamse Gebarentaal": "Graduaat in de tolk Vlaamse Gebarentaal",
-    "Contextuele en Systemische Counseling": "Postgraduaat contextuele en systemische counseling",
-    "Politisering in het sociaal werk": "Postgraduaat politisering in het sociaal werk",
+    "Contextuele en Systemische Counseling": "Postgraduaat Contextuele en systemische counseling",
+    "Politisering in het Sociaal Werk": "Postgraduaat Politisering in het sociaal werk",
     "Educatieve Bachelor Kleuteronderwijs": "Educatieve bachelor (Ba) in het kleuteronderwijs",
     "Educatieve Bachelor Lager Onderwijs":
         "Educatieve bachelor in het onderwijs: lager onderwijs",
@@ -97,7 +98,13 @@ PROGRAMS_MAP = {
     "International Organisation and Management":
         "Bachelor of International Organisation & Management",
     "International Graphic and Digital Media":
-        "Bachelor of International Graphic and Digital Media"
+        "Bachelor of International Graphic and Digital Media",
+    "Transport en Logistiek": "Graduaat in de transport en logistiek",
+    "Diversiteitssensitief Werken, Communiceren en Leiden":
+        "Postgraduaat Diversiteitssensitief werken, communiceren en leiden",
+    "International Journalism": "Bachelor of International Journalism",
+    "Creatieve Therapie: Bijkomend Medium": "Postgraduaat Creatieve Therapie: bijkomend medium",
+    "Freinet": "Postgraduaat Freinet"
 }
 
 BASE_DATA = {
@@ -136,8 +143,6 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
     def parse_faculties(self, response, faculty, remaining_faculties, programs_info):
 
         all_programs_names = response.xpath("//h2/a/text()").getall()
-        print(faculty)
-        print(len(all_programs_names))
         # Remove subprograms
         program_names = []
         for program_name in all_programs_names:
@@ -234,6 +239,7 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
         courses_codes = [link.split("?")[1] for link in courses_links]
         courses_codes = [str(c.split("&b=")[0].strip("a=")) for c in courses_codes]
         # TODO: check b=1&c=1 always true
+        # WARNING: no courses for freinet and leescoach
         print(base_dict['name'])
         print(courses_codes)
 
