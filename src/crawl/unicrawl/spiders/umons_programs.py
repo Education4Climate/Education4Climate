@@ -88,9 +88,11 @@ class UMonsProgramSpider(scrapy.Spider, ABC):
     def parse_prog_detail(response, campus, cycle, url):
 
         faculty = response.css('td.facTitle::text').get()
-        program_name = response.css('td.cursusTitle::text').get().replace("  ", " ")
+        program_name = response.xpath('//td[@class="cursusTitle"]/text()')
         if not program_name:
+            print(f"No program name for {response.url}.")
             return
+        program_name = program_name.get().replace("  ", " ")
         courses = response.css('span.linkcodeue::text').getall()
         courses = [course.strip(" ") for course in courses]
         ects = cleanup(response.xpath("//td[@class='credits colnumber']").getall())

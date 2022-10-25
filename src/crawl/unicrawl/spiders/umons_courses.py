@@ -27,7 +27,8 @@ LANGUAGE_DICT = {
     "Norvégien": "no",
     "Polonais": "po",
     "Portugais": "pt",
-    "Suédois": "se"
+    "Suédois": "se",
+    "Grec": "gr"
 }
 
 

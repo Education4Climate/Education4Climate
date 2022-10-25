@@ -60,12 +60,10 @@ class ULBProgramSpider(scrapy.Spider, ABC):
                     callback=self.parse_secondary,
                     cb_kwargs={'main_program_id': main_program_id, 'campus': campus.strip(" \n")}
                 )
-                return
             return
 
         # Otherwise, extract information for the program
         program_id = response.xpath("//div[@class='zone-titre__surtitre']/span/text()").get()
-        # TODO: old to remove response.url.split("/")[-1]
         program_name = response.xpath("//h1/text()").get()
 
         if 'Bachelier' in program_name or 'bachelier' in program_name:

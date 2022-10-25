@@ -56,7 +56,6 @@ class EHBProgramSpider(scrapy.Spider, ABC):
         
         for program in programs:
 
-            print(program["type"])
             if 'bacheloropleiding' in program["type"]:
                 cycle = 'bac'
             elif "Master" in program["type"]:

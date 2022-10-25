@@ -17,7 +17,8 @@ BASE_DATA = {
 
 YEARS = {
     '2020-2021': 'MTIw',
-    '2021-2022': 'MTIx'
+    '2021-2022': 'MTIx',
+    '2022-2023': 'MTIy'
 }
 
 PROGRAMS_CODE = {
@@ -91,6 +92,3 @@ class ISPGProgramSpider(scrapy.Spider, ABC):
             "courses": ue_ids,
             "ects": ects
         }
-
-
-

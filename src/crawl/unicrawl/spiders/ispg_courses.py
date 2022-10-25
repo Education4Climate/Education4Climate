@@ -21,7 +21,8 @@ LANGUAGES_DICT = {
     "Néerlandais": ["nl"],
     "AnglaisNéerlandais": ["en", "nl"],
     "FrançaisAnglais": ["fr", "en"],
-    "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"]
+    "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"],
+    "FrançaisAnglaisNéerlandais": ["fr", "nl", "en"]
 }
 
 

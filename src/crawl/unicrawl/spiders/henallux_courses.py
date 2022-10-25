@@ -17,7 +17,8 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
 LANGUAGE_DICT = {
     "français": "fr",
     "anglais": "en",
-    "néerlandais": "nl"
+    "néerlandais": "nl",
+    "allemand": "de"
 }
 
 

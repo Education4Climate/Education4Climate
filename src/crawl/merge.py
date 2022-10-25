@@ -4,7 +4,7 @@ import argparse
 import numpy as np
 import pandas as pd
 
-from settings import YEAR, CRAWLING_OUTPUT_FOLDER
+from settings import CRAWLING_OUTPUT_FOLDER
 
 
 def merge_programs(school: str, year: int):
@@ -43,13 +43,14 @@ def merge_programs(school: str, year: int):
     def remove_doubles(x):
         courses, positions = np.unique(x.courses, return_index=True)
         x.courses = courses
-        for key in keys_as_list[1:]:
+        for key in keys_as_list[1:]:  # Change ects
             x[key] = list(np.array(x[key])[positions])
         return x
-    programs_merged_df[keys_as_list].apply(lambda x: remove_doubles(x), axis=1)
+
+    programs_merged_df[keys_as_list] = programs_merged_df[keys_as_list].apply(lambda x: remove_doubles(x), axis=1)
 
     programs_merged_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{YEAR}.json")
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_programs_{year}.json")
     programs_merged_df.reset_index().to_json(programs_merged_fn, orient='records', indent=1)
 
 
@@ -91,7 +92,7 @@ def merge_courses(school: str, year: int):
     courses_merged_df = courses_merged_df.reset_index().set_index("id")
 
     courses_merged_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{YEAR}.json")
+        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
     courses_merged_df.reset_index().to_json(courses_merged_fn, orient='records')
 
 

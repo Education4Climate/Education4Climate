@@ -60,7 +60,7 @@ class ISSIGCourseSpider(scrapy.Spider, ABC):
         teachers = [t.title() for t in teachers]
 
         languages = response.xpath("//div[label[@for='langueenseignement']]/text()[2]").get().strip(" \n")
-        languages = LANGUAGES_DICT[languages]
+        languages = LANGUAGES_DICT[languages] if len(languages) != 0 else ['fr']
 
         # Course description
         content = cleanup(response.xpath("//div[label[@for='descsynthUE']]/div").get())
