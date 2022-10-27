@@ -20,12 +20,12 @@ FACULTIES = {
     "onderwijs": "Onderwijs"
 }
 
-# Warning not working for "European Clinical Specialization in Fluency Disorders (Engels)"
-# Not working for Digitaal Transformeren, Gecertificeerd accountant, Communicatie,
-# Management Centrale Sterilisatie Afdeling (CSA)
+# Not working for Gecertificeerd accountant, Management Centrale Sterilisatie Afdeling (CSA)
 
 PROGRAMS_MAP = {
     "Bedrijfsmanagement": "Bachelor in het bedrijfsmanagement",
+    "Informatiebeheer: Bibliotheek en Archief": "Graduaat in het informatiebeheer", # TODO: maybe remove
+    "European Clinical Specialization in Fluency Disorders": "Postgraduaat Fluency Disorders",
     "International Business Management": "Bachelor of International Business Management",
     "Organisatie en Management": "Bachelor in organisatie & management",
     "Accounting Administration": "Graduaat in de accounting administration",
@@ -44,6 +44,7 @@ PROGRAMS_MAP = {
     "Leerstoornissen": "Postgraduaat leerstoornissen",
     "Leescoach": "Postgraduaat Leescoach",
     "Communicatiemanagement": "Bachelor in het communicatiemanagement",
+    "Communicatie": "Bachelor in de communicatie",
     "Grafische en Digitale Media": "Bachelor in de grafische en digitale media",
     "International Communication Management": "Bachelor of International Communication Management",
     "Journalistiek": "Bachelor in de journalistiek",
@@ -99,7 +100,7 @@ PROGRAMS_MAP = {
         "Bachelor of International Organisation & Management",
     "International Graphic and Digital Media":
         "Bachelor of International Graphic and Digital Media",
-    "Transport en Logistiek": "Graduaat in de transport en logistiek",
+    "Transport en Logistiek": "Graduaat in het transport en de logistiek",
     "Diversiteitssensitief Werken, Communiceren en Leiden":
         "Postgraduaat Diversiteitssensitief werken, communiceren en leiden",
     "International Journalism": "Bachelor of International Journalism",
