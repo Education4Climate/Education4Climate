@@ -61,9 +61,12 @@ class ArteveldeCourseSpider(scrapy.Spider, ABC):
         languages = [LANGUAGES_DICT[l] for l in languages if l in LANGUAGES_DICT]
         languages = ['nl'] if len(languages) == 0 else languages
 
-        # Content
+        # Content & Goals
         content = cleanup(response.xpath("//h4[contains(text(), 'Omschrijving Inhoud')]"
                                          "//following::div[1]").get())
+        goals = cleanup(response.xpath("//h4[contains(text(), 'Leerresultaten')]"
+                                       "//following::div[1]//td[2]").getall())
+        goal = ' '.join(goals)
 
         yield {
             'id': ue_id,
@@ -74,7 +77,7 @@ class ArteveldeCourseSpider(scrapy.Spider, ABC):
             'ects': [ects],
             'url': response.url,
             'content': content,
-            'goal': '',
+            'goal': goal,
             'activity': '',
             'other': ''
         }

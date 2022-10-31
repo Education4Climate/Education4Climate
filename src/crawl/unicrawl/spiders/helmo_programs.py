@@ -57,13 +57,16 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
         campus = response.xpath("//h3[1]/span/text()").get()
         courses_list_links = response.xpath("//a[contains(text(), \"Programme d'études\")]/@href").getall()
         courses_list_names = response.xpath("//a[contains(text(), \"Programme d'études\")]/text()").getall()
-        # Can have different options per course
+        # Can have different options per program
         unique_name_links = set(zip(courses_list_names, courses_list_links))
-        for name, link in unique_name_links:
+        for i, (name, link) in enumerate(unique_name_links):
+            new_dict = base_dict.copy()
             # Update name based on option
-            base_dict["name"] = base_dict["name"] + name.split("Programme d'études")[1]
-            base_dict["campuses"] = [campus]  # TODO: check if there can be several campuses
-            yield response.follow(link, self.parse_program_courses, cb_kwargs={"base_dict": base_dict})
+            if len(unique_name_links) > 1:
+                new_dict["id"] = new_dict["id"] + chr(ord('@')+(i+1))
+                new_dict["name"] = new_dict["name"] + name.split("Programme d'études")[1]
+            new_dict["campuses"] = [campus]  # TODO: check if there can be several campuses
+            yield response.follow(link, self.parse_program_courses, cb_kwargs={"base_dict": new_dict})
 
     @staticmethod
     def parse_program_courses(response, base_dict):

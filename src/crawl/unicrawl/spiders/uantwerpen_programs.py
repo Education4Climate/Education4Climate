@@ -9,12 +9,16 @@ from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 # Get only 'Academische opleiding'
 BASE_URL = "https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/?s=16&f=124"
 # Note: cannot crawl the Antwerp Management School courses (not on the same website)
+# Note: it is normal to have 'missing links' messages for Chemie, Biologie, Polieke wetenschappen,
+#   Farmaceutische wetenschappen. These are 'overarching' programs which are subdivided into smaller
+#   programs which are crawled by the algorithm.
 
 PROGRAMS_FACULTY = {
     "Faculteit Farmaceutische, Biomedische en Diergeneeskundige Wetenschappen": [
         "Postgraduaat in het klinisch wetenschappelijk onderzoek",
         "Postgraduaat in het ondernemerschap voor wetenschappen en biomedische wetenschappen",
-        "Postgraduaat in het milieu en gezondheidswetenschappen"
+        "Postgraduaat in het milieu en gezondheidswetenschappen",
+        "Farmaceutische wetenschappen"
     ],
     "Faculteit Geneeskunde en Gezondheidswetenschappen": [
         "Postgraduate of Algology",
@@ -24,7 +28,8 @@ PROGRAMS_FACULTY = {
         "Postgraduaat in de radioprotectie",
         "Postgraduaat in het rampenmanagement",
         "Postgraduaat in de systeemtheoretische psychotherapie",
-        "Postgraduaat verpleegkundige in de huisartspraktijk"
+        "Postgraduaat verpleegkundige in de huisartspraktijk",
+        "Psychotherapie"
     ],
     "Faculteit Rechten": [
         "Postgraduaat in het aansprakelijkheidsrecht en het verzekeringsrecht",
@@ -33,14 +38,17 @@ PROGRAMS_FACULTY = {
     ],
     "Faculteit Wetenschappen": [
         "Postgraduaat in de adviseur gevaarlijke stoffen",
-        "Educatieve master"
+        "Educatieve master",
+        "Chemie",
+        "Biologie"
     ],
     "Centrum voor Andragogiek": [
         "Postgraduaat in het schoolbeleid"
     ],
     "Centrum Nascholing Onderwijs": [
         "Postgraduaat in de socio-emotionele leerlingbegeleiding in het secundair onderwijs",
-        "Postgraduaat in de leerzorg in het secundair onderwijs (Tijdelijk niet aangeboden)"
+        "Postgraduaat in de leerzorg in het secundair onderwijs (Tijdelijk niet aangeboden)",
+        "Didactiek Nederlands aan anderstaligen"
     ],
     "Instituut voor Milieu en Duurzame Ontwikkeling": [
         "Postgraduate of Energy and Climate"
@@ -56,7 +64,11 @@ PROGRAMS_FACULTY = {
         "Postgraduate of China-EU Cultural Curatorship Studies"
     ],
     "Faculteit Sociale Wetenschappen": [
-        "Master in de opleidings- en onderwijswetenschappen"
+        "Master in de opleidings- en onderwijswetenschappen",
+        "Politieke wetenschappen"
+    ],
+    "Faculteit Ontwerpwetenschappen": [
+        "Erfgoedstudies"
     ]
 }
 
@@ -113,7 +125,7 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
 
         # Two programs have subprograms: 'Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)' and
         #  'Toegepaste taalkunde'
-        programs_with_subprograms = ["Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)",
+        programs_with_subprograms = ["Industriële wetenschappen (industrieel ingenieur): chemie en biochemie",
                                      "Toegepaste taalkunde"]
         if program_name in programs_with_subprograms:
             subprograms_links = response.xpath("//nav[contains(@class, 'navSub')]/ul/li/a/@href").getall()

@@ -5,7 +5,8 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'https://caliweb.vub.be/'
+BASE_URL = f'https://caliweb.cumulus.vub.ac.be/?page=overview&id=0&anchor=1' \
+           f'&target=pr&year={YEAR-2000}{YEAR-2000+1}&language=nl&output=html'
 
 # Note: need to change the parameter ROBOTS_OBEY in the crawler settings.py to make the crawler work
 

@@ -88,8 +88,12 @@ class UGentCourseSpider(scrapy.Spider, ABC):
             print(response_json)
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
         # Course description
-        content_link = response_json['studieficheUrlNL']
-        content = extract_content(content_link)
+        if 'studieficheUrlNL' in response_json:
+            content_link = response_json['studieficheUrlNL']
+            content = extract_content(content_link)
+        else:
+            content_link = response.url
+            content = ''
 
         yield {
             "id": course_id,

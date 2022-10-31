@@ -62,7 +62,7 @@ class HELCourseSpider(scrapy.Spider, ABC):
         teachers = cleanup(response.xpath("//table[@class='table_aa_profs_heures']/tbody/tr/td[2]").getall())
         teachers = [t.strip(",").replace(" ", " ").strip(" ").split(", ") for t in teachers]
         teachers = list(itertools.chain.from_iterable(teachers))
-        teachers = [t.lower().title() for t in teachers]
+        teachers = [t.title() for t in teachers]
 
         languages = response.xpath("//b[contains(text(), 'Langue')]/following::text()[1]").getall()
         languages = [LANGUAGE_DICT[l.strip(" ")] for l in languages]

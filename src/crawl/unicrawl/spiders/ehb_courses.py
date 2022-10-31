@@ -55,7 +55,7 @@ class EHBCourseSpider(scrapy.Spider, ABC):
 
         teachers = body.xpath("//span[text()='Coördinator: ' or text()='Docenten: ' or text()='Andere docenten: ']/following::span[1]/text()").getall()
         teachers = ",".join(teachers).strip(", ") 
-        teachers = [t.strip() for t in teachers.split(",")] if teachers else []
+        teachers = [t.strip().title() for t in teachers.split(",")] if teachers else []
 
         languages = body.xpath("//span[text()='Onderwijstalen: ']/following::span[1]/text()").get()
         languages = [LANGUAGES_DICT[lang.strip()] for lang in languages.split(',')] if languages else ["nl"]

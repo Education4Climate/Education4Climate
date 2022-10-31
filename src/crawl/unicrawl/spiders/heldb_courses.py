@@ -8,7 +8,7 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://www.heldb.be/ficheue/{}"
+BASE_URL = f"https://www.heldb.be/ficheue-{YEAR-2000}/" + "{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_programs_{YEAR}.json')
 
@@ -59,7 +59,7 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
         sup_teachers = response.xpath(f"{div_txt}//strong[contains(text(), \"Autre(s) enseignant(s) de l'UE\")]"
                                       f"/following::a[1]/text()").getall()
         teachers += sup_teachers
-        teachers = [t.lower().title() for t in teachers]
+        teachers = [t.title() for t in teachers]
 
         year = cleanup(response.xpath(f"{div_txt}//div[@id='anac']//i").get()).split("Année académique ")[1]
 

@@ -8,7 +8,7 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'https://www.ulb.be/fr/programme/'
+BASE_URL = 'https://www.ulb.be/fr/programme/{}'  # TODO: some work with '-1' at the end
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ulb_programs_{YEAR}.json')
 
@@ -50,18 +50,11 @@ class ULBCourseSpider(scrapy.Spider, ABC):
     def start_requests(self):
 
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
-        courses_ids_list = sorted(list(set(courses_ids.sum()))) 
-
-        # Read old list
-        a = pd.read_json("/home/duboisa1/shifters/Education4Climate/data/crawling-output/ulb_courses_2021_1.json")
-        a = a["id"].values.tolist()
-        print(a)
+        courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            if course_id in a:
-                continue
             yield scrapy.Request(
-                url=f'{BASE_URL}{course_id.lower()}',
+                url=BASE_URL.format(course_id.lower()),
                 callback=self.parse_course,
                 cb_kwargs={'course_id': course_id}
             )
@@ -82,7 +75,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         teachers = cleanup(response.xpath("//h3[text()='Titulaire(s) du cours']/following::text()[1]").get())
         teachers = teachers.replace(" (Coordonnateur)", "").replace(" et ", ", ").replace("\n               ", '')
         teachers = teachers.split(", ")
-        teachers = [teacher.lower().title() for teacher in teachers if teacher != ""]
+        teachers = [teacher.title() for teacher in teachers if teacher != ""]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 

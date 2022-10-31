@@ -51,6 +51,7 @@ class ECAMProgramSpider(scrapy.Spider, ABC):
             ue_ids = [ue_id.split(":")[0].strip(" \n") for ue_id in ue_ids]
         ues_ects = response.xpath("//table//tr/td[2]/text()").getall()
         ues_ects = [int(e) for e in ues_ects]
+        program_name = program_name.strip("\n (")
 
         yield {
             "id": program_id,

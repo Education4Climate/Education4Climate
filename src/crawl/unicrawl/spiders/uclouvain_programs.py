@@ -39,8 +39,10 @@ class UCLouvainProgramSpider(scrapy.Spider, ABC):
 
         program_id_and_campus = response.xpath("//p[@id='offer-page-subtitle']/text()").get().split('\n')
         program_id = program_id_and_campus[0]
+
         # If no campus is specified, consider it's Louvain-La-Neuve
         campus = program_id_and_campus[3].strip(" ") if len(program_id_and_campus) > 3 else 'Louvain-La-Neuve'
+        campus = 'Louvain-La-Neuve' if len(campus) == 0 else campus
 
         program_name = response.xpath("//div[@id='offer-page-title']/a/text()").get()
 

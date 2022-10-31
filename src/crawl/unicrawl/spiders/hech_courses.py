@@ -49,7 +49,7 @@ class HECHCourseSpider(scrapy.Spider, ABC):
         teachers += cleanup(response.xpath(f"{course_rubric_txt.format('Coord')}/following::tr[1]//a").getall())
         teachers = [t.replace(" ", '') for t in teachers]
         teachers = list(set(teachers))
-        teachers = [" ".join(teacher.split(" ")[1:]).lower().title() + " " + teacher.split(" ")[0].strip(" ")
+        teachers = [" ".join(teacher.split(" ")[1:]).title() + " " + teacher.split(" ")[0].strip(" ")
                     for teacher in teachers]
 
         languages = response.xpath(course_rubric_txt.format("Langue(s)") + "/following::td[2]/text()").getall()

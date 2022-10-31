@@ -21,11 +21,11 @@ def add_missing_fields_in_programs(programs_df: pd.DataFrame, courses_df: pd.Dat
     Parameters
     ----------
     programs_df: pd.DataFrame
-        Dataframe containing information about programs of an institution.
+        DataFrame containing information about programs of an institution.
         Should contain a column courses containing list of courses identifiers.
         Each course identifier contained in courses_df should be contained in at least one of those least.
     courses_df: pd.DataFrame
-        Dataframe containing information about courses of that same institution.
+        DataFrame containing information about courses of that same institution.
         The index of this dataframe are the courses identifiers.
 
     """
@@ -171,7 +171,7 @@ def main(school: str, year: int):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="input json file path")
-    parser.add_argument("-y", "--year", help="academic year", default=2021)
+    parser.add_argument("-y", "--year", help="academic year", default=2022)
     arguments = vars(parser.parse_args())
     # main(**arguments)
 
@@ -180,6 +180,7 @@ if __name__ == "__main__":
     schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
                 "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
                 "thomasmore", "ucll", "vinci", "vives"]
-    for school in schools:
-        print(school)
-        main(school, arguments['year'])
+    schools = ['vub']
+    for school_ in schools:
+        print(school_)
+        main(school_, arguments['year'])
