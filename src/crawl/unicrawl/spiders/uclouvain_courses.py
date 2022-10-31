@@ -2,6 +2,7 @@
 from abc import ABC
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 import scrapy
@@ -59,8 +60,9 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
         teachers = response.xpath("//div[div[contains(text(),'Enseignants')]]/div/a/text()").getall()
         languages = cleanup(response.xpath("//div[div[contains(@class, 'fa_cell_1') and contains(text(), 'Langue')]]"
                                            "/div[2]/text()").getall())
-        languages = [LANGUAGE_DICT[l] if l in LANGUAGE_DICT else 'other' for l in languages]
+        languages = [LANGUAGE_DICT[l] if l in LANGUAGE_DICT else 'fr' for l in languages]
         languages = ["fr"] if len(languages) == 0 else languages
+        languages = list(np.unique(languages))
 
         # Course description
         def get_sections_text(sections_names):

@@ -82,7 +82,7 @@ class UGentProgramSpider(scrapy.Spider, ABC):
         faculties = [faculty.strip(" \n") for faculty in faculties]
 
         # Course list
-        div_text = "//div[div[h4[.//span[contains(text(), 'Volledig') or contains(text(), 'Full')]]]][1]"
+        div_text = "//div[div[h4[.//div[contains(text(), 'Volledig') or contains(text(), 'Full')]]]][1]"
         courses_text = "//tr[not(@class='nietaangeboden')]//td[@class='cursusnaam']"
         courses_ids = response.xpath(f"{div_text}{courses_text}//span/@title").getall()
         # courses_names = response.xpath(f"{div_text}{courses_text}//span/text()").getall()

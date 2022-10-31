@@ -12,15 +12,20 @@ from src.crawl.utils import cleanup
 COURSE_URL = "https://www.uantwerpen.be/ajax/courseInfo{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}uantwerpen_programs_{YEAR}.json')
-LANGUAGE_DICT = {"Dutch": 'nl',
-                 "Nederlands": 'nl',
-                 "English": 'en',
-                 "Engels": 'en',
-                 "French": 'fr',
-                 "Frans": 'fr',
-                 "Duits": 'de',
-                 "Spaans": 'es',
-                 "Italiaans": 'it'}
+LANGUAGE_DICT = {
+    "Dutch": 'nl',
+    "Nederlands": 'nl',
+    "English": 'en',
+    "Engels": 'en',
+    "French": 'fr',
+    "Frans": 'fr',
+    "Duits": 'de',
+    "Spaans": 'es',
+    "Italiaans": 'it',
+    "Chinees": 'cn',
+    "German": 'de',
+    "Spanish": 'es'
+}
 
 # WARNING: don't forget to uncomment the line 'HTTPERROR_ALLOWED_CODES = ['404']' in settings.py
 

@@ -26,7 +26,8 @@ LANGUAGES_DICT = {
     "German": 'de',
     "Spanish": 'es',
     "Spaans": 'es',
-    "Italiaans": 'it'
+    "Italiaans": 'it',
+    "Pools": 'pl'
 }
 
 
@@ -58,7 +59,7 @@ class VivesCourseSpider(scrapy.Spider, ABC):
         years = response.xpath("//div[@id='acjaar']/text()").get().strip("Academiejaar ").strip("Academic Year ")
 
         teachers = cleanup(response.xpath(f"{main_div}//span[contains(@class, 'Titularis') "
-                                  f"or contains(@class, 'Coordinator')]").getall())
+                           f"or contains(@class, 'Coordinator')]").getall())
         teachers = [t.strip("\xa0|\xa0").replace("  (coordinator) ", '').replace("  (coördinator) ", '')
                     for t in teachers]
         teachers = list(set([t.strip(" ") for t in teachers if t != '']))

@@ -43,7 +43,7 @@ class ICHECCourseSpider(scrapy.Spider, ABC):
         ue_id = response.xpath("//h2[contains(text(), 'Code')]/following::p[1]/text()").get()
         year = response.xpath("//h2[contains(text(), 'Année')]/following::p[1]/text()").get().replace(" - ", "-")
         teachers = response.xpath("//h2[contains(text(), 'Enseignant')]/following::p[1]/text()").getall()
-        teachers = [t.lower().title() for t in teachers]
+        teachers = [t.title() for t in teachers]
         lang = response.xpath("//h2[contains(text(), 'Langue')]/following::p[1]/text()").get()
         lang = [LANGUAGE_DICT[lang]]
 

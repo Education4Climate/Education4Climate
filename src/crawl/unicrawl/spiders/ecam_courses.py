@@ -66,7 +66,7 @@ class ECAMCourseSpider(scrapy.Spider, ABC):
         teachers += response.xpath("//h5[text()='Activités organisées']/following::table[1]//tr/td[5]/text()").getall()
         teachers = [t for t in teachers if t is not None]
         teachers = list(itertools.chain.from_iterable([t.split(", ") for t in teachers]))
-        teachers = list(set([t.lower().title() for t in teachers if 'Inconnu' not in t and 'ENS' not in t]))
+        teachers = list(set([t.title() for t in teachers if 'Inconnu' not in t and 'ENS' not in t]))
         if mic:
             # Put family name first
             teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]

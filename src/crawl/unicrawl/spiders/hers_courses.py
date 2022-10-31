@@ -66,7 +66,7 @@ class HERSCourseSpider(scrapy.Spider, ABC):
         languages = [LANGUAGES_DICT[l] for l in languages]
         languages = ['fr'] if len(languages) == 0 else languages
 
-        # Cours description
+        # Course description
         def get_sections_text(section_name_prec, section_name_follow):
             texts = cleanup(response.xpath(f"//tr[preceding::tr[@id='rub_{section_name_prec}'] "
                                            f"and following::tr[@id='rub_{section_name_follow}']]").getall())

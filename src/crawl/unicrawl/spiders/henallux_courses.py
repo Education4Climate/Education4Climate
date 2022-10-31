@@ -17,7 +17,8 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
 LANGUAGE_DICT = {
     "français": "fr",
     "anglais": "en",
-    "néerlandais": "nl"
+    "néerlandais": "nl",
+    "allemand": "de"
 }
 
 
@@ -58,7 +59,7 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
         if add_teachers:
             teachers += add_teachers.split(", ")
         teachers = list(set([" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0] for teacher in teachers]))
-        teachers = [t.lower().title() for t in teachers if t != " "]
+        teachers = [t.title() for t in teachers if t != " "]
 
         # Goals
         content = cleanup(response.xpath("//div[@id='section5']//p[text()='Contenus']/following::div[1]").get())

@@ -35,8 +35,9 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
     def parse_offer(self, response):
 
         # Bachelor programs
-        faculty_p = f'p{2 + 1 if YEAR == "2021" else 0}'
-        program_p = f'p{5 + 1 if YEAR == "2021" else 0}'
+        # TODO: this is bad, not generic enough
+        faculty_p = f'p{2 + 1 if YEAR != 2020 else 0}'
+        program_p = f'p{5 + 1 if YEAR != 2020 else 0}'
         faculties_names = response.xpath(f"//p[@class='{faculty_p}']//a[contains(text(), 'Faculté')]/text()").getall()
         bachelor_programs_links = response.xpath(f"//p[@class='{program_p}']//a/@href").getall()[:-1]
         # A bit hand-made but the website is really badly done
@@ -82,7 +83,7 @@ class USLBProgramsSpider(scrapy.Spider, ABC):
         cur_dict = base_dict.copy()
 
         # There can be subprograms
-        subprograms_links = response.xpath("//p[@class='p4']//a/@href").getall()
+        subprograms_links = response.xpath("//p[@class='p4' or @class='p5']//a/@href").getall()
         if len(subprograms_links) != 0:
             for link in subprograms_links:
                 yield response.follow(link, self.parse_study_program, cb_kwargs={'base_dict': base_dict})

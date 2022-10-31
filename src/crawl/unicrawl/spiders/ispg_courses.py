@@ -21,7 +21,8 @@ LANGUAGES_DICT = {
     "Néerlandais": ["nl"],
     "AnglaisNéerlandais": ["en", "nl"],
     "FrançaisAnglais": ["fr", "en"],
-    "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"]
+    "FrançaisNéerlandaisAnglais": ["fr", "nl", "en"],
+    "FrançaisAnglaisNéerlandais": ["fr", "nl", "en"]
 }
 
 
@@ -63,7 +64,7 @@ class ISPGCourseSpider(scrapy.Spider, ABC):
         teachers = [t for t in teachers if t != '']
         teachers = [t.split(", ") for t in teachers]
         teachers = list(set(itertools.chain.from_iterable(teachers)))
-        teachers = [t.lower().title() for t in teachers]
+        teachers = [t.title() for t in teachers]
 
         languages = response.xpath("//div[label[@for='langueenseignement']]/text()[2]").get().strip(" \n")
         languages = LANGUAGES_DICT[languages]

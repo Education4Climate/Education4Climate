@@ -10,10 +10,10 @@ BASE_URL = "https://www.ulb.be/servlet/search?" \
            "l=0&beanKey=beanKeyRechercheFormation&&types=formation" \
            "&typeFo={}&s=FACULTE_ASC&limit=999&page=1"
 
-PATH_PROG_URL = urllib.parse.quote('/ws/ksup/programme?gen=prod&anet={}&lang=fr&', safe='{}')
+PATH_PROG_URL = urllib.parse.quote('/ksup/programme?gen=prod&anet={}&lang=fr&', safe='{}')
 PROG_URL = f'https://www.ulb.be/api/formation?path={PATH_PROG_URL}'
 
-PATH_SUBPROG_URL = urllib.parse.quote('/ws/ksup/programme?gen=prod&anet={}&option={}&lang=fr&', safe='{}')
+PATH_SUBPROG_URL = urllib.parse.quote('/ksup/programme?gen=prod&anet={}&finalite={}&lang=fr&', safe='{}')
 SUBPROG_URL = f'https://www.ulb.be/api/formation?path={PATH_SUBPROG_URL}'
 
 
@@ -53,7 +53,7 @@ class ULBProgramSpider(scrapy.Spider, ABC):
             f"{main_div}/div[contains(@class, 'search-result__formations')]/a/@href").getall()
         if len(program_links) != 0:
             campuses = response.xpath(f"{main_div}/div[contains(@class, 'search-result__campus')]/div/text()").getall()
-            main_program_id = response.url.split("/")[-1].upper()
+            main_program_id = response.xpath("//div[@class='zone-titre__surtitre']/span/text()").get()
             for link, campus in zip(program_links, campuses):
                 yield scrapy.Request(
                     url=link,
@@ -63,7 +63,7 @@ class ULBProgramSpider(scrapy.Spider, ABC):
             return
 
         # Otherwise, extract information for the program
-        program_id = response.url.split("/")[-1]
+        program_id = response.xpath("//div[@class='zone-titre__surtitre']/span/text()").get()
         program_name = response.xpath("//h1/text()").get()
 
         if 'Bachelier' in program_name or 'bachelier' in program_name:

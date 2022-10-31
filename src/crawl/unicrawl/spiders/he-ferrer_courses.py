@@ -47,7 +47,7 @@ class HEFERRERCourseSpider(scrapy.Spider, ABC):
 
         teachers = response.xpath("//td[contains(text(), \"Responsable de l'UE\")]//following::span[1]/text()").getall()
         teachers = [" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0] for teacher in teachers]
-        teachers = [t.lower().title() for t in teachers]
+        teachers = [t.title() for t in teachers]
 
         ects = response.xpath("//td[contains(text(), 'Crédits ECTS')]//following::strong[1]/text()").get()
         ects = int(ects.strip(" "))

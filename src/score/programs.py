@@ -38,7 +38,7 @@ def main(school: str, year: int):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="input json file path")
-    parser.add_argument("-y", "--year", help="academic year", default=2020)
+    parser.add_argument("-y", "--year", help="academic year", default=2022)
     arguments = vars(parser.parse_args())
     # main(**arguments)
 

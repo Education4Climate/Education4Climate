@@ -14,7 +14,8 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
 
 LANGUAGES_DICT = {
     "Français": 'fr',
-    "Anglais": 'en'
+    "Anglais": 'en',
+    "Allemand": 'de'
 }
 
 
@@ -52,7 +53,7 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
         teachers = [main_teacher]
         if sub_teachers:
             teachers += sub_teachers.split(",")
-        teachers = [t.strip(" ").lower().title() for t in teachers]
+        teachers = [t.strip(" ").title() for t in teachers]
         # Put surname first
         teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 

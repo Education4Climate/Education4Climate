@@ -55,13 +55,16 @@ class ECSEDIISALTCourseSpider(scrapy.Spider, ABC):
         ue_name = response.xpath("//h55/text()").get()
         years = response.xpath("//h5/b[contains(text(), 'Unité')]/text()").get().split(" ")[0]
 
-        # Not consistent enough
+        # Not consistent enough # TODO: reconsider
         teachers = []
 
         languages = response.xpath("//i[contains(text(), 'Langue')]"
                                    "/following::font[1]/text()").get()
-        languages = [LANGUAGES_DICT[l] for l in languages.split(" - ") if l in LANGUAGES_DICT]
-        languages = ["fr"] if len(languages) == 0 else languages
+        if languages is not None:
+            languages = [LANGUAGES_DICT[l] for l in languages.split(" - ") if l in LANGUAGES_DICT]
+            languages = ["fr"] if len(languages) == 0 else languages
+        else:
+            languages = []
 
         base_dict = {
             'id': ue_id,

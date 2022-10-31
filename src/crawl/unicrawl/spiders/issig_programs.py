@@ -6,7 +6,7 @@ import base64
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'http://www.galileonet.be/extranet/DescriptifsDeCours/index/'
+BASE_URL = 'http://www.galileonet.be/extranet/DescriptifsDeCours/getListeGestionUE?ec=4'
 
 BASE_DATA = {
     "section": "",
@@ -17,7 +17,8 @@ BASE_DATA = {
 
 YEARS = {
     '2020-2021': 'MTIw',
-    '2021-2022': 'MTIx'
+    '2021-2022': 'MTIx',
+    '2022-2023': 'MTIy'
 }
 
 PROGRAMS_CODE = {
@@ -69,6 +70,3 @@ class ISSIGProgramSpider(scrapy.Spider, ABC):
             "courses": ue_ids,
             "ects": ects
         }
-
-
-

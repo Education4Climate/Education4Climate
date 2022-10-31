@@ -65,7 +65,7 @@ class VivesProgramSpider(scrapy.Spider, ABC):
         courses_url = response.xpath("//td[@class='opleidingsonderdeel']/a/@href").getall()
         courses_url = [c.split("/syllabi/")[1].split('.htm')[0] for c in courses_url]
         ects = response.xpath("//tr[contains(@class, 'opo_row')]//td[@class='sp']/text()").getall()
-        ects = [int(e.split(" ")[0]) for e in ects]
+        ects = [int(float(e.split(" ")[0])) for e in ects]
         # Get list of unique courses and ects
         courses, courses_url, ects = zip(*set(zip(courses, courses_url, ects)))
 
