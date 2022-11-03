@@ -40,23 +40,23 @@
    "bac"
   ],
   "fields":[
-   "Architecture",
-   "Letters",
-   "Veterinary",
-   "Engineering",
-   "Sociology",
-   "Management",
+   "Philosophy",
+   "Pharmacy",
    "Law & Criminology",
-   "Science",
+   "Architecture",
+   "Management",
+   "Sociology",
    "Economy",
    "Medecine & Health",
-   "Pharmacy",
-   "Philosophy"
+   "Letters",
+   "Engineering",
+   "Science",
+   "Veterinary"
   ],
   "themes":[
-   "energy",
    "environment",
-   "sustainability"
+   "sustainability",
+   "energy"
   ],
   "dedicated":1
  },
@@ -78,22 +78,22 @@
    "bac"
   ],
   "fields":[
-   "Architecture",
-   "Letters",
-   "Veterinary",
-   "Engineering",
-   "Sociology",
-   "Management",
+   "Philosophy",
+   "Pharmacy",
    "Law & Criminology",
-   "Science",
+   "Architecture",
+   "Management",
+   "Sociology",
    "Economy",
    "Medecine & Health",
-   "Pharmacy",
-   "Philosophy"
+   "Letters",
+   "Engineering",
+   "Science",
+   "Veterinary"
   ],
   "themes":[
-   "sustainability",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -182,8 +182,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":1
  },
@@ -443,9 +443,9 @@
    "Science"
   ],
   "themes":[
-   "sustainability",
+   "resources",
    "environment",
-   "resources"
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -515,22 +515,22 @@
    "bac"
   ],
   "fields":[
-   "Architecture",
-   "Letters",
-   "Veterinary",
-   "Engineering",
-   "Sociology",
-   "Management",
+   "Philosophy",
+   "Pharmacy",
    "Law & Criminology",
-   "Science",
+   "Architecture",
+   "Management",
+   "Sociology",
    "Economy",
    "Medecine & Health",
-   "Pharmacy",
-   "Philosophy"
+   "Letters",
+   "Engineering",
+   "Science",
+   "Veterinary"
   ],
   "themes":[
-   "sustainability",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -577,8 +577,8 @@
    "Science"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "environment",
+   "energy"
   ],
   "dedicated":1
  },
@@ -624,18 +624,18 @@
    "bac"
   ],
   "fields":[
-   "Architecture",
-   "Letters",
-   "Veterinary",
-   "Engineering",
-   "Sociology",
-   "Management",
+   "Philosophy",
+   "Pharmacy",
    "Law & Criminology",
-   "Science",
+   "Architecture",
+   "Management",
+   "Sociology",
    "Economy",
    "Medecine & Health",
-   "Pharmacy",
-   "Philosophy"
+   "Letters",
+   "Engineering",
+   "Science",
+   "Veterinary"
   ],
   "themes":[
    "climate"
@@ -681,9 +681,9 @@
    "bac"
   ],
   "fields":[
-   "Pharmacy",
+   "Science",
    "Veterinary",
-   "Science"
+   "Pharmacy"
   ],
   "themes":[
    "environment"
@@ -732,8 +732,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":1
  },
@@ -752,9 +752,9 @@
    "other"
   ],
   "fields":[
+   "Management",
    "Sociology",
-   "Economy",
-   "Management"
+   "Economy"
   ],
   "themes":[
    "environment"
@@ -781,8 +781,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -810,8 +810,8 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -833,8 +833,8 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -958,9 +958,9 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
+   "resources",
    "environment",
-   "resources"
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -982,8 +982,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -1006,9 +1006,9 @@
    "Philosophy"
   ],
   "themes":[
-   "sustainability",
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -1028,8 +1028,8 @@
    "bac"
   ],
   "fields":[
-   "Pharmacy",
-   "Veterinary"
+   "Veterinary",
+   "Pharmacy"
   ],
   "themes":[
    "environment"
@@ -1051,8 +1051,8 @@
    "bac"
   ],
   "fields":[
-   "Pharmacy",
-   "Veterinary"
+   "Veterinary",
+   "Pharmacy"
   ],
   "themes":[
    "environment"
@@ -1106,8 +1106,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -1129,13 +1129,13 @@
    "bac"
   ],
   "fields":[
-   "Pharmacy",
-   "Veterinary"
+   "Veterinary",
+   "Pharmacy"
   ],
   "themes":[
-   "energy",
+   "climate",
    "environment",
-   "climate"
+   "energy"
   ],
   "dedicated":0
  },
@@ -1212,9 +1212,9 @@
    "bac"
   ],
   "fields":[
+   "Management",
    "Sociology",
-   "Economy",
-   "Management"
+   "Economy"
   ],
   "themes":[
    "energy"
@@ -1240,8 +1240,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "resources",
+   "environment"
   ],
   "dedicated":0
  },
@@ -1379,8 +1379,8 @@
    "bac"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "energy"
@@ -1432,9 +1432,9 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability",
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -1454,9 +1454,9 @@
    "bac"
   ],
   "fields":[
+   "Management",
    "Sociology",
-   "Economy",
-   "Management"
+   "Economy"
   ],
   "themes":[
    "climate"
@@ -1479,8 +1479,8 @@
    "bac"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "environment"
@@ -1554,8 +1554,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "climate"
+   "climate",
+   "energy"
   ],
   "dedicated":1
  },
@@ -1670,8 +1670,8 @@
    "Science"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -1716,8 +1716,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":1
  },
@@ -1852,8 +1852,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":1
  },
@@ -1921,8 +1921,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
  },
@@ -1987,12 +1987,12 @@
   "fields":[
    "Letters",
    "Economy",
-   "Philosophy",
-   "Management"
+   "Management",
+   "Philosophy"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2012,8 +2012,8 @@
    "master"
   ],
   "fields":[
-   "Pharmacy",
-   "Veterinary"
+   "Veterinary",
+   "Pharmacy"
   ],
   "themes":[
    "environment"
@@ -2040,9 +2040,9 @@
    "Science"
   ],
   "themes":[
-   "energy",
+   "climate",
    "environment",
-   "climate"
+   "energy"
   ],
   "dedicated":0
  },
@@ -2089,9 +2089,9 @@
    "Medecine & Health"
   ],
   "themes":[
-   "energy",
+   "climate",
    "environment",
-   "climate"
+   "energy"
   ],
   "dedicated":0
  },
@@ -2136,9 +2136,9 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2181,8 +2181,8 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "sustainability"
@@ -2220,8 +2220,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2243,8 +2243,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -2302,8 +2302,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2338,8 +2338,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2374,8 +2374,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2512,8 +2512,8 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -2558,12 +2558,12 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2582,12 +2582,12 @@
    "master"
   ],
   "fields":[
-   "Architecture",
-   "Other"
+   "Other",
+   "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -2606,8 +2606,8 @@
    "other"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "sustainability"
@@ -2652,8 +2652,8 @@
    "master"
   ],
   "fields":[
-   "Architecture",
-   "Other"
+   "Other",
+   "Architecture"
   ],
   "themes":[
    "environment"
@@ -2675,12 +2675,12 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
-   "sustainability",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2703,13 +2703,13 @@
    "master"
   ],
   "fields":[
+   "Management",
    "Sociology",
-   "Economy",
-   "Management"
+   "Economy"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -2728,12 +2728,12 @@
    "master"
   ],
   "fields":[
-   "Architecture",
-   "Other"
+   "Other",
+   "Architecture"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -2755,8 +2755,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -2800,8 +2800,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -2822,12 +2822,12 @@
    "master"
   ],
   "fields":[
-   "Engineering",
-   "Architecture"
+   "Architecture",
+   "Engineering"
   ],
   "themes":[
-   "sustainability",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2846,13 +2846,13 @@
    "master"
   ],
   "fields":[
+   "Other",
    "Architecture",
-   "Sociology",
-   "Other"
+   "Sociology"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2872,8 +2872,8 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "environment"
@@ -2900,8 +2900,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2920,8 +2920,8 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "environment"
@@ -2944,8 +2944,8 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "environment"
@@ -2967,12 +2967,12 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -2993,12 +2993,12 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -3017,12 +3017,12 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -3041,8 +3041,8 @@
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Management",
+   "Economy"
   ],
   "themes":[
    "climate"
@@ -3064,8 +3064,8 @@
    "master"
   ],
   "fields":[
-   "Sociology",
-   "Political Sciences"
+   "Political Sciences",
+   "Sociology"
   ],
   "themes":[
    "climate"
@@ -3158,8 +3158,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
  },
@@ -3252,8 +3252,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
  },
@@ -3303,8 +3303,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
  },
@@ -3404,8 +3404,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
  },
@@ -3427,9 +3427,9 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
    "resources",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -3471,9 +3471,9 @@
    "master"
   ],
   "fields":[
-   "Sociology",
+   "Other",
    "Political Sciences",
-   "Other"
+   "Sociology"
   ],
   "themes":[
    "environment"
@@ -3517,9 +3517,9 @@
    "master"
   ],
   "fields":[
-   "Sociology",
+   "Other",
    "Political Sciences",
-   "Other"
+   "Sociology"
   ],
   "themes":[
    "climate"
@@ -3566,8 +3566,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -3591,8 +3591,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -3611,8 +3611,8 @@
    "master"
   ],
   "fields":[
-   "Sociology",
-   "Other"
+   "Other",
+   "Sociology"
   ],
   "themes":[
    "environment"
@@ -3639,8 +3639,8 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "climate"
+   "climate",
+   "environment"
   ],
   "dedicated":0
  },
@@ -3801,8 +3801,8 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -3863,9 +3863,9 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability",
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -3885,8 +3885,8 @@
    "master"
   ],
   "fields":[
-   "Pharmacy",
-   "Veterinary"
+   "Veterinary",
+   "Pharmacy"
   ],
   "themes":[
    "sustainability"
@@ -3916,9 +3916,9 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability",
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -3952,9 +3952,9 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability",
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -3973,8 +3973,8 @@
    "master"
   ],
   "fields":[
-   "Pharmacy",
-   "Veterinary"
+   "Veterinary",
+   "Pharmacy"
   ],
   "themes":[
    "environment"
@@ -4045,8 +4045,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -4115,8 +4115,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "resources"
+   "resources",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -4138,8 +4138,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "environment"
+   "environment",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -4183,9 +4183,9 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
+   "climate",
    "environment",
-   "climate"
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -4281,22 +4281,22 @@
    "bac"
   ],
   "fields":[
-   "Architecture",
-   "Letters",
-   "Veterinary",
-   "Engineering",
-   "Sociology",
-   "Management",
+   "Philosophy",
+   "Pharmacy",
    "Law & Criminology",
-   "Science",
+   "Architecture",
+   "Management",
+   "Sociology",
    "Economy",
    "Medecine & Health",
-   "Pharmacy",
-   "Philosophy"
+   "Letters",
+   "Engineering",
+   "Science",
+   "Veterinary"
   ],
   "themes":[
-   "sustainability",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":0
  },
@@ -4318,8 +4318,8 @@
    "Other"
   ],
   "themes":[
-   "energy",
    "climate",
+   "energy",
    "sustainability"
   ],
   "dedicated":1
@@ -4343,8 +4343,8 @@
    "Other"
   ],
   "themes":[
-   "sustainability",
-   "climate"
+   "climate",
+   "sustainability"
   ],
   "dedicated":1
  },
@@ -4366,8 +4366,8 @@
    "Other"
   ],
   "themes":[
-   "energy",
    "climate",
+   "energy",
    "sustainability"
   ],
   "dedicated":1

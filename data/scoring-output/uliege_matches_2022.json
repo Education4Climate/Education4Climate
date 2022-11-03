@@ -186,7 +186,7 @@
     },
     "ARCH0555-1: Sciences et technique 1": {
         "fr": {
-            "analyse (?:de|du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 "rces disponibles et analyse du cycle de vie approcher des quest"
             ],
             "gestion (?:de l'|des )?eaux?": [
@@ -1016,6 +1016,9 @@
     },
     "CHIM0699-2: Life cycle assessment - Ecodesign": {
         "fr": {
+            "analyse (?:de |du )?cycle (?:de )?vie": [
+                "a methodologie de l'analyse de cycle de vie  acv  permettant d'"
+            ],
             "eco-?conception": [
                 "iquer la demarche d'ecoconception     - de realiser u"
             ]
@@ -1540,8 +1543,9 @@
     },
     "ENVT0026-1: Industrie": {
         "fr": {
-            "analyse (?:de|du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 "strie plus durable  analyse du cycle de vie  meilleures technol",
+                "a methodologie de l'analyse de cycle de vie  acv  permettant d'",
                 "strie plus durable  analyse du cycle de vie  meilleures technol"
             ],
             "energ[^ ]+ renouvelab[^ ]+": [
@@ -1583,6 +1587,14 @@
         "fr": {
             "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
                 "ndre et de gerer un probleme environnemental    table des mati"
+            ]
+        }
+    },
+    "ENVT0051-1: Outils d'\u00e9valuation et de gestion de l'environnement": {
+        "fr": {
+            "analyse (?:de |du )?cycle (?:de )?vie": [
+                "ironnement  eie   l'analyse de cycle de vie  acv  - et un outil",
+                "urs vise a situer l'analyse de cycle de vie parmi les outils d'"
             ]
         }
     },
@@ -1713,7 +1725,7 @@
     },
     "ENVT0070-1: Impact environnemental et sanitaire des b\u00e2timents": {
         "fr": {
-            "analyse (?:de|du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 "tale en utilisant l'analyse du cycle de vie   les concepts de g"
             ]
         }
@@ -1742,7 +1754,7 @@
     },
     "ENVT0170-1: Impact sanitaire des b\u00e2timents": {
         "fr": {
-            "analyse (?:de|du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 "ntal a l'aide d'une analyse du cycle de vie        air interieu"
             ],
             "gestion (?:de l'|des )?eaux?": [
@@ -1967,6 +1979,13 @@
             ]
         }
     },
+    "ENVT2049-2: Introduction \u00e0 l'\u00e9valuation environnementale": {
+        "fr": {
+            "analyse (?:de |du )?cycle (?:de )?vie": [
+                "    3  discuter une analyse de cycle de vie"
+            ]
+        }
+    },
     "ENVT2058-1: Gestion des \u00e9cosyst\u00e8mes tropicaux": {
         "fr": {
             "agro-?foresterie": [
@@ -2113,6 +2132,9 @@
                 "ntifier les impacts environnementaux tout au long de ",
                 "echets  les impacts environnementaux comprennent l'an",
                 "et de leurs impacts environnementaux  il aura aussi a"
+            ],
+            "analyse (?:de |du )?cycle (?:de )?vie": [
+                "multicritere et une analyse de cycle de vie appliquee a des pro"
             ]
         }
     },
@@ -2743,7 +2765,7 @@
             "agriculture biologique": [
                 "  o reglement sur l'agriculture biologique   cours 8  3h  outi"
             ],
-            "analyse (?:de|du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 "cice   cours 3  3h  analyse du cycle de vie  ecobilan   * princ"
             ]
         }
@@ -2834,6 +2856,10 @@
                 "de cours d'eau      pollution atmospherique  poll",
                 "tion atmospherique  pollution de l'eau  protectio",
                 " et restauration de cours d'eau      pollution atmo"
+            ],
+            "analyse (?:de |du )?cycle (?:de )?vie": [
+                "de l'environnement  analyse de cycle de vie      l'enseignement",
+                " risque ainsi que l'analyse de cycle de vie  grace a la connais"
             ],
             "gestio[^ ]+ durab[^ ]+": [
                 "  hydroelectricite  gestion durable des reservoirs  imp"
@@ -3273,7 +3299,7 @@
     },
     "GEOL1044-1: Raw Materials in a Circular Economy": {
         "fr": {
-            "analyse (?:de|du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 "interpretation de l'analyse du cycle de vie    lifecycle analys"
             ],
             "economie circulaire": [

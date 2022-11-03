@@ -8,7 +8,7 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = f"http://applications.umons.ac.be/web/fr/pde/{YEAR}-{int(YEAR)+1}" + "/ue/{}.htm"
+BASE_URL = f"https://webcontent.umons.ac.be/web/fr/pde/{YEAR}-{int(YEAR)+1}" + "/ue/{}.htm"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}umons_programs_{YEAR}.json')
 
@@ -79,11 +79,11 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
 
         # Course description
         def get_sections_text(sections_names):
-            texts = [cleanup(response.xpath(f"//div[p/text()=\"{section}\"]/p[@class='texteRubrique']").get())
+            texts = [cleanup(response.xpath(f"//div[p[contains(text(), \"{section}\")]]/p[@class='texteRubrique']").get())
                      for section in sections_names]
             return "\n".join(texts).strip("\n ")
         content = get_sections_text(["Contenu de l'UE"])
-        goal = get_sections_text(["Acquis d'apprentissage UE"]) + "\n" \
+        goal = get_sections_text(["Acquis d'apprentissage"]) + "\n" \
             + cleanup(response.xpath(f"//div[p/text()="
                                      f"\"Objectifs par rapport aux acquis d'apprentissage du programme\"]/ul").get())
         goal = goal.strip("\n")
