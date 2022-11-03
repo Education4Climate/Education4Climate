@@ -68,8 +68,8 @@ def add_fields_to_courses(courses_df: pd.DataFrame, programs_df: pd.DataFrame) -
         courses_df.loc[courses, "fields"] = courses_df.loc[courses, "fields"].apply(lambda x: x + fields)
 
     # Remove duplicates
-    courses_df["cycles"] = courses_df["cycles"].apply(lambda x: list(set(x)))
-    courses_df["fields"] = courses_df["fields"].apply(lambda x: list(set(x)))
+    courses_df["cycles"] = courses_df["cycles"].apply(lambda x: sorted(list(set(x))))
+    courses_df["fields"] = courses_df["fields"].apply(lambda x: sorted(list(set(x))))
 
     return courses_df
 
@@ -122,7 +122,7 @@ def main(school: str, year: int):
 
     # Generating course file (only courses with score > 0)
     # Convert columns of scores to list of themes
-    courses_df["themes"] = scores_df.apply(lambda x: list(set(x[x == 1].index.tolist()) - {"dedicated"}),
+    courses_df["themes"] = scores_df.apply(lambda x: sorted(list(set(x[x == 1].index.tolist()) - {"dedicated"})),
                                            axis=1).to_frame()
     courses_df["dedicated"] = scores_df.apply(lambda x: x["dedicated"], axis=1).to_frame()
     courses_df = courses_df.reset_index()
@@ -140,7 +140,7 @@ def main(school: str, year: int):
     matched_courses = list(courses_df[courses_df.id.isin(courses_with_matches_index)].id)
     programs_df['matched_courses'] = pd.Series([[]]*len(programs_df), index=programs_df.index)
     for program_id, program_courses in programs_df['courses'].items():
-        programs_df["matched_courses"].loc[program_id] = list(set(program_courses).intersection(set(matched_courses)))
+        programs_df["matched_courses"].loc[program_id] = sorted(list(set(program_courses).intersection(set(matched_courses))))
 
     # Get programs that matched at least one theme
     programs_with_matches_index = programs_scores_df[(programs_scores_df.sum(axis=1) != 0)].index
@@ -180,7 +180,6 @@ if __name__ == "__main__":
     schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
                 "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
                 "thomasmore", "ucll", "vinci", "vives"]
-    schools = ['vub']
     for school_ in schools:
         print(school_)
         main(school_, arguments['year'])
