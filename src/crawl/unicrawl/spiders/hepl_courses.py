@@ -58,6 +58,7 @@ class HEPLCourseSpider(scrapy.Spider, ABC):
         languages = response.xpath("//ul[li/h4[contains(text(), 'Langue')]]/li/text()").getall()
         languages = [l.strip(" \n") for l in languages]
         languages = [LANGUAGE_DICT[l] for l in languages if (l != '' and l != 'Aucun responsable ECTS')]
+        languages = ['fr'] if len(languages) == 0 else languages
 
         content = cleanup(response.xpath(f"//ul[li/h4[contains(text(), 'Contenu')]]").get())
         content = content.replace("\n                    ", ' ')
