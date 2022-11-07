@@ -26,7 +26,7 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
     name = "heldb-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_programs_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_programs_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):
@@ -67,14 +67,17 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
         bloc_number = int(bloc.split(" ")[1])
         cycle = 'bac' if bloc_number < 4 else 'master'
 
-
         faculty = response.xpath("//b[contains(text(), 'Domaine')]/following::text()[1]").get()
 
-        ue_ids = response.xpath("//tr[contains(@class, 'ue')]/td[1]/text()").getall()
+        main_text = "//div[contains(@class, 'container-fluid')]"
+        ue_ids = response.xpath(f"{main_text}//tr[contains(@class, 'ue')"
+                                f" and contains(@class, 'bold')]/td[2]/text()").getall()
         ue_ids = [ue.strip("\n ") for ue in ue_ids]
-        ue_ects = response.xpath("//tr[contains(@class, 'bold')]/td[5]/text()").getall()
-        ue_urls_ids = response.xpath("//tr[contains(@class, 'ue')]/@data-href").getall()
+        ue_ects = response.xpath(f"{main_text}//tr[contains(@class, 'bold')]/td[5]/text()").getall()
+        ue_urls_ids = response.xpath(f"{main_text}//tr[contains(@class, 'ue')]/@data-href").getall()
         ue_urls_ids = [ue.split("/")[-1] for ue in ue_urls_ids]
+
+        # ue_ids, ue_ects, ue_urls_ids = list(zip(*set(zip(ue_ids, ue_ects, ue_urls_ids))))
 
         yield {
             "id": program_id,

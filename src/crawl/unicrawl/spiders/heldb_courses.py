@@ -60,6 +60,8 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
                                       f"/following::a[1]/text()").getall()
         teachers += sup_teachers
         teachers = [t.title() for t in teachers]
+        # remove Monsieur Madame
+        teachers = [" ".join(t.split(" ")[1:]) if "Monsieur" in t or "Madame" in t else t for t in teachers]
 
         year = cleanup(response.xpath(f"{div_txt}//div[@id='anac']//i").get()).split("Année académique ")[1]
 

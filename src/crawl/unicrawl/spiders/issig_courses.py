@@ -49,7 +49,16 @@ class ISSIGCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_main(response, ue_id):
 
-        ue_name = response.xpath("//h5[2]/strong/text()").get().strip(" ")
+        ue_name = response.xpath("//h5[2]/strong/text()").get()
+        if ue_name:
+            ue_name = ue_name.strip(" ")
+        else:
+            yield {
+                'id': ue_id, 'name': '', 'year': '', 'languages': [], 'teachers': [],
+                'url': response.url, 'content': '', 'goal': '', 'activity': '', 'other': ''
+            }
+            return
+
         years = response.xpath("//h5[3]/text()").get().strip(" ").split(" ")[-1]
 
         teachers = response.xpath("//div[@class='col-md-9']/text()").getall()

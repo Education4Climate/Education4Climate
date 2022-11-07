@@ -15,7 +15,8 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}he-ferrer_programs_{YEAR}.json')
 LANGUAGES_DICT = {
     "Français": "fr",
-    "Anglais": "en"
+    "Anglais": "en",
+    "N?erlandais": "nl"
 }
 
 
