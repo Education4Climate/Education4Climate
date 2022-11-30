@@ -1,10 +1,42 @@
 [
  {
+  "id":"management-logistique",
+  "name":"Bachelier Management de la logistique",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/management-logistique",
+  "languages":[
+   "nl",
+   "es",
+   "fr"
+  ],
+  "campuses":[
+   "Campus 2000 - Jemeppe"
+  ],
+  "faculties":[
+   "Gestion & droit"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Management"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "TRP-1-019"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"agronomie-techniques-gestion-agricoles",
   "name":"Bachelier Agronomie Orientation Techniques et gestion agricoles",
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/agronomie\/techniques-gestion-agricoles",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -17,13 +49,17 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "climate",
    "environment"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "AGR-1-005"
+   "AGR-1-005",
+   "AGR-1-085",
+   "AGR-1-092"
   ],
   "nb_dedicated_courses":0
  },
@@ -33,6 +69,7 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/agronomie\/foret-nature",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -45,13 +82,23 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "environment",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   5,
+   4
   ],
   "matched_courses":[
-   "AGR-1-005"
+   "AGR-1-005",
+   "AGR-1-043",
+   "AGR-1-047",
+   "AGR-1-052",
+   "AGR-1-056",
+   "AGR-1-058",
+   "AGR-1-105"
   ],
   "nb_dedicated_courses":0
  },
@@ -61,6 +108,7 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/agronomie\/environnement",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -73,15 +121,32 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "energy",
+   "environment",
+   "resources",
+   "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   1,
+   9,
+   4,
+   2
   ],
   "matched_courses":[
-   "AGR-1-005"
+   "AGR-1-005",
+   "AGR-1-061",
+   "AGR-1-064",
+   "AGR-1-065",
+   "AGR-1-066",
+   "AGR-1-070",
+   "AGR-1-071",
+   "AGR-1-072",
+   "AGR-1-073",
+   "AGR-1-076"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":9
  },
  {
   "id":"agronomie-agro-industries-biotechnologies",
@@ -89,6 +154,7 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/agronomie\/agro-industries-biotechnologies",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -101,41 +167,26 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "AGR-1-005"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"assistant-social",
-  "name":"Bachelier Assistant social",
-  "cycle":"bac",
-  "url":"https:\/\/www.hepl.be\/fr\/assistant-social",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Campus 2000 - Jemeppe"
-  ],
-  "faculties":[
-   "Social"
-  ],
-  "fields":[
-   "Sociology"
-  ],
-  "themes":[
+   "climate",
+   "environment",
+   "resources",
    "sustainability"
   ],
   "themes_scores":[
-   1
+   1,
+   4,
+   4,
+   2
   ],
   "matched_courses":[
-   "SOC-1-014"
+   "AGR-1-005",
+   "AGR-1-025",
+   "AGR-1-026",
+   "AGR-1-027",
+   "AGR-1-108",
+   "AGR-1-112",
+   "AGR-1-113",
+   "AGR-1-117"
   ],
   "nb_dedicated_courses":0
  },
@@ -168,11 +219,69 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"technologue-en-imagerie-medicale",
+  "name":"Bachelier Technologue en imagerie m\u00e9dicale",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/technologue-en-imagerie-medicale",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Campus Barbou - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Sant\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "TIM-1-023"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
+  "id":"dietetique",
+  "name":"Bachelier Di\u00e9t\u00e9tique",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/dietetique",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus Barbou - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Sant\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "environment"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "DIET-1-017"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"informatique-gestion",
   "name":"Bachelier Informatique de gestion",
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/informatique-gestion",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -203,6 +312,8 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/communication",
   "languages":[
+   "nl",
+   "en",
    "fr"
   ],
   "campuses":[
@@ -226,11 +337,42 @@
   "nb_dedicated_courses":0
  },
  {
+  "id":"bibliothecaire-documentaliste",
+  "name":"Bachelier Biblioth\u00e9caire- documentaliste",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/bibliothecaire-documentaliste",
+  "languages":[
+   "nl",
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus 2000 - Jemeppe"
+  ],
+  "faculties":[
+   "Information & communication"
+  ],
+  "fields":[
+   "Communication"
+  ],
+  "themes":[
+   "sustainability"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIB-1-005"
+  ],
+  "nb_dedicated_courses":0
+ },
+ {
   "id":"master-ingenieur-industriel-geometre",
   "name":"Master Ing\u00e9nieur industriel Orientation G\u00e9om\u00e8tre",
   "cycle":"master",
   "url":"https:\/\/www.hepl.be\/fr\/master\/ingenieur-industriel\/geometre",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -243,10 +385,12 @@
    "Engineering"
   ],
   "themes":[
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1,
    2
   ],
@@ -263,6 +407,7 @@
   "cycle":"master",
   "url":"https:\/\/www.hepl.be\/fr\/master-ingenieur-industriel\/electromecanique-genie-energetique-mecatronique",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -297,6 +442,7 @@
   "cycle":"master",
   "url":"https:\/\/www.hepl.be\/fr\/master-ingenieur-industriel\/electromecanique-genie-mecanique-aerotechnique",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -327,6 +473,7 @@
   "cycle":"master",
   "url":"https:\/\/www.hepl.be\/fr\/master-ingenieur-industriel\/construction-energie-environnement",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -339,10 +486,12 @@
    "Engineering"
   ],
   "themes":[
+   "environment",
    "resources",
    "sustainability"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
@@ -358,6 +507,7 @@
   "cycle":"master",
   "url":"https:\/\/www.hepl.be\/fr\/formations\/ingenieur\/ingenieur-industriel\/chimie-verte",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -376,7 +526,7 @@
   ],
   "themes_scores":[
    1,
-   21,
+   20,
    1
   ],
   "matched_courses":[
@@ -393,7 +543,6 @@
    "ING-2-025",
    "ING-2-087",
    "ING-2-089",
-   "ING-2-091",
    "ING-2-183",
    "ING-2-184",
    "ING-2-302",
@@ -405,22 +554,22 @@
   "nb_dedicated_courses":2
  },
  {
-  "id":"gestion-publique",
-  "name":"Master Gestion publique",
+  "id":"master-ingenieur-industriel-ingenieur-industriel-biochimie-bioproduction",
+  "name":"Master Ing\u00e9nieur industriel Orientation Biochimie - Bioproduction",
   "cycle":"master",
-  "url":"https:\/\/www.hepl.be\/fr\/gestion-publique",
+  "url":"https:\/\/www.hepl.be\/fr\/ingenieur-industriel-biochimie-bioproduction",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
-   "Campus 2000 - Jemeppe"
+   "Campus Gloesener - Li\u00e8ge"
   ],
   "faculties":[
-   "Gestion & droit"
+   "Ing\u00e9nieur"
   ],
   "fields":[
-   "Law & Criminology",
-   "Management"
+   "Engineering"
   ],
   "themes":[
    "environment"
@@ -429,9 +578,9 @@
    1
   ],
   "matched_courses":[
-   "GESTPUBL-2-034"
+   "ING-2-323"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":1
  },
  {
   "id":"master-facility-management",
@@ -439,6 +588,8 @@
   "cycle":"master",
   "url":"https:\/\/www.hepl.be\/fr\/master-facility-management",
   "languages":[
+   "nl",
+   "en",
    "fr"
   ],
   "campuses":[
@@ -461,35 +612,6 @@
   ],
   "matched_courses":[
    "FACMAN-2-011"
-  ],
-  "nb_dedicated_courses":0
- },
- {
-  "id":"management-logistique",
-  "name":"Bachelier Management de la logistique",
-  "cycle":"bac",
-  "url":"https:\/\/www.hepl.be\/fr\/management-logistique",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Campus 2000 - Jemeppe"
-  ],
-  "faculties":[
-   "Gestion & droit"
-  ],
-  "fields":[
-   "Law & Criminology",
-   "Management"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "TRP-1-019"
   ],
   "nb_dedicated_courses":0
  },
@@ -535,6 +657,7 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/chimie\/biotechnologie",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -548,12 +671,15 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "environment",
+   "resources"
   ],
   "themes_scores":[
-   3
+   3,
+   1
   ],
   "matched_courses":[
+   "CHI-1-042",
    "CHI-1-056",
    "CHI-1-077",
    "CHI-1-079"
@@ -566,6 +692,7 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/chimie\/biochimie",
   "languages":[
+   "en",
    "fr"
   ],
   "campuses":[

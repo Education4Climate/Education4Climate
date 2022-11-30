@@ -52,8 +52,12 @@ class HEPLCourseSpider(scrapy.Spider, ABC):
         ue_name = response.xpath("//h1/text()").get().strip(" ")
 
         teacher = response.xpath("//td[contains(text(), 'Responsable')]/following::td[1]/text()").get().title()
-        teachers = [" ".join(teacher.split(", ")) if ',' in teacher
-                    else f"{teacher.split(' ')[1]} {teacher.split(' ')[0]}"]
+        if 'Inconnu' in teacher:
+            teachers = []
+        elif ',' in teacher:
+            teachers = [" ".join(teacher.split(", "))]
+        else:
+            teachers = [f"{teacher.split(' ')[1]} {teacher.split(' ')[0]}"]
 
         languages = response.xpath("//ul[li/h4[contains(text(), 'Langue')]]/li/text()").getall()
         languages = [l.strip(" \n") for l in languages]
