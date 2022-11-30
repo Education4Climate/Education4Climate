@@ -1,6 +1,40 @@
 {
     "AGR-1-005: Productions v\u00e9g\u00e9tales": {
         "fr": {
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "rise   les facteurs climatiques  les facteurs ",
+                "es  les facteurs du climat  influence sur l'ag",
+                " et les changements climatiques   les notions ",
+                "ce de la composante climatique sur les product",
+                " part  le sol et le climat d'autre part   expl",
+                "act des changements climatiques au niveau fore",
+                "e des engrais sur l'environnement  partie 3   les pri",
+                "e des engrais sur l'environnement      expliquer la r",
+                "aissance  d'utilite environnementale et d'utilisation",
+                "ssance de l'utilite environnementale ainsi que des ut",
+                "spects economiques  environnementaux et societaux   f",
+                " niveaux economique  ecologique et societal      ex"
+            ],
+            "[[ ]ecolo[^ ]+, climat, agriculture]": [
+                " niveaux economique  ecologique et societal      ex",
+                "rise   les facteurs climatiques  les facteurs ",
+                "es  les facteurs du climat  influence sur l'ag",
+                " et les changements climatiques   les notions ",
+                "ce de la composante climatique sur les product",
+                " part  le sol et le climat d'autre part   expl",
+                "act des changements climatiques au niveau fore",
+                "at  influence sur l'agriculture   les pratiques cul"
+            ],
+            "[[ ]ecolo[^ ]+, climat, elevage]": [
+                " niveaux economique  ecologique et societal      ex",
+                "rise   les facteurs climatiques  les facteurs ",
+                "es  les facteurs du climat  influence sur l'ag",
+                " et les changements climatiques   les notions ",
+                "ce de la composante climatique sur les product",
+                " part  le sol et le climat d'autre part   expl",
+                "act des changements climatiques au niveau fore",
+                "ation   effluents d'elevage  sous-produits  res"
+            ],
             "[ecosyst[^ ]+, pollution]": [
                 "n apercu global des ecosystemes forestiers en belgi",
                 "de par les services ecosystemiques fournis  en lien av",
@@ -8,6 +42,456 @@
             ],
             "services? ecosystemiq": [
                 "la foret de par les services ecosystemiques fournis  en lien"
+            ]
+        }
+    },
+    "AGR-1-025: Agro-industries et biotechnologies AAB: Epuration des eaux": {
+        "fr": {
+            "epurations? des eaux": [
+                "iotechnologies aab  epuration des eaux     normes reglemen",
+                "pre au domaine de l'epuration des eaux  distinguer notamme",
+                "ique specifique a l'epuration des eaux usees    citer et e"
+            ],
+            "gestion (?:de l'|des )?eaux?": [
+                "allon en matiere de gestion des eaux usees     employer "
+            ]
+        }
+    },
+    "AGR-1-026: Agro-industries et biotechnologies AAB: Microbiologie": {
+        "fr": {
+            "epurations? des eaux": [
+                "ent d'une station d'epuration des eaux et l'implication de"
+            ]
+        }
+    },
+    "AGR-1-027: Agro-industries et biotechnologies AAB: Protection des v\u00e9g\u00e9taux et r\u00e9glementations": {
+        "fr": {
+            "[impact, pesticide]": [
+                "egetaux  pourraient impacter la qualite des pr",
+                "rotection les moins impactantes     expliquer ",
+                "ique des residus de pesticides dans les denrees a"
+            ],
+            "[pollution, pesticide]": [
+                " l'environnement de pollutions eventuelles  decri",
+                "ique des residus de pesticides dans les denrees a"
+            ]
+        }
+    },
+    "AGR-1-043: For\u00eat et nature: Travaux Forestiers": {
+        "fr": {
+            "[impact, cours d'eau]": [
+                "egeneration     les impacts lies a l'usage de ",
+                "s forestiers et les cours d'eau     le travail du s"
+            ]
+        }
+    },
+    "AGR-1-047: For\u00eat et nature: Protection des v\u00e9g\u00e9taux et r\u00e9glementations": {
+        "fr": {
+            "[impact, pesticide]": [
+                "la methode la moins impactante     identifier ",
+                "ique des residus de pesticides dans les denrees a"
+            ],
+            "[pollution, pesticide]": [
+                " l'environnement de pollutions eventuelles  decri",
+                "ique des residus de pesticides dans les denrees a"
+            ],
+            "gestio[^ ]+ durab[^ ]+": [
+                "dans le cadre d'une gestion durable de la foret  ainsi "
+            ]
+        }
+    },
+    "AGR-1-052: For\u00eat et nature: Ecosyst\u00e8mes Aquatiques": {
+        "fr": {
+            "gestio[^ ]+ durab[^ ]+": [
+                "ances necessaires a gestion durable de l'ecosysteme dul"
+            ]
+        }
+    },
+    "AGR-1-056: For\u00eat et nature: Sylviculture": {
+        "fr": {
+            "agro-?foresterie": [
+                "e  sylviculture     agroforesterie    cadre legal  eta",
+                "etat des lieux de l'agroforesterie en wallonie et de s",
+                "l et paysager       agroforesterie    se rendre compte"
+            ],
+            "gestio[^ ]+ durab[^ ]+": [
+                "re les principes de gestion durable et de maintien de l",
+                "sures justifiees de gestion durable des peuplements  il"
+            ]
+        }
+    },
+    "AGR-1-058: For\u00eat et nature: Gestion des Ecosyst\u00e8mes forestiers": {
+        "fr": {
+            "[effondrement, espece]": [
+                "s  perturbations et effondrements des ecosystemes fo",
+                "ts  de plantes et d'especes animales  animatio",
+                "et l'ecologie d'une espece animale associee au",
+                "la distribution des especes animales et vegeta",
+                "un habitat ou d'une espece et proposer des mes",
+                " habitat et /ou une espece a une public non av",
+                "re scientifique des especes  animales ou veget"
+            ]
+        }
+    },
+    "AGR-1-061: Environnement: Gestion de l'environnement": {
+        "fr": {
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                " cas  le concept du developpement durable   le concept de l'a",
+                "ec les objectifs du developpement durable      lister  defini",
+                "nt les objectifs du developpement durable   analyser le conte",
+                "environnement  gestion de l'envir",
+                "ement  gestion de l'environnement     econconception ",
+                "nitiale des aspects environnementaux significatifs au",
+                " utiles a l'analyse environnementale d'une filiere de",
+                "etablir les impacts environnementaux en lien avec les",
+                "ntifier des impacts environnementaux lors de la mise ",
+                "etecter les impacts environnementaux significatifs au",
+                "evaluer les impacts environnementaux d'une filiere de",
+                "a notion d'empreinte ecologique  l'ecoconception d'"
+            ],
+            "[gestion (?:de l')environnement, [ ]ecolo[^ ]+, impact]": [
+                "environnement  gestion de l'environnement     econconception ",
+                "a notion d'empreinte ecologique  l'ecoconception d'",
+                "re      etablir les impacts environnementaux e",
+                "     quantifier des impacts environnementaux l",
+                "s      detecter les impacts environnementaux s",
+                "pouvoir evaluer les impacts environnementaux d"
+            ],
+            "epurations? des eaux": [
+                "------------------  epuration des eaux   normes reglementa",
+                " filiere complete d'epuration des eaux usees en distinguan",
+                "agroalimentaire  en epuration des eaux et de tout autre sy"
+            ],
+            "eco-?conception": [
+                "einte ecologique  l'ecoconception d'un produit agro-a",
+                "mparer les outils d'ecoconception dans le but de pouv",
+                "oser une demarche d'ecoconception adaptee a une entre",
+                "on d'une demarche d'ecoconception      pouvoir dimens",
+                "ncipes de base de l'ecoconception en filiere agroalim"
+            ]
+        }
+    },
+    "AGR-1-064: Environnement: Perturbations des \u00e9cosyst\u00e8mes": {
+        "fr": {
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "s polluants dans la biosphere       l'objectif de",
+                "able  les effets et consequences sur les composante",
+                "  de determiner les consequences des differents typ",
+                "environnement  perturbations des ",
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "e des sciences de l'environnement  surpopulation  sur",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "uturs bacheliers en environnement les bases necessair",
+                "technologie sur son environnement  de determiner les "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "s polluants dans la biosphere       l'objectif de",
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                " fonctionnement des ecosystemes      pour chaque al"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "s polluants dans la biosphere       l'objectif de",
+                " de la situation et evolution en region wallonne ",
+                "environnement  perturbations des ",
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "e des sciences de l'environnement  surpopulation  sur",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "uturs bacheliers en environnement les bases necessair",
+                "technologie sur son environnement  de determiner les "
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "s polluants dans la biosphere       l'objectif de",
+                "ns une situation de probleme a resoudre  mettant",
+                "environnement  perturbations des ",
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "e des sciences de l'environnement  surpopulation  sur",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "uturs bacheliers en environnement les bases necessair",
+                "technologie sur son environnement  de determiner les "
+            ],
+            "[degradation, ecosyst[^ ]+, environnement]": [
+                "mation  alteration  degradation  pollution localise",
+                "uant les notions de degradations et pollutions     ",
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "environnement  perturbations des ",
+                "e des sciences de l'environnement  surpopulation  sur",
+                "uturs bacheliers en environnement les bases necessair",
+                "technologie sur son environnement  de determiner les "
+            ],
+            "[ecosyst[^ ]+, degradations?, anthrop(?:iq|ocene)]": [
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "mation  alteration  degradation  pollution localise",
+                "uant les notions de degradations et pollutions      ",
+                "gines naturelles et anthropiques  les sources et "
+            ],
+            "[ecosyst[^ ]+, perturbations?, anthrop(?:iq|ocene)]": [
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "environnement  perturbations des ecosystemes    ",
+                "gines naturelles et anthropiques  les sources et "
+            ],
+            "[ecosyst[^ ]+, pollution]": [
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "des ecosystemes     pollution de l'air   types  p",
+                "  normes  remedes   pollution du sol   types  pro",
+                "  normes  remedes   pollution de l'eau   types  p",
+                "ation  degradation  pollution localisee et diffus",
+                " de degradations et pollutions      pour chaque a",
+                "en jeu des types de pollutions diversifiees  l'et",
+                "differents types de pollution  de determiner l'ac",
+                "differents types de pollution et alterations sur ",
+                "dresser un bilan de pollution  de choisir  parmi "
+            ],
+            "[ecosyst[^ ]+, pollutions?, anthrop(?:iq|ocene)]": [
+                "  perturbations des ecosystemes     pollution de l'",
+                "ion  effets sur les ecosystemes  biotope et bioceno",
+                "ion  effets sur les ecosystemes  origines  emission",
+                "ion  effets sur les ecosystemes  origines  emission",
+                " fonctionnement des ecosystemes      pour chaque al",
+                "des ecosystemes     pollution de l'air   types  p",
+                "  normes  remedes   pollution du sol   types  pro",
+                "  normes  remedes   pollution de l'eau   types  p",
+                "ation  degradation  pollution localisee et diffus",
+                " de degradations et pollutions      pour chaque al",
+                "en jeu des types de pollutions diversifiees  l'etu",
+                "differents types de pollution  de determiner l'ac",
+                "differents types de pollution et alterations sur ",
+                "dresser un bilan de pollution  de choisir  parmi ",
+                "gines naturelles et anthropiques  les sources et "
+            ]
+        }
+    },
+    "AGR-1-065: Environnement: Protection des v\u00e9g\u00e9taux et r\u00e9glementations": {
+        "fr": {
+            "[impact, pesticide]": [
+                "protection la moins impactante     expliquer l",
+                "egetaux  pourraient impacter la qualite des pr",
+                "ique des residus de pesticides dans les denrees a"
+            ],
+            "[pollution, pesticide]": [
+                " l'environnement de pollutions eventuelles  decri",
+                "ique des residus de pesticides dans les denrees a"
+            ]
+        }
+    },
+    "AGR-1-066: Environnement: Droit": {
+        "fr": {
+            "droits? (?:d'|de l')?environnement": [
+                "fs  introduction au droit de l'environnement et au droit interna",
+                "er les principes du droit de l'environnement et du droit interna"
+            ]
+        }
+    },
+    "AGR-1-070: Environnement: Microbiologie": {
+        "fr": {
+            "epurations? des eaux": [
+                "ent d'une station d'epuration des eaux et l'implication de"
+            ]
+        }
+    },
+    "AGR-1-071: Environnement: Production biologique": {
+        "fr": {
+            "agriculture biologique": [
+                "aracterisation de l'agriculture biologique  l'agriculture biol",
+                "lture biologique  l'agriculture biologique en belgique  en eur",
+                "les techniques de l'agriculture biologique  les methodes de l'",
+                "  les methodes de l'agriculture biologique  la reconversion  r",
+                "troi des primes a l'agriculture biologique et celles concernan",
+                "r l'importance de l'agriculture biologique dans l'agriculture ",
+                "r l'importance de l'agriculture biologique dans l'agriculture "
+            ]
+        }
+    },
+    "AGR-1-072: Environnement: Gestion durable de l'environnement": {
+        "fr": {
+            "[electri[^ ]+, stockage]": [
+                "erts   production d'electricite a partir de sources",
+                "bustible   enjeu du stockage d'energie   gestion",
+                "onnementaux lies au stockage et a l'utilisation ",
+                "uration  captage et stockage de co 2   acquis d'"
+            ],
+            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
+                "environnement  gestion durable de",
+                "estion durable de l'environnement     energies renouv",
+                " agricoles  risques environnementaux lies au stockage",
+                "piliers economique  environnemental et social du deve",
+                "uire l'impact sur l'environnement et proposer des sol",
+                " vigueur en matiere environnementale           initie",
+                "tion des sources de pollution  presentation des d",
+                "ance des niveaux de pollution atmospherique  cont",
+                "que  controle de la pollution et les techniques d",
+                "ventuels risques de pollution  en deduire l'impac",
+                "aux divers types de pollutions     analyser diffe",
+                "mental et social du developpement durable       calculer la v"
+            ],
+            "[recyclage, environnement]": [
+                "sees en filieres de recyclage  la description et ",
+                "environnement  gestion durable de",
+                "estion durable de l'environnement     energies renouv",
+                " agricoles  risques environnementaux lies au stockage",
+                "piliers economique  environnemental et social du deve",
+                "uire l'impact sur l'environnement et proposer des sol",
+                " vigueur en matiere environnementale           initie"
+            ],
+            "economie circulaire": [
+                "dans le cadre d'une economie circulaire      schematiser et"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "l'environnement     energies renouvelables   protocole de kyot",
+                "partir de sources d'energie renouvelables   filieres eolienne",
+                "res de production d'energies renouvelables  en developpant les"
+            ],
+            "gestio[^ ]+ durab[^ ]+": [
+                "environnement  gestion durable de l'environnement "
+            ],
+            "controles? de la pollution": [
+                "tion atmospherique  controle de la pollution et les techniques d"
+            ]
+        }
+    },
+    "AGR-1-073: Environnement: Conservation de la nature": {
+        "fr": {
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "ition et etat de la biodiversite  causes de la regre",
+                "t l'evolution de la biodiversite en differenciant le",
+                "de regression da la biodiversite en distinguant les ",
+                "wallonne  le reseau ecologique   mise en oeuvre d'",
+                "wallonie  le reseau ecologique a l'echelle de l'un"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ition et etat de la biodiversite  causes de la regre",
+                "t l'evolution de la biodiversite en differenciant le",
+                "de regression da la biodiversite en distinguant les ",
+                " l'etat actuel et l'evolution de la biodiversite ",
+                "environnement  conservation de la",
+                " wallonne  le reseau ecologique   mise en oeuvre d'",
+                " wallonie  le reseau ecologique a l'echelle de l'un"
+            ],
+            "biologie de la conservation": [
+                "e vocabulaire de la biologie de la conservation et des textes de lo"
+            ]
+        }
+    },
+    "AGR-1-076: Environnement: Droit et Expertise": {
+        "fr": {
+            "droits? (?:d'|de l')?environnement": [
+                "est donc axe sur le droit de l'environnement qui est  par ailleu"
+            ]
+        }
+    },
+    "AGR-1-085: Techniques et gestion agricoles: Protection des v\u00e9g\u00e9taux et r\u00e9glementations": {
+        "fr": {
+            "[impact, pesticide]": [
+                "la methode la moins impactante     developper ",
+                "n chimique la moins impactante      developper",
+                "ique des residus de pesticides dans les denrees a"
+            ],
+            "[pollution, pesticide]": [
+                " l'environnement de pollutions eventuelles       ",
+                "ique des residus de pesticides dans les denrees a"
+            ]
+        }
+    },
+    "AGR-1-092: Techniques et gestion agricoles: Productions v\u00e9g\u00e9tales": {
+        "fr": {
+            "agro-?foresterie": [
+                "tions vegetales     agroforesterie    cadre legal  eta",
+                "etat des lieux de l'agroforesterie en wallonie et de s",
+                "andes cultures      agroforesterie   se rendre compte "
+            ]
+        }
+    },
+    "AGR-1-105: For\u00eat et nature: Gestion de la faune sauvage": {
+        "fr": {
+            "gestio[^ ]+ durab[^ ]+": [
+                "ances necessaires a gestion durable de la faune sauvage"
+            ]
+        }
+    },
+    "AGR-1-108: Agro-industries et biotechnologies TVV: Epuration des eaux": {
+        "fr": {
+            "epurations? des eaux": [
+                "iotechnologies tvv  epuration des eaux     normes reglemen",
+                "pre au domaine de l'epuration des eaux  distinguer notamme",
+                "ique specifique a l'epuration des eaux usees   citer et ex"
+            ],
+            "gestion (?:de l'|des )?eaux?": [
+                "allon en matiere de gestion des eaux usees     employer "
+            ]
+        }
+    },
+    "AGR-1-112: Agro-industries et biotechnologies TVV: Microbiologie": {
+        "fr": {
+            "epurations? des eaux": [
+                "ent d'une station d'epuration des eaux et l'implication de"
+            ]
+        }
+    },
+    "AGR-1-113: Agro-industries et biotechnologies TVV: Protection des v\u00e9g\u00e9taux et r\u00e9glementations": {
+        "fr": {
+            "[impact, pesticide]": [
+                "ulture biologique   impacts chiffres d'une mau",
+                "rotection les moins impactantes     expliquer ",
+                "egetaux  pourraient impacter la qualite des pr",
+                "ique des residus de pesticides dans les denrees a"
+            ],
+            "[pollution, pesticide]": [
+                " l'environnement de pollutions eventuelles  decri",
+                "ique des residus de pesticides dans les denrees a"
+            ]
+        }
+    },
+    "AGR-1-117: Agro-industries et biotechnologies TVV: Production biologique": {
+        "fr": {
+            "agriculture biologique": [
+                "aracterisation de l'agriculture biologique  l'agriculture biol",
+                "lture biologique  l'agriculture biologique en belgique  en eur",
+                "les techniques de l'agriculture biologique  les methodes de l'",
+                "  les methodes de l'agriculture biologique  la reconversion  r",
+                "troi des primes a l'agriculture biologique et celles concernan",
+                "r l'importance de l'agriculture biologique dans l'agriculture ",
+                "r l'importance de l'agriculture biologique dans l'agriculture "
+            ]
+        }
+    },
+    "BIB-1-005: Litt\u00e9ratures et histoire de l'Art": {
+        "fr": {
+            "anthropocen(?:e|ique)": [
+                " 10  art  nature et anthropocene  11  arts africains"
+            ]
+        }
+    },
+    "CHI-1-042: BIOTECHNOLOGIE:  G\u00e9nie biologique": {
+        "fr": {
+            "ressources? (?:non-?)?renouvelable": [
+                "egradables issus de ressources renouvelables  leurs proprietes "
             ]
         }
     },
@@ -42,7 +526,7 @@
     "COM-1-024: Art et soci\u00e9t\u00e9": {
         "fr": {
             "anthropocen(?:e|ique)": [
-                "rue  art  nature et anthropocene  arts africains-ame"
+                "e    art  nature et anthropocene    arts africains-a"
             ]
         }
     },
@@ -78,15 +562,17 @@
         "fr": {
             "[performances? energ[^ ]+, developp[^ ]+ durab[^ ]+, environnement]": [
                 "la des exigences en performance energetique du batiment  peb  a",
-                "option developpement durable 3 1 1       sensibi",
-                "source   cahiers du developpement durable       3     mise en",
+                "option developpement durable 3 1      1         ",
+                "source   cahiers du developpement durable         3         m",
                 "egrer les enjeux du developpement durable dans le contexte in",
                 "iment et les enjeux environnementaux - revoir cours c",
                 " acv  labellisation environnementale  qualites des ma",
                 "es caracteristiques environnementales quantifiables  ",
                 " des 12 indicateurs environnementaux impacte par ce b",
                 "iches sanitaires et environnementales  fder  et donc ",
-                "devastatrice pour l'environnement   au-dela des exige",
+                " vue d'une approche environnementale  en tenant compt",
+                " son rapport avec l'environnement et les utilisateurs",
+                "devastatrice pour l'environnement     au-dela des exi",
                 "ers une performance environnementale du batiment  com",
                 " les 12 indicateurs environnementaux  et projeter de "
             ],
@@ -98,6 +584,16 @@
             ]
         }
     },
+    "DIET-1-017: Toxicologie et pharmacodynamie": {
+        "fr": {
+            "[impact, pesticide]": [
+                "medicaments et leur impact sur la sante  notam",
+                "ient      evaluer l'impact de substances toxiq",
+                "ique      evaluer l'impact de l'evolution du m",
+                "romes  9        les pesticides acquis d'apprentis"
+            ]
+        }
+    },
     "FACMAN-2-011: Facility management": {
         "fr": {
             "economie circulaire": [
@@ -105,22 +601,6 @@
             ],
             "eco-?conception": [
                 "eco-efficience et l'eco-conception mais aussi l'econom"
-            ]
-        }
-    },
-    "GESTPUBL-2-034: Administration des aspects fonciers": {
-        "fr": {
-            "droits? (?:d'|de l')?environnement": [
-                "tions en urbanisme  droit de l'environnement   l'objet du cours ",
-                "resume structure du droit de l'environnement  en introduction  l",
-                "environnement et du droit de l'environnement sont precises  les ",
-                "d  les principes du droit de l'environnement sont analyses  il s",
-                "omaines d'action du droit de l'environnement   l'assainissement ",
-                "iller en equipe     droit de l'environnement   l'objectif du cou",
-                "ance universelle du droit de l'environnement  il s'agit de commu"
-            ],
-            "responsabilite environnement[^ ]+": [
-                " et de la flore  la responsabilite environnementale  etc  le contenu du"
             ]
         }
     },
@@ -148,14 +628,14 @@
     "ING-2-017: CHIMIE-CHIMIE VERTE: Math\u00e9matique 5": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
-                "chimie-chimie verte  mathematique 5 1  "
+                "chimie-chimie verte  mathematique 5    "
             ]
         }
     },
     "ING-2-018: CHIMIE-CHIMIE VERTE: Energ\u00e9tique": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
-                "chimie-chimie verte  energetique energi"
+                "chimie-chimie verte  energetique     en"
             ],
             "energ[^ ]+ eolien": [
                 "/photovoltaiques  - energies eoliennes  - biocarburants"
@@ -183,7 +663,7 @@
     "ING-2-020: CHIMIE-CHIMIE VERTE: G\u00e9nie chimique 3": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
-                "chimie-chimie verte  genie chimique 3 e"
+                "chimie-chimie verte  genie chimique 3  "
             ]
         }
     },
@@ -197,7 +677,7 @@
     "ING-2-022: CHIMIE-CHIMIE VERTE: Chimie organique": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
-                "chimie-chimie verte  chimie organique t"
+                "chimie-chimie verte  chimie organique  "
             ]
         }
     },
@@ -225,7 +705,7 @@
     "ING-2-031: CONSTRUCTION ENERGIE ET ENVIRONNEMENT: Mat\u00e9riaux de construction": {
         "fr": {
             "[recyclage, environnement]": [
-                "estion des dechets  recyclage   hygrothermie  eta",
+                "estion des dechets  recyclage     hygrothermie  e",
                 "truction energie et environnement  materiaux de const",
                 " en fonction de son environnement et de son utilisati",
                 "mprendre les enjeux environnementaux des materiaux et"
@@ -235,7 +715,7 @@
     "ING-2-045: GEOMETRE: Mat\u00e9riaux de construction": {
         "fr": {
             "[recyclage, environnement]": [
-                "estion des dechets  recyclage   hygrothermie  eta",
+                "estion des dechets  recyclage     hygrothermie  e",
                 " en fonction de son environnement et de son utilisati",
                 "mprendre les enjeux environnementaux des materiaux et"
             ]
@@ -262,17 +742,10 @@
             ]
         }
     },
-    "ING-2-091: CHIMIE-CHIMIE VERTE : Sciences nucl\u00e9aires": {
-        "fr": {
-            "chimie (?:[^ ]+ ){0,4}verte": [
-                "chimie-chimie verte   sciences nucleair"
-            ]
-        }
-    },
     "ING-2-130: ELECTROMECANIQUE (G\u00e9nie \u00e9nerg\u00e9tique et m\u00e9catronique): Energie 1": {
         "fr": {
             "energ[^ ]+ renouvelab[^ ]+": [
-                "ue   energie 1 &gt  energies renouvelables    introduction  en",
+                " energie 1     &gt  energies renouvelables    introduction  en",
                 "olienne        &gt  energies renouvelables       definir et co",
                 "fferentes sources d'energie renouvelable comme le vent  le s",
                 "'une installation d'energies renouvelables de type eolien   re"
@@ -331,7 +804,7 @@
                 "egrer une source de stockage dans un reseau elec"
             ],
             "energ[^ ]+ renouvelab[^ ]+": [
-                "e    energie 2 &gt  energies renouvelables  solar energy   tec",
+                " energie 2     &gt  energies renouvelables  solar energy   tec",
                 "c ou sans sources d'energie renouvelables integrees   simuler",
                 "trique         &gt  energies renouvelables     expliquer les p",
                 "'une installation d'energies renouvelables de type solaire pho",
@@ -371,6 +844,9 @@
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
                 "chimie-chimie verte   gestion environne"
+            ],
+            "ecoresponsab[^ ]+": [
+                " les principes de l'ecoresponsabilite      enoncer  expli"
             ]
         }
     },
@@ -381,16 +857,29 @@
             ]
         }
     },
+    "ING-2-323: BIOCHIMIE BIOPRODUCTION : Gestion environnementale": {
+        "fr": {
+            "ecoresponsab[^ ]+": [
+                " les principes de l'ecoresponsabilite      enoncer  expli"
+            ]
+        }
+    },
     "ING-2-325: CONSTRUCTION ENERGIE ET ENVIRONNEMENT : Gestion environnementale": {
         "fr": {
+            "ecoresponsab[^ ]+": [
+                " les principes de l'ecoresponsabilite       hydrologie   "
+            ],
             "gestion (?:de l'|des )?eaux?": [
-                "ique des batiments  gestion des eaux et dechets dans le ",
+                "ue des batiments    gestion des eaux et dechets dans le ",
                 "s et methodes de la gestion de l'eau et des dechets dura"
             ]
         }
     },
     "ING-2-327: GEOMETRE : Gestion environnementale": {
         "fr": {
+            "ecoresponsab[^ ]+": [
+                " les principes de l'ecoresponsabilite      construction d"
+            ],
             "gestion (?:de l'|des )?eaux?": [
                 "ique des batiments  gestion des eaux et dechets dans le ",
                 "s et methodes de la gestion de l'eau et des dechets dura"
@@ -400,14 +889,14 @@
     "ING-2-350: CHIMIE-CHIMIE VERTE: M\u00e9tallurgie": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
-                "chimie-chimie verte  metallurgie  les p"
+                "chimie-chimie verte  metallurgie      l"
             ]
         }
     },
     "ING-2-351: CHIMIE-CHIMIE VERTE : Laboratoire int\u00e9gr\u00e9": {
         "fr": {
             "[recyclage, environnement]": [
-                "aitement de dechet  recyclage  synthese       ela",
+                "aitement de dechet  recyclage  synthese         e",
                 "ution a un probleme environnemental  traitement de de"
             ],
             "chimie (?:[^ ]+ ){0,4}verte": [
@@ -425,23 +914,22 @@
             ]
         }
     },
-    "SOC-1-014: Economie": {
+    "TIM-1-023: Technologies li\u00e9es \u00e0 l'imagerie m\u00e9dicale partie 7": {
         "fr": {
-            "[economie sociale, transiti[^ ]+ ecolo[^ ]+]": [
-                "es sous-tendent     economie sociale    cette partie du ",
-                " dette publique  la transition ecologique  la securite social",
-                " la fiscalite et la transition ecologique et les inegalites  "
-            ],
-            "transiti[^ ]+ ecolo[^ ]+": [
-                " dette publique  la transition ecologique  la securite social",
-                " la fiscalite et la transition ecologique et les inegalites  "
+            "[electri[^ ]+, stockage]": [
+                "medicale  notions d'electricite et d'electronique  ",
+                "onique    o dipoles electriques   o courant electri",
+                "triques   o courant electrique  o groupes electrog",
+                "on des rx en charge electrique    signal   o les c",
+                "   o parasites radioelectriques   o le rapport sign",
+                "  d'archivage et de stockage des donnees acquise"
             ]
         }
     },
     "TRP-1-019: Logiqtique des entrep\u00f4ts et de la distribution": {
         "fr": {
             "responsabilite environnement[^ ]+": [
-                " l'entrepot dans la responsabilite environnementale  - amelioration de "
+                " l'entrepot dans la responsabilite environnementale    -     ameliorati"
             ]
         }
     }
