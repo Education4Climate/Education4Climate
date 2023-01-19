@@ -5,10 +5,10 @@
   "cycle":"bac",
   "url":"http:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
   "languages":[
-   "en",
    "de",
-   "nl",
-   "fr"
+   "en",
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Bruxelles"
@@ -28,7 +28,9 @@
   "matched_courses":[
    "2BQECO12Q"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":51
  },
  {
   "id":"PI",
@@ -56,7 +58,9 @@
   "matched_courses":[
    "2MCENE2Q"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":29
  },
  {
   "id":"RP",
@@ -88,7 +92,9 @@
   "matched_courses":[
    "2MATHR22Q"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":36
  },
  {
   "id":"ASCEP",
@@ -125,7 +131,9 @@
    "2MCREAU22Q",
    "2MDESTR22Q"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":29
  },
  {
   "id":"ME",
@@ -153,6 +161,8 @@
   "matched_courses":[
    "1MGESTM21Q"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":23
  }
 ]
