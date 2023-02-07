@@ -6,7 +6,8 @@
             "coursesFile": "uclouvain_data_2022_courses.json",
             "programsFile": "uclouvain_data_2022_programs.json",
             "teachersDirectoryUrl": "https://uclouvain.be/fr/repertoires",
-            "type": "university"
+            "type": "university",
+            "languages": ["fr"]
         },
         {
             "name": "Université Libre de Bruxelles",
@@ -14,7 +15,8 @@
             "coursesFile": "ulb_data_2022_courses.json",
             "programsFile": "ulb_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.ulb.be/fr/annuaire",
-            "type": "university"
+            "type": "university",
+            "languages": ["fr"]
         },
         {
             "name": "Université de Liège",
@@ -22,7 +24,8 @@
             "coursesFile": "uliege_data_2022_courses.json",
             "programsFile": "uliege_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.uliege.be/cms/c_9054334/fr/repertoire",
-            "type": "university"
+            "type": "university",
+            "languages": ["fr"]
         },
         {
             "name": "Université de Mons",
@@ -30,7 +33,8 @@
             "coursesFile": "umons_data_2022_courses.json",
             "programsFile": "umons_data_2022_programs.json",
             "teachersDirectoryUrl": "https://gestadm.umons.ac.be/webappspub/annuaire/public/reppublic",
-            "type": "university"
+            "type": "university",
+            "languages": ["fr"]
         },
         {
             "name": "Université de Namur",
@@ -38,7 +42,8 @@
             "coursesFile": "unamur_data_2022_courses.json",
             "programsFile": "unamur_data_2022_programs.json",
             "teachersDirectoryUrl": "https://directory.unamur.be/staff",
-            "type": "university"
+            "type": "university",
+            "languages": ["fr"]
         },
         {
             "name": "Katholieke Universiteit Leuven",
@@ -46,7 +51,8 @@
             "coursesFile": "kuleuven_data_2022_courses.json",
             "programsFile": "kuleuven_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.kuleuven.be/wieiswie/nl/person/search",
-            "type": "university"
+            "type": "university",
+            "languages": ["nl"]
         },
         {
             "name": "Vrije Universiteit Brussel",
@@ -54,7 +60,8 @@
             "coursesFile": "vub_data_2022_courses.json",
             "programsFile": "vub_data_2022_programs.json",
             "teachersDirectoryUrl": "https://researchportal.vub.be/nl/persons",
-            "type": "university"
+            "type": "university",
+            "languages": ["nl"]
         },
         {
             "name": "Université Saint-Louis - Bruxelles",
@@ -62,7 +69,8 @@
             "coursesFile": "uslb_data_2022_courses.json",
             "programsFile": "uslb_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.usaintlouis.be/sl/621.html",
-            "type": "university"
+            "type": "university",
+            "languages": ["fr"]            
         },
         {
             "name": "Universiteit Hasselt",
@@ -70,7 +78,8 @@
             "coursesFile": "uhasselt_data_2022_courses.json",
             "programsFile": "uhasselt_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.uhasselt.be/WieisWie",
-            "type": "university"
+            "type": "university",
+            "languages": ["nl"]
         },
         {
             "name": "Universiteit Antwerpen",
@@ -78,7 +87,8 @@
             "coursesFile": "uantwerpen_data_2022_courses.json",
             "programsFile": "uantwerpen_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.uantwerpen.be/nl/personeel",
-            "type": "university"
+            "type": "university",
+            "languages": ["nl"]
         },
         {
             "name": "Universiteit Gent",
@@ -86,7 +96,8 @@
             "coursesFile": "ugent_data_2022_courses.json",
             "programsFile": "ugent_data_2022_programs.json",
             "teachersDirectoryUrl": "https://telefoonboek.ugent.be",
-            "type": "university"
+            "type": "university",
+            "languages": ["nl"]
         },
         {
             "name": "Arteveldehogeschool Gent",
@@ -94,7 +105,8 @@
             "coursesFile": "artevelde_data_2022_courses.json",
             "programsFile": "artevelde_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.artevelde-uas.be/chat",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         },
         {
             "name": "École centrale des arts et métiers de Bruxelles",
@@ -102,7 +114,8 @@
             "coursesFile": "ecam_data_2022_courses.json",
             "programsFile": "ecam_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.ecam.be/annuaire",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École Galilée (ECSEDI-ISALT)",
@@ -110,7 +123,8 @@
             "coursesFile": "ecsedi-isalt_data_2022_courses.json",
             "programsFile": "ecsedi-isalt_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.ecsedi-isalt.be/propos-de-l-ecsedi-isalt/contact-et-localisation",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Erasmushogeschool Brussel",
@@ -118,7 +132,8 @@
             "coursesFile": "ehb_data_2022_courses.json",
             "programsFile": "ehb_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.erasmushogeschool.be/nl/contact",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         },
         {
             "name": "Haute École Francisco Ferrer",
@@ -126,7 +141,8 @@
             "coursesFile": "he-ferrer_data_2022_courses.json",
             "programsFile": "he-ferrer_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.he-ferrer.eu/contact",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École Albert Jacquard",
@@ -134,7 +150,8 @@
             "coursesFile": "heaj_data_2022_courses.json",
             "programsFile": "heaj_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École Charlemagne",
@@ -142,7 +159,8 @@
             "coursesFile": "hech_data_2022_courses.json",
             "programsFile": "hech_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École de la Ville de Liège",
@@ -150,7 +168,8 @@
             "coursesFile": "hel_data_2022_courses.json",
             "programsFile": "hel_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute Ecole Lucia de Brouckère",
@@ -158,7 +177,8 @@
             "coursesFile": "heldb_data_2022_courses.json",
             "programsFile": "heldb_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute Ecole Libre Mosane",
@@ -166,7 +186,8 @@
             "coursesFile": "helmo_data_2022_courses.json",
             "programsFile": "helmo_data_2022_programs.json",
             "teachersDirectoryUrl": "https://www.helmo.be/Outils/Repertoire-unconnected.aspx",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École de la Province de Liège",
@@ -174,7 +195,8 @@
             "coursesFile": "hepl_data_2022_courses.json",
             "programsFile": "hepl_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École de Namur-Liège-Luxembourg",
@@ -182,7 +204,8 @@
             "coursesFile": "henallux_data_2022_courses.json",
             "programsFile": "henallux_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École Robert Schuman",
@@ -190,7 +213,8 @@
             "coursesFile": "hers_data_2022_courses.json",
             "programsFile": "hers_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Hogeschool Gent",
@@ -198,7 +222,8 @@
             "coursesFile": "hogent_data_2022_courses.json",
             "programsFile": "hogent_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         },
         {
             "name": "Hogeschool West-Vlaanderen",
@@ -206,7 +231,8 @@
             "coursesFile": "howest_data_2022_courses.json",
             "programsFile": "howest_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         },
         {
             "name": "Institut catholique des hautes études commerciales",
@@ -214,7 +240,8 @@
             "coursesFile": "ichec_data_2022_courses.json",
             "programsFile": "ichec_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Institut des Hautes Études des Communications Sociales",
@@ -222,7 +249,8 @@
             "coursesFile": "ihecs_data_2022_courses.json",
             "programsFile": "ihecs_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École Galilée (ISPG)",
@@ -230,7 +258,8 @@
             "coursesFile": "ispg_data_2022_courses.json",
             "programsFile": "ispg_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Haute École Galilée (ISSIG)",
@@ -238,7 +267,8 @@
             "coursesFile": "issig_data_2022_courses.json",
             "programsFile": "issig_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Odisee",
@@ -246,7 +276,8 @@
             "coursesFile": "odisee_data_2022_courses.json",
             "programsFile": "odisee_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         },
         {
             "name": "Thomas More hogeschool",
@@ -254,7 +285,8 @@
             "coursesFile": "thomasmore_data_2022_courses.json",
             "programsFile": "thomasmore_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         },
         {
             "name": "University Colleges Leuven-Limburg",
@@ -262,7 +294,8 @@
             "coursesFile": "ucll_data_2022_courses.json",
             "programsFile": "ucll_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         },
         {
             "name": "Haute École Léonard de VINCI",
@@ -270,7 +303,8 @@
             "coursesFile": "vinci_data_2022_courses.json",
             "programsFile": "vinci_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["fr"]
         },
         {
             "name": "Hogeschool VIVES",
@@ -278,7 +312,8 @@
             "coursesFile": "vives_data_2022_courses.json",
             "programsFile": "vives_data_2022_programs.json",
             "teachersDirectoryUrl": "",
-            "type": "highschool"
+            "type": "highschool",
+            "languages": ["nl"]
         }
     ]
 }
