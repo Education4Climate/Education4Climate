@@ -5,11 +5,11 @@
   "cycle":"bac",
   "url":"https:\/\/helue.azurewebsites.net\/ListingPub",
   "languages":[
+   "de",
    "en",
    "es",
-   "nl",
-   "de",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
 
@@ -30,7 +30,9 @@
   "matched_courses":[
    "SG321"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":72
  },
  {
   "id":"3-2",
@@ -65,7 +67,9 @@
    "AV312",
    "AV313"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":4,
+  "nb_total_courses":13
  },
  {
   "id":"3-5",
@@ -93,7 +97,9 @@
   "matched_courses":[
    "CA225"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":36
  },
  {
   "id":"3-6",
@@ -136,7 +142,9 @@
    "CE307",
    "CE310"
   ],
-  "nb_dedicated_courses":5
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":8,
+  "nb_total_courses":32
  },
  {
   "id":"3-8",
@@ -181,6 +189,8 @@
    "EA302",
    "EA306"
   ],
-  "nb_dedicated_courses":4
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":12,
+  "nb_total_courses":47
  }
 ]

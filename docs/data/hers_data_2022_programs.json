@@ -5,11 +5,11 @@
   "cycle":"bac",
   "url":"http:\/\/progcours.hers.be\/cocoon\/programmes\/E1TOFC01_C.html",
   "languages":[
-   "fr",
-   "nl",
-   "es",
    "de",
-   "en"
+   "en",
+   "es",
+   "fr",
+   "nl"
   ],
   "campuses":[
 
@@ -41,7 +41,9 @@
    "TDEH0002-1",
    "TDER0001-1"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":5,
+  "nb_total_courses":68
  },
  {
   "id":"TMBATI00",
@@ -74,7 +76,9 @@
    "ACVC0001-1",
    "ENER0005-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":24
  },
  {
   "id":"T1GECH01",
@@ -111,7 +115,9 @@
    "CONS0026-2",
    "GEST3751-2"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":4,
+  "nb_total_courses":19
  },
  {
   "id":"T1ININ01",
@@ -145,7 +151,9 @@
    "GEST3759-1",
    "TECH0769-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":38
  },
  {
   "id":"T1PSIE01",
@@ -182,7 +190,9 @@
    "SCAP0002-1",
    "SCEN0002-2"
   ],
-  "nb_dedicated_courses":3
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
+  "nb_total_courses":35
  },
  {
   "id":"T1INFC01",
@@ -213,7 +223,9 @@
    "ELEC0456-3",
    "ENVI0830-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":52
  },
  {
   "id":"T1CHFC01",
@@ -249,7 +261,9 @@
    "ECOL0003-1",
    "ENVI0833-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":5,
+  "nb_total_courses":33
  },
  {
   "id":"T1ELFC01",
@@ -285,7 +299,9 @@
    "ENVI0829-2",
    "MATE0001-1"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":29
  },
  {
   "id":"T1COFC01",
@@ -323,7 +339,9 @@
    "SPEC0003-1",
    "SPEC0005-2"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":39
  },
  {
   "id":"E1ADIR01",
@@ -352,7 +370,9 @@
   "matched_courses":[
    "ADAA0002-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":86
  },
  {
   "id":"E1COFC01",
@@ -380,7 +400,9 @@
   "matched_courses":[
    "COAP0001-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":60
  },
  {
   "id":"E1INFO01",
@@ -409,7 +431,9 @@
   "matched_courses":[
    "INBB0001-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":53
  },
  {
   "id":"P1AESC01",
@@ -438,7 +462,9 @@
    "SCET0001-2",
    "SCEU0003-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":27
  },
  {
   "id":"P1PRSC01",
@@ -466,7 +492,9 @@
   "matched_courses":[
    "PSAC0002-1"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":29
  },
  {
   "id":"P1PRIM01",
@@ -494,6 +522,8 @@
   "matched_courses":[
    "PRBF0002-2"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":32
  }
 ]

@@ -5,9 +5,9 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/management-logistique",
   "languages":[
-   "nl",
    "es",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Campus 2000 - Jemeppe"
@@ -28,7 +28,9 @@
   "matched_courses":[
    "TRP-1-019"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":25
  },
  {
   "id":"agronomie-techniques-gestion-agricoles",
@@ -61,7 +63,9 @@
    "AGR-1-085",
    "AGR-1-092"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":37
  },
  {
   "id":"agronomie-foret-nature",
@@ -100,7 +104,9 @@
    "AGR-1-058",
    "AGR-1-105"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":7,
+  "nb_total_courses":37
  },
  {
   "id":"agronomie-environnement",
@@ -146,7 +152,9 @@
    "AGR-1-073",
    "AGR-1-076"
   ],
-  "nb_dedicated_courses":9
+  "nb_dedicated_courses":9,
+  "nb_matched_courses":10,
+  "nb_total_courses":38
  },
  {
   "id":"agronomie-agro-industries-biotechnologies",
@@ -188,7 +196,9 @@
    "AGR-1-113",
    "AGR-1-117"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":8,
+  "nb_total_courses":66
  },
  {
   "id":"sage-femme",
@@ -216,7 +226,9 @@
   "matched_courses":[
    "SF-1-049"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":59
  },
  {
   "id":"technologue-en-imagerie-medicale",
@@ -244,7 +256,9 @@
   "matched_courses":[
    "TIM-1-023"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":46
  },
  {
   "id":"dietetique",
@@ -273,7 +287,9 @@
   "matched_courses":[
    "DIET-1-017"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":25
  },
  {
   "id":"informatique-gestion",
@@ -304,7 +320,9 @@
   "matched_courses":[
    "INF-1-003"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":29
  },
  {
   "id":"communication",
@@ -312,9 +330,9 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/communication",
   "languages":[
-   "nl",
    "en",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Campus 2000 - Jemeppe"
@@ -334,7 +352,9 @@
   "matched_courses":[
    "COM-1-024"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":44
  },
  {
   "id":"bibliothecaire-documentaliste",
@@ -342,9 +362,9 @@
   "cycle":"bac",
   "url":"https:\/\/www.hepl.be\/fr\/bibliothecaire-documentaliste",
   "languages":[
-   "nl",
    "en",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Campus 2000 - Jemeppe"
@@ -364,7 +384,9 @@
   "matched_courses":[
    "BIB-1-005"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":30
  },
  {
   "id":"master-ingenieur-industriel-geometre",
@@ -399,7 +421,9 @@
    "ING-2-048",
    "ING-2-327"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":29
  },
  {
   "id":"master-ingenieur-industriel-electromecanique-genie-energetique-mecatronique",
@@ -434,7 +458,9 @@
    "ING-2-168",
    "ING-2-170"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
+  "nb_total_courses":26
  },
  {
   "id":"master-ingenieur-industriel-electromecanique-genie-mecanique-aerotechnique",
@@ -465,7 +491,9 @@
   "matched_courses":[
    "ING-2-168"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":27
  },
  {
   "id":"master-ingenieur-industriel-construction-energie-environnement",
@@ -499,7 +527,9 @@
    "ING-2-031",
    "ING-2-325"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
+  "nb_total_courses":25
  },
  {
   "id":"master-ingenieur-industriel-chimie-verte",
@@ -551,7 +581,9 @@
    "ING-2-350",
    "ING-2-351"
   ],
-  "nb_dedicated_courses":2
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":20,
+  "nb_total_courses":24
  },
  {
   "id":"master-ingenieur-industriel-ingenieur-industriel-biochimie-bioproduction",
@@ -580,7 +612,9 @@
   "matched_courses":[
    "ING-2-323"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":26
  },
  {
   "id":"master-facility-management",
@@ -588,9 +622,9 @@
   "cycle":"master",
   "url":"https:\/\/www.hepl.be\/fr\/master-facility-management",
   "languages":[
-   "nl",
    "en",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Campus 2000 - Jemeppe"
@@ -613,7 +647,9 @@
   "matched_courses":[
    "FACMAN-2-011"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":18
  },
  {
   "id":"construction",
@@ -649,7 +685,9 @@
    "CON-1-044",
    "CON-1-070"
   ],
-  "nb_dedicated_courses":1
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":83
  },
  {
   "id":"chimie-biotechnologie",
@@ -684,7 +722,9 @@
    "CHI-1-077",
    "CHI-1-079"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":43
  },
  {
   "id":"chimie-biochimie",
@@ -714,6 +754,8 @@
   "matched_courses":[
    "CHI-1-074"
   ],
-  "nb_dedicated_courses":0
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":38
  }
 ]
