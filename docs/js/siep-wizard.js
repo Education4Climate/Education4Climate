@@ -343,6 +343,16 @@ var app = Vue.createApp({
 
                     this.sendingEmail = false; // On dit à l'écran qu'on est plus occupé
                 });
+        },
+        share () {
+
+            const options = {
+                title: "Education 4 Climate",
+                text: "Tu es un des futurs acteurs de demain, les études que tu choisiras peuvent avoir un impact significatif sur le changement climatique et la transition vers une société neutre en CO2",
+                url: document.location.href
+              }
+
+            navigator.share(options);
         }
     }
 });
