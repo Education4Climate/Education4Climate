@@ -42,7 +42,7 @@
 
         </header>
 
-        <div class="wizard-step home" v-show="currentStep == 0">
+        <div class="wizard-step home" v-if="currentStep == 0">
 
             <div class="main">
 
@@ -66,13 +66,13 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.nextStep()">C'est parti!</button>
+                <button @click="this.nextStep()" v-if="dataLoaded">C'est parti!</button>
 
             </footer>
 
         </div>
 
-        <div class="wizard-step filter-fields" v-show="currentStep == 1">
+        <div class="wizard-step filter-fields" v-if="currentStep == 1">
 
             <div class="main" style="text-align: left;">
 
@@ -106,7 +106,7 @@
 
         </div>
 
-        <div class="wizard-step filter-school-and-cycle" v-show="currentStep == 2">
+        <div class="wizard-step filter-school-and-cycle" v-if="currentStep == 2">
 
             <div class="main" style="margin-left: 0.5rem; margin-right: 0.5rem;">
 
@@ -271,7 +271,7 @@
 
         </div>
 
-        <div class="wizard-step results" v-show="currentStep == 4">
+        <div class="wizard-step results" v-if="currentStep == 4">
 
             <div class="main" style="align-items: flex-start; justify-content: flex-start;">
                 <h1 style="margin-bottom: 10px;">Tes futures études?</h1>
@@ -308,13 +308,11 @@
                 this.schools[this.selectedProgram.schoolId] ?
                 this.schools[this.selectedProgram.schoolId].name : "" }}</h2>
 
-            <div class="region" v-for="region in this.schools[this.selectedProgram.schoolId].regions"
+            <div class="region" v-if="dataLoaded" v-for="region in this.schools[this.selectedProgram.schoolId].regions"
                 style="align-self: flex-start;">
                 <img class="icon location">
                 <h3>{{ translate("regions." + region, true) }}</h3>
             </div>
-
-
 
             <div class="main">
 
@@ -399,7 +397,8 @@
                 <div class="share">
                     <button class="secondary"><img src="./img/instagram-green.svg">Retrouve-nous sur Instagram</button>
 
-                    <button class="secondary" @click="this.share()"><img src="./img/share-green.svg">Partage cet outil</button>
+                    <button class="secondary" @click="this.share()"><img src="./img/share-green.svg">Partage cet
+                        outil</button>
                 </div>
 
             </div>
