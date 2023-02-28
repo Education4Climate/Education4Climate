@@ -191,6 +191,15 @@
             "regions": ["hainaut"]								
         },        
         {
+            "name": "Haute École en Hainaut",
+            "shortName": "HEH",
+            "coursesFile": "heh_data_2022_courses.json",
+            "programsFile": "heh_data_2022_programs.json",
+            "teachersDirectoryUrl": "",
+            "type": "highschool",
+            "languages": ["fr"]
+        },
+        {
             "name": "Haute École de la Ville de Liège",
             "shortName": "HEL",
             "coursesFile": "hel_data_2022_courses.json",
