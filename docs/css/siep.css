@@ -1,0 +1,388 @@
+/* General */
+
+.siep-wizard {
+    background-color: var(--background-primary-color);
+    color: var(--font-color);
+    font-size: 16px;
+    text-align: center;
+}
+
+.siep-wizard #app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+/* General Fonts */
+
+.siep-wizard h1 {
+    color: var(--font-color);
+    font-size: 23px;
+    line-height: 25px;
+    margin-bottom: 0.5rem;
+}
+
+.siep-wizard h2 {
+    color: var(--accent-color);
+    font-size: 17px;
+    line-height: 19px;
+    margin-bottom: 0.5rem;
+}
+
+.siep-wizard h3 {
+    color: var(--super-accent-color);
+    font-size: 12px;
+}
+
+/* Icons */
+
+.icon.location {
+    content: url(/img/location-pink.svg);
+}
+
+/* Header */
+
+.siep-wizard header {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.siep-wizard header * {
+    font-size: 14px;
+    font-weight: 700;
+    display: inline;
+    vertical-align: middle;
+}
+
+/* Footer */
+
+.siep-wizard footer {
+    box-shadow: unset;
+    background-color: unset;
+}
+
+/* Buttons */
+
+.siep-wizard button {
+    background-color: var(--accent-color);
+    color: var(--night-blue);
+    border-radius: 50px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem;
+    min-width: 40%;
+    border: 0;
+    white-space: nowrap;
+    min-height: 40px;
+}
+
+.siep-wizard button.field {
+    min-width: unset;
+    padding: 0.5rem;
+}
+
+.siep-wizard button.secondary {
+    background-color: unset;
+    color: var(--accent-color);
+}
+
+/* Wizard Progress Dots */
+
+.siep-wizard .progress {
+    justify-content: center;
+    background-color: unset;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.siep-wizard .progress .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1.5px solid var(--font-color);
+    display: inline-block;
+    margin: 0 5px 0 5px;
+}
+
+.siep-wizard .progress .dot.current {
+    background-color: var(--font-color);
+}
+
+/* Chart */
+
+.chartjs-container {
+    width: 25vh;
+}
+
+.siep-wizard .legend {
+    margin-top: 2rem;
+}
+
+.siep-wizard .legend-color {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+/* Results list */
+
+.siep-wizard .results .main {
+    margin-top: 1rem;
+}
+
+.siep-wizard .result-item {
+    text-align: left;
+    border: 2px solid var(--accent-color);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.siep-wizard .result-item h2 {
+    font-size: 15px;
+}
+
+.siep-wizard .result-item h3 {
+    color: var(--font-color);
+    font-size: 18px;
+    line-height: 20px;
+}
+
+/* Switches */
+
+.switch {
+    width: 70px;
+    height: 34px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.switch.off {
+    background: #dc4b78;
+    transition: background 0.4s;
+}
+
+.switch.on {
+    background: #4bd2af;
+    transition: background 0.4s;
+}
+
+.switch > div {
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.switch.off > div {
+    top: 2px;
+    left: 2px;
+    transition: left 0.4s;
+}
+
+.switch.on > div {
+    top: 2px;
+    left: 38px;
+    transition: left 0.4s;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 100%;
+}
+
+.switch-container h2 {
+    color: var(--font-color);
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 34px;
+}
+
+/* Screen 4 : Program details */
+
+.siep-wizard .program-details .region {
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    margin-bottom: 0.2rem;
+}
+
+.siep-wizard .program-details .region .icon.location {
+    height: 25px;
+    margin-right: 0.3rem;
+    margin-left: -3px;
+}
+
+/* Autre */
+
+.siep-wizard .wizard-step {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.siep-wizard .wizard-step .main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.siep-wizard .wizard-step.email .main {
+    justify-content: space-evenly;
+}
+
+.siep-wizard .home .main img {
+    flex: 0.6;
+    width: 130px;
+    margin-left: -25px;
+    margin-bottom: 20px;
+}
+
+.siep-wizard .main .intro {
+    width: 80vw;
+}
+
+.siep-wizard button.field {
+    background-color: unset;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    width: auto;
+    font-size: 14px;
+    padding: 0.3rem 1rem 0.3rem 1 rem;
+    margin: 0.4rem;
+    text-transform: lowercase;
+}
+
+.siep-wizard button.field.selected {
+    background-color: var(--accent-color);
+    color: var(--night-blue);
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* Media Queries */
+
+@media (orientation: landscape) {
+    .siep-wizard .wizard-step {
+        width: 30%;
+        margin: auto;
+    }
+
+    .siep-wizard .main img {
+        width: 30%;
+    }
+}
+
+.main.belgium {
+    justify-content: top;
+}
+
+.svg-container {
+    display: inline-block;
+    width: 65%;
+    vertical-align: middle;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.svg-content {
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+}
+
+a[target="_blank"]:after {
+    content: "";
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 4px;
+    background-image: url(/img/external-link-green.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+button.loading {
+    background-color: unset;
+}
+
+.share img {
+    display: inline;
+    padding-right: 5px;
+    vertical-align: bottom;
+}
+
+button.loading::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.main h1 {
+    margin-bottom: 20px;
+}
+
+.wizard-step .intro {
+    text-align: left;
+}
+
+.wizard-step .intro h1 {
+    margin-bottom: 20px;
+}
+
+.wizard-step .intro p {
+    margin-bottom: 15px;
+}
+
+.switch-container.subtitle h2 {
+    line-height: 20px;
+    text-align: left;
+}
+
+.switch-container.subtitle h2 div {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 600;
+    color: #4bd2af;
+}
