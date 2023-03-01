@@ -36,7 +36,7 @@
 
         <header>
 
-            <img src="./img/University-green.svg" alt="Logo" id="logo">
+            <img src="./img/University-green.svg" alt="Logo" id="logo" width="27" height="27">
             <div>EDUCATION 4</div>
             <div class="accent">&nbsp;CLIMATE</div>
 
@@ -47,7 +47,7 @@
             <div class="main">
 
                 <div class="intro">
-                    <img src="./img/University-green.svg">
+                    <img src="./img/University-green.svg" alt="Le logo en plus grand" width="130" height="130">
                     <h1>Hey toi!</h1>
                     <p>Tu es un des futurs acteurs de demain, les études que tu choisiras peuvent avoir un impact
                         significatif sur le changement climatique et la transition vers une société neutre en
@@ -310,7 +310,7 @@
 
             <div class="region" v-if="dataLoaded" v-for="region in this.schools[this.selectedProgram.schoolId].regions"
                 style="align-self: flex-start;">
-                <img class="icon location">
+                <img class="icon location" alt="Localisation" width="25" height="25">
                 <h3>{{ translate("regions." + region, true) }}</h3>
             </div>
 
@@ -395,9 +395,9 @@
                 </form>
 
                 <div class="share">
-                    <button class="secondary"><img src="./img/instagram-green.svg">Retrouve-nous sur Instagram</button>
+                    <button class="secondary"><img src="./img/instagram-green.svg" alt="Logo Instagram" width="25" height="25">Retrouve-nous sur Instagram</button>
 
-                    <button class="secondary" @click="this.share()"><img src="./img/share-green.svg">Partage cet
+                    <button class="secondary" @click="this.share()"><img src="./img/share-green.svg" alt="Icône partage" width="25" height="25">Partage cet
                         outil</button>
                 </div>
 
@@ -415,8 +415,8 @@
 
     <script src="js/vue.global.prod.js"></script>
     <script type="module" src="js/siep-wizard.js"></script>
-    <script src="js/chart.js"></script>
     <script src="js/swiped-events.min.js"></script>
+    <script async src="js/chart.js"></script>
 </body>
 
 </html>
