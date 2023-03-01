@@ -171,6 +171,8 @@ var app = Vue.createApp({
 
         try {
 
+            if (!document.getElementById('googleAnalytics')) this.addGoogleAnalyticsScript();
+
             this.setTheme("dark");
 
             // loads schools data
