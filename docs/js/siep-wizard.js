@@ -209,6 +209,8 @@ var app = Vue.createApp({
     watch: {
         currentStep(value) {
 
+            window.scrollTo(0, 0);
+
             if (value == 5) {
 
                 this.showChart();

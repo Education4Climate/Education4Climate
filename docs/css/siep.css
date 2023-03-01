@@ -110,9 +110,9 @@
 
 /* Chart */
 
-.chartjs-container {
+/* .chartjs-container {
     width: 25vh;
-}
+} */
 
 .siep-wizard .legend {
     margin-top: 2rem;
@@ -278,10 +278,6 @@
     .siep-wizard .wizard-step {
         width: 30%;
         margin: auto;
-    }
-
-    .siep-wizard .main img {
-        width: 30%;
     }
 }
 
