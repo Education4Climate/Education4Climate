@@ -54,7 +54,7 @@ if __name__ == '__main__':
     courses_df = courses_df.drop_duplicates(subset='id')
     courses_df = courses_df.set_index("id").sort_index()
     courses_df["year"] = f"{YEAR}-{int(YEAR) + 1}"
-    courses_df["languages"] = [[]]*len(courses_df)
+    courses_df["languages"] = [["fr"]]*len(courses_df)
     courses_df["teachers"] = [[]]*len(courses_df)
     courses_df["goal"] = ""
     courses_df["activity"] = ""
