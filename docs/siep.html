@@ -66,7 +66,7 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.nextStep()" v-if="dataLoaded">C'est parti!</button>
+                <button @click="this.nextStep()" :class="{ invisible: !dataLoaded }">C'est parti!</button>
 
             </footer>
 
