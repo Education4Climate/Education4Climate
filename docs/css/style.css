@@ -122,8 +122,12 @@ a {
     color: var(--link-color);
 }
 
-.accent {
+.accent, .accent-color {
     color: var(--accent-color);
+}
+
+.super-accent-color {
+    color: var(--super-accent-color);
 }
 
 hr {

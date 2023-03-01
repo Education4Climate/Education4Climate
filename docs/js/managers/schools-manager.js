@@ -15,7 +15,7 @@ class SchoolsManager {
      * @returns a cached array of all the schools where every index
      * is also the school ID.
      */
-    async getSchools() {
+    async getSchools(languages) {
 
         if (!sessionStorage.schools) {
 
@@ -25,17 +25,21 @@ class SchoolsManager {
                 .then(response => response.json())
                 .then(data => {
 
-                    data.schools.forEach((school, i) => {
+                    data.schools.forEach((school) => {
 
-                        schools.push({
-                            id: i,
-                            name: school.name,
-                            shortName: school.shortName,
-                            coursesFile: school.coursesFile,
-                            programsFile: school.programsFile,
-                            teachersDirectoryUrl: school.teachersDirectoryUrl,
-                            type: school.type
-                        });
+                        if (!languages || school.languages.filter(item => languages.includes(item)).length > 0) {
+
+                            schools.push({
+                                id: schools.length,
+                                name: school.name,
+                                shortName: school.shortName,
+                                coursesFile: school.coursesFile,
+                                programsFile: school.programsFile,
+                                teachersDirectoryUrl: school.teachersDirectoryUrl,
+                                type: school.type,
+                                regions: school.regions
+                            });
+                        }
                     });
                 });
 
