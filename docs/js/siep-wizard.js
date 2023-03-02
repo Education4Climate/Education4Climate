@@ -177,11 +177,13 @@ var app = Vue.createApp({
 
             // loads schools data
 
-            this.schools = await this.schoolsManager.getSchools(["fr"]);
+            this.schools = await this.schoolsManager.getSchools();
 
             // loads programs data
 
-            this.programs = await this.programsManager.getPrograms();
+            this.programs = await this.programsManager.getPrograms(this.schools);
+            // Pour le SIEP on ne garde que les programmes des cours des écoles francophones, on filtre maintenant pour alléger les filtres
+            this.programs = this.programs.filter(program => this.schools.filter(school => school.languages.includes("fr") && school.id == program.schoolId).length == 1); 
 
             this.fields = (await this.programsManager.getProgramsFields()).filter(field => field.name != "Other");
             this.cycles = await this.programsManager.getProgramsCycles();

@@ -37,7 +37,8 @@ class SchoolsManager {
                                 programsFile: school.programsFile,
                                 teachersDirectoryUrl: school.teachersDirectoryUrl,
                                 type: school.type,
-                                regions: school.regions
+                                regions: school.regions,
+                                languages: school.languages
                             });
                         }
                     });
