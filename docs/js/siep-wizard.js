@@ -177,11 +177,13 @@ var app = Vue.createApp({
 
             // loads schools data
 
-            this.schools = await this.schoolsManager.getSchools(["fr"]);
+            this.schools = await this.schoolsManager.getSchools();
 
             // loads programs data
 
-            this.programs = await this.programsManager.getPrograms();
+            this.programs = await this.programsManager.getPrograms(this.schools);
+            // Pour le SIEP on ne garde que les programmes des cours des écoles francophones, on filtre maintenant pour alléger les filtres
+            this.programs = this.programs.filter(program => this.schools.filter(school => school.languages.includes("fr") && school.id == program.schoolId).length == 1);
 
             this.fields = (await this.programsManager.getProgramsFields()).filter(field => field.name != "Other");
             this.cycles = await this.programsManager.getProgramsCycles();
@@ -289,7 +291,7 @@ var app = Vue.createApp({
                 // Sur les autres pages on vérifie qu'il y aura au moins un résultat
                 case 1: this.currentStep = this.selectedFields.length > 0 ? this.currentStep + 1 : this.currentStep; break;
                 case 2: this.currentStep = (this.highschoolIsSelected || this.universitieIsSelected) && (this.bacIsSelected || this.masterIsSelected) ? this.currentStep + 1 : this.currentStep; break;
-                case 3: this.currentStep = this.selectedRegions.filter(item => this.availableRegions.includes(item)).length > 0 ? this.currentStep + 1 : this.currentStep; break
+                case 3: this.currentStep = this.selectedRegions.filter(item => this.availableRegions.includes(item)).length > 0 ? this.currentStep + 1 : this.currentStep; break;
             }
         },
         previousStep(event) {
@@ -348,15 +350,39 @@ var app = Vue.createApp({
                     this.sendingEmail = false; // On dit à l'écran qu'on est plus occupé
                 });
         },
-        share () {
+        share() {
 
             const options = {
                 title: "Education 4 Climate",
                 text: "Tu es un des futurs acteurs de demain, les études que tu choisiras peuvent avoir un impact significatif sur le changement climatique et la transition vers une société neutre en CO2",
                 url: document.location.href
-              }
+            };
+
+            if (dataLayer) {
+                dataLayer.push("event", "share", {});
+            }
 
             navigator.share(options);
+        },
+        async sendAnalytics() {
+
+            if (dataLayer) {
+
+                var wizardCycles = [];
+                var wizardSchoolTypes = [];
+
+                if (this.bacIsSelected) wizardCycles.push("bac");
+                if (this.masterIsSelected) wizardCycles.push("master");
+                if (this.highschoolIsSelected) wizardSchoolTypes.push("highschool");
+                if (this.universitieIsSelected) wizardSchoolTypes.push("university");
+
+                dataLayer.push({
+                    'wizardFields': this.selectedFields.map(field => this.fields[field].name),
+                    'wizardRegions':this.selectedRegions.filter(region => this.availableRegions.includes(region)),
+                    'wizardCycles': wizardCycles,
+                    'wizardSchoolTypes':wizardSchoolTypes
+                });
+            }
         }
     }
 });
