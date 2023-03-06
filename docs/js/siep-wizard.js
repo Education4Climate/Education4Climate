@@ -377,6 +377,7 @@ var app = Vue.createApp({
                 if (this.universitieIsSelected) wizardSchoolTypes.push("university");
 
                 dataLayer.push({
+                    'event': 'wizardSearch',
                     'wizardFields': this.selectedFields.map(field => this.fields[field].name),
                     'wizardRegions':this.selectedRegions.filter(region => this.availableRegions.includes(region)),
                     'wizardCycles': wizardCycles,
