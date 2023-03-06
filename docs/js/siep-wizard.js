@@ -160,7 +160,7 @@ var app = Vue.createApp({
 
             if (this.sortedPrograms.length == 1) {
 
-                return tag + this.sortedPrograms.length + " formation</strong> correspond à ta sélection"
+                return tag + this.sortedPrograms.length + " formation</strong> correspond à ta sélection";
             }
 
             return tag + this.sortedPrograms.length + " formations</strong> correspondent à ta sélection";
@@ -279,7 +279,7 @@ var app = Vue.createApp({
             }
             else {
                 // Sinon on l'y ajoute
-                this.selectedRegions.push(region)
+                this.selectedRegions.push(region);
             }
         },
         nextStep(event) {
@@ -333,7 +333,7 @@ var app = Vue.createApp({
                 redirect: 'follow'
             };
 
-            fetch("https://httpbin.org/post", requestOptions)
+            fetch("https://script.google.com/macros/s/AKfycbxWF4IAssBIE5p_wayVj9Zr110YJao4mAENWy-sHuzYRiZJWM2tWjrdvrm7BHV7VK1GNQ/exec", requestOptions)
                 .then(response => response.text())
                 .then(result => {
 
