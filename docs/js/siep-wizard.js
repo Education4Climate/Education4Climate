@@ -292,7 +292,7 @@ var app = Vue.createApp({
                 // Sur les autres pages on vérifie qu'il y aura au moins un résultat
                 case 1: this.currentStep = this.selectedFields.length > 0 ? this.currentStep + 1 : this.currentStep; break;
                 case 2: this.currentStep = (this.highschoolIsSelected || this.universitieIsSelected) && (this.bacIsSelected || this.masterIsSelected) ? this.currentStep + 1 : this.currentStep; break;
-                case 3: this.currentStep = this.selectedRegions.filter(item => this.availableRegions.includes(item)).length > 0 ? this.currentStep + 1 : this.currentStep; break;
+                case 3: this.currentStep = this.selectedRegions.filter(item => this.availableRegions.includes(item)).length > 0 ? this.currentStep + 1 : this.currentStep; this.sendAnalytics(); break;
             }
         },
         previousStep(event) {
