@@ -185,7 +185,8 @@ var app = Vue.createApp({
             // Pour le SIEP on ne garde que les programmes des cours des écoles francophones, on filtre maintenant pour alléger les filtres
             this.programs = this.programs.filter(program => this.schools.filter(school => school.languages.includes("fr") && school.id == program.schoolId).length == 1);
 
-            this.fields = (await this.programsManager.getProgramsFields()).filter(field => field.name != "Other");
+            this.fields = (await this.programsManager.getProgramsFields()).filter(field => field.name != "Other").sort((a, b) => a.name.localeCompare(b.name));
+
             this.cycles = await this.programsManager.getProgramsCycles();
             this.languages = await this.programsManager.getProgramsLanguages();
 
@@ -314,26 +315,24 @@ var app = Vue.createApp({
 
             return !count ? "aucun cours" : count + " cours";
         },
-        async submitEmail(e) {
+        async sendEmail() {
 
             // On remet à zéro l'écran
             this.sendingEmail = false;
             this.mailSuccessfullySent = false;
 
-            if (!this.$refs.emailForm.email.value) {
-
-                return;
-            }
+            if (!this.$refs.emailForm.email.value) return;
 
             this.sendingEmail = true; // On dit à l'écran qu'on est en train d'envoyer les données
 
             var requestOptions = {
                 method: 'POST',
-                body: new FormData(this.$refs.emailForm),
+                body: JSON.stringify({ email: this.$refs.emailForm.email.value }),
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
                 redirect: 'follow'
             };
 
-            fetch("https://script.google.com/macros/s/AKfycbxWF4IAssBIE5p_wayVj9Zr110YJao4mAENWy-sHuzYRiZJWM2tWjrdvrm7BHV7VK1GNQ/exec", requestOptions)
+            fetch(constants.SIEP_APPS_SCRIPT, requestOptions)
                 .then(response => response.text())
                 .then(result => {
 
@@ -366,24 +365,46 @@ var app = Vue.createApp({
         },
         async sendAnalytics() {
 
-            if (dataLayer) {
+            var wizardCycles = [];
+            var wizardSchoolTypes = [];
 
-                var wizardCycles = [];
-                var wizardSchoolTypes = [];
+            if (this.bacIsSelected) wizardCycles.push("bac");
+            if (this.masterIsSelected) wizardCycles.push("master");
+            if (this.highschoolIsSelected) wizardSchoolTypes.push("highschool");
+            if (this.universitieIsSelected) wizardSchoolTypes.push("university");
 
-                if (this.bacIsSelected) wizardCycles.push("bac");
-                if (this.masterIsSelected) wizardCycles.push("master");
-                if (this.highschoolIsSelected) wizardSchoolTypes.push("highschool");
-                if (this.universitieIsSelected) wizardSchoolTypes.push("university");
+            var data = {
+                fields: this.selectedFields.map(field => this.fields.find(f => f.id == field).name),
+                regions: this.selectedRegions.filter(region => this.availableRegions.includes(region)),
+                cycles: wizardCycles,
+                schoolTypes: wizardSchoolTypes
+            };
 
-                dataLayer.push({
-                    'event': 'wizardSearch',
-                    'wizardFields': this.selectedFields.map(field => this.fields[field].name),
-                    'wizardRegions':this.selectedRegions.filter(region => this.availableRegions.includes(region)),
-                    'wizardCycles': wizardCycles,
-                    'wizardSchoolTypes':wizardSchoolTypes
-                });
-            }
+            var requestOptions = {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
+                redirect: 'follow'
+            };
+
+            fetch(constants.SIEP_APPS_SCRIPT, requestOptions)
+                .then(response => response.text())
+                .then()
+                .catch(error => { console.log('error', error); });
+        },
+        async sendOpinion(ok) {
+
+            var requestOptions = {
+                method: 'POST',
+                body: JSON.stringify({ opinion: ok ? "ok" : "nok" }),
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
+                redirect: 'follow'
+            };
+
+            fetch(constants.SIEP_APPS_SCRIPT, requestOptions)
+                .then(response => response.text())
+                .then()
+                .catch(error => { console.log('error', error); });
         }
     }
 });
