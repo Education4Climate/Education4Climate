@@ -80,7 +80,7 @@
 
                     <h1>Qu'est-ce qui t'intéresse?</h1>
 
-                    <button v-for="field in this.fields.sort((a,b) => a.name.localeCompare(b.name))" class="field"
+                    <button v-for="field in this.fields" class="field"
                         :class="{ 'selected': this.selectedFields.includes(field.id) }"
                         @click="this.selectedFields.includes(field.id) ? this.selectedFields.splice(this.selectedFields.indexOf(field.id), 1) : this.selectedFields.push(field.id);">
                         {{translate("fields." + field.name, true)}}</button>
@@ -263,7 +263,7 @@
                 </div>
 
                 <button @click="this.previousStep()" class="secondary">Retour</button>
-                <button @click="this.nextStep(); this.sendAnalytics();"
+                <button @click="this.nextStep();"
                     :class="{invisible: this.selectedRegions.filter(item => this.availableRegions.includes(item)).length <= 0}">Voir
                     les résultats</button>
 
@@ -292,8 +292,8 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.currentStep = 6" class="secondary">Je n'aime pas</button>
-                <button @click="this.currentStep = 6;">J'aime</button>
+                <button @click="this.currentStep = 6; this.sendOpinion(false);" class="secondary">Je n'aime pas</button>
+                <button @click="this.currentStep = 6; this.sendOpinion(true);">J'aime</button>
                 <button @click="this.currentStep = 3;" class="secondary">Revenir aux filtres</button>
 
             </footer>
@@ -375,7 +375,7 @@
                         courant.</p>
                 </div>
 
-                <form ref="emailForm" @submit.prevent="submitEmail()">
+                <form ref="emailForm" @submit.prevent="sendEmail()">
 
                     <div style="display:inline;">
                         <input type="text" name="email"
