@@ -263,7 +263,7 @@
                 </div>
 
                 <button @click="this.previousStep()" class="secondary">Retour</button>
-                <button @click="this.nextStep(); this.sendAnalytics();"
+                <button @click="this.nextStep();"
                     :class="{invisible: this.selectedRegions.filter(item => this.availableRegions.includes(item)).length <= 0}">Voir
                     les résultats</button>
 
