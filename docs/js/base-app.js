@@ -154,7 +154,6 @@ export default {
             window.gtag("config", googleTag);
 
             var script = document.createElement("script");
-            script.type = "text/javascript";
             script.async = true;
             script.id = "googleAnalytics";
             script.src = "//www.googletagmanager.com/gtag/js?id=" + googleTag;
