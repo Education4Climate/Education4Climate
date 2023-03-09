@@ -21,7 +21,6 @@ var app = Vue.createApp({
             themes: [],
             fields: [],
             languages: [],
-            selectedFields: [],
             selectedCycles: [],
             searchedName: "",
             currentPage: 0,

@@ -21,6 +21,7 @@ var app = Vue.createApp({
             displayedCourses: [],
             totalCoursesCounts: [],
             themes: [],
+            fields: [],            
             languages: [],
             searchedName: "",
             currentPage: 0,
@@ -45,6 +46,9 @@ var app = Vue.createApp({
         selectedAllThemes() {
             return this.selectedThemes && this.selectedThemes.length == this.themes.length;
         },        
+        selectedAllFields() {
+            return this.selectedFields && this.selectedFields.length == this.fields.length;
+        },        
         selectedAllLanguages() {
             return this.selectedLanguages && this.selectedLanguages.length == this.languages.length;
         },
@@ -56,6 +60,10 @@ var app = Vue.createApp({
 
             return this.themes.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
         },
+        sortedFields() { /* Sort the fields DESC on the total count for display */
+
+            return this.fields.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
+        },        
         sortedLanguages() { /* Sort the languages DESC on the total count for display */
 
             return this.languages.slice().sort((a, b) => { return b.totalCount - a.totalCount; });
@@ -71,6 +79,7 @@ var app = Vue.createApp({
                 return this.courses.slice()
                     .filter(course => this.selectedUniversities.includes(course.schoolId) || this.selectedHighSchools.includes(course.schoolId))
                     .filter(course => this.selectedThemes.some(selectedTheme => course.themes.map(theme => this.themes[theme].name).includes(selectedTheme)))
+                    .filter(course => this.selectedFields.some(field => course.fields.includes(field)))
                     .filter(course => this.selectedLanguages.some(selectedLanguage => course.languages.map(language => this.languages[language].name).includes(selectedLanguage)))
                     .filter(course => course.name.toLowerCase().includes(searchedName))
                     .filter(course => this.searchedProgram ? this.searchedProgram.courses.includes(course.code) : true);
@@ -131,14 +140,16 @@ var app = Vue.createApp({
             this.courses = await this.coursesManager.getCourses();
             this.totalCoursesCounts = await this.coursesManager.getTotalCoursesCounts();
             this.themes = await this.coursesManager.getCoursesThemes();
+            this.fields = await this.coursesManager.getCoursesFields();
             this.languages = await this.coursesManager.getCoursesLanguages();
 
-            // sets the filters default selected schools / themes / languages
+            // sets the filters default selected schools / themes / fields / languages
 
             this.selectedUniversities = searchedSchool ? [searchedSchool.id] : this.selectedUniversities ? this.selectedUniversities : this.schools.filter(school => school.type == "university").map(school => { return school.id; });
             this.selectedHighSchools = searchedSchool ? [searchedSchool.id] : this.selectedHighSchools ? this.selectedHighSchools : this.schools.filter(school => school.type == "highschool").map(school => { return school.id; });
 
             this.selectedThemes = this.selectedThemes ? this.selectedThemes : this.themes.map(theme => { return theme.name; });
+            this.selectedFields = this.fields.map(field => { return field.id; });
             this.selectedLanguages = this.selectedLanguages ? this.selectedLanguages : this.languages.map(language => { return language.name; });
 
             // hides the loader
@@ -167,6 +178,10 @@ var app = Vue.createApp({
 
             this.selectedThemes = this.selectedAllThemes ? [] : this.themes.map(theme => { return theme.name; });
         },
+        toggleCheckAllFields() {
+
+            this.selectedFields = this.selectedAllFields ? [] : this.fields.map(field => { return field.id; });
+        },        
         toggleCheckAllLanguages() {
 
             this.selectedLanguages = this.selectedAllLanguages ? [] : this.languages.map(language => { return language.name; });

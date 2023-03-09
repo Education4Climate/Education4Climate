@@ -190,6 +190,39 @@
                         </div>
                     </div>
 
+                    <div class="filter-group">
+
+                        <div class="filter-group-header collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#fieldsFilterCollapse">
+
+                            <h3>{{translate("shared.fields")}}</h3>
+                            <img class="icon">
+
+                        </div>
+
+                        <div class="filter-group-content collapse" id="fieldsFilterCollapse">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input check-all" id="checkbox-all-fields"
+                                    v-model="selectedAllFields" @click="toggleCheckAllFields()">
+                                <label class="form-check-label" for="checkbox-all-fields">
+                                    <h6 class="title">{{translate("shared.all")}}</h6>
+                                </label>
+                            </div>
+                            <div class="filter d-flex sub-check" v-for="field in sortedFields">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" v-model="selectedFields"
+                                        :id="'checkbox-field-' + field.id" :value="field.id">
+                                    <label class="form-check-label"
+                                        :for="'checkbox-field-' + field.id">{{translate("fields." +
+                                        field.name, true)}}</label>
+                                </div>
+                                <span class="ml-auto count">{{field.totalCount}}</span>
+                            </div>
+
+                        </div>
+
+                    </div>
 
                     <div class="filter-group">
 

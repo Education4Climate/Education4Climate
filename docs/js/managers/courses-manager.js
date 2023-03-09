@@ -14,6 +14,7 @@ class CoursesManager {
 
         this.totalCoursesCounts = [];
         this.coursesThemes = [];
+        this.coursesFields = [];        
         this.coursesLanguages = [];
         this.schoolsManager = new SchoolsManager();
     }
@@ -46,6 +47,7 @@ class CoursesManager {
                         url: course.url ? course.url : "",
                         languages: this._getLanguages(course.languages && course.languages.length > 0 ? course.languages : ["other"]),
                         themes: this._getThemes(course.themes && course.themes.length > 0 ? course.themes : ["other"]),
+                        fields: this._getFields(course.fields && course.fields.length > 0 ? course.fields : ["Other"]),
                         dedicated: course.dedicated === 1
                     });
 
@@ -104,6 +106,17 @@ class CoursesManager {
 
         return JSON.parse(sessionStorage.coursesThemes);
     }
+
+    async getCoursesFields() {
+
+        if (!sessionStorage.coursesFields) {
+
+            await this.getCourses();
+            sessionStorage.coursesFields = JSON.stringify(this.coursesFields);
+        }
+
+        return JSON.parse(sessionStorage.coursesFields);
+    }    
 
     async getCoursesLanguages() {
 
@@ -172,7 +185,7 @@ class CoursesManager {
 
                 if (languages[i] != "en" && languages[i] != "fr" && languages[i] != "nl") languages[i] = "other";
 
-                // Find the id of the language (if already in the programsLanguages dictionnary)
+                // Find the id of the language (if already in the coursesLanguages dictionnary)
 
                 var id = -1;
 
@@ -202,8 +215,60 @@ class CoursesManager {
                 // If not yet present in the array that will be returned, add it and increment the language count
 
                 if (!l.includes(id)) {
-                    
+
                     this.coursesLanguages[id].totalCount++;
+                    l.push(id);
+                }
+            }
+        }
+
+        return l;
+    }
+
+    _getFields(fields) {
+
+        var l = [];
+
+        if (fields) {
+
+            for (var i = 0; i < fields.length; i++) {
+
+                // Take care of possible empty values
+
+                if (fields[i].length === 0) continue;
+
+                // Find the id of the field (if already in the coursesFields dictionnary)
+
+                var id = -1;
+
+                for (var j = 0; j < this.coursesFields.length; j++) {
+
+                    if (this.coursesFields[j].name == fields[i]) {
+
+                        id = j;
+                        break;
+                    }
+                }
+
+                // If the field is not yet in the coursesFields dictionnary, add it
+
+                if (id == -1) {
+
+                    id = this.coursesFields.length;
+
+                    this.coursesFields.push({
+
+                        id: id,
+                        name: fields[i],
+                        totalCount: 0
+                    });
+                }
+
+                // If not yet present in the array that will be returned, add it and increment the field count
+
+                if (!l.includes(id)) {
+
+                    this.coursesFields[id].totalCount++;
                     l.push(id);
                 }
             }

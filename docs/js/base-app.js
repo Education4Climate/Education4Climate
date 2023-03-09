@@ -26,6 +26,7 @@ export default {
             consentLocalStorage: false,
             selectedSchools: null,
             selectedThemes: null,
+            selectedFields: null,
             selectedLanguages: null,
             currentTheme: constants.DEFAULT_THEME,
             selectedUniversities: null,
@@ -59,6 +60,7 @@ export default {
         if (sessionStorage.selectedUniversities) this.selectedUniversities = JSON.parse(sessionStorage.selectedUniversities);
         if (sessionStorage.selectedHighSchools) this.selectedHighSchools = JSON.parse(sessionStorage.selectedHighSchools);
         if (sessionStorage.selectedThemes) this.selectedThemes = JSON.parse(sessionStorage.selectedThemes);
+        if (sessionStorage.selectedFields) this.selectedFields = JSON.parse(sessionStorage.selectedFields);
         if (sessionStorage.selectedLanguages) this.selectedLanguages = JSON.parse(sessionStorage.selectedLanguages);
         if (sessionStorage.currentTheme) this.currentTheme = JSON.parse(sessionStorage.currentTheme);
     },
@@ -77,6 +79,9 @@ export default {
         },
         selectedThemes(value) {
             sessionStorage.selectedThemes = JSON.stringify(value);
+        },
+        selectedFields(value) {
+            sessionStorage.selectedFields = JSON.stringify(value);
         },
         selectedLanguages(value) {
             sessionStorage.selectedLanguages = JSON.stringify(value);
