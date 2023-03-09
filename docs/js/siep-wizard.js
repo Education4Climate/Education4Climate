@@ -391,20 +391,6 @@ var app = Vue.createApp({
                 .then(response => response.text())
                 .then()
                 .catch(error => { console.log('error', error); });
-        },
-        async sendOpinion(ok) {
-
-            var requestOptions = {
-                method: 'POST',
-                body: JSON.stringify({ opinion: ok ? "ok" : "nok" }),
-                headers: { "Content-Type": "text/plain;charset=utf-8" },
-                redirect: 'follow'
-            };
-
-            fetch(constants.SIEP_APPS_SCRIPT, requestOptions)
-                .then(response => response.text())
-                .then()
-                .catch(error => { console.log('error', error); });
         }
     }
 });
