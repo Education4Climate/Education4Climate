@@ -278,6 +278,14 @@
             <div class="main" style="align-items: flex-start; justify-content: flex-start;">
                 <h1 style="margin-bottom: 10px;">Tes futures études?</h1>
                 <div style="margin-bottom: 10px;" v-html="programsCountLabel"></div>
+                <div style="align-self: center;width:100%;">
+                    <button @click="this.currentStep = 3;" class="secondary">Revenir aux filtres</button>
+                    <button @click="this.currentStep = 6;">Prends part au changement</button>
+                </div>
+                <div class="progress" style="align-self:center;">
+                    <span v-for="(step, i) in this.totalSteps" class="dot"
+                        :class="{ current: this.currentStep == i}"></span>
+                </div>
 
                 <div v-for="program in this.sortedPrograms" class="result-item"
                     @click="this.currentStep = 5; this.selectedProgram = program;">
@@ -287,16 +295,15 @@
 
             </div>
 
-            <footer>
+            <footer v-if="this.sortedPrograms && this.sortedPrograms.length > 9">
 
                 <div class="progress">
                     <span v-for="(step, i) in this.totalSteps" class="dot"
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.currentStep = 6; this.sendOpinion(false);" class="secondary">Je n'aime pas</button>
-                <button @click="this.currentStep = 6; this.sendOpinion(true);">J'aime</button>
                 <button @click="this.currentStep = 3;" class="secondary">Revenir aux filtres</button>
+                <button @click="this.currentStep = 6;">Prends part au changement</button>
 
             </footer>
 
