@@ -110,9 +110,9 @@
 
 /* Chart */
 
-.chartjs-container {
+/* .chartjs-container {
     width: 25vh;
-}
+} */
 
 .siep-wizard .legend {
     margin-top: 2rem;
@@ -244,13 +244,12 @@
 
 .siep-wizard .home .main img {
     flex: 0.6;
-    width: 130px;
     margin-left: -25px;
     margin-bottom: 20px;
 }
 
 .siep-wizard .main .intro {
-    width: 80vw;
+    margin: 0 25px 0 25px;
 }
 
 .siep-wizard button.field {
@@ -279,10 +278,6 @@
     .siep-wizard .wizard-step {
         width: 30%;
         margin: auto;
-    }
-
-    .siep-wizard .main img {
-        width: 30%;
     }
 }
 
@@ -329,8 +324,8 @@ button.loading {
 
 .share img {
     display: inline;
-    padding-right: 5px;
-    vertical-align: bottom;
+    margin-right: 5px;
+    vertical-align: top;
 }
 
 button.loading::after {

@@ -74,7 +74,7 @@ export default {
         },
         selectedHighSchools(value) {
             sessionStorage.selectedHighSchools = JSON.stringify(value);
-        },                
+        },
         selectedThemes(value) {
             sessionStorage.selectedThemes = JSON.stringify(value);
         },
@@ -142,21 +142,22 @@ export default {
         },
         addGoogleAnalyticsScript() {
 
-            const script = document.createElement("script");
-            script.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=" + constants.GOOGLE_ANALYTICS_ID);
-            script.setAttribute("id", "googleAnalytics");
+            var googleTag = constants.GOOGLE_ANALYTICS_ID;
 
-            script.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            window.gtag =
+                window.gtag ||
+                function () {
+                    window.dataLayer.push(arguments);
+                };
+            window.gtag("js", new Date());
+            window.gtag("config", googleTag);
 
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', constants.GOOGLE_ANALYTICS_ID);
-            };
-
-            document.head.appendChild(script);
-
-            console.log("Google Analytics script added");
+            var script = document.createElement("script");
+            script.async = true;
+            script.id = "googleAnalytics";
+            script.src = "//www.googletagmanager.com/gtag/js?id=" + googleTag;
+            document.getElementsByTagName("head")[0].appendChild(script);
         },
         clearAllCookies() {
 

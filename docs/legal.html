@@ -53,7 +53,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
                             <li class="nav-item" v-for="item in menuItems">
                                 <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
-                                    :href="item + '.html?lang=' + currentLanguage">{{translate("menu." + item)}}</a>
+                                    :href="item + '.html?lang=' + currentLanguage" v-html="translate('menu.' + item)"></a>
                             </li>
                         </ul>
                         <div id="theme-toggler" @click="toggleTheme()">
