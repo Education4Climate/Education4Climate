@@ -1,110 +1,151 @@
 {
     "24487: UE305 Etre un citoyen lucide et engag\u00e9": {
         "fr": {
-            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
-                "pes phreatiques  la biodiversite  l'energie  nucleai",
-                "s perturbations des ecosystemes marins et forestier",
-                "nd respect de notre ecosysteme << terre >>       t"
+            "effets? (?:de )?serre": [
+                "l augmentation de l effet de serre    - diverses probl"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "pes phreatiques  la biodiversite  l'energie  nucleai",
-                " et forestiers  les problemes lies a l'agricultu",
-                "s perturbations des ecosystemes marins et forestier",
-                "nd respect de notre ecosysteme << terre >>       t"
+            "rechauffements? climat": [
+                " - la thematique du rechauffement climatique avec l augmenta"
             ],
-            "[effets? (?:de )?serre, climat]": [
-                "l'augmentation de l'effet de serre    - diverses probl",
-                "ue du rechauffement climatique avec l'augmenta"
+            "[energie, durab]": [
+                " la biodiversite  l energie  nucleaire  fossile",
+                "rs du developpement durable    - la thematiqu"
             ],
-            "rechauffement climat[^ ]+": [
-                " - la thematique du rechauffement climatique avec l'augmentation"
+            "biodiversite": [
+                "pes phreatiques  la biodiversite  l energie  nucleai"
+            ],
+            "(?:ecosystemes?|environnements?) (?:aquatique|marin|littoral|subtidal|corallien)": [
+                "s perturbations des ecosystemes marins et forestiers  les"
+            ],
+            "nappes? (?:phreatique|aquifere|d eau souterrain)": [
+                "ion des sols et des nappes phreatiques  la biodiversite  "
             ]
         }
     },
     "26390: Eveil Scientifique Et G\u00e9ographique 30D": {
         "fr": {
-            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
-                "cation relative a l'environnement  ere   notamment pa",
-                "ent des ressources  pollution       afin de degag",
-                "nera l'education au developpement durable  edd   la comprehen"
+            "rechauffements? climat": [
+                "tuelles sera visee  rechauffement climatique  epuisement des"
             ],
-            "rechauffement climat[^ ]+": [
-                "tuelles sera visee  rechauffement climatique  epuisement des res"
+            "pollu": [
+                "ent des ressources  pollution       afin de d"
+            ]
+        }
+    },
+    "26369: Apprentissage 302": {
+        "fr": {
+            "biodiversite": [
+                "ur\"    apercu de la biodiversite animale du bord de "
             ]
         }
     },
     "22275: Education \u00c0 La Gestion Durable": {
         "fr": {
-            "consom[^ ]+ durab[^ ]+": [
-                "rs d'education a la consommation durable analysera les compo",
-                "quotidienne via une consommation durable  l'application de c"
-            ],
-            "gestio[^ ]+ durab[^ ]+": [
-                "education a la gestion durable le cours de technol"
+            "consom[^ ]+ durab": [
+                "rs d education a la consommation durable analysera les com",
+                "quotidienne via une consommation durable  l application de"
             ]
         }
     },
     "22368: Technologie De L'Habitat": {
         "fr": {
-            "consom[^ ]+ durab[^ ]+": [
-                "rs d'education a la consommation durable analysera les compo",
-                "quotidienne via une consommation durable  l'application de c"
+            "consom[^ ]+ durab": [
+                "rs d education a la consommation durable analysera les com",
+                "quotidienne via une consommation durable  l application de"
             ]
         }
     },
     "22364: Technologies Et Sciences Int\u00e9gr\u00e9es": {
         "fr": {
-            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
-                "rable  respect de l'environnement / societe / economi",
-                "eviter les diverses pollutions commerce equitable",
-                " les trois poles du developpement durable  respect de l'envir"
+            "circuits? court": [
+                "e  labels ethiques  circuits courts  utilisation de pr"
+            ],
+            "pollu": [
+                "eviter les diverses pollutions commerce equit"
             ]
         }
     },
     "22378: Technologies Int\u00e9gr\u00e9es": {
         "fr": {
-            "consom[^ ]+ durab[^ ]+": [
-                "age \"education a la consommation durable\" developpe certains "
+            "consom[^ ]+ durab": [
+                "age \"education a la consommation durable\" developpe certai"
+            ]
+        }
+    },
+    "25193: 1I08 Production D'Energie 1 - Ind": {
+        "fr": {
+            "energ[^ ]+ alternati": [
+                "le que production d energie alternative et production d e"
             ]
         }
     },
     "25200: 1I15 Reseau Electrique - Ind": {
         "fr": {
-            "[nucleaire, pollu(?:ant|tion), environnement]": [
-                "ques  \"classiques\"  nucleaires  tvd  cogeneration",
-                " ecologiques  moins polluant pour l'environnemen",
-                "ins polluant pour l'environnement    eoliennes  photo"
+            "[[ ]ecolo[^ ]+]": [
+                "ion        solutions ecologiques  moins polluant pou"
+            ],
+            "pollu": [
+                " ecologiques  moins polluant pour l environne"
+            ]
+        }
+    },
+    "23255: 2Hg03 : Thermodynamique Appliquee - Suivi \u00c0 Helmo Gramme": {
+        "fr": {
+            "energ[^ ]+ alternati": [
+                "p 2 et production d energie alternative       destinee a "
+            ]
+        }
+    },
+    "25224: 3Hg07 : Production D'Energie - Ibe": {
+        "fr": {
+            "energ[^ ]+ alternati": [
+                "le que production d energie alternative et production d e"
             ]
         }
     },
     "24437: 3Hg09 : Genie Electrique Durable - Ibe": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "ns energetique  les energies renouvelables et la politique ene"
+            "energ[^ ]+ renouvelable": [
+                "ns energetique  les energies renouvelables et la politique en"
+            ],
+            "[energie, durab]": [
+                "ns energetique  les energies renouvelables et l",
+                "l de groupe sur les energies sera presente en a",
+                "   genie electrique durable - ibe machines el"
+            ]
+        }
+    },
+    "25115: 1G08 Production D'Energie 1 - Ged": {
+        "fr": {
+            "energ[^ ]+ alternati": [
+                "le que production d energie alternative et production d e"
             ]
         }
     },
     "25118: 1G11 Ecoconception Et Gestion Des Effluents - Ged": {
         "fr": {
-            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "ce  decroissance et developpement durable >> envisage differe",
-                "s moyens de gerer l'environnement    l'aa <<croissanc",
-                "e differents modeles ecologiques d'un point de vue s"
+            "[[ ]ecolo[^ ]+]": [
+                "e differents modeles ecologiques d un point de vue s"
             ],
-            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
-                "s moyens de gerer l'environnement    l'aa <<croissanc",
-                "giques relatifs aux pollutions relatives aux effl",
-                "ce  decroissance et developpement durable >> envisage differe"
-            ],
-            "eco-?conception": [
+            "eco[- ]?conception": [
                 "1g11 ecoconception et gestion des effl"
+            ],
+            "pollu": [
+                "giques relatifs aux pollutions relatives aux "
             ]
         }
     },
     "25119: 1G12 Genie Electrique - Ged": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "ns energetique  les energies renouvelables et la politique ene"
+            "energ[^ ]+ renouvelable": [
+                "ns energetique  les energies renouvelables et la politique en"
+            ]
+        }
+    },
+    "25120: 1G13 Mobilite Et Transports Alternatifs - Ged": {
+        "fr": {
+            "carburants? alternati": [
+                "oteurs thermiques a carburants alternatifs  moteurs electriq"
             ]
         }
     },
@@ -113,90 +154,115 @@
             "(?:^|[^a-z])cop ?[0-9]+": [
                 "ecessaire suite a la cop 21              cogene"
             ],
-            "(?:emissions? )?(?:de )?gaz (?:a )?(?:effets? )(?:de )?serre": [
-                "t enjeux            emissions de gaz a effet de serre et leur impact sur "
+            "effets? (?:de )?serre": [
+                " emissions de gaz a effet de serre et leur impact sur "
             ],
-            "[effets? (?:de )?serre, climat]": [
-                " emissions de gaz a effet de serre et leur impact sur ",
-                " leur impact sur le climat       parts des sys",
-                " verts       enjeux climatiques et transition "
+            "enjeux? climat": [
+                "ificats verts       enjeux climatiques et transition "
+            ],
+            "energ[^ ]+ alternati": [
+                "2g08 production d energie alternative - ged les enseign"
             ],
             "energ[^ ]+ eolien": [
-                "te d'apprentissage  energie eolienne  traite quant a e",
+                "te d apprentissage  energie eolienne  traite quant a e",
                 "e      le potentiel energetique eolien dans le contexte en"
             ],
             "energ[^ ]+ fossile": [
-                "mes de production d'energies fossiles et durables et aut"
+                "mes de production d energies fossiles et durables et aut"
             ],
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "isme de support aux energies renouvelables      calcul de l'ir",
-                "e de l'electricite  energies renouvelables et certificats vert"
+            "energ[^ ]+ renouvelable": [
+                "isme de support aux energies renouvelables      calcul de l i",
+                "e de l electricite  energies renouvelables et certificats ver"
             ],
-            "energ[^ ]+ solaire": [
-                "te d'apprentissage  energie solaire  aborde les themati",
-                "     captation de l'energie solaire      les centrales "
+            "transiti[^ ]+ energ": [
+                "jeux climatiques et transition energetique necessaire su"
             ],
-            "enjeux? climat[^ ]+": [
-                "ificats verts       enjeux climatiques et transition energ"
+            "[energie, durab]": [
+                "2g08 production d energie alternative - ged l",
+                "te d apprentissage  energie solaire  aborde les",
+                "nvironnemental de l energie      evaluation eco",
+                "ique des projets en energie      mecanisme de s",
+                "isme de support aux energies renouvelables     ",
+                "     captation de l energie solaire      les ce",
+                "te d apprentissage  energie eolienne  traite qu",
+                "incipales liees a l energie       ordres de gra",
+                "a la consommation d energie       utilisation d",
+                "      utilisation d energie finale et primaire ",
+                "mes de production d energies fossiles et durabl",
+                "e de l electricite  energies renouvelables et c",
+                "nergies fossiles et durables et autres dans l"
             ],
-            "transiti[^ ]+ energ[^ ]+": [
-                "jeux climatiques et transition energetique necessaire suite a "
+            "[nucleaire, productions? (?:d )?(?:energ|elec)]": [
+                "entrales thermiques nucleaire  au charbon  au gaz",
+                "2g08 production d energie alternative - ged",
+                "rts des systemes de production d energies fossiles et dura"
             ],
-            "utilis[^ ]+ (?:d')?energ[^ ]+": [
-                "ion d'energie       utilisation d'energie finale et primaire "
+            "impacts? (?:environnement|ecosyst)": [
+                "uivantes            impact environnemental de l energie     "
             ]
         }
     },
-    "25131: 2G09 Gestion Rationnelle Des Flux - Ged": {
+    "22384: B215 Thermodynamique": {
         "fr": {
-            "effica[^ ]+ energ[^ ]+": [
-                "elle  et enfin  en \"efficacite energetique\"  une application co"
+            "energ[^ ]+ alternati": [
+                "amp 2  production d energie alternative       les premier"
             ]
         }
     },
     "25441: UE23 - Cr\u00e9ation et gestion d'entreprise": {
         "fr": {
-            "economie circulaire": [
-                "es pour appliquer l'economie circulaire dans le secteur de "
+            "economies? circulaire": [
+                "es pour appliquer l economie circulaire dans le secteur de "
             ]
         }
     },
     "23757: Sociologie Et Gestion Des Ressources Humaines": {
         "fr": {
-            "transiti[^ ]+ ecolo[^ ]+": [
-                "  introduction a la transition ecologique dans le cadre de la"
+            "[[ ]ecolo[^ ]+]": [
+                "tion a la transition ecologique dans le cadre de la"
+            ]
+        }
+    },
+    "22314: Communication En 2\u00c8me Langue \u00c9trang\u00e8re": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "mida   la salud   la ecologia   el trabajo   la e"
             ]
         }
     },
     "22311: Economie G\u00e9n\u00e9rale Et Appliqu\u00e9e": {
         "fr": {
-            "economie circulaire": [
-                "la croissance   * l'economie circulaire   * le commerce int"
+            "economies? circulaire": [
+                "la croissance   * l economie circulaire   * le commerce int"
             ]
         }
     },
     "22308: Notions D'\u00c9thique Et De Rse Appliqu\u00e9es Au Secteur De L'\u00c9conomie Sociale Et Solidaire": {
         "fr": {
-            "economie circulaire": [
+            "economies? circulaire": [
                 "  economie sociale  economie circulaire  economie collabora"
             ]
         }
     },
     "22190: Economie": {
         "fr": {
-            "[climat, environnement, [ ]ecolo[^ ]+]": [
-                "sur 2008     crises climatiques    crises envi",
-                "imatiques    crises environnementales    crises socia",
+            "empreint[^ ]+ carbon": [
+                "sequences nord/sud  empreinte carbone      analyse des b"
+            ],
+            "crises? climat": [
+                " focus sur 2008     crises climatiques    crises envi"
+            ],
+            "[[ ]ecolo[^ ]+]": [
                 "ces rares  empreinte ecologique avec analyse mondia"
             ],
-            "crises? environnement": [
+            "crises? (?:environnement|ecosyst)": [
                 "ises climatiques    crises environnementales    crises socia"
             ],
-            "economie circulaire": [
-                "nter paulie       l'economie circulaire  dossier agoria    "
+            "economies? circulaire": [
+                "nter paulie       l economie circulaire  dossier agoria    "
             ],
-            "empreint[^ ]+ carbon[^ ]+": [
-                "sequences nord/sud  empreinte carbone      analyse des be"
+            "(?:theories?|economies?) du donut": [
+                "enne             la theorie du donut de kate raworth    "
             ]
         }
     }
