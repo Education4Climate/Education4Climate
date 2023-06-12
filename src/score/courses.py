@@ -12,6 +12,8 @@ import langdetect
 from langdetect import DetectorFactory
 import re
 
+import threading
+
 from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, ACCEPTED_LANGUAGES
 
 DetectorFactory.seed = 0
@@ -87,7 +89,7 @@ def clean_text(text: str):
     return text
 
 
-def score_school_courses(school: str, year: int, output_dir: str, dictionary_name: str = 'base') -> None:
+def score_school_courses(school: str, year: int, output_dir: str, dictionary_name: str, run_file_path: str) -> None:
     """
     Identifies for each course of a school whether they discuss a pre-defined set of thematics and saves the results.
 
@@ -101,11 +103,11 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
 
     # Loading crawling results
     courses_fn = \
-        Path(__file__).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
+        Path(run_file_path).parent.absolute().joinpath(f"../../{CRAWLING_OUTPUT_FOLDER}{school}_courses_{year}.json")
     courses_df = pd.read_json(open(courses_fn, 'r'), dtype={'id': str})
 
     # Load fields on which the scoring has to be done
-    scoring_fields_fn = Path(__file__).parent.absolute().joinpath(f"../../data/scoring_fields.csv")
+    scoring_fields_fn = Path(run_file_path).parent.absolute().joinpath(f"../../data/scoring_fields.csv")
     fields = ["name"] + pd.read_csv(scoring_fields_fn, index_col=0).loc[school, 'fields'].split(";")
     for field in fields:
         assert field in courses_df.columns, f"Error: the courses DataFrame doesn't contain a column {field}"
@@ -122,7 +124,7 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
     patterns_dict = {}
     themes = []
     for lang in ACCEPTED_LANGUAGES:
-        themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/{dictionary_name}/{lang}.csv")
+        themes_fn = Path(run_file_path).parent.absolute().joinpath(f"../../data/patterns/{dictionary_name}/{lang}.csv")
         lang_patterns_df = pd.read_csv(themes_fn, converters={'themes': literal_eval})
         patterns_dict[lang] = lang_patterns_df
         themes = set(themes).union(set(lang_patterns_df["themes"].sum()))
@@ -131,7 +133,7 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
     # Dedicated patterns
     dedicated_patterns_dict = {}
     for lang in ACCEPTED_LANGUAGES:
-        themes_fn = Path(__file__).parent.absolute().joinpath(f"../../data/patterns/dedicated/{lang}.csv")
+        themes_fn = Path(run_file_path).parent.absolute().joinpath(f"../../data/patterns/dedicated/{lang}.csv")
         dedicated_patterns_dict[lang] = pd.read_csv(themes_fn, converters={'themes': literal_eval})
 
     patterns_matches_dict = {}
@@ -199,7 +201,11 @@ if __name__ == "__main__":
     schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
                 "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
                 "thomasmore", "ucll", "vinci", "vives"]
+
+    arguments['run_file_path'] = __file__
+
     for school in schools:
         arguments['school'] = school
         print(school)
-        score_school_courses(**arguments)
+        thread = threading.Thread(target=score_school_courses, kwargs=arguments)
+        thread.start()

@@ -89,7 +89,8 @@ def get_number_of_matches_per_pattern(schools, dictionary_name, scoring_folder=S
         counting_dict[lang] = counting_dict[lang].sort_values(by='total', ascending=False)
 
     # Saving dictionary to excel file
-    fn = "/home/duboisa1/shifters/Education4Climate/data/scoring-analysis/number_matches_per_pattern.xlsx"
+    fn = f"/home/duboisa1/shifters/Education4Climate/data/scoring-analysis/" \
+         f"number_matches_per_pattern_{dictionary_name}.xlsx"
     with pd.ExcelWriter(fn) as writer:
         for lang in ACCEPTED_LANGUAGES:
             counting_dict[lang].to_excel(writer, sheet_name=lang)
@@ -127,7 +128,7 @@ if __name__ == "__main__":
     # schools_ = ["uclouvain", "ulb", "uliege", "umons", "unamur", "uslb"]
     # schools_ = ["ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
     #             "henallux", "hepl", "hers", "ichec", "ihecs", "ispg", "issig", "vinci"]
-    schools_ = ["uclouvain"]
-    get_number_of_matches_per_pattern(schools_, 'v2.0')
-    get_matched_patterns_per_course(schools_, scoring_folder="/data/scoring-output/")
-    get_concurrent_patterns(schools_, "dumping environnement")
+    # schools_ = ["uliege"]
+    get_number_of_matches_per_pattern(schools_, 'v1.1')
+    # get_matched_patterns_per_course(schools_, scoring_folder="/data/scoring-output/")
+    # get_concurrent_patterns(schools_, "dumping environnement")
