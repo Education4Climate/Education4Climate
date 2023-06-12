@@ -1,39 +1,55 @@
 {
     "COMM0097-1: Cr\u00e9ation d'\u00e9v\u00e9nements": {
         "fr": {
-            "[durab(?:le|ilite), mobilite]": [
-                "es du developpement durable  ecologie  climat  ",
-                " mobilite  dechets  durabilite du materiel        ",
-                "  ecologie  climat  mobilite  dechets  durabilit"
-            ],
-            "[[ ]ecolo[^ ]+, durabilite]": [
-                "veloppement durable  ecologie  climat  mobilite  ",
-                " mobilite  dechets  durabilite du materiel        "
+            "[[ ]ecolo[^ ]+]": [
+                "veloppement durable  ecologie  climat  mobilite  "
             ]
         }
     },
     "COMM0103-1: Pratique de l'\u00e9v\u00e9nementiel": {
         "fr": {
-            "[durab(?:le|ilite), mobilite]": [
-                "es du developpement durable  ecologie  climat  ",
-                " mobilite  dechets  durabilite du materiel        ",
-                "es du developpement durable  ecologie  climat  ",
-                " mobilite  dechets  durabilite du materiel        ",
-                "  ecologie  climat  mobilite  dechets  durabilit",
-                "  ecologie  climat  mobilite  dechets  durabilit"
-            ],
-            "[[ ]ecolo[^ ]+, durabilite]": [
+            "[[ ]ecolo[^ ]+]": [
                 "veloppement durable  ecologie  climat  mobilite  ",
-                "veloppement durable  ecologie  climat  mobilite  ",
-                " mobilite  dechets  durabilite du materiel        ",
-                " mobilite  dechets  durabilite du materiel        "
+                "veloppement durable  ecologie  climat  mobilite  "
             ]
         }
     },
-    "SCIC0002-1: UE31 Formation scientifique en ce compris la didactique 3": {
+    "FHSA0001-1: UE8 Formation humaine et sociale 1": {
         "fr": {
-            "gestion (?:de l'|des )?eaux?": [
-                "ements d'etat    la gestion de l'eau    la meteorologie "
+            "climatolog": [
+                " la meteorologie et climatologie    - elements ele",
+                " la meteorologie et climatologie    - elements ele"
+            ]
+        }
+    },
+    "FHSA0002-1: UE8 Formation humaine et sociale en ce compris la didactique 1": {
+        "fr": {
+            "climatolog": [
+                " la meteorologie et climatologie          cartogra",
+                " la meteorologie et climatologie    cartographie/o"
+            ]
+        }
+    },
+    "FHSB0002-1: UE23 Formation humaine et sociale en ce compris la didactique 2": {
+        "fr": {
+            "climatolog": [
+                " la meteorologie et climatologie    elements eleme",
+                " la meteorologie et climatologie           element"
+            ]
+        }
+    },
+    "FHSC0002-1: UE33 Formation humaine et sociale en ce compris la didactique 3": {
+        "fr": {
+            "climatolog": [
+                " la meteorologie et climatologie    - elements ele",
+                " la meteorologie et climatologie    - elements ele"
+            ]
+        }
+    },
+    "SANT0000-2: UE52 Promotion \u00e0 la sant\u00e9": {
+        "fr": {
+            "pollu": [
+                "aladies infantiles  pollutions  hygiene corpo"
             ]
         }
     }
