@@ -1,239 +1,181 @@
 {
     "ACVC0001-1: Analyse du cycle de vie, ACV-Cycle de vie (24h th\u00e9orie) ": {
         "fr": {
-            "analyses? (?:de |du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 "analyse du cycle de vie  acv-cycle de vie  "
             ]
         }
     },
     "ADAA0002-1: \u00c9conomie 1": {
         "fr": {
-            "epuisements? (?:des? )?ressources? naturelle": [
+            "epuisement (?:des? )?ressources? naturelle": [
                 "ation  stagflation  epuisement des ressources naturelles          de develo"
-            ]
-        }
-    },
-    "BATI0002-1: Performance environnementale des b\u00e2timents, Certification environnementale du b\u00e2timent (60h pratique) ": {
-        "fr": {
-            "performances? environnement": [
-                "performance environnementale des batiments  c"
             ]
         }
     },
     "BIOL2039-2: Biologie, Biologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                " etres vivants   la biodiversite et  l etude du fonc",
+                "liquer la notion de biodiversite et des risques qui ",
+                "s qui pesent sur la biodiversite    comprendre et ex",
+                "crobiologie  20h  - ecologie  20h    les notions",
+                "tifs de la partie \" ecologie \" sont d aborder le",
+                "ements de base de l ecologie pour permettre a l ",
+                "rdes dans la partie ecologie sont   les notions ",
+                "otions de base de l ecologie  definition  objets",
+                "etude  etc    l autoecologie  rapports d une esp",
+                "n milieu de vie   l ecologie des populations et ",
+                "crobiologie et de l ecologie    analyser une sit",
+                "notions generales d ecologie    prendre conscien",
+                " la complexite de l ecologie    prendre conscien",
+                "s relatives a l autoecologie  l ecologie des pop",
+                "a l autoecologie  l ecologie des populations  l ",
+                " des populations  l ecologie des communautes    "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                " etres vivants   la biodiversite et  l etude du fonc",
+                "liquer la notion de biodiversite et des risques qui ",
+                "s qui pesent sur la biodiversite    comprendre et ex",
+                " fonctionnement des ecosystemes  structure trophiqu",
+                "fonctionnement d un ecosystem"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                " etres vivants   la biodiversite et  l etude du fonc",
+                "liquer la notion de biodiversite et des risques qui ",
+                "s qui pesent sur la biodiversite    comprendre et ex",
+                "iologie  origine et evolution des especes  taxino",
+                "ite industrielle et environnement est scinde en 3 par",
                 "icrobiologie  20h  - ecologie  20h    les notions",
+                "ite industrielle et environnement saissise et compren",
                 "ctifs de la partie \" ecologie \" sont d aborder le",
                 "dements de base de l ecologie pour permettre a l ",
+                " la complexite de l environnement   les principaux th",
                 "ordes dans la partie ecologie sont   les notions ",
                 "notions de base de l ecologie  definition  objets",
                 "on milieu de vie   l ecologie des populations et ",
+                " fonctionnement des ecosystemes  structure trophiqu",
                 "icrobiologie et de l ecologie    analyser une sit",
+                "robiens tant dans l environnement que pour les risque",
                 " notions generales d ecologie    prendre conscien",
                 "e la complexite de l ecologie    prendre conscien",
+                "fonctionnement de l environnement     connaitre  comp",
                 " a l autoecologie  l ecologie des populations  l ",
-                "e des populations  l ecologie des communautes    "
+                "e des populations  l ecologie des communautes    ",
+                "fonctionnement d un ecosystem"
             ],
-            "biodiversite": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 " etres vivants   la biodiversite et  l etude du fonc",
                 "liquer la notion de biodiversite et des risques qui ",
-                "s qui pesent sur la biodiversite    comprendre et ex"
-            ],
-            "cycles? bio-?geo-?chimique": [
-                "ue  flux d energie  cycles biogeochimiques  au terme de ce co"
-            ]
-        }
-    },
-    "BIOL2040-1: Microbiologie, Microbiologie": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "re et industrielle - ecologie microbienne - techn"
+                "s qui pesent sur la biodiversite    comprendre et ex",
+                " d illustrations  l impact des microorganismes",
+                "ite industrielle et environnement est scinde en 3 par",
+                "icrobiologie  20h  - ecologie  20h    les notions",
+                "ite industrielle et environnement saissise et compren",
+                "ctifs de la partie \" ecologie \" sont d aborder le",
+                "dements de base de l ecologie pour permettre a l ",
+                " la complexite de l environnement   les principaux th",
+                "ordes dans la partie ecologie sont   les notions ",
+                "notions de base de l ecologie  definition  objets",
+                "on milieu de vie   l ecologie des populations et ",
+                " fonctionnement des ecosystemes  structure trophiqu",
+                "icrobiologie et de l ecologie    analyser une sit",
+                "robiens tant dans l environnement que pour les risque",
+                " notions generales d ecologie    prendre conscien",
+                "e la complexite de l ecologie    prendre conscien",
+                "fonctionnement de l environnement     connaitre  comp",
+                " a l autoecologie  l ecologie des populations  l ",
+                "e des populations  l ecologie des communautes    ",
+                "fonctionnement d un ecosystem"
             ]
         }
     },
     "BOIS0002-1: Mat\u00e9riau bois 1, Connaissance et technologie du mat\u00e9riau bois 1": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "aute ou de caractere ecologique du materiau  d un s"
-            ]
-        }
-    },
-    "CHIM9286-1: Laboratoire d'\u00e9lectrochimie et chimie organique": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                "s de securite et de protection de l environnement  laboratoire d anal"
-            ]
-        }
-    },
-    "CHIM9288-1: Compl\u00e9ments de laboratoire": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                "s de securite et de protection de l environnement  complements de lab",
-                "s de securite et de protection de l environnement"
-            ]
-        }
-    },
-    "CHIM9290-2: M\u00e9thodologie des sciences": {
-        "fr": {
-            "pollu": [
-                "our l analyse de la pollution de l air       ",
-                "actometrie pour les pollutions olfactives tec"
-            ]
-        }
-    },
-    "CHIM9291-1: Chimie, Chimie 2": {
-        "fr": {
-            "bio[ -]?carburant": [
-                "bles gazeux   - les biocarburants         en fonctio",
-                "zeux  y compris les biocarburants              origi"
+            "[[ ]ecolo[^ ]+, durabilite]": [
+                "aute ou de caractere ecologique du materiau  d un s",
+                "ent les notions de  durabilite et d impregnabilite",
+                " notions liees a la durabilite et l impregnabilite"
             ]
         }
     },
     "COAP0001-1: Economie 2, Economie politique": {
         "fr": {
-            "epuisements? (?:des? )?ressources? naturelle": [
+            "epuisement (?:des? )?ressources? naturelle": [
                 "ation  stagflation  epuisement des ressources naturelles          de develo"
             ]
         }
     },
     "COEN0001-1: Coordination environnementale , Coordination environnementale": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                " d analyser l impact ecologique relatif aux activit"
+            "impacts? (?:ecosyst[^ ]+|ecolo[^ ]+)": [
+                "n afin d analyser l impact ecologique relatif aux activit"
             ],
-            "politiques? (?:environnement|ecosyst)": [
+            "politique environnement": [
                 "e     favoriser une politique environnementale active     appli"
             ]
         }
     },
     "CONS0004-2: Construction durable 1": {
         "fr": {
-            "architectures? durab": [
-                " durable le cours d architecture durable a pour objectif d"
+            "[bioclimat[^ ]+, energ[^ ]+]": [
+                "   -la construction bioclimatique     -la performance",
+                "    -la performance energetique des batiments     -"
             ],
-            "constructions? durab": [
-                "construction durable 1 gestion de l ea",
-                " generalites sur la construction durable  il s agit d une ",
-                " concepts lies a la construction durable afin de pouvoir p"
-            ],
-            "[performances? energ[^ ]+, batiment]": [
-                "oclimatique     -la performance energetique des batiments     -",
-                "nce energetique des batiments     -la performanc",
-                "nvironnementale des batiments     -typologies de"
-            ],
-            "[performances? energ[^ ]+, architecture]": [
-                "oclimatique     -la performance energetique des batiments     -",
-                "et de surveillance  architecture et principes de con",
-                " durable le cours d architecture durable a pour obje",
-                " relatives a l eau  architecture et principes de con"
-            ],
-            "[[ ]ecolo[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "-la construction bioclimatique     -la perform",
+                "ondre aux exigences environnementales  de plus en plu",
+                "de limiter l impact environnemental d une activite  a",
+                "    -la performance environnementale des batiments   ",
+                "x normes de qualite environnementales relatives a l e",
                 " des reglementations ecologiques  impact sur le sect"
             ],
-            "exigences? (?:environnement|ecosyst)": [
-                "ters a repondre aux exigences environnementales  de plus en plu"
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "-les indicateurs du developpement durable dans la constructio",
+                "ondre aux exigences environnementales  de plus en plu",
+                "de limiter l impact environnemental d une activite  a",
+                "    -la performance environnementale des batiments   ",
+                "x normes de qualite environnementales relatives a l e",
+                " des reglementations ecologiques  impact sur le sect"
             ],
-            "impacts? (?:environnement|ecosyst)": [
-                "ettant de limiter l impact environnemental d une activite  a"
+            "[[ ]ecolo[^ ]+, durabilite]": [
+                " des reglementations ecologiques  impact sur le sect",
+                "      -urbanisme et durabilite       -la construct",
+                "ogies des parois et durabilite  gestion de l eau e"
             ],
-            "performances? environnement": [
-                "s batiments     -la performance environnementale des batiments   "
-            ],
-            "[gestions? (?:de l |des )?eau, environnement]": [
-                "struction durable 1 gestion de l eau et des dechets le c",
-                "rois et durabilite  gestion de l eau et des dechets conn",
-                "idique relatif a la gestion de l eau et des dechets    u",
-                "la protection et la gestion de l eau    savoir se confor",
+            "[performances? energ[^ ]+, developp[^ ]+ durab[^ ]+, environnement]": [
+                "oclimatique     -la performance energetique des batiments     -",
+                "-les indicateurs du developpement durable dans la constructio",
                 "ondre aux exigences environnementales  de plus en plu",
                 "de limiter l impact environnemental d une activite  a",
                 "    -la performance environnementale des batiments   ",
                 "x normes de qualite environnementales relatives a l e"
+            ],
+            "[performances? energ[^ ]+, durabilite, environnement]": [
+                "oclimatique     -la performance energetique des batiments     -",
+                "      -urbanisme et durabilite       -la construct",
+                "ogies des parois et durabilite  gestion de l eau e",
+                "ondre aux exigences environnementales  de plus en plu",
+                "de limiter l impact environnemental d une activite  a",
+                "    -la performance environnementale des batiments   ",
+                "x normes de qualite environnementales relatives a l e"
+            ],
+            "architectures? durab[^ ]+": [
+                " durable le cours d architecture durable a pour objectif d a"
             ]
         }
     },
     "CONS0010-3: Construction durable 3": {
         "fr": {
-            "architectures? durab": [
-                "ongation du cours d architecture durable et est traite par"
-            ],
-            "constructions? durab": [
-                "construction durable 3 audits et renov"
-            ],
-            "eco[ -]?construction": [
-                "ment   strategies d ecoconstruction le contenu du cours",
-                "utions strategies d ecoconstruction acquisition d outil"
-            ],
-            "bilans? carbon": [
-                "ete  energie grise  bilan carbone  consommation ener"
-            ],
-            "[energie, durab]": [
-                "veau passif et zero energie  cette etude tiendr",
-                "act sur la planete  energie grise  bilan carbon",
-                "ible du niveau zero energie      calculer les p",
-                "construction durable 3 audits et renov",
-                "udits et renovation durable permettre a l etu",
-                "ours d architecture durable et est traite par",
-                "hes et referentiels durable     -acoustique d",
-                "udits et renovation durable etre capable de m"
-            ]
-        }
-    },
-    "CONS0026-2: Construction durable 2": {
-        "fr": {
-            "constructions? durab": [
-                "construction durable 2 physique et pat"
-            ],
-            "impacts? (?:environnement|ecosyst)": [
-                "nement    evaluer l impact environnemental d un chantier  et"
-            ],
-            "protections? (?:de l )?environnement": [
-                "juridique visant la protection de l environnement    evaluer l impact"
-            ],
-            "qualites? de l air": [
-                "matiques liees a la qualite de l air   -les pathologies "
+            "architectures? durab[^ ]+": [
+                "ongation du cours d architecture durable et est traite par t"
             ]
         }
     },
     "ECOL0002-1: Toxicologie - Normes et probl\u00e9matiques environnementales": {
         "fr": {
-            "permis (?:d )environnement": [
-                "ques telles que  le permis d environnement  le sme  la protect"
-            ],
-            "problematiques? (?:d |de l )?environnement": [
-                "cologie - normes et problematiques environnementales aspects juridiq",
-                "ales a partir d une problematique environnementale actuelle  les et",
-                "    apprehender les problematiques environnementales    communiquer "
-            ],
-            "protections? (?:de l )?environnement": [
-                " a la gestion et la protection de l environnement      pour une compr"
-            ],
-            "questions? (?:environnement|ecosyst)": [
-                "ltidisciplinaire de questions environnementales a partir d une ",
-                "ltidisciplinaire de questions environnementales choisir et util"
-            ],
-            "(?:ecosystemes?|environnements?) (?:aquatique|marin|littoral|subtidal|corallien)": [
-                " egalement tous les ecosystemes aquatiques et terrestres   l "
-            ],
-            "ecotoxicologie": [
-                "ees  toxicologie et ecotoxicologie le cours de toxicol",
-                "s et terrestres   l ecotoxicologie aborde les principa",
-                "de prevention     b ecotoxicologie et toxicologie de l",
-                "eur  toxicologie et ecotoxicologie a l issue du cours ",
-                "toxicologie et de l ecotoxicologie  dose  exposition  ",
-                " toxicologie et a l ecotoxicologie     developper un e"
-            ],
-            "pollu": [
-                " et importances des pollutions dans l ecosphe",
-                "ite  les effets des polluants sur les populat",
-                "ons  les effets des polluants sur les ecosyst",
-                "t importances de la pollution dans l ecospher",
-                "icite    effets des polluants sur les populat",
-                "tions    effets des polluants sur les ecosyst",
-                "rendre l impact des polluants sur les individ"
-            ],
-            "[gestions? (?:de l |des )?eau, environnement]": [
-                "la protection et la gestion de l eau  du sol  l air et l",
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "fferents aspects du developpement durable    connaitre les no",
                 "s et problematiques environnementales aspects juridiq",
                 "uridiques et normes environnementales l objectif du c",
                 "iques et des normes environnementales relatifs a la g",
@@ -251,24 +193,198 @@
                 "ies aux thematiques environnementales et savoir se co",
                 " contamination de l environnement    connaitre et com",
                 "ur la contamination environnementale et in fine sur l",
-                "inaire de questions environnementales choisir et util"
+                "inaire de questions environnementales choisir et util",
+                " egalement tous les ecosystemes aquatiques et terre",
+                "s polluants sur les ecosystemes    notions abordees",
+                "s polluants sur les ecosystemes     c toxicologie s",
+                " communautes et les ecosystemes    connaitre et com",
+                " les mecanismes des ecosystemes et l impact des act"
+            ],
+            "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]": [
+                "fferents aspects du developpement durable    connaitre les no",
+                "cologie - normes et problematiques environnementales aspects juridiq",
+                "ales a partir d une problematique environnementale actuelle  les et",
+                "    apprehender les problematiques environnementales    communiquer "
+            ],
+            "[ecosyst[^ ]+, pollution]": [
+                " egalement tous les ecosystemes aquatiques et terre",
+                "s polluants sur les ecosystemes    notions abordees",
+                "s polluants sur les ecosystemes     c toxicologie s",
+                " communautes et les ecosystemes    connaitre et com",
+                " les mecanismes des ecosystemes et l impact des act",
+                " et importances des pollutions dans l ecosphere  ",
+                "t importances de la pollution dans l ecosphere   "
+            ],
+            "[environnement, (?:de)?pollution, developp[^ ]+ durab[^ ]+]": [
+                "s et problematiques environnementales aspects juridiq",
+                "uridiques et normes environnementales l objectif du c",
+                "iques et des normes environnementales relatifs a la g",
+                " la protection de l environnement      pour une compr",
+                "ations en matiere d environnement  les principales th",
+                "es que  le permis d environnement  le sme  la protect",
+                " en chimie finalite environnement  aborde les notions",
+                "mes vivants et leur environnement    afin de mieux ce",
+                "et toxicologie de l environnement            principa",
+                "inaire de questions environnementales a partir d une ",
+                "d une problematique environnementale actuelle  les et",
+                " les problematiques environnementales    communiquer ",
+                "uridiques et normes environnementales apprehender les",
+                "der les thematiques environnementales    integrer les",
+                "ies aux thematiques environnementales et savoir se co",
+                " contamination de l environnement    connaitre et com",
+                "ur la contamination environnementale et in fine sur l",
+                "inaire de questions environnementales choisir et util",
+                " et importances des pollutions dans l ecosphere  ",
+                "t importances de la pollution dans l ecosphere   ",
+                "fferents aspects du developpement durable    connaitre les no"
+            ],
+            "ecotoxicologie": [
+                "ees  toxicologie et ecotoxicologie le cours de toxicol",
+                "s et terrestres   l ecotoxicologie aborde les principa",
+                "de prevention     b ecotoxicologie et toxicologie de l",
+                "eur  toxicologie et ecotoxicologie a l issue du cours ",
+                "toxicologie et de l ecotoxicologie  dose  exposition  ",
+                " toxicologie et a l ecotoxicologie     developper un e"
+            ],
+            "questions? environnement": [
+                "ltidisciplinaire de questions environnementales a partir d une ",
+                "ltidisciplinaire de questions environnementales choisir et util"
             ]
         }
     },
     "ECOL0003-1: Etude du vivant": {
         "fr": {
-            "effets? (?:de )?serre": [
-                "climatiques tel que effet de serre  couche d ozone  re"
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                " des communautes et biodiversite    la synecologie o",
+                "liquer la notion de biodiversite      comprendre et ",
+                "liquer la notion de biodiversite      comprendre  an",
+                " l urbanisme a pour consequence une alteration des ",
+                "re et expliquer les consequences environnementales ",
+                "re et expliquer les consequences environnementales ",
+                "in  introduction a l ecologie la societe actuelle",
+                " a la problematique environnementale   l homme  tant ",
+                "rels      ce cours d ecologie a pour but dans un ",
+                " fonctionnement des ecosystemes pour en final obser",
+                "s humaines dans les ecosystemes afin d en evaluer l",
+                "rver ou restaurer l environnement naturel            ",
+                "notions de base de l ecologie  definition  objets",
+                "milieu de vie      l ecologie des populations  no",
+                "r-specifiques      l ecologie des communautes et ",
+                "ologie ou etude des ecosystemes  definition  struct",
+                "himique  differents ecosystemes  etc       analyse ",
+                " notions generales d ecologie      maitriser et u",
+                "aire specifique de l ecologie et aux sciences en ",
+                "er l autoecologie  l ecologie des populations  de",
+                " la biocenologie  l ecosystemologie      connaitre  com",
+                "er l importance de l ecologie dans la gestion de ",
+                "ans la gestion de l environnement      connaitre  com",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                "er les consequences environnementales liees aux activ",
+                "uer un sujet lie a l ecologie      prendre consci",
+                "e la complexite de l ecologie      prendre consci",
+                "fonctionnement de l environnement  biologie a l issue",
+                "es  introduction a l ecologie a l issue du cours ",
+                "a l issue du cours d ecologie  l etudiant de bach",
+                " notions generales d ecologie      maitriser et u",
+                "aire specifique de l ecologie      comprendre  an",
+                "x de structure d un ecosysteme et expliquer le fon",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                "er l importance de l ecologie dans la gestion de ",
+                "ans la gestion de l environnement      comprendre  an",
+                "er les consequences environnementales liees aux activ",
+                "le des phenomenes en ecologie      prendre consci",
+                "fonctionnement de l environnement      pouvoir travai"
             ],
-            "rechauffements? climat": [
-                " environnemantales  rechauffement climatique  eutrophisation",
-                "re  couche d ozone  rechauffement climatique  etc   liste no"
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                " des communautes et biodiversite    la synecologie o",
+                "liquer la notion de biodiversite      comprendre et ",
+                "liquer la notion de biodiversite      comprendre  an",
+                "n  introduction a l ecologie la societe actuelle",
+                "els      ce cours d ecologie a pour but dans un ",
+                "otions de base de l ecologie  definition  objets",
+                "etc           l autoecologie  rapports d une esp",
+                "ilieu de vie      l ecologie des populations  no",
+                "-specifiques      l ecologie des communautes et ",
+                "odiversite    la synecologie ou etude des ecosys",
+                "notions generales d ecologie      maitriser et u",
+                "ire specifique de l ecologie et aux sciences en ",
+                "oir expliquer l autoecologie  l ecologie des pop",
+                "r l autoecologie  l ecologie des populations  de",
+                "des populations  demecologie   la biocenologie  ",
+                "r l importance de l ecologie dans la gestion de ",
+                "er un sujet lie a l ecologie      prendre consci",
+                " la complexite de l ecologie      prendre consci",
+                "s  introduction a l ecologie a l issue du cours ",
+                " l issue du cours d ecologie  l etudiant de bach",
+                "notions generales d ecologie      maitriser et u",
+                "ire specifique de l ecologie      comprendre  an",
+                "r l importance de l ecologie dans la gestion de ",
+                "e des phenomenes en ecologie      prendre consci"
             ],
-            "[energie, durab]": [
-                "e trophique  flux d energie  cycle biogeochimiq",
-                "tion  developpement durable  etc   connaitre "
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                " des communautes et biodiversite    la synecologie o",
+                "liquer la notion de biodiversite      comprendre et ",
+                "liquer la notion de biodiversite      comprendre  an",
+                " fonctionnement des ecosystemes pour en final obser",
+                "s humaines dans les ecosystemes afin d en evaluer l",
+                "ologie ou etude des ecosystemes  definition  struct",
+                "himique  differents ecosystemes  etc       analyse ",
+                " la biocenologie  l ecosystemologie      connaitre  com",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                "x de structure d un ecosysteme et expliquer le fon",
+                "fonctionnement d un ecosysteme      comprendre et "
             ],
-            "[[ ]ecolo[^ ]+]": [
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                " des communautes et biodiversite    la synecologie o",
+                "liquer la notion de biodiversite      comprendre et ",
+                "liquer la notion de biodiversite      comprendre  an",
+                "afin d en evaluer l impact et d envisager les ",
+                "in  introduction a l ecologie la societe actuelle",
+                " a la problematique environnementale   l homme  tant ",
+                "rels      ce cours d ecologie a pour but dans un ",
+                " fonctionnement des ecosystemes pour en final obser",
+                "s humaines dans les ecosystemes afin d en evaluer l",
+                "rver ou restaurer l environnement naturel            ",
+                "notions de base de l ecologie  definition  objets",
+                "milieu de vie      l ecologie des populations  no",
+                "r-specifiques      l ecologie des communautes et ",
+                "ologie ou etude des ecosystemes  definition  struct",
+                "himique  differents ecosystemes  etc       analyse ",
+                " notions generales d ecologie      maitriser et u",
+                "aire specifique de l ecologie et aux sciences en ",
+                "er l autoecologie  l ecologie des populations  de",
+                " la biocenologie  l ecosystemologie      connaitre  com",
+                "er l importance de l ecologie dans la gestion de ",
+                "ans la gestion de l environnement      connaitre  com",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                "er les consequences environnementales liees aux activ",
+                "uer un sujet lie a l ecologie      prendre consci",
+                "e la complexite de l ecologie      prendre consci",
+                "fonctionnement de l environnement  biologie a l issue",
+                "es  introduction a l ecologie a l issue du cours ",
+                "a l issue du cours d ecologie  l etudiant de bach",
+                " notions generales d ecologie      maitriser et u",
+                "aire specifique de l ecologie      comprendre  an",
+                "x de structure d un ecosysteme et expliquer le fon",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                "er l importance de l ecologie dans la gestion de ",
+                "ans la gestion de l environnement      comprendre  an",
+                "er les consequences environnementales liees aux activ",
+                "le des phenomenes en ecologie      prendre consci",
+                "fonctionnement de l environnement      pouvoir travai"
+            ],
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "ales  rechauffement climatique  eutrophisation",
+                "s grands mecanismes climatiques tel que effet ",
+                "zone  rechauffement climatique  etc   liste no",
+                " a la problematique environnementale   l homme  tant ",
+                "rver ou restaurer l environnement naturel            ",
+                "ans la gestion de l environnement      connaitre  com",
+                "er les consequences environnementales liees aux activ",
+                "fonctionnement de l environnement  biologie a l issue",
+                "ans la gestion de l environnement      comprendre  an",
+                "er les consequences environnementales liees aux activ",
+                "fonctionnement de l environnement      pouvoir travai",
                 "in  introduction a l ecologie la societe actuelle",
                 "rels      ce cours d ecologie a pour but dans un ",
                 "notions de base de l ecologie  definition  objets",
@@ -287,75 +403,100 @@
                 "er l importance de l ecologie dans la gestion de ",
                 "le des phenomenes en ecologie      prendre consci"
             ],
-            "biodiversite": [
-                " des communautes et biodiversite    la synecologie o",
-                "liquer la notion de biodiversite      comprendre et ",
-                "liquer la notion de biodiversite      comprendre  an"
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ue  eutrophisation  developpement durable  etc   connaitre et",
+                " a la problematique environnementale   l homme  tant ",
+                "rver ou restaurer l environnement naturel            ",
+                "ans la gestion de l environnement      connaitre  com",
+                "er les consequences environnementales liees aux activ",
+                "fonctionnement de l environnement  biologie a l issue",
+                "ans la gestion de l environnement      comprendre  an",
+                "er les consequences environnementales liees aux activ",
+                "fonctionnement de l environnement      pouvoir travai",
+                "in  introduction a l ecologie la societe actuelle",
+                "rels      ce cours d ecologie a pour but dans un ",
+                " fonctionnement des ecosystemes pour en final obser",
+                "s humaines dans les ecosystemes afin d en evaluer l",
+                "notions de base de l ecologie  definition  objets",
+                "milieu de vie      l ecologie des populations  no",
+                "r-specifiques      l ecologie des communautes et ",
+                "ologie ou etude des ecosystemes  definition  struct",
+                "himique  differents ecosystemes  etc       analyse ",
+                " notions generales d ecologie      maitriser et u",
+                "aire specifique de l ecologie et aux sciences en ",
+                "er l autoecologie  l ecologie des populations  de",
+                " la biocenologie  l ecosystemologie      connaitre  com",
+                "er l importance de l ecologie dans la gestion de ",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                "uer un sujet lie a l ecologie      prendre consci",
+                "e la complexite de l ecologie      prendre consci",
+                "es  introduction a l ecologie a l issue du cours ",
+                "a l issue du cours d ecologie  l etudiant de bach",
+                " notions generales d ecologie      maitriser et u",
+                "aire specifique de l ecologie      comprendre  an",
+                "x de structure d un ecosysteme et expliquer le fon",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                "er l importance de l ecologie dans la gestion de ",
+                "le des phenomenes en ecologie      prendre consci"
             ],
-            "cycles? bio-?geo-?chimique": [
-                "ue  flux d energie  cycle biogeochimique  differents ecosyst"
-            ],
-            "problematiques? (?:d |de l )?environnement": [
+            "[developp[^ ]+ durab[^ ]+, problem(?:e|atique)s? (?:d'|de l')?environnement]": [
+                "ue  eutrophisation  developpement durable  etc   connaitre et",
                 "lus confrontee a la problematique environnementale   l homme  tant "
+            ],
+            "[effets? (?:de )?serre, climat]": [
+                "climatiques tel que effet de serre  couche d ozone  re",
+                "ales  rechauffement climatique  eutrophisation",
+                "s grands mecanismes climatiques tel que effet ",
+                "zone  rechauffement climatique  etc   liste no"
+            ],
+            "rechauffement climat[^ ]+": [
+                " environnemantales  rechauffement climatique  eutrophisation  de",
+                "re  couche d ozone  rechauffement climatique  etc   liste non ex"
             ]
         }
     },
     "ELEC0456-3: Electricit\u00e9": {
         "fr": {
-            "panneaux? photovol": [
-                "          etude des panneaux photovoltaiques  electrocine"
+            "panneaux? photovol[^ ]+": [
+                "          etude des panneaux photovoltaiques  electrocinetique e"
             ]
         }
     },
     "ELEC0463-1: Electricit\u00e9 g\u00e9n\u00e9rale": {
         "fr": {
-            "panneaux? photovol": [
-                "e         etude des panneaux photovoltaiques  electricite"
+            "panneaux? photovol[^ ]+": [
+                "e         etude des panneaux photovoltaiques  electricite 1  the"
             ]
         }
     },
     "ENER0003-2: Energ\u00e9tique, Energ\u00e9tique": {
         "fr": {
-            "rechauffements? climat": [
-                "s a l energie    le rechauffement climatique  l energie gris"
-            ],
             "energ[^ ]+ fossile": [
                 "ne    les sources d energie fossiles  charbon  petrole "
             ],
-            "[nucleaire, productions? (?:d )?(?:energ|elec)]": [
-                "histe     l energie nucleaires et ses differents ",
-                "ensionnement     la production energetique d une eolienn",
-                "eometrie solaire et production d energie d origine photovo",
-                "que des systemes de production energetique et de leur mi"
+            "rechauffement climat[^ ]+": [
+                "s a l energie    le rechauffement climatique  l energie grise  l"
             ]
         }
     },
     "ENER0005-1: Energies renouvelables": {
         "fr": {
-            "energ[^ ]+ renouvelable": [
+            "energ[^ ]+ renouvelab[^ ]+": [
                 "energies renouvelables "
             ]
         }
     },
     "ENVI0829-2: Aspects environnementaux": {
         "fr": {
-            "effets? (?:de )?serre": [
-                "ion atmospherique - effet de serre - ozone tropo et st",
-                "climatiques tel que effet de serre  couche d ozone  re"
-            ],
-            "rechauffements? climat": [
-                "re  couche d ozone  rechauffement climatique  etc   liste no"
-            ],
-            "energ[^ ]+ renouvelable": [
-                "      laboratoire d energies renouvelables connaitre et utili"
-            ],
-            "panneaux? photovol": [
-                "liser un montage de panneaux photovoltaique et realiser l"
-            ],
-            "panneaux? solaires? thermique": [
-                "liser un montage de panneaux solaires thermiques et utiliser la reg"
-            ],
-            "[[ ]ecolo[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "s grands mecanismes climatiques tel que effet ",
+                "zone  rechauffement climatique  etc   liste no",
+                "aspects environnementaux ecologie objecti",
+                " a la problematique environnementale   l homme  tant ",
+                "rver ou restaurer l environnement naturel            ",
+                "       l homme et l environnement                atmo",
+                "er les consequences environnementales liees aux activ",
+                "fonctionnement de l environnement      developper un ",
                 "cts environnementaux ecologie objectifs      la s",
                 "   notions de base d ecologie                  fa",
                 "ent des bacs tampons ecologie maitriser et utilis",
@@ -364,558 +505,245 @@
                 "e la complexite de l ecologie      prendre consci",
                 "le des phenomenes en ecologie      prendre consci"
             ],
-            "problematiques? (?:d |de l )?environnement": [
-                "lus confrontee a la problematique environnementale   l homme  tant "
+            "[ecosyst[^ ]+, pollution]": [
+                "s humaines dans les ecosystemes afin d en evaluer l",
+                " fonctionnement des ecosystemes    notions de toxic",
+                "fonctionnement d un ecosysteme      comprendre et ",
+                " les mecanismes des ecosystemes     prendre conscie",
+                "      atmosphere et pollution atmospherique - eff"
+            ],
+            "[effets? (?:de )?serre, atmosphere]": [
+                "ion atmospherique - effet de serre - ozone tropo et st",
+                "climatiques tel que effet de serre  couche d ozone  re",
+                "ment                atmosphere et pollution atmosp"
+            ],
+            "[effets? (?:de )?serre, climat]": [
+                "ion atmospherique - effet de serre - ozone tropo et st",
+                "climatiques tel que effet de serre  couche d ozone  re",
+                "s grands mecanismes climatiques tel que effet ",
+                "zone  rechauffement climatique  etc   liste no"
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "      laboratoire d energies renouvelables connaitre et utilis"
+            ],
+            "panneaux? photovol[^ ]+": [
+                "liser un montage de panneaux photovoltaique et realiser le sche"
+            ],
+            "rechauffement climat[^ ]+": [
+                "re  couche d ozone  rechauffement climatique  etc   liste non ex"
             ],
             "ecotoxicologie": [
                 "de toxicologie et d ecotoxicologie    identifier et an"
-            ],
-            "pollu": [
-                "      atmosphere et pollution atmospherique -",
-                "s - traitements des polluants atmospheriques "
             ]
         }
     },
     "ENVI0830-1: Biologie, Biologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "nieur  des notions d ecologie et une approche des"
-            ],
-            "defis? (?:environnement|ecosyst)": [
+            "defis? (?:environnement|ecolo[^ ]+)": [
                 "re et maitriser les defis environnementaux actuels    prend"
-            ]
-        }
-    },
-    "ENVI0831-1: QSE - Qualit\u00e9, s\u00e9curit\u00e9, environnement": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ematiques chimiques  ecologiques  environnementales "
-            ]
-        }
-    },
-    "ENVI0832-1: Analyse et traitement de l'air, Analyse et traitement de l'air": {
-        "fr": {
-            "pollu": [
-                "eriser l air et les polluants atmospheriques ",
-                "ion de cas reels de pollution et consequences",
-                "differents types de pollution associes a cert",
-                "ives a l air et aux pollutions atmospheriques",
-                "sources et types de pollution  en prenant en ",
-                "tion et gestion des pollutions       apprehen"
-            ]
-        }
-    },
-    "ENVI0833-1: Analyse et traitement de l'eau, Analyse et traitement de l'eau": {
-        "fr": {
-            "pollu": [
-                "alitatives   5  les pollutions  l impact sur ",
-                "ns entre qualite et pollution  qualite et usa"
-            ]
-        }
-    },
-    "ENVI0834-1: Analyse et traitement des sols, Analyse et traitement des sols": {
-        "fr": {
-            "pollu": [
-                "ns des cas reels de pollution et consequences",
-                "differents types de pollution des sols  prese",
-                "s  decharges  sites pollues  et suivi eventue",
-                " d un chantier de depollution suivant disponi",
-                "s lies aux types de pollution en prenant en c",
-                "tion et gestion des pollutions       apprehen"
-            ]
-        }
-    },
-    "ENVI0835-1: Environnements industriels, Environnements industriels": {
-        "fr": {
-            "iso 1400": [
-                "   environnement et iso 14000  emas - developpem"
-            ]
-        }
-    },
-    "FOGE0003-3: Gestion des chantiers": {
-        "fr": {
-            "[performances? energ[^ ]+, batiment]": [
-                "   securite/sante   performance energetique du batiment  respon",
-                "ance energetique du batiment  responsabilite des"
             ]
         }
     },
     "GEST3751-2: Notions de gestion": {
         "fr": {
-            "[performances? energ[^ ]+, batiment]": [
+            "[performances? energ[^ ]+, developp[^ ]+ durab[^ ]+, environnement]": [
                 "   securite/sante   performance energetique du batiment  respon",
-                "s et delais dans le batiment         table des m",
-                "ance energetique du batiment  responsabilite des"
+                "er les principes du developpement durable et a utiliser les e",
+                "tion de chantier et environnement permettent l evalua"
             ],
-            "energ[^ ]+ renouvelable": [
-                "e et a utiliser les energies renouvelables    apprendre a ger"
+            "[performances? energ[^ ]+, durabilite, environnement]": [
+                "   securite/sante   performance energetique du batiment  respon",
+                "afin de garantir la durabilite du materiel       c",
+                "tion de chantier et environnement permettent l evalua"
             ],
-            "[energie, durab]": [
-                "e et a utiliser les energies renouvelables    a",
-                "afin de garantir la durabilite du materiel   ",
-                "es du developpement durable et a utiliser les"
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "e et a utiliser les energies renouvelables    apprendre a gere"
             ]
         }
     },
     "GEST3759-1: Sciences humaines et gestion 2": {
         "fr": {
-            "responsabilites? (?:environnement|ecosyst)": [
-                "    chapitre 4   la responsabilite environnementale     partie 4   c"
-            ]
-        }
-    },
-    "HVAC0002-1: Montages d'installations en HVAC": {
-        "fr": {
-            "[recycla, acier]": [
-                "et d une station de recyclage de fluide frigori",
-                " recuperation et de recyclage des gaz     relev",
-                "n chauffage   tuyau acier  cuivre filetage  s"
+            "responsabilite environnement[^ ]+": [
+                "    chapitre 4   la responsabilite environnementale     partie 4   cert"
             ]
         }
     },
     "INBB0001-1: Sciences \u00e9conomiques 2, Economie g\u00e9n\u00e9rale": {
         "fr": {
-            "epuisements? (?:des? )?ressources? naturelle": [
+            "epuisement (?:des? )?ressources? naturelle": [
                 "ation  stagflation  epuisement des ressources naturelles          de develo"
             ]
         }
     },
     "INTP0014-1: Int\u00e9gration en milieu professionnel, Stage en entreprise": {
         "fr": {
-            "[energie, durab]": [
-                " les consommations  energie  eau  papier       ",
-                "ts du developpement durable    -    respecter"
-            ],
-            "[[ ]ecolo[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "fferents aspects du developpement durable    -    respecter l",
+                "nels ou des aspects environnementaux ou bien des 2  i",
+                "ite industrielle et environnement au milieu professio",
+                "e la structure de l environnement professionnel    - ",
+                "formation  qualite  environnemental  radioprotection ",
                 "   analyser l impact ecologique relatif aux activit"
-            ]
-        }
-    },
-    "MAEN0001-1: Management environnemental 1, Compl\u00e9ment de sciences de l'environnement": {
-        "fr": {
-            "managements? environnemental": [
-                "management environnemental 1  complement de sc"
-            ]
-        }
-    },
-    "MAEN0002-1: Management environnemental 2, Introduction au management environnemental": {
-        "fr": {
-            "managements? environnemental": [
-                "management environnemental 2  introduction au ",
-                " 2  introduction au management environnemental norme iso 14001 / r",
-                "ion d un systeme de management environnemental - methode de travai"
             ],
-            "iso 1400": [
-                "vironnemental norme iso 14001 / reglement emas  "
+            "impacts? (?:ecosyst[^ ]+|ecolo[^ ]+)": [
+                "    -    analyser l impact ecologique relatif aux activit"
             ]
         }
     },
     "MAEN0003-1: Management environnemental 3": {
         "fr": {
-            "managements? environnemental": [
-                "management environnemental 3 voir contenu des ",
-                "es d apprentissage  management environnemental norme iso 14001 / r",
-                "es d apprentissage  management environnemental l etudiant doit pou"
-            ],
-            "politiques? (?:environnement|ecosyst)": [
+            "politique environnement": [
                 "    redaction d une politique environnementale    identificatio"
-            ],
-            "iso 1400": [
-                "vironnemental norme iso 14001 / reglement emas  ",
-                "igences de la norme iso 14001 et les traduire da"
             ]
         }
     },
     "MATE0001-1: Sciences des mat\u00e9riaux": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "lants  les materiaux ecologiques  les murs porteurs "
+            "materiaux ecolo[^ ]+": [
+                "riaux isolants  les materiaux ecologiques  les murs porteurs "
             ]
         }
     },
     "MATE0009-1: Connaissance des mat\u00e9riaux, Connaissance des mat\u00e9riaux": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts     les materiaux ecologiques    les murs porteur"
+            "materiaux ecolo[^ ]+": [
+                "ux isolants     les materiaux ecologiques    les murs porteur"
             ]
         }
     },
     "PRBF0002-2: Math\u00e9matiques-Sciences 1": {
         "fr": {
-            "energ[^ ]+ renouvelable": [
-                " de partir vers les energies renouvelables  l enseignement re"
-            ],
-            "[[ ]ecolo[^ ]+]": [
-                "e par un survol de l ecologie  le tout en passant"
+            "energ[^ ]+ renouvelab[^ ]+": [
+                " de partir vers les energies renouvelables  l enseignement rel"
             ]
         }
     },
     "PSAC0002-1: Eveil scientifique, g\u00e9ographique et historique": {
         "fr": {
-            "enjeux? climat": [
-                "des sciences et aux enjeux climatiques et environneme"
+            "enjeux? climat[^ ]+": [
+                "des sciences et aux enjeux climatiques et environnementaux"
             ]
         }
     },
     "SCAP0002-1: Sciences appliqu\u00e9es 2": {
         "fr": {
-            "(?:ecosystemes?|environnements?) (?:aquatique|marin|littoral|subtidal|corallien)": [
-                " egalement tous les ecosystemes aquatiques et terrestres   l "
+            "[ecosyst[^ ]+, pollution]": [
+                " egalement tous les ecosystemes aquatiques et terre",
+                "s polluants sur les ecosystemes     des notions de ",
+                " communautes et les ecosystemes    comprendre  anal",
+                " et importances des pollutions dans l ecosphere  "
+            ],
+            "[extraction, impact, environnement]": [
+                " distillation     l extraction par solvant toxicol",
+                "ent    comprendre l impact des polluants sur l",
+                "ique vis-a-vis de l impact des activites humai",
+                "ite industrielle et environnement devra              ",
+                " contamination de l environnement    comprendre l imp",
+                "ur la contamination environnementale et in fine sur l",
+                "les operateurs et l environnemen"
+            ],
+            "[impact, pesticide]": [
+                "ent    comprendre l impact des polluants sur l",
+                "ique vis-a-vis de l impact des activites humai",
+                " hydrocarbures  les pesticides  etc  sont egaleme"
+            ],
+            "[pollution, pesticide]": [
+                " et importances des pollutions dans l ecosphere  ",
+                " hydrocarbures  les pesticides  etc  sont egaleme"
             ],
             "ecotoxicologie": [
                 "s et terrestres   l ecotoxicologie aborde les principa",
                 "toxicologie et de l ecotoxicologie  dose  exposition  ",
                 " toxicologie et a l ecotoxicologie  procedes industrie"
-            ],
-            "pollu": [
-                " et importances des pollutions dans l ecosphe",
-                "ite  les effets des polluants sur les populat",
-                "ons  les effets des polluants sur les ecosyst",
-                "rendre l impact des polluants sur les individ"
-            ]
-        }
-    },
-    "SCCM0001-1: Sciences 2": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "etale  partie 1      ecologie  partie 1  chimie l"
-            ]
-        }
-    },
-    "SCEN0001-2: Sciences de l'environnement 1": {
-        "fr": {
-            "permis (?:d )environnement": [
-                "niques  expertises  permis d environnement        qui traitero"
-            ],
-            "enjeux? (?:environnement|ecosyst)": [
-                "ement et les grands enjeux environnementaux    permettre aux"
-            ],
-            "pollu": [
-                "ns des cas reels de pollution et consequences",
-                "differents types de pollution des sols  prese",
-                "ns des cas reels de pollution et consequences",
-                "differents types de pollution des sols  prese",
-                "s  decharges  sites pollues  et suivi eventue",
-                " d un chantier de depollution suivant disponi",
-                "differents types de pollution lies aux dechet",
-                "s lies aux types de pollution en prenant en c",
-                "tion et gestion des pollutions      leur perm",
-                "tion et gestion des pollutions      apprehend"
-            ]
-        }
-    },
-    "SCEN0002-2: Sciences de l'environnement 2": {
-        "fr": {
-            "permis (?:d )environnement": [
-                "niques  expertises  permis d environnement  permis d urbanisme"
-            ],
-            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
-                " bruit amenagement  amenagement du territoire et de la mobilite c",
-                "    qu est-ce que l amenagement du territoire      l amenagement ",
-                "u territoire      l amenagement du territoire et les disciplines ",
-                "voir les composants amenagement du territoire et de la mobilite f",
-                " les pratiques de l amenagement du territoire ces savoirs visent ",
-                "tiques en matiere d amenagement du territoire et de mobilite   - ",
-                "sciences de l environnement 2 l unite permet a ",
-                "nes principaux de l environnement et devrait leur per",
-                "xpertises  permis d environnement  permis d urbanisme",
-                "s    amenagement et environnement    le contexte de l",
-                "tre et legislations environnementales       l impact ",
-                "nt aux metiers de l environnement de caracteriser et ",
-                "une protection de l environnement et dans le cadre de",
-                "ons et qualite de l environnement     etre confronte "
-            ],
-            "protections? (?:de l )?environnement": [
-                "on au service d une protection de l environnement et dans le cadre de"
-            ],
-            "pollu": [
-                "eriser l air et les polluants atmospheriques ",
-                "ion de cas reels de pollution et consequences",
-                "differents types de pollution associes a cert",
-                "ualitatives     les pollutions  l impact sur ",
-                "bruits ainsi qu aux pollutions correspondante",
-                "sources et types de pollution  en prenant en ",
-                "tion et gestion des pollutions       apprehen",
-                "ns entre qualite et pollution  qualite et usa"
-            ],
-            "[gestions? (?:de l |des )?eau, environnement]": [
-                "introduction sur la gestion de l eau      les analyses d",
-                "service d une bonne gestion de l eau     etablir des lie",
-                "sciences de l environnement 2 l unite permet a ",
-                "nes principaux de l environnement et devrait leur per",
-                "xpertises  permis d environnement  permis d urbanisme",
-                "s    amenagement et environnement    le contexte de l",
-                "tre et legislations environnementales       l impact ",
-                "nt aux metiers de l environnement de caracteriser et ",
-                "une protection de l environnement et dans le cadre de",
-                "ons et qualite de l environnement     etre confronte "
             ]
         }
     },
     "SCET0001-2: NTIC appliqu\u00e9es aux disciplines": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "r dans la classe un climat de confiance favora",
+                "re eux et avec leur environnement    - mettre l accen",
+                "er et developper un environnement propre a stimuler l",
                 "disciplines biologie ecologie   partie1      deco"
             ]
         }
     },
     "SCEU0003-1: Biologie 3, Biologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "r dans la classe un climat de confiance favora",
+                "re eux et avec leur environnement    - mettre l accen",
+                "er et developper un environnement propre a stimuler l",
                 "on phylogenetique    ecologie   partie 2   evalua"
             ]
         }
     },
-    "SHCL0001-2: Sciences humaines": {
+    "SPEC0003-1: Techniques sp\u00e9ciales du b\u00e2timent 3, Techniques sp\u00e9ciales 3 - Chauffage": {
         "fr": {
-            "impacts? (?:environnement|ecosyst)": [
-                "rs de localisation  impact environnemental     - d etre capa"
-            ]
-        }
-    },
-    "SHCM0001-1: G\u00e9ographie - histoire": {
-        "fr": {
-            "climatolog": [
-                "       - notions de climatologie                  "
-            ],
-            "impacts? (?:environnement|ecosyst)": [
-                "rs de localisation  impact environnemental    etre capable d"
-            ]
-        }
-    },
-    "SHDP0001-1: G\u00e9ographie - histoire": {
-        "fr": {
-            "impacts? (?:environnement|ecosyst)": [
-                "rs de localisation  impact environnemental    - etre capable"
+            "[electri[^ ]+, stockage]": [
+                "          chauffage electrique                chau",
+                "ur plan  sous vide  stockage de l eau chaude    "
             ]
         }
     },
     "SPEC0005-2: Techniques sp\u00e9ciales du b\u00e2timent 5": {
         "fr": {
-            "[performances? energ[^ ]+, batiment]": [
-                "rois d un batiment  performances energetiques du batiment utilisa",
-                "iateur a installer  performances energetiques du batiment ensuite",
-                "nt aux normes de la performance energetique des batiments peb e",
-                "niques speciales du batiment 5 techniques specia",
-                "ons des parois d un batiment  performances energ",
-                "ces energetiques du batiment utilisation et enco",
-                "let d encodage d un batiment reel  defini a l ai",
-                "etre energetique du batiment  volume protege  su",
-                "an energetique d un batiment      techniques de ",
-                " la conception d un batiment nzeb      gestion d",
-                " la conception d un batiment passif    base de l",
-                "  optimisation d un batiment a l aide du logicie",
-                "lation dans le bse  batiment  service  enseignem",
-                "de ventilation d un batiment tertiaire  le cours",
-                " eclairage dans les batiments bse  l etudiant po",
-                "on d une piece d un batiment  les puissances de ",
-                "ces energetiques du batiment ensuite l etudiant ",
-                "s deperditions d un batiment           utiliser ",
-                "nce energetique des batiments peb et phpp     ci",
-                "an energetique d un batiment peb et phpp     ret",
-                "tructifs  peb  d un batiment     utiliser les lo",
-                " afin d encoder des batiments pour obtenir et op",
-                "an energetique d un batiment donne en mettant en"
-            ],
-            "[energie, durab]": [
-                "e la consommation d energie primaire consacree ",
-                "osant des solutions durables pour y remedier"
+            "[solutions? durab[^ ]+, impact]": [
+                "et en proposant des solutions durables pour y remedier",
+                "rminera egalement l impact de l eclairage natu"
             ]
         }
     },
     "TDAF0001-1: Introduction au d\u00e9veloppement durable, Introduction au d\u00e9veloppement durable": {
         "fr": {
-            "empreint[^ ]+ carbon": [
-                "preinte ecologique  empreinte carbone  limite planetaire"
-            ],
-            "energ[^ ]+ renouvelable": [
-                " limite planetaire  energies renouvelables  mix energetique  "
-            ],
-            "[energie, durab]": [
-                " limite planetaire  energies renouvelables  mix",
-                "on au developpement durable  introduction au ",
-                "on au developpement durable le cours est stuc",
-                "ns du developpement durable   - diagnostics  ",
-                "fs du developpement durable   indicateurs  se",
-                "pt de developpement durable  contexte scienti",
-                "on du developpement durable issue du rapport ",
-                "es du developpement durable     expliquer les",
-                "ce et developpement durable  et les desaccord",
-                "t/ou indicateurs de durabilite appropries sel"
-            ],
-            "[[ ]ecolo[^ ]+]": [
+            "[[ ]ecolo[^ ]+, durabilite]": [
                 "t  besoin  empreinte ecologique  empreinte carbone ",
-                "que   de croissance  ecologie  economie circulair"
+                "que   de croissance  ecologie  economie circulair",
+                "t/ou indicateurs de durabilite appropries selon la"
             ],
-            "limites? planet": [
-                " notion de limites  limites planetaires  physiques  de",
-                " empreinte carbone  limite planetaire  energies renou"
-            ],
-            "economies? circulaire": [
+            "economie circulaire": [
                 "oissance  ecologie  economie circulaire  conditions d habit"
+            ],
+            "empreint[^ ]+ carbon[^ ]+": [
+                "preinte ecologique  empreinte carbone  limite planetaire "
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                " limite planetaire  energies renouvelables  mix energetique   "
             ]
         }
     },
     "TDAL0001-1: Economie g\u00e9n\u00e9rale, Economie g\u00e9n\u00e9rale": {
         "fr": {
-            "epuisements? (?:des? )?ressources? naturelle": [
+            "epuisement (?:des? )?ressources? naturelle": [
                 "ation  stagflation  epuisement des ressources naturelles          de develo"
             ]
         }
     },
     "TDAS0002-1: Socio anthropologie du tourisme et des loisirs, Socio anthropologie du tourisme et des loisirs (Socio anthropologie du tourisme et des loisirs) ": {
         "fr": {
-            "[tourisme, durab]": [
-                "io anthropologie du tourisme et des loisirs  soc",
-                "io anthropologie du tourisme et des loisirs  soc",
-                "io anthropologie du tourisme et des loisirs   1 ",
-                "che sociologique du tourisme          - l apport",
-                "s usages sociaux du tourisme        * l approche",
-                " anthropologique du tourisme          - naissanc",
-                "uristiques    4  le tourisme \"experientiel\"  kes",
-                "kesako     5   slow tourisme   tourisme vert  to",
-                "5   slow tourisme   tourisme vert  tourisme soli",
-                "me   tourisme vert  tourisme solidaire    vers u",
-                "olidaire    vers un tourisme reellement \"durable",
-                "\"durable\"     6  le tourisme post-pandemique  pe",
-                "ndemique  penser le tourisme autrement    7  et ",
-                " et paradigme s  du tourisme  a la fin du cours ",
-                "io-anthropologie du tourisme  l etudiant sera ca",
-                "vacances  conges et tourisme a partir des lieux ",
-                "fferents acteurs du tourisme  professionnels  ho",
-                "du developpement du tourisme et des loisirs  tra",
-                "s usages sociaux du tourisme a la lumiere de la ",
-                "ourisme reellement \"durable\"     6  le touris"
-            ]
-        }
-    },
-    "TDAT0001-1: Techniques de communication, Techniques de communication": {
-        "fr": {
-            "[tourisme, durab]": [
-                "faire des etudes en tourisme  maitriser les outi",
-                "ec un developpement durable des activites    "
-            ]
-        }
-    },
-    "TDBF0003-1: Introduction au tourisme durable, Intro au TD": {
-        "fr": {
-            "[tourisme, durab]": [
-                "introduction au tourisme durable  intro au t",
-                "analyse relatifs au tourisme durable     fournir",
-                "duction au tourisme durable  intro au td  se ",
-                "elatifs au tourisme durable     fournir les e"
-            ]
-        }
-    },
-    "TDCT0001-1: Politique des transports, Politique des transports (Politique des transports) ": {
-        "fr": {
-            "impacts? (?:environnement|ecosyst)": [
-                "e le transport  les impacts environnementaux du transport et "
-            ]
-        }
-    },
-    "TDDE0003-1: Management strat\u00e9gique des destinations touristiques, Management strat\u00e9gique des destinations touristiques": {
-        "fr": {
-            "[tourisme, durab]": [
-                "es territoriales de tourisme durable l etudiant*",
-                "oriales de tourisme durable l etudiant*e sera"
+            "[durab(?:le|ilite), mobilite]": [
+                "ourisme reellement \"durable\"     6  le tourisme",
+                "tique a travers les mobilites touristiques et va",
+                " temps des loisirs  mobilites  imaginaires touri"
             ]
         }
     },
     "TDEH0002-1: Ecologie et gestion durable des destinations touristiques, Ecologie et gestion durable des destinations touristiques": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ations touristiques  ecologie et gestion durable ",
-                "es concepts lies a l ecologie generale et aux eco"
+            "gestio[^ ]+ durab[^ ]+": [
+                "ecologie et gestion durable des destinations to",
+                "tiques  ecologie et gestion durable des destinations to"
             ],
-            "services? (?:environnement|ecosyst)": [
-                "  dont la notion de service ecosystemique     il aborde"
-            ],
-            "[tourisme, durab]": [
-                "    sous l angle du tourisme   demarches  acteur",
-                " pratiques liees au tourisme dans certains milie",
-                "ecologie et gestion durable des destinations ",
-                "ecologie et gestion durable des destinations "
-            ]
-        }
-    },
-    "TDEP0002-2: Pratiques du management strat\u00e9gique des destinations touristiques": {
-        "fr": {
-            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
-                "ulation plus large  amenagement du territoire        capacites   ",
-                "ulation plus large  amenagement du territoire        capacites   ",
-                "socioeconomiques et environnementales du geoparc \"fam",
-                "socioeconomiques et environnementales des territoires",
-                "compris les aspects environnementaux  mais aussi de p",
-                "socioeconomiques et environnementales du territoire  ",
-                "socioeconomiques et environnementales du geoparc \"fam",
-                "socioeconomiques et environnementales des territoires",
-                "compris les aspects environnementaux  mais aussi de p",
-                "socioeconomiques et environnementales du territoire  ",
-                "nnees touristiques  environnementales pour documenter",
-                "er de l information environnementale    connaitre dif",
-                "nnees touristiques  environnementales pour documenter",
-                "er de l information environnementale    connaitre dif"
-            ],
-            "[amenagements? du territoire, durab]": [
-                "ulation plus large  amenagement du territoire        capacites   ",
-                "ulation plus large  amenagement du territoire        capacites   ",
-                "miques et d emplois durables s integrant aux ",
-                "oriales de tourisme durable    un des element",
-                " charte du tourisme durable au sein des espac",
-                "miques et d emplois durables s integrant aux ",
-                "oriales de tourisme durable    un des element",
-                " charte du tourisme durable au sein des espac",
-                "ation    un test de durabilite de l evenement",
-                "ppement touristique durable du territoire    ",
-                "ation    un test de durabilite de l evenement",
-                "ppement touristique durable du territoire    "
-            ],
-            "[tourisme, durab]": [
-                "es territoriales de tourisme durable    un des e",
-                "allonie   charte du tourisme durable au sein des",
-                "dere les acteurs du tourisme  en tenant compte d",
-                "es territoriales de tourisme durable    un des e",
-                "allonie   charte du tourisme durable au sein des",
-                "dere les acteurs du tourisme  en tenant compte d",
-                "miques et d emplois durables s integrant aux ",
-                "oriales de tourisme durable    un des element",
-                " charte du tourisme durable au sein des espac",
-                "miques et d emplois durables s integrant aux ",
-                "oriales de tourisme durable    un des element",
-                " charte du tourisme durable au sein des espac",
-                "ation    un test de durabilite de l evenement",
-                "ppement touristique durable du territoire    ",
-                "ation    un test de durabilite de l evenement",
-                "ppement touristique durable du territoire    "
-            ]
-        }
-    },
-    "TDER0001-1: Droit de l'environnement, Droit de l'environnement": {
-        "fr": {
-            "droits? (?:d |de l )?environnement": [
-                "droit de l environnement  droit de l environ",
-                "de l environnement  droit de l environnement l objectif est de f",
-                "ant les origines du droit de l environnement  les modifications "
-            ],
-            "problematiques? (?:d |de l )?environnement": [
-                " l etudiant avec la problematique environnementale liee au tourisme"
+            "services? ecosystemiq": [
+                "  dont la notion de service ecosystemique     il aborde ens"
             ]
         }
     },
     "TECH0769-1: Techniques sp\u00e9ciales du b\u00e2timent, Techniques sp\u00e9ciales du b\u00e2timent": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "iques  techniques et ecologiques    choix et dimensi",
-                "iques  techniques et ecologiques    controler le bon"
-            ]
-        }
-    },
-    "TESP0001-1: Notions techniques fondamentales - Techniques sp\u00e9ciales": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "iques  techniques et ecologiques    choix et dimensi",
-                "iques  techniques et ecologiques    controler le bon"
+            "[bioclimat[^ ]+, energ[^ ]+]": [
+                "troduction/concepts bioclimatique-passif-qzen/confort thermique/climat 2 ",
+                "ementation wallonne energetique du batiment \" peb \""
             ]
         }
     }

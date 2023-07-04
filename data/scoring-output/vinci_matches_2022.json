@@ -1,18 +1,4 @@
 {
-    "APSV1120-1: Dimension sociale en psychologie": {
-        "fr": {
-            "changements? climat": [
-                "ns humaines face au changement climatique par une approch"
-            ]
-        }
-    },
-    "BBMV1060-1: Travaux pratiques de chimie, Travaux pratiques de chimie": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement               acqui"
-            ]
-        }
-    },
     "BBMV1080-1: Chimie g\u00e9n\u00e9rale 2, Chimie g\u00e9n\u00e9rale 2 (th\u00e9orie et exercices)": {
         "fr": {
             "chimie (?:[^ ]+ ){0,4}verte": [
@@ -20,74 +6,13 @@
             ]
         }
     },
-    "BBMV2021-1: Travaux pratiques de Chimie-Biochimie 1, Travaux pratiques de Chimie-Biochimie 1": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement       3  acquis d a"
-            ]
-        }
-    },
-    "BBMV2030-1: Histologie": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement"
-            ]
-        }
-    },
-    "BBMV2040-1: Microbiologie m\u00e9dicale 1": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "           - aspects ecologiques  pathogeniques et e"
-            ]
-        }
-    },
-    "BBMV2052-1: M\u00e9thodes immunochimiques et S\u00e9rologie": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement"
-            ]
-        }
-    },
-    "BBMV2090-1: Travaux pratiques de Biochimie et Chimie analytique 2": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement           3  acquis"
-            ]
-        }
-    },
-    "BBMV2110-1: H\u00e9matologie": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement      acquis d appre"
-            ]
-        }
-    },
-    "BBMV2120-1: Immunoh\u00e9matologie": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement"
-            ]
-        }
-    },
-    "BBMV3060-1: Radioprotection, Radioprotection": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement"
-            ],
-            "dechets? (?:nucleaire|radioactif)": [
-                "en belgique   - les dechets radioactifs   - la radioprotec"
-            ]
-        }
-    },
-    "BBMV3110-2: Stage du Travail de fin d'\u00e9tudes": {
-        "fr": {
-            "protections? (?:de l )?environnement": [
-                " intervenants et la protection de l environnement       appliquer de "
-            ]
-        }
-    },
     "BBQV1090-1: Technologie au service de la qualit\u00e9 et de la s\u00e9curit\u00e9 des produits, Technologie au service de la qualit\u00e9 et de la s\u00e9curit\u00e9 des produits": {
         "fr": {
+            "[recyclage, environnement]": [
+                " sous-produits   le recyclage   les bilans matier",
+                "ns   risques pour l environnement   risques pour le c",
+                "  le personnel et l environnement acquis d apprentiss"
+            ],
             "epurations? des eaux": [
                 "physico-chimiques d epuration des eaux usees   analyse du "
             ]
@@ -108,83 +33,33 @@
             ]
         }
     },
-    "BCHV2330-1: M\u00e9thodes sp\u00e9ciales d'analyses (TP), M\u00e9thodes sp\u00e9ciales d'analyse": {
-        "fr": {
-            "bio[ -]?carburant": [
-                " et proprietes d un biocarburant   - dosage des cons"
-            ]
-        }
-    },
     "BCHV2430-1: Chimie durable, Chimie durable": {
         "fr": {
-            "[biomasse, productions? (?:d )?(?:energ|elec)]": [
-                "sants majeurs de la biomasse lignocellulosique e",
-                "retraitements de la biomasse lignocellulosique  ",
-                "ere generation   la production d energie  de biodiesel et "
-            ],
-            "[energie, durab]": [
-                "n   la production d energie  de biodiesel et de",
-                " biocarburants et d energie   l hydrolyse de la",
-                "chimie durable  chimie durable 1",
-                "mie durable  chimie durable 1 le concept de <",
-                "rte >> ou << chimie durable >>          2 int"
-            ],
             "chimie (?:[^ ]+ ){0,4}verte": [
                 " 1 le concept de << chimie verte >> ou << chimie dur"
-            ],
-            "bio[ -]?carburant": [
-                "es de production de biocarburants et d energie   l h"
-            ],
-            "bio[ -]?diesel": [
-                "ction d energie  de biodiesel et de produits a pl"
             ]
         }
     },
     "BCHV2440-1: Eau : quait\u00e9 et traitement, Eau : qualit\u00e9 et traitement": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "composition et sur l ecologie des micro-oganismes"
-            ],
             "epurations? des eaux": [
                 "ssus a la base de l epuration des eaux usees          desc"
-            ],
-            "pollu": [
-                "on des processus de pollution et definition d",
-                "tivite  ions  micro-polluants  contaminations"
             ]
         }
     },
     "BCHV2450-1: Toxicologie environnementale, Toxicologie environnementale": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "   - application a l ecologie  principes fondamen"
-            ],
             "ecotoxicologie": [
                 "s     - principes d ecotoxicologie    - definition des"
-            ],
-            "toxicologies? environnement": [
-                "toxicologie environnementale  toxicologie env",
-                "e environnementale  toxicologie environnementale 1-aspects genera"
             ]
         }
     },
     "BCHV2460-1: Qualit\u00e9 de l'air, Qualit\u00e9 de l'air": {
         "fr": {
-            "effets? (?:de )?serre": [
-                "ment et fumees      effet de serre      pluie acide   "
-            ],
-            "pollu": [
-                "principale cause de pollution  dispersion des",
-                "ion  dispersion des polluants      combustion",
-                "ux   filtrations  depollutions      expositio",
-                " et domestique      pollution radioactive  de",
-                "iquer l origine des pollutions atmospheriques",
-                "liquer l impact des polluants sur la qualite "
-            ],
-            "qualites? de l air": [
-                "qualite de l air  qualite de l air l",
-                "qualite de l air  qualite de l air l atmosphere   stru",
-                "es polluants sur la qualite de l air et la sante"
+            "[effets? (?:de )?serre, atmosphere]": [
+                "ment et fumees      effet de serre      pluie acide   ",
+                " qualite de l air l atmosphere   structure et comp",
+                "ioactive  decrire l atmosphere  dans le temps et d"
             ]
         }
     },
@@ -195,39 +70,19 @@
             ]
         }
     },
-    "BCHV3070-1: Toxicologie, Toxicologie": {
-        "fr": {
-            "pollu": [
-                "s  des solvants aux polluants 1 acquis d appr"
-            ]
-        }
-    },
     "BCHV3310-1: Chimie industrielle, Chimie industrielle": {
         "fr": {
-            "bio[ -]?source": [
-                "ynthese   source et biosource - utilisations   ca",
-                "alcools - la chimie biosourcee de l ethanol    ch"
+            "[recyclage, environnement]": [
+                "eloppement durable  recyclage  analyse du cycle d",
+                "eres - ressources - recyclage - li  nouvel or bla",
+                "rmes d impact sur l environnement et de gestion des r",
+                "ique  economique et environnemental   valorisation de"
             ],
-            "gestions? (?:des? )?ressources? naturelle": [
-                "environnement et de gestion des ressources naturelles       module 1    "
+            "analyse (?:de |du )?cycle (?:de )?vie": [
+                "durable  recyclage  analyse du cycle de vie  lca       module 6"
             ],
             "chimie (?:[^ ]+ ){0,4}verte": [
                 "es  en lien avec la chimie verte      chapitre 6    "
-            ],
-            "analyses? (?:de |du )?cycle (?:de )?vie": [
-                "durable  recyclage  analyse du cycle de vie  lca       module 6"
-            ],
-            "[recycla, dechet]": [
-                "eloppement durable  recyclage  analyse du cycle",
-                "eres - ressources - recyclage - li  nouvel or b",
-                "produits  toxicite  dechets  acces aux matiere"
-            ],
-            "[recycla, meta(?:l|u)]": [
-                "eloppement durable  recyclage  analyse du cycle",
-                "eres - ressources - recyclage - li  nouvel or b",
-                "anique  minerale et metallurgique en presenta",
-                "ie industrielle des metaux    principales fil",
-                "anique  minerale et metallurgique  reactions "
             ]
         }
     },
@@ -241,235 +96,99 @@
             ]
         }
     },
-    "BDIV3150-1: Sciences humaines 3": {
+    "ERGV3410-1: Management et collaboration": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                " les enjeux sociaux  ecologiques et politiques de l "
+            "projets? environnement": [
+                "hais art   -        projet environnement  climat  activites "
             ]
         }
     },
-    "BIMV2010-1: Radioprotection, Radioprotection et effets biologiques des radiations ionisantes": {
+    "PEDV4340-1: Identit\u00e9 du soignant expert en p\u00e9diatrie et n\u00e9onatologie et comp\u00e9tences interculturelles (1)": {
         "fr": {
-            "dechets? (?:nucleaire|radioactif)": [
-                "en belgique   - les dechets radioactifs   - la radioprotec"
-            ]
-        }
-    },
-    "EDUV2390-1: Accompagnement personnalis\u00e9 et cadre s\u00e9curisant 2, Accompagnement personnalis\u00e9 et cadre s\u00e9curisant 2 (Accompagnement personnalis\u00e9 et cadre s\u00e9curisant 2) ": {
-        "fr": {
-            "[[ ]velos?[ ]]": [
-                " lors d une activite velo  au terme de cette u",
-                " lors d une activite velo    * en demontrant s",
-                "ue lors d une sortie velo   ass2      * en se "
-            ]
-        }
-    },
-    "ERGV1490-1: Environnement physique et social": {
-        "fr": {
-            "biodiversite": [
-                "le sol  l air et la biodiversite et les occupations "
-            ]
-        }
-    },
-    "ERGV1500-1: Communication 1": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique  7/ communique oral"
-            ]
-        }
-    },
-    "ERGV1521-1: D\u00e9veloppement identitaire et professionnel 1": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique  7/ communique oral"
-            ]
-        }
-    },
-    "ERGV2220-1: Fondements 2": {
-        "fr": {
-            "eco[- ]?responsab": [
-                "ment    8 flow    9 eco-responsabilite et developpeme"
-            ]
-        }
-    },
-    "ERGV2280-1: Plan d'Intervention Adulte : Sant\u00e9 mentale": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique"
-            ]
-        }
-    },
-    "ERGV2320-1: Communication 2": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique"
-            ]
-        }
-    },
-    "ERGV2360-1: Stage environnement": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique  7/ communique oral"
-            ]
-        }
-    },
-    "ERGV2370-1: Stage Processus": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique  7/ communique oral"
-            ]
-        }
-    },
-    "ERGV3050-1: Stage Enfant": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique    7/ communique or"
-            ]
-        }
-    },
-    "ERGV3060-1: Stage Adulte 1": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique  7/ communique oral"
-            ]
-        }
-    },
-    "ERGV3070-1: Stage Adulte 2": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique    7/ communique or"
-            ]
-        }
-    },
-    "ERGV3080-1: Stage Personne Ag\u00e9e": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ts  et de son reseau ecologique    7/ communique or"
-            ]
-        }
-    },
-    "ISGV1010-1: Approche syst\u00e9mique de la sant\u00e9 ": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "dical  psychosocial  ecologique  les inequites en s"
-            ]
-        }
-    },
-    "ONCV4350-1: Radioprotection": {
-        "fr": {
-            "dechets? (?:nucleaire|radioactif)": [
-                "s de la mnuc et les dechets radioactifs   radiotherapie et"
-            ]
-        }
-    },
-    "PRIH1110-1: Didactique de l'\u00e9veil": {
-        "fr": {
-            "changements? climat": [
-                "ie  climatologie et changements climatiques  notions de ca"
-            ],
-            "climatolog": [
-                "se de meteorologie  climatologie et changements cl"
-            ]
-        }
-    },
-    "PRIV1110-1: Didactique de l'\u00e9veil": {
-        "fr": {
-            "changements? climat": [
-                "ie  climatologie et changements climatiques  notions de ca"
-            ],
-            "climatolog": [
-                "se de meteorologie  climatologie et changements cl"
-            ]
-        }
-    },
-    "PSCV2010-1: Apprendre \u00e0 faire apprendre": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "l environnement et l ecologie      les representa"
+            "objectifs? (de )?developpements? durables?": [
+                "nt presentation des objectifs de developpement durables  approche des conce"
             ]
         }
     },
     "PSCV2080-1: Ouverture de l'\u00e9cole sur l\"ext\u00e9rieur": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "utdoor education   -developpement durable et ecologie   -cito",
+                "rte de la maison du developpement durable a lln   -activites ",
+                "de sensibilation au developpement durable en classe maternell",
+                "ciaux  economiques  environnementaux  politiques     ",
+                "iales  culturelles  environnementales  y compris   me",
                 "loppement durable et ecologie   -citoyennete   -r"
-            ],
-            "[tourisme, durab]": [
-                "menades\"  office du tourisme-inforville de louva",
-                "on   -developpement durable et ecologie   -ci",
-                "on du developpement durable a lln   -activite",
-                "on au developpement durable en classe materne"
             ]
         }
     },
-    "SFEV3011-1: Art de la sage-femme IV, Art de la sage-femme IV (Art de la sage-femme IV) ": {
+    "SPOV4100-1: Hygi\u00e8ne / Architecture / Gestion": {
         "fr": {
-            "hydroelec": [
-                "eineuses  equilibre hydroelectrique et acido-basi"
+            "[electri[^ ]+, stockage]": [
+                "  6  l installation electrique     7  les gaz medi",
+                "eriel respiratoire  stockage et conservation du ",
+                "sterilisation    le stockage  e  la peremption d"
             ]
         }
     },
     "SSCV2420-1: Appr\u00e9hender les interactions entre l'homme et son environnement et la biodiversit\u00e9 des micro-organismes, Ecologie, biodiversit\u00e9 des micro-organismes et didactique (biologie)": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "environnement et la biodiversite des micro-organisme",
+                "ganismes  ecologie  biodiversite des micro-organisme",
+                "s micro-organismes  ecologie  biodiversite des m",
+                "es et protistes   - ecologie  objets d etude de ",
+                "objets d etude de l ecologie  dynamique des popu",
+                "flux d energie et l ecologie des ecosystemes + s",
+                "e f   << elements d ecologie  ecologie fondament",
+                "lements d ecologie  ecologie fondamentale >>  du"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "environnement et la biodiversite des micro-organisme",
+                "ganismes  ecologie  biodiversite des micro-organisme",
+                "e et l ecologie des ecosystemes + seminaires    ref"
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "environnement et la biodiversite des micro-organisme",
+                "ganismes  ecologie  biodiversite des micro-organisme",
+                "on peuvent avoir un impact sur la tenue exigee",
+                "ntre l homme et son environnement et la biodiversite ",
                 "es micro-organismes  ecologie  biodiversite des m",
                 "ies et protistes   - ecologie  objets d etude de ",
                 " objets d etude de l ecologie  dynamique des popu",
                 " flux d energie et l ecologie des ecosystemes + s",
+                "e et l ecologie des ecosystemes + seminaires    ref",
                 "de f   << elements d ecologie  ecologie fondament",
                 "elements d ecologie  ecologie fondamentale >>  du"
-            ],
-            "biodiversite": [
-                "environnement et la biodiversite des micro-organisme",
-                "ganismes  ecologie  biodiversite des micro-organisme"
             ]
         }
     },
     "SSCV2440-1: Pratiquer des activit\u00e9s scientifiques de terrain, Stage d'\u00e9cologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "la perspective d un developpement durable     acquis d appren",
+                "une influence sur l environnement et la sante dans la",
                 " de terrain  stage d ecologie l analyse chimique ",
+                "atiere   etude d un ecosysteme   facteurs biotique",
                 "de f   << elements d ecologie  ecologie fondament",
                 "elements d ecologie  ecologie fondamentale >>  du"
             ]
         }
     },
-    "SSCV2450-1: S'approprier la diversit\u00e9 et la classification des organismes pluricellulaires, Biodiversit\u00e9 et classification des pluricellulaires et didactique": {
-        "fr": {
-            "biodiversite": [
-                "s pluricellulaires  biodiversite et classification d"
-            ]
-        }
-    },
-    "SSCV2460-1: Produire et transformer de l'\u00e9nergie": {
-        "fr": {
-            "[energie, durab]": [
-                "et transformer de l energie partie physique    ",
-                "quotidiens lies a l energie ayant une influence",
-                " d un developpement durable    acquis d appre"
-            ]
-        }
-    },
     "SSCV3410-2: Analyser des situations relatives aux impacts de l'homme sur son environnement": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "le     - concept de developpement durable     - impact de l h",
+                "er mediterraneenne  developpement durable introduction au dev",
+                "ble introduction au developpement durable et a l education a/",
+                " de l homme sur son environnement - elements de chimi",
+                " elements de chimie environnementale     - concept de",
+                "ct de l homme sur l environnement     - education a/p",
+                "- education a/par l environnement     - concepts d ec",
+                " elements de chimie environnementale - elements de ch",
+                "ts de l homme sur l environnement       etablir des l",
                 "ent     - concepts d ecologie marine elements de ",
                 "x concepts de base d ecologie marine biomes marin"
-            ]
-        }
-    },
-    "SSCV3430-1: Appr\u00e9hender les th\u00e9ories \u00e9volutives et les concepts de base en g\u00e9n\u00e9tique, Evolution et g\u00e9n\u00e9tique": {
-        "fr": {
-            "biodiversite": [
-                "en et j-ph rioults  biodiversite et evolution du mon",
-                "  les cahiers de la biodiversite  editions edp scien"
-            ]
-        }
-    },
-    "SSHV2411-1: Enseigner la formation historique et g\u00e9ographique dans le qualifiant": {
-        "fr": {
-            "etalements? urbain": [
-                "  les migrations  l etalement urbain  les risques nature"
             ]
         }
     }

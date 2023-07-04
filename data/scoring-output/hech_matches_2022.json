@@ -1,29 +1,15 @@
 {
-    "ADVW0030-1: N\u00e9erlandais module 4": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "reseaux sociaux    l ecologie dans les entreprise"
-            ]
-        }
-    },
     "AGRO1001-1: Interdisciplinarit\u00e9 I, AETP": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "rentes branches de l ecologie contemporaine     -",
-                "urs et des contextes ecologiques  economiques et soc"
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "        ogm         biodiversite    enfin les action",
+                "entes branches de l ecologie contemporaine     -",
+                "rs et des contextes ecologiques  economiques et soc"
             ],
-            "biodiversite": [
-                "        ogm         biodiversite    enfin les action"
-            ],
-            "impacts? (?:environnement|ecosyst)": [
-                "afin de reduire les impacts environnementaux de cette culture",
-                "dustrie  evaluent l impact environnemental  eie  a travers l"
-            ],
-            "pollu": [
-                "        emission de polluants atmospheriques "
-            ],
-            "[gestions? (?:de l |des )?eau, environnement]": [
-                "cts economiques  la gestion de l eau et de l environneme",
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "        ogm         biodiversite    enfin les action",
+                "afin de reduire les impacts environnementaux d",
+                "dustrie  evaluent l impact environnemental  ei",
                 "les pressions sur l environnement en terme de        ",
                 "ustries  agronomie  environnement        les etudiant",
                 "nt international et environnement developpent les the",
@@ -31,75 +17,71 @@
                 "  evaluent l impact environnemental  eie  a travers l",
                 "on de l eau et de l environnement  les etudiants sont",
                 "iter  les pressions environnementales liees aux produ",
-                "quer  ces pressions environnementales au regard notam"
-            ]
-        }
-    },
-    "AGRO1004-1: Sciences fondamentales et appliqu\u00e9es I, Physique appliqu\u00e9e": {
-        "fr": {
-            "changements? climat": [
-                "s est consacree aux changements climatiques et a l etude d",
-                " pour introduire le changement climatique  nous commencer",
-                " onde  reflectance  changement climatique  ges  forcage  ",
-                "triser la notion du changement climatique et comprendre l"
+                "quer  ces pressions environnementales au regard notam",
+                "rentes branches de l ecologie contemporaine     -",
+                "urs et des contextes ecologiques  economiques et soc"
             ]
         }
     },
     "AGRO1009-1: Techniques Agronomiques I, P\u00e9dologie appliqu\u00e9e": {
         "fr": {
-            "[[ ]sols?[ ]+, erosion]": [
-                "n et d evolution des sols  avec un focus sur le",
-                "ere    diversite des sols en wallonie et dans ",
-                "    cartographie des sols   aspects theoriques e",
-                "tion de la carte des sols de la belgique et de",
-                "in   observation des sols et acquisition d ech",
-                "luence du travail du sol sur les proprietes d",
-                "ur les proprietes du sol  structure  activite ",
-                "que  cycle c et n    sols et gestion des matie",
-                " de conservation des sols cultives   focus sur",
-                "ion et diversite des sols tropicaux   techniqu",
-                " gestion durable des sols en milieu tropical a",
-                "x d organisation des sols et adapter en conseq",
-                " de la diversite des sols du monde et en dedui",
-                " principaux types de sols dans le monde      m",
-                "e classification des sols      proposer une demarch",
-                "tement une carte des sols      identifier la nature",
-                "tions subies par les sols en fonction des cont",
-                "r les proprietes des sols",
-                "tives   focus sur l erosion et le tassement    "
+            "gestio[^ ]+ durab[^ ]+": [
+                "ion et pratiques de gestion durable des sols en milieu "
+            ]
+        }
+    },
+    "AGRO1017-1: Agronomie I, Compl\u00e9ments Phyto.": {
+        "fr": {
+            "agriculture biologique": [
+                "er du ble tendre en agriculture biologique  ab          cultiv"
             ]
         }
     },
     "AGRO1023-1: \u00c9cologie rurale II, Sylviculture et agroforesterie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "ysicochimique et la biodiversite     decrire et iden",
+                "la sauvegarde de la biodiversite     identifier et c",
+                "ecologie rurale ii  sylvicul",
+                "presenter les bases ecologiques  techniques  econom",
+                "mble des references ecologiques du fichier ecologiq",
+                "logiques du fichier ecologique des essences et des"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ysicochimique et la biodiversite     decrire et iden",
+                "la sauvegarde de la biodiversite     identifier et c",
+                " rappels - arbre et ecosysteme forestier    elemen"
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ysicochimique et la biodiversite     decrire et iden",
+                "la sauvegarde de la biodiversite     identifier et c",
+                "re d identifier les evolutions contemporaines et ",
+                "lieres agronomie et environnement  mage1014      comp",
+                " rappels - arbre et ecosysteme forestier    elemen",
+                "gaux    peuplier et environnement    le peuplier en a",
+                "ctives economiques  environnementales et sociales des",
+                " presenter les bases ecologiques  techniques  econom",
+                "emble des references ecologiques du fichier ecologiq",
+                "ologiques du fichier ecologique des essences et des",
+                "rs incidences sur l environnement physicochimique et "
+            ],
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                "tion des principaux climats et biomes en zone ",
+                "s aux contextes pedoclimatiques tout en etant ",
+                "lieres agronomie et environnement  mage1014      comp",
+                "gaux    peuplier et environnement    le peuplier en a",
+                "ctives economiques  environnementales et sociales des",
+                "rs incidences sur l environnement physicochimique et ",
                 " presenter les bases ecologiques  techniques  econom",
                 "emble des references ecologiques du fichier ecologiq",
                 "ologiques du fichier ecologique des essences et des"
             ],
-            "biodiversite": [
-                "ysicochimique et la biodiversite     decrire et iden",
-                "la sauvegarde de la biodiversite     identifier et c"
-            ],
             "agro-?foresterie": [
                 "ii  sylviculture et agroforesterie l ue repose sur tro",
                 "t    le peuplier en agroforesterie             option "
-            ]
-        }
-    },
-    "ARJP1001-1: Atelier Projet I": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "egrant la composante ecologique et environnementale",
-                "egrant la composante ecologique et environnementale",
-                "egrant la composante ecologique et environnementale"
-            ]
-        }
-    },
-    "ARJP1002-1: Initiation \u00e0 la composition, Initiation \u00e0 la composition": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "egrant la composante ecologique et environnementale"
+            ],
+            "gestio[^ ]+ durab[^ ]+": [
+                "tifonctionnalite et gestion durable des forets    aperc"
             ]
         }
     },
@@ -110,34 +92,9 @@
             ]
         }
     },
-    "ARJP1020-1: Phytosociologie - Concept th\u00e9orique, Phytosociologie - Concept th\u00e9orique": {
-        "fr": {
-            "bio[ -]?indicateur": [
-                "tes vegetales comme bioindicateur     ce cours est un"
-            ]
-        }
-    },
-    "ARJP2029-1: Techniques d'am\u00e9nagement": {
-        "fr": {
-            "impacts? (?:environnement|ecosyst)": [
-                "prendre en compte l impact environnemental des materiaux  te"
-            ],
-            "eco[- ]?responsab": [
-                "itectes-paysagistes eco-responsable  techniques de co"
-            ]
-        }
-    },
     "ARJP2040-1: Ecologie, \u00c9cologie": {
         "fr": {
-            "effets? (?:de )?serre": [
-                "t d un projet sur l effet de serre      -  realiser un"
-            ],
-            "[[ ]ecolo[^ ]+]": [
-                "ecologie  ecologie nous nous attachons",
-                "t leurs implications ecologiques     nous terminons ",
-                "egrer les concepts d ecologie a un projet d archi"
-            ],
-            "biodiversite": [
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "pitre consacre a la biodiversite  les causes de son ",
                 "ser l accueil de la biodiversite au jardin et commen",
                 "la thematique de la biodiversite dans les pieces d e",
@@ -146,63 +103,145 @@
                 " de l erosion de la biodiversite     -  expliquer  l",
                 "yer l erosion de la biodiversite     -  expliquer  l",
                 "ser l accueil de la biodiversite au jardin     -  de",
-                "ser l accueil de la biodiversite         -  explique"
+                "ser l accueil de la biodiversite         -  explique",
+                "de son erosion  ses consequences  et les moyens mis",
+                "ecologie  ecologie nous nous attachons",
+                "definir la notion d ecosysteme et les relations qu",
+                "t leurs implications ecologiques     nous terminons ",
+                "egrer les concepts d ecologie a un projet d archi",
+                "ctions au sein d un ecosysteme et  donner des exem"
             ],
-            "cycles? bio-?geo-?chimique": [
-                "etc      les grands cycles biogeochimiques  eau  carbone  azo",
-                "pliquer  les grands cycles biogeochimiques  eau  carbone  azo"
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "pitre consacre a la biodiversite  les causes de son ",
+                "ser l accueil de la biodiversite au jardin et commen",
+                "la thematique de la biodiversite dans les pieces d e",
+                "ce qu on entend par biodiversite     -  citer  les i",
+                "u a l erosion de la biodiversite sur l humanite   de",
+                " de l erosion de la biodiversite     -  expliquer  l",
+                "yer l erosion de la biodiversite     -  expliquer  l",
+                "ser l accueil de la biodiversite au jardin     -  de",
+                "ser l accueil de la biodiversite         -  explique",
+                "ecologie  ecologie nous nous",
+                "ecologie  ecologie nous nous attachons",
+                " leurs implications ecologiques     nous terminons ",
+                "grer les concepts d ecologie a un projet d archi"
             ],
-            "pollu": [
-                "a problematique des pollutions et leurs impli",
-                "t la dispersion des polluants et comment ils "
-            ]
-        }
-    },
-    "ARJP2041-1: Paysage II - Protection et gestion, Paysage II - Protection et gestion": {
-        "fr": {
-            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
-                "des paysages dans l amenagement du territoire et la gestion de l ",
-                " et la gestion de l environnement  la charte paysager"
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "pitre consacre a la biodiversite  les causes de son ",
+                "ser l accueil de la biodiversite au jardin et commen",
+                "la thematique de la biodiversite dans les pieces d e",
+                "ce qu on entend par biodiversite     -  citer  les i",
+                "u a l erosion de la biodiversite sur l humanite   de",
+                " de l erosion de la biodiversite     -  expliquer  l",
+                "yer l erosion de la biodiversite     -  expliquer  l",
+                "ser l accueil de la biodiversite au jardin     -  de",
+                "ser l accueil de la biodiversite         -  explique",
+                "definir la notion d ecosysteme et les relations qu",
+                "ctions au sein d un ecosysteme et  donner des exem"
             ],
-            "[[ ]ecolo[^ ]+]": [
-                "tique - le role de l ecologie du paysage      - e"
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "pitre consacre a la biodiversite  les causes de son ",
+                "ser l accueil de la biodiversite au jardin et commen",
+                "la thematique de la biodiversite dans les pieces d e",
+                "ce qu on entend par biodiversite     -  citer  les i",
+                "u a l erosion de la biodiversite sur l humanite   de",
+                " de l erosion de la biodiversite     -  expliquer  l",
+                "yer l erosion de la biodiversite     -  expliquer  l",
+                "ser l accueil de la biodiversite au jardin     -  de",
+                "ser l accueil de la biodiversite         -  explique",
+                "  les causes de son erosion  ses consequences  ",
+                " pour enrayer cette erosion     enfin  nous dec",
+                "ns negatives qu a l erosion de la biodiversite ",
+                "cipales causes de l erosion de la biodiversite ",
+                "uvre pour enrayer l erosion de la biodiversite ",
+                "ecologie  ecologie nous nous attachons",
+                "definir la notion d ecosysteme et les relations qu",
+                "t leurs implications ecologiques     nous terminons ",
+                "egrer les concepts d ecologie a un projet d archi",
+                "ctions au sein d un ecosysteme et  donner des exem"
+            ],
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "pitre consacre a la biodiversite  les causes de son ",
+                "ser l accueil de la biodiversite au jardin et commen",
+                "la thematique de la biodiversite dans les pieces d e",
+                "ce qu on entend par biodiversite     -  citer  les i",
+                "u a l erosion de la biodiversite sur l humanite   de",
+                " de l erosion de la biodiversite     -  expliquer  l",
+                "yer l erosion de la biodiversite     -  expliquer  l",
+                "ser l accueil de la biodiversite au jardin     -  de",
+                "ser l accueil de la biodiversite         -  explique",
+                "s comment reduire l impact d un projet sur l e",
+                "s comment reduire l impact d un projet sur l e",
+                "ecologie  ecologie nous nous attachons",
+                "definir la notion d ecosysteme et les relations qu",
+                "t leurs implications ecologiques     nous terminons ",
+                "egrer les concepts d ecologie a un projet d archi",
+                "ctions au sein d un ecosysteme et  donner des exem"
+            ],
+            "[ecosyst[^ ]+, pollution]": [
+                "definir la notion d ecosysteme et les relations qu",
+                "ctions au sein d un ecosysteme et  donner des exem",
+                "a problematique des pollutions et leurs implicati"
+            ],
+            "[effets? (?:de )?serre, climat]": [
+                "t d un projet sur l effet de serre      -  realiser un",
+                "es  relations entre climat et etres vivants  r"
             ]
         }
     },
     "ARJP3053-1: Atelier projet III, Atelier projet III": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "etences en terme de developpement durable     -vos competence",
+                "tuelle  ecologique  environnementale et economique  c",
                 "tique  conceptuelle  ecologique  environnementale e"
+            ],
+            "[durab(?:le|ilite), mobilite]": [
+                "me de developpement durable     -vos competence",
+                "ontations pietons / mobilite douce et /ou eco-mo",
+                "te douce et /ou eco-mobilite / voitures       au"
             ]
         }
     },
-    "ASCA2021-1: Sciences du vivant et du milieu V, Physio V\u00e9g\u00e9tale": {
+    "ASCA2023-1: Sciences du vivant et du milieu VII, Microbiologie (Th\u00e9orie)": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "fiques relevant de l ecologie  de l agronomie et "
-            ],
-            "ecophysiologi": [
-                "ction aux approches ecophysiologiques de la nutrition"
-            ]
-        }
-    },
-    "ASCA2035-1: Sciences du vivant et du milieu IX, Botanique": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ifs les implications ecologiques et/ou agronomiques "
-            ],
-            "ecophysiologi": [
-                "ction aux approches ecophysiologiques du regne vegeta"
-            ],
-            "eco[- ]?tech": [
-                "aines de l agro-bio-ecotechnologie     a  maitr"
+            "[recyclage, environnement]": [
+                "l environnement  le recyclage des elements necess",
+                "o-organismes dans l environnement  le recyclage des e",
+                "cine  alimentation  environnement    "
             ]
         }
     },
     "ASCA2036-1: Sciences du vivant et du milieu X, \u00c9cologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                " et evolution de la biosphere    2 2  differencia",
+                "ant et du milieu x  ecologie le cours comprend 2",
+                "osystemes    3  autoecologie    3 1  les facteur",
+                "  3 1  les facteurs ecologiques    3 1 1  notion de",
+                "cation des facteurs ecologiques    3 1 3  influence",
+                "luence des facteurs ecologiques sur les etres vivan",
+                "   3 1 3 2  valence ecologique    3 1 3 3  facteur",
+                "t    3 1 3 4  niche ecologique    3 1 3 5  de la n",
+                "ivants aux facteurs ecologiques    4  demoecologie ",
+                "ologiques    4  demoecologie    4 1  definition ",
+                "opulations    5  synecologie    5 1  definition ",
+                " et de leurs optima ecologiques  le biotope doit et"
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                " et evolution de la biosphere    2 2  differencia",
+                "2 2 2  le concept d ecosysteme    2 2 2 1  definit",
+                "4  organisation des ecosystemes    3  autoecologie "
+            ],
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                " et evolution de la biosphere    2 2  differencia",
+                "2 1 2  geogenese et evolution de la lithosphere  ",
+                "  pneumatogenese et evolution de l atmosphere    ",
+                "1 4  hydrogenese et evolution de l hydrosphere   ",
+                "2 1 5  biogenese et evolution de la biosphere    ",
                 "vant et du milieu x  ecologie le cours comprend 2",
+                "2 2 2  le concept d ecosysteme    2 2 2 1  definit",
+                "4  organisation des ecosystemes    3  autoecologie ",
                 "   3 1  les facteurs ecologiques    3 1 1  notion de",
                 "ication des facteurs ecologiques    3 1 3  influence",
                 "fluence des facteurs ecologiques sur les etres vivan",
@@ -210,61 +249,63 @@
                 "nt    3 1 3 4  niche ecologique    3 1 3 5  de la n",
                 "vivants aux facteurs ecologiques    4  demoecologie ",
                 "s et de leurs optima ecologiques  le biotope doit et"
-            ],
-            "biosphere": [
-                " et evolution de la biosphere    2 2  differencia"
-            ],
-            "cycles? bio-?geo-?chimique": [
-                "  2 2 1  les grands cycles biogeochimiques  c  n  p     2 2 2"
             ]
         }
     },
     "ASCA2040-1: Sciences appliqu\u00e9es V, G\u00e9nie Rural": {
         "fr": {
-            "analyses? (?:de |du )?cycle (?:de )?vie": [
+            "analyse (?:de |du )?cycle (?:de )?vie": [
                 " face a l humidite  analyse de cycle de vie "
             ]
         }
     },
     "ASCA3044-1: Sciences fondamentales et sciences du vivant II, \u00c9cophysiologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "r les themes de la  biodiversite tellurique  mettant",
+                " iii   approche autoecologique de processus physio",
+                "hes physiologiques  ecologiques  ecophysiologiques "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "r les themes de la  biodiversite tellurique  mettant",
+                "re vegetaux et leur ecosysteme       chapitre iii "
+            ],
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "r les themes de la  biodiversite tellurique  mettant",
+                "nt de repondre a un probleme scientifique precis",
+                "orer la solution au probleme       -presenter  c",
+                " pour comprendre un probleme multidisciplinaire ",
+                "vegetaux et leur s  environnement s        chapitre i",
+                "re vegetaux et leur ecosysteme       chapitre iii ",
+                " et/ou soumis a des environnements stressants        ",
+                "s de la vie et de l environnement        b s adapter ",
+                "ches physiologiques  ecologiques  ecophysiologiques ",
+                " notamment dans des environnements perturbes et/ou re"
+            ],
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "prier le concept de developpement durable       - realiser un",
+                "vegetaux et leur s  environnement s        chapitre i",
+                " et/ou soumis a des environnements stressants        ",
+                "s de la vie et de l environnement        b s adapter ",
+                " notamment dans des environnements perturbes et/ou re",
+                "re vegetaux et leur ecosysteme       chapitre iii ",
                 "ches physiologiques  ecologiques  ecophysiologiques "
             ],
-            "biodiversite": [
-                "r les themes de la  biodiversite tellurique  mettant"
-            ],
-            "biologies? de la conservation": [
+            "biologie de la conservation": [
                 "s et relevant de la biologie de la conservation        c mobiliser "
-            ],
-            "ecophysiologi": [
-                "ences du vivant ii  ecophysiologie partie theorique  ",
-                "ction aux approches ecophysiologiques de l etude des ",
-                "pitre ii   approche ecophysiologique des interactions",
-                "iques  ecologiques  ecophysiologiques  agronomiques e"
-            ],
-            "eco[- ]?tech": [
-                "aines de l agro-bio-ecotechnologie     a  maitr"
-            ]
-        }
-    },
-    "ASCA3045-1: Sciences fondamentales et sciences du vivant III, Gestion environnementale": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                " la notion de reseau ecologique     trois visites s"
-            ],
-            "conservations? de la nature": [
-                "ier chapitre sur la conservation de la nature permet d aborder le"
             ]
         }
     },
     "ASCA3047-1: Techniques agronomiques et techniques informatiques appliqu\u00e9es \u00e0 l'agronomie III, Protection des v\u00e9g\u00e9taux": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "nomique  economique  ecologique et sanitaire     d "
+            "[[ ]ecolo[^ ]+, climat, agriculture]": [
+                "nomique  economique  ecologique et sanitaire     d ",
+                "idence des facteurs climatiques  outils d aide",
+                "idence des facteurs climatiques  pratiques cul",
+                "oprier le concept d agriculture durable   maitriser"
             ],
-            "luttes? biologique": [
-                "sonnee  integree et lutte biologique   4c   s approprier"
+            "agriculture durable": [
+                "oprier le concept d agriculture durable   maitriser es diff"
             ],
             "ecotoxicologie": [
                 "ines de l agro-bio- ecotoxicologie   4a   outil de val"
@@ -273,29 +314,55 @@
     },
     "ASCA3048-1: Techniques agronomiques et techniques informatiques appliqu\u00e9es \u00e0 l'agronomie IV, Sciences de la terre (fertilisation)": {
         "fr": {
+            "agriculture durable": [
+                "oprier le concept d agriculture durabl"
+            ],
             "ecotoxicologie": [
                 "ines de l agro-bio- ecotoxicologie   4a   outil de val"
             ]
         }
     },
+    "ASCA3055-1: Techniques agronomiques I, Phytotechnie-agriculture biologique": {
+        "fr": {
+            "agriculture biologique": [
+                "ues i  phytotechnie-agriculture biologique "
+            ]
+        }
+    },
     "ASCA3059-1: Techniques de l'ing\u00e9nieur appliqu\u00e9es \u00e0 l'agronomie II, \u00c9coclimatologie": {
         "fr": {
-            "changements? climat": [
-                "conceptuelle sur le changement climatique et de mettre en"
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "t  la pedologie  la biodiversite ainsi qu aux interr",
+                "fs des implications ecologiques et agronomiques des"
             ],
-            "climatolog": [
-                " l agronomie ii  ecoclimatologie l activite d appr",
-                "issage intitulee ecoclimatologie associe 10h consa",
-                "adre du cours d e coclimatologie  il est demande  "
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "t  la pedologie  la biodiversite ainsi qu aux interr",
+                " pour comprendre un probleme multidisciplinaire ",
+                "racteristiques de l environnement atmospherique      ",
+                "ifs des implications ecologiques et agronomiques des",
+                "elements de gestion environnementale "
             ],
-            "[[ ]ecolo[^ ]+]": [
+            "[climat, environnement, [ ]ecolo[^ ]+]": [
+                " l agronomie ii  ecoclimatologie l activite d ",
+                "issage intitulee ecoclimatologie associe 10h c",
+                "adre du cours d e coclimatologie  il est deman",
+                "e sur le changement climatique et de mettre en",
+                "cro-  meso- et microclimats l ensemble des suj",
+                " representation des climats  graphiques  diagr",
+                "dossier consacre au climat  la pedologie  la b",
+                "miques des facteurs climatiques et de leurs in",
+                "cro-  meso- et microclimats       c  s appropr",
+                "hropiques sur le s  climat s        - capacite",
+                "racteristiques de l environnement atmospherique      ",
+                "elements de gestion environnementale ",
                 "ifs des implications ecologiques et agronomiques des"
             ],
-            "biodiversite": [
-                "t  la pedologie  la biodiversite ainsi qu aux interr"
-            ],
-            "eco[- ]?tech": [
-                "aines de l agro-bio-ecotechnologie     a  maitr"
+            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "prier le concept de developpement durable       - capacite d ",
+                "d des references du developpement durable enseignees dans l u",
+                "racteristiques de l environnement atmospherique      ",
+                "elements de gestion environnementale ",
+                "ifs des implications ecologiques et agronomiques des"
             ]
         }
     },
@@ -303,25 +370,35 @@
         "fr": {
             "epurations? des eaux": [
                 "et aux techniques d epuration des eaux urbaines "
+            ],
+            "gestion (?:de l'|des )?eaux?": [
+                "ions relatives a la gestion des eaux de surface  directi"
+            ]
+        }
+    },
+    "ATGA1011-1: Phytotechnie II, Productions v\u00e9g\u00e9tales": {
+        "fr": {
+            "agriculture biologique": [
+                "er du ble tendre en agriculture biologique  ab      chapitre 7"
             ]
         }
     },
     "ATGA1013-1: Sciences du sol I, Agrom\u00e9t\u00e9orologie": {
         "fr": {
-            "changements? climat": [
-                "s est consacree aux changements climatiques avec l explica",
-                "tion des impacts du changement climatique  la derniere pa",
-                "triser la notion du changement climatique et comprendre l"
+            "[effets? (?:de )?serre, climat]": [
+                " l explication de l effet de serre et l illustration d",
+                "ree aux changements climatiques avec l explica",
+                "pacts du changement climatique  la derniere pa",
+                "que  qui font notre climat  au terme du cours ",
+                "  agrometeorologie  climatologie  agroclimatol",
+                "  climatologie  agroclimatologie  evapotranspi",
+                "nes qui generent le climat  circulation atmosp",
+                "otion du changement climatique et comprendre l"
             ],
-            "climatolog": [
-                "  agrometeorologie  climatologie  agroclimatologie",
-                "  climatologie  agroclimatologie  evapotranspirati"
-            ],
-            "effets? (?:de )?serre": [
-                " l explication de l effet de serre et l illustration d"
-            ],
-            "agro-?climatologie": [
-                "ogie  climatologie  agroclimatologie  evapotranspiration"
+            "[impact, oceans?]": [
+                " l illustration des impacts du changement clim",
+                "riques  circulation oceanique  circulation at",
+                "erique  circulation oceanique  etc           "
             ]
         }
     },
@@ -331,166 +408,102 @@
                 "se sur l etat de la deforestation dans le monde    - ",
                 " consequences d une deforestation massive    - donner",
                 "fin de controler la deforestation    - expliquer les "
-            ],
-            "enjeux? (?:environnement|ecosyst)": [
-                "    - expliquer les enjeux environnementaux des technologies"
             ]
         }
     },
-    "ATGA2028-1: Phytopharmacie et r\u00e9glementation I, D\u00e9fense des v\u00e9g\u00e9taux": {
+    "ATGA2022-1: Gestion et \u00e9conomie rurales II, L\u00e9gislation rurale": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "nomique  economique  ecologique et sanitaire     d "
-            ],
-            "luttes? biologique": [
-                "res  lutte integree lutte biologique        de decrire d"
+            "gestio[^ ]+ durab[^ ]+": [
+                "rme au programme de gestion durable de l azote  en pass"
             ]
         }
     },
-    "ATGA2029-1: Phytopharmacie et r\u00e9glementation II, Productions v\u00e9g\u00e9tales": {
+    "ATGA2033-1: Biologie appliqu\u00e9e \u00e0 l'agronomie V, Microbiologie appliqu\u00e9e I": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "nomique  economique  ecologique et sanitaire  de la"
-            ],
-            "agro-?ecosyst": [
-                "mment fonctionne un agroecosysteme     comprendre l"
+            "[recyclage, environnement]": [
+                "l environnement  le recyclage des elements necess",
+                "o-organismes dans l environnement  le recyclage des e",
+                "cine  alimentation  environnement    "
             ]
         }
     },
     "ATGA2038-1: Biologie appliqu\u00e9e \u00e0 l'agronomie X, \u00c9cologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "uee a l agronomie x  ecologie nous nous attachons",
-                "efinir les notions d ecologie  de biosphere et d ",
-                "t leurs implications ecologiques     nous terminons "
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "ions d ecologie  de biosphere et d ecosysteme  no",
+                "ee a l agronomie x  ecologie nous nous attachons",
+                "finir les notions d ecologie  de biosphere et d ",
+                " leurs implications ecologiques     nous terminons "
             ],
-            "biosphere": [
-                "ions d ecologie  de biosphere et d ecosysteme  no"
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ions d ecologie  de biosphere et d ecosysteme  no",
+                "  de biosphere et d ecosysteme  nous expliquons le",
+                "s ces notions sur l ecosysteme \"cours d eau\"     d",
+                "ctions au sein d un ecosysteme et  donner des exem",
+                "omment fonctionne l ecosysteme \"cours d eau\" de l ",
+                "inent la vie dans l ecosysteme aquatique     -  ci",
+                "x aquatiques dans l ecosysteme cours d eau  quels "
             ],
-            "cycles? bio-?geo-?chimique": [
-                "etc      les grands cycles biogeochimiques  eau  carbone  azo",
-                "pliquer  les grands cycles biogeochimiques  eau  carbone  azo"
-            ],
-            "(?:ecosystemes?|environnements?) (?:aquatique|marin|littoral|subtidal|corallien)": [
-                "inent la vie dans l ecosysteme aquatique     -  citer et exp"
-            ],
-            "pollu": [
-                "a problematique des pollutions et leurs impli",
-                " classification des polluants en donnant des ",
-                "t la dispersion des polluants et comment ils ",
-                "principaux types de pollutions des eaux coura"
-            ]
-        }
-    },
-    "ATGA2041-1: Biologie appliqu\u00e9e \u00e0 l'agronomie XIII, Gestion de la biodiversit\u00e9": {
-        "fr": {
-            "biodiversite": [
-                "xiii  gestion de la biodiversite la theorie de l evo",
-                " de l erosion de la biodiversite sur l homme sont ab",
-                " de l erosion de la biodiversite sont abordees de fa",
-                "ce qu on entend par biodiversite     -  citer  les i",
-                "u a l erosion de la biodiversite sur l humanite   de",
-                " de l erosion de la biodiversite en general et pour ",
-                "yer l erosion de la biodiversite  de facon generale ",
-                "r un danger pour la biodiversite     -  expliquer  l"
-            ]
-        }
-    },
-    "ATGA2047-1: Agronomie II, Connaissance des mat\u00e9riaux": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "s  economie  social  ecologie"
-            ]
-        }
-    },
-    "ATGA2048-1: Agronomie III, Am\u00e9lioration fonci\u00e8re": {
-        "fr": {
-            "[[ ]sols?[ ]+, erosion]": [
-                "ques de drainage des sols cultives           -",
-                "erosion hydrique des sols cultives  au terme d",
-                "n bilan hydrique des sols           - de calculer les ec",
-                "erosion hydrique des sols",
-                "- la lutte contre l erosion hydrique des sols c",
-                "s la lutte contre l erosion hydrique des sols"
-            ]
-        }
-    },
-    "ATGA2051-1: Industries Agro-alimentaires III, Diversification des cultures III": {
-        "fr": {
-            "bio[ -]?carburant": [
-                "ns diverses     les biocarburants  de premiere et de"
+            "[ecosyst[^ ]+, pollution]": [
+                "  de biosphere et d ecosysteme  nous expliquons le",
+                "s ces notions sur l ecosysteme \"cours d eau\"     d",
+                "ctions au sein d un ecosysteme et  donner des exem",
+                "omment fonctionne l ecosysteme \"cours d eau\" de l ",
+                "inent la vie dans l ecosysteme aquatique     -  ci",
+                "x aquatiques dans l ecosysteme cours d eau  quels ",
+                "a problematique des pollutions et leurs implicati",
+                "principaux types de pollutions des eaux courantes"
             ]
         }
     },
     "ATGA2053-1: Environnement II, Gest. et protect. de la biodiversit\u00e9": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "lisation de la fiche ecologique  voir plus loin    ",
-                "t realiser une fiche ecologique sur une espece de l"
-            ],
-            "biodiversite": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
                 "  et protect  de la biodiversite dans un premier tem",
                 "    - accueil de la biodiversite au jardin  illustra",
-                "iel d accueil de la biodiversite     l acquisition d"
+                "iel d accueil de la biodiversite     l acquisition d",
+                "isation de la fiche ecologique  voir plus loin    ",
+                " realiser une fiche ecologique sur une espece de l"
             ]
         }
     },
     "ATGA2054-1: Environnement III, Energies renouvelables": {
         "fr": {
-            "effets? (?:de )?serre": [
-                "  on lutte contre l effet de serre  en reduisant notam"
+            "[effets? (?:de )?serre, atmosphere]": [
+                "  on lutte contre l effet de serre  en reduisant notam",
+                "z carbonique dans l atmosphere  en developpement d"
             ],
-            "energ[^ ]+ renouvelable": [
-                "environnement iii  energies renouvelables afin d enseigner u",
-                "rs tres vaste - les energies renouvelables  enr  et leurs pot",
-                "   en utilisant les energies renouvelables  on lutte contre l",
-                "e monde entier  les energies renouvelables permettent de gere"
-            ],
-            "[energie, durab]": [
-                "environnement iii  energies renouvelables afin",
-                "rs tres vaste - les energies renouvelables  enr",
-                "   en utilisant les energies renouvelables  on ",
-                "e monde entier  les energies renouvelables perm",
-                "par les problemes d energie     en fin de cours",
-                "onnelles mais aussi durables  economie  socia"
-            ],
-            "[[ ]ecolo[^ ]+]": [
-                "s  economie  social  ecologie"
-            ]
-        }
-    },
-    "ATGA2055-1: Environnement IV, Diversification des cultures III": {
-        "fr": {
-            "bio[ -]?carburant": [
-                "ns diverses     les biocarburants  de premiere et de"
+            "energ[^ ]+ renouvelab[^ ]+": [
+                "environnement iii  energies renouvelables afin d enseigner un",
+                "rs tres vaste - les energies renouvelables  enr  et leurs pote",
+                "   en utilisant les energies renouvelables  on lutte contre l ",
+                "e monde entier  les energies renouvelables permettent de gerer"
             ]
         }
     },
     "ATGA3056-1: Phytopharmacie et r\u00e9glementation III, D\u00e9fense des v\u00e9g\u00e9taux": {
         "fr": {
+            "agriculture durable": [
+                "aisonner en terme d agriculture durable    comprendre  les "
+            ],
             "ecotoxicologie": [
                 "aigue   chronique   ecotoxicologie et suivre les conse",
                 "aigue   chronique   ecotoxicologie et suivre les conse"
             ]
         }
     },
-    "ATGA3062-1: Agro-technologie IV, Gestion de la qualit\u00e9": {
-        "fr": {
-            "iso 1400": [
-                " normes iso 9001 et iso 14001 sont presentees   ",
-                "entiels iso 9001 et iso 14001 au terme de cette "
-            ]
-        }
-    },
     "ATGA3063-1: Agronomie IV, Sylviculture": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "elon leurs exigences ecologiques  travail base sur l",
-                " base sur le fichier ecologique des essences   ces "
-            ],
-            "biodiversite": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
                 " et l accueil de la biodiversite en foret           ",
-                "ser l accueil de la biodiversite en foret     -  def"
+                "ser l accueil de la biodiversite en foret     -  def",
+                "lon leurs exigences ecologiques  travail base sur l",
+                "base sur le fichier ecologique des essences   ces "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                " et l accueil de la biodiversite en foret           ",
+                "ser l accueil de la biodiversite en foret     -  def",
+                "acilitation dans un ecosysteme agroforestier     p"
             ],
             "agro-?foresterie": [
                 " ayant pour sujet l agroforesterie     les etudiants d",
@@ -499,23 +512,16 @@
             ]
         }
     },
-    "ATGA3064-1: Agronomie V, Am\u00e9nag. Du ter. Et du paysage": {
-        "fr": {
-            "[[ ]sols?[ ]+, erosion]": [
-                "culier l erosion des sols     -  manipuler  les fo",
-                " ruissellement et l erosion sur les parcelles a",
-                "une problematique d erosion sur un bassin versa",
-                "x  en particulier l erosion des sols     -  man"
-            ]
-        }
-    },
     "ATGA3065-1: Agronomie VI, Phytiatrie sp\u00e9ciale": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "nomique  economique  ecologique et sanitaire     d "
+            "[[ ]ecolo[^ ]+, climat, agriculture]": [
+                "nomique  economique  ecologique et sanitaire     d ",
+                "idence des facteurs climatiques  outils d aide",
+                "idence des facteurs climatiques  pratiques cul",
+                "oprier le concept d agriculture durable   maitriser"
             ],
-            "luttes? biologique": [
-                "sonnee  integree et lutte biologique   4c   s approprier"
+            "agriculture durable": [
+                "oprier le concept d agriculture durable   maitriser les dif"
             ],
             "ecotoxicologie": [
                 "ines de l agro-bio- ecotoxicologie   4a   outil de val"
@@ -524,24 +530,24 @@
     },
     "ATGA3066-1: Agronomie VII, Phytotechnie sp\u00e9ciale": {
         "fr": {
-            "enjeux? (?:environnement|ecosyst)": [
-                "en et local  et aux enjeux environnementaux      - connaitre"
-            ],
-            "agro-?ecolo": [
-                "ytotechnie speciale agroecologie et systemes prai",
-                "nner son avis sur l agroecologie  l agriculture d"
+            "agro[- ]?ecolo[^ ]+": [
+                "ytotechnie speciale agroecologie et systemes prairia",
+                "nner son avis sur l agroecologie  l agriculture de c"
             ]
         }
     },
     "ATGA3076-1: Environnement V, Sylviculture": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "elon leurs exigences ecologiques  travail base sur l",
-                " base sur le fichier ecologique des essences   ces "
-            ],
-            "biodiversite": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
                 " et l accueil de la biodiversite en foret           ",
-                "ser l accueil de la biodiversite en foret     -  def"
+                "ser l accueil de la biodiversite en foret     -  def",
+                "lon leurs exigences ecologiques  travail base sur l",
+                "base sur le fichier ecologique des essences   ces "
+            ],
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                " et l accueil de la biodiversite en foret           ",
+                "ser l accueil de la biodiversite en foret     -  def",
+                "acilitation dans un ecosysteme agroforestier     p"
             ],
             "agro-?foresterie": [
                 " ayant pour sujet l agroforesterie     les etudiants d",
@@ -550,63 +556,6 @@
                 "t     -  definir  l agroforesterie     -  expliquer  l",
                 " sylvicoles liees l agroforesterie   -  expliquer  les",
                 "re les limites de l agroforesteri"
-            ]
-        }
-    },
-    "ATGA3077-1: Environnement VI, Am\u00e9nagement du ter. Et du paysage": {
-        "fr": {
-            "[[ ]sols?[ ]+, erosion]": [
-                "culier l erosion des sols     -  manipuler  les fo",
-                " ruissellement et l erosion sur les parcelles a",
-                "une problematique d erosion sur un bassin versa",
-                "x  en particulier l erosion des sols     -  man"
-            ]
-        }
-    },
-    "ATGA3078-1: Environnement VII, Gestion des Z .naturelles": {
-        "fr": {
-            "conservations? de la nature": [
-                "s par la loi sur la conservation de la nature  de sites natura 20",
-                "itoires en terme de conservation de la nature ainsi que les menac"
-            ],
-            "reserves? naturel": [
-                " a la gestion d une reserve naturelle  il realise un ra",
-                "e  typologie eunis  reserve naturelle domaniale  reserv",
-                "aturelle domaniale  reserve naturelle agreee  reserve f",
-                "an de gestion d une reserve naturelle     -  comparer  "
-            ]
-        }
-    },
-    "ATGA3079-1: Environnement VIII, Asp. Env. des tech. De prod.": {
-        "fr": {
-            "biodiversite": [
-                "usees    - ogm    - biodiversite     enfin les actio"
-            ],
-            "pollu": [
-                "ts    - emission de polluants atmospheriques "
-            ]
-        }
-    },
-    "ATGA3080-1: Environnement IX, Droit de l'environnement": {
-        "fr": {
-            "permis (?:d )environnement": [
-                "ironnement       le permis d environnement        quelles sont",
-                "ctivites soumises a permis d environnement ou a declaration  q",
-                "ient une demande de permis d environnement  que contient une e",
-                "edure d octroi d un permis d environnement  quelles sont les p",
-                "ctivites soumises a permis d environnement ou a declaration   ",
-                "ient une demande de permis d environnement ainsi qu une etude ",
-                "edure d octroi d un permis d environnement ainsi que les possi"
-            ],
-            "droits? (?:d |de l )?environnement": [
-                "environnement ix  droit de l environnement notions generales d",
-                "bref  historique du droit de l environnement  au niveau internat",
-                "grands principes du droit de l environnement  sont expliques a t",
-                "u droit se situe le droit de l environnement     comprendre les ",
-                "ncipes appliques en droit de l environnement     determiner quel"
-            ],
-            "pollu": [
-                "rs les principes de pollueur-payeur  de preve"
             ]
         }
     },
@@ -619,178 +568,91 @@
     },
     "ATGH1003-1: G\u00e9n\u00e9tique, G\u00e9n\u00e9tique": {
         "fr": {
-            "biodiversite": [
-                "sols  eau  energie  biodiversite      b  assurer les"
-            ]
-        }
-    },
-    "ATGH1006-1: Microbiologie I": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "smes dans les cycles ecologiques et en agronomie    "
-            ]
-        }
-    },
-    "ATGH1010-1: Phytopharmacie, Phytopharmacie": {
-        "fr": {
-            "biodiversite": [
-                "sources naturelles  biodiversite des auxiliaires    "
+            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "sols  eau  energie  biodiversite      b  assurer les",
+                "      resoudre  des problemes de genetique      ",
+                "atiere d ethique  d environnement  d hygiene et de sa"
             ]
         }
     },
     "ATGH1016-1: Agrom\u00e9t\u00e9orologie, Agrom\u00e9t\u00e9orologie": {
         "fr": {
-            "changements? climat": [
-                " sera consacree aux changements climatiques et a l impact "
-            ]
-        }
-    },
-    "ATGH1018-1: Am\u00e9lioration fonci\u00e8re, Am\u00e9lioration fonci\u00e8re": {
-        "fr": {
-            "[[ ]sols?[ ]+, erosion]": [
-                "ques de drainage des sols cultives           -",
-                "erosion hydrique des sols cultives  au terme d",
-                "n bilan hydrique des sols           - de calculer les ec",
-                "- la lutte contre l erosion hydrique des sols c",
-                "s la lutte contre l erosion hydrique"
-            ]
-        }
-    },
-    "ATGH1023-1: Arboriculture fruiti\u00e8re I": {
-        "fr": {
-            "exigences? (?:environnement|ecosyst)": [
-                "es  sociales et aux exigences environnementales"
+            "[lutte, changements? climat[^ ]+]": [
+                "ifferents moyens de luttes    nous analyseron",
+                " sera consacree aux changements climatiques et a l impact sur l"
             ]
         }
     },
     "ATGH2027-1: \u00c9cologie, \u00c9cologie": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+                "ions d ecologie  de biosphere et d ecosysteme  no",
+                "r un danger pour la biodiversite     -  expliquer  l",
+                "ecologie  ecologie nous nous",
                 "ecologie  ecologie nous nous attachons",
-                "efinir les notions d ecologie  de biosphere et d ",
-                "t leurs implications ecologiques     les plantes inv",
-                "    les implications ecologiques et en terme de sant",
-                "  leurs implications ecologiques"
+                "finir les notions d ecologie  de biosphere et d ",
+                " leurs implications ecologiques     les plantes inv",
+                "   les implications ecologiques et en terme de sant",
+                " leurs implications ecologiques"
             ],
-            "biodiversite": [
-                "r un danger pour la biodiversite     -  expliquer  l"
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ions d ecologie  de biosphere et d ecosysteme  no",
+                "r un danger pour la biodiversite     -  expliquer  l",
+                "  de biosphere et d ecosysteme  nous expliquons le",
+                "ctions au sein d un ecosysteme et  donner des exem"
             ],
-            "biosphere": [
-                "ions d ecologie  de biosphere et d ecosysteme  no"
+            "[ecosyst[^ ]+, pollution]": [
+                "  de biosphere et d ecosysteme  nous expliquons le",
+                "ctions au sein d un ecosysteme et  donner des exem",
+                "a problematique des pollutions et leurs implicati",
+                " comme une forme de pollution biologique      les"
             ],
-            "cycles? bio-?geo-?chimique": [
-                "etc      les grands cycles biogeochimiques  eau  carbone  azo",
-                "pliquer  les grands cycles biogeochimiques  eau  carbone  azo"
-            ],
-            "pollu": [
-                "a problematique des pollutions et leurs impli",
-                " comme une forme de pollution biologique     ",
-                " sante publique des polluants lies aux engrai",
-                " classification des polluants en donnant des ",
-                "t la dispersion des polluants et comment ils ",
-                "s principaux agents polluants lies aux engrai"
+            "[pollution, pesticide]": [
+                "a problematique des pollutions et leurs implicati",
+                " comme une forme de pollution biologique      les",
+                " aux engrais et aux pesticides sont enfin expliqu",
+                " aux engrais et aux pesticides et  expliquer  leu"
             ]
         }
     },
-    "ATGH2049-1: Phytosociologie, Phytosociologie": {
+    "ATGH2059-1: Agrobiologie, Agrobiologie": {
         "fr": {
-            "bio[ -]?indicateur": [
-                "utilite en tant que bioindicateur et acteur de la nut"
-            ]
-        }
-    },
-    "ATGH3067-1: Production comestible, Production comestible": {
-        "fr": {
-            "circuits? court": [
-                "nts d envisager les circuits courts et les contraiinte"
+            "agriculture biologique": [
+                "gie  agrobiologie l agriculture biologique est une technique d",
+                "s restrictive que l agriculture biologique classique  au terme"
             ]
         }
     },
     "BMED0006-1: Sciences de l'environnement, Chimie de l'environnement": {
         "fr": {
-            "biosphere": [
-                "nces toxiques de la biosphere 3eme partie  pollut"
-            ],
-            "(?:ecosystemes?|environnements?) (?:aquatique|marin|littoral|subtidal|corallien)": [
-                "prevention   eau et environnement aquatique  le bruit  pollutio"
-            ],
-            "epurations? des eaux": [
-                "n et les procedes d epuration des eaux usees      recherch"
-            ],
-            "pollu": [
-                "el de l atmosphere  pollution atmospherique  ",
-                "qualite d un sol et pollution de celui-ci  2e",
-                "i-ci  2eme partie   pollutions  origine  impa",
-                "quatique  le bruit  pollution atmospherique e",
-                "sphere 3eme partie  pollution des sols visite"
-            ],
-            "qualites? de l air": [
-                "eglementation de la qualite de l air  qualite d un sol e"
-            ],
-            "[gestions? (?:de l |des )?eau, environnement]": [
-                "problematique de la gestion des eaux  les methodes d an",
+            "[bio(?:diversite|sphere), impact, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "nces toxiques de la biosphere 3eme partie  pollut",
+                "ollutions  origine  impacts sur la sante  cont",
                 "sciences de l environnement  chimie de l enviro",
                 "nement  chimie de l environnement 1ere partie   cycle",
                 "prevention   eau et environnement aquatique  le bruit",
                 "blematique liee a l environnement     analyser et int"
-            ]
-        }
-    },
-    "BMED0018-1: Sciences des denr\u00e9es alimentaires, Sciences des denr\u00e9es alimentaires": {
-        "fr": {
-            "pollu": [
-                " hui  ogm  residus  polluants environnementau"
-            ]
-        }
-    },
-    "BMED0061-1: Biologie mol\u00e9culaire & biotechnologies 1, Biotechnologies": {
-        "fr": {
-            "bio[ -]?carburant": [
-                " dont biopolymeres  biocarburants  etc     - les veg"
-            ]
-        }
-    },
-    "GHOT0027-1: Fondamentaux du Tourisme, \u00c9conomie du Tourisme et r\u00e9gions touristiques": {
-        "fr": {
-            "[tourisme, durab]": [
-                "fondamentaux du tourisme  economie du touris",
-                "urisme  economie du tourisme et regions touristi",
-                "se de l economie du tourisme l offre touristique",
-                "a mondialisation du tourisme    fonctionnement s",
-                "ement systemique du tourisme   schema du systeme",
-                "du systeme  mise en tourisme  contexte socio-eco",
-                "et de l economie du tourisme  l etudiant sera ca",
-                "ndance du marche du tourisme et des loisirs et p",
-                "et de developpement durable  proposer des ame"
-            ]
-        }
-    },
-    "GHOT0033-1: N\u00e9erlandais module 4": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "reseaux sociaux    l ecologie dans l horeca    le"
+            ],
+            "epurations? des eaux": [
+                "n et les procedes d epuration des eaux usees      recherch"
+            ],
+            "gestion (?:de l'|des )?eaux?": [
+                "problematique de la gestion des eaux  les methodes d ana"
             ]
         }
     },
     "GHOT0046-1: Activit\u00e9s d'int\u00e9gration professionnelle 4 : s\u00e9minaire, Gestion durable des infrastructures touristiques": {
         "fr": {
-            "[tourisme, durab]": [
-                " la notion de dd au tourisme durable et focalisa",
-                "t de dd applique au tourisme  ce que c est  comm",
-                "ieux communs sur le tourisme durable et decrire ",
-                " seminaire  gestion durable des infrastructur",
-                "on de developpement durable  application de l",
-                "n de dd au tourisme durable et focalisation s",
-                "ique demultiplie la durabilite par rapport a ",
-                "uns sur le tourisme durable et decrire leurs "
+            "gestio[^ ]+ durab[^ ]+": [
+                "elle 4   seminaire  gestion durable des infrastructures"
             ]
         }
     },
     "IMMO0019-1: Biens immobiliers : aspects techniques 2, Technologie du b\u00e2timent": {
         "fr": {
-            "energ[^ ]+ renouvelable": [
-                " revetement de sol  energies renouvelables           egouttag",
-                "ffage  electricite  energies renouvelables        comparer le"
+            "energ[^ ]+ renouvelab[^ ]+": [
+                " revetement de sol  energies renouvelables           egouttage",
+                "ffage  electricite  energies renouvelables        comparer les"
             ],
             "epurations? des eaux": [
                 "s qui sont abordes  epuration des eaux  chauffage  electri"
@@ -799,17 +661,7 @@
     },
     "IMMO0115-1: Activit\u00e9s d'int\u00e9gration professionnelle 2": {
         "fr": {
-            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
-                "e  l evolution de l amenagement du territoire passee  presente et",
-                "naires de questions environnementales traitant d une ",
-                "re d urbanisme et d environnement      participation ",
-                "nistisque questions environnementales  seminaire  le ",
-                "inaire de questions environnementales comporte deux p",
-                "re d urbanisme et d environnement   questions choisie",
-                "situation questions environnementales  seminaire  au ",
-                "es urbanistiques et environnementales  permis     - e"
-            ],
-            "questions? (?:environnement|ecosyst)": [
+            "questions? environnement": [
                 "e aux seminaires de questions environnementales traitant d une ",
                 "etude urbanistisque questions environnementales  seminaire  le ",
                 "re  le seminaire de questions environnementales comporte deux p",
@@ -819,6 +671,9 @@
     },
     "MADI2002-1: Sciences fond. Appliqu\u00e9es aux r\u00e9gions chaudes II, Sciences appliq. II(Phytolicence)": {
         "fr": {
+            "agriculture durable": [
+                "aisonner en terme d agriculture durable    comprendre  les "
+            ],
             "ecotoxicologie": [
                 "aigue   chronique   ecotoxicologie et suivre les conse",
                 "aigue   chronique   ecotoxicologie et suivre les conse"
@@ -827,99 +682,84 @@
     },
     "MAGE1003-1: Territoire et paysage II, PBSTI": {
         "fr": {
-            "biodiversite": [
+            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
                 "totalement naturel  biodiversite potentielle      - ",
-                " specificites de sa biodiversite     - tenir un carn"
-            ]
-        }
-    },
-    "MAGE1004-1: Biodiversit\u00e9 et territoire I, G\u00e9o diversit\u00e9 et diversit\u00e9 territoriale p\u00e9dog\u00e9n\u00e8se et classif. des sols": {
-        "fr": {
-            "biodiversite": [
-                "biodiversite et territoire i  ge"
-            ]
-        }
-    },
-    "MAGE1005-1: Biodiversit\u00e9 et territoire II, Syst. Inf. G\u00e9o.": {
-        "fr": {
-            "biodiversite": [
-                "biodiversite et territoire ii  s"
+                " specificites de sa biodiversite     - tenir un carn",
+                "e      - analyser l evolution des activites anthr",
+                "es composantes de l environnement abiotique     - con",
+                "t  sur ces bases  l environnement biotique totalement",
+                "  la qualite de son environnement physicochimique et ",
+                "erritoires et leurs environnements     - presenter  d"
             ]
         }
     },
     "MAGE1006-1: Biodiversit\u00e9 et territoire III, \u00c9tude et analyse de la biodiversit\u00e9": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "apres un apercu de l ecologie des grands ongules ",
-                "parition du maillage ecologique"
-            ],
-            "biodiversite": [
+            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
                 "biodiversite et territoire iii  ",
                 "de et analyse de la biodiversite cette activite d ap",
-                "ne  l erosion de la biodiversite suite a la banalisa"
+                "ne  l erosion de la biodiversite suite a la banalisa",
+                "pres un apercu de l ecologie des grands ongules ",
+                "arition du maillage ecologique"
+            ],
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "biodiversite et territoire iii  ",
+                "de et analyse de la biodiversite cette activite d ap",
+                "ne  l erosion de la biodiversite suite a la banalisa",
+                "e l herpetofaune  l erosion de la biodiversite ",
+                "apres un apercu de l ecologie des grands ongules ",
+                "parition du maillage ecologique"
             ]
         }
     },
     "MAGE1009-1: Informatique appliqu\u00e9e \u00e0 la gestion de l'eau et des bassins versants": {
         "fr": {
-            "changements? climat": [
-                " l air et des sols  changement climatique  biodiversite  "
+            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ngement climatique  biodiversite  sols urbains      ",
+                " menacent  de leurs consequences et des moyens exis",
+                "ltiples thematiques environnementales d actualite   q",
+                "lobale des services ecosystemiques rendus par les sols"
             ],
-            "biodiversite": [
-                "ngement climatique  biodiversite  sols urbains      "
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
+                "ngement climatique  biodiversite  sols urbains      ",
+                "lobale des services ecosystemiques rendus par les sols"
             ],
-            "services? (?:environnement|ecosyst)": [
-                " vision globale des services ecosystemiques rendus par l"
-            ],
-            "[[ ]sols?[ ]+, erosion]": [
-                " et conservation des sols partie theorique    ",
-                " la cartographie des sols     la carte des sols de",
-                "ols     la carte des sols de la belgique et le",
-                "caracteristiques des sols auxquelles elle fait",
-                "s     la qualite des sols est abordee a partir",
-                "eau  de l air et des sols  changement climatiqu",
-                "tique  biodiversite  sols urbains        parti",
-                " carte numerique des sols de wallonie et d une",
-                "onnees de profils de sols en vue de la caracte",
-                "     observation des sols du bv au moyen de so",
-                " et conservation des sols au terme du cours  l",
-                "tement une carte des sols      degager la signature",
-                "e l organisation des sols dans le paysage en r",
-                " carte numerique des sols de wallonie  en extr",
-                "iques rendus par les sols  des pressions qui le",
-                " gestion durable des sols dans les enjeux glob",
+            "[bio(?:diversite|sphere), erosion, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
+                "ngement climatique  biodiversite  sols urbains      ",
                 " en terres dues a l erosion hydrique sur ce bas",
                 "drologie etude de l erosion hydrique sur un bas",
-                "versants etude de l erosion hydrique sur un bas"
+                "versants etude de l erosion hydrique sur un bas",
+                "ltiples thematiques environnementales d actualite   q",
+                "lobale des services ecosystemiques rendus par les sols"
             ],
-            "[gestions? (?:de l |des )?eau, environnement]": [
-                "ique appliquee a la gestion de l eau et des bassins vers",
-                "ltiples thematiques environnementales d actualite   q"
+            "gestio[^ ]+ durab[^ ]+": [
+                " l importance d une gestion durable des sols dans les e"
+            ],
+            "services? ecosystemiq": [
+                " vision globale des services ecosystemiques rendus par les s"
             ]
         }
     },
     "MAGE1010-1: Biologie et Gestion des eaux I, Microbiologie appliqu\u00e9e des sols et des eaux": {
         "fr": {
-            "(?:ecosystemes?|environnements?) (?:aquatique|marin|littoral|subtidal|corallien)": [
-                "ante humaine et des ecosystemes aquatiques   metabolisation e"
+            "[ecosyst[^ ]+, pollution]": [
+                "ante humaine et des ecosystemes aquatiques   metabo",
+                "metabolisation et depollution par les micro-organ"
             ],
-            "bio-?remediation": [
-                "ans des procedes de bioremediation        cours pratiq"
+            "[pollution, pesticide]": [
+                "metabolisation et depollution par les micro-organ",
+                "icaments  hormones  pesticides  sur la sante huma"
             ],
-            "pollu": [
-                "  influence de micropolluants dans l eau  med",
-                "metabolisation et depollution par les micro-o"
+            "gestion (?:de l'|des )?eaux?": [
+                "biologie et gestion des eaux i  microbiologie ap"
             ]
         }
     },
     "MAGE1011-1: Biologie et Gestion des eaux II, Hydrobiologie et gestion des eaux de surface": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "estimation de l etat ecologique des eaux de surface",
-                "sur la biologie et l ecologie des macroinvertebre",
-                "estimation de l etat ecologique des eaux de surface",
-                " la biologie et de l ecologie des macroinvertebre",
-                "evaluation de l etat ecologique des eaux de surface"
+            "gestion (?:de l'|des )?eaux?": [
+                "biologie et gestion des eaux ii  hydrobiologie e",
+                "i  hydrobiologie et gestion des eaux de surface dans un "
             ]
         }
     },
@@ -927,191 +767,85 @@
         "fr": {
             "epurations? des eaux": [
                 "es d un processus d epuration des eaux urbaines      - pou"
+            ],
+            "gestion (?:de l'|des )?eaux?": [
+                "biologie et gestion des eaux iii  gestion des ea",
+                "stion des eaux iii  gestion des eaux residuaires cours r"
             ]
         }
     },
     "MAGE1013-1: Eaux, for\u00eats et territoire I, D\u00e9veloppement durable": {
         "fr": {
-            "[energie, durab]": [
-                "urelles  sols  eau  energie  biodiversite   rep",
-                "re i  developpement durable cette activite d ",
-                "ue le developpement durable       comprendre ",
-                "re le developpement durable     facteurs huma",
-                "et de developpement durable  proposer des ame"
-            ],
-            "biodiversite": [
-                "sols  eau  energie  biodiversite   repondre aux beso"
-            ]
-        }
-    },
-    "MAGE1014-1: Eaux, for\u00eats et territoire II, Sylviculture et \u00e9cologie foresti\u00e8re": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                " ii  sylviculture et ecologie forestiere "
+            "[durab(?:le|ilite), mobilite]": [
+                "re i  developpement durable cette activite d ap",
+                "ue le developpement durable       comprendre le",
+                "re le developpement durable     facteurs humain",
+                "et de developpement durable  proposer des ameli",
+                "  consommation      mobilite  les acquis d appre"
             ]
         }
     },
     "MAGE2002-1: Sciences fondamentales et appliqu\u00e9es II, Phytolicence": {
         "fr": {
+            "agriculture durable": [
+                "aisonner en terme d agriculture durable    comprendre  les "
+            ],
             "ecotoxicologie": [
                 "aigue   chronique   ecotoxicologie et suivre les conse",
                 "aigue   chronique   ecotoxicologie et suivre les conse"
             ]
         }
     },
-    "MAGE2003-1: Chimie de l'environnement et appliqu\u00e9e I, Chimie de l'air": {
-        "fr": {
-            "pollu": [
-                "problematique de la pollution de l air     et",
-                "ne problematique de pollution  choisir une me"
-            ]
-        }
-    },
-    "MAGE2004-1: Chimie de l'environnement et appliqu\u00e9e II, \u00c9valuation de la qualit\u00e9 des sols": {
-        "fr": {
-            "pollu": [
-                "la gestion des sols pollues     lecture en au",
-                "   gestion des sols pollues       a l issue d",
-                "la gestion des sols pollues     maitriser les",
-                "la gestion des sols pollues  en suivant le sc",
-                "de la filiere \"sols pollues\" en wallonie"
-            ]
-        }
-    },
-    "MAGE2006-1: Management environnemental I, Certification et gestion environnementale": {
-        "fr": {
-            "permis (?:d )environnement": [
-                "orique relative aux permis d environnement  de visites d entre"
-            ],
-            "managements? environnemental": [
-                "management environnemental i  certification et"
-            ]
-        }
-    },
     "MAGE2007-1: Management environnemental II, Comptabilit\u00e9 \u00e9nerg\u00e9tique et \u00e9nergie renouvelable": {
         "fr": {
-            "energ[^ ]+ renouvelable": [
+            "energ[^ ]+ renouvelab[^ ]+": [
                 "lite energetique et energie renouvelable exploration des dif",
                 "res de production d energie renouvelable au travers d un cou"
-            ],
-            "managements? environnemental": [
-                "management environnemental ii  comptabilite en"
-            ]
-        }
-    },
-    "MAGE2008-1: \u00c9tude et gestion du territoire et de son environnement I, \u00c9cologie et environnement rural": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "son environnement i  ecologie et environnement ru"
-            ]
-        }
-    },
-    "MAGE2009-1: \u00c9tude et gestion du territoire et de son environnement II, PBST III": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                " ii  pbst iii partie ecologie industrielle     l ",
-                "rement sur l interet ecologie des carrieres wallo"
             ]
         }
     },
     "MAGE2010-1: Biodiversit\u00e9 et territoire IV, Gestion et sauvegarde de la biodiversit\u00e9": {
         "fr": {
-            "biodiversite": [
+            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
                 "biodiversite et territoire iv  g",
                 "et sauvegarde de la biodiversite i  introduction    ",
                 "til d analyse de la biodiversite    iii  la biodiver",
                 "iversite    iii  la biodiversite   problematique et ",
-                "sols  eau  energie  biodiversite   i   ii   iii     "
-            ]
-        }
-    },
-    "MAGE2011-1: Biodiversit\u00e9 et territoire V, Analyse multivari\u00e9e": {
-        "fr": {
-            "biodiversite": [
-                "biodiversite et territoire v  an"
-            ]
-        }
-    },
-    "MAGE2012-1: Biodiversit\u00e9 et territoire VI, Sys. Info. G\u00e9o  III": {
-        "fr": {
-            "biodiversite": [
-                "biodiversite et territoire vi  s"
-            ]
-        }
-    },
-    "MAGE2013-1: Biodiversit\u00e9 et territoire VII, Races \u00e0 effectifs limit\u00e9s et sauvegarde de la biodiversit\u00e9": {
-        "fr": {
-            "biodiversite": [
-                "biodiversite et territoire vii  ",
-                "et sauvegarde de la biodiversite ce cours vise a abo"
+                "sols  eau  energie  biodiversite   i   ii   iii     ",
+                "ches systemiques et ecosystemiques des problematiques "
             ]
         }
     },
     "MAGE2014-1: Am\u00e9nagement et gestion durable du territoire I, Droit de l'am\u00e9nagement du territoire": {
         "fr": {
-            "permis (?:d )environnement": [
-                "ironnement       le permis d environnement        quelles sont",
-                "ctivites soumises a permis d environnement ou a declaration  q",
-                "ient une demande de permis d environnement  que contient une e",
-                "edure d octroi d un permis d environnement  quelles sont les p",
-                "ctivites soumises a permis d environnement ou a declaration   ",
-                "ient une demande de permis d environnement ainsi qu une etude ",
-                "edure d octroi d un permis d environnement ainsi que les possi"
-            ],
-            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
-                "toire i  droit de l amenagement du territoire notions generales d",
-                "curite alimentaire  environnement  energie - climat  ",
-                "rique du droit de l environnement  au niveau internat",
-                "cipes du droit de l environnement  sont expliques a t",
-                "public en matiere d environnement       le permis d e",
-                "t       le permis d environnement        quelles sont",
-                "soumises a permis d environnement ou a declaration  q",
-                "demande de permis d environnement  que contient une e",
-                " d incidences sur l environnement  quelle est la proc",
-                "ctroi d un permis d environnement  quelles sont les p",
-                "situe le droit de l environnement     comprendre les ",
-                "iques en droit de l environnement     determiner quel",
-                "soumises a permis d environnement ou a declaration   ",
-                "demande de permis d environnement ainsi qu une etude ",
-                " d incidences sur l environnement     expliquer la pr",
-                "ctroi d un permis d environnement ainsi que les possi"
-            ],
-            "[amenagements? du territoire, durab]": [
-                "toire i  droit de l amenagement du territoire notions generales d",
-                "nagement et gestion durable du territoire i  "
-            ],
-            "[energie, durab]": [
-                "ire  environnement  energie - climat  sont abor",
-                "nagement et gestion durable du territoire i  "
-            ],
-            "droits? (?:d |de l )?environnement": [
-                "bref  historique du droit de l environnement  au niveau internat",
-                "grands principes du droit de l environnement  sont expliques a t",
-                "u droit se situe le droit de l environnement     comprendre les ",
-                "ncipes appliques en droit de l environnement     determiner quel"
-            ],
-            "pollu": [
-                "rs les principes de pollueur-payeur  de preve"
+            "gestio[^ ]+ durab[^ ]+": [
+                "amenagement et gestion durable du territoire i  dr"
+            ]
+        }
+    },
+    "MAGE2015-1: Am\u00e9nagement et gestion durable du territoire II, Communication et concertation sociale": {
+        "fr": {
+            "gestio[^ ]+ durab[^ ]+": [
+                "amenagement et gestion durable du territoire ii  c"
             ]
         }
     },
     "MAGE2016-1: Am\u00e9nagement et gestion durable du territoire III, \u00c9cologie industrielle": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "e du territoire iii  ecologie industrielle le cou",
-                "e dechet           l ecologie industrielle       ",
-                "         l empreinte ecologique et la biocapacite a",
-                "scence programmee  d ecologie industrielle  d eco",
-                "culaire  d empreinte ecologique et de biocapacite  "
-            ],
-            "economies? circulaire": [
+            "economie circulaire": [
                 "grammee           l economie circulaire           l emprein",
                 "gie industrielle  d economie circulaire  d empreinte ecolog"
+            ],
+            "gestio[^ ]+ durab[^ ]+": [
+                "amenagement et gestion durable du territoire iii  "
             ]
         }
     },
     "MAGT2002-1: Sciences fond. appliqu\u00e9es aux r\u00e9gions temp\u00e9r\u00e9es II, Sciences appliq II (Phytolicence)": {
         "fr": {
+            "agriculture durable": [
+                "aisonner en terme d agriculture durable    comprendre  les "
+            ],
             "ecotoxicologie": [
                 "aigue   chronique   ecotoxicologie et suivre les conse",
                 "aigue   chronique   ecotoxicologie et suivre les conse"
@@ -1120,46 +854,23 @@
     },
     "MAGT2003-1: Sciences fond. appliqu\u00e9es aux r\u00e9gions temp\u00e9r\u00e9es III, PBST": {
         "fr": {
-            "agro-?ecolo": [
-                "utres specificites  agroecologie  autres techniqu"
-            ],
-            "circuits? court": [
-                "es et technologies  circuit court  vente a la ferme  "
+            "agro[- ]?ecolo[^ ]+": [
+                "utres specificites  agroecologie  autres techniques "
+            ]
+        }
+    },
+    "MAGT2004-1: Agronomie appliqu\u00e9e aux r\u00e9gions temp\u00e9r\u00e9es I, Compl. Phyto (productions v\u00e9g\u00e9tales I)": {
+        "fr": {
+            "gestio[^ ]+ durab[^ ]+": [
+                " et le programme de gestion durable de l azote    2eme "
             ]
         }
     },
     "MAGT2005-1: Agronomie appliqu\u00e9e aux r\u00e9gions temp\u00e9r\u00e9es II, Compl. Phyto (productions v\u00e9g\u00e9tales II)": {
         "fr": {
-            "agro-?ecolo": [
-                "i  introduction     agro-ecologie et agriculture d",
-                "nner son avis sur l agro-ecologie et l agriculture"
-            ],
-            "agro-?ecosyst": [
-                "mment fonctionne un agroecosysteme    comprendre le"
-            ]
-        }
-    },
-    "MBIN1001-1: Interdisciplinarit\u00e9 III": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ois      unique  et  ecologique      l etudiant dev"
-            ]
-        }
-    },
-    "MBIN1004-1: Biotechnologies I, G\u00e9nie des bio-industries": {
-        "fr": {
-            "bio-?remediation": [
-                "des enzymes      la bioremediation   utilisation de mi"
-            ],
-            "pollu": [
-                " la lutte contre la pollution  decrire un fer"
-            ]
-        }
-    },
-    "MBIN1013-1: Technologies des aliments, Techno. Agro-alimentaires et des fermentations": {
-        "fr": {
-            "bio[ -]?carburant": [
-                "tes alimentaires    biocarburant  ethanol  papeterie"
+            "agro[- ]?ecolo[^ ]+": [
+                "i  introduction     agro-ecologie et agriculture de c",
+                "nner son avis sur l agro-ecologie et l agriculture de"
             ]
         }
     },
@@ -1178,165 +889,43 @@
             ]
         }
     },
-    "MBIN2005-1: Gestion de la qualit\u00e9 des Industries Agroalimentaires II, Assurance qualit\u00e9": {
-        "fr": {
-            "iso 1400": [
-                "xpliquer les normes iso 14001 et 45001    des ex",
-                "es normes iso 9001  iso 14001 et iso 45001 et re"
-            ]
-        }
-    },
     "MBIN2009-1: Sciences fondamentales et appliqu\u00e9es VIII, Phytolicence": {
         "fr": {
+            "agriculture durable": [
+                "aisonner en terme d agriculture durable    comprendre  les "
+            ],
             "ecotoxicologie": [
                 "aigue   chronique   ecotoxicologie et suivre les conse",
                 "aigue   chronique   ecotoxicologie et suivre les conse"
             ]
         }
     },
-    "MBIN2012-1: Sciences fondamentales et appliqu\u00e9es XI, PBST": {
-        "fr": {
-            "enjeux? (?:environnement|ecosyst)": [
-                "ience des multiples enjeux environnementaux de l activite d "
-            ]
-        }
-    },
-    "PCEA1006-1: Outils transversaux VI, Botanique": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ifs les implications ecologiques et/ou agronomiques "
-            ],
-            "ecophysiologi": [
-                "ction aux approches ecophysiologiques du regne vegeta"
-            ],
-            "eco[- ]?tech": [
-                "aines de l agro-bio-ecotechnologie     a  maitr"
-            ]
-        }
-    },
-    "TOUR0059-1: Gestion de l'accueil": {
-        "fr": {
-            "[tourisme, durab]": [
-                "  \"anthropologie du tourisme-bloc 1\"   l etudian",
-                "otion de la cantine durable      ii  techniqu"
-            ]
-        }
-    },
-    "TOUR0075-1: Projet de communication digitale": {
-        "fr": {
-            "[tourisme, durab]": [
-                " dans le secteur du tourisme + << veille >> + in",
-                " du secteur du  e-  tourisme  pre-covid  situati",
-                "erritoire << mis en tourisme >>    3  la veille ",
-                " dans le secteur du tourisme  de l horeca  de l ",
-                "tenir des relations durables avec son reseau "
-            ]
-        }
-    },
-    "TOUR0094-1: Politique du tourisme et des loisirs, Politique du tourisme et des loisirs": {
-        "fr": {
-            "[tourisme, durab]": [
-                "politique du tourisme et des loisirs  pol",
-                "isirs  politique du tourisme et des loisirs cett",
-                "culture generale du tourisme en developpant plus",
-                "mme   l histoire du tourisme et son contexte d a",
-                "    - l histoire du tourisme et les conditions d",
-                "ndance du marche du tourisme     evaluer les imp",
-                "et de developpement durable  proposer des ame"
-            ]
-        }
-    },
-    "TOUR0097-1: Sociologie du Tourisme et des loisirs, Sociologie du Tourisme et des loisirs": {
-        "fr": {
-            "[tourisme, durab]": [
-                "sociologie du tourisme et des loisirs  soc",
-                "sirs  sociologie du tourisme et des loisirs le t",
-                "e et des loisirs le tourisme en general et le to",
-                "es plus communs  le tourisme peut presenter diff",
-                "aux et culturels du tourisme et en fournissant q",
-                "rs de sociologie du tourisme et des loisirs a eg",
-                "rs de sociologie du tourisme et des loisirs est ",
-                "visant a aborder le tourisme de maniere objectiv",
-                "rs de sociologie du tourisme et des loisirs pour",
-                "s  professionnel du tourisme ou citoyen     leur",
-                "au developpement du tourisme massifie ou democra",
-                "la problematique du tourisme durable aussi bien ",
-                "elles  principes du tourisme social  epanouissem",
-                "   2  sociologie du tourisme et des loisirs     ",
-                "des loisirs     2 1 tourisme et societe   une br",
-                "du developpement du tourisme et des loisirs     ",
-                "quer a l analyse du tourisme  ex  les principale",
-                "du developpement du tourisme et des loisirs   en",
-                "ers du prisme de la durabilite afin de minimi",
-                "matique du tourisme durable aussi bien en ide",
-                "rielles  loisirs et durabilite      2 3 bourd",
-                "et du developpement durable  capitalisme  cro"
-            ]
-        }
-    },
     "TOUR0098-1: Introduction au d\u00e9veloppement durable, Introduction au d\u00e9veloppement durable": {
         "fr": {
-            "empreint[^ ]+ carbon": [
-                "preinte ecologique  empreinte carbone  limite planetaire"
-            ],
-            "energ[^ ]+ renouvelable": [
-                " limite planetaire  energies renouvelables  mix energetique  "
-            ],
-            "[energie, durab]": [
-                " limite planetaire  energies renouvelables  mix",
-                "on au developpement durable  introduction au ",
-                "on au developpement durable le cours sera stu",
-                "ns du developpement durable   - diagnostics  ",
-                "fs du developpement durable   indicateurs  se",
-                "pt de developpement durable  contexte scienti",
-                "on du developpement durable issue du rapport ",
-                "es du developpement durable     expliquer les",
-                "ce et developpement durable  et les desaccord",
-                "t/ou indicateurs de durabilite appropries sel"
-            ],
-            "[[ ]ecolo[^ ]+]": [
+            "[[ ]ecolo[^ ]+, durabilite]": [
                 "t  besoin  empreinte ecologique  empreinte carbone ",
-                "que   de croissance  ecologie  economie circulair"
+                "que   de croissance  ecologie  economie circulair",
+                "t/ou indicateurs de durabilite appropries selon la"
             ],
-            "limites? planet": [
-                " notion de limites  limites planetaires  physiques  de",
-                " empreinte carbone  limite planetaire  energies renou"
-            ],
-            "economies? circulaire": [
+            "economie circulaire": [
                 "oissance  ecologie  economie circulaire  conditions d habit"
+            ],
+            "empreint[^ ]+ carbon[^ ]+": [
+                "preinte ecologique  empreinte carbone  limite planetaire "
+            ],
+            "energ[^ ]+ renouvelab[^ ]+": [
+                " limite planetaire  energies renouvelables  mix energetique   "
             ]
         }
     },
     "TOUR0099-1: Cultures et diversit\u00e9": {
         "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ce a \"la catastrophe ecologique et humaine en gesta"
+            "[[ ]ecolo[^ ]+, anthropocen[^ ]+]": [
+                "ce a \"la catastrophe ecologique et humaine en gesta",
+                "megaphenomenes de l anthropocene  de la grande accel"
             ],
             "anthropocen(?:e|ique)": [
                 "megaphenomenes de l anthropocene  de la grande accel"
-            ]
-        }
-    },
-    "TOUR0108-1: Techniques de communication, Techniques de communication": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                " social  economique  ecologique  etc       - de tro"
-            ]
-        }
-    },
-    "TOUR0124-2: Tourisme et d\u00e9veloppement territorial": {
-        "fr": {
-            "[tourisme, durab]": [
-                "tourisme et developpement te",
-                "es territoriales de tourisme durable   plus prec",
-                "nalyse  relatifs au tourisme durable    fournir ",
-                "du developpement du tourisme et des activites to",
-                "ppement territorial durable cette ue a pour b",
-                "oriales de tourisme durable   plus precisemen",
-                "elatifs au tourisme durable    fournir les el",
-                "es de developpement durable d une destination",
-                "ppement territorial durable initier l etudian",
-                "ppement touristique durabl"
             ]
         }
     }

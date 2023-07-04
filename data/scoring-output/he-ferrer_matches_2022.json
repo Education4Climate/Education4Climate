@@ -1,18 +1,16 @@
 {
     "AUE21: UE2.1 - STRUCTURE LAB'1": {
         "fr": {
-            "eco[- ]?responsab": [
-                "stionner l approche ecoresponsable du metier et en a"
-            ],
-            "pollu": [
-                "abilites quant a la pollution et l eutrophisa"
+            "ecoresponsab[^ ]+": [
+                "stionner l approche ecoresponsable du metier et en app"
             ]
         }
     },
     "GM4C0: International Trade Operations and Case Studies": {
         "en": {
-            "(?:doughnut|donut) (?:econom|theory)": [
-                "ainable development donut theory of economics winner"
+            "[sustainable development, impact]": [
+                "rnational trade and sustainable development donut theory of eco",
+                "national trade  the impact of the blockchain i"
             ]
         }
     },
@@ -21,59 +19,24 @@
             "energ[^ ]+ eolien": [
                 "s nouvelles         energie eolienne    energie solair"
             ],
-            "hydroelec": [
-                "          centrales hydroelectriques    le pompag"
+            "energ[^ ]+ solaire": [
+                "energie eolienne    energie solaire    maree motrice   "
             ]
         }
     },
-    "PA4I0: Droit administratif sp\u00e9cial": {
+    "I15B0: Ing\u00e9nierie de projets": {
         "fr": {
-            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
-                "tissage  urbanisme  amenagement du territoire et environnement   ",
-                "re l urbanisme et l amenagement du territoire     - se pencheront",
-                "nt du territoire et environnement   les etudiants    ",
-                "eront le droit de l environnement     - apprendront o"
-            ],
-            "droits? (?:d |de l )?environnement": [
-                "    - aborderont le droit de l environnement     - apprendront o"
-            ]
-        }
-    },
-    "PX3I0: Science politique": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ralisme  socialisme  ecologisme   ainsi que les con"
-            ]
-        }
-    },
-    "S14: Sciences et didactique de la biologie 1": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "tations du vivant    ecologie et ses enjeux socie"
-            ]
-        }
-    },
-    "SUE16: UE1.6 - INTRODUCTION A L'ART ET A L'ESTHETIQUE": {
-        "fr": {
-            "eco[- ]?responsab": [
-                "ne vintage  la mode eco-responsable  la slow-fashion "
-            ]
-        }
-    },
-    "UCJ15: Science politique et grands courants de la pens\u00e9e": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ralisme  socialisme  ecologisme   ainsi que les con"
+            "[electri[^ ]+, stockage]": [
+                "drogene    - moteur electrique           recherche",
+                "ockage de l energie electrique              electr",
+                "ferents systemes de stockage de l energie electr"
             ]
         }
     },
     "UET31: UE3.1 - ECO-CONCEPT": {
         "fr": {
-            "eco[- ]?conception": [
+            "eco-?conception": [
                 " du meme theme de l eco-conception"
-            ],
-            "eco[- ]?responsab": [
-                "stionner l approche eco-responsable du metier et en a"
             ]
         }
     }
