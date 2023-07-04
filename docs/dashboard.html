@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+    <meta name="google-site-verification" content="Mb7RsnQF9bZkOcVENvQRaOTaDVqxgp56L8lwi_ICEzg" />
+    <link rel="alternate" hreflang="fr" href="https://education4climate.be/index.html?lang=fr" />
+    <link rel="alternate" hreflang="nl" href="https://education4climate.be/index.html?lang=nl" />
+    <link rel="alternate" hreflang="en" href="https://education4climate.be/index.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://education4climate.be/index.html?lang=fr" />
+    <link rel="canonical" href="https://education4climate.be/index.html?lang=fr" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#4bd2af">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f5f0f0">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f5f0f0">
+    <meta name="application-name" content="Education 4 Climate">
+
+    <meta property="og:title" content="Education 4 Climate" />
+    <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
+    <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Education 4 Climate</title>
+</head>
+
+<body class="home">
+
+    <div id="app" v-if="dataLoaded" v-cloak>
+
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl"
+                :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}">
+                <div class="container-fluid">
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="Logo"
+                            id="logo"></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                        4 <span class="accent">CLIMATE</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
+                            <li class="nav-item" v-for="item in menuItems">
+                                <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
+                                    :href="item + '.html?lang=' + currentLanguage"
+                                    v-html="translate('menu.' + item)"></a>
+                            </li>
+                        </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'"
+                                alt="Dark/Light theme">
+                            <span class="theme-light" v-html="translate('menu.dark-theme')"></span>
+                            <span class="theme-dark" v-html="translate('menu.light-theme')"></span>
+                        </div>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item" v-for="language in availableLanguages">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)" href="javascript:void(0);"
+                                    v-html="language.toUpperCase()"></a>
+                            </li>
+                        </ul>
+                        <div class="navbar-footer">
+                            <hr>
+                            <div>
+                                <div class="accent">The Shifters Belgium</div>
+                                <ul>
+                                    <li>
+                                        <a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                            v-html="translate('footer.contact')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="legal.html" v-html="translate('footer.legal')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="intro primary container">
+
+                <div class="row">
+
+                    <div class='tableauPlaceholder' id='viz1687434354816' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sh&#47;Shift_16787881026860&#47;PerYearAnalysis&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Shift_16787881026860&#47;PerYearAnalysis' />
+                            <param name='tabs' value='yes' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sh&#47;Shift_16787881026860&#47;PerYearAnalysis&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en-US' />
+                            <param name='filter' value='publish=yes' />
+                        </object></div>
+                    <script
+                        type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1687434354816'); 
+                        var vizElement = divElement.getElementsByTagName('object')[0]; 
+                        if (divElement.offsetWidth > 800) { vizElement.style.width = '1709px'; vizElement.style.height = '1050px'; } 
+                        else if (divElement.offsetWidth > 500) { vizElement.style.width = '1709px'; vizElement.style.height = '1050px'; } 
+                        else { vizElement.style.width = '100%'; vizElement.style.height = '4100px'; } 
+                        var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                    </script>
+
+                </div>
+
+            </section>
+
+
+
+        </main>
+
+        <footer class="text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 right">
+                        <ul>
+                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                    v-html="translate('footer.contact')"></a>
+                            </li>
+                            <li>
+                                <a href="legal.html" v-html="translate('footer.legal')"></a>
+                            </li>
+                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                    data-bs-target="#modalCookies">Cookies</a></li>
+                            <li><a href="https://github.com/Education4Climate/" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+        </footer>
+
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
+
+    </div>
+
+    <script src="js/vue.global.prod.js"></script>
+    <script type="module" src="js/home.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

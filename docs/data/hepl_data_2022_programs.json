@@ -97,7 +97,7 @@
   ],
   "matched_courses":[
    "AGR-1-005",
-   "AGR-1-043",
+   "AGR-1-045",
    "AGR-1-047",
    "AGR-1-052",
    "AGR-1-056",
@@ -136,7 +136,7 @@
   "themes_scores":[
    1,
    1,
-   9,
+   6,
    4,
    2
   ],
@@ -145,15 +145,13 @@
    "AGR-1-061",
    "AGR-1-064",
    "AGR-1-065",
-   "AGR-1-066",
    "AGR-1-070",
    "AGR-1-071",
    "AGR-1-072",
-   "AGR-1-073",
-   "AGR-1-076"
+   "AGR-1-073"
   ],
-  "nb_dedicated_courses":9,
-  "nb_matched_courses":10,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":8,
   "nb_total_courses":38
  },
  {
@@ -709,53 +707,16 @@
    "Science"
   ],
   "themes":[
-   "environment",
    "resources"
   ],
   "themes_scores":[
-   3,
    1
   ],
   "matched_courses":[
-   "CHI-1-042",
-   "CHI-1-056",
-   "CHI-1-077",
-   "CHI-1-079"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
-  "nb_total_courses":43
- },
- {
-  "id":"chimie-biochimie",
-  "name":"Bachelier Chimie Orientation Biochimie",
-  "cycle":"bac",
-  "url":"https:\/\/www.hepl.be\/fr\/chimie\/biochimie",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Campus Gloesener - Li\u00e8ge"
-  ],
-  "faculties":[
-   "Chimie & biotechnologie"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Science"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "CHI-1-074"
+   "CHI-1-042"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":38
+  "nb_total_courses":43
  }
 ]

@@ -20,11 +20,11 @@ A theme's ontology is composed of a list of regular expressions that match to co
 For example, some compounds associated to the theme 'Climate' could be 'climate action' and 'climate action**s**'.
 A pattern ```climate actions?``` allows to capture both those compounds.
 
-In Belgium, courses are described in French, Dutch and English. Thus, each
+In Belgium, courses are described in English, French, and Dutch. Thus, each
 ontology is translated in those different languages.
 
-The ontologies of patterns (in each language) for the 4 themes cited above are listed in the file 
-```themes_patterns.json``` stored in [data/patterns/](../../data/patterns).
+The ontologies of patterns (in each language) for the 4 themes cited above are listed in the files 
+```en.csv```, ```fr.csv```, and ```nl.csv``` stored in one of the version directories ```vX.X``` in [data/patterns/](../../data/patterns).
 
 ### Scoring courses
 

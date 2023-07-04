@@ -5,6 +5,7 @@ from os import remove
 
 import pandas as pd
 
+import re
 import scrapy
 
 import urllib3
@@ -37,6 +38,23 @@ def extract_content(pdf_url: str) -> str:
     try:
         pdf_path = download_pdf(pdf_url)
         content = extract_text(pdf_path)
+
+        course_id = re.compile(r'[A-Z]\d{6}').search(content)[0]
+        course_name = re.compile(r'(.*)\s(\n)?\([A-Z]\d{6}\)').search(content)[1]
+        years = re.compile(r'in academiejaar (\d{4}-\d{4})').search(content)[1]
+        languages = re.compile(r'Onderwijstalen\n\n([A-Za-z0-9\s\n\(\),ëöéï]+)\n\n'
+                               r'Trefwoorden').search(content)
+        teachers = re.compile(r'Lesgevers in academiejaar \d{4}-\d{4}\n\n'
+                              r'([A-Za-záëöéï\s\'.,-]*)\n\n').search(content)
+        ects = re.compile(r'Studiepunten[\s]*([0-9\.]*)').search(content)[1]
+
+        print(course_id)
+        print(course_name)
+        print(years)
+        print(languages)
+        print(teachers)
+        print(ects)
+
         remove(pdf_path)
     except PDFSyntaxError:
         return ''
@@ -51,7 +69,7 @@ class UGentCourseSpider(scrapy.Spider, ABC):
     name = 'ugent-courses'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_courses_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_courses_{YEAR}_test.json').as_uri()
     }
 
     def start_requests(self):
@@ -68,6 +86,7 @@ class UGentCourseSpider(scrapy.Spider, ABC):
         courses_df = courses_df.drop_duplicates(subset='id')
 
         for _, courses_ds in courses_df.iterrows():
+
             languages = courses_ds['languages'].split(',')
             languages = [] if languages == [''] else languages
             yield scrapy.Request(url=BASE_URL.format(courses_ds['url']),
@@ -75,6 +94,7 @@ class UGentCourseSpider(scrapy.Spider, ABC):
                                  cb_kwargs={"course_id": courses_ds['id'],
                                             "course_name": courses_ds['name'],
                                             "languages": languages})
+            return
 
     @staticmethod
     def parse_course_info(response, course_id, course_name, languages):

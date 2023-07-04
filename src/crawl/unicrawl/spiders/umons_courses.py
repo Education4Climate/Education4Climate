@@ -83,15 +83,15 @@ class UmonsCourseSpider(scrapy.Spider, ABC):
                      for section in sections_names]
             return "\n".join(texts).strip("\n ")
         content = get_sections_text(["Contenu de l'UE"])
-        goal = get_sections_text(["Acquis d'apprentissage"]) + "\n" \
-            + cleanup(response.xpath(f"//div[p/text()="
-                                     f"\"Objectifs par rapport aux acquis d'apprentissage du programme\"]/ul").get())
+        goal = get_sections_text(["Acquis d'apprentissage"]) #  + "\n" \
+        # + cleanup(response.xpath(f"//div[p/text()="
+        #                          f"\"Objectifs par rapport aux acquis d'apprentissage du programme\"]/ul").get())
         goal = goal.strip("\n")
 
         yield {
             'id': course_id,
-            'name':  course_name,
-            'year':  year,
+            'name': course_name,
+            'year': year,
             'languages': languages_codes,
             'teachers': teachers,
             'url': response.url,
