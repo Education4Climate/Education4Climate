@@ -178,9 +178,11 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
                     scores_df.loc[idx, "dedicated"] |= 1
 
     # Save scores
+    # TODO: change add -test for the francois test
     output_fn = f"{output_dir}/{school}_courses_scoring_{year}.csv"
     scores_df.to_csv(output_fn, encoding="utf-8")
     # Save patterns
+    # TODO: change add -test for the francois test
     matches_output_fn = f"{output_dir}/{school}_matches_{year}.json"
     with open(matches_output_fn, "w") as f:
         json.dump(patterns_matches_dict, f, indent=4)
