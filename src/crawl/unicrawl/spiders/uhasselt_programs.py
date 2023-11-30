@@ -6,7 +6,7 @@ import bs4
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = 'https://uhintra03.uhasselt.be/studiegidswww/opleiding.aspx'
+BASE_URL = 'https://studiegidswww.uhasselt.be/opleiding.aspx'
 
 BASE_DATA = {
     "__EVENTTARGET": "beschridDDL$ctl00",
@@ -19,12 +19,14 @@ BASE_DATA = {
     "beschridAcjaar$ctl00": f"{YEAR}",
 }
 
-# This is not great but it's the only way we found to get faculties
+
+# This is not great, but it's the only way we found to get faculties
 FACULTIES_PROGRAMS = {
     "Faculteit Architectuur en Kunst": [
         "bachelor in de interieurarchitectuur", "master in de interieurarchitectuur",
         "Master of Interior Architecture", "bachelor in de architectuur",
-        "master in de architectuur", "Educatieve master in de ontwerpwetenschappen"
+        "master in de architectuur", "Educatieve master in de ontwerpwetenschappen",
+        "Postgraduate certificate Building Beyond Borders"
     ],
     "Faculteit Bedrijfseconomische Wetenschappen": [
         "bachelor handelsingenieur",
@@ -43,7 +45,9 @@ FACULTIES_PROGRAMS = {
         "Master of Biomedical Sciences",
         "master in de biomedische wetenschappen",
         "bachelor in de geneeskunde",
-        "Educatieve master in de gezondheidswetenschappen"
+        "Educatieve master in de gezondheidswetenschappen",
+        "master in systeem-en procesinnovatie in de gezondheidszorg",
+        "master in de verpleegkunde en de vroedkunde"
     ],
     "Faculteit Industriële Ingenieurswetenschappen": [
         "bachelor in de industri\u00eble wetenschappen",
@@ -54,7 +58,14 @@ FACULTIES_PROGRAMS = {
         "Educatieve master in de wetenschappen en technologie",
         "master in de industri\u00eble wetenschappen: elektronica-ICT",
         "master in de industri\u00eble wetenschappen: bouwkunde",
-        "master in de industri\u00eble wetenschappen: energie"
+        "master in de industri\u00eble wetenschappen: energie",
+        "Postgraduaat Innoverend Ondernemen voor Ingenieurs",
+        "Postgraduaat Innoverend Ondernemen voor Ingenieurs - Advanced",
+        "Postgraduaat Innoverend Ondernemen voor Ingenieurs - Foundations",
+        "Postgraduate certificate Innovation and Entrepreneurship in Engineering",
+        "Postgraduate certificate Innovation and Entrepreneurship in Engineering - Advanced",
+        "Postgraduate certificate Innovation and Entrepreneurship in Engineering - Foundations",
+        "master in de industriële wetenschappen: informatica"
     ],
     "School voor Mobiliteitswetenschappen": [
         "bachelor in de mobiliteitswetenschappen",
@@ -66,13 +77,15 @@ FACULTIES_PROGRAMS = {
     ],
     "Faculteit Revalidatiewetenschappen": [
         "bachelor in de revalidatiewetenschappen en de kinesitherapie",
-        "master in de revalidatiewetenschappen en de kinesitherapie"
+        "master in de revalidatiewetenschappen en de kinesitherapie",
+        "Master in de ergotherapeutische wetenschap"
     ],
     "Faculteit Wetenschappen": [
         "bachelor in de wiskunde", "bachelor in de informatica",
         "bachelor in de chemie", "bachelor in de biologie",
         "master in de informatica", "bachelor in de fysica",
-        "Master of Statistics and Data Science"
+        "Master of Statistics and Data Science",
+        "master in materiomics"
     ],
     "School of Expert Education": [
         "Postgraduaat Stralingsdeskundige",
@@ -80,6 +93,9 @@ FACULTIES_PROGRAMS = {
         "Postgraduaat Relatie- en Communicatiewetenschappen",
         "Postgraduaat Biogebaseerde en circulaire economie",
         "Postgraduaat Bedrijfskunde"
+    ],
+    "School voor Sociale Wetenschappen": [
+        "bachelor in de sociale wetenschappen"
     ]
 }
 
@@ -121,10 +137,12 @@ class UHasseltProgramSpider(scrapy.Spider, ABC):
 
             # Faculty not crawlable so had to hard-code it
             faculties = []
-            for f in FACULTIES_PROGRAMS:
+            for i, f in enumerate(FACULTIES_PROGRAMS):
                 if program_name in FACULTIES_PROGRAMS[f]:
                     faculties = [f]
                     break
+                if i == len(FACULTIES_PROGRAMS) - 1:
+                    print(f"Warning: {program_name} not in any faculties")
 
             base_dict = {
                 "id": program_id,
