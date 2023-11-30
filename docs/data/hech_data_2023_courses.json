@@ -2,7 +2,7 @@
  {
   "id":"ADVW0030-1",
   "name":"N\u00e9erlandais module 4",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -23,8 +23,8 @@
  },
  {
   "id":"AGRO1001-1",
-  "name":"Interdisciplinarit\u00e9 I, AETP",
-  "year":"2022-2023",
+  "name":"AETP",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -48,8 +48,8 @@
  },
  {
   "id":"AGRO1004-1",
-  "name":"Sciences fondamentales et appliqu\u00e9es I, Physique appliqu\u00e9e",
-  "year":"2022-2023",
+  "name":"Physique appliqu\u00e9e",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -70,8 +70,8 @@
  },
  {
   "id":"AGRO1009-1",
-  "name":"Techniques Agronomiques I, P\u00e9dologie appliqu\u00e9e",
-  "year":"2022-2023",
+  "name":"P\u00e9dogen\u00e8se et p\u00e9dologie appliqu\u00e9e",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -92,8 +92,8 @@
  },
  {
   "id":"AGRO1023-1",
-  "name":"\u00c9cologie rurale II, Sylviculture et agroforesterie",
-  "year":"2022-2023",
+  "name":"Sylviculture et agroforesterie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -111,19 +111,19 @@
    "food",
    "life"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"ARJP1001-1",
   "name":"Atelier Projet I",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Moray Didier",
    "Hoyos Didier",
-   "Saint-Amand Beno\u00eet"
+   "Saint-Amand Beno\u00eet",
+   "Moray Didier"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ARJP1001-1.html",
   "cycles":[
@@ -140,7 +140,7 @@
  {
   "id":"ARJP1002-1",
   "name":"Initiation \u00e0 la composition, Initiation \u00e0 la composition",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -162,7 +162,7 @@
  {
   "id":"ARJP1006-1",
   "name":"Connaissance des plantes - Arbres & arbustes indig\u00e8nes, Connaissance des plantes - Arbres & arbustes indig\u00e8nes",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -184,7 +184,7 @@
  {
   "id":"ARJP1020-1",
   "name":"Phytosociologie - Concept th\u00e9orique, Phytosociologie - Concept th\u00e9orique",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -206,7 +206,7 @@
  {
   "id":"ARJP2029-1",
   "name":"Techniques d'am\u00e9nagement",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -222,7 +222,6 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "life",
    "prod&cons"
   ],
   "dedicated":0
@@ -230,7 +229,7 @@
  {
   "id":"ARJP2040-1",
   "name":"Ecologie, \u00c9cologie",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -245,6 +244,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "carbon",
    "climate",
    "life",
    "pollution"
@@ -254,7 +254,7 @@
  {
   "id":"ARJP2041-1",
   "name":"Paysage II - Protection et gestion, Paysage II - Protection et gestion",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -277,13 +277,14 @@
  {
   "id":"ARJP3053-1",
   "name":"Atelier projet III, Atelier projet III",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
    "Hoyos Didier",
-   "Saint-Amand Beno\u00eet"
+   "Saint-Amand Beno\u00eet",
+   "Sommeillier Christine"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ARJP3053-1.html",
   "cycles":[
@@ -298,9 +299,31 @@
   "dedicated":0
  },
  {
+  "id":"ASCA1001-1",
+  "name":"Math\u00e9matiques I (alg\u00e8bre)",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Milano Robert"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ASCA1001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"ASCA2021-1",
-  "name":"Sciences du vivant et du milieu V, Physio V\u00e9g\u00e9tale",
-  "year":"2022-2023",
+  "name":"Physiologie v\u00e9g\u00e9tale",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -321,8 +344,8 @@
  },
  {
   "id":"ASCA2035-1",
-  "name":"Sciences du vivant et du milieu IX, Botanique",
-  "year":"2022-2023",
+  "name":"Botanique II",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -344,8 +367,8 @@
  },
  {
   "id":"ASCA2036-1",
-  "name":"Sciences du vivant et du milieu X, \u00c9cologie",
-  "year":"2022-2023",
+  "name":"\u00c9cologie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -366,8 +389,8 @@
  },
  {
   "id":"ASCA2040-1",
-  "name":"Sciences appliqu\u00e9es V, G\u00e9nie Rural",
-  "year":"2022-2023",
+  "name":"G\u00e9nie Rural",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -387,9 +410,31 @@
   "dedicated":0
  },
  {
+  "id":"ASCA3042-1",
+  "name":"Chimie analytique et instrumentale",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Smal Nadia"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ASCA3042-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"ASCA3044-1",
-  "name":"Sciences fondamentales et sciences du vivant II, \u00c9cophysiologie",
-  "year":"2022-2023",
+  "name":"\u00c9cophysiologie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -411,8 +456,8 @@
  },
  {
   "id":"ASCA3045-1",
-  "name":"Sciences fondamentales et sciences du vivant III, Gestion environnementale",
-  "year":"2022-2023",
+  "name":"Gestion des services \u00e9cosyst\u00e9miques",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -429,12 +474,12 @@
   "themes":[
    "life"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"ASCA3047-1",
-  "name":"Techniques agronomiques et techniques informatiques appliqu\u00e9es \u00e0 l'agronomie III, Protection des v\u00e9g\u00e9taux",
-  "year":"2022-2023",
+  "name":"Protection des v\u00e9g\u00e9taux",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -456,8 +501,8 @@
  },
  {
   "id":"ASCA3048-1",
-  "name":"Techniques agronomiques et techniques informatiques appliqu\u00e9es \u00e0 l'agronomie IV, Sciences de la terre (fertilisation)",
-  "year":"2022-2023",
+  "name":"Fertilisation",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -472,14 +517,61 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "life",
    "pollution"
   ],
   "dedicated":0
  },
  {
+  "id":"ASCA3053-1",
+  "name":"Chimie analytique et instrumentale II",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Smal Nadia"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ASCA3053-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ASCA3055-1",
+  "name":"Bases de l'agriculture et syst\u00e8mes agraires",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Renson Jean-Philippe"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ASCA3055-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food",
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"ASCA3059-1",
-  "name":"Techniques de l'ing\u00e9nieur appliqu\u00e9es \u00e0 l'agronomie II, \u00c9coclimatologie",
-  "year":"2022-2023",
+  "name":"\u00c9coclimatologie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -502,8 +594,8 @@
  },
  {
   "id":"ASCA3060-1",
-  "name":"Techniques de l'ing\u00e9nieur appliqu\u00e9es \u00e0 l'agronomie III, Technologie",
-  "year":"2022-2023",
+  "name":"Introduction \u00e0 l'\u00e9puration des eaux",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -523,9 +615,31 @@
   "dedicated":0
  },
  {
+  "id":"ASCA3063-1",
+  "name":"M\u00e9canisation agricole",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Renson Jean-Philippe"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ASCA3063-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"ATGA1013-1",
-  "name":"Sciences du sol I, Agrom\u00e9t\u00e9orologie",
-  "year":"2022-2023",
+  "name":"Agrom\u00e9t\u00e9orologie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -547,8 +661,8 @@
  },
  {
   "id":"ATGA1015-1",
-  "name":"Sciences du sol III, Intro. aux prob. Environ.",
-  "year":"2022-2023",
+  "name":"Introduction aux probl\u00e8mes environnementaux",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -565,12 +679,12 @@
   "themes":[
    "life"
   ],
-  "dedicated":0
+  "dedicated":1
  },
  {
   "id":"ATGA2028-1",
-  "name":"Phytopharmacie et r\u00e9glementation I, D\u00e9fense des v\u00e9g\u00e9taux",
-  "year":"2022-2023",
+  "name":"D\u00e9fense des v\u00e9g\u00e9taux I",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -591,8 +705,8 @@
  },
  {
   "id":"ATGA2029-1",
-  "name":"Phytopharmacie et r\u00e9glementation II, Productions v\u00e9g\u00e9tales",
-  "year":"2022-2023",
+  "name":"Productions v\u00e9g\u00e9tales II",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -614,8 +728,8 @@
  },
  {
   "id":"ATGA2038-1",
-  "name":"Biologie appliqu\u00e9e \u00e0 l'agronomie X, \u00c9cologie",
-  "year":"2022-2023",
+  "name":"\u00c9cologie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -637,8 +751,8 @@
  },
  {
   "id":"ATGA2041-1",
-  "name":"Biologie appliqu\u00e9e \u00e0 l'agronomie XIII, Gestion de la biodiversit\u00e9",
-  "year":"2022-2023",
+  "name":"Gestion de la biodiversit\u00e9",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -659,13 +773,13 @@
  },
  {
   "id":"ATGA2047-1",
-  "name":"Agronomie II, Connaissance des mat\u00e9riaux",
-  "year":"2022-2023",
+  "name":"Connaissances des mat\u00e9riaux",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "L\u00e9onard Pascal"
+   "Decaffmeyer Marc"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGA2047-1.html",
   "cycles":[
@@ -681,8 +795,8 @@
  },
  {
   "id":"ATGA2048-1",
-  "name":"Agronomie III, Am\u00e9lioration fonci\u00e8re",
-  "year":"2022-2023",
+  "name":"Agronomie I, Am\u00e9lioration fonci\u00e8re",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -703,8 +817,8 @@
  },
  {
   "id":"ATGA2051-1",
-  "name":"Industries Agro-alimentaires III, Diversification des cultures III",
-  "year":"2022-2023",
+  "name":"Industries agro-alimentaires I, Diversification des cultures III",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -725,8 +839,8 @@
  },
  {
   "id":"ATGA2053-1",
-  "name":"Environnement II, Gest. et protect. de la biodiversit\u00e9",
-  "year":"2022-2023",
+  "name":"Gestion et protection de la biodiversit\u00e9",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -747,13 +861,13 @@
  },
  {
   "id":"ATGA2054-1",
-  "name":"Environnement III, Energies renouvelables",
-  "year":"2022-2023",
+  "name":"\u00c9nergies renouvelables",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "L\u00e9onard Pascal"
+   "Decaffmeyer Marc"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGA2054-1.html",
   "cycles":[
@@ -771,8 +885,8 @@
  },
  {
   "id":"ATGA2055-1",
-  "name":"Environnement IV, Diversification des cultures III",
-  "year":"2022-2023",
+  "name":"Environnement II, Diversification des cultures III",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -793,8 +907,8 @@
  },
  {
   "id":"ATGA3056-1",
-  "name":"Phytopharmacie et r\u00e9glementation III, D\u00e9fense des v\u00e9g\u00e9taux",
-  "year":"2022-2023",
+  "name":"D\u00e9fense des v\u00e9g\u00e9taux II",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -815,8 +929,8 @@
  },
  {
   "id":"ATGA3062-1",
-  "name":"Agro-technologie IV, Gestion de la qualit\u00e9",
-  "year":"2022-2023",
+  "name":"Gestion de la qualit\u00e9",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -837,8 +951,8 @@
  },
  {
   "id":"ATGA3063-1",
-  "name":"Agronomie IV, Sylviculture",
-  "year":"2022-2023",
+  "name":"Sylviculture",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -860,8 +974,8 @@
  },
  {
   "id":"ATGA3064-1",
-  "name":"Agronomie V, Am\u00e9nag. Du ter. Et du paysage",
-  "year":"2022-2023",
+  "name":"Agronomie II, Am\u00e9nagement du territoire et du paysage",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -876,14 +990,15 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "life"
   ],
   "dedicated":0
  },
  {
   "id":"ATGA3065-1",
-  "name":"Agronomie VI, Phytiatrie sp\u00e9ciale",
-  "year":"2022-2023",
+  "name":"Phytiatrie sp\u00e9ciale",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -905,8 +1020,8 @@
  },
  {
   "id":"ATGA3066-1",
-  "name":"Agronomie VII, Phytotechnie sp\u00e9ciale",
-  "year":"2022-2023",
+  "name":"Phytotechnie sp\u00e9ciale",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -929,8 +1044,8 @@
  },
  {
   "id":"ATGA3076-1",
-  "name":"Environnement V, Sylviculture",
-  "year":"2022-2023",
+  "name":"Sylviculture",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -948,12 +1063,12 @@
    "food",
    "life"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"ATGA3077-1",
-  "name":"Environnement VI, Am\u00e9nagement du ter. Et du paysage",
-  "year":"2022-2023",
+  "name":"Environnement III, Am\u00e9nagement du territoire et du paysage",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -968,14 +1083,15 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "life"
   ],
   "dedicated":1
  },
  {
   "id":"ATGA3078-1",
-  "name":"Environnement VII, Gestion des Z .naturelles",
-  "year":"2022-2023",
+  "name":"Gestion des zones naturelles",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -992,12 +1108,12 @@
   "themes":[
    "life"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"ATGA3079-1",
-  "name":"Environnement VIII, Asp. Env. des tech. De prod.",
-  "year":"2022-2023",
+  "name":"Aspect environnemental des techniques de production",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1019,13 +1135,13 @@
  },
  {
   "id":"ATGA3080-1",
-  "name":"Environnement IX, Droit de l'environnement",
-  "year":"2022-2023",
+  "name":"Droit de l'environnement",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-
+   "Furlan Christelle"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGA3080-1.html",
   "cycles":[
@@ -1043,8 +1159,8 @@
  },
  {
   "id":"ATGA3081-1",
-  "name":"Environnement X, Trait. des eaux r\u00e9siduaires",
-  "year":"2022-2023",
+  "name":"Traitement des eaux r\u00e9siduaires",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1061,19 +1177,19 @@
   "themes":[
    "pollution"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
-  "id":"ATGH1003-1",
-  "name":"G\u00e9n\u00e9tique, G\u00e9n\u00e9tique",
-  "year":"2022-2023",
+  "id":"ATGH1004-1",
+  "name":"Zoologie, Zoologie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Minsart Laure-Anne"
+   "Cognet St\u00e9phane"
   ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH1003-1.html",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH1004-1.html",
   "cycles":[
    "bac"
   ],
@@ -1088,7 +1204,7 @@
  {
   "id":"ATGH1006-1",
   "name":"Microbiologie I",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1110,12 +1226,12 @@
  {
   "id":"ATGH1010-1",
   "name":"Phytopharmacie, Phytopharmacie",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Cognet St\u00e9phane"
+   "D'Ans S\u00e9verine"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH1010-1.html",
   "cycles":[
@@ -1125,36 +1241,15 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "life"
-  ],
-  "dedicated":0
- },
- {
-  "id":"ATGH1016-1",
-  "name":"Agrom\u00e9t\u00e9orologie, Agrom\u00e9t\u00e9orologie",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Minsart Laure-Anne"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH1016-1.html",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "climate"
   ],
   "dedicated":0
  },
  {
   "id":"ATGH1018-1",
   "name":"Am\u00e9lioration fonci\u00e8re, Am\u00e9lioration fonci\u00e8re",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1176,12 +1271,12 @@
  {
   "id":"ATGH1023-1",
   "name":"Arboriculture fruiti\u00e8re I",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Duchesne Emilie"
+   "Cognet St\u00e9phane"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH1023-1.html",
   "cycles":[
@@ -1196,9 +1291,54 @@
   "dedicated":0
  },
  {
+  "id":"ATGH1024-1",
+  "name":"Culture mara\u00eech\u00e8re I",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cognet St\u00e9phane"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH1024-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ATGH2026-1",
+  "name":"D\u00e9fense des v\u00e9g\u00e9taux, D\u00e9fense des v\u00e9g\u00e9taux",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cognet St\u00e9phane"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH2026-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"ATGH2027-1",
   "name":"\u00c9cologie, \u00c9cologie",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1219,16 +1359,39 @@
   "dedicated":1
  },
  {
-  "id":"ATGH2049-1",
-  "name":"Phytosociologie, Phytosociologie",
-  "year":"2022-2023",
+  "id":"ATGH2059-1",
+  "name":"Agrobiologie",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Duchesne Emilie"
+   "Cognet St\u00e9phane"
   ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH2049-1.html",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH2059-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ATGH2060-1",
+  "name":"Entomologie",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cognet St\u00e9phane"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH2060-1.html",
   "cycles":[
    "bac"
   ],
@@ -1242,14 +1405,14 @@
  },
  {
   "id":"ATGH3067-1",
-  "name":"Production comestible, Production comestible",
-  "year":"2022-2023",
+  "name":"Production comestible",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Cognet St\u00e9phane",
-   "Belleflamme Christel"
+   "Belleflamme Christel",
+   "Cognet St\u00e9phane"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH3067-1.html",
   "cycles":[
@@ -1264,13 +1427,36 @@
   "dedicated":0
  },
  {
-  "id":"BMED0006-1",
-  "name":"Sciences de l'environnement, Chimie de l'environnement",
-  "year":"2022-2023",
+  "id":"ATGH3069-1",
+  "name":"TP Techniques II",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
+   "Sechehaye J\u00e9r\u00e9mie"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/ATGH3069-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BMED0006-1",
+  "name":"Sciences de l'environnement, Chimie de l'environnement",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Karous Hamad",
    "Schmeits St\u00e9phanie"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/BMED0006-1.html",
@@ -1289,8 +1475,8 @@
  },
  {
   "id":"BMED0018-1",
-  "name":"Sciences des denr\u00e9es alimentaires, Sciences des denr\u00e9es alimentaires",
-  "year":"2022-2023",
+  "name":"Sciences des denr\u00e9es alimentaires",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1311,8 +1497,8 @@
  },
  {
   "id":"BMED0061-1",
-  "name":"Biologie mol\u00e9culaire & biotechnologies 1, Biotechnologies",
-  "year":"2022-2023",
+  "name":"G\u00e9n\u00e9tique & Biotechnologies, G\u00e9n\u00e9tique mol\u00e9culaire et biotechnologies",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1334,7 +1520,7 @@
  {
   "id":"GHOT0027-1",
   "name":"Fondamentaux du Tourisme, \u00c9conomie du Tourisme et r\u00e9gions touristiques",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1356,7 +1542,7 @@
  {
   "id":"GHOT0033-1",
   "name":"N\u00e9erlandais module 4",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1378,7 +1564,7 @@
  {
   "id":"GHOT0046-1",
   "name":"Activit\u00e9s d'int\u00e9gration professionnelle 4 : s\u00e9minaire, Gestion durable des infrastructures touristiques",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1401,13 +1587,13 @@
  {
   "id":"IMMO0019-1",
   "name":"Biens immobiliers : aspects techniques 2, Technologie du b\u00e2timent",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Donckels Nathalie",
-   "Goffinet Caroline"
+   "Goffinet Caroline",
+   "Donckels Nathalie"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/IMMO0019-1.html",
   "cycles":[
@@ -1425,14 +1611,14 @@
  {
   "id":"IMMO0115-1",
   "name":"Activit\u00e9s d'int\u00e9gration professionnelle 2",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Wesphael Isabelle",
-   "Mignolet Florent",
-   "Radas Sabine"
+   "Radas Sabine",
+   "Bourgeois Pernelle",
+   "Wesphael Isabelle"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/IMMO0115-1.html",
   "cycles":[
@@ -1448,16 +1634,16 @@
   "dedicated":0
  },
  {
-  "id":"MADI2002-1",
-  "name":"Sciences fond. Appliqu\u00e9es aux r\u00e9gions chaudes II, Sciences appliq. II(Phytolicence)",
-  "year":"2022-2023",
+  "id":"MAGE1002-1",
+  "name":"Gestion du paysage rural et urbain",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Laruelle MariePierre"
+   "Vanderheyden Vincent"
   ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MADI2002-1.html",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE1002-1.html",
   "cycles":[
    "master"
   ],
@@ -1465,19 +1651,20 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "pollution"
+   "building"
   ],
   "dedicated":0
  },
  {
   "id":"MAGE1003-1",
-  "name":"Territoire et paysage II, PBSTI",
-  "year":"2022-2023",
+  "name":"PBST I",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Furlan Christelle"
+   "Furlan Christelle",
+   "Legrain Xavier"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE1003-1.html",
   "cycles":[
@@ -1492,53 +1679,9 @@
   "dedicated":0
  },
  {
-  "id":"MAGE1004-1",
-  "name":"Biodiversit\u00e9 et territoire I, G\u00e9o diversit\u00e9 et diversit\u00e9 territoriale p\u00e9dog\u00e9n\u00e8se et classif. des sols",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Legrain Xavier"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE1004-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"MAGE1005-1",
-  "name":"Biodiversit\u00e9 et territoire II, Syst. Inf. G\u00e9o.",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Furlan Christelle"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE1005-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
   "id":"MAGE1006-1",
-  "name":"Biodiversit\u00e9 et territoire III, \u00c9tude et analyse de la biodiversit\u00e9",
-  "year":"2022-2023",
+  "name":"\u00c9tude et gestion de la biodiversit\u00e9",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1560,14 +1703,14 @@
  {
   "id":"MAGE1009-1",
   "name":"Informatique appliqu\u00e9e \u00e0 la gestion de l'eau et des bassins versants",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
    "Furlan Christelle",
-   "Legrain Xavier",
-   "Hirtt Laura"
+   "Hirtt Laura",
+   "Legrain Xavier"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE1009-1.html",
   "cycles":[
@@ -1585,8 +1728,8 @@
  },
  {
   "id":"MAGE1010-1",
-  "name":"Biologie et Gestion des eaux I, Microbiologie appliqu\u00e9e des sols et des eaux",
-  "year":"2022-2023",
+  "name":"Microbiologie appliqu\u00e9e des sols et des eaux",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1608,8 +1751,8 @@
  },
  {
   "id":"MAGE1011-1",
-  "name":"Biologie et Gestion des eaux II, Hydrobiologie et gestion des eaux de surface",
-  "year":"2022-2023",
+  "name":"Hydrobiologie et gestion des eaux de surface",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1630,8 +1773,8 @@
  },
  {
   "id":"MAGE1012-1",
-  "name":"Biologie et Gestion des eaux III, Gestion des eaux r\u00e9siduaires",
-  "year":"2022-2023",
+  "name":"Gestion des eaux r\u00e9siduaires",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1652,8 +1795,8 @@
  },
  {
   "id":"MAGE1013-1",
-  "name":"Eaux, for\u00eats et territoire I, D\u00e9veloppement durable",
-  "year":"2022-2023",
+  "name":"D\u00e9veloppement durable",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1675,8 +1818,8 @@
  },
  {
   "id":"MAGE1014-1",
-  "name":"Eaux, for\u00eats et territoire II, Sylviculture et \u00e9cologie foresti\u00e8re",
-  "year":"2022-2023",
+  "name":"Sylviculture et \u00e9cologie foresti\u00e8re",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1696,31 +1839,9 @@
   "dedicated":1
  },
  {
-  "id":"MAGE2002-1",
-  "name":"Sciences fondamentales et appliqu\u00e9es II, Phytolicence",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Laruelle MariePierre"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE2002-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "pollution"
-  ],
-  "dedicated":0
- },
- {
   "id":"MAGE2003-1",
-  "name":"Chimie de l'environnement et appliqu\u00e9e I, Chimie de l'air",
-  "year":"2022-2023",
+  "name":"Chimie de l'air",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1737,12 +1858,12 @@
   "themes":[
    "pollution"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"MAGE2004-1",
-  "name":"Chimie de l'environnement et appliqu\u00e9e II, \u00c9valuation de la qualit\u00e9 des sols",
-  "year":"2022-2023",
+  "name":"Evaluation de la qualit\u00e9 des sols",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1759,12 +1880,12 @@
   "themes":[
    "pollution"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"MAGE2006-1",
-  "name":"Management environnemental I, Certification et gestion environnementale",
-  "year":"2022-2023",
+  "name":"Certification et gestion environnementale, Certification et gestion environnementale",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1779,15 +1900,14 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "building",
-   "life"
+   "building"
   ],
   "dedicated":1
  },
  {
   "id":"MAGE2007-1",
-  "name":"Management environnemental II, Comptabilit\u00e9 \u00e9nerg\u00e9tique et \u00e9nergie renouvelable",
-  "year":"2022-2023",
+  "name":"Comptabilit\u00e9 \u00e9nerg\u00e9tique et \u00e9nergie renouvelable, Comptabilit\u00e9 \u00e9nerg\u00e9tique et \u00e9nergie renouvelable",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1802,61 +1922,14 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy",
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"MAGE2008-1",
-  "name":"\u00c9tude et gestion du territoire et de son environnement I, \u00c9cologie et environnement rural",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Gauthier Sabine"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE2008-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"MAGE2009-1",
-  "name":"\u00c9tude et gestion du territoire et de son environnement II, PBST III",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Legrain Xavier",
-   "Vanderheyden Vincent",
-   "Hirtt Laura"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE2009-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "life"
+   "energy"
   ],
   "dedicated":1
  },
  {
   "id":"MAGE2010-1",
-  "name":"Biodiversit\u00e9 et territoire IV, Gestion et sauvegarde de la biodiversit\u00e9",
-  "year":"2022-2023",
+  "name":"Gestion et sauvegarde de la biodiversit\u00e9",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1876,75 +1949,9 @@
   "dedicated":1
  },
  {
-  "id":"MAGE2011-1",
-  "name":"Biodiversit\u00e9 et territoire V, Analyse multivari\u00e9e",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Milano Robert"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE2011-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"MAGE2012-1",
-  "name":"Biodiversit\u00e9 et territoire VI, Sys. Info. G\u00e9o  III",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Furlan Christelle"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE2012-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"MAGE2013-1",
-  "name":"Biodiversit\u00e9 et territoire VII, Races \u00e0 effectifs limit\u00e9s et sauvegarde de la biodiversit\u00e9",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Gauthier Sabine"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGE2013-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
   "id":"MAGE2014-1",
-  "name":"Am\u00e9nagement et gestion durable du territoire I, Droit de l'am\u00e9nagement du territoire",
-  "year":"2022-2023",
+  "name":"Droit de l'environnement",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1960,7 +1967,6 @@
   ],
   "themes":[
    "building",
-   "energy",
    "life",
    "pollution"
   ],
@@ -1968,8 +1974,8 @@
  },
  {
   "id":"MAGE2016-1",
-  "name":"Am\u00e9nagement et gestion durable du territoire III, \u00c9cologie industrielle",
-  "year":"2022-2023",
+  "name":"\u00c9cologie industrielle",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -1990,38 +1996,16 @@
   "dedicated":1
  },
  {
-  "id":"MAGT2002-1",
-  "name":"Sciences fond. appliqu\u00e9es aux r\u00e9gions temp\u00e9r\u00e9es II, Sciences appliq II (Phytolicence)",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Laruelle MariePierre"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGT2002-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "pollution"
-  ],
-  "dedicated":0
- },
- {
   "id":"MAGT2003-1",
-  "name":"Sciences fond. appliqu\u00e9es aux r\u00e9gions temp\u00e9r\u00e9es III, PBST",
-  "year":"2022-2023",
+  "name":"Projet agronomique interdisciplinaire II",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Laruelle MariePierre",
    "Gielen Yves",
-   "Hirtt Laura"
+   "Hirtt Laura",
+   "Laruelle MariePierre"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGT2003-1.html",
   "cycles":[
@@ -2031,14 +2015,14 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "food"
+   "life"
   ],
   "dedicated":0
  },
  {
   "id":"MAGT2005-1",
-  "name":"Agronomie appliqu\u00e9e aux r\u00e9gions temp\u00e9r\u00e9es II, Compl. Phyto (productions v\u00e9g\u00e9tales II)",
-  "year":"2022-2023",
+  "name":"Agro\u00e9cologie et productions v\u00e9g\u00e9tales",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -2055,19 +2039,41 @@
   "themes":[
    "food"
   ],
+  "dedicated":1
+ },
+ {
+  "id":"MAGT2008-1",
+  "name":"Syst\u00e8mes d'\u00e9levage",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Elabbas Sophie"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MAGT2008-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
   "dedicated":0
  },
  {
   "id":"MBIN1001-1",
-  "name":"Interdisciplinarit\u00e9 III",
-  "year":"2022-2023",
+  "name":"Projet entrepreneurial interdisciplinaire",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
    "Thirion Fr\u00e9d\u00e9rique",
-   "Frankinet Aur\u00e9lie",
-   "Elhour Mehdi"
+   "Elhour Mehdi",
+   "Frankinet Aur\u00e9lie"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MBIN1001-1.html",
   "cycles":[
@@ -2083,8 +2089,8 @@
  },
  {
   "id":"MBIN1004-1",
-  "name":"Biotechnologies I, G\u00e9nie des bio-industries",
-  "year":"2022-2023",
+  "name":"G\u00e9nie des bio-industries",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -2105,16 +2111,15 @@
  },
  {
   "id":"MBIN1013-1",
-  "name":"Technologies des aliments, Techno. Agro-alimentaires et des fermentations",
-  "year":"2022-2023",
+  "name":"Technologies agro-alimentaires et des fermentations",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Thirion Fr\u00e9d\u00e9rique",
-   "Arpigny Jean-Louis",
+   "Belleflamme Christel",
    "Elhour Mehdi",
-   "Belleflamme Christel"
+   "Arpigny Jean-Louis"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MBIN1013-1.html",
   "cycles":[
@@ -2130,8 +2135,8 @@
  },
  {
   "id":"MBIN2002-1",
-  "name":"Biotechnologie et technologies des Industries Agro-alimentaires II, Agro-industries, chimie verte",
-  "year":"2022-2023",
+  "name":"Agro-industries, chimie verte",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -2152,8 +2157,8 @@
  },
  {
   "id":"MBIN2004-1",
-  "name":"Gestion de la qualit\u00e9 des Industries Agroalimentaires I, Trait. des eaux r\u00e9siduaires",
-  "year":"2022-2023",
+  "name":"Traitement des eaux r\u00e9siduaires",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -2175,8 +2180,8 @@
  },
  {
   "id":"MBIN2005-1",
-  "name":"Gestion de la qualit\u00e9 des Industries Agroalimentaires II, Assurance qualit\u00e9",
-  "year":"2022-2023",
+  "name":"Assurance qualit\u00e9",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -2196,31 +2201,9 @@
   "dedicated":0
  },
  {
-  "id":"MBIN2009-1",
-  "name":"Sciences fondamentales et appliqu\u00e9es VIII, Phytolicence",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Laruelle MariePierre"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/MBIN2009-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "pollution"
-  ],
-  "dedicated":0
- },
- {
   "id":"MBIN2012-1",
-  "name":"Sciences fondamentales et appliqu\u00e9es XI, PBST",
-  "year":"2022-2023",
+  "name":"PBST",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -2240,9 +2223,31 @@
   "dedicated":0
  },
  {
+  "id":"PCEA1000-1",
+  "name":"Math\u00e9matiques, Math\u00e9matiques",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Debergh Nathalie"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/PCEA1000-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"PCEA1006-1",
-  "name":"Outils transversaux VI, Botanique",
-  "year":"2022-2023",
+  "name":"Botanique, Botanique",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
@@ -2263,22 +2268,65 @@
   "dedicated":0
  },
  {
-  "id":"TOUR0059-1",
-  "name":"Gestion de l'accueil",
-  "year":"2022-2023",
+  "id":"PLSC3204-1",
+  "name":"Biologie et didactique de la discipline : Physiologie animale partim II, \u00e9cologie et biodiversit\u00e9",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Domin\u00e9 Annick",
-   "Dehousse Maud"
+
   ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0059-1.html",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/PLSC3204-1.html",
   "cycles":[
    "bac"
   ],
   "fields":[
-   "Economy"
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"PLSH3112-1",
+  "name":"Formation g\u00e9ographique et didactique de la discipline : activit\u00e9s humaines et leurs impacts environnementaux \u00e0 l'\u00e9chelle du monde",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Valoir Gilles"
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/PLSH3112-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"PLSH3205-1",
+  "name":"Formation g\u00e9ographique et didactique de la discipline : \u00e9volution des occupations\/utilisations du sol en lien avec l\u00bfurbanisation, la d\u00e9forestation et les mutations du secteur agricole",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/PLSH3205-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
   ],
   "themes":[
    "life"
@@ -2288,16 +2336,15 @@
  {
   "id":"TOUR0075-1",
   "name":"Projet de communication digitale",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Lucas Andr\u00e9",
    "Soumagne Thomas",
-   "Boccacci Jean-Marc",
-   "Hicter Rapha\u00ebl",
-   "Diliberto Laura"
+   "Bebronne Nicolas",
+   "Diliberto Laura",
+   "Boccacci Jean-Marc"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0075-1.html",
   "cycles":[
@@ -2312,36 +2359,14 @@
   "dedicated":0
  },
  {
-  "id":"TOUR0094-1",
-  "name":"Politique du tourisme et des loisirs, Politique du tourisme et des loisirs",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Houbotte Fran\u00e7oise"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0094-1.html",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Economy"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":0
- },
- {
   "id":"TOUR0097-1",
   "name":"Sociologie du Tourisme et des loisirs, Sociologie du Tourisme et des loisirs",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Leveque Audrey"
+   "Goffin Emilie"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0097-1.html",
   "cycles":[
@@ -2358,13 +2383,12 @@
  {
   "id":"TOUR0098-1",
   "name":"Introduction au d\u00e9veloppement durable, Introduction au d\u00e9veloppement durable",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Vincent Martin",
-   "Debeerdelaer Hadelin"
+   "Vincent Martin"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0098-1.html",
   "cycles":[
@@ -2384,13 +2408,13 @@
  {
   "id":"TOUR0099-1",
   "name":"Cultures et diversit\u00e9",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Boccacci Jean-Marc",
-   "Dehousse Maud"
+   "Dehousse Maud",
+   "Boccacci Jean-Marc"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0099-1.html",
   "cycles":[
@@ -2407,37 +2431,14 @@
  {
   "id":"TOUR0108-1",
   "name":"Techniques de communication, Techniques de communication",
-  "year":"2022-2023",
+  "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Boccacci Jean-Marc",
-   "Dehousse Maud"
+   "Boccacci Jean-Marc"
   ],
   "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0108-1.html",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Economy"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":0
- },
- {
-  "id":"TOUR0124-2",
-  "name":"Tourisme et d\u00e9veloppement territorial",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Demyttenaere Bernard"
-  ],
-  "url":"http:\/\/progcours.hech.be\/cocoon\/cours\/TOUR0124-2.html",
   "cycles":[
    "bac"
   ],

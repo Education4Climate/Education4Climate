@@ -1,122 +1,5 @@
 [
  {
-  "id":"A1MAIE01",
-  "name":"Master en sciences de l'ing\u00e9nieur industriel en agronomie, orientation environnement",
-  "cycle":"master",
-  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/A1MAIE01_C.html",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "D\u00e9partement Agronomique"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "building",
-   "climate",
-   "economy",
-   "energy",
-   "life",
-   "pollution",
-   "prod&cons",
-   "resources"
-  ],
-  "themes_scores":[
-   2,
-   1,
-   1,
-   3,
-   21,
-   7,
-   1,
-   2
-  ],
-  "matched_courses":[
-   "AGRO1001-1",
-   "MAGE1003-1",
-   "MAGE1004-1",
-   "MAGE1005-1",
-   "MAGE1006-1",
-   "MAGE1009-1",
-   "MAGE1010-1",
-   "MAGE1011-1",
-   "MAGE1012-1",
-   "MAGE1013-1",
-   "MAGE1014-1",
-   "MAGE2002-1",
-   "MAGE2003-1",
-   "MAGE2004-1",
-   "MAGE2006-1",
-   "MAGE2007-1",
-   "MAGE2008-1",
-   "MAGE2009-1",
-   "MAGE2010-1",
-   "MAGE2011-1",
-   "MAGE2012-1",
-   "MAGE2013-1",
-   "MAGE2014-1",
-   "MAGE2016-1",
-   "PCEA1006-1"
-  ],
-  "nb_dedicated_courses":17,
-  "nb_matched_courses":25,
-  "nb_total_courses":51
- },
- {
-  "id":"A1MAGI01",
-  "name":"Master en sciences de l'ing\u00e9nieur industriel en agronomie, orientation bio-industries",
-  "cycle":"master",
-  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/A1MAGI01_C.html",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "D\u00e9partement Agronomique"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "economy",
-   "life",
-   "pollution",
-   "prod&cons",
-   "resources",
-   "transport"
-  ],
-  "themes_scores":[
-   1,
-   4,
-   4,
-   2,
-   1,
-   1
-  ],
-  "matched_courses":[
-   "AGRO1001-1",
-   "MBIN1001-1",
-   "MBIN1004-1",
-   "MBIN1013-1",
-   "MBIN2002-1",
-   "MBIN2004-1",
-   "MBIN2005-1",
-   "MBIN2009-1",
-   "MBIN2012-1",
-   "PCEA1006-1"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":10,
-  "nb_total_courses":40
- },
- {
   "id":"A1MAGG01",
   "name":"Master en sciences de l'ing\u00e9nieur industriel en agronomie, orientation agronomie",
   "cycle":"master",
@@ -143,10 +26,10 @@
   ],
   "themes_scores":[
    1,
-   3,
-   4,
-   3,
+   2,
+   6,
    1,
+   2,
    1
   ],
   "matched_courses":[
@@ -154,10 +37,10 @@
    "AGRO1004-1",
    "AGRO1009-1",
    "AGRO1023-1",
-   "MADI2002-1",
-   "MAGT2002-1",
    "MAGT2003-1",
    "MAGT2005-1",
+   "MAGT2008-1",
+   "PCEA1000-1",
    "PCEA1006-1"
   ],
   "nb_dedicated_courses":1,
@@ -183,6 +66,7 @@
   ],
   "themes":[
    "climate",
+   "food",
    "life",
    "pollution",
    "prod&cons",
@@ -190,26 +74,32 @@
   ],
   "themes_scores":[
    1,
-   7,
+   1,
+   9,
    3,
-   3,
+   8,
    1
   ],
   "matched_courses":[
+   "ASCA1001-1",
    "ASCA2021-1",
    "ASCA2035-1",
    "ASCA2036-1",
    "ASCA2040-1",
+   "ASCA3042-1",
    "ASCA3044-1",
    "ASCA3045-1",
    "ASCA3047-1",
    "ASCA3048-1",
+   "ASCA3053-1",
+   "ASCA3055-1",
    "ASCA3059-1",
-   "ASCA3060-1"
+   "ASCA3060-1",
+   "ASCA3063-1"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":10,
-  "nb_total_courses":62
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":15,
+  "nb_total_courses":63
  },
  {
   "id":"A1TGHO01",
@@ -229,31 +119,34 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
+   "building",
    "food",
    "life",
    "pollution"
   ],
   "themes_scores":[
    1,
-   1,
-   7,
-   1
+   2,
+   11,
+   2
   ],
   "matched_courses":[
-   "ATGH1003-1",
+   "ATGH1004-1",
    "ATGH1006-1",
    "ATGH1010-1",
-   "ATGH1016-1",
    "ATGH1018-1",
    "ATGH1023-1",
+   "ATGH1024-1",
+   "ATGH2026-1",
    "ATGH2027-1",
-   "ATGH2049-1",
-   "ATGH3067-1"
+   "ATGH2059-1",
+   "ATGH2060-1",
+   "ATGH3067-1",
+   "ATGH3069-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":9,
-  "nb_total_courses":72
+  "nb_matched_courses":12,
+  "nb_total_courses":75
  },
  {
   "id":"A1TGAA01",
@@ -283,7 +176,7 @@
    "transport"
   ],
   "themes_scores":[
-   1,
+   3,
    2,
    1,
    1,
@@ -318,9 +211,118 @@
    "ATGA3080-1",
    "ATGA3081-1"
   ],
-  "nb_dedicated_courses":11,
+  "nb_dedicated_courses":9,
   "nb_matched_courses":24,
-  "nb_total_courses":85
+  "nb_total_courses":84
+ },
+ {
+  "id":"A1AJEP01",
+  "name":"Bachelier en Architecture des Jardins et du Paysage",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/A1AJEP01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement Agronomique"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "carbon",
+   "climate",
+   "life",
+   "pollution",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1,
+   7,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ARJP1001-1",
+   "ARJP1002-1",
+   "ARJP1006-1",
+   "ARJP1020-1",
+   "ARJP2029-1",
+   "ARJP2040-1",
+   "ARJP2041-1",
+   "ARJP3053-1"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":8,
+  "nb_total_courses":56
+ },
+ {
+  "id":"A1MAIE01",
+  "name":"Master en sciences de l'ing\u00e9nieur industriel en agronomie, orientation environnement",
+  "cycle":"master",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/A1MAIE01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement Agronomique"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "climate",
+   "economy",
+   "energy",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
+  ],
+  "themes_scores":[
+   3,
+   1,
+   1,
+   2,
+   12,
+   6,
+   2,
+   2
+  ],
+  "matched_courses":[
+   "AGRO1001-1",
+   "MAGE1002-1",
+   "MAGE1003-1",
+   "MAGE1006-1",
+   "MAGE1009-1",
+   "MAGE1010-1",
+   "MAGE1011-1",
+   "MAGE1012-1",
+   "MAGE1013-1",
+   "MAGE1014-1",
+   "MAGE2003-1",
+   "MAGE2004-1",
+   "MAGE2006-1",
+   "MAGE2007-1",
+   "MAGE2010-1",
+   "MAGE2014-1",
+   "MAGE2016-1",
+   "PCEA1000-1",
+   "PCEA1006-1"
+  ],
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":19,
+  "nb_total_courses":51
  },
  {
   "id":"M1BIOM01",
@@ -361,6 +363,67 @@
   "nb_total_courses":54
  },
  {
+  "id":"PBSHUM01",
+  "name":"Bachelier en enseignement section 3\u00a0: sciences humaines",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/PBSHUM01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "PLSH3112-1",
+   "PLSH3205-1"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":38
+ },
+ {
+  "id":"PBSCIE01",
+  "name":"Bachelier en enseignement section 3\u00a0: sciences",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/PBSCIE01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PLSC3204-1"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":41
+ },
+ {
   "id":"E1TOUR01",
   "name":"Bachelier en Tourisme",
   "cycle":"bac",
@@ -387,20 +450,17 @@
    1,
    1,
    1,
-   8
+   5
   ],
   "matched_courses":[
-   "TOUR0059-1",
    "TOUR0075-1",
-   "TOUR0094-1",
    "TOUR0097-1",
    "TOUR0098-1",
    "TOUR0099-1",
-   "TOUR0108-1",
-   "TOUR0124-2"
+   "TOUR0108-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":8,
+  "nb_matched_courses":5,
   "nb_total_courses":110
  },
  {
@@ -500,13 +560,13 @@
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":86
+  "nb_total_courses":87
  },
  {
-  "id":"A1AJEP01",
-  "name":"Bachelier en Architecture des Jardins et du Paysage",
-  "cycle":"bac",
-  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/A1AJEP01_C.html",
+  "id":"A1MAGI01",
+  "name":"Master en sciences de l'ing\u00e9nieur industriel en agronomie, orientation bio-industries",
+  "cycle":"master",
+  "url":"http:\/\/progcours.hech.be\/cocoon\/programmes\/A1MAGI01_C.html",
   "languages":[
    "fr"
   ],
@@ -520,31 +580,35 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "building",
-   "climate",
+   "economy",
    "life",
    "pollution",
-   "prod&cons"
+   "prod&cons",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1,
-   8,
+   4,
+   3,
+   3,
    1,
    1
   ],
   "matched_courses":[
-   "ARJP1001-1",
-   "ARJP1002-1",
-   "ARJP1006-1",
-   "ARJP1020-1",
-   "ARJP2029-1",
-   "ARJP2040-1",
-   "ARJP2041-1",
-   "ARJP3053-1"
+   "AGRO1001-1",
+   "MBIN1001-1",
+   "MBIN1004-1",
+   "MBIN1013-1",
+   "MBIN2002-1",
+   "MBIN2004-1",
+   "MBIN2005-1",
+   "MBIN2012-1",
+   "PCEA1000-1",
+   "PCEA1006-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":8,
-  "nb_total_courses":56
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":10,
+  "nb_total_courses":40
  }
 ]

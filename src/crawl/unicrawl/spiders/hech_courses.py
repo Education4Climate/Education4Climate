@@ -41,6 +41,11 @@ class HECHCourseSpider(scrapy.Spider, ABC):
 
         course_name = response.xpath("////td[@class='LibCours']/text()").get()
         if course_name is None:
+            print(f'Missing course name for {course_id}')
+            yield {
+                'id': course_id, 'name': '', 'year': f'{YEAR}-{YEAR+1}', 'languages': ['fr'],
+                'teachers': [], 'url': response.url, 'content': '', 'goal': '', 'activity': '', 'other': ''
+            }
             return
         years = response.xpath("//div[@id='TitrePrinc']/text()").get().split(" ")[-1]
         course_rubric_txt = "//div[@class='TitreRubCours' and contains(text(), \"{}\")]"
