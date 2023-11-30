@@ -1,90 +1,81 @@
 {
-    "13UST12: Electricit\u00e9": {
+    "13UGE10: Economics of Strategy": {
         "fr": {
-            "[electri[^ ]+, stockage]": [
-                "electricite le programme du cou",
-                "amment    * charges electriques et champs electrost",
-                "ion  * le potentiel electrique  * les dielectrique",
-                "electrique  * les dielectriques et capacitances  * ",
-                "ands principes de l electricite en tant que branche",
-                "tement des circuits electriques en regimes continus",
-                "teurs et recepteurs electriques  le cours doit perm",
-                " comprehension de l electricite et des circuits ele",
-                "ite et des circuits electriques dans des situations",
-                "cepts generaux de l electricite et de ses applicati",
-                "lution des circuits electriques en courant continu ",
-                "ement de composants electriques de base  resistance",
-                "sous-jacents  champ electrique  champ magnetique  ",
-                " celle de sources d electricite   - comprendre et d",
-                "pation de l energie electrique   - expliquer le fo",
-                "rnatif  de circuits electriques simples mettant en ",
-                "uvre des composants electriques de base et des sour",
-                "lignes de transport electrique en regime alternati",
-                " d application de l electricite au quotidien et du ",
-                "es caracteristiques electriques en regime continu d",
-                "continu de circuits electriques simples contenant d",
-                " calculer l energie electrique emmagasinee dans de",
-                "teurs et recepteurs electriques dans differentes si",
-                "ller les notions de stockage et de dissipation d"
+            "[[ ]ecolo[^ ]+]": [
+                "enabilite sociale et ecologique  l objectif general",
+                " la base de criteres ecologiques  sociaux et economi"
             ]
         }
     },
     "13UXP16: Projet interdisciplinaire": {
         "fr": {
-            "[extraction, impact, environnement]": [
-                " \"c est-a-dire de l extraction des matieres premie",
-                "t de quantifier les impacts environnementaux d",
-                " analysera le macro-environnement dans lequel evoluen",
-                "ntifier les impacts environnementaux des produits a c"
+            "impacts? (?:environnement|ecosyst)": [
+                "t de quantifier les impacts environnementaux des produits a c"
             ]
         }
     },
     "11UEC10: Economie politique": {
         "fr": {
-            "[[ ]ecolo[^ ]+, durabilite]": [
-                "nomiques  sociaux ou ecologiques   - introduire les ",
-                "ous les themes   la durabilite     1  une variete "
+            "[[ ]ecolo[^ ]+]": [
+                "nomiques  sociaux ou ecologiques   - introduire les "
             ]
         }
     },
     "22MGD40: Contexte Soci\u00e9tal et Outils d'analyse des Business": {
         "fr": {
-            "gestio[^ ]+ durab[^ ]+": [
-                " de la rse et de la gestion durable   - decouverte et c"
+            "enjeux? (?:environnement|ecosyst)": [
+                "ehension des grands enjeux environnementaux selon une logiqu"
             ]
         }
     },
     "21FFM18: Gestion des risques et institutions financi\u00e8res": {
         "fr": {
-            "enjeux? climat[^ ]+": [
-                "e challenge par les enjeux climatiques et a reflechir a un"
-            ],
-            "risques? (?:lies? )?(?:au )?climat[^ ]+": [
-                "11  4 mai 2023   le risque climatique  week 12  11 mai 20"
+            "enjeux? climat": [
+                "e challenge par les enjeux climatiques et a reflechir"
             ]
         }
     },
     "21FFM12: Gestion de portefeuille et durabilit\u00e9": {
         "fr": {
-            "gestio[^ ]+ durab[^ ]+": [
-                "ouvernance pour une gestion durable  le cours montre co"
+            "changements? climat": [
+                "es globaux comme le changement climatique ou de risques f"
+            ],
+            "limites? planet": [
+                "la finance face aux limites planetaires et aux besoins"
+            ]
+        }
+    },
+    "22MPD20: Sp\u00e9cificit\u00e9s de la gestion dans les pays du Sud": {
+        "fr": {
+            "enjeux? (?:environnement|ecosyst)": [
+                "ement economique et enjeux environnementaux   2 2  croissanc"
+            ],
+            "(?:theories?|economies?) du donut": [
+                "nnementale  2 3  la theorie du donut  nouvelle boussole "
             ]
         }
     },
     "22MEP20: European History and Institutions": {
         "en": {
-            "climat[^ ]+ change": [
+            "climate change": [
                 "e crisis  security  climate changes  migration    inst"
+            ]
+        }
+    },
+    "22SH024: Business Ethics and Sustainability": {
+        "en": {
+            "biodiversity": [
+                " climate breakdown  biodiversity loss or the rise of"
             ]
         }
     },
     "22EC012: Topics in Economics and Environment": {
         "en": {
-            "environment[^ ]+ polic[^ ]+": [
-                "ms or otherwise   - environmental policies and their effects o"
-            ],
-            "environment[^ ]+ issue": [
+            "(?:environment[^ ]*|ecosystem) issue": [
                 "and significance of environmental issues in economic theori"
+            ],
+            "(?:environment[^ ]*|ecosystem) polic": [
+                "ms or otherwise   - environmental policies and their effect"
             ]
         }
     },
@@ -97,47 +88,88 @@
     },
     "21EC015: Topics in Economics and Environment": {
         "en": {
-            "environment[^ ]+ polic[^ ]+": [
-                "individual firms  - environmental policies and their effects o"
-            ],
-            "environment[^ ]+ issue": [
+            "(?:environment[^ ]*|ecosystem) issue": [
                 "and significance of environmental issues in economic theori"
+            ],
+            "(?:environment[^ ]*|ecosystem) polic": [
+                "individual firms  - environmental policies and their effect"
+            ]
+        }
+    },
+    "21SH033: Ethique d'entreprise et durabilit\u00e9": {
+        "fr": {
+            "problematiques? (?:d |de l )?environnement": [
+                "e de cas lies a des problematiques environnementales concretes  3  p"
             ]
         }
     },
     "21EC014: Topics in Economics and Environment": {
         "en": {
-            "environment[^ ]+ polic[^ ]+": [
-                "ms or otherwise   - environmental policies and their effects o"
-            ],
-            "environment[^ ]+ issue": [
+            "(?:environment[^ ]*|ecosystem) issue": [
                 "and significance of environmental issues in economic theori"
+            ],
+            "(?:environment[^ ]*|ecosystem) polic": [
+                "ms or otherwise   - environmental policies and their effect"
             ]
         }
     },
     "31DCG10: Economie": {
         "fr": {
-            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+            "[[ ]ecolo[^ ]+]": [
+                "es enjeux sociaux et ecologiques auxquels nos societ"
+            ],
+            "problemes? (?:environnement|ecosyst)": [
                 "du capitalisme  les problemes environnementaux ou encore les cr"
+            ],
+            "(?:theories?|economies?) du donut": [
+                " presentation de la theorie du donut  << prendre en comp",
+                "inscrite dans la << theorie du donut >> de l economiste "
             ]
         }
     },
     "12UEC20: Micro\u00e9conomie et macro\u00e9conomie : Th\u00e9orie et applications": {
         "fr": {
-            "economie circulaire": [
+            "economies? circulaire": [
                 "ifs  l exemple de l economie circulaire     3  les modeles "
+            ]
+        }
+    },
+    "12UGE21: Introduction \u00e0 la finance": {
+        "fr": {
+            "changements? climat": [
+                " au 21e siecle   le changement climatique  la pauvrete et"
+            ],
+            "biodiversite": [
+                "finance et climat & biodiversite la meilleure introd"
             ]
         }
     },
     "11UEC11: Economie politique": {
         "fr": {
-            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+            "[[ ]ecolo[^ ]+]": [
+                "es enjeux sociaux et ecologiques auxquels nos societ"
+            ],
+            "problemes? (?:environnement|ecosyst)": [
                 "du capitalisme  les problemes environnementaux ou encore les cr"
+            ],
+            "(?:theories?|economies?) du donut": [
+                " presentation de la theorie du donut  << prendre en comp",
+                "inscrite dans la << theorie du donut >> de l economiste "
+            ]
+        }
+    },
+    "11UEC15: Political Economics": {
+        "en": {
+            "(?:environment[^ ]*|ecosystem) problem": [
+                "tory of capitalism  environmental problems or economic crises"
             ]
         }
     },
     "21ST040: Science et technologie des mat\u00e9riaux": {
         "fr": {
+            "bio[ -]?source": [
+                "e vi  les materiaux biosources  chapitre vii  les"
+            ],
             "chimie (?:[^ ]+ ){0,4}verte": [
                 "ordant la notion de chimie verte     en termes de sa"
             ]
@@ -145,32 +177,44 @@
     },
     "21ST030: Environnement": {
         "fr": {
-            "epurations? des eaux": [
-                "lution de l eau  5  epuration des eaux usees et production"
+            "permis (?:d )environnement": [
+                "le  chapitre 2   le permis d environnement et les etudes d inc"
             ],
-            "problemes? (?:environnement|ecolo[^ ]+|ecosyst[^ ]+)": [
+            "droits? (?:d |de l )?environnement": [
+                "ementaires    aa2   droit de l environnement  chapitre 1   intro",
+                " l environnement et droit de l environnement  contribution au pr",
+                "ants aux rouages du droit de l environnement et de les former au"
+            ],
+            "problemes? (?:environnement|ecosyst)": [
                 "ce et ethique   les problemes environnementaux occupent une pla",
                 "que constituent les problemes environnementaux en lien avec leu"
             ],
-            "responsabilite environnement[^ ]+": [
-                "nerale et notion de responsabilite environnementale  chapitre 2   le pe"
+            "responsabilites? (?:environnement|ecosyst)": [
+                "nerale et notion de responsabilite environnementale  chapitre 2   le"
+            ],
+            "epurations? des eaux": [
+                "lution de l eau  5  epuration des eaux usees et production"
+            ],
+            "pollu": [
+                "4  evaluation de la pollution de l eau  5  ep",
+                "eglementation de la pollution et de l assaini"
             ]
         }
     },
     "21GE060: Gestion et production de l'\u00e9nergie": {
         "fr": {
-            "(?:emissions? )?(?:de )?gaz (?:a )?(?:effets? )(?:de )?serre": [
-                "a problematique des gaz a effet de serre sur le secteur elec"
+            "effets? (?:de )?serre": [
+                "lematique des gaz a effet de serre sur le secteur elec"
             ],
-            "[electri[^ ]+, stockage]": [
-                "ves   eolien  hydro-electricite/stockage  technologies en de",
-                "erre sur le secteur electrique et energetique au s",
-                "on de la chaleur en electricite incluant les cycles",
-                "les de production d electricite  a vapeur  a gaz  c",
-                "l energie mecanique/electricite et identifier les d",
-                "les de production d electricite    - definir et eva",
-                "on energie-primaire/electricite et les technologies",
-                "  hydro-electricite/stockage  technologies en de"
+            "energ[^ ]+ alternati": [
+                " a gaz  combines  a energie alternative  et de chaleur  c"
+            ],
+            "[nucleaire, productions? (?:d )?(?:energ|elec)]": [
+                "s complexes  cycles nucleaires   cours #4   rappe",
+                " en developpement   nucleaire geniv  power to gaz",
+                " vapeur  classique  nucleaire   les turbines a ga",
+                "ifferents cycles de production d electricite  a vapeur  a",
+                "rincipaux cycles de production d electricite    - definir"
             ]
         }
     },

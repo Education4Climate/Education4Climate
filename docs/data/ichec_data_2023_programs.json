@@ -1,5 +1,79 @@
 [
  {
+  "id":"BEGDL",
+  "name":"Bachelier en gestion de l'entreprise",
+  "cycle":"bac",
+  "url":"https:\/\/www.ichec.be\/fr\/bachelier-en-gestion-de-lentrepise-jour",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Anjou",
+   "Montgomery"
+  ],
+  "faculties":[
+   "Ecole de gestion et commerce"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "economy",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "11UEC10",
+   "11UEC15",
+   "12UEC20",
+   "13UGE10"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":65
+ },
+ {
+  "id":"BEGDLS",
+  "name":"Bachelier en gestion de l'entreprise - soir",
+  "cycle":"bac",
+  "url":"https:\/\/www.ichec.be\/fr\/bachelier-en-gestion-de-lentreprise-soir",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Anjou",
+   "Montgomery"
+  ],
+  "faculties":[
+   "Ecole de gestion et commerce"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "11UEC11",
+   "12UEC21",
+   "12UGE21"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":40
+ },
+ {
   "id":"BIC",
   "name":"Bachelier : ing\u00e9nieur commercial",
   "cycle":"bac",
@@ -20,18 +94,21 @@
    "Management"
   ],
   "themes":[
+   "energy",
    "life"
   ],
   "themes_scores":[
-   3
+   1,
+   4
   ],
   "matched_courses":[
    "11UEC10",
    "13UGE10",
+   "13UST12",
    "13UXP16"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":53
  },
  {
@@ -54,51 +131,18 @@
    "Management"
   ],
   "themes":[
-   "economy",
    "life"
   ],
   "themes_scores":[
-   1,
-   1
+   2
   ],
   "matched_courses":[
+   "13UGE10",
    "31DCG10"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":8
- },
- {
-  "id":"MESCET",
-  "name":"Master en sciences commerciales - English track",
-  "cycle":"master",
-  "url":"https:\/\/www.ichec.be\/fr\/masters-degree-management-sciences-english-track",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Anjou"
-  ],
-  "faculties":[
-   "Ecole de gestion et commerce"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "life"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "21EC014"
-  ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
-  "nb_total_courses":11
+  "nb_matched_courses":2,
+  "nb_total_courses":12
  },
  {
   "id":"MESC",
@@ -131,7 +175,38 @@
   ],
   "nb_dedicated_courses":2,
   "nb_matched_courses":2,
-  "nb_total_courses":16
+  "nb_total_courses":14
+ },
+ {
+  "id":"MESCET",
+  "name":"Master en sciences commerciales - English track",
+  "cycle":"master",
+  "url":"https:\/\/www.ichec.be\/fr\/masters-degree-management-sciences-english-track",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Anjou"
+  ],
+  "faculties":[
+   "Ecole de gestion et commerce"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "21EC014"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":11
  },
  {
   "id":"MESCS",
@@ -189,21 +264,18 @@
    "Management"
   ],
   "themes":[
-   "climate",
    "life"
   ],
   "themes_scores":[
-   1,
    2
   ],
   "matched_courses":[
    "22EC012",
-   "22MEP20",
    "22SH024"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
-  "nb_total_courses":20
+  "nb_matched_courses":2,
+  "nb_total_courses":21
  },
  {
   "id":"MEGDLPI",
@@ -232,53 +304,20 @@
   "themes_scores":[
    3,
    1,
-   5
+   4
   ],
   "matched_courses":[
    "21FFM12",
+   "21FFM14",
    "21FFM18",
    "22EC012",
-   "22MEP20",
    "22MGD40",
    "22MPD20",
    "22SH024"
   ],
-  "nb_dedicated_courses":3,
+  "nb_dedicated_courses":4,
   "nb_matched_courses":7,
-  "nb_total_courses":99
- },
- {
-  "id":"MEGDLDIU",
-  "name":"Master en gestion de l'entreprise - Double-diplomation ICHEC - UCL (LSM)",
-  "cycle":"master",
-  "url":"https:\/\/www.ichec.be\/fr\/master-en-gestion-de-lentreprise-track-financial-management-ichec-ucl-lsm",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Anjou"
-  ],
-  "faculties":[
-   "Ecole de gestion et commerce"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "life"
-  ],
-  "themes_scores":[
-   2
-  ],
-  "matched_courses":[
-   "22EC012",
-   "22SH024"
-  ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
-  "nb_total_courses":25
+  "nb_total_courses":105
  },
  {
   "id":"MEGDLTIUU",
@@ -307,19 +346,19 @@
   "themes_scores":[
    3,
    1,
-   4
+   3
   ],
   "matched_courses":[
    "21FFM12",
+   "21FFM14",
    "21FFM18",
-   "22MEP20",
    "22MGD40",
    "22MPD20",
    "22SH024"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":3,
   "nb_matched_courses":6,
-  "nb_total_courses":140
+  "nb_total_courses":147
  },
  {
   "id":"MIC",
@@ -355,100 +394,25 @@
    4,
    1,
    1,
-   6,
+   5,
    1,
    2,
    1
   ],
   "matched_courses":[
    "21FFM12",
+   "21FFM14",
    "21FFM18",
    "21GE060",
    "21ST010",
    "21ST030",
    "21ST040",
-   "22MEP20",
    "22MGD40",
    "22MPD20",
    "22SH024"
   ],
-  "nb_dedicated_courses":4,
+  "nb_dedicated_courses":5,
   "nb_matched_courses":10,
-  "nb_total_courses":64
- },
- {
-  "id":"BEGDL",
-  "name":"Bachelier en gestion de l'entreprise",
-  "cycle":"bac",
-  "url":"https:\/\/www.ichec.be\/fr\/bachelier-en-gestion-de-lentrepise-jour",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Anjou",
-   "Montgomery"
-  ],
-  "faculties":[
-   "Ecole de gestion et commerce"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "economy",
-   "life"
-  ],
-  "themes_scores":[
-   1,
-   3
-  ],
-  "matched_courses":[
-   "11UEC10",
-   "11UEC15",
-   "12UEC20",
-   "13UGE10"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
-  "nb_total_courses":64
- },
- {
-  "id":"BEGDLS",
-  "name":"Bachelier en gestion de l'entreprise - soir",
-  "cycle":"bac",
-  "url":"https:\/\/www.ichec.be\/fr\/bachelier-en-gestion-de-lentreprise-soir",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Anjou",
-   "Montgomery"
-  ],
-  "faculties":[
-   "Ecole de gestion et commerce"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "climate",
-   "economy",
-   "life"
-  ],
-  "themes_scores":[
-   1,
-   1,
-   2
-  ],
-  "matched_courses":[
-   "11UEC11",
-   "12UGE21"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
-  "nb_total_courses":37
+  "nb_total_courses":65
  }
 ]
