@@ -19,6 +19,7 @@ MODEL_TRAJECT_URL = f"https://studiefiches.hogent.be/index.cfm/fetch-model-traje
 COURSES_LIST_URL = "https://studiefiches.hogent.be/index.cfm/fetch-opleidingsonderdelen?format=json&mid={}" \
                    "&opl={}&dep={}" + f"&acadyear={YEAR}-{YEAR-2000+1}&lang=1"
 
+# TODO: need to check this is the full list
 FACULTIES_DICT = {
     'DBO': 'Departement Bedrijf en Organisatie',
     'DBT': 'Departement Biowetenschappen en Industriële Technologie',
@@ -41,7 +42,8 @@ CYCLES_DICT = {
     'PBA': 'bac',  # Professioneel gerichte bacheloropleiding
     'PGR': 'postgrad',  # Postgraduaatopleiding
     'SCH': 'other',  # Schakelprogramma
-    'VBP': 'other'  # Voorbereidingsprogramma
+    'VBP': 'other',  # Voorbereidingsprogramma
+    'BIJNA': 'other'  # Bij-of nascholingsprogramma's
 }
 
 
