@@ -7,7 +7,8 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://www.programmes.uliege.be/cocoon/cours/{}.html"
+# BASE_URL = "https://www.programmes.uliege.be/cocoon/cours/{}.html"
+BASE_URL = f"https://www.programmes.uliege.be/cocoon/{YEAR}{YEAR+1}" + "/cours/{}.html"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}uliege_programs_{YEAR}.json')
 LANGUAGE_DICT = {
@@ -37,12 +38,21 @@ class ULiegeCourseSpider(scrapy.Spider, ABC):
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
         for course_id in courses_ids_list:
-            yield scrapy.Request(BASE_URL.format(course_id, YEAR), self.parse_main)
+            yield scrapy.Request(BASE_URL.format(course_id), self.parse_main,
+                                 cb_kwargs={'course_id': course_id})
 
     @staticmethod
-    def parse_main(response):
+    def parse_main(response, course_id):
 
         course_name = cleanup(response.css("h1::text").get())
+        if len(course_name) == 0:
+            yield {
+                'id': course_id, 'name': course_name, 'year': f"{YEAR}-{YEAR+1}",
+                'languages': ["fr"], 'teachers': [], 'url': response.url,
+                'content': '', 'goal': '', 'activity': '', 'other': ''
+            }
+            return
+
         year_and_id = cleanup(
             response.xpath("//div[@class='u-courses-header__headline']/text()")
             .get()).strip(" ").split("/")

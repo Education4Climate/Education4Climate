@@ -1,27 +1,5 @@
 [
  {
-  "id":"ACER0016-1",
-  "name":"Th\u00e8me 1 : Politique du Bien-\u00eatre au travail - L\u00e9gislation, missions et t\u00e2ches des acteurs de la pr\u00e9vention",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Colson Vincent"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ACER0016-1.html",
-  "cycles":[
-   "certificate"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "resources"
-  ],
-  "dedicated":0
- },
- {
   "id":"ACER0075-1",
   "name":"Module 2 : Optimisation de l'impact environnemental du transport",
   "year":"2022-2023",
@@ -39,24 +17,24 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
  {
-  "id":"ACER0078-1",
-  "name":"Certificat Interuniversitaire en Electronique de l'Energie",
+  "id":"ACER0080-1",
+  "name":"Gestion des pollutions",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Frebel Fabrice",
-   "Geuzaine Christophe",
-   "Beauvois V\u00e9ronique"
+
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ACER0078-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ACER0080-1.html",
   "cycles":[
    "certificate"
   ],
@@ -64,9 +42,9 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "pollution"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"ACER0084-1",
@@ -86,30 +64,8 @@
    "Engineering"
   ],
   "themes":[
-   "resources"
-  ],
-  "dedicated":0
- },
- {
-  "id":"AERO0032-1",
-  "name":"Aeroelasticity and experimental aerodynamics",
-  "year":"2022-2023",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Dimitriadis Grigorios",
-   "Andrianne Thomas"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/AERO0032-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
+   "resources",
+   "transport"
   ],
   "dedicated":0
  },
@@ -133,34 +89,10 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
   ],
   "dedicated":1
- },
- {
-  "id":"AGRO0002-1",
-  "name":"Nutrition et fertilisation des cultures",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "du Jardin Patrick",
-   "Dumont Benjamin",
-   "De Clerck Caroline"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/AGRO0002-1.html",
-  "cycles":[
-   "bac",
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
  },
  {
   "id":"AGRO0016-1",
@@ -181,7 +113,56 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AGRO0021-1",
+  "name":"Initiation aux techniques et leviers culturaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dumont Benjamin",
+   "Lassois Ludivine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/AGRO0021-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AGRO0023-1",
+  "name":"Smart farming",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bindelle J\u00e9r\u00f4me",
+   "Dumont Benjamin",
+   "Bastin Jean-Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/AGRO0023-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food"
   ],
   "dedicated":0
  },
@@ -203,9 +184,55 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ANIM0011-3",
+  "name":"Welfare and ethics in animal productions",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gengler Nicolas"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ANIM0011-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ANIM0017-1",
+  "name":"Aspects biotechniques des syst\u00e8mes d'\u00e9levage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Beckers Yves",
+   "Bindelle J\u00e9r\u00f4me",
+   "Schroyen Martine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ANIM0017-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"ANIM0018-1",
@@ -226,8 +253,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":0
  },
@@ -250,9 +277,79 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life",
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ANIM0031-1",
+  "name":"Advanced animal genetics, genomics and biodiversity",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gengler Nicolas"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ANIM0031-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ANTH0057-1",
+  "name":"Anthropologie de la nature et des animaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Servais V\u00e9ronique"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ANTH0057-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"APRI0009-1",
+  "name":"Integrated Design Project of Ships, Small Crafts & High Speed vessels",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gabriel Morato Dominguez Pablo",
+   "Rigo Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/APRI0009-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"ARCH0006-2",
@@ -273,7 +370,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "building"
   ],
   "dedicated":1
  },
@@ -295,7 +392,56 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "building",
+   "energy",
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ARCH0079-1",
+  "name":"Techniques de construction durable des b\u00e2timents II : Enveloppe",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Attia Shady"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH0079-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ARCH0080-1",
+  "name":"Physique du b\u00e2timent et climatisation",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Andre Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH0080-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "climate"
   ],
   "dedicated":1
  },
@@ -318,8 +464,7 @@
    "Architecture"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "dedicated":0
  },
@@ -343,7 +488,10 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
+   "life",
    "resources"
   ],
   "dedicated":0
@@ -367,7 +515,33 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "climate",
+   "life",
    "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH0558-1",
+  "name":"Droit de la construction et D\u00e9ontologie : matrice des risques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Simon Karl",
+   "Henrotte Laurent"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH0558-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -392,8 +566,9 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -415,7 +590,7 @@
    "Architecture"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -439,8 +614,31 @@
    "Architecture"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH0573-1",
+  "name":"Projets d'architecture Q2 - Th\u00e9matique 1 - Territoire, Espace, Lieu : Habiter le territoire I",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dawance Sophie",
+   "Pigeon Virginie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH0573-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -464,9 +662,57 @@
    "Architecture"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ARCH0575-1",
+  "name":"Projets d'architecture Q2 - Th\u00e9matique 3 Reconversion \"Rethink, resettle, reconfigurate\"",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vandenbulcke Beno\u00eet",
+   "De Visscher Lisa",
+   "Elaerts Mathias"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH0575-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH0579-1",
+  "name":"Workshop Q3 - Th\u00e9matique 2 Habitat \/ Habiter : Les atmosph\u00e8res",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Henz Olivier",
+   "Courtejoie Fabienne"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH0579-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":1
  },
  {
   "id":"ARCH0581-1",
@@ -487,8 +733,8 @@
    "Architecture"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "dedicated":0
  },
@@ -511,9 +757,8 @@
    "Architecture"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -535,7 +780,9 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "general",
+   "life"
   ],
   "dedicated":0
  },
@@ -559,7 +806,99 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH0595-1",
+  "name":"Culture num\u00e9rique et conception orient\u00e9e Data",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jancart Sylvie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH0595-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH1106-1",
+  "name":"Technologie du b\u00e2ti 1 - Principes de base",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ruellan Guirec"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH1106-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH1109-1",
+  "name":"Habiter - Origines et enjeux contemporains",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Neuwels Julie",
+   "Tieleman David"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH1109-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH2001-1",
+  "name":"R\u00e9seaux urbains",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Reiter Sigrid"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH2001-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -582,8 +921,98 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ARCH2011-1",
+  "name":"Techniques de construction durable des b\u00e2timents IV : r\u00e9novation des b\u00e2timents",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Pr\u00e9gardien Michel"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH2011-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ARCH2019-1",
+  "name":"Ing\u00e9nierie des ambiances urbaines",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Reiter Sigrid"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH2019-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH2223-1",
+  "name":"Territoire 2 - Analyse territoriale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Maes Marijke",
+   "Hougardy Michele"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH2223-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH3259-1",
+  "name":"Techniques de construction durable des b\u00e2timents IB - \u00e9l\u00e9ments - Partie B",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Attia Shady"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH3259-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":1
  },
@@ -606,8 +1035,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "sustainability"
+   "building",
+   "energy"
   ],
   "dedicated":0
  },
@@ -629,8 +1058,9 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "building",
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -652,8 +1082,9 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "building",
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -675,8 +1106,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "building"
   ],
   "dedicated":1
  },
@@ -708,8 +1138,31 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ARCH3331-1",
+  "name":"Technologie du b\u00e2ti 6 - Parach\u00e8vements et enjeux sociotechniques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Neuwels Julie",
+   "Possoz Jean-Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ARCH3331-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -731,7 +1184,7 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -761,7 +1214,7 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -790,6 +1243,29 @@
   "dedicated":0
  },
  {
+  "id":"BIOC0723-1",
+  "name":"Bio\u00e9nerg\u00e9tique appliqu\u00e9e",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cardol Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOC0723-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "transport"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"BIOC9244-1",
   "name":"G\u00e9n\u00e9tique et biologie mol\u00e9culaire",
   "year":"2022-2023",
@@ -807,7 +1283,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -829,8 +1305,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -853,7 +1328,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -876,7 +1351,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -898,7 +1373,29 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0026-1",
+  "name":"Physiologie cellulaire v\u00e9g\u00e9tale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Motte Patrick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0026-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -920,7 +1417,30 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0030-1",
+  "name":"Modeling dynamical biological systems",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gr\u00e9goire Marilaure",
+   "Meyer Patrick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0030-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -943,9 +1463,76 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"BIOL0217-1",
+  "name":"Physiologie v\u00e9g\u00e9tale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "P\u00e9rilleux Claire"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0217-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0217-2",
+  "name":"Physiologie v\u00e9g\u00e9tale, Th\u00e9orie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "P\u00e9rilleux Claire"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0217-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0218-1",
+  "name":"Monitoring \u00e9cologique et mod\u00e8les de gestion des ressources halieutiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ovidio Micha\u00ebl"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0218-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"BIOL0220-1",
@@ -965,7 +1552,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -989,7 +1576,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -1013,7 +1600,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -1036,7 +1623,8 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -1058,7 +1646,96 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0822-1",
+  "name":"Environmental physiology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Plumier Jean-Christophe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0822-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0844-1",
+  "name":"Biologie g\u00e9n\u00e9rale des cryptogames (bryophytes et lichens)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Magain Nicolas",
+   "Vanderpoorten Alain"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0844-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0849-1",
+  "name":"Biologie g\u00e9n\u00e9rale pr\u00e9paratoire aux sciences de la motricit\u00e9, Partim I",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cataldo Didier"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0849-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0850-1",
+  "name":"Biologie g\u00e9n\u00e9rale pr\u00e9paratoire aux sciences de la motricit\u00e9, Partim II, y compris les \u00e9l\u00e9ments d'embryologie g\u00e9n\u00e9rale et la g\u00e9n\u00e9tique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cataldo Didier"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0850-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1080,8 +1757,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -1104,7 +1781,32 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0856-1",
+  "name":"Designs exp\u00e9rimentaux et traitement des donn\u00e9es",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Frederich Bruno",
+   "Hambuckers Alain",
+   "Vanderpoorten Alain"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0856-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1128,7 +1830,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1150,9 +1853,53 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"BIOL0862-1",
+  "name":"Quantification of the environmental risk associated with pollutants and decision-making",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Joaquim-Justo C\u00e9lia"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0862-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0864-1",
+  "name":"Notions d'\u00e9volution biologique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Michel Lo\u00efc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0864-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"BIOL0865-1",
@@ -1172,7 +1919,56 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL0866-1",
+  "name":"Ecophysiologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "P\u00e9rilleux Claire",
+   "Plumier Jean-Christophe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL0866-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL1064-1",
+  "name":"Primatologie comportementale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Brotcorne Fany"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL1064-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology",
+   "Science",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1194,7 +1990,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1219,7 +2015,7 @@
    "Psychology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1244,7 +2040,30 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"BIOL2034-1",
+  "name":"Questions appliqu\u00e9es en biodiversit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Magain Nicolas",
+   "Denayer Doroth\u00e9e"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2034-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -1266,7 +2085,7 @@
    "Science"
   ],
   "themes":[
-   "environment",
+   "life",
    "resources"
   ],
   "dedicated":0
@@ -1290,15 +2109,14 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
  {
-  "id":"BIOL2040-1",
-  "name":"Taxonomie et phylog\u00e9nie des lign\u00e9es chlorophylliennes",
+  "id":"BIOL2037-1",
+  "name":"Introduction \u00e0 la biologie \u00e9volutive",
   "year":"2022-2023",
   "languages":[
    "fr"
@@ -1306,7 +2124,78 @@
   "teachers":[
    "Magain Nicolas"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2040-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2037-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL2038-1",
+  "name":"Ecologie et microbiologie des sols",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Carnol Monique"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2038-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"BIOL2039-1",
+  "name":"Ecologie des eaux douces",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fanara Steven",
+   "Joaquim-Justo C\u00e9lia",
+   "Goosse V\u00e9ronique",
+   "Goffart Anne"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2039-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"BIOL2039-2",
+  "name":"Ecologie des eaux douces, Th\u00e9orie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Joaquim-Justo C\u00e9lia",
+   "Goosse V\u00e9ronique",
+   "Goffart Anne"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2039-2.html",
   "cycles":[
    "master"
   ],
@@ -1314,7 +2203,99 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"BIOL2041-1",
+  "name":"Taxonomie et phylog\u00e9nie animales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Michel Lo\u00efc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2041-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL2042-1",
+  "name":"Biologie des populations",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Michaux Johan"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2042-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BIOL2213-1",
+  "name":"Ecologie comportementale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Winandy Laurane",
+   "Deno\u00ebl Mathieu"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BIOL2213-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"BOTA0414-1",
+  "name":"Botanique syst\u00e9matique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "du Jardin Patrick",
+   "Delaplace Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/BOTA0414-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1336,30 +2317,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
+   "prod&cons",
    "resources"
-  ],
-  "dedicated":0
- },
- {
-  "id":"CHIM0692-1",
-  "name":"Risques li\u00e9s \u00e0 l'emploi des produits phytopharmaceutiques et biocides",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Meersmans Jeroen"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM0692-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "sustainability"
   ],
   "dedicated":0
  },
@@ -1383,22 +2342,49 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":0
  },
  {
-  "id":"CHIM0718-1",
-  "name":"Biological chemistry and corresponding processes engineering, Introduction",
+  "id":"CHIM0706-1",
+  "name":"Chimie de l'environnement et techniques de documentation",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Eppe Gauthier",
+   "Collette Caroline"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM0706-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"CHIM0722-1",
+  "name":"Extraction, purification, characterization and valorization of biosourced molecules",
   "year":"2022-2023",
   "languages":[
    "en"
   ],
   "teachers":[
-   "Richel Aurore"
+   "Damblon Christian",
+   "Richel Aurore",
+   "Fauconnier Marie-Laure",
+   "Quinton Lo\u00efc"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM0718-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM0722-1.html",
   "cycles":[
    "master"
   ],
@@ -1406,7 +2392,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -1428,7 +2414,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1450,8 +2437,10 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":1
  },
@@ -1474,6 +2463,8 @@
   ],
   "themes":[
    "energy",
+   "life",
+   "pollution",
    "resources"
   ],
   "dedicated":0
@@ -1497,6 +2488,52 @@
   ],
   "themes":[
    "energy",
+   "life",
+   "pollution",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHIM9236-1",
+  "name":"Caract\u00e9risations microstructurales des mat\u00e9riaux, Partim A",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Henrist Catherine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM9236-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHIM9236-2",
+  "name":"Caract\u00e9risations microstructurales des mat\u00e9riaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Henrist Catherine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM9236-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
    "resources"
   ],
   "dedicated":0
@@ -1541,7 +2578,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHIM9262-1",
+  "name":"Chimie biomim\u00e9tique : quand l'Homme s'inspire de la Nature",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Quinton Lo\u00efc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM9262-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1563,7 +2622,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1585,7 +2644,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1610,7 +2669,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1634,12 +2693,36 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "transport"
   ],
   "dedicated":1
+ },
+ {
+  "id":"CHIM9318-1",
+  "name":"Mat\u00e9riaux inorganiques : proc\u00e9d\u00e9s de fabrication et propri\u00e9t\u00e9s d'usage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lambert St\u00e9phanie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CHIM9318-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
  },
  {
   "id":"CHIM9322-1",
@@ -1662,7 +2745,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources"
+   "energy"
   ],
   "dedicated":0
  },
@@ -1728,9 +2811,32 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"CLIM0016-1",
+  "name":"Remote sensing applied to climatology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Clerbaux Nicolas"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CLIM0016-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
  },
  {
   "id":"CLIM0017-2",
@@ -1744,6 +2850,28 @@
    "Fran\u00e7ois Louis"
   ],
   "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CLIM0017-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"CLIM0024-1",
+  "name":"Introduction to modelling in physical geography - Partim 3: Advanced climatology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Fettweis Xavier"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CLIM0024-1.html",
   "cycles":[
    "master"
   ],
@@ -1778,6 +2906,50 @@
   "dedicated":0
  },
  {
+  "id":"CLIM0660-1",
+  "name":"Introduction to modelling in physical geography - Partim 2 : Climatology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Fettweis Xavier"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CLIM0660-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"CNAV0022-1",
+  "name":"Ship Equipment and Propulsion Systems",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gabriel Morato Dominguez Pablo"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CNAV0022-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"COMM0010-1",
   "name":"Ethique, communication et travail interdisciplinaire",
   "year":"2022-2023",
@@ -1798,7 +2970,30 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"COMU0439-1",
+  "name":"Digital media archeology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Mayeur Ingrid"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/COMU0439-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1822,38 +3017,126 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"DENT1010-1",
-  "name":"Stage d'observation et d'apprentissage dans les diff\u00e9rentes cliniques - II",
+  "id":"CRIM4130-1",
+  "name":"Terrorisme et anti-terrorisme",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Vanheusden Alain",
-   "Bruwier Annick",
-   "Lamy Marc",
-   "Lecloux Geoffrey",
-   "Geerts Sabine",
-   "Gilon Yves",
-   "Gueders Audrey",
-   "Lambert France"
+   "Dantinne Micha\u00ebl"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DENT1010-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/CRIM4130-1.html",
   "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"DEON0003-1",
+  "name":"Questions d'\u00e9thique : exp\u00e9rimentation animale et humaine",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Tirelli Ezio",
+   "Drion Pierre",
+   "Caers Jo"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DEON0003-1.html",
+  "cycles":[
+   "bac",
    "master"
   ],
   "fields":[
    "Medecine & Health"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"DROI0091-1",
+  "name":"Droit p\u00e9nal des affaires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Masset Adrien"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI0091-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"DROI0184-3",
+  "name":"Droit des aides d'Etat",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Derenne Jacques"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI0184-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"DROI0725-1",
+  "name":"Droit de la mer et de l'environnement marin",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vincent Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI0725-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
  },
  {
   "id":"DROI0960-1",
@@ -1874,8 +3157,55 @@
    "Political Sciences"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "building",
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"DROI0969-1",
+  "name":"Droit forestier et droit de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Orban De Xivry Etienne"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI0969-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"DROI1306-1",
+  "name":"Droit de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Smal Renaud",
+   "Lauwers Martin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI1306-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -1903,6 +3233,81 @@
   "dedicated":0
  },
  {
+  "id":"DROI8043-1",
+  "name":"Droit de l'urbanisme et droit administratif immobilier",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Onclin Fran\u00e7ois",
+   "Delnoy Michel"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI8043-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "building",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"DROI8043-2",
+  "name":"Droit de l'urbanisme et droit administratif immobilier",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Onclin Fran\u00e7ois",
+   "Delnoy Michel"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI8043-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "building",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"DROI8043-3",
+  "name":"Droit de l'urbanisme et droit administratif immobilier",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Onclin Fran\u00e7ois",
+   "P\u00e2ques Michel"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/DROI8043-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "building",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"ECON0091-1",
   "name":"Public finance",
   "year":"2022-2023",
@@ -1921,7 +3326,7 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1947,7 +3352,31 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ECON2248-1",
+  "name":"Economie environnementale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Mar\u00e9chal Kevin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ECON2248-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -1969,7 +3398,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1991,8 +3420,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":1
  },
@@ -2015,8 +3444,34 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "carbon",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ECON2304-1",
+  "name":"Mod\u00e8les organisationnels et \u00e9conomiques des syst\u00e8mes de sant\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Porignon Denis",
+   "Fecher-Bourgeois Fabienne",
+   "Collin Beno\u00eet",
+   "Husden Yolande"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ECON2304-1.html",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "climate"
   ],
   "dedicated":0
  },
@@ -2038,7 +3493,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "dedicated":0
  },
@@ -2060,7 +3515,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "dedicated":0
  },
@@ -2084,8 +3539,8 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "transport"
   ],
   "dedicated":1
  },
@@ -2107,7 +3562,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2138,7 +3593,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2160,7 +3615,7 @@
    "Science"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy"
   ],
   "dedicated":1
@@ -2185,10 +3640,79 @@
   ],
   "themes":[
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ENVT0027-1",
+  "name":"D\u00e9mocratie technique et environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Melard Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0027-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT0028-1",
+  "name":"Etude d'impact environnemental : applications dans les pays en d\u00e9veloppement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0028-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT0039-2",
+  "name":"Modes de connaissance en environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0039-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"ENVT0040-2",
@@ -2209,10 +3733,32 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ENVT0045-1",
+  "name":"G\u00e9omatique et t\u00e9l\u00e9d\u00e9tection appliqu\u00e9e",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lejeune Philippe",
+   "Bastin Jean-Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0045-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"ENVT0047-1",
@@ -2232,7 +3778,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -2254,9 +3800,32 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ENVT0050-1",
+  "name":"Pollutions industrielles",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0050-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "building",
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"ENVT0051-1",
@@ -2277,8 +3846,9 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "resources"
   ],
   "dedicated":1
  },
@@ -2300,9 +3870,79 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ENVT0060-1",
+  "name":"Introduction \u00e0 la sociologie de l'environnement, Partim 1 : D\u00e9marches en sociologie de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Melard Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0060-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT0061-1",
+  "name":"Introduction aux sciences et gestion de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ozer Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0061-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT0062-1",
+  "name":"Introduction \u00e0 la chimie et la biologie de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Romain Anne-Claude",
+   "Joaquim-Justo C\u00e9lia"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0062-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"ENVT0063-1",
@@ -2322,8 +3962,7 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -2345,10 +3984,55 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ENVT0064-1",
+  "name":"Enjeux de biodiversit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hambuckers Alain"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0064-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT0065-1",
+  "name":"Agrom\u00e9t\u00e9orologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Tychon Bernard"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0065-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "food"
+  ],
+  "dedicated":0
  },
  {
   "id":"ENVT0066-1",
@@ -2392,7 +4076,8 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -2416,53 +4101,8 @@
    "Science"
   ],
   "themes":[
-   "energy"
-  ],
-  "dedicated":1
- },
- {
-  "id":"ENVT0069-1",
-  "name":"Production d\u00e9centralis\u00e9e et stockage de l'\u00e9nergie",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Hanus Vincent",
-   "Lottin Olivier"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0069-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":1
- },
- {
-  "id":"ENVT0069-2",
-  "name":"Production d\u00e9centralis\u00e9e et stockage de l'\u00e9nergie",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Hanus Vincent",
-   "Lottin Olivier"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0069-2.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -2484,8 +4124,9 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":1
  },
@@ -2510,7 +4151,8 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -2536,7 +4178,8 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -2558,8 +4201,8 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "resources"
   ],
   "dedicated":1
  },
@@ -2581,8 +4224,9 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":0
  },
@@ -2606,7 +4250,29 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT0867-1",
+  "name":"Environmental performance of buildings",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Andre Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0867-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2629,9 +4295,33 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "pollution"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ENVT0894-1",
+  "name":"Environnement sol",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Tychon Bernard"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0894-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
  },
  {
   "id":"ENVT0895-1",
@@ -2674,8 +4364,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -2697,7 +4387,9 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -2719,9 +4411,32 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ENVT0901-1",
+  "name":"Dimensionnement et simulation des syst\u00e8mes \u00e9nerg\u00e9tiques du b\u00e2timent",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Andre Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT0901-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
  },
  {
   "id":"ENVT2009-1",
@@ -2741,7 +4456,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -2764,7 +4479,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2786,7 +4501,29 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT2016-1",
+  "name":"Usages et perturbations anthropiques des milieux aquatiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT2016-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -2808,7 +4545,30 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT2023-2",
+  "name":"Gestion des ressources piscicoles en eaux douces",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT2023-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -2830,7 +4590,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2852,7 +4612,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2876,7 +4636,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -2898,10 +4659,55 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ENVT2052-1",
+  "name":"Incidences environnementales : concepts et m\u00e9thodologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dufr\u00eane Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT2052-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT2053-1",
+  "name":"Gestion des d\u00e9chets",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Minne Luc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT2053-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
  },
  {
   "id":"ENVT2058-1",
@@ -2921,7 +4727,29 @@
    "Science"
   ],
   "themes":[
-   "environment",
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT2063-3",
+  "name":"Gestion des d\u00e9chets",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Minne Luc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT2063-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
    "resources"
   ],
   "dedicated":0
@@ -2945,7 +4773,8 @@
   ],
   "themes":[
    "climate",
-   "resources"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -2968,7 +4797,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -2993,9 +4823,10 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":1
  },
@@ -3018,7 +4849,9 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -3040,8 +4873,8 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "dedicated":1
  },
@@ -3067,8 +4900,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -3090,7 +4923,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -3114,7 +4947,77 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT3029-1",
+  "name":"Politiques et actions publiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Brunet S\u00e9bastien",
+   "Steyaert Patrick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3029-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT3030-1",
+  "name":"Techniques d'investigation qualitative",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Semal Nathalie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3030-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT3030-2",
+  "name":"Techniques d'investigation qualitative",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Semal Nathalie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3030-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -3136,7 +5039,7 @@
    "Science"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -3158,7 +5061,29 @@
    "Science"
   ],
   "themes":[
-   "resources"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVT3036-1",
+  "name":"Conservation des sols",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3036-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -3206,21 +5131,21 @@
    "Science"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"ENVT3041-1",
-  "name":"Outils d'analyse et d'aide \u00e0 la d\u00e9cision pour une gestion int\u00e9gr\u00e9e des ressources en eau",
+  "id":"ENVT3040-2",
+  "name":"Gestion int\u00e9gr\u00e9e et participative des ressources en eau",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Deli\u00e8ge Jean-Fran\u00e7ois"
+   "Wellens Joost"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3041-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3040-2.html",
   "cycles":[
    "master"
   ],
@@ -3228,9 +5153,55 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ENVT3042-1",
+  "name":"Gestion de l'\u00e9nergie dans les b\u00e2timents",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Andre Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3042-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT3043-1",
+  "name":"Climatisation des b\u00e2timents",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Andre Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3043-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "building",
+   "climate"
+  ],
+  "dedicated":1
  },
  {
   "id":"ENVT3045-1",
@@ -3251,8 +5222,7 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -3275,7 +5245,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "pollution",
+   "resources"
   ],
   "dedicated":0
  },
@@ -3297,9 +5268,76 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ENVT3054-2",
+  "name":"Approche m\u00e9thodologique aux sciences de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Semal Nathalie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3054-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT3055-1",
+  "name":"Climatologie de l'environnement, Partim 1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Tychon Bernard"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3055-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "food"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT3055-2",
+  "name":"Climatologie de l'environnement, Partim 2",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "El Jarroudi Moussa"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ENVT3055-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
  },
  {
   "id":"ENVT3056-1",
@@ -3319,7 +5357,8 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "food"
   ],
   "dedicated":0
  },
@@ -3386,6 +5425,7 @@
    "Science"
   ],
   "themes":[
+   "building",
    "energy"
   ],
   "dedicated":1
@@ -3408,6 +5448,7 @@
    "Science"
   ],
   "themes":[
+   "building",
    "energy"
   ],
   "dedicated":1
@@ -3431,7 +5472,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
   ],
   "dedicated":1
  },
@@ -3454,7 +5496,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
   ],
   "dedicated":1
  },
@@ -3477,7 +5520,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -3500,10 +5543,10 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3526,10 +5569,10 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -3554,7 +5597,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -3576,7 +5619,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -3600,49 +5643,22 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"FINA0064-1",
-  "name":"Financial Risk Modeling",
+  "id":"FINA0058-1",
+  "name":"Comptabilit\u00e9 approfondie et fiscalit\u00e9",
   "year":"2022-2023",
   "languages":[
-   "en"
+   "fr"
   ],
   "teachers":[
-   "Hambuckers Julien"
+   "Niessen Wilfried",
+   "Wuidard Jean-Luc"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FINA0064-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Economy",
-   "Management",
-   "Science"
-  ],
-  "themes":[
-   "climate",
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"FINA9001-1",
-  "name":"Sustainable Management Control",
-  "year":"2022-2023",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Caputo C\u00e9cile",
-   "Ruysschaert Benoit",
-   "Clement Jessica",
-   "Crutzen Nathalie"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FINA9001-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FINA0058-1.html",
   "cycles":[
    "master"
   ],
@@ -3651,9 +5667,9 @@
    "Management"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"FORE0001-2",
@@ -3675,9 +5691,73 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"FORE0003-2",
+  "name":"Gestion participative des milieux naturels",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vermeulen C\u00e9dric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FORE0003-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"FORE0005-3",
+  "name":"Gestion multifonctionnelle des for\u00eats",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lejeune Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FORE0005-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"FORE0008-2",
+  "name":"Analyse et valorisation stationnelles",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Claessens Hugues"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FORE0008-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -3699,8 +5779,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -3724,7 +5803,77 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"FORE0018-3",
+  "name":"Gestion de la grande faune en milieu temp\u00e9r\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Licoppe Alain"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FORE0018-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"FORE0021-2",
+  "name":"Essences foresti\u00e8res des r\u00e9gions temp\u00e9r\u00e9es",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Monty Arnaud"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FORE0021-2.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"FORE0022-3",
+  "name":"Fondements \u00e9cologiques de la sylviculture",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Claessens Hugues"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FORE0022-3.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -3748,7 +5897,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"FORE0033-1",
+  "name":"Gestion des ressources g\u00e9n\u00e9tiques foresti\u00e8res",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lassois Ludivine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/FORE0033-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -3771,9 +5942,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -3801,6 +5972,29 @@
   "dedicated":0
  },
  {
+  "id":"GBLX0060-2",
+  "name":"Microbial ecology of water and wastewater",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Delvigne Frank"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GBLX0060-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"GBLX2131-2",
   "name":"Biosph\u00e8re, agriculture et soci\u00e9t\u00e9",
   "year":"2022-2023",
@@ -3820,7 +6014,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
   ],
   "dedicated":1
  },
@@ -3845,7 +6040,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -3870,7 +6067,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -3901,6 +6099,51 @@
   "dedicated":0
  },
  {
+  "id":"GBLX2152-1",
+  "name":"Gestion participative",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vermeulen C\u00e9dric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GBLX2152-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GBLX2153-1",
+  "name":"Production animale et v\u00e9g\u00e9tale durable en milieu urbain",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gengler Nicolas",
+   "Jijakli Haissam"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GBLX2153-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"GCER0094-1",
   "name":"Droit de l'environnement et de l'urbanisme",
   "year":"2022-2023",
@@ -3919,7 +6162,7 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -3942,9 +6185,77 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"GCER0101-1",
+  "name":"Pollution de l'air",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lenartz Fabian"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCER0101-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GCER0106-1",
+  "name":"Performance \u00e9nerg\u00e9tique des b\u00e2timents",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Salsac Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCER0106-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"GCER0109-1",
+  "name":"Biodiversit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCER0109-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -3967,8 +6278,7 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
   ],
   "dedicated":1
  },
@@ -3991,7 +6301,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":1
  },
@@ -4014,9 +6324,76 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "transport"
   ],
   "dedicated":1
+ },
+ {
+  "id":"GCIV0201-2",
+  "name":"Technologie des b\u00e9tons et mat\u00e9riaux nouveaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Courard Luc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCIV0201-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GCIV2035-1",
+  "name":"Hydrodynamique fluviale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dewals Benjamin",
+   "Archambeau Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCIV2035-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GCIV2058-1",
+  "name":"Environmental geotechnics",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Collin Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCIV2058-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"GCIV2065-1",
@@ -4042,17 +6419,16 @@
   "dedicated":0
  },
  {
-  "id":"GCIV2178-1",
-  "name":"Natural and technological risks in civil engineering",
+  "id":"GCIV2174-1",
+  "name":"Design and execution of road infrastructures",
   "year":"2022-2023",
   "languages":[
    "en"
   ],
   "teachers":[
-   "Demonceau Jean-Fran\u00e7ois",
-   "Dewals Benjamin"
+   "Fran\u00e7ois Bertrand"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCIV2178-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCIV2174-1.html",
   "cycles":[
    "master"
   ],
@@ -4060,8 +6436,101 @@
    "Engineering"
   ],
   "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GCIV2182-1",
+  "name":"Offshore Wind Structures",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gabriel Morato Dominguez Pablo",
+   "Rigo Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GCIV2182-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEHI0001-1",
+  "name":"Introduction \u00e0 la g\u00e9ographie humaine et \u00e0 la g\u00e9ographie historique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Schmitz Serge",
+   "Wilkin Alexis"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEHI0001-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
    "climate",
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GENU0018-3",
+  "name":"G\u00e9nie nucl\u00e9aire et technologie des centrales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dewallef Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GENU0018-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GENU0030-1",
+  "name":"Nuclear fuel cycle",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Bruggeman Christophe",
+   "Govers Kevin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GENU0030-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -4083,7 +6552,53 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "energy",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"GENU2002-1",
+  "name":"Advanced nuclear materials",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Scibetta Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GENU2002-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GENU2012-1",
+  "name":"Advanced radiation protection\/radiation ecology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GENU2012-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -4107,9 +6622,11 @@
    "Engineering"
   ],
   "themes":[
+   "climate",
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":1
  },
@@ -4135,30 +6652,8 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy"
-  ],
-  "dedicated":1
- },
- {
-  "id":"GEOG0048-1",
-  "name":"Climate diplomacy, Partim 2",
-  "year":"2022-2023",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Gemenne Fran\u00e7ois"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0048-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate"
   ],
   "dedicated":1
  },
@@ -4205,7 +6700,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4229,7 +6724,54 @@
    "Philosophy"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG0057-1",
+  "name":"Analyse spatiale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jonard Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0057-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG0072-1",
+  "name":"Land use changes, landsliding, soil and gully erosion - a series of lectures by experts",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Dewitte Olivier",
+   "Hubert Aurelia",
+   "Vanmaercke Matthias"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0072-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4253,21 +6795,23 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"GEOG0217-2",
-  "name":"Hydrologie",
+  "id":"GEOG0222-3",
+  "name":"G\u00e9ographie rurale",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Houbrechts Geoffrey"
+   "Dubois Charline",
+   "Schmitz Serge"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0217-2.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0222-3.html",
   "cycles":[
    "bac",
    "master"
@@ -4276,7 +6820,52 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG0603-3",
+  "name":"Analyse et gestion des paysages",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Schmitz Serge"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0603-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG0605-1",
+  "name":"G\u00e9ographie et g\u00e9omorphologie r\u00e9gionales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Houbrechts Geoffrey"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0605-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
   ],
   "dedicated":0
  },
@@ -4300,7 +6889,7 @@
   ],
   "themes":[
    "climate",
-   "resources"
+   "life"
   ],
   "dedicated":1
  },
@@ -4322,7 +6911,8 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -4344,21 +6934,23 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"GEOG0662-1",
-  "name":"Climate diplomacy, Partim 1",
+  "id":"GEOG0664-1",
+  "name":"Am\u00e9nagement du territoire et mobilit\u00e9",
   "year":"2022-2023",
   "languages":[
-   "en"
+   "fr"
   ],
   "teachers":[
-   "Gemenne Fran\u00e7ois"
+   "Breuer Christophe",
+   "Halleux Jean-Marie"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0662-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG0664-1.html",
   "cycles":[
    "master"
   ],
@@ -4366,9 +6958,9 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "building"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
   "id":"GEOG0667-1",
@@ -4412,7 +7004,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -4457,7 +7049,31 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG2014-1",
+  "name":"Dynamiques g\u00e9ographiques des enjeux du monde contemporain",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Schmitz Serge",
+   "Halleux Jean-Marie",
+   "Devillet Gu\u00e9na\u00ebl"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG2014-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4480,7 +7096,77 @@
    "Science"
   ],
   "themes":[
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG2020-1",
+  "name":"El\u00e9ments de m\u00e9t\u00e9orologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fettweis Xavier",
+   "Doutreloup S\u00e9bastien"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG2020-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
    "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG2021-1",
+  "name":"Diagnostic et am\u00e9nagement des territoires urbains",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Halleux Jean-Marie",
+   "Devillet Gu\u00e9na\u00ebl"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG2021-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOG2028-1",
+  "name":"Introduction \u00e0 l'am\u00e9nagement du territoire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Halleux Jean-Marie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG2028-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  },
@@ -4508,6 +7194,51 @@
   "dedicated":0
  },
  {
+  "id":"GEOG2052-1",
+  "name":"Lev\u00e9s de terrain en g\u00e9omorphologie et climatologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Houbrechts Geoffrey"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOG2052-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"GEOL0001-1",
+  "name":"G\u00e9ologie et g\u00e9ologie de l'ing\u00e9nieur",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dassargues Alain"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL0001-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"GEOL0008-2",
   "name":"Les hydrocarbures et la transition \u00e9nerg\u00e9tique - Exploration",
   "year":"2022-2023",
@@ -4525,6 +7256,7 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy"
   ],
@@ -4548,6 +7280,7 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy"
   ],
@@ -4573,31 +7306,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
-  "id":"GEOL0020-7",
-  "name":"Mineral resources",
-  "year":"2022-2023",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Pirard Eric"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL0020-7.html",
-  "cycles":[
-   "bac",
-   "master"
-  ],
-  "fields":[
-   "Engineering",
-   "Science"
-  ],
-  "themes":[
-   "environment"
+   "resources"
   ],
   "dedicated":0
  },
@@ -4619,7 +7328,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -4641,7 +7351,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -4663,7 +7374,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -4690,6 +7402,29 @@
   "dedicated":1
  },
  {
+  "id":"GEOL0237-2",
+  "name":"Exploitation of mineral deposits",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Vasbinder Nicolas"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL0237-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"GEOL0256-1",
   "name":"Marine sediment geochemistry",
   "year":"2022-2023",
@@ -4707,7 +7442,56 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL0263-1",
+  "name":"Astrobiology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Javaux Emmanuelle",
+   "Dehant V\u00e9ronique",
+   "Wilmotte Annick",
+   "Debaille Vincianne",
+   "Naz\u00e9 Ya\u00ebl"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL0263-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL0277-1",
+  "name":"Groundwater quality and protection",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Brouy\u00e8re Serge"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL0277-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -4729,6 +7513,55 @@
    "Engineering"
   ],
   "themes":[
+   "life",
+   "pollution",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL0311-1",
+  "name":"G\u00e9ologie et pal\u00e9ontologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Javaux Emmanuelle"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL0311-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL0311-2",
+  "name":"G\u00e9ologie et pal\u00e9ontologie, Th\u00e9orie et Pratique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Javaux Emmanuelle"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL0311-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life",
    "resources"
   ],
   "dedicated":0
@@ -4752,7 +7585,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -4774,9 +7607,10 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
+   "economy",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "dedicated":0
  },
@@ -4798,8 +7632,7 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -4822,8 +7655,51 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL1039-1",
+  "name":"Oc\u00e9anographie g\u00e9ologique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fagel Nathalie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL1039-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL1039-2",
+  "name":"Oc\u00e9anographie g\u00e9ologique, De la th\u00e9orie au terrain",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fagel Nathalie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL1039-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4847,8 +7723,8 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "resources"
   ],
   "dedicated":0
  },
@@ -4870,7 +7746,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -4894,7 +7770,31 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL1049-1",
+  "name":"Palaeobiology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Denayer Julien",
+   "Fischer Valentin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOL1049-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4942,7 +7842,77 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOP0009-1",
+  "name":"Science du sol",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cornelis Jean-Thomas"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEOP0009-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GERE0015-1",
+  "name":"Projet de groupe",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Degr\u00e9 Aurore",
+   "Cornelis Jean-Thomas",
+   "Dincher Marie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GERE0015-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GERE0023-1",
+  "name":"Analyse spatiale, organisation des sols dans le paysage et conservation des sols",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Meersmans Jeroen",
+   "Colinet Gilles",
+   "Degr\u00e9 Aurore"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GERE0023-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4965,8 +7935,8 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -4991,7 +7961,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "resources"
   ],
   "dedicated":0
  },
@@ -5018,6 +7988,50 @@
   "dedicated":0
  },
  {
+  "id":"GERE0030-1",
+  "name":"Image analysis",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Leemans Vincent"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GERE0030-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GERE0031-1",
+  "name":"Support systems for decision",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Leemans Vincent"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GERE0031-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"GERE0033-1",
   "name":"Agriculture en environnement contr\u00f4l\u00e9",
   "year":"2022-2023",
@@ -5035,10 +8049,59 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy"
   ],
   "dedicated":1
+ },
+ {
+  "id":"GERE0034-1",
+  "name":"Echanges \u00e9cosyst\u00e8mes - atmosph\u00e8re, sous changements climatiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Longdoz Bernard",
+   "Heinesch Bernard",
+   "Rothfuss Youri"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GERE0034-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "carbon",
+   "climate",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"GERE0035-1",
+  "name":"Integrated project on hydrogeophysics",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Nguyen Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GERE0035-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
  },
  {
   "id":"GERE0036-1",
@@ -5059,7 +8122,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "food"
   ],
   "dedicated":1
  },
@@ -5083,7 +8147,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -5105,7 +8169,86 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"GESA0001-2",
+  "name":"Analyses chimiques et physico-chimiques des eaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Purcaro Giorgia"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GESA0001-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEST1093-1",
+  "name":"Entrepreneuriat",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Paeschen Julien"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEST1093-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEST3024-1",
+  "name":"Entreprise et d\u00e9veloppement durable",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Mertens de Wilmars Sybille"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEST3024-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Law & Criminology",
+   "Letters",
+   "Management",
+   "Pedagogy",
+   "Philosophy",
+   "Political Sciences",
+   "Psychology",
+   "Science",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
   ],
   "dedicated":1
  },
@@ -5128,7 +8271,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "carbon"
   ],
   "dedicated":0
  },
@@ -5152,8 +8295,33 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEST3053-1",
+  "name":"Introduction aux sciences humaines",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dubois Christophe",
+   "Blavier Adela\u00efde",
+   "Dubouclez Olivier"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEST3053-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5176,10 +8344,32 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"GEST3774-1",
+  "name":"Mission Impact Strategy",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Surlemont Bernard"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEST3774-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
  },
  {
   "id":"GEST6002-1",
@@ -5204,9 +8394,8 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "dedicated":1
  },
@@ -5233,7 +8422,8 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -5256,7 +8446,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -5280,33 +8470,33 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"GEST7063-1",
-  "name":"Customs Compliance in eCommerce",
+  "id":"GEST7077-1",
+  "name":"Environnement \u00e9conomique international",
   "year":"2022-2023",
   "languages":[
-   "en"
+   "fr"
   ],
   "teachers":[
-   "Melin Yves"
+   "Schoenmaeckers J\u00e9rome"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEST7063-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GEST7077-1.html",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Law & Criminology",
-   "Political Sciences"
+   "Economy",
+   "Management"
   ],
   "themes":[
-   "environment"
+   "climate"
   ],
-  "dedicated":0
+  "dedicated":1
  },
  {
   "id":"GIRI0004-1",
@@ -5326,7 +8516,29 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GIRI9002-1",
+  "name":"Cadres conceptuels de l'interdisciplinarit\u00e9 en gestion sanitaire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GIRI9002-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  },
@@ -5348,7 +8560,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -5378,34 +8590,100 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"GRHO0035-1",
-  "name":"GRH, mondialisation et innovation",
+  "id":"HAAR0144-1",
+  "name":"Mus\u00e9es des sciences et des techniques",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Cornet Annie"
+   "Tomsin Philippe"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/GRHO0035-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HAAR0144-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"HORT0014-2",
+  "name":"Ecologie urbaine",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bogaert Jan"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HORT0014-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"HORT0015-1",
+  "name":"Ecologie urbaine et du paysage : concepts et applications",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bogaert Jan"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HORT0015-1.html",
   "cycles":[
    "bac",
    "master"
   ],
   "fields":[
-   "Economy",
-   "Management",
-   "Sociology"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"HULG0176-1",
+  "name":"Conservation pr\u00e9ventive des collections mus\u00e9ales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Drouguet No\u00e9mie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG0176-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -5429,7 +8707,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "resources"
   ],
   "dedicated":0
  },
@@ -5451,7 +8729,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -5475,9 +8754,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5501,7 +8780,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "energy",
+   "resources"
   ],
   "dedicated":1
  },
@@ -5567,7 +8848,29 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"HULG0488-1",
+  "name":"Soil erosion and conservation",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG0488-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5589,7 +8892,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -5611,7 +8914,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -5633,7 +8936,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -5656,7 +8959,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -5680,21 +8983,21 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"HULG2954-1",
-  "name":"Energy efficiency of buildings, part 1 and 2 & lab I",
+  "id":"HULG0563-1",
+  "name":"Evaluation d'impact environnemental : projet et introduction \u00e0 la gestion de bases de donnn\u00e9es, partim F Gestion de base de donn\u00e9es",
   "year":"2022-2023",
   "languages":[
-   "en"
+   "fr"
   ],
   "teachers":[
-
+   "Lobet Guillaume"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG2954-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG0563-1.html",
   "cycles":[
    "master"
   ],
@@ -5702,29 +9005,7 @@
    "Science"
   ],
   "themes":[
-   "energy"
-  ],
-  "dedicated":1
- },
- {
-  "id":"HULG2954-2",
-  "name":"Energy efficiency of buildings, part 3 & lab 2",
-  "year":"2022-2023",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG2954-2.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy"
+   "life"
   ],
   "dedicated":1
  },
@@ -5746,9 +9027,58 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":1
+ },
+ {
+  "id":"HULG9178-1",
+  "name":"Histoire et paysage : histoire de l'art des jardins",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Harlez De Deulin Nathalie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9178-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"HULG9195-1",
+  "name":"Critique et analyse pratique des paysages",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fran\u00e7ois Line",
+   "Furnelle Vincent",
+   "Legrain Xavier",
+   "De Harlez De Deulin Nathalie",
+   "Gobbe Emmanuelle"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9195-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"HULG9199-1",
@@ -5768,9 +9098,55 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"HULG9201-1",
+  "name":"Droit de l'environnement et de l'urbanisme",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Delbeke-Vroman Sarah",
+   "Peeters Serge"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9201-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"HULG9202-1",
+  "name":"Philosophie et \u00e9thique du paysage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Furnelle Vincent"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9202-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"HULG9280-1",
@@ -5791,7 +9167,29 @@
    "Management"
   ],
   "themes":[
-   "resources"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"HULG9285-1",
+  "name":"Syst\u00e8mes agraires et agro\u00e9cosyst\u00e8mes",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Visser Marjolein"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9285-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food"
   ],
   "dedicated":0
  },
@@ -5813,7 +9211,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -5837,7 +9235,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -5860,7 +9258,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -5882,7 +9280,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -5905,7 +9303,51 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"HULG9659-1",
+  "name":"GIS and Environmental Health",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9659-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"HULG9708-1",
+  "name":"Approche territoriale de la sant\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Antoine-Moussiaux Nicolas"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9708-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  },
@@ -5928,9 +9370,97 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
+ },
+ {
+  "id":"HULG9744-1",
+  "name":"Recycling of glass, rubber, polymer and paper wastes",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9744-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"HULG9755-1",
+  "name":"Biocatalysis and Bioremediation",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9755-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"HULG9758-1",
+  "name":"Project in Innovative Materials Recycling and Sustainability",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9758-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"HULG9763-1",
+  "name":"Waste treatment and Recycling Technologies",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HULG9763-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
  },
  {
   "id":"HULG9769-1",
@@ -5950,9 +9480,32 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":1
+ },
+ {
+  "id":"HYDR0001-1",
+  "name":"Hydrologie g\u00e9n\u00e9rale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Degr\u00e9 Aurore"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/HYDR0001-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
  },
  {
   "id":"INFO2038-1",
@@ -5973,9 +9526,87 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"INGE0008-1",
+  "name":"Projet exp\u00e9rimental multidisciplinaire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Brostaux Yves",
+   "Mercatoris Beno\u00eet",
+   "Delaplace Pierre",
+   "Pochet Bernard",
+   "Monty Arnaud",
+   "Massart S\u00e9bastien"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/INGE0008-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LANG2956-1",
+  "name":"Pratique de l'anglais de sp\u00e9cialit\u00e9 en Sciences et Technologies de l'environnement : partie 1 (niveau B2+)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Depoterre Sophie",
+   "Thewissen Fiona",
+   "Mayard Estelle",
+   "Forest Annabel"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/LANG2956-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LANG2957-1",
+  "name":"Pratique de l'anglais de sp\u00e9cialit\u00e9 en Sciences et Technologies de l'Environnement : partie 2 (niveau C1 - pr\u00e9sentation)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Depoterre Sophie",
+   "Thewissen Fiona",
+   "Mayard Estelle",
+   "Forest Annabel"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/LANG2957-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":1
  },
  {
   "id":"LGER0200-1",
@@ -5994,6 +9625,55 @@
   "fields":[
    "Letters",
    "Philosophy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGER0289-1",
+  "name":"World literature*",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vieh\u00f6ver Vera"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/LGER0289-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LOGI0010-1",
+  "name":"Supply Chain Management",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Arda Yasemin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/LOGI0010-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Engineering",
+   "Management",
+   "Science"
   ],
   "themes":[
    "climate"
@@ -6020,7 +9700,79 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LOGI0017-1",
+  "name":"Distribution Management",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Limbourg Sabine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/LOGI0017-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LOGI0020-1",
+  "name":"Retail and Distribution Management",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Standaert Willem",
+   "Limbourg Sabine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/LOGI0020-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LROM0209-1",
+  "name":"Introduction \u00e0 la recherche en \u00e9tudes litt\u00e9raires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Curreri Luciano"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/LROM0209-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6044,53 +9796,143 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
  {
-  "id":"MECA0006-1",
-  "name":"Machines et syst\u00e8mes thermiques",
+  "id":"MATH0508-1",
+  "name":"Time series analysis in climatology",
   "year":"2022-2023",
   "languages":[
-   "fr"
+   "en"
   ],
   "teachers":[
-   "Lemort Vincent"
+   "Nicolay Samuel"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0006-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MATH0508-1.html",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Engineering"
+   "Science"
   ],
   "themes":[
-   "energy"
-  ],
-  "dedicated":0
- },
- {
-  "id":"MECA0034-1",
-  "name":"Utilisation rationnelle de l'\u00e9nergie dans les b\u00e2timents",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Lemort Vincent"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0034-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
+   "climate"
   ],
   "dedicated":1
+ },
+ {
+  "id":"MBIO0002-1",
+  "name":"Microbiologie pharmaceutique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hayette Marie-Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MBIO0002-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MECA0037-1",
+  "name":"Centrales thermiques et cog\u00e9n\u00e9ration",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dewallef Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0037-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MECA0041-1",
+  "name":"Internal combustion engine",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "N\u00e9lis Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0041-1.html",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution",
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MECA0041-2",
+  "name":"Internal combustion engine, Partim 1 : Fundamental aspects",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "N\u00e9lis Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0041-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MECA0041-3",
+  "name":"Internal combustion engine, Partim 2 : Application to propulsion",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "N\u00e9lis Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0041-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "dedicated":0
  },
  {
   "id":"MECA0450-3",
@@ -6110,8 +9952,33 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
+   "pollution",
    "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"MECA0501-1",
+  "name":"Thermal Energy Management in vehicles",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Lemort Vincent"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0501-1.html",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
   ],
   "dedicated":1
  },
@@ -6138,6 +10005,30 @@
   "dedicated":0
  },
  {
+  "id":"MECA0525-1",
+  "name":"Performance and dynamics of vehicles",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Belhabib Mustapha",
+   "Duysinx Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MECA0525-1.html",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"MECA0526-1",
   "name":"High Temperature Processes in Recycling & Remanufacturing",
   "year":"2022-2023",
@@ -6155,9 +10046,9 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "dedicated":0
  },
@@ -6180,8 +10071,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "life",
+   "transport"
   ],
   "dedicated":0
  },
@@ -6203,7 +10094,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -6225,7 +10116,30 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MICR0720-1",
+  "name":"Phycologie et mycologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Baurain Denis"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MICR0720-1.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6247,7 +10161,29 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MSTG0358-2",
+  "name":"Stage : Pharmacognosie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Frederich Michel"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/MSTG0358-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6269,7 +10205,164 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0014-1",
+  "name":"Mathematical analysis and modelling methods applied to the environment",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gr\u00e9goire Marilaure"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0014-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"OCEA0019-1",
+  "name":"Oc\u00e9anographie biologique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gobert Sylvie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0019-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0020-1",
+  "name":"Questions d'actualit\u00e9 en oc\u00e9anographie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Alvera Azcarate Aida",
+   "Gobert Sylvie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0020-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0025-1",
+  "name":"Dynamique des nutriments en milieu marin : aspects chimiques et biog\u00e9ochimiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Morana C\u00e9dric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0025-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0027-1",
+  "name":"Etude des isotopes stables et applications au milieu marin",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Michel Lo\u00efc",
+   "Lepoint Gilles"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0027-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "carbon",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0033-1",
+  "name":"Changements globaux et environnement marin",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Mouchet Anne"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0033-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"OCEA0045-1",
+  "name":"Statistical methods of analysis of oceanographic data",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0045-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6291,7 +10384,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -6314,8 +10407,9 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "food",
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -6338,7 +10432,9 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -6360,8 +10456,8 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "carbon",
+   "life"
   ],
   "dedicated":1
  },
@@ -6385,7 +10481,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -6408,9 +10504,31 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"OCEA0059-1",
+  "name":"Remote Sensing of the Oceans",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Alvera Azcarate Aida"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0059-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"OCEA0062-6",
@@ -6430,8 +10548,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -6454,7 +10572,98 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0064-1",
+  "name":"Functional and Molecular Marine Microbiology, Molecular approaches to the diversity of marine microorganisms",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Wilmotte Annick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0064-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0075-1",
+  "name":"Physical oceanography and marine meteorology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Beckers Jean-Marie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0075-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0075-2",
+  "name":"Physical oceanography and marine meteorology, Theory and practice",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Beckers Jean-Marie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0075-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0080-1",
+  "name":"Biochemistry, Physiology and Aquariology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Comp\u00e8re Philippe",
+   "Michel Christian",
+   "Rougeot Carole"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0080-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6478,7 +10687,29 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0083-1",
+  "name":"Physiology and biochemistry of the marine animals",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Comp\u00e8re Philippe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0083-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6500,7 +10731,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -6522,7 +10754,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -6544,7 +10776,30 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0087-1",
+  "name":"Satellite oceanography",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Alvera Azcarate Aida"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0087-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6567,9 +10822,32 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"OCEA0089-1",
+  "name":"Introduction to marine ecosystems modelling",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gr\u00e9goire Marilaure"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0089-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"OCEA0090-1",
@@ -6589,7 +10867,52 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0091-1",
+  "name":"Approche m\u00e9thodologique de la pratique en oc\u00e9anographie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Alvera Azcarate Aida",
+   "Gobert Sylvie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0091-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0093-1",
+  "name":"Molecular approaches to the diversity of marine microorganisms",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Wilmotte Annick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0093-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6611,10 +10934,56 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "carbon",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"OCEA0096-1",
+  "name":"Mod\u00e9lisation des \u00e9cosyst\u00e8mes et des cycles biog\u00e9ochimiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gr\u00e9goire Marilaure",
+   "Capet Arthur",
+   "Munhoven Guy"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0096-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0144-1",
+  "name":"Biologie des r\u00e9cifs coralliens",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Roberty St\u00e9phane"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0144-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"OCEA0158-1",
@@ -6634,11 +11003,54 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"OCEA0159-1",
+  "name":"Advanced satellite oceanography",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Alvera Azcarate Aida"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0159-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0219-1",
+  "name":"Biogeochemical Cycles in the Ocean",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Delille Bruno"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0219-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"OCEA0220-1",
@@ -6659,7 +11071,9 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -6682,10 +11096,33 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"OCEA0224-1",
+  "name":"Analyse statistique des donn\u00e9es oc\u00e9anographiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gr\u00e9goire Marilaure",
+   "Capet Arthur",
+   "Meyer Patrick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0224-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"OCEA0227-1",
@@ -6706,7 +11143,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
+   "life",
+   "pollution",
    "resources"
   ],
   "dedicated":0
@@ -6729,7 +11167,75 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"OCEA0229-1",
+  "name":"Mathematical analysis and modelling methods applied to the environment \/ Introduction to marine ecosystems modelling",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gr\u00e9goire Marilaure"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/OCEA0229-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"PALE0201-1",
+  "name":"Pal\u00e9ozoologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fischer Valentin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PALE0201-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PALE0202-3",
+  "name":"Pal\u00e9obotanique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Prestianni Cyrille"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PALE0202-3.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -6754,7 +11260,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -6777,9 +11283,54 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"PAYS0006-2",
+  "name":"Concepts d'\u00e9cologie du paysage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bogaert Jan"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PAYS0006-2.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"PAYS0007-2",
+  "name":"Introduction \u00e0 l'analyse et \u00e0 la mod\u00e9lisation des paysages",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bastin Jean-Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PAYS0007-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"PAYS0014-1",
@@ -6800,9 +11351,75 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"PAYS0015-1",
+  "name":"Fondements en agriculture urbaine",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jijakli Haissam"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PAYS0015-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PAYS0016-1",
+  "name":"Plante et ville",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jijakli Haissam"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PAYS0016-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PAYS0016-2",
+  "name":"Plante et ville, Agriculture et ville",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jijakli Haissam"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PAYS0016-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"PAYS0017-1",
@@ -6822,7 +11439,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -6844,7 +11461,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -6867,7 +11484,7 @@
    "Psychology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
@@ -6891,29 +11508,53 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
  {
-  "id":"PHYS0936-2",
-  "name":"Introduction \u00e0 la physique des mat\u00e9riaux",
+  "id":"PEDA4059-1",
+  "name":"Controverses contemporaines sur l'usage des TICE",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Ghosez Philippe"
+   "Verpoorten Dominique"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PHYS0936-2.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PEDA4059-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PHIL0096-1",
+  "name":"Introduction interdisciplinaire aux \u00e9tudes de genre : philosophie, litt\u00e9rature et m\u00e9dias*",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Caeymaex Florence"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PHIL0096-1.html",
   "cycles":[
    "bac"
   ],
   "fields":[
-   "Science"
+   "Letters",
+   "Philosophy"
   ],
   "themes":[
-   "energy"
+   "life"
   ],
   "dedicated":0
  },
@@ -6936,9 +11577,57 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "climate"
   ],
   "dedicated":1
+ },
+ {
+  "id":"PRCO0001-1",
+  "name":"Projet int\u00e9gr\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Duchene Laurent",
+   "Mihaylov Boyan",
+   "Gens Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PRCO0001-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PROJ0001-1",
+  "name":"Introduction aux m\u00e9thodes num\u00e9riques et projet",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bruls Olivier",
+   "Nguyen Fr\u00e9d\u00e9ric",
+   "Louveaux Quentin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PROJ0001-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"PROJ0020-1",
@@ -6960,7 +11649,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -6984,7 +11673,75 @@
    "Psychology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"PSYC1131-2",
+  "name":"Psychologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Etienne Anne-Marie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/PSYC1131-2.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"QUAL0436-5",
+  "name":"Assurance qualit\u00e9 li\u00e9e aux denr\u00e9es alimentaires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Scippo Marie-Louise",
+   "Daube Georges"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/QUAL0436-5.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "economy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"QUAL0439-2",
+  "name":"Assurance de qualit\u00e9 chimique de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Eppe Gauthier"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/QUAL0439-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":1
  },
@@ -7007,7 +11764,96 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"RAVT0002-2",
+  "name":"Eco-\u00e9thologie et conservation de la faune",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Poncin Pascal"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/RAVT0002-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"RAVT0003-1",
+  "name":"Gestion de la grande faune en milieu tropical",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vermeulen C\u00e9dric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/RAVT0003-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"RCER0032-1",
+  "name":"G\u00e9ophysique - suivi de la pollution : techniques non invasives",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/RCER0032-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"RCER0033-1",
+  "name":"Aspects territoriaux : cadre l\u00e9gal, historique et spatial",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Colinet Gilles",
+   "Aldric Jean-Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/RCER0033-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -7031,8 +11877,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "food",
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -7058,9 +11905,34 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"RCER0038-1",
+  "name":"INTEGRER aux b\u00e2timents",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lebeau Fr\u00e9d\u00e9ric",
+   "Jijakli Haissam"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/RCER0038-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"RISQ2014-1",
@@ -7081,7 +11953,7 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -7103,7 +11975,7 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -7129,7 +12001,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -7152,9 +12024,31 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
+ },
+ {
+  "id":"RTFE2002-1",
+  "name":"Travail de fin d'\u00e9tudes en sciences et technologies de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Charles Catherine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/RTFE2002-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":1
  },
  {
   "id":"RTFE2006-1",
@@ -7177,7 +12071,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SANT4007-1",
+  "name":"Introduction \u00e0 l'\u00e9pig\u00e9n\u00e9tique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Machiels B\u00e9n\u00e9dicte"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SANT4007-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -7200,7 +12116,32 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBIM0486-2",
+  "name":"M\u00e9thodologies exp\u00e9rimentales des animaux vivants",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Drion Pierre"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SBIM0486-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pedagogy",
+   "Psychology",
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -7223,9 +12164,75 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"SCER0005-1",
+  "name":"Performance environnementale - construction traditionnelle",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SCER0005-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SCER0006-1",
+  "name":"Performance environnementale - construction bois",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SCER0006-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SCER0008-1",
+  "name":"Environmental performance of buildings",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Khanh Hoang Nguyen"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SCER0008-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"SCER0010-1",
@@ -7245,9 +12252,10 @@
    "Science"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -7269,7 +12277,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -7291,9 +12300,31 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"SCER0080-1",
+  "name":"Gestion des d\u00e9chets radioactifs",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Pirlet V\u00e9ra"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SCER0080-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"SDOC0001-1",
@@ -7314,6 +12345,94 @@
   ],
   "themes":[
    "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SDOC0061-1",
+  "name":"Outils mol\u00e9culaires pour la syst\u00e9matique et l'\u00e9cologie bact\u00e9riennes",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Wilmotte Annick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SDOC0061-1.html",
+  "cycles":[
+   "doctor"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SDOC0062-1",
+  "name":"Cyanobact\u00e9ries : diversit\u00e9, \u00e9volution et \u00e9cologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Wilmotte Annick"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SDOC0062-1.html",
+  "cycles":[
+   "doctor"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SMEM0003-1",
+  "name":"M\u00e9moire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Alvera Azcarate Aida"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SMEM0003-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SMEM0013-1",
+  "name":"M\u00e9moire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Plumier Jean-Christophe"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SMEM0013-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -7360,7 +12479,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -7383,8 +12502,51 @@
    "Sociology"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SOCI0093-2",
+  "name":"Critique de l'\u00e9conomie politique et du management, Cours th\u00e9orique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fr\u00e8re Bruno"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SOCI0093-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "food"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SOCI0093-3",
+  "name":"Critique de l'\u00e9conomie politique et du management",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fr\u00e8re Bruno"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SOCI0093-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "food"
   ],
   "dedicated":0
  },
@@ -7412,34 +12574,99 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"SOCI9009-1",
-  "name":"Atelier de lecture en \u00e9tudes du d\u00e9veloppement",
+  "id":"SPAT0017-1",
+  "name":"Seminars on topical issues",
   "year":"2022-2023",
   "languages":[
-   "fr"
+   "en"
   ],
   "teachers":[
-   "Schneider Melissa",
-   "Poncelet Marc",
-   "Pirotte Gautier",
-   "Contor Justine",
-   "Vandeninden Frieda"
+   "Cudell Jean-Ren\u00e9",
+   "Troupin Charles",
+   "Hubert Beno\u00eet",
+   "Fays Maxime",
+   "Hutsemekers Damien"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SOCI9009-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPAT0017-1.html",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Sociology"
+   "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPAT0024-2",
+  "name":"Meteorology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Fran\u00e7ois Louis"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPAT0024-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPAT0024-3",
+  "name":"Meteorology, Partim 1",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Fran\u00e7ois Louis"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPAT0024-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPAT0024-4",
+  "name":"Meteorology, Partim 2",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Fran\u00e7ois Louis"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPAT0024-4.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -7462,7 +12689,8 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "life"
   ],
   "dedicated":1
  },
@@ -7484,7 +12712,8 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -7507,7 +12736,9 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -7532,6 +12763,28 @@
    "climate"
   ],
   "dedicated":1
+ },
+ {
+  "id":"SPAT0054-1",
+  "name":"Astrophysique et astrochimie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Becker Micha\u00ebl"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPAT0054-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"SPAT0055-1",
@@ -7573,7 +12826,8 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -7596,8 +12850,9 @@
    "Political Sciences"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "carbon",
+   "energy",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -7619,7 +12874,8 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -7647,6 +12903,54 @@
   "dedicated":0
  },
  {
+  "id":"SPOL0970-1",
+  "name":"Policy design and evaluation",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Parotte C\u00e9line"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPOL0970-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPOL2209-3",
+  "name":"Politique de l'environnement et du territoire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hanson Sophie"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPOL2209-3.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Law & Criminology",
+   "Political Sciences",
+   "Science"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"SPOL2328-1",
   "name":"Th\u00e9ories et doctrines politiques contemporaines",
   "year":"2022-2023",
@@ -7666,9 +12970,33 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability"
+   "general",
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"SPOL9211-1",
+  "name":"Ecology and politics",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Thoreau Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SPOL9211-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"SSTG0024-1",
@@ -7693,7 +13021,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -7715,7 +13043,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -7737,8 +13065,7 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -7760,7 +13087,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -7806,9 +13133,31 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"SSTG0063-1",
+  "name":"Stage professionnalisant",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hambuckers Alain"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/SSTG0063-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"STFE2004-1",
@@ -7828,7 +13177,35 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"TECH0763-2",
+  "name":"Technologies industrielles",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Evrard Brigitte",
+   "Toye Dominique",
+   "L\u00e9onard Ang\u00e9lique",
+   "Danthine Sabine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/TECH0763-2.html",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Engineering",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -7851,7 +13228,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -7875,7 +13252,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -7898,30 +13275,7 @@
    "Philosophy"
   ],
   "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"TRAD0103-1",
-  "name":"Traduction sp\u00e9cialis\u00e9e, y compris \u00e9l\u00e9ments de post-\u00e9dition, de l'anglais vers le fran\u00e7ais : questions juridiques, \u00e9conomiques et sociales",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Maris Val\u00e9rie"
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/TRAD0103-1.html",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Letters",
-   "Philosophy"
-  ],
-  "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -7944,31 +13298,11 @@
    "Philosophy"
   ],
   "themes":[
-   "energy"
+   "building",
+   "energy",
+   "life"
   ],
   "dedicated":1
- },
- {
-  "id":"TSTG0002-1",
-  "name":"Stage",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-
-  ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/TSTG0002-1.html",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Architecture"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
  },
  {
   "id":"UEEN0001-1",
@@ -7989,7 +13323,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "life"
   ],
   "dedicated":1
  },
@@ -8012,7 +13346,121 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "building",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"UEEN0006-1",
+  "name":"UEE Integrated Project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Courard Luc",
+   "Teller Jacques",
+   "Nguyen Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/UEEN0006-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VCER2074-1",
+  "name":"Partie 1 : Principes de gestion apicole",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Saegerman Claude"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VCER2074-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VCER2075-1",
+  "name":"Partie 2 : Application des principes de gestion apicole \u00e0 un exemple concret",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Saegerman Claude"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VCER2075-1.html",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VDOC0048-1",
+  "name":"Compl\u00e9ments d'Ethologie v\u00e9t\u00e9rinaire, de Bien-\u00eatre des animaux et d'Ethique animale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vandenheede Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VDOC0048-1.html",
+  "cycles":[
+   "doctor"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VEGE0021-1",
+  "name":"Communaut\u00e9s animales et qualit\u00e9 des cours d'eau",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Caparros Megido Rudy",
+   "Francis Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VEGE0021-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -8034,7 +13482,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -8056,7 +13504,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
@@ -8084,7 +13532,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -8110,7 +13560,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "pollution"
   ],
   "dedicated":1
  },
@@ -8132,7 +13582,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -8154,9 +13604,33 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
+ },
+ {
+  "id":"VEGE0037-1",
+  "name":"Syst\u00e8mes innovants de production v\u00e9g\u00e9tale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Leemans Vincent",
+   "Delaplace Pierre",
+   "Jijakli Haissam"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VEGE0037-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"VEGE0041-1",
@@ -8180,7 +13654,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -8206,7 +13680,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -8234,9 +13708,34 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"VEGE0044-1",
+  "name":"Stress et protection des v\u00e9g\u00e9taux en milieu urbain",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Verheggen Fran\u00e7ois",
+   "Jijakli Haissam"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VEGE0044-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"VEGE0045-1",
@@ -8256,7 +13755,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
@@ -8279,7 +13778,8 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -8302,21 +13802,67 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
  {
-  "id":"VETE2059-1",
-  "name":"Epid\u00e9miologie v\u00e9t\u00e9rinaire, analyse de risques, bios\u00e9curit\u00e9 et bonnes pratiques v\u00e9t\u00e9rinaires",
+  "id":"VETE2013-1",
+  "name":"Industries agro-alimentaires et gestion de l'environnement",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Saegerman Claude"
+
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2059-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2013-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "economy",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"VETE2036-1",
+  "name":"Bien-\u00eatre des animaux de production : aspects scientifiques et r\u00e9glementaires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vandenheede Marc"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2036-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2057-1",
+  "name":"Initiation \u00e0 la zootechnie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vandenheede Marc",
+   "Cabaraux Jean-Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2057-1.html",
   "cycles":[
    "bac"
   ],
@@ -8324,7 +13870,154 @@
    "Veterinary"
   ],
   "themes":[
-   "resources"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2058-1",
+  "name":"Embryologie et histologie des animaux domestiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Grobet Luc",
+   "Antoine Nadine",
+   "Toppets Vinciane"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2058-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2066-1",
+  "name":"Toxicologie des animaux domestiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Votion Dominique",
+   "Gustin Pascal"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2066-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2067-1",
+  "name":"Principes d'exercice de la m\u00e9decine v\u00e9t\u00e9rinaire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Saegerman Claude",
+   "Gustin Pascal",
+   "Clinquart Antoine",
+   "Kohl Beno\u00eet",
+   "Guyot Hugues"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2067-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2069-1",
+  "name":"Maladies infectieuses et parasitaires (MIP) des animaux de compagnie, y compris les zoonoses",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Thiry Etienne",
+   "Thiry Damien",
+   "Mignon Bernard"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2069-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2070-1",
+  "name":"Maladies infectieuses et parasitaires (MIP) des \u00e9quid\u00e9s, y compris les zoonoses",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "G. Dewals Benjamin",
+   "Linden Annick",
+   "Thiry Damien",
+   "Thiry Etienne"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2070-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2071-1",
+  "name":"Maladies infectieuses et parasitaires (MIP) des animaux de production et de la faune sauvage, y compris les zoonoses",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Thiry Etienne",
+   "Linden Annick",
+   "Thiry Damien",
+   "G. Dewals Benjamin"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2071-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -8350,7 +14043,29 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"VETE2099-1",
+  "name":"Int\u00e9gration des comp\u00e9tences",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Delguste Catherine"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/VETE2099-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -8372,21 +14087,21 @@
    "Veterinary"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"YCER0187-1",
-  "name":"Approches syst\u00e9miques",
+  "id":"YCER0165-1",
+  "name":"L'approche syst\u00e9mique, strat\u00e9gique et br\u00e8ve en milieu scolaire",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Antoine-Moussiaux Nicolas"
+   "Chartier St\u00e9phanie"
   ],
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/YCER0187-1.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/YCER0165-1.html",
   "cycles":[
    "certificate"
   ],
@@ -8395,7 +14110,121 @@
    "Psychology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ZOOL0006-1",
+  "name":"Zootechnie aquacole",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   ": partim aquariologie crustac\u00e9s",
+   "larviculture et production de proies vivantes : partim production des poissons temp\u00e9r\u00e9s et tropicaux : partim algues partim",
+   "et gestion d'esp\u00e8ces ornementales : production",
+   " mollusques"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL0006-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ZOOL0218-4",
+  "name":"Aquariologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Rougeot Carole"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL0218-4.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ZOOL0230-2",
+  "name":"M\u00e9thodes de recensement et de monitoring des populations de poissons d'eau douce",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ovidio Micha\u00ebl"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL0230-2.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ZOOL0232-1",
+  "name":"Ecologie, \u00e9thologie et conservation des amphibiens",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Deno\u00ebl Mathieu"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL0232-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ZOOL0235-1",
+  "name":"Physiologie appliqu\u00e9e \u00e0 l'aquaculture : \u00e9quilibre entre productivit\u00e9 et respect du bien-\u00eatre animal",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Rougeot Carole"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL0235-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -8417,10 +14246,77 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "prod&cons"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ZOOL2000-1",
+  "name":"Ecologie, production et gestion des \u00e9cosyst\u00e8mes aquatiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "v\u00e9g\u00e9taux et analyse num\u00e9rique : partim zooplancton et invert\u00e9br\u00e9s : partim gestion halieutique et biologie des p\u00eaches dans les eaux continentales : partim"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL2000-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ZOOL2017-1",
+  "name":"Zoologie : Diversit\u00e9 et \u00e9volution des animaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Verheggen Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL2017-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ZOOL2018-1",
+  "name":"Zoologie : Comportement animal",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Verheggen Fran\u00e7ois"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL2018-1.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"ZOOL2019-1",
@@ -8440,8 +14336,30 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ZOOL2021-1",
+  "name":"Ecologie et dynamique des populations de poissons d'eau douce",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ovidio Micha\u00ebl"
+  ],
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/cours\/ZOOL2021-1.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  }
 ]
