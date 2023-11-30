@@ -3,7 +3,7 @@
   "id":"BCA",
   "name":"Bachelier en Communication Appliqu\u00e9e",
   "cycle":"bac",
-  "url":"http:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
+  "url":"https:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
   "languages":[
    "de",
    "en",
@@ -29,17 +29,17 @@
   ],
   "matched_courses":[
    "2BQECO12Q",
-   "3BASFD11Q"
+   "3BASPO211Q"
   ],
   "nb_dedicated_courses":1,
   "nb_matched_courses":2,
-  "nb_total_courses":51
+  "nb_total_courses":52
  },
  {
   "id":"PI",
   "name":"Master en presse et information",
   "cycle":"master",
-  "url":"http:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
+  "url":"https:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
   "languages":[
    "fr"
   ],
@@ -59,51 +59,21 @@
    1
   ],
   "matched_courses":[
-   "2MCENE2Q"
+   "2MCENE22Q"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":29
- },
- {
-  "id":"RP",
-  "name":"Master en relations publiques",
-  "cycle":"master",
-  "url":"http:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Bruxelles"
-  ],
-  "faculties":[
-   "Journalism & Communication"
-  ],
-  "fields":[
-   "Communication"
-  ],
-  "themes":[
-   "climate",
-   "life"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ],
-  "matched_courses":[
-   "2MATHR22Q"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":36
+  "nb_total_courses":28
  },
  {
   "id":"ASCEP",
   "name":"Master en animation socio-culturelle et Education permanente",
   "cycle":"master",
-  "url":"http:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
+  "url":"https:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
   "languages":[
-   "fr"
+   "en",
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Bruxelles"
@@ -116,7 +86,6 @@
   ],
   "themes":[
    "climate",
-   "economy",
    "energy",
    "food",
    "life"
@@ -125,25 +94,23 @@
    2,
    1,
    1,
-   1,
    4
   ],
   "matched_courses":[
-   "1MNMESS21Q",
-   "1MQSAFR21Q",
-   "1MQSANL21Q",
    "2MCREAU22Q",
-   "2MDESTR22Q"
+   "2MDESTR22Q",
+   "2MEBEM22Q",
+   "2MGLBZ22Q"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":5,
-  "nb_total_courses":29
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":4,
+  "nb_total_courses":28
  },
  {
   "id":"ME",
   "name":"Master en Management d'\u00e9v\u00e9nements",
   "cycle":"master",
-  "url":"http:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
+  "url":"https:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
   "languages":[
    "fr"
   ],
@@ -167,6 +134,6 @@
   ],
   "nb_dedicated_courses":1,
   "nb_matched_courses":1,
-  "nb_total_courses":23
+  "nb_total_courses":25
  }
 ]
