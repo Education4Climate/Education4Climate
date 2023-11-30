@@ -13,18 +13,32 @@
             ]
         }
     },
-    "SG321: Urbanisme, am\u00e9nagement du territoire, environnement": {
+    "GH305: Equipement Technique": {
+        "fr": {
+            "impacts? (?:environnement|ecosyst)": [
+                "- comment reduire l impact environnemental des hotel"
+            ]
+        }
+    },
+    "RP246: Publicit\u00e9 et soci\u00e9t\u00e9 de consommation": {
+        "fr": {
+            "refugies? climat": [
+                "imentation      les refugies climatiques               "
+            ]
+        }
+    },
+    "SG321: Droit de l'urbanisme, de l'am\u00e9nagement du territoire, et de l'environnement": {
         "fr": {
             "[amenagements? du territoire, (?:environnement|ecosyst)]": [
-                "urbanisme  amenagement du territoire  environnement 1   ",
-                "ment 1   urbanisme  amenagement du territoire  environnement   an",
+                "e l urbanisme  de l amenagement du territoire  et de l environnem",
+                "e l urbanisme  de l amenagement du territoire  et de l environnem",
                 "u sous l angle de l amenagement du territoire ainsi que les notio",
                 "nt      chapitre 1  amenagement du territoire       - difference ",
                 " - difference entre amenagement du territoire et urbanisme       ",
                 "mentaux regissant l amenagement du territoire       - les differe",
                 "rents instruments d amenagement du territoire  schema de developp",
-                "ment du territoire  environnement 1   urbanisme  amen",
-                "ment du territoire  environnement   analyse du codt  ",
+                "territoire  et de l environnement 1   droit de l urba",
+                "territoire  et de l environnement   analyse du codt  ",
                 "tions de droit de l environnement      chapitre 1  am",
                 "pitre 2  droit de l environnement      - etude des di",
                 "que pour proteger l environnement   ecotaxes  seuils "
@@ -71,11 +85,20 @@
             ],
             "[[ ]ecolo[^ ]+]": [
                 "empreinte ecologique 1   empreinte ecolo",
-                "ogique 1   empreinte ecologique    savoir       l e",
+                "ogique 1   empreinte ecologique   contenu       1  ",
+                "notions  d empreinte ecologique  d ecobilan  d ecos",
                 " evaluer l empreinte ecologique globale d un vehicu"
             ],
             "impacts? (?:environnement|ecosyst)": [
+                "   - evaluation des impacts environnementaux      - interpret",
+                "cas  evaluation des impacts environnementaux d un vehicule el",
                 "tockage ainsi que l impact environnemental et humain de leur"
+            ],
+            "analyses? (?:de |du )?cycle (?:de )?vie": [
+                " ecoscore        2  analyse du cycle de vie      - definition d"
+            ],
+            "(?:vehicules?|voitures?) electrique": [
+                "vironnementaux d un vehicule electrique              savoir"
             ]
         }
     },
@@ -102,7 +125,8 @@
             "energ[^ ]+ alternati": [
                 "ues aux vehicules a energies alternatives 1   technologies",
                 "ues aux vehicules a energies alternatives    savoir     co",
-                "aitre les sources d energie alternatives qui pourraient s"
+                "aitre les sources d energie alternatives qui pourraient s",
+                " option vehicules a energie alternative"
             ],
             "[[ ]ecolo[^ ]+]": [
                 "vue technologique et ecologique   vehicules electri",
@@ -210,7 +234,7 @@
             ],
             "energ[^ ]+ renouvelable": [
                 "es offertes par les energies renouvelables compte tenu de l a",
-                "mie           - les energies renouvelables   photovoltaique  "
+                "mie           - les energies renouvelables   solaire photovol"
             ],
             "hydroelec": [
                 "hermique  eolienne  hydroelectrique           - l"
@@ -388,70 +412,40 @@
                 "ques appliquees aux energies alternatives   l energie a to"
             ],
             "energ[^ ]+ fossile": [
-                "    1  le sacre des energies fossiles      2  l electrif"
+                "73] - le \"sacre des energies fossiles\"          1  le \"s",
+                "   1  le \"sacre des energies fossiles\"      2  l electri",
+                "ance reaffirmee des energies fossiles      3  l engoueme"
             ],
             "energ[^ ]+ renouvelable": [
-                "ode d existence des energies renouvelables       chapitre ii ",
-                "des d existence des energies renouvelables       chapitre iii",
-                "marginalisation des energies renouvelables       chapitre iv "
+                "des d existence des energies renouvelables       chapitre ii ",
+                "marginalisation des energies renouvelables       chapitre iv ",
+                "v [1973-2021] - les energies renouvelables a l heure des cris"
             ]
         }
     },
-    "EA113: Gestion \u00e9conomique": {
+    "EA113: Economie g\u00e9n\u00e9rale": {
         "fr": {
             "economies? circulaire": [
                 "ficaces en termes d economie circulaire        savoir etre "
             ]
         }
     },
-    "EA116: Performance \u00e9nerg\u00e9tique des b\u00e2timents 1": {
+    "EA116: Performance \u00e9nerg\u00e9tique des b\u00e2timents B1Q2": {
         "fr": {
             "[performances? energ[^ ]+, batiment]": [
-                "performance energetique des batiments 1 1  ",
-                "des batiments 1 1   performances energetiques du batiment  peb   ",
-                "nce energetique des batiments 1 1   performances",
-                "ces energetiques du batiment  peb     savoir    ",
+                "performance energetique des batiments b1q2 ",
+                "nce energetique des batiments b1q2 1   peb b1q2 ",
                 "an energetique d un batiment  la place centrale ",
                 "s de l enveloppe du batiment       comprendre le",
                 " bonne isolation du batiment  et une bonne etanc",
                 "avers des parois du batiment       utiliser les "
-            ],
-            "energ[^ ]+ renouvelable": [
-                "et la place que les energies renouvelables peuvent prendre da"
-            ]
-        }
-    },
-    "EA118: Analyse de l'empreinte \u00e9nerg\u00e9tique 1": {
-        "fr": {
-            "impacts? (?:environnement|ecosyst)": [
-                "tion  perspectives  impacts environnementaux        savoir fa"
-            ]
-        }
-    },
-    "EA120: Moyens de production et de stockage 1": {
-        "fr": {
-            "energ[^ ]+ alternati": [
-                "itionnelles par des energies alternatives et renouvelables"
-            ],
-            "energ[^ ]+ fossile": [
-                "ne substitution des energies fossiles et traditionnelles"
-            ],
-            "transiti[^ ]+ energ": [
-                " la necessite d une transition energetique  e d une subs",
-                "dre les concepts de transition energetique  d empreinte "
-            ],
-            "[[ ]ecolo[^ ]+]": [
-                "getique  d empreinte ecologique  d intensite energe"
-            ],
-            "impacts? (?:environnement|ecosyst)": [
-                "tion  perspectives  impacts environnementaux        savoir fa"
             ]
         }
     },
     "EA125: Ecologie g\u00e9n\u00e9rale": {
         "fr": {
             "[[ ]ecolo[^ ]+]": [
-                "cologie generale 1   ecologie generale  theorie  ",
+                "cologie generale 1   ecologie generale    savoir ",
                 " synecologie - niche ecologique - biodiversite     ",
                 "lution - successions ecologiques     cycles biogeoch",
                 "abulaire relatif a l ecologie generale       decr"
@@ -513,7 +507,8 @@
                 "de sanitaire et les performances energetiques qui y sont liees  c",
                 "ntations liees a la performance energetique des batiments      ",
                 "nce energetique des batiments 2 1   performance ",
-                "ance energetique du batiment  peb     savoir    ",
+                "ance energetique du batiment  peb    la reussite",
+                " de construction du batiment\" et \"peb1\" est nece",
                 "ilan energetique du batiment dans son ensemble  ",
                 "nouvelables pour le batiment       connaitre les",
                 "nce energetique des batiments       utiliser les"
@@ -552,7 +547,7 @@
     "EA219: Analyse de l'empreinte \u00e9nerg\u00e9tique 2": {
         "fr": {
             "energ[^ ]+ verte": [
-                "\"la face cachee des energies vertes\"   appliquer les c"
+                "\"la face cachee des energies vertes\"  \"a contresens\"  "
             ],
             "hydroelec": [
                 "e gaz tgv  centrale hydroelectrique  parc eolien "
@@ -567,6 +562,18 @@
     },
     "EA302: Droit et l\u00e9gislation 2": {
         "fr": {
+            "permis (?:d )environnement": [
+                " et d urbanisation  permis d environnement  permis unique  pro"
+            ],
+            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
+                "ent  planification  amenagement du territoire   loi sur la protec",
+                "ction au droit de l environnement  international/nati",
+                "teurs du droit de l environnement       les acteurs e",
+                "es incidences sur l environnement  planification  ame",
+                "anisation  permis d environnement  permis unique  pro",
+                "activite concernee  environnement  energies renouvela",
+                "atives en matiere d environnement       etre capable "
+            ],
             "energ[^ ]+ alternati": [
                 "la mise en oeuvre d energies alternatives ou d autorisatio"
             ],
@@ -575,13 +582,10 @@
             ],
             "droits? (?:d |de l )?environnement": [
                 "    introduction au droit de l environnement  international/nati",
-                "s      principes du droit de l environnement  article 23 de la c"
+                "cipes fondateurs du droit de l environnement       les acteurs e"
             ],
             "protections? de la nature": [
-                "torisations      la protection de la nature   lois  decrets n20"
-            ],
-            "responsabilites? (?:environnement|ecosyst)": [
-                "ivile et penale/ la responsabilite environnementale         introduc"
+                "itoire   loi sur la protection de la nature  classement  partic"
             ]
         }
     },
@@ -597,8 +601,27 @@
                 " des marees  petite hydroelectricite  impacts env"
             ],
             "impacts? (?:environnement|ecosyst)": [
-                "tion  perspectives  impacts environnementaux         - solair",
+                "tion  perspectives  impacts environnementaux         - geothe",
                 "e hydroelectricite  impacts environnementaux et sanitaires   "
+            ]
+        }
+    },
+    "EA309: Philosophie \u00e9co-\u00e9thique et d\u00e9veloppement durable": {
+        "fr": {
+            "[energie, durab]": [
+                " l incursion de ces energies est pregnante aujo",
+                "ue et developpement durable 1   philosophie e",
+                "ue et developpement durable    savoir faire  ",
+                "ue le developpement durable ou la durabilite ",
+                "ement durable ou la durabilite sont potentiel"
+            ]
+        }
+    },
+    "EA310: Int\u00e9gration harmonieuse des \u00e9nergies alternatives": {
+        "fr": {
+            "energ[^ ]+ alternati": [
+                "ion harmonieuse des energies alternatives 1   integration ",
+                "ion harmonieuse des energies alternatives    savoir       "
             ]
         }
     },
@@ -620,7 +643,7 @@
     "SC307: Biologie partim 6 et didactique": {
         "fr": {
             "[[ ]ecolo[^ ]+]": [
-                "veloppee s           ecologie et genetiqu"
+                "veloppee s           ecologi"
             ]
         }
     },
@@ -628,6 +651,13 @@
         "fr": {
             "climatolog": [
                 " d astronomie et de climatologie  utiliser de mani"
+            ]
+        }
+    },
+    "PI147: Formation scientifique et didactique des sciences 1": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "la physiologie  et l ecologie           savoir-fa"
             ]
         }
     },
@@ -643,6 +673,162 @@
             "[amenagements? du territoire, (?:environnement|ecosyst)]": [
                 "iques     notions d amenagement du territoire et de milieu physiq",
                 "lieu et amenage son environnement          savoir-etr"
+            ]
+        }
+    },
+    "PS131: Formation scientifique et didactique des sciences": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "la reproduction et l ecologie           savoir-fa"
+            ]
+        }
+    },
+    "31E12: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "11A06: Sciences 1": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "la reproduction et l ecologie           savoir-fa"
+            ]
+        }
+    },
+    "21B11: Sciences 1": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "la physiologie  et l ecologie           savoir-fa"
+            ]
+        }
+    },
+    "21B15: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31C15: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31D14: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31F12: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31G11: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31H05: Num\u00e9rique 1": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31H13: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31I03: G\u00e9ographie 1": {
+        "fr": {
+            "climatolog": [
+                "         notions de climatologie                 s"
+            ]
+        }
+    },
+    "31I12: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31K12: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "31L03: Sciences de la vie et de la terre": {
+        "fr": {
+            "pollu": [
+                "population  climat  pollution  consommation  "
+            ]
+        }
+    },
+    "31L15: El\u00e9ments fondamentaux d'apprentissage": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                " empreinte numerique ecologique  en tant que futur ",
+                " empreinte numerique ecologique  en tant que futur "
+            ]
+        }
+    },
+    "EA140: Techniques de construction du b\u00e2timent": {
+        "fr": {
+            "[performances? energ[^ ]+, batiment]": [
+                "preparer aux cours \"performances energetiques des batiments\" qui ",
+                " de construction du batiment 1   techniques de c",
+                " de construction du batiment   l objectif de ce ",
+                "es energetiques des batiments\" qui suivront     ",
+                "        sur base de batiments existants  maison ",
+                "c la structure d un batiment  mais aussi les fon"
+            ],
+            "energ[^ ]+ renouvelable": [
+                "iser le potentiel d energies renouvelable"
+            ]
+        }
+    },
+    "EA144: Analyse de l'empreinte \u00e9nerg\u00e9tique B1Q2": {
+        "fr": {
+            "empreint[^ ]+ carbon": [
+                " emissions de ges / empreinte carbone / le pib et ses li"
+            ],
+            "(?:red[^ ]+|diminu[^ ]+) (?:de la|des) consom[^ ]+ (?:d )?energ": [
+                "ctives / efforts de reduction de la consommation d energie et des emissions "
+            ],
+            "[[ ]ecolo[^ ]+]": [
+                "ges      - empreinte ecologique   politique globale",
+                "imites / l empreinte ecologique / l indice de devel"
+            ],
+            "impacts? (?:environnement|ecosyst)": [
+                "ges  couts et prix  impacts environnementaux  futur      - l "
+            ]
+        }
+    },
+    "EA147: Philosophie \u00e9co-\u00e9thique et d\u00e9veloppement durable": {
+        "fr": {
+            "[energie, durab]": [
+                " l incursion de ces energies est pregnante aujo",
+                "ue et developpement durable 1   philosophie e",
+                "ue et developpement durable   interpreter que",
+                "ue le developpement durable ou la durabilite ",
+                "ement durable ou la durabilite sont potentiel"
             ]
         }
     }
