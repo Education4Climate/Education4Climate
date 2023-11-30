@@ -18,7 +18,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":1
  },
@@ -42,7 +42,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
@@ -65,7 +65,7 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -87,7 +87,7 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
@@ -111,7 +111,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "life"
   ],
   "dedicated":0
  },
@@ -135,21 +136,21 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
  {
-  "id":"YE0379",
-  "name":"Tourism Destinations",
+  "id":"YE0176",
+  "name":"International Tourism",
   "year":"2022-2023",
   "languages":[
    "en"
   ],
   "teachers":[
-   "Scholtz Marco"
+   "Van Dooren Inge"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YE0379E.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YE0176E.htm",
   "cycles":[
    "bac"
   ],
@@ -158,7 +159,57 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0367",
+  "name":"Bachelor Project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Van Dooren Inge",
+   "Van de Poel Curt",
+   "Lecointre Anja",
+   "Uvin Liesbeth",
+   "Bernaerts Karin"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YE0367E.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0385",
+  "name":"Marketing Fundamentals in Tourism",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Verbiest Peter"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YE0385E.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -181,9 +232,35 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "climate",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"YG0852",
+  "name":"Global Nursing Care",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Heremans Cindy",
+   "Van Baelen Vincent",
+   "de Vaal Wendy"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YG0852E.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"YR0643",
@@ -207,8 +284,7 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "dedicated":1
  },
@@ -233,8 +309,73 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YT0873",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Scheirs Marc"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YT0873E.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YT0945",
+  "name":"Fuel Systems and alternative fuels",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Daems Toon"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YT0945E.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YT0955",
+  "name":"Electric and hybrid technologies",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Bleeser Hans"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YT0955E.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
   ],
   "dedicated":0
  },
@@ -256,7 +397,30 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "energy",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YT0970",
+  "name":"Bachelor thesis \/ internship",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Hermans Sven"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/e\/YT0970E.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -278,21 +442,23 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"Y01075",
-  "name":"Beroepsvoorbereiding Audiologie",
+  "id":"Y01549",
+  "name":"Business Card",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "De Sloovere Marleen"
+   "Decoster Jeroen",
+   "Goris Elsje",
+   "De Wilde Karen"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/Y01075N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/Y01549N.htm",
   "cycles":[
    "bac"
   ],
@@ -300,87 +466,22 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "dedicated":0
  },
  {
-  "id":"Y01083",
-  "name":"Beroepsvoorbereiding Logopedie",
+  "id":"YB1163",
+  "name":"Vastgoed fundamentals",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Tuteleers Hilde"
+   "De Feyter Stefan",
+   "Gabri\u00ebl Saskia"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/Y01083N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"Y01116",
-  "name":"Business basics",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Benijts Tim"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/Y01116N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "dedicated":0
- },
- {
-  "id":"Y01131",
-  "name":"Beroepsvoorbereiding Logopedie",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Tuteleers Hilde"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/Y01131N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YB1114",
-  "name":"Voertuigtechnologie",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Vermeulen Jonas"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YB1114N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YB1163N.htm",
   "cycles":[
    "bac"
   ],
@@ -389,7 +490,7 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "energy"
   ],
   "dedicated":0
  },
@@ -412,7 +513,9 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -435,7 +538,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
@@ -458,7 +561,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -482,29 +585,7 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YD0216",
-  "name":"Materialenleer",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Van Aken Leentje"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YD0216N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Architecture"
-  ],
-  "themes":[
-   "environment"
+   "economy"
   ],
   "dedicated":0
  },
@@ -527,7 +608,31 @@
    "Architecture"
   ],
   "themes":[
-   "resources"
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YD0298",
+  "name":"Bouwtechnologie 2: Afbouw",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandebroek Marc",
+   "De Feyter Stefan"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YD0298N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "building",
+   "energy"
   ],
   "dedicated":0
  },
@@ -559,6 +664,122 @@
   "dedicated":0
  },
  {
+  "id":"YE0159",
+  "name":"Recreatiemanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Rubben Marc"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0159N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0178",
+  "name":"Fran\u00e7ais touristique 2",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Polfliet Margot"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0178N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0197",
+  "name":"Espa\u00f1ol 4",
+  "year":"2022-2023",
+  "languages":[
+   "es"
+  ],
+  "teachers":[
+   "Krekels Katrijn"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0197N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0265",
+  "name":"Tourism Destinations 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Siebens Ivo",
+   "Rubben Marc"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0265N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0318",
+  "name":"Hospitality Management",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Troukens Griet"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0318N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"YE0402",
   "name":"Tourism Destinations 1 & Experiences",
   "year":"2022-2023",
@@ -578,9 +799,33 @@
    "Management"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0403",
+  "name":"Receptief toerisme en recreatie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Rubben Marc"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0403N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -603,21 +848,22 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"YO0633",
-  "name":"Reputatie- en conversatiemanagement",
+  "id":"YE0411",
+  "name":"Cultuur- en vrijetijdsmanagement 1",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "De Vogelaere Nancy"
+   "Liekens Ann",
+   "Rubben Marc"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YO0633N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0411N.htm",
   "cycles":[
    "bac"
   ],
@@ -626,7 +872,974 @@
    "Management"
   ],
   "themes":[
-   "resources"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0418",
+  "name":"Tourism Destinations 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Siebens Ivo"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0418N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YE0421",
+  "name":"Hospitality Management 2 - MICE",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Claessens Wouter",
+   "Van den Broeck Jan",
+   "Verbeeck Dominique"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YE0421N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0005",
+  "name":"Verpleegkundige diagnostiek en interventies 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Crab Bart",
+   "Van Camp Nathalie",
+   "De Blaeser Lies",
+   "De Duytsche Remko"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0005N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0260",
+  "name":"Module kinderen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Snoeckx Dominique",
+   "Cools Niel",
+   "Van Nieuwenhuysen Lieve"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0260N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0264",
+  "name":"Stage 1 VPK",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Wilbers Els",
+   "Proost Lien",
+   "Lauryssen Marissa",
+   "Van Grunderbeek Sophie",
+   "Van Bos Liesbet",
+   "Bal Veerle"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0264N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0461",
+  "name":"Verpleegkundige diagnostiek en interventies 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanspauwen Carl",
+   "Wilbers Els",
+   "Proost Lien",
+   "De Duytsche Remko",
+   "Hoing Christine",
+   "Pede Kim",
+   "Van Camp Nathalie",
+   "De Wachter Peter",
+   "De Blaeser Lies"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0461N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0546",
+  "name":"VPK diagnostiek en interventies 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Camp Nathalie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0546N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0603",
+  "name":"Klinisch onderwijs intensieve zorgen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandeweyer Dirk"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0603N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0604",
+  "name":"Klinisch onderwijs spoedgevallen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandeweyer Dirk"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0604N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0605",
+  "name":"Klinisch onderwijs keuzestage",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandeweyer Dirk"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0605N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0677",
+  "name":"Module kinderen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Snoeckx Dominique",
+   "Van Nieuwenhuysen Lieve"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0677N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0706",
+  "name":"Stage 2 VPK",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Van Grunderbeek Sophie",
+   "Stappaerts Lio",
+   "Muysoms Kristel",
+   "Bal Veerle",
+   "Snoeckx Dominique",
+   "De Bruyn Marleen"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0706N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0717",
+  "name":"Stage 2 VIA",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Proost Lien",
+   "Lauryssen Marissa",
+   "Van Grunderbeek Sophie",
+   "Pede Kim",
+   "Bal Veerle"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0717N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0754",
+  "name":"Verpleegkundige diagnostiek en interventies 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Blaeser Lies",
+   "Vanspauwen Carl",
+   "Matthys Karel"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0754N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0761",
+  "name":"Module moeder en kind",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Snoeckx Dominique",
+   "Pede Kim"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0761N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0763",
+  "name":"Stage 3 VPK",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Stappaerts Lio",
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0763N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0771",
+  "name":"Module moeder en kind",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Snoeckx Dominique"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0771N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0784",
+  "name":"Verpleegkundige diagnostiek en interventies 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Blaeser Lies",
+   "Vanspauwen Carl",
+   "Matthys Karel"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0784N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0789",
+  "name":"Stage 3 VIA - A",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0789N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0790",
+  "name":"Stage 3 VIA - B",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0790N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0793",
+  "name":"Module moeder en kind",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0793N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0794",
+  "name":"Stage 1 IPSO",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Proost Lien",
+   "Lauryssen Marissa",
+   "Van Grunderbeek Sophie",
+   "Pede Kim",
+   "Bal Veerle"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0794N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0805",
+  "name":"Verpleegkunde voor pediatrische zorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Snoeckx Dominique",
+   "Pede Kim"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0805N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0814",
+  "name":"Stage 4 VPK (A)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Stappaerts Lio",
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0814N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0815",
+  "name":"Stage 4 VPK (B)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Stappaerts Lio",
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0815N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0820",
+  "name":"Stage 1 brug VT",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0820N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0826",
+  "name":"Stage 2 IPSO (A)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0826N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0827",
+  "name":"Stage 2 IPSO (B)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Stappaerts Lio",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0827N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0832",
+  "name":"Stage 4 VIA (A)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0832N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0833",
+  "name":"Stage 4 VIA (B)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0833N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0834",
+  "name":"Stage 4 VIA (C)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0834N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0853",
+  "name":"Stage 3 IPSO\/A",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0853N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0854",
+  "name":"Stage 3 IPSO\/B",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0854N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0855",
+  "name":"Stage 3 IPSO\/C",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0855N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0857",
+  "name":"Stage 1VIA",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0857N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0865",
+  "name":"Stage 2 brug VT",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0865N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0880",
+  "name":"Lange stage",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Stappaerts Lio",
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0880N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0881",
+  "name":"Korte stage",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Stappaerts Lio",
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0881N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YG0883",
+  "name":"Stage 3 brug VT",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lauryssen Marissa",
+   "Bal Veerle",
+   "Van Grunderbeek Sophie"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YG0883N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"YO0478",
+  "name":"Intercultural Insights Asia",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Govaerts Wim"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YO0478N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -650,76 +1863,9 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YP0505",
-  "name":"Global Classroom",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Burgelman Filip"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YP0505N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Communication",
-   "Management"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YR0433",
-  "name":"Video- en audioproductietechnieken",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Rumes Tom"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YR0433N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Communication"
-  ],
-  "themes":[
    "energy"
   ],
   "dedicated":0
- },
- {
-  "id":"YT0409",
-  "name":"Project: klimatisering",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "De Nies Geert"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YT0409N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":1
  },
  {
   "id":"YT0487",
@@ -740,21 +1886,22 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "building"
   ],
   "dedicated":0
  },
  {
-  "id":"YT0623",
-  "name":"Ontwerpmethodiek",
+  "id":"YT0547",
+  "name":"Industri\u00eble elektriciteit",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Mingneau Jeroen"
+   "Jacobs Marc",
+   "De Coster Jo"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YT0623N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YT0547N.htm",
   "cycles":[
    "bac"
   ],
@@ -762,7 +1909,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -784,7 +1931,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -830,6 +1977,7 @@
    "Engineering"
   ],
   "themes":[
+   "climate",
    "energy"
   ],
   "dedicated":1
@@ -857,6 +2005,30 @@
   "dedicated":0
  },
  {
+  "id":"YT0829",
+  "name":"Verbrandingssytemen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Versonnen Daan",
+   "Pecqueur Mark"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YT0829N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution",
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"YT0943",
   "name":"Energiedragers en accumulatoren",
   "year":"2022-2023",
@@ -874,7 +2046,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "dedicated":1
  },
@@ -920,22 +2092,21 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"YV1134",
-  "name":"Eindstage A",
+  "id":"YV0983",
+  "name":"Biodiversiteit",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Goovaerts Inge"
+   "Gijbels Pieter"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1134N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV0983N.htm",
   "cycles":[
    "bac"
   ],
@@ -944,21 +2115,22 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
-  "dedicated":0
+  "dedicated":1
  },
  {
-  "id":"YV1148",
-  "name":"Eindstage B",
+  "id":"YV1120",
+  "name":"Leraar in ontwikkeling 3",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Goovaerts Inge"
+   "Steenackers Kimberly",
+   "Vandormael Astrid"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1148N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1120N.htm",
   "cycles":[
    "bac"
   ],
@@ -967,22 +2139,21 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "dedicated":0
  },
  {
-  "id":"YV1164",
-  "name":"Eindstage A",
+  "id":"YV1154",
+  "name":"Leraar in ontwikkeling 3",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Walschap Annelies",
-   "De Jonge Barbara"
+   "Steenackers Kimberly"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1164N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1154N.htm",
   "cycles":[
    "bac"
   ],
@@ -991,78 +2162,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YV1165",
-  "name":"Eindstage E",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Walschap Annelies",
-   "De Jonge Barbara"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1165N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YV1170",
-  "name":"Eindstage B",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Walschap Annelies",
-   "De Jonge Barbara"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1170N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YV1174",
-  "name":"Eindstage D",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Walschap Annelies"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1174N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
+   "energy"
   ],
   "dedicated":0
  },
@@ -1085,7 +2185,8 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -1109,7 +2210,8 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -1132,7 +2234,8 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1156,53 +2259,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YV1274",
-  "name":"Eindstage C",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Walschap Annelies"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1274N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YV1275",
-  "name":"Eindstage F",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Walschap Annelies"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YV1275N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -1225,7 +2282,8 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1248,21 +2306,22 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"YX0460",
-  "name":"Computersystemen",
+  "id":"YX0008",
+  "name":"Sector- en beroepsexploratie 2",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Moens Bert"
+   "Verstraete Jan"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YX0460N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YX0008N.htm",
   "cycles":[
    "grad"
   ],
@@ -1270,22 +2329,21 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"YX0471",
-  "name":"Veiligheid, Kwaliteit en Milieu",
+  "id":"YX0772",
+  "name":"Werkplekleren 5: Voertuigtechnische interventies",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "De Richter Lars",
-   "Aerts Jan"
+   "Luyten Joey"
   ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YX0471N.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YX0772N.htm",
   "cycles":[
    "grad"
   ],
@@ -1293,10 +2351,32 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "resources"
+   "transport"
   ],
-  "dedicated":1
+  "dedicated":0
+ },
+ {
+  "id":"YX0819",
+  "name":"Port Terminals",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Janssens Kris"
+  ],
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YX0819N.htm",
+  "cycles":[
+   "grad"
+  ],
+  "fields":[
+   "Communication",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"YX1039",
@@ -1317,31 +2397,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"YX1127",
-  "name":"Transport Management Advanced",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Janssens Kris"
-  ],
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/syllabi\/n\/YX1127N.htm",
-  "cycles":[
-   "grad"
-  ],
-  "fields":[
-   "Communication",
-   "Management"
-  ],
-  "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1364,7 +2420,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  }
