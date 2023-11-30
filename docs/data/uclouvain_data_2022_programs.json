@@ -24,30 +24,54 @@
    "Communication"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   6,
-   3,
+   2,
    1,
-   3
+   9,
+   1,
+   2,
+   1,
+   17,
+   2,
+   1
   ],
   "matched_courses":[
+   "LADPU2005",
    "LADPU2225",
+   "LASI2303",
+   "LBRAT2103",
    "LDEMO2610",
+   "LDROP2061",
    "LDVLP2325",
    "LDVLP2626",
+   "LDVLP2640",
    "LDVLP2675",
    "LECON2352",
+   "LENVI2006",
    "LENVI2010",
+   "LENVI2011",
    "LEUSL2031",
-   "LEUSL2310"
+   "LEUSL2112",
+   "LEUSL2310",
+   "LEUSL2717",
+   "LFILO1220",
+   "LFILO2003",
+   "LFILO2003E",
+   "LSOC2091",
+   "LTHEO2262"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":23,
   "nb_total_courses":133
  },
  {
@@ -73,35 +97,80 @@
    "Communication"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   5,
-   6,
+   1,
+   8,
+   3,
+   1,
+   16,
    2,
-   10
+   1
   ],
   "matched_courses":[
    "LANTR2010",
+   "LANTR2055",
    "LANTR2090",
+   "LANTR2100",
    "LBIR1230A",
+   "LBRAT2103",
+   "LDROI1309",
    "LDROI1503",
    "LDVLP2315",
    "LDVLP2325",
    "LDVLP2675",
    "LECON2351",
    "LENVI2005",
+   "LENVI2006",
    "LENVI2010",
    "LENVI2101",
    "LGEO2110",
    "LGERM2726"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":13,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":18,
   "nb_total_courses":103
+ },
+ {
+  "id":"APHM2M",
+  "name":"Master [120] en administration publique (horaire d\u00e9cal\u00e9)",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-aphm2m",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MSPHD2109"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":25
  },
  {
   "id":"APPBIOL",
@@ -124,27 +193,31 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   5,
    1,
-   6,
-   2,
+   10,
    2
   ],
   "matched_courses":[
+   "LBIO1216",
    "LBIO1252",
+   "LBIO1253",
+   "LBIO1281",
    "LBIO1315",
    "LBIO1348",
    "LBIO1356",
+   "LBIO1357",
    "LBIR1230A",
    "LBRAI2220A",
    "LGEO1332A"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":11,
   "nb_total_courses":24
  },
  {
@@ -168,17 +241,20 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "LCHM1311"
+   "LCHM1311",
+   "LESPO2100"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":8
  },
  {
@@ -201,9 +277,9 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
@@ -243,11 +319,13 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1,
@@ -258,6 +336,42 @@
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
+  "nb_total_courses":9
+ },
+ {
+  "id":"APPEDPH",
+  "name":"Approfondissement en sciences de la motricit\u00e9",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-appedph",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences de la motricit\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "transport"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   2
+  ],
+  "matched_courses":[
+   "LEDPH1033",
+   "LEDPH1052",
+   "LEDPH1053"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
   "nb_total_courses":9
  },
  {
@@ -281,21 +395,26 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2,
-   2,
-   2
+   3,
+   1,
+   3,
+   1,
+   1
   ],
   "matched_courses":[
    "LBIR1230",
+   "LBIR1270",
    "LBIR1328",
    "LBIR1336"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":15
  },
  {
@@ -318,9 +437,11 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -348,7 +469,7 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "themes_scores":[
    1
@@ -380,7 +501,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -411,21 +532,28 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "general",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   2,
+   1,
+   3,
+   2,
+   1,
    4,
    2,
-   3,
-   1,
-   3
+   1
   ],
   "matched_courses":[
    "LBARC1142",
+   "LBARC1260",
    "LBARC1307",
    "LBARC1340",
    "LBARC1347",
@@ -433,7 +561,7 @@
    "LBARC1366"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":6,
+  "nb_matched_courses":7,
   "nb_total_courses":47
  },
  {
@@ -455,29 +583,44 @@
    "Architecture"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "general",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   5,
+   5,
+   4,
+   3,
    1,
-   3,
-   3,
-   3,
-   4
+   13,
+   2,
+   2
   ],
   "matched_courses":[
    "LBARC2060",
    "LBARC2061",
+   "LBARC2101",
+   "LBARC2130",
+   "LBARC2131",
    "LBARC2141",
+   "LBARC2144",
    "LBARC2147",
+   "LBARC2186",
+   "LBARC2201",
+   "LBARC2232",
    "LBARC2236",
-   "LICAR2801I"
+   "LICAR2801I",
+   "LTARC2046",
+   "LURBA2940I"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":15,
   "nb_total_courses":79
  },
  {
@@ -502,20 +645,24 @@
    "Architecture"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
+   2,
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "LICAR1605"
+   "LICAR1605",
+   "LICAR1606",
+   "LICAR1801"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":55
  },
  {
@@ -537,26 +684,36 @@
    "Architecture"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   8,
    1,
-   1,
-   1,
-   1,
+   3,
+   7,
    1
   ],
   "matched_courses":[
+   "LGCIV2052",
    "LGCIV2056",
-   "LICAR2603",
-   "LICAR2801"
+   "LICAR2102",
+   "LICAR2301",
+   "LICAR2303",
+   "LICAR2312",
+   "LICAR2801",
+   "LICAR2823",
+   "LICAR2831",
+   "LICAR2901",
+   "LICAR2902",
+   "LURBA2940",
+   "LURBA2950"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":13,
   "nb_total_courses":43
  },
  {
@@ -578,29 +735,37 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "general",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   3,
-   2,
-   3,
+   4,
    1,
-   3
+   1,
+   2,
+   1,
+   4,
+   2,
+   1
   ],
   "matched_courses":[
    "LBARC1347",
    "LBARC1366",
    "LTARC1142",
    "LTARC1250",
+   "LTARC1251",
+   "LTARC1260",
    "LTARC1340",
    "LTARC1360"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_matched_courses":8,
   "nb_total_courses":49
  },
  {
@@ -622,30 +787,75 @@
    "Architecture"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   6,
+   3,
    1,
    3,
+   9,
    2,
-   3,
-   5
+   2
   ],
   "matched_courses":[
    "LBARC2060",
    "LBARC2061",
+   "LBARC2144",
    "LBARC2147",
+   "LBARC2186",
    "LICAR2801I",
+   "LTARC2046",
    "LTARC2140",
-   "LTARC2160"
+   "LTARC2142",
+   "LTARC2160",
+   "LTARC2231",
+   "LURBA2940I"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":12,
   "nb_total_courses":66
+ },
+ {
+  "id":"ARKE1BA",
+  "name":"Bachelier en histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-arke1ba",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LTECO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":60
  },
  {
   "id":"ARKE2M",
@@ -668,20 +878,19 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
-   "LARKO2232"
+   "LARKO2232",
+   "LHAGI2530"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":84
  },
  {
@@ -705,20 +914,20 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   1,
-   1
+   2,
+   3
   ],
   "matched_courses":[
-   "LARKO2232"
+   "LARKO2232",
+   "LFIAL2010",
+   "LHAGI2530"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":87
  },
  {
@@ -741,17 +950,21 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   3,
    2
   ],
   "matched_courses":[
    "LBBMC2107",
-   "LBRTE2201"
+   "LBRTE2201",
+   "LCHM2280",
+   "LFILO2003E"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":90
  },
  {
@@ -775,22 +988,29 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   3,
+   10,
    1
   ],
   "matched_courses":[
    "LBIO1110",
    "LBIO1117",
+   "LBIO1213",
+   "LBIO1217",
+   "LBIO1242",
    "LBIO1310",
+   "LBIO1311",
+   "LBIO1317",
+   "LBIO1344",
+   "LBIO1355",
    "LBIR1130"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":11,
   "nb_total_courses":47
  },
  {
@@ -813,31 +1033,43 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   12,
    1,
-   2
+   17,
+   5,
+   1
   ],
   "matched_courses":[
+   "ESBOE2108",
+   "ESBOE2123",
    "ESBOE2162",
    "ESBOE2163",
    "ESBOE2238",
    "LBBMC2107",
+   "LBIRF2104A",
+   "LBOE2109",
    "LBOE2111",
+   "LBOE2112",
    "LBOE2120",
+   "LBOE2124",
    "LBOE2125",
    "LBOE2140",
    "LBOE2141",
+   "LBOE2160",
    "LBOE2161",
    "LBOE2165",
-   "LBOE2185"
+   "LBOE2166",
+   "LBOE2168",
+   "LBOE2185",
+   "LFILO2003E"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":12,
+  "nb_dedicated_courses":12,
+  "nb_matched_courses":22,
   "nb_total_courses":46
  },
  {
@@ -861,31 +1093,40 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   6,
    4,
+   12,
    2,
-   5,
    1,
-   2
+   1
   ],
   "matched_courses":[
+   "LANGL1881",
    "LANGL1882",
+   "LBIR1121",
    "LBIR1130",
    "LBIR1140",
+   "LBIR1150",
    "LBIR1230",
+   "LBIR1260",
+   "LBIR1270",
    "LBIR1325A",
    "LBIR1328",
    "LBIR1328A",
    "LBIR1336",
    "LBIR1336B",
-   "LBIR1354"
+   "LBIR1353",
+   "LBIR1354",
+   "LBIR1362"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":10,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":17,
   "nb_total_courses":49
  },
  {
@@ -907,30 +1148,47 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   5,
-   5,
-   13,
-   4,
-   11
+   3,
+   3,
+   9,
+   1,
+   8,
+   7,
+   28,
+   3,
+   1,
+   5
   ],
   "matched_courses":[
    "LBIR1230",
    "LBIR1325A",
    "LBIR1328A",
    "LBIR1336B",
+   "LBIR1353",
    "LBIR1354",
+   "LBIR1362",
    "LBIRA2105",
    "LBIRA2107",
+   "LBIRA2108A",
    "LBIRA2108B",
    "LBIRA2109",
+   "LBIRA2111",
+   "LBIRC2109A",
+   "LBIRE2102",
    "LBIRE2131",
+   "LBIRE2234",
    "LBIRE2235",
    "LBRAI2106",
    "LBRAI2110",
@@ -938,9 +1196,17 @@
    "LBRAI2220",
    "LBRAI2220A",
    "LBRAI2221",
+   "LBRAT2104A",
+   "LBRAT2104B",
+   "LBRES2101",
+   "LBRES2101B",
+   "LBRES2105",
    "LBRES2203",
    "LBRES2204",
+   "LBRPP2102",
+   "LBRPP2211",
    "LBRTE2201",
+   "LBRTI2102",
    "LDVLP2675",
    "LENVI2007A",
    "LEPL1804",
@@ -948,8 +1214,8 @@
    "LGEO2110B",
    "LPHYS2162"
   ],
-  "nb_dedicated_courses":9,
-  "nb_matched_courses":26,
+  "nb_dedicated_courses":11,
+  "nb_matched_courses":41,
   "nb_total_courses":109
  },
  {
@@ -971,41 +1237,59 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   5,
-   5,
+   4,
+   6,
+   1,
+   6,
+   1,
+   14,
    7,
-   5,
-   7
+   3,
+   8,
+   1
   ],
   "matched_courses":[
    "LBIR1130",
    "LBIR1325A",
    "LBIR1336",
+   "LBIR1362",
+   "LBIRC2109",
    "LBIRE2131",
+   "LBIRE2234",
    "LBIRE2235",
+   "LBRES2101",
    "LBRES2102",
+   "LBRNA2201",
    "LBRTE2101",
    "LBRTE2201",
+   "LBRTI2102",
    "LENVI2007A",
    "LEPL1804",
    "LGCIV2073",
+   "LGEO2130",
    "LMAPR2001",
    "LMAPR2001A",
    "LMAPR2016",
    "LMAPR2430",
    "LMAPR2647",
+   "LMECA2325",
    "LPHYS2162",
    "LPHYS2267"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":18,
+  "nb_dedicated_courses":9,
+  "nb_matched_courses":26,
   "nb_total_courses":120
  },
  {
@@ -1027,47 +1311,79 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   7,
+   3,
    5,
+   2,
+   8,
    4,
-   14,
+   26,
+   8,
    5,
    10
   ],
   "matched_courses":[
+   "LBIR1260",
    "LBIR1325A",
    "LBIR1328",
    "LBIR1336",
    "LBIR1354",
+   "LBIR1362",
    "LBIRA2105",
    "LBIRA2109",
+   "LBIRC2109",
+   "LBIRC2109A",
+   "LBIRE2102",
+   "LBIRE2104",
    "LBIRE2105",
    "LBIRE2130",
    "LBIRE2131",
+   "LBIRE2231",
+   "LBIRE2233",
+   "LBIRE2234",
    "LBIRE2235",
    "LBIRF2106A",
+   "LBIRF2213",
    "LBOE2120",
    "LBRAT2101",
+   "LBRAT2103",
+   "LBRAT2104A",
+   "LBRAT2104B",
+   "LBRES2101",
+   "LBRES2101B",
    "LBRES2102",
+   "LBRES2105",
    "LBRES2203",
    "LBRES2204",
+   "LBRES2218",
+   "LBRES2218A",
    "LBRTE2101",
+   "LBRTE2102",
    "LBRTE2201",
+   "LBRTI2102",
    "LELME2420",
    "LENVI2007A",
+   "LENVI2011",
    "LEPL1804",
    "LGCIV2073",
+   "LICAR2901A",
    "LMAPR2001A",
    "LPHYS2162"
   ],
-  "nb_dedicated_courses":9,
-  "nb_matched_courses":24,
+  "nb_dedicated_courses":15,
+  "nb_matched_courses":46,
   "nb_total_courses":92
  },
  {
@@ -1089,46 +1405,72 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   3,
-   2,
-   13,
+   7,
+   1,
+   4,
+   1,
+   4,
    5,
-   9
+   29,
+   4,
+   1,
+   6
   ],
   "matched_courses":[
+   "LBIR1260",
    "LBIR1325A",
    "LBIR1328",
    "LBIR1336",
    "LBIR1354",
+   "LBIR1362",
    "LBIRA2109",
+   "LBIRE2102",
+   "LBIRE2104",
    "LBIRE2105",
    "LBIRE2130",
    "LBIRE2131",
+   "LBIRE2234",
    "LBIRE2235",
    "LBIRF2102",
    "LBIRF2104",
+   "LBIRF2105",
    "LBIRF2106",
    "LBIRF2201",
    "LBIRF2202",
    "LBIRF2203",
+   "LBIRF2213",
+   "LBOE2122",
    "LBRAI2110",
    "LBRAI2220",
    "LBRAT2101B",
    "LBRAT2101C",
+   "LBRAT2103",
+   "LBRAT2104A",
+   "LBRES2101",
+   "LBRES2101B",
+   "LBRES2105",
    "LBRES2203",
    "LBRES2204",
    "LBRTE2101",
-   "LDVLP2675"
+   "LBRTI2102",
+   "LDVLP2675",
+   "LENVI2011",
+   "LICAR2901A"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":23,
+  "nb_dedicated_courses":10,
+  "nb_matched_courses":39,
   "nb_total_courses":77
  },
  {
@@ -1151,42 +1493,65 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   3,
-   20,
-   3,
-   3
+   4,
+   7,
+   1,
+   34,
+   10,
+   2
   ],
   "matched_courses":[
+   "EBIOE2002",
+   "ESBOE2108",
+   "ESBOE2123",
    "ESBOE2162",
    "ESBOE2163",
+   "ESBOE2237",
    "ESBOE2238",
    "LBIR1328",
    "LBIR1336",
+   "LBIR1362",
+   "LBIRE2102",
    "LBIRE2105",
+   "LBOE2109",
    "LBOE2111",
+   "LBOE2112",
    "LBOE2120",
+   "LBOE2122",
+   "LBOE2124",
    "LBOE2125",
    "LBOE2140",
    "LBOE2141",
    "LBOE2143",
    "LBOE2148",
    "LBOE2150",
+   "LBOE2160",
    "LBOE2161",
    "LBOE2165",
+   "LBOE2166",
+   "LBOE2168",
    "LBOE2185",
    "LBOE2191",
+   "LBOE2292",
    "LBRAT2101",
+   "LDROP2061",
    "LDROP2063",
-   "LGEO2140"
+   "LENVI2011",
+   "LFILO2003E",
+   "LGEO1343",
+   "LGEO2140",
+   "LGEOL2401"
   ],
-  "nb_dedicated_courses":10,
-  "nb_matched_courses":21,
+  "nb_dedicated_courses":22,
+  "nb_matched_courses":40,
   "nb_total_courses":118
  },
  {
@@ -1209,20 +1574,21 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   2,
-   1
+   1,
+   3
   ],
   "matched_courses":[
    "LBIO1110",
    "LBIO1114",
-   "LBRAI2220A"
+   "LBRAI2220A",
+   "LFILO2003E"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":78
  },
  {
@@ -1246,11 +1612,11 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
    "LBIO1110",
@@ -1281,22 +1647,32 @@
   ],
   "themes":[
    "climate",
-   "environment",
+   "energy",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources"
   ],
   "themes_scores":[
    1,
+   1,
+   6,
    3,
+   1,
    1
   ],
   "matched_courses":[
+   "LBIR1362",
    "LCHM1311",
    "LCHM2140",
+   "LCHM2246",
+   "LCHM2280",
    "LEPL1803",
+   "LFILO2003E",
    "LMAPR2016"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":8,
   "nb_total_courses":81
  },
  {
@@ -1320,19 +1696,62 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "energy",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
    1,
-   2
+   1,
+   4,
+   2,
+   1
   ],
   "matched_courses":[
    "LCHM1311",
-   "LCHM2140"
+   "LCHM2140",
+   "LCHM2245",
+   "LCHM2246",
+   "LFILO2003E"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":36
+ },
+ {
+  "id":"CLAS2M",
+  "name":"Master [120] en langues et lettres anciennes, orientation classiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-clas2m",
+  "languages":[
+   "en",
+   "fr",
+   "gr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LGREC1500"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":71
  },
  {
   "id":"CLIM2M",
@@ -1354,23 +1773,24 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   9,
-   1,
-   5,
    2,
-   2
+   15,
+   1,
+   9
   ],
   "matched_courses":[
    "LCLIM2011",
    "LCLIM2020",
+   "LCLIM2170",
+   "LCLIM2270",
    "LENVI2005",
+   "LFILO2003E",
    "LGEO1321",
    "LGEO1332",
    "LGEO2110",
@@ -1378,53 +1798,20 @@
    "LGEO2140",
    "LGEO2210",
    "LGEO2230",
+   "LGEO2250",
    "LGEO2290",
+   "LPHY1365",
    "LPHYS2162",
    "LPHYS2163",
+   "LPHYS2264",
    "LPHYS2265",
    "LPHYS2267",
-   "LPHYS2268"
+   "LPHYS2268",
+   "LULBG2410"
   ],
-  "nb_dedicated_courses":10,
-  "nb_matched_courses":16,
+  "nb_dedicated_courses":14,
+  "nb_matched_courses":23,
   "nb_total_courses":48
- },
- {
-  "id":"COHM2M",
-  "name":"Master [120] en communication (horaire d\u00e9cal\u00e9)",
-  "cycle":"master",
-  "url":"https:\/\/uclouvain.be\/prog-2022-cohm2m",
-  "languages":[
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Mons"
-  ],
-  "faculties":[
-   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
-  ],
-  "fields":[
-   "Sociology",
-   "Political Sciences",
-   "Economy",
-   "Management",
-   "Communication"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "MGEHD2120"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":35
  },
  {
   "id":"COMM1BA",
@@ -1451,22 +1838,25 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   1,
    2,
-   2
+   4,
+   1
   ],
   "matched_courses":[
    "MESPA1237",
+   "MGEST1108",
    "MGEST1324",
+   "MSHUM1114",
+   "MSPOL1104",
    "MSPOL1204"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":46
  },
  {
@@ -1495,17 +1885,98 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LCOMU2221",
+   "MSPRI2160"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":87
+ },
+ {
+  "id":"COMU1BA",
+  "name":"Bachelier en information et communication",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-comu1ba",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "gr",
+   "it",
+   "nl",
+   "pt",
+   "ru"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "MSPRI2160"
+   "LCOMU1126"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":87
+  "nb_total_courses":73
+ },
+ {
+  "id":"COMU2M1",
+  "name":"Master [60] en information et communication",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-comu2m1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LCOMU1126",
+   "LCOMU2221"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":53
  },
  {
   "id":"CORP2M",
@@ -1532,17 +2003,127 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   2,
+   3
+  ],
+  "matched_courses":[
+   "LCOMU1126",
+   "LCOMU2221",
+   "LGERM2726",
+   "LSEXM2810"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":103
+ },
+ {
+  "id":"DATE2M",
+  "name":"Master [120] : ing\u00e9nieur civil en science des donn\u00e9es",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-date2m",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "LDATE2990",
+   "MGEST1108"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":96
+ },
+ {
+  "id":"DATI2M",
+  "name":"Master [120] en science des donn\u00e9es, orientation technologies de l'information",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-dati2m",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "MGEST1108"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":96
+ },
+ {
+  "id":"DATS2M",
+  "name":"Master [120] en science des donn\u00e9es, orientation statistique",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-dats2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LGERM2726"
+   "LFILO2003E"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":103
+  "nb_total_courses":69
  },
  {
   "id":"DREU2MC",
@@ -1563,16 +2144,19 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability"
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "LDREU2207"
+   "LDREU2207",
+   "LDROP2093"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":36
  },
  {
@@ -1595,17 +2179,91 @@
    "Law & Criminology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   4,
+   1
+  ],
+  "matched_courses":[
+   "LDRHD2201",
+   "LDROI1309",
+   "LDROP2061",
+   "LDROP2063",
+   "LDROP2093"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":5,
+  "nb_total_courses":92
+ },
+ {
+  "id":"DRIN2MC",
+  "name":"Master de sp\u00e9cialisation en droit international",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-drin2mc",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit et de criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "pollution"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LDROP2063"
+   "LDROP2093"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":92
+  "nb_total_courses":19
+ },
+ {
+  "id":"DROI1BA",
+  "name":"Bachelier en droit",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-droi1ba",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit et de criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LDROI1309"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":45
  },
  {
   "id":"DROI2M",
@@ -1627,21 +2285,58 @@
    "Law & Criminology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
+   2,
+   3,
    1,
-   2
+   1
   ],
   "matched_courses":[
    "LDREU2207",
+   "LDROI1309",
+   "LDROP2061",
    "LDROP2063",
-   "LLSMS2397"
+   "LDROP2093"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":147
+ },
+ {
+  "id":"EBEP2MC",
+  "name":"Master de sp\u00e9cialisation en entreprises et politiques \u00e9conomiques europ\u00e9ennes",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-ebep2mc",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Louvain School of Management"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LEUSL2112"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":17
  },
  {
   "id":"ECON2M",
@@ -1668,18 +2363,24 @@
    "Communication"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
    1,
-   7,
    3,
-   6
+   3,
+   2,
+   1,
+   8,
+   5,
+   1
   ],
   "matched_courses":[
    "LECGE1323",
@@ -1692,10 +2393,11 @@
    "LECSO2320",
    "LECSO2330",
    "LESPO2103",
-   "LESPO2104"
+   "LESPO2104",
+   "LTRAV2720"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":11,
+  "nb_matched_courses":12,
   "nb_total_courses":163
  },
  {
@@ -1722,17 +2424,21 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   1,
-   1,
-   7,
+   2,
    3,
-   6
+   2,
+   1,
+   8,
+   4,
+   1
   ],
   "matched_courses":[
    "LECGE1323",
@@ -1743,10 +2449,11 @@
    "LECSO2320",
    "LECSO2330",
    "LESPO2103",
-   "LESPO2104"
+   "LESPO2104",
+   "LTRAV2720"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":9,
+  "nb_matched_courses":10,
   "nb_total_courses":83
  },
  {
@@ -1771,11 +2478,11 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "themes_scores":[
-   2,
+   1,
    4
   ],
   "matched_courses":[
@@ -1787,6 +2494,69 @@
   "nb_dedicated_courses":2,
   "nb_matched_courses":4,
   "nb_total_courses":12
+ },
+ {
+  "id":"EDPH1BA",
+  "name":"Bachelier en sciences de la motricit\u00e9, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-edph1ba",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences de la motricit\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LEDPH1028"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":45
+ },
+ {
+  "id":"EDPH2M",
+  "name":"Master [120] en sciences de la motricit\u00e9, orientation \u00e9ducation physique",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-edph2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences de la motricit\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LEDPH1028"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":80
  },
  {
   "id":"EJL2M",
@@ -1813,16 +2583,21 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   2,
+   3
   ],
   "matched_courses":[
-   "LGERM2726"
+   "LCOMU1126",
+   "LCOMU2221",
+   "LGERM2726",
+   "LSEXM2810"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":101
  },
  {
@@ -1847,21 +2622,23 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy",
-   "resources"
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
    1,
    3,
-   2
+   3,
+   1
   ],
   "matched_courses":[
-   "LELEC2102",
-   "LELEC2103",
    "LELEC2520",
    "LELEC2753",
-   "LENVI2007"
+   "LELEC2990",
+   "LENVI2007",
+   "MGEST1108"
   ],
   "nb_dedicated_courses":1,
   "nb_matched_courses":5,
@@ -1889,29 +2666,36 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
-   3,
+   2,
+   7,
    5,
-   3,
-   2
+   2,
+   1,
+   1
   ],
   "matched_courses":[
    "LELEC2520",
    "LELEC2753",
    "LELME2420",
+   "LELME2990",
    "LENVI2007",
    "LINMA2415",
    "LINMA2510",
    "LMAPR2483",
-   "LMECA2322"
+   "LMECA2325",
+   "LMECA2600",
+   "MGEST1108"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":8,
+  "nb_matched_courses":11,
   "nb_total_courses":105
  },
  {
@@ -1933,42 +2717,66 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   7,
    4,
-   20,
+   2,
    8,
-   11
+   2,
+   5,
+   2,
+   36,
+   7,
+   3,
+   6
   ],
   "matched_courses":[
    "LADPU2225",
+   "LANGL1881",
    "LANGL1882",
    "LBIO1114",
    "LBIO1117",
+   "LBIO1217",
    "LBIR1140",
+   "LBIR1260",
    "LBIR1328",
    "LBIR1354",
+   "LBIR1362",
    "LBIRA2109",
+   "LBIRE2102",
    "LBIRE2105",
    "LBOE2120",
+   "LBOE2166",
+   "LBOE2292",
    "LBRAT2101",
+   "LBRAT2103",
    "LBRTE2201",
    "LDEMO2610",
+   "LDROP2061",
    "LDROP2063",
    "LENVI2002",
    "LENVI2005",
+   "LENVI2006",
    "LENVI2007",
    "LENVI2010",
+   "LENVI2011",
    "LENVI2012",
+   "LENVI2099",
    "LENVI2101",
+   "LENVI2199",
    "LESPO2103",
    "LGCIV2073",
+   "LGEO1343",
    "LGEO2110",
    "LGEO2120",
    "LGEO2210",
@@ -1979,8 +2787,8 @@
    "LMAPR2647",
    "LPHYS2162"
   ],
-  "nb_dedicated_courses":16,
-  "nb_matched_courses":31,
+  "nb_dedicated_courses":22,
+  "nb_matched_courses":45,
   "nb_total_courses":79
  },
  {
@@ -2002,9 +2810,11 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -2038,18 +2848,26 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   1
+   3,
+   6,
+   2
   ],
   "matched_courses":[
+   "LDROI1309",
    "LECON2067",
-   "LFILO2362"
+   "LESPO2100",
+   "LFILO1140",
+   "LFILO2003",
+   "LFILO2362",
+   "LPSYS2206",
+   "LTHEO2262"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":8,
   "nb_total_courses":28
  },
  {
@@ -2074,24 +2892,31 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   3,
-   2,
-   1
+   5,
+   10,
+   2
   ],
   "matched_courses":[
    "LECON2067",
+   "LFIAL2010",
+   "LFILO1140",
+   "LFILO1220",
+   "LFILO2003",
    "LFILO2192",
    "LFILO2233",
    "LFILO2362",
+   "LFILO2801",
    "LFILO2920",
-   "LGERM2726"
+   "LGERM2726",
+   "LPSYS2206",
+   "LSEXM2810"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":6,
+  "nb_matched_courses":13,
   "nb_total_courses":92
  },
  {
@@ -2118,14 +2943,16 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
    1,
-   2,
    1,
+   2,
+   2,
    1
   ],
   "matched_courses":[
@@ -2162,21 +2989,21 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
-   1,
-   2
+   3,
+   3
   ],
   "matched_courses":[
    "LADPU2225",
    "LEUSL2031",
-   "LEUSL2310"
+   "LEUSL2112",
+   "LEUSL2310",
+   "LEUSL2717"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":61
  },
  {
@@ -2198,7 +3025,7 @@
    "Pharmacy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -2229,19 +3056,16 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
-   1,
-   2
+   1
   ],
   "matched_courses":[
-   "MGEHC2113",
-   "MGEHD2120"
+   "MGEHC2113"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":31
  },
  {
@@ -2266,10 +3090,10 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   3,
+   4,
    1
   ],
   "matched_courses":[
@@ -2281,6 +3105,36 @@
   "nb_dedicated_courses":1,
   "nb_matched_courses":4,
   "nb_total_courses":26
+ },
+ {
+  "id":"FILMECA",
+  "name":"Fili\u00e8re en M\u00e9canique",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-filmeca",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LMECA1855"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":6
  },
  {
   "id":"FILO1BA",
@@ -2305,19 +3159,23 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
+   5,
    1
   ],
   "matched_courses":[
    "LDROI1503",
-   "LFILO1310"
+   "LFILO1140",
+   "LFILO1220",
+   "LFILO1310",
+   "LPPE1101",
+   "LTECO1220"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":6,
   "nb_total_courses":46
  },
  {
@@ -2342,23 +3200,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   3,
-   1,
+   6,
+   9,
    1
   ],
   "matched_courses":[
+   "LFIAL2010",
+   "LFILO1140",
+   "LFILO1220",
+   "LFILO2003",
    "LFILO2192",
    "LFILO2233",
    "LFILO2362",
+   "LFILO2801",
    "LFILO2920",
-   "LGERM2726"
+   "LGERM2726",
+   "LSEXM2810",
+   "LTHEO2262"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":12,
   "nb_total_courses":122
  },
  {
@@ -2383,20 +3248,93 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   2,
+   3,
+   4
+  ],
+  "matched_courses":[
+   "LFILO1140",
+   "LFILO1220",
+   "LFILO2192",
+   "LFILO2233",
+   "LFILO2362",
+   "LFILO2801"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":6,
+  "nb_total_courses":39
+ },
+ {
+  "id":"FILO9CE",
+  "name":"Certificat universitaire en philosophie (fondements)",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2022-filo9ce",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LFILO1140",
+   "LFILO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":14
+ },
+ {
+  "id":"FLE2M",
+  "name":"Master [120] en langues et lettres fran\u00e7aises et romanes, orientation fran\u00e7ais langue \u00e9trang\u00e8re",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-fle2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   3,
    1
   ],
   "matched_courses":[
-   "LFILO2192",
-   "LFILO2233",
-   "LFILO2362"
+   "LANTR2100",
+   "LCOMU2221",
+   "LFIAL2010"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":0,
   "nb_matched_courses":3,
-  "nb_total_courses":39
+  "nb_total_courses":114
  },
  {
   "id":"FOPA2M",
@@ -2418,16 +3356,18 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
-   "LFOPA2611"
+   "LFOPA2006",
+   "LFOPA2611",
+   "LPSYS2206"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":77
  },
  {
@@ -2452,26 +3392,29 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
    1,
    2,
+   4,
    2
   ],
   "matched_courses":[
    "LEPL1505",
+   "LEPL1801",
    "LEPL1803",
    "LEPL1804"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":46
  },
  {
@@ -2496,21 +3439,22 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   2,
+   3,
    1,
    1
   ],
   "matched_courses":[
+   "LFYAP2990",
    "LMAPR2483",
-   "LPHYS2246"
+   "MGEST1108"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":62
  },
  {
@@ -2535,25 +3479,28 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   2,
-   2,
+   5,
+   3,
    1,
    1
   ],
   "matched_courses":[
    "LBRTE2201",
+   "LGBIO2990",
    "LMAPR2016",
    "LMAPR2430",
-   "LMAPR2483"
+   "LMAPR2483",
+   "LPHYS2504",
+   "MGEST1108"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":122
  },
  {
@@ -2578,28 +3525,41 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   3,
    5,
+   3,
+   4,
+   7,
+   3,
    1,
-   3
+   2
   ],
   "matched_courses":[
    "LBIR1336",
    "LBRES2204",
+   "LGCE2990",
+   "LGCIV2052",
    "LGCIV2055",
    "LGCIV2056",
    "LGCIV2073",
    "LICAR2801",
-   "LMAPR2483"
+   "LICAR2823",
+   "LICAR2831",
+   "LICAR2901",
+   "LICAR2902",
+   "LMAPR2483",
+   "MGEST1108"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":14,
   "nb_total_courses":62
  },
  {
@@ -2622,21 +3582,18 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
    1,
-   1,
-   2
+   1
   ],
   "matched_courses":[
    "MGEHC2113",
-   "MGEHD2120",
    "MGEHD2222"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":30
  },
  {
@@ -2658,19 +3615,16 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
-   1,
-   2
+   1
   ],
   "matched_courses":[
-   "MGEHC2113",
-   "MGEHD2120"
+   "MGEHC2113"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":18
  },
  {
@@ -2692,51 +3646,17 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "MGEHD2120",
    "MGEHD2222"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
-  "nb_total_courses":30
- },
- {
-  "id":"GEHM2M1",
-  "name":"Master [60] en sciences de gestion (horaire d\u00e9cal\u00e9)",
-  "cycle":"master",
-  "url":"https:\/\/uclouvain.be\/prog-2022-gehm2m1",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Mons"
-  ],
-  "faculties":[
-   "Louvain School of Management"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "MGEHD2120"
-  ],
-  "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":18
+  "nb_total_courses":30
  },
  {
   "id":"GENR2MC",
@@ -2759,16 +3679,19 @@
    "Arts"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "LGERM2726"
+   "LGERM2726",
+   "LSEXM2810"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":66
  },
  {
@@ -2824,21 +3747,23 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1,
-   4
+   3,
+   6
   ],
   "matched_courses":[
    "LBIO1110",
    "LBIO1117",
    "LBIR1130",
    "LGEO1321",
-   "LGEO1332"
+   "LGEO1332",
+   "LGEO1343",
+   "LPHY1365"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":7,
   "nb_total_courses":39
  },
  {
@@ -2861,37 +3786,56 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   3,
+   2,
    1,
-   10,
-   3,
-   5
+   8,
+   1,
+   1,
+   22,
+   1,
+   2
   ],
   "matched_courses":[
+   "LBIO1217",
+   "LBIR1362",
    "LBIRA2109",
+   "LBIRE2102",
    "LBOE2125",
    "LBOE2140",
+   "LBOE2160",
    "LDVLP2325",
    "LENVI2005",
+   "LFILO2003E",
    "LGEO1321",
    "LGEO1332",
    "LGEO2110",
    "LGEO2120",
+   "LGEO2130",
    "LGEO2140",
    "LGEO2160",
+   "LGEO2170",
    "LGEO2210",
    "LGEO2230",
-   "LPHYS2162"
+   "LGEO2250",
+   "LGEO2270",
+   "LPHY1365",
+   "LPHYS2162",
+   "LSOC2091",
+   "LULBG2410",
+   "LURBA2950"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":14,
+  "nb_dedicated_courses":11,
+  "nb_matched_courses":27,
   "nb_total_courses":79
  },
  {
@@ -2914,28 +3858,114 @@
    "Science"
   ],
   "themes":[
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   1,
-   4,
    2,
+   1,
+   11,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LBIR1362",
+   "LFILO2003E",
+   "LGEO2110",
+   "LGEO2120",
+   "LGEO2130",
+   "LGEO2140",
+   "LGEO2160",
+   "LGEO2170",
+   "LGEO2210",
+   "LGEO2230",
+   "LGEO2250",
+   "LGEO2270"
+  ],
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":12,
+  "nb_total_courses":26
+ },
+ {
+  "id":"GEOM2FC",
+  "name":"Certificat d'universit\u00e9 : G\u00e9omatique appliqu\u00e9e",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2022-geom2fc",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des bioing\u00e9nieurs"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "food",
+   "life"
+  ],
+  "themes_scores":[
+   2,
+   1,
    2
   ],
   "matched_courses":[
-   "LGEO2110",
-   "LGEO2120",
-   "LGEO2140",
-   "LGEO2160",
-   "LGEO2210",
-   "LGEO2230"
+   "LBIRE2102",
+   "LBRAT2104",
+   "LBRES2101A"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
-  "nb_total_courses":26
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":4
+ },
+ {
+  "id":"GERM1BA",
+  "name":"Bachelier en langues et lettres modernes, orientation germaniques",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-germ1ba",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LGERM1524",
+   "LGERM1525",
+   "LTECO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":48
  },
  {
   "id":"GERM2M",
@@ -2962,19 +3992,29 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   4,
+   3,
    1
   ],
   "matched_courses":[
+   "LGERM1524",
+   "LGERM1525",
+   "LGERM2713",
+   "LGERM2716",
    "LGERM2724",
-   "LGERM2726"
+   "LGERM2726",
+   "LGERM2872",
+   "LLMOD2802"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":8,
   "nb_total_courses":115
  },
  {
@@ -3000,16 +4040,23 @@
    "Arts"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   3,
+   1,
    1
   ],
   "matched_courses":[
+   "LGERM1524",
+   "LGERM1525",
+   "LGERM2716",
    "LGERM2726"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":47
  },
  {
@@ -3034,25 +4081,36 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "economy",
+   "energy",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
-   4,
-   5
+   3,
+   1,
+   5,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
+   "MDROI1105",
    "MECON1104",
+   "MECON1312",
    "MESPA1237",
+   "MGEST1108",
    "MGEST1324",
-   "MINFO1301",
    "MSHUM1122",
+   "MSHUM1202",
    "MSHUM1303"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":6,
+  "nb_matched_courses":9,
   "nb_total_courses":42
  },
  {
@@ -3077,19 +4135,23 @@
    "Management"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
    2,
-   3
+   1,
+   3,
+   1,
+   1
   ],
   "matched_courses":[
-   "LLSMS2397",
+   "MGEST1108",
    "MLSMM2113",
    "MLSMM2253",
    "MSHUM1303"
@@ -3120,25 +4182,31 @@
    "Management"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
    3,
-   3
+   1,
+   5,
+   2,
+   2
   ],
   "matched_courses":[
+   "MGEST1108",
+   "MGEST2002",
    "MLSMM2113",
    "MLSMM2253",
    "MSHUM1303",
    "MSHUM2008"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":54
  },
  {
@@ -3164,19 +4232,16 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "LLSMS2397",
    "MLSMM2253"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":173
  },
  {
@@ -3199,17 +4264,18 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
+   "LBNEN2023",
    "LBNEN2024"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":15
  },
  {
@@ -3237,19 +4303,61 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LECON2051",
+   "LESPO2100",
+   "LTRAV2700",
+   "LTRAV2720"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":56
+ },
+ {
+  "id":"HIST1BA",
+  "name":"Bachelier en histoire",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-hist1ba",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "LECON2051",
-   "LTRAV2700"
+   "LESPO2100",
+   "LTECO1220"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
-  "nb_total_courses":56
+  "nb_total_courses":64
  },
  {
   "id":"HIST2M",
@@ -3276,18 +4384,24 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
+   4,
+   5,
    1
   ],
   "matched_courses":[
    "LDVLP2626",
-   "LGERM2726"
+   "LDVLP2640",
+   "LFIAL2010",
+   "LGERM2726",
+   "LSEXM2810",
+   "LTHEO2262"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":6,
   "nb_total_courses":192
  },
  {
@@ -3314,16 +4428,23 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   3,
+   3,
    1
   ],
   "matched_courses":[
-   "LDVLP2626"
+   "LDVLP2626",
+   "LDVLP2640",
+   "LFIAL2010",
+   "LTHEO2262"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":114
  },
  {
@@ -3350,17 +4471,60 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LASI2303",
+   "LDVLP2640",
+   "LEUSL2310",
+   "LGREC1500"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":162
+ },
+ {
+  "id":"HORI2M1",
+  "name":"Master [60] en langues et lettres anciennes, orientation orientales",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-hori2m1",
+  "languages":[
+   "ar",
+   "en",
+   "fr",
+   "gr",
+   "ru"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LEUSL2310"
+   "LGREC1500"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":162
+  "nb_total_courses":143
  },
  {
   "id":"HUSM1BA",
@@ -3387,21 +4551,26 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
    1,
-   1,
+   6,
    1
   ],
   "matched_courses":[
    "MESPA1237",
-   "MSPOL1204"
+   "MGEST1108",
+   "MSHUM1114",
+   "MSHUM1228",
+   "MSPOL1104",
+   "MSPOL1204",
+   "MSPOL1346C"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":7,
   "nb_total_courses":48
  },
  {
@@ -3430,7 +4599,7 @@
    "Communication"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -3441,6 +4610,44 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":49
+ },
+ {
+  "id":"INFO2M",
+  "name":"Master [120] : ing\u00e9nieur civil en informatique",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-info2m",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   3,
+   1
+  ],
+  "matched_courses":[
+   "LINFO2359",
+   "LINFO2990",
+   "MGEST1108"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":80
  },
  {
   "id":"INGE1BA",
@@ -3469,18 +4676,25 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
-   2
+   2,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "LALLE1532",
-   "LINGE1317"
+   "LINGE1317",
+   "LINGE1327"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":50
  },
  {
@@ -3506,19 +4720,16 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "LLSMS2397",
    "MLSMM2253"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":129
  },
  {
@@ -3543,25 +4754,33 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "economy",
+   "energy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
-   4,
-   5
+   3,
+   2,
+   5,
+   1,
+   1
   ],
   "matched_courses":[
+   "MDROI1105",
    "MECON1104",
    "MESPA1237",
+   "MGEST1108",
    "MGEST1324",
-   "MINFO1301",
    "MSHUM1122",
-   "MSHUM1303"
+   "MSHUM1303",
+   "MTECH1201"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":6,
+  "nb_matched_courses":8,
   "nb_total_courses":52
  },
  {
@@ -3586,19 +4805,16 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "LLSMS2397",
    "MLSMM2253"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":134
  },
  {
@@ -3626,16 +4842,21 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
-   "LEUSL2310"
+   "LEUSL2310",
+   "LFIAL2010"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":138
  },
  {
@@ -3660,33 +4881,214 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
-   5,
-   4,
-   3,
+   1,
+   2,
+   9,
+   2,
+   2,
    4
   ],
   "matched_courses":[
    "LENVI2007",
    "LENVI2101",
+   "LKIMA2990",
    "LMAPR2001",
    "LMAPR2016",
    "LMAPR2021",
+   "LMAPR2141",
    "LMAPR2320",
    "LMAPR2430",
    "LMAPR2483",
-   "LMAPR2647"
+   "LMAPR2647",
+   "MGEST1108"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":9,
+  "nb_matched_courses":12,
   "nb_total_courses":79
+ },
+ {
+  "id":"KINE1BA",
+  "name":"Bachelier en kin\u00e9sith\u00e9rapie et r\u00e9adaptation",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-kine1ba",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences de la motricit\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LKINE1038"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":48
+ },
+ {
+  "id":"KINE2M1",
+  "name":"Master [60] en kin\u00e9sith\u00e9rapie et r\u00e9adaptation",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-kine2m1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences de la motricit\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LKINE1038"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":34
+ },
+ {
+  "id":"LAFR1BA",
+  "name":"Bachelier en langues et lettres anciennes et modernes",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-lafr1ba",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LTECO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":40
+ },
+ {
+  "id":"LAFR2M",
+  "name":"Master [120] en langues et lettres anciennes et modernes",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-lafr2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LFIAL2010"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":119
+ },
+ {
+  "id":"LING2M",
+  "name":"Master [120] en linguistique",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-ling2m",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "building",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LFIAL2010",
+   "LGERM2713"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":138
  },
  {
   "id":"LITT9CE",
@@ -3713,21 +5115,52 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
    2,
-   1
+   3
   ],
   "matched_courses":[
+   "LGERM2716",
    "LGERM2724",
    "LGERM2726",
    "LROM2844"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":35
+ },
+ {
+  "id":"LMINOMECA",
+  "name":"Mineure en M\u00e9canique",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-lminomeca",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LMECA1855"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":6
  },
  {
   "id":"LMQS2MC",
@@ -3752,9 +5185,11 @@
    "Communication"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -3763,6 +5198,39 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":25
+ },
+ {
+  "id":"LOGO2M",
+  "name":"Master [120] en logop\u00e9die",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-logo2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de psychologie et des sciences de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LLOGO2112",
+   "LTECO1220"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":54
  },
  {
   "id":"MAP2M",
@@ -3786,22 +5254,28 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy",
-   "environment"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
    1,
    1,
-   2
+   4,
+   1,
+   1
   ],
   "matched_courses":[
    "LGCIV2056",
    "LINMA2415",
-   "LINMA2510"
+   "LINMA2510",
+   "LINMA2990",
+   "MGEST1108"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":122
  },
  {
@@ -3824,7 +5298,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -3835,6 +5309,70 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":47
+ },
+ {
+  "id":"MATH2M",
+  "name":"Master [120] en sciences math\u00e9matiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-math2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LFILO2003E"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":80
+ },
+ {
+  "id":"MATH2M1",
+  "name":"Master [60] en sciences math\u00e9matiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-math2m1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LFILO2003E"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":19
  },
  {
   "id":"MD1BA",
@@ -3854,17 +5392,52 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "WMDS1224",
+   "WMDS1321"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":55
+ },
+ {
+  "id":"MD2M",
+  "name":"Master [180] en m\u00e9decine",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-md2m",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "WMDS1224"
+   "WMDS2137"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":55
+  "nb_total_courses":118
  },
  {
   "id":"MECA2M",
@@ -3888,26 +5461,98 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
+   4,
+   4,
+   4,
    1,
-   2,
-   2,
-   2
+   1
   ],
   "matched_courses":[
    "LELME2420",
    "LENVI2007",
    "LMAPR2483",
-   "LMECA2322"
+   "LMECA2160",
+   "LMECA2220",
+   "LMECA2325",
+   "LMECA2600",
+   "LMECA2990",
+   "MGEST1108"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":4,
+  "nb_matched_courses":9,
   "nb_total_courses":78
+ },
+ {
+  "id":"MINANGL",
+  "name":"Mineure en \u00e9tudes anglaises",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-minangl",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "climate",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LGERM1524",
+   "LGERM1525"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":11
+ },
+ {
+  "id":"MINARCH",
+  "name":"Mineure en architecture",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-minarch",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 d'architecture, d'ing\u00e9nierie architecturale, d'urbanisme"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LICAR1801"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":6
  },
  {
   "id":"MINBIOL",
@@ -3930,18 +5575,24 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   5,
    2
   ],
   "matched_courses":[
    "LBIO1117",
+   "LBIO1213",
+   "LBIO1242",
+   "LBIO1281",
+   "LBIO1311",
    "LCHM1311"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":6,
   "nb_total_courses":21
  },
  {
@@ -3965,18 +5616,55 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   1,
+   2
+  ],
+  "matched_courses":[
+   "LCHM1311",
+   "LESPO2100"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":11
+ },
+ {
+  "id":"MINCOMU",
+  "name":"Mineure en information et communication",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-mincomu",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LCHM1311"
+   "LCOMU1126"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":11
+  "nb_total_courses":10
  },
  {
   "id":"MINCUCREA",
@@ -3999,16 +5687,17 @@
    "Arts"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "LBIO1110"
+   "LBIO1110",
+   "LCCR1215"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":41
  },
  {
@@ -4033,28 +5722,34 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   4,
-   1,
    6,
+   2,
+   10,
+   3,
    2
   ],
   "matched_courses":[
    "LBIO1110",
    "LBIO1114",
    "LBIO1117",
+   "LBIO1213",
+   "LBIO1217",
+   "LBIO1317",
    "LBIR1130",
    "LBIR1230",
    "LBIR1328",
    "LBIR1336",
    "LGEO1332",
-   "LINGE1317"
+   "LINGE1317",
+   "LINGE1327"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":13,
   "nb_total_courses":56
  },
  {
@@ -4081,23 +5776,26 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
-   4,
+   2,
+   6,
    2
   ],
   "matched_courses":[
    "LBIO1117",
    "LBIR1230A",
+   "LBIR1362",
    "LDVLD1300",
    "LFILO1310",
    "LSPED1221"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":6,
   "nb_total_courses":16
  },
  {
@@ -4120,23 +5818,28 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   3,
    5,
+   1,
+   8,
    2
   ],
   "matched_courses":[
+   "LBIR1130A",
    "LBIR1230A",
+   "LBIR1260",
    "LBIR1354",
+   "LBIR1362",
    "LDVLP2325",
    "LGEO1332",
    "LSPED1221"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":8,
   "nb_total_courses":13
  },
  {
@@ -4161,17 +5864,87 @@
    "Arts"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LGERM1524",
+   "LGERM1525",
+   "LPOLS1329"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":30
+ },
+ {
+  "id":"MINFILO",
+  "name":"Mineure en philosophie",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-minfilo",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LFILO1140",
+   "LFILO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":14
+ },
+ {
+  "id":"MINFOPA",
+  "name":"Mineure en sciences de l'\u00e9ducation",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-minfopa",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de psychologie et des sciences de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LPOLS1329"
+   "LFOPA2006"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":30
+  "nb_total_courses":7
  },
  {
   "id":"MINGEOG",
@@ -4194,23 +5967,97 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   2,
-   2,
+   4,
+   4,
    1
   ],
   "matched_courses":[
    "LBIR1130",
    "LBIR1328",
    "LGEO1321",
-   "LGEO1332"
+   "LGEO1332",
+   "LGEO1343",
+   "LPHY1365"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":19
+ },
+ {
+  "id":"MINHISP",
+  "name":"Mineure en \u00e9tudes hispaniques",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-minhisp",
+  "languages":[
+   "es"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LROM1180"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":10
+ },
+ {
+  "id":"MINLITT",
+  "name":"Mineure en \u00e9tudes litt\u00e9raires",
+  "cycle":"other",
+  "url":"https:\/\/uclouvain.be\/prog-2022-minlitt",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-La-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "building",
+   "climate"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LGERM1524",
+   "LROM1372"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":25
  },
  {
   "id":"MINODROI",
@@ -4233,7 +6080,7 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1
@@ -4263,7 +6110,7 @@
    "Theology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4294,7 +6141,7 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "themes_scores":[
    1
@@ -4329,7 +6176,7 @@
    "Communication"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4364,7 +6211,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
@@ -4396,7 +6243,7 @@
    "Theology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4428,7 +6275,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4439,6 +6286,67 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":30
+ },
+ {
+  "id":"MLEG2MC",
+  "name":"Master de sp\u00e9cialisation en m\u00e9decine l\u00e9gale",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-mleg2mc",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "WSBIM2246"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":21
+ },
+ {
+  "id":"MOTR2M",
+  "name":"Master [120] en sciences de la motricit\u00e9, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-motr2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences de la motricit\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LKINE1038"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":45
  },
  {
   "id":"MULT2M",
@@ -4464,17 +6372,163 @@
    "Arts"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   3,
+   2
+  ],
+  "matched_courses":[
+   "LCOMU2221",
+   "LECON2351",
+   "LFIAL2010",
+   "LGERM1525"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":128
+ },
+ {
+  "id":"MUSI1BA",
+  "name":"Bachelier en histoire de l'art et arch\u00e9ologie, orientation musicologie",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-musi1ba",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LECON2351"
+   "LTECO1220"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":128
+  "nb_total_courses":64
+ },
+ {
+  "id":"MUSI2M",
+  "name":"Master [120] en histoire de l'art et arch\u00e9ologie, orientation musicologie",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-musi2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "LCOMU2221",
+   "LFIAL2010"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":121
+ },
+ {
+  "id":"MUSI2M1",
+  "name":"Master [60] en histoire de l'art et arch\u00e9ologie, orientation musicologie",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-musi2m1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "LCOMU2221",
+   "LFIAL2010"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":90
+ },
+ {
+  "id":"NANO2MC",
+  "name":"Master de sp\u00e9cialisation en nanotechnologies",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-nano2mc",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "LBRNA2201",
+   "LNANO2990"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":78
  },
  {
   "id":"NEEA2MC",
@@ -4494,27 +6548,129 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "carbon",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
-   3,
-   1
+   1,
+   4,
+   1,
+   3
   ],
   "matched_courses":[
+   "LBIRE2130A",
    "LBIRE2131",
    "LBRES2203",
    "LDVLP2675",
+   "LNEEA2220",
    "LULG3330",
    "LULG3363"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":7,
   "nb_total_courses":23
+ },
+ {
+  "id":"NOTA2MC",
+  "name":"Master de sp\u00e9cialisation en notariat",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-nota2mc",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit et de criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LNOTA2004"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":11
+ },
+ {
+  "id":"OPES2M",
+  "name":"Master [120] en politique \u00e9conomique et sociale (horaire d\u00e9cal\u00e9)",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-opes2m",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LOPES2218"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":47
+ },
+ {
+  "id":"PATR2MC",
+  "name":"Master de sp\u00e9cialisation conjoint en conservation-restauration du patrimoine culturel immobilier",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-patr2mc",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LPATR2110"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":12
  },
  {
   "id":"PHYS2M",
@@ -4536,28 +6692,36 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   6,
    1,
+   7,
+   1,
+   5,
    2
   ],
   "matched_courses":[
    "LENVI2005",
+   "LFILO2003E",
    "LGCIV2056",
+   "LGEO1343",
    "LINMA2510",
+   "LMECA2600",
    "LPHYS2162",
    "LPHYS2163",
-   "LPHYS2246",
+   "LPHYS2264",
    "LPHYS2265",
    "LPHYS2267",
-   "LPHYS2268"
+   "LPHYS2268",
+   "LPHYS2504"
   ],
-  "nb_dedicated_courses":7,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":13,
   "nb_total_courses":125
  },
  {
@@ -4580,23 +6744,26 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy"
+   "life"
   ],
   "themes_scores":[
-   5,
-   1
+   1,
+   6,
+   2
   ],
   "matched_courses":[
+   "LFILO2003E",
    "LPHYS2162",
    "LPHYS2163",
-   "LPHYS2246",
+   "LPHYS2264",
    "LPHYS2265",
    "LPHYS2267",
    "LPHYS2268"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":7,
   "nb_total_courses":47
  },
  {
@@ -4625,19 +6792,22 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   5
   ],
   "matched_courses":[
    "LDVLD1300",
-   "LFILO1310"
+   "LFILO1140",
+   "LFILO1220",
+   "LFILO1310",
+   "LPPE1101"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":70
  },
  {
@@ -4665,17 +6835,55 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "MSPRI2160"
+   "MSPOL1346C",
+   "MSPRI2160",
+   "MSPRI2164"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":39
+ },
+ {
+  "id":"PSP1BA",
+  "name":"Bachelier en sciences psychologiques et de l'\u00e9ducation, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-psp1ba",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de psychologie et des sciences de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LPSP1336",
+   "LTECO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":65
  },
  {
   "id":"PSY2M",
@@ -4697,20 +6905,201 @@
    "Pedagogy"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "climate",
+   "energy",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   7
+  ],
+  "matched_courses":[
+   "LGERM2726",
+   "LPSP1336",
+   "LPSYS2206",
+   "LPSYS2637",
+   "LPSYS2824",
+   "LPSYS2841",
+   "LSEXM2810"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":7,
+  "nb_total_courses":117
+ },
+ {
+  "id":"RCPA9CE",
+  "name":"Certificat universitaire de contr\u00f4le physique en radioprotection (Classe I)",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2022-rcpa9ce",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "energy",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "LGERM2726",
-   "LPSYS2824"
+   "LMECA2600",
+   "LPHYS2504"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
-  "nb_total_courses":117
+  "nb_total_courses":12
+ },
+ {
+  "id":"RCPB9CE",
+  "name":"Certificat universitaire de contr\u00f4le physique en radioprotection (Classe II)",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2022-rcpb9ce",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LPHYS2504"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":8
+ },
+ {
+  "id":"RFAR9CE",
+  "name":"Certificat universitaire en radiopharmacie",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2022-rfar9ce",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LCHM2246"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":10
+ },
+ {
+  "id":"RMDT9CE",
+  "name":"Certificat universitaire  en radioprotection pour les m\u00e9decins du travail",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2022-rmdt9ce",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LPHYS2504"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":8
+ },
+ {
+  "id":"ROGE1BA",
+  "name":"Bachelier en langues et lettres modernes, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-roge1ba",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "building",
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   2,
+   1
+  ],
+  "matched_courses":[
+   "LGERM1524",
+   "LGERM1525",
+   "LROM1180",
+   "LROM1372",
+   "LTECO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":5,
+  "nb_total_courses":83
  },
  {
   "id":"ROGE2M",
@@ -4737,20 +7126,31 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
+   4,
+   4,
    1
   ],
   "matched_courses":[
+   "LGERM1524",
+   "LGERM1525",
+   "LGERM2713",
+   "LGERM2716",
    "LGERM2724",
    "LGERM2726",
+   "LGERM2872",
+   "LLMOD2802",
+   "LROM1372",
    "LROM2844"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":10,
   "nb_total_courses":177
  },
  {
@@ -4778,17 +7178,65 @@
    "Arts"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   3,
+   1,
    1
   ],
   "matched_courses":[
-   "LGERM2726"
+   "LGERM1524",
+   "LGERM1525",
+   "LGERM2716",
+   "LGERM2726",
+   "LROM1372"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":94
+ },
+ {
+  "id":"ROM1BA",
+  "name":"Bachelier en langues et lettres fran\u00e7aises et romanes, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/uclouvain.be\/prog-2022-rom1ba",
+  "languages":[
+   "es",
+   "fr",
+   "it"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "LROM1180",
+   "LROM1372",
+   "LTECO1220"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":44
  },
  {
   "id":"ROM2M",
@@ -4814,16 +7262,17 @@
    "Arts"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "LROM1180",
    "LROM2844"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":111
  },
  {
@@ -4848,17 +7297,49 @@
    "Arts"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LROM1180",
+   "LROM2844"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":48
+ },
+ {
+  "id":"RPHY9CE",
+  "name":"Certificat universitaire en physique d'h\u00f4pital",
+  "cycle":"certificate",
+  "url":"https:\/\/uclouvain.be\/prog-2022-rphy9ce",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine et m\u00e9decine dentaire"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "pollution"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LROM2844"
+   "LPHYS2504"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":48
+  "nb_total_courses":20
  },
  {
   "id":"SAIV2M",
@@ -4879,40 +7360,55 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   3,
+   1,
    2,
-   12,
+   5,
    2,
-   5
+   2,
+   15,
+   6,
+   1,
+   6
   ],
   "matched_courses":[
    "LBIR1328",
    "LBIR1336",
+   "LBIR1362",
    "LBIRA2105",
    "LBIRA2109",
+   "LBIRE2102",
+   "LBIRE2104",
    "LBIRE2105",
    "LBIRE2131",
    "LBRAI2218",
+   "LBRES2101",
    "LBRES2102",
+   "LBRES2105",
    "LBRES2203",
    "LBRES2204",
+   "LBRES2218",
    "LBRTE2101",
    "LECON2352",
    "LECON2353",
    "LENVI2005",
    "LGCIV2073",
    "LGEO1321",
-   "LGEO2120"
+   "LGEO2120",
+   "LGEO2130"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":17,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":24,
   "nb_total_courses":54
  },
  {
@@ -4934,8 +7430,8 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
@@ -4969,20 +7465,23 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   3,
+   3
   ],
   "matched_courses":[
+   "WMDS2137",
    "WSBIM1205",
-   "WSBIM2135"
+   "WSBIM2135",
+   "WSBIM2237",
+   "WSBIM2246"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":132
  },
  {
@@ -5005,16 +7504,17 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "LDEMO2610"
+   "LDEMO2610",
+   "LSEXM2810"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":82
  },
  {
@@ -5036,7 +7536,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -5047,6 +7547,75 @@
   "nb_dedicated_courses":1,
   "nb_matched_courses":1,
   "nb_total_courses":37
+ },
+ {
+  "id":"SINF2M",
+  "name":"Master [120] en sciences informatiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-sinf2m",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   3,
+   1
+  ],
+  "matched_courses":[
+   "LINFO2359",
+   "LINFO2992",
+   "MGEST1108"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":87
+ },
+ {
+  "id":"SINF2M1",
+  "name":"Master [60] en sciences informatiques",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-sinf2m1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Ecole Polytechnique de Louvain"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LINFO2991"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":25
  },
  {
   "id":"SOC2M",
@@ -5072,13 +7641,11 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   3,
    5,
-   6
+   10
   ],
   "matched_courses":[
    "LANTR2090",
@@ -5087,12 +7654,15 @@
    "LDVLP2325",
    "LECON2351",
    "LENVI2005",
+   "LENVI2006",
    "LEUSL2031",
    "LGERM2726",
-   "LPOLS1329"
+   "LPOLS1329",
+   "LSOC2091",
+   "LTRAV2720"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":12,
   "nb_total_courses":121
  },
  {
@@ -5121,16 +7691,17 @@
    "Communication"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "LPOLS1329"
+   "LPOLS1329",
+   "LSEXM2810"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":53
  },
  {
@@ -5156,21 +7727,28 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "energy",
+   "life"
   ],
   "themes_scores":[
-   4,
-   3
+   1,
+   1,
+   9
   ],
   "matched_courses":[
    "LANTR2010",
+   "LANTR2055",
    "LANTR2090",
+   "LANTR2100",
+   "LENVI2006",
    "LENVI2101",
-   "LPOLS1329"
+   "LPOLS1329",
+   "LSEXM2810",
+   "LSOC2091"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":9,
   "nb_total_courses":56
  },
  {
@@ -5198,34 +7776,36 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   6,
-   1,
-   6,
+   10,
    2,
-   6
+   14,
+   2
   ],
   "matched_courses":[
    "LANTR2090",
    "LDEMO2610",
+   "LDVLP2201",
    "LDVLP2315",
    "LDVLP2325",
    "LDVLP2626",
+   "LDVLP2640",
    "LDVLP2675",
    "LENVI2002",
    "LENVI2005",
+   "LENVI2006",
    "LENVI2010",
+   "LGEO1343",
    "LGEO2210",
    "LGEO2230",
    "LGERM2726",
    "LSPED1221"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":13,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":17,
   "nb_total_courses":87
  },
  {
@@ -5250,17 +7830,84 @@
    "Communication"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "MSPHD2109",
+   "MSPHD2210"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":25
+ },
+ {
+  "id":"SPHM2M1",
+  "name":"Master [60] en sciences politiques, orientation g\u00e9n\u00e9rale (horaire d\u00e9cal\u00e9)",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-sphm2m1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "MSPHD2210"
+   "MSPHD2109"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":25
+  "nb_total_courses":18
+ },
+ {
+  "id":"SPIN2MC",
+  "name":"Master de sp\u00e9cialisation en sant\u00e9 publique - analyse et \u00e9valuation des politiques, programmes et syst\u00e8mes de sant\u00e9 internationale",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-spin2mc",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles Woluwe"
+  ],
+  "faculties":[
+   "Facult\u00e9 de sant\u00e9 publique"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "WSPIN2213"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":15
  },
  {
   "id":"SPOL2M",
@@ -5288,23 +7935,29 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   4,
+   7,
    1,
-   2
+   4,
+   1
   ],
   "matched_courses":[
+   "LADPU2005",
    "LADPU2225",
+   "LASI2303",
    "LDVLP2626",
+   "LDVLP2640",
    "LECON2351",
    "LEUSL2310",
-   "LFILO2362"
+   "LFILO2362",
+   "LTHEO2262"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":9,
   "nb_total_courses":118
  },
  {
@@ -5330,17 +7983,26 @@
    "Communication"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2
+   4,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
+   "LADPU2005",
+   "LASI2303",
    "LDVLP2626",
+   "LDVLP2640",
    "LEUSL2310"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":65
  },
  {
@@ -5368,21 +8030,22 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   4
   ],
   "matched_courses":[
    "MESPA1237",
+   "MSHUM1114",
+   "MSHUM1228",
+   "MSPOL1104",
    "MSPOL1204"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":36
  },
  {
@@ -5408,7 +8071,7 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -5446,20 +8109,32 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   3,
+   6,
+   1,
+   4,
+   1,
    1
   ],
   "matched_courses":[
+   "LADPU2005",
+   "LASI2303",
    "LDVLP2626",
+   "LDVLP2640",
    "LEUSL2031",
+   "LEUSL2112",
    "LEUSL2310",
-   "LSPRI2311"
+   "LSPRI2310",
+   "LSPRI2311",
+   "LTHEO2262"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":10,
   "nb_total_courses":91
  },
  {
@@ -5481,21 +8156,164 @@
    "Theology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   3,
-   2
+   6
   ],
   "matched_courses":[
    "LANTR2010",
+   "LANTR2055",
    "LANTR2090",
-   "LPOLS1329"
+   "LFILO1140",
+   "LPOLS1329",
+   "LPSYS2206"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":6,
+  "nb_total_courses":91
+ },
+ {
+  "id":"STAT2M",
+  "name":"Master [120] en statistique, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-stat2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Veterinary",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LFILO2003E"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":64
+ },
+ {
+  "id":"STIC2M",
+  "name":"Master [120] en sciences et technologies de l'information et de la communication",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-stic2m",
+  "languages":[
+   "de",
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences \u00e9conomiques, sociales, politiques et de communication"
+  ],
+  "fields":[
+   "Sociology",
+   "Political Sciences",
+   "Economy",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   2,
+   1
+  ],
+  "matched_courses":[
+   "LCOMU1126",
+   "LCOMU2221",
+   "LFIAL2010"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":3,
-  "nb_total_courses":91
+  "nb_total_courses":80
+ },
+ {
+  "id":"THEO2M",
+  "name":"Master [120] en th\u00e9ologie",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-theo2m",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de th\u00e9ologie et d'\u00e9tude des religions"
+  ],
+  "fields":[
+   "Theology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "LTHEO2262",
+   "LTHEO2850"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":120
+ },
+ {
+  "id":"THEO2M1",
+  "name":"Master [60] en th\u00e9ologie",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-theo2m1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de th\u00e9ologie et d'\u00e9tude des religions"
+  ],
+  "fields":[
+   "Theology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LTHEO2262"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":71
  },
  {
   "id":"TRAD2M",
@@ -5524,18 +8342,23 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
+   2,
+   3,
    1
   ],
   "matched_courses":[
+   "LCOMU2221",
    "LEUSL2031",
-   "LEUSL2310"
+   "LEUSL2310",
+   "LFIAL2010",
+   "LGERM2716"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":207
  },
  {
@@ -5561,16 +8384,21 @@
    "Communication"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "pollution"
   ],
   "themes_scores":[
-   1
+   2,
+   2
   ],
   "matched_courses":[
-   "LTRAV2700"
+   "LESPO2100",
+   "LTRAV2630",
+   "LTRAV2700",
+   "LTRAV2720"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":43
  },
  {
@@ -5596,16 +8424,21 @@
    "Communication"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "pollution"
   ],
   "themes_scores":[
-   1
+   2,
+   2
   ],
   "matched_courses":[
-   "LTRAV2700"
+   "LESPO2100",
+   "LTRAV2630",
+   "LTRAV2700",
+   "LTRAV2720"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":32
  },
  {
@@ -5627,19 +8460,30 @@
    "Architecture"
   ],
   "themes":[
-   "environment",
+   "building",
+   "climate",
+   "life",
    "resources"
   ],
   "themes_scores":[
+   3,
    1,
+   7,
    1
   ],
   "matched_courses":[
+   "LDROP2061",
    "LDROP2063",
-   "LDVLP2675"
+   "LDVLP2675",
+   "LICAR2102",
+   "LICAR2301",
+   "LICAR2303",
+   "LICAR2901A",
+   "LURBA2940",
+   "LURBA2950"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":9,
   "nb_total_courses":23
  },
  {
@@ -5663,20 +8507,57 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "LVETE1201",
+   "LBIO1311",
+   "LVETE1230",
    "LVETE1312"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":45
+ },
+ {
+  "id":"VISU2MC",
+  "name":"Master de sp\u00e9cialisation en cultures visuelles",
+  "cycle":"master",
+  "url":"https:\/\/uclouvain.be\/prog-2022-visu2mc",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie, arts et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "LCOMU2221",
+   "LFIAL2010"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":43
  }
 ]

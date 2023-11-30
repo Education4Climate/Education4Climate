@@ -1,5 +1,32 @@
 [
  {
+  "id":"LTRAV2630",
+  "name":"Bien-\u00eatre au travail",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Frankart Aur\u00e9lie",
+   "Schepens B\u00e9n\u00e9dicte"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTRAV2630",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LTRAV2700",
   "name":"Labour context in Europe",
   "year":"2022-2023",
@@ -26,6 +53,55 @@
   "dedicated":0
  },
  {
+  "id":"LTRAV2720",
+  "name":"Comparative social protection systems",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Merla Laura"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTRAV2720",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LULBG2410",
+  "name":"Les changements climatiques des derniers 100000 ans (ULB)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LULBG2410",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"LULG3330",
   "name":"Epuration des eaux, production d'eau potable et r\u00e9cup\u00e9ration des eaux us\u00e9es en irrigation",
   "year":"2022-2023",
@@ -43,7 +119,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -70,17 +146,87 @@
   "dedicated":1
  },
  {
-  "id":"LVETE1201",
-  "name":"Bios\u00e9curit\u00e9 et bonnes pratiques v\u00e9t\u00e9rinaires",
+  "id":"LURBA2940",
+  "name":"Morphologie urbaine et analyse des paysages",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Dehoux Jean-Paul",
-   "Saegerman Claude"
+   "Cavalieri Chiara"
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-LVETE1201",
+  "url":"https:\/\/uclouvain.be\/cours-2022-LURBA2940",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LURBA2940I",
+  "name":"Morphologie urbaine et analyse des paysages",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cavalieri Chiara"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LURBA2940I",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LURBA2950",
+  "name":"Syst\u00e8mes de d\u00e9cision en urbanisme et d\u00e9veloppement territorial",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ippersiel Bertrand",
+   "Malherbe Alain",
+   "Van de Casteele Yves"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LURBA2950",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LVETE1230",
+  "name":"Ethologie des animaux domestiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vandenheede Marc"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LVETE1230",
   "cycles":[
    "bac"
   ],
@@ -89,7 +235,7 @@
    "Veterinary"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -113,9 +259,34 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"MDROI1105",
+  "name":"Sources et principes du droit",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De La Serna Ignacio"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MDROI1105",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"MECON1104",
@@ -136,8 +307,30 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MECON1312",
+  "name":"Economie internationale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gilson Nathalie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MECON1312",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -164,7 +357,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -187,34 +380,7 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"MGEHD2120",
-  "name":"Responsabilit\u00e9 soci\u00e9tale des entreprises",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Hericher Corentin"
-  ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-MGEHD2120",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Communication",
-   "Economy",
-   "Management",
-   "Political Sciences",
-   "Sociology"
-  ],
-  "themes":[
-   "sustainability"
+   "resources"
   ],
   "dedicated":0
  },
@@ -243,6 +409,35 @@
   "dedicated":0
  },
  {
+  "id":"MGEST1108",
+  "name":"Marketing",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Sinigaglia Nadia"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MGEST1108",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Engineering",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"MGEST1324",
   "name":"Projet entrepreneurial",
   "year":"2022-2023",
@@ -265,31 +460,31 @@
    "Sociology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
  {
-  "id":"MINFO1301",
-  "name":"Gestion de donn\u00e9es",
+  "id":"MGEST2002",
+  "name":"Marketing",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Fouss Fran\u00e7ois"
+   "Sinigaglia Nadia"
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-MINFO1301",
+  "url":"https:\/\/uclouvain.be\/cours-2022-MGEST2002",
   "cycles":[
-   "bac"
+   "master"
   ],
   "fields":[
    "Economy",
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -312,10 +507,9 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "energy",
-   "resources",
-   "sustainability"
+   "carbon",
+   "economy",
+   "life"
   ],
   "dedicated":0
  },
@@ -343,6 +537,32 @@
   "dedicated":0
  },
  {
+  "id":"MSHUM1114",
+  "name":"Philosophie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Deprez Stanislas"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MSHUM1114",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"MSHUM1122",
   "name":"Ethique et RSE",
   "year":"2022-2023",
@@ -361,8 +581,57 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MSHUM1202",
+  "name":"Psychologie \u00e9conomique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MSHUM1202",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MSHUM1228",
+  "name":"Histoire des id\u00e9es politiques et sociales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Deprez Stanislas",
+   "Tilly Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MSHUM1228",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -386,8 +655,9 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "climate",
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -410,8 +680,35 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "climate",
+   "life",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MSPHD2109",
+  "name":"L\u2019Etat dans la globalisation",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Deridder Marie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MSPHD2109",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
   ],
   "dedicated":0
  },
@@ -437,7 +734,33 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MSPOL1104",
+  "name":"Economie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hamaide Bertrand"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MSPOL1104",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -463,8 +786,34 @@
    "Sociology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MSPOL1346C",
+  "name":"Relations internationales - Th\u00e9ories des relations internationales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MSPOL1346C",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -492,9 +841,64 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"MSPRI2164",
+  "name":"Science, droit et politiques des changements climatiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Aoun Elena",
+   "Lenaerts Ulrik",
+   "Marbaix Philippe"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MSPRI2164",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"MTECH1201",
+  "name":"Technologies industrielles",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Baclin Laurence",
+   "Dhaeyer Christine",
+   "Michel David",
+   "Velings Nicolas"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-MTECH1201",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"WFARM1160",
@@ -515,7 +919,7 @@
    "Pharmacy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -538,7 +942,56 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"WMDS1321",
+  "name":"Syst\u00e8me digestif, partie 1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Leclercq Isabelle"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-WMDS1321",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"WMDS2137",
+  "name":"Secteur maladies infectieuses",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Belkhir Le\u00efla",
+   "Sokal Etienne",
+   "Van der Linden Dimitri",
+   "Yombi Jean Cyr"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-WMDS2137",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -567,7 +1020,7 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -590,8 +1043,101 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"WSBIM2237",
+  "name":"Nutrition et environnement : aspect soci\u00e9tal",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bindels Laure",
+   "De Schutter Olivier",
+   "Delzenne Nathalie",
+   "Leclercq Sophie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-WSBIM2237",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"WSBIM2246",
+  "name":"Toxicologie humaine",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hantson Philippe"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-WSBIM2246",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"WSPIN2213",
+  "name":"Evaluation socio-anthropologique en sant\u00e9 internationale (UCLouvain)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-WSPIN2213",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"EBIOE2002",
+  "name":"Biodiversit\u00e9 Marine : expertise faune (Roscoff)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-EBIOE2002",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -617,7 +1163,53 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ESBOE2108",
+  "name":"Stage de terrain en \u00e9cologie aquatique (UNamur)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-ESBOE2108",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ESBOE2123",
+  "name":"Biodiversit\u00e9 aquatique (UNamur)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-ESBOE2123",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -640,7 +1232,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -663,7 +1255,31 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ESBOE2237",
+  "name":"Bioindicateurs de pollution (UNamur)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-ESBOE2237",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -686,7 +1302,36 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LADPU2005",
+  "name":"Chaire Andr\u00e9 Molitor de r\u00e9formes politiques, administratives et internationales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Caliskan Murat",
+   "Liegeois Michel",
+   "Varone Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LADPU2005",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "energy"
   ],
   "dedicated":0
  },
@@ -714,8 +1359,7 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -746,6 +1390,32 @@
   "dedicated":0
  },
  {
+  "id":"LANGL1881",
+  "name":"English : reading and listening comprehension of texts in Bioengineering",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Dumont Amandine",
+   "Halleux Ariane",
+   "Meirlaen Sandrine",
+   "Toubeau Anne-Julie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LANGL1881",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LANGL1882",
   "name":"English : reading and listening  comprehension of texts in Bioengineering",
   "year":"2022-2023",
@@ -770,7 +1440,7 @@
   ],
   "themes":[
    "energy",
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -797,8 +1467,34 @@
    "Theology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LANTR2055",
+  "name":"Cosmologies: de la fabrique des cat\u00e9gories",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Laugrand Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LANTR2055",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology",
+   "Theology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -825,8 +1521,37 @@
    "Theology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LANTR2100",
+  "name":"Fondements anthropologiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   ". SOMEBODY",
+   "Laurent Pierre-Joseph"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LANTR2100",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -850,9 +1575,37 @@
    "Philosophy"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LASI2303",
+  "name":"Analysis of contemporary Japanese society",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LASI2303",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -874,7 +1627,29 @@
    "Architecture"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBARC1260",
+  "name":"Physique du b\u00e2timent",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bodart Magali"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC1260",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -901,8 +1676,7 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -925,7 +1699,8 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -947,7 +1722,8 @@
    "Architecture"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "resources"
   ],
   "dedicated":0
  },
@@ -970,8 +1746,9 @@
    "Architecture"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "building",
+   "energy",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -993,11 +1770,11 @@
    "Architecture"
   ],
   "themes":[
-   "climate",
+   "building",
+   "carbon",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "general",
+   "life"
   ],
   "dedicated":1
  },
@@ -1022,10 +1799,11 @@
    "Architecture"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":1
  },
@@ -1050,12 +1828,94 @@
    "Architecture"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "economy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LBARC2101",
+  "name":"Projet d'architecture 4 : approfondissement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Beldars Emmanuel",
+   "Boulaioun Abdelmajid",
+   "Schmitz David",
+   "Van de Kerchove Pascale"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC2101",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBARC2130",
+  "name":"Initiation \u00e0 la recherche",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Letesson Quentin"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC2130",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBARC2131",
+  "name":"S\u00e9minaire de recherche: m\u00e9thodes et outils th\u00e9matiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Chanvillard C\u00e9cile",
+   "De Visscher Jean-Philippe",
+   "Fontaine Christine",
+   "Marino Giulia",
+   "Meyer Sandrine",
+   "Pferdmenges Petra",
+   "Thielemans Benoit",
+   "Van Moeseke Geoffrey",
+   "Vandenbroucke David"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC2131",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "climate",
+   "economy",
+   "energy",
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LBARC2141",
@@ -1075,7 +1935,31 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "general",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBARC2144",
+  "name":"Patrimoine b\u00e2ti du XX eme si\u00e8cle et projet  de sauvegarde",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Marino Giulia"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC2144",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "building",
+   "energy"
   ],
   "dedicated":0
  },
@@ -1097,7 +1981,79 @@
    "Architecture"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBARC2186",
+  "name":"Droit de l'urbanisme et de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Van Ypersele De Strihou Joel"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC2186",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBARC2232",
+  "name":"S\u00e9minaire de recherche: d\u00e9veloppement th\u00e9matique-Eco-architectures",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Thielemans Benoit",
+   "Van Moeseke Geoffrey"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC2232",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "economy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBARC2201",
+  "name":"Projet d'architecture 5 : ma\u00eetrise",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fontaine Christine",
+   "Gillis Christophe",
+   "Thielemans Benoit",
+   "Vandenbroucke David"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBARC2201",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1120,7 +2076,9 @@
    "Architecture"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "economy",
+   "life"
   ],
   "dedicated":0
  },
@@ -1150,7 +2108,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1179,7 +2137,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1205,7 +2163,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1236,9 +2194,108 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LBIO1216",
+  "name":"Stage de biologie marine",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Mallefet J\u00e9r\u00f4me"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1216",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIO1213",
+  "name":"Morphologie et physiologie des myc\u00e8tes",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Declerck Stephan"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1213",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIO1217",
+  "name":"Ecologie II",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hance Thierry"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1217",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIO1242",
+  "name":"D\u00e9veloppement, reproduction et syst\u00e9matique des angiospermes",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lejeune Andr\u00e9",
+   "Lutts Stanley",
+   "Quinet Muriel"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1242",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LBIO1252",
@@ -1259,8 +2316,85 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIO1253",
+  "name":"Ecophysiologie des animaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Rees Jean-Fran\u00e7ois"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1253",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIO1281",
+  "name":"Travaux int\u00e9gr\u00e9s de biologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Claeys Bouuaert Corentin",
+   "Desguin Beno\u00eet",
+   "Gofflot Fran\u00e7oise",
+   "Lejeune Andr\u00e9",
+   "Rees Jean-Fran\u00e7ois",
+   "Rezsohazy Ren\u00e9"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1281",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIO1311",
+  "name":"Microbiologie et virologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Desguin Beno\u00eet",
+   "Michiels Thomas"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1311",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1284,8 +2418,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -1308,7 +2441,55 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIO1317",
+  "name":"Functional ecology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Nieberding Caroline",
+   "Wesselingh Renate"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1317",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIO1344",
+  "name":"Diversit\u00e9 v\u00e9g\u00e9tale et principes physiologiques des interactions v\u00e9g\u00e9tales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lutts Stanley"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1344",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1331,8 +2512,32 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "climate",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIO1355",
+  "name":"Sp\u00e9ciation : origines de la biodiversit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hance Thierry",
+   "Wesselingh Renate"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1355",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -1355,9 +2560,55 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LBIO1357",
+  "name":"Travaux pratiques int\u00e9gr\u00e9s d'\u00e9cologie et de biog\u00e9ographie : biog\u00e9ographie de la Belgique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Wesselingh Renate"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIO1357",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIR1121",
+  "name":"M\u00e9canique g\u00e9n\u00e9rale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Delannay Laurent",
+   "Deleersnijder Eric"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIR1121",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
  },
  {
   "id":"LBIR1130",
@@ -1382,7 +2633,32 @@
    "Veterinary"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIR1130A",
+  "name":"Introductions aux sciences de la terre",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Delmelle Pierre",
+   "Opfergelt Sophie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIR1130A",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -1407,7 +2683,30 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIR1150",
+  "name":"Biologie de la cellule et des unicellulaires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dumont Patrick",
+   "Hachez Charles"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIR1150",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1436,8 +2735,9 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -1471,8 +2771,60 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIR1260",
+  "name":"Principles of economics",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Van den Broeck Goedele"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIR1260",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIR1270",
+  "name":"Projet int\u00e9gr\u00e9 en diagnostic environnemental",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Agnan Yannick",
+   "Jacquemart Anne-Laure"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIR1270",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -1529,7 +2881,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "resources"
   ],
   "dedicated":1
  },
@@ -1585,7 +2937,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -1610,7 +2963,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -1635,9 +2989,66 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"LBIR1353",
+  "name":"Biologie int\u00e9grative",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lobet Guillaume",
+   "Lutts Stanley",
+   "Quinet Muriel"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIR1353",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIR1362",
+  "name":"Economie des ressources naturelles et de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gaspart Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIR1362",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
  },
  {
   "id":"LBIRA2105",
@@ -1658,7 +3069,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1680,7 +3091,34 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRA2108A",
+  "name":"Productions v\u00e9g\u00e9tales 1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Agnan Yannick",
+   "Bertin Pierre",
+   "Declerck Stephan",
+   "Draye Xavier"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRA2108A",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1704,8 +3142,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":0
  },
@@ -1730,7 +3168,124 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRA2111",
+  "name":"M\u00e9decine des plantes",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bragard Claude",
+   "Legr\u00e8ve Anne"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRA2111",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRC2109",
+  "name":"G\u00e9nie des proc\u00e9d\u00e9s : Op\u00e9rations unitaires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Debecker Damien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRC2109",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRC2109A",
+  "name":"G\u00e9nie des proc\u00e9d\u00e9s : Op\u00e9rations unitaires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Debecker Damien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRC2109A",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRE2102",
+  "name":"G\u00e9omatique appliqu\u00e9e",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Defourny Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRE2102",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRE2104",
+  "name":"P\u00e9dologie appliqu\u00e9e",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Agnan Yannick",
+   "Delmelle Pierre",
+   "Hardy Brieuc"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRE2104",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1756,8 +3311,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1785,8 +3340,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "resources"
   ],
   "dedicated":1
  },
@@ -1809,11 +3365,106 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "carbon",
+   "life",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LBIRE2130A",
+  "name":"\u00c9valuation d'impact environnemental: projet et introduction \u00e0 la gestion de bases de donn\u00e9es - Gestion de Bases de donn\u00e9es et application",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lobet Guillaume"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRE2130A",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIRE2231",
+  "name":"Projet int\u00e9gr\u00e9 en gestion de la pollution",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Agnan Yannick",
+   "Delmelle Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRE2231",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRE2234",
+  "name":"Data Science and Sustainability Engineering projects",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bogaert Patrick",
+   "Defourny Pierre",
+   "Hanert Emmanuel"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRE2234",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy",
+   "life",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIRE2233",
+  "name":"Projet int\u00e9gr\u00e9 en gestion des ressources en eau et en sol",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bielders Charles",
+   "Javaux Mathieu",
+   "Vanclooster Marnik"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRE2233",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LBIRE2235",
@@ -1836,7 +3487,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1858,7 +3509,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -1883,9 +3535,57 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LBIRF2104A",
+  "name":"Ecologie et sant\u00e9 des for\u00eats - Phytosociologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bragard Claude",
+   "Legr\u00e8ve Anne",
+   "Ponette Quentin",
+   "Vincke Caroline"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRF2104A",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIRF2105",
+  "name":"Sylviculture et dendrologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ponette Quentin"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRF2105",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LBIRF2106",
@@ -1906,7 +3606,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1929,7 +3629,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1952,7 +3652,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -1974,7 +3674,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -1996,7 +3696,53 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBIRF2213",
+  "name":"Tourn\u00e9e For\u00eats, milieux naturels et territoires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jacquemart Anne-Laure",
+   "Ponette Quentin",
+   "Vincke Caroline"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBIRF2213",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBNEN2023",
+  "name":"Advanced Fuel Cycle\/Dismantling\/Radiochemistry\/MOX\/Th (Centre d'\u00e9tude nucl\u00e9aire-Mol)",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBNEN2023",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -2018,10 +3764,33 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "dedicated":0
+ },
+ {
+  "id":"LBOE2109",
+  "name":"Stage de terrain en \u00e9cologie terrestre",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hance Thierry",
+   "Wesselingh Renate"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2109",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"LBOE2111",
@@ -2043,7 +3812,31 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBOE2112",
+  "name":"Data analysis and modeling of biological systems",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "De Laender Frederik",
+   "Segers Johan"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2112",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2072,7 +3865,32 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2122",
+  "name":"Biodiversit\u00e9 du milieu marin",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Debier Cathy",
+   "Rees Jean-Fran\u00e7ois"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2122",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -2097,9 +3915,32 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2124",
+  "name":"Molecular ecology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Dennis Alice",
+   "Wesselingh Renate"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2124",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -2123,7 +3964,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2146,7 +3987,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2171,7 +4012,9 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -2194,7 +4037,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -2217,7 +4061,32 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2160",
+  "name":"Ecologie des interactions",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hance Thierry",
+   "Van Dyck Hans",
+   "Wesselingh Renate"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2160",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -2240,7 +4109,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -2264,10 +4133,58 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"LBOE2166",
+  "name":"Lutte biologique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bragard Claude",
+   "Hance Thierry"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2166",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBOE2168",
+  "name":"Interactions plantes-environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lutts Stanley",
+   "Quinet Muriel"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2168",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":1
  },
  {
   "id":"LBOE2185",
@@ -2288,7 +4205,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -2311,8 +4229,34 @@
    "Veterinary"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2292",
+  "name":"Mod\u00e9lisation \u00e9cologique et \u00e9volutive",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Wesselingh Renate"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBOE2292",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -2334,8 +4278,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":0
  },
@@ -2358,8 +4302,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":1
  },
@@ -2383,7 +4327,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "food"
   ],
   "dedicated":0
  },
@@ -2407,7 +4352,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -2431,7 +4377,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "climate"
   ],
   "dedicated":0
  },
@@ -2455,8 +4401,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":0
  },
@@ -2483,7 +4429,7 @@
    "Veterinary"
   ],
   "themes":[
-   "sustainability"
+   "climate"
   ],
   "dedicated":0
  },
@@ -2509,8 +4455,8 @@
    "Veterinary"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -2534,8 +4480,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -2559,8 +4505,182 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRAT2103",
+  "name":"Sociologie des acteurs et des territoires ruraux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hanin Yves"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRAT2103",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "building",
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRAT2104",
+  "name":"Land monitoring by advanced Earth Observation",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Bontemps Sophie",
+   "Defourny Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRAT2104",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRAT2104A",
+  "name":"Land monitoring by advanced Earth Observation",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Bontemps Sophie",
+   "Defourny Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRAT2104A",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRAT2104B",
+  "name":"Land monitoring by advanced Earth Observation - Sustainable food production monitoring",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Bontemps Sophie",
+   "Defourny Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRAT2104B",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRES2101",
+  "name":"Smart technologies for environmental engineering",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Jonard Fran\u00e7ois",
+   "Lambot S\u00e9bastien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRES2101",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRES2101B",
+  "name":"Smart technologies for environmental engineering",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Jonard Fran\u00e7ois",
+   "Lambot S\u00e9bastien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRES2101B",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRES2101A",
+  "name":"Smart technologies for environmental engineering",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Jonard Fran\u00e7ois",
+   "Lambot S\u00e9bastien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRES2101A",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "food"
   ],
   "dedicated":0
  },
@@ -2583,8 +4703,31 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "pollution",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRES2105",
+  "name":"Soil erosion and conservation",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Bielders Charles"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRES2105",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2607,7 +4750,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "life"
   ],
   "dedicated":0
  },
@@ -2631,7 +4774,126 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRES2218",
+  "name":"S\u00e9minaires professionnels en gestion des ressources en eau et sol et technologies environnementales + excursions",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bielders Charles",
+   "Vanclooster Marnik"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRES2218",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBRES2218A",
+  "name":"S\u00e9minaires professionnels en gestion des ressources en eau et sol et technologies environnementales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bielders Charles",
+   "Vanclooster Marnik"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRES2218A",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBRNA2201",
+  "name":"Principes de catalyse h\u00e9t\u00e9rog\u00e8ne",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gaigneaux Eric"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRNA2201",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRPP2102",
+  "name":"Entomologie appliqu\u00e9e \u00e0 l'agriculture",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bragard Claude",
+   "Hance Thierry"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRPP2102",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRPP2211",
+  "name":"Lutte biologique et sant\u00e9 v\u00e9g\u00e9tale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bragard Claude",
+   "Declerck Stephan",
+   "Legr\u00e8ve Anne"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRPP2211",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2655,9 +4917,35 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
+ },
+ {
+  "id":"LBRTE2102",
+  "name":"Exercices int\u00e9gr\u00e9s en science et technologies environnementales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Alonso Alice",
+   "Gerin Patrick",
+   "Javaux Mathieu",
+   "Vanclooster Marnik"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRTE2102",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":1
  },
  {
   "id":"LBRTE2201",
@@ -2682,7 +4970,55 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBRTI2102",
+  "name":"Process-based modelling in bioscience engineering",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Hanert Emmanuel"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LBRTI2102",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LCCR1215",
+  "name":"Campus cin\u00e9ma",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vuillemenot Anne-Marie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCCR1215",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2707,7 +5043,8 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -2732,7 +5069,82 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LCHM2245",
+  "name":"Chimie organique industrielle",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCHM2245",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LCHM2246",
+  "name":"Chimie nucl\u00e9aire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Froment Pascal"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCHM2246",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LCHM2280",
+  "name":"Industrial chemistry",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Lacroix Marc",
+   "Mutterer Vincent"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCHM2280",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2755,7 +5167,7 @@
    "Veterinary"
   ],
   "themes":[
-   "climate"
+   "carbon"
   ],
   "dedicated":0
  },
@@ -2783,6 +5195,133 @@
   "dedicated":1
  },
  {
+  "id":"LCLIM2170",
+  "name":"Terrain I en climatologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vanacker Veerle"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCLIM2170",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LCLIM2270",
+  "name":"Terrain II en climatologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "van Wesemael Bas"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCLIM2270",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LCOMU1126",
+  "name":"Anthropologie de la communication",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Del Fa Sophie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCOMU1126",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LCOMU2221",
+  "name":"Analyse des productions cin\u00e9matographiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fevry S\u00e9bastien",
+   "Wouters Nicolas"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LCOMU2221",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LDATE2990",
+  "name":"Master thesis in data analytics",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LDATE2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LDEMO2610",
   "name":"Population et sant\u00e9",
   "year":"2022-2023",
@@ -2807,7 +5346,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -2829,7 +5368,61 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LDRHD2201",
+  "name":"Droit p\u00e9nal sp\u00e9cial",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Giacometti Mona"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LDRHD2201",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LDROI1309",
+  "name":"Ethique appliqu\u00e9e au droit",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Andr\u00e9 Pierre",
+   "Lambrecht Maxime",
+   "Lazaro Christophe"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LDROI1309",
+  "cycles":[
+   "bac",
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Law & Criminology",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -2862,7 +5455,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -2885,9 +5478,40 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LDROP2061",
+  "name":"Droit g\u00e9n\u00e9ral de l'environnement et du cadre de vie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Born Charles-Hubert"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LDROP2061",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Architecture",
+   "Communication",
+   "Economy",
+   "Law & Criminology",
+   "Management",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -2914,9 +5538,32 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LDROP2093",
+  "name":"Leading cases of the European Court of Human Rights",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Callewaert Johan"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LDROP2093",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"LDVLD1300",
@@ -2941,9 +5588,37 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "energy",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LDVLP2201",
+  "name":"S\u00e9minaire d'\u00e9ducation \u00e0 la citoyennet\u00e9 mondiale et solidaire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Ansoms An"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LDVLP2201",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LDVLP2315",
@@ -2968,8 +5643,7 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -3001,8 +5675,7 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3017,6 +5690,36 @@
    "Gijs Anne-Sophie"
   ],
   "url":"https:\/\/uclouvain.be\/cours-2022-LDVLP2626",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LDVLP2640",
+  "name":"Analyse socio-\u00e9conomique du Monde arabe",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Legrand Vincent"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LDVLP2640",
   "cycles":[
    "master"
   ],
@@ -3059,6 +5762,7 @@
    "Sociology"
   ],
   "themes":[
+   "life",
    "resources"
   ],
   "dedicated":0
@@ -3087,9 +5791,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -3116,7 +5821,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3146,7 +5851,8 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -3173,7 +5879,8 @@
    "Sociology"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -3202,7 +5909,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3283,8 +5990,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3310,60 +6016,100 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"LELEC2102",
-  "name":"Project in Electrical Engineering: Integration of wireless embedded sensing systems",
+  "id":"LEDPH1028",
+  "name":"Biom\u00e9canique appliqu\u00e9e aux sports",
   "year":"2022-2023",
   "languages":[
-   "en",
    "fr"
   ],
   "teachers":[
-   "Bol David",
-   "Jacques Laurent",
-   "Louveaux J\u00e9r\u00f4me",
-   "Standaert Fran\u00e7ois-Xavier"
+   "De Jaeger Dominique",
+   "Dewolf Arthur"
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-LELEC2102",
+  "url":"https:\/\/uclouvain.be\/cours-2022-LEDPH1028",
   "cycles":[
+   "bac",
    "master"
   ],
   "fields":[
-   "Engineering"
+   "Medecine & Health"
   ],
   "themes":[
-   "resources"
+   "transport"
   ],
   "dedicated":0
  },
  {
-  "id":"LELEC2103",
-  "name":"Project in Electrical Engineering: Optimization of wireless embedded sensing systems",
+  "id":"LEDPH1033",
+  "name":"Sports d'endurance en plein air et stage associ\u00e9",
   "year":"2022-2023",
   "languages":[
-   "en",
    "fr"
   ],
   "teachers":[
-   "Bol David",
-   "Jacques Laurent",
-   "Louveaux J\u00e9r\u00f4me",
-   "Standaert Fran\u00e7ois-Xavier"
+   "Deldicque Louise"
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-LELEC2103",
+  "url":"https:\/\/uclouvain.be\/cours-2022-LEDPH1033",
   "cycles":[
-   "master"
+   "other"
   ],
   "fields":[
-   "Engineering"
+   "Medecine & Health"
   ],
   "themes":[
-   "resources"
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LEDPH1052",
+  "name":"De l'audace en s\u00e9curit\u00e9 \u00e0 l'escalade et stage associ\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Francaux Marc"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LEDPH1052",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LEDPH1053",
+  "name":"Nature et activit\u00e9s physiques et sportives et stage associ\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Attar M\u00e9dhy"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LEDPH1053",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "transport"
   ],
   "dedicated":0
  },
@@ -3409,8 +6155,30 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LELEC2990",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LELEC2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -3435,8 +6203,8 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "energy",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -3467,10 +6235,33 @@
    "Sociology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LELME2990",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LELME2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LENVI2005",
@@ -3504,6 +6295,33 @@
   "dedicated":1
  },
  {
+  "id":"LENVI2006",
+  "name":"Sociologie de l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bartiaux Fran\u00e7oise"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LENVI2006",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"LENVI2007",
   "name":"Renewable energy sources",
   "year":"2022-2023",
@@ -3525,7 +6343,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -3550,7 +6369,39 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LENVI2011",
+  "name":"M\u00e9thodes d'\u00e9valuation et de gestion environnementale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Tack Jean-Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LENVI2011",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "building",
+   "economy",
+   "life"
   ],
   "dedicated":1
  },
@@ -3580,7 +6431,9 @@
    "Sociology"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -3603,7 +6456,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
+   "pollution",
    "resources"
   ],
   "dedicated":1
@@ -3636,10 +6489,56 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "energy",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LENVI2099",
+  "name":"Projet personnel de fin d'\u00e9tudes",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LENVI2099",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LENVI2199",
+  "name":"Stage professionnel",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lederer Dimitri",
+   "Nieberding Caroline"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LENVI2199",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LEPL1505",
@@ -3660,8 +6559,32 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LEPL1801",
+  "name":"Ethique de l'ing\u00e9nieur",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   ". SOMEBODY",
+   "Guay Alexandre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LEPL1801",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -3688,7 +6611,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3716,12 +6639,49 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LESPO2100",
+  "name":"Economie politique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cleppert Caroline",
+   "Delmez Fran\u00e7oise"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LESPO2100",
+  "cycles":[
+   "bac",
+   "certificate",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"LESPO2103",
@@ -3746,9 +6706,9 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -3774,9 +6734,10 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -3805,7 +6766,33 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LEUSL2112",
+  "name":"Advanced issues in Economic and Monetary Union",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Fontan Cl\u00e9ment"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LEUSL2112",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -3840,6 +6827,128 @@
   "dedicated":0
  },
  {
+  "id":"LEUSL2717",
+  "name":"EU Environmental and health policies",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "de Sadeleer Nicolas"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LEUSL2717",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LFIAL2010",
+  "name":"Chaire Altissia : Enjeux culturels et \u00e9thiques du num\u00e9rique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Byl C\u00e9dric",
+   "Pence Charles"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFIAL2010",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LFILO1140",
+  "name":"Philosophie morale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Depr\u00e9 Olivier"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFILO1140",
+  "cycles":[
+   "bac",
+   "certificate",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology",
+   "Theology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LFILO1220",
+  "name":"Philosophie des sciences",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Pence Charles"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFILO1220",
+  "cycles":[
+   "bac",
+   "certificate",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LFILO1310",
   "name":"Philosophie de la nature",
   "year":"2022-2023",
@@ -3865,7 +6974,68 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LFILO2003",
+  "name":"Questions d'\u00e9thique dans les sciences et les techniques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Crucifix Michel",
+   "Jeanmart Herv\u00e9",
+   "Pence Charles"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFILO2003",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LFILO2003E",
+  "name":"Questions d'\u00e9thique dans les sciences et les techniques (partie s\u00e9minaire)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jeanmart Herv\u00e9",
+   "Pence Charles"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFILO2003E",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -3917,7 +7087,8 @@
    "Philosophy"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -3953,6 +7124,31 @@
   "dedicated":0
  },
  {
+  "id":"LFILO2801",
+  "name":"Cours de la chaire Mercier",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Frogneux Nathalie",
+   "Pourtois Herv\u00e9"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFILO2801",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LFILO2920",
   "name":"S\u00e9minaire de philosophie pratique",
   "year":"2022-2023",
@@ -3979,6 +7175,30 @@
   "dedicated":0
  },
  {
+  "id":"LFOPA2006",
+  "name":"M\u00e9thodologie de la recherche en sciences humaines",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dupriez Vincent"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFOPA2006",
+  "cycles":[
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LFOPA2611",
   "name":"Processus de groupe et gestion de situations critiques",
   "year":"2022-2023",
@@ -3997,7 +7217,97 @@
    "Psychology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LFYAP2990",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LFYAP2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGBIO2990",
+  "name":"Master Thesis",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGBIO2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGCE2990",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGCE2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGCIV2052",
+  "name":"Hydropower plants",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Soares Frazao Sandra"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGCIV2052",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
   ],
   "dedicated":0
  },
@@ -4046,7 +7356,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -4070,8 +7381,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "pollution",
+   "resources"
   ],
   "dedicated":0
  },
@@ -4099,7 +7410,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4126,7 +7437,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -4150,7 +7462,39 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGEO1343",
+  "name":"Observation de la Terre par satellite",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lambin Eric"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGEO1343",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4179,8 +7523,7 @@
    "Veterinary"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -4202,8 +7545,33 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LGEO2130",
+  "name":"Fundamentals of geographic and environmental modelling",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Deleersnijder Eric",
+   "Vanwambeke Sophie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGEO2130",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -4227,7 +7595,7 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4251,8 +7619,30 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGEO2170",
+  "name":"Terrain I en g\u00e9ographie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lambin Eric"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGEO2170",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4277,7 +7667,8 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -4307,8 +7698,7 @@
    "Veterinary"
   ],
   "themes":[
-   "energy",
-   "sustainability"
+   "energy"
   ],
   "dedicated":1
  },
@@ -4338,7 +7728,31 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGEO2250",
+  "name":"Mesures de terrain en g\u00e9ographie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGEO2250",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4367,6 +7781,153 @@
   "dedicated":1
  },
  {
+  "id":"LGEO2270",
+  "name":"Terrain II en g\u00e9ographie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vanwambeke Sophie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGEO2270",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGEOL2401",
+  "name":"Pal\u00e9ontologie des vert\u00e9br\u00e9s",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGEOL2401",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGERM1524",
+  "name":"The History of English Literature II",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Bragard V\u00e9ronique"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGERM1524",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGERM1525",
+  "name":"American Culture: Memory and Identity Politics",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Bragard V\u00e9ronique"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGERM1525",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGERM2713",
+  "name":"Deutsche Linguistik: spezifische syntaktische und semantische Aspekte",
+  "year":"2022-2023",
+  "languages":[
+   "de"
+  ],
+  "teachers":[
+   "Sabel Joachim"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGERM2713",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGERM2716",
+  "name":"Deutsche Literatur : Gegenwartsliteratur im Zeitalter von Globalisierung und Interkulturalit\u00e4t.",
+  "year":"2022-2023",
+  "languages":[
+   "de"
+  ],
+  "teachers":[
+   "B\u00fcssgen Antje"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGERM2716",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LGERM2724",
   "name":"American literature and its Environments",
   "year":"2022-2023",
@@ -4387,7 +7948,7 @@
    "Philosophy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4419,7 +7980,103 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LGERM2872",
+  "name":"Literature and climate change",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "De Bruyn Ben"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGERM2872",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LGREC1500",
+  "name":"Grec - Niveau approfondi",
+  "year":"2022-2023",
+  "languages":[
+   "gr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LGREC1500",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LHAGI2530",
+  "name":"Conservation du patrimoine mobilier",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LHAGI2530",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR1606",
+  "name":"Atelier 6 : Orientation Architecture, Ville, Paysage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Outers Martin",
+   "Stephan Andr\u00e9"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR1606",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4442,24 +8099,49 @@
    "Architecture"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":1
  },
  {
-  "id":"LICAR2603",
-  "name":"Atelier 3 : Projet approfondi : ouverture internationale",
+  "id":"LICAR1801",
+  "name":"Mati\u00e8res \u00e0 construire\/mise en oeuvre",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Favre V\u00e9ronique",
-   "Gilot Christian"
+   "Gobbo Emilie",
+   "Van Oost Nicolas",
+   "Zastavni Denis"
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2603",
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR1801",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR2102",
+  "name":"Architecture et  soci\u00e9t\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vanneste Damien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2102",
   "cycles":[
    "master"
   ],
@@ -4467,9 +8149,76 @@
    "Architecture"
   ],
   "themes":[
-   "climate"
+   "building"
   ],
   "dedicated":0
+ },
+ {
+  "id":"LICAR2301",
+  "name":"Analyse et composition de l'urbain",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cavalieri Chiara"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2301",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR2303",
+  "name":"Analyse et composition du paysage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Cloquette Pierre"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2303",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR2312",
+  "name":"Ing\u00e9nierie territoriale et environnementale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gallez Olivier",
+   "Soares Frazao Sandra"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2312",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
  },
  {
   "id":"LICAR2801",
@@ -4492,9 +8241,9 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "resources",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -4518,9 +8267,217 @@
    "Architecture"
   ],
   "themes":[
+   "building",
    "energy",
-   "resources",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR2823",
+  "name":"Edification soutenable 3 : architecture  climatique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Altomonte Sergio",
+   "Trachte Sophie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2823",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LICAR2831",
+  "name":"Architecture : r\u00e9novation, restauration",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2831",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR2901",
+  "name":"Droit de l'espace b\u00e2ti et non b\u00e2ti",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Thiebaut Christophe"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2901",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR2902",
+  "name":"Gestion de projet et monde de l'\u00e9dification",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Van Oost Nicolas"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2902",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LICAR2901A",
+  "name":"Droit de l'espace b\u00e2ti et non b\u00e2ti (partie1)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LICAR2901A",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Architecture"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LINFO2359",
+  "name":"Software engineering and programming systems seminar",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Legay Axel"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LINFO2359",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LINFO2990",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LINFO2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LINFO2991",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LINFO2991",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LINFO2992",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LINFO2992",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4551,9 +8508,41 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LINGE1327",
+  "name":"Recherche et d\u00e9veloppement technologique : m\u00e9canique, proc\u00e9d\u00e9s chimiques et mat\u00e9riaux",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fisette Paul",
+   "Nysten Bernard"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LINGE1327",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "pollution",
+   "resources"
+  ],
+  "dedicated":0
  },
  {
   "id":"LINMA2415",
@@ -4575,7 +8564,7 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy"
   ],
   "dedicated":1
@@ -4604,33 +8593,127 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"LLSMS2397",
-  "name":"Maatschappelijke verantwoordelijkheid van bedrijven",
+  "id":"LINMA2990",
+  "name":"Graduation project\/End of studies project",
   "year":"2022-2023",
   "languages":[
-   "nl"
+   "en"
   ],
   "teachers":[
-   "Denis Sabine"
+
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-LLSMS2397",
+  "url":"https:\/\/uclouvain.be\/cours-2022-LINMA2990",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Economy",
-   "Law & Criminology",
-   "Management"
+   "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"LKIMA2990",
+  "name":"Graduation project\/End of studies project",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LKIMA2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LKINE1038",
+  "name":"Biophysique appliqu\u00e9e \u00e0 la kin\u00e9sith\u00e9rapie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Detrembleur Christine"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LKINE1038",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LLMOD2802",
+  "name":"S\u00e9minaire transversal en litt\u00e9rature",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bragard V\u00e9ronique",
+   "Fabry Genevi\u00e8ve",
+   "Lisse Michel",
+   "Roland Hubert"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LLMOD2802",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LLOGO2112",
+  "name":"Approche int\u00e9gr\u00e9e et \u00e9cologique de la prise en charge des aphasies",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hameau Sol\u00e8ne"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LLOGO2112",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"LMAPR2001",
@@ -4656,9 +8739,9 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":0
  },
@@ -4681,8 +8764,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "prod&cons",
+   "resources"
   ],
   "dedicated":0
  },
@@ -4734,8 +8817,32 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LMAPR2141",
+  "name":"Metals Processing and Recycling",
+  "year":"2022-2023",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Henry Philippe",
+   "Proost Joris"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LMAPR2141",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
   ],
   "dedicated":0
  },
@@ -4760,8 +8867,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -4785,7 +8891,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "life"
   ],
   "dedicated":0
  },
@@ -4809,9 +8915,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -4838,24 +8943,45 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "carbon",
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"LMECA2322",
-  "name":"Fluid mechanics II",
+  "id":"LMECA1855",
+  "name":"Thermodynamique et \u00e9nerg\u00e9tique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bartosiewicz Yann",
+   "Papalexandris Miltiadis"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LMECA1855",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LMECA2160",
+  "name":"Combustion and fuels",
   "year":"2022-2023",
   "languages":[
    "en"
   ],
   "teachers":[
-   "Chatelain Philippe",
-   "Deleersnijder Eric",
-   "Winckelmans Gr\u00e9goire"
+   "Papalexandris Miltiadis"
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-LMECA2322",
+  "url":"https:\/\/uclouvain.be\/cours-2022-LMECA2160",
   "cycles":[
    "master"
   ],
@@ -4863,7 +8989,248 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LMECA2220",
+  "name":"Internal combustion engines",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Contino Francesco",
+   "Jeanmart Herv\u00e9"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LMECA2220",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LMECA2325",
+  "name":"Biomass conversion",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Gerin Patrick",
+   "Jeanmart Herv\u00e9"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LMECA2325",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LMECA2600",
+  "name":"Introduction to nuclear engineering and reactor technology (LLN)",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "A\u00eft Abderrahim Hamid"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LMECA2600",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Medecine & Health",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LMECA2990",
+  "name":"GraduationProject\/End of Studies Project",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LMECA2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LNANO2990",
+  "name":"Master thesis",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LNANO2990",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LNEEA2220",
+  "name":"Nexus Eau-Alimentation : outils de mod\u00e9lisation et d'analyse",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Alonso Alice",
+   "Javaux Mathieu",
+   "Vanclooster Marnik"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LNEEA2220",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LNOTA2004",
+  "name":"Droit administratif notarial",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jans Damien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LNOTA2004",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LOPES2218",
+  "name":"Question \u00e9cologique, d\u00e9veloppement durable, d\u00e9croissance soutenable",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Roman Philippe"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LOPES2218",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LPATR2110",
+  "name":"D\u00e9finitions, notions et sp\u00e9cificit\u00e9s du patrimoine culturel immobilier",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPATR2110",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LPHY1365",
+  "name":"M\u00e9t\u00e9orologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Crucifix Michel",
+   "Fichefet Thierry"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPHY1365",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "climate"
   ],
   "dedicated":0
  },
@@ -4890,6 +9257,7 @@
    "Veterinary"
   ],
   "themes":[
+   "carbon",
    "climate"
   ],
   "dedicated":1
@@ -4920,30 +9288,28 @@
   "dedicated":1
  },
  {
-  "id":"LPHYS2246",
-  "name":"Experimental methods in atomic and molecular physics",
+  "id":"LPHYS2264",
+  "name":"Oscillations et instabilit\u00e9s dans le syst\u00e8me climatique",
   "year":"2022-2023",
   "languages":[
    "en",
    "fr"
   ],
   "teachers":[
-   "Lauzin Cl\u00e9ment",
-   "Urbain Xavier"
+   "Crucifix Michel"
   ],
-  "url":"https:\/\/uclouvain.be\/cours-2022-LPHYS2246",
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPHYS2264",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Engineering",
    "Science",
    "Veterinary"
   ],
   "themes":[
-   "energy"
+   "climate"
   ],
-  "dedicated":0
+  "dedicated":1
  },
  {
   "id":"LPHYS2265",
@@ -4965,7 +9331,8 @@
    "Veterinary"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -5019,6 +9386,32 @@
   "dedicated":1
  },
  {
+  "id":"LPHYS2504",
+  "name":"Use, management and control of radioelements",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Froment Pascal"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPHYS2504",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Medecine & Health",
+   "Science",
+   "Veterinary"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"LPOLS1329",
   "name":"Sociologie de la religion",
   "year":"2022-2023",
@@ -5046,7 +9439,120 @@
    "Theology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LPPE1101",
+  "name":"Political Thought",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Rihoux Beno\u00eet",
+   "Van Parijs Philippe",
+   "Vanderborght Yannick"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPPE1101",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LPSP1336",
+  "name":"Psychologie et \u00e9valuation en petite enfance",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Grosbois Nathalie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPSP1336",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LPSYS2206",
+  "name":"Psychologie des religions, des valeurs et de leur pluralit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Saroglou Vassilis"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPSYS2206",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Pedagogy",
+   "Philosophy",
+   "Political Sciences",
+   "Psychology",
+   "Sociology",
+   "Theology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LPSYS2637",
+  "name":"Psychologie clinique de l'enfant et de  l'adolescent",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Mol Jan",
+   "Deplus Sandrine",
+   "Lahaye Magali"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPSYS2637",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5070,7 +9576,84 @@
    "Psychology"
   ],
   "themes":[
-   "resources"
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LPSYS2841",
+  "name":"Activit\u00e9 physique et sportive, techniques psycho-corporelles et sant\u00e9 psychique et physique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Brevers Damien"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LPSYS2841",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LROM1180",
+  "name":"Fundamentos del espa\u00f1ol moderno II",
+  "year":"2022-2023",
+  "languages":[
+   "es"
+  ],
+  "teachers":[
+   "Fabry Genevi\u00e8ve"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LROM1180",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LROM1372",
+  "name":"Letteratura e civilt\u00e0 italiana : l'Ottocento",
+  "year":"2022-2023",
+  "languages":[
+   "fr",
+   "it"
+  ],
+  "teachers":[
+   "Maeder Costantino"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LROM1372",
+  "cycles":[
+   "bac",
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  },
@@ -5095,7 +9678,39 @@
    "Philosophy"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LSEXM2810",
+  "name":"Anthropologie culturelle de la famille et du couple",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hermesse Julie"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LSEXM2810",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Pedagogy",
+   "Philosophy",
+   "Political Sciences",
+   "Psychology",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5117,9 +9732,37 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LSOC2091",
+  "name":"Ville et espace public",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Berger Mathieu"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LSOC2091",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Science",
+   "Sociology",
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"LSPED1221",
@@ -5147,9 +9790,35 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LSPRI2310",
+  "name":"Geoeconomy",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Struye de Swielande Tanguy"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LSPRI2310",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Communication",
+   "Economy",
+   "Management",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
  },
  {
   "id":"LSPRI2311",
@@ -5195,7 +9864,7 @@
    "Architecture"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -5218,10 +9887,54 @@
    "Architecture"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LTARC1251",
+  "name":"Paysage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Perrotti Daniela"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTARC1251",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LTARC1260",
+  "name":"Physique du b\u00e2timent",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Faux Pascaline"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTARC1260",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"LTARC1340",
@@ -5241,7 +9954,7 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -5263,8 +9976,33 @@
    "Architecture"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "building",
+   "energy",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LTARC2046",
+  "name":"Question d'architecture : architecture et territoires- Partie B: questionner les polarit\u00e9s et lieux de centralit\u00e9 au sein d'un territoire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Perrotti Daniela",
+   "Vermer Francois",
+   "Wilbaux Quentin"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTARC2046",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5286,7 +10024,30 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LTARC2142",
+  "name":"Architecture, ville et territoire : th\u00e9ories et m\u00e9thodes de l'urbanisme",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Grosjean Benedicte"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTARC2142",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -5308,7 +10069,118 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LTARC2231",
+  "name":"Ateliers de recherche TFE en et sur l'architecture",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bourez Olivier",
+   "Camus Olivier",
+   "Fache Dimitri",
+   "Outers Martin",
+   "Pleitinx Renaud",
+   "Salembier Chlo\u00e9",
+   "Sgambi Luca",
+   "Van Overstraeten Eric",
+   "Wilbaux Quentin"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTARC2231",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LTECO1220",
+  "name":"Soci\u00e9t\u00e9s, cultures, religions : questions humaines fondamentales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Legrand Geoffrey"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTECO1220",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Letters",
+   "Pedagogy",
+   "Philosophy",
+   "Psychology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LTHEO2262",
+  "name":"Ethique sociale chr\u00e9tienne : questions politiques et \u00e9conomiques II",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lesch Walter"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTHEO2262",
+  "cycles":[
+   "certificate",
+   "master"
+  ],
+  "fields":[
+   "Arts",
+   "Communication",
+   "Economy",
+   "Letters",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology",
+   "Theology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LTHEO2850",
+  "name":"Probl\u00e8mes actuels de th\u00e9ologie pastorale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Legrand Geoffrey"
+  ],
+  "url":"https:\/\/uclouvain.be\/cours-2022-LTHEO2850",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Theology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  }
