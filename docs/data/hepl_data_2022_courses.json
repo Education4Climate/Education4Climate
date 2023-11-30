@@ -1,5 +1,28 @@
 [
  {
+  "id":"AGR-1-002",
+  "name":"Microbiologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Pylyser Murielle"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-002-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"AGR-1-005",
   "name":"Productions v\u00e9g\u00e9tales",
   "year":"2022-2023",
@@ -18,7 +41,52 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AGR-1-013",
+  "name":"Sciences du sol et \u00e9cologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fagot Laurence"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-013-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"AGR-1-023",
+  "name":"Agro-industries et biotechnologies AAB: Qualit\u00e9 des denr\u00e9es alimentaires",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Imbreckx Nicolas"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-023-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -40,8 +108,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -63,7 +130,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -85,7 +152,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -107,7 +174,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -129,8 +196,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -152,7 +218,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -174,8 +240,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":0
  },
@@ -197,7 +263,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -219,8 +285,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -242,8 +309,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -265,7 +332,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"AGR-1-066",
+  "name":"Environnement: Droit",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Rigaux Jean-Marc"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-066-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -287,29 +376,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
-  ],
-  "dedicated":1
- },
- {
-  "id":"AGR-1-071",
-  "name":"Environnement: Production biologique",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Dewez Bernard"
-  ],
-  "url":"https:\/\/hepl.be\/static\/AGR-1-071-2022.html",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology"
-  ],
-  "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":1
  },
@@ -331,10 +398,10 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "pollution",
+   "resources"
   ],
   "dedicated":1
  },
@@ -356,9 +423,77 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"AGR-1-076",
+  "name":"Environnement: Droit et Expertise",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Rigaux Jean-Marc"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-076-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"AGR-1-078",
+  "name":"Environnement: Am\u00e9nagement du territoire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Piroton Sabine"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-078-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"AGR-1-083",
+  "name":"Techniques et gestion agricoles: G\u00e9nie Rural",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Warling Nicolas"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-083-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
  },
  {
   "id":"AGR-1-085",
@@ -378,7 +513,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -400,21 +535,21 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
  {
-  "id":"AGR-1-105",
-  "name":"For\u00eat et nature: Gestion de la faune sauvage",
+  "id":"AGR-1-095",
+  "name":"Environnement: Ecologie",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Michaux Jean-Fran\u00e7ois"
+   "Piroton Sabine"
   ],
-  "url":"https:\/\/hepl.be\/static\/AGR-1-105-2022.html",
+  "url":"https:\/\/hepl.be\/static\/AGR-1-095-2022.html",
   "cycles":[
    "bac"
   ],
@@ -422,7 +557,51 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"AGR-1-096",
+  "name":"Techniques et gestion agricoles: Zootechnie sp\u00e9ciale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dawirs Marianne"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-096-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AGR-1-098",
+  "name":"For\u00eat et nature : Applications",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Olivier Xavier"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-098-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -444,8 +623,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -467,7 +645,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -489,21 +667,21 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"AGR-1-117",
-  "name":"Agro-industries et biotechnologies TVV: Production biologique",
+  "id":"AGR-1-114",
+  "name":"Agro-industries et biotechnologies TVV: Qualit\u00e9 des denr\u00e9es alimentaires",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Dewez Bernard"
+   "Imbreckx Nicolas"
   ],
-  "url":"https:\/\/hepl.be\/static\/AGR-1-117-2022.html",
+  "url":"https:\/\/hepl.be\/static\/AGR-1-114-2022.html",
   "cycles":[
    "bac"
   ],
@@ -511,7 +689,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AGR-1-116",
+  "name":"Agro-industries et biotechnologies TVV: Sol et terroir",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Doutreloup Sebastien"
+  ],
+  "url":"https:\/\/hepl.be\/static\/AGR-1-116-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -533,7 +733,53 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-036",
+  "name":"BIOCHIMIE: Biologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gilliquet V\u00e9ronique"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-036-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "carbon"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-038",
+  "name":"BIOCHIMIE: Microbiologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gilliquet V\u00e9ronique"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-038-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -556,7 +802,147 @@
    "Science"
   ],
   "themes":[
+   "pollution",
    "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-044",
+  "name":"BIOTECHNOLOGIE: Biologie appliqu\u00e9e",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Delfosse Philippe"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-044-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-053",
+  "name":"BIOCHIMIE: Normes et qualit\u00e9 en microbiologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gilliquet V\u00e9ronique"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-053-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-056",
+  "name":"BIOTECHNOLOGIE: G\u00e9nie biologique TP",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jans Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-056-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-074",
+  "name":"BIOCHIMIE: Microbiologie TP et bios\u00e9curit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jans Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-074-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-077",
+  "name":"BIOPHARMACEUTIQUE: GMP dans le domaine Biopharmaceutique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gilliquet V\u00e9ronique"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-077-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CHI-1-079",
+  "name":"BIOPHARMACEUTIQUE: G\u00e9nie biologique adapt\u00e9 aux entreprises biopharmaceutique TP",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jans Fr\u00e9d\u00e9ric"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CHI-1-079-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -578,7 +964,74 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"COM-1-042",
+  "name":"COMMUNICATION ET VULGARISATION : Techniques de communication et de sensibilisation li\u00e9es \u00e0 la sant\u00e9 et l'environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lenoir La\u00ebtitia"
+  ],
+  "url":"https:\/\/hepl.be\/static\/COM-1-042-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Communication"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"CON-1-011",
+  "name":"Thermique du b\u00e2timent 1.1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Huberty Christelle"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CON-1-011-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CON-1-019",
+  "name":"Chauffage et ventilation 1.2",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Huberty Christelle"
+  ],
+  "url":"https:\/\/hepl.be\/static\/CON-1-019-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  },
@@ -600,10 +1053,11 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "building",
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":0
  },
@@ -625,7 +1079,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -647,24 +1102,27 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "resources"
   ],
   "dedicated":1
  },
  {
-  "id":"DIET-1-017",
-  "name":"Toxicologie et pharmacodynamie",
+  "id":"DENTAIRE-1-004",
+  "name":"Sant\u00e9 et soci\u00e9t\u00e9",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Claessens V\u00e9ronique"
+   "Lebrun Marie-C\u00e9cile"
   ],
-  "url":"https:\/\/hepl.be\/static\/DIET-1-017-2022.html",
+  "url":"https:\/\/hepl.be\/static\/DENTAIRE-1-004-2022.html",
   "cycles":[
    "bac"
   ],
@@ -672,9 +1130,208 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"DENTAIRE-1-007",
+  "name":"Sant\u00e9, p\u00e9dagogie et soci\u00e9t\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dumoulin Fran\u00e7oise"
+  ],
+  "url":"https:\/\/hepl.be\/static\/DENTAIRE-1-007-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"DENTAIRE-1-020",
+  "name":"Psychopathologie et soci\u00e9t\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dumoulin Fran\u00e7oise"
+  ],
+  "url":"https:\/\/hepl.be\/static\/DENTAIRE-1-020-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ERGO-1-022",
+  "name":"Evaluation et intervention ergoth\u00e9rapeutique (partim 2)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lacroix Nathalie"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ERGO-1-022-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ERGO-1-023",
+  "name":"Pratique et analyse th\u00e9rapeutique de l'activit\u00e9 (partim 2)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Job B\u00e9atrice"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ERGO-1-023-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ERGO-1-025",
+  "name":"Enseignement clinique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dangel Yolaine"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ERGO-1-025-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ERGO-1-027",
+  "name":"Evaluation et intervention ergoth\u00e9rapeuthique (partim 3)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Saintgeorges Catherine"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ERGO-1-027-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ERGO-1-032",
+  "name":"Enseignement clinique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dangel Yolaine"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ERGO-1-032-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ERGO-1-035",
+  "name":"Adaptation",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Petre Charlene"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ERGO-1-035-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life",
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ERGO-1-043",
+  "name":"Influence de l'environnement sur la participation occupationnelle",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bassain Fatima"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ERGO-1-043-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"FACMAN-2-011",
@@ -695,8 +1352,144 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"FACMAN-2-013",
+  "name":"Gestion de l'immobilier",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Polus Christiane"
+  ],
+  "url":"https:\/\/hepl.be\/static\/FACMAN-2-013-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Management"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GESTPUBL-2-009",
+  "name":"Gestion publique pratique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/hepl.be\/static\/GESTPUBL-2-009-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GESTPUBL-2-038",
+  "name":"Sciences politiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Fournier Bernard"
+  ],
+  "url":"https:\/\/hepl.be\/static\/GESTPUBL-2-038-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Management"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GPROD-2-014",
+  "name":"Approche multidisciplinaire de la gestion de production (comp\u00e9tences 1 et 3)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Greday Yann"
+  ],
+  "url":"https:\/\/hepl.be\/static\/GPROD-2-014-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GPROD-2-030",
+  "name":"Am\u00e9lioration continue",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Greday Yann"
+  ],
+  "url":"https:\/\/hepl.be\/static\/GPROD-2-030-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GRH-1-005",
+  "name":"Economie G\u00e9n\u00e9rale et appliqu\u00e9e \u00e0 la GRH",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hamoir Elodie"
+  ],
+  "url":"https:\/\/hepl.be\/static\/GRH-1-005-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -718,8 +1511,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "dedicated":0
  },
@@ -741,7 +1533,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -763,7 +1555,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -785,7 +1577,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -808,7 +1600,8 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "prod&cons",
+   "transport"
   ],
   "dedicated":1
  },
@@ -830,7 +1623,9 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -853,7 +1648,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -875,7 +1670,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -897,7 +1692,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -919,7 +1714,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -941,7 +1736,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -963,7 +1758,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -985,7 +1780,30 @@
    "Engineering"
   ],
   "themes":[
+   "life",
    "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ING-2-037",
+  "name":"CONSTRUCTION ENERGIE ET ENVIRONNEMENT: Techniques sp\u00e9ciales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Masy Gabrielle"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ING-2-037-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":1
  },
@@ -1007,21 +1825,22 @@
    "Engineering"
   ],
   "themes":[
+   "life",
    "resources"
   ],
   "dedicated":0
  },
  {
-  "id":"ING-2-048",
-  "name":"GEOMETRE: Infrastructure et g\u00e9nie civil",
+  "id":"ING-2-055",
+  "name":"BIOCHIMIE BIOPRODUCTION: Biochimie et microbiologie",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Sacre Yves"
+   "Ek Olivier"
   ],
-  "url":"https:\/\/hepl.be\/static\/ING-2-048-2022.html",
+  "url":"https:\/\/hepl.be\/static\/ING-2-055-2022.html",
   "cycles":[
    "master"
   ],
@@ -1029,7 +1848,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1051,7 +1870,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1073,9 +1892,32 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons",
+   "resources"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ING-2-096",
+  "name":"CONSTRUCTION ENERGIE ET ENVIRONNEMENT : Bureaux d'\u00e9tude techniques sp\u00e9ciales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Masy Gabrielle"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ING-2-096-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":1
  },
  {
   "id":"ING-2-130",
@@ -1119,8 +1961,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1143,6 +1984,7 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
    "resources"
   ],
@@ -1166,7 +2008,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1188,7 +2030,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1210,7 +2052,30 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ING-2-320",
+  "name":"ELECTRONIQUE : Techniques et management",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Giovinazzo Florence"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ING-2-320-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -1232,7 +2097,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "building",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -1254,7 +2120,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1276,7 +2142,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "building",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -1298,8 +2165,11 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "energy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":1
  },
@@ -1321,10 +2191,60 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "energy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"ING-2-329",
+  "name":"INFORMATIQUE : Techniques et management",
+  "year":"2022-2023",
+  "languages":[
+   "fr",
+   "en"
+  ],
+  "teachers":[
+   "Schrynemackers Jean"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ING-2-329-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ING-2-331",
+  "name":"ELECTROMECANIQUE : Techniques et management",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Giovinazzo Florence"
+  ],
+  "url":"https:\/\/hepl.be\/static\/ING-2-331-2022.html",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"ING-2-350",
@@ -1344,7 +2264,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1366,44 +2286,69 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
+   "life",
+   "prod&cons",
    "resources"
   ],
   "dedicated":0
  },
  {
-  "id":"SF-1-049",
-  "name":"Soins de sant\u00e9 primaires, \u00e9ducatifs et pr\u00e9ventifs 2",
+  "id":"MEC-1-044",
+  "name":"Communication - Module 3",
   "year":"2022-2023",
   "languages":[
-   "fr"
+   "fr",
+   "en"
   ],
   "teachers":[
-   "Depoitre Nathalie"
+   "Nicolay Nathalie"
   ],
-  "url":"https:\/\/hepl.be\/static\/SF-1-049-2022.html",
+  "url":"https:\/\/hepl.be\/static\/MEC-1-044-2022.html",
   "cycles":[
    "bac"
   ],
   "fields":[
-   "Medecine & Health"
+   "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "transport"
   ],
   "dedicated":0
  },
  {
-  "id":"TIM-1-023",
-  "name":"Technologies li\u00e9es \u00e0 l'imagerie m\u00e9dicale partie 7",
+  "id":"PSY-1-060",
+  "name":"Economie",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Mercier Christophe"
+   "Hamoir Elodie"
   ],
-  "url":"https:\/\/hepl.be\/static\/TIM-1-023-2022.html",
+  "url":"https:\/\/hepl.be\/static\/PSY-1-060-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Psychology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"TIM-1-046",
+  "name":"Technologies li\u00e9es \u00e0 l'imagerie m\u00e9dicale partie 8",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vanquaethem Marine"
+  ],
+  "url":"https:\/\/hepl.be\/static\/TIM-1-046-2022.html",
   "cycles":[
    "bac"
   ],
@@ -1411,7 +2356,29 @@
    "Medecine & Health"
   ],
   "themes":[
-   "energy"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"TIM-1-050",
+  "name":"Radioprotection",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Humblet Chantal"
+  ],
+  "url":"https:\/\/hepl.be\/static\/TIM-1-050-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -1434,7 +2401,30 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"TRP-1-025",
+  "name":"Management de projets et gestion analytique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Van Meir Fran\u00e7ois"
+  ],
+  "url":"https:\/\/hepl.be\/static\/TRP-1-025-2022.html",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Management"
+  ],
+  "themes":[
+   "economy"
   ],
   "dedicated":0
  }
