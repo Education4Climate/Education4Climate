@@ -18,17 +18,51 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "TOU12TOR",
+   "TOU21TOUD",
+   "TOU31LG10"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":50
+ },
+ {
+  "id":5,
+  "name":"Droit",
+  "cycle":"bac",
+  "url":"https:\/\/www.heldb.be\/wpfiches\/?sodid=5&anacid=9",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Anderlecht"
+  ],
+  "faculties":[
+   "Sciences juridiques"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "TOU31LG10"
+   "DRU31RAPC3"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":50
+  "nb_total_courses":42
  },
  {
   "id":9,
@@ -49,17 +83,129 @@
    "Management"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "themes_scores":[
-   2
+   2,
+   1
   ],
   "matched_courses":[
    "GHU13HEQ",
+   "GHU21OHOT",
    "GHU21PROC"
   ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":44
+ },
+ {
+  "id":14,
+  "name":"Instituteur primaire",
+  "cycle":"bac",
+  "url":"https:\/\/www.heldb.be\/wpfiches\/?sodid=14&anacid=9",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Anderlecht",
+   "Jodoigne"
+  ],
+  "faculties":[
+   "Sciences psychologiques et de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "building",
+   "life",
+   "transport"
+  ],
+  "themes_scores":[
+   2,
+   4,
+   2
+  ],
+  "matched_courses":[
+   "NPU11SDDFS",
+   "NPU13AECP1",
+   "NPU22SDD2FG",
+   "NPU31SDDFS"
+  ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
+  "nb_total_courses":66
+ },
+ {
+  "id":15,
+  "name":"Instituteur primaire",
+  "cycle":"bac",
+  "url":"https:\/\/www.heldb.be\/wpfiches\/?sodid=15&anacid=9",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Anderlecht",
+   "Jodoigne"
+  ],
+  "faculties":[
+   "Sciences psychologiques et de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "building",
+   "life",
+   "transport"
+  ],
+  "themes_scores":[
+   2,
+   4,
+   2
+  ],
+  "matched_courses":[
+   "NPU11SDDFS",
+   "NPU13AECP1",
+   "NPU22SDD2FG",
+   "NPU31SDDFS"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":66
+ },
+ {
+  "id":16,
+  "name":"\u00c9ducateur sp\u00e9cialis\u00e9 en accompagnement psycho-\u00e9ducatif",
+  "cycle":"bac",
+  "url":"https:\/\/www.heldb.be\/wpfiches\/?sodid=16&anacid=9",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Jodoigne"
+  ],
+  "faculties":[
+   "Sciences psychologiques et de l'\u00e9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "EDU21CFI"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
   "nb_total_courses":44
  },
  {
@@ -80,17 +226,84 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   3,
+   1
+  ],
+  "matched_courses":[
+   "AJU11SCS",
+   "AJU12ECO",
+   "AJU21URPA",
+   "AJU23COMP"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
+  "nb_total_courses":41
+ },
+ {
+  "id":19,
+  "name":"\u00c9lectronique - \u00c9lectronique m\u00e9dicale",
+  "cycle":"bac",
+  "url":"https:\/\/www.heldb.be\/wpfiches\/?sodid=19&anacid=9",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Anderlecht"
+  ],
+  "faculties":[
+   "Sciences de l'ing\u00e9nieur et technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "AJU12ECO"
+   "TCU22ELEC"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":41
+  "nb_total_courses":51
+ },
+ {
+  "id":20,
+  "name":"Sciences industrielles",
+  "cycle":"bac",
+  "url":"https:\/\/www.heldb.be\/wpfiches\/?sodid=20&anacid=9",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Anderlecht"
+  ],
+  "faculties":[
+   "Sciences de l'ing\u00e9nieur et technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "TLU32CHI"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":36
  },
  {
   "id":23,
@@ -110,36 +323,41 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   5,
    1,
    1,
-   6,
    1,
-   4
+   11,
+   2
   ],
   "matched_courses":[
+   "GEU11MIC1",
+   "GEU12EAG",
    "GEU12ECO",
    "GEU12EFCGP",
    "GEU12MIC2",
+   "GEU13VCS1",
    "GEU21ENE",
    "GEU21EPU",
-   "GEU21MOB",
    "GEU21PHY",
-   "GEU22ATAU1",
+   "GEU22DRO1",
    "GEU22ECO1",
    "GEU23STA1",
+   "GEU23VCS2",
    "GEU31DRO2",
    "GEU31ECSYS2",
    "GEU33STA2"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":13,
+  "nb_matched_courses":16,
   "nb_total_courses":43
  },
  {
@@ -160,16 +378,26 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
-   1
+   1,
+   3,
+   1,
+   2
   ],
   "matched_courses":[
-   "TLU51IA"
+   "TLU41BGEQU",
+   "TLU42BBIOCAP",
+   "TLU42BGGBIO",
+   "TLU51IA",
+   "TLU51IBBIOCHIND"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":27
  },
  {
@@ -191,19 +419,31 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "economy",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
-   3
+   1,
+   3,
+   3,
+   2,
+   1
   ],
   "matched_courses":[
+   "TLU41BGEQU",
    "TLU41CCO",
+   "TLU41CGENV",
    "TLU51ACGEBUR",
-   "TLU51ACGECHV"
+   "TLU51ACGECA",
+   "TLU51ACGECHV",
+   "TLU51HPPVPOL"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":26
  }
 ]
