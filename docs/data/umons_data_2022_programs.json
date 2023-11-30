@@ -17,20 +17,35 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "environment"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   5,
+   1,
    2,
+   6,
    1
   ],
   "matched_courses":[
    "UA-M1-ARCHIT-004-M",
    "UA-M1-ARCHIT-016-M",
-   "UA-M2-ARCHIT-004-M"
+   "UA-M1-FINADB-002-M",
+   "UA-M1-FINADB-005-M",
+   "UA-M2-ARCHIT-004-M",
+   "UA-M2-ARCHIT-020-M",
+   "UA-M2-ARCHIT-021-M",
+   "UA-M2-ARCHIT-023-M",
+   "UA-M2-FINADB-001-M",
+   "UA-M2-FINADB-004-M",
+   "UA-M2-FINADB-006-M",
+   "UA-M2-FINADB-020-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":12,
   "nb_total_courses":43
  },
  {
@@ -51,14 +66,18 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   4,
+   1,
    2,
-   2,
+   6,
    1,
    1
   ],
@@ -66,11 +85,16 @@
    "UA-M1-ARCHIT-004-M",
    "UA-M1-ARCHIT-016-M",
    "UA-M1-FINURB-003-M",
+   "UA-M1-FINURB-004-M",
    "UA-M2-ARCHIT-004-M",
-   "UA-M2-FINURB-004-M"
+   "UA-M2-ARCHIT-020-M",
+   "UA-M2-ARCHIT-021-M",
+   "UA-M2-ARCHIT-023-M",
+   "UA-M2-FINURB-004-M",
+   "UA-M2-FINURB-006-M"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":10,
   "nb_total_courses":39
  },
  {
@@ -92,21 +116,153 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
    1,
-   2
+   7
   ],
   "matched_courses":[
    "UH-M1-METISS-003-M",
+   "UH-M1-METISS-004-M",
    "UH-M1-METISS-007-M",
-   "UH-M1-METISS-009-M"
+   "UH-M1-METISS-009-M",
+   "UH-M1-METISS-036-M",
+   "UH-M1-METISS-042-M",
+   "UH-M1-METISS-050-M",
+   "UH-M1-METISS-067-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":8,
   "nb_total_courses":81
+ },
+ {
+  "id":"MPT1_S204",
+  "name":"Master en politique \u00e9conomique et sociale, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en gestion des politiques \u00e9conomiques et sociales (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/m2-pogpes\/",
+  "languages":[
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UW-M1-POECSO-001-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":49
+ },
+ {
+  "id":"MIF1_S197",
+  "name":"Master en sciences informatiques, \u00e0 finalit\u00e9 approfondie (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-infofa\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "US-M1-SCINFO-020-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":70
+ },
+ {
+  "id":"MIF1_S198",
+  "name":"Master en sciences informatiques, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-infofs\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "US-M1-SCINFO-020-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":70
+ },
+ {
+  "id":"MIF1_S283",
+  "name":"Master en sciences informatiques, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en Artificial Intelligence and Data Analytics (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-inffsa\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "US-M1-SCINFO-020-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":70
  },
  {
   "id":"MCH1_S201",
@@ -127,17 +283,54 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "US-M1-SCCHIM-018-M",
+   "US-M2-CHIMFA-026-M",
+   "US-M2-CHIMFA-091-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":75
+ },
+ {
+  "id":"MCH1_S203",
+  "name":"Master en sciences chimiques, \u00e0 finalit\u00e9 didactique (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m2-chimfd\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "US-M2-CHIMFA-026-M"
+   "US-M1-SCCHIM-018-M"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":75
+  "nb_total_courses":40
  },
  {
   "id":"MBI1",
@@ -158,17 +351,87 @@
    "Science"
   ],
   "themes":[
-   "resources"
+   "energy",
+   "life",
+   "pollution",
+   "transport"
+  ],
+  "themes_scores":[
+   1,
+   2,
+   2,
+   1
+  ],
+  "matched_courses":[
+   "US-M1-BIOL60-008-M",
+   "US-M1-BIOL60-012-M",
+   "US-M1-BIOL60-019-M",
+   "US-M1-BIOL60-021-M"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
+  "nb_total_courses":26
+ },
+ {
+  "id":"MCQ1",
+  "name":"Master en sciences chimiques (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m1-chim60\/",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "US-M1-BIOL60-012-M"
+   "US-M1-CHIM60-021-M"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":26
+  "nb_total_courses":21
+ },
+ {
+  "id":"MSI1",
+  "name":"Master en sciences informatiques (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fs\/fr\/formations\/m1-info60\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "US-M1-INFO60-063-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":67
  },
  {
   "id":"MOE1_S244",
@@ -189,31 +452,52 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    2,
    2,
-   8,
    2,
-   3
+   1,
+   3,
+   16,
+   2,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
+   "US-M1-BIOECO-009-M",
+   "US-M1-BIOECO-011-M",
    "US-M1-BIOECO-018-M",
    "US-M1-BIOECO-019-M",
    "US-M1-BIOECO-032-M",
+   "US-M1-BIOECO-042-M",
+   "US-M1-BIOECO-046-M",
    "US-M1-BIOECO-050-M",
+   "US-M2-BIOECO-001-M",
    "US-M2-BIOEFS-027-M",
    "US-M2-BIOEFS-028-M",
    "US-M2-BIOEFS-031-M",
-   "US-M2-BIOEFS-065-M"
+   "US-M2-BIOEFS-036-M",
+   "US-M2-BIOEFS-039-M",
+   "US-M2-BIOEFS-040-M",
+   "US-M2-BIOEFS-043-M",
+   "US-M2-BIOEFS-045-M",
+   "US-M2-BIOEFS-065-M",
+   "US-MM-BIOECO-045-M"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":13,
+  "nb_matched_courses":19,
   "nb_total_courses":74
  },
  {
@@ -235,21 +519,25 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   4,
-   1
+   10
   ],
   "matched_courses":[
+   "US-M1-BIOECO-009-M",
+   "US-M1-BIOECO-011-M",
    "US-M1-BIOECO-018-M",
    "US-M1-BIOECO-019-M",
    "US-M1-BIOECO-032-M",
-   "US-M1-BIOECO-050-M"
+   "US-M1-BIOECO-042-M",
+   "US-M1-BIOECO-046-M",
+   "US-M1-BIOECO-050-M",
+   "US-M2-BIOECO-001-M",
+   "US-MM-BIOECO-045-M"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":10,
   "nb_total_courses":48
  },
  {
@@ -271,22 +559,29 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   5,
+   12,
    1
   ],
   "matched_courses":[
+   "US-M1-BIOECO-009-M",
+   "US-M1-BIOECO-011-M",
    "US-M1-BIOECO-018-M",
    "US-M1-BIOECO-019-M",
    "US-M1-BIOECO-032-M",
+   "US-M1-BIOECO-042-M",
+   "US-M1-BIOECO-046-M",
    "US-M1-BIOECO-050-M",
-   "US-M2-BIOEFA-006-M"
+   "US-M2-BIOECO-001-M",
+   "US-M2-BIOEFA-006-M",
+   "US-M2-BIOEFA-008-M",
+   "US-MM-BIOECO-045-M"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":12,
   "nb_total_courses":58
  },
  {
@@ -308,20 +603,33 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "building",
+   "economy",
+   "energy",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   1,
+   1,
+   1,
+   5,
    2,
    1
   ],
   "matched_courses":[
+   "US-M1-SCBBMC-008-M",
    "US-M1-SCBBMC-012-M",
    "US-M1-SCBBMC-032-M",
-   "US-M1-SCBBMC-052-M"
+   "US-M1-SCBBMC-042-M",
+   "US-M1-SCBBMC-052-M",
+   "US-M2-BBMCFS-028-M",
+   "US-M2-BBMCFS-029-M",
+   "US-M2-BBMCFS-032-M"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":8,
   "nb_total_courses":61
  },
  {
@@ -343,20 +651,26 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "energy",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   1,
+   3,
    2,
    1
   ],
   "matched_courses":[
+   "US-M1-SCBBMC-008-M",
    "US-M1-SCBBMC-012-M",
    "US-M1-SCBBMC-032-M",
+   "US-M1-SCBBMC-042-M",
    "US-M1-SCBBMC-052-M"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":68
  },
  {
@@ -378,20 +692,26 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "energy",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   1,
+   3,
    2,
    1
   ],
   "matched_courses":[
+   "US-M1-SCBBMC-008-M",
    "US-M1-SCBBMC-012-M",
    "US-M1-SCBBMC-032-M",
+   "US-M1-SCBBMC-042-M",
    "US-M1-SCBBMC-052-M"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":49
  },
  {
@@ -413,19 +733,93 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "building",
+   "economy",
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
   "matched_courses":[
+   "US-M1-SCCHIM-018-M",
+   "US-M2-CHIMFS-005-M",
    "US-M2-CHIMFS-011-M"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":33
+ },
+ {
+  "id":"MPT1_S205",
+  "name":"Master en politique \u00e9conomique et sociale, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en gestion des collectivit\u00e9s territoriales (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/m2-pogcot\/",
+  "languages":[
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UW-M1-POECSO-001-M"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":33
+  "nb_total_courses":47
+ },
+ {
+  "id":"MPT1_S206",
+  "name":"Master en politique \u00e9conomique et sociale, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en socio-politique (Mons)",
+  "cycle":"master",
+  "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/m2-posopo\/",
+  "languages":[
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UW-M1-POECSO-001-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":46
  },
  {
   "id":"MIS1_S210",
@@ -449,28 +843,31 @@
    "Management"
   ],
   "themes":[
+   "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   2,
    1,
-   1,
+   3,
    1
   ],
   "matched_courses":[
    "UW-M1-IGGEST-080-M",
+   "UW-M2-IGGESS-087-M",
    "UW-M2-IGGEST-105-M"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":85
  },
  {
-  "id":"BWG1_S260",
-  "name":"Bachelier en sciences de gestion (Mons)",
+  "id":"BHS1",
+  "name":"Bachelier en sciences humaines et sociales (Mons)",
   "cycle":"bac",
-  "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-scgest\/",
+  "url":"https:\/\/web.umons.ac.be\/eshs\/fr\/formations\/ba-schums\/",
   "languages":[
    "en",
    "es",
@@ -481,58 +878,24 @@
    "Mons"
   ],
   "faculties":[
-   "Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion"
+   "Ecole des Sciences Humaines et Sociales"
   ],
   "fields":[
-   "Economy",
-   "Management"
+   "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "UW-B3-SGEGIG-007-M"
+   "UH-B2-SCHUMS-030-M",
+   "UH-BM-SCHUMS-824-M"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":55
- },
- {
-  "id":"BGW1_S263",
-  "name":"Bachelier en sciences de gestion (Charleroi)",
-  "cycle":"bac",
-  "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-scgest-c\/",
-  "languages":[
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Charleroi"
-  ],
-  "faculties":[
-   "Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "UW-B3-SCGEST-027-C"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":52
+  "nb_matched_courses":2,
+  "nb_total_courses":99
  },
  {
   "id":"BSB1",
@@ -553,19 +916,26 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   11
   ],
   "matched_courses":[
+   "US-B1-SCBIOL-004-M",
+   "US-B1-SCBIOL-011-M",
+   "US-B2-SCBIOL-007-M",
+   "US-B2-SCBIOL-008-M",
    "US-B2-SCBIOL-011-M",
-   "US-B3-SCBIOL-004-M"
+   "US-B3-SCBIOL-004-M",
+   "US-B3-SCBIOL-005-M",
+   "US-B3-SCBIOL-006-M",
+   "US-B3-SCBIOL-008-M",
+   "US-B3-SCBIOL-014-M",
+   "US-B3-SCBIOL-016-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":11,
   "nb_total_courses":41
  },
  {
@@ -588,11 +958,13 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1,
@@ -626,25 +998,31 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
    1,
    1,
-   1
+   1,
+   1,
+   1,
+   3
   ],
   "matched_courses":[
-   "UI-B1-IRCIVI-006-M",
-   "UI-B1-IRCIVI-009-M"
+   "UI-B1-IRCIVI-009-M",
+   "UI-B1-IRCIVI-019-M",
+   "UI-B1-IRCIVI-707-M",
+   "UI-B2-IRCIVI-011-M"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":94
  },
  {
@@ -666,24 +1044,26 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
    1,
    1,
-   1
+   1,
+   1,
+   2
   ],
   "matched_courses":[
    "UI-B1-IRCIVI-110-C",
-   "UI-B3-IRCIVI-201-C"
+   "UI-B2-IRCIVI-211-C"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":2,
   "nb_total_courses":46
  },
@@ -709,28 +1089,64 @@
    "Management"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
+   1,
+   2,
    2,
    1,
-   3
+   2
   ],
   "matched_courses":[
    "UW-B2-IGGEST-002-M",
    "UW-B2-IGGEST-003-M",
-   "UW-B3-IGGEST-003-M",
-   "UW-B3-SGEGIG-007-M"
+   "UW-B3-IGGEST-002-M",
+   "UW-B3-IGGEST-003-M"
   ],
   "nb_dedicated_courses":3,
   "nb_matched_courses":4,
   "nb_total_courses":57
+ },
+ {
+  "id":"BPL1",
+  "name":"Bachelier en sciences psychologiques et de l'\u00e9ducation, orientation logop\u00e9die (Mons)",
+  "cycle":"bac",
+  "url":"https:\/\/web.umons.ac.be\/fpse\/fr\/formations\/ba-balogo\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Psychologie et des Sciences de l'Education"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UP-B2-BALOGO-005-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":67
  },
  {
   "id":"MEL1_S226",
@@ -754,59 +1170,29 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   4,
-   1
+   1,
+   1,
+   2,
+   2
   ],
   "matched_courses":[
-   "UI-M1-IRELAI-004-M",
-   "UI-M1-IRELEC-103-M",
-   "UI-M1-IRELEC-303-M",
+   "UI-M1-IRELEC-101-M",
    "UI-M2-IRELEC-405-M",
+   "UI-M2-IRELEC-504-M",
+   "UI-M2-IRELEC-506-M",
    "UI-M2-IRELEC-610-M"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":3,
   "nb_matched_courses":5,
   "nb_total_courses":68
- },
- {
-  "id":"BWG1_S259",
-  "name":"Bachelier en sciences \u00e9conomiques et de gestion (Mons)",
-  "cycle":"bac",
-  "url":"https:\/\/web.umons.ac.be\/fweg\/fr\/formations\/ba-scecge\/",
-  "languages":[
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Mons"
-  ],
-  "faculties":[
-   "Facult\u00e9 Warocqu\u00e9 d'Economie et de Gestion"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "UW-B3-SGEGIG-007-M"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":56
  },
  {
   "id":"MEL1_S225",
@@ -830,23 +1216,29 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   3,
-   1
+   1,
+   1,
+   2,
+   3
   ],
   "matched_courses":[
-   "UI-M1-IRELEC-103-M",
-   "UI-M1-IRELEC-303-M",
+   "UI-M1-IRELEC-101-M",
+   "UI-M2-IRELBS-003-M",
    "UI-M2-IRELEC-405-M",
+   "UI-M2-IRELEC-504-M",
+   "UI-M2-IRELEC-506-M",
    "UI-M2-IRELEC-610-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":66
  },
  {
@@ -871,23 +1263,64 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2,
+   1,
+   1,
+   1,
+   1,
+   2
+  ],
+  "matched_courses":[
+   "UI-M1-IRMECA-006-M",
+   "UI-M2-IRMECA-405-M",
+   "UI-M2-IRMECA-504-M",
+   "UI-M2-IRMECA-506-M",
+   "UI-M2-IRMECA-605-M",
+   "UI-M2-IRMECA-610-M"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":6,
+  "nb_total_courses":67
+ },
+ {
+  "id":"PAA1",
+  "name":"Bachelier en sciences psychologiques et de l'\u00e9ducation, orientation g\u00e9n\u00e9rale (Mons)",
+  "cycle":"bac",
+  "url":"https:\/\/web.umons.ac.be\/fpse\/fr\/formations\/ba-bagene\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Psychologie et des Sciences de l'Education"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
    1
   ],
   "matched_courses":[
-   "UI-M1-IRMECA-002-M",
-   "UI-M2-IRMECA-405-M",
-   "UI-M2-IRMECA-610-M"
+   "UP-B2-BAGENE-005-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
-  "nb_total_courses":67
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":71
  },
  {
   "id":"MEL1_S227",
@@ -911,24 +1344,30 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "sustainability"
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
-   5,
+   1,
+   1,
+   2,
+   2,
    1
   ],
   "matched_courses":[
-   "UI-M1-IRELEC-103-M",
-   "UI-M1-IRELEC-303-M",
+   "UI-M1-IRELEC-101-M",
+   "UI-M1-IRELEE-001-M",
    "UI-M2-IRELEC-405-M",
-   "UI-M2-IRELEC-610-M",
-   "UI-M2-IRELEE-003-M",
-   "UI-M2-IRELEE-006-M"
+   "UI-M2-IRELEC-504-M",
+   "UI-M2-IRELEC-506-M",
+   "UI-M2-IRELEC-610-M"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":3,
   "nb_matched_courses":6,
   "nb_total_courses":67
  },
@@ -954,23 +1393,32 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   3,
-   1
+   1,
+   1,
+   2,
+   1,
+   2
   ],
   "matched_courses":[
-   "UI-M1-IRMECA-002-M",
+   "UI-M1-IRMECA-006-M",
    "UI-M2-IRMECA-405-M",
+   "UI-M2-IRMECA-504-M",
+   "UI-M2-IRMECA-506-M",
+   "UI-M2-IRMECA-605-M",
    "UI-M2-IRMECA-610-M",
    "UI-M2-IRMEGE-003-M"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":7,
   "nb_total_courses":67
  },
  {
@@ -992,19 +1440,21 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "carbon",
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   3
   ],
   "matched_courses":[
    "US-B2-SCBIOC-923-C",
-   "US-B3-SCBIOC-933-C"
+   "US-B2-SCBIOC-929-C",
+   "US-B3-SCBIOC-933-C",
+   "US-B3-SCBIOC-940-C"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":53
  },
  {
@@ -1029,30 +1479,70 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   3,
    1,
-   2
+   1,
+   5,
+   4,
+   1
   ],
   "matched_courses":[
    "UI-M1-IRMIGE-008-M",
    "UI-M1-IRMIGE-010-M",
    "UI-M1-IRMIGE-011-M",
+   "UI-M2-IRMIGE-006-M",
+   "UI-M2-IRMIGE-007-M",
    "UI-M2-IRMIGE-010-M",
    "UI-M2-IRMIGE-405-M",
+   "UI-M2-IRMIGE-504-M",
+   "UI-M2-IRMIGE-506-M",
    "UI-M2-IRMIGE-610-M"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":10,
   "nb_total_courses":59
+ },
+ {
+  "id":"BPS1",
+  "name":"Bachelier en sciences pharmaceutiques (Mons)",
+  "cycle":"bac",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/ba-pharma\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine et de Pharmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UM-B1-PHARMA-007-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":50
  },
  {
   "id":"MAH1",
@@ -1076,21 +1566,30 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   3,
    1,
+   2,
    1,
    1
   ],
   "matched_courses":[
+   "UI-M1-IRARCH-004-M",
+   "UI-M1-IRARCH-014-M",
+   "UI-M1-IRARCH-101-M",
    "UI-M1-IRARCH-102-M",
-   "UI-M2-IRARCH-405-M"
+   "UI-M2-IRARCH-405-M",
+   "UI-M2-IRARCH-506-M",
+   "UI-M2-IRARCH-605-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":7,
   "nb_total_courses":59
  },
  {
@@ -1113,29 +1612,74 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
    1,
    1,
+   4,
    2,
+   5,
+   1,
    2
   ],
   "matched_courses":[
+   "UI-M1-IRCHIM-009-M",
    "UI-M1-IRCHPI-006-M",
    "UI-M2-IRCHIM-004-M",
+   "UI-M2-IRCHIM-005-M",
    "UI-M2-IRCHIM-006-M",
    "UI-M2-IRCHIM-405-M",
-   "UI-M2-IRCHIM-610-M"
+   "UI-M2-IRCHIM-504-M",
+   "UI-M2-IRCHIM-506-M",
+   "UI-M2-IRCHIM-605-M",
+   "UI-M2-IRCHIM-610-M",
+   "UI-M2-IRCHPI-003-M"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":11,
   "nb_total_courses":56
+ },
+ {
+  "id":"BBS1",
+  "name":"Bachelier en sciences biom\u00e9dicales (Mons)",
+  "cycle":"bac",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/ba-biomed\/",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine et de Pharmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "UM-B2-BIOMED-011-M",
+   "UM-B3-BIOMED-002-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":62
  },
  {
   "id":"MEC1_S233",
@@ -1159,22 +1703,31 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   1,
+   1,
+   1,
+   1,
+   2
   ],
   "matched_courses":[
-   "UI-M1-IRMECA-002-M",
+   "UI-M1-IRMECA-006-M",
    "UI-M2-IRMECA-405-M",
+   "UI-M2-IRMECA-504-M",
+   "UI-M2-IRMECA-506-M",
+   "UI-M2-IRMECA-605-M",
    "UI-M2-IRMECA-610-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":6,
   "nb_total_courses":68
  },
  {
@@ -1199,21 +1752,27 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1,
    1
   ],
   "matched_courses":[
    "UI-M2-IRIGIG-404-M",
+   "UI-M2-IRIGIG-504-M",
+   "UI-M2-IRIGIG-525-M",
    "UI-M2-IRIGIG-610-M"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":62
  },
  {
@@ -1236,28 +1795,39 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
    1,
    1,
+   3,
    2,
-   2
+   3,
+   2,
+   1
   ],
   "matched_courses":[
+   "UI-M1-IRCHIM-009-M",
    "UI-M1-IRCHSM-001-M",
    "UI-M2-IRCHIM-004-M",
+   "UI-M2-IRCHIM-005-M",
    "UI-M2-IRCHIM-006-M",
    "UI-M2-IRCHIM-405-M",
+   "UI-M2-IRCHIM-504-M",
+   "UI-M2-IRCHIM-506-M",
+   "UI-M2-IRCHIM-605-M",
    "UI-M2-IRCHIM-610-M"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":10,
   "nb_total_courses":55
  },
  {
@@ -1280,7 +1850,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -1311,27 +1881,59 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
+   4,
+   1,
    1,
    2,
-   1,
-   1,
-   2
+   1
   ],
   "matched_courses":[
    "UA-B1-ARCHIT-012-M",
+   "UA-B2-ARCHIT-015-M",
    "UA-B3-ARCHIT-001-M",
+   "UA-B3-ARCHIT-012-M",
    "UA-B3-ARCHIT-013-M"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":54
+ },
+ {
+  "id":"CES1_S294",
+  "name":"CAPAES pour les \u00e9tudiants non porteurs d'un titre p\u00e9dagogique (Mons)",
+  "cycle":"certificate",
+  "url":"https:\/\/web.umons.ac.be\/efe\/training\/capnpo-capspe\/",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Ecole de Formation des Enseignants"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "UF-C1-CAPNPO-015-M"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":15
  },
  {
   "id":"C831",
@@ -1351,16 +1953,51 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   3,
+   1
+  ],
+  "matched_courses":[
+   "US-U1-BIOMAR-001-M",
+   "US-U1-BIOMAR-002-M",
+   "US-U1-BIOMAR-003-M"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":4
+ },
+ {
+  "id":"C931",
+  "name":"Certificat d'Universit\u00e9 en Sciences des Animaux de Laboratoire (Mons)",
+  "cycle":"certificate",
+  "url":"https:\/\/web.umons.ac.be\/fmp\/fr\/formations\/cu-scilab\/",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Mons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine et de Pharmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "US-U1-BIOMAR-002-M"
+   "UM-U1-SCILAB-001-M"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":4
+  "nb_total_courses":1
  }
 ]
