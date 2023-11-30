@@ -23,7 +23,9 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "energy",
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -47,7 +49,33 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"26369",
+  "name":"Apprentissage 302",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bovy Emilie",
+   "Carvona Joseph",
+   "Davain L\u00e9onie",
+   "Seba Catherine",
+   "Vandermeulen Mary"
+  ],
+  "url":"https:\/\/www.helmo.be\/Formations\/Pedagogique\/Instituteur-Prescolaire\/Grille-de-cours.aspx?ue=26369",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -70,7 +98,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -93,7 +121,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -116,7 +144,8 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "food",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -139,9 +168,35 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
+ },
+ {
+  "id":"25193",
+  "name":"1I08 Production D'Energie 1 - Ind",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Kelner Vincent",
+   "Andre Maxime",
+   "Andrien Thomas",
+   "Marechal Didier"
+  ],
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Industrial-and-business-engineering\/IBE-Programme-d-etudes-Gramme.aspx?ue=25193",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":1
  },
  {
   "id":"25200",
@@ -162,10 +217,55 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
+ },
+ {
+  "id":"23255",
+  "name":"2Hg03 : Thermodynamique Appliquee - Suivi \u00c0 Helmo Gramme",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Kelner Vincent"
+  ],
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Industrial-and-business-engineering\/IBE-Programme-d-etudes-HEC.aspx?ue=23255",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"25224",
+  "name":"3Hg07 : Production D'Energie - Ibe",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Kelner Vincent",
+   "Marechal Didier"
+  ],
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Industrial-and-business-engineering\/IBE-Programme-d-etudes-HEC.aspx?ue=25224",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":1
  },
  {
   "id":"24437",
@@ -181,6 +281,31 @@
   "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Industrial-and-business-engineering\/IBE-Programme-d-etudes-HEC.aspx?ue=24437",
   "cycles":[
    "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"25115",
+  "name":"1G08 Production D'Energie 1 - Ged",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Kelner Vincent",
+   "Andre Maxime",
+   "Andrien Thomas",
+   "Marechal Didier"
+  ],
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-en-genie-energetique-durable\/Grille-de-cours.aspx?ue=25115",
+  "cycles":[
+   "master"
   ],
   "fields":[
    "Engineering"
@@ -209,7 +334,9 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -238,6 +365,28 @@
   "dedicated":0
  },
  {
+  "id":"25120",
+  "name":"1G13 Mobilite Et Transports Alternatifs - Ged",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Toussaint Yves"
+  ],
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-en-genie-energetique-durable\/Grille-de-cours.aspx?ue=25120",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"25130",
   "name":"2G08 Production D'Energie Alternative - Ged",
   "year":"2022-2023",
@@ -259,25 +408,25 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"25131",
-  "name":"2G09 Gestion Rationnelle Des Flux - Ged",
+  "id":"22384",
+  "name":"B215 Thermodynamique",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Belboom Sandra",
-   "Delvigne Elie",
-   "Mercenier Bastien"
+   "Kelner Vincent",
+   "Andre Maxime"
   ],
-  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-en-genie-energetique-durable\/Grille-de-cours.aspx?ue=25131",
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-bac\/Grille-de-cours.aspx?ue=22384",
   "cycles":[
-   "master"
+   "bac"
   ],
   "fields":[
    "Engineering"
@@ -305,8 +454,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
@@ -329,7 +477,30 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"22314",
+  "name":"Communication En 2\u00c8me Langue \u00c9trang\u00e8re",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Proesmans Maxim"
+  ],
+  "url":"https:\/\/www.helmo.be\/Formations\/Economique\/Bachelier-en-Cooperation-internationale\/Grille-de-cours.aspx?ue=22314",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Law & Criminology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -352,8 +523,7 @@
    "Law & Criminology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
@@ -376,8 +546,7 @@
    "Law & Criminology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
@@ -402,11 +571,10 @@
    "Law & Criminology"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "dedicated":0
  }
