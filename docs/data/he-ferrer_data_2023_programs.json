@@ -1,7 +1,7 @@
 [
  {
   "id":"AA-0-0",
-  "name":"Arts du tissu - hh",
+  "name":"Arts du tissu",
   "cycle":"bac",
   "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
   "languages":[
@@ -53,23 +53,57 @@
    "prod&cons"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "SUE16"
+   "SUE16",
+   "US53B"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":29
  },
  {
-  "id":"EcoM-1-3",
+  "id":"EcoB-2-0",
+  "name":"Management de la logistique",
+  "cycle":"bac",
+  "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Site Anneessens"
+  ],
+  "faculties":[
+   "Economique"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "economy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "ML2N0"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":27
+ },
+ {
+  "id":"EcoM-1-5",
   "name":"Gestion de l'entreprise - Management international - Export management",
   "cycle":"master",
   "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
   "languages":[
    "en",
-   "fr"
+   "fr",
+   "nl"
   ],
   "campuses":[
    "Site Anneessens"
@@ -91,14 +125,53 @@
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":8
+  "nb_total_courses":19
  },
  {
-  "id":"EcoM-2-0",
-  "name":"Gestion publique",
-  "cycle":"bac",
+  "id":"EcoM-3-1",
+  "name":"Ing\u00e9nieur commercial - Data management",
+  "cycle":"master",
   "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
   "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Site Anneessens"
+  ],
+  "faculties":[
+   "Economique"
+  ],
+  "fields":[
+   "Economy"
+  ],
+  "themes":[
+   "climate",
+   "energy",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "IX4J0"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":38
+ },
+ {
+  "id":"EcoM-3-3",
+  "name":"Ing\u00e9nieur commercial - Operations Management and Sustainability",
+  "cycle":"master",
+  "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
+  "languages":[
+   "en",
    "fr"
   ],
   "campuses":[
@@ -111,21 +184,23 @@
    "Economy"
   ],
   "themes":[
-   "life"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "PX3I0"
+   "I45C0"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":1,
-  "nb_total_courses":24
+  "nb_total_courses":5
  },
  {
-  "id":"EcoM-2-1",
-  "name":"Gestion publique - Administration nationale et internationale",
+  "id":"EcoM-4-0",
+  "name":"Master en sciences administratives",
   "cycle":"master",
   "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
   "languages":[
@@ -149,76 +224,45 @@
    1
   ],
   "matched_courses":[
-   "PA4I0"
+   "SA4M0"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":1,
-  "nb_total_courses":10
+  "nb_total_courses":23
  },
  {
-  "id":"EcoM-3-2",
-  "name":"Ing\u00e9nieur commercial - Industries",
-  "cycle":"master",
-  "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Site Anneessens"
-  ],
-  "faculties":[
-   "Economique"
-  ],
-  "fields":[
-   "Economy"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "I14A0"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":34
- },
- {
-  "id":"EcoM-4-0",
-  "name":"Master en sciences administratives",
-  "cycle":"master",
+  "id":"ParaMed-2-0",
+  "name":"Soins infirmiers",
+  "cycle":"bac",
   "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
   "languages":[
    "fr"
   ],
   "campuses":[
-   "Site Anneessens"
+   "Site Brugmann"
   ],
   "faculties":[
-   "Economique"
+   "Param\u00e9dical"
   ],
   "fields":[
-   "Economy"
+   "Medecine & Health"
   ],
   "themes":[
-   "life"
+   "prod&cons"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "UCJ15"
+   "SI 21"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":17
+  "nb_total_courses":44
  },
  {
-  "id":"Peda-2-5",
-  "name":"Normale secondaire - Sciences : biologie chimie physique",
+  "id":"Peda-0-0",
+  "name":"Normale Pr\u00e9scolaire",
   "cycle":"bac",
   "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
   "languages":[
@@ -240,10 +284,110 @@
    1
   ],
   "matched_courses":[
-   "S14"
+   "M39"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":20
+  "nb_total_courses":38
+ },
+ {
+  "id":"Peda-1-0",
+  "name":"Normale primaire",
+  "cycle":"bac",
+  "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Site Lemonnier"
+  ],
+  "faculties":[
+   "P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "P36"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":41
+ },
+ {
+  "id":"Peda-2-6",
+  "name":"Normale secondaire - Sciences : biologie chimie physique",
+  "cycle":"bac",
+  "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Site Lemonnier"
+  ],
+  "faculties":[
+   "P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "carbon",
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   3
+  ],
+  "matched_courses":[
+   "S14",
+   "S23",
+   "S58"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":35
+ },
+ {
+  "id":"Peda-2-7",
+  "name":"Normale secondaire - Sciences humaines : g\u00e9ographie histoire et sciences sociales",
+  "cycle":"bac",
+  "url":"https:\/\/fiches-ue.icampusferrer.eu\/locked_list.php",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Site Lemonnier"
+  ],
+  "faculties":[
+   "P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "H15",
+   "H36",
+   "H56"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":36
  }
 ]
