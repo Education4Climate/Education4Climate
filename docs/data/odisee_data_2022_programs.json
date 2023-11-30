@@ -1,5 +1,36 @@
 [
  {
+  "id":"SC_51858227",
+  "name":"Bachelor in de medische beeldvorming en radiotherapie (Brussel)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858227.htm",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Brussel"
+  ],
+  "faculties":[
+   "Gezondheidszorg"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "OBM58A"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":47
+ },
+ {
   "id":"SC_51531527",
   "name":"Bachelor in de biomedische laboratoriumtechnologie (Gent)",
   "cycle":"bac",
@@ -18,13 +49,13 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OGT33A"
+   "OWA01M"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -49,167 +80,42 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
+   2,
+   2,
+   13,
    1,
-   2,
-   2,
-   5
+   1,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPBWB6",
-   "JPBWB7",
+   "JPBWB4",
+   "JPBWC3",
    "JPBWE1",
+   "JPBWG3",
    "JPBWG5",
-   "OWA00S",
-   "OWA01R"
+   "JPBWH3",
+   "JPBWH5",
+   "OWA00F",
+   "OWA00N",
+   "OWA01E",
+   "OWA01F",
+   "OWA01M",
+   "OWA01N",
+   "OWA01R",
+   "OWA01U"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":6,
-  "nb_total_courses":97
- },
- {
-  "id":"SC_51603676",
-  "name":"Bachelor in organisatie & management - in afstandsonderwijs (Aalst)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603676.htm",
-  "languages":[
-   "de",
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Aalst"
-  ],
-  "faculties":[
-   "Bedrijfskunde"
-  ],
-  "fields":[
-   "Management"
-  ],
-  "themes":[
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ],
-  "matched_courses":[
-   "OAC04A"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":97
- },
- {
-  "id":"SC_51603610",
-  "name":"Bachelor in het bedrijfsmanagement - in afstandsonderwijs (Aalst)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603610.htm",
-  "languages":[
-   "de",
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Aalst"
-  ],
-  "faculties":[
-   "Bedrijfskunde"
-  ],
-  "fields":[
-   "Management"
-  ],
-  "themes":[
-   "resources"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "OAB07A"
-  ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
-  "nb_total_courses":97
- },
- {
-  "id":"SC_51531531",
-  "name":"Bachelor in het bedrijfsmanagement - in dagonderwijs (Aalst)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531531.htm",
-  "languages":[
-   "de",
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Aalst"
-  ],
-  "faculties":[
-   "Bedrijfskunde"
-  ],
-  "fields":[
-   "Management"
-  ],
-  "themes":[
-   "resources"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "OAB07A"
-  ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
-  "nb_total_courses":97
- },
- {
-  "id":"SC_51531532",
-  "name":"Bachelor in organisatie & management - in dagonderwijs (Aalst)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531532.htm",
-  "languages":[
-   "de",
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Aalst"
-  ],
-  "faculties":[
-   "Bedrijfskunde"
-  ],
-  "fields":[
-   "Management"
-  ],
-  "themes":[
-   "resources",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ],
-  "matched_courses":[
-   "OAC04A"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":15,
   "nb_total_courses":97
  },
  {
@@ -231,28 +137,74 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
+   2,
+   2,
+   13,
    1,
-   2,
-   2,
-   5
+   1,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPBWB6",
-   "JPBWB7",
+   "JPBWB4",
+   "JPBWC3",
    "JPBWE1",
+   "JPBWG3",
    "JPBWG5",
-   "OWA00S",
-   "OWA01R"
+   "JPBWH3",
+   "JPBWH5",
+   "OWA00F",
+   "OWA00N",
+   "OWA01E",
+   "OWA01F",
+   "OWA01M",
+   "OWA01N",
+   "OWA01R",
+   "OWA01U"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":15,
   "nb_total_courses":97
+ },
+ {
+  "id":"SC_51858220",
+  "name":"Bachelor in de gezinswetenschappen - Traject voor jongvolwassen studenten (Schaarbeek)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51858220.htm",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Schaarbeek"
+  ],
+  "faculties":[
+   "Sociaal-agogisch werk"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "HBG23A"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":60
  },
  {
   "id":"SC_55008535",
@@ -275,23 +227,22 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   4
+   2,
+   2
   ],
   "matched_courses":[
    "HBS14G",
-   "HBS32F",
-   "OBK21A",
+   "OBS06A",
    "OO3144",
-   "OO3150"
+   "OO3158"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":182
  },
  {
@@ -317,24 +268,28 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
-   2,
-   3
+   1,
+   4,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPO0T5",
-   "JPO0TK",
+   "JPO0U0",
+   "JPO0U5",
+   "JPOW10",
    "JPOW14",
-   "JPOW40",
-   "JPOWC3",
-   "OBK21A"
+   "JPOW16",
+   "JPOW40"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":6,
   "nb_total_courses":301
  },
@@ -358,13 +313,13 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OBK21A"
+   "OWL15A"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -390,13 +345,13 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OBK21A"
+   "OWL15A"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -421,16 +376,14 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    2
   ],
   "matched_courses":[
-   "OAL68A",
-   "OAL73A"
+   "OAL29A",
+   "OAL30A"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
@@ -456,21 +409,80 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   3
+   2
   ],
   "matched_courses":[
-   "OAL51A",
-   "OAL58A",
-   "OBK21A"
+   "OAL11A",
+   "OAL12A"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":73
+ },
+ {
+  "id":"SC_51903416",
+  "name":"Educatieve bacheloropleiding voor lager onderwijs - verkort traject dagonderwijs voor bachelors of masters - 120 SP(Brussel)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51903416.htm",
+  "languages":[
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Brussel"
+  ],
+  "faculties":[
+   "Onderwijs"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "OO3114"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":27
+ },
+ {
+  "id":"SC_51903410",
+  "name":"Educatieve bacheloropleiding voor lager onderwijs - verkort traject werkplekleren voor bachelors of masters - 120SP(Brussel)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51903410.htm",
+  "languages":[
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Brussel"
+  ],
+  "faculties":[
+   "Onderwijs"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "OBL33A"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":20
  },
  {
   "id":"SC_51858257",
@@ -492,13 +504,13 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OBK21A"
+   "OO3114"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -527,24 +539,28 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
-   2,
-   3
+   1,
+   4,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPO0T5",
-   "JPO0TK",
+   "JPO0U0",
+   "JPO0U5",
+   "JPOW10",
    "JPOW14",
-   "JPOW40",
-   "JPOWC3",
-   "OBK21A"
+   "JPOW16",
+   "JPOW40"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":6,
   "nb_total_courses":262
  },
@@ -571,24 +587,28 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
-   2,
-   3
+   1,
+   4,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPO0T5",
-   "JPO0TK",
+   "JPO0U0",
+   "JPO0U5",
+   "JPOW10",
    "JPOW14",
-   "JPOW40",
-   "JPOWC3",
-   "OBK21A"
+   "JPOW16",
+   "JPOW40"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":6,
   "nb_total_courses":325
  },
@@ -612,19 +632,28 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
-   2
+   6,
+   3
   ],
   "matched_courses":[
+   "HBD51A",
+   "HBD51B",
+   "HBD52B",
    "HBS14G",
-   "OBK21A"
+   "OO3158",
+   "OO3193",
+   "OO4105",
+   "OO4106",
+   "OPS03A"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":9,
   "nb_total_courses":166
  },
  {
@@ -648,23 +677,31 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1,
-   4
+   2,
+   6,
+   3
   ],
   "matched_courses":[
+   "HBD51A",
+   "HBD51B",
+   "HBD52B",
    "HBS14G",
-   "HBS32F",
-   "OBK21A",
+   "OBS06A",
    "OO3144",
-   "OO3150"
+   "OO3158",
+   "OO3193",
+   "OO4105",
+   "OO4106",
+   "OPS03A"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":11,
   "nb_total_courses":192
  },
  {
@@ -688,23 +725,22 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   4
+   2,
+   2
   ],
   "matched_courses":[
    "HBS14G",
-   "HBS32F",
-   "OBK21A",
+   "OBS06A",
    "OO3144",
-   "OO3150"
+   "OO3158"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":218
  },
  {
@@ -728,23 +764,22 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   4
+   2,
+   2
   ],
   "matched_courses":[
    "HBS14G",
-   "HBS32F",
-   "OBK21A",
+   "OBS06A",
    "OO3144",
-   "OO3150"
+   "OO3158"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":221
  },
  {
@@ -770,24 +805,28 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
-   2,
-   3
+   1,
+   4,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPO0T5",
-   "JPO0TK",
+   "JPO0U0",
+   "JPO0U5",
+   "JPOW10",
    "JPOW14",
-   "JPOW40",
-   "JPOWC3",
-   "OBK21A"
+   "JPOW16",
+   "JPOW40"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":6,
   "nb_total_courses":265
  },
@@ -814,24 +853,28 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
-   2,
-   3
+   1,
+   4,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPO0T5",
-   "JPO0TK",
+   "JPO0U0",
+   "JPO0U5",
+   "JPOW10",
    "JPOW14",
-   "JPOW40",
-   "JPOWC3",
-   "OBK21A"
+   "JPOW16",
+   "JPOW40"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":6,
   "nb_total_courses":307
  },
@@ -854,54 +897,18 @@
    "Sociology"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   2
   ],
   "matched_courses":[
+   "HBG23A",
    "HBG49A"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":60
- },
- {
-  "id":"SC_51603494",
-  "name":"Educatieve bacheloropleiding voor kleuteronderwijs - in afstandsonderwijs (Aalst)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51603494.htm",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-   "Aalst"
-  ],
-  "faculties":[
-   "Onderwijs"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "environment",
-   "sustainability"
-  ],
-  "themes_scores":[
-   2,
-   3
-  ],
-  "matched_courses":[
-   "OAK21A",
-   "OAK50A",
-   "OAK65A",
-   "OAK78A"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
-  "nb_total_courses":49
  },
  {
   "id":"SC_51604132",
@@ -923,17 +930,23 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "economy",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   2,
    1,
-   8,
-   2
+   3,
+   9,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPW03Y",
+   "JPW055",
    "JPW187",
    "OGF00J",
    "OGF00P",
@@ -943,7 +956,7 @@
    "OGF00W",
    "OGF00X"
   ],
-  "nb_dedicated_courses":5,
+  "nb_dedicated_courses":4,
   "nb_matched_courses":9,
   "nb_total_courses":64
  },
@@ -1000,22 +1013,63 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "building",
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   6
+   1,
+   6,
+   1,
+   1
   ],
   "matched_courses":[
    "JPW134",
    "JPW294",
    "JPW295",
+   "JPW324",
    "JPW325",
-   "OGE01G",
-   "OGE01L"
+   "OGE01L",
+   "OGE01U"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_matched_courses":7,
   "nb_total_courses":60
+ },
+ {
+  "id":"SC_51531545",
+  "name":"Bachelor in de elektronica-ICT - in dagonderwijs (Gent)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531545.htm",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Gent"
+  ],
+  "faculties":[
+   "Technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "OGI02R"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":86
  },
  {
   "id":"SC_51531544",
@@ -1036,25 +1090,30 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   2,
-   4,
-   7,
    1,
-   2
+   2,
+   3,
+   7,
+   6,
+   2,
+   1
   ],
   "matched_courses":[
+   "JPW0IL",
    "JPW0IN",
+   "JPW0JB",
    "JPW0JD",
+   "JPW0JY",
    "JPW0LS",
-   "JPW253",
-   "JPW258",
    "JPW260",
    "JPW355",
    "JPW357",
@@ -1063,8 +1122,8 @@
    "OGC00N",
    "OGC00Y"
   ],
-  "nb_dedicated_courses":9,
-  "nb_matched_courses":12,
+  "nb_dedicated_courses":10,
+  "nb_matched_courses":13,
   "nb_total_courses":83
  },
  {
@@ -1089,20 +1148,98 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "energy",
+   "life",
    "resources"
   ],
   "themes_scores":[
+   4,
+   1,
+   1,
    1,
    1
   ],
   "matched_courses":[
    "JPW00J",
-   "OAR01G"
+   "OAR00P",
+   "OAR01G",
+   "OAR02F"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":61
+ },
+ {
+  "id":"SC_51975227",
+  "name":"Bachelor in de elektromechanica - in afstandsonderwijs (Aalst)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51975227.htm",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Aalst"
+  ],
+  "faculties":[
+   "Technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "JPW0SX",
+   "OAE02B"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
+  "nb_total_courses":80
+ },
+ {
+  "id":"SC_51975226",
+  "name":"Bachelor in de elektromechanica - in dagonderwijs (Aalst)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51975226.htm",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Aalst"
+  ],
+  "faculties":[
+   "Technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "JPW0SX",
+   "OAE02B"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
+  "nb_total_courses":80
  },
  {
   "id":"SC_51531543",
@@ -1126,19 +1263,27 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "energy",
+   "life",
    "resources"
   ],
   "themes_scores":[
+   4,
+   1,
+   1,
    1,
    1
   ],
   "matched_courses":[
    "JPW00J",
-   "OAR01G"
+   "OAR00P",
+   "OAR01G",
+   "OAR02F"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":61
  },
  {
@@ -1161,17 +1306,23 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "economy",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   2,
    1,
-   8,
-   2
+   3,
+   9,
+   1,
+   1
   ],
   "matched_courses":[
-   "JPW03Y",
+   "JPW055",
    "JPW187",
    "OGF00J",
    "OGF00P",
@@ -1181,47 +1332,9 @@
    "OGF00W",
    "OGF00X"
   ],
-  "nb_dedicated_courses":5,
+  "nb_dedicated_courses":4,
   "nb_matched_courses":9,
   "nb_total_courses":64
- },
- {
-  "id":"SC_51531550",
-  "name":"Educatieve bacheloropleiding voor kleuteronderwijs - in dagonderwijs (Aalst)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_51531550.htm",
-  "languages":[
-   "en",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-   "Aalst"
-  ],
-  "faculties":[
-   "Onderwijs"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "environment",
-   "sustainability"
-  ],
-  "themes_scores":[
-   2,
-   4
-  ],
-  "matched_courses":[
-   "OAK05A",
-   "OAK35A",
-   "OAK57A",
-   "OAK70A",
-   "OBK21A"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":5,
-  "nb_total_courses":59
  },
  {
   "id":"SC_51858254",
@@ -1242,13 +1355,13 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OBK21A"
+   "OBK02A"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -1273,13 +1386,13 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OBK21A"
+   "OBK02A"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -1306,19 +1419,20 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "sustainability"
+   "building",
+   "life"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "JPWD29",
-   "OAR01C"
+   "JPW0OQ",
+   "JPWD99",
+   "OAR00P"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":74
  },
  {
@@ -1340,52 +1454,20 @@
   ],
   "themes":[
    "energy",
-   "resources"
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   5
-  ],
-  "matched_courses":[
-   "OKW00I",
-   "OKW00J",
-   "OKW00P",
-   "OKW00R",
-   "OKW01A"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":5,
-  "nb_total_courses":22
- },
- {
-  "id":"SC_54984189",
-  "name":"Graduaat in de elektromechanische systemen (Aalst)",
-  "cycle":"grad",
-  "url":"http:\/\/onderwijsaanbod.odisee.be\/opleidingen\/n\/SC_54984189.htm",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-   "Aalst"
-  ],
-  "faculties":[
-   "Technologie"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "OKK00H"
+   "OKW00F",
+   "OKW00P",
+   "OKW00R"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
-  "nb_total_courses":37
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":22
  },
  {
   "id":"SC_51531541",
@@ -1408,19 +1490,20 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "sustainability"
+   "building",
+   "life"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "JPWD29",
-   "OAR01C"
+   "JPW0OQ",
+   "JPWD99",
+   "OAR00P"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":74
  },
  {
@@ -1443,13 +1526,13 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OGT33A"
+   "JPW0IL"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -1475,13 +1558,13 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "OGT33A"
+   "JPW0IL"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,

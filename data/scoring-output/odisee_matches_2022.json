@@ -1,79 +1,72 @@
 {
+    "HBD51A: Recreatiesporten en initiatie wintersport": {
+        "nl": {
+            "[[ ]fiets]": [
+                " namelijk krachtbal  fietsen en groepslessen f"
+            ]
+        }
+    },
+    "HBD51B: Recreatiesporten 1.2": {
+        "nl": {
+            "[[ ]fiets]": [
+                "leggen van knopen en fietstocht  doelstellinge"
+            ]
+        }
+    },
+    "HBD52B: Methodiek bewegingsrecreatie en initiatie natuursport": {
+        "nl": {
+            "[[ ]fiets]": [
+                "ij  orientatielopen  fietstocht  verkeer -  ve"
+            ]
+        }
+    },
+    "HBG23A: Gezinspedagogiek": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "rlijke praktijken 2  ecologie van ouderschap 3  g"
+            ]
+        }
+    },
     "HBG49A: Sociologie en samenleving": {
         "nl": {
-            "[[ ]ecolo[^ ]+, klima+t[^ ]*, overgang]": [
-                " en uitdagingen   1  ecologische risico s wereldwijd",
-                "ijd en bij ons  van klimaatrisico s tot corona    2  ",
-                "ief  we schetsen de overgang naar een mondiale r",
-                "atieprocessen en de overgang naar een superdiver"
+            "[[ ]ecolo[^ ]+]": [
+                " en uitdagingen   1  ecologische risico s wereldwijd"
             ]
         }
     },
     "HBS14G: Biologie: Plantenfysiologie en ecologie": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
-                "lieuproblematieken  biodiversiteit en duurzaamheid mos",
+            "[energie, duurzaa?m]": [
+                "systeem materie- en energiekringloop  producent",
+                "  biodiversiteit en duurzaamheid mos  milieu op "
+            ],
+            "[[ ]ecolo[^ ]+]": [
                 "plantenfysiologie en ecologie inhoud fysiologie e",
                 "zetting fotosynthese ecologie relaties tussen org"
             ],
-            "[bio(?:diversiteit|sfeer), ecosyst[^ ]+]": [
-                "lieuproblematieken  biodiversiteit en duurzaamheid mos",
-                "oren  biotoopstudie ecosystemen en kringlopen  inte",
-                " en dynamiek in een ecosysteem materie- en energie"
-            ],
-            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "lieuproblematieken  biodiversiteit en duurzaamheid mos",
-                "  reducenten  milieuproblematieken  biodiversit",
-                "plantenfysiologie en ecologie inhoud fysiologie e",
-                "zetting fotosynthese ecologie relaties tussen org",
-                "n en dieren aan het milieu samenhang tussen or",
-                "n organismen en het milieu  biotische en abiot",
-                "oren  biotoopstudie ecosystemen en kringlopen  inte",
-                "n organismen en hun milieu successie   climax ",
-                " en dynamiek in een ecosysteem materie- en energie",
-                "menten  reducenten  milieuproblematieken  biod",
-                "n duurzaamheid mos  milieu op school doelstell"
-            ],
-            "[[ ]ecolo[^ ]+, duurzaamheid]": [
-                "plantenfysiologie en ecologie inhoud fysiologie e",
-                "zetting fotosynthese ecologie relaties tussen org",
-                "  biodiversiteit en duurzaamheid mos  milieu op scho"
-            ],
-            "milieuproble+m": [
-                "menten  reducenten  milieuproblematieken  biodiversit"
-            ],
-            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
-                "menten  reducenten  milieuproblematieken  biodiversit"
+            "biodiversiteit": [
+                "lieuproblematieken  biodiversiteit en duurzaamheid mos"
             ]
         }
     },
-    "HBS32F: Aardrijkskunde: Landbouw en voedsel": {
+    "JPBWB4: Ethiek 1": {
         "nl": {
-            "duurzame ontwikkelingsdoel(?:en|stelling)?": [
-                "mdoelstellingen  de duurzame ontwikkelingsdoelen  sdg   3 daagse exc"
+            "(?:welzijn van dier|dierenwelzijn)": [
+                " dier dier of ding  dierenwelzijn en wetenschap doden"
             ]
         }
     },
-    "JPBWB6: Algemene economie": {
+    "JPBWC3: Wetgeving dierenzorg en dierenhouderij": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "rekkingen milieu en duurzame ontwikkeling overheid doelstelli",
-                "ionale betrekkingen milieu en duurzame ontwikk"
-            ]
-        }
-    },
-    "JPBWB7: Industri\u00eble processing": {
-        "nl": {
-            "energie[- ]?balans": [
-                "1  massabalansen 2  energiebalansen 3  meng- en schei"
+            "(?:welzijn van dier|dierenwelzijn)": [
+                "  dierenhouderij en dierenwelzijn  hiervoor krijg je "
             ]
         }
     },
     "JPBWE1: Plantenbescherming": {
         "nl": {
-            "[[ ]ecolo[^ ]+, duurzaamheid]": [
-                "ing  duurzaamheid op ecologisch en sociaal vlak kom",
-                "plantenbescherming  duurzaamheid op ecologisch en so"
+            "[[ ]ecolo[^ ]+]": [
+                "ing  duurzaamheid op ecologisch en sociaal vlak kom"
             ],
             "biologische landbouw": [
                 "producten dat in de biologische landbouw mag worden toegepas"
@@ -83,142 +76,163 @@
             ]
         }
     },
+    "JPBWG3: Watertechnologie en -beheer": {
+        "nl": {
+            "waterzuivering": [
+                "ondwater drinkwater waterzuivering en recuperatie afva",
+                "   1 bezoek aan een waterzuiveringsinstallatie  indien",
+                " vervangtaak inzake waterzuivering 1 overkoepelende op"
+            ],
+            "(?:grondwater|aquifer|freatische zone)": [
+                "productie van water grondwater drinkwater waterzui"
+            ]
+        }
+    },
     "JPBWG5: Energietechnologie": {
         "nl": {
-            "energie[- ]?(?:ge|ver)bruik|(?:ge|ver)bruik van energie": [
-                "ookgassen rationeel energiegebruik duurzame energiepro"
+            "wind ?energie": [
+                "dstoffen  zonne- en windenergie de energiemarkt doe"
             ],
-            "energie[- ]?transitie": [
+            "energie ?transitie": [
                 "gie en het klimaat  energietransitie en energie instanti"
             ],
-            "windenergie": [
-                "dstoffen  zonne- en windenergie de energiemarkt doe"
+            "[energie, duurzaa?m]": [
+                "energietechnologie inhoud v",
+                "derdeel  inleiding  energie en het klimaat  ene",
+                "gie en het klimaat  energietransitie en energie",
+                "energietransitie en energie instanties energie ",
+                " energie instanties energie  definitie en therm",
+                "bewaring thermische energie  centrale verwarmin",
+                "ookgassen rationeel energiegebruik duurzame ene",
+                "giegebruik duurzame energieproductie  biobrands",
+                "ffen  zonne- en windenergie de energiemarkt doe",
+                "- en windenergie de energiemarkt doelstellingen",
+                "neel energiegebruik duurzame energieproductie  "
+            ],
+            "bio[- ]?brandstof": [
+                "e energieproductie  biobrandstoffen  zonne- en winde"
             ]
         }
     },
-    "JPO0T5: TE1-2b Elektriciteit wisselstroom": {
+    "JPBWH3: Dierenwelzijn": {
         "nl": {
-            "fossiele brandstof": [
-                " steg centrales o   fossiele brandstoffen o   kernenergie "
+            "(?:welzijn van dier|dierenwelzijn)": [
+                "dierenwelzijn inhoud in deze curs",
+                "leer je het concept dierenwelzijn te definieren  je l"
+            ],
+            "mens-dier ?relatie": [
+                "e stressbronnen  de mens-dierrelatie en welzijn bij de s"
             ]
         }
     },
-    "JPO0TK: PAV1-2b Ruimtelijke en maatschappelijke ori\u00ebntatie": {
+    "JPBWH5: Duurzame inrichting van tuinen en openbaar groen 3": {
         "nl": {
-            "fossiele brandstof": [
-                "eenheid 13  energie fossiele brandstoffen andere energiebr"
+            "[[ ]ecolo[^ ]+]": [
+                "en mooi ontwerp  het ecologisch ontwerp en beheer m"
+            ]
+        }
+    },
+    "JPO0U0: AA2-1a Geomorfologie": {
+        "nl": {
+            "(?:grondwater|aquifer|freatische zone)": [
+                "ellingsprocessen  - grondwater en oppervlaktewater"
+            ]
+        }
+    },
+    "JPO0U5: EN2-1a Taalstudie 3": {
+        "en": {
+            "[energy, sustaina]": [
+                "  practical design  energy and sustainability ",
+                " design  energy and sustainability  opdrachten -"
+            ]
+        }
+    },
+    "JPOW10: AA1-2b Bevolking": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                " - leeftijdsopbouw - ecologische voetafdruk en draag"
             ]
         }
     },
     "JPOW14: STEM3-2 Verdieping": {
         "nl": {
-            "[duurzame ontwikkeling, milieu, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf",
-                "viteit op de natuur milieuproblemen als gevolg",
-                "van de aarde  basis milieukunde als begrip in ",
-                " de wetenschappen - milieurelevante maatschapp",
-                "lstellingen van het milieubeleid - de milieuco",
-                "t milieubeleid - de milieucompartimenten  luch",
-                "em  indeling van de milieuproblemen mondiale m",
-                "uproblemen mondiale milieuproblemen   global c",
-                "osfeer continentale milieuproblemen   toename ",
-                "uviale en regionale milieuproblemen   vermesti",
+            "[energie, duurzaa?m]": [
+                "verontreiniging  de energieketen en de verkeers",
+                "rkeer  toerisme     duurzaam leven in de steden ",
+                "leven in de steden  duurzame landbouw  duurzaam",
+                " duurzame landbouw  duurzaam toerisme     duurza",
+                "urzaam toerisme     duurzame ontwikkeling  ecol"
+            ],
+            "[[ ]ecolo[^ ]+]": [
                 "urzame ontwikkeling  ecologische voetafdruk en draag"
             ],
-            "[duurzame ontwikkeling, milieu-?proble+m]": [
-                "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf",
-                "viteit op de natuur milieuproblemen als gevolg van la",
-                "em  indeling van de milieuproblemen mondiale milieupr",
-                "uproblemen mondiale milieuproblemen   global climate ",
-                "osfeer continentale milieuproblemen   toename van ozo",
-                "uviale en regionale milieuproblemen   vermesting van "
+            "(?:milieu|ecosystee?m[^ ]*) ?beleid": [
+                "lstellingen van het milieubeleid - de milieucomparti"
             ],
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf",
-                "viteit op de natuur milieuproblemen als gevolg",
-                "urzame ontwikkeling  ecologische voetafdruk en draag",
-                "van de aarde  basis milieukunde als begrip in ",
-                " de wetenschappen - milieurelevante maatschapp",
-                "lstellingen van het milieubeleid - de milieuco",
-                "t milieubeleid - de milieucompartimenten  luch",
-                "em  indeling van de milieuproblemen mondiale m",
-                "uproblemen mondiale milieuproblemen   global c",
-                "osfeer continentale milieuproblemen   toename ",
-                "uviale en regionale milieuproblemen   vermesti"
-            ],
-            "[milieu, vervuiling, duurzame ontwikkeling]": [
-                "viteit op de natuur milieuproblemen als gevolg",
-                "van de aarde  basis milieukunde als begrip in ",
-                " de wetenschappen - milieurelevante maatschapp",
-                "lstellingen van het milieubeleid - de milieuco",
-                "t milieubeleid - de milieucompartimenten  luch",
-                "em  indeling van de milieuproblemen mondiale m",
-                "uproblemen mondiale milieuproblemen   global c",
-                "osfeer continentale milieuproblemen   toename ",
-                "uviale en regionale milieuproblemen   vermesti",
-                "water en rivieren   vervuiling door materialen en ",
-                "urzaam toerisme     duurzame ontwikkeling  ecologische voetaf"
-            ],
-            "[vervuiling, rivier]": [
-                "water en rivieren   vervuiling door materialen en ",
-                "em   grond water en rivieren   vergiftiging va",
-                "em   grond water en rivieren   vervuiling door"
+            "[toerisme, duurza]": [
+                "industrie  verkeer  toerisme     duurzaam leven ",
+                " landbouw  duurzaam toerisme     duurzame ontwik",
+                "rkeer  toerisme     duurzaam leven in de stede",
+                "leven in de steden  duurzame landbouw  duurzaa",
+                " duurzame landbouw  duurzaam toerisme     duur",
+                "urzaam toerisme     duurzame ontwikkeling  eco"
             ],
             "duurzame landbouw": [
                 "leven in de steden  duurzame landbouw  duurzaam toerisme "
             ],
-            "milieubeleid": [
-                "lstellingen van het milieubeleid - de milieucomparti"
-            ],
-            "milieuproble+m": [
-                "viteit op de natuur milieuproblemen als gevolg van la",
-                "em  indeling van de milieuproblemen mondiale milieupr",
-                "uproblemen mondiale milieuproblemen   global climate ",
-                "osfeer continentale milieuproblemen   toename van ozo",
-                "uviale en regionale milieuproblemen   vermesting van "
-            ],
-            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
-                "viteit op de natuur milieuproblemen als gevolg van la",
-                "em  indeling van de milieuproblemen mondiale milieupr",
-                "uproblemen mondiale milieuproblemen   global climate ",
-                "osfeer continentale milieuproblemen   toename van ozo",
-                "uviale en regionale milieuproblemen   vermesting van "
+            "vervuil": [
+                "water en rivieren   vervuiling door materialen "
+            ]
+        }
+    },
+    "JPOW16: BI1-2 Energiedoorstroming in de natuur": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "hemie  fysiologie en ecologie 1  energiedoorstrom"
             ]
         }
     },
     "JPOW40: PAV2-1b Wetenschap en techniek": {
         "nl": {
-            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
-                "ilieuzorg op school klimaatverandering leereenheid 10  nat",
-                "heid 9  ecologie en milieu planten dieren ecos",
-                " dieren ecosystemen milieuzorg op school klima",
-                "elden leereenheid 9  ecologie en milieu planten"
-            ],
-            "klimaatverandering": [
+            "klimaat ?verandering": [
                 "ilieuzorg op school klimaatverandering leereenheid 10  nat"
-            ]
-        }
-    },
-    "JPOWC3: EC3-1a Algemene economie 5": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "r  groei  milieu en duurzame ontwikkeling overheid doelstelli",
-                "conjunctuur  groei  milieu en duurzame ontwikk"
+            ],
+            "[[ ]ecolo[^ ]+]": [
+                "elden leereenheid 9  ecologie en milieu planten d"
             ]
         }
     },
     "JPW00J: 4 Technische uitrusting 1": {
         "nl": {
-            "klimaatverandering": [
+            "[energieprestatie, gebouw]": [
+                "vloed hiervan op de energieprestaties van gebouwen  - in",
+                "en ventilatie op de energieprestatie van gebouwen  - een",
+                "ergieprestaties van gebouwen  - invloed van lu",
+                "nergieprestatie van gebouwen  - eenvoudige glo"
+            ],
+            "klimaat ?verandering": [
                 "s - algemeen kader  klimaatverandering in een geglobalisee"
             ]
         }
     },
-    "JPW03Y: Energietechnologie 2": {
+    "JPW055: Bedrijfsethiek": {
         "nl": {
-            "energie[- ]?(?:ge|ver)bruik|(?:ge|ver)bruik van energie": [
-                "anzet tot rationeel energiegebruik - energieverbruiken",
-                "el energiegebruik - energieverbruiken  theorie + oefeni"
+            "alternatieve energie": [
+                "teit  duurzaamheid  alternatieve energie    - ethische code "
+            ],
+            "[energie, duurzaa?m]": [
+                "mheid  alternatieve energie    - ethische code ",
+                "es  biodiversiteit  duurzaamheid  alternatieve e"
+            ],
+            "biodiversiteit": [
+                "ppelijke evoluties  biodiversiteit  duurzaamheid  alte"
+            ]
+        }
+    },
+    "JPW0IL: Biotechnologie 1": {
+        "nl": {
+            "vervuil": [
+                " s 6  preventie van vervuiling/afvalstoffen 6 4"
             ]
         }
     },
@@ -229,19 +243,65 @@
             ]
         }
     },
+    "JPW0JB: Microbiologie 2": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "nde micro-organismen ecologie en bestrijding van "
+            ]
+        }
+    },
     "JPW0JD: Milieubiotechnologie": {
         "nl": {
-            "[plastic, pollutie]": [
-                "ingsmiddelen 6 3 bioplastics 6 4 transgene plan",
-                " 5  remediering van pollutie 5 1 inleiding/biobr",
-                "ie 6  preventie van pollutie 6 1 inleiding 6 2 g"
+            "bio[ -]?ga(?:s|z)": [
+                "biobrandstoffen 5 2 biogas 5 3 bio-ethanol 5 4"
+            ],
+            "bio[- ]?brandstof": [
+                "lutie 5 1 inleiding/biobrandstoffen 5 2 biogas 5 3 b"
+            ],
+            "bio[- ]?diesel": [
+                "5 3 bio-ethanol 5 4 biodiesel 5 5 bioremediatie -"
+            ],
+            "bio[- ]?m?ethanol": [
+                "ffen 5 2 biogas 5 3 bio-ethanol 5 4 biodiesel 5 5 b"
+            ]
+        }
+    },
+    "JPW0JY: Labo microbi\u00eble ecologie": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "labo microbiele ecologie inhoud - bioveiligh"
+            ],
+            "waterzuivering": [
+                "gen hiervan voor de waterzuivering proberen in te scha"
             ]
         }
     },
     "JPW0LS: Milieutechnologie 1: water": {
         "nl": {
-            "decarbon[^ ]+": [
-                "ssing - ontharding  decarbonatie en demineralisatie "
+            "waterzuivering": [
+                "rontreiniging  afvalwaterzuivering en drinkwater 1  ch",
+                " grondwater 2  afvalwaterzuivering - riolering - mecha"
+            ],
+            "(?:grondwater|aquifer|freatische zone)": [
+                "en reglementering - grondwater 2  afvalwaterzuiver"
+            ]
+        }
+    },
+    "JPW0OQ: 1 Energie en Comfort 1": {
+        "nl": {
+            "[energieprestatie, gebouw]": [
+                "nergiehuishouding - energieprestatieregelgeving  princip",
+                "verloop doorheen de gebouwschil  vlakke delen ",
+                "omfort - impact van gebouwparameters op de ene"
+            ]
+        }
+    },
+    "JPW0SX: 3 Klimatisatie": {
+        "nl": {
+            "[energieprestatie, gebouw]": [
+                " energiehuishouding energieprestatieregelgeving  princip",
+                "verloop doorheen de gebouwschil  vlakke delen ",
+                "rcomfort impact van gebouwparameters op de ene"
             ]
         }
     },
@@ -254,55 +314,30 @@
     },
     "JPW187: Milieu- en Afvalmanagement": {
         "nl": {
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgeving  - "
+            "milieuvergunning": [
+                "splicht volgens het milieuvergunningendecreet  en met he"
             ],
-            "milieu[- ]?wet": [
-                "tstandkoming van de milieuwetenschappen en milieu"
-            ],
-            "milieuregelgeving": [
-                "ieuwetenschappen en milieuregelgeving  mondiale  continen",
-                "ale milieuproblemen milieuregelgeving/omgevingswetgeving "
-            ],
-            "milieuproble+m": [
-                " fluviale en lokale milieuproblemen milieuregelgeving"
-            ],
-            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
-                " fluviale en lokale milieuproblemen milieuregelgeving"
-            ]
-        }
-    },
-    "JPW253: Fysica 1B": {
-        "nl": {
-            "[elektri[^ ]+, opslag]": [
-                " elektromagnetisme -elektrische lading en elektrisc",
-                "ektrische lading en elektrisch veld -elektrische p",
-                "en elektrisch veld -elektrische potentiaal -opslag ",
-                "entiaal -opslag van elektrische energie -elektrisch",
-                "lektrische energie -elektrische stroom -gelijkstroo",
-                "trische potentiaal -opslag van elektrische ene"
-            ]
-        }
-    },
-    "JPW258: Fysica 2 - Geluid": {
-        "nl": {
-            "milieu[- ]?wet": [
-                " en geluidsspectra *milieuwetgeving  vlarem en co"
+            "[[ ]ecolo[^ ]+]": [
+                "iding   basis van de ecologie  totstandkoming van",
+                "r beheer bij aan een ecologische en milieuvriendelij"
             ]
         }
     },
     "JPW260: Milieutechnologie 3: afval- en materialenbeheer / energiebeheer": {
         "nl": {
-            "[recycl[^ ]+, milieu]": [
-                "eling  sortering en recyclage van enkele huishoud",
-                "milieutechnologie 3  afval",
-                "n 2 afvalpreventie  milieuverantwoorde consump"
+            "[energie, duurzaa?m]": [
+                " materialenbeheer / energiebeheer inhoud deel \"",
+                "erialenbeheer deel \"energiebeheer\" 1 algemene p",
+                "4 actuele trends in energieprijzen 1 5 ecologis",
+                "gische aspecten 1 6 energie-audit / energiebala",
+                "1 6 energie-audit / energiebalans 2 specifieke ",
+                "balans 2 specifieke energietechnieken 2 1 energ",
+                "ergietechnieken 2 1 energieverbruik 2 2 energie",
+                "energieverbruik 2 2 energieproductie 2 3 warmte",
+                "werking 6 storten 7 duurzaam materialenbeheer de"
             ],
-            "energie[- ]?(?:ge|ver)bruik|(?:ge|ver)bruik van energie": [
-                "ergietechnieken 2 1 energieverbruik 2 2 energieproducti"
-            ],
-            "energie[- ]?balans": [
-                "1 6 energie-audit / energiebalans 2 specifieke energi"
+            "[[ ]ecolo[^ ]+]": [
+                "n energieprijzen 1 5 ecologische aspecten 1 6 energi"
             ]
         }
     },
@@ -315,476 +350,341 @@
     },
     "JPW295: Hernieuwbare energie en energieproductie": {
         "nl": {
-            "fotovoltaische?[- ]?energie": [
-                "jf en netgekoppeld  fotovoltaische energie windturbine/energie"
+            "wind ?energie": [
+                "d solar power  csp  windenergie  turbines  moderne "
             ],
             "hernieuwbare energie": [
                 "hernieuwbare energie en energieproductie",
                 "e inhoud inleiding  hernieuwbare energie - european green de",
                 "energiebuffers voor hernieuwbare energie-toepassingen doelst"
             ],
-            "windenergie": [
-                "d solar power  csp  windenergie  turbines  moderne "
+            "waterkracht": [
+                "e generatorsystemen waterkrachtcentrales  stuwdam- "
             ],
-            "zonne[- ]?energie": [
-                " fit for 55 -pakket zonne-energie  fotovoltaische sys"
+            "[biomassa, (?:energie|elektri[^ ]+) ?productie]": [
+                "centrale  golfslag  biomassa - biobrandstof - bi",
+                "ieuwbare energie en energieproductie inhoud inleiding  h"
+            ],
+            "bio[- ]?brandstof": [
+                "olfslag  biomassa - biobrandstof - bio-energie geoth"
+            ]
+        }
+    },
+    "JPW324: Bedrijfsethiek": {
+        "nl": {
+            "alternatieve energie": [
+                "teit  duurzaamheid  alternatieve energie    - ethische code "
+            ],
+            "[energie, duurzaa?m]": [
+                "mheid  alternatieve energie    - ethische code ",
+                "es  biodiversiteit  duurzaamheid  alternatieve e"
+            ],
+            "biodiversiteit": [
+                "ppelijke evoluties  biodiversiteit  duurzaamheid  alte"
             ]
         }
     },
     "JPW325: Aandrijvingen en energieomvormers": {
         "nl": {
-            "windenergie": [
+            "wind ?energie": [
                 "generator  dfig  in windenergietoepassing doelstell"
             ]
         }
     },
     "JPW355: Ecologie - Milieubeheer": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
-                " componenten van de biosfeer  de natuurlijke cyc",
-                "pij uitvoeren op de biosfeer en verschillende ec",
-                "en  wat is ecologie biosfeer - hydrosfeer - lith",
-                "andinname impact op biodiversiteit doelstellingen http",
+            "klimaat ?verandering": [
+                "gen in de atmosfeer klimaatverandering verstoring van de h"
+            ],
+            "[[ ]ecolo[^ ]+]": [
                 " ecosysteem  het vak ecologie is daarom opgedeeld",
                 "illende ecosystemen  ecologisch functioneren  wat i",
                 "functioneren  wat is ecologie biosfeer - hydrosfe"
             ],
-            "[bio(?:diversiteit|sfeer), ecosyst[^ ]+]": [
+            "biodiversiteit": [
+                "andinname impact op biodiversiteit doelstellingen http"
+            ],
+            "biosfeer": [
                 " componenten van de biosfeer  de natuurlijke cyc",
                 "pij uitvoeren op de biosfeer en verschillende ec",
-                "en  wat is ecologie biosfeer - hydrosfeer - lith",
-                "andinname impact op biodiversiteit doelstellingen http",
-                "unctioneren van een ecosysteem  het vak ecologie i",
-                "er en verschillende ecosystemen  ecologisch functio",
-                "ynamiek dynamiek in ecosystemen antropogene invloed"
+                "en  wat is ecologie biosfeer - hydrosfeer - lith"
             ],
-            "[bio(?:diversiteit|sfeer), impact, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                " componenten van de biosfeer  de natuurlijke cyc",
-                "pij uitvoeren op de biosfeer en verschillende ec",
-                "en  wat is ecologie biosfeer - hydrosfeer - lith",
-                "andinname impact op biodiversiteit doelstellingen http",
-                "drosfeer landinname impact op biodiversiteit d",
-                "ecologie - milieubeheer inhoud om de ",
-                "unctioneren van een ecosysteem  het vak ecologie i",
-                " ecosysteem  het vak ecologie is daarom opgedeeld",
-                "er en verschillende ecosystemen  ecologisch functio",
-                "illende ecosystemen  ecologisch functioneren  wat i",
-                "functioneren  wat is ecologie biosfeer - hydrosfe",
-                "ynamiek dynamiek in ecosystemen antropogene invloed",
-                "ne invloeden op het milieu verstoringen in de "
-            ],
-            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
-                "eer - atmosfeer het klimaat zon als energiebron",
-                "gen in de atmosfeer klimaatverandering verstoring van de h",
-                "ecologie - milieubeheer inhoud om de ",
-                "ne invloeden op het milieu verstoringen in de ",
-                " ecosysteem  het vak ecologie is daarom opgedee",
-                "illende ecosystemen  ecologisch functioneren  w",
-                "functioneren  wat is ecologie biosfeer - hydros"
-            ],
-            "[milieubeheer, [ ]ecolo[^ ]+, impact]": [
-                "ecologie - milieubeheer inhoud om de effect",
-                " ecosysteem  het vak ecologie is daarom opgedeeld",
-                "illende ecosystemen  ecologisch functioneren  wat i",
-                "functioneren  wat is ecologie biosfeer - hydrosfe",
-                "drosfeer landinname impact op biodiversiteit d"
-            ],
-            "klimaatverandering": [
-                "gen in de atmosfeer klimaatverandering verstoring van de h"
-            ],
-            "milieu[- ]?beheer": [
-                "ecologie - milieubeheer inhoud om de effect"
-            ],
-            "milieubeheer": [
+            "milieu ?beheer": [
                 "ecologie - milieubeheer inhoud om de effect"
             ]
         }
     },
     "JPW357: Milieutechnologie 2: bodem en lucht": {
         "nl": {
+            "alternatieve energie": [
+                "    radioactiviteit alternatieve energiebronnen - hernieuwba"
+            ],
             "hernieuwbare energie": [
                 "ve energiebronnen - hernieuwbare energiebronnen doelstelling"
+            ]
+        }
+    },
+    "JPWD99: 6 Energieprestatie": {
+        "nl": {
+            "[energieprestatie, gebouw]": [
+                "6 energieprestatie inhoud epb-software",
+                "n hun invloed op de energieprestatie van het gebouw opti",
+                "n  opdeling van het gebouw  gebouwschil  techn",
+                "ing van het gebouw  gebouwschil  technieken  b",
+                "ieprestatie van het gebouw optimalisatie van d",
+                "esprestatie van het gebouw doelstellingen http"
+            ]
+        }
+    },
+    "OAE02B: 1 Klimatisatie vervolgtraject": {
+        "nl": {
+            "[energieprestatie, gebouw]": [
+                " energiehuishouding energieprestatieregelgeving  princip",
+                "verloop doorheen de gebouwschil  vlakke delen ",
+                "rcomfort impact van gebouwparameters op de ene"
+            ]
+        }
+    },
+    "OAL11A: Wereldori\u00ebntatie 2.1": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                " de wereld centraal  ecologie  belgie  bestuurlij"
+            ]
+        }
+    },
+    "OAL12A: Wereldori\u00ebntatie 2.2": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "ie  outdoorlearning  ecologie  voorbereiding en n"
+            ]
+        }
+    },
+    "OAL29A: HAO Wereldori\u00ebntatie 2.1": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                " de wereld centraal  ecologie  belgie  bestuurlij"
+            ]
+        }
+    },
+    "OAL30A: HAO Wereldori\u00ebntatie 2.2": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "ie  outdoorlearning  ecologie  voorbereiding  exc"
+            ]
+        }
+    },
+    "OAR00P: 2 Omgevingsrecht": {
+        "nl": {
+            "[ruimtelijke ordening, (?:milieu|ecosystee?m)]": [
+                "mentering binnen de ruimtelijke ordening in vlaanderen  teve",
+                "alde topics uit het milieurecht  dewelke relev"
             ],
-            "bodemverontreiniging|verontreinigde grond": [
-                "estrijdingsmethoden bodemverontreiniging  -voorkomen en oorz"
-            ]
-        }
-    },
-    "JPWD29: 4 Energie en Comfort 2": {
-        "nl": {
-            "energie[- ]?(?:ge|ver)bruik|(?:ge|ver)bruik van energie": [
-                "comforteisen versus energieverbruik  - regelgeving  epb"
-            ]
-        }
-    },
-    "OAB07A: 5 Summer school sustainable management": {
-        "en": {
-            "sustainable management": [
-                "5 summer school sustainable management inhoud the cases fo",
-                "ional summer school sustainable management offers students a g",
-                "ional summer school sustainable management should  take part i",
-                "ional summer school sustainable management  take part in an ev",
-                "ional summer school sustainable management are based on wiek s"
-            ]
-        }
-    },
-    "OAC04A: 5+6 Summer school": {
-        "en": {
-            "[sustainable solution, environment|[ ]ecolo[^ ]+]": [
-                "s have to formulate sustainable solutions and advices for th",
-                "imulate innovative  sustainable solutions  the participants ",
-                "t domains  society  environment  economy  etc   and"
-            ],
-            "[sustainable solution, impact]": [
-                "s have to formulate sustainable solutions and advices for th",
-                "imulate innovative  sustainable solutions  the participants ",
-                "  to understand the impact of sustainable mana"
-            ],
-            "sustainable management": [
-                "n the summer school sustainable management  if so the student ",
-                "  the summer school sustainable management focuses on non-form",
-                "n the summer school sustainable management  if so the student ",
-                "s the summer school sustainable management  the summer school ",
-                "  the summer school sustainable management is a short intensiv",
-                "s with education on sustainable management  the first edition ",
-                "n the summer school sustainable management  you should partici",
-                "stand the impact of sustainable management -          to incre",
-                " the value added by sustainable management -          to disco",
-                "pportunities within sustainable management -          to ackno",
-                " and approaches for sustainable management to formulate innova"
-            ]
-        }
-    },
-    "OAK05A: Vakdidactiek 2.1": {
-        "nl": {
-            "milieuproble+m": [
-                "nderwijs 8 4        milieuproblemen 9   ordenen van d"
-            ],
-            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
-                "nderwijs 8 4        milieuproblemen 9   ordenen van d"
-            ]
-        }
-    },
-    "OAK21A: HAO Vakdidactiek 2.1": {
-        "nl": {
-            "milieuproble+m": [
-                "nderwijs 8 4        milieuproblemen 9   ordenen van d"
-            ],
-            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
-                "nderwijs 8 4        milieuproblemen 9   ordenen van d"
-            ]
-        }
-    },
-    "OAK35A: Schoolbeleid 3.2": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "eleid  scholen voor duurzame ontwikkeling   milieuzorg op sch",
-                "zame ontwikkeling   milieuzorg op school  mos "
-            ]
-        }
-    },
-    "OAK50A: HAO Schoolbeleid 3.2": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "eleid  scholen voor duurzame ontwikkeling   milieuzorg op sch",
-                "zame ontwikkeling   milieuzorg op school  mos "
-            ]
-        }
-    },
-    "OAK57A: Natuur 3": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "ratie met kinderen  duurzame ontwikkeling en milieuzorg   bas",
-                "ame ontwikkeling en milieuzorg   basisprincipe"
-            ]
-        }
-    },
-    "OAK65A: HAO Natuur 3": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "oratie met kinderen duurzame ontwikkeling en milieuzorg   bas",
-                "ame ontwikkeling en milieuzorg   basisprincipe"
-            ]
-        }
-    },
-    "OAK70A: Vakdidactiek 1.1": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "n de kleuterschool/ duurzame ontwikkeling/ educatie voor duur",
-                "ling/ educatie voor duurzame ontwikkeling  b  levende natuur ",
-                "ipes van natuur- en milieueducatie in de kleut"
-            ],
-            "milieueducatie": [
-                "ipes van natuur- en milieueducatie in de kleuterschool"
-            ]
-        }
-    },
-    "OAK78A: HAO Vakdidactiek 1.1": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "n de kleuterschool/ duurzame ontwikkeling/ educatie voor duur",
-                "ling/ educatie voor duurzame ontwikkeling b  levende natuur v",
-                "ipes van natuur- en milieueducatie in de kleut"
-            ],
-            "milieueducatie": [
-                "ipes van natuur- en milieueducatie in de kleuterschool"
-            ]
-        }
-    },
-    "OAL51A: Natuurbeleving: kinderen en natuur in de kijker 3": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "ratie met kinderen  duurzame ontwikkeling en milieuzorg   bas",
-                "sie rond natuur- en milieueducatie  relevante ",
-                "ame ontwikkeling en milieuzorg   basisprincipe"
-            ],
-            "milieueducatie": [
-                "sie rond natuur- en milieueducatie  relevante literatu"
-            ]
-        }
-    },
-    "OAL58A: Schoolbeleid 3.2": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "id en educatie voor duurzame ontwikkeling binnen  schoolbelei",
-                "nen  schoolbeleid   milieuzorg op school  mos "
-            ]
-        }
-    },
-    "OAL68A: HAO Schoolbeleid 3.2": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "id en educatie voor duurzame ontwikkeling binnen  schoolbelei",
-                "leid   scholen voor duurzame ontwikkeling  milieuzorg op scho",
-                "rzame ontwikkeling  milieuzorg op school  mos "
-            ]
-        }
-    },
-    "OAL73A: HAO Natuurbeleving: kinderen en natuur in de kijker 3": {
-        "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "ratie met kinderen  duurzame ontwikkeling en milieuzorg   bas",
-                "sie rond natuur- en milieueducatie  relevante ",
-                "ame ontwikkeling en milieuzorg   basisprincipe"
-            ],
-            "milieueducatie": [
-                "sie rond natuur- en milieueducatie  relevante literatu"
-            ]
-        }
-    },
-    "OAR01C: Korte mobiliteit": {
-        "nl": {
-            "[duurza+m(?:heid)?, mobiliteit]": [
-                "e mobiliteit is een duurzame samenwerking met d",
-                "korte mobiliteit inhoud deze leeract",
-                " wordt er een korte mobiliteit ingericht voor de g",
-                "ader van deze korte mobiliteit is een duurzame sam"
+            "(?:milieu|ecosystee?m[^ ]*) ?recht": [
+                "alde topics uit het milieurecht  dewelke relevant z"
             ]
         }
     },
     "OAR01G: 3 Constructie van gebouwen 3": {
         "nl": {
-            "duurzaam bouwen": [
-                "ng facultatief  #   duurzaam bouwen levenscyclusanalyse"
+            "[energieprestatie, gebouw]": [
+                "n een buitenschil - energieprestatie in vlaanderen  epb-",
+                "3 constructie van gebouwen 3 inhoud - algeme",
+                "en  na isolatie van gebouwen - hellende daken ",
+                "esidentieel ontwerp/gebouw op grond van een ar",
+                " tekeningen van een gebouw evalueert de constr",
+                "e opvatting van een gebouw  zo nodig in overle",
+                "ng en onderhoud van gebouwen  zo nodig in over",
+                "an een residentieel gebouw op basis van een ar"
             ],
-            "levenscyclusanalyse": [
+            "[energieprestatie, architect]": [
+                "n een buitenschil - energieprestatie in vlaanderen  epb-",
+                "ils bouwtechnisch & architecturaal onderzoek van ",
+                "uw op grond van een architectuurdossier of plaats",
+                "oekt de bouwkundige/architecturale kenmerken van ",
+                "uw op basis van een architectuurdossier of plaats"
+            ],
+            "[energie, duurzaa?m]": [
+                "n een buitenschil - energieprestatie in vlaande",
+                "ng facultatief  #   duurzaam bouwen levenscyclus"
+            ],
+            "levenscyclus ?(?:analyse|beoordeling)": [
                 "#   duurzaam bouwen levenscyclusanalyse  inhoud grafische i"
             ]
         }
     },
-    "OBK21A: E to the power of three: Teaching in Europe - Europe in teaching": {
+    "OAR02F: 6 Energieprestatiecertificering 1": {
         "nl": {
-            "duurzame ontwikkelingsdoel(?:en|stelling)?": [
-                "eit en educatie  17 duurzame ontwikkelingsdoelen  verenigde naties  "
+            "[energieprestatie, gebouw]": [
+                "6 energieprestatiecertificering 1 inho",
+                "pleidingsactiviteit energieprestatiecertificering omhels",
+                "r de opmaak van het energieprestatiecertificaat bij verk",
+                "an een residentieel gebouw  epc - type a   - e",
+                "giekenmerken van de gebouwenschil  - energieas"
+            ]
+        }
+    },
+    "OBK02A: Wereldori\u00ebntatie - Wiskunde 1.1": {
+        "nl": {
+            "[energie, duurzaa?m]": [
+                " heelal  materie en energie        gesteente  f",
+                " leren in de natuur duurzaamheid dieren in de kl"
+            ]
+        }
+    },
+    "OBL33A: Psychopedagogiek WPL": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "ntexten volgens het  ecologisch model van bronfenbr"
+            ]
+        }
+    },
+    "OBM58A: Algemeen differentiaal diagnostiek": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "iviteit  economie en ecologie  belangrijker wordt"
+            ]
+        }
+    },
+    "OBS06A: Aardrijkskunde: Stadsgeografie, industrie en energie": {
+        "nl": {
+            "alternatieve energie": [
+                "en kernenergie 3 5  alternatieve energie  4  geografie van d"
             ]
         }
     },
     "OGC00D: Milieuwetgeving": {
         "nl": {
-            "milieu[- ]?wet": [
-                "milieuwetgeving inhoud 1 mili",
-                "ling van de vlaamse milieuwetgeving 3 1 sectoraal",
-                "odernisering van de milieuwetgeving 3 3 meest rec"
+            "milieuvergunning": [
+                "reet betreffende de milieuvergunning en vlarem i 4 2 1 i"
+            ],
+            "(?:milieu|ecosystee?m[^ ]*) ?recht": [
+                "uwetgeving inhoud 1 milieurecht als rechtsgebied 1 ",
+                "ntwikkeling van het milieurecht 1 3 functioneel en ",
+                "mschrijving van het milieurecht 1 6 evolutie en kra",
+                "rachtlijnen van het milieurecht in het vlaamse gewe",
+                " 3 indeling van het milieurecht 1 7 waarom milieure",
+                "ieurecht 1 7 waarom milieurecht  2 opdracht milieur",
+                "eurecht  2 opdracht milieurecht 2 1 inleiding 2 2 e",
+                " 3 2 internationaal milieurecht en milieurecht in v",
+                "naal milieurecht en milieurecht in vlaanderen 2 3 3",
+                "van het \"nationaal\" milieurecht 3 2 integratie  ver"
+            ],
+            "(?:natuur ?bescherming|bescherming van (?:de )natuur)": [
+                "ilieuplanning 2 3 4 natuurbescherming - soortgericht 2 3 ",
+                " soortgericht 2 3 5 natuurbescherming - gebiedsgerichte w"
             ]
         }
     },
     "OGC00L: Milieuzorg": {
         "nl": {
-            "bodemverontreiniging|verontreinigde grond": [
-                "estrijdingsmethoden bodemverontreiniging + bodemsaneringstec"
+            "waterzuivering": [
+                "d  nod         afvalwaterzuivering   aeroob + anaeroob"
             ]
         }
     },
     "OGC00N: Bedrijfsinterne milieuzorg": {
         "nl": {
-            "milieubeleid": [
+            "(?:milieu|ecosystee?m[^ ]*) ?beleid": [
                 "ms  norm 4 1  3 3 7 milieubeleid  norm 4 2  3 3 8 pl"
             ],
-            "milieuverantwoordelijk": [
-                "ilieucoordinator vs milieuverantwoordelijke en milieudeskundig"
+            "(?:grondwater|aquifer|freatische zone)": [
+                "6 3 4 water 2 6 3 5 grondwater 2 6 3 6 afval 2 6 3"
             ]
         }
     },
     "OGC00Y: Biologisch milieuonderzoek": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), ecosyst[^ ]+]": [
-                "le rol van bomen en biodiversiteit in de klimaatopwarm",
-                " componenten in ons ecosysteem zijn sterk verweven",
-                "orgt ervoor dat een ecosysteem in balans is en zel",
-                "t doorheen het hele ecosysteem zijn gevolgen zal h",
-                "or voedselketens en ecosystemen belang als indicato"
+            "(?:opwarming van het klimaat|klimaat ?opwarming)": [
+                "iodiversiteit in de klimaatopwarming  veldexperiment en "
             ],
-            "[bio(?:diversiteit|sfeer), gevolg, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "le rol van bomen en biodiversiteit in de klimaatopwarm",
-                "ele ecosysteem zijn gevolgen zal hebben  door ",
-                "biologisch milieuonderzoek inhoud de ",
-                " componenten in ons ecosysteem zijn sterk verweven",
-                "orgt ervoor dat een ecosysteem in balans is en zel",
-                "t doorheen het hele ecosysteem zijn gevolgen zal h",
-                "e kwaliteit van het milieu en eventuele onbala",
-                "n we het biologisch milieuonderzoek  1  biolog",
-                "or voedselketens en ecosystemen belang als indicato",
-                "ader van biologisch milieuonderzoek deze oefen",
-                "estaande biologisch milieuonderzoek dat onder ",
-                "an het laboratorium milieutoxicologie  ghentox"
+            "klimaat ?opwarming": [
+                "iodiversiteit in de klimaatopwarming  veldexperiment en "
             ],
-            "[ecosyst[^ ]+, pollutie]": [
-                " componenten in ons ecosysteem zijn sterk verweven",
-                "orgt ervoor dat een ecosysteem in balans is en zel",
-                "t doorheen het hele ecosysteem zijn gevolgen zal h",
-                "or voedselketens en ecosystemen belang als indicato",
-                " densiteitsmetingen pollutie indices  saprobie s"
+            "biodiversiteit": [
+                "le rol van bomen en biodiversiteit in de klimaatopwarm"
+            ],
+            "bio[- ]?indicator": [
+                "sindices belang van bio-indicatoren 2  actieve monito"
             ],
             "ecotoxicologie": [
                 "eren  mmif   thema  ecotoxicologie en bioassay labo 7 "
-            ]
-        }
-    },
-    "OGE01G: Warmtetechniek HVAC": {
-        "nl": {
-            "fossiele brandstof": [
-                "uwen verwarming met fossiele brandstoffen gas stookolie ve"
+            ],
+            "milieu ?toxicologie": [
+                "an het laboratorium milieutoxicologie  ghentoxlab   ugent"
             ]
         }
     },
     "OGE01L: Toegepaste wetenschappen": {
         "nl": {
-            "windenergie": [
+            "wind ?energie": [
                 "n klimaat  energie  windenergie  getijdenenergie   "
+            ]
+        }
+    },
+    "OGE01U: Building automation - Internet of Things 2": {
+        "en": {
+            "[energy saving, building]": [
+                " energy logging and energy saving measures visualizat",
+                " energy logging and energy saving measures monitoring",
+                "building automation - intern",
+                " of things 2 inhoud building management system t",
+                "l  care and general building management installa",
+                "rce of inspiration  building management system t"
             ]
         }
     },
     "OGF00J: Facilitair beleid 1": {
         "nl": {
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgeving dlr"
+            "[[ ]ecolo[^ ]+]": [
+                "r beheer bij aan een ecologische en milieuvriendelij"
             ]
         }
     },
     "OGF00P: Technologie & Innovatie 1": {
         "nl": {
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgeving dlr"
+            "[energie, duurzaa?m]": [
+                "1 inhoud theorie 1  energie 2  energiebronnen -",
+                "eorie 1  energie 2  energiebronnen - elektricit",
+                " geothermisch - bio-energie 3  eenvoudige toepa",
+                " basisprincipes van duurzaam vastgoed en hospita",
+                "r1  draagt door een duurzaam facilitair beheer b"
+            ],
+            "[[ ]ecolo[^ ]+]": [
+                "r beheer bij aan een ecologische en milieuvriendelij"
             ]
         }
     },
     "OGF00Q: Milieu & Ecologie 1": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
-                "wat is ecologie  de biosfeer het klimaat zon als",
-                "milieu & ecologie 1 inhoud deel 1   i",
-                "l 2 inleiding tot de ecologie en milieuproblemati",
-                "wat is milieuleer of ecologie  aanverwante wetens",
-                "etenschappen  deel 3 ecologie wat is ecologie  de",
-                "el 3 ecologie wat is ecologie  de biosfeer het kl",
-                "r beheer bij aan een ecologische en milieuvriendelij"
-            ],
-            "[bio(?:diversiteit|sfeer), ecosyst[^ ]+]": [
-                "wat is ecologie  de biosfeer het klimaat zon als",
-                "iek dynamiek in het ecosysteem antropogene invloed"
-            ],
-            "[bio(?:diversiteit|sfeer), proble+m, milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "wat is ecologie  de biosfeer het klimaat zon als",
-                "e ecologie en milieuproblematiek inleiding ontw",
-                " ontstaan tgv milieuproblemen  the great smog  ",
-                "milieu & ecologie 1 inhoud",
-                "milieu & ecologie 1 inhoud deel 1   i",
-                "l 2 inleiding tot de ecologie en milieuproblemati",
-                " tot de ecologie en milieuproblematiek inleidi",
-                "ontwikkeling van de milieuwetenschappen  -rech",
-                "-recht obv groeiend milieubewustzijn ontstaan ",
-                "stzijn ontstaan tgv milieuproblemen  the great",
-                "urzame ontwikkeling milieuleer wat is milieu  ",
-                "g milieuleer wat is milieu  wat is natuur  fil",
-                "is de definitie van milieu in onze samenleving",
-                "samenleving  wat is milieuleer of ecologie  aa",
-                "wat is milieuleer of ecologie  aanverwante wetens",
-                "nte wetenschappen - milieuwetenschappen  deel ",
-                "etenschappen  deel 3 ecologie wat is ecologie  de",
-                "el 3 ecologie wat is ecologie  de biosfeer het kl",
-                "iek dynamiek in het ecosysteem antropogene invloed",
-                "ne invloeden op het milieu  deel 4 duurzame fa",
-                "an ik gebruiken  de milieuwetgeving duurzaamhe",
-                "e  cradle-to-cradle milieumanagementsystemen m",
-                "umanagementsystemen milieu-aspectenmatrix mili",
-                "lieu-aspectenmatrix milieurisico-analyse iso-n",
-                "ere normen  breeam  milieukeuren  -certificate",
-                "r beheer bij aan een ecologische en milieuvriendelij",
-                " een ecologische en milieuvriendelijke  werk o"
-            ],
-            "[duurza+m(?:heid)?, mobiliteit]": [
-                " introductie tot de duurzaamheid introductie basiske",
-                "ritisch denken rond duurzaamheid  deel 2 inleiding t",
+            "[energie, duurzaa?m]": [
+                "het klimaat zon als energiebron energiedoorstro",
+                "zon als energiebron energiedoorstroming in biot",
+                "en gezonde gebouwen energie  koeling  verwarmin",
+                " introductie tot de duurzaamheid introductie bas",
+                "ritisch denken rond duurzaamheid  deel 2 inleidi",
                 "ure  - principe van duurzame ontwikkeling milie",
                 " het milieu  deel 4 duurzame facilitaire oploss",
-                " de milieuwetgeving duurzaamheid vertrekkende vanuit",
+                " de milieuwetgeving duurzaamheid vertrekkende va",
                 "tbeheer catering en duurzame voeding schoonmaak",
-                "ent draagt door een duurzaam facilitair beheer b",
-                "s-office    aankoop mobiliteit en fleetbeheer cate"
+                "ent draagt door een duurzaam facilitair beheer b"
             ],
-            "[duurzame ontwikkeling, milieu, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "ure  - principe van duurzame ontwikkeling milieuleer wat is m",
-                "milieu & ecologie 1 inhoud",
-                " tot de ecologie en milieuproblematiek inleidi",
-                "ontwikkeling van de milieuwetenschappen  -rech",
-                "-recht obv groeiend milieubewustzijn ontstaan ",
-                "stzijn ontstaan tgv milieuproblemen  the great",
-                "urzame ontwikkeling milieuleer wat is milieu  ",
-                "g milieuleer wat is milieu  wat is natuur  fil",
-                "is de definitie van milieu in onze samenleving",
-                "samenleving  wat is milieuleer of ecologie  aa",
-                "nte wetenschappen - milieuwetenschappen  deel ",
-                "ne invloeden op het milieu  deel 4 duurzame fa",
-                "an ik gebruiken  de milieuwetgeving duurzaamhe",
-                "e  cradle-to-cradle milieumanagementsystemen m",
-                "umanagementsystemen milieu-aspectenmatrix mili",
-                "lieu-aspectenmatrix milieurisico-analyse iso-n",
-                "ere normen  breeam  milieukeuren  -certificate",
-                " een ecologische en milieuvriendelijke  werk o",
+            "[[ ]ecolo[^ ]+]": [
                 "milieu & ecologie 1 inhoud deel 1   i",
                 "l 2 inleiding tot de ecologie en milieuproblemati",
                 "wat is milieuleer of ecologie  aanverwante wetens",
                 "etenschappen  deel 3 ecologie wat is ecologie  de",
                 "el 3 ecologie wat is ecologie  de biosfeer het kl",
-                "iek dynamiek in het ecosysteem antropogene invloed",
                 "r beheer bij aan een ecologische en milieuvriendelij"
             ],
-            "[duurzame ontwikkeling, milieu-?proble+m]": [
-                "ure  - principe van duurzame ontwikkeling milieuleer wat is m",
-                " tot de ecologie en milieuproblematiek inleiding ontw",
-                "stzijn ontstaan tgv milieuproblemen  the great smog  "
+            "biosfeer": [
+                "wat is ecologie  de biosfeer het klimaat zon als"
             ],
-            "[duurzame ontwikkeling, milieu-?wet]": [
-                "ure  - principe van duurzame ontwikkeling milieuleer wat is m",
-                "ontwikkeling van de milieuwetenschappen  -recht o",
-                "nte wetenschappen - milieuwetenschappen  deel 3 e",
-                "an ik gebruiken  de milieuwetgeving duurzaamheid "
+            "vervuil": [
+                "roei  unep  oeso de vervuiler betaalt  brundtla"
             ],
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "ure  - principe van duurzame ontwikkeling milieuleer wat is m",
+            "[(?:waterbeheer|beheer van (?:de )?water), milieu]": [
+                "hoonmaak sitebeheer waterbeheer  regenwateropvang e",
                 "milieu & ecologie 1 inhoud",
-                "milieu & ecologie 1 inhoud deel 1   i",
-                "l 2 inleiding tot de ecologie en milieuproblemati",
                 " tot de ecologie en milieuproblematiek inleidi",
                 "ontwikkeling van de milieuwetenschappen  -rech",
                 "-recht obv groeiend milieubewustzijn ontstaan ",
@@ -793,113 +693,63 @@
                 "g milieuleer wat is milieu  wat is natuur  fil",
                 "is de definitie van milieu in onze samenleving",
                 "samenleving  wat is milieuleer of ecologie  aa",
-                "wat is milieuleer of ecologie  aanverwante wetens",
                 "nte wetenschappen - milieuwetenschappen  deel ",
-                "etenschappen  deel 3 ecologie wat is ecologie  de",
-                "el 3 ecologie wat is ecologie  de biosfeer het kl",
                 "ne invloeden op het milieu  deel 4 duurzame fa",
                 "an ik gebruiken  de milieuwetgeving duurzaamhe",
                 "e  cradle-to-cradle milieumanagementsystemen m",
                 "umanagementsystemen milieu-aspectenmatrix mili",
                 "lieu-aspectenmatrix milieurisico-analyse iso-n",
                 "ere normen  breeam  milieukeuren  -certificate",
-                "r beheer bij aan een ecologische en milieuvriendelij",
                 " een ecologische en milieuvriendelijke  werk o"
-            ],
-            "[[ ]ecolo[^ ]+, duurzaamheid]": [
-                "milieu & ecologie 1 inhoud deel 1   i",
-                "l 2 inleiding tot de ecologie en milieuproblemati",
-                "wat is milieuleer of ecologie  aanverwante wetens",
-                "etenschappen  deel 3 ecologie wat is ecologie  de",
-                "el 3 ecologie wat is ecologie  de biosfeer het kl",
-                "r beheer bij aan een ecologische en milieuvriendelij",
-                " introductie tot de duurzaamheid introductie basiske",
-                "ritisch denken rond duurzaamheid  deel 2 inleiding t",
-                " de milieuwetgeving duurzaamheid vertrekkende vanuit"
-            ],
-            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
-                "ie  de biosfeer het klimaat zon als energiebron",
-                "milieu & ecologie 1 inhoud",
-                " tot de ecologie en milieuproblematiek inleidi",
-                "ontwikkeling van de milieuwetenschappen  -rech",
-                "-recht obv groeiend milieubewustzijn ontstaan ",
-                "stzijn ontstaan tgv milieuproblemen  the great",
-                "urzame ontwikkeling milieuleer wat is milieu  ",
-                "g milieuleer wat is milieu  wat is natuur  fil",
-                "is de definitie van milieu in onze samenleving",
-                "samenleving  wat is milieuleer of ecologie  aa",
-                "nte wetenschappen - milieuwetenschappen  deel ",
-                "ne invloeden op het milieu  deel 4 duurzame fa",
-                "an ik gebruiken  de milieuwetgeving duurzaamhe",
-                "e  cradle-to-cradle milieumanagementsystemen m",
-                "umanagementsystemen milieu-aspectenmatrix mili",
-                "lieu-aspectenmatrix milieurisico-analyse iso-n",
-                "ere normen  breeam  milieukeuren  -certificate",
-                " een ecologische en milieuvriendelijke  werk o",
-                "milieu & ecologie 1 inhoud deel 1  ",
-                "l 2 inleiding tot de ecologie en milieuproblema",
-                "wat is milieuleer of ecologie  aanverwante wete",
-                "etenschappen  deel 3 ecologie wat is ecologie  ",
-                "el 3 ecologie wat is ecologie  de biosfeer het ",
-                "r beheer bij aan een ecologische en milieuvrien"
             ],
             "circulaire economie": [
                 "e economie naar een circulaire economie  cradle-to-cradle m"
-            ],
-            "milieu[- ]?management": [
-                "e  cradle-to-cradle milieumanagementsystemen milieu-aspe"
-            ],
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgevin"
-            ],
-            "milieu[- ]?wet": [
-                "ontwikkeling van de milieuwetenschappen  -recht o",
-                "nte wetenschappen - milieuwetenschappen  deel 3 e",
-                "an ik gebruiken  de milieuwetgeving duurzaamheid "
-            ],
-            "milieuproble+m": [
-                " tot de ecologie en milieuproblematiek inleiding ontw",
-                "stzijn ontstaan tgv milieuproblemen  the great smog  "
-            ],
-            "(?:milieu|[ ]ecolo[^ ]+|ecosyst[^ ]+)proble+m": [
-                " tot de ecologie en milieuproblematiek inleiding ontw",
-                "stzijn ontstaan tgv milieuproblemen  the great smog  "
             ]
         }
     },
     "OGF00R: Duurzame huisvesting 1": {
         "nl": {
-            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
-                "g gezondheid  binnenklimaat  legionellabeheersi",
-                " een ecologische en milieuvriendelijke  werk o",
-                "r beheer bij aan een ecologische en milieuvrien"
-            ],
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgeving zor"
+            "[[ ]ecolo[^ ]+]": [
+                "r beheer bij aan een ecologische en milieuvriendelij"
             ]
         }
     },
     "OGF00V: Milieu & Ecologie 2": {
         "nl": {
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgeving  - "
+            "milieuvergunning": [
+                "splicht volgens het milieuvergunningendecreet  en met he"
             ],
-            "milieuregelgeving": [
-                "& ecologie 2 inhoud milieuregelgeving/omgevingswetgeving "
+            "[[ ]ecolo[^ ]+]": [
+                "milieu & ecologie 2 inhoud milieurege",
+                "r beheer bij aan een ecologische en milieuvriendelij"
             ]
         }
     },
     "OGF00W: Hospitality 3": {
         "nl": {
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgeving  de"
+            "[[ ]ecolo[^ ]+]": [
+                "r beheer bij aan een ecologische en milieuvriendelij"
             ]
         }
     },
     "OGF00X: Health, Safety & Security 1": {
         "nl": {
-            "milieu[- ]?vriendelijk": [
-                " een ecologische en milieuvriendelijke  werk omgeving  de"
+            "[[ ]ecolo[^ ]+]": [
+                "r beheer bij aan een ecologische en milieuvriendelij"
+            ]
+        }
+    },
+    "OGI02R: Ethiek": {
+        "nl": {
+            "alternatieve energie": [
+                "teit  duurzaamheid  alternatieve energie    - ethische code "
+            ],
+            "[energie, duurzaa?m]": [
+                "mheid  alternatieve energie    - ethische code ",
+                "es  biodiversiteit  duurzaamheid  alternatieve e"
+            ],
+            "biodiversiteit": [
+                "ppelijke evoluties  biodiversiteit  duurzaamheid  alte"
             ]
         }
     },
@@ -917,64 +767,44 @@
             ]
         }
     },
-    "OGT33A: Skills for the future": {
+    "OKW00F: 2 Veiligheid op de werf": {
         "nl": {
-            "duurzame ontwikkelingsdoel(?:en|stelling)?": [
-                "lk project staan de duurzame ontwikkelingsdoelstellingen of sustainable de"
-            ]
-        }
-    },
-    "OKK00H: Veiligheid, Milieu en Kwaliteit": {
-        "nl": {
-            "energie[- ]?(?:ge|ver)bruik|(?:ge|ver)bruik van energie": [
-                "e sorteren en grote energieverbruikers op de bedrijfsvl"
-            ]
-        }
-    },
-    "OKW00I: 2 Uitvoeringstechnieken Gebouwen 1": {
-        "nl": {
-            "duurzaam bouwen": [
-                "basisbeginselen van duurzaam bouwen en van de bouwfysic"
-            ]
-        }
-    },
-    "OKW00J: 2 Uitvoeringstechnieken Infrastructuur 1": {
-        "nl": {
-            "duurzaam bouwen": [
-                "basisbeginselen van duurzaam bouwen krijgen meer tastba"
+            "[energie, duurzaa?m]": [
+                "e  de veiligheids-  energie en watervoorziening",
+                "ig de principes van duurzaamheid worden behandel"
             ]
         }
     },
     "OKW00P: 3 Uitvoeringstechnieken Gebouwen 2": {
         "nl": {
-            "duurzaam bouwen": [
-                "basisbeginselen van duurzaam bouwen en van de bouwfysic"
-            ],
-            "energie[- ]?(?:ge|ver)bruik|(?:ge|ver)bruik van energie": [
-                "duurzaamheid en het energieverbruik van een woning  de "
-            ],
             "hernieuwbare energie": [
                 " bijv  klassieke en hernieuwbare energie- of warmtebronnen s"
+            ],
+            "[energie, duurzaa?m]": [
+                "eke en hernieuwbare energie- of warmtebronnen s",
+                "duurzaamheid en het energieverbruik van een won",
+                "basisbeginselen van duurzaam bouwen en van de bo",
+                "tietechnieken op de duurzaamheid en het energiev"
             ]
         }
     },
     "OKW00R: 3 Uitvoeringstechnieken Infrastructuur 2": {
         "nl": {
-            "duurzaam bouwen": [
-                "basisbeginselen van duurzaam bouwen zijn geintegreerd e"
+            "waterzuivering": [
+                "ten en bekkens voor waterzuivering  de aansluitingen e"
             ]
         }
     },
-    "OKW01A: 1 Verkenning Werkveld": {
+    "OO3114: Psychopedagogiek 2": {
         "nl": {
-            "duurzaam bouwen": [
-                " m  bouwfysica  van duurzaam bouwen en van de goede bou"
+            "[[ ]ecolo[^ ]+]": [
+                "ntexten volgens het  ecologisch model van bronfenbr"
             ]
         }
     },
     "OO3144: Aardrijkskunde: Weer en klimaat": {
         "nl": {
-            "klimaatverandering": [
+            "klimaat ?verandering": [
                 " 1 waarnemingen van klimaatverandering 5 2 factoren die va",
                 " invloed zijn op de klimaatverandering 5 3 toekomstige ris"
             ],
@@ -983,52 +813,122 @@
             ]
         }
     },
-    "OO3150: Economie: Algemene economie 2.2": {
+    "OO3158: Frans: Taalvaardigheden 2.2": {
         "nl": {
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "r  groei  milieu en duurzame ontwikkeling sociaal recht doels",
-                "conjunctuur  groei  milieu en duurzame ontwikk"
+            "[[ ]ecolo[^ ]+]": [
+                "heden volgens thema  ecologie  samenleving  commu"
             ]
         }
     },
-    "OWA00S: Agro- en Biotechnologie voor de 21e eeuw": {
+    "OO3193: Theorie Sport 2.2": {
         "nl": {
-            "[duurzame ontwikkeling, milieu, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "in zijn ecosysteem  duurzame ontwikkeling  duurzaam onderneme",
-                "rende maatschappij  milieu en klimaat  voedsel",
-                "jn  de mens in zijn ecosysteem  duurzame ontwikkel"
+            "[[ ]ecolo[^ ]+]": [
+                "ertrokken vanuit een ecologische benadering van de r",
+                "e realiteit  m n  de ecologie van het leren in ba"
+            ]
+        }
+    },
+    "OO4105: Individuele en interactieve bewegingsdomeinen 2.1": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "balsporten vanuit de ecologische visie op balsporten"
+            ]
+        }
+    },
+    "OO4106: Individuele en interactieve bewegingsdomeinen 2.2": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "balsporten vanuit de ecologische visie op balsporten"
+            ]
+        }
+    },
+    "OPS03A: Individuele en interactieve bewegingsdomeinen 3": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "acht besteed aan de  ecologie  avn het balsporton"
+            ]
+        }
+    },
+    "OWA00F: Ecologie": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "ecologie inhoud ecologie  begrippen  systeem"
+            ]
+        }
+    },
+    "OWA00N: IPM in tuinbouw en groensectoren": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "tenbescherming in de ecologische tuinbouw en groense"
+            ]
+        }
+    },
+    "OWA01E: Natuur en bos 1": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "s op  basisprincipes ecologie nodig voor natuurbe",
+                "ssoorten  kapregimes ecologisch bosbeheer speelboss"
             ],
-            "[duurzame ontwikkeling, milieu|[ ]ecolo[^ ]+]": [
-                "in zijn ecosysteem  duurzame ontwikkeling  duurzaam onderneme",
-                "rende maatschappij  milieu en klimaat  voedsel"
+            "(?:milieu|ecosystee?m[^ ]*) ?dienst": [
+                "eer  bosecologie en ecosysteemdiensten productiebeheer  "
+            ]
+        }
+    },
+    "OWA01F: Bodem en Bemesting": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "plantenvoeding in de ecologische teeltwijze worden t"
+            ]
+        }
+    },
+    "OWA01M: Proefdierkunde": {
+        "nl": {
+            "(?:welzijn van dier|dierenwelzijn)": [
+                "elkundige ingrepen  dierenwelzijn   studie van hoe pi"
+            ]
+        }
+    },
+    "OWA01N: Boom- en groenbeheer": {
+        "nl": {
+            "(?:milieu|ecosystee?m[^ ]*) ?dienst": [
+                "stedelijke omgeving ecosysteemdiensten van bomen  i-tree"
             ]
         }
     },
     "OWA01R: Plantaardige productie": {
         "nl": {
-            "[bio(?:diversiteit|sfeer), [ ]ecolo[^ ]+]": [
-                "urdoelen samengaan  biodiversiteit en bodembeheer spel",
+            "[energie, duurzaa?m]": [
+                "ieten  aardappelen  energiegewassen verder krij",
+                "lost in water  ook  duurzame bemestingstechniek",
+                "tuurontwikkeling en duurzame landbouw  kunnen a",
+                " mee een basis voor duurzame landbouw  in dit o"
+            ],
+            "[[ ]ecolo[^ ]+]": [
                 "plantenvoeding in de ecologische teeltwijze worden t"
             ],
-            "[[ ]ecolo[^ ]+, klima+t[^ ]*, landbouw]": [
-                "plantenvoeding in de ecologische teeltwijze worden t",
-                "aan het veranderend klimaat  daarom worden nieu",
-                "d zal staan  inhoud landbouw zorgt voor ons dage",
-                "regelmatig strijden landbouw en natuur om hun gr",
-                "raag naar voldoende landbouwgrond neemt toe door",
-                "kkeling en duurzame landbouw  kunnen agrarische ",
-                "asrotatie  kringlooplandbouw maken deel uit van ",
-                "n natuur inclusieve landbouw  ook plantenveredel",
-                "basis voor duurzame landbouw  in dit onderdeel i"
-            ],
-            "[klima+t[^ ]*, milieu, [ ]ecolo[^ ]+": [
-                "aan het veranderend klimaat  daarom worden nieu",
-                "ap  de natuur en de milieukwaliteit  regelmati",
-                "plantenvoeding in de ecologische teeltwijze wor"
+            "biodiversiteit": [
+                "urdoelen samengaan  biodiversiteit en bodembeheer spel"
             ],
             "duurzame landbouw": [
                 "tuurontwikkeling en duurzame landbouw  kunnen agrarische ",
                 " mee een basis voor duurzame landbouw  in dit onderdeel i"
+            ]
+        }
+    },
+    "OWA01U: Actuele thema's in de Agro- en Biotechnologie": {
+        "nl": {
+            "(?:welzijn van dier|dierenwelzijn)": [
+                "voedsel productie   dierenwelzijn en -houderij  natuu"
+            ],
+            "(?:natuurbehoud|behoud van (?:de )natuur)": [
+                "lzijn en -houderij  natuurbehoud en groenvoorziening"
+            ]
+        }
+    },
+    "OWL15A: Psychopedagogiek 2": {
+        "nl": {
+            "[[ ]ecolo[^ ]+]": [
+                "ntexten volgens het  ecologisch model van bronfenbr"
             ]
         }
     }
