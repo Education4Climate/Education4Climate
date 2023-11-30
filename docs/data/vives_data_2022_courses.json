@@ -22,7 +22,9 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -47,7 +49,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -70,7 +72,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -94,7 +96,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -119,7 +121,8 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "transport"
   ],
   "dedicated":0
  },
@@ -147,7 +150,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -171,8 +174,8 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "transport"
   ],
   "dedicated":0
  },
@@ -196,7 +199,8 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "transport"
   ],
   "dedicated":0
  },
@@ -219,7 +223,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -242,7 +246,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "transport"
   ],
   "dedicated":0
  },
@@ -265,7 +269,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -290,7 +294,8 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "transport"
   ],
   "dedicated":0
  },
@@ -314,7 +319,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -337,7 +342,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -365,7 +370,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
@@ -388,7 +393,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":0
  },
@@ -411,7 +416,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -433,10 +438,100 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "climate",
+   "transport"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V1V039",
+  "name":"Elektrische aandrijving",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verbeeck Hannes",
+   "Depoorter Ben"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V1V039N.htm",
+  "cycles":[
+   "grad"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V2J018",
+  "name":"Aardrijkskunde - sociale geografie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Surmont Christine"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V2J018N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V2J396",
+  "name":"Aardrijkskunde - sociale geografie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Gyselen Ilka"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V2J396N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V2J398",
+  "name":"Aardrijkskunde - weer en klimaat",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Gyselen Ilka"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V2J398N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
  },
  {
   "id":"V2J448",
@@ -458,8 +553,8 @@
   ],
   "themes":[
    "energy",
-   "resources",
-   "sustainability"
+   "prod&cons",
+   "transport"
   ],
   "dedicated":0
  },
@@ -481,7 +576,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -503,7 +598,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -526,8 +621,31 @@
   ],
   "themes":[
    "energy",
-   "resources",
-   "sustainability"
+   "prod&cons",
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V2J651",
+  "name":"Aardrijkskunde - sociale geografie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Surmont Christine"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V2J651N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -552,8 +670,31 @@
    "Pedagogy"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V2J688",
+  "name":"Aardrijkskunde - sociaal-economische geografie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Gyselen Ilka",
+   "Van Torre Sara",
+   "Verstraete Lies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V2J688N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  },
@@ -575,26 +716,22 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"V2JA20",
-  "name":"De leraar op ontdekking",
+  "id":"V2JA17",
+  "name":"Ori\u00ebnteren op natuur en techniek",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Ducatteeuw Nele",
-   "Deceuninck Bert",
-   "De Vlieger Mieke",
-   "Simpelaere Eveline",
-   "Vanhaesebrouck Lut",
-   "Depuydt Ingrid"
+   "Lippens Joke",
+   "Gyselen Ilka"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V2JA20N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V2JA17N.htm",
   "cycles":[
    "bac"
   ],
@@ -602,7 +739,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -632,7 +769,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -659,56 +796,196 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V31D27",
-  "name":"Duurzame ontwikkeling",
+  "id":"V31C05",
+  "name":"Healing Environment",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Verkest Hugo",
-   "Depuydt Ingrid"
+   "Vanmarcke Tim"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V31D27N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V31C05N.htm",
   "cycles":[
    "bac"
   ],
   "fields":[
-   "Pedagogy"
+   "Economy",
+   "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
-  "dedicated":1
+  "dedicated":0
  },
  {
-  "id":"V32D12",
-  "name":"Duurzame ontwikkeling",
+  "id":"V31C57",
+  "name":"Wetgeving en preventie: preventieadviseur 3 (MW)",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Verkest Hugo",
-   "Depuydt Ingrid"
+   "Vermaut Pieter-Michiel"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V32D12N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V31C57N.htm",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V31C58",
+  "name":"Strategisch en changemanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V31C58N.htm",
   "cycles":[
    "bac"
   ],
   "fields":[
-   "Pedagogy"
+   "Economy",
+   "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
-  "dedicated":1
+  "dedicated":0
+ },
+ {
+  "id":"V31C95",
+  "name":"Qualitymanagement in Wellness & Spa",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V31C95N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V31C96",
+  "name":"Integrale dermatologie en cosmetologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van hooland Evelien"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V31C96N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V32C91",
+  "name":"Voeding, sport en vitaliteit",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Jansens Cathy"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V32C91N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V32C96",
+  "name":"Sauna- en hammamleer",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V32C96N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V32C99",
+  "name":"Ergonomisch werken",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V32C99N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"V33A18",
@@ -729,7 +1006,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -751,8 +1028,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -774,7 +1050,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -796,7 +1072,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -818,7 +1094,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -840,9 +1116,8 @@
    "Sociology"
   ],
   "themes":[
-   "climate",
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":1
  },
@@ -864,32 +1139,10 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "dedicated":0
- },
- {
-  "id":"V33A29",
-  "name":"Duurzame vrede en rechtvaardigheid",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Vanderstraeten Inge"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33A29N.htm",
-  "cycles":[
-   "postgrad"
-  ],
-  "fields":[
-   "Sociology"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":1
  },
  {
   "id":"V33A30",
@@ -909,7 +1162,151 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33C10",
+  "name":"Vitaliteit 1: beweging, houding & tonus en relaxatie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Devreese Karl",
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33C10N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33C15",
+  "name":"Praktijktraining 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Elke",
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33C15N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33C36",
+  "name":"Wellbeing-, sport- en vitaliteitsbeleid",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Derumeaux Lore"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33C36N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33C56",
+  "name":"EHBO",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Callens Jasper",
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33C56N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Engineering",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33C57",
+  "name":"Sport, Games & Apps 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanmedegael Steven"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33C57N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Engineering",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33C58",
+  "name":"Sport, Games & Apps 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanmedegael Steven"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33C58N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Engineering",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -935,7 +1332,8 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy"
   ],
   "dedicated":0
  },
@@ -961,7 +1359,171 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33C91",
+  "name":"Innovatieve en aangepaste sportmethodes",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dumortier Jasmien"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33C91N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33I04",
+  "name":"Module 1: Het paard als partner",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Flamang Annelies",
+   "Tuerlinckx Johan",
+   "Dendooven Katrien",
+   "Dobbelaere Saskia",
+   "Op de Beeck Lin"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33I04N.htm",
+  "cycles":[
+   "postgrad"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33I11",
+  "name":"Dierenwelzijn, ethologie, leerprincipes en training",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Monteny Joke",
+   "Vincke Leslie",
+   "Flamang Annelies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33I11N.htm",
+  "cycles":[
+   "postgrad"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33I13",
+  "name":"Therapiedieren 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Simons Lara",
+   "Beernaert Lies",
+   "Flamang Annelies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33I13N.htm",
+  "cycles":[
+   "postgrad"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33L79",
+  "name":"Stage",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Op de Beeck Lin"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33L79N.htm",
+  "cycles":[
+   "postgrad"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33L80",
+  "name":"Stage",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Op de Beeck Lin"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33L80N.htm",
+  "cycles":[
+   "postgrad"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V33T07",
+  "name":"Boomtechniek",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Chys Geert"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33T07N.htm",
+  "cycles":[
+   "postgrad"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -984,24 +1546,302 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3A011",
-  "name":"Dierenartsassistentietechnieken",
+  "id":"V33T11",
+  "name":"Urban forestry II: bomenplan",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Cocquyt Ulrike",
-   "Beernaert Lies",
-   "Buddaert Wim",
-   "Flamang Annelies"
+   "Vandenabeele Annelies",
+   "Chys Geert"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A011N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V33T11N.htm",
+  "cycles":[
+   "postgrad"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C06",
+  "name":"Ergonomisch werken",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C06N.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C14",
+  "name":"Wellbeing-, sport- en vitaliteitsbeleid",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Derumeaux Lore"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C14N.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C31",
+  "name":"Sauna- en hammamleer",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C31N.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C32",
+  "name":"Verkorte stage Coaching",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Elke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C32N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C33",
+  "name":"Verkorte stage Care",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Elke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C33N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C34",
+  "name":"Verkorte stage Spa",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Elke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C34N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C39",
+  "name":"Qualitymanagement in wellness en spa",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C39N.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C40",
+  "name":"Integrale dermatologie en cosmetologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van hooland Evelien"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C40N.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V34C44",
+  "name":"Managementvaardigheden",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verplancke Kaat",
+   "Trommelmans Luc"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V34C44N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3523C",
+  "name":"Web Development in .NET",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Ketels Bavo",
+   "Braeckman Emma"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3523CN.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3556B",
+  "name":"Web Development in .NET",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Ketels Bavo",
+   "Braeckman Emma",
+   "De Waele Christophe"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3556BN.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A008",
+  "name":"Biotechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A008N.htm",
   "cycles":[
    "bac"
   ],
@@ -1009,24 +1849,21 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"V3A012",
-  "name":"Dierenartsassistentietechnieken",
+  "id":"V3A013",
+  "name":"Ecologie",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Wydooghe Eline",
-   "Beernaert Lies",
-   "Cocquyt Ulrike",
-   "Flamang Annelies"
+   "Carette Johan"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A012N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A013N.htm",
   "cycles":[
    "bac"
   ],
@@ -1034,7 +1871,75 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "energy",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3A022",
+  "name":"Natuur en bos",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A022N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A026",
+  "name":"Bedrijfsmanagement 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Kerckhove Joachim",
+   "Calus Mieke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A026N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A031",
+  "name":"Student Company",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "David Rik"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A031N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1058,7 +1963,154 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A034",
+  "name":"Wetgeving en landbouwbeleid",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Degezelle Isabelle",
+   "Kerckhove Joachim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A034N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A036",
+  "name":"Stage 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A036N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A038",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "David Rik",
+   "Keirsebilck Annick",
+   "Vanden Berghe Marc",
+   "Roobroeck Bregt",
+   "Beernaert Lies",
+   "Bollaert Bea",
+   "De Man Ingrid",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A038N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A039",
+  "name":"Student Company",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "David Rik",
+   "Kestelyn Lies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A039N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A044",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "Beernaert Lies",
+   "Roobroeck Bregt"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A044N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A050",
+  "name":"Mechanisatie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Jonckheer Joost",
+   "Willem Johny",
+   "Willem Tim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A050N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1083,8 +2135,7 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -1108,7 +2159,9 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "building",
+   "food",
+   "life"
   ],
   "dedicated":1
  },
@@ -1130,8 +2183,30 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A058",
+  "name":"Technologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Willem Johny",
+   "Vandorpe Bruno"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A058N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1154,22 +2229,22 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
  {
-  "id":"V3A218",
-  "name":"Lifestyle en sportvoeding (B3E307)",
+  "id":"V3A070",
+  "name":"Natuurbeheer en biotoopstudie",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Acke Lieve",
-   "Staelens Ga\u00ebl"
+   "Roobroeck Bregt",
+   "Carette Johan"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A218N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A070N.htm",
   "cycles":[
    "bac"
   ],
@@ -1177,7 +2252,54 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A073",
+  "name":"Werkveldverkenning binnen- en buitenland",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bossaert Geert",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A073N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A280",
+  "name":"Dierengezondheid en -welzijn 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Monteny Joke",
+   "Vanhove Wim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A280N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1201,8 +2323,7 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -1225,8 +2346,148 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A304",
+  "name":"Religie, zingeving en levensbeschouwing",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A304N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A333",
+  "name":"Biotechnologie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A333N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A334",
+  "name":"Bodem en bemesting",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A334N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A364",
+  "name":"Dierengezondheid en -welzijn 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Beernaert Lies",
+   "Cocquyt Ulrike"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A364N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A382",
+  "name":"Stage 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Simons Lara",
+   "Chys Geert",
+   "Bollaert Bea",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A382N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A388",
+  "name":"Stage 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Carette Johan",
+   "Joos Isabelle",
+   "Simons Lara"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A388N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1249,7 +2510,197 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A412",
+  "name":"Veevoeding 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Degezelle Isabelle",
+   "De Jonckheer Joost"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A412N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A418",
+  "name":"Plantenbescherming 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Peeters Willem",
+   "Vanysacker Martin"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A418N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A423",
+  "name":"Plantenkennis 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A423N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A444",
+  "name":"Werkveldverkenning binnen- en buitenland",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Man Ingrid",
+   "Bekaert Freddy"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A444N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A454",
+  "name":"Werkveldverkenning binnen- en buitenland",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Engels Ella",
+   "Wouters Filip",
+   "Monteny Joke",
+   "Stael Arnold",
+   "Cocquyt Ulrike",
+   "Vanhove Wim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A454N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A457",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "Vandenberghe Zoey",
+   "Keirsebilck Annick"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A457N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A483",
+  "name":"Proefdierkunde",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Wydooghe Eline"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A483N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A487",
+  "name":"Stage 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Keirsebilck Annick",
+   "Bekaert Tim",
+   "Dewaele Kristof",
+   "Bollaert Bea",
+   "Maertens Inge"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A487N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1277,7 +2728,8 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -1302,10 +2754,35 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3A514",
+  "name":"Stage 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Joos Isabelle",
+   "Cocquyt Ulrike",
+   "Bollaert Bea",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A514N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3A515",
@@ -1334,7 +2811,32 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A516",
+  "name":"Stage 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "Vanden Berghe Marc",
+   "David Rik"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A516N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1356,7 +2858,53 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A561",
+  "name":"Dierengezondheid en -welzijn 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Beernaert Lies",
+   "Cocquyt Ulrike"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A561N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A567",
+  "name":"Plantenkennis 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A567N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1378,7 +2926,215 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A581",
+  "name":"Plantenkennis 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A581N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A585",
+  "name":"Groenbeheer en grasveldkunde",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bossaert Geert",
+   "Vanhaelst Jonathan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A585N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A586",
+  "name":"Boomverzorging",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Willem Johny",
+   "Peeters Willem",
+   "Vanhooren Ward"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A586N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A592",
+  "name":"Levensmiddelenfysica en procestechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bekaert Freddy"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A592N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A606",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "De Man Ingrid",
+   "Bekaert Freddy",
+   "Desmet Mich\u00e8le"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A606N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A619",
+  "name":"Plantenkennis 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dehondt Yves"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A619N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A632",
+  "name":"Natuur en bos",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A632N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A637",
+  "name":"Plantenkennis 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dutry Stijn",
+   "Carette Johan",
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A637N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A647",
+  "name":"Boomverzorging",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Peeters Willem",
+   "Chys Geert"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A647N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1402,8 +3158,97 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3A673",
+  "name":"Varkensteelt",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Degezelle Isabelle"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A673N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A677",
+  "name":"Fruitteelt",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verhaeghe Lieven"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A677N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A689",
+  "name":"Wildlife management",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Cocquyt Ulrike",
+   "Wouters Filip"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A689N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A709",
+  "name":"Milieutechnologie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Calcoen Joke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A709N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -1428,8 +3273,7 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -1451,9 +3295,152 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life",
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3A717",
+  "name":"Plantaardige productie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanden Berghe Marc",
+   "Vanysacker Martin"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A717N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A732",
+  "name":"Bedrijfsmanagement 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Kerckhove Joachim",
+   "Calus Mieke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A732N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A739",
+  "name":"Basis diervoeding",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Engels Ella",
+   "Wouters Filip"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A739N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A741",
+  "name":"Diermanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhove Wim",
+   "Stael Arnold",
+   "Wouters Filip"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A741N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A755",
+  "name":"Biochemie en labomanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van hooland Evelien",
+   "Desmet Mich\u00e8le",
+   "Vanherpe Ine"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A755N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A761",
+  "name":"Bodem en bemesting",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanysacker Martin",
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A761N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3A768",
@@ -1475,10 +3462,78 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A771",
+  "name":"Natuurbeheer en biotoopstudie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Roobroeck Bregt",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A771N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A775",
+  "name":"Dierlijke producten",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Man Ingrid"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A775N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A777",
+  "name":"Plantaardige producten",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bekaert Freddy"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A777N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1500,10 +3555,125 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"V3A794",
+  "name":"Diermanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhove Wim",
+   "Depuydt Lies",
+   "Stael Arnold",
+   "Wouters Filip"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A794N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A795",
+  "name":"Basis diervoeding",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Engels Ella"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A795N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A814",
+  "name":"Bodem en bemesting",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanysacker Martin",
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A814N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A817",
+  "name":"Plantenkennis 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dehondt Yves"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A817N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A821",
+  "name":"Ecologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A821N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"V3A825",
@@ -1525,10 +3695,33 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A835",
+  "name":"Biotechnologie 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van hooland Evelien",
+   "De Man Ingrid"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A835N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
   ],
   "dedicated":0
  },
@@ -1550,7 +3743,53 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3A838",
+  "name":"Mengvoedertechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Bruno"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A838N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A844",
+  "name":"Ecologie en inheemse fauna",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter",
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A844N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -1573,7 +3812,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A850",
+  "name":"Vormgeving en harmonisch park- en groenbeheer",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bossaert Geert"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A850N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1595,7 +3856,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A852",
+  "name":"Vegetatiekunde en plantengeografie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A852N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1617,10 +3900,76 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"V3A862",
+  "name":"Dierengezondheid en -welzijn 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhove Wim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A862N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A863",
+  "name":"Voeding per specifieke diersoort",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Wouters Filip"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A863N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A864",
+  "name":"Ecologie en inheemse fauna",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter",
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A864N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"V3A865",
@@ -1640,7 +3989,53 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A866",
+  "name":"Vormgeving en harmonisch park- en groenbeheer",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bossaert Geert",
+   "Vanhaelst Jonathan",
+   "Dehondt Yves"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A866N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A867",
+  "name":"Vegetatiekunde en plantengeografie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A867N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1662,7 +4057,30 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A871",
+  "name":"Groenbeheer en grasveldkunde",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhaelst Jonathan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A871N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1687,10 +4105,31 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3A885",
+  "name":"Religie, zingeving en levensbeschouwing (VB)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Selis Elise"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A885N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3A887",
@@ -1710,9 +4149,117 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3A889",
+  "name":"Varkens en veevoeding",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Degezelle Isabelle",
+   "Vandorpe Bruno"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A889N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3A898",
+  "name":"Werkveldverkenning binnen- en buitenland",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter",
+   "Dehondt Yves",
+   "Bossaert Geert",
+   "Roobroeck Bregt",
+   "Chys Geert",
+   "Joos Isabelle",
+   "Willem Johny",
+   "Vanhaelst Jonathan",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3A898N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA01",
+  "name":"Werkveldverkenning en beroepsethiek 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Anseeuw Dieter",
+   "Degezelle Isabelle",
+   "Vanden Berghe Marc",
+   "Wouters Filip",
+   "Chys Geert",
+   "Stael Arnold",
+   "Verhaeghe Lieven",
+   "Viaene Jasmine",
+   "Van hooland Evelien",
+   "De Waele Eric",
+   "Vandorpe Bruno",
+   "Vandenberghe Zoey",
+   "Cocquyt Ulrike",
+   "Willem Johny",
+   "Vanhaelst Jonathan",
+   "Carette Johan",
+   "David Rik",
+   "Vermeulen Liesbeth",
+   "Keirsebilck Annick",
+   "Beelprez Sofie",
+   "De Jonckheer Joost",
+   "Willem Tim",
+   "Verheyen Wendy",
+   "De Bleecker Yves",
+   "Selis Elise",
+   "De Man Ingrid",
+   "Bekaert Freddy",
+   "Vanhove Wim",
+   "Patoor Ilse",
+   "Kestelyn Lies",
+   "Peeters Suzy",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA01N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3AA05",
@@ -1737,9 +4284,36 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA09",
+  "name":"Biologische processen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Rooms Greta",
+   "Van hooland Evelien",
+   "Van Doorsselaere Jan",
+   "Wouters Filip",
+   "Louwagie Pol",
+   "Maertens Inge"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA09N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1763,8 +4337,9 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -1789,7 +4364,264 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA16",
+  "name":"Elektriciteit en mechanisatie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanden Berghe Marc",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA16N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA32",
+  "name":"Inleiding voedingstechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "David Rik",
+   "Desmet Mich\u00e8le",
+   "Vanden Berghe Marc",
+   "De Man Ingrid",
+   "Maertens Inge"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA32N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA34",
+  "name":"Bedrijfsuitrusting",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanden Berghe Marc",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA34N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA36",
+  "name":"Bodem, bemesting en toepassingen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA36N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA37",
+  "name":"Plantenbescherming 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA37N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA38",
+  "name":"Plantaardige productie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA38N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA54",
+  "name":"Hygi\u00ebne en huisvesting",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhove Wim",
+   "Stael Arnold",
+   "Cocquyt Ulrike"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA54N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA65",
+  "name":"Bakkerijtechnologie en chocolade",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bekaert Freddy"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA65N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA69",
+  "name":"Bodem en materialen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bossaert Geert",
+   "Anseeuw Dieter",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA69N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA76",
+  "name":"Mechanisatie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanden Berghe Marc",
+   "Chys Geert",
+   "Willem Tim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA76N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA78",
+  "name":"Bodem en bemesting",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA78N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1813,7 +4645,30 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA86",
+  "name":"Stallenbouw",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Bruno"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA86N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1840,18 +4695,21 @@
   "dedicated":1
  },
  {
-  "id":"V3AA94",
-  "name":"Wettelijk beschermd ondernemen",
+  "id":"V3AA98",
+  "name":"Stage 1",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "De Jonckheer Joost",
-   "Louwagie Pol",
-   "Vandorpe Bruno"
+   "D'hondt Melissa",
+   "Vandenabeele Annelies",
+   "Simons Lara",
+   "Engels Ella",
+   "Bollaert Bea",
+   "Op de Beeck Lin"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA94N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA98N.htm",
   "cycles":[
    "bac"
   ],
@@ -1859,7 +4717,96 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AA99",
+  "name":"Stage 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "Vandenabeele Annelies",
+   "Maertens Inge",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AA99N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AB00",
+  "name":"Werkveldverkenning en beroepsethiek 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Anseeuw Dieter",
+   "Vermeulen Liesbeth",
+   "Calus Mieke",
+   "Bossaert Geert",
+   "Roobroeck Bregt",
+   "Chys Geert",
+   "Selis Elise",
+   "Vanhaelst Jonathan",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB00N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AB04",
+  "name":"Werkveldverkenning en beroepsethiek 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhove Wim",
+   "Anseeuw Dieter",
+   "Vermeulen Liesbeth",
+   "Beelprez Sofie",
+   "De Waele Eric",
+   "Wouters Filip",
+   "Verheyen Wendy",
+   "Rediger Kelly",
+   "Chys Geert",
+   "Stael Arnold",
+   "Selis Elise",
+   "Louwagie Pol",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB04N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1883,8 +4830,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -1915,10 +4861,210 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3AB18",
+  "name":"Bodem en materialen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhaelst Jonathan",
+   "Anseeuw Dieter",
+   "Chys Geert",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB18N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AB30",
+  "name":"Stage 1 dierenzorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Bollaert Bea",
+   "Op de Beeck Lin",
+   "Engels Ella"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB30N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AB37",
+  "name":"Plantenbescherming 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB37N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AB49",
+  "name":"Natuur- en bosbeheer",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Johan",
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB49N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AB54",
+  "name":"Hygi\u00ebne en huisvesting",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhove Wim",
+   "Cocquyt Ulrike"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB54N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AB98",
+  "name":"Stage 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Vandenabeele Annelies",
+   "Simons Lara",
+   "Chys Geert",
+   "Bollaert Bea",
+   "Vanhaelst Jonathan",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AB98N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC00",
+  "name":"Werkveldverkenning en beroepsethiek 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Anseeuw Dieter",
+   "Degezelle Isabelle",
+   "Vanden Berghe Marc",
+   "Van Doorsselaere Jan",
+   "Calus Mieke",
+   "Bossaert Geert",
+   "Roobroeck Bregt",
+   "Chys Geert",
+   "Verhaeghe Lieven",
+   "Engels Ella",
+   "Vanroose Anja",
+   "Desmet Mich\u00e8le",
+   "Nyffels Andy",
+   "Vandorpe Bruno",
+   "Dewitte Angelo",
+   "Vanhaelst Jonathan",
+   "Carette Johan",
+   "David Rik",
+   "Vermeulen Liesbeth",
+   "Beelprez Sofie",
+   "De Jonckheer Joost",
+   "Willem Tim",
+   "Selis Elise",
+   "De Man Ingrid",
+   "Vanhove Wim",
+   "Kestelyn Lies",
+   "D'hondt Melissa",
+   "Kerckhove Joachim",
+   "Peeters Suzy",
+   "Calcoen Joke",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC00N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3AC07",
@@ -1939,25 +5085,23 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
  {
-  "id":"V3AC14",
-  "name":"Dierverpleegkundige basistechnieken",
+  "id":"V3AC16",
+  "name":"Inheemse fauna",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Engels Ella",
-   "Rediger Kelly",
-   "Viaene Jasmine",
-   "Vandenberghe Zoey",
-   "Cocquyt Ulrike"
+   "De Waele Eric"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC14N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC16N.htm",
   "cycles":[
    "bac"
   ],
@@ -1965,7 +5109,74 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC23",
+  "name":"Pati\u00ebntenadvies",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Monteny Joke",
+   "Wydooghe Eline"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC23N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC31",
+  "name":"Dieren in de zorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Flamang Annelies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC31N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC32",
+  "name":"Wildlife monitoring",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Wouters Filip"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC32N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1987,7 +5198,31 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC41",
+  "name":"Plant en techniek",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dewaele Erik",
+   "Carette Johan",
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC41N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2010,7 +5245,31 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC49",
+  "name":"Natuur- en bosbeheer",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Johan",
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC49N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2032,8 +5291,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -2055,22 +5313,22 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3AC70",
-  "name":"Productiemanagement 2",
+  "id":"V3AC60",
+  "name":"Rundveehouderij",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Vanden Berghe Marc"
+   "De Jonckheer Joost"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC70N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC60N.htm",
   "cycles":[
    "bac"
   ],
@@ -2078,24 +5336,215 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3AD14",
-  "name":"Dierverpleegkundige basistechnieken",
+  "id":"V3AC61",
+  "name":"Varkens- en veevoeding",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
+   "Degezelle Isabelle"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC61N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC76",
+  "name":"Aanlegtechnieken specialisatie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dehondt Yves"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC76N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC77",
+  "name":"Groenbeheer basis",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bossaert Geert",
+   "Vanhaelst Jonathan",
+   "Dehondt Yves"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC77N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC78",
+  "name":"Wetgeving en groenbeleid",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Roobroeck Bregt",
+   "Kerckhove Joachim",
+   "Anseeuw Dieter",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC78N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AC81",
+  "name":"Varkensteelt",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Degezelle Isabelle"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AC81N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD09",
+  "name":"Biologische processen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van hooland Evelien",
+   "Rooms Greta",
+   "Van Doorsselaere Jan",
+   "Wouters Filip"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD09N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD16",
+  "name":"Inheemse fauna",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Waele Eric"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD16N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD22",
+  "name":"Wetgeving",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Rediger Kelly"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD22N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD27",
+  "name":"Stage 2 dierenzorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Vermeulen Liesbeth",
+   "Simons Lara",
    "Engels Ella",
+   "Flamang Annelies",
+   "Wouters Filip",
    "Rediger Kelly",
-   "Viaene Jasmine",
-   "Cocquyt Ulrike"
+   "Cocquyt Ulrike",
+   "Bollaert Bea",
+   "Vanhove Wim",
+   "Buddaert Wim"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD14N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD27N.htm",
   "cycles":[
    "bac"
   ],
@@ -2103,7 +5552,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "resources"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD34",
+  "name":"Dieren in de zorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Flamang Annelies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD34N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2125,7 +5596,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -2148,7 +5619,54 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD42",
+  "name":"Aanlegtechnieken specialisatie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dehondt Yves"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD42N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD47",
+  "name":"Groenbeheer basis",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bossaert Geert",
+   "Vanhaelst Jonathan",
+   "Dehondt Yves"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD47N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2170,8 +5688,156 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD52",
+  "name":"Stage 2 groenmanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Vanhaelst Jonathan",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD52N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD53",
+  "name":"Wetgeving en groenbeleid",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Roobroeck Bregt",
+   "Kerckhove Joachim",
+   "Anseeuw Dieter",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD53N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AD54",
+  "name":"Plant en techniek",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhaelst Jonathan",
+   "Dutry Stijn",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AD54N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE06",
+  "name":"Milieutechnologie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Calcoen Joke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE06N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3AE07",
+  "name":"Werkveldverkenning en beroepsethiek 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Degezelle Isabelle",
+   "Vanden Berghe Marc",
+   "Van Doorsselaere Jan",
+   "Calus Mieke",
+   "Bossaert Geert",
+   "Roobroeck Bregt",
+   "Wouters Filip",
+   "Chys Geert",
+   "Stael Arnold",
+   "Verhaeghe Lieven",
+   "Wydooghe Eline",
+   "Engels Ella",
+   "Vandorpe Bruno",
+   "Rediger Kelly",
+   "Cocquyt Ulrike",
+   "Dewitte Angelo",
+   "Bollaert Bea",
+   "Vanhaelst Jonathan",
+   "Carette Johan",
+   "David Rik",
+   "Vermeulen Liesbeth",
+   "De Jonckheer Joost",
+   "Bekaert Tim",
+   "Willem Tim",
+   "Selis Elise",
+   "De Man Ingrid",
+   "Bekaert Freddy",
+   "Vanhove Wim",
+   "Kestelyn Lies",
+   "Peeters Suzy",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE07N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2197,7 +5863,77 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE10",
+  "name":"Stage 2 biotechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "Vandenabeele Annelies",
+   "Vandenberghe Zoey"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE10N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE11",
+  "name":"Bachelorproef biotechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Vandenberghe Zoey"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE11N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE15",
+  "name":"Wetgeving",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "David Rik",
+   "Rediger Kelly"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE15N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  },
@@ -2224,6 +5960,72 @@
   "dedicated":0
  },
  {
+  "id":"V3AE19",
+  "name":"Stage 2 dierenzorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Vandenabeele Annelies",
+   "Vermeulen Liesbeth",
+   "Simons Lara",
+   "Engels Ella",
+   "Flamang Annelies",
+   "Wouters Filip",
+   "Rediger Kelly",
+   "Cocquyt Ulrike",
+   "Bollaert Bea",
+   "Vanhove Wim",
+   "Buddaert Wim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE19N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE20",
+  "name":"Stage 3 dierenzorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "D'hondt Melissa",
+   "Vandenabeele Annelies",
+   "Vermeulen Liesbeth",
+   "Simons Lara",
+   "Engels Ella",
+   "Flamang Annelies",
+   "Wouters Filip",
+   "Rediger Kelly",
+   "Cocquyt Ulrike",
+   "Bollaert Bea",
+   "Vanhove Wim",
+   "Buddaert Wim"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE20N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"V3AE24",
   "name":"Urban Forestry: bomenplan",
   "year":"2022-2023",
@@ -2241,8 +6043,137 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE28",
+  "name":"Stage 2 groenmanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Anseeuw Dieter",
+   "Dehondt Yves",
+   "Bossaert Geert",
+   "Roobroeck Bregt",
+   "Bollaert Bea",
+   "Vanhaelst Jonathan",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE28N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE29",
+  "name":"Stage 3 groenmanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Anseeuw Dieter",
+   "Dehondt Yves",
+   "Bossaert Geert",
+   "Roobroeck Bregt",
+   "Bollaert Bea",
+   "Vanhaelst Jonathan",
+   "Carette Johan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE29N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE30",
+  "name":"Bachelorproef groenmanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Roobroeck Bregt",
+   "Vanhaelst Jonathan",
+   "Anseeuw Dieter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE30N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE31",
+  "name":"Werkveldverkenning buitenland",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Man Ingrid",
+   "Bekaert Freddy"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE31N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE33",
+  "name":"Bachelorproef voedingstechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenabeele Annelies",
+   "Bekaert Freddy",
+   "Beernaert Lies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE33N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2264,23 +6195,23 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
  {
-  "id":"V3AE36",
-  "name":"Voeding en gezondheid",
+  "id":"V3AE40",
+  "name":"Mengvoedertechnologie",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Van hooland Evelien",
-   "Plovie Barbara",
-   "Bekaert Freddy"
+   "Vandorpe Bruno"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE36N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE40N.htm",
   "cycles":[
    "bac"
   ],
@@ -2288,7 +6219,105 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "energy"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE41",
+  "name":"Landbouwbeleid en -administratie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Degezelle Isabelle",
+   "De Jonckheer Joost",
+   "Van Outryve Jacques"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE41N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE43",
+  "name":"Landbouwverbreding",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Carette Johan",
+   "Kestelyn Lies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE43N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE46",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "Vandenabeele Annelies",
+   "Maertens Inge",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE46N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3AE47",
+  "name":"Stage 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Bollaert Bea",
+   "Vandenabeele Annelies",
+   "Maertens Inge",
+   "Louwagie Pol"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE47N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2310,31 +6339,55 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3D161",
-  "name":"Economie",
+  "id":"V3AE52",
+  "name":"Landbouwadministratie en actualiteit",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Vandenbogaerde Bart"
+   "Degezelle Isabelle",
+   "De Jonckheer Joost",
+   "Carette Johan",
+   "Van Outryve Jacques"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3D161N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3AE52N.htm",
   "cycles":[
    "bac"
   ],
   "fields":[
-   "Sociology"
+   "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3D233",
+  "name":"Global, social and technological challenges (VB)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lamote Elien"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3D233N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2358,8 +6411,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -2374,6 +6426,496 @@
    "Vandenbogaerde Ellen"
   ],
   "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3D393N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E147",
+  "name":"Ortho-ped-agogische concepten I",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Deprez Tina",
+   "Pype Amoury",
+   "Storme Charlotte",
+   "Vuylsteke Ann",
+   "Cornelis Eva",
+   "Vanmarcke Vicky",
+   "Geens Gerda",
+   "Huyvaert Marijke",
+   "Holvoet Stefanie",
+   "Mahieu Mieke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E147N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E149",
+  "name":"Sociale instituties",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Poleyn Sabine"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E149N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E152",
+  "name":"Ontwikkelingspsychologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Meuleman Stijn"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E152N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E153",
+  "name":"Algemene psychologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "De Winter Liesbeth",
+   "Meuleman Stijn"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E153N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E154",
+  "name":"Biologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Schouppe Nathalie",
+   "Verplancke Kaat"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E154N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E182",
+  "name":"Filosofie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verdonck Barbara"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E182N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E186",
+  "name":"Sociaal agogisch handelen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Cattrijsse Lieve"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E186N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E189",
+  "name":"Werken met groepen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van der Hoogerstraete Claudine",
+   "Desimpel Lore",
+   "Geens Gerda",
+   "Cosaert Frauke",
+   "Cattrijsse Lieve"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E189N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E192",
+  "name":"Ortho-ped-agogische concepten II",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Deprez Tina",
+   "Hotton Gwendoline",
+   "Storme Charlotte",
+   "Csincsak Marika",
+   "Van de Goor Laurence Anne",
+   "Labbe Jan",
+   "Vanwynsberghe Griet"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E192N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E193",
+  "name":"Ortho-ped-agogisch handelen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Deprez Tina",
+   "Storme Charlotte",
+   "Defever Jan",
+   "Csincsak Marika",
+   "Mahieu Mieke",
+   "Labbe Jan",
+   "Vanwynsberghe Griet"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E193N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E194",
+  "name":"Actuele ortho-ped-agogische visies",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanmarcke Vicky"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E194N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E195",
+  "name":"Aanzet naar ortho-ped-agogisch management",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vuylsteke Ann"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E195N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E197",
+  "name":"Ori\u00ebntatie op het ortho-ped-agogische werkveld",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Huyvaert Marijke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E197N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E213",
+  "name":"Sociaal agogisch handelen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Cattrijsse Lieve"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E213N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E227",
+  "name":"Ortho-ped-agogische concepten I",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanmarcke Vicky"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E227N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E228",
+  "name":"Ortho-ped-agogische concepten II",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van de Goor Laurence Anne"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E228N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E229",
+  "name":"Ortho-ped-agogisch handelen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Csincsak Marika",
+   "Defever Jan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E229N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E230",
+  "name":"Actuele ortho-ped-agogische visies",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanmarcke Vicky"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E230N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E231",
+  "name":"Aanzet naar ortho-ped-agogisch management",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vuylsteke Ann"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E231N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3E233",
+  "name":"Ori\u00ebntatie op het ortho-ped-agogische werkveld",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Huyvaert Marijke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3E233N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3F082",
+  "name":"Sociaaleconomische vraagstukken",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbogaerde Bart"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F082N.htm",
   "cycles":[
    "bac"
   ],
@@ -2403,21 +6945,21 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3F167",
-  "name":"Sociaaleconomische vraagstukken",
+  "id":"V3F300",
+  "name":"Inleiding sociaal werk",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Vandenbogaerde Bart"
+   "Derynck Wendy"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F167N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F300N.htm",
   "cycles":[
    "bac"
   ],
@@ -2425,21 +6967,21 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3F515",
-  "name":"Economie",
+  "id":"V3F333",
+  "name":"Biologie",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Vandenbogaerde Bart"
+   "Schouppe Nathalie"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F515N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F333N.htm",
   "cycles":[
    "bac"
   ],
@@ -2447,24 +6989,21 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3G491",
-  "name":"BaTP in internationaal perspectief",
+  "id":"V3F374",
+  "name":"Inleiding sociaal werk",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Meuleman Stijn",
-   "Compagnon Wendy",
-   "Lamote Elien",
-   "Bakx Joan"
+   "Derynck Wendy"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3G491N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F374N.htm",
   "cycles":[
    "bac"
   ],
@@ -2472,21 +7011,89 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3H205",
-  "name":"Wereldori\u00ebntatie 4",
+  "id":"V3F525",
+  "name":"Inleiding sociaal werk",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Vervaet Stephanie"
+   "Derynck Wendy"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3H205N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F525N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3F550",
+  "name":"Samen Stad Maken: theoretische kaders",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vercruysse Annelies"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F550N.htm",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3F553",
+  "name":"Samen Stad Maken: praktijk",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vervaecke Inge"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3F553N.htm",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3H085",
+  "name":"Religie, Zingeving en Levensbeschouwing",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Verkest Hugo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3H085N.htm",
   "cycles":[
    "bac"
   ],
@@ -2494,27 +7101,21 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3H656",
-  "name":"Didactisch wijs 2",
+  "id":"V3H113",
+  "name":"Religie, Zingeving en Levensbeschouwing",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Colle Nathalie",
-   "De Jaeger Nele",
-   "De Meyer Caroline",
-   "Strynck Els",
-   "Vandenbussche Liesbet",
-   "De Smaele Margot",
-   "Hardyns Ellen"
+   "Vandenberghe Xavier"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3H656N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3H113N.htm",
   "cycles":[
    "bac"
   ],
@@ -2522,7 +7123,29 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3H230",
+  "name":"Religie, Zingeving en Levensbeschouwing",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Strynck Els"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3H230N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -2544,7 +7167,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -2571,18 +7194,16 @@
   "dedicated":0
  },
  {
-  "id":"V3I422",
-  "name":"Wereldori\u00ebntatie",
+  "id":"V3I831",
+  "name":"Wereldori\u00ebntatie natuur",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Surmont Christine",
-   "Pacco Christa",
-   "Gyselen Ilka"
+   "Zutterman Linde"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3I422N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3I831N.htm",
   "cycles":[
    "bac"
   ],
@@ -2590,7 +7211,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -2615,7 +7236,53 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3J006",
+  "name":"PAV\/MAVO - geo kader",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Surmont Christine"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3J006N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3J913",
+  "name":"Techniek - biotechniek",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lippens Joke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3J913N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "transport"
   ],
   "dedicated":0
  },
@@ -2637,7 +7304,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -2682,32 +7349,29 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3K013",
-  "name":"Lab voertuigtechnologie 3",
+  "id":"V3K026",
+  "name":"Bachelorproef",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Verbeeck Hannes",
-   "Bartsoen Tom",
-   "Van Den Broeck Frederik"
+   "Vanhalst Thomas"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K013N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K026N.htm",
   "cycles":[
-   "bac",
-   "other"
+   "bac"
   ],
   "fields":[
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "dedicated":0
  },
@@ -2729,22 +7393,22 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "dedicated":0
  },
  {
-  "id":"V3K094",
-  "name":"Verbrandingsmotoren 2",
+  "id":"V3K133",
+  "name":"Hybride en elektrische voertuigen",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
    "Van Den Broeck Frederik",
-   "D'hulster Peter"
+   "Van Dorpe Bart"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K094N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K133N.htm",
   "cycles":[
    "bac",
    "other"
@@ -2753,21 +7417,21 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "dedicated":0
  },
  {
-  "id":"V3K105",
-  "name":"Expertise en kwaliteitszorg",
+  "id":"V3K138",
+  "name":"Bachelorproef",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Hallaert Christophe"
+   "Vanhalst Thomas"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K105N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K138N.htm",
   "cycles":[
    "bac"
   ],
@@ -2775,51 +7439,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"V3K607",
-  "name":"Verbrandingsmotoren 2",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "D'hulster Peter"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K607N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
- },
- {
-  "id":"V3K619",
-  "name":"Lab voertuigtechnologie 3",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Van Kerkhove Bram"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3K619N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
+   "transport"
   ],
   "dedicated":0
  },
@@ -2913,28 +7533,6 @@
   "dedicated":0
  },
  {
-  "id":"V3L049",
-  "name":"Luchttechniek 1",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Deferme Ivan"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3L049N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "climate"
-  ],
-  "dedicated":0
- },
- {
   "id":"V3L076",
   "name":"Robotica",
   "year":"2022-2023",
@@ -3018,6 +7616,7 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy"
   ],
   "dedicated":1
@@ -3062,7 +7661,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3200,52 +7799,6 @@
   "dedicated":0
  },
  {
-  "id":"V3L301",
-  "name":"Automatisering 2",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Van Ryckeghem Mieke"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3L301N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
- },
- {
-  "id":"V3L304",
-  "name":"Mechanical design 2",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Bequ\u00e9 Rik",
-   "Malfait Lieven",
-   "Struyve Inge"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3L304N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
- },
- {
   "id":"V3L305",
   "name":"Electrical design 3",
   "year":"2022-2023",
@@ -3291,16 +7844,16 @@
   "dedicated":0
  },
  {
-  "id":"V3L309",
-  "name":"Automatisering 2",
+  "id":"V3M005",
+  "name":"Toegepaste wetenschappen 1",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Dekyvere Dimitri"
+   "Malfait Koen"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3L309N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3M005N.htm",
   "cycles":[
    "bac"
   ],
@@ -3313,16 +7866,16 @@
   "dedicated":0
  },
  {
-  "id":"V3M012",
-  "name":"Toegepaste wetenschappen 2",
+  "id":"V3M166",
+  "name":"Vermogenelektronica 3",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "De Tollenaere Steven"
+   "Taverniers Mark"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3M012N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3M166N.htm",
   "cycles":[
    "bac"
   ],
@@ -3335,16 +7888,16 @@
   "dedicated":0
  },
  {
-  "id":"V3M173",
-  "name":"AI Edge Computing",
+  "id":"V3O014",
+  "name":"Internationalisering\/Bachelorproef",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Verstraete Wouter"
+   "Demeyere Bart"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3M173N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O014N.htm",
   "cycles":[
    "bac"
   ],
@@ -3379,28 +7932,6 @@
    "energy"
   ],
   "dedicated":1
- },
- {
-  "id":"V3O025",
-  "name":"Automatisering 4",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "Soenen Dieter"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O025N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
  },
  {
   "id":"V3O030",
@@ -3449,16 +7980,128 @@
   "dedicated":1
  },
  {
-  "id":"V3O090",
-  "name":"Automatisering 3",
+  "id":"V3O037",
+  "name":"Bedrijfsmanagement",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Soenen Dieter"
+   "Decoster Timothy"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O090N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O037N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O039",
+  "name":"Project Technology",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Soenen Dieter",
+   "De Loof Micha\u00ebl"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O039N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O044",
+  "name":"Project Internationalisering",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Weyns Sven",
+   "Taverniers Mark"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O044N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O055",
+  "name":"Technologie en duurzaam samenleven",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lepers Philippe"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O055N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O077",
+  "name":"Safety basic",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Deseine Bert"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O077N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O089",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Demeyere Bart"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O089N.htm",
   "cycles":[
    "bac"
   ],
@@ -3515,6 +8158,72 @@
   "dedicated":1
  },
  {
+  "id":"V3O096",
+  "name":"Veiligheid 5",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Deseine Bert"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O096N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O097",
+  "name":"Ondernemen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Decoster Timothy"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O097N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O100",
+  "name":"Technisch verslaggever",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lemahieu Isabelle"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O100N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"V3O102",
   "name":"Energiemonitoring",
   "year":"2022-2023",
@@ -3533,32 +8242,10 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "dedicated":1
- },
- {
-  "id":"V3O103",
-  "name":"PLC basic",
-  "year":"2022-2023",
-  "languages":[
-   "nl"
-  ],
-  "teachers":[
-   "De Loof Micha\u00ebl"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O103N.htm",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
  },
  {
   "id":"V3O105",
@@ -3578,9 +8265,76 @@
    "Engineering"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3O106",
+  "name":"Stage 'energiemonitoring'",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbussche Val\u00e9rie"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O106N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3O107",
+  "name":"Bachelorproef (ET)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Demeyere Bart"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O107N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3O108",
+  "name":"Bachelorproef (EC)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Demeyere Bart"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3O108N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3Q007",
@@ -3602,8 +8356,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3627,8 +8380,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3651,8 +8403,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3675,8 +8426,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3699,8 +8449,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3722,7 +8471,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3745,10 +8494,9 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3773,8 +8521,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3796,10 +8543,10 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -3822,8 +8569,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3845,7 +8591,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3867,7 +8613,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3892,8 +8638,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3917,8 +8662,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -3940,7 +8684,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3963,7 +8707,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -3986,7 +8730,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4009,7 +8753,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4032,7 +8776,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4056,8 +8800,7 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -4079,7 +8822,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -4133,6 +8876,32 @@
   "dedicated":0
  },
  {
+  "id":"V3S038",
+  "name":"Bachelorproef voor de automotive sector",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Toye Pol",
+   "Lesage Bart",
+   "H\u00e9nonin Ann-Sophie",
+   "Depuydt Christine"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3S038N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"V3S071",
   "name":"Ruimtelijke ordeningsrecht en milieuwetgeving",
   "year":"2022-2023",
@@ -4151,9 +8920,34 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3S372",
+  "name":"Aansprakelijkheid en crowdmanagement",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Derolez Bart",
+   "Vandekerckhove Chantal"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3S372N.htm",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3S835",
@@ -4174,7 +8968,52 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3U003",
+  "name":"Energie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dhondt Danny"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U003N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3U009",
+  "name":"Energie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van Litsenburgh Marc"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U009N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -4196,7 +9035,77 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3U014",
+  "name":"Duurzaam samenleven",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Lepers Philippe"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U014N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U016",
+  "name":"Milieutechnologie 3: water",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbussche Val\u00e9rie"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U016N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3U017",
+  "name":"Milieutopics 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U017N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -4218,7 +9127,10 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":1
  },
@@ -4240,7 +9152,9 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -4262,8 +9176,125 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "prod&cons",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U029",
+  "name":"Procestechnologie 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dhondt Danny"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U029N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U035",
+  "name":"Procestechnologie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dhondt Danny"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U035N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U037",
+  "name":"Grafische technieken",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Struyve Inge"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U037N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U039",
+  "name":"Milieutechnologie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U039N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"V3U040",
+  "name":"Voertuigtechnologie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Pinket Nele",
+   "Haverbeke Jan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U040N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -4285,8 +9316,9 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -4308,9 +9340,32 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "prod&cons",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U044",
+  "name":"Procestechnologie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Dhondt Danny"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U044N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -4332,7 +9387,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -4354,7 +9409,9 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -4376,9 +9433,103 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life",
+   "prod&cons"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3U067",
+  "name":"Digital skills",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U067N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U068",
+  "name":"Project ecotechnologie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van den Berghe Hanne",
+   "Volckaert Di\u00ebgo",
+   "Pinket Nele"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U068N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U072",
+  "name":"Bachelorproef",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U072N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U073",
+  "name":"International project",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Calcoen Joke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U073N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3U079",
@@ -4398,9 +9549,102 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":1
+ },
+ {
+  "id":"V3U081",
+  "name":"Toegepaste materialenkennis",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U081N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U082",
+  "name":"Fysische systemen",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U082N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U083",
+  "name":"Stage 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbussche Val\u00e9rie",
+   "Pinket Nele"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U083N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U084",
+  "name":"Project ecotechnologie 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van den Berghe Hanne",
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U084N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
  },
  {
   "id":"V3U085",
@@ -4425,6 +9669,50 @@
   "dedicated":1
  },
  {
+  "id":"V3U088",
+  "name":"Inleiding verkeerskunde",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenberghe Koen"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U088N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U089",
+  "name":"Mobiliteitsproblematiek",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Van der Burg Peter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U089N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"V3U090",
   "name":"Project Mobiliteit",
   "year":"2022-2023",
@@ -4442,8 +9730,53 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U092",
+  "name":"Ondernemerschap en innovatie",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbussche Val\u00e9rie"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U092N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution",
+   "prod&cons"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3U093",
+  "name":"Stage 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenbussche Val\u00e9rie"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U093N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -4488,6 +9821,7 @@
    "Engineering"
   ],
   "themes":[
+   "prod&cons",
    "resources"
   ],
   "dedicated":0
@@ -4511,7 +9845,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -4534,7 +9868,7 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "building"
   ],
   "dedicated":1
  },
@@ -4557,8 +9891,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -4585,6 +9919,153 @@
   "dedicated":0
  },
  {
+  "id":"V3U104",
+  "name":"EPC",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Aerts Koen"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3U104N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3V216",
+  "name":"Stage Care (MW)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Elke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3V216N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3V219",
+  "name":"Stage Coaching (MW)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Elke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3V219N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3V221",
+  "name":"Stage Spa (MW)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandorpe Elke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3V221N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X003",
+  "name":"Biomedische wetenschappen 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Crevits Eveline",
+   "Dumon Ann",
+   "Pisvin Laurence"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X003N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X008",
+  "name":"Verpleegkundige methodiek en vaardigheden 6",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Maes Marjorie",
+   "Soetaert Marijke",
+   "De Ceuninck Stefanie",
+   "Taghon Dries",
+   "Verheyen Wendy",
+   "Degroote Delphine",
+   "Pisvin Laurence",
+   "Bolle Inge",
+   "Ramboer Charlotte",
+   "Vincke Birgit"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X008N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"V3X019",
   "name":"Beroepspraktijk 1",
   "year":"2022-2023",
@@ -4603,8 +10084,32 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X029",
+  "name":"Verpleegkundige methodiek en vaardigheden 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Crevits Eveline",
+   "Deruytere Heleen",
+   "Dumon Ann",
+   "Soetaert Marijke"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X029N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4627,8 +10132,177 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X051",
+  "name":"Integrerende casu\u00efstiek en simulatie 1\u00a0",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhaverbeke Ellen",
+   "Maes Marjorie",
+   "Pisvin Laurence",
+   "Verstraete Marlies",
+   "Deruytere Heleen",
+   "Vincke Birgit",
+   "De Visschere Sofie",
+   "Driessens Frederik",
+   "Blockeel Hadewijch",
+   "Baekelandt Goedele"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X051N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X056",
+  "name":"Verpleegkundige methodiek en vaardigheden 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanryckeghem Elisa",
+   "Soetaert Marijke",
+   "Taghon Dries",
+   "Driessens Frederik"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X056N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X057",
+  "name":"Verpleegkundige methodiek en vaardigheden 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Crevits Eveline",
+   "Maes Marjorie",
+   "Deruytere Heleen",
+   "Soetaert Marijke",
+   "Driessens Frederik",
+   "Verheyen Wendy",
+   "Dumon Ann",
+   "Pisvin Laurence",
+   "Vincke Birgit"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X057N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X078",
+  "name":"Verpleegkundige methodiek en vaardigheden 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Crevits Eveline",
+   "Vanhaverbeke Ellen",
+   "Maes Marjorie",
+   "Verstraete Marlies",
+   "Beelprez Sofie",
+   "Deruytere Heleen",
+   "Soetaert Marijke",
+   "Driessens Frederik",
+   "Verheyen Wendy",
+   "Dumon Ann",
+   "Pisvin Laurence"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X078N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X089",
+  "name":"Verpleegkundige methodiek 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Deruytere Heleen",
+   "Vanryckeghem Elisa"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X089N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X103",
+  "name":"Verpleegkundige methodiek 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Maes Marjorie",
+   "Deruytere Heleen",
+   "De Ceuninck Stefanie",
+   "Taghon Dries",
+   "Verheyen Wendy",
+   "Degroote Delphine",
+   "Ramboer Charlotte",
+   "Vincke Birgit"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X103N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4651,8 +10325,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -4678,8 +10351,38 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X120",
+  "name":"Verpleegkundige methodiek en vaardigheden 7",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vanhaverbeke Ellen",
+   "Maes Marjorie",
+   "Verstraete Marlies",
+   "Taghon Dries",
+   "Vanryckeghem Elisa",
+   "De Visschere Sofie",
+   "Driessens Frederik",
+   "Pisvin Laurence",
+   "Ramboer Charlotte",
+   "Vincke Birgit"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X120N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4702,24 +10405,21 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"V3X124",
-  "name":"Beroepspraktijk 3: Livelab",
+  "id":"V3X128",
+  "name":"Operatieverpleegkunde",
   "year":"2022-2023",
   "languages":[
    "nl"
   ],
   "teachers":[
-   "Deruytere Heleen",
-   "Vandenberghe Lore",
-   "De Visschere Sofie"
+   "Taghon Dries"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X124N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X128N.htm",
   "cycles":[
    "bac"
   ],
@@ -4727,7 +10427,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -4750,8 +10450,150 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X140",
+  "name":"Verpleegkundige methodiek 3",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Maes Marjorie",
+   "Deruytere Heleen",
+   "De Ceuninck Stefanie",
+   "Verheyen Wendy",
+   "Vanryckeghem Elisa",
+   "Degroote Delphine",
+   "Ramboer Charlotte",
+   "Vincke Birgit"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X140N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X141",
+  "name":"Verpleegkundige methodiek 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Taghon Dries",
+   "Bolle Inge"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X141N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X503",
+  "name":"Biomedische wetenschappen 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandamme Pieter",
+   "Cecat Suzan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X503N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X505",
+  "name":"Verpleegkundige methodiek en vaardigheden 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vangheluwe Valentina",
+   "Biesbrouck Maarten",
+   "Schaubroeck Joke",
+   "Duchi Katrijn",
+   "Cecat Suzan",
+   "Van De Ginste Katrijn",
+   "Verbrugghe Selien",
+   "Delameilleure Celine",
+   "Buysschaert Fauve",
+   "Coolsaet Leen"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X505N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X512",
+  "name":"Verpleegkundige methodiek en vaardigheden 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Glorieux Lana",
+   "Patyn Christof",
+   "Vangheluwe Valentina",
+   "De Langhe Annelies",
+   "Biesbrouck Maarten",
+   "Schaubroeck Joke",
+   "Weedaege Heidi",
+   "Duchi Katrijn",
+   "Cecat Suzan",
+   "Van De Ginste Katrijn",
+   "Verbrugghe Selien",
+   "Dierynck Ellen",
+   "Seynaeve Simon",
+   "Velghe Ludwine",
+   "Claeys Maureen",
+   "Buysschaert Fauve"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X512N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4800,8 +10642,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -4857,8 +10698,91 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X549",
+  "name":"Verpleegkundige methodiek en vaardigheden 6",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Patyn Christof",
+   "Planckaert Kurt",
+   "Metzger Marieke",
+   "Biesbrouck Maarten",
+   "Seynhaeve Sien",
+   "Weedaege Heidi",
+   "Lavigne Evelyn",
+   "Duchi Katrijn",
+   "Van Severen Caroline",
+   "Verbrugghe Selien",
+   "Meire Evelien",
+   "Seynaeve Simon",
+   "Dewever Julie",
+   "Leman Ilse",
+   "Vandemaele Kristien",
+   "Velghe Ludwine",
+   "Glorieux Lana",
+   "Coolsaet Leen"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X549N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X572",
+  "name":"Verpleegkundige methodiek en vaardigheden 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Maerten Tijs",
+   "Dumon Charlotte",
+   "Lavigne Evelyn",
+   "Duchi Katrijn",
+   "Winter Nanou",
+   "Van Bellinghen An",
+   "Biesbrouck Maarten",
+   "Hauspie Fien",
+   "Callens Bert",
+   "Seynaeve Simon",
+   "Coolsaet Leen",
+   "Schaubroeck Joke",
+   "Weedaege Heidi",
+   "Van De Ginste Katrijn",
+   "Dierynck Ellen",
+   "Dewever Julie",
+   "Glorieux Lana",
+   "Patyn Christof",
+   "Maerten Mieke",
+   "Demoor Annelies",
+   "Seynhaeve Sien",
+   "Delameilleure Celine",
+   "Acke Jolien",
+   "Claeys Maureen"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X572N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4896,8 +10820,57 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X576",
+  "name":"Verpleegkundige methodiek en vaardigheden 7",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Maerten Tijs",
+   "Lavigne Evelyn",
+   "Martens Griet",
+   "Velghe Ludwine",
+   "Meersseman Giel",
+   "Metzger Marieke",
+   "Van Bellinghen An",
+   "Vandeputte Nele",
+   "Cecat Suzan",
+   "Verbrugghe Selien",
+   "Defrenne Christa",
+   "Callens Bert",
+   "Leman Ilse",
+   "Seynaeve Simon",
+   "Vandemaele Kristien",
+   "Planckaert Kurt",
+   "Schaubroeck Joke",
+   "Thieren Sarah",
+   "Dierynck Ellen",
+   "Vuylsteke Anne-Lise",
+   "Dewever Julie",
+   "Glorieux Lana",
+   "Buysschaert Fauve",
+   "Patyn Christof",
+   "Vancaeyzeele Annelies",
+   "Foulon Jenna",
+   "Delameilleure Celine",
+   "Mestdagh Johan",
+   "Claeys Maureen"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X576N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4925,8 +10898,85 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X584",
+  "name":"Hoogtechnologische zorg bij de pasgeborene",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Pisvin Laurence",
+   "Vuylsteke Anne-Lise"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X584N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X586",
+  "name":"Intensieve zorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Planckaert Kurt",
+   "Demoor Annelies",
+   "Taghon Dries",
+   "Vandecaveye Ilse",
+   "Callens Bert",
+   "Seynaeve Simon",
+   "Vincke Birgit"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X586N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X589",
+  "name":"Spoedgevallenzorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandenberghe Stefanie",
+   "Planckaert Kurt",
+   "Huysmans Hanne",
+   "Taghon Dries",
+   "Bataillie Kris",
+   "Cattoor Wouter"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X589N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4948,8 +10998,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -4971,8 +11020,144 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X612",
+  "name":"Verpleegkundige methodiek en vaardigheden 6",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Patyn Christof",
+   "Metzger Marieke",
+   "Van Bellinghen An",
+   "Seynhaeve Sien",
+   "Martens Griet",
+   "Verbrugghe Selien",
+   "Meire Evelien",
+   "Seynaeve Simon",
+   "Leman Ilse",
+   "Vuylsteke Anne-Lise",
+   "Velghe Ludwine",
+   "Glorieux Lana"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X612N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X703",
+  "name":"Biomedische wetenschappen 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vandamme Pieter",
+   "Cecat Suzan"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X703N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X705",
+  "name":"Verpleegkundige methodiek en vaardigheden 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Duchi Katrijn",
+   "Van De Ginste Katrijn",
+   "Biesbrouck Maarten"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X705N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X711",
+  "name":"Verpleegkundige methodiek en vaardigheden 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Meersseman Giel",
+   "Van Bellinghen An",
+   "Biesbrouck Maarten",
+   "Weedaege Heidi",
+   "Vandendriessche Anne-Lies",
+   "Thieren Sarah",
+   "Dierynck Ellen",
+   "Glorieux Lana"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X711N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X712",
+  "name":"Verpleegkundige methodiek en vaardigheden 2",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Patyn Christof",
+   "Biesbrouck Maarten",
+   "Buyse Heidelinde",
+   "Duchi Katrijn",
+   "Van De Ginste Katrijn",
+   "Velghe Ludwine",
+   "Glorieux Lana"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X712N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -4997,8 +11182,31 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X723",
+  "name":"Verpleegkundige methodiek en vaardigheden 3\u00a0",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Velghe Ludwine",
+   "Seynaeve Simon",
+   "Biesbrouck Maarten"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X723N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5022,8 +11230,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5046,8 +11253,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5070,8 +11276,32 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X746",
+  "name":"Integrerende casu\u00efstiek en simulatie 1",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Patyn Christof",
+   "Velghe Ludwine",
+   "Duchi Katrijn",
+   "Glorieux Lana"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X746N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5096,8 +11326,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5122,8 +11351,36 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X764",
+  "name":"Verdieping in specifieke (zelf)zorgbehoeften",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Patyn Christof",
+   "Nyssen Marieke",
+   "Meersseman Giel",
+   "Maerten Tijs",
+   "Vandeputte Nele",
+   "Dewever Julie",
+   "Wittevrongel Dries",
+   "Glorieux Lana"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X764N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5147,8 +11404,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5172,8 +11428,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5197,8 +11452,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5220,8 +11474,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -5244,8 +11497,167 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X797",
+  "name":"Operatieverpleegkunde",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Leman Ilse"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X797N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X798",
+  "name":"Spoedgevallenzorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Planckaert Kurt"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X798N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X899",
+  "name":"Intensieve zorg",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Seynaeve Simon"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X899N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X935",
+  "name":"Verpleegkundige methodiek 4",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Seynhaeve Sien",
+   "Verbrugghe Selien",
+   "Meire Evelien",
+   "Seynaeve Simon",
+   "Leman Ilse",
+   "Velghe Ludwine"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X935N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X936",
+  "name":"Verpleegkundige methodiek 5",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Vancaeyzeele Annelies",
+   "Leman Ilse"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X936N.htm",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X973",
+  "name":"Hybrid and electric vehicles",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Van Den Broeck Frederik"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X973N.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"V3X989",
+  "name":"Ecosystem services",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Volckaert Di\u00ebgo"
+  ],
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3X989N.htm",
+  "cycles":[
+   "other"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -5275,21 +11687,21 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "food"
   ],
   "dedicated":0
  },
  {
-  "id":"V3Y016",
-  "name":"Global sustainability and engagement",
+  "id":"V3Y022",
+  "name":"Klimaatopwarming: wat iedereen zou moeten weten",
   "year":"2022-2023",
   "languages":[
-   "en"
+   "nl"
   ],
   "teachers":[
-   "Verstraete Lies"
+   "Boussemaere Pieter"
   ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3Y016N.htm",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3Y022N.htm",
   "cycles":[
    "bac",
    "other"
@@ -5304,38 +11716,9 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "climate"
   ],
-  "dedicated":0
- },
- {
-  "id":"V3Y020",
-  "name":"Global Sustainability and Engagement (3 ECTS)",
-  "year":"2022-2023",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Verstraete Lies"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3Y020N.htm",
-  "cycles":[
-   "bac",
-   "other"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Economy",
-   "Engineering",
-   "Management",
-   "Medecine & Health",
-   "Pedagogy",
-   "Sociology"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
+  "dedicated":1
  },
  {
   "id":"V3Y023",
@@ -5362,38 +11745,8 @@
    "Sociology"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "dedicated":1
- },
- {
-  "id":"V3Y028",
-  "name":"LiveLab Internationaal",
-  "year":"2022-2023",
-  "languages":[
-   "en"
-  ],
-  "teachers":[
-   "Claeys Tony"
-  ],
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/syllabi\/n\/V3Y028N.htm",
-  "cycles":[
-   "bac",
-   "other"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Economy",
-   "Engineering",
-   "Management",
-   "Medecine & Health",
-   "Pedagogy",
-   "Sociology"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
  }
 ]
