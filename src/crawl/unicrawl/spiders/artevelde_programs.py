@@ -6,18 +6,18 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL_1 = "https://www.arteveldehogeschool.be/opleidingen/type/bachelor/" \
-             "type/postgraduaat/type/graduaat/type/bachelor-na-bachelor/categorie/{}"
+BASE_URL_1 = ("https://www.arteveldehogeschool.be/nl/opleidingen/categorie/{}/type/bachelor-227"
+              "/type/bachelor-na-bachelor-230/type/graduaat-386/type/microdegrees-239/type/postgraduaat-233")
 BASE_URL_2 = f"https://ects.arteveldehogeschool.be/ahsownapp/ects/ECTS.aspx?ac={YEAR}-{YEAR+1-2000}"
 
 FACULTIES = {
-    'business-management': "Business en Management",
-    "coaching-en-begeleiding": "Coaching en Begeleiding",
-    "communicatie-media-en-design": "Communicatie, Media en Design",
-    "gezondheid-en-zorg": "Gezondhied en Zorg",
-    "hr-en-leiderschap": "HR en Leiderschap",
-    "mens-en-samenleving": "Mens en Samenleving",
-    "onderwijs": "Onderwijs"
+    'business-management-38': "Business en Management",
+    "coaching-en-begeleiding-53": "Coaching en Begeleiding",
+    "communicatie-media-en-design-41": "Communicatie, Media en Design",
+    "gezondheid-en-zorg-44": "Gezondhied en Zorg",
+    "hr-en-leiderschap-56": "HR en Leiderschap",
+    "mens-en-samenleving-47": "Mens en Samenleving",
+    "onderwijs-50": "Onderwijs"
 }
 
 # Not working for Gecertificeerd accountant, Management Centrale Sterilisatie Afdeling (CSA)
@@ -143,46 +143,49 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
 
     def parse_faculties(self, response, faculty, remaining_faculties, programs_info):
 
-        all_programs_names = response.xpath("//h2/a/text()").getall()
+        all_programs_names = response.xpath("//h3/a[contains(@href, 'opleiding')]/text()").getall()
+        all_programs_names = [name.strip(" \n") for name in all_programs_names]
+        print(all_programs_names)
         # Remove subprograms
         program_names = []
         for program_name in all_programs_names:
-            request_text = f"//div[div[h2[a[contains(text(), \'{program_name}\')]]]]" \
+            request_text = f"//div[div[h3[a[contains(text(), \'{program_name}\')]]]]" \
                            f"//div[@class='field field-name-course-subtype']"
             subprogram_b = response.xpath(request_text).get()
             if not subprogram_b:
                 program_names += [program_name]
 
         # Campus
-        programs_campus = []
+        programs_campuses = []
         for program_name in program_names:
-            request_text = f"//div[div[h2[a[contains(text(), \'{program_name}\')]]]]" \
-                           f"/div[@class='field field-name-course-extraline']/text()"
-            campus = response.xpath(request_text).get()
-            if campus and 'Campus' in campus:
-                programs_campus += ["Campus " + campus.split("Campus ")[1].strip(", ")]
-            else:
-                programs_campus += []
+            request_text = f"//article[div[header[h3[a[contains(text(), \'{program_name}\')]]]]]" \
+                           f"//div[@class='field--campus field']//dd/text()"
+            programs_campuses += [response.xpath(request_text).getall()]
+            # if campus and 'Campus' in campus:
+            #     programs_campus += ["Campus " + campus.split("Campus ")[1].strip(", ")]
+            # else:
+            #     programs_campus += []
 
         # Cycle
         programs_cycle = []
         for program_name in program_names:
-            request_text = f"//div[div[h2[a[contains(text(), \'{program_name}\')]]]]" \
-                           f"//div[@class='field field-name-field-course-type']/text()"
+            request_text = f"//h3[a[contains(text(), \'{program_name}\')]]//following::div[1]/text()"
             cycle = response.xpath(request_text).get()
-            if cycle is not None and 'Bachelor' in cycle:
+            if cycle is not None and 'bachelor' in cycle.lower():
                 cycle = 'bac'
-            elif cycle == 'Postgraduaat':
+            elif 'postgraduaat' in cycle.lower():
                 cycle = 'postgrad'
-            elif cycle == 'Graduuat':
+            elif 'graduaat' in cycle.lower():
                 cycle = 'grad'
             else:
                 cycle = 'other'
             programs_cycle += [cycle]
 
         # Associate faculty
-        for program_name, program_campus, program_cycle in zip(program_names, programs_campus, programs_cycle):
-            programs_info[program_name] = {"faculty": FACULTIES[faculty], "campus": program_campus,
+        for program_name, program_campuses, program_cycle in zip(program_names, programs_campuses, programs_cycle):
+            programs_info[program_name] = {"faculty": FACULTIES[faculty],
+                                           # "campus": program_campus,
+                                           "campuses": program_campuses,
                                            "cycle": program_cycle}
 
         # Iteratively crawl the other faculties
@@ -222,7 +225,7 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
                 "name": full_name,
                 "cycle": programs_info[program_name]["cycle"],
                 "faculties": [programs_info[program_name]["faculty"]],
-                "campuses": [programs_info[program_name]["campus"]],
+                "campuses": [programs_info[program_name]["campuses"]],
                 "url": BASE_URL_2
             }
 
