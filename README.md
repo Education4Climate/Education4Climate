@@ -18,12 +18,46 @@ The tool is composed of three main parts:
 - [Web UI](docs/README.md)
 
 described in their respective READMEs.
-  
 
 ### Requirements
 
 All requirements for running the different parts of Unicrawl are listed in requirements.yaml
 and requirements.txt.
+
+### Setting up using `conda`
+
+```shell
+$ conda env create -f environment.yml
+$ conda activate unicrawl
+```
+
+### Crawling
+
+```shell
+# remove crawling output files for a given school
+$ make clean-crawl-uclouvain
+
+# remove all crawling output files
+$ make clean-crawl
+
+# crawl programs and courses for a given school
+$ make crawl-uclouvain
+
+# crawl everything
+$ make crawl
+
+# you can take advantage of the fact that crawlers spend most of their time waiting for the network
+# and start many parallel crawling jobs
+$ make --jobs=100 crawl
+```
+
+The default year can be overridden for any target as follows:
+
+```
+$ make YEAR=2024 <TARGET>
+```
+
+A separate log file for each scraper will be kept in the output folder if crawling was unsuccessful.
 
 ### Run using Snakemake
 
