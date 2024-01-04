@@ -1,6 +1,6 @@
 # Macros
 
-YEAR = 2020
+export YEAR ?= 2023
 
 CRAWLER_FOLDER = src/crawl/unicrawl/spiders
 SCORING_FOLDER = src/score
@@ -10,29 +10,39 @@ SCORING_OUTPUT_FOLDER = data/scoring-output
 
 # ------------------------------------------------------------------
 
-crawl-ucl:
-	if [ -f ${CRAWLING_OUTPUT_FOLDER}/ucl_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/ucl_${YEAR}.json; fi
-	scrapy runspider ${CRAWLER_FOLDER}/ucl.py
+SCHOOLS := $(subst _programs,,$(notdir $(basename $(wildcard $(CRAWLER_FOLDER)/*_programs.py))))
 
-crawl-ulb:
-	if [ -f data/ulb_${YEAR}.json ]; then rm data/ulb_${YEAR}.json; fi
-	scrapy runspider ${CRAWLER_FOLDER}/ulb.py
+crawl:
+	@$(MAKE) $(addprefix crawl-,$(SCHOOLS))
 
-crawl-uantwerp:
-	if [ -f ${CRAWLING_OUTPUT_FOLDER}/uantwerp_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/uantwerp_${YEAR}.json; fi
-	scrapy runspider ${CRAWLER_FOLDER}/ucl.py
+$(CRAWLING_OUTPUT_FOLDER)/%_$(YEAR).json: LOG_FILE = ../$(basename $@).log
 
-crawl-ugent:
-	if [ -f ${CRAWLING_OUTPUT_FOLDER}/ugent_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/ugent_${YEAR}.json; fi
-	scrapy runspider ${CRAWLER_FOLDER}/ugent_webdriver.py
+# output file is sorted by id so that we can make year-over-year comparisons more easily
+$(CRAWLING_OUTPUT_FOLDER)/%_$(YEAR).json:
+	@cd src && \
+		if scrapy runspider crawl/unicrawl/spiders/$*.py > $(LOG_FILE) 2>&1; then \
+		  	(echo "["; jq -r --compact-output '. | sort_by(.id) | .[]' ../$@ | sed '$$!s/$$/,/'; echo "]") > ../$@.tmp; \
+		  	mv ../$@.tmp ../$@; \
+			rm -f $(LOG_FILE); \
+		fi
 
-crawl-kuleuven:
-	if [ -f ${CRAWLING_OUTPUT_FOLDER}/kuleuven_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/kuleuven_${YEAR}.json; fi
-	scrapy runspider ${CRAWLER_FOLDER}/kuleuven.py
+clean-crawl:
+	@rm -f $(CRAWLING_OUTPUT_FOLDER)/*_$(YEAR)*.json*
+	@rm -f $(CRAWLING_OUTPUT_FOLDER)/*.log
 
-crawl-umons:
-	if [ -f ${CRAWLING_OUTPUT_FOLDER}//umons_${YEAR}.json ]; then rm ${CRAWLING_OUTPUT_FOLDER}/umons_${YEAR}.json; fi
-	scrapy runspider ${CRAWLER_FOLDER}/umons.py 
+clean-crawl-%:
+	@rm -f $(CRAWLING_OUTPUT_FOLDER)/$**_$(YEAR)*.json*
+	@rm -f $(CRAWLING_OUTPUT_FOLDER)/$**.log
+
+crawl-%:
+	@$(MAKE) $(CRAWLING_OUTPUT_FOLDER)/$*_programs_$(YEAR).json
+	@$(MAKE) $(CRAWLING_OUTPUT_FOLDER)/$*_courses_$(YEAR).json
+
+format-crawling-output: $(CRAWLING_OUTPUT_FOLDER)/*.json
+	for file in $^; do \
+  		(echo "["; jq -r --compact-output '. | sort_by(.id) | .[]' $${file} | sed '$$!s/$$/,/'; echo "]") > $${file}.tmp; \
+		mv $${file}.tmp $${file}; \
+  	done
 
 #--------------------------------------------------------------------
 
