@@ -12,7 +12,7 @@ from src.crawl.utils import cleanup
 
 BASE_URL = "https://uclouvain.be/cours-{}-{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}_pre.json')
 
 
 LANGUAGE_DICT = {
@@ -65,13 +65,22 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
         languages = list(np.unique(languages))
 
         # Course description
-        def get_sections_text(sections_names):
-            texts = [cleanup(response.xpath(f"//div[div[contains(text(),'{section}')]]/div[2]").get())
-                     for section in sections_names]
-            return "\n".join(texts).strip("\n ")
-        content = get_sections_text(['Contenu'])
-        goal = get_sections_text(['Acquis'])
-        themes = get_sections_text(['Thèmes'])
+        def get_section(section):
+
+            xpaths={
+                    'Contenu':"//div[contains(text(),'Contenu') and @class='col-sm-2 fa_cell_1']/following-sibling::div/text()",
+                    'Thèmes': "//div[contains(text(),'Thèmes' ) and @class='col-sm-2 fa_cell_1']/following-sibling::div/text()",
+                    'Acquis': "//div[contains(text(),'Acquis' ) and @class='col-sm-2 fa_cell_1']/following-sibling::div/descendant::td/text()"
+                   }
+
+            txt = cleanup(response.xpath(xpaths[section]).getall())
+
+            return "\n".join(txt).strip("\n ")
+
+
+        content = get_section('Contenu')
+        goal = get_section('Acquis')
+        themes = get_section('Thèmes')
 
         yield {
             'id': course_id,
