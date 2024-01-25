@@ -67,6 +67,7 @@ class HEPLCourseSpider(scrapy.Spider, ABC):
         content = cleanup(response.xpath(f"//ul[li/h4[contains(text(), 'Contenu')]]").get())
         content = content.replace("\n                    ", ' ')
         content = content.replace("Contenus          ", '')
+        content = content.strip(" ")
 
         sections = ["Acquis", "Objectifs"]
         goals = []

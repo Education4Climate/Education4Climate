@@ -61,11 +61,13 @@ class HEPLProgramSpider(scrapy.Spider, ABC):
         elif cycle == 'Spécialisation':
             cycle = 'other'  # TODO: à mettre dans other ou master ?
 
+        course_grid_txt = "//div[@class='grille-cours']/div[1]"
         courses = [link.split("/")[-1].split(".")[0] for link in
-                   response.xpath("//tr[@class='info']/td[1]/a/@href").getall()]
+                   response.xpath(f"{course_grid_txt}//tr[@class='info']/td[1]/a/@href").getall()]
         if len(courses) == 0:
             return
-        ects = [int(e) for e in response.xpath("//tr[@class='info']/td[3]/text()").getall()]
+        ects = [int(e) if e != '-' else 0
+                for e in response.xpath(f"{course_grid_txt}//tr[@class='info']/td[3]/text()").getall()]
 
         # It is not possible to differentiate directly the master courses from the bachelor once on the html pages
         #  so we do a manual removal of the courses which are in the wrong cycle (master and ohter = 2, bachelor = 1)
