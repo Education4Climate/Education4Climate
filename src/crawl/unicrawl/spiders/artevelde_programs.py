@@ -7,17 +7,19 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL_1 = ("https://www.arteveldehogeschool.be/nl/opleidingen/categorie/{}/type/bachelor-227"
-              "/type/bachelor-na-bachelor-230/type/graduaat-386/type/microdegrees-239/type/postgraduaat-233")
+              "/type/bachelor-na-bachelor-230/type/graduaat-386/type/microdegrees-239/type/postgraduaat-233?page={}")
 BASE_URL_2 = f"https://ects.arteveldehogeschool.be/ahsownapp/ects/ECTS.aspx?ac={YEAR}-{YEAR+1-2000}"
 
+# Need to indicate the number of pages to visit for each faculty - to determine juste go on the url 1 and click on each
+# faculty one after the other
 FACULTIES = {
-    'business-management-38': "Business en Management",
-    "coaching-en-begeleiding-53": "Coaching en Begeleiding",
-    "communicatie-media-en-design-41": "Communicatie, Media en Design",
-    "gezondheid-en-zorg-44": "Gezondhied en Zorg",
-    "hr-en-leiderschap-56": "HR en Leiderschap",
-    "mens-en-samenleving-47": "Mens en Samenleving",
-    "onderwijs-50": "Onderwijs"
+    'business-management-38': ["Business en Management", 3],
+    "coaching-en-begeleiding-53": ["Coaching en Begeleiding", 1],
+    "communicatie-media-en-design-41": ["Communicatie, Media en Design", 3],
+    "gezondheid-en-zorg-44": ["Gezondhied en Zorg", 4],
+    "hr-en-leiderschap-56": ["HR en Leiderschap", 1],
+    "mens-en-samenleving-47": ["Mens en Samenleving", 2],
+    "onderwijs-50": ["Onderwijs", 2]
 }
 
 # Not working for Gecertificeerd accountant, Management Centrale Sterilisatie Afdeling (CSA)
@@ -46,6 +48,7 @@ PROGRAMS_MAP = {
     "Communicatiemanagement": "Bachelor in het communicatiemanagement",
     "Communicatie": "Bachelor in de communicatie",
     "Grafische en Digitale Media": "Bachelor in de grafische en digitale media",
+    "Digitale Vormgeving": "Graduaat in de digitale vormgeving",
     "International Communication Management": "Bachelor of International Communication Management",
     "Journalistiek": "Bachelor in de journalistiek",
     "Programmeren": "Graduaat in het programmeren",
@@ -57,11 +60,15 @@ PROGRAMS_MAP = {
     "Ergotherapie": "Bachelor in de ergotherapie",
     "Logopedie en Audiologie": "Bachelor in de logopedie en de audiologie",
     "Mondzorg": "Bachelor in de mondzorg",
+    "Palliatieve Zorg": "Postgraduaat Palliatieve zorg",
     "Podologie": "Bachelor in de podologie",
     "Verpleegkunde": "Bachelor in de verpleegkunde",
     "Vroedkunde": "Bachelor in de vroedkunde",
+    "Vroedvrouw in de Eerste Lijn": "Postgraduaat De vroedvrouw in de eerste lijn",
     "Creatieve Therapie": "Bachelor in de creatieve therapie",
+    "Creatief Coachen": "Postgraduaat Creatief coachen",
     "Acute Psychiatrische Zorg": "Postgraduaat acute psychiatrische zorg",
+    "Toegepaste Psychologie": "Bachelor in de toegepaste psychologie",
     "Diabeteseducator": "Postgraduaat diabeteseducator",
     "Dysfagie": "Postgraduaat dysfagie",
     "Hippotherapie": "Postgraduaat hippotherapie",
@@ -70,15 +77,14 @@ PROGRAMS_MAP = {
     "Neurogene Communicatiestoornissen": "Postgraduaat neurogene communicatiestoornissen",
     "Neurologische Zorg": "Postgraduaat neurologische zorg",
     "Oncologie": "Postgraduaat oncologie",
-    "Pediatrie en neonatologie": "Postgraduaat pediatrie en neonatologie",
-    "Stomatherapie en wondzorg": "Postgraduaat stomatherapie en wondzorg",
-    "Verpleegkundige in de huisartsenpraktijk":
+    "Pediatrie en Neonatologie": "Postgraduaat pediatrie en neonatologie",
+    "Stomatherapie en Wondzorg": "Postgraduaat stomatherapie en wondzorg",
+    "Verpleegkundige in de Huisartsenpraktijk":
         "Postgraduaat verpleegkundige in huisartsenpraktijk",
-    "Pedagogie van het Jonge Kind": "Bachelor in de pedagogie van het jonge kind",
+    "Pedagogie van het jonge Kind": "Bachelor in de pedagogie van het jonge kind",
     "Sociaal Werk": "Bachelor in het sociaal werk",
     "Informatiebeheer": "Graduaat in het informatiebeheer",
     "Maatschappelijk werk": "Graduaat in het maatschappelijk werk",
-    "Orthopedagogische Begeleiding": "Graduaat in de orthopedagogische begeleiding",
     "Sociaal-Cultureel Werk": "Graduaat in het sociaal-cultureel werk",
     "Tolk Vlaamse Gebarentaal": "Graduaat in de tolk Vlaamse Gebarentaal",
     "Contextuele en Systemische Counseling": "Postgraduaat Contextuele en systemische counseling",
@@ -105,8 +111,19 @@ PROGRAMS_MAP = {
         "Postgraduaat Diversiteitssensitief werken, communiceren en leiden",
     "International Journalism": "Bachelor of International Journalism",
     "Creatieve Therapie: Bijkomend Medium": "Postgraduaat Creatieve Therapie: bijkomend medium",
-    "Freinet": "Postgraduaat Freinet"
+    "Freinet": "Postgraduaat Freinet",
+    "Orthopedagogische Begeleiding": "Graduaat in de orthopedagogie",
+    "School of Branding" :"Postgraduaat School of Branding",
+    "Mindfulnesstrainer": "Postgraduaat Mindfulnesstrainer"
 }
+# Note: not in the program description page
+# Beleidsondersteuner
+# Basiskennis haartooi
+# Basiskennis bio-esthethiek
+# Attest rooms-katholieke godsdienst kleuteronderwijs
+# Attest rooms-katholieke godsdienst lager onderwijs
+
+
 
 BASE_DATA = {
     "__EVENTTARGET": "ctl00$contentPlaceHolder$extendedSearchOLODS$btnZoekOpleidingsonderdelen",
@@ -136,16 +153,17 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
 
         programs_info = {}
         faculty_codes = list(FACULTIES.keys())
-        yield scrapy.Request(BASE_URL_1.format(faculty_codes[0]), self.parse_faculties,
+
+        yield scrapy.Request(BASE_URL_1.format(faculty_codes[0], 0), self.parse_faculties,
                              cb_kwargs={"faculty": faculty_codes[0],
                                         "remaining_faculties": faculty_codes[1:],
+                                        "page_nb": 0,
                                         "programs_info": programs_info})
 
-    def parse_faculties(self, response, faculty, remaining_faculties, programs_info):
+    def parse_faculties(self, response, faculty, remaining_faculties, page_nb, programs_info):
 
         all_programs_names = response.xpath("//h3/a[contains(@href, 'opleiding')]/text()").getall()
         all_programs_names = [name.strip(" \n") for name in all_programs_names]
-        print(all_programs_names)
         # Remove subprograms
         program_names = []
         for program_name in all_programs_names:
@@ -183,16 +201,25 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
 
         # Associate faculty
         for program_name, program_campuses, program_cycle in zip(program_names, programs_campuses, programs_cycle):
-            programs_info[program_name] = {"faculty": FACULTIES[faculty],
+            programs_info[program_name] = {"faculty": FACULTIES[faculty][0],
                                            # "campus": program_campus,
                                            "campuses": program_campuses,
                                            "cycle": program_cycle}
 
+        # Check if we are at thelast page:
+        if page_nb < FACULTIES[faculty][1] - 1:
+            page_nb += 1
+            yield scrapy.Request(BASE_URL_1.format(faculty, page_nb), self.parse_faculties,
+                                 cb_kwargs={"faculty": faculty,
+                                            "remaining_faculties": remaining_faculties,
+                                            "page_nb": page_nb,
+                                            "programs_info": programs_info})
         # Iteratively crawl the other faculties
-        if len(remaining_faculties) != 0:
-            yield scrapy.Request(BASE_URL_1.format(remaining_faculties[0]), self.parse_faculties,
+        elif len(remaining_faculties) != 0:
+            yield scrapy.Request(BASE_URL_1.format(remaining_faculties[0], 0), self.parse_faculties,
                                  cb_kwargs={"faculty": remaining_faculties[0],
                                             "remaining_faculties": remaining_faculties[1:],
+                                            "page_nb": 0,
                                             "programs_info": programs_info})
         else:
             yield scrapy.Request(BASE_URL_2, self.parse_programs, cb_kwargs={"programs_info": programs_info})
@@ -225,7 +252,7 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
                 "name": full_name,
                 "cycle": programs_info[program_name]["cycle"],
                 "faculties": [programs_info[program_name]["faculty"]],
-                "campuses": [programs_info[program_name]["campuses"]],
+                "campuses": programs_info[program_name]["campuses"],
                 "url": BASE_URL_2
             }
 
