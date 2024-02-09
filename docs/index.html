@@ -124,9 +124,9 @@
                         <h2>
                             <div class="buttons-container">
                           
-                                <div v-if="this.currentLanguage == 'fr'">
+                                <div v-if="this.currentLanguage == 'fr' || this.currentLanguage == 'en'">
                                     <a class="btn btn-super-accent btn-lg" href="/siep.html"
-                                        >Guide pas à pas</a>
+                                        v-html="translate('menu.siep')">Guide pas à pas</a>
                                 </div>                                   
                                 <div>
                                     <a class="btn btn-primary btn-lg" href="/programs.html"

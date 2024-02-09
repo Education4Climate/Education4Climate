@@ -9,6 +9,7 @@ import baseApp from "./base-app.js";
 import * as constants from './constants.js';
 import SchoolsManager from './managers/schools-manager.js';
 import ProgramsManager from './managers/programs-manager.js';
+import TranslationManager from "./managers/translation-manager.js";
 
 var app = Vue.createApp({
     mixins: [baseApp],
@@ -53,7 +54,8 @@ var app = Vue.createApp({
             currentMenuItem: "programs",
             cycles: [],
             schoolsManager: new SchoolsManager(),
-            programsManager: new ProgramsManager()
+            programsManager: new ProgramsManager(),
+            translationManager: new TranslationManager()
         };
     },
     computed: {
@@ -153,17 +155,17 @@ var app = Vue.createApp({
 
             if (this.sortedPrograms.length == 0) {
 
-                return tag + "Aucune formation</strong> ne correspond à ta sélection";
+                return tag + this.translate("wizard.no-program-for-selection");
             }
 
             tag = "<strong class='accent-color'>";
 
             if (this.sortedPrograms.length == 1) {
 
-                return tag + this.sortedPrograms.length + " formation</strong> correspond à ta sélection";
+                return tag + this.sortedPrograms.length + this.translate("wizard.one-program-for-selection");
             }
 
-            return tag + this.sortedPrograms.length + " formations</strong> correspondent à ta sélection";
+            return tag + this.sortedPrograms.length + this.translate("wizard.multiple-programs-for-selection");
         }
     },
 
@@ -309,11 +311,15 @@ var app = Vue.createApp({
         },
         programsCountShortLabel(count) { // Sous-titres pour la page "Dans quelle région?"
 
-            return !count ? "Aucune information" : count == 1 ? "1 formation" : count + " formations";
+            return !count ? this.translate("wizard.no-programme") : count == 1 ? this.translate("wizard.one-programme") : this.translate("wizard.multiple-programmes").replace("{0}", count);
         },
         coursesCountShortLabel(count) { // Compteur de cours sur la page de détails d'une formation
 
-            return !count ? "aucun cours" : count + " cours";
+            return !count ? this.translate("wizard.no-course") : this.translate("wizard.multiple-courses").replace("{0}", count);
+        },
+        translate(key, returnKeyIfNotFound) {
+
+            return this.translations.length > 0 ? this.translationManager.translate(this.translations, key, this.currentLanguage, returnKeyIfNotFound) : "";
         },
         async sendEmail() {
 
@@ -353,7 +359,7 @@ var app = Vue.createApp({
 
             const options = {
                 title: "Education 4 Climate",
-                text: "Tu es un des futurs acteurs de demain, les études que tu choisiras peuvent avoir un impact significatif sur le changement climatique et la transition vers une société neutre en CO2",
+                text: this.translate("wizard.share-text"),
                 url: document.location.href
             };
 
