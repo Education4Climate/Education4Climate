@@ -12,7 +12,7 @@ from src.crawl.utils import cleanup
 
 BASE_URL = "https://uclouvain.be/cours-{}-{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}_pre.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}.json')
 
 
 LANGUAGE_DICT = {
@@ -46,7 +46,15 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
         courses = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_list = sorted(list(set(courses.sum())))
 
+        fn = "/home/duboisa1/shifters/Education4Climate/data/crawling-output/uclouvain_courses_2023_first.json"
+        first_courses = pd.read_json(fn, orient='records')['id'].to_list()
+
         for course_id in courses_list:
+
+            if course_id in first_courses:
+                print(course_id)
+                continue
+
             yield scrapy.Request(url=BASE_URL.format(YEAR, course_id),
                                  callback=self.parse_course,
                                  cb_kwargs={"course_id": course_id})
@@ -76,7 +84,6 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
             txt = cleanup(response.xpath(xpaths[section]).getall())
 
             return "\n".join(txt).strip("\n ")
-
 
         content = get_section('Contenu')
         goal = get_section('Acquis')
