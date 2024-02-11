@@ -42,11 +42,15 @@ def merge_programs(school: str, year: int):
     # Remove duplicate courses
     def remove_doubles(x):
         courses, positions = np.unique(x.courses, return_index=True)
-        x.courses = courses
+        x.courses = list(courses)
         for key in keys_as_list[1:]:  # Change ects
             x[key] = list(np.array(x[key])[positions])
         return x
 
+    if (school,year)==('uclouvain','2023'):
+        programs_merged_df.at['IEJB2FC','ects']=[0,8,8,3]
+        programs_merged_df.at['METB2FC','ects']=[0,0,0,0,0,0,10]
+        
     programs_merged_df[keys_as_list] = programs_merged_df[keys_as_list].apply(lambda x: remove_doubles(x), axis=1)
 
     programs_merged_fn = \
