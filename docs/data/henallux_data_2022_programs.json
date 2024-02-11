@@ -17,7 +17,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1
@@ -47,10 +47,14 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "energy",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -79,16 +83,19 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "MR231"
+   "MR231",
+   "MR365"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":33
  },
  {
@@ -109,19 +116,26 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   1,
+   2
   ],
   "matched_courses":[
+   "PM112",
    "PM208",
-   "PM308"
+   "PM209",
+   "PM308",
+   "PM309"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":37
  },
  {
@@ -142,11 +156,9 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -175,11 +187,9 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -208,11 +218,9 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -241,11 +249,9 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -274,19 +280,26 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   1,
+   2
   ],
   "matched_courses":[
+   "PM112",
    "PM208",
-   "PM308"
+   "PM209",
+   "PM308",
+   "PM309"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":42
  },
  {
@@ -307,19 +320,26 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1
+   1,
+   1,
+   2
   ],
   "matched_courses":[
+   "PM112",
    "PM208",
-   "PM308"
+   "PM209",
+   "PM308",
+   "PM309"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":37
  },
  {
@@ -341,16 +361,22 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
+   1,
+   1,
    2,
-   2,
-   2
+   3,
+   1,
+   1
   ],
   "matched_courses":[
    "IE185",
@@ -381,14 +407,16 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
    1,
-   1
+   1,
+   2,
+   2
   ],
   "matched_courses":[
    "IA238",
@@ -419,22 +447,53 @@
   ],
   "themes":[
    "energy",
-   "environment",
+   "life",
    "resources"
   ],
   "themes_scores":[
    2,
-   1,
+   2,
    1
   ],
   "matched_courses":[
    "SC117",
+   "SC212",
    "SC301",
    "SC316"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":39
+ },
+ {
+  "id":"10",
+  "name":"Technologie de l'informatique",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/10\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Campus IESN"
+  ],
+  "faculties":[
+   "D\u00e9partement technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "TI128"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":40
  },
  {
   "id":"68",
@@ -454,7 +513,7 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy"
   ],
   "themes_scores":[
@@ -462,10 +521,11 @@
    1
   ],
   "matched_courses":[
+   "IR128",
    "IR202"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":35
  },
  {
@@ -486,19 +546,25 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "building",
+   "carbon",
+   "energy",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2
+   1,
+   2,
+   3
   ],
   "matched_courses":[
+   "AU227",
    "AU2O9",
-   "AU316"
+   "AU316",
+   "AU3O7"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":33
  },
  {
@@ -519,11 +585,13 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   1,
    2,
    1,
    1
@@ -531,10 +599,11 @@
   "matched_courses":[
    "EM230",
    "EM244",
-   "EM315"
+   "EM315",
+   "EM322"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":31
  },
  {
@@ -555,11 +624,13 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   1,
    2,
    1,
    1
@@ -567,41 +638,12 @@
   "matched_courses":[
    "EM230",
    "EM244",
-   "EM315"
+   "EM315",
+   "EM322"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":31
- },
- {
-  "id":"13",
-  "name":"Sage-femme",
-  "cycle":"bac",
-  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/13\/2022",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Sainte-Elisabeth"
-  ],
-  "faculties":[
-   "D\u00e9partement param\u00e9dical"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "SF4O2"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":43
  },
  {
   "id":"66",
@@ -622,22 +664,59 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2,
+   1,
+   5,
    1
   ],
   "matched_courses":[
+   "SR115",
    "SR121",
-   "SR442",
+   "SR203",
+   "SR226",
+   "SR441",
    "SR446"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":46
+ },
+ {
+  "id":"31",
+  "name":"Gestion des ressources humaines",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/31\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "D\u00e9partement social"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "RH104"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":36
  },
  {
   "id":"7",
@@ -657,11 +736,9 @@
    "Economy"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "carbon"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -689,16 +766,19 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "AS308"
+   "AS102",
+   "AS110"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":29
  },
  {
@@ -719,16 +799,19 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "AS308"
+   "AS102",
+   "AS110"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":29
  },
  {
@@ -749,22 +832,91 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
-   "resources"
+   "life"
   ],
   "themes_scores":[
    2,
-   2
+   2,
+   3
   ],
   "matched_courses":[
    "SH109",
    "SH208",
    "SH209",
-   "SH314"
+   "SH314",
+   "SH316"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":5,
+  "nb_total_courses":38
+ },
+ {
+  "id":"24-24",
+  "name":"Sciences : biologie, chimie, physique",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/24\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur - Site de Champion"
+  ],
+  "faculties":[
+   "D\u00e9partement p\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   4
+  ],
+  "matched_courses":[
+   "BC108",
+   "BC208",
+   "BC209",
+   "BC307"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":4,
-  "nb_total_courses":38
+  "nb_total_courses":45
+ },
+ {
+  "id":"24-37",
+  "name":"Sciences : biologie, chimie, physique",
+  "cycle":"bac",
+  "url":"https:\/\/paysage.henallux.be\/fr\/cursus\/37\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Bastogne"
+  ],
+  "faculties":[
+   "D\u00e9partement p\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   4
+  ],
+  "matched_courses":[
+   "BC108",
+   "BC208",
+   "BC209",
+   "BC307"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":41
  },
  {
   "id":"21-40",
@@ -784,21 +936,24 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
-   "resources"
+   "life"
   ],
   "themes_scores":[
    2,
-   2
+   2,
+   3
   ],
   "matched_courses":[
    "SH109",
    "SH208",
    "SH209",
-   "SH314"
+   "SH314",
+   "SH316"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":5,
   "nb_total_courses":38
  }
 ]

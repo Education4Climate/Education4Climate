@@ -7,18 +7,9 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = f"https://plus.ecam.be/public/cursus/{YEAR}/" + "{}"
-BASE_URL_2 = "https://www.ecam.be/wp-content/uploads/2021/07/MIC.html"
 
-PROGRAM_CODES = {
-    "MAU": "automatisation",
-    "MCO": "construction",
-    "MEM": "electromecanique",
-    "MEO": "electronique",
-    "MGE": "geometre",
-    "MIN": "informatique",
-    "MIS": "sante",
-    "MIC": "master-en-sciences-de-lingenieur-industriel-et-ingenieur-commercial-6eme-annee"
-}
+# Do not include BAC because included in the masters
+PROGRAM_CODES = ["MAU", "MCO", "MEM", "MEO", "MGA", "MGE", "MIN", "MIS"]
 
 
 class ECAMProgramSpider(scrapy.Spider, ABC):
@@ -34,8 +25,8 @@ class ECAMProgramSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        for program_id, url_code in PROGRAM_CODES.items():
-            link = BASE_URL_2 if program_id == 'MIC' else BASE_URL.format(program_id)
+        for program_id in PROGRAM_CODES:
+            link = BASE_URL.format(program_id)
             yield scrapy.Request(link, self.parse_program, cb_kwargs={"program_id": program_id})
 
     @staticmethod

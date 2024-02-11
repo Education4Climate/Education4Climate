@@ -1,5 +1,30 @@
 [
  {
+  "id":"BIOD0001-3",
+  "name":"Gestion de la biodiversit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Gembloux"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/BIOD0001-3\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"DROIB330",
   "name":"Droit de l'environnement et du d\u00e9veloppement durable",
   "year":"2022-2023",
@@ -25,7 +50,9 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -55,6 +82,56 @@
   "dedicated":0
  },
  {
+  "id":"EBIOE2001",
+  "name":"Biodiversit\u00e9 marine - expertise flore",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/EBIOE2001\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"EBIOE2002",
+  "name":"Biodiversit\u00e9 marine - expertise faune",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/EBIOE2002\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"ECGEB140",
   "name":"Sociologie",
   "year":"2022-2023",
@@ -79,24 +156,56 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"ECGEB284",
-  "name":"Marketing management",
+  "id":"ECGEB264",
+  "name":"Projet : entrepreneuriat",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Decrop Alain"
+   "Bereau Sophie",
+   "Bernal Diaz Oscar",
+   "Decrop Alain",
+   "Giot Pierre",
+   "Latiers M\u00e9lanie"
   ],
   "campuses":[
    "Namur"
   ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/ECGEB284\/2022",
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/ECGEB264\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management",
+   "Sociology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ECGEB383",
+  "name":"Finance",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Giot Pierre",
+   "SOUDANT Joey"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/ECGEB383\/2022",
   "cycles":[
    "bac"
   ],
@@ -104,53 +213,29 @@
    "Economy",
    "Law & Criminology",
    "Management",
+   "Science",
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
  {
-  "id":"ECGEB284_27832",
-  "name":"Marketing management - Partim",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Decrop Alain"
-  ],
-  "campuses":[
-   "Namur"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/ECGEB284_27832\/2022",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "dedicated":0
- },
- {
-  "id":"EDEVM334",
-  "name":"Evaluation of Public Interventions",
+  "id":"ECONM821",
+  "name":"Population, Environment and Governance",
   "year":"2022-2023",
   "languages":[
    "en"
   ],
   "teachers":[
-   "Guirkinger Catherine",
-   "GOETGHEBUER TATIANNA"
+   "BALAND Jean-Marie",
+   "LIBOIS Fran\u00e7ois"
   ],
   "campuses":[
    "Namur"
   ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/EDEVM334\/2022",
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/ECONM821\/2022",
   "cycles":[
    "master"
   ],
@@ -160,9 +245,9 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
-  "dedicated":0
+  "dedicated":1
  },
  {
   "id":"EFAEM051",
@@ -187,7 +272,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -242,7 +327,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -272,10 +357,40 @@
    "Sociology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"EINGB315",
+  "name":"Technologies et sciences du vivant",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Chainiaux Florence",
+   "Messiaen Johan"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/EINGB315\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management",
+   "Sociology"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "dedicated":0
  },
  {
   "id":"EINGB316",
@@ -300,7 +415,8 @@
    "Sociology"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "energy"
   ],
   "dedicated":0
  },
@@ -328,8 +444,9 @@
    "Sociology"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":0
  },
@@ -359,7 +476,8 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "pollution",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -384,7 +502,32 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVT3027-1",
+  "name":"Pratiques de gestion de la biodiversit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Arlon"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/ENVT3027-1\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -409,9 +552,39 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"FINT0039",
+  "name":"Quelles transitions vers un monde plus juste et soutenable ? Approches scientifique et philosophique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "TILMAN Val\u00e9rie"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/FINT0039\/2022",
+  "cycles":[
+   "bac",
+   "other"
+  ],
+  "fields":[
+   "Engineering",
+   "Law & Criminology",
+   "Letters",
+   "Other",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"FINT0043",
@@ -448,8 +621,9 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -474,8 +648,8 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
@@ -500,8 +674,308 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIR1230",
+  "name":"Introduction \u00e0 l'ing\u00e9nierie de la biosph\u00e8re",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBIR1230\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIR1328",
+  "name":"Climatology and Hydrology Applied to Agronomy and the Environment",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBIR1328\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBIRE2131",
+  "name":"Evaluation d'impact environnemental: diagnostic et indicateurs",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBIRE2131\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2109",
+  "name":"Stage de terrain - \u00e9cologie terrestre",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2109\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2120",
+  "name":"Conservation de la biodiversit\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2120\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2122",
+  "name":"Biodiversit\u00e9 du milieu marin",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2122\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2125",
+  "name":"Biodiversit\u00e9 et l'humain",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2125\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2140",
+  "name":"Landscape Ecology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2140\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2143",
+  "name":"Questions d'actualit\u00e9 en biologie marine",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2143\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBOE2150",
+  "name":"Movement ecology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2150\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LBOE2166",
+  "name":"Lutte biologique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2166\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LBOE2292",
+  "name":"Mod\u00e9lisation \u00e9cologique et \u00e9volutive",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LBOE2292\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -526,7 +1000,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "dedicated":1
  },
@@ -553,7 +1027,58 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"LELVB002",
+  "name":"Nederlands 2 (niveau B1 of hoger)",
+  "year":"2022-2023",
+  "languages":[
+   "nl"
+  ],
+  "teachers":[
+   "Miceli Marc"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LELVB002\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"LENVI2005",
+  "name":"Changements climatiques: impacts et solutions",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Louvain-la-Neuve"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LENVI2005\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
   ],
   "dedicated":1
  },
@@ -580,7 +1105,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -607,10 +1132,264 @@
    "Philosophy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"LPHIB103_28763",
+  "name":"Anthropologie philosophique et \u00e9cologies - Partim",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Laoureux Sebastien",
+   "Masson Antoine"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/LPHIB103_28763\/2022",
+  "cycles":[
+   "certificate"
+  ],
+  "fields":[
+   "Letters",
+   "Philosophy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"MMEDB352",
+  "name":"Ateliers en m\u00e9thodologie fondamentale tissulaire et cellulaire y compris m\u00e9thodes alternatives \u00e0 l'exp\u00e9rimentation animale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Beaufays Joseph-Paul",
+   "Lambert de Rouvroit Catherine"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/MMEDB352\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"MPHAM123",
+  "name":"Propri\u00e9t\u00e9 intellectuelle et brevets",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "BOURGUIGNON Virginie"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/MPHAM123\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PAYS0006-2",
+  "name":"Concepts d'\u00e9cologie du paysage",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Gembloux"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/PAYS0006-2\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"PAYS0014-1",
+  "name":"Ing\u00e9nierie \u00e9cologique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Gembloux"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/PAYS0014-1\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"PAYS0017-1",
+  "name":"Plante et ville : biodiversit\u00e9 et ville",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Li\u00e8ge"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/PAYS0017-1\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SBIOB001",
+  "name":"Stage pluridisciplinaire d'\u00e9t\u00e9",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Silvestre Fr\u00e9d\u00e9ric",
+   "Yans Johan"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB001\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBIOB104",
+  "name":"Biologie animale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Silvestre Fr\u00e9d\u00e9ric"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB104\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBIOB114",
+  "name":"El\u00e9ments de biologie adapt\u00e9s \u00e0 l'\u00e9volution darwinienne",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Messiaen Johan"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB114\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBIOB126",
+  "name":"Diversit\u00e9 et \u00e9volution animale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Silvestre Fr\u00e9d\u00e9ric"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB126\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"SBIOB153",
@@ -634,7 +1413,32 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBIOB207",
+  "name":"Notions de biologie fonctionnelle et adaptative",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Laender Frederik"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB207\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -659,7 +1463,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -684,7 +1488,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -715,6 +1519,56 @@
   "dedicated":0
  },
  {
+  "id":"SBIOB309",
+  "name":"Stage d'\u00e9cologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "KESTEMONT Patrick"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB309\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SBIOB326",
+  "name":"Compl\u00e9ments de g\u00e9n\u00e9tique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Bolle Xavier"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB326\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"SBIOB346",
   "name":"Biodiversit\u00e9 et esp\u00e8ces invasives",
   "year":"2022-2023",
@@ -737,7 +1591,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -764,7 +1618,84 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBIOB349",
+  "name":"Stage de biologie environnementale (y compris ornithologie)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB349\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SBIOB362",
+  "name":"Eco\u00e9thologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Brotcorne Fany"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB362\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBIOB367",
+  "name":"Ecophysiologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dennis Alice",
+   "KESTEMONT Patrick"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOB367\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -790,7 +1721,134 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SBIOM201",
+  "name":"Parasitology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Dujardin Jean-Claude"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBIOM201\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBOEM108",
+  "name":"Stage de terrain - \u00e9cologie aquatique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Laender Frederik"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM108\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SBOEM112",
+  "name":"Analyse des donn\u00e9es biologiques",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "De Laender Frederik"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM112\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBOEM123",
+  "name":"Biodiversit\u00e9 aquatique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Laender Frederik",
+   "KESTEMONT Patrick"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM123\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SBOEM124",
+  "name":"Molecular ecology",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Dennis Alice"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM124\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -820,6 +1878,31 @@
   "dedicated":0
  },
  {
+  "id":"SBOEM162",
+  "name":"Ecotoxicology of Populations, Communities and Ecosystems",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "De Laender Frederik"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM162\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"SBOEM163",
   "name":"Ecotoxicology",
   "year":"2022-2023",
@@ -843,7 +1926,8 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -868,8 +1952,7 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -894,8 +1977,58 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SBOEM169",
+  "name":"Ecological proteomics and epigenetics",
+  "year":"2022-2023",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Silvestre Fr\u00e9d\u00e9ric"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM169\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SBOEM237",
+  "name":"Bioindicateurs de pollution",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Laender Frederik"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SBOEM237\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -923,9 +2056,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "pollution",
+   "resources"
   ],
   "dedicated":0
  },
@@ -950,7 +2082,33 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SCHIB308",
+  "name":"Chimie macromol\u00e9culaire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Berionni Guillaume"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SCHIB308\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "resources"
   ],
   "dedicated":0
  },
@@ -976,7 +2134,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1001,9 +2159,10 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":0
  },
@@ -1054,7 +2213,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -1080,7 +2240,9 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "dedicated":1
  },
@@ -1106,7 +2268,9 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "dedicated":1
  },
@@ -1132,34 +2296,11 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "dedicated":1
- },
- {
-  "id":"SCHIM224",
-  "name":"Organic photochemistry",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Berionni Guillaume"
-  ],
-  "campuses":[
-   "Namur"
-  ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SCHIM224\/2022",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":0
  },
  {
   "id":"SCHIM229",
@@ -1182,7 +2323,63 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"SFCMM201",
+  "name":"Formation de ma\u00eetre d'exp\u00e9riences en manipulation animale",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vermeylen Anne"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SFCMM201\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SGOGB207",
+  "name":"Migrations environnementales",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Henry Sabine",
+   "Henry Sabine"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOGB207\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "building",
+   "climate",
+   "life"
   ],
   "dedicated":1
  },
@@ -1207,7 +2404,8 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -1282,25 +2480,77 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "dedicated":0
  },
  {
-  "id":"SGOLB106",
-  "name":"G\u00e9ographie et g\u00e9ologie de la Belgique",
+  "id":"SGOGB304",
+  "name":"Analyse g\u00e9ographique d'espaces ruraux et urbains",
   "year":"2022-2023",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Linard Catherine",
-   "Yans Johan"
+   "DENDONCKER Nicolas",
+   "Linard Catherine"
   ],
   "campuses":[
    "Namur"
   ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOLB106\/2022",
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOGB304\/2022",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "building"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SGOGB309",
+  "name":"G\u00e9ographie de la population",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Henry Sabine"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOGB309\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SGOGB310",
+  "name":"Terrains en G\u00e9ographie (III)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "DENDONCKER Nicolas"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOGB310\/2022",
   "cycles":[
    "bac"
   ],
@@ -1308,7 +2558,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "building"
   ],
   "dedicated":0
  },
@@ -1335,7 +2585,33 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SGOLB302",
+  "name":"S\u00e9dimentologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hallet Vincent",
+   "Clausen S\u00e9bastien"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOLB302\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1360,10 +2636,36 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "dedicated":1
+ },
+ {
+  "id":"SGOLB304",
+  "name":"Micropal\u00e9ontologie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Yans Johan"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOLB304\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
  },
  {
   "id":"SGOLB306",
@@ -1391,6 +2693,32 @@
   "dedicated":0
  },
  {
+  "id":"SGOLB311",
+  "name":"Travaux personnels",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hallet Vincent",
+   "Yans Johan"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SGOLB311\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"SGOLM145",
   "name":"P\u00e9dologie",
   "year":"2022-2023",
@@ -1411,7 +2739,7 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "life"
   ],
   "dedicated":0
  },
@@ -1436,13 +2764,90 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "resources"
   ],
   "dedicated":0
  },
  {
-  "id":"SPHYM119",
-  "name":"Astrophysique nucl\u00e9aire",
+  "id":"SMEDM115",
+  "name":"Trafic intracellulaire en conditions normales et pathologiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hamer Isabelle",
+   "Renard Henri-Fran\u00e7ois"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SMEDM115\/2022",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPHYB214",
+  "name":"Compl\u00e9ment de physique classique et quantique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "HENRARD Luc"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYB214\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPHYB220",
+  "name":"Travail personnel au laboratoire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Frising Fernande"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYB220\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SPHYB304",
+  "name":"Astrophysique",
   "year":"2022-2023",
   "languages":[
    "fr"
@@ -1453,15 +2858,15 @@
   "campuses":[
    "Namur"
   ],
-  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYM119\/2022",
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SPHYB304\/2022",
   "cycles":[
-   "master"
+   "bac"
   ],
   "fields":[
    "Science"
   ],
   "themes":[
-   "climate"
+   "energy"
   ],
   "dedicated":0
  },
@@ -1486,7 +2891,7 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -1513,7 +2918,8 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -1538,9 +2944,8 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -1565,7 +2970,7 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "dedicated":1
  },
@@ -1591,9 +2996,35 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "general"
   ],
   "dedicated":1
+ },
+ {
+  "id":"SSPSB102",
+  "name":"Questions de sciences religieuses",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Leyens St\u00e9phane",
+   "Cazalis Roland"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SSPSB102\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"SSPSB107",
@@ -1616,7 +3047,32 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SVETB101",
+  "name":"Ethologie des animaux domestiques",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Diederich Claire"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SVETB101\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -1642,8 +3098,61 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"SVETB301",
+  "name":"Ethologie appliqu\u00e9e",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Diederich Claire"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SVETB301\/2022",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SVETB305",
+  "name":"Bios\u00e9curit\u00e9, e-learning",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Loret Suzanne",
+   "Saegerman Claude"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "url":"https:\/\/directory.unamur.be\/teaching\/courses\/SVETB305\/2022",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  }
 ]

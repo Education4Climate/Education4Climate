@@ -44,35 +44,41 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
     @staticmethod
     def parse_ue(response):
 
-        ue_name = response.xpath("//div[@name='titleue']//h1/text()").get()
         div_txt = "//div[contains(@class, 'container-fluid')]"
-        ue_id = response.xpath(f"{div_txt}//span[contains(text(), 'Acronyme')]/following::span[1]/text()").get()
 
-        lang = response.xpath(f"{div_txt}//span[contains(text(), \"Langue(s) d'enseignement\")]"
-                              f"/following::span[1]/text()").get()
-        languages = lang.strip(" \n").split(" ")
+        ue_name = response.xpath(f"{div_txt}//div[contains(@class, 'col-9')]/h1/strong/text()").get()
+        ue_id = response.xpath(f"{div_txt}//p[strong[contains(text(), 'Acronyme')]]/text()[3]").get().strip("\n ")
+
+        languages = response.xpath(f"{div_txt}//span[@class='badge bg-info']/text()").getall()
         languages = [LANGUAGE_DICT[l.strip("\n")] for l in languages if l != '']
+        languages = list(set(languages))
         languages = ["fr"] if len(languages) == 0 else languages
 
-        teachers = response.xpath(f"{div_txt}//strong[text()='Enseignant responsable : ']"
+        teachers = response.xpath(f"{div_txt}//strong[contains(text(), 'Enseignant(s) responsable')]"
                                   f"/following::a[1]/text()").getall()
-        sup_teachers = response.xpath(f"{div_txt}//strong[contains(text(), \"Autre(s) enseignant(s) de l'UE\")]"
-                                      f"/following::a[1]/text()").getall()
-        teachers += sup_teachers
+        teachers += response.xpath(f"{div_txt}//strong[contains(text(), 'Autre(s) enseignant')]"
+                                   f"/following::a[1]/text()").getall()
         teachers = [t.title() for t in teachers]
         # remove Monsieur Madame
         teachers = [" ".join(t.split(" ")[1:]) if "Monsieur" in t or "Madame" in t else t for t in teachers]
+        # invert first name and family name
+        teachers = [(" ".join(teacher.split(" ")[1:]) + " " + teacher.split(" ")[0]).strip(" ") for teacher in teachers]
 
-        year = cleanup(response.xpath(f"{div_txt}//div[@id='anac']//i").get()).split("Année académique ")[1]
+        year = response.xpath(f"{div_txt}//i[contains(text(), 'Année académique')]/text()").get()
+        year = year.split("Année académique ")[1]
 
-        campus = cleanup(response.xpath(f"{div_txt}//p[span[contains(text(), \"Coordonnées du service\")]]").get())
+        campus = cleanup(response.xpath(f"{div_txt}//p[strong[contains(text(), \"Coordonnées du service\")]]").get())
         campus = 'Jodoigne' if 'Jodoigne' in campus else 'Anderlecht'
 
-        def get_section_text(section_name):
-            return cleanup(response.xpath(f"{div_txt}//div[p/span[contains(text(), '{section_name}')]]"
-                                          f"/following::div[1]").get()).replace("\n             ", ' ')
-        content = get_section_text('Descriptif')
-        goal = get_section_text('Contribution')
+        contents = cleanup(response.xpath(f"{div_txt}//h5[contains(text(), 'Contenu')]//following::ul[1]").getall())
+        content = "\n".join(contents).strip("\n")
+
+        goals = cleanup(response.xpath(f"{div_txt}//h5[contains(text(), 'Objectifs')]//following::ul[1]").getall())
+        goals += cleanup(response.xpath(f"{div_txt}//div[h3[contains(text(), 'Acquis')]]//ul").getall())
+        goal = "\n".join(goals).strip("\n")
+
+        activities = cleanup(response.xpath(f"{div_txt}//div[h3[contains(text(), 'Activité')]]//ul").getall())
+        activity = "\n".join(activities).strip("\n")
 
         yield {
             "id": ue_id,
@@ -84,6 +90,6 @@ class HELDBCourseSpider(scrapy.Spider, ABC):
             "campuses": [campus],
             "content": content,
             "goal": goal,
-            "activity": '',
+            "activity": activity,
             "other": ''
         }

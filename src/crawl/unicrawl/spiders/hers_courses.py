@@ -77,7 +77,7 @@ class HERSCourseSpider(scrapy.Spider, ABC):
 
         yield {
             'id': course_id,
-            'name': course_name,
+            'name': course_name.strip(" "),
             'year': years,
             'languages': languages,
             'teachers': teachers,

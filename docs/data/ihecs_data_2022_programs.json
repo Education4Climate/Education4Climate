@@ -20,16 +20,19 @@
    "Communication"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "2BQECO12Q"
+   "2BQECO12Q",
+   "3BASFD11Q"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":51
  },
  {
@@ -50,7 +53,7 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -80,12 +83,10 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
@@ -115,24 +116,57 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
+   2,
    1,
    1,
    1,
-   3
+   4
   ],
   "matched_courses":[
    "1MNMESS21Q",
+   "1MQSAFR21Q",
    "1MQSANL21Q",
    "2MCREAU22Q",
    "2MDESTR22Q"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":5,
   "nb_total_courses":29
+ },
+ {
+  "id":"ME",
+  "name":"Master en Management d'\u00e9v\u00e9nements",
+  "cycle":"master",
+  "url":"http:\/\/extranet.ihecs.be\/?ects=go&act=showlist",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Bruxelles"
+  ],
+  "faculties":[
+   "Journalism & Communication"
+  ],
+  "fields":[
+   "Communication"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "1MGESTM21Q"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":23
  }
 ]

@@ -20,20 +20,25 @@
    "Management"
   ],
   "themes":[
+   "building",
    "climate",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
+   2,
+   1,
    1,
    3
   ],
   "matched_courses":[
-   "167230",
-   "167231",
+   "168902",
+   "169349",
+   "169351",
    "171429"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":307
  },
  {
@@ -59,7 +64,7 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -95,21 +100,20 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
    1,
    1,
-   2
+   1
   ],
   "matched_courses":[
    "170123",
-   "170126",
    "171428"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":67
  },
  {
@@ -136,7 +140,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "economy"
   ],
   "themes_scores":[
    1,
@@ -148,66 +152,6 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":99
- },
- {
-  "id":"GRAEGO",
-  "name":"Educatieve graduaatsopleiding in het secundair onderwijs",
-  "cycle":"other",
-  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2022-23",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-   "Campus Kattenberg"
-  ],
-  "faculties":[
-   "Onderwijs"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "170864"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":28
- },
- {
-  "id":"PBAOSV",
-  "name":"Educatieve bachelor in het onderwijs: secundair onderwijs (verkort)",
-  "cycle":"bac",
-  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2022-23",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-   "Campus Kattenberg"
-  ],
-  "faculties":[
-   "Onderwijs"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "170888"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":29
  },
  {
   "id":"PBAOSO",
@@ -230,41 +174,54 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2,
-   8,
    1,
-   13
+   2,
+   4,
+   18,
+   9
   ],
   "matched_courses":[
+   "166933",
+   "166935",
+   "167454",
+   "167727",
+   "167728",
+   "167729",
+   "167730",
+   "167734",
+   "167764",
+   "168081",
    "168089",
    "168090",
+   "168195",
+   "168199",
+   "168203",
+   "168207",
    "169220",
+   "169221",
    "169228",
    "169229",
    "169236",
    "169237",
-   "172326",
+   "172325",
    "172328",
-   "172501",
-   "172502",
-   "172504",
+   "172483",
+   "172487",
+   "172505",
    "172507",
-   "172549",
-   "172551",
+   "172508",
    "172553",
-   "172581",
-   "172582",
-   "172583",
-   "172584"
+   "172646"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":20,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":31,
   "nb_total_courses":982
  },
  {
@@ -288,20 +245,22 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    3,
-   1
+   5
   ],
   "matched_courses":[
    "170209",
+   "170212",
    "170215",
+   "170226",
    "171015",
    "171384"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":162
  },
  {
@@ -324,22 +283,89 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "themes_scores":[
    1,
-   4
+   1,
+   6
   ],
   "matched_courses":[
+   "169309",
    "170302",
    "170303",
    "170306",
+   "170321",
    "173616"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":200
+ },
+ {
+  "id":"GRASCW",
+  "name":"Graduaat in het sociaal-cultureel werk",
+  "cycle":"other",
+  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2022-23",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Campus Zwijnaardsesteenweg"
+  ],
+  "faculties":[
+   "Mens en Samenleving"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "170427",
+   "170946"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":33
+ },
+ {
+  "id":"PBAMOZ",
+  "name":"Bachelor in de mondzorg",
+  "cycle":"bac",
+  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2022-23",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Campus Kantienberg"
+  ],
+  "faculties":[
+   "Gezondhied en Zorg"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "169201"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":56
  },
  {
   "id":"PBAERG",
@@ -360,13 +386,13 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "169776"
+   "173317"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -392,17 +418,19 @@
    "Communication"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "themes_scores":[
-   2
+   4
   ],
   "matched_courses":[
    "167305",
-   "169421"
+   "169421",
+   "171483",
+   "173498"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":58
  },
  {
@@ -425,18 +453,55 @@
    "Communication"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "themes_scores":[
-   2
+   4
   ],
   "matched_courses":[
    "167305",
-   "169421"
+   "168944",
+   "169421",
+   "169699"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":181
+ },
+ {
+  "id":"PBAICM",
+  "name":"Bachelor of International Communication Management",
+  "cycle":"bac",
+  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2022-23",
+  "languages":[
+   "cn",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Campus Leeuwstraat"
+  ],
+  "faculties":[
+   "Communicatie, Media en Design"
+  ],
+  "fields":[
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "171483"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":66
  },
  {
   "id":"PBAJOU",
@@ -458,21 +523,49 @@
    "Communication"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
-   "169156",
-   "169157",
    "173375",
    "173706"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":2,
   "nb_total_courses":168
+ },
+ {
+  "id":"GRATRL",
+  "name":"Graduaat in het transport en de logistiek",
+  "cycle":"other",
+  "url":"https:\/\/ects.arteveldehogeschool.be\/ahsownapp\/ects\/ECTS.aspx?ac=2022-23",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Campus Kantienberg"
+  ],
+  "faculties":[
+   "Business en Management"
+  ],
+  "fields":[
+   "Management"
+  ],
+  "themes":[
+   "economy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "173004"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":19
  }
 ]

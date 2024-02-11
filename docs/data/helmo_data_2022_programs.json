@@ -18,9 +18,13 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "energy",
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -50,7 +54,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1,
@@ -62,6 +66,36 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":52
+ },
+ {
+  "id":"Pedagogique - 8",
+  "name":"Instituteur.trice Pr\u00e9scolaire",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Pedagogique\/Instituteur-Prescolaire\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Sainte-Croix"
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "26369"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":58
  },
  {
   "id":"Pedagogique - 7",
@@ -81,10 +115,14 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "food",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   4
+   1,
+   1,
+   3
   ],
   "matched_courses":[
    "22275",
@@ -116,17 +154,20 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
   "matched_courses":[
+   "25193",
    "25200"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":17
  },
  {
@@ -151,13 +192,15 @@
    "energy"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
-   "24437"
+   "23255",
+   "24437",
+   "25224"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":16
  },
  {
@@ -181,21 +224,28 @@
   "themes":[
    "climate",
    "energy",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
    1,
    3,
+   2,
+   1,
+   1,
    1
   ],
   "matched_courses":[
+   "25115",
    "25118",
    "25119",
-   "25130",
-   "25131"
+   "25120",
+   "25130"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":17
  },
  {
@@ -218,18 +268,51 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
   "matched_courses":[
+   "25193",
    "25200"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":23
+ },
+ {
+  "id":"Technique - 7",
+  "name":"Bachelier de transition en Sciences industrielles",
+  "cycle":"bac",
+  "url":"https:\/\/www.helmo.be\/Formations\/Technique\/Ingenieur-Industriel-bac\/Grille-de-cours.aspx",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "HELMo Gramme"
+  ],
+  "faculties":[
+   "D\u00e9partement Informatique et Technique"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "22384"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":23
+  "nb_total_courses":32
  },
  {
   "id":"Technique - 6",
@@ -249,11 +332,9 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -283,20 +364,21 @@
    "Economy"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
    2,
-   3
+   2
   ],
   "matched_courses":[
    "22308",
    "22311",
+   "22314",
    "23757"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":30
  },
  {
@@ -319,14 +401,12 @@
    "Economy"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1,

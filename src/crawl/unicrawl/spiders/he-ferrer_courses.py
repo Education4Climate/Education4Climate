@@ -15,8 +15,12 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}he-ferrer_programs_{YEAR}.json')
 LANGUAGES_DICT = {
     "Français": "fr",
+    "FranÃ\x83Â§ais": "fr",
     "Anglais": "en",
-    "N?erlandais": "nl"
+    "ANG": "en",
+    "N?erlandais": "nl",
+    "Néerlandais": "nl",
+    "NÃ\x83Â©erlandais": "nl"
 }
 
 
@@ -36,6 +40,7 @@ class HEFERRERCourseSpider(scrapy.Spider, ABC):
         courses_list = sorted(list(set(courses.sum())))
 
         for course in courses_list:
+
             yield scrapy.Request(url=BASE_URL.format(course, YEAR),
                                  callback=self.parse_ue,
                                  cb_kwargs={"ue_id": course})
@@ -54,8 +59,8 @@ class HEFERRERCourseSpider(scrapy.Spider, ABC):
         ects = int(ects.strip(" "))
 
         languages = response.xpath("//td[contains(text(), \"Langue d'enseignement et d'évaluation\")]"
-                                   "//following::strong[1]/text()").getall()
-        languages = [LANGUAGES_DICT[language] for language in languages]
+                                   "//following::strong[1]/text()").get()
+        languages = [LANGUAGES_DICT[language.strip(" ")] for language in languages.split("/")]
         languages = ["fr"] if len(languages) == 0 else languages
 
         content = cleanup(response.xpath("//h3[contains(text(), '2')]"

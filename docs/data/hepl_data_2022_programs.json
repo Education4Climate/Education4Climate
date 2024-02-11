@@ -20,16 +20,19 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "economy",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "TRP-1-019"
+   "TRP-1-019",
+   "TRP-1-025"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":25
  },
  {
@@ -51,20 +54,30 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   2,
+   1,
+   3,
    3
   ],
   "matched_courses":[
+   "AGR-1-002",
    "AGR-1-005",
+   "AGR-1-013",
+   "AGR-1-083",
    "AGR-1-085",
-   "AGR-1-092"
+   "AGR-1-092",
+   "AGR-1-096"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":7,
   "nb_total_courses":37
  },
  {
@@ -87,25 +100,29 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   5,
-   4
+   1,
+   8,
+   3
   ],
   "matched_courses":[
+   "AGR-1-002",
    "AGR-1-005",
+   "AGR-1-013",
    "AGR-1-045",
    "AGR-1-047",
    "AGR-1-052",
    "AGR-1-056",
    "AGR-1-058",
-   "AGR-1-105"
+   "AGR-1-098"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":9,
   "nb_total_courses":37
  },
  {
@@ -127,31 +144,42 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   2,
    1,
    1,
-   6,
-   4,
-   2
+   1,
+   9,
+   8,
+   1,
+   1
   ],
   "matched_courses":[
+   "AGR-1-002",
    "AGR-1-005",
+   "AGR-1-013",
    "AGR-1-061",
    "AGR-1-064",
    "AGR-1-065",
+   "AGR-1-066",
    "AGR-1-070",
-   "AGR-1-071",
    "AGR-1-072",
-   "AGR-1-073"
+   "AGR-1-073",
+   "AGR-1-076",
+   "AGR-1-078",
+   "AGR-1-095"
   ],
-  "nb_dedicated_courses":7,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":11,
+  "nb_matched_courses":13,
   "nb_total_courses":38
  },
  {
@@ -174,59 +202,63 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    4,
-   4,
-   2
+   10
   ],
   "matched_courses":[
+   "AGR-1-002",
    "AGR-1-005",
+   "AGR-1-013",
+   "AGR-1-023",
    "AGR-1-025",
    "AGR-1-026",
    "AGR-1-027",
    "AGR-1-108",
    "AGR-1-112",
    "AGR-1-113",
-   "AGR-1-117"
+   "AGR-1-114",
+   "AGR-1-116"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":12,
   "nb_total_courses":66
  },
  {
-  "id":"sage-femme",
-  "name":"Bachelier Sage-femme",
+  "id":"gestion-ressources-humaines",
+  "name":"Bachelier Gestion des ressources humaines",
   "cycle":"bac",
-  "url":"https:\/\/www.hepl.be\/fr\/sage-femme",
+  "url":"https:\/\/www.hepl.be\/fr\/gestion-ressources-humaines",
   "languages":[
-   "fr"
+   "en",
+   "fr",
+   "nl"
   ],
   "campuses":[
-   "Campus Barbou - Li\u00e8ge"
+   "Site Avroy - Li\u00e8ge"
   ],
   "faculties":[
-   "Sant\u00e9"
+   "Social"
   ],
   "fields":[
-   "Medecine & Health"
+   "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "SF-1-049"
+   "GRH-1-005"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":59
+  "nb_total_courses":44
  },
  {
   "id":"technologue-en-imagerie-medicale",
@@ -246,25 +278,25 @@
    "Medecine & Health"
   ],
   "themes":[
-   "energy"
+   "pollution"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "TIM-1-023"
+   "TIM-1-046",
+   "TIM-1-050"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":46
  },
  {
-  "id":"dietetique",
-  "name":"Bachelier Di\u00e9t\u00e9tique",
+  "id":"hygieniste-bucco-dentaire",
+  "name":"Bachelier Hygi\u00e9niste bucco-dentaire",
   "cycle":"bac",
-  "url":"https:\/\/www.hepl.be\/fr\/dietetique",
+  "url":"https:\/\/www.hepl.be\/fr\/hygieniste-bucco-dentaire",
   "languages":[
-   "en",
    "fr"
   ],
   "campuses":[
@@ -277,17 +309,19 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
-   "DIET-1-017"
+   "DENTAIRE-1-004",
+   "DENTAIRE-1-007",
+   "DENTAIRE-1-020"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":25
+  "nb_matched_courses":3,
+  "nb_total_courses":10
  },
  {
   "id":"informatique-gestion",
@@ -308,11 +342,9 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -321,6 +353,44 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":29
+ },
+ {
+  "id":"ergotherapie",
+  "name":"Bachelier Ergoth\u00e9rapie",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/ergotherapie",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Campus Barbou - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Motricit\u00e9"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life",
+   "transport"
+  ],
+  "themes_scores":[
+   7,
+   1
+  ],
+  "matched_courses":[
+   "ERGO-1-022",
+   "ERGO-1-023",
+   "ERGO-1-025",
+   "ERGO-1-027",
+   "ERGO-1-032",
+   "ERGO-1-035",
+   "ERGO-1-043"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":7,
+  "nb_total_courses":37
  },
  {
   "id":"communication",
@@ -342,16 +412,19 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "COM-1-024"
+   "COM-1-024",
+   "COM-1-042"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":44
  },
  {
@@ -374,7 +447,7 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -385,6 +458,39 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":30
+ },
+ {
+  "id":"master-ingenieur-industriel-informatique",
+  "name":"Master Ing\u00e9nieur industriel Orientation Informatique",
+  "cycle":"master",
+  "url":"https:\/\/www.hepl.be\/fr\/master-ingenieur-industriel\/informatique",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus Gloesener - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Ing\u00e9nieur"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ING-2-329"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":21
  },
  {
   "id":"master-ingenieur-industriel-geometre",
@@ -405,23 +511,59 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "energy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
+   1,
+   2,
    1,
    2
   ],
   "matched_courses":[
    "ING-2-045",
-   "ING-2-048",
    "ING-2-327"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":29
+ },
+ {
+  "id":"master-ingenieur-industriel-electronique-systemes-embarques",
+  "name":"Master Ing\u00e9nieur industriel Orientation \u00c9lectronique - Syst\u00e8mes embarqu\u00e9s",
+  "cycle":"master",
+  "url":"https:\/\/www.hepl.be\/fr\/master-ingenieur-industriel\/electronique-systemes-embarques",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus Gloesener - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Ing\u00e9nieur"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ING-2-320"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":20
  },
  {
   "id":"master-ingenieur-industriel-electromecanique-genie-energetique-mecatronique",
@@ -442,22 +584,27 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources"
   ],
   "themes_scores":[
-   3,
+   2,
+   2,
+   1,
    1,
    2
   ],
   "matched_courses":[
    "ING-2-130",
    "ING-2-168",
-   "ING-2-170"
+   "ING-2-170",
+   "ING-2-331"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":26
  },
  {
@@ -479,18 +626,21 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "building",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
   "matched_courses":[
-   "ING-2-168"
+   "ING-2-168",
+   "ING-2-331"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":27
  },
  {
@@ -512,21 +662,27 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "energy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   3,
    1,
+   2,
    1,
-   1
+   2
   ],
   "matched_courses":[
    "ING-2-031",
+   "ING-2-037",
+   "ING-2-096",
    "ING-2-325"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":4,
   "nb_total_courses":25
  },
  {
@@ -548,13 +704,21 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "environment",
-   "resources"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
    1,
+   1,
+   2,
+   1,
    20,
+   2,
    1
   ],
   "matched_courses":[
@@ -602,17 +766,55 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "building",
+   "prod&cons"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
+   "ING-2-055",
    "ING-2-323"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":26
+ },
+ {
+  "id":"gestion-publique",
+  "name":"Master Gestion publique",
+  "cycle":"master",
+  "url":"https:\/\/www.hepl.be\/fr\/gestion-publique",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus 2000 - Jemeppe"
+  ],
+  "faculties":[
+   "Gestion & droit"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Management"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "GESTPUBL-2-009",
+   "GESTPUBL-2-038"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":12
  },
  {
   "id":"master-facility-management",
@@ -635,19 +837,119 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "building",
+   "economy",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
   "matched_courses":[
-   "FACMAN-2-011"
+   "FACMAN-2-011",
+   "FACMAN-2-013"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":18
+ },
+ {
+  "id":"gestion-production",
+  "name":"Master Gestion de production",
+  "cycle":"master",
+  "url":"https:\/\/www.hepl.be\/fr\/gestion-production",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus Gloesener - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Electrom\u00e9canique & gestion de production"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "energy"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "GPROD-2-014",
+   "GPROD-2-030"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":19
+ },
+ {
+  "id":"electromecanique",
+  "name":"Bachelier \u00c9lectrom\u00e9canique",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/electromecanique",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus Gloesener - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Electrom\u00e9canique & gestion de production"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MEC-1-044"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":18
+  "nb_total_courses":44
+ },
+ {
+  "id":"assistant-psychologie",
+  "name":"Bachelier Assistant en psychologie",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/assistant-psychologie",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus 2000 - Jemeppe"
+  ],
+  "faculties":[
+   "Education & psychologie"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "prod&cons"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PSY-1-060"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":103
  },
  {
   "id":"construction",
@@ -667,24 +969,32 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   5,
+   1,
+   2,
+   2,
    2,
    3,
-   2,
-   2
+   1
   ],
   "matched_courses":[
+   "CON-1-011",
+   "CON-1-019",
    "CON-1-035",
    "CON-1-044",
    "CON-1-070"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":83
  },
  {
@@ -707,16 +1017,61 @@
    "Science"
   ],
   "themes":[
+   "life",
+   "pollution",
    "resources"
   ],
   "themes_scores":[
+   4,
+   2,
    1
   ],
   "matched_courses":[
-   "CHI-1-042"
+   "CHI-1-042",
+   "CHI-1-044",
+   "CHI-1-056",
+   "CHI-1-077",
+   "CHI-1-079"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":43
+ },
+ {
+  "id":"chimie-biochimie",
+  "name":"Bachelier Chimie Orientation Biochimie",
+  "cycle":"bac",
+  "url":"https:\/\/www.hepl.be\/fr\/chimie\/biochimie",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Campus Gloesener - Li\u00e8ge"
+  ],
+  "faculties":[
+   "Chimie & biotechnologie"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "carbon",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "CHI-1-036",
+   "CHI-1-038",
+   "CHI-1-053",
+   "CHI-1-074"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":38
  }
 ]

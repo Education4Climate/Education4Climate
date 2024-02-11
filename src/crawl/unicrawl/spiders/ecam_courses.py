@@ -36,14 +36,15 @@ class ECAMCourseSpider(scrapy.Spider, ABC):
 
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))[["id", "courses"]].set_index("id")
 
-        mic_courses = courses_ids.loc['MIC']['courses']
-        for course_id in mic_courses:
-            yield scrapy.Request(
-                url=MIC_URL.format(course_id),
-                callback=self.parse_course,
-                cb_kwargs={"course_id": course_id,
-                           "mic": True}
-            )
+        if 'MIC' in courses_ids.columns:
+            mic_courses = courses_ids.loc['MIC']['courses']
+            for course_id in mic_courses:
+                yield scrapy.Request(
+                    url=MIC_URL.format(course_id),
+                    callback=self.parse_course,
+                    cb_kwargs={"course_id": course_id,
+                               "mic": True}
+                )
 
         other_courses = sorted(list(set(courses_ids[courses_ids.index != 'MIC']['courses'].sum())))
 
