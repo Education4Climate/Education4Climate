@@ -197,7 +197,7 @@
    "Branders Aline",
    "Prignot Isabelle"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-arch-p8119",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/arch-p8119",
   "cycles":[
    "master"
   ],
@@ -209,7 +209,8 @@
    "climate",
    "energy",
    "life",
-   "prod&cons"
+   "prod&cons",
+   "resources"
   ],
   "dedicated":1
  },
@@ -251,7 +252,7 @@
    "Pattyn Frank",
    "Roobaert Aliz\u00e9e"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f1001",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f1001",
   "cycles":[
    "bac",
    "master"
@@ -275,13 +276,13 @@
   "name":"Agro-\u00e9cosyst\u00e8mes et syst\u00e8mes agraires",
   "year":"2023-2024",
   "languages":[
-   "fr",
-   ""
+   "fr"
   ],
   "teachers":[
-   "Visser Marjolein"
+   "Visser Marjolein",
+   "Beaugendre Amaury"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f202",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f202",
   "cycles":[
    "bac",
    "master"
@@ -306,9 +307,10 @@
   ],
   "teachers":[
    "George Isabelle",
-   "Flahaut Sigrid"
+   "Flahaut Sigrid",
+   "Thonar C\u00e9cile"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f301",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f301",
   "cycles":[
    "bac",
    "master"
@@ -328,13 +330,12 @@
   "name":"Agro-\u00e9cologie",
   "year":"2023-2024",
   "languages":[
-   "fr",
-   ""
+   "fr"
   ],
   "teachers":[
    "Visser Marjolein"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f305",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f305",
   "cycles":[
    "master"
   ],
@@ -353,13 +354,12 @@
   "name":"Economie agricole ",
   "year":"2023-2024",
   "languages":[
-   "",
    "fr"
   ],
   "teachers":[
    "Bosmans Werner"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f4001",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f4001",
   "cycles":[
    "master"
   ],
@@ -422,6 +422,32 @@
   "dedicated":0
  },
  {
+  "id":"BING-F4006",
+  "name":"G\u00e9n\u00e9tique des populations et am\u00e9lioration des plantes",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hardy Olivier",
+   "Hermans Christian",
+   "Visser Marjolein"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f4006",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"BING-F403",
   "name":"Phytotechnie des grandes cultures en r\u00e9gions temper\u00e9es",
   "year":"2023-2024",
@@ -468,59 +494,6 @@
   "dedicated":1
  },
  {
-  "id":"BING-F4006",
-  "name":"G\u00e9n\u00e9tique des populations et am\u00e9lioration des plantes",
-  "year":"2023-2024",
-  "languages":[
-   "",
-   "fr"
-  ],
-  "teachers":[
-   "Hardy Olivier",
-   "Hermans Christian",
-   "Visser Marjolein"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f4006",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Engineering",
-   "Science"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":0
- },
- {
-  "id":"BING-F431",
-  "name":"Innovations agro\u00e9cologiques et production alimentaire",
-  "year":"2023-2024",
-  "languages":[
-   "",
-   "fr"
-  ],
-  "teachers":[
-   "Vereecken Nicolas"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f431",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Engineering",
-   "Science"
-  ],
-  "themes":[
-   "food",
-   "life"
-  ],
-  "dedicated":1
- },
- {
   "id":"BING-F410",
   "name":"Ecosyst\u00e8mes aquatiques: fonctionnement et param\u00e8tres de qualit\u00e9 de l'eau",
   "year":"2023-2024",
@@ -531,7 +504,7 @@
    "Gypens Nathalie",
    "George Isabelle"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f410",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f410",
   "cycles":[
    "master"
   ],
@@ -554,10 +527,9 @@
    "fr"
   ],
   "teachers":[
-   "Demblon Dominique",
    "Serneels Fran\u00e7ois"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f415",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f415",
   "cycles":[
    "master"
   ],
@@ -572,16 +544,16 @@
  },
  {
   "id":"BING-F430",
-  "name":"Recherche et d\u00e9veloppement en agro\u00e9cologie",
+  "name":"Agro\u00e9cologie et \u00e9cologie de la conservation",
   "year":"2023-2024",
   "languages":[
-   "",
    "fr"
   ],
   "teachers":[
-   "Vereecken Nicolas"
+   "Vereecken Nicolas",
+   "Mahy Gr\u00e9gory"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f430",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f430",
   "cycles":[
    "master"
   ],
@@ -591,9 +563,83 @@
    "Science"
   ],
   "themes":[
-   "food"
+   "food",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"BING-F431",
+  "name":"Innovations agro\u00e9cologiques et production alimentaire",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Vereecken Nicolas"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f431",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "food",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"BING-F525",
+  "name":"Mod\u00e9lisation des \u00e9cosyst\u00e8mes aquatiques",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gypens Nathalie"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f525",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BING-F531",
+  "name":"Biorem\u00e9diation \/ Environmental engineering : current methods and practices",
+  "year":"2023-2024",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Cannella David",
+   "Verbanck Michel"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/bing-f531",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"BING-H5001",
@@ -618,53 +664,6 @@
    "economy",
    "life",
    "transport"
-  ],
-  "dedicated":0
- },
- {
-  "id":"BING-F525",
-  "name":"Mod\u00e9lisation des \u00e9cosyst\u00e8mes aquatiques",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Gypens Nathalie"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f525",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering",
-   "Science"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":0
- },
- {
-  "id":"BING-F531",
-  "name":"Biorem\u00e9diation \/ Environmental engineering : current methods and practices",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Cannella David",
-   "Verbanck Michel"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-bing-f531",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering",
-   "Science"
-  ],
-  "themes":[
-   "pollution"
   ],
   "dedicated":0
  },
@@ -705,7 +704,7 @@
    "George Isabelle",
    "Flot Jean-Fran\u00e7ois"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-biol-f210",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f210",
   "cycles":[
    "bac"
   ],
@@ -763,6 +762,30 @@
   "dedicated":1
  },
  {
+  "id":"BIOL-F309",
+  "name":"Ecologie ",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jacques Meerts Pierre",
+   "Vleminckx Jason"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f309",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"BIOL-F310",
   "name":"Biodiversit\u00e9 et conservation",
   "year":"2023-2024",
@@ -779,31 +802,6 @@
    "bac"
   ],
   "fields":[
-   "Science"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"BIOL-F309",
-  "name":"Ecologie ",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Jacques Meerts Pierre",
-   "George Isabelle",
-   "Vleminckx Jason"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-biol-f309",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering",
    "Science"
   ],
   "themes":[
@@ -836,6 +834,30 @@
   "dedicated":0
  },
  {
+  "id":"BIOL-F4004",
+  "name":"Didactique des sciences biologiques et biologie du secondaire",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Biseau D'Hauteville Jean-Christophe"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f4004",
+  "cycles":[
+   "master",
+   "other"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"BIOL-F417",
   "name":"Marine ecology",
   "year":"2023-2024",
@@ -846,7 +868,7 @@
    "Van De Putte Anton",
    "Kochzius Marc"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-biol-f417",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f417",
   "cycles":[
    "master"
   ],
@@ -870,7 +892,7 @@
   "teachers":[
    "Dubois Philippe"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-biol-f441",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/biol-f441",
   "cycles":[
    "master"
   ],
@@ -1782,7 +1804,7 @@
   "year":"2023-2024",
   "languages":[
    "",
-   "fr"
+   "en"
   ],
   "teachers":[
    "Stiers Iris"
@@ -1854,7 +1876,7 @@
    "Evano Gwilherm",
    "Theunissen C\u00e9dric"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-chim-f430",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-f430",
   "cycles":[
    "master"
   ],
@@ -1892,6 +1914,29 @@
   "dedicated":1
  },
  {
+  "id":"CHIM-H1001",
+  "name":"Chimie g\u00e9n\u00e9rales et proc\u00e9d\u00e9s durables",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bogaerts Philippe",
+   "Haut Beno\u00eet"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-h1001",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"CHIM-H302",
   "name":"Pollution du milieu physique",
   "year":"2023-2024",
@@ -1902,7 +1947,7 @@
    "Verbanck Michel",
    "Bruylants Gilles"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-chim-h302",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-h302",
   "cycles":[
    "bac",
    "master"
@@ -2043,7 +2088,7 @@
    "Bogaerts Philippe",
    "Haut Beno\u00eet"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-chim-h530",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/chim-h530",
   "cycles":[
    "master"
   ],
@@ -2151,6 +2196,29 @@
   "dedicated":0
  },
  {
+  "id":"CNST-H406",
+  "name":"Geotechnical engineering",
+  "year":"2023-2024",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Cuccurullo Alessia",
+   "Gerard Pierre"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/cnst-h406",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"CNST-H422",
   "name":"Sustainability in construction",
   "year":"2023-2024",
@@ -2197,25 +2265,25 @@
   "dedicated":1
  },
  {
-  "id":"CNST-H406",
-  "name":"Geotechnical engineering",
+  "id":"CNST-P1202",
+  "name":"Structures et Mat\u00e9riaux 2",
   "year":"2023-2024",
   "languages":[
-   "en"
+   "fr"
   ],
   "teachers":[
-   "Cuccurullo Alessia",
-   "Gerard Pierre"
+   "Pools Denis",
+   "Abenia Tiphaine"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-cnst-h406",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/cnst-p1202",
   "cycles":[
-   "master"
+   "bac"
   ],
   "fields":[
-   "Engineering"
+   "Architecture"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -2229,7 +2297,7 @@
   "teachers":[
    "Deprez Bernard"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-cnst-p2302",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/cnst-p2302",
   "cycles":[
    "bac"
   ],
@@ -2253,7 +2321,7 @@
    "Peeters Serge",
    "Pissens Iris"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-cnst-p3302",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/cnst-p3302",
   "cycles":[
    "bac"
   ],
@@ -2342,7 +2410,8 @@
    "fr"
   ],
   "teachers":[
-   "Marina Calabrese Laura"
+   "Marina Calabrese Laura",
+   "Balty C\u00e9cile"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/comm-b470",
   "cycles":[
@@ -2394,7 +2463,7 @@
    "Tre-Hardy Marie",
    "Sauvetre Eric"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-dent-g3301",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/dent-g3301",
   "cycles":[
    "bac"
   ],
@@ -2414,10 +2483,10 @@
    "fr"
   ],
   "teachers":[
-   "Naftali Patricia",
+   "Vandenbosch Sofia",
    "Schaus Anne-Marie"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-droi-c4014",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/droi-c4014",
   "cycles":[
    "master"
   ],
@@ -2486,7 +2555,7 @@
    "fr"
   ],
   "teachers":[
-   "Vandeburie Aur\u00e9lien"
+   "Marique Yseult"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/droi-c5153",
   "cycles":[
@@ -2549,6 +2618,29 @@
   "dedicated":1
  },
  {
+  "id":"DROI-O603",
+  "name":"Droit constitutionnel europ\u00e9en",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Baquero Cruz Julio",
+   "Van Waeyenberge Arnaud"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/droi-o603",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"DROI-Y712",
   "name":"Droit de l'enfant en contexte de modernit\u00e9 avanc\u00e9e (rapport de la consommation, au travail, aux m\u00e9dias, aux nouvelles technologies et au climat)",
   "year":"2023-2024",
@@ -2597,6 +2689,33 @@
    "climate"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ECON-S467",
+  "name":"Law and Economics of the Environment",
+  "year":"2023-2024",
+  "languages":[
+   "en"
+  ],
+  "teachers":[
+   "Armeni Chiara",
+   "Cantillon Estelle"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/econ-s467",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Economy",
+   "Management",
+   "Philosophy",
+   "Political Sciences",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
  },
  {
   "id":"ECON-Y506",
@@ -2713,6 +2832,33 @@
   "dedicated":0
  },
  {
+  "id":"ENVI-D500",
+  "name":"Epist\u00e9mologie des pratiques environnementales",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Timmermans Beno\u00eet"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-d500",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Philosophy",
+   "Science",
+   "Sociology"
+  ],
+  "themes":[
+   "food",
+   "pollution",
+   "resources"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"ENVI-F003",
   "name":"La vie des chiffres environnementaux",
   "year":"2023-2024",
@@ -2761,6 +2907,37 @@
    "life"
   ],
   "dedicated":0
+ },
+ {
+  "id":"ENVI-F1001",
+  "name":"Sciences de la Terre, Environnement et Soci\u00e9t\u00e9",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Regnier Pierre",
+   "Decroly Jean-Michel",
+   "Pattyn Frank"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f1001",
+  "cycles":[
+   "bac",
+   "master"
+  ],
+  "fields":[
+   "Philosophy",
+   "Science",
+   "Sociology"
+  ],
+  "themes":[
+   "carbon",
+   "climate",
+   "life",
+   "pollution",
+   "resources"
+  ],
+  "dedicated":1
  },
  {
   "id":"ENVI-F4001",
@@ -2812,59 +2989,78 @@
   "dedicated":0
  },
  {
-  "id":"ENVI-D500",
-  "name":"Epist\u00e9mologie des pratiques environnementales",
+  "id":"ENVI-F405",
+  "name":"Climat: sciences et politiques",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Timmermans Beno\u00eet"
+   "Pattyn Frank"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-d500",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f405",
   "cycles":[
    "master"
   ],
   "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "carbon",
+   "climate",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVI-F409",
+  "name":"Economie \u00e9cologique",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bauler Thomas"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f409",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVI-F434",
+  "name":"G\u00e9ohistoire des relations soci\u00e9t\u00e9s - environnement",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Decroly Jean-Michel",
+   "Deligne Chlo\u00e9"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f434",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Law & Criminology",
    "Medecine & Health",
    "Philosophy",
    "Science",
    "Sociology"
   ],
   "themes":[
-   "food",
-   "resources"
-  ],
-  "dedicated":1
- },
- {
-  "id":"ENVI-F1001",
-  "name":"Sciences de la Terre, Environnement et Soci\u00e9t\u00e9",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Regnier Pierre",
-   "Decroly Jean-Michel",
-   "Pattyn Frank"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f1001",
-  "cycles":[
-   "bac",
-   "master"
-  ],
-  "fields":[
-   "Philosophy",
-   "Science",
-   "Sociology"
-  ],
-  "themes":[
-   "carbon",
-   "climate",
-   "life",
-   "pollution",
-   "resources"
+   "life"
   ],
   "dedicated":1
  },
@@ -2917,78 +3113,56 @@
   "dedicated":1
  },
  {
-  "id":"ENVI-F405",
-  "name":"Climat: sciences et politiques",
+  "id":"ENVI-F452",
+  "name":"Environmental impact analysis and management",
   "year":"2023-2024",
   "languages":[
-   "fr"
+   "en",
+   "fr",
+   ""
   ],
   "teachers":[
-   "Pattyn Frank",
-   "Weikmans Romain"
+   "Achten Wouter"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f405",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f452",
   "cycles":[
    "master"
   ],
   "fields":[
    "Engineering",
+   "Medecine & Health",
    "Science"
   ],
   "themes":[
-   "carbon",
-   "climate",
-   "life"
-  ],
-  "dedicated":0
- },
- {
-  "id":"ENVI-F409",
-  "name":"Economie \u00e9cologique",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Bauler Thomas"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f409",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering",
-   "Science"
-  ],
-  "themes":[
-   "life"
+   "economy",
+   "life",
+   "resources"
   ],
   "dedicated":1
  },
  {
-  "id":"ENVI-F434",
-  "name":"G\u00e9ohistoire des relations soci\u00e9t\u00e9s - environnement",
+  "id":"ENVI-F454",
+  "name":"Energie: Soci\u00e9t\u00e9 et environnement",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Decroly Jean-Michel",
-   "Deligne Chlo\u00e9"
+   "Huart Michel",
+   "Mattielli Nadine"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f434",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f454",
   "cycles":[
+   "bac",
    "master"
   ],
   "fields":[
+   "Agronomy & Biotechnology",
    "Engineering",
-   "Law & Criminology",
-   "Medecine & Health",
-   "Philosophy",
-   "Science",
-   "Sociology"
+   "Science"
   ],
   "themes":[
+   "energy",
    "life"
   ],
   "dedicated":1
@@ -3019,6 +3193,30 @@
   "dedicated":1
  },
  {
+  "id":"ENVI-F5001",
+  "name":"Questions approfondies de Gestion de l'Environnement",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bauler Thomas",
+   "Achten Wouter",
+   "Mancilla Garcia Maria"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f5001",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"ENVI-F5002",
   "name":"Psychologie de l'environnement, et de la communication",
   "year":"2023-2024",
@@ -3042,32 +3240,6 @@
    "life"
   ],
   "dedicated":1
- },
- {
-  "id":"ENVI-F452",
-  "name":"Environmental impact analysis and management",
-  "year":"2023-2024",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "teachers":[
-   "Achten Wouter"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f452",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering",
-   "Medecine & Health",
-   "Science"
-  ],
-  "themes":[
-   "economy",
-   "life"
-  ],
-  "dedicated":0
  },
  {
   "id":"ENVI-F501",
@@ -3094,53 +3266,55 @@
   "dedicated":0
  },
  {
-  "id":"ENVI-F454",
-  "name":"Energie: Soci\u00e9t\u00e9 et environnement",
-  "year":"2023-2024",
-  "languages":[
-   "fr",
-   ""
-  ],
-  "teachers":[
-   "Huart Michel",
-   "Mattielli Nadine"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f454",
-  "cycles":[
-   "bac",
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Engineering",
-   "Science"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "dedicated":1
- },
- {
-  "id":"ENVI-F5001",
-  "name":"Questions approfondies de Gestion de l'Environnement",
+  "id":"ENVI-F510",
+  "name":"Droit de l'environnement",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Bauler Thomas",
-   "Achten Wouter",
-   "Mancilla Garcia Maria"
+   "Armeni Chiara"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f5001",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f510",
   "cycles":[
    "master"
   ],
   "fields":[
+   "Engineering",
+   "Medecine & Health",
+   "Philosophy",
+   "Science",
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "life",
+   "pollution"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVI-F526",
+  "name":"Sciences de l'atmosph\u00e8re et changements climatiques",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Coheur Pierre-Fran\u00e7ois",
+   "Clerbaux Cathy"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-f526",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
    "Science"
   ],
   "themes":[
-   "life"
+   "climate",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -3170,55 +3344,73 @@
   "dedicated":1
  },
  {
-  "id":"ENVI-F510",
-  "name":"Droit de l'environnement",
+  "id":"ENVI-L4110",
+  "name":"Compartiments environnementaux, production, consommation et leurs impacts sur la sant\u00e9",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Armeni Chiara"
+   "Bouland Catherine",
+   "Rooryck Val\u00e9rie"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f510",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-l4110",
   "cycles":[
    "master"
   ],
   "fields":[
    "Engineering",
    "Medecine & Health",
-   "Philosophy",
-   "Science",
-   "Sociology"
+   "Science"
   ],
   "themes":[
-   "climate",
    "life",
    "pollution"
   ],
   "dedicated":1
  },
  {
-  "id":"ENVI-F526",
-  "name":"Sciences de l'atmosph\u00e8re et changements climatiques",
+  "id":"ENVI-L4111",
+  "name":"Applications m\u00e9thodologiques sp\u00e9cifiques \u00e0 la sant\u00e9 environnementale",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Coheur Pierre-Fran\u00e7ois",
-   "Clerbaux Cathy"
+   "Vandenberg Olivier",
+   "Faes Christel"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-f526",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-l4111",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Engineering",
-   "Science"
+   "Medecine & Health"
   ],
   "themes":[
-   "climate",
-   "pollution"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"ENVI-L504",
+  "name":"Risque toxicologique en sant\u00e9 au travail et environnementale",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-l504",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -3295,43 +3487,16 @@
   "dedicated":1
  },
  {
-  "id":"ENVI-L4110",
-  "name":"Compartiments environnementaux, production, consommation et leurs impacts sur la sant\u00e9",
+  "id":"ENVI-L5211",
+  "name":"Etudes de cas : urbanisme, am\u00e9nagement du territoire, environnement et sant\u00e9",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Bouland Catherine",
-   "Rooryck Val\u00e9rie"
+   "Bouland Catherine"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-l4110",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Engineering",
-   "Medecine & Health",
-   "Science"
-  ],
-  "themes":[
-   "life",
-   "pollution"
-  ],
-  "dedicated":1
- },
- {
-  "id":"ENVI-L4111",
-  "name":"Applications m\u00e9thodologiques sp\u00e9cifiques \u00e0 la sant\u00e9 environnementale",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Vandenberg Olivier",
-   "Faes Christel"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-l4111",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-l5211",
   "cycles":[
    "master"
   ],
@@ -3339,28 +3504,57 @@
    "Medecine & Health"
   ],
   "themes":[
+   "building",
    "life"
   ],
   "dedicated":1
  },
  {
-  "id":"ENVI-L504",
-  "name":"Risque toxicologique en sant\u00e9 au travail et environnementale",
+  "id":"ENVI-P1204",
+  "name":"Interactions avec le milieu",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Hoet Perrine"
+   "Giovannini Suzanne",
+   "Deprez Bernard"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-l504",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-p1204",
   "cycles":[
-   "master"
+   "bac"
   ],
   "fields":[
-   "Medecine & Health"
+   "Architecture"
   ],
   "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"ENVI-S101",
+  "name":"Introduction au d\u00e9veloppement durable",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Aldashev Gani",
+   "Collignon Bertrand",
+   "Moreau Roland",
+   "Rea Andrea"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/envi-s101",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "climate",
    "life"
   ],
   "dedicated":1
@@ -3386,79 +3580,6 @@
    "life"
   ],
   "dedicated":0
- },
- {
-  "id":"ENVI-L5211",
-  "name":"Etudes de cas : urbanisme, am\u00e9nagement du territoire, environnement et sant\u00e9",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Bouland Catherine"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-l5211",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "building",
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"ENVI-P1204",
-  "name":"Interactions avec le milieu",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Giovannini Suzanne",
-   "Deprez Bernard"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-p1204",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Architecture"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":0
- },
- {
-  "id":"ENVI-S101",
-  "name":"Introduction au d\u00e9veloppement durable",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Aldashev Gani",
-   "Collignon Bertrand",
-   "Moreau Roland",
-   "Rea Andrea"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-envi-s101",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "climate",
-   "life"
-  ],
-  "dedicated":1
  },
  {
   "id":"ETHI-F201",
@@ -3489,7 +3610,7 @@
  },
  {
   "id":"ETHI-F301",
-  "name":"Compl\u00e9ments de sciences, \u00e9thique histoire et soci\u00e9t\u00e9",
+  "name":"Science et Soci\u00e9t\u00e9 : analyse de controverses scientifiques ",
   "year":"2023-2024",
   "languages":[
    "fr"
@@ -3498,7 +3619,7 @@
    "Mardulyn Patrick",
    "Wallenborn Gr\u00e9goire"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-ethi-f301",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ethi-f301",
   "cycles":[
    "bac"
   ],
@@ -3535,6 +3656,28 @@
   "dedicated":0
  },
  {
+  "id":"GEOG-F203",
+  "name":"Climatologie et g\u00e9omorphologie glaciaire",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Pattyn Frank"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f203",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"GEOG-F207",
   "name":"Excursions de g\u00e9ographie I",
   "year":"2023-2024",
@@ -3557,28 +3700,6 @@
    "climate"
   ],
   "dedicated":0
- },
- {
-  "id":"GEOG-F203",
-  "name":"Climatologie et g\u00e9omorphologie glaciaire",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Pattyn Frank"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-geog-f203",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "climate"
-  ],
-  "dedicated":1
  },
  {
   "id":"GEOG-F307",
@@ -3683,7 +3804,7 @@
   "teachers":[
    "Van Criekingen Mathieu"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-geog-f414",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/geog-f414",
   "cycles":[
    "master"
   ],
@@ -3834,6 +3955,55 @@
   "dedicated":0
  },
  {
+  "id":"GEOL-F412",
+  "name":"Applied Geochemical Dynamics ",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Caudron Corentin",
+   "Debaille Vinciane"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/geol-f412",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"GEOL-F414",
+  "name":"El\u00e9ments d'hydrog\u00e9ologie",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Orban Philippe",
+   "Goderniaux Pascal"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/geol-f414",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Engineering",
+   "Science"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"GEOL-F428",
   "name":"Earth System Modeling",
   "year":"2023-2024",
@@ -3860,18 +4030,18 @@
   "dedicated":0
  },
  {
-  "id":"GEOL-F412",
-  "name":"Global chemical geodynamics",
+  "id":"GEOL-F432",
+  "name":"Interactions biosph\u00e8re-g\u00e9osph\u00e8re: r\u00e9ponse environnementale et climatique",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Debaille Vinciane",
-   "Caudron Corentin",
-   "Mattielli Nadine"
+   "Bonneville Steeve",
+   "Gildas Laruelle Goulven",
+   "Regnier Pierre"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-geol-f412",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/geol-f432",
   "cycles":[
    "master"
   ],
@@ -3879,32 +4049,30 @@
    "Science"
   ],
   "themes":[
-   "pollution"
+   "life"
   ],
-  "dedicated":0
+  "dedicated":1
  },
  {
-  "id":"GEOL-F414",
-  "name":"El\u00e9ments d'hydrog\u00e9ologie",
+  "id":"GEOL-F436",
+  "name":" The Global Coastal Ocean on a Changing Planet",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Hallet Vincent"
+   "Arndt Sandra",
+   "Regnier Pierre"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-geol-f414",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/geol-f436",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Engineering",
    "Science"
   ],
   "themes":[
-   "life",
-   "pollution",
-   "resources"
+   "life"
   ],
   "dedicated":0
  },
@@ -3935,53 +4103,6 @@
   "dedicated":1
  },
  {
-  "id":"GEOL-F432",
-  "name":"Interactions biosph\u00e8re-g\u00e9osph\u00e8re: r\u00e9ponse environnementale et climatique",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Bonneville Steeve",
-   "Gildas Laruelle Goulven",
-   "Regnier Pierre"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-geol-f432",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
- },
- {
-  "id":"GEOL-F436",
-  "name":" The Global Coastal Ocean on a Changing Planet",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Arndt Sandra",
-   "Regnier Pierre"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-geol-f436",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Science"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":0
- },
- {
   "id":"GERM-B430",
   "name":"Auteurs des Etats-Unis d'Am\u00e9rique ",
   "year":"2023-2024",
@@ -3991,7 +4112,7 @@
   "teachers":[
    "Bellarsi Franca"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-germ-b430",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/germ-b430",
   "cycles":[
    "master"
   ],
@@ -4014,7 +4135,7 @@
   "teachers":[
    "Scieur Philippe"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-gest-d447",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-d447",
   "cycles":[
    "bac",
    "master"
@@ -4041,7 +4162,7 @@
    "El Gammal Adel",
    "Genet Benjamin"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-gest-h506",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-h506",
   "cycles":[
    "master"
   ],
@@ -4064,8 +4185,7 @@
   "teachers":[
    "Van Zeebroeck Nicolas",
    "De Beauffort Yvan",
-   "Emplit Philippe",
-   "Ushchev Philip"
+   "Emplit Philippe"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-s3002",
   "cycles":[
@@ -4165,7 +4285,7 @@
    "Blondeau Julien",
    "Huart Michel"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-gest-s492",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-s492",
   "cycles":[
    "master"
   ],
@@ -4214,8 +4334,7 @@
    "en"
   ],
   "teachers":[
-   "Hudon Marek",
-   "Reichert Patrick"
+   "Hudon Marek"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-s604",
   "cycles":[
@@ -4231,25 +4350,25 @@
   "dedicated":0
  },
  {
-  "id":"HAAR-P4105",
-  "name":"Th\u00e9orie de l'architecture",
+  "id":"GEST-S614",
+  "name":"Micro\u00e9conomie et gestion",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Le Maire De Romsee Judith",
-   "Aldo Strauven Iwan"
+   "Lallemand Thierry"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-haar-p4105",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/gest-s614",
   "cycles":[
    "master"
   ],
   "fields":[
-   "Architecture"
+   "Economy",
+   "Management"
   ],
   "themes":[
-   "life"
+   "economy"
   ],
   "dedicated":0
  },
@@ -4277,6 +4396,29 @@
   "dedicated":0
  },
  {
+  "id":"HIST-D2705",
+  "name":"Histoire de la pens\u00e9e politique",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Deleixhe Martin"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/hist-d2705",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"HIST-D401",
   "name":"Histoire et \u00e9cologies",
   "year":"2023-2024",
@@ -4284,9 +4426,8 @@
    "fr"
   ],
   "teachers":[
-   "Deligne Chlo\u00e9",
-   "Pouillard Violette",
-   "Schroeder Nicolas"
+   "Schroeder Nicolas",
+   "Pouillard Violette"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/hist-d401",
   "cycles":[
@@ -4303,21 +4444,24 @@
   "dedicated":1
  },
  {
-  "id":"HIST-D2705",
-  "name":"Histoire de la pens\u00e9e politique",
+  "id":"HIST-S101",
+  "name":"Introduction \u00e0 l'histoire globale du capitalisme ",
   "year":"2023-2024",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Deleixhe Martin"
+   "Bertrams Kenneth"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-hist-d2705",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/hist-s101",
   "cycles":[
    "bac"
   ],
   "fields":[
+   "Economy",
+   "Management",
    "Philosophy",
+   "Science",
    "Sociology"
   ],
   "themes":[
@@ -4362,7 +4506,7 @@
    "Debaste Fr\u00e9d\u00e9ric",
    "Essex Richard"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-meca-h3001",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/meca-h3001",
   "cycles":[
    "bac"
   ],
@@ -4387,7 +4531,7 @@
    "Coussement Axel",
    "Parente Alessandro"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-meca-h301",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/meca-h301",
   "cycles":[
    "bac"
   ],
@@ -4579,7 +4723,6 @@
    "Hendrick Patrick",
    "Dobruszkes Fr\u00e9d\u00e9ric",
    "Docquier Nicolas",
-   "Hage Andr\u00e9",
    "Loyaerts Yvon"
   ],
   "url":"https:\/\/www.ulb.be\/fr\/programme\/mstl-f606",
@@ -4633,7 +4776,7 @@
    "Paquet Philippe",
    "Zhao Zhengyi"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-orie-b3080",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/orie-b3080",
   "cycles":[
    "bac"
   ],
@@ -4679,7 +4822,7 @@
   "teachers":[
    "Debaise Didier"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-phil-b160",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/phil-b160",
   "cycles":[
    "bac"
   ],
@@ -4702,10 +4845,9 @@
    "fr"
   ],
   "teachers":[
-   "Pinsart Marie-Genevi\u00e8ve",
-   "Wallenborn Gr\u00e9goire"
+   "Pinsart Marie-Genevi\u00e8ve"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-phil-b220",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/phil-b220",
   "cycles":[
    "bac"
   ],
@@ -4843,7 +4985,7 @@
   "teachers":[
    "Emplit Philippe"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-phys-s201",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/phys-s201",
   "cycles":[
    "bac"
   ],
@@ -4852,7 +4994,8 @@
    "Management"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -4902,6 +5045,30 @@
   "dedicated":0
  },
  {
+  "id":"POLI-D408",
+  "name":"Relations internationales",
+  "year":"2023-2024",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Jeandesboz Julien",
+   "Pomar\u00e8de Julien"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/poli-d408",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"POLI-D410",
   "name":"Th\u00e9ories de la s\u00e9curit\u00e9",
   "year":"2023-2024",
@@ -4926,30 +5093,6 @@
   "dedicated":0
  },
  {
-  "id":"POLI-D408",
-  "name":"Relations internationales",
-  "year":"2023-2024",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Jeandesboz Julien",
-   "Pomar\u00e8de Julien"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-poli-d408",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Philosophy",
-   "Sociology"
-  ],
-  "themes":[
-   "climate"
-  ],
-  "dedicated":0
- },
- {
   "id":"POLI-D445",
   "name":"International Political Economy",
   "year":"2023-2024",
@@ -4959,7 +5102,7 @@
   "teachers":[
    "Bergamaschi Isaline"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-poli-d445",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/poli-d445",
   "cycles":[
    "master"
   ],
@@ -5154,7 +5297,7 @@
    "Nadia Casabella Alvarez Mar",
    "Fisher Axel"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-proj-p4311",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/proj-p4311",
   "cycles":[
    "master"
   ],
@@ -5163,7 +5306,7 @@
    "Science"
   ],
   "themes":[
-   "life"
+   "climate"
   ],
   "dedicated":0
  },
@@ -5225,7 +5368,7 @@
   "teachers":[
    "Pohl Sabine"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-psyc-e525",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/psyc-e525",
   "cycles":[
    "master"
   ],
@@ -5251,7 +5394,7 @@
    "Donnen Philippe",
    "Vandenberg Olivier"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-sapu-l5216",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/sapu-l5216",
   "cycles":[
    "master"
   ],
@@ -5296,7 +5439,7 @@
   "teachers":[
    "Joiris V\u00e9ronique"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-soca-d4996",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/soca-d4996",
   "cycles":[
    "master"
   ],
@@ -5311,30 +5454,6 @@
   "dedicated":1
  },
  {
-  "id":"SOCA-D550",
-  "name":"Structures \u00e9conomiques et sociales des mondes ruraux",
-  "year":"2023-2024",
-  "languages":[
-   "",
-   "fr"
-  ],
-  "teachers":[
-   "Roudart Laurence"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/soca-d550",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Science"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":0
- },
- {
   "id":"STAG-F013",
   "name":"Stage en entreprise en sciences et technologie de l'environnement",
   "year":"2023-2024",
@@ -5344,7 +5463,7 @@
   "teachers":[
    "Debaste Fr\u00e9d\u00e9ric"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-stag-f013",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/stag-f013",
   "cycles":[
    "master"
   ],
@@ -5529,7 +5648,7 @@
    "Achten Wouter",
    "Armeni Chiara"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-tran-f201",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/tran-f201",
   "cycles":[
    "bac",
    "master"
@@ -5624,6 +5743,31 @@
   "dedicated":0
  },
  {
+  "id":"URBA-P9009",
+  "name":"Socio-technical controversies in transition : research methodologies",
+  "year":"2023-2024",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "teachers":[
+   "Grulois Geoffrey",
+   "Pelgrims Claire"
+  ],
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/urba-p9009",
+  "cycles":[
+   "master"
+  ],
+  "fields":[
+   "Architecture",
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
   "id":"URBA-Y700",
   "name":"Ville intelligente",
   "year":"2023-2024",
@@ -5667,31 +5811,6 @@
    "resources"
   ],
   "dedicated":0
- },
- {
-  "id":"URBA-P9009",
-  "name":"Socio-technical controversies in transition : research methodologies",
-  "year":"2023-2024",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "teachers":[
-   "Grulois Geoffrey",
-   "Pelgrims Claire"
-  ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-urba-p9009",
-  "cycles":[
-   "master"
-  ],
-  "fields":[
-   "Architecture",
-   "Engineering"
-  ],
-  "themes":[
-   "life"
-  ],
-  "dedicated":1
  },
  {
   "id":"URBA-Y706",
@@ -5748,10 +5867,9 @@
    "fr"
   ],
   "teachers":[
-   "Philippe Fran\u00e7ois-Xavier",
-   "Cabaraux Jean-Fran\u00e7ois"
+   "Philippe Fran\u00e7ois-Xavier"
   ],
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/2022-vete-g2206",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/vete-g2206",
   "cycles":[
    "bac"
   ],
