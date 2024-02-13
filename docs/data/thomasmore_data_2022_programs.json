@@ -19,11 +19,9 @@
    "Communication"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -57,23 +55,24 @@
    "Communication"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   3,
    1,
-   2
+   3,
+   3
   ],
   "matched_courses":[
-   "YE0379",
+   "YE0176",
+   "YE0385",
    "YE0395",
    "YR0643",
    "YR0646"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":4,
+  "nb_matched_courses":5,
   "nb_total_courses":69
  },
  {
@@ -98,25 +97,67 @@
    "Communication"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    4,
-   2,
-   3
+   7,
+   1,
+   1
   ],
   "matched_courses":[
+   "YE0159",
    "YE0395",
    "YE0402",
+   "YE0403",
    "YE0406",
+   "YE0411",
+   "YE0418",
+   "YE0421",
    "YR0643",
    "YR0646"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_matched_courses":10,
   "nb_total_courses":39
+ },
+ {
+  "id":"SC_55034083",
+  "name":"Bachelor of Electronics-ICT - English Programme (Sint-Katelijne-Waver)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/e\/SC_55034083.htm",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Sint-Katelijne-Waver"
+  ],
+  "faculties":[
+   "Tech & IT"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "YT0873"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":83
  },
  {
   "id":"SC_51844949",
@@ -141,24 +182,37 @@
    "Communication"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    4,
-   2,
-   3
+   9,
+   1,
+   1
   ],
   "matched_courses":[
+   "YE0159",
+   "YE0178",
+   "YE0197",
    "YE0395",
    "YE0402",
+   "YE0403",
    "YE0406",
+   "YE0411",
+   "YE0418",
+   "YE0421",
    "YR0643",
    "YR0646"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_matched_courses":12,
   "nb_total_courses":70
  },
  {
@@ -184,23 +238,25 @@
    "Communication"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   3,
    1,
-   2
+   3,
+   4
   ],
   "matched_courses":[
-   "YE0379",
+   "YE0176",
+   "YE0367",
+   "YE0385",
    "YE0395",
    "YR0643",
    "YR0646"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":87
  },
  {
@@ -222,19 +278,16 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "resources"
+   "pollution"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "YT0623",
    "YT0634"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":65
  },
  {
@@ -256,22 +309,26 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
-   "resources"
+   "pollution"
   ],
   "themes_scores":[
-   5,
-   1
+   1,
+   1,
+   3,
+   2
   ],
   "matched_courses":[
-   "YT0409",
    "YT0487",
+   "YT0547",
    "YT0634",
    "YT0650",
    "YT0651",
    "YT0657"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":6,
   "nb_total_courses":68
  },
@@ -294,16 +351,21 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "energy",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
+   "YT0829",
    "YT0943"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":47
  },
  {
@@ -325,26 +387,33 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1
+   2,
+   1,
+   2
   ],
   "matched_courses":[
+   "YT0945",
+   "YT0955",
    "YT0965",
+   "YT0970",
    "YT0971"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":47
  },
  {
-  "id":"SC_55031537",
-  "name":"Graduaat in Internet of Things (Sint-Katelijne-Waver)",
+  "id":"SC_54954607",
+  "name":"Graduaat in Elektromechanische Systemen (Sint-Katelijne-Waver)",
   "cycle":"grad",
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_55031537.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_54954607.htm",
   "languages":[
    "nl"
   ],
@@ -358,20 +427,47 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "resources"
+   "pollution"
   ],
   "themes_scores":[
-   2,
    1
   ],
   "matched_courses":[
-   "YX0460",
-   "YX0471"
+   "YX0008"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
-  "nb_total_courses":23
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":32
+ },
+ {
+  "id":"SC_54901046",
+  "name":"Graduaat in Voertuigtechnieken (Sint-Katelijne-Waver)",
+  "cycle":"grad",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_54901046.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Sint-Katelijne-Waver"
+  ],
+  "faculties":[
+   "Tech & IT"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "YX0772"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":36
  },
  {
   "id":"SC_54166787",
@@ -391,10 +487,12 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
-   2
+   2,
+   1
   ],
   "matched_courses":[
    "YD0292",
@@ -422,7 +520,7 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "themes_scores":[
    1
@@ -453,48 +551,23 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "energy",
    "resources"
   ],
   "themes_scores":[
-   2
-  ],
-  "matched_courses":[
-   "YD0294",
-   "YD0357"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
-  "nb_total_courses":33
- },
- {
-  "id":"SC_51998903",
-  "name":"Bachelor in Interieurvormgeving - Open Hoger Onderwijs (Mechelen)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_51998903.htm",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-   "Mechelen"
-  ],
-  "faculties":[
-   "Interior & Design"
-  ],
-  "fields":[
-   "Architecture"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
+   1,
+   2,
    1
   ],
   "matched_courses":[
-   "YD0216"
+   "YD0294",
+   "YD0298",
+   "YD0357"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":21
+  "nb_matched_courses":3,
+  "nb_total_courses":33
  },
  {
   "id":"SC_51844931",
@@ -515,31 +588,98 @@
    "Architecture"
   ],
   "themes":[
-   "climate",
-   "environment",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
-   1,
    2
   ],
   "matched_courses":[
-   "YD0216",
    "YR0643",
    "YR0646"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":47
  },
  {
-  "id":"SC_52988721",
-  "name":"Bachelor in Logopedie en Audiologie - Programma voor werkstudenten (Antwerpen)",
+  "id":"SC_52168806",
+  "name":"Bachelor in Intensieve Zorg en Spoedgevallenzorg (Mechelen)",
   "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_52988721.htm",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_52168806.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Mechelen"
+  ],
+  "faculties":[
+   "People & Health"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "YG0603",
+   "YG0604",
+   "YG0605"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":11
+ },
+ {
+  "id":"SC_54535014",
+  "name":"Bachelor in Verpleegkunde - Verkort programma voor Bachelors Psychosociale Wetenschappen (Mechelen)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_54535014.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Mechelen"
+  ],
+  "faculties":[
+   "People & Health"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   10
+  ],
+  "matched_courses":[
+   "YG0546",
+   "YG0677",
+   "YG0784",
+   "YG0793",
+   "YG0794",
+   "YG0826",
+   "YG0827",
+   "YG0853",
+   "YG0854",
+   "YG0855"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":10,
+  "nb_total_courses":36
+ },
+ {
+  "id":"SC_56157056",
+  "name":"Bachelor in Toegepaste Psychologie - Afstudeerrichting Arbeids- en Organisatiepsychologie - Verkort programma (Antwerpen)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_56157056.htm",
   "languages":[
    "en",
+   "fr",
    "nl"
   ],
   "campuses":[
@@ -552,49 +692,17 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "Y01131"
+   "Y01549"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":44
- },
- {
-  "id":"SC_51230631",
-  "name":"Bachelor in Logopedie en Audiologie (Antwerpen)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_51230631.htm",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-   "Antwerpen"
-  ],
-  "faculties":[
-   "People & Health"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   2
-  ],
-  "matched_courses":[
-   "Y01075",
-   "Y01083"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
-  "nb_total_courses":62
+  "nb_total_courses":39
  },
  {
   "id":"SC_54043974",
@@ -616,17 +724,170 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "energy"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "Y01116"
+   "Y01549"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":96
+ },
+ {
+  "id":"SC_54038169",
+  "name":"Bachelor in Verpleegkunde - Verkort programma voor niet-werkende HBO5\/MBO4 verpleegkundigen (Mechelen)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_54038169.htm",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Mechelen"
+  ],
+  "faculties":[
+   "People & Health"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   8
+  ],
+  "matched_courses":[
+   "YG0260",
+   "YG0754",
+   "YG0761",
+   "YG0805",
+   "YG0820",
+   "YG0852",
+   "YG0865",
+   "YG0883"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":8,
+  "nb_total_courses":49
+ },
+ {
+  "id":"SC_54038156",
+  "name":"Bachelor in Verpleegkunde - Verkort programma voor werkende HBO5\/MBO4 verpleegkundigen (Mechelen)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_54038156.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Mechelen"
+  ],
+  "faculties":[
+   "People & Health"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "YG0771",
+   "YG0880",
+   "YG0881"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":47
+ },
+ {
+  "id":"SC_53637220",
+  "name":"Bachelor in Verpleegkunde - Avondonderwijs (Mechelen)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_53637220.htm",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Mechelen"
+  ],
+  "faculties":[
+   "People & Health"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   12
+  ],
+  "matched_courses":[
+   "YG0461",
+   "YG0677",
+   "YG0717",
+   "YG0784",
+   "YG0789",
+   "YG0790",
+   "YG0793",
+   "YG0832",
+   "YG0833",
+   "YG0834",
+   "YG0852",
+   "YG0857"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":12,
+  "nb_total_courses":63
+ },
+ {
+  "id":"SC_53637208",
+  "name":"Bachelor in Verpleegkunde (Mechelen)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_53637208.htm",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Mechelen"
+  ],
+  "faculties":[
+   "People & Health"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   11
+  ],
+  "matched_courses":[
+   "YG0005",
+   "YG0260",
+   "YG0264",
+   "YG0706",
+   "YG0754",
+   "YG0761",
+   "YG0763",
+   "YG0805",
+   "YG0814",
+   "YG0815",
+   "YG0852"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":11,
+  "nb_total_courses":67
  },
  {
   "id":"SC_55018756",
@@ -646,11 +907,9 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -682,23 +941,26 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   5,
-   4
+   4,
+   7,
+   2
   ],
   "matched_courses":[
    "YV0976",
    "YV0978",
+   "YV0983",
    "YV1187",
    "YV1189",
    "YV1190",
    "YV1220",
    "YV1483"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":8,
   "nb_total_courses":149
  },
  {
@@ -720,21 +982,16 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
-   6
+   1
   ],
   "matched_courses":[
-   "YV1164",
-   "YV1165",
-   "YV1170",
-   "YV1174",
-   "YV1274",
-   "YV1275"
+   "YV1154"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":6,
+  "nb_matched_courses":1,
   "nb_total_courses":68
  },
  {
@@ -757,17 +1014,16 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
-   2
+   1
   ],
   "matched_courses":[
-   "YV1134",
-   "YV1148"
+   "YV1120"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":67
  },
  {
@@ -793,25 +1049,29 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   5,
+   4,
    1,
-   4
+   8,
+   2
   ],
   "matched_courses":[
+   "YE0265",
    "YT0650",
    "YV0976",
    "YV0978",
+   "YV0983",
    "YV1187",
    "YV1189",
    "YV1190",
    "YV1220",
    "YV1483"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":10,
   "nb_total_courses":232
  },
  {
@@ -836,50 +1096,23 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
-   2
+   1,
+   3,
+   1
   ],
   "matched_courses":[
    "YV0976",
    "YV0978",
+   "YV0983",
    "YV1637"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":68
- },
- {
-  "id":"SC_51844933",
-  "name":"Bachelor in Toegepaste Audiovisuele Communicatie (Mechelen)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbodmechelenantwerpen.thomasmore.be\/opleidingen\/n\/SC_51844933.htm",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-   "Mechelen"
-  ],
-  "faculties":[
-   "Media & Communication"
-  ],
-  "fields":[
-   "Communication"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "YR0433"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":10
  },
  {
   "id":"SC_54625447",
@@ -900,11 +1133,9 @@
    "Communication"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -934,11 +1165,9 @@
    "Communication"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -973,16 +1202,16 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "themes_scores":[
    2,
    1,
-   3
+   1
   ],
   "matched_courses":[
-   "YO0633",
+   "YO0478",
    "YO0650",
    "YR0643",
    "YR0646"
@@ -1011,20 +1240,17 @@
    "Communication"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
-   3
+   2
   ],
   "matched_courses":[
-   "YP0505",
    "YR0643",
    "YR0646"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":35
  },
  {
@@ -1048,22 +1274,23 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
    2,
    1,
-   3
+   2
   ],
   "matched_courses":[
    "YB1195",
    "YB1196",
+   "YE0318",
    "YR0643",
    "YR0646"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":5,
   "nb_total_courses":56
  },
  {
@@ -1089,13 +1316,13 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
    2,
    1,
-   3
+   1
   ],
   "matched_courses":[
    "YB1196",
@@ -1128,11 +1355,9 @@
    "Communication"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -1164,11 +1389,9 @@
    "Communication"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   2,
    2
   ],
   "matched_courses":[
@@ -1203,11 +1426,11 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "economy"
   ],
   "themes_scores":[
    2,
-   3
+   1
   ],
   "matched_courses":[
    "YB1195",
@@ -1241,18 +1464,26 @@
    "Communication"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   1,
    2,
-   3,
-   5
+   2,
+   1,
+   2,
+   1,
+   1
   ],
   "matched_courses":[
-   "YB1114",
    "YB1150",
+   "YB1163",
    "YB1170",
    "YB1173",
    "YB1196",
@@ -1283,15 +1514,15 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "YX1127",
+   "YX0819",
    "YX1142"
   ],
   "nb_dedicated_courses":0,
@@ -1317,15 +1548,15 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "YX1127",
+   "YX0819",
    "YX1142"
   ],
   "nb_dedicated_courses":0,

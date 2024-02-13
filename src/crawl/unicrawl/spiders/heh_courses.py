@@ -66,10 +66,10 @@ if __name__ == '__main__':
             print(f"{i}/{len(courses_df)}")
         url = BASE_URL.format(courses_ds['url'])
         courses_df.loc[idx, 'url'] = url
-        content = extract_content(url)
+        content_ = extract_content(url)
 
         # Keep only part after content description
-        content = "\n".join(content.split("Contenu de l'")[1:])
-        courses_df.loc[idx, "content"] = content
+        content_ = "\n".join(content_.split("Contenu de l'")[1:])
+        courses_df.loc[idx, "content"] = content_
 
     courses_df.reset_index().to_json(COURSES_DATA_PATH, orient='records')

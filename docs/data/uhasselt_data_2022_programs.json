@@ -19,19 +19,25 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
-   2
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "2055",
-   "3873"
+   "3454",
+   "3873",
+   "3883"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":59
  },
  {
@@ -54,22 +60,25 @@
    "Management"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
+   2,
    1,
    1,
-   2
+   1
   ],
   "matched_courses":[
-   "1950",
    "2055",
-   "3752"
+   "3454",
+   "3883",
+   "3902"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":76
  },
  {
@@ -92,22 +101,24 @@
    "Management"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   1,
    2,
-   4
+   1
   ],
   "matched_courses":[
    "1692",
-   "3752",
+   "3406",
    "3860",
    "3868"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":4,
   "nb_total_courses":61
  },
@@ -131,19 +142,24 @@
    "Architecture"
   ],
   "themes":[
+   "economy",
    "energy",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2,
+   2
   ],
   "matched_courses":[
+   "2350",
    "2353",
-   "3939"
+   "3936",
+   "3939",
+   "4134"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":54
  },
  {
@@ -166,17 +182,23 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
   "matched_courses":[
-   "1568"
+   "1568",
+   "3266",
+   "3454"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":72
  },
  {
@@ -199,49 +221,19 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "3943",
-   "4210"
+   "3123",
+   "3943"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":2,
   "nb_total_courses":48
- },
- {
-  "id":"P25",
-  "name":"Postgraduaat Stralingsdeskundige",
-  "cycle":"postgrad",
-  "url":"https:\/\/uhintra03.uhasselt.be\/studiegidswww\/opleiding.aspx",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "School of Expert Education"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "3106"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":4
  },
  {
   "id":"768",
@@ -261,22 +253,22 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   7
+   3,
+   4
   ],
   "matched_courses":[
    "3513",
    "4198",
    "4200",
-   "4206",
    "4328",
-   "4329",
-   "4334"
+   "4329"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":7,
+  "nb_matched_courses":5,
   "nb_total_courses":40
  },
  {
@@ -299,8 +291,8 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
@@ -311,10 +303,11 @@
    "1994",
    "1995",
    "2255",
+   "3961",
    "3965"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":5,
   "nb_total_courses":55
  },
  {
@@ -337,20 +330,23 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   3
+   2,
+   1
   ],
   "matched_courses":[
    "1169",
    "2055",
-   "3513"
+   "3513",
+   "3883"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":57
  },
  {
@@ -372,29 +368,35 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   1,
+   1,
+   5,
+   5,
    3,
-   3,
-   4,
-   4
+   1
   ],
   "matched_courses":[
    "2724",
+   "3123",
    "3762",
    "3965",
-   "4210",
+   "4277",
    "4280",
    "4470",
+   "4530",
    "4531",
    "4532"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":10,
   "nb_total_courses":118
  },
  {
@@ -415,9 +417,11 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   2,
    2
   ],
   "matched_courses":[
@@ -427,6 +431,37 @@
   "nb_dedicated_courses":2,
   "nb_matched_courses":2,
   "nb_total_courses":108
+ },
+ {
+  "id":"H74",
+  "name":"master in de revalidatiewetenschappen en de kinesitherapie",
+  "cycle":"master",
+  "url":"https:\/\/uhintra03.uhasselt.be\/studiegidswww\/opleiding.aspx",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Revalidatiewetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "4573"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":44
  },
  {
   "id":"711",
@@ -447,26 +482,30 @@
    "Law & Criminology"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   3,
-   1,
    2,
+   4,
+   1,
+   4,
    1
   ],
   "matched_courses":[
    "2156",
+   "2234",
    "2237",
    "3239",
+   "3454",
    "4594",
    "4759"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_matched_courses":7,
   "nb_total_courses":116
  },
  {
@@ -489,16 +528,19 @@
    "Architecture"
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "2350",
    "2353"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":19
  },
  {
@@ -520,21 +562,25 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
    1,
-   1
+   1,
+   2,
+   4
   ],
   "matched_courses":[
+   "4277",
    "4280",
-   "4281"
+   "4281",
+   "4481"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":20
  },
  {
@@ -556,24 +602,26 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   3,
+   1,
+   1,
    5,
-   3
+   2
   ],
   "matched_courses":[
    "2724",
-   "4527",
+   "4530",
    "4531",
    "4532",
    "4533",
    "4534"
   ],
-  "nb_dedicated_courses":3,
+  "nb_dedicated_courses":4,
   "nb_matched_courses":6,
   "nb_total_courses":16
  },
@@ -596,7 +644,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -628,18 +676,17 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "transport"
   ],
   "themes_scores":[
    1,
-   2
+   1
   ],
   "matched_courses":[
-   "4527",
    "4533"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":19
  },
  {
@@ -661,24 +708,33 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
+   2,
+   2,
+   2,
    1,
    1,
-   2
+   1
   ],
   "matched_courses":[
+   "3024",
+   "3026",
    "3558",
+   "3576",
    "4470",
    "4477"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":24
  },
  {
@@ -701,20 +757,52 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   2
+   2,
+   1
   ],
   "matched_courses":[
    "1692",
+   "3406",
    "3513"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":72
+ },
+ {
+  "id":"247",
+  "name":"master in de biomedische wetenschappen",
+  "cycle":"master",
+  "url":"https:\/\/uhintra03.uhasselt.be\/studiegidswww\/opleiding.aspx",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Levenswetenschappen"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "3961"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":21
  },
  {
   "id":"H70",
@@ -765,7 +853,7 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1
@@ -796,26 +884,32 @@
    "Engineering"
   ],
   "themes":[
+   "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
+   1,
    2,
-   6
+   2,
+   4
   ],
   "matched_courses":[
-   "1559",
-   "1615",
+   "1255",
+   "1562",
+   "3266",
+   "3406",
+   "3497",
    "3513",
    "3568",
-   "3654",
    "3775",
-   "3929"
+   "4186"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_matched_courses":9,
   "nb_total_courses":39
  },
  {
@@ -838,26 +932,67 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    2,
-   1,
-   1,
-   3
+   3,
+   4,
+   1
   ],
   "matched_courses":[
+   "2350",
    "2353",
    "2355",
    "2363",
-   "3939"
+   "2364",
+   "3936",
+   "3939",
+   "4134",
+   "4762"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":9,
   "nb_total_courses":39
+ },
+ {
+  "id":"H05",
+  "name":"bachelor in de interieurarchitectuur",
+  "cycle":"bac",
+  "url":"https:\/\/uhintra03.uhasselt.be\/studiegidswww\/opleiding.aspx",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Architectuur en Kunst"
+  ],
+  "fields":[
+   "Arts",
+   "Architecture"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "2407",
+   "3288"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
+  "nb_total_courses":44
  },
  {
   "id":"H20",
@@ -878,23 +1013,36 @@
    "Engineering"
   ],
   "themes":[
+   "climate",
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   1,
+   1,
    5,
    3,
+   5,
    1,
-   3
+   2,
+   1
   ],
   "matched_courses":[
-   "2690",
-   "3434",
-   "4073",
-   "4086",
+   "2512",
+   "2576",
+   "2612",
+   "2666",
+   "2809",
+   "4031",
+   "4088",
    "4346",
+   "4353",
+   "4356",
    "4391",
    "4428",
    "4479",
@@ -902,7 +1050,7 @@
    "4669"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":10,
+  "nb_matched_courses":15,
   "nb_total_courses":133
  },
  {
@@ -925,14 +1073,14 @@
    "Management"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
    1,
-   2
+   1
   ],
   "matched_courses":[
    "3860",
@@ -961,15 +1109,15 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
+   "life",
    "resources"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "3929",
+   "2868",
    "4521"
   ],
   "nb_dedicated_courses":1,
@@ -996,22 +1144,57 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2,
    1,
+   2,
+   2,
    1
   ],
   "matched_courses":[
    "0254",
    "1169",
+   "3454",
    "3762"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":74
+ },
+ {
+  "id":"597",
+  "name":"bachelor in de handelswetenschappen",
+  "cycle":"bac",
+  "url":"https:\/\/uhintra03.uhasselt.be\/studiegidswww\/opleiding.aspx",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Bedrijfseconomische Wetenschappen"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "3266"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":51
  },
  {
   "id":"065",
@@ -1031,16 +1214,19 @@
    "Medecine & Health"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "3943"
+   "3943",
+   "4449"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":32
  },
  {
@@ -1063,27 +1249,37 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "food",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
-   2,
-   6,
+   1,
+   1,
+   1,
+   12,
    1,
    1
   ],
   "matched_courses":[
    "0254",
-   "1559",
+   "1567",
    "1568",
+   "1579",
+   "2243",
    "2255",
+   "3121",
+   "3123",
+   "3124",
    "3130",
    "3139",
+   "3454",
    "3458"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":13,
   "nb_total_courses":55
  },
  {
@@ -1106,17 +1302,15 @@
   ],
   "themes":[
    "climate",
-   "energy",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
    "2000",
-   "3623"
+   "3742"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
@@ -1141,18 +1335,16 @@
    "Science"
   ],
   "themes":[
-   "climate",
    "energy",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
    "0254",
-   "0620"
+   "1567"
   ],
   "nb_dedicated_courses":1,
   "nb_matched_courses":2,
@@ -1177,15 +1369,15 @@
    "Architecture"
   ],
   "themes":[
-   "energy"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "3264"
+   "2330"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":1,
   "nb_total_courses":43
  },
@@ -1208,18 +1400,56 @@
 
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "energy",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   2
+   2,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "4677",
+   "4678",
    "4699"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":10
+ },
+ {
+  "id":"135",
+  "name":"bachelor in de informatica",
+  "cycle":"bac",
+  "url":"https:\/\/uhintra03.uhasselt.be\/studiegidswww\/opleiding.aspx",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "3454"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":43
  },
  {
   "id":"655",
@@ -1241,20 +1471,23 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
+   2,
    1,
-   3
+   1
   ],
   "matched_courses":[
    "2055",
+   "3454",
    "3513",
-   "3752"
+   "3883"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":83
  },
  {
@@ -1277,20 +1510,26 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
-   3
+   2,
+   1,
+   1
   ],
   "matched_courses":[
    "2055",
+   "3454",
    "3513",
-   "3873"
+   "3873",
+   "3883"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":72
  }
 ]

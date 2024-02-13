@@ -6,7 +6,7 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-# BASE_URL = f"http://p4580.phpnet.org/{YEAR}-{YEAR+1}/" -> worked for 2020-21
+# BASE_URL = f"http://p4580.phpnet.org/{YEAR}-{YEAR+1}/" -> works for the preceding years
 BASE_URL = "https://helue.azurewebsites.net/ListingPub"
 
 
@@ -39,7 +39,7 @@ class HELProgramSpider(scrapy.Spider, ABC):
                 ue_urls_ids = [link.split("/")[-1].strip(".html") for link in ue_urls]
 
                 yield {
-                    "id": f"{i}-{j}",
+                    "id": f"{i}-{j}", # TODO: probably need to change
                     "name": program,
                     "cycle": 'bac',
                     "faculties": [faculty],

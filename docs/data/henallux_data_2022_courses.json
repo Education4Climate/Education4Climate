@@ -1,23 +1,16 @@
 [
  {
-  "id":"AS308",
-  "name":"Cours \u00e0 option",
+  "id":"AS102",
+  "name":"R\u00e9seau institutionnel et sciences m\u00e9dico-sociales",
   "year":"2022-2023",
-  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/148461",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/152697",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Simon Florence",
-   "Stevens Thibaud",
-   "Geeraerts Axel",
-   "Temmerman Arnaud",
-   "Gilloteaux Marie-Aline",
-   "Dachelet Philippe",
-   "Rasschaert Fran\u00e7oise",
-   "Marchal Patrice",
-   "Cominelli Emilie",
-   "Navette Catherine"
+   "Deneumoustier Catherine",
+   "Schmoetten Maryse",
+   "Richard V\u00e9ronique"
   ],
   "cycles":[
    "bac"
@@ -26,7 +19,55 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AS110",
+  "name":"Economie",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/157118",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Paul Fran\u00e7oise",
+   "China Emmanuelle"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AU227",
+  "name":"Electricit\u00e9 industrielle",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/162401",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Meulebrouck Dimitri",
+   "Melchior Nicolas",
+   "Bertholet Jean-Christian"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -48,8 +89,10 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "building",
+   "carbon",
+   "energy",
+   "pollution"
   ],
   "dedicated":1
  },
@@ -78,6 +121,121 @@
   "dedicated":0
  },
  {
+  "id":"AU3O7",
+  "name":"Immotique",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/163005",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Duchene Roy",
+   "Bertholet Jean-Christian"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BC108",
+  "name":"Maitriser les fondements des disciplines et de leur didactique : Biologie 1",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/149673",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Deryck Florence",
+   "Hayen Pierre"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BC208",
+  "name":"Maitriser les fondements des disciplines et de leur didactique : Biologie 1",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/149643",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Moulaert Nathalie",
+   "Hanus Delphine"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BC209",
+  "name":"Maitriser les fondements des disciplines et de leur didactique : Biologie 2",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/149645",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Deryck Florence",
+   "Hayen Pierre"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"BC307",
+  "name":"Maitriser les fondements des disciplines et de leur didactique : Biologie 1",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/149889",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dupuis Thibaut",
+   "Hayen Pierre"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"EF315",
   "name":"Ma\u00eftriser les fondements et la didactique de l'\u00e9ducation \u00e0 l'environnement et \u00e0 la sant\u00e9",
   "year":"2022-2023",
@@ -95,8 +253,10 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "energy",
+   "life",
+   "prod&cons"
   ],
   "dedicated":1
  },
@@ -142,8 +302,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "resources"
   ],
   "dedicated":0
  },
@@ -166,9 +325,33 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy"
   ],
   "dedicated":1
+ },
+ {
+  "id":"EM322",
+  "name":"Travail de fin d'\u00e9tudes",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/147530",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Brankart Christophe",
+   "Scailteur Aur\u00e9lien"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"EP304",
@@ -188,7 +371,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "transport"
   ],
   "dedicated":0
  },
@@ -211,8 +394,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -235,8 +417,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -259,8 +440,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -283,8 +463,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "dedicated":0
  },
@@ -307,8 +486,9 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "building",
+   "economy",
+   "life"
   ],
   "dedicated":1
  },
@@ -330,7 +510,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -375,8 +556,9 @@
   ],
   "themes":[
    "climate",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "dedicated":0
  },
@@ -399,8 +581,9 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "building",
+   "economy",
+   "life"
   ],
   "dedicated":1
  },
@@ -423,7 +606,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":0
  },
@@ -451,6 +635,28 @@
   "dedicated":1
  },
  {
+  "id":"IR128",
+  "name":"Techniques de transmission",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/161475",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Derleyn Melvyn"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"IR202",
   "name":"Aspects normatifs, juridiques et \u00e9thiques de la s\u00e9curit\u00e9",
   "year":"2022-2023",
@@ -472,8 +678,7 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "carbon"
   ],
   "dedicated":0
  },
@@ -504,8 +709,7 @@
    "Economy"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "carbon"
   ],
   "dedicated":0
  },
@@ -532,6 +736,52 @@
   "dedicated":0
  },
  {
+  "id":"MR365",
+  "name":"Travail de fin d'\u00e9tudes",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/159177",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Brankart Christophe"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PM112",
+  "name":"Maitriser les fondements des disciplines et de leur didactique en histoire, g\u00e9ographie, sciences",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/157057",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Haesaerts Delphine",
+   "Colson B\u00e9n\u00e9dicte",
+   "Hayen Pierre"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"PM208",
   "name":"Maitriser les fondements des disciplines et de leur didactique en histoire, g\u00e9ographie et sciences",
   "year":"2022-2023",
@@ -551,7 +801,31 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PM209",
+  "name":"Maitriser les fondements des disciplines et de leur didactique : s'exprimer par le corps, la parole et les arts",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/148751",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Evrard Claudine",
+   "Brunelle Delphine",
+   "Florence B\u00e9atrice"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "transport"
   ],
   "dedicated":0
  },
@@ -575,7 +849,53 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PM309",
+  "name":"Maitriser les fondements des disciplines et de leur didactique en histoire, g\u00e9ographie et sciences",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/148826",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gochel Fran\u00e7ois",
+   "Sandraps St\u00e9phanie"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"RH104",
+  "name":"Philosophie",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/157559",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "De Bauw Christine"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "climate",
+   "life"
   ],
   "dedicated":0
  },
@@ -598,6 +918,29 @@
   ],
   "themes":[
    "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SC212",
+  "name":"Calcul de structures",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/147914",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bailly Nathalie",
+   "Bernard Michel"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -644,30 +987,8 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
+   "life",
    "resources"
-  ],
-  "dedicated":0
- },
- {
-  "id":"SF4O2",
-  "name":"Sant\u00e9 des familles : projet international de coop\u00e9ration au d\u00e9veloppement de la sant\u00e9 des familles",
-  "year":"2022-2023",
-  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/164048",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Castiaux Genevi\u00e8ve"
-  ],
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Medecine & Health"
-  ],
-  "themes":[
-   "sustainability"
   ],
   "dedicated":0
  },
@@ -690,7 +1011,8 @@
    "Pedagogy"
   ],
   "themes":[
-   "resources"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -735,7 +1057,8 @@
    "Pedagogy"
   ],
   "themes":[
-   "resources"
+   "building",
+   "life"
   ],
   "dedicated":0
  },
@@ -762,6 +1085,51 @@
   "dedicated":0
  },
  {
+  "id":"SH316",
+  "name":"Maitriser les fondements des disciplines et de leur didactique : Sciences sociales",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/149181",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Crucifix Philippe",
+   "Navarre Sylvie"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SR115",
+  "name":"Fondements de la discipline",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/161054",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Gut Florence"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"SR121",
   "name":"Sant\u00e9 primaire",
   "year":"2022-2023",
@@ -779,20 +1147,21 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
  {
-  "id":"SR442",
-  "name":"Gestion de projet international et interculturel",
+  "id":"SR203",
+  "name":"Soins \u00e0 la personne \u00e2g\u00e9e fragile",
   "year":"2022-2023",
-  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/162937",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/159986",
   "languages":[
    "fr"
   ],
   "teachers":[
-   "Castiaux Genevi\u00e8ve"
+   "Lobet Marie-Paule"
   ],
   "cycles":[
    "bac"
@@ -801,7 +1170,52 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SR226",
+  "name":"Soins aux personnes en situation aigu\u00eb et\/ou chronique (partie1)",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/162345",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dan Nguyen Uyen"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "energy"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SR441",
+  "name":"Jugement clinique",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/162934",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Simonet B\u00e9n\u00e9dicte",
+   "Duchene B\u00e9n\u00e9dicte"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":0
  },
@@ -824,7 +1238,33 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"TI128",
+  "name":"Techniques de transmission",
+  "year":"2022-2023",
+  "url":"https:\/\/paysage.henallux.be\/ue-apercu\/fr\/161461",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Bouraada Mohamed",
+   "Schovaers Corentin",
+   "Derleyn Melvyn",
+   "Devigne Jean-Luc",
+   "Pieczuk C\u00e9line"
+  ],
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "energy"
   ],
   "dedicated":0
  }

@@ -13,6 +13,7 @@ from langdetect import DetectorFactory
 import re
 
 import threading
+from tqdm import tqdm
 
 from settings import CRAWLING_OUTPUT_FOLDER, SCORING_OUTPUT_FOLDER, ACCEPTED_LANGUAGES
 
@@ -89,14 +90,17 @@ def clean_text(text: str):
     return text
 
 
-def score_school_courses(school: str, year: int, output_dir: str, dictionary_name: str, run_file_path: str) -> None:
+def score_school_courses(school: str, year: int, output_dir: str, dictionary_name: str,
+                         run_file_path: str, run_nb: int = 1) -> None:
     """
     Identifies for each course of a school whether they discuss a pre-defined set of thematics and saves the results.
 
     :param school: Code of the school whose courses will be scored.
     :param year: Year for which the scoring is done.
     :param output_dir: Name of the main directory where the results should be saved
-    :param dictionary_name: Name of the dictionary that should be used to score the courses without the extnsion '.json'.
+    :param dictionary_name: Name of the dictionary that should be used to score the courses without the extnsion '.json'
+    :param run_file_path: Path to file where the main code is executed
+    :param run_nb: int used for displaying the advancement of runs
 
     :return: None
     """
@@ -138,74 +142,92 @@ def score_school_courses(school: str, year: int, output_dir: str, dictionary_nam
 
     patterns_matches_dict = {}
     scores_df = pd.DataFrame(0, index=courses_df.index, columns=themes + ["dedicated"], dtype=int)
-    for i, (idx, name, scoring_text, full_text) \
-            in courses_df.reset_index()[["id", "name", "scoring_text", "full_text"]].iterrows():
 
-        # scoring_text = clean_text(scoring_text)
-        # full_text = clean_text(full_text)
+    with tqdm(total=len(courses_df), desc=f"{school}", position=run_nb) as pbar:  # Each task has its own progress bar
+        for i, (idx, name, scoring_text, full_text) \
+                in courses_df.reset_index()[["id", "name", "scoring_text", "full_text"]].iterrows():
 
-        if i % 100 == 0:
-            print(f"{i}/{len(courses_df.index)}")
+            # scoring_text = clean_text(scoring_text)
+            # full_text = clean_text(full_text)
 
-        if len(scoring_text.strip(" ")) == 0:
-            continue
+            # if i % 100 == 0:
+            #     print(f"{i}/{len(courses_df.index)}")
 
-        # Detect language of text using full_text
-        try:
-            languages = [l.lang for l in langdetect.detect_langs(full_text)]
-        except langdetect.lang_detect_exception.LangDetectException:
-            print("Exception detected")
-            courses_df.loc[idx, themes] = 0
-            continue
-
-        # If we didn't identify a language for which we have a dictionary
-        # use the first language in which the course is given
-        languages = [l for l in languages if l in ACCEPTED_LANGUAGES]
-        if len(languages) == 0:
-            languages = list(set(courses_df.loc[idx, 'languages']).intersection(set(ACCEPTED_LANGUAGES)))
-            if len(languages) == 0:
+            if len(scoring_text.strip(" ")) == 0:
                 continue
 
-        # Match patterns and compute scores
-        for language in languages:
-            score, matched_themes, shift_patterns_matches_dict = compute_score(scoring_text, patterns_dict[language])
-            scores_df.loc[idx, matched_themes] |= score
-            if score == 1:
-                patterns_matches_dict[f"{idx}: {name}"] = {}
-                patterns_matches_dict[f"{idx}: {name}"][language] = shift_patterns_matches_dict
-                # Check if course is dedicated
-                if any([re.search(p, clean_text(name)) is not None for p in dedicated_patterns_dict[language]["patterns"]]):
-                    scores_df.loc[idx, "dedicated"] |= 1
+            # Detect language of text using full_text
+            try:
+                languages = [l.lang for l in langdetect.detect_langs(full_text)]
+            except langdetect.lang_detect_exception.LangDetectException:
+                print("Exception detected")
+                courses_df.loc[idx, themes] = 0
+                continue
 
-    # Save scores
-    output_fn = f"{output_dir}/{school}_courses_scoring_{year}.csv"
-    scores_df.to_csv(output_fn, encoding="utf-8")
-    # Save patterns
-    matches_output_fn = f"{output_dir}/{school}_matches_{year}.json"
-    with open(matches_output_fn, "w") as f:
-        json.dump(patterns_matches_dict, f, indent=4)
+            # If we didn't identify a language for which we have a dictionary
+            # use the first language in which the course is given
+            languages = [l for l in languages if l in ACCEPTED_LANGUAGES]
+            if len(languages) == 0:
+                languages = list(set(courses_df.loc[idx, 'languages']).intersection(set(ACCEPTED_LANGUAGES)))
+                if len(languages) == 0:
+                    continue
+
+            # Match patterns and compute scores
+            for language in languages:
+                score, matched_themes, shift_patterns_matches_dict = \
+                    compute_score(scoring_text, patterns_dict[language])
+                scores_df.loc[idx, matched_themes] |= score
+                if score == 1:
+                    patterns_matches_dict[f"{idx}: {name}"] = {}
+                    patterns_matches_dict[f"{idx}: {name}"][language] = shift_patterns_matches_dict
+                    # Check if course is dedicated
+                    if any([re.search(p, clean_text(name)) is not None
+                            for p in dedicated_patterns_dict[language]["patterns"]]):
+                        scores_df.loc[idx, "dedicated"] |= 1
+
+            if i % 100 == 99:
+                pbar.update(100)  # Increment the progress bar
+
+        # Save scores
+        # TODO: change add -test for the francois test
+        output_fn = f"{output_dir}/{school}_courses_scoring_{year}.csv"
+        scores_df.to_csv(output_fn, encoding="utf-8")
+        # Save patterns
+        # TODO: change add -test for the francois test
+        matches_output_fn = f"{output_dir}/{school}_matches_{year}.json"
+        with open(matches_output_fn, "w") as f:
+            json.dump(patterns_matches_dict, f, indent=4)
 
 
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="School code")
-    parser.add_argument("-y", "--year", help="Academic year", default=2022)
+    parser.add_argument("-y", "--year", help="Academic year", default=2023)
 
     arguments = vars(parser.parse_args())
     arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}/")
     arguments['dictionary_name'] = 'v2.0'
 
-    schools = ["kuleuven", "uantwerpen", "uclouvain", "ugent", "uhasselt",
-               "ulb", "uliege", "umons", "unamur", "uslb", "vub"]
-    schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
-                "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
-                "thomasmore", "ucll", "vinci", "vives"]
+    schools_ = ["kuleuven", "uantwerpen", "ugent", "uhasselt", "vub"]
+    schools_ += ["artevelde", "ehb", "hogent", "howest", "odisee", "thomasmore", "ucll", "vives"]
+
+    schools_ = ['henallux']
+    # schools_ = ["uclouvain", "ulb", "uliege", "umons", "unamur", "uslb"]
+    # schools_ += ["ecam", "ecsedi-isalt", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
+    #              "henallux", "hepl", "hers", "ichec", "ihecs", "ispg", "issig", "vinci"]
 
     arguments['run_file_path'] = __file__
 
-    for school in schools:
+    threads = []
+    for i, school in enumerate(schools_):
         arguments['school'] = school
+        arguments['run_nb'] = i
         print(school)
         thread = threading.Thread(target=score_school_courses, kwargs=arguments)
         thread.start()
+        threads.append(thread)
+
+    # Wait for all threads to finish
+    for t in threads:
+        t.join()

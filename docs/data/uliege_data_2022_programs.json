@@ -18,26 +18,27 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life"
   ],
   "themes_scores":[
    1,
-   4,
    2,
-   1
+   8
   ],
   "matched_courses":[
    "AGRO0001-1",
    "FORE0001-2",
    "GBLX2131-2",
    "GBLX2150-1",
+   "HORT0015-1",
+   "HULG9178-1",
+   "HULG9195-1",
    "HULG9390-1",
    "HULG9393-1"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":9,
   "nb_total_courses":55
  },
  {
@@ -59,48 +60,80 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    2,
    1,
-   24,
-   4,
-   2
+   2,
+   50,
+   6,
+   1,
+   3
   ],
   "matched_courses":[
+   "ANTH0057-1",
    "BIOL0003-1",
    "BIOL0025-1",
+   "BIOL0030-1",
+   "BIOL0217-2",
+   "BIOL0218-1",
    "BIOL0220-1",
    "BIOL0518-2",
    "BIOL0810-2",
    "BIOL0812-2",
+   "BIOL0822-1",
+   "BIOL0844-1",
    "BIOL0852-1",
    "BIOL0854-1",
+   "BIOL0856-1",
    "BIOL0860-1",
    "BIOL0861-1",
+   "BIOL0862-1",
+   "BIOL0866-1",
+   "BIOL1064-1",
    "BIOL2033-1",
+   "BIOL2034-1",
    "BIOL2035-1",
-   "BIOL2040-1",
+   "BIOL2039-2",
+   "BIOL2041-1",
+   "BIOL2042-1",
+   "BIOL2213-1",
+   "CHIM9236-1",
    "ENVT3045-1",
    "GEOG2013-1",
+   "GEOL0263-1",
+   "OCEA0027-1",
+   "OCEA0083-1",
    "OCEA0084-1",
    "OCEA0085-1",
+   "OCEA0144-1",
    "OCEA0223-1",
    "OCEA0227-1",
+   "RAVT0002-2",
+   "SMEM0013-1",
+   "SPOL2209-3",
    "SSTG0024-1",
    "SSTG0046-1",
    "SSTG0047-2",
    "SSTG0054-1",
    "SSTG0062-1",
-   "ZOOL0237-1"
+   "SSTG0063-1",
+   "ZOOL0218-4",
+   "ZOOL0230-2",
+   "ZOOL0232-1",
+   "ZOOL0235-1",
+   "ZOOL0237-1",
+   "ZOOL2021-1"
   ],
-  "nb_dedicated_courses":10,
-  "nb_matched_courses":25,
+  "nb_dedicated_courses":17,
+  "nb_matched_courses":53,
   "nb_total_courses":136
  },
  {
@@ -122,16 +155,22 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "transport"
   ],
   "themes_scores":[
+   5,
    1
   ],
   "matched_courses":[
-   "BIOL0003-1"
+   "BIOC0723-1",
+   "BIOL0003-1",
+   "BIOL0030-1",
+   "BIOL0217-1",
+   "MICR0720-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":66
  },
  {
@@ -153,16 +192,22 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life",
+   "transport"
   ],
   "themes_scores":[
+   5,
    1
   ],
   "matched_courses":[
-   "BIOL0003-1"
+   "BIOC0723-1",
+   "BIOL0003-1",
+   "BIOL0217-1",
+   "MICR0720-1",
+   "SBIM0486-2"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":65
  },
  {
@@ -183,32 +228,47 @@
    "Architecture"
   ],
   "themes":[
+   "building",
+   "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "general",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   1,
-   4,
    6,
-   7
+   3,
+   2,
+   2,
+   1,
+   14,
+   1,
+   1,
+   3
   ],
   "matched_courses":[
    "ARCH0555-1",
    "ARCH0556-1",
    "ARCH0557-1",
+   "ARCH0558-1",
    "ARCH0560-1",
    "ARCH0567-1",
    "ARCH0570-1",
+   "ARCH0573-1",
    "ARCH0574-1",
+   "ARCH0575-1",
+   "ARCH0579-1",
    "ARCH0581-1",
    "ARCH0584-1",
    "ARCH0591-1",
-   "ARCH0593-1"
+   "ARCH0593-1",
+   "ARCH0595-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":11,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":16,
   "nb_total_courses":38
  },
  {
@@ -231,21 +291,23 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "life"
   ],
   "themes_scores":[
-   4,
-   1
+   1,
+   6
   ],
   "matched_courses":[
+   "ANTH0057-1",
    "BIOL0810-2",
+   "BIOL1064-1",
    "COMU2144-2",
    "SOCI0022-1",
    "SOCI0301-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":63
  },
  {
@@ -267,7 +329,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "themes_scores":[
    1
@@ -297,34 +359,68 @@
    "Science"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1,
-   3
+   4,
+   2
   ],
   "matched_courses":[
+   "SCER0008-1",
    "SCER0010-1",
    "SCER0012-1",
    "SCER0013-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":9
  },
  {
-  "id":"AYELEN90",
-  "name":"\u00c9lectronique de l'Energie",
+  "id":"YYGSPA90",
+  "name":"Certificat inter universit\u00e9 et institut d'enseignement sup\u00e9rieur de promotion sociale en gestion des situations probl\u00e9matiques en milieu scolaire par l'approche syst\u00e9mique de Palo Alto",
   "cycle":"certificate",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/AYELEN90_C.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/YYGSPA90_C.html",
   "languages":[
    "fr"
   ],
   "campuses":[
-
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Psychologie, Logop\u00e9die et Sciences de l'Education"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "YCER0165-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":4
+ },
+ {
+  "id":"AYRFDD90",
+  "name":"Certificat inter universit\u00e9 et haute \u00e9cole en recyclage du foncier d\u00e9grad\u00e9 dans une perspective de d\u00e9veloppement durable (non organis\u00e9 en 2022-2023)",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/AYRFDD90_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
   ],
   "faculties":[
    "Facult\u00e9 des Sciences Appliqu\u00e9es"
@@ -333,17 +429,79 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "pollution"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "ACER0078-1"
+   "ACER0080-1"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":1
+  "nb_total_courses":4
+ },
+ {
+  "id":"SYCPEE00",
+  "name":"Performance \u00e9nerg\u00e9tique et environnementale des constructions",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/SYCPEE00_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Arlon"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "SCER0005-1",
+   "SCER0006-1"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
+  "nb_total_courses":6
+ },
+ {
+  "id":"VYAPIC90",
+  "name":"Apiculture",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/VYAPIC90_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine V\u00e9t\u00e9rinaire"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "VCER2074-1",
+   "VCER2075-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":2
  },
  {
   "id":"AYAUTO00",
@@ -363,24 +521,29 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
+   2,
    1,
    1,
-   1
+   4
   ],
   "matched_courses":[
    "ACER0084-1",
+   "MECA0041-1",
+   "MECA0501-1",
+   "MECA0525-1",
    "MECA0527-1",
    "PROJ0020-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":6,
   "nb_total_courses":9
  },
  {
@@ -402,22 +565,29 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "economy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    2,
+   1,
    2,
-   2
+   1,
+   1
   ],
   "matched_courses":[
    "GCER0094-1",
    "GCER0097-1",
+   "GCER0101-1",
+   "GCER0106-1",
+   "GCER0109-1",
    "GCER2178-1"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":6,
   "nb_total_courses":18
  },
  {
@@ -438,10 +608,12 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2
+   1,
+   1
   ],
   "matched_courses":[
    "COMM0010-1",
@@ -450,6 +622,67 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
   "nb_total_courses":6
+ },
+ {
+  "id":"RYGSPO00",
+  "name":"Gestion des sols pollu\u00e9s",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/RYGSPO00_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Gembloux"
+  ],
+  "faculties":[
+   "Gembloux Agro-Bio Tech"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "RCER0032-1",
+   "RCER0033-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":10
+ },
+ {
+  "id":"MYECES90",
+  "name":"\u00c9pid\u00e9miologie clinique et en \u00e9conomie de la sant\u00e9",
+  "cycle":"certificate",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/MYECES90_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "ECON2304-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":10
  },
  {
   "id":"RYAUPU90",
@@ -469,19 +702,22 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2
+   3,
+   3
   ],
   "matched_courses":[
    "RCER0035-1",
-   "RCER0036-1"
+   "RCER0036-1",
+   "RCER0038-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":4
  },
  {
@@ -502,10 +738,14 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -517,10 +757,10 @@
   "nb_total_courses":4
  },
  {
-  "id":"AYCCPR90",
-  "name":"Conseiller en pr\u00e9vention de niveau 1",
+  "id":"SYEXRA90",
+  "name":"Expert en radioprotection",
   "cycle":"certificate",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/AYCCPR90_C.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/SYEXRA90_C.html",
   "languages":[
    "fr"
   ],
@@ -528,54 +768,23 @@
    "Li\u00e8ge Sart-Tilman"
   ],
   "faculties":[
-   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+   "Facult\u00e9 des Sciences"
   ],
   "fields":[
-   "Engineering"
+   "Science"
   ],
   "themes":[
-   "resources"
+   "pollution"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "ACER0016-1"
+   "SCER0080-1"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":18
- },
- {
-  "id":"YYPRDD90",
-  "name":"Certificat d'universit\u00e9 \"Comprendre et g\u00e9rer les dimensions\nhumaines des projets de changement en d\u00e9veloppement durable\"",
-  "cycle":"certificate",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/YYPRDD90_C.html",
-  "languages":[
-   "fr"
-  ],
-  "campuses":[
-   "Li\u00e8ge Sart-Tilman"
-  ],
-  "faculties":[
-   "Facult\u00e9 de Psychologie, Logop\u00e9die et Sciences de l'Education"
-  ],
-  "fields":[
-   "Psychology",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "YCER0187-1"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":7
+  "nb_total_courses":13
  },
  {
   "id":"MYPAPR00",
@@ -595,7 +804,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -606,6 +815,36 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":22
+ },
+ {
+  "id":"V4VETE01",
+  "name":"Sciences v\u00e9t\u00e9rinaires",
+  "cycle":"doctor",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/V4VETE01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine V\u00e9t\u00e9rinaire"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "VDOC0048-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":100
  },
  {
   "id":"S4SCSC01",
@@ -625,16 +864,20 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "SDOC0001-1"
+   "SDOC0001-1",
+   "SDOC0061-1",
+   "SDOC0062-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":22
  },
  {
@@ -657,35 +900,44 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   8,
+   2,
+   14,
    4,
    2
   ],
   "matched_courses":[
+   "ENVT0028-1",
    "ENVT0063-1",
+   "ENVT0064-1",
+   "ENVT0065-1",
    "ENVT2009-1",
    "ENVT2011-2",
    "ENVT2013-3",
+   "ENVT2016-1",
    "ENVT2020-1",
+   "ENVT2023-2",
    "ENVT2027-1",
    "ENVT2058-1",
+   "ENVT2063-3",
    "ENVT2065-1",
    "ENVT3035-1",
    "HULG0483-1",
    "HULG0484-1",
    "HULG0487-1",
+   "HULG0488-1",
    "HULG0490-1",
    "RISQ2014-2"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":14,
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":21,
   "nb_total_courses":33
  },
  {
@@ -707,25 +959,61 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "themes_scores":[
    1,
-   5,
-   1
+   2,
+   6
   ],
   "matched_courses":[
    "BIOD0001-3",
    "GERE0029-1",
+   "HORT0014-2",
+   "PAYS0016-2",
    "PAYS0017-2",
    "VEGE0036-2",
    "VEGE0041-2",
    "VEGE0042-1"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":8,
   "nb_total_courses":17
+ },
+ {
+  "id":"D3NOTA01",
+  "name":"Notariat",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/D3NOTA01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit, Science politique et Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "building",
+   "pollution"
+  ],
+  "themes_scores":[
+   2,
+   2
+  ],
+  "matched_courses":[
+   "DROI8043-2",
+   "DROI8043-3"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":21
  },
  {
   "id":"S3NEXU01",
@@ -746,16 +1034,20 @@
    "Science"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   1,
    4,
-   3,
+   7,
    2,
-   3
+   1,
+   1
   ],
   "matched_courses":[
    "ECON0945-1",
@@ -763,13 +1055,79 @@
    "ENVT0068-2",
    "ENVT0075-1",
    "ENVT3035-2",
+   "ENVT3040-2",
    "HULG0487-1",
    "HULG0490-1",
-   "HULG0559-1"
+   "HULG0559-1",
+   "HULG0563-1"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":10,
   "nb_total_courses":22
+ },
+ {
+  "id":"S3NANO01",
+  "name":"Nanotechnologie",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/S3NANO01_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "CHIM9236-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":25
+ },
+ {
+  "id":"V3VETS01",
+  "name":"M\u00e9decine v\u00e9t\u00e9rinaire sp\u00e9cialis\u00e9e (Inscriptions closes)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/V3VETS01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine V\u00e9t\u00e9rinaire"
+  ],
+  "fields":[
+   "Veterinary"
+  ],
+  "themes":[
+   "economy",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   2
+  ],
+  "matched_courses":[
+   "VETE2013-1",
+   "VETE2036-1"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":29
  },
  {
   "id":"M3MTRA01",
@@ -789,7 +1147,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -820,17 +1178,20 @@
    "Veterinary"
   ],
   "themes":[
-   "environment"
+   "building",
+   "life"
   ],
   "themes_scores":[
+   1,
    2
   ],
   "matched_courses":[
    "GIRI0004-1",
+   "GIRI9002-1",
    "GIRI9004-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":38
  },
  {
@@ -851,21 +1212,26 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
+   1,
    1,
    1
   ],
   "matched_courses":[
    "GIRS0004-1",
+   "HULG9708-1",
    "HULG9709-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":10
  },
  {
@@ -887,18 +1253,26 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    2,
-   5,
-   2,
    1,
-   5
+   1,
+   6,
+   7,
+   1,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "AGRO0016-1",
@@ -907,12 +1281,15 @@
    "ENVT0026-1",
    "ENVT0040-2",
    "ENVT0846-2",
+   "ENVT0867-1",
+   "ENVT3042-1",
    "ENVT3057-1",
    "GCIV0008-2",
+   "GEOG0664-1",
    "STFE2004-1"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":12,
   "nb_total_courses":14
  },
  {
@@ -935,13 +1312,13 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2,
-   2
+   3,
+   1
   ],
   "matched_courses":[
    "ENVT0010-1",
@@ -971,13 +1348,49 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "energy",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   3,
+   1
+  ],
+  "matched_courses":[
+   "ENVT0057-1",
+   "ZOOL0006-1",
+   "ZOOL2000-1"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":14
+ },
+ {
+  "id":"M3SANT01",
+  "name":"Gestion des donn\u00e9es de sant\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/M3SANT01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "climate"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "ENVT0057-1"
+   "ECON2304-1"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -1001,17 +1414,57 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "energy",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   2,
+   2
+  ],
+  "matched_courses":[
+   "GENU0030-1",
+   "GENU2000-1",
+   "GENU2002-1",
+   "GENU2012-1"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
+  "nb_total_courses":15
+ },
+ {
+  "id":"G3ENTR01",
+  "name":"Entrepreneuriat",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/G3ENTR01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "HEC Li\u00e8ge - Ecole de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "GENU2000-1"
+   "GEST3774-1"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":15
+  "nb_total_courses":14
  },
  {
   "id":"G3ECON01",
@@ -1032,12 +1485,12 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
    2,
-   2
+   3
   ],
   "matched_courses":[
    "GEST7005-1",
@@ -1049,10 +1502,10 @@
   "nb_total_courses":12
  },
  {
-  "id":"D3DFIS01",
-  "name":"Droit fiscal",
+  "id":"D3EURO01",
+  "name":"Droit europ\u00e9en",
   "cycle":"master",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/D3DFIS01_C.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/D3EURO01_C.html",
   "languages":[
    "en",
    "fr"
@@ -1068,17 +1521,17 @@
    "Political Sciences"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "GEST7063-1"
+   "DROI0184-3"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":42
+  "nb_total_courses":16
  },
  {
   "id":"M3DERM01",
@@ -1098,7 +1551,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "themes_scores":[
    1
@@ -1128,17 +1581,22 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2
+   2,
+   1,
+   1
   ],
   "matched_courses":[
+   "GEOL0263-1",
    "SPAT0055-1",
    "SPAT0077-1"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":16
  },
  {
@@ -1159,19 +1617,25 @@
    "Veterinary"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
+   7,
    1
   ],
   "matched_courses":[
+   "VETE2066-1",
+   "VETE2067-1",
+   "VETE2069-1",
+   "VETE2070-1",
+   "VETE2071-1",
    "VETE2087-1",
+   "VETE2099-1",
    "VETE3003-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":8,
   "nb_total_courses":43
  },
  {
@@ -1197,20 +1661,21 @@
    "Letters"
   ],
   "themes":[
+   "building",
    "energy",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
+   1,
    1,
    2
   ],
   "matched_courses":[
    "TRAD0070-1",
-   "TRAD0103-1",
    "TRAD0202-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":77
  },
  {
@@ -1232,16 +1697,17 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "ANTH0057-1",
    "SOCI0022-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":39
  },
  {
@@ -1263,19 +1729,21 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "themes_scores":[
-   2,
-   1
+   1,
+   3
   ],
   "matched_courses":[
+   "ENVT0027-1",
    "SOCI0022-1",
+   "SOCI0093-3",
    "SOCI0301-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":47
  },
  {
@@ -1297,19 +1765,28 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "carbon",
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   4
+   2,
+   3,
+   8
   ],
   "matched_courses":[
+   "GEOL0263-1",
+   "OCEA0045-1",
+   "OCEA0087-1",
+   "SPAT0017-1",
+   "SPAT0024-2",
    "SPAT0025-1",
    "SPAT0026-1",
    "SPAT0027-3",
    "SPAT0055-1"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":4,
+  "nb_matched_courses":9,
   "nb_total_courses":72
  },
  {
@@ -1332,18 +1809,23 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
   ],
   "themes_scores":[
-   3
+   2,
+   4
   ],
   "matched_courses":[
+   "BIOL1064-1",
+   "BIOL2213-1",
    "PEDA0056-1",
    "PEDA0056-2",
-   "PSYC1004-1"
+   "PSYC1004-1",
+   "SBIM0486-2"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":6,
   "nb_total_courses":303
  },
  {
@@ -1366,24 +1848,28 @@
    "Political Sciences"
   ],
   "themes":[
-   "climate",
+   "carbon",
    "energy",
-   "environment",
-   "sustainability"
+   "general",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1,
    1,
+   4,
    1
   ],
   "matched_courses":[
+   "ENVT0027-1",
    "SOCI0022-1",
    "SPOL0099-1",
-   "SPOL2328-1"
+   "SPOL2328-1",
+   "SPOL9211-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":26
  },
  {
@@ -1406,9 +1892,11 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability"
+   "general",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -1438,9 +1926,11 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability"
+   "general",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -1471,22 +1961,28 @@
    "Political Sciences"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "general",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1,
+   1,
+   2,
    1
   ],
   "matched_courses":[
    "SOCI0022-1",
    "SPOL0969-1",
+   "SPOL0970-1",
+   "SPOL2209-3",
    "SPOL2328-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":111
  },
  {
@@ -1510,16 +2006,22 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "general",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   1,
+   2
   ],
   "matched_courses":[
-   "SPOL2328-1"
+   "SPOL2209-3",
+   "SPOL2328-1",
+   "SPOL9211-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":68
  },
  {
@@ -1542,9 +2044,13 @@
   ],
   "themes":[
    "energy",
+   "life",
+   "pollution",
    "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -1575,9 +2081,13 @@
   ],
   "themes":[
    "energy",
+   "life",
+   "pollution",
    "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -1587,6 +2097,37 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":22
+ },
+ {
+  "id":"M2UPHA01",
+  "name":"Sciences pharmaceutiques, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/M2UPHA01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "MBIO0002-1",
+   "MSTG0358-2"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":85
  },
  {
   "id":"S2UMAT01",
@@ -1608,7 +2149,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    3,
@@ -1616,7 +2157,7 @@
   ],
   "matched_courses":[
    "ASTR0204-2",
-   "FINA0064-1",
+   "LOGI0010-1",
    "LOGI0012-1"
   ],
   "nb_dedicated_courses":0,
@@ -1643,7 +2184,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    3,
@@ -1651,12 +2192,46 @@
   ],
   "matched_courses":[
    "ASTR0204-2",
-   "FINA0064-1",
+   "LOGI0010-1",
    "LOGI0012-1"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":3,
   "nb_total_courses":63
+ },
+ {
+  "id":"A2UINF01",
+  "name":"Sciences informatiques, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/A2UINF01_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LOGI0010-1",
+   "TECH0763-2"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":98
  },
  {
   "id":"M2UINF01",
@@ -1676,7 +2251,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -1707,33 +2282,43 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   4,
    2,
-   7,
-   1
+   6,
+   2,
+   12,
+   3,
+   2
   ],
   "matched_courses":[
    "CLIM0009-1",
    "GEOG0212-1",
    "GEOL0008-2",
    "GEOL0013-5",
-   "GEOL0020-7",
    "GEOL0205-2",
    "GEOL0224-2",
+   "GEOL0237-2",
    "GEOL0256-1",
+   "GEOL0263-1",
+   "GEOL0277-1",
    "GEOL0313-1",
+   "GEOL1039-2",
    "GEOL1046-1",
+   "GEOL1049-1",
    "GEOL1050-1",
-   "SPAT0027-3"
+   "PALE0202-3",
+   "SPAT0027-3",
+   "SPAT0054-1"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":12,
+  "nb_matched_courses":18,
   "nb_total_courses":58
  },
  {
@@ -1755,39 +2340,53 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life"
   ],
   "themes_scores":[
-   16,
    1,
    3,
-   1
+   19,
+   1,
+   1,
+   12
   ],
   "matched_courses":[
    "CLIM0002-1",
    "CLIM0007-2",
+   "CLIM0016-1",
    "CLIM0017-2",
+   "CLIM0024-1",
    "CLIM0026-1",
+   "CLIM0660-1",
    "ENVT3056-1",
    "ENVT3065-2",
-   "GEOG0048-1",
    "GEOG0050-1",
    "GEOG0055-1",
-   "GEOG0217-2",
+   "GEOG0057-1",
+   "GEOG0072-1",
    "GEOG0630-5",
    "GEOG0661-1",
-   "GEOG0662-1",
    "GEOG2012-1",
+   "GEOG2020-1",
+   "GEOG2028-1",
    "GEOG2050-1",
+   "GEOG2052-1",
+   "MATH0508-1",
+   "OCEA0014-1",
+   "OCEA0075-2",
+   "SPAT0024-3",
+   "SPAT0024-4",
    "SPAT0025-1",
    "SPAT0027-3",
    "SSTG0060-1"
   ],
-  "nb_dedicated_courses":10,
-  "nb_matched_courses":18,
+  "nb_dedicated_courses":14,
+  "nb_matched_courses":28,
   "nb_total_courses":52
  },
  {
@@ -1809,16 +2408,23 @@
    "Science"
   ],
   "themes":[
-   "climate"
+   "building",
+   "climate",
+   "life"
   ],
   "themes_scores":[
+   2,
+   1,
    1
   ],
   "matched_courses":[
-   "CLIM0026-1"
+   "CLIM0026-1",
+   "GEOG0057-1",
+   "GEOG2028-1",
+   "SPOL2209-3"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":40
  },
  {
@@ -1840,31 +2446,44 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   5,
-   2,
    3,
    1,
-   2
+   8,
+   2,
+   8,
+   1,
+   1
   ],
   "matched_courses":[
    "ARCH0560-1",
+   "ARCH2001-1",
    "CLIM0026-1",
    "ENVT3065-2",
+   "GEOG0057-1",
+   "GEOG0222-3",
+   "GEOG0603-3",
+   "GEOG0605-1",
    "GEOG0630-3",
    "GEOG0667-1",
    "GEOG0668-1",
    "GEOG2012-1",
-   "GEOG2050-1"
+   "GEOG2020-1",
+   "GEOG2028-1",
+   "GEOG2050-1",
+   "GEST3024-1",
+   "SPOL2209-3"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":17,
   "nb_total_courses":55
  },
  {
@@ -1886,40 +2505,48 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
-   3,
-   9,
-   7,
-   7
+   1,
+   4,
+   1,
+   8,
+   14,
+   4,
+   1
   ],
   "matched_courses":[
    "ECON0945-1",
    "ELEC0080-1",
    "ENVT0040-2",
    "ENVT0049-1",
+   "ENVT0060-1",
+   "ENVT0062-1",
    "ENVT0068-2",
-   "ENVT0069-2",
    "ENVT0072-2",
    "ENVT0846-2",
    "ENVT0893-1",
+   "ENVT0894-1",
    "ENVT0896-1",
-   "ENVT3041-1",
+   "ENVT0901-1",
+   "ENVT3029-1",
+   "ENVT3040-2",
    "ENVT3059-2",
    "ENVT3127-1",
    "GEOL1031-2",
-   "HULG2954-1",
-   "HULG2954-2",
    "HULG2965-1",
    "SMEM0042-1",
    "SPOL0382-2"
   ],
-  "nb_dedicated_courses":14,
-  "nb_matched_courses":19,
+  "nb_dedicated_courses":15,
+  "nb_matched_courses":21,
   "nb_total_courses":39
  },
  {
@@ -1941,18 +2568,26 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "food",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   6,
+   7,
+   11,
+   1,
    12,
-   22,
-   10,
-   14
+   2,
+   40,
+   17,
+   7,
+   1
   ],
   "matched_courses":[
    "ECON0945-1",
@@ -1961,25 +2596,31 @@
    "ENVT0040-2",
    "ENVT0049-1",
    "ENVT0051-1",
+   "ENVT0060-1",
+   "ENVT0062-1",
    "ENVT0063-2",
+   "ENVT0064-1",
+   "ENVT0065-1",
    "ENVT0066-1",
    "ENVT0068-1",
    "ENVT0068-2",
-   "ENVT0069-1",
-   "ENVT0069-2",
    "ENVT0070-1",
    "ENVT0071-1",
    "ENVT0072-2",
    "ENVT0170-1",
    "ENVT0846-2",
+   "ENVT0867-1",
    "ENVT0893-1",
+   "ENVT0894-1",
    "ENVT0895-1",
    "ENVT0896-1",
    "ENVT0898-1",
    "ENVT0899-1",
+   "ENVT0901-1",
    "ENVT2009-1",
    "ENVT2011-2",
    "ENVT2027-3",
+   "ENVT2063-3",
    "ENVT3016-1",
    "ENVT3020-1",
    "ENVT3021-1",
@@ -1987,23 +2628,32 @@
    "ENVT3025-1",
    "ENVT3027-1",
    "ENVT3028-1",
+   "ENVT3029-1",
+   "ENVT3030-1",
+   "ENVT3030-2",
    "ENVT3035-1",
    "ENVT3035-2",
+   "ENVT3036-1",
    "ENVT3038-1",
    "ENVT3039-1",
-   "ENVT3041-1",
+   "ENVT3040-2",
+   "ENVT3043-1",
    "ENVT3045-1",
    "ENVT3046-1",
+   "ENVT3054-2",
+   "ENVT3055-1",
+   "ENVT3055-2",
    "ENVT3059-1",
    "ENVT3059-2",
    "ENVT3127-1",
+   "GEOG0664-1",
    "GEOL1031-1",
    "GEOL1031-2",
    "SMEM0042-1",
    "SPOL0382-2"
   ],
-  "nb_dedicated_courses":29,
-  "nb_matched_courses":46,
+  "nb_dedicated_courses":36,
+  "nb_matched_courses":61,
   "nb_total_courses":100
  },
  {
@@ -2025,32 +2675,45 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "food",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   6,
+   6,
+   1,
+   6,
    2,
-   7,
-   12,
-   7,
-   10
+   23,
+   9,
+   5,
+   1
   ],
   "matched_courses":[
    "ELEC0080-1",
+   "ENVT0039-2",
    "ENVT0040-2",
+   "ENVT0050-1",
    "ENVT0051-1",
    "ENVT0063-2",
+   "ENVT0064-1",
+   "ENVT0065-1",
    "ENVT0066-1",
    "ENVT0068-1",
-   "ENVT0069-1",
    "ENVT0070-1",
    "ENVT0071-1",
+   "ENVT0867-1",
    "ENVT2009-1",
    "ENVT2011-2",
    "ENVT2027-3",
+   "ENVT2063-3",
    "ENVT3016-1",
    "ENVT3020-1",
    "ENVT3021-1",
@@ -2058,16 +2721,22 @@
    "ENVT3025-1",
    "ENVT3027-1",
    "ENVT3028-1",
+   "ENVT3029-1",
+   "ENVT3030-1",
    "ENVT3035-1",
+   "ENVT3036-1",
    "ENVT3038-1",
    "ENVT3039-1",
-   "ENVT3041-1",
+   "ENVT3043-1",
+   "ENVT3055-1",
+   "ENVT3055-2",
    "ENVT3057-2",
    "ENVT3059-1",
+   "GEOG0664-1",
    "GEOL1031-1"
   ],
-  "nb_dedicated_courses":19,
-  "nb_matched_courses":26,
+  "nb_dedicated_courses":23,
+  "nb_matched_courses":37,
   "nb_total_courses":55
  },
  {
@@ -2094,22 +2763,19 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "environment",
-   "sustainability"
+   "carbon",
+   "life"
   ],
   "themes_scores":[
-   2,
-   2,
-   1
+   1,
+   2
   ],
   "matched_courses":[
    "ECON0091-1",
-   "ECON2301-1",
-   "FINA0064-1"
+   "ECON2301-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":79
  },
  {
@@ -2132,7 +2798,7 @@
    "Management"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -2164,30 +2830,62 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "food",
+   "life"
   ],
   "themes_scores":[
    1,
-   3,
    1,
-   1
+   2,
+   2
   ],
   "matched_courses":[
    "GEST6002-1",
    "PEDA0056-2",
-   "SOCI0022-1"
+   "SOCI0022-1",
+   "SOCI0093-2"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":42
  },
  {
-  "id":"M2UDEN01",
-  "name":"Sciences dentaires",
+  "id":"H2XTRA01",
+  "name":"Sciences du travail",
   "cycle":"master",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/M2UDEN01_C.html",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/H2XTRA01_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Sociales"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "food"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SOCI0093-2"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":27
+ },
+ {
+  "id":"M2USAN01",
+  "name":"Sciences de la sant\u00e9 publique, \u00e0 finalit\u00e9 (Programme transitoire)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/M2USAN01_C.html",
   "languages":[
    "fr"
   ],
@@ -2201,17 +2899,17 @@
    "Medecine & Health"
   ],
   "themes":[
-   "resources"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "DENT1010-1"
+   "SANT4007-1"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":32
+  "nb_total_courses":147
  },
  {
   "id":"M2USAN03",
@@ -2231,19 +2929,58 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   3
+   1,
+   1,
+   2
   ],
   "matched_courses":[
    "COMM0010-1",
+   "ECON2304-1",
    "PATH3234-1",
    "SANT4020-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":94
+ },
+ {
+  "id":"M2USAN02",
+  "name":"Sciences de la sant\u00e9 publique, \u00e0 finalit\u00e9 (ERASMUS MUNDUS EuropubHealth+)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/M2USAN02_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "ECON2304-1",
+   "HULG9659-1"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":120
  },
  {
   "id":"H2UPOP01",
@@ -2266,30 +3003,63 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "food",
+   "life"
   ],
   "themes_scores":[
-   3,
-   6,
+   5,
    1,
-   5
+   2,
+   9
   ],
   "matched_courses":[
+   "ANTH0057-1",
    "ENVT0008-1",
+   "ENVT0027-1",
    "ENVT0846-2",
+   "ENVT3030-1",
    "ENVT3127-1",
    "GEST6002-1",
    "GEST7005-1",
    "GEST7030-1",
    "PEDA0056-2",
    "SOCI0073-3",
-   "SOCI9009-1"
+   "SOCI0093-2"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":12,
   "nb_total_courses":146
+ },
+ {
+  "id":"M2UMOT01",
+  "name":"Sciences de la motricit\u00e9, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/M2UMOT01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "DEON0003-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":45
  },
  {
   "id":"Y2UEDU01",
@@ -2311,17 +3081,84 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "food",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "PEDA0056-2",
+   "PEDA4059-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":115
+ },
+ {
+  "id":"G2XGES02",
+  "name":"Sciences de gestion (H.D.)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/G2XGES02_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "HEC Li\u00e8ge - Ecole de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "PEDA0056-2"
+   "GEST1093-1"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":115
+  "nb_total_courses":37
+ },
+ {
+  "id":"G2UGES02",
+  "name":"Sciences de gestion, \u00e0 finalit\u00e9 (H.D.)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/G2UGES02_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "HEC Li\u00e8ge - Ecole de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GEST1093-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":23
  },
  {
   "id":"G2UGES01",
@@ -2347,26 +3184,30 @@
    "Management"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
+   1,
    3,
    1,
-   4
+   5,
+   1
   ],
   "matched_courses":[
+   "FINA0058-1",
    "GEST3041-1",
    "GEST3763-1",
    "GEST6002-1",
    "GEST7030-1",
-   "LOGI0012-1"
+   "LOGI0012-1",
+   "LOGI0020-1"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":5,
+  "nb_matched_courses":7,
   "nb_total_courses":151
  },
  {
@@ -2389,25 +3230,30 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   1,
    2,
-   4,
-   2
+   5,
+   3,
+   3,
+   5
   ],
   "matched_courses":[
    "CHIM0683-2",
    "CHIM0699-2",
    "CHIM0724-1",
    "CHIM0742-1",
-   "CHIM9234-2"
+   "CHIM9234-2",
+   "CHIM9236-2",
+   "CHIM9262-1",
+   "SPAT0054-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":8,
   "nb_total_courses":70
  },
  {
@@ -2430,9 +3276,13 @@
   ],
   "themes":[
    "energy",
+   "life",
+   "pollution",
    "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -2463,9 +3313,13 @@
   ],
   "themes":[
    "energy",
+   "life",
+   "pollution",
    "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -2496,26 +3350,132 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   1,
    2,
-   4,
-   2
+   5,
+   3,
+   3,
+   5
   ],
   "matched_courses":[
    "CHIM0683-2",
    "CHIM0699-2",
    "CHIM0724-1",
    "CHIM0742-1",
-   "CHIM9234-2"
+   "CHIM9234-2",
+   "CHIM9236-2",
+   "CHIM9262-1",
+   "SPAT0054-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":8,
   "nb_total_courses":86
+ },
+ {
+  "id":"M2UBIO01",
+  "name":"Sciences biom\u00e9dicales, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/M2UBIO01_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "economy",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "QUAL0436-5",
+   "QUAL0439-2",
+   "SBIM0486-2"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":94
+ },
+ {
+  "id":"A2UDAT01",
+  "name":"Science des donn\u00e9es, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/A2UDAT01_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "GEOG0057-1",
+   "OCEA0089-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":52
+ },
+ {
+  "id":"G2USAL01",
+  "name":"Sales management, \u00e0 finalit\u00e9 (en alternance)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/G2USAL01_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "HEC Li\u00e8ge - Ecole de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GEST7077-1"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":43
  },
  {
   "id":"S2UOCE02",
@@ -2536,27 +3496,30 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   3,
-   1,
-   4,
-   1
+   2,
+   2,
+   9,
+   2
   ],
   "matched_courses":[
    "OCEA0055-5",
    "OCEA0056-1",
    "OCEA0057-7",
+   "OCEA0059-1",
    "OCEA0062-6",
    "OCEA0063-1",
+   "OCEA0064-1",
+   "OCEA0080-1",
    "OCEA0082-1"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_matched_courses":9,
   "nb_total_courses":12
  },
  {
@@ -2578,14 +3541,16 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    2,
-   5,
-   1
+   7,
+   3
   ],
   "matched_courses":[
    "OCEA0055-5",
@@ -2593,10 +3558,11 @@
    "OCEA0062-6",
    "OCEA0063-1",
    "OCEA0082-1",
-   "OCEA0228-1"
+   "OCEA0228-1",
+   "OCEA0229-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":7,
   "nb_total_courses":8
  },
  {
@@ -2618,40 +3584,66 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   3,
+   3,
+   40,
    4,
    1,
-   13,
-   2,
-   3
+   2
   ],
   "matched_courses":[
+   "BIOL0218-1",
    "BIOL0220-1",
+   "DROI0725-1",
    "GEOG2012-1",
    "GEOL0256-1",
+   "GEOL1039-1",
    "OCEA0011-2",
+   "OCEA0014-1",
+   "OCEA0019-1",
+   "OCEA0020-1",
+   "OCEA0025-1",
+   "OCEA0027-1",
+   "OCEA0033-1",
    "OCEA0049-1",
    "OCEA0063-1",
+   "OCEA0075-1",
+   "OCEA0083-1",
    "OCEA0084-1",
    "OCEA0085-1",
    "OCEA0086-1",
+   "OCEA0087-1",
    "OCEA0088-1",
+   "OCEA0089-1",
    "OCEA0090-1",
+   "OCEA0091-1",
+   "OCEA0093-1",
    "OCEA0094-1",
+   "OCEA0096-1",
+   "OCEA0144-1",
    "OCEA0158-1",
+   "OCEA0159-1",
+   "OCEA0219-1",
    "OCEA0220-1",
    "OCEA0223-1",
+   "OCEA0224-1",
    "OCEA0227-1",
+   "SMEM0003-1",
+   "SPAT0024-2",
+   "ZOOL0218-4",
+   "ZOOL0235-1",
    "ZOOL0237-1"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":17,
+  "nb_dedicated_courses":9,
+  "nb_matched_courses":41,
   "nb_total_courses":60
  },
  {
@@ -2673,22 +3665,29 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "food",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   1,
    2,
+   5,
    1,
    1
   ],
   "matched_courses":[
    "AGRO0001-1",
    "CHIM0699-2",
+   "ECON2248-1",
+   "PAYS0015-1",
+   "VEGE0021-1",
    "VETE0493-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":6,
   "nb_total_courses":46
  },
  {
@@ -2713,22 +3712,23 @@
    "Letters"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1
   ],
   "matched_courses":[
    "LGER0200-1",
-   "TRAD0103-1",
    "TRAD0202-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":158
  },
  {
@@ -2789,22 +3789,23 @@
    "Letters"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1
   ],
   "matched_courses":[
    "LGER0200-1",
-   "TRAD0103-1",
    "TRAD0202-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":147
  },
  {
@@ -2844,6 +3845,39 @@
   "nb_total_courses":102
  },
  {
+  "id":"P2UROM01",
+  "name":"Langues et lettres fran\u00e7aises et romanes, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/P2UROM01_C.html",
+  "languages":[
+   "es",
+   "fr",
+   "it"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LROM0209-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":91
+ },
+ {
   "id":"P2UJOU01",
   "name":"Journalisme, \u00e0 finalit\u00e9",
   "cycle":"master",
@@ -2864,7 +3898,7 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -2875,6 +3909,38 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":54
+ },
+ {
+  "id":"G2UING03",
+  "name":"Ing\u00e9nieur de gestion, \u00e0 finalit\u00e9 (Industrial Business Engineering)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/G2UING03_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "HEC Li\u00e8ge - Ecole de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LOGI0010-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":13
  },
  {
   "id":"G2UING02",
@@ -2898,15 +3964,17 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
    1
   ],
   "matched_courses":[
-   "FINA0064-1",
-   "LOGI0012-1"
+   "LOGI0012-1",
+   "LOGI0017-1"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
@@ -2937,26 +4005,233 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   3,
-   1,
    2,
-   2
+   2,
+   3
   ],
   "matched_courses":[
-   "FINA0064-1",
-   "FINA9001-1",
    "GEST3047-1",
    "HULG9280-1",
-   "LOGI0012-1"
+   "LOGI0012-1",
+   "LOGI0017-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":116
+ },
+ {
+  "id":"P2UMUS01",
+  "name":"Histoire de l'art et arch\u00e9ologie, orientation musicologie, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/P2UMUS01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "HULG0176-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":48
+ },
+ {
+  "id":"P2XMUS01",
+  "name":"Histoire de l'art et arch\u00e9ologie, orientation musicologie",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/P2XMUS01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "HULG0176-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":26
+ },
+ {
+  "id":"P2UHAA01",
+  "name":"Histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/P2UHAA01_C.html",
+  "languages":[
+   "fr",
+   "it"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "climate",
+   "life",
+   "pollution",
+   "resources"
+  ],
+  "themes_scores":[
+   1,
+   2,
+   2,
+   1
+  ],
+  "matched_courses":[
+   "GEHI0001-1",
+   "GEOL0311-2",
+   "HAAR0144-1",
+   "HULG0176-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":103
+ },
+ {
+  "id":"P2XHAA01",
+  "name":"Histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/P2XHAA01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "resources"
+  ],
+  "themes_scores":[
+   2,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "GEOL0311-2",
+   "HAAR0144-1",
+   "HULG0176-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":46
+ },
+ {
+  "id":"P2UARC01",
+  "name":"Histoire de l'art et arch\u00e9ologie, orientation arch\u00e9om\u00e9trie, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/P2UARC01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "life",
+   "pollution",
+   "resources"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "GEOL0311-2",
+   "HULG0176-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":54
+ },
+ {
+  "id":"H2UGRH02",
+  "name":"Gestion des ressources humaines, \u00e0 finalit\u00e9 (Gestion)",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/H2UGRH02_C.html",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Sociales"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GEST3024-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
-  "nb_total_courses":116
+  "nb_matched_courses":1,
+  "nb_total_courses":53
  },
  {
   "id":"H2UGRH01",
@@ -2980,13 +4255,13 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "food"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "GRHO0035-1"
+   "SOCI0093-2"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -3014,19 +4289,25 @@
    "Political Sciences"
   ],
   "themes":[
+   "building",
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
-   1
+   1,
+   2,
+   2
   ],
   "matched_courses":[
+   "DROI0091-1",
    "DROI0960-1",
-   "DROI2335-1"
+   "DROI2335-1",
+   "DROI8043-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":218
  },
  {
@@ -3049,16 +4330,19 @@
    "Political Sciences"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   2
   ],
   "matched_courses":[
-   "ARCH0593-1"
+   "ARCH0593-1",
+   "CRIM4130-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":107
  },
  {
@@ -3084,16 +4368,19 @@
    "Letters"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "COMU0439-1",
    "LGER0200-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":44
  },
  {
@@ -3121,18 +4408,19 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ],
   "matched_courses":[
+   "GEST3024-1",
    "GEST7005-1",
    "LGER0200-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":171
  },
  {
@@ -3157,12 +4445,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1
@@ -3193,28 +4479,32 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   9,
-   3
+   8,
+   7,
+   1
   ],
   "matched_courses":[
-   "AGRO0002-1",
    "AGRO0025-2",
    "ANIM0024-1",
    "ENVT0040-2",
    "ENVT3028-1",
+   "ENVT3029-1",
+   "ENVT3030-1",
    "ENVT3061-2",
    "ENVT3062-1",
    "ENVT3127-1",
    "HULG0495-1",
+   "HULG9285-1",
    "RSTG0010-1",
    "VEGE0036-1"
   ],
   "nb_dedicated_courses":8,
-  "nb_matched_courses":11,
+  "nb_matched_courses":13,
   "nb_total_courses":26
  },
  {
@@ -3236,22 +4526,30 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "energy",
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   21,
-   5
+   1,
+   1,
+   19,
+   13,
+   1
   ],
   "matched_courses":[
    "AGRO0001-1",
-   "AGRO0002-1",
    "AGRO0025-2",
    "ANIM0018-1",
    "ANIM0024-1",
    "ENVT0040-2",
+   "ENVT0065-1",
    "ENVT2044-1",
    "ENVT3028-1",
+   "ENVT3029-1",
+   "ENVT3030-1",
    "ENVT3061-1",
    "ENVT3062-1",
    "ENVT3066-1",
@@ -3261,6 +4559,7 @@
    "GBLX2131-2",
    "HULG0491-1",
    "HULG0492-1",
+   "HULG9285-1",
    "HULG9335-1",
    "MANA0007-1",
    "RSTG0010-1",
@@ -3269,7 +4568,7 @@
    "VEGE0042-1"
   ],
   "nb_dedicated_courses":17,
-  "nb_matched_courses":23,
+  "nb_matched_courses":26,
   "nb_total_courses":41
  },
  {
@@ -3290,36 +4589,55 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   5,
+   3,
    1,
-   11,
+   2,
+   22,
    1,
-   6
+   1,
+   3
   ],
   "matched_courses":[
    "AGRO0001-1",
    "ENVT0047-1",
+   "ENVT2052-1",
    "FORE0001-2",
    "GBLX2131-2",
    "GBLX2144-1",
    "GBLX2147-1",
+   "GBLX2152-1",
+   "GBLX2153-1",
+   "HORT0015-1",
    "HULG0362-2",
    "HULG0364-1",
    "HULG0365-1",
    "HULG0380-2",
+   "HULG9195-1",
    "HULG9199-1",
+   "HULG9201-1",
+   "HULG9202-1",
    "HULG9390-1",
    "HULG9409-1",
+   "HYDR0001-1",
    "PAYS0014-1",
-   "PAYS0017-1"
+   "PAYS0015-1",
+   "PAYS0016-1",
+   "PAYS0017-1",
+   "VEGE0044-1"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":15,
+  "nb_dedicated_courses":9,
+  "nb_matched_courses":26,
   "nb_total_courses":50
  },
  {
@@ -3341,16 +4659,19 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "transport"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "ELEC0041-1"
+   "ELEC0041-1",
+   "GCIV2035-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":51
  },
  {
@@ -3374,27 +4695,65 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   3,
+   2,
+   4,
+   2,
    1,
-   1,
-   2
+   4
   ],
   "matched_courses":[
+   "APRI0009-1",
    "CHIM0699-2",
+   "CNAV0022-1",
    "ELEC0055-2",
-   "MECA0006-1",
+   "MECA0041-1",
+   "MECA0501-1",
+   "MECA0525-1",
    "MECA0527-1",
    "PROJ0020-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":9,
   "nb_total_courses":71
+ },
+ {
+  "id":"A2UIDA01",
+  "name":"Ing\u00e9nieur civil en science des donn\u00e9es, \u00e0 finalit\u00e9",
+  "cycle":"master",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/A2UIDA01_C.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences Appliqu\u00e9es"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "GEOG0057-1",
+   "OCEA0089-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":52
  },
  {
   "id":"A2UICI01",
@@ -3415,18 +4774,21 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy"
   ],
   "themes_scores":[
    1,
+   1,
    1
   ],
   "matched_courses":[
-   "GENV0002-1"
+   "GENV0002-1",
+   "LOGI0010-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":93
  },
  {
@@ -3448,24 +4810,36 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   2,
    4,
-   4
+   1,
+   1,
+   1,
+   1,
+   6,
+   1
   ],
   "matched_courses":[
    "GEOL0315-1",
    "GEOL1044-1",
    "GEOL1045-1",
+   "HULG9744-1",
+   "HULG9755-1",
+   "HULG9758-1",
+   "HULG9763-1",
    "HULG9769-1",
    "MECA0526-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":9,
   "nb_total_courses":37
  },
  {
@@ -3487,18 +4861,28 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
+   1,
+   1,
+   1,
+   4,
+   2,
    3,
    1,
-   5,
-   3
+   3,
+   1
   ],
   "matched_courses":[
    "CHIM0699-2",
@@ -3511,36 +4895,6 @@
   "nb_dedicated_courses":2,
   "nb_matched_courses":6,
   "nb_total_courses":54
- },
- {
-  "id":"A2STHR01",
-  "name":"Ing\u00e9nieur civil en a\u00e9rospatiale, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en \"turbomachinery aeromechanics (THRUST)\"",
-  "cycle":"master",
-  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/A2STHR01_C.html",
-  "languages":[
-   "en"
-  ],
-  "campuses":[
-   "Li\u00e8ge Sart-Tilman"
-  ],
-  "faculties":[
-   "Facult\u00e9 des Sciences Appliqu\u00e9es"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "AERO0032-1"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":10
  },
  {
   "id":"A2UAEL01",
@@ -3563,19 +4917,16 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "climate"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "AERO0032-1",
    "SPAT0048-4"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":62
  },
  {
@@ -3599,32 +4950,43 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    2,
-   8,
-   2,
    1,
-   2
+   1,
+   5,
+   3,
+   3,
+   1,
+   1,
+   6
   ],
   "matched_courses":[
    "ARCH3272-2",
    "CHIM9315-1",
    "ELEC0041-1",
    "ELEC0055-2",
-   "MECA0006-1",
-   "MECA0034-1",
+   "GENU0018-3",
+   "MECA0037-1",
+   "MECA0041-2",
+   "MECA0041-3",
    "MECA0450-3",
+   "MECA0501-1",
    "MECA0527-1",
    "PROJ0020-1"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":9,
+  "nb_matched_courses":12,
   "nb_total_courses":48
  },
  {
@@ -3646,18 +5008,24 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
-   4,
    1,
    1,
-   1
+   2,
+   1,
+   1,
+   1,
+   2
   ],
   "matched_courses":[
    "ELEC0041-1",
@@ -3688,24 +5056,37 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   1,
+   1,
    2,
+   3,
+   3,
+   8,
    5,
-   6,
-   5,
-   3
+   1,
+   7,
+   1
   ],
   "matched_courses":[
+   "GCIV2058-1",
+   "GEOL0001-1",
    "GEOL0008-4",
    "GEOL0013-5",
-   "GEOL0020-7",
    "GEOL0083-3",
+   "GEOL0237-2",
+   "GEOL0277-1",
    "GEOL0281-4",
    "GEOL0313-1",
    "GEOL0315-1",
@@ -3715,10 +5096,11 @@
    "GEOL1050-1",
    "MECA0526-1",
    "UEEN0001-1",
-   "UEEN0002-1"
+   "UEEN0002-1",
+   "UEEN0006-1"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":14,
+  "nb_matched_courses":18,
   "nb_total_courses":66
  },
  {
@@ -3740,23 +5122,33 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "building",
    "energy",
-   "environment"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
-   2
+   3,
+   5,
+   1,
+   1
   ],
   "matched_courses":[
+   "GCIV0201-2",
+   "GCIV2035-1",
    "GCIV2065-1",
-   "GCIV2178-1",
+   "GCIV2174-1",
+   "GCIV2182-1",
+   "GEOL0001-1",
+   "PRCO0001-1",
    "UEEN0001-1",
-   "UEEN0002-1"
+   "UEEN0002-1",
+   "UEEN0006-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":10,
   "nb_total_courses":48
  },
  {
@@ -3778,30 +5170,41 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   8,
    1,
-   4,
+   3,
+   5,
    1,
-   1,
-   3
+   2,
+   1
   ],
   "matched_courses":[
    "ARCH0006-2",
+   "ARCH0079-1",
+   "ARCH0080-1",
    "ARCH2007-2",
+   "ARCH2011-1",
+   "ARCH2019-1",
    "ARCH3262-1",
    "ARCH3272-1",
    "GCIV0008-2",
+   "GCIV0201-2",
+   "SPOL2209-3",
    "UEEN0001-1",
-   "UEEN0002-1"
+   "UEEN0002-1",
+   "UEEN0006-1"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":14,
   "nb_total_courses":58
  },
  {
@@ -3823,41 +5226,65 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   1,
-   5,
-   11,
    2,
-   4
+   4,
+   1,
+   6,
+   4,
+   19,
+   2,
+   9,
+   3
   ],
   "matched_courses":[
    "AGRO0001-1",
    "BIOD0001-3",
    "CHIM9248-1",
+   "DROI1306-1",
+   "ECON2248-1",
+   "ENVT0045-1",
    "ENVT2044-1",
    "ENVT2049-2",
+   "ENVT2053-1",
    "ENVT3050-1",
    "GEOP0003-2",
+   "GERE0015-1",
+   "GERE0023-1",
    "GERE0024-1",
    "GERE0025-1",
    "GERE0029-1",
+   "GERE0030-1",
+   "GERE0031-1",
    "GERE0033-1",
+   "GERE0034-1",
+   "GERE0035-1",
    "GERE0036-1",
    "GERE0037-1",
    "GERE0038-1",
+   "HYDR0001-1",
    "INFO2038-1",
+   "INGE0008-1",
+   "LANG2956-1",
+   "LANG2957-1",
    "PHYS3010-2",
+   "RTFE2002-1",
    "VEGE0028-1",
-   "VEGE0036-1"
+   "VEGE0036-1",
+   "VEGE0037-1"
   ],
-  "nb_dedicated_courses":9,
-  "nb_matched_courses":18,
+  "nb_dedicated_courses":15,
+  "nb_matched_courses":34,
   "nb_total_courses":80
  },
  {
@@ -3880,38 +5307,52 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   2,
    1,
-   16,
    1,
-   5
+   11,
+   21,
+   3,
+   1
   ],
   "matched_courses":[
    "AGRO0001-1",
-   "AGRO0002-1",
+   "AGRO0021-1",
+   "AGRO0023-1",
+   "ANIM0011-3",
+   "ANIM0017-1",
    "ANIM0018-1",
    "ANIM0024-1",
+   "ANIM0031-1",
    "BIOD0001-3",
+   "ECON2248-1",
    "ECON2298-3",
    "ENVT2044-1",
    "ENVT2049-2",
    "ENVT3050-1",
    "ENVT3061-1",
+   "GERE0023-1",
    "INFO2038-1",
+   "INGE0008-1",
    "VEGE0024-1",
    "VEGE0027-1",
    "VEGE0028-1",
    "VEGE0034-1",
    "VEGE0036-1",
+   "VEGE0037-1",
    "VEGE0041-1",
    "VEGE0042-1"
   ],
-  "nb_dedicated_courses":11,
-  "nb_matched_courses":18,
+  "nb_dedicated_courses":13,
+  "nb_matched_courses":26,
   "nb_total_courses":90
  },
  {
@@ -3933,41 +5374,70 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
+   "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
-   18,
    2,
-   4
+   1,
+   3,
+   4,
+   35,
+   3,
+   1,
+   1
   ],
   "matched_courses":[
    "AGRO0001-1",
    "BIOD0001-3",
    "BIOD0007-1",
+   "DROI0969-1",
+   "ECON2248-1",
    "ECON2255-4",
+   "ENVT0045-1",
    "ENVT2044-1",
    "ENVT2049-2",
    "ENVT3050-1",
+   "FORE0003-2",
+   "FORE0005-3",
+   "FORE0008-2",
    "FORE0009-1",
    "FORE0017-1",
+   "FORE0018-3",
+   "FORE0021-2",
+   "FORE0022-3",
    "FORE0025-1",
+   "FORE0033-1",
    "FORE0042-1",
    "FORE0043-1",
+   "GERE0023-1",
+   "GESA0001-2",
    "INFO2038-1",
+   "INGE0008-1",
    "PAYS0001-2",
+   "PAYS0006-2",
+   "PAYS0007-2",
    "PAYS0014-1",
+   "PAYS0016-1",
    "PAYS0017-1",
    "PHYS3010-2",
    "RAVT0002-1",
+   "RAVT0003-1",
+   "VEGE0021-1",
    "VEGE0028-1",
-   "VEGE0036-1"
+   "VEGE0036-1",
+   "VEGE0037-1"
   ],
-  "nb_dedicated_courses":11,
-  "nb_matched_courses":20,
+  "nb_dedicated_courses":15,
+  "nb_matched_courses":39,
   "nb_total_courses":85
  },
  {
@@ -3989,28 +5459,39 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   6,
+   1,
+   1,
    2,
-   3
+   11,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "BIOD0001-3",
-   "CHIM0692-1",
-   "CHIM0718-1",
+   "CHIM0722-1",
    "ENVT2044-1",
    "ENVT2049-2",
    "ENVT3050-1",
+   "GBLX0060-2",
+   "GERE0023-1",
    "INFO2038-1",
+   "INGE0008-1",
    "VEGE0028-1",
-   "VEGE0036-1"
+   "VEGE0036-1",
+   "VEGE0037-1"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":12,
   "nb_total_courses":71
  },
  {
@@ -4033,7 +5514,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4065,18 +5546,57 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
+   1,
    2
   ],
   "matched_courses":[
    "BIOL2032-1",
+   "GEST3024-1",
    "PSYC1004-1"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
+  "nb_total_courses":71
+ },
+ {
+  "id":"D1POLI01",
+  "name":"Sciences politiques, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/D1POLI01_C.html",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Li\u00e8ge Sart-Tilman"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit, Science politique et Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology",
+   "Political Sciences"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "GEST3024-1",
+   "PSYC1131-2"
   ],
   "nb_dedicated_courses":1,
   "nb_matched_courses":2,
-  "nb_total_courses":71
+  "nb_total_courses":67
  },
  {
   "id":"S1PHYS01",
@@ -4098,9 +5618,9 @@
   ],
   "themes":[
    "climate",
-   "energy",
-   "environment",
-   "resources"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
@@ -4110,11 +5630,10 @@
   ],
   "matched_courses":[
    "ASTR0204-2",
-   "OCEA0053-1",
-   "PHYS0936-2"
+   "OCEA0053-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":37
  },
  {
@@ -4136,7 +5655,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4167,10 +5686,12 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
@@ -4200,7 +5721,7 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4231,21 +5752,29 @@
    "Science"
   ],
   "themes":[
-   "environment",
+   "climate",
+   "food",
+   "life",
+   "pollution",
    "resources"
   ],
   "themes_scores":[
-   4,
+   1,
+   1,
+   5,
+   1,
    1
   ],
   "matched_courses":[
    "BIOL0027-1",
    "GEOL0013-5",
    "GEOL0205-1",
-   "OCEA0053-1"
+   "OCEA0053-1",
+   "PALE0201-1",
+   "PALE0202-3"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":45
  },
  {
@@ -4267,26 +5796,36 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
-   5,
+   1,
+   4,
+   1,
+   10,
    2
   ],
   "matched_courses":[
    "BIOL0027-1",
    "ENVT0010-1",
+   "ENVT0060-1",
+   "ENVT0061-1",
    "GEOG0055-1",
-   "GEOG0217-2",
+   "GEOG0222-3",
+   "GEOG0605-1",
    "GEOG0630-3",
+   "GEOG2014-1",
    "GEOG2016-1",
+   "GEOG2020-1",
+   "GEOG2021-1",
    "OCEA0053-1"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":13,
   "nb_total_courses":41
  },
  {
@@ -4311,16 +5850,19 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "GRHO0035-1"
+   "GEST3024-1",
+   "GEST3053-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":71
  },
  {
@@ -4342,7 +5884,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4373,16 +5915,18 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
+   "BIOL0849-1",
+   "BIOL0850-1",
    "SBIM0493-2"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":42
  },
  {
@@ -4404,23 +5948,28 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
-   1,
-   2
+   6,
+   2,
+   2,
+   1
   ],
   "matched_courses":[
    "ARCH0006-2",
    "ARCH0009-3",
+   "ARCH0079-1",
+   "ARCH3259-1",
    "ARCH3262-1",
-   "ARCH3275-1"
+   "ARCH3275-1",
+   "GEOL0001-1"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":7,
   "nb_total_courses":40
  },
  {
@@ -4444,30 +5993,38 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
    "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   1,
    2,
+   2,
+   4,
    3,
    3,
    3,
-   3
+   1
   ],
   "matched_courses":[
    "ARCH3275-1",
    "CHIM9315-1",
+   "CHIM9318-1",
    "CHIM9322-1",
    "GENV0001-2",
    "GENV0002-1",
+   "GEOL0001-1",
    "GEOL0013-5",
-   "GEOL0020-7"
+   "PROJ0001-1"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":7,
+  "nb_matched_courses":9,
   "nb_total_courses":114
  },
  {
@@ -4488,33 +6045,46 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   2,
-   8,
-   2,
-   2
+   1,
+   3,
+   5,
+   14,
+   1,
+   1
   ],
   "matched_courses":[
    "AGRO0001-1",
-   "AGRO0002-1",
+   "AGRO0021-1",
+   "BOTA0414-1",
    "CHIM9239-2",
    "ENVT2044-1",
    "FORE0001-2",
+   "FORE0021-2",
+   "FORE0022-3",
    "GBLX2131-2",
+   "GEOP0009-1",
    "GERE0036-1",
+   "HYDR0001-1",
    "INFO2038-1",
+   "INGE0008-1",
    "MECA0519-1",
+   "PAYS0006-2",
    "PHYS3010-2",
    "VEGE0045-1",
+   "ZOOL2017-1",
+   "ZOOL2018-1",
    "ZOOL2019-1"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":12,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":21,
   "nb_total_courses":94
  },
  {
@@ -4536,20 +6106,25 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
-   1
+   1,
+   1,
+   2,
+   2
   ],
   "matched_courses":[
+   "CHIM0706-1",
    "CHIM9283-1",
    "CHIM9283-2",
    "OCEA0053-1"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":38
  },
  {
@@ -4571,16 +6146,17 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "DEON0003-1",
    "MICR0120-9"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":50
  },
  {
@@ -4602,28 +6178,40 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   1,
    2,
-   7,
+   1,
+   15,
    2,
    1
   ],
   "matched_courses":[
    "BIOC9244-1",
+   "BIOL0026-1",
    "BIOL0031-1",
+   "BIOL0217-1",
    "BIOL0518-1",
+   "BIOL0864-1",
    "BIOL0865-1",
    "BIOL2003-1",
    "BIOL2036-1",
+   "BIOL2037-1",
+   "BIOL2038-1",
+   "BIOL2039-1",
+   "GEOL0311-1",
+   "MICR0720-1",
    "OCEA0053-1"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":15,
   "nb_total_courses":51
  },
  {
@@ -4650,16 +6238,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":464
  },
  {
@@ -4681,20 +6274,21 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   2,
+   2
   ],
   "matched_courses":[
    "VETE0036-6",
-   "VETE2059-1"
+   "VETE2057-1",
+   "VETE2058-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":38
  },
  {
@@ -4716,7 +6310,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -4752,16 +6346,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":441
  },
  {
@@ -4788,16 +6387,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":473
  },
  {
@@ -4824,16 +6428,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":433
  },
  {
@@ -4860,16 +6469,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":426
  },
  {
@@ -4896,16 +6510,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":443
  },
  {
@@ -4932,16 +6551,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":418
  },
  {
@@ -4963,17 +6587,56 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
+   "BIOL0849-1",
+   "BIOL0850-1",
    "SBIM0493-2"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":49
+ },
+ {
+  "id":"G1IGES01",
+  "name":"Ing\u00e9nieur de gestion",
+  "cycle":"bac",
+  "url":"https:\/\/www.programmes.uliege.be\/cocoon\/20222023\/programmes\/G1IGES01_C.html",
+  "languages":[
+   "en",
+   "es",
+   "fr",
+   "it"
+  ],
+  "campuses":[
+   "Li\u00e8ge Centre-ville"
+  ],
+  "faculties":[
+   "HEC Li\u00e8ge - Ecole de Gestion"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "LOGI0010-1",
+   "TECH0763-2"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":65
  },
  {
   "id":"P1COMU01",
@@ -4999,16 +6662,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":450
  },
  {
@@ -5035,16 +6703,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":443
  },
  {
@@ -5071,16 +6744,21 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   1,
+   3
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":441
  },
  {
@@ -5107,16 +6785,24 @@
    "Letters"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   2,
+   3,
    1
   ],
   "matched_courses":[
-   "BIOL2032-1"
+   "BIOL2032-1",
+   "GEHI0001-1",
+   "LGER0289-1",
+   "LROM0209-1",
+   "PHIL0096-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":516
  },
  {
@@ -5137,25 +6823,26 @@
    "Architecture"
   ],
   "themes":[
+   "building",
    "climate",
-   "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
    1,
-   1,
-   3
+   7
   ],
   "matched_courses":[
+   "ARCH1106-1",
+   "ARCH1109-1",
+   "ARCH2223-1",
    "ARCH3330-1",
+   "ARCH3331-1",
    "ARCH3334-1",
-   "ARCH3335-1",
-   "TSTG0002-1"
+   "ARCH3335-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":37
  }
 ]

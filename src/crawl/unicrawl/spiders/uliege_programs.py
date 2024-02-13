@@ -82,14 +82,14 @@ class ULiegeSpider(scrapy.Spider, ABC):
         # Faculty
         faculty_link = cleanup(response.xpath("//ul[@class='u-courses-sidebar__list--links']"
                                               "//li/a[@class='u-link' and "
-                                              "contains(text(), 'La Faculté')]/@href").get())
+                                              "contains(text(), 'la Faculté')]/@href").get())
         # Convert address to faculty
         faculty = FACULTY_DICT[[key for key in FACULTY_DICT.keys() if key in faculty_link][0]]
 
         courses = response.xpath("//th[@class='u-courses-cell--code']/a/text()").getall()
         ects = response.xpath("//th[@class='u-courses-cell--code']"
                               "/following::td[@class='u-courses-cell--data--credits'][1]/text()").getall()
-        ects = [int(e) for e in ects]
+        ects = [int(float(e.replace(',', '.'))) if e != '-' else 0 for e in ects]
 
         yield {
             "id": program_id,

@@ -1,59 +1,162 @@
 {
+    "AL202: Traitement de l'information et Informatique appliqu\u00e9e (TIC)": {
+        "fr": {
+            "pollu": [
+                "economies  moins de pollution  etc    mais si"
+            ]
+        }
+    },
+    "AM202: Traitement de l'information et Informatique appliqu\u00e9e (TIC)": {
+        "fr": {
+            "pollu": [
+                "economies  moins de pollution  etc    mais si"
+            ]
+        }
+    },
+    "SG321: Urbanisme, am\u00e9nagement du territoire, environnement": {
+        "fr": {
+            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
+                "urbanisme  amenagement du territoire  environnement 1   ",
+                "ment 1   urbanisme  amenagement du territoire  environnement   an",
+                "u sous l angle de l amenagement du territoire ainsi que les notio",
+                "nt      chapitre 1  amenagement du territoire       - difference ",
+                " - difference entre amenagement du territoire et urbanisme       ",
+                "mentaux regissant l amenagement du territoire       - les differe",
+                "rents instruments d amenagement du territoire  schema de developp",
+                "ment du territoire  environnement 1   urbanisme  amen",
+                "ment du territoire  environnement   analyse du codt  ",
+                "tions de droit de l environnement      chapitre 1  am",
+                "pitre 2  droit de l environnement      - etude des di",
+                "que pour proteger l environnement   ecotaxes  seuils "
+            ],
+            "droits? (?:d |de l )?environnement": [
+                " que les notions de droit de l environnement      chapitre 1  am",
+                "ns      chapitre 2  droit de l environnement      - etude des di"
+            ]
+        }
+    },
+    "AU151: Moteurs thermiques th\u00e9orie 2": {
+        "fr": {
+            "pollu": [
+                "lements lies a sa depollution        connaitr"
+            ]
+        }
+    },
+    "AU231: Sciences de l'automobile 2": {
+        "fr": {
+            "pollu": [
+                "lements lies a sa depollution         savoir "
+            ]
+        }
+    },
+    "AU235: P\u00e9trochimie et \u00e9lectrochimie": {
+        "fr": {
+            "pollu": [
+                "les lubrifiants  la pollution atmospherique l"
+            ],
+            "carburants? alternati": [
+                "d echapppement  les carburants alternatifs  les polymeres ap"
+            ]
+        }
+    },
     "AV305: Empreinte \u00e9cologique": {
         "fr": {
-            "[electri[^ ]+, stockage]": [
-                "ication des moteurs electriques et des accumulateur",
-                "aires aux moyens de stockage ainsi que l impact "
-            ],
-            "[recyclage, environnement]": [
-                "nctionnement et son recyclage  mais egalement de ",
-                "e alternative sur l environnement       il devra eval",
-                " ainsi que l impact environnemental et humain de leur",
-                "inconvenients sur l environnement des moyens de propu"
+            "energ[^ ]+ alternati": [
+                "mpact du vehicule a energie alternative sur l environneme",
+                "nts des differentes energies alternatives au petrole      ",
+                " de la production d energies alternatives pour remplacer l"
             ],
             "energ[^ ]+ fossile": [
                 " utilisant plus les energies fossiles       savoir estim"
+            ],
+            "[[ ]ecolo[^ ]+]": [
+                "empreinte ecologique 1   empreinte ecolo",
+                "ogique 1   empreinte ecologique    savoir       l e",
+                " evaluer l empreinte ecologique globale d un vehicu"
+            ],
+            "impacts? (?:environnement|ecosyst)": [
+                "tockage ainsi que l impact environnemental et humain de leur"
+            ]
+        }
+    },
+    "AV309: Carburants alternatifs": {
+        "fr": {
+            "bio[ -]?carburant": [
+                " petrole liquefies  biocarburants  piles a combustib"
+            ],
+            "carburants? alternati": [
+                "carburants alternatifs 1   carburants al",
+                "nts alternatifs 1   carburants alternatifs    savoir       i"
+            ]
+        }
+    },
+    "AV310: Traction \u00e9lectrique": {
+        "fr": {
+            "(?:vehicules?|voitures?) electrique": [
+                "es  composants d un vehicule electrique  de les caracterise"
             ]
         }
     },
     "AV311: Technologies sp\u00e9cifiques aux v\u00e9hicules \u00e0 \u00e9nergies alternatives": {
         "fr": {
-            "analyse (?:de |du )?cycle (?:de )?vie": [
+            "energ[^ ]+ alternati": [
+                "ues aux vehicules a energies alternatives 1   technologies",
+                "ues aux vehicules a energies alternatives    savoir     co",
+                "aitre les sources d energie alternatives qui pourraient s"
+            ],
+            "[[ ]ecolo[^ ]+]": [
+                "vue technologique et ecologique   vehicules electri",
+                "vue technologique et ecologique   hydrogene  cng   "
+            ],
+            "analyses? (?:de |du )?cycle (?:de )?vie": [
                 "prendre la notion d analyse du cycle de vie pour une meilleure "
-            ]
-        }
-    },
-    "AV312: Stockage de l'\u00e9nergie \u00e9lectrique et piles \u00e0 combustible": {
-        "fr": {
-            "[electri[^ ]+, stockage]": [
-                "ockage de l energie electrique et piles a combusti",
-                "ockage de l energie electrique et piles a combusti",
-                "stockage de l energie electr",
-                "s a combustible 1   stockage de l energie electr",
-                "ferents systemes de stockage d energie et de pui",
-                "ries et systemes de stockage d energie et de pui",
-                "a la production  le stockage et l utilisation de",
-                "ferents systemes de stockage d energie et de pui",
-                "ferents systemes de stockage d energie et de pui"
+            ],
+            "bio[ -]?carburant": [
+                "anol  ethanol   les biocarburants  colza         com"
+            ],
+            "(?:vehicules?|voitures?) hybride": [
+                "icules electriques  vehicules hybrides electriques  vehic",
+                "ile a combustibles  vehicules hybrides hydrauliques      ",
+                "differents types de vehicules hybrides selon leur archite",
+                " fonctionnement des vehicules hybrides       etre capable",
+                "ants critiques d un vehicule hybride      comprendre et "
+            ],
+            "(?:vehicules?|voitures?) electrique": [
+                "que et ecologique   vehicules electriques  vehicules hybride"
             ]
         }
     },
     "AV313: Production et gestion de l'\u00e9nergie \u00e9lectrique": {
         "fr": {
-            "[electri[^ ]+, stockage]": [
-                "estion de l energie electrique 1   production et g",
-                "estion de l energie electrique    savoir          ",
-                "ucleaire       hydroelectriques                alte",
-                "e  smart grid       stockage d appoint      util"
-            ],
-            "effica[^ ]+ energ[^ ]+": [
-                " renouvelables      efficacite energetique      gaspillage ene"
+            "energ[^ ]+ alternati": [
+                "ies de production d energie alternatives qui pourraient s"
             ],
             "energ[^ ]+ fossile": [
                 "  non renouvelable  energies fossiles        nucleaire  "
             ],
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "l intermittence des energies renouvelables      efficacite ene"
+            "energ[^ ]+ renouvelable": [
+                "l intermittence des energies renouvelables      efficacite en"
+            ],
+            "hydroelec": [
+                "    nucleaire       hydroelectriques             "
+            ],
+            "[biomasse, productions? (?:d )?(?:energ|elec)]": [
+                " cogeneration       biomasse                    ",
+                "les technologies de production d energie alternatives qui "
+            ],
+            "[nucleaire, productions? (?:d )?(?:energ|elec)]": [
+                "ies fossiles        nucleaire       hydroelectriq",
+                "les technologies de production d energie alternatives qui "
+            ],
+            "[[ ]ecolo[^ ]+]": [
+                "vue technologique et ecologique      synthetiser so"
+            ]
+        }
+    },
+    "CA215: Chimie analytique laboratoire B2": {
+        "fr": {
+            "pollu": [
+                "ns et de substances polluantes            sav"
             ]
         }
     },
@@ -66,77 +169,36 @@
     },
     "CE205: Ecologie g\u00e9n\u00e9rale th\u00e9orie": {
         "fr": {
-            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
-                "ques     cosphere - biosphere     climat     elem",
-                " niche ecologique - biodiversite     ecosysteme - st",
-                "re l histoire de la biosphere       comprendre le",
-                " subdivisions de la biosphere et les principaux b",
-                "ergie au sein de la biosphere        savoir etre ",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "ecologie generale theorie 1 ",
-                "enerale theorie 1   ecologie generale theorie   ",
-                "x     biomes     autecologie - facteurs abiotiqu",
-                " abiotiques     demoecologie - facteurs biotique",
-                "rs biotiques     synecologie - niche ecologique ",
-                "synecologie - niche ecologique - biodiversite     ",
-                "ution - successions ecologiques     cycles biogeoch",
-                "bulaire relatif a l ecologie generale       decr"
-            ],
-            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
-                "ques     cosphere - biosphere     climat     elem",
-                " niche ecologique - biodiversite     ecosysteme - st",
-                "re l histoire de la biosphere       comprendre le",
-                " subdivisions de la biosphere et les principaux b",
-                "ergie au sein de la biosphere        savoir etre ",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "nerale     sols     ecosysteme - definition   repa",
-                " - biodiversite     ecosysteme - structure - fonct",
-                " fonctionnement     ecosysteme - flux d energie - ",
-                " - productivite     ecosysteme - evolution - succe",
-                "fonctionnement d un ecosysteme      analyser le me",
-                " la degradation des ecosystemes  a l eradication de"
-            ],
-            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "ques     cosphere - biosphere     climat     elem",
-                " niche ecologique - biodiversite     ecosysteme - st",
-                "re l histoire de la biosphere       comprendre le",
-                " subdivisions de la biosphere et les principaux b",
-                "ergie au sein de la biosphere        savoir etre ",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "te     ecosysteme - evolution - successions ecolo",
+            "[[ ]ecolo[^ ]+]": [
                 "generale theorie 1   ecologie generale theorie   ",
-                "nerale     sols     ecosysteme - definition   repa",
                 " synecologie - niche ecologique - biodiversite     ",
-                " - biodiversite     ecosysteme - structure - fonct",
-                " fonctionnement     ecosysteme - flux d energie - ",
-                " - productivite     ecosysteme - evolution - succe",
                 "lution - successions ecologiques     cycles biogeoch",
-                "abulaire relatif a l ecologie generale       decr",
-                "fonctionnement d un ecosysteme      analyser le me",
-                " la degradation des ecosystemes  a l eradication de"
+                "abulaire relatif a l ecologie generale       decr"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "ques     cosphere - biosphere     climat     elem",
+            "biodiversite": [
                 " niche ecologique - biodiversite     ecosysteme - st",
+                "l eradication de la biodiversite et a la conservatio"
+            ],
+            "biosphere": [
+                "ques     cosphere - biosphere     climat     elem",
                 "re l histoire de la biosphere       comprendre le",
                 " subdivisions de la biosphere et les principaux b",
                 "ergie au sein de la biosphere        savoir etre ",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "en rapport avec les problemes lies a la degradat",
-                "generale theorie 1   ecologie generale theorie   ",
-                "nerale     sols     ecosysteme - definition   repa",
-                " synecologie - niche ecologique - biodiversite     ",
-                " - biodiversite     ecosysteme - structure - fonct",
-                " fonctionnement     ecosysteme - flux d energie - ",
-                " - productivite     ecosysteme - evolution - succe",
-                "lution - successions ecologiques     cycles biogeoch",
-                "abulaire relatif a l ecologie generale       decr",
-                "fonctionnement d un ecosysteme      analyser le me",
-                " la degradation des ecosystemes  a l eradication de"
+                "es ressources de la biosphere  particulierement l"
+            ],
+            "conservations? de la nature": [
+                "iodiversite et a la conservation de la nature  aux limites des re"
+            ],
+            "cycles? bio-?geo-?chimique": [
+                "ons ecologiques     cycles biogeochimiques          savoir fa",
+                "r le mecanisme d un cycle biogeochimique      apprecier de m"
+            ]
+        }
+    },
+    "CE209: Ecologie appliqu\u00e9e laboratoire": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "quee laboratoire 1   ecologie appliquee laboratoi"
             ]
         }
     },
@@ -146,265 +208,344 @@
                 " l amenuisement des energies fossiles  son objectif est ",
                 " savoir       - les energies fossiles    raffinage du pe"
             ],
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "es offertes par les energies renouvelables compte tenu de l am",
-                "mie           - les energies renouvelables   photovoltaique  s"
+            "energ[^ ]+ renouvelable": [
+                "es offertes par les energies renouvelables compte tenu de l a",
+                "mie           - les energies renouvelables   photovoltaique  "
+            ],
+            "hydroelec": [
+                "hermique  eolienne  hydroelectrique           - l"
             ]
         }
     },
     "CE213: Ecologie appliqu\u00e9e th\u00e9orie": {
         "fr": {
-            "[bio(?:diversite|sphere), consequence, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "s polluants dans la biosphere       la pollution ",
-                "es pollutions de la biosphere       analyser leur",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "n thermique         consequences ecologiques global",
-                "     analyser leurs consequences sur les ecosysteme",
+            "[[ ]ecolo[^ ]+]": [
                 "ppliquee theorie 1   ecologie appliquee theorie  ",
                 "que des degradations ecologiques       la demographi",
-                "        consequences ecologiques globales       savo",
-                "onsequences sur les ecosystemes et les cycles bioge",
-                " la degradation des ecosystemes  a l eradication de"
+                "        consequences ecologiques globales       savo"
             ],
-            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
+            "biodiversite": [
+                "l eradication de la biodiversite et a la conservatio"
+            ],
+            "biosphere": [
                 "s polluants dans la biosphere       la pollution ",
                 "es pollutions de la biosphere       analyser leur",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "ecologie appliquee theorie 1",
-                "pliquee theorie 1   ecologie appliquee theorie  ",
-                "ue des degradations ecologiques       la demographi",
-                "       consequences ecologiques globales       savo"
+                "es ressources de la biosphere  particulierement l"
             ],
-            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
-                "s polluants dans la biosphere       la pollution ",
-                "es pollutions de la biosphere       analyser leur",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "onsequences sur les ecosystemes et les cycles bioge",
-                " la degradation des ecosystemes  a l eradication de"
+            "conservations? de la nature": [
+                "iodiversite et a la conservation de la nature  aux limites des re"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "s polluants dans la biosphere       la pollution ",
-                "es pollutions de la biosphere       analyser leur",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere  particulierement l",
-                "en rapport avec les problemes lies a la degradat",
-                "ppliquee theorie 1   ecologie appliquee theorie  ",
-                "que des degradations ecologiques       la demographi",
-                "        consequences ecologiques globales       savo",
-                "onsequences sur les ecosystemes et les cycles bioge",
-                " la degradation des ecosystemes  a l eradication de"
+            "cycles? bio-?geo-?chimique": [
+                " ecosystemes et les cycles biogeochimiques       determiner l"
             ],
-            "[ecosyst[^ ]+, pollution]": [
-                "onsequences sur les ecosystemes et les cycles bioge",
-                " la degradation des ecosystemes  a l eradication de",
-                " biosphere       la pollution atmospherique      ",
-                "   les effets de la pollution atmospherique sur l",
-                "eochmiques       la pollution des sols           ",
-                " pesticides     les pollutions industrielles     ",
-                "trielles         la pollution des eaux           ",
-                " eaux            la pollution par les matieres fe",
-                "ts chimiques     la pollution thermique         c",
-                "e       definir les pollutions de la biosphere   ",
-                " quantification des pollutions       definir les "
-            ],
-            "[pollution, pesticide]": [
-                " biosphere       la pollution atmospherique      ",
-                "   les effets de la pollution atmospherique sur l",
-                "eochmiques       la pollution des sols           ",
-                " pesticides     les pollutions industrielles     ",
-                "trielles         la pollution des eaux           ",
-                " eaux            la pollution par les matieres fe",
-                "ts chimiques     la pollution thermique         c",
-                "e       definir les pollutions de la biosphere   ",
-                " quantification des pollutions       definir les ",
-                "les engrais     les pesticides     les pollutions"
+            "pollu": [
+                "s de dispersion des polluants dans la biosphe",
+                " biosphere       la pollution atmospherique  ",
+                "     les principaux polluants atmospheriques ",
+                "   les effets de la pollution atmospherique s",
+                "eochmiques       la pollution des sols       ",
+                " pesticides     les pollutions industrielles ",
+                "trielles         la pollution des eaux       ",
+                " eaux            la pollution par les matiere",
+                "rophisation     les polluants chimiques     l",
+                "ts chimiques     la pollution thermique      ",
+                "e       definir les pollutions de la biospher",
+                " quantification des pollutions       definir "
+            ]
+        }
+    },
+    "CE216: Chimie analytique laboratoire B2": {
+        "fr": {
+            "pollu": [
+                "ns et de substances polluantes            sav"
+            ]
+        }
+    },
+    "CE301: Gestion des d\u00e9chets th\u00e9orie": {
+        "fr": {
+            "[recycla, dechet]": [
+                "n  traitement s  et recyclage des dechets  les ",
+                "gestion des dechets theorie 1   gestio",
+                "rie 1   gestion des dechets theorie    savoir ",
+                "s  et recyclage des dechets  les emballages   "
             ]
         }
     },
     "CE303: Traitement des eaux th\u00e9orie": {
         "fr": {
-            "[pollution, pesticide]": [
-                "re       definir la pollution d une eau et apprec",
-                "preparation et de depollution des eaux    acqueri",
-                "   elimination de   pesticides   fer-manganese   "
+            "pollu": [
+                "re       definir la pollution d une eau et ap",
+                "preparation et de depollution des eaux    acq"
             ]
         }
     },
     "CE304: Cycle de combustible nucl\u00e9aire th\u00e9orie": {
         "fr": {
-            "[extraction, impact, environnement]": [
-                "du combustible      extraction      concentration ",
-                " et argumentee de l impact environnemental de ",
-                " de sociologie de l environnement          categories",
-                "umentee de l impact environnemental de l industrie nu"
+            "impacts? (?:environnement|ecosyst)": [
+                " et argumentee de l impact environnemental de l industrie nu"
+            ],
+            "dechets? (?:nucleaire|radioactif)": [
+                "     la gestion des dechets nucleaires          strategie",
+                "t de la gestion des dechets nucleaires    maitriser quali",
+                "t de la gestion des dechets nucleaires    developper une "
             ]
         }
     },
     "CE306: Ecologie industrielle th\u00e9orie": {
         "fr": {
-            "analyse (?:de |du )?cycle (?:de )?vie": [
-                "logie industrielle  analyse du cycle de vie  flux de matieres  "
+            "[[ ]ecolo[^ ]+]": [
+                "strielle theorie 1   ecologie industrielle theori",
+                "     definition de l ecologie industrielle  analy"
             ],
             "chimie (?:[^ ]+ ){0,4}verte": [
                 "tiquement modifies  chimie verte        savoir faire"
+            ],
+            "bio[ -]?degradable": [
+                "aniques  polymeres  bio degradables  organismes geneti"
+            ],
+            "analyses? (?:de |du )?cycle (?:de )?vie": [
+                "logie industrielle  analyse du cycle de vie  flux de matieres  "
+            ],
+            "bio[ -]?carburant": [
+                "n environnementale  biocarburants  dispositifs photo"
             ]
         }
     },
     "CE307: Ecologie urbaine et rurale th\u00e9orie": {
         "fr": {
-            "[developp[^ ]+ durab[^ ]+, environnement, [ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "    savoir       le developpement durable   comprendre pour a",
-                " d incidence sur l  environnement    le reseau natura",
+            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
+                "ns d urbanisme et d amenagement du territoire    amenagement et r",
+                " d incidence sur l  environnement    le reseau natura"
+            ],
+            "[amenagements? du territoire, durab]": [
+                "ns d urbanisme et d amenagement du territoire    amenagement et r",
+                "   le developpement durable   comprendre pour"
+            ],
+            "[[ ]ecolo[^ ]+]": [
                 "t rurale theorie 1   ecologie urbaine et rurale t"
+            ]
+        }
+    },
+    "CE308: G\u00e9nie biologique": {
+        "fr": {
+            "biologies? environnemental": [
+                "    notions de microbiologie environnementale          savoir fa"
             ]
         }
     },
     "CE310: L\u00e9gislation th\u00e9orie": {
         "fr": {
-            "rechauffement climat[^ ]+": [
-                "   chapitre 12   le rechauffement climatique         savoir fair",
-                "onale en matiere de rechauffement climatique et de son applicati"
+            "permis (?:d )environnement": [
+                "    chapitre 5   le permis d environnement        chapitre 6  "
+            ],
+            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
+                "     chapitre 3   l amenagement du territoire        chapitre 4  ",
+                "cables en matiere d amenagement du territoire et de delivrance du",
+                "     chapitre 2   l environnement  le contexte legal ",
+                "tre 5   le permis d environnement        chapitre 6  ",
+                "iquer le droit de l environnement a des cas pratiques",
+                "s par le droit de l environnement        l etudiant s",
+                "jet d un probleme d environnement  il pourra trouver ",
+                "rmis d urbanisme  d environnement  d urbanisation  il"
+            ],
+            "[amenagements? du territoire, durab]": [
+                "     chapitre 3   l amenagement du territoire        chapitre 4  ",
+                "cables en matiere d amenagement du territoire et de delivrance du",
+                "te de developpement durable  il connaitra les"
+            ],
+            "rechauffements? climat": [
+                "   chapitre 12   le rechauffement climatique         savoir ",
+                "onale en matiere de rechauffement climatique et de son appli"
+            ],
+            "droits? (?:d |de l )?environnement": [
+                "iant d appliquer le droit de l environnement a des cas pratiques",
+                " preconisees par le droit de l environnement        l etudiant s"
+            ],
+            "protections? de la nature": [
+                "aitra les regles de protection de la nature  il connaitra les r"
+            ],
+            "[gestions? (?:de l |des )?eau, environnement]": [
+                "ables en matiere de gestion de l eau et de protection de",
+                "     chapitre 2   l environnement  le contexte legal ",
+                "tre 5   le permis d environnement        chapitre 6  ",
+                "iquer le droit de l environnement a des cas pratiques",
+                "s par le droit de l environnement        l etudiant s",
+                "jet d un probleme d environnement  il pourra trouver ",
+                "rmis d urbanisme  d environnement  d urbanisation  il"
+            ]
+        }
+    },
+    "CI304: Chimie des polym\u00e8res": {
+        "fr": {
+            "bio[ -]?degradable": [
+                "euvre     polymeres bio degradables"
             ]
         }
     },
     "EA109: Histoire des sciences et techniques appliqu\u00e9es": {
         "fr": {
+            "energ[^ ]+ alternati": [
+                "ques appliquees aux energies alternatives   l energie a to"
+            ],
             "energ[^ ]+ fossile": [
                 "    1  le sacre des energies fossiles      2  l electrif"
             ],
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "ode d existence des energies renouvelables       chapitre ii [",
-                "des d existence des energies renouvelables       chapitre iii ",
-                "marginalisation des energies renouvelables       chapitre iv ["
+            "energ[^ ]+ renouvelable": [
+                "ode d existence des energies renouvelables       chapitre ii ",
+                "des d existence des energies renouvelables       chapitre iii",
+                "marginalisation des energies renouvelables       chapitre iv "
             ]
         }
     },
     "EA113: Gestion \u00e9conomique": {
         "fr": {
-            "economie circulaire": [
+            "economies? circulaire": [
                 "ficaces en termes d economie circulaire        savoir etre "
             ]
         }
     },
     "EA116: Performance \u00e9nerg\u00e9tique des b\u00e2timents 1": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "et la place que les energies renouvelables peuvent prendre dan"
+            "[performances? energ[^ ]+, batiment]": [
+                "performance energetique des batiments 1 1  ",
+                "des batiments 1 1   performances energetiques du batiment  peb   ",
+                "nce energetique des batiments 1 1   performances",
+                "ces energetiques du batiment  peb     savoir    ",
+                "an energetique d un batiment  la place centrale ",
+                "s de l enveloppe du batiment       comprendre le",
+                " bonne isolation du batiment  et une bonne etanc",
+                "avers des parois du batiment       utiliser les "
+            ],
+            "energ[^ ]+ renouvelable": [
+                "et la place que les energies renouvelables peuvent prendre da"
+            ]
+        }
+    },
+    "EA118: Analyse de l'empreinte \u00e9nerg\u00e9tique 1": {
+        "fr": {
+            "impacts? (?:environnement|ecosyst)": [
+                "tion  perspectives  impacts environnementaux        savoir fa"
             ]
         }
     },
     "EA120: Moyens de production et de stockage 1": {
         "fr": {
-            "[[ ]ecolo[^ ]+, transiti[^ ]+ energ[^ ]+]": [
-                "getique  d empreinte ecologique  d intensite energe",
-                " la necessite d une transition energetique  e d une substituti",
-                "dre les concepts de transition energetique  d empreinte ecolog"
+            "energ[^ ]+ alternati": [
+                "itionnelles par des energies alternatives et renouvelables"
             ],
             "energ[^ ]+ fossile": [
                 "ne substitution des energies fossiles et traditionnelles"
             ],
-            "transiti[^ ]+ energ[^ ]+": [
-                " la necessite d une transition energetique  e d une substituti",
-                "dre les concepts de transition energetique  d empreinte ecolog"
+            "transiti[^ ]+ energ": [
+                " la necessite d une transition energetique  e d une subs",
+                "dre les concepts de transition energetique  d empreinte "
+            ],
+            "[[ ]ecolo[^ ]+]": [
+                "getique  d empreinte ecologique  d intensite energe"
+            ],
+            "impacts? (?:environnement|ecosyst)": [
+                "tion  perspectives  impacts environnementaux        savoir fa"
             ]
         }
     },
     "EA125: Ecologie g\u00e9n\u00e9rale": {
         "fr": {
-            "[bio(?:diversite|sphere), ecolo[^ ]+]": [
-                "ues     ecosphere - biosphere     climat     elem",
-                " niche ecologique - biodiversite     ecosysteme - st",
-                "re l histoire de la biosphere       comprendre le",
-                " subdivisions de la biosphere et les principaux b",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere",
-                "ecologie generale 1   ecolog",
-                "ologie generale 1   ecologie generale  theorie  ",
-                "x     biomes     autecologie - facteurs abiotiqu",
-                " abiotiques     demoecologie - facteurs biotique",
-                "rs biotiques     synecologie - niche ecologique ",
-                "synecologie - niche ecologique - biodiversite     ",
-                "ution - successions ecologiques     cycles biogeoch",
-                "bulaire relatif a l ecologie generale       decr"
-            ],
-            "[bio(?:diversite|sphere), ecosyst[^ ]+]": [
-                "ues     ecosphere - biosphere     climat     elem",
-                " niche ecologique - biodiversite     ecosysteme - st",
-                "re l histoire de la biosphere       comprendre le",
-                " subdivisions de la biosphere et les principaux b",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere",
-                "nerale     sols     ecosysteme - definition - repa",
-                " - biodiversite     ecosysteme - structure - fonct",
-                " fonctionnement     ecosysteme - flux d energie - ",
-                " - productivite     ecosysteme - evolution - succe",
-                "fonctionnement d un ecosysteme      analyser le me",
-                "de l energie dans l ecosysteme et situer l homme m",
-                " la degradation des ecosystemes  a l eradication de"
-            ],
-            "[bio(?:diversite|sphere), evolution, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "ues     ecosphere - biosphere     climat     elem",
-                " niche ecologique - biodiversite     ecosysteme - st",
-                "re l histoire de la biosphere       comprendre le",
-                " subdivisions de la biosphere et les principaux b",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere",
-                "te     ecosysteme - evolution - successions ecolo",
+            "[[ ]ecolo[^ ]+]": [
                 "cologie generale 1   ecologie generale  theorie  ",
-                "nerale     sols     ecosysteme - definition - repa",
                 " synecologie - niche ecologique - biodiversite     ",
-                " - biodiversite     ecosysteme - structure - fonct",
-                " fonctionnement     ecosysteme - flux d energie - ",
-                " - productivite     ecosysteme - evolution - succe",
                 "lution - successions ecologiques     cycles biogeoch",
-                "abulaire relatif a l ecologie generale       decr",
-                "fonctionnement d un ecosysteme      analyser le me",
-                "de l energie dans l ecosysteme et situer l homme m",
-                " la degradation des ecosystemes  a l eradication de"
+                "abulaire relatif a l ecologie generale       decr"
             ],
-            "[bio(?:diversite|sphere), probleme, environnement|[ ]ecolo[^ ]+|ecosyst[^ ]+]": [
-                "ues     ecosphere - biosphere     climat     elem",
+            "biodiversite": [
                 " niche ecologique - biodiversite     ecosysteme - st",
+                "l eradication de la biodiversite et a la conservatio"
+            ],
+            "biosphere": [
+                "ues     ecosphere - biosphere     climat     elem",
                 "re l histoire de la biosphere       comprendre le",
                 " subdivisions de la biosphere et les principaux b",
-                "l eradication de la biodiversite et a la conservatio",
-                "es ressources de la biosphere",
-                "en rapport avec les problemes lies a la degradat",
-                "cologie generale 1   ecologie generale  theorie  ",
-                "nerale     sols     ecosysteme - definition - repa",
-                " synecologie - niche ecologique - biodiversite     ",
-                " - biodiversite     ecosysteme - structure - fonct",
-                " fonctionnement     ecosysteme - flux d energie - ",
-                " - productivite     ecosysteme - evolution - succe",
-                "lution - successions ecologiques     cycles biogeoch",
-                "abulaire relatif a l ecologie generale       decr",
-                "fonctionnement d un ecosysteme      analyser le me",
-                "de l energie dans l ecosysteme et situer l homme m",
-                " la degradation des ecosystemes  a l eradication de"
+                "es ressources de la biosphere"
+            ],
+            "conservations? de la nature": [
+                "iodiversite et a la conservation de la nature  aux limites des re"
+            ],
+            "cycles? bio-?geo-?chimique": [
+                "ons ecologiques     cycles biogeochimiques et rappels de biol",
+                "r le mecanisme d un cycle biogeochimique      examiner le ro"
             ]
         }
     },
     "EA204: Moyens de production et de stockage 2": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
+            "bio[ -]?ga(?:z|s)": [
+                "mide  production de biogaz par biomethanisatio"
+            ],
+            "energ[^ ]+ alternati": [
+                " liees aux vecteurs energetiques alternatifs et renouvelables "
+            ],
+            "energ[^ ]+ renouvelable": [
                 "steme de stockage d energie renouvelable       savoir etre  "
+            ],
+            "[biomasse, productions? (?:d )?(?:energ|elec)]": [
+                "nementaux         - biomasse   bois-energie  res",
+                "differents types de production d energie  leur base physiq"
+            ],
+            "[nucleaire, productions? (?:d )?(?:energ|elec)]": [
+                " et futures  fusion nucleaire       - solaire   g",
+                "differents types de production d energie  leur base physiq"
+            ],
+            "impacts? (?:environnement|ecosyst)": [
+                "tion  perspectives  impacts environnementaux         - biomas"
+            ],
+            "bio[ -]?degradable": [
+                " agricoles  dechets biodegradables  valorisations sec"
+            ],
+            "bio[ -]?carburant": [
+                "t par production de biocarburants       - hydrogene "
             ]
         }
     },
     "EA211: Performance \u00e9nerg\u00e9tique des b\u00e2timents 2": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "tions possibles des energies renouvelables pour le batiment   "
+            "[performances? energ[^ ]+, batiment]": [
+                "performance energetique des batiments 2 1  ",
+                "des batiments 2 1   performance energetique du batiment  peb   ",
+                "de sanitaire et les performances energetiques qui y sont liees  c",
+                "ntations liees a la performance energetique des batiments      ",
+                "nce energetique des batiments 2 1   performance ",
+                "ance energetique du batiment  peb     savoir    ",
+                "ilan energetique du batiment dans son ensemble  ",
+                "nouvelables pour le batiment       connaitre les",
+                "nce energetique des batiments       utiliser les"
+            ],
+            "energ[^ ]+ renouvelable": [
+                "tions possibles des energies renouvelables pour le batiment  "
+            ]
+        }
+    },
+    "EA212: Droit et l\u00e9gislation 1": {
+        "fr": {
+            "permis (?:d )environnement": [
+                "                -le permis d environnement       -  le permis "
+            ],
+            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
+                "nvironnement      - amenagement du territoire et prescriptions ur",
+                "  cf  le codt     l amenagement du territoire    le certificat d ",
+                "anisme - droit de l environnement      - amenagement ",
+                "       -le permis d environnement       -  le permis "
+            ],
+            "energ[^ ]+ alternati": [
+                "l et du secteur des energies alternatives et renouvelables"
+            ],
+            "droits? (?:d |de l )?environnement": [
+                "it de l urbanisme - droit de l environnement      - amenagement "
             ]
         }
     },
     "EA213: Chimie g\u00e9n\u00e9rale": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
-                " certaines formes d energies renouvelables       electrochimie"
+            "energ[^ ]+ renouvelable": [
+                " certaines formes d energies renouvelables       electrochimi"
             ]
         }
     },
@@ -412,33 +553,96 @@
         "fr": {
             "energ[^ ]+ verte": [
                 "\"la face cachee des energies vertes\"   appliquer les c"
+            ],
+            "hydroelec": [
+                "e gaz tgv  centrale hydroelectrique  parc eolien "
+            ],
+            "impacts? (?:environnement|ecosyst)": [
+                "te energetique  les impacts environnementaux lies a l activit"
+            ],
+            "managements? environnemental": [
+                "entaux  systemes de management environnemental et analyses par cyc"
             ]
         }
     },
     "EA302: Droit et l\u00e9gislation 2": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
-                "nee  environnement  energies renouvelables  etc       se poser"
+            "energ[^ ]+ alternati": [
+                "la mise en oeuvre d energies alternatives ou d autorisatio"
             ],
-            "responsabilite environnement[^ ]+": [
-                "ivile et penale/ la responsabilite environnementale         introductio"
+            "energ[^ ]+ renouvelable": [
+                "nee  environnement  energies renouvelables  etc       se pose"
+            ],
+            "droits? (?:d |de l )?environnement": [
+                "    introduction au droit de l environnement  international/nati",
+                "s      principes du droit de l environnement  article 23 de la c"
+            ],
+            "protections? de la nature": [
+                "torisations      la protection de la nature   lois  decrets n20"
+            ],
+            "responsabilites? (?:environnement|ecosyst)": [
+                "ivile et penale/ la responsabilite environnementale         introduc"
             ]
         }
     },
     "EA306: Moyens de production et de stockage 3": {
         "fr": {
-            "[electri[^ ]+, stockage]": [
-                "marees  petite hydroelectricite  impacts environnem",
-                "chimique  chimique  electrique  thermique       sa",
-                "alise sur le reseau electrique et les differentes ",
-                "de production et de stockage 3 1   moyens de pro",
-                "de production et de stockage 3    savoir       m",
-                "la problematique du stockage et de la gestion de",
-                "demande   moyens de stockage   mecanique  electr",
-                "onner un systeme de stockage d energie renouvela"
+            "energ[^ ]+ alternati": [
+                " liees aux vecteurs energetiques alternatifs et renouvelables "
             ],
-            "energ[^ ]+ renouvelab[^ ]+": [
+            "energ[^ ]+ renouvelable": [
                 "steme de stockage d energie renouvelable      comprendre la "
+            ],
+            "hydroelec": [
+                " des marees  petite hydroelectricite  impacts env"
+            ],
+            "impacts? (?:environnement|ecosyst)": [
+                "tion  perspectives  impacts environnementaux         - solair",
+                "e hydroelectricite  impacts environnementaux et sanitaires   "
+            ]
+        }
+    },
+    "PS204: Etude du milieu 1": {
+        "fr": {
+            "educations? (?:a l )?environnement": [
+                " rural en belgique  education a l environnement et les milieux de v",
+                "vre des activites d education a l environnement et s interroger sur"
+            ]
+        }
+    },
+    "SC203: Biologie partim 3 et didactique": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "logie  comportement  ecologique  importance pour l "
+            ]
+        }
+    },
+    "SC307: Biologie partim 6 et didactique": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "veloppee s           ecologie et genetiqu"
+            ]
+        }
+    },
+    "SH104: G\u00e9ographie partim 1": {
+        "fr": {
+            "climatolog": [
+                " d astronomie et de climatologie  utiliser de mani"
+            ]
+        }
+    },
+    "PI329: Formation scientifique et didactique des sciences 3": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "ences      notions d ecologie fondamentale et app"
+            ]
+        }
+    },
+    "PI330: Formations historique et g\u00e9ographique et didactiques associ\u00e9es": {
+        "fr": {
+            "[amenagements? du territoire, (?:environnement|ecosyst)]": [
+                "iques     notions d amenagement du territoire et de milieu physiq",
+                "lieu et amenage son environnement          savoir-etr"
             ]
         }
     }

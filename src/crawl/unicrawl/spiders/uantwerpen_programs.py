@@ -13,12 +13,30 @@ BASE_URL = "https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/?s=16&
 #   Farmaceutische wetenschappen. These are 'overarching' programs which are subdivided into smaller
 #   programs which are crawled by the algorithm.
 
+
+""" 
+# Do not constitute a real erro
+
+Missing faculty for program 'Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)'
+
+Missing faculty for program 'Postgraduaat in de leerlingenbegeleiding in het secundair onderwijs'
+https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/leerlingbegeleiding-secundair/opleidingsinfo/
+https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/leerlingbegeleiding-secundair/
+
+
+Missing faculty for program 'Bio-ingenieurswetenschappen'
+https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/bio-ingenieur-worden/master/
+https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/bio-ingenieur-worden/
+
+"""
+
 PROGRAMS_FACULTY = {
     "Faculteit Farmaceutische, Biomedische en Diergeneeskundige Wetenschappen": [
         "Postgraduaat in het klinisch wetenschappelijk onderzoek",
         "Postgraduaat in het ondernemerschap voor wetenschappen en biomedische wetenschappen",
         "Postgraduaat in het milieu en gezondheidswetenschappen",
-        "Farmaceutische wetenschappen"
+        "Farmaceutische wetenschappen",
+        "Leading International Vaccinology Education"
     ],
     "Faculteit Geneeskunde en Gezondheidswetenschappen": [
         "Postgraduate of Algology",
@@ -29,7 +47,11 @@ PROGRAMS_FACULTY = {
         "Postgraduaat in het rampenmanagement",
         "Postgraduaat in de systeemtheoretische psychotherapie",
         "Postgraduaat verpleegkundige in de huisartspraktijk",
-        "Psychotherapie"
+        "Psychotherapie",
+        "Master of Molecular Biology",
+        "Master of Global Health",
+        "Master in de ergotherapeutische wetenschap",
+        "Musculoskeletale therapie"
     ],
     "Faculteit Rechten": [
         "Postgraduaat in het aansprakelijkheidsrecht en het verzekeringsrecht",
@@ -40,7 +62,9 @@ PROGRAMS_FACULTY = {
         "Postgraduaat in de adviseur gevaarlijke stoffen",
         "Educatieve master",
         "Chemie",
-        "Biologie"
+        "Biologie",
+        "Bioscience Engineering: Sustainable Urban Bioscience Engineering",
+        "Master of Marine and Lacustrine Science and Management"
     ],
     "Centrum voor Andragogiek": [
         "Postgraduaat in het schoolbeleid"
@@ -48,10 +72,12 @@ PROGRAMS_FACULTY = {
     "Centrum Nascholing Onderwijs": [
         "Postgraduaat in de socio-emotionele leerlingbegeleiding in het secundair onderwijs",
         "Postgraduaat in de leerzorg in het secundair onderwijs (Tijdelijk niet aangeboden)",
-        "Didactiek Nederlands aan anderstaligen"
+        "Didactiek Nederlands aan anderstaligen",
+        "Postgraduaat in de leerlingenbegeleiding in het secundair onderwijs"
     ],
     "Instituut voor Milieu en Duurzame Ontwikkeling": [
-        "Postgraduate of Energy and Climate"
+        "Postgraduate of Energy and Climate",
+        "Applied Ecohydrology"
     ],
     "Antwerp School of Education": [
         "Postgraduaat in de didactiek Nederlands aan anderstaligen"
@@ -61,14 +87,29 @@ PROGRAMS_FACULTY = {
     ],
     "Faculteit Letteren en Wijsbegeerte": [
         "Digital Text Analysis",
-        "Postgraduate of China-EU Cultural Curatorship Studies"
+        "Postgraduate of Asia - Europe Cultural Curatorship Studies",
+        "Master-na-master in de literatuurwetenschappen",
+        "Digitale tekstanalyse",
+        "Master-na-master in de archivistiek: erfgoedbeheer en hedendaags documentbeheer",
+        "Research Master of Philosophy"
     ],
     "Faculteit Sociale Wetenschappen": [
         "Master in de opleidings- en onderwijswetenschappen",
-        "Politieke wetenschappen"
+        "Politieke wetenschappen",
+        "Master in gender en diversiteit"
     ],
     "Faculteit Ontwerpwetenschappen": [
         "Erfgoedstudies"
+    ],
+    "Antwerp Management School": [  # not crawlable for now (2023) because different website
+        "Advanced master of Management",
+        "Advanced master of International Fashion Management",
+        "Advanced master of Innovation and Entrepreneurship",
+        "Advanced master of Human Resources Management",
+        "Advanced master of Global Supply Chain Management",
+        "Advanced master of Global Management",
+        "Advanced master of Finance",
+        "Advanced master of China-Europe Business Studies"
     ]
 }
 
@@ -114,7 +155,8 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
 
         if match is False:
             # No programme info available, call the parse program info on the same page
-            yield response.follow(response.url, self.parse_program_info, cb_kwargs={"program_id": program_id})
+            yield response.follow(response.url, self.parse_program_info, cb_kwargs={"program_id": program_id},
+                                  dont_filter=True)
 
     def parse_program_info(self, response, program_id):
 
@@ -208,9 +250,15 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
         main_tab = f"//section[contains(@id, '-{YEAR}')]"
         courses_links = response.xpath(f"{main_tab}//h5//a/@href").getall()
         if len(courses_links) == 0:
-            return
+            # Maybe there is no year
+            courses_links = response.xpath(f"//h5//a/@href").getall()
+            if len(courses_links) == 0:
+                print(f"No courses for {base_dict['name']}")
+                return
         courses_codes = [link.split("-")[1].split("&")[0] for link in courses_links]
         ects = response.xpath(f"{main_tab}//div[@class='spec points']/div[@class='value']/text()").getall()
+        if len(ects) == 0:
+            ects = response.xpath(f"//div[@class='spec points']/div[@class='value']/text()").getall()
         ects = [int(e.split(" ")[0].replace('\n', '').replace('\t', '')) for e in ects]
 
         # One course can be several times in the same program

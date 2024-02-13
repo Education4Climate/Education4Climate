@@ -9,7 +9,7 @@ import itertools
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-# BASE_URL = f"http://p4580.phpnet.org/{YEAR}-{YEAR+1}/XtractUE/DetailsUE/" + "{}.html" -> for 2020-21
+# BASE_URL = f"http://p4580.phpnet.org/{YEAR}-{YEAR+1}/XtractUE/DetailsUE/" + "{}.html" -> for the preceding years
 BASE_URL = "https://helue.azurewebsites.net/XtractUE/DetailsUE/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}hel_programs_{YEAR}.json')

@@ -49,14 +49,9 @@
             <div class="main">
 
                 <div class="intro">
-                    <img src="./img/University-green.svg" alt="Le logo en plus grand" width="130" height="130">
-                    <h1>Hey toi!</h1>
-                    <p>Tu es un des futurs acteurs de demain, les études que tu choisiras peuvent avoir un impact
-                        significatif sur le changement climatique et la transition vers une société neutre en
-                        CO<sub>2</sub>.</p>
-                    <p>Que tu aies déjà choisi tes futures études ou pas, cet outil va te permettre d'y voir un peu plus
-                        clair.</p>
-
+                    <img src="./img/logo-siep-big-green.svg" alt="Le logo en plus grand" style="margin-left: 0;" width="130" height="130">
+                    <h1 v-html="translate('wizard.intro-title')">Hey toi!</h1>
+                    <div v-html="translate('wizard.intro')">Prêt à donner du sens à ta future carrière ?</div>
                 </div>
 
             </div>
@@ -68,7 +63,7 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.nextStep()" :class="{ invisible: !dataLoaded }">C'est parti!</button>
+                <button @click="this.nextStep()" :class="{ invisible: !dataLoaded }" v-html="translate('wizard.go')">C'est parti!</button>
 
             </footer>
 
@@ -80,7 +75,7 @@
 
                 <div class="fields-list">
 
-                    <h1>Qu'est-ce qui t'intéresse?</h1>
+                    <h1 v-html="translate('wizard.interests-title')">Qu'est-ce qui t'intéresse?</h1>
 
                     <button v-for="field in this.fields" class="field"
                         :class="{ 'selected': this.selectedFields.includes(field.id) }"
@@ -100,9 +95,9 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.previousStep()" class="secondary">Retour</button>
+                <button @click="this.previousStep()" class="secondary" v-html="translate('shared.button-back')">Retour</button>
                 <button @click="this.nextStep()"
-                    :class="{ invisible: this.selectedFields.length == 0 }">Suivant</button>
+                    :class="{ invisible: this.selectedFields.length == 0 }" v-html="translate('shared.button-next')">Suivant</button>
 
             </footer>
 
@@ -114,11 +109,11 @@
 
                 <div style="width:100%; text-align:left;">
 
-                    <h1>Tu te vois où l'année prochaine?</h1>
+                    <h1 v-html="translate('wizard.school-type-title')">Tu te vois où l'année prochaine?</h1>
 
                     <div class="switch-container">
 
-                        <h2>Dans une haute-école</h2>
+                        <h2 v-html="translate('wizard.in-a-highschool')">Dans une haute-école</h2>
 
                         <div class="switch" @click="toggleHighschoolSwitch"
                             :class="highschoolIsSelected ? 'on' : 'off'">
@@ -129,7 +124,7 @@
 
                     <div class="switch-container">
 
-                        <h2>Dans une université</h2>
+                        <h2 v-html="translate('wizard.in-a-university')">Dans une université</h2>
 
                         <div class="switch" @click="toggleUniversitySwitch"
                             :class="universitieIsSelected ? 'on': 'off'">
@@ -138,11 +133,11 @@
 
                     </div>
 
-                    <h1 style="margin-top: 50px;">Et faire quoi?</h1>
+                    <h1 style="margin-top: 50px;" v-html="translate('wizard.cycle-title')">Et faire quoi?</h1>
 
                     <div class="switch-container">
 
-                        <h2>Un bachelier</h2>
+                        <h2 v-html="translate('wizard.a-bac')">Un bachelier</h2>
 
                         <div class="switch" @click="toggleBacSwitch" :class="bacIsSelected ? 'on' : 'off'">
                             <div></div>
@@ -152,7 +147,7 @@
 
                     <div class="switch-container">
 
-                        <h2>Un master</h2>
+                        <h2 v-html="translate('wizard.a-master')">Un master</h2>
 
                         <div class="switch" @click="toggleMasterSwitch" :class="masterIsSelected ? 'on': 'off'">
                             <div></div>
@@ -171,7 +166,7 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.previousStep()" class="secondary">Retour</button>
+                <button @click="this.previousStep()" class="secondary" v-html="translate('shared.button-back')">Retour</button>
                 <button @click="this.nextStep()"
                     :class="{ invisible : (!this.highschoolIsSelected && !this.universitieIsSelected) || (!this.bacIsSelected && !this.masterIsSelected) }">Suivant</button>
 
@@ -237,7 +232,7 @@
 
                 <div style="width:100%;">
 
-                    <h1 style="text-align: left;">Dans quelle région?</h1>
+                    <h1 style="text-align: left;" v-html="translate('wizard.region-title')">Dans quelle région?</h1>
 
                     <div class="switch-container subtitle" v-for="region in availableRegions">
 
@@ -264,9 +259,9 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.previousStep()" class="secondary">Retour</button>
+                <button @click="this.previousStep()" class="secondary" v-html="translate('shared.button-back')">Retour</button>
                 <button @click="this.nextStep();"
-                    :class="{invisible: this.selectedRegions.filter(item => this.availableRegions.includes(item)).length <= 0}">Voir
+                    :class="{invisible: this.selectedRegions.filter(item => this.availableRegions.includes(item)).length <= 0}" v-html="translate('wizard.show-results')">Voir
                     les résultats</button>
 
             </footer>
@@ -276,11 +271,11 @@
         <div class="wizard-step results" v-if="currentStep == 4">
 
             <div class="main" style="align-items: flex-start; justify-content: flex-start;">
-                <h1 style="margin-bottom: 10px;">Tes futures études?</h1>
+                <h1 style="margin-bottom: 10px;" v-html="translate('wizard.your-next-studies')">Tes futures études?</h1>
                 <div style="margin-bottom: 10px;" v-html="programsCountLabel"></div>
                 <div style="align-self: center;width:100%;">
-                    <button @click="this.currentStep = 3;" class="secondary">Revenir aux filtres</button>
-                    <button @click="this.currentStep = 6;">Prends part au changement</button>
+                    <button @click="this.currentStep = 3;" class="secondary" v-html="translate('wizard.back-to-filters')">Revenir aux filtres</button>
+                    <button @click="this.currentStep = 6;" v-html="translate('wizard.to-email-form')">Prends part au changement</button>
                 </div>
                 <div class="progress" style="align-self:center;">
                     <span v-for="(step, i) in this.totalSteps" class="dot"
@@ -302,8 +297,8 @@
                         :class="{ current: this.currentStep == i}"></span>
                 </div>
 
-                <button @click="this.currentStep = 3;" class="secondary">Revenir aux filtres</button>
-                <button @click="this.currentStep = 6;">Prends part au changement</button>
+                <button @click="this.currentStep = 3;" class="secondary" v-html="translate('wizard.back-to-filters')">Revenir aux filtres</button>
+                <button @click="this.currentStep = 6;" v-html="translate('wizard.to-email-form')">Prends part au changement</button>
 
             </footer>
 
@@ -331,17 +326,14 @@
 
                 <div class="legend" style="text-align: right; align-self: flex-end;">
 
-                    <div>Sur un total de {{this.selectedProgram.totalCoursesCount}} cours dans la formation : </div>
-                    <div class="legend-color accent-color">{{
+                    <div>{{ translate('wizard.total-count').replace("{0}", this.selectedProgram.totalCoursesCount)}}</div>
+                    <div class="legend-color accent">{{
                         coursesCountShortLabel(this.selectedProgram.approachingCoursesCount) }}</div>
-                    <div>{{ this.selectedProgram.approachingCoursesCount == 0 ? " n'aborde" :
-                        this.selectedProgram.approachingCoursesCount== 1 ? " aborde" : " abordent" }} les objectifs
-                        climatiques,</div>
+                    <div>{{ this.selectedProgram.approachingCoursesCount == 0 ? translate('wizard.no-approaching') : translate('wizard.approaching-count') }}</div>
                     <div class="legend-color super-accent-color">{{
                         coursesCountShortLabel(this.selectedProgram.dedicatedCoursesCount) }}
                     </div>
-                    <div>{{ this.selectedProgram.dedicatedCoursesCount == 0 ? "n'y est dédié" :
-                        this.selectedProgram.dedicatedCoursesCount == 1 ? "y est dédié." : "y sont dédiés."}}</div>
+                    <div>{{ this.selectedProgram.dedicatedCoursesCount == 0 ? translate('wizard.no-dedicated') : translate('wizard.dedicated-count')}}</div>
 
                 </div>
 
@@ -350,11 +342,11 @@
             <footer>
 
                 <div style="margin-top: 1rem;margin-bottom: 1rem;">
-                    <a :href="this.selectedProgram.url" style="color:#4bd2af;" target="_blank">Accéder à la liste
+                    <a :href="this.selectedProgram.url" style="color:#4bd2af;" target="_blank" v-html="translate('wizard.courses-list')">Accéder à la liste
                         des cours</a>
                 </div>
 
-                <button @click="this.currentStep = 4">Revenir à la liste</button>
+                <button @click="this.currentStep = 4" v-html="translate('wizard.back-to-list')">Revenir à la liste</button>
 
             </footer>
 
@@ -362,26 +354,11 @@
 
         <div class="wizard-step email" v-if="currentStep == 6">
 
-
-
             <div class="main">
 
-
-
                 <div class="intro" style="text-align: left;">
-
-                    <h1 style="margin-bottom: 20px;">Rejoins le mouvement !</h1>
-                    <p style="margin-bottom: 15px;"><strong class="accent">60%</strong> des formations en enseignement
-                        supérieur ne comportent aucun cours qui traitent des enjeux
-                        climatiques et environnement.</p>
-                    <p style="margin-bottom: 15px;">Seuls <strong class="accent">5%</strong> des cours traitent de ces
-                        sujets. L'offre de formation
-                        est
-                        en outre très cloisonnée et concentrée surtout auprès des sciences et sciences appliquées.</p>
-                    <p style="margin-bottom: 15px;" class="accent-color">Aide-nous à interpeller les pouvoirs
-                        publics en nous laissant ton adresse email, nous te
-                        tiendrons au
-                        courant.</p>
+                    <h1 v-html="translate('wizard.email-form-title')">Rejoins le mouvement !</h1>
+                    <div v-html="translate('wizard.email-form-intro')"></div>
                 </div>
 
                 <form ref="emailForm" @submit.prevent="sendEmail()">
@@ -389,17 +366,14 @@
                     <div style="display:inline;">
                         <input type="text" name="email"
                             style="background-color: #00004b;border: 2px solid #4bd2af;border-radius: 5px 0 0 5px;padding: 5px 10px 5px 10px;color: white; margin-bottom: 7px;height: 38px;"
-                            placeholder="ton adresse email">
+                            :placeholder="translate('wizard.your-email')">
                         <button :disabled="this.sendingEmail"
                             style="min-width:unset;width: auto;display:inline;border-radius: 0 5px 5px 0;padding: 0 10px 0 10px;margin: 0;height: 38px; min-height: unset;"
                             type="submit">OK</button>
-                        <div style="color: red;font-size: 13px;" :class="{ invisible: !this.errorSendingEmail }">Un
-                            problème est survenu, réessaie plus tard!</div>
+                        <div style="color: red;font-size: 13px;" :class="{ invisible: !this.errorSendingEmail }" v-html="translate('wizard.form-not-ok')"></div>
                     </div>
 
-                    <div :class="{ invisible: !this.mailSuccessfullySent }">
-                        <p>Merci pour ton implication, on te tient au courant!</p>
-                        <p>N'oublie pas de partager cet outil avec tes amis!</p>
+                    <div :class="{ invisible: !this.mailSuccessfullySent }" v-html="translate('wizard.form-ok')">
                     </div>
                 </form>
 
@@ -407,13 +381,11 @@
 
                     <button class="secondary"
                         onClick="javascript:window.open('https://www.instagram.com/education4climate', '_blank');">
-                        <img src="./img/instagram-green.svg" alt="Logo Instagram" width="25" height="25">Retrouve-nous
-                        sur Instagram
+                        <img src="./img/instagram-green.svg" alt="Logo Instagram" width="25" height="25">{{ translate('wizard.instagram') }}
                     </button>
 
                     <button class="secondary" @click="this.share()">
-                        <img src="./img/share-green.svg" alt="Icône partage" width="25" height="25">Partage cet
-                        outil
+                        <img src="./img/share-green.svg" alt="Icône partage" width="25" height="25">{{ translate('wizard.share')}}
                     </button>
 
                 </div>
@@ -422,7 +394,7 @@
 
             <footer>
 
-                <button @click="this.currentStep = 4">Revenir à la liste</button>
+                <button @click="this.currentStep = 4"  v-html="translate('wizard.back-to-list')">Revenir à la liste</button>
 
             </footer>
 

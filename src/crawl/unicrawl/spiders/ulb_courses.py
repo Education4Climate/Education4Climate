@@ -83,7 +83,7 @@ class ULBCourseSpider(scrapy.Spider, ABC):
         if languages is not None:
             languages = [LANGUAGE_DICT[language] if language in LANGUAGE_DICT else 'other'
                          for language in languages.split(", ")]
-        languages = ['fr'] if languages == [""] or len(languages) == 0 else languages
+        languages = ['fr'] if languages is None or languages == [""] or len(languages) == 0 else languages
 
         # Course description
         def get_sections_text(sections_names):

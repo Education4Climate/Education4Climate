@@ -1,5 +1,181 @@
 [
  {
+  "id":"AL202",
+  "name":"Traitement de l'information et Informatique appliqu\u00e9e (TIC)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Degotte V\u00e9ronique",
+   "Hurdebise Lionel"
+  ],
+  "ects":[
+   4
+  ],
+  "campus":[
+   "Hazinelle"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/3537",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AM202",
+  "name":"Traitement de l'information et Informatique appliqu\u00e9e (TIC)",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Degotte V\u00e9ronique",
+   "Hurdebise Lionel"
+  ],
+  "ects":[
+   4
+  ],
+  "campus":[
+   "Hazinelle"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/3613",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SG321",
+  "name":"Urbanisme, am\u00e9nagement du territoire, environnement",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lechanteur Monique"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Hazinelle"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4087",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"AU151",
+  "name":"Moteurs thermiques th\u00e9orie 2",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Buteneers Marc-Amory"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4161",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AU231",
+  "name":"Sciences de l'automobile 2",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Buteneers Marc-Amory",
+   "Buteneers Marc-Amory"
+  ],
+  "ects":[
+   4
+  ],
+  "campus":[
+   "Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4178",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AU235",
+  "name":"P\u00e9trochimie et \u00e9lectrochimie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Mothy S\u00e9bastien"
+  ],
+  "ects":[
+   4
+  ],
+  "campus":[
+   "Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4181",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution",
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
   "id":"AV305",
   "name":"Empreinte \u00e9cologique",
   "year":"2022-2023",
@@ -24,9 +200,65 @@
   ],
   "themes":[
    "energy",
-   "resources"
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"AV309",
+  "name":"Carburants alternatifs",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Mothy S\u00e9bastien"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4189",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"AV310",
+  "name":"Traction \u00e9lectrique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Nzisabira Jonathan"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4190",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "dedicated":0
  },
  {
   "id":"AV311",
@@ -52,36 +284,10 @@
    "Engineering"
   ],
   "themes":[
+   "energy",
+   "life",
    "resources",
-   "sustainability"
-  ],
-  "dedicated":1
- },
- {
-  "id":"AV312",
-  "name":"Stockage de l'\u00e9nergie \u00e9lectrique et piles \u00e0 combustible",
-  "year":"2022-2023",
-  "languages":[
-   "fr"
-  ],
-  "teachers":[
-   "Nzisabira Jonathan"
-  ],
-  "ects":[
-   3
-  ],
-  "campus":[
-   "Sohet"
-  ],
-  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4192",
-  "cycles":[
-   "bac"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
+   "transport"
   ],
   "dedicated":1
  },
@@ -109,9 +315,39 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"CA215",
+  "name":"Chimie analytique laboratoire B2",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dechamps St\u00e9phanie",
+   "Halusiak Emilie"
+  ],
+  "ects":[
+   6
+  ],
+  "campus":[
+   "Condroz"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4216",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
  },
  {
   "id":"CA225",
@@ -137,7 +373,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "prod&cons"
   ],
   "dedicated":0
  },
@@ -165,7 +401,35 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"CE209",
+  "name":"Ecologie appliqu\u00e9e laboratoire",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Granatorowicz Damien"
+  ],
+  "ects":[
+   3
+  ],
+  "campus":[
+   "Condroz"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4233",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -221,9 +485,67 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "dedicated":1
+ },
+ {
+  "id":"CE216",
+  "name":"Chimie analytique laboratoire B2",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dechamps St\u00e9phanie",
+   "Halusiak Emilie"
+  ],
+  "ects":[
+   4
+  ],
+  "campus":[
+   "Condroz"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4239",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CE301",
+  "name":"Gestion des d\u00e9chets th\u00e9orie",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dechamps St\u00e9phanie"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4248",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "resources"
+  ],
+  "dedicated":0
  },
  {
   "id":"CE303",
@@ -249,7 +571,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "dedicated":0
  },
@@ -277,7 +599,8 @@
    "Engineering"
   ],
   "themes":[
-   "resources"
+   "life",
+   "pollution"
   ],
   "dedicated":0
  },
@@ -305,9 +628,11 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "dedicated":1
  },
@@ -335,9 +660,40 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "life"
   ],
   "dedicated":1
+ },
+ {
+  "id":"CE308",
+  "name":"G\u00e9nie biologique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dintilhac Ga\u00eblle",
+   "Dintilhac Ga\u00eblle",
+   "Dintilhac Ga\u00eblle"
+  ],
+  "ects":[
+   6
+  ],
+  "campus":[
+   "Condroz Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4255",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"CE310",
@@ -363,7 +719,40 @@
    "Engineering"
   ],
   "themes":[
-   "climate"
+   "building",
+   "climate",
+   "life",
+   "resources"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"CI304",
+  "name":"Chimie des polym\u00e8res",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Dintilhac Ga\u00eblle",
+   "Lenoir Sandrine",
+   "Beaufort Laurence"
+  ],
+  "ects":[
+   5
+  ],
+  "campus":[
+   "Condroz Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4289",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "pollution"
   ],
   "dedicated":0
  },
@@ -419,8 +808,7 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "economy"
   ],
   "dedicated":0
  },
@@ -448,7 +836,36 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy"
+  ],
+  "dedicated":1
+ },
+ {
+  "id":"EA118",
+  "name":"Analyse de l'empreinte \u00e9nerg\u00e9tique 1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Monfils Stephane"
+  ],
+  "ects":[
+   3
+  ],
+  "campus":[
+   "Sohet"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4299",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
   ],
   "dedicated":1
  },
@@ -477,7 +894,7 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -505,7 +922,7 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "dedicated":1
  },
@@ -533,7 +950,10 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life",
+   "pollution",
+   "transport"
   ],
   "dedicated":0
  },
@@ -561,9 +981,40 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy"
   ],
   "dedicated":1
+ },
+ {
+  "id":"EA212",
+  "name":"Droit et l\u00e9gislation 1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Br\u00fcls Christine"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Gloesener"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4323",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "building",
+   "energy",
+   "life"
+  ],
+  "dedicated":0
  },
  {
   "id":"EA213",
@@ -618,7 +1069,8 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "dedicated":1
  },
@@ -647,7 +1099,7 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life"
   ],
   "dedicated":0
  },
@@ -675,7 +1127,179 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PS204",
+  "name":"Etude du milieu 1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Colemont Martine",
+   "Gillet Luca",
+   "Auguste Fran\u00e7oise"
+  ],
+  "ects":[
+   3
+  ],
+  "campus":[
+   "Hazinelle"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4780",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SC203",
+  "name":"Biologie partim 3 et didactique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lespagnard Bernadette"
+  ],
+  "ects":[
+   5
+  ],
+  "campus":[
+   "Jonfosse"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4817",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SC307",
+  "name":"Biologie partim 6 et didactique",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Lespagnard Bernadette"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Londres"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4833",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"SH104",
+  "name":"G\u00e9ographie partim 1",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Monoyer France"
+  ],
+  "ects":[
+   5
+  ],
+  "campus":[
+   "Jonfosse"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/4845",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PI329",
+  "name":"Formation scientifique et didactique des sciences 3",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Hoyoux Caroline"
+  ],
+  "ects":[
+   2
+  ],
+  "campus":[
+   "Jonfosse"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/5331",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "dedicated":0
+ },
+ {
+  "id":"PI330",
+  "name":"Formations historique et g\u00e9ographique et didactiques associ\u00e9es",
+  "year":"2022-2023",
+  "languages":[
+   "fr"
+  ],
+  "teachers":[
+   "Colemont Martine",
+   "Gillet Luca"
+  ],
+  "ects":[
+   3
+  ],
+  "campus":[
+   "Hazinelle"
+  ],
+  "url":"https:\/\/helue.azurewebsites.net\/XtractUE\/DetailsUE\/5332",
+  "cycles":[
+   "bac"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "building"
   ],
   "dedicated":0
  }

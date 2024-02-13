@@ -21,27 +21,35 @@
    "Economy"
   ],
   "themes":[
-   "climate",
+   "building",
+   "carbon",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   2,
-   2,
-   3
+   1,
+   1,
+   9,
+   1
   ],
   "matched_courses":[
    "TDAF0001-1",
    "TDAL0001-1",
    "TDAS0002-1",
-   "TDEH0002-1"
+   "TDAT0001-1",
+   "TDBF0003-1",
+   "TDCT0001-1",
+   "TDDE0003-1",
+   "TDEH0002-1",
+   "TDEP0002-2",
+   "TDER0001-1"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":10,
   "nb_total_courses":68
  },
  {
@@ -63,8 +71,8 @@
   ],
   "themes":[
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
@@ -73,10 +81,11 @@
   ],
   "matched_courses":[
    "ACVC0001-1",
+   "BATI0002-1",
    "ENER0005-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":24
  },
  {
@@ -97,24 +106,30 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "carbon",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2,
+   4,
    1,
    2,
-   2
+   3,
+   1,
+   1
   ],
   "matched_courses":[
    "CONS0004-2",
    "CONS0010-3",
-   "GEST3751-2"
+   "CONS0026-2",
+   "GEST3751-2",
+   "TESP0001-1"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":19
  },
  {
@@ -137,20 +152,21 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   2,
-   1
+   1,
+   3
   ],
   "matched_courses":[
    "ENER0003-2",
+   "ENVI0831-1",
    "GEST3759-1",
    "TECH0769-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":38
  },
  {
@@ -171,24 +187,34 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "economy",
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   5,
+   2,
+   2,
    1,
+   9,
+   3,
    1
   ],
   "matched_courses":[
    "BIOL2039-2",
    "COEN0001-1",
    "INTP0014-1",
+   "MAEN0001-1",
+   "MAEN0002-1",
    "MAEN0003-1",
-   "SCAP0002-1"
+   "SCAP0002-1",
+   "SCEN0001-2",
+   "SCEN0002-2"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":9,
   "nb_total_courses":35
  },
  {
@@ -210,7 +236,7 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
@@ -242,21 +268,37 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
-   2,
-   2
+   1,
+   1,
+   1,
+   5,
+   5,
+   1
   ],
   "matched_courses":[
+   "BIOL2040-1",
+   "CHIM9286-1",
+   "CHIM9288-1",
+   "CHIM9290-2",
    "ECOL0002-1",
-   "ECOL0003-1"
+   "ECOL0003-1",
+   "ENVI0832-1",
+   "ENVI0833-1",
+   "ENVI0834-1",
+   "ENVI0835-1"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":10,
   "nb_total_courses":33
  },
  {
@@ -279,22 +321,28 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources"
+   "life",
+   "pollution",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
    1,
    2,
+   2,
+   1,
    1,
    1
   ],
   "matched_courses":[
+   "CHIM9291-1",
    "ELEC0463-1",
    "ENVI0829-2",
+   "HVAC0002-1",
    "MATE0001-1"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":29
  },
  {
@@ -316,21 +364,19 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
+   2,
    1,
-   1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
    "BOIS0002-1",
+   "FOGE0003-3",
    "MATE0009-1",
-   "SPEC0003-1",
    "SPEC0005-2"
   ],
   "nb_dedicated_courses":0,
@@ -430,6 +476,40 @@
   "nb_total_courses":53
  },
  {
+  "id":"P1AESH01",
+  "name":"Bachelier\u00a0: agr\u00e9g\u00e9(e) de l'enseignement secondaire inf\u00e9rieur, orientation sciences humaines\u00a0: g\u00e9ographie, histoire, sciences sociales",
+  "cycle":"bac",
+  "url":"http:\/\/progcours.hers.be\/cocoon\/programmes\/P1AESH01_C.html",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "D\u00e9partement P\u00e9dagogique"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "SHCL0001-2",
+   "SHCM0001-1",
+   "SHDP0001-1"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":27
+ },
+ {
   "id":"P1AESC01",
   "name":"Bachelier\u00a0: agr\u00e9g\u00e9(e) de l'enseignement secondaire inf\u00e9rieur, orientation sciences\u00a0: biologie, chimie, physique",
   "cycle":"bac",
@@ -447,17 +527,18 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   2
+   3
   ],
   "matched_courses":[
+   "SCCM0001-1",
    "SCET0001-2",
    "SCEU0003-1"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":27
  },
  {
@@ -508,9 +589,11 @@
    "Pedagogy"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[

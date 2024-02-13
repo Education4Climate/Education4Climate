@@ -1,5 +1,38 @@
 [
  {
+  "id":"040B",
+  "name":"Bachelier en histoire",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/040B\/2022",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LELVB002"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":132
+ },
+ {
   "id":"170B",
   "name":"Bachelier en droit (horaire d\u00e9cal\u00e9)",
   "cycle":"bac",
@@ -17,7 +50,7 @@
    "Law & Criminology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -28,6 +61,37 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":29
+ },
+ {
+  "id":"022F",
+  "name":"Certificat d'universit\u00e9 en philosophie",
+  "cycle":"certificate",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/022F\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LPHIB103_28763"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":14
  },
  {
   "id":"100B",
@@ -50,22 +114,24 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   1,
-   3
+   3,
+   5,
+   2
   ],
   "matched_courses":[
    "DROIB330",
    "DROIB335",
-   "ECGEB284",
-   "FINT0043"
+   "ECGEB383",
+   "FINT0039",
+   "FINT0043",
+   "SGOGB309"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":6,
   "nb_total_courses":134
  },
  {
@@ -86,18 +152,21 @@
    "Other"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   2,
    1
   ],
   "matched_courses":[
+   "FINT0039",
    "FINT0043"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":9
  },
  {
@@ -121,21 +190,151 @@
    "Letters"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
-   3
+   1,
+   4,
+   1
   ],
   "matched_courses":[
    "ECGEB140",
+   "FINT0039",
    "FINT0043",
    "LPHIB103"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":119
+ },
+ {
+  "id":"460M",
+  "name":"Master 120 en sciences pharmaceutiques, \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/460M\/2022",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Namur",
+   "Woluwe-saint-lambert"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MPHAM123"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":34
+ },
+ {
+  "id":"46AM",
+  "name":"Master 120 en sciences pharmaceutiques, \u00e0 finalit\u00e9 approfondie",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/46AM\/2022",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Namur",
+   "Woluwe-saint-lambert"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "MPHAM123"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":33
+ },
+ {
+  "id":"422M",
+  "name":"Master 120 en sciences biom\u00e9dicales \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en recherche pr\u00e9clinique",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/422M\/2022",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SFCMM201"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":44
+ },
+ {
+  "id":"423M",
+  "name":"Master 120 en sciences biom\u00e9dicales \u00e0 finalit\u00e9 sp\u00e9cialis\u00e9e en recherche clinique",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/423M\/2022",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Li\u00e8ge",
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 de m\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SFCMM201"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":41
  },
  {
   "id":"460B",
@@ -157,17 +356,18 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "SBIOB001",
    "SBIOB153"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":47
  },
  {
@@ -190,17 +390,18 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "MMEDB352",
    "SBIOB153"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":50
  },
  {
@@ -223,17 +424,20 @@
    "Science"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2
+   1,
+   1,
+   1
   ],
   "matched_courses":[
-   "SCHIM223",
-   "SCHIM224"
+   "SCHIM223"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":21
  },
  {
@@ -255,7 +459,7 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -288,21 +492,22 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
    1,
-   2,
+   1,
+   1,
    2
   ],
   "matched_courses":[
    "SCHIM103",
    "SCHIM124",
-   "SCHIM202",
-   "SCHIM224"
+   "SCHIM202"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":3,
   "nb_total_courses":18
  },
  {
@@ -325,19 +530,22 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
+   1,
    1
   ],
   "matched_courses":[
    "SCHIM223",
-   "SGOGB302_28317",
-   "SPHYM119"
+   "SGOGB302_28317"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":39
  },
  {
@@ -360,16 +568,18 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   2,
    1,
+   1,
+   2,
    1
   ],
   "matched_courses":[
@@ -401,21 +611,54 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
+   1,
    1
   ],
   "matched_courses":[
    "SBOEM163",
-   "SBOEM165_29117"
+   "SBOEM165_29117",
+   "SMEDM115"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":27
+ },
+ {
+  "id":"26AM",
+  "name":"Master 120 in molecular microbiology, research focus",
+  "cycle":"master",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/26AM\/2022",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SBIOM201"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":19
  },
  {
   "id":"241M",
@@ -438,25 +681,36 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "general",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
+   3,
    1,
-   5
+   10,
+   1
   ],
   "matched_courses":[
+   "BIOD0001-3",
    "DROIB330",
    "ENVT3050-1",
+   "LBIR1230",
+   "LENVI2005",
+   "PAYS0006-2",
+   "PAYS0014-1",
+   "PAYS0017-1",
+   "SGOGB304",
    "SSMRM101",
    "SSMRM102",
    "SSMRM103",
    "SSMRM104"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":9,
+  "nb_matched_courses":13,
   "nb_total_courses":38
  },
  {
@@ -481,26 +735,36 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "general",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
+   3,
    1,
-   6
+   10,
+   1
   ],
   "matched_courses":[
+   "BIOD0001-3",
    "DROIB330",
    "ENVT0040-2",
+   "ENVT3027-1",
    "ENVT3050-1",
+   "LBIR1230",
+   "LENVI2005",
+   "PAYS0006-2",
+   "SGOGB304",
    "SSMRM101",
    "SSMRM102",
    "SSMRM103",
    "SSMRM104"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":9,
+  "nb_matched_courses":13,
   "nb_total_courses":39
  },
  {
@@ -525,25 +789,34 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "general",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
+   3,
    1,
-   5
+   8,
+   1
   ],
   "matched_courses":[
+   "BIOD0001-3",
    "DROIB330",
    "ENVT3050-1",
+   "LBIR1230",
+   "LENVI2005",
+   "PAYS0006-2",
+   "SGOGB304",
    "SSMRM101",
    "SSMRM102",
    "SSMRM103",
    "SSMRM104"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":11,
   "nb_total_courses":38
  },
  {
@@ -567,25 +840,34 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "general",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
+   3,
    1,
-   5
+   8,
+   1
   ],
   "matched_courses":[
+   "BIOD0001-3",
    "DROIB330",
    "ENVT3050-1",
+   "LBIR1230",
+   "LENVI2005",
+   "PAYS0006-2",
+   "SGOGB304",
    "SSMRM101",
    "SSMRM102",
    "SSMRM103",
    "SSMRM104"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":11,
   "nb_total_courses":38
  },
  {
@@ -610,26 +892,38 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "food",
+   "general",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   2,
    3,
    1,
-   5
+   1,
+   9,
+   1
   ],
   "matched_courses":[
+   "BIOD0001-3",
    "DROIB330",
    "ENVT3050-1",
+   "LBIR1230",
+   "LBIRE2131",
    "LBRAI2110",
+   "LENVI2005",
+   "PAYS0006-2",
+   "SGOGB304",
    "SSMRM101",
    "SSMRM102",
    "SSMRM103",
    "SSMRM104"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":9,
+  "nb_matched_courses":13,
   "nb_total_courses":40
  },
  {
@@ -652,19 +946,22 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
+   1,
    1
   ],
   "matched_courses":[
    "SCHIM223",
-   "SGOGB302_28317",
-   "SPHYM119"
+   "SGOGB302_28317"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":49
  },
  {
@@ -687,19 +984,22 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
+   1,
    1
   ],
   "matched_courses":[
    "SCHIM223",
-   "SGOGB302_28317",
-   "SPHYM119"
+   "SGOGB302_28317"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":50
  },
  {
@@ -722,19 +1022,22 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
+   1,
    1
   ],
   "matched_courses":[
    "SCHIM223",
-   "SGOGB302_28317",
-   "SPHYM119"
+   "SGOGB302_28317"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":61
  },
  {
@@ -757,19 +1060,22 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
+   1,
    1
   ],
   "matched_courses":[
    "SCHIM223",
-   "SGOGB302_28317",
-   "SPHYM119"
+   "SGOGB302_28317"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":50
  },
  {
@@ -792,16 +1098,20 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   2,
    1,
    1,
-   4,
+   3,
    1,
+   3,
    1
   ],
   "matched_courses":[
@@ -835,16 +1145,18 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   3,
    1,
+   2,
+   3,
    1
   ],
   "matched_courses":[
@@ -877,17 +1189,21 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "life",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
+   1,
+   3,
    4,
    3,
    1,
-   1
+   2
   ],
   "matched_courses":[
    "SCHIM103",
@@ -895,11 +1211,10 @@
    "SCHIM124",
    "SCHIM202",
    "SCHIM223_29083",
-   "SCHIM223_29084",
-   "SCHIM224"
+   "SCHIM223_29084"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_matched_courses":6,
   "nb_total_courses":49
  },
  {
@@ -924,29 +1239,48 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    2,
-   5,
-   2,
-   2
+   24,
+   3,
+   3
   ],
   "matched_courses":[
+   "EBIOE2001",
+   "EBIOE2002",
+   "LBIR1328",
+   "LBOE2120",
+   "LBOE2122",
+   "LBOE2125",
+   "LBOE2140",
+   "LBOE2143",
+   "LBOE2150",
+   "LBOE2166",
+   "LBOE2292",
+   "SBIOM201",
+   "SBOEM123",
+   "SBOEM124",
    "SBOEM144",
+   "SBOEM162",
    "SBOEM163",
    "SBOEM165",
+   "SBOEM169",
+   "SBOEM237",
    "SBOEM238",
    "SBOEM260",
+   "SFCMM201",
    "SGOLB210",
    "SGOLM145",
-   "SGOLM146"
+   "SGOLM146",
+   "SVETB301"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":12,
+  "nb_matched_courses":27,
   "nb_total_courses":61
  },
  {
@@ -971,28 +1305,50 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   5,
-   2,
-   2
+   26,
+   3,
+   3
   ],
   "matched_courses":[
+   "EBIOE2001",
+   "EBIOE2002",
+   "LBIR1328",
+   "LBOE2109",
+   "LBOE2120",
+   "LBOE2122",
+   "LBOE2125",
+   "LBOE2140",
+   "LBOE2143",
+   "LBOE2150",
+   "LBOE2166",
+   "LBOE2292",
+   "SBIOM201",
+   "SBOEM108",
+   "SBOEM112",
+   "SBOEM123",
+   "SBOEM124",
    "SBOEM144",
+   "SBOEM162",
    "SBOEM163",
    "SBOEM165",
+   "SBOEM169",
+   "SBOEM237",
    "SBOEM238",
+   "SFCMM201",
    "SGOLB210",
    "SGOLM145",
-   "SGOLM146"
+   "SGOLM146",
+   "SVETB301"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":14,
+  "nb_matched_courses":29,
   "nb_total_courses":97
  },
  {
@@ -1017,28 +1373,50 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   5,
-   2,
-   2
+   26,
+   3,
+   3
   ],
   "matched_courses":[
+   "EBIOE2001",
+   "EBIOE2002",
+   "LBIR1328",
+   "LBOE2109",
+   "LBOE2120",
+   "LBOE2122",
+   "LBOE2125",
+   "LBOE2140",
+   "LBOE2143",
+   "LBOE2150",
+   "LBOE2166",
+   "LBOE2292",
+   "SBIOM201",
+   "SBOEM108",
+   "SBOEM112",
+   "SBOEM123",
+   "SBOEM124",
    "SBOEM144",
+   "SBOEM162",
    "SBOEM163",
    "SBOEM165",
+   "SBOEM169",
+   "SBOEM237",
    "SBOEM238",
+   "SFCMM201",
    "SGOLB210",
    "SGOLM145",
-   "SGOLM146"
+   "SGOLM146",
+   "SVETB301"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":14,
+  "nb_matched_courses":29,
   "nb_total_courses":78
  },
  {
@@ -1060,18 +1438,21 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "SBOEM165_29117"
+   "SBIOM201",
+   "SBOEM165_29117",
+   "SFCMM201",
+   "SMEDM115"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":42
  },
  {
@@ -1093,18 +1474,21 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "SBOEM165_29117"
+   "SBIOM201",
+   "SBOEM165_29117",
+   "SFCMM201",
+   "SMEDM115"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":57
  },
  {
@@ -1126,19 +1510,94 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   1,
+   3,
    1
   ],
   "matched_courses":[
-   "SBOEM165_29117"
+   "SBIOM201",
+   "SBOEM165_29117",
+   "SFCMM201",
+   "SMEDM115"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":42
+ },
+ {
+  "id":"210B",
+  "name":"Bachelier en sciences physiques",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/210B\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy",
+   "life",
+   "pollution"
+  ],
+  "themes_scores":[
+   1,
+   2,
+   1
+  ],
+  "matched_courses":[
+   "SBIOB001",
+   "SPHYB220",
+   "SPHYB304",
+   "SSPSB102"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":54
+ },
+ {
+  "id":"200B",
+  "name":"Bachelier en sciences math\u00e9matiques",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/200B\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "ECGEB383",
+   "SBIOB001",
+   "SPHYB304",
+   "SSPSB102"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":69
  },
  {
   "id":"230B",
@@ -1158,24 +1617,32 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   4,
-   1,
+   3,
+   8,
+   2,
    2
   ],
   "matched_courses":[
    "FINT0043",
-   "SGOLB106",
+   "SBIOB001",
+   "SBIOB114",
+   "SBIOB207",
    "SGOLB210",
+   "SGOLB302",
    "SGOLB303",
-   "SGOLB306"
+   "SGOLB304",
+   "SGOLB306",
+   "SGOLB311",
+   "SSPSB102"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":11,
   "nb_total_courses":56
  },
  {
@@ -1196,26 +1663,73 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   1,
-   4,
-   3
+   5,
+   3,
+   9,
+   2,
+   1
   ],
   "matched_courses":[
    "FINT0043",
+   "SBIOB001",
+   "SBIOB114",
+   "SBIOB207",
+   "SGOGB207",
    "SGOGB210",
    "SGOGB302",
    "SGOGB303",
-   "SGOLB106",
-   "SGOLB303"
+   "SGOGB304",
+   "SGOGB309",
+   "SGOGB310",
+   "SGOLB303",
+   "SSPSB102"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":13,
   "nb_total_courses":60
+ },
+ {
+  "id":"220B",
+  "name":"Bachelier en sciences chimiques",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/220B\/2022",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 des sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "climate",
+   "life",
+   "resources"
+  ],
+  "themes_scores":[
+   1,
+   1,
+   1
+  ],
+  "matched_courses":[
+   "SCHIB308",
+   "SPHYB214",
+   "SSPSB102"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":51
  },
  {
   "id":"250B",
@@ -1237,22 +1751,32 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   5
+   2,
+   13,
+   1
   ],
   "matched_courses":[
+   "SBIOB001",
+   "SBIOB126",
    "SBIOB208",
    "SBIOB212",
    "SBIOB229",
+   "SBIOB309",
+   "SBIOB326",
    "SBIOB346",
    "SBIOB347",
-   "SBIOB368"
+   "SBIOB349",
+   "SBIOB362",
+   "SBIOB367",
+   "SBIOB368",
+   "SSPSB102"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":14,
   "nb_total_courses":89
  },
  {
@@ -1275,18 +1799,25 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2
+   7,
+   1
   ],
   "matched_courses":[
+   "SBIOB001",
+   "SBIOB104",
    "SSPSB107",
-   "SVETB205"
+   "SVETB101",
+   "SVETB205",
+   "SVETB301",
+   "SVETB305"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":7,
   "nb_total_courses":67
  },
  {
@@ -1308,8 +1839,8 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
@@ -1341,8 +1872,8 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
@@ -1374,8 +1905,8 @@
    "Engineering"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
@@ -1407,21 +1938,23 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
+   3,
    1,
-   3
+   1
   ],
   "matched_courses":[
-   "ECGEB284_27832",
+   "FINT0039",
    "FINT0043",
    "INFOB115"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":3,
   "nb_total_courses":64
  },
@@ -1446,15 +1979,15 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "EDEVM334"
+   "ECONM821"
   ],
-  "nb_dedicated_courses":0,
+  "nb_dedicated_courses":1,
   "nb_matched_courses":1,
   "nb_total_courses":13
  },
@@ -1479,7 +2012,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
@@ -1515,19 +2048,18 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   3
   ],
   "matched_courses":[
+   "ECONM821",
    "LECSO2330",
    "LESPO2104"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":3,
   "nb_total_courses":43
  },
  {
@@ -1551,7 +2083,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
@@ -1589,9 +2121,13 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
@@ -1622,7 +2158,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
@@ -1661,19 +2197,18 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   3
   ],
   "matched_courses":[
+   "ECONM821",
    "LECSO2330",
    "LESPO2104"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":3,
   "nb_total_courses":91
  },
  {
@@ -1701,19 +2236,18 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   3
   ],
   "matched_courses":[
+   "ECONM821",
    "LECSO2330",
    "LESPO2104"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":3,
   "nb_total_courses":101
  },
  {
@@ -1738,16 +2272,17 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "ECONM821",
    "LECSO2330"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
   "nb_total_courses":65
  },
  {
@@ -1774,9 +2309,13 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
@@ -1807,7 +2346,7 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
@@ -1845,9 +2384,13 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
@@ -1881,10 +2424,12 @@
    "Management"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
@@ -1916,7 +2461,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -1952,17 +2497,20 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2
+   2,
+   1
   ],
   "matched_courses":[
    "ECGEB140",
-   "ECGEB284"
+   "ECGEB264",
+   "ECGEB383"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":50
  },
  {
@@ -1989,12 +2537,14 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   3
+   2,
+   3,
+   2
   ],
   "matched_courses":[
    "DROIB330",
@@ -2029,23 +2579,32 @@
    "Management"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
+   1,
+   1,
+   1,
    2,
    2,
-   1
+   2
   ],
   "matched_courses":[
-   "ECGEB284",
+   "ECGEB383",
    "EINGB221",
+   "EINGB315",
    "EINGB316",
    "EITGB116"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":5,
   "nb_total_courses":59
  },
  {
@@ -2072,17 +2631,16 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2
+   1
   ],
   "matched_courses":[
-   "ECGEB140",
-   "ECGEB284"
+   "ECGEB140"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":53
  },
  {
@@ -2107,7 +2665,7 @@
    "Letters"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -2118,5 +2676,39 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":94
+ },
+ {
+  "id":"020B",
+  "name":"Bachelier en langues et lettres fran\u00e7aises et romanes, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/directory.unamur.be\/teaching\/programmes\/020B\/2022",
+  "languages":[
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Namur"
+  ],
+  "faculties":[
+   "Facult\u00e9 de philosophie et lettres"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LELVB002"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":75
  }
 ]

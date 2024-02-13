@@ -17,19 +17,23 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "general",
+   "life"
   ],
   "themes_scores":[
-   2,
-   1
+   1,
+   1,
+   4
   ],
   "matched_courses":[
+   "148049",
+   "148062",
    "148079",
    "148157"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":45
  },
  {
@@ -51,19 +55,20 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "sustainability"
+   "prod&cons"
   ],
   "themes_scores":[
-   2,
+   1,
+   1,
    1
   ],
   "matched_courses":[
-   "147672",
-   "147679"
+   "147672"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":37
  },
  {
@@ -84,19 +89,23 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "general",
+   "life"
   ],
   "themes_scores":[
-   2,
-   1
+   1,
+   1,
+   4
   ],
   "matched_courses":[
+   "148049",
+   "148062",
    "148079",
    "148157"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":45
  },
  {
@@ -184,12 +193,12 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life"
   ],
   "themes_scores":[
-   2,
-   2
+   1,
+   1
   ],
   "matched_courses":[
    "147951",
@@ -231,6 +240,43 @@
   "nb_total_courses":64
  },
  {
+  "id":4004,
+  "name":"Graduaat in het logies-, restaurant- & cateringmanagement",
+  "cycle":"grad",
+  "url":"https:\/\/ects.ehb.be\/#\/training\/1\/4004",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Mens & Maatschappij"
+  ],
+  "fields":[
+   "Pedagogy",
+   "Sociology",
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "147811"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":51
+ },
+ {
   "id":4021,
   "name":"Bachelor of Arts in het drama",
   "cycle":"bac",
@@ -249,8 +295,8 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "general",
+   "life"
   ],
   "themes_scores":[
    1,
@@ -287,18 +333,24 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
   "matched_courses":[
+   "149261",
+   "149369",
    "149418",
-   "149477"
+   "149452"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":215
  },
  {
@@ -325,18 +377,24 @@
   ],
   "themes":[
    "climate",
-   "energy"
+   "energy",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
   "matched_courses":[
+   "149261",
+   "149369",
    "149418",
-   "149477"
+   "149452"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":274
  },
  {
@@ -364,7 +422,7 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    2
@@ -399,22 +457,16 @@
    "Communication"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "sustainability"
+   "economy"
   ],
   "themes_scores":[
-   1,
-   1,
    1
   ],
   "matched_courses":[
-   "145780",
-   "145790",
    "145798"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":1,
   "nb_total_courses":41
  },
  {
@@ -435,19 +487,23 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "climate",
+   "general",
+   "life"
   ],
   "themes_scores":[
-   2,
-   1
+   1,
+   1,
+   4
   ],
   "matched_courses":[
+   "148049",
+   "148062",
    "148079",
    "148157"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":186
  },
  {
@@ -476,58 +532,22 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1,
+   2,
    1
   ],
   "matched_courses":[
    "146207",
-   "150078"
+   "150078",
+   "150079"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":76
- },
- {
-  "id":3977,
-  "name":"Bachelor in het hotelmanagement",
-  "cycle":"bac",
-  "url":"https:\/\/ects.ehb.be\/#\/training\/1\/3977",
-  "languages":[
-   "de",
-   "en",
-   "es",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Mens & Maatschappij"
-  ],
-  "fields":[
-   "Pedagogy",
-   "Sociology",
-   "Management",
-   "Communication"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "146156"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":52
  },
  {
   "id":3975,
@@ -549,19 +569,19 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
-   3,
    1,
+   4,
    1
   ],
   "matched_courses":[
    "145980",
-   "146006",
+   "146025",
    "146040",
    "146042",
    "146045"
@@ -590,23 +610,26 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "transport"
   ],
   "themes_scores":[
    2,
-   3,
+   1,
+   5,
    1
   ],
   "matched_courses":[
    "146040",
    "146057",
+   "146080",
    "146108",
    "146110",
    "146113"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":5,
+  "nb_matched_courses":6,
   "nb_total_courses":50
  },
  {
@@ -630,18 +653,53 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "148436"
+   "148436",
+   "148439",
+   "148440"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":61
+ },
+ {
+  "id":4051,
+  "name":"Bachelor in de biomedische laboratoriumtechnologie",
+  "cycle":"bac",
+  "url":"https:\/\/ects.ehb.be\/#\/training\/1\/4051",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Gezondheidszorg, Design & Technologie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "148634",
+   "148635"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":90
  }
 ]

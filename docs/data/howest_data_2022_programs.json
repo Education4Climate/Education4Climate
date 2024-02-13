@@ -24,23 +24,30 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
-   1,
    3,
-   5
+   7,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
-   "91704",
+   "91642",
+   "91755",
+   "91782",
+   "91819",
    "91895",
    "91908",
-   "91938",
+   "94724",
    "95949"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":5,
+  "nb_matched_courses":8,
   "nb_total_courses":157
  },
  {
@@ -66,53 +73,18 @@
    "Sociology"
   ],
   "themes":[
-   "energy"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "93871"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":53
- },
- {
-  "id":1550,
-  "name":"Bachelor Toegepaste Gezondheidswetenschappen",
-  "cycle":"bac",
-  "url":"https:\/\/www.howest.be\/nl\/opleidingen\/bachelor\/toegepaste-gezondheidswetenschappen",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-   "Brugge"
-  ],
-  "faculties":[
-   "mens & welzijn"
-  ],
-  "fields":[
-   "Medecine & Health",
-   "Law & Criminology",
-   "Psychology",
-   "Pedagogy",
-   "Sociology"
-  ],
-  "themes":[
-   "energy"
+   "transport"
   ],
   "themes_scores":[
    2
   ],
   "matched_courses":[
-   "94100",
-   "94124"
+   "93869",
+   "93873"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
-  "nb_total_courses":44
+  "nb_total_courses":53
  },
  {
   "id":1513,
@@ -134,9 +106,9 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1,
@@ -171,17 +143,20 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
-   2
+   2,
+   1
   ],
   "matched_courses":[
+   "93337",
    "93357",
    "93365"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":42
  },
  {
@@ -204,21 +179,18 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    2,
-   1,
    1
   ],
   "matched_courses":[
    "92541",
-   "92551",
-   "92552"
+   "92551"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
   "nb_total_courses":26
  },
  {
@@ -242,23 +214,20 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "resources"
+   "pollution"
   ],
   "themes_scores":[
-   1,
-   1,
-   3
+   2,
+   2
   ],
   "matched_courses":[
-   "94031",
+   "94030",
+   "94039",
    "94045",
-   "94047",
-   "94059",
    "94061"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":5,
+  "nb_matched_courses":4,
   "nb_total_courses":36
  },
  {
@@ -280,13 +249,13 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "92012"
+   "94705"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -314,26 +283,35 @@
    "Communication"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "economy",
+   "energy"
   ],
   "themes_scores":[
+   2,
+   2,
    2
   ],
   "matched_courses":[
    "92155",
-   "92177"
+   "92177",
+   "94800",
+   "94801"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":175
  },
  {
-  "id":1531,
-  "name":"Bachelor Journalistiek",
+  "id":1556,
+  "name":"Bachelor Toerisme en Recreatiemanagement",
   "cycle":"bac",
-  "url":"https:\/\/www.howest.be\/nl\/opleidingen\/bachelor\/journalistiek",
+  "url":"https:\/\/www.howest.be\/nl\/opleidingen\/bachelor\/toerisme-en-recreatiemanagement",
   "languages":[
+   "cn",
+   "de",
    "en",
+   "es",
    "fr",
    "nl"
   ],
@@ -348,17 +326,56 @@
    "Communication"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
+   5
+  ],
+  "matched_courses":[
+   "94388",
+   "94390",
+   "94392",
+   "94423",
+   "95134"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":5,
+  "nb_total_courses":47
+ },
+ {
+  "id":1537,
+  "name":"Bachelor Netwerkeconomie (Business Innovation)",
+  "cycle":"bac",
+  "url":"https:\/\/www.howest.be\/nl\/opleidingen\/bachelor\/netwerkeconomie",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "bedrijf & organisatie"
+  ],
+  "fields":[
+   "Management",
+   "Communication"
+  ],
+  "themes":[
+   "carbon",
+   "climate"
+  ],
+  "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "93417"
+   "95445",
+   "95481"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":53
+  "nb_matched_courses":2,
+  "nb_total_courses":36
  },
  {
   "id":1483,
@@ -381,11 +398,9 @@
    "Communication"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[

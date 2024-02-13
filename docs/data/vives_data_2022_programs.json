@@ -19,9 +19,11 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "energy"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -30,6 +32,55 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":15
+ },
+ {
+  "id":"SC_54110003",
+  "name":"Bachelor in het wellbeing- en vitaliteitsmanagement via verkorte route (na bachelor handelswetenschappen en bedrijfskunde) (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_54110003.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Handelswetenschappen en bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "energy",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   16
+  ],
+  "matched_courses":[
+   "V31C05",
+   "V31C57",
+   "V31C58",
+   "V31C95",
+   "V31C96",
+   "V32C91",
+   "V32C96",
+   "V32C99",
+   "V33C10",
+   "V33C36",
+   "V33C56",
+   "V33C57",
+   "V33C58",
+   "V33C91",
+   "V34C32",
+   "V34C33",
+   "V34C34"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":17,
+  "nb_total_courses":60
  },
  {
   "id":"SC_52334929",
@@ -52,28 +103,32 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
    1,
-   7
+   1,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3R702",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":70
  },
  {
@@ -99,9 +154,13 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "themes_scores":[
+   1,
+   1,
    1
   ],
   "matched_courses":[
@@ -135,16 +194,19 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
-   "V3S071"
+   "V3S071",
+   "V3S372"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":147
  },
  {
@@ -170,10 +232,12 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "themes_scores":[
+   1,
    1,
    1
   ],
@@ -206,7 +270,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "themes_scores":[
    1
@@ -241,27 +305,34 @@
    "Management"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
    1,
-   8
+   4,
+   1,
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3S071",
+   "V3S372",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":218
  },
  {
@@ -287,29 +358,71 @@
    "Management"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   1,
+   4,
    2,
-   9
+   2,
+   1,
+   3,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V2S577",
    "V3AB14",
+   "V3S038",
    "V3S835",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":8,
   "nb_total_courses":347
+ },
+ {
+  "id":"SC_52357563",
+  "name":"Bachelor organisatie en management via verkorte leerroute (na bachelor handelswetenschappen en bedrijfskunde) (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52357563.htm",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Handelswetenschappen en bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "V31C57"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":66
  },
  {
   "id":"SC_52334947",
@@ -335,25 +448,29 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   1,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":118
  },
  {
@@ -380,25 +497,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
+   "V31C57",
    "V3AB14",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":122
  },
  {
@@ -422,28 +544,32 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
    1,
-   7
+   1,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3R419",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":91
  },
  {
@@ -499,25 +625,48 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   2,
+   1,
+   19,
+   1
   ],
   "matched_courses":[
    "V2S530",
+   "V31C05",
+   "V31C57",
+   "V31C58",
+   "V31C95",
+   "V31C96",
+   "V32C91",
+   "V32C96",
+   "V32C99",
+   "V33C10",
+   "V33C15",
+   "V33C36",
+   "V33C56",
+   "V33C57",
+   "V33C58",
+   "V33C91",
+   "V34C44",
    "V3AB14",
+   "V3V216",
+   "V3V219",
+   "V3V221",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":24,
   "nb_total_courses":99
  },
  {
@@ -541,7 +690,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "prod&cons"
   ],
   "themes_scores":[
    1
@@ -552,6 +701,37 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":36
+ },
+ {
+  "id":"SC_52557907",
+  "name":"Postgraduaat Animal Rehab Techniques and Sports Coaching (Roeselare)",
+  "cycle":"postgrad",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52557907.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Roeselare"
+  ],
+  "faculties":[
+   "Biotechniek"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "V33L79",
+   "V33L80"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":18
  },
  {
   "id":"SC_55574283",
@@ -571,17 +751,82 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   3
+  ],
+  "matched_courses":[
+   "V33T07",
+   "V33T10",
+   "V33T11"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":9
+ },
+ {
+  "id":"SC_54207000",
+  "name":"Postgraduaat Dieren in de hulpverlening (Roeselare)",
+  "cycle":"postgrad",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_54207000.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Roeselare"
+  ],
+  "faculties":[
+   "Biotechniek"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "V33I11",
+   "V33I13"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":13
+ },
+ {
+  "id":"SC_53497685",
+  "name":"Postgraduaat in de Equicoaching - personal coaching (Roeselare)",
+  "cycle":"postgrad",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_53497685.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Roeselare"
+  ],
+  "faculties":[
+   "Biotechniek"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "V33T10"
+   "V33I04"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":9
+  "nb_total_courses":3
  },
  {
   "id":"SC_52334917",
@@ -602,37 +847,61 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
+   2,
+   6,
+   1,
    5,
    2,
-   7,
-   1,
-   9
+   30,
+   1
   ],
   "matched_courses":[
    "V2S530",
-   "V3A012",
+   "V3A031",
+   "V3A044",
+   "V3A070",
+   "V3A073",
+   "V3A364",
+   "V3A382",
+   "V3A388",
    "V3A395",
+   "V3A619",
+   "V3A632",
+   "V3A637",
+   "V3A647",
    "V3A661",
+   "V3A794",
+   "V3A795",
+   "V3A814",
+   "V3A817",
+   "V3A821",
    "V3A825",
+   "V3A862",
+   "V3A863",
+   "V3A864",
    "V3A865",
+   "V3A866",
+   "V3A867",
    "V3A868",
+   "V3A871",
    "V3AB14",
+   "V3AD34",
    "V3AD36",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":14,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":34,
   "nb_total_courses":102
  },
  {
@@ -653,7 +922,7 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
-   "environment"
+   "food"
   ],
   "themes_scores":[
    1
@@ -686,54 +955,109 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   9,
-   8,
-   21,
+   7,
+   10,
    1,
-   18
+   16,
+   5,
+   68,
+   5,
+   1
   ],
   "matched_courses":[
    "V2S530",
-   "V3A011",
+   "V3A008",
+   "V3A013",
+   "V3A022",
+   "V3A026",
    "V3A033",
+   "V3A034",
+   "V3A036",
+   "V3A038",
+   "V3A039",
+   "V3A050",
    "V3A051",
    "V3A056",
    "V3A057",
+   "V3A058",
    "V3A060",
-   "V3A218",
+   "V3A280",
    "V3A286",
    "V3A291",
+   "V3A304",
+   "V3A333",
+   "V3A334",
+   "V3A412",
+   "V3A418",
+   "V3A423",
+   "V3A444",
+   "V3A454",
+   "V3A457",
+   "V3A483",
+   "V3A487",
    "V3A493",
    "V3A507",
+   "V3A514",
    "V3A515",
+   "V3A516",
    "V3A535",
+   "V3A561",
+   "V3A567",
    "V3A572",
+   "V3A581",
+   "V3A585",
+   "V3A586",
+   "V3A592",
+   "V3A606",
+   "V3A673",
+   "V3A677",
+   "V3A689",
+   "V3A709",
    "V3A711",
    "V3A716",
+   "V3A717",
+   "V3A732",
+   "V3A739",
+   "V3A741",
+   "V3A755",
+   "V3A761",
    "V3A768",
+   "V3A771",
+   "V3A775",
+   "V3A777",
    "V3A787",
+   "V3A835",
    "V3A836",
+   "V3A838",
+   "V3A844",
    "V3A846",
+   "V3A850",
    "V3A851",
+   "V3A852",
    "V3A855",
    "V3A873",
+   "V3A885",
    "V3A887",
+   "V3A889",
+   "V3A898",
    "V3AB14",
+   "V3AC60",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":12,
-  "nb_matched_courses":31,
+  "nb_dedicated_courses":16,
+  "nb_matched_courses":80,
   "nb_total_courses":251
  },
  {
@@ -754,23 +1078,37 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
    1,
-   3,
-   3
+   1,
+   1,
+   2,
+   1,
+   11
   ],
   "matched_courses":[
+   "V3AA09",
    "V3AA12",
    "V3AA13",
-   "V3AA94",
-   "V3AE50"
+   "V3AA16",
+   "V3AA78",
+   "V3AA86",
+   "V3AC61",
+   "V3AE07",
+   "V3AE46",
+   "V3AE47",
+   "V3AE50",
+   "V3AE52"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":12,
   "nb_total_courses":33
  },
  {
@@ -791,27 +1129,47 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
+   2,
    1,
-   5,
    1,
-   3
+   1,
+   1,
+   20
   ],
   "matched_courses":[
+   "V3AB00",
+   "V3AB04",
    "V3AB08",
    "V3AB14",
-   "V3AD14",
+   "V3AB18",
+   "V3AB37",
+   "V3AB49",
+   "V3AB54",
+   "V3AB98",
+   "V3AD09",
+   "V3AD16",
+   "V3AD22",
+   "V3AD27",
+   "V3AD34",
    "V3AD36",
    "V3AD40",
-   "V3AD50"
+   "V3AD42",
+   "V3AD47",
+   "V3AD50",
+   "V3AD52",
+   "V3AD53",
+   "V3AD54"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":6,
+  "nb_matched_courses":22,
   "nb_total_courses":60
  },
  {
@@ -835,135 +1193,90 @@
    "Agronomy & Biotechnology"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
-   5,
-   13,
+   4,
    1,
-   7
+   1,
+   8,
+   4,
+   54,
+   6
   ],
   "matched_courses":[
-   "V3A218",
+   "V3AA01",
    "V3AA05",
+   "V3AA09",
    "V3AA12",
    "V3AA13",
+   "V3AA32",
+   "V3AA34",
+   "V3AA36",
+   "V3AA37",
+   "V3AA38",
+   "V3AA54",
+   "V3AA65",
+   "V3AA69",
+   "V3AA76",
+   "V3AA78",
    "V3AA84",
+   "V3AA86",
    "V3AA88",
-   "V3AA94",
+   "V3AA98",
+   "V3AA99",
+   "V3AB30",
+   "V3AC00",
    "V3AC07",
-   "V3AC14",
+   "V3AC16",
+   "V3AC23",
+   "V3AC31",
+   "V3AC32",
    "V3AC34",
+   "V3AC41",
    "V3AC42",
+   "V3AC49",
    "V3AC51",
    "V3AC57",
-   "V3AC70",
+   "V3AC60",
+   "V3AC61",
+   "V3AC76",
+   "V3AC77",
+   "V3AC78",
+   "V3AC81",
+   "V3AE06",
+   "V3AE07",
    "V3AE08",
+   "V3AE10",
+   "V3AE11",
+   "V3AE15",
    "V3AE17",
+   "V3AE19",
+   "V3AE20",
    "V3AE24",
+   "V3AE28",
+   "V3AE29",
+   "V3AE30",
+   "V3AE31",
+   "V3AE33",
    "V3AE34",
-   "V3AE36",
-   "V3AE50"
+   "V3AE40",
+   "V3AE41",
+   "V3AE43",
+   "V3AE46",
+   "V3AE47",
+   "V3AE50",
+   "V3AE52"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":20,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":62,
   "nb_total_courses":193
- },
- {
-  "id":"SC_53860886",
-  "name":"Programme for Exchange Students - VICKIE",
-  "cycle":"other",
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_53860886.htm",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Onderwijs"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "V3Y020"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":21
- },
- {
-  "id":"SC_55089736",
-  "name":"Bachelor in het onderwijs: schoolontwikkeling via afstandsonderwijs",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_55089736.htm",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Onderwijs"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "V32D12"
-  ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
-  "nb_total_courses":14
- },
- {
-  "id":"SC_52334911",
-  "name":"Bachelor in het onderwijs: schoolontwikkeling via contactonderwijs",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52334911.htm",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Onderwijs"
-  ],
-  "fields":[
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "V31D27"
-  ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
-  "nb_total_courses":14
  },
  {
   "id":"SC_55026106",
@@ -983,26 +1296,32 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
+   3,
    1,
    1,
-   2,
+   3,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "V2J018",
    "V2J448",
    "V2J687",
+   "V2J688",
+   "V3J006",
+   "V3J913",
    "V3JO12"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":7,
   "nb_total_courses":156
  },
  {
@@ -1024,28 +1343,64 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
-   1,
-   1,
    3,
    1,
-   1
+   1,
+   4,
+   1,
+   2
   ],
   "matched_courses":[
+   "V2J018",
    "V2J448",
    "V2J687",
+   "V2J688",
    "V2J711",
+   "V3J006",
+   "V3J913",
    "V3JO12"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":8,
   "nb_total_courses":201
+ },
+ {
+  "id":"SC_52357485",
+  "name":"afstandsonderwijs: Educatieve bachelor in het lager onderwijs (na vooropleiding bachelor kleuter (66 sp.) of secundair onderwijs) (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52357485.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Onderwijs"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "V3I831"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":27
  },
  {
   "id":"SC_52334932",
@@ -1067,25 +1422,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
+   "V3H113",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":130
  },
  {
@@ -1108,26 +1468,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   8
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
-   "V3H656",
+   "V3H085",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":159
  },
  {
@@ -1150,27 +1514,61 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   8
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
-   "V3H205",
+   "V3H230",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":166
+ },
+ {
+  "id":"SC_52354731",
+  "name":"afstandsonderwijs: Educatieve bachelor in het lager onderwijs (na bachelor- of masterdiploma) (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52354731.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Onderwijs"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "V3I831"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":32
  },
  {
   "id":"SC_52334936",
@@ -1192,24 +1590,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   1,
+   1,
+   3,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
+   "V3H113",
+   "V3I831",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":3,
   "nb_matched_courses":7,
   "nb_total_courses":132
  },
@@ -1231,7 +1635,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -1261,7 +1665,7 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -1293,26 +1697,31 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   4,
+   5,
    1,
-   7
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
+   "V3H085",
    "V3I396",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":7,
   "nb_total_courses":144
  },
  {
@@ -1335,26 +1744,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   5,
    1,
-   8
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3IA02",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":145
  },
  {
@@ -1377,27 +1790,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
+   1,
+   1,
+   1,
    2,
-   8
+   1
   ],
   "matched_courses":[
-   "V2JA20",
+   "V2JA17",
    "V2S530",
    "V3AB14",
-   "V3I422",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":160
  },
  {
@@ -1418,27 +1834,33 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
-   1,
-   1,
    3,
    1,
-   1
+   1,
+   4,
+   1,
+   2
   ],
   "matched_courses":[
+   "V2J018",
    "V2J448",
    "V2J687",
+   "V2J688",
    "V2J711",
+   "V3J006",
+   "V3J913",
    "V3JO12"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":8,
   "nb_total_courses":205
  },
  {
@@ -1459,28 +1881,34 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
+   3,
    1,
    1,
-   4,
+   5,
    1,
-   1
+   2
   ],
   "matched_courses":[
+   "V2J018",
    "V2J448",
    "V2J480",
    "V2J687",
+   "V2J688",
    "V2J711",
+   "V3J006",
+   "V3J913",
    "V3JO12"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":9,
   "nb_total_courses":234
  },
  {
@@ -1502,35 +1930,43 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
-   4,
-   1,
+   3,
    5,
    1,
-   8
+   2,
+   1,
+   6,
+   2,
+   2
   ],
   "matched_courses":[
+   "V2J018",
    "V2J448",
    "V2J480",
    "V2J687",
+   "V2J688",
    "V2J711",
    "V2S530",
    "V3AB14",
+   "V3J006",
+   "V3J913",
    "V3JO12",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":12,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":14,
   "nb_total_courses":285
  },
  {
@@ -1551,25 +1987,32 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
    2,
+   1,
    2,
+   3,
    1,
    1
   ],
   "matched_courses":[
+   "V2J396",
+   "V2J398",
    "V2J467",
    "V2J648",
+   "V2J651",
    "V3JA37",
    "V3JA40"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":229
  },
  {
@@ -1591,34 +2034,41 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
-   3,
    2,
+   5,
+   1,
    3,
    1,
-   8
+   4,
+   2,
+   1
   ],
   "matched_courses":[
+   "V2J396",
+   "V2J398",
    "V2J467",
    "V2J648",
+   "V2J651",
    "V2S530",
    "V3AB14",
    "V3JA37",
    "V3JA40",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":11,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":12,
   "nb_total_courses":305
  },
  {
@@ -1640,34 +2090,41 @@
    "Pedagogy"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
-   3,
    2,
+   5,
+   1,
    3,
    1,
-   8
+   4,
+   2,
+   1
   ],
   "matched_courses":[
+   "V2J396",
+   "V2J398",
    "V2J467",
    "V2J648",
+   "V2J651",
    "V2S530",
    "V3AB14",
    "V3JA37",
    "V3JA40",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":11,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":12,
   "nb_total_courses":307
  },
  {
@@ -1688,19 +2145,24 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
-   2
+   9
   ],
   "matched_courses":[
+   "V3X008",
+   "V3X029",
+   "V3X078",
    "V3X118",
-   "V3X131"
+   "V3X120",
+   "V3X128",
+   "V3X131",
+   "V3X586",
+   "V3X589"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":9,
   "nb_total_courses":35
  },
  {
@@ -1723,26 +2185,60 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   1,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":32
+ },
+ {
+  "id":"SC_56222391",
+  "name":"Micro degree Specialist Elektrische mobiliteit en hybride (Kortrijk)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_56222391.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Industri\u00eble wetenschappen en technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "transport"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "V3K133"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":2
  },
  {
   "id":"SC_54580976",
@@ -1762,19 +2258,23 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
-   2
+   8
   ],
   "matched_courses":[
+   "V3X128",
+   "V3X549",
+   "V3X572",
+   "V3X576",
+   "V3X586",
+   "V3X589",
    "V3X595",
    "V3X606"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":8,
   "nb_total_courses":35
  },
  {
@@ -1798,24 +2298,36 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   6
+   1,
+   1,
+   11
   ],
   "matched_courses":[
    "V3AB14",
+   "V3D233",
+   "V3X051",
+   "V3X089",
+   "V3X103",
+   "V3X128",
+   "V3X140",
+   "V3X141",
+   "V3X584",
+   "V3X586",
+   "V3X589",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":14,
   "nb_total_courses":77
  },
  {
@@ -1838,16 +2350,21 @@
    "Medecine & Health"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1
+   6
   ],
   "matched_courses":[
-   "V3Y028"
+   "V3X746",
+   "V3X797",
+   "V3X798",
+   "V3X899",
+   "V3X935",
+   "V3X936"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":6,
   "nb_total_courses":51
  },
  {
@@ -1871,28 +2388,42 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
-   3,
-   5,
-   10
+   4,
+   1,
+   1,
+   1,
+   17
   ],
   "matched_courses":[
    "V3AB14",
+   "V3D233",
+   "V3X003",
+   "V3X008",
    "V3X019",
+   "V3X029",
    "V3X039",
+   "V3X056",
+   "V3X057",
+   "V3X078",
    "V3X119",
+   "V3X120",
    "V3X123",
-   "V3X124",
+   "V3X128",
+   "V3X584",
+   "V3X586",
+   "V3X589",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
+   "V3Y022",
    "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":10,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":20,
   "nb_total_courses":81
  },
  {
@@ -1915,29 +2446,36 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   11,
-   12
+   21
   ],
   "matched_courses":[
+   "V3X612",
+   "V3X703",
+   "V3X705",
+   "V3X711",
+   "V3X712",
    "V3X720",
+   "V3X723",
    "V3X732",
    "V3X733",
    "V3X734",
    "V3X750",
    "V3X751",
+   "V3X764",
    "V3X770",
    "V3X771",
    "V3X772",
    "V3X788",
    "V3X789",
-   "V3Y028"
+   "V3X797",
+   "V3X798",
+   "V3X899"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":12,
+  "nb_matched_courses":21,
   "nb_total_courses":66
  },
  {
@@ -1961,28 +2499,41 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
-   3,
-   5,
-   10
+   4,
+   1,
+   1,
+   1,
+   16
   ],
   "matched_courses":[
    "V3AB14",
-   "V3X124",
+   "V3D233",
+   "V3X128",
+   "V3X503",
+   "V3X505",
+   "V3X512",
    "V3X519",
    "V3X539",
+   "V3X549",
+   "V3X572",
    "V3X574",
+   "V3X576",
    "V3X580",
+   "V3X584",
+   "V3X586",
+   "V3X589",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
+   "V3Y022",
    "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":10,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":19,
   "nb_total_courses":81
  },
  {
@@ -2006,22 +2557,26 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   5
+   1,
+   1,
+   2
   ],
   "matched_courses":[
    "V3AB14",
+   "V3D233",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
+   "V3Y022",
    "V3Y023"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":3,
   "nb_matched_courses":5,
   "nb_total_courses":60
  },
@@ -2043,18 +2598,50 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "themes_scores":[
-   2
+   1
   ],
   "matched_courses":[
-   "V3K013",
-   "V3K094"
+   "V3K133"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":17
+ },
+ {
+  "id":"SC_53861485",
+  "name":"Programme for Exchange Students - Applied Engineering and Technology (Z)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_53861485.htm",
+  "languages":[
+   "en"
+  ],
+  "campuses":[
+   "Z"
+  ],
+  "faculties":[
+   "Industri\u00eble wetenschappen en technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life",
+   "transport"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "V3X973",
+   "V3X989"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
-  "nb_total_courses":17
+  "nb_total_courses":54
  },
  {
   "id":"SC_54365574",
@@ -2074,16 +2661,16 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   2,
    5,
    12,
-   2,
-   5
+   1
   ],
   "matched_courses":[
    "V3Q102",
@@ -2122,37 +2709,44 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
+   1,
+   11,
+   3,
+   1,
    8,
-   4,
-   2,
-   2
+   3
   ],
   "matched_courses":[
-   "V3O025",
    "V3O034",
-   "V3O090",
+   "V3O044",
    "V3O091",
    "V3O092",
    "V3O102",
-   "V3O103",
    "V3O105",
+   "V3O107",
+   "V3O108",
+   "V3U017",
    "V3U023",
    "V3U027",
    "V3U051",
    "V3U063",
+   "V3U084",
    "V3U085",
+   "V3U092",
    "V3U095",
    "V3U096"
   ],
-  "nb_dedicated_courses":9,
-  "nb_matched_courses":15,
+  "nb_dedicated_courses":10,
+  "nb_matched_courses":18,
   "nb_total_courses":24
  },
  {
@@ -2173,10 +2767,12 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy"
   ],
   "themes_scores":[
-   12
+   1,
+   9
   ],
   "matched_courses":[
    "V3L038",
@@ -2187,13 +2783,10 @@
    "V3L284",
    "V3L285",
    "V3L286",
-   "V3L301",
-   "V3L304",
-   "V3L305",
-   "V3L309"
+   "V3L305"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":12,
+  "nb_matched_courses":9,
   "nb_total_courses":49
  },
  {
@@ -2215,16 +2808,22 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
+   1,
    4,
-   20,
+   1,
+   18,
+   1,
    2,
-   7
+   1
   ],
   "matched_courses":[
    "V2S530",
@@ -2233,7 +2832,6 @@
    "V3L007",
    "V3L033",
    "V3L038",
-   "V3L049",
    "V3L076",
    "V3L153",
    "V3L176",
@@ -2246,19 +2844,14 @@
    "V3L284",
    "V3L285",
    "V3L286",
-   "V3L301",
-   "V3L304",
    "V3L305",
    "V3L307",
-   "V3L309",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":29,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":23,
   "nb_total_courses":95
  },
  {
@@ -2281,28 +2874,30 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "sustainability"
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
+   1,
+   2,
    1,
    1,
-   7
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
-   "V3M173",
+   "V3M166",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":72
  },
  {
@@ -2325,30 +2920,36 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   9,
-   1,
+   19,
    1
   ],
   "matched_courses":[
-   "V3M012",
+   "V3M005",
+   "V3O014",
    "V3O023",
-   "V3O025",
    "V3O030",
    "V3O034",
-   "V3O090",
+   "V3O037",
+   "V3O039",
+   "V3O044",
+   "V3O055",
+   "V3O077",
+   "V3O089",
    "V3O091",
    "V3O092",
+   "V3O096",
+   "V3O097",
+   "V3O100",
    "V3O102",
-   "V3O103",
-   "V3O105"
+   "V3O105",
+   "V3O106"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":11,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":19,
   "nb_total_courses":41
  },
  {
@@ -2369,16 +2970,16 @@
    "Engineering"
   ],
   "themes":[
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   2,
    12,
    18,
-   2,
-   12
+   1
   ],
   "matched_courses":[
    "V3Q007",
@@ -2405,6 +3006,38 @@
   "nb_total_courses":46
  },
  {
+  "id":"SC_53252729",
+  "name":"Bachelor in de zorgtechnologie (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_53252729.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Industri\u00eble wetenschappen en technologie"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "V33C56",
+   "V33C57",
+   "V33C58"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":51
+ },
+ {
   "id":"SC_52941772",
   "name":"Bachelor in de ecotechnologie (Kortrijk)(Niet voor nieuwe studenten)",
   "cycle":"bac",
@@ -2422,71 +3055,70 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   4,
-   9,
-   6,
+   2,
+   2,
+   5,
+   20,
+   8,
+   36,
    5
   ],
   "matched_courses":[
+   "V3U003",
+   "V3U009",
    "V3U013",
+   "V3U014",
+   "V3U016",
+   "V3U017",
    "V3U023",
    "V3U025",
    "V3U027",
+   "V3U029",
+   "V3U035",
+   "V3U037",
+   "V3U039",
+   "V3U040",
    "V3U042",
    "V3U043",
+   "V3U044",
    "V3U051",
    "V3U055",
    "V3U063",
+   "V3U067",
+   "V3U068",
+   "V3U072",
+   "V3U073",
    "V3U079",
+   "V3U081",
+   "V3U082",
+   "V3U083",
+   "V3U084",
    "V3U085",
+   "V3U088",
+   "V3U089",
    "V3U090",
+   "V3U092",
+   "V3U093",
    "V3U095",
    "V3U096",
    "V3U098",
    "V3U100",
    "V3U101",
-   "V3U102"
+   "V3U102",
+   "V3U104"
   ],
-  "nb_dedicated_courses":10,
-  "nb_matched_courses":18,
+  "nb_dedicated_courses":15,
+  "nb_matched_courses":42,
   "nb_total_courses":43
- },
- {
-  "id":"SC_56191707",
-  "name":"Bachelor in de autotechnologie via afstandsonderwijs (Kortrijk)",
-  "cycle":"bac",
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_56191707.htm",
-  "languages":[
-   "nl"
-  ],
-  "campuses":[
-   "Kortrijk"
-  ],
-  "faculties":[
-   "Industri\u00eble wetenschappen en technologie"
-  ],
-  "fields":[
-   "Engineering"
-  ],
-  "themes":[
-   "energy"
-  ],
-  "themes_scores":[
-   2
-  ],
-  "matched_courses":[
-   "V3K607",
-   "V3K619"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
-  "nb_total_courses":25
  },
  {
   "id":"SC_55012032",
@@ -2506,19 +3138,51 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "climate",
+   "transport"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "V1V003"
+   "V1V003",
+   "V1V039"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":22
+ },
+ {
+  "id":"SC_57017753",
+  "name":"Micro degree samen stad maken (via afstandsonderwijs)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_57017753.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "via afstandsonderwijs"
+  ],
+  "faculties":[
+   "Sociaal-agogisch Werk"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "V3F550",
+   "V3F553"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":2
  },
  {
   "id":"SC_55092726",
@@ -2538,16 +3202,18 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
-   "V3K092"
+   "V3K092",
+   "V3K133",
+   "V3K138"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":21
  },
  {
@@ -2568,53 +3234,19 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   3,
-   1
+   3
   ],
   "matched_courses":[
-   "V3K013",
+   "V3K026",
    "V3K092",
-   "V3K094",
-   "V3K105"
+   "V3K133"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":3,
   "nb_total_courses":41
- },
- {
-  "id":"SC_53861758",
-  "name":"Programme for Exchange Students - S.P.A.C.E.",
-  "cycle":"other",
-  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_53861758.htm",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Sociaal-agogisch Werk"
-  ],
-  "fields":[
-   "Sociology"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "V3Y020"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":5
  },
  {
   "id":"SC_53861612",
@@ -2635,11 +3267,9 @@
    "Sociology"
   ],
   "themes":[
-   "climate",
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -2667,14 +3297,14 @@
    "Sociology"
   ],
   "themes":[
-   "climate",
-   "environment",
-   "sustainability"
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
    1,
-   3,
-   9
+   1,
+   8
   ],
   "matched_courses":[
    "V33A18",
@@ -2684,12 +3314,75 @@
    "V33A26",
    "V33A27",
    "V33A28",
-   "V33A29",
    "V33A30"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":8,
   "nb_total_courses":9
+ },
+ {
+  "id":"SC_52357555",
+  "name":"Bachelor sociaal werk verkorte leerroute na bachelor in een sociaal-agogische opleiding via afstandsonderwijs (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52357555.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Sociaal-agogisch Werk"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "V3F525"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":29
+ },
+ {
+  "id":"SC_52357675",
+  "name":"Bachelor orthopedagogie verkorte leerroute na bachelor- of masterdiploma in een sociaal-agogische opleiding via afstandsonderwijs (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52357675.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Sociaal-agogisch Werk"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   5
+  ],
+  "matched_courses":[
+   "V3E227",
+   "V3E228",
+   "V3E229",
+   "V3E230",
+   "V3E231"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":5,
+  "nb_total_courses":10
  },
  {
   "id":"SC_52354784",
@@ -2741,28 +3434,66 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
-   3,
-   9
+   4,
+   1,
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
-   "V3D161",
    "V3D368",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":104
+ },
+ {
+  "id":"SC_56245925",
+  "name":"Bachelor orthopedagogie verkorte leerroute na graduaat orthopedagogische begeleiding via afstandsonderwijs (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_56245925.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Sociaal-agogisch Werk"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   6
+  ],
+  "matched_courses":[
+   "V3E213",
+   "V3E230",
+   "V3E231",
+   "V3E233",
+   "V3F550",
+   "V3F553"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":6,
+  "nb_total_courses":18
  },
  {
   "id":"SC_52334950",
@@ -2784,26 +3515,74 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   1,
+   1,
+   11,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
+   "V3E213",
+   "V3E227",
+   "V3E228",
+   "V3E229",
+   "V3E230",
+   "V3E231",
+   "V3E233",
+   "V3F333",
+   "V3F550",
+   "V3F553",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":15,
   "nb_total_courses":60
+ },
+ {
+  "id":"SC_52357674",
+  "name":"Bachelor orthopedagogie verkorte leerroute na bachelor- of masterdiploma in een sociaal-agogische opleiding (Kortrijk)",
+  "cycle":"bac",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52357674.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Sociaal-agogisch Werk"
+  ],
+  "fields":[
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   5
+  ],
+  "matched_courses":[
+   "V3E147",
+   "V3E192",
+   "V3E193",
+   "V3E195",
+   "V3E230"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":5,
+  "nb_total_courses":10
  },
  {
   "id":"SC_56245859",
@@ -2825,21 +3604,22 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   3
+   5
   ],
   "matched_courses":[
    "V3D368",
-   "V3Y020",
+   "V3E194",
+   "V3E195",
+   "V3E197",
+   "V3E213",
    "V3Y023"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":58
  },
  {
@@ -2862,26 +3642,43 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
-   2,
-   8
+   4,
+   1,
+   1,
+   1,
+   15,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3D368",
+   "V3E147",
+   "V3E149",
+   "V3E152",
+   "V3E153",
+   "V3E154",
+   "V3E182",
+   "V3E186",
+   "V3E189",
+   "V3E192",
+   "V3E193",
+   "V3E194",
+   "V3E195",
+   "V3E197",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":19,
   "nb_total_courses":98
  },
  {
@@ -2904,25 +3701,32 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
    1,
-   7
+   1,
+   1,
+   4,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
+   "V3F333",
+   "V3F550",
+   "V3F553",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":8,
   "nb_total_courses":93
  },
  {
@@ -2945,27 +3749,30 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
+   4,
+   1,
+   1,
+   1,
    2,
-   9
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3D368",
-   "V3G491",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":6,
   "nb_total_courses":114
  },
  {
@@ -2986,16 +3793,17 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "V3F167"
+   "V3F550",
+   "V3F553"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":22
  },
  {
@@ -3016,16 +3824,17 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "V3F167"
+   "V3F550",
+   "V3F553"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":22
  },
  {
@@ -3048,25 +3857,31 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
-   2,
-   7
+   4,
+   1,
+   1,
+   1,
+   4,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
-   "V3F167",
+   "V3F525",
+   "V3F550",
+   "V3F553",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":3,
   "nb_matched_courses":8,
   "nb_total_courses":69
  },
@@ -3090,26 +3905,33 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
-   2,
-   7
+   4,
+   1,
+   1,
+   1,
+   5,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
-   "V3F167",
+   "V3F333",
+   "V3F525",
+   "V3F550",
+   "V3F553",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":9,
   "nb_total_courses":82
  },
  {
@@ -3130,13 +3952,13 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "V3F515"
+   "V3F374"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -3162,18 +3984,16 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    2,
-   3
+   2
   ],
   "matched_courses":[
    "V3D368",
+   "V3F082",
    "V3F084",
-   "V3Y020",
    "V3Y023"
   ],
   "nb_dedicated_courses":1,
@@ -3200,18 +4020,16 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    2,
-   3
+   2
   ],
   "matched_courses":[
    "V3D368",
+   "V3F082",
    "V3F084",
-   "V3Y020",
    "V3Y023"
   ],
   "nb_dedicated_courses":1,
@@ -3238,28 +4056,164 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "prod&cons"
   ],
   "themes_scores":[
-   3,
-   3,
-   8
+   5,
+   1,
+   1,
+   1,
+   4,
+   1
   ],
   "matched_courses":[
    "V2S530",
    "V3AB14",
    "V3D368",
+   "V3F082",
    "V3F084",
+   "V3F300",
    "V3Y015",
-   "V3Y016",
-   "V3Y020",
-   "V3Y023",
-   "V3Y028"
+   "V3Y022",
+   "V3Y023"
   ],
-  "nb_dedicated_courses":2,
+  "nb_dedicated_courses":3,
   "nb_matched_courses":9,
   "nb_total_courses":121
+ },
+ {
+  "id":"SC_56183355",
+  "name":"Micro degree Spa, Wellness & Management (via afstandsonderwijs) (Kortrijk)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_56183355.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Handelswetenschappen en bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   4
+  ],
+  "matched_courses":[
+   "V34C06",
+   "V34C31",
+   "V34C39",
+   "V34C40"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
+  "nb_total_courses":21
+ },
+ {
+  "id":"SC_56183352",
+  "name":"Micro degree Coaching & Management (via afstandsonderwijs) (Kortrijk)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_56183352.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Handelswetenschappen en bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "V34C06",
+   "V34C14"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":21
+ },
+ {
+  "id":"SC_56182997",
+  "name":"Micro degree Care & Management (via afstandsonderwijs) (Kortrijk)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_56182997.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Handelswetenschappen en bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "V34C06",
+   "V34C14",
+   "V34C31"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":23
+ },
+ {
+  "id":"SC_52466594",
+  "name":"Micro degree Human Resources Management (Kortrijk)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52466594.htm",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Handelswetenschappen en bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "V31C57"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":16
  },
  {
   "id":"SC_52388433",
@@ -3293,6 +4247,38 @@
   "nb_total_courses":16
  },
  {
+  "id":"SC_52471892",
+  "name":"Micro degree Eventorganisatie via afstandsonderwijs (Kortrijk)",
+  "cycle":"other",
+  "url":"http:\/\/onderwijsaanbod.vives-zuid.be\/opleidingen\/n\/SC_52471892.htm",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+   "Kortrijk"
+  ],
+  "faculties":[
+   "Handelswetenschappen en bedrijfskunde"
+  ],
+  "fields":[
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "V3S372"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":21
+ },
+ {
   "id":"SC_53860593",
   "name":"VIVES Business Academy (Spring)",
   "cycle":"other",
@@ -3316,13 +4302,13 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "V3Y020"
+   "V3523C"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -3353,14 +4339,14 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   2
+   1
   ],
   "matched_courses":[
-   "V3Y016",
+   "V3556B",
    "V3Y023"
   ],
   "nb_dedicated_courses":1,
@@ -3392,15 +4378,15 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   3
+   2
   ],
   "matched_courses":[
-   "V3Y016",
-   "V3Y020",
+   "V3523C",
+   "V3556B",
    "V3Y023"
   ],
   "nb_dedicated_courses":1,
@@ -3427,7 +4413,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1,
@@ -3459,12 +4445,12 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "transport"
   ],
   "themes_scores":[
-   1,
-   14
+   13,
+   5
   ],
   "matched_courses":[
    "V1B002",

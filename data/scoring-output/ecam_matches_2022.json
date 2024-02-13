@@ -1,11 +1,4 @@
 {
-    "3bcod30: El\u00e9ments de structures": {
-        "fr": {
-            "actions? (?:pour )?(?:le )?climat[^ ]+": [
-                "ns de poids propre  actions climatiques  neige  vent  accum"
-            ]
-        }
-    },
     "4cohy40: Hydraulique": {
         "fr": {
             "epurations? des eaux": [
@@ -15,9 +8,29 @@
     },
     "4coph40: Physique du b\u00e2timent et techniques sp\u00e9ciales": {
         "fr": {
-            "energ[^ ]+ renouvelab[^ ]+": [
-                " reglementaire      energies renouvelables    contexte et defi",
-                " de l integration d energies renouvelables dans un projet hvac"
+            "energ[^ ]+ renouvelable": [
+                " reglementaire      energies renouvelables    contexte et def",
+                " de l integration d energies renouvelables dans un projet hva"
+            ],
+            "impacts? (?:environnement|ecosyst)": [
+                "et le free-cooling  impact environnemental des refrigerants "
+            ],
+            "qualites? de l air": [
+                "ormes de base de la qualite de l air interieur  les syst"
+            ]
+        }
+    },
+    "4emio40: Installations op\u00e9ratrices": {
+        "fr": {
+            "nappes? (?:phreatique|aquifere|d eau souterrain)": [
+                " vide  rabattage de nappes phreatiques  pompage-turbinage"
+            ]
+        }
+    },
+    "4emmt40: Mat\u00e9riaux et technologie de mise en oeuvre": {
+        "fr": {
+            "bio[ -]?degradable": [
+                "en oeuvre  polymere biodegradables et bioplastiques  "
             ]
         }
     },
@@ -30,30 +43,41 @@
     },
     "5copm50: Gestion de projets de construction": {
         "fr": {
-            "economie circulaire": [
+            "constructions? durab": [
+                "n des dechets       construction durable   le cours aborde",
+                "echniques lies a la construction durable  est capable de c",
+                " sur le theme de la construction durable d un chantier ou "
+            ],
+            "economies? circulaire": [
                 "acts  l aspect de l economie circulaire est egalement abord"
-            ]
-        }
-    },
-    "5emai50: Bureau d\u2019\u00e9tudes de dimensionnement des entrainements \u00e9lectriques": {
-        "fr": {
-            "effica[^ ]+ energ[^ ]+": [
-                "stance de freinage  efficacite energetique  logiciels de sizin"
             ]
         }
     },
     "5emen50: Sustainable energy": {
         "en": {
-            "[electri[^ ]+, storage]": [
-                "pects of generating electricity from controlled fis",
-                " transformation and storage   more specifically",
-                "tions of production/storage/transport/rationali"
+            "wind energy": [
+                "ion considerations  wind energy  hydropower  biomas"
             ],
-            "geothermal[- ]?(energy|power)": [
-                "er  biomass energy  geothermal energy  hydrocarbon energy"
-            ],
-            "hydro(?:electric)?[- ]?(?:energy|power)": [
-                "tions  wind energy  hydropower  biomass energy  ge"
+            "[energy, sustaina]": [
+                "sustainable energy the sustainable ene",
+                "rgy the sustainable energy course is divided i",
+                "deffrennes  nuclear energy  and the second one",
+                "inability concerns  energy topics will be appr",
+                "neralities  current energy context  transition",
+                "onsiderations  wind energy  hydropower  biomas",
+                "hydropower  biomass energy  geothermal energy ",
+                " energy  geothermal energy  hydrocarbon energy",
+                "energy  hydrocarbon energy  nuclear energy  co",
+                "bon energy  nuclear energy  complements   sola",
+                "oltaic  fuel cells  energy in transportation t",
+                "tation the \"nuclear energy\" part will address ",
+                "d objective view of energy issues  current mea",
+                "/rationalization of energy  aat 02   - analyze",
+                "  - analyze a given energy situation using a s",
+                " solutions to given energy challenges of tomor",
+                "sustainable energy the susta",
+                "tainable energy the sustainable energy course is",
+                "h  more specific to sustainability concerns  ene"
             ]
         }
     }

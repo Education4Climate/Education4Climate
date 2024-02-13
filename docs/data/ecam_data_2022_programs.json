@@ -17,13 +17,15 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "resources"
   ],
   "themes_scores":[
-   2
+   1,
+   1
   ],
   "matched_courses":[
-   "5emai50",
+   "4emio40",
    "5emen50"
   ],
   "nb_dedicated_courses":1,
@@ -48,25 +50,26 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "building",
+   "economy",
    "energy",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1,
-   2,
-   1
+   1,
+   1,
+   2
   ],
   "matched_courses":[
-   "3bcod30",
    "4cohy40",
    "4coph40",
    "5copm50"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
+  "nb_matched_courses":3,
   "nb_total_courses":66
  },
  {
@@ -87,17 +90,22 @@
    "Engineering"
   ],
   "themes":[
-   "energy"
+   "energy",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2
+   1,
+   1,
+   1
   ],
   "matched_courses":[
-   "5emai50",
+   "4emio40",
+   "4emmt40",
    "5emen50"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":62
  },
  {
@@ -118,22 +126,21 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
    "energy",
-   "resources"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1,
-   1
+   2
   ],
   "matched_courses":[
-   "3bcod30",
    "4coph40",
    "4gets40"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":65
  }
 ]

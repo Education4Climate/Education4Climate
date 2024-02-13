@@ -20,18 +20,20 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   5
   ],
   "matched_courses":[
-   "010975"
+   "001942",
+   "009760",
+   "009816",
+   "010975",
+   "011340"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":85
  },
  {
@@ -55,28 +57,27 @@
   ],
   "themes":[
    "climate",
-   "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   3,
-   1,
    4,
-   1
+   7
   ],
   "matched_courses":[
+   "001969",
    "003990",
    "006321",
+   "006378",
    "006799",
-   "007976",
+   "009162",
+   "009726",
    "011281",
    "011537",
    "011711",
    "011722"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":11,
   "nb_total_courses":52
  },
  {
@@ -100,7 +101,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1,
@@ -113,6 +114,101 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
   "nb_total_courses":53
+ },
+ {
+  "id":"00097-0000001090",
+  "name":"Bachelor in de geneeskunde",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00097&anchor=0000001090&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Farmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "007618"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":8
+ },
+ {
+  "id":"00052-0000000067",
+  "name":"Bachelor in de criminologische wetenschappen",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00052&anchor=0000000067&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Recht en Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "009531"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":33
+ },
+ {
+  "id":"00187-0000000494",
+  "name":"Bachelor in de computerwetenschappen",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00187&anchor=0000000494&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Wetenschappen en Bio-ingenieurswetensch"
+  ],
+  "fields":[
+   "Agronomy & Biotechnology",
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "006319"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":62
  },
  {
   "id":"00360-0000000730",
@@ -132,7 +228,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1
@@ -164,19 +260,16 @@
    "Management"
   ],
   "themes":[
-   "energy",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "006500",
    "011273"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":15
  },
  {
@@ -198,7 +291,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1
@@ -230,19 +323,16 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "007121",
    "009312"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":30
  },
  {
@@ -265,19 +355,16 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "007121",
    "009312"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":42
  },
  {
@@ -331,7 +418,7 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
@@ -362,28 +449,35 @@
   ],
   "themes":[
    "climate",
-   "environment",
+   "energy",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    5,
-   2,
    1,
-   5
+   5,
+   2,
+   4,
+   1
   ],
   "matched_courses":[
    "001284",
    "001675",
+   "004384",
    "004388",
    "004515",
    "006823",
    "010038",
    "010442",
-   "011077"
+   "011077",
+   "011447",
+   "011457"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":11,
   "nb_total_courses":34
  },
  {
@@ -436,22 +530,20 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "sustainability"
+   "life",
+   "transport"
   ],
   "themes_scores":[
-   1,
-   4
+   2,
+   1
   ],
   "matched_courses":[
-   "004648",
-   "006955",
-   "007041",
-   "007425",
+   "006731",
+   "006756",
    "009221"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
   "nb_total_courses":58
  },
  {
@@ -472,16 +564,24 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   1,
+   2,
    1
   ],
   "matched_courses":[
-   "003593"
+   "003593",
+   "003599",
+   "009104"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":15
  },
  {
@@ -503,16 +603,18 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   3
   ],
   "matched_courses":[
-   "003007"
+   "003007",
+   "004976",
+   "008938"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":54
  },
  {
@@ -534,33 +636,43 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2,
-   10,
    1,
-   2
+   2,
+   1,
+   15,
+   2,
+   1
   ],
   "matched_courses":[
    "001951",
    "003554",
    "006535",
+   "006539",
    "006541",
    "006550",
    "006555",
    "006556",
+   "006560",
    "006711",
    "007744",
+   "009162",
+   "009598",
    "009599",
+   "010135",
+   "010136",
    "010138",
    "011228"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":12,
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":18,
   "nb_total_courses":52
  },
  {
@@ -583,7 +695,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1
@@ -617,7 +729,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
@@ -652,28 +764,37 @@
   ],
   "themes":[
    "climate",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    4,
-   4,
+   11,
    2,
-   6
+   3,
+   1
   ],
   "matched_courses":[
    "004617",
    "004618",
    "006823",
+   "007175",
+   "008951",
+   "008953",
+   "009162",
+   "009726",
    "010402",
    "011173",
    "011570",
    "011617",
+   "011620",
+   "011623",
    "011641"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":10,
+  "nb_matched_courses":15,
   "nb_total_courses":77
  },
  {
@@ -727,35 +848,42 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
+   "building",
+   "carbon",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
-   1,
    2,
-   3,
-   13
+   1,
+   11,
+   4,
+   2,
+   2,
+   11
   ],
   "matched_courses":[
    "001633",
+   "004333",
    "006917",
    "006919",
    "006937",
    "006940",
-   "006943",
    "006947",
    "006948",
    "006950",
-   "006955",
    "006959",
-   "006994",
    "007494",
-   "007495"
+   "007495",
+   "007912",
+   "009609",
+   "011609"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":14,
+  "nb_matched_courses":15,
   "nb_total_courses":35
  },
  {
@@ -776,90 +904,25 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    2,
    2,
-   7
+   3,
+   2
   ],
   "matched_courses":[
-   "006955",
-   "007041",
-   "007392",
-   "007425",
    "007494",
    "007495",
    "011783"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":7,
+  "nb_matched_courses":3,
   "nb_total_courses":55
- },
- {
-  "id":"00419-0000000800",
-  "name":"Master of Educational Sciences",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00419&anchor=0000000800&target=pr&year=2223&language=en&output=html",
-  "languages":[
-   "en"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculty of Psychology and Educational Sciences"
-  ],
-  "fields":[
-   "Psychology",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "010375"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":27
- },
- {
-  "id":"00411-0000000787",
-  "name":"Master of Communication Studies Digital Media in Europe",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00411&anchor=0000000787&target=pr&year=2223&language=en&output=html",
-  "languages":[
-   "en"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculty of Social Sciences & SolvayBusinessSchool"
-  ],
-  "fields":[
-   "Sociology",
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "environment"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "006850"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":16
  },
  {
   "id":"00415-0000000797",
@@ -880,22 +943,25 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   7,
    4,
    5,
-   7,
+   10,
    2,
-   16
+   8
   ],
   "matched_courses":[
    "001674",
    "001675",
+   "004384",
    "004388",
    "004617",
    "006427",
@@ -904,17 +970,15 @@
    "007475",
    "007494",
    "007495",
-   "007505",
-   "009632",
    "010442",
-   "011628",
    "011629",
    "011630",
-   "011639",
-   "011640"
+   "011632",
+   "011634",
+   "011860"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":18,
+  "nb_matched_courses":17,
   "nb_total_courses":55
  },
  {
@@ -937,28 +1001,36 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   6,
-   2
+   2,
+   8,
+   5,
+   1
   ],
   "matched_courses":[
    "001951",
    "002952",
    "011228",
    "011283",
-   "011315",
+   "011317",
+   "011318",
+   "011319",
    "011320",
+   "011322",
+   "011361",
    "011371"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":11,
   "nb_total_courses":39
  },
  {
@@ -980,36 +1052,35 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    2,
-   4,
    1,
-   14
+   2,
+   5,
+   1,
+   6
   ],
   "matched_courses":[
+   "005151",
    "007077",
    "007082",
-   "007083",
    "007086",
-   "007087",
    "007095",
-   "007100",
-   "007300",
-   "007314",
+   "007310",
    "007494",
    "007495",
-   "009051",
-   "009052",
-   "009055",
-   "011631"
+   "011631",
+   "011793"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":15,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":10,
   "nb_total_courses":53
  },
  {
@@ -1034,13 +1105,15 @@
   ],
   "themes":[
    "climate",
+   "energy",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    2,
    1,
-   2
+   1,
+   1
   ],
   "matched_courses":[
    "004310",
@@ -1071,19 +1144,20 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   5
   ],
   "matched_courses":[
-   "010897",
-   "011707"
+   "004708",
+   "010864",
+   "010894",
+   "010895",
+   "010897"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":5,
   "nb_total_courses":42
  },
  {
@@ -1105,24 +1179,18 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1,
    3
   ],
   "matched_courses":[
-   "006769",
+   "006731",
    "007077",
-   "007087",
-   "009043",
-   "011411"
+   "009043"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":5,
+  "nb_matched_courses":3,
   "nb_total_courses":52
  },
  {
@@ -1146,53 +1214,66 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life"
   ],
   "themes_scores":[
-   6,
-   29,
+   1,
+   1,
+   3,
    2,
-   4
+   42
   ],
   "matched_courses":[
+   "001130",
    "001951",
    "003554",
+   "004964",
+   "006522",
    "006541",
    "006711",
+   "007137",
    "008178",
    "008187",
+   "008201",
    "008203",
+   "008206",
    "008209",
    "008217",
    "008248",
+   "008249",
    "008250",
    "008251",
+   "008252",
    "008255",
    "008259",
    "008260",
    "008264",
    "008901",
-   "009290",
    "009293",
    "009566",
+   "010181",
+   "010182",
    "010188",
    "010204",
+   "010827",
    "010828",
    "010829",
    "010830",
    "011229",
    "011374",
    "011648",
+   "011657",
    "011660",
    "011815",
    "011849",
    "011880"
   ],
-  "nb_dedicated_courses":22,
-  "nb_matched_courses":32,
+  "nb_dedicated_courses":29,
+  "nb_matched_courses":43,
   "nb_total_courses":97
  },
  {
@@ -1215,24 +1296,23 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   15,
    1,
-   13,
-   13,
-   1,
-   21
+   14,
+   14,
+   5
   ],
   "matched_courses":[
-   "006433",
+   "006982",
    "007057",
    "007058",
-   "007060",
    "007061",
    "007062",
    "007064",
@@ -1241,19 +1321,18 @@
    "007475",
    "007494",
    "007495",
-   "007505",
-   "008441",
    "009327",
    "009330",
    "009631",
-   "009632",
    "009633",
-   "011628",
    "011629",
-   "011630"
+   "011630",
+   "011632",
+   "011634",
+   "011860"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":22,
+  "nb_matched_courses":20,
   "nb_total_courses":48
  },
  {
@@ -1276,29 +1355,31 @@
   ],
   "themes":[
    "climate",
-   "environment",
+   "energy",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    4,
    1,
+   4,
    1,
-   6
+   2,
+   1
   ],
   "matched_courses":[
    "001675",
    "006502",
    "006823",
-   "007041",
-   "009100",
+   "007455",
    "010442",
    "011570",
-   "011590",
-   "011591"
+   "011590"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":51
  },
  {
@@ -1320,17 +1401,17 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    3,
    1,
-   2,
    1,
-   3
+   3,
+   1
   ],
   "matched_courses":[
    "000471",
@@ -1341,73 +1422,6 @@
   "nb_dedicated_courses":3,
   "nb_matched_courses":4,
   "nb_total_courses":16
- },
- {
-  "id":"00262-0000000613",
-  "name":"Master of Applied Sciences and Engineering: Computer Science Artificial Intelligence",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00262&anchor=0000000613&target=pr&year=2223&language=en&output=html",
-  "languages":[
-   "en",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculty of Sciences and Bioengineering Sciences",
-   "Faculteit Ingenieurswetenschappen"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Science",
-   "Engineering"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "007041"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":64
- },
- {
-  "id":"00506-0000001163",
-  "name":"Voorbereidingsprogramma Master of Science in de stedenbouw en de ruimtelijke planning",
-  "cycle":"other",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00506&anchor=0000001163&target=pr&year=2223&language=nl&output=html",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculteit Wetenschappen en Bio-ingenieurswetensch"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Science"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "007976"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":4
  },
  {
   "id":"00590-0000001696",
@@ -1427,17 +1441,50 @@
    "Medecine & Health"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "000249"
+   "002733"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":14
+ },
+ {
+  "id":"00339-0000000713",
+  "name":"Voorbereidingsprogramma Master of Science in de politieke wetenschappen",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00339&anchor=0000000713&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Sociale Wetensch & SolvayBusinessSchool"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "001942"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":10
  },
  {
   "id":"00355-0000000728",
@@ -1458,20 +1505,17 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
   "matched_courses":[
-   "001466",
-   "003104"
+   "001466"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":12
  },
  {
@@ -1492,7 +1536,7 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
+   "energy"
   ],
   "themes_scores":[
    1
@@ -1526,21 +1570,54 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
   "matched_courses":[
-   "006494",
-   "006500"
+   "006494"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":9
+ },
+ {
+  "id":"00367-0000000736",
+  "name":"Voorbereidingsprogramma Master of Arts in de wijsbegeerte en de moraalwetenschappen",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00367&anchor=0000000736&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "009760",
+   "011526"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
-  "nb_total_courses":9
+  "nb_total_courses":17
  },
  {
   "id":"00323-0000000697",
@@ -1563,18 +1640,17 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   2
   ],
   "matched_courses":[
+   "009816",
    "010975"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":20
  },
  {
@@ -1597,19 +1673,20 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   4
+   5
   ],
   "matched_courses":[
    "004139",
    "004143",
+   "010403",
    "011711",
    "011722"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":4,
+  "nb_matched_courses":5,
   "nb_total_courses":15
  },
  {
@@ -1632,20 +1709,54 @@
    "Science"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "building",
+   "life"
   ],
   "themes_scores":[
    1,
-   2
+   3
   ],
   "matched_courses":[
-   "007976",
+   "001969",
+   "006727",
    "009080"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":16
+ },
+ {
+  "id":"00310-0000000685",
+  "name":"Schakelprogramma Master of Science in de politieke wetenschappen",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00310&anchor=0000000685&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Sociale Wetensch & SolvayBusinessSchool"
+  ],
+  "fields":[
+   "Sociology",
+   "Economy",
+   "Management"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "001942"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":10
  },
  {
   "id":"00511-0000002049",
@@ -1668,15 +1779,53 @@
    "energy"
   ],
   "themes_scores":[
-   2
+   4
   ],
   "matched_courses":[
    "007995",
+   "008008",
+   "008339",
    "009446"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
+  "nb_total_courses":23
+ },
+ {
+  "id":"00322-0000000696",
+  "name":"Schakelprogramma Master of Arts in de wijsbegeerte en de moraalwetenschappen",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00322&anchor=0000000696&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "en",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "climate",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "009760",
+   "011526"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
-  "nb_total_courses":23
+  "nb_total_courses":18
  },
  {
   "id":"00297-0000000674",
@@ -1699,19 +1848,83 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "009816",
+   "010975"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":20
+ },
+ {
+  "id":"00692-0000002008",
+  "name":"Schakelprogramma Educatieve Master of Science in de lichamelijke opvoeding",
+  "cycle":"other",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00692&anchor=0000002008&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Multidisciplinair Instituut Lerarenopleiding"
+  ],
+  "fields":[
+   "Pedagogy"
+  ],
+  "themes":[
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "010975"
+   "002733",
+   "003820"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":17
+ },
+ {
+  "id":"00057-0000000072",
+  "name":"Master in het notariaat",
+  "cycle":"master",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00057&anchor=0000000072&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Recht en Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "004224"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":20
+  "nb_total_courses":11
  },
  {
   "id":"00107-0000000325",
@@ -1732,7 +1945,7 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -1764,7 +1977,7 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
@@ -1800,20 +2013,19 @@
   "themes":[
    "climate",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    2,
    1,
-   3
+   1
   ],
   "matched_courses":[
    "006823",
-   "010038",
-   "011707"
+   "010038"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
   "nb_total_courses":69
  },
  {
@@ -1836,20 +2048,23 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
+   "life",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   4,
+   5,
    5,
    2,
-   3,
-   7
+   2
   ],
   "matched_courses":[
    "006799",
    "006823",
+   "007812",
    "007863",
    "007971",
    "007973",
@@ -1858,7 +2073,7 @@
    "011819"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":8,
+  "nb_matched_courses":9,
   "nb_total_courses":45
  },
  {
@@ -1881,19 +2096,22 @@
    "Law & Criminology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "energy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
-   2
+   2,
+   1
   ],
   "matched_courses":[
-   "010794",
-   "011707"
+   "000452",
+   "009611",
+   "010794"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":75
  },
  {
@@ -1918,52 +2136,17 @@
    "Management"
   ],
   "themes":[
-   "climate",
-   "sustainability"
-  ],
-  "themes_scores":[
-   1,
-   1
-  ],
-  "matched_courses":[
-   "010852",
-   "011707"
-  ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
-  "nb_total_courses":23
- },
- {
-  "id":"00035-0000000001",
-  "name":"Master in de onderwijskunde",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00035&anchor=0000000001&target=pr&year=2223&language=nl&output=html",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculteit Psychologie en Educatiewetenschappen"
-  ],
-  "fields":[
-   "Psychology",
-   "Pedagogy"
-  ],
-  "themes":[
-   "sustainability"
+   "climate"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "010375"
+   "010852"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":29
+  "nb_total_courses":23
  },
  {
   "id":"00071-0000000123",
@@ -1986,16 +2169,17 @@
    "Arts"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "007362"
+   "000387",
+   "002585"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":27
  },
  {
@@ -2018,18 +2202,25 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources",
+   "transport"
   ],
   "themes_scores":[
+   2,
+   1,
+   13,
    3,
-   4,
-   4,
-   11
+   2,
+   1,
+   9
   ],
   "matched_courses":[
+   "006910",
    "006928",
    "006930",
    "006931",
@@ -2037,13 +2228,16 @@
    "006972",
    "006973",
    "007494",
+   "007912",
    "009334",
    "009336",
    "009337",
+   "009609",
+   "011609",
    "011625"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":11,
+  "nb_matched_courses":15,
   "nb_total_courses":31
  },
  {
@@ -2066,27 +2260,28 @@
   ],
   "themes":[
    "climate",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    4,
+   4,
    1,
-   1,
-   4
+   2,
+   1
   ],
   "matched_courses":[
    "001675",
    "006823",
-   "007041",
+   "007455",
    "010442",
    "011570",
-   "011590",
-   "011591"
+   "011590"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":6,
   "nb_total_courses":48
  },
  {
@@ -2110,23 +2305,23 @@
   "themes":[
    "climate",
    "energy",
+   "life",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1,
-   2,
    1,
-   2
+   1,
+   1,
+   1
   ],
   "matched_courses":[
-   "004218",
-   "004648",
-   "006822",
-   "007041"
+   "006731",
+   "006822"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":79
  },
  {
@@ -2148,55 +2343,17 @@
    "Engineering"
   ],
   "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   4
-  ],
-  "matched_courses":[
-   "006955",
-   "007041",
-   "007425",
-   "011783"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":4,
-  "nb_total_courses":51
- },
- {
-  "id":"00259-0000000606",
-  "name":"Master in de ingenieurswetenschappen: computerwetenschappen afstudeerrichting Artifici\u00eble Intelligentie",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00259&anchor=0000000606&target=pr&year=2223&language=nl&output=html",
-  "languages":[
-   "en",
-   "fr",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculteit Wetenschappen en Bio-ingenieurswetensch",
-   "Faculteit Ingenieurswetenschappen"
-  ],
-  "fields":[
-   "Agronomy & Biotechnology",
-   "Science",
-   "Engineering"
-  ],
-  "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "007041"
+   "011783"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":60
+  "nb_total_courses":51
  },
  {
   "id":"00160-0000000988",
@@ -2218,31 +2375,34 @@
   ],
   "themes":[
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   3,
    1,
-   8
+   4,
+   1,
+   1,
+   4
   ],
   "matched_courses":[
    "003667",
+   "005151",
    "007077",
    "007095",
-   "007300",
-   "007314",
-   "009052",
-   "009055",
+   "007310",
    "011631",
-   "011787"
+   "011787",
+   "011793"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":8,
   "nb_total_courses":52
  },
  {
@@ -2265,22 +2425,25 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   4,
-   4,
    6,
+   4,
+   4,
+   9,
    2,
-   15
+   7
   ],
   "matched_courses":[
    "001674",
    "001675",
+   "004384",
    "004388",
    "004617",
    "006427",
@@ -2288,17 +2451,15 @@
    "007471",
    "007475",
    "007494",
-   "007505",
-   "009632",
    "010442",
-   "011628",
    "011629",
    "011630",
-   "011639",
-   "011640"
+   "011632",
+   "011634",
+   "011860"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":17,
+  "nb_matched_courses":16,
   "nb_total_courses":55
  },
  {
@@ -2320,29 +2481,24 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   2,
-   2,
-   4
+   1,
+   5
   ],
   "matched_courses":[
-   "004218",
    "004806",
-   "006760",
-   "006761",
+   "006731",
    "007077",
    "009108",
-   "010159",
-   "010160"
+   "009732"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":8,
+  "nb_matched_courses":5,
   "nb_total_courses":65
  },
  {
@@ -2365,24 +2521,23 @@
    "Engineering"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   13,
    1,
-   10,
-   12,
-   1,
-   20
+   13,
+   13,
+   4
   ],
   "matched_courses":[
-   "006433",
+   "006982",
    "007057",
    "007058",
-   "007060",
    "007061",
    "007062",
    "007064",
@@ -2391,18 +2546,17 @@
    "007471",
    "007475",
    "007494",
-   "007505",
-   "008441",
    "009327",
    "009330",
-   "009632",
    "009715",
-   "011628",
    "011629",
-   "011630"
+   "011630",
+   "011632",
+   "011634",
+   "011860"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":21,
+  "nb_matched_courses":19,
   "nb_total_courses":48
  },
  {
@@ -2424,20 +2578,24 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "energy"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   5,
    1,
-   3
+   1
   ],
   "matched_courses":[
+   "007912",
+   "008020",
    "008341",
    "009385",
    "009386"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":11
  },
  {
@@ -2493,22 +2651,24 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
-   "energy",
-   "environment",
+   "life",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   4,
-   1,
-   3,
    2,
-   4
+   4,
+   7,
+   1,
+   1
   ],
   "matched_courses":[
    "006321",
    "006823",
+   "007175",
+   "007812",
    "007863",
    "010402",
    "011537",
@@ -2516,39 +2676,8 @@
    "011641"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":7,
+  "nb_matched_courses":9,
   "nb_total_courses":58
- },
- {
-  "id":"00059-0000000074",
-  "name":"Master in de criminologische wetenschappen",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00059&anchor=0000000074&target=pr&year=2223&language=nl&output=html",
-  "languages":[
-   "en",
-   "nl"
-  ],
-  "campuses":[
-
-  ],
-  "faculties":[
-   "Faculteit Recht en Criminologie"
-  ],
-  "fields":[
-   "Law & Criminology"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "011707"
-  ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
-  "nb_total_courses":36
  },
  {
   "id":"00391-0000002140",
@@ -2570,16 +2699,22 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "climate",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   3,
    1
   ],
   "matched_courses":[
-   "011879"
+   "011317",
+   "011318",
+   "011322"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":14
  },
  {
@@ -2602,19 +2737,19 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   4
   ],
   "matched_courses":[
-   "010897",
-   "011707"
+   "010864",
+   "010894",
+   "010895",
+   "010897"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":4,
   "nb_total_courses":43
  },
  {
@@ -2637,33 +2772,38 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life"
   ],
   "themes_scores":[
-   7,
-   8,
    1,
-   4
+   3,
+   1,
+   16
   ],
   "matched_courses":[
+   "001130",
    "001180",
    "001951",
    "002892",
+   "003069",
    "003554",
+   "004708",
+   "004964",
+   "004976",
    "005022",
    "006711",
    "008187",
    "009566",
-   "011707",
    "011815",
-   "011818",
+   "011820",
+   "011822",
    "011849"
   ],
-  "nb_dedicated_courses":6,
-  "nb_matched_courses":12,
+  "nb_dedicated_courses":7,
+  "nb_matched_courses":17,
   "nb_total_courses":31
  },
  {
@@ -2686,25 +2826,29 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
    1,
    1,
    1,
-   2,
-   1
+   3,
+   1,
+   1,
+   2
   ],
   "matched_courses":[
-   "000275",
-   "001215",
    "002952",
+   "003054",
    "006366",
-   "011404"
+   "008647",
+   "008938"
   ],
   "nb_dedicated_courses":2,
   "nb_matched_courses":5,
@@ -2730,24 +2874,32 @@
    "Science"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
    1,
    1,
    1,
-   1
+   3,
+   1,
+   1,
+   2
   ],
   "matched_courses":[
-   "001215",
    "002952",
-   "006366"
+   "003054",
+   "006366",
+   "008647",
+   "008938"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":52
  },
  {
@@ -2769,25 +2921,26 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   3
+   4
   ],
   "matched_courses":[
    "003877",
    "004139",
-   "004143"
+   "004143",
+   "010403"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":37
  },
  {
-  "id":"00080-0000002088",
-  "name":"Master in de archivistiek: erfgoed- en hedendaags documentbeheer Profiel Archief- en Erfgoedbeheer",
+  "id":"00148-0000000416",
+  "name":"Master in de bedrijfskunde",
   "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00080&anchor=0000002088&target=pr&year=2223&language=nl&output=html",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00148&anchor=0000000416&target=pr&year=2223&language=nl&output=html",
   "languages":[
    "nl"
   ],
@@ -2795,25 +2948,25 @@
 
   ],
   "faculties":[
-   "Faculteit Letteren en Wijsbegeerte"
+   "Faculteit Sociale Wetensch & SolvayBusinessSchool"
   ],
   "fields":[
-   "Philosophy",
-   "Letters",
-   "Arts"
+   "Sociology",
+   "Economy",
+   "Management"
   ],
   "themes":[
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "007362"
+   "009198"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":8
+  "nb_total_courses":9
  },
  {
   "id":"00044-0000000044",
@@ -2836,15 +2989,15 @@
    "Pedagogy"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "011707"
+   "000387"
   ],
-  "nb_dedicated_courses":1,
+  "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":40
  },
@@ -2870,22 +3023,23 @@
   ],
   "themes":[
    "climate",
+   "energy",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
    2,
    1,
-   4
+   1,
+   1
   ],
   "matched_courses":[
    "006502",
    "006823",
-   "010038",
-   "011707"
+   "010038"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":70
  },
  {
@@ -2908,7 +3062,7 @@
    "Arts"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -2939,25 +3093,26 @@
    "Pedagogy"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   3
+   4
   ],
   "matched_courses":[
    "003877",
    "004139",
-   "004143"
+   "004143",
+   "010403"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":50
  },
  {
-  "id":"00661-0000001874",
-  "name":"Educatieve master in de gezondheidswetenschappen standaard traject (120 ECTS, Etterbeek)",
-  "cycle":"master",
-  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00661&anchor=0000001874&target=pr&year=2223&language=nl&output=html",
+  "id":"00683-0000001993",
+  "name":"Bachelor in de wiskunde en Data Science",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00683&anchor=0000001993&target=pr&year=2223&language=nl&output=html",
   "languages":[
    "en",
    "nl"
@@ -2966,26 +3121,24 @@
 
   ],
   "faculties":[
-   "Multidisciplinair Instituut Lerarenopleiding"
+   "Faculteit Wetenschappen en Bio-ingenieurswetensch"
   ],
   "fields":[
-   "Pedagogy"
+   "Agronomy & Biotechnology",
+   "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
-   "004743",
-   "004990"
+   "006319"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
-  "nb_total_courses":47
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":55
  },
  {
   "id":"00062-0000000081",
@@ -3012,17 +3165,63 @@
    "Arts"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   1
+   2,
+   5
   ],
   "matched_courses":[
-   "006799"
+   "001942",
+   "006319",
+   "006799",
+   "009760",
+   "009816",
+   "011340",
+   "011526"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":7,
+  "nb_total_courses":164
+ },
+ {
+  "id":"00518-0000001209",
+  "name":"Bachelor in de toegepaste taalkunde Duits-Spaans",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00518&anchor=0000001209&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Letteren en Wijsbegeerte"
+  ],
+  "fields":[
+   "Philosophy",
+   "Letters",
+   "Arts"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "009760",
+   "011340"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":164
+  "nb_matched_courses":2,
+  "nb_total_courses":109
  },
  {
   "id":"00137-0000000394",
@@ -3047,12 +3246,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "life"
   ],
   "themes_scores":[
-   1,
    1,
    1,
    1
@@ -3089,18 +3286,19 @@
    "Arts"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1
+   4
   ],
   "matched_courses":[
-   "010975"
+   "009760",
+   "009816",
+   "010975",
+   "011340"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":121
  },
  {
@@ -3121,13 +3319,13 @@
    "Medecine & Health"
   ],
   "themes":[
-   "energy"
+   "transport"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "000249"
+   "002733"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
@@ -3154,17 +3352,54 @@
    "Management"
   ],
   "themes":[
-   "climate"
+   "climate",
+   "life"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
+   "001942",
    "009202"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":30
+ },
+ {
+  "id":"00088-0000000293",
+  "name":"Bachelor in de lichamelijke opvoeding en de bewegingswetenschappen",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00088&anchor=0000000293&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Lichamelijke Opvoeding & Kinesitherapie"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life",
+   "transport"
+  ],
+  "themes_scores":[
+   2,
+   1
+  ],
+  "matched_courses":[
+   "002733",
+   "002814",
+   "003820"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":3,
+  "nb_total_courses":37
  },
  {
   "id":"00070-0000000106",
@@ -3188,20 +3423,19 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   1,
-   1
+   2
   ],
   "matched_courses":[
    "006799",
+   "009816",
    "010975"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":67
  },
  {
@@ -3224,19 +3458,24 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   2,
-   4,
    11,
-   14
+   1,
+   3,
+   16,
+   1,
+   1
   ],
   "matched_courses":[
    "003076",
+   "003101",
    "003221",
    "003643",
    "003987",
@@ -3247,13 +3486,14 @@
    "006720",
    "006724",
    "006726",
+   "006727",
    "006728",
    "006729",
-   "007976",
+   "007472",
    "009080"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":15,
+  "nb_matched_courses":17,
   "nb_total_courses":40
  },
  {
@@ -3275,26 +3515,33 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "transport"
   ],
   "themes_scores":[
    2,
    1,
    3,
-   3
+   3,
+   1,
+   1,
+   1
   ],
   "matched_courses":[
    "003077",
-   "003104",
+   "003078",
+   "003101",
    "003105",
    "003106",
    "003987"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_matched_courses":6,
   "nb_total_courses":27
  },
  {
@@ -3315,25 +3562,32 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   4,
+   1,
+   1,
+   7,
    1,
    1,
    1
   ],
   "matched_courses":[
    "003987",
+   "007905",
    "007995",
+   "008339",
    "009446",
-   "009447"
+   "009447",
+   "010456"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":29
  },
  {
@@ -3357,24 +3611,59 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    2,
    1,
-   2
+   4,
+   1
   ],
   "matched_courses":[
+   "006319",
    "006321",
    "006366",
    "006799",
    "009135",
-   "011707"
+   "011544"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":6,
   "nb_total_courses":53
+ },
+ {
+  "id":"00102-0000001089",
+  "name":"Bachelor in de biomedische wetenschappen",
+  "cycle":"bac",
+  "url":"https:\/\/caliweb.cumulus.vub.ac.be\/?page=plan&id=00102&anchor=0000001089&target=pr&year=2223&language=nl&output=html",
+  "languages":[
+   "nl"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Faculteit Geneeskunde en Farmacie"
+  ],
+  "fields":[
+   "Medecine & Health",
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "011670",
+   "011671"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":9
  },
  {
   "id":"00181-0000000468",
@@ -3397,24 +3686,28 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   7
+   11
   ],
   "matched_courses":[
    "003877",
    "004139",
    "004143",
+   "006319",
    "006321",
    "006799",
+   "009816",
+   "010403",
    "011705",
    "011711",
+   "011721",
    "011722"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":8,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":12,
   "nb_total_courses":46
  },
  {
@@ -3438,22 +3731,27 @@
   ],
   "themes":[
    "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
-   3,
+   5,
+   1,
    1
   ],
   "matched_courses":[
+   "006319",
+   "010403",
    "010404",
+   "010407",
    "010411",
    "010414",
    "011722"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":34
  }
 ]

@@ -48,6 +48,7 @@ class HENALLUXProgramSpider(scrapy.Spider, ABC):
     def parse_program(response, program_id):
 
         program_name = response.xpath("//h3/text()").get()
+        program_name = program_name.strip("- ")
         faculty_campus = response.xpath("//div[span[text()='Département']]/text()").get().strip(" :")
         if faculty_campus == "Département paramédical Sainte-Elisabeth":
             faculty = "Département paramédical"

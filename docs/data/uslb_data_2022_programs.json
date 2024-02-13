@@ -1,5 +1,36 @@
 [
  {
+  "id":"drho2mc",
+  "name":"Master de sp\u00e9cialisation en droits humains",
+  "cycle":"master",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2022\/prog_drho2mc.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Facult\u00e9 de droit"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "DRHO2142"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":16
+ },
+ {
   "id":"dpim2mc",
   "name":"Master de sp\u00e9cialisation en droit de l'environnement et en droit public immobilier",
   "cycle":"master",
@@ -18,19 +49,29 @@
    "Law & Criminology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   3,
    1,
-   1
+   7,
+   2
   ],
   "matched_courses":[
+   "DPIM2111",
+   "DPIM2112",
+   "DPIM2113",
    "DPIM2121",
-   "DPIM2122"
+   "DPIM2122",
+   "DPIM2131",
+   "DPIM2150",
+   "DPIM2163"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":4,
+  "nb_matched_courses":8,
   "nb_total_courses":11
  },
  {
@@ -70,6 +111,37 @@
   "nb_total_courses":28
  },
  {
+  "id":"euhd2mc",
+  "name":"Master de sp\u00e9cialisation interdisciplinaire en \u00e9tudes europ\u00e9ennes",
+  "cycle":"master",
+  "url":"https:\/\/www.usaintlouis.be\/sl\/2022\/prog_euhd2mc.html",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+
+  ],
+  "faculties":[
+   "Institut d\u2019\u00e9tudes europ\u00e9ennes"
+  ],
+  "fields":[
+   "Political Sciences"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "LEUSL2702"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":9
+ },
+ {
   "id":"soca1ba_tr",
   "name":"Bachelier en sociologie et anthropologie Majeure : Trilingue fran\u00e7ais-n\u00e9erlandais-anglais",
   "cycle":"bac",
@@ -90,18 +162,19 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
    "HDPO1312",
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":65
  },
  {
@@ -128,19 +201,20 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   2
+   3
   ],
   "matched_courses":[
    "HDPO1312",
    "POLS1321",
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":75
  },
  {
@@ -167,19 +241,20 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   2
+   3
   ],
   "matched_courses":[
    "HDPO1312",
    "POLS1321",
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":75
  },
  {
@@ -243,19 +318,20 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   2
+   3
   ],
   "matched_courses":[
    "HDPO1312",
    "POLS1321",
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":77
  },
  {
@@ -279,18 +355,19 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
    "HDPO1312",
-   "POLS1321"
+   "POLS1321",
+   "SPOL1214"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":66
  },
  {
@@ -316,16 +393,17 @@
    "Communication"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":37
  },
  {
@@ -351,17 +429,21 @@
    "Communication"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "life"
   ],
   "themes_scores":[
-   2
+   1,
+   4
   ],
   "matched_courses":[
+   "HDPO1321",
    "POLS1321",
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":75
  },
  {
@@ -388,19 +470,21 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1,
-   2
+   2,
+   4
   ],
   "matched_courses":[
    "HDPO1312",
+   "HDPO1321",
    "POLS1321",
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":5,
   "nb_total_courses":77
  },
  {
@@ -424,19 +508,20 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
-   2
+   3
   ],
   "matched_courses":[
    "HDPO1312",
    "POLS1321",
-   "SOCA1314"
+   "SOCA1314",
+   "SPOL1214"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":68
  },
  {
@@ -463,12 +548,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
    1
   ],
   "matched_courses":[
@@ -503,12 +586,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
    1
   ],
   "matched_courses":[
@@ -543,12 +624,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
    1
   ],
   "matched_courses":[
@@ -583,12 +662,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
    1
   ],
   "matched_courses":[
@@ -623,12 +700,10 @@
   ],
   "themes":[
    "climate",
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   1,
-   1,
+   2,
    1
   ],
   "matched_courses":[
@@ -661,18 +736,21 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
+   2,
+   3,
    1
   ],
   "matched_courses":[
    "DROI1365",
+   "HDPO1321",
    "POLS1321"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":83
  },
  {
@@ -695,16 +773,17 @@
    "Law & Criminology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "DRAN1351",
    "POLS1321"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":44
  },
  {
@@ -727,16 +806,17 @@
    "Law & Criminology"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
-   1
+   2
   ],
   "matched_courses":[
+   "DRAN1351",
    "POLS1321"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":43
  },
  {
@@ -761,18 +841,21 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
+   2,
+   3,
    1
   ],
   "matched_courses":[
    "DROI1365",
+   "HDPO1321",
    "POLS1321"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":98
  },
  {
@@ -797,18 +880,21 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   1,
+   2,
+   3,
    1
   ],
   "matched_courses":[
    "DROI1365",
+   "HDPO1321",
    "POLS1321"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":84
  }
 ]

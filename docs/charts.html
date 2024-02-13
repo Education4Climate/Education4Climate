@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Où étudier pour contribuer à la transition carbone et avoir un impact sur le climat ?">
+    <meta name="google-site-verification" content="Mb7RsnQF9bZkOcVENvQRaOTaDVqxgp56L8lwi_ICEzg" />
+    <link rel="alternate" hreflang="fr" href="https://education4climate.be/index.html?lang=fr" />
+    <link rel="alternate" hreflang="nl" href="https://education4climate.be/index.html?lang=nl" />
+    <link rel="alternate" hreflang="en" href="https://education4climate.be/index.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://education4climate.be/index.html?lang=fr" />
+    <link rel="canonical" href="https://education4climate.be/index.html?lang=fr" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#4bd2af">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f5f0f0">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f5f0f0">
+    <meta name="application-name" content="Education 4 Climate">
+
+    <meta property="og:title" content="Education 4 Climate" />
+    <meta property="og:description" content="Où étudier pour avoir un impact sur le climat ?" />
+    <meta property="og:image" content="https://www.education4climate.be/img/ogimage.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Education 4 Climate</title>
+</head>
+
+<body class="home">
+
+    <div id="app" v-if="dataLoaded" v-cloak>
+
+        <header v-if="dataLoaded" v-cloak>
+            <nav class="navbar navbar-expand-xl"
+                :class="{ 'navbar-light': currentTheme == 'light', 'navbar-dark': currentTheme == 'dark'}">
+                <div class="container-fluid">
+                    <a :href="'index.html?lang=' + currentLanguage"><img src="./img/University-green.svg" alt="Logo"
+                            id="logo"></a>
+                    <a class="navbar-brand" :href="'index.html?lang=' + currentLanguage">EDUCATION
+                        4 <span class="accent">CLIMATE</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0" id="menu">
+                            <li class="nav-item" v-for="item in menuItems">
+                                <a class="nav-link" :class="item === currentMenuItem ? 'active': ''"
+                                    :href="item + '.html?lang=' + currentLanguage"
+                                    v-html="translate('menu.' + item)"></a>
+                            </li>
+                        </ul>
+                        <div id="theme-toggler" @click="toggleTheme()">
+                            <img :src="this.currentTheme === 'light' ? './img/theme-toggler.svg' : './img/theme-toggler-dark.svg'"
+                                alt="Dark/Light theme">
+                            <span class="theme-light" v-html="translate('menu.dark-theme')"></span>
+                            <span class="theme-dark" v-html="translate('menu.light-theme')"></span>
+                        </div>
+                        <ul class="navbar-nav ml-auto mb-2 mb-md-0" id="languages-selector">
+                            <li class="nav-item" v-for="language in availableLanguages">
+                                <a class="nav-link" :class="currentLanguage == language ? 'active' : ''"
+                                    @click="setLanguage(language)" href="javascript:void(0);"
+                                    v-html="language.toUpperCase()"></a>
+                            </li>
+                        </ul>
+                        <div class="navbar-footer">
+                            <hr>
+                            <div>
+                                <div class="accent">The Shifters Belgium</div>
+                                <ul>
+                                    <li>
+                                        <a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                            v-html="translate('footer.contact')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="legal.html" v-html="translate('footer.legal')"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#modalCookies">Cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/DeLeb86/unicrawl" target="_blank"
+                                            rel="noopener">GitHub</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="intro primary container">
+
+                <div class="row">
+
+                    <h1>Universités</h1>
+                    <h5>Répartition des formations qui traitent de la durabilité climatique et environnementale dans les formations universitaires.</h5>
+                    <div>
+                        <canvas ref="programsbyUniversityChart" width="800" height="400"></canvas>
+                    </div>
+
+                    <h1 style="padding-top: 3rem;">Hautes-écoles</h1>
+                    <h5>Répartition des formations qui traitent de la durabilité climatique et environnementale dans les formations dispensées par les haute-écoles.</h5>
+                    <div>
+                        <canvas ref="programsbyHighSchoolChart" width="800" height="400"></canvas>
+                    </div>
+
+                    <h1 style="padding-top: 3rem;">Universités</h1>
+                    <h5>Répartition de la proportion des formations qui abordent (à droite, en vert) et en n'abordent pas du tout (en gris, à gauche), les questions climatiques et environnementales.  Résultats pour les universités.</h5>
+
+                    <div>
+                        <canvas ref="chart3" width="800" height="400"></canvas>
+                    </div>
+
+                    <h1 style="padding-top: 3rem;">Hautes-écoles</h1>
+                    <h5>Répartition des cours qui traitent des enjeux climatiques et environnementaux selon les disciplines (hautes-écoles)</h5>
+
+                    <div>
+                        <canvas ref="chart4" width="800" height="400"></canvas>
+                    </div>                    
+
+                </div>
+
+            </section>
+
+
+
+        </main>
+
+        <footer class="text-muted py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <a href="https://www.theshifters.org" target="_blank" rel="noopener">
+                            <img class="logo" src="./img/logo_shifters_white_green.svg" alt="The Shifters Logo">
+                        </a>
+                    </div>
+                    <div class="col-xl-6 right">
+                        <ul>
+                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                    v-html="translate('footer.contact')"></a>
+                            </li>
+                            <li>
+                                <a href="legal.html" v-html="translate('footer.legal')"></a>
+                            </li>
+                            <li><a href="javascript:void(0);" data-bs-toggle="modal"
+                                    data-bs-target="#modalCookies">Cookies</a></li>
+                            <li><a href="https://github.com/Education4Climate/" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+        </footer>
+
+        <cookie-manager :translations="translations" :current-language="currentLanguage"
+            @change-cookies-consent="changeCookiesConsent">
+        </cookie-manager>
+
+    </div>
+
+    <script src="js/chart.js"></script>
+    <script src="js/chartjs-chart-treemap.min.js"></script>
+    <script src="js/vue.global.prod.js"></script>
+    <script type="module" src="js/charts.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

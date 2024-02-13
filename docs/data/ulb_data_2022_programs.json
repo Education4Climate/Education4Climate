@@ -1,5 +1,36 @@
 [
  {
+  "id":"BA-PHAR",
+  "name":"Bachelier en sciences pharmaceutiques",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-phar-1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Plaine"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Pharmacie"
+  ],
+  "fields":[
+   "Pharmacy"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "BIOL-J102"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":31
+ },
+ {
   "id":"BA-MEDI",
   "name":"Bachelier en m\u00e9decine",
   "cycle":"bac",
@@ -17,7 +48,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -47,7 +78,7 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -77,17 +108,22 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "building",
+   "energy",
+   "life"
   ],
   "themes_scores":[
-   2
+   1,
+   1,
+   3
   ],
   "matched_courses":[
+   "ENVI-F5002",
    "ENVI-L5211",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":3,
   "nb_total_courses":30
  },
  {
@@ -109,7 +145,7 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment"
+   "pollution"
   ],
   "themes_scores":[
    1
@@ -120,6 +156,37 @@
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
   "nb_total_courses":7
+ },
+ {
+  "id":"MS-NUAP",
+  "name":"Master de sp\u00e9cialisation en g\u00e9nie nucl\u00e9aire ",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-nuap-1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "\u00c9cole polytechnique de Bruxelles"
+  ],
+  "fields":[
+   "Engineering"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHYS-Y609"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":15
  },
  {
   "id":"MS-TRANL",
@@ -139,18 +206,28 @@
    "Science"
   ],
   "themes":[
-   "sustainability"
+   "building",
+   "climate",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
-   3
+   2,
+   2,
+   1,
+   2,
+   2
   ],
   "matched_courses":[
+   "MSTL-F601",
    "MSTL-F602",
-   "MSTL-F607",
-   "MSTL-F611"
+   "MSTL-F603",
+   "MSTL-F606",
+   "MSTL-F607"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":10
  },
  {
@@ -171,7 +248,7 @@
    "Political Sciences"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -204,26 +281,27 @@
    "Architecture"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "life"
   ],
   "themes_scores":[
+   3,
    1,
-   2,
    1,
-   4
+   1,
+   3
   ],
   "matched_courses":[
    "ARCH-H400",
-   "ARCH-H502",
    "URBA-H9009",
    "URBA-P9001",
    "URBA-P9009"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":5,
+  "nb_matched_courses":4,
   "nb_total_courses":14
  },
  {
@@ -244,11 +322,13 @@
    "Architecture"
   ],
   "themes":[
+   "building",
    "climate",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   2,
    1,
    1,
    1
@@ -256,43 +336,12 @@
   "matched_courses":[
    "URBA-Y700",
    "URBA-Y701",
+   "URBA-Y706",
    "URBA-Y707"
   ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
   "nb_total_courses":18
- },
- {
-  "id":"MS-GEST",
-  "name":"Master de sp\u00e9cialisation en gestion industrielle et technologique",
-  "cycle":"master",
-  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-gest-1",
-  "languages":[
-   "en",
-   "fr"
-  ],
-  "campuses":[
-   "Solbosch"
-  ],
-  "faculties":[
-   "Solvay Brussels School of Economics and Management"
-  ],
-  "fields":[
-   "Economy",
-   "Management"
-  ],
-  "themes":[
-   "sustainability"
-  ],
-  "themes_scores":[
-   1
-  ],
-  "matched_courses":[
-   "INFO-S600"
-  ],
-  "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
-  "nb_total_courses":26
  },
  {
   "id":"MS-FINA",
@@ -313,7 +362,7 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "economy"
   ],
   "themes_scores":[
    1
@@ -344,10 +393,16 @@
    "Law & Criminology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2
+   1,
+   1,
+   2,
+   1
   ],
   "matched_courses":[
    "DROI-C5021",
@@ -356,6 +411,38 @@
   "nb_dedicated_courses":1,
   "nb_matched_courses":2,
   "nb_total_courses":23
+ },
+ {
+  "id":"MS-DNOT",
+  "name":"Master de sp\u00e9cialisation en notariat",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-dnot-1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit et de Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "building",
+   "life"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "DROI-C5153"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":17
  },
  {
   "id":"MS-DINT",
@@ -377,20 +464,87 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   3,
    1,
-   3
+   3,
+   1
   ],
   "matched_courses":[
    "DROI-C4014",
    "DROI-C5021",
-   "DROI-C5150"
+   "DROI-C5150",
+   "DROI-C670"
+  ],
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":4,
+  "nb_total_courses":23
+ },
+ {
+  "id":"MS-DENF",
+  "name":"Master de sp\u00e9cialisation en approche interdisciplinaire des droits de l'enfant",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-denf-1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "UMons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit et de Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "climate"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "DROI-Y712"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":27
+ },
+ {
+  "id":"MS-SOCA",
+  "name":"Master de sp\u00e9cialisation en sociologie-anthropologie",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ms-soca-1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SOCA-D4996"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
-  "nb_total_courses":23
+  "nb_matched_courses":1,
+  "nb_total_courses":35
  },
  {
   "id":"MS-PHIP",
@@ -412,12 +566,10 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "resources"
   ],
   "themes_scores":[
-   1,
    1,
    1
   ],
@@ -446,16 +598,19 @@
    "Pharmacy"
   ],
   "themes":[
-   "environment"
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
+   2,
    1
   ],
   "matched_courses":[
-   "MEDI-J401"
+   "MEDI-J401",
+   "PHAR-J404"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":20
  },
  {
@@ -480,12 +635,10 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "pollution"
   ],
   "themes_scores":[
    1,
-   2,
    1,
    1
   ],
@@ -517,23 +670,32 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
+   1,
    2,
-   3,
-   2
+   2,
+   3
   ],
   "matched_courses":[
    "CHIM-H409",
+   "CHIM-H417",
    "CHIM-H504",
    "CHIM-H522",
-   "GEST-S471"
+   "CHIM-H530",
+   "GEST-S471",
+   "PROJ-H404"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":7,
   "nb_total_courses":65
  },
  {
@@ -558,24 +720,28 @@
    "Engineering"
   ],
   "themes":[
-   "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    2,
    2,
-   1,
-   1
+   3,
+   3
   ],
   "matched_courses":[
    "CNST-H306",
+   "CNST-H312",
+   "CNST-H406",
    "CNST-H422",
-   "CNST-H517"
+   "CNST-H517",
+   "CNST-Y501",
+   "CNST-Y512"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":7,
   "nb_total_courses":53
  },
  {
@@ -598,9 +764,11 @@
    "Engineering"
   ],
   "themes":[
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
    1
   ],
   "matched_courses":[
@@ -630,21 +798,30 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "building",
+   "economy",
+   "life",
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
-   3,
-   2
+   1,
+   1,
+   6,
+   1,
+   1
   ],
   "matched_courses":[
    "ENVI-F403",
    "ENVI-F452",
+   "GEOG-F416",
    "TOUR-F407",
-   "TOUR-F425"
+   "TOUR-F425",
+   "TOUR-F516",
+   "TOUR-F520"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":7,
   "nb_total_courses":24
  },
  {
@@ -670,24 +847,26 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "sustainability"
+   "pollution",
+   "transport"
   ],
   "themes_scores":[
    1,
-   3,
+   5,
    1,
-   2
+   3
   ],
   "matched_courses":[
+   "ELEC-H543",
    "ELEC-Y502",
+   "ELEC-Y510",
    "GEST-H506",
    "MECA-H414",
    "MECA-H417",
    "MECA-H418"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":5,
+  "nb_matched_courses":7,
   "nb_total_courses":91
  },
  {
@@ -713,21 +892,25 @@
    "Engineering"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "energy",
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   3,
+   2,
    1,
-   1,
-   2
+   1
   ],
   "matched_courses":[
    "ARCH-H400",
-   "ARCH-H502"
+   "ARCH-Y500",
+   "CNST-H406",
+   "CNST-Y512"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":48
  },
  {
@@ -751,25 +934,23 @@
   ],
   "themes":[
    "climate",
-   "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
    1,
+   1,
    2,
-   2,
-   1
+   2
   ],
   "matched_courses":[
-   "CHIM-F415",
-   "CHIM-F423",
    "CHIM-F430",
    "CHIM-F474",
    "ENVI-F526"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_matched_courses":3,
   "nb_total_courses":61
  },
  {
@@ -791,11 +972,9 @@
    "Science"
   ],
   "themes":[
-   "environment",
-   "resources"
+   "life"
   ],
   "themes_scores":[
-   1,
    1
   ],
   "matched_courses":[
@@ -824,16 +1003,18 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "energy",
-   "environment",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   7,
-   1,
-   8,
-   2
+   3,
+   5,
+   9,
+   4,
+   1
   ],
   "matched_courses":[
    "BIOL-F4002",
@@ -843,16 +1024,15 @@
    "GEOG-F400",
    "GEOG-F408",
    "GEOG-F410",
-   "GEOL-F4004",
+   "GEOL-F4003",
    "GEOL-F412",
    "GEOL-F414",
-   "GEOL-F426",
    "GEOL-F428",
    "GEOL-F432",
    "GEOL-F436"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":14,
+  "nb_matched_courses":13,
   "nb_total_courses":31
  },
  {
@@ -874,35 +1054,51 @@
    "Science"
   ],
   "themes":[
+   "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   12,
-   1,
-   1
+   2,
+   2,
+   25,
+   2
   ],
   "matched_courses":[
    "BING-F410",
+   "BIOL-F4001",
    "BIOL-F4002",
    "BIOL-F441",
    "BIOL-F449",
    "BIOL-F450",
+   "BIOL-F5001",
    "BIOL-Y001",
    "BIOL-Y023",
+   "BIOL-Y026",
+   "BIOL-Y027",
    "BIOL-Y030",
    "BIOL-Y114",
+   "BIOL-Y116",
+   "BIOL-Y117",
+   "BIOL-Y118",
    "BIOL-Y184",
    "BIOL-Y213",
+   "BIOL-Y214",
    "BIOL-Y216",
+   "BIOL-Y220",
+   "BIOL-Y221",
+   "BIOL-Y223",
+   "BIOL-Y400",
+   "ENVI-Y023",
+   "ENVI-Y026",
    "ENVI-Y029",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":9,
-  "nb_matched_courses":14,
+  "nb_dedicated_courses":19,
+  "nb_matched_courses":28,
   "nb_total_courses":72
  },
  {
@@ -925,14 +1121,14 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
-   "GEOL-F4004",
+   "GEOL-F4003",
    "PHYS-F510"
   ],
   "nb_dedicated_courses":0,
@@ -959,28 +1155,33 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   3,
    1,
+   3,
+   2,
+   4,
    2,
    1,
-   2
+   1
   ],
   "matched_courses":[
    "ENVI-F1001",
    "ENVI-F405",
    "ENVI-F437",
    "GEOG-F400",
-   "GEOG-F414"
+   "GEOG-F414",
+   "MSTL-F601"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":5,
+  "nb_matched_courses":6,
   "nb_total_courses":42
  },
  {
@@ -1003,18 +1204,28 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "food",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   1,
    2,
-   2,
-   17,
+   3,
+   3,
    4,
-   11
+   1,
+   24,
+   5,
+   5,
+   1
   ],
   "matched_courses":[
    "BING-F1001",
@@ -1029,21 +1240,24 @@
    "ENVI-F452",
    "ENVI-F454",
    "ENVI-F5001",
+   "ENVI-F5002",
    "ENVI-F501",
    "ENVI-F504",
    "ENVI-F510",
    "ENVI-F529",
+   "ENVI-F530",
    "ENVI-F531",
    "ENVI-L4110",
    "ENVI-L505",
    "ENVI-L5210",
    "ETHI-F201",
    "GEOG-F414",
+   "SOCA-D4996",
    "TOUR-F407",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":15,
-  "nb_matched_courses":24,
+  "nb_dedicated_courses":18,
+  "nb_matched_courses":27,
   "nb_total_courses":38
  },
  {
@@ -1068,25 +1282,37 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   3,
+   5,
+   3,
+   1,
+   1,
+   12,
    5,
    2,
-   10,
-   2,
-   5
+   1,
+   1
   ],
   "matched_courses":[
    "BING-F410",
    "BING-F525",
+   "BING-F531",
    "BING-H5001",
    "BIOL-F417",
    "BIOL-F441",
+   "CHIM-H422",
    "CHIM-H504",
    "ENVI-F405",
    "ENVI-F409",
@@ -1096,10 +1322,11 @@
    "ENVI-F510",
    "ENVI-F526",
    "GEOG-F400",
-   "GEOL-F414"
+   "GEOL-F414",
+   "STAG-F013"
   ],
-  "nb_dedicated_courses":7,
-  "nb_matched_courses":15,
+  "nb_dedicated_courses":8,
+  "nb_matched_courses":18,
   "nb_total_courses":30
  },
  {
@@ -1123,28 +1350,38 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "food",
+   "life",
+   "transport"
   ],
   "themes_scores":[
    1,
+   1,
+   1,
+   6,
    9,
    1
   ],
   "matched_courses":[
    "BING-F4001",
    "BING-F4004",
+   "BING-F4005",
    "BING-F4006",
    "BING-F403",
    "BING-F404",
+   "BING-F415",
    "BING-F430",
    "BING-F431",
    "BING-F5001",
-   "BING-H5001"
+   "BING-H5001",
+   "BIOL-F4001",
+   "BIOL-F5001"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":9,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":13,
   "nb_total_courses":30
  },
  {
@@ -1169,11 +1406,13 @@
    "Engineering"
   ],
   "themes":[
-   "climate",
-   "environment",
-   "sustainability"
+   "carbon",
+   "economy",
+   "life",
+   "transport"
   ],
   "themes_scores":[
+   1,
    1,
    1,
    1
@@ -1204,32 +1443,32 @@
    "Architecture"
   ],
   "themes":[
-   "climate",
+   "building",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
-   6,
-   3,
-   7
+   1,
+   7,
+   4
   ],
   "matched_courses":[
+   "ARCH-P7105",
    "ARCH-P7111",
    "ARCH-P7112",
    "ARCH-P7119",
    "ARCH-P7120",
    "ARCH-P8111",
    "ARCH-P8119",
+   "HAAR-P4105",
    "PROJ-P4307",
    "PROJ-P4311",
    "PROJ-P5311"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":9,
+  "nb_matched_courses":11,
   "nb_total_courses":71
  },
  {
@@ -1256,23 +1495,58 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
-   3
+   1,
+   1
   ],
   "matched_courses":[
-   "DROI-S400",
    "GEST-S471",
-   "GEST-S472"
+   "GEST-S507"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":3,
+  "nb_matched_courses":2,
   "nb_total_courses":59
+ },
+ {
+  "id":"MA-PSYC",
+  "name":"Master en sciences psychologiques",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-psyc-1",
+  "languages":[
+   "en",
+   "fr",
+   "nl"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences psychologiques et de l'\u00c9ducation"
+  ],
+  "fields":[
+   "Psychology",
+   "Pedagogy"
+  ],
+  "themes":[
+   "life",
+   "prod&cons"
+  ],
+  "themes_scores":[
+   1,
+   1
+  ],
+  "matched_courses":[
+   "CRIM-C408",
+   "PSYC-E525"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":102
  },
  {
   "id":"MA-INGE",
@@ -1294,28 +1568,60 @@
    "Management"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
-   2,
    1,
-   3
+   1,
+   1,
+   1
   ],
   "matched_courses":[
-   "GEST-S407",
-   "GEST-S442",
+   "GEST-S446",
    "GEST-S471",
    "GEST-S492"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":4,
+  "nb_matched_courses":3,
   "nb_total_courses":58
+ },
+ {
+  "id":"MA-CRIM",
+  "name":"Master en criminologie",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-crim-1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Droit et de Criminologie"
+  ],
+  "fields":[
+   "Law & Criminology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "CRIM-C408"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":31
  },
  {
   "id":"MA-ECON",
@@ -1339,19 +1645,16 @@
    "Management"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
    1
   ],
   "matched_courses":[
-   "ECON-S418",
-   "GEST-S472"
+   "ECON-S418"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":1,
   "nb_total_courses":68
  },
  {
@@ -1375,15 +1678,19 @@
    "Law & Criminology"
   ],
   "themes":[
+   "building",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "economy",
+   "energy",
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
-   5,
+   3,
    1,
+   1,
+   6,
    1
   ],
   "matched_courses":[
@@ -1391,12 +1698,211 @@
    "DROI-C5021",
    "DROI-C5125",
    "DROI-C5150",
+   "DROI-C5153",
+   "DROI-C670",
    "ENVI-F403",
    "ENVI-F434"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":8,
   "nb_total_courses":133
+ },
+ {
+  "id":"MA-LORIE",
+  "name":"Master en langues et lettres modernes, orientation Orientales",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-lorie-1",
+  "languages":[
+   "ar",
+   "cn",
+   "en",
+   "fa",
+   "fr",
+   "jp",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "COMM-B470"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":69
+ },
+ {
+  "id":"MA-BABL",
+  "name":"Master en communication multilingue",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-babl-1",
+  "languages":[
+   "",
+   "ar",
+   "cn",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "gr",
+   "hr",
+   "it",
+   "jp",
+   "nl",
+   "pl",
+   "pt",
+   "ro",
+   "ru",
+   "si",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "COMM-B470",
+   "GERM-B430"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":93
+ },
+ {
+  "id":"MA-LSLAV",
+  "name":"Master en langues et lettres modernes, orientation Slaves",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-lslav-1",
+  "languages":[
+   "cz",
+   "de",
+   "en",
+   "fr",
+   "pl",
+   "ru",
+   "si"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "COMM-B470"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":64
+ },
+ {
+  "id":"MA-LING",
+  "name":"Master en linguistique",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-ling-1",
+  "languages":[
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "COMM-B470"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":35
+ },
+ {
+  "id":"MA-LROMA",
+  "name":"Master en langues et lettres fran\u00e7aises et romanes, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-lroma-1",
+  "languages":[
+   "",
+   "es",
+   "fr",
+   "it",
+   "pt",
+   "ro"
+  ],
+  "campuses":[
+   "UMons"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "FRAN-B430",
+   "FRAN-B516"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":103
  },
  {
   "id":"MA-TRAV",
@@ -1458,18 +1964,56 @@
   ],
   "themes":[
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   2,
    1
   ],
   "matched_courses":[
+   "COMM-B470",
+   "GERM-B430",
    "TRAD-B5008"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":158
+ },
+ {
+  "id":"MA-LFRLE",
+  "name":"Master en langues et lettres fran\u00e7aises et romanes, orientation Fran\u00e7ais langue \u00e9trang\u00e8re",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-lfrle-1",
+  "languages":[
+   "es",
+   "fr",
+   "it"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "COMM-B470",
+   "FRAN-B430"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":46
  },
  {
   "id":"MA-COOP",
@@ -1492,17 +2036,99 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "themes_scores":[
+   3
+  ],
+  "matched_courses":[
+   "ENVI-F403",
+   "SOCA-D4996",
+   "SOCA-D550"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":3,
+  "nb_total_courses":51
+ },
+ {
+  "id":"MA-LGERM",
+  "name":"Master en langues et lettres modernes, orientation Germaniques",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-lgerm-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "gr",
+   "hr",
+   "it",
+   "jp",
+   "nl",
+   "pl",
+   "pt",
+   "ro",
+   "ru",
+   "si",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "COMM-B470",
+   "GERM-B430"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":150
+ },
+ {
+  "id":"MA-GRHU",
+  "name":"Master en gestion des ressources humaines",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-grhu-1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "ENVI-F403"
+   "GEST-D447"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":51
+  "nb_total_courses":29
  },
  {
   "id":"MA-HHIST",
@@ -1525,22 +2151,71 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
-   2,
-   1,
+   3,
    1
   ],
   "matched_courses":[
    "ENVI-F434",
+   "FRAN-B516",
    "HIST-D401"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":78
+ },
+ {
+  "id":"MA-LLANG",
+  "name":"Master en langues et lettres modernes, orientation G\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-llang-1",
+  "languages":[
+   "",
+   "ar",
+   "cn",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "gr",
+   "hr",
+   "it",
+   "jp",
+   "nl",
+   "pl",
+   "pt",
+   "ro",
+   "ru",
+   "si",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "COMM-B470",
+   "GERM-B430"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":195
  },
  {
   "id":"MA-SOCO",
@@ -1562,7 +2237,7 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "building"
   ],
   "themes_scores":[
    1
@@ -1594,21 +2269,49 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2,
-   1
+   2
   ],
   "matched_courses":[
    "ECON-Y506",
-   "POLI-O417",
-   "SOCA-Y506"
+   "POLI-O417"
   ],
-  "nb_dedicated_courses":3,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":2,
   "nb_total_courses":68
+ },
+ {
+  "id":"MA-HHAAR",
+  "name":"Master en histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-hhaar-1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "SOCA-D4996"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":1,
+  "nb_total_courses":93
  },
  {
   "id":"MA-PINT",
@@ -1635,15 +2338,50 @@
    "climate"
   ],
   "themes_scores":[
+   4
+  ],
+  "matched_courses":[
+   "DROI-C670",
+   "POLI-D408",
+   "POLI-D410",
+   "POLI-D445"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":4,
+  "nb_total_courses":58
+ },
+ {
+  "id":"MA-PGECU",
+  "name":"Master en gestion culturelle",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-pgecu-1",
+  "languages":[
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
    2
   ],
   "matched_courses":[
-   "POLI-D408",
-   "POLI-D445"
+   "GEST-D447",
+   "TOUR-F516"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":2,
-  "nb_total_courses":58
+  "nb_total_courses":44
  },
  {
   "id":"MA-POLI",
@@ -1666,10 +2404,14 @@
    "Sociology"
   ],
   "themes":[
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   1,
+   1,
    1,
    1
   ],
@@ -1701,29 +2443,68 @@
    "Sociology"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
    1,
-   6,
+   2,
+   1,
+   7,
    3,
-   3
+   2
   ],
   "matched_courses":[
    "ENVI-D500",
    "ENVI-F1001",
    "ENVI-F403",
    "ENVI-F434",
+   "ENVI-F5002",
    "ENVI-F510",
    "ETHI-F201",
    "HIST-D401"
   ],
-  "nb_dedicated_courses":5,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":8,
   "nb_total_courses":43
+ },
+ {
+  "id":"MA-ANTR",
+  "name":"Master en anthropologie",
+  "cycle":"master",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ma-antr-1",
+  "languages":[
+   "",
+   "en",
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "COMM-B470",
+   "SOCA-D4996"
+  ],
+  "nb_dedicated_courses":1,
+  "nb_matched_courses":2,
+  "nb_total_courses":55
  },
  {
   "id":"AG-IRCI",
@@ -1804,18 +2585,52 @@
   ],
   "themes":[
    "climate",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
+   3,
    1
   ],
   "matched_courses":[
-   "VETE-G2206"
+   "TRAN-G3304",
+   "VETE-G2206",
+   "VETE-G3315"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":1,
+  "nb_matched_courses":3,
   "nb_total_courses":28
+ },
+ {
+  "id":"BA-DENT",
+  "name":"Bachelier en sciences dentaires",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-dent-1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de M\u00e9decine"
+  ],
+  "fields":[
+   "Medecine & Health"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "DENT-G3301"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":29
  },
  {
   "id":"BA-PHYS",
@@ -1836,14 +2651,16 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
+   2,
+   2,
    1,
    1
   ],
@@ -1875,25 +2692,59 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
+   2,
+   4,
    1,
    1
   ],
   "matched_courses":[
+   "BIOL-F210",
+   "BIOL-F309",
    "ENVI-F1001",
    "ETHI-F201",
    "ETHI-F301"
   ],
-  "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_dedicated_courses":2,
+  "nb_matched_courses":5,
   "nb_total_courses":63
+ },
+ {
+  "id":"BA-SCIE",
+  "name":"Bachelier en sciences (1e ann\u00e9e polyvalente)",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-scie-1",
+  "languages":[
+   "fr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 des Sciences"
+  ],
+  "fields":[
+   "Science"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "GEOL-F105"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":12
  },
  {
   "id":"BA-IRAR",
@@ -1914,19 +2765,27 @@
    "Engineering"
   ],
   "themes":[
+   "building",
+   "climate",
    "energy",
-   "environment"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
+   1,
+   1,
+   1,
    2,
    1
   ],
   "matched_courses":[
+   "ARCH-H100",
+   "ARCH-H300",
    "CNST-H306",
    "MECA-H3001"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":2,
+  "nb_matched_courses":4,
   "nb_total_courses":30
  },
  {
@@ -1950,20 +2809,26 @@
   "themes":[
    "climate",
    "energy",
-   "environment"
+   "life",
+   "pollution",
+   "prod&cons"
   ],
   "themes_scores":[
-   1,
    2,
+   3,
+   2,
+   1,
    1
   ],
   "matched_courses":[
    "CHIM-H302",
+   "CNST-H312",
    "MECA-H3001",
-   "MECA-H301"
+   "MECA-H301",
+   "PHYS-H200"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":62
  },
  {
@@ -1985,16 +2850,18 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   2,
    1,
    2,
+   2,
+   4,
    1,
    1
   ],
@@ -2003,10 +2870,11 @@
    "ENVI-F1001",
    "ETHI-F201",
    "ETHI-F301",
+   "GEST-D447",
    "TRAN-F201"
   ],
   "nb_dedicated_courses":2,
-  "nb_matched_courses":5,
+  "nb_matched_courses":6,
   "nb_total_courses":49
  },
  {
@@ -2027,7 +2895,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    1
@@ -2060,23 +2928,31 @@
    "Engineering"
   ],
   "themes":[
+   "carbon",
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "food",
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
-   3,
-   4,
-   4,
    1,
-   2
+   4,
+   5,
+   2,
+   7,
+   2,
+   2,
+   1
   ],
   "matched_courses":[
    "BING-F1001",
    "BING-F202",
+   "BING-F301",
    "BING-F305",
+   "BIOL-F309",
    "CHIM-H302",
    "ELEC-H201",
    "ENVI-F454",
@@ -2085,8 +2961,8 @@
    "MECA-H3001",
    "MECA-H301"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":10,
+  "nb_dedicated_courses":6,
+  "nb_matched_courses":12,
   "nb_total_courses":36
  },
  {
@@ -2108,14 +2984,18 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   4,
+   1,
    3,
+   1,
+   4,
    1,
    1
   ],
@@ -2123,13 +3003,12 @@
    "ENVI-F1001",
    "ETHI-F201",
    "ETHI-F301",
-   "GEOG-F102",
    "GEOG-F203",
-   "GEOL-F205",
+   "GEOL-F105",
    "TRAN-F201"
   ],
   "nb_dedicated_courses":3,
-  "nb_matched_courses":7,
+  "nb_matched_courses":6,
   "nb_total_courses":35
  },
  {
@@ -2151,28 +3030,34 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   3,
+   1,
    4,
+   1,
+   6,
    1,
    1
   ],
   "matched_courses":[
    "BIOL-F305",
+   "BIOL-F309",
    "ENVI-F1001",
    "ETHI-F201",
-   "GEOG-F102",
    "GEOG-F203",
-   "GEOL-F205",
+   "GEOG-F207",
+   "GEOG-F307",
+   "GEOL-F105",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":7,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":9,
   "nb_total_courses":50
  },
  {
@@ -2194,14 +3079,18 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   1,
    2,
-   2,
+   1,
+   3,
    1,
    1
   ],
@@ -2234,17 +3123,15 @@
    "Architecture"
   ],
   "themes":[
-   "climate",
+   "building",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution"
   ],
   "themes_scores":[
    1,
    1,
    3,
-   2,
    1
   ],
   "matched_courses":[
@@ -2279,17 +3166,22 @@
    "Management"
   ],
   "themes":[
-   "sustainability"
+   "energy",
+   "life",
+   "resources"
   ],
   "themes_scores":[
-   2
+   3,
+   1,
+   1
   ],
   "matched_courses":[
-   "GEST-S204",
+   "CHIM-S201",
+   "GEST-S3002",
    "PHYS-S201"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":41
  },
  {
@@ -2315,19 +3207,24 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "energy",
+   "life",
+   "resources"
   ],
   "themes_scores":[
+   2,
+   2,
    1,
-   2
+   1
   ],
   "matched_courses":[
+   "CHIM-S201",
    "ECON-S2002",
    "ENVI-S101",
    "PHYS-S201"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":4,
   "nb_total_courses":43
  },
  {
@@ -2364,6 +3261,90 @@
   "nb_total_courses":57
  },
  {
+  "id":"BA-LROMA",
+  "name":"Bachelier en langues et lettres fran\u00e7aises et romanes, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-lroma-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl",
+   "pl",
+   "pt",
+   "ro",
+   "ru"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHIL-B160"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":170
+ },
+ {
+  "id":"BA-LSLAV",
+  "name":"Bachelier en langues et lettres modernes, orientation Slaves",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-lslav-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl",
+   "pl",
+   "ru"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHIL-B160"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":154
+ },
+ {
   "id":"BA-LGERM",
   "name":"Bachelier en langues et lettres modernes, orientation Germaniques",
   "cycle":"bac",
@@ -2393,19 +3374,62 @@
    "Communication"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
+   "PHIL-B160",
    "TRAD-B2060"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":199
+ },
+ {
+  "id":"BA-LORIE",
+  "name":"Bachelier en langues et lettres modernes, orientation Orientales",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-lorie-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl",
+   "pl",
+   "ru",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHIL-B160"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":163
  },
  {
   "id":"BA-LLANG",
@@ -2438,19 +3462,61 @@
    "Communication"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
+   "PHIL-B160",
    "TRAD-B2060"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":225
+ },
+ {
+  "id":"BA-LCLAS",
+  "name":"Bachelier en langues et lettres anciennes, orientation Classiques",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-lclas-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "nl",
+   "pl",
+   "ru"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHIL-B160"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":156
  },
  {
   "id":"BA-SOCA",
@@ -2474,17 +3540,65 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "life"
+  ],
+  "themes_scores":[
+   2
+  ],
+  "matched_courses":[
+   "LANG-D314",
+   "PHIL-B160"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":2,
+  "nb_total_courses":56
+ },
+ {
+  "id":"BA-COMM",
+  "name":"Bachelier en information et communication",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-comm-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "hr",
+   "it",
+   "jp",
+   "nl",
+   "pl",
+   "pt",
+   "ro",
+   "ru",
+   "si",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Lettres, Traduction et Communication"
+  ],
+  "fields":[
+   "Letters",
+   "Communication"
+  ],
+  "themes":[
+   "life"
   ],
   "themes_scores":[
    1
   ],
   "matched_courses":[
-   "LANG-D314"
+   "PHIL-B160"
   ],
   "nb_dedicated_courses":0,
   "nb_matched_courses":1,
-  "nb_total_courses":56
+  "nb_total_courses":182
  },
  {
   "id":"BA-TRAD",
@@ -2514,18 +3628,19 @@
    "Communication"
   ],
   "themes":[
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
    1
   ],
   "matched_courses":[
+   "ORIE-B3080",
    "TRAD-B2060"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":1,
+  "nb_matched_courses":2,
   "nb_total_courses":125
  },
  {
@@ -2550,18 +3665,24 @@
    "Sociology"
   ],
   "themes":[
-   "environment"
+   "climate",
+   "energy",
+   "life"
   ],
   "themes_scores":[
-   3
+   1,
+   1,
+   4
   ],
   "matched_courses":[
    "HIST-D2704",
+   "HIST-D2705",
    "LANG-D314",
+   "PHIL-B160",
    "TRAN-F201"
   ],
   "nb_dedicated_courses":1,
-  "nb_matched_courses":3,
+  "nb_matched_courses":5,
   "nb_total_courses":118
  },
  {
@@ -2599,18 +3720,19 @@
   ],
   "themes":[
    "climate",
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
    1,
-   1
+   2
   ],
   "matched_courses":[
    "DROI-C2004",
+   "PHIL-B160",
    "PHIL-B220"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":203
  },
  {
@@ -2646,18 +3768,110 @@
    "Sociology"
   ],
   "themes":[
-   "sustainability"
+   "life"
   ],
   "themes_scores":[
-   2
+   3
   ],
   "matched_courses":[
    "ETHI-F201",
+   "PHIL-B160",
    "PHIL-B220"
   ],
   "nb_dedicated_courses":0,
-  "nb_matched_courses":2,
+  "nb_matched_courses":3,
   "nb_total_courses":185
+ },
+ {
+  "id":"BA-HHAAR",
+  "name":"Bachelier en histoire de l'art et arch\u00e9ologie, orientation g\u00e9n\u00e9rale",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-hhaar-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "jp",
+   "nl",
+   "pl",
+   "pt",
+   "ro",
+   "ru",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHIL-B160"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":160
+ },
+ {
+  "id":"BA-HMUSI",
+  "name":"Bachelier en histoire de l'art et arch\u00e9ologie, orientation musicologie",
+  "cycle":"bac",
+  "url":"https:\/\/www.ulb.be\/fr\/programme\/ba-hmusi-1",
+  "languages":[
+   "",
+   "ar",
+   "cz",
+   "de",
+   "en",
+   "es",
+   "fr",
+   "it",
+   "jp",
+   "nl",
+   "pl",
+   "pt",
+   "ro",
+   "ru",
+   "si",
+   "tr"
+  ],
+  "campuses":[
+   "Solbosch"
+  ],
+  "faculties":[
+   "Facult\u00e9 de Philosophie et Sciences sociales"
+  ],
+  "fields":[
+   "Philosophy",
+   "Sociology"
+  ],
+  "themes":[
+   "life"
+  ],
+  "themes_scores":[
+   1
+  ],
+  "matched_courses":[
+   "PHIL-B160"
+  ],
+  "nb_dedicated_courses":0,
+  "nb_matched_courses":1,
+  "nb_total_courses":173
  },
  {
   "id":"BA-BIOLB",
@@ -2678,27 +3892,33 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "resources",
-   "sustainability"
+   "energy",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
+   1,
    2,
-   4,
+   1,
+   7,
    1,
    1
   ],
   "matched_courses":[
+   "BIOL-F210",
    "BIOL-F305",
+   "BIOL-F309",
    "BIOL-F310",
    "ENVI-F1001",
    "ETHI-F201",
    "ETHI-F301",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":4,
-  "nb_matched_courses":6,
+  "nb_dedicated_courses":5,
+  "nb_matched_courses":8,
   "nb_total_courses":38
  },
  {
@@ -2721,20 +3941,31 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment",
-   "resources",
-   "sustainability"
+   "building",
+   "climate",
+   "economy",
+   "energy",
+   "food",
+   "life",
+   "pollution",
+   "resources"
   ],
   "themes_scores":[
-   14,
    1,
-   2
+   1,
+   1,
+   1,
+   1,
+   14,
+   3,
+   1
   ],
   "matched_courses":[
    "ENVI-D500",
    "ENVI-F403",
    "ENVI-F434",
    "ENVI-F452",
+   "ENVI-F5002",
    "ENVI-F510",
    "ENVI-L4110",
    "ENVI-L4111",
@@ -2746,8 +3977,8 @@
    "MEMO-L503",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":12,
-  "nb_matched_courses":14,
+  "nb_dedicated_courses":13,
+  "nb_matched_courses":15,
   "nb_total_courses":36
  },
  {
@@ -2768,17 +3999,22 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "building",
+   "energy",
+   "life"
   ],
   "themes_scores":[
-   2
+   1,
+   1,
+   3
   ],
   "matched_courses":[
+   "ENVI-F5002",
    "ENVI-L5211",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":3,
   "nb_total_courses":33
  },
  {
@@ -2799,17 +4035,22 @@
    "Medecine & Health"
   ],
   "themes":[
-   "environment"
+   "building",
+   "energy",
+   "life"
   ],
   "themes_scores":[
-   2
+   1,
+   1,
+   3
   ],
   "matched_courses":[
+   "ENVI-F5002",
    "ENVI-L5211",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":2,
-  "nb_matched_courses":2,
+  "nb_dedicated_courses":3,
+  "nb_matched_courses":3,
   "nb_total_courses":40
  },
  {
@@ -2834,16 +4075,14 @@
   "themes":[
    "climate",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "resources"
   ],
   "themes_scores":[
    1,
    1,
    1,
-   1,
-   2
+   1
   ],
   "matched_courses":[
    "GEST-H506",
@@ -2873,39 +4112,61 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
-   "environment",
-   "sustainability"
+   "economy",
+   "energy",
+   "food",
+   "life"
   ],
   "themes_scores":[
+   1,
    3,
-   18,
-   2
+   1,
+   1,
+   1,
+   33
   ],
   "matched_courses":[
+   "BIOL-F4001",
    "BIOL-F4002",
    "BIOL-F417",
+   "BIOL-F455",
+   "BIOL-F5001",
    "BIOL-Y001",
    "BIOL-Y010",
    "BIOL-Y020",
+   "BIOL-Y044",
+   "BIOL-Y060",
    "BIOL-Y061",
    "BIOL-Y062",
+   "BIOL-Y074",
+   "BIOL-Y075",
+   "BIOL-Y079",
+   "BIOL-Y084",
    "BIOL-Y088",
    "BIOL-Y114",
+   "BIOL-Y139",
+   "BIOL-Y142",
    "BIOL-Y149",
    "BIOL-Y159",
+   "BIOL-Y171",
+   "BIOL-Y173",
+   "BIOL-Y175",
    "BIOL-Y176",
    "BIOL-Y178",
    "BIOL-Y181",
    "BIOL-Y190",
    "BIOL-Y191",
+   "BIOL-Y199",
+   "BIOL-Y400",
    "ENVI-F409",
    "ENVI-F452",
    "GEOG-F400",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":15,
-  "nb_matched_courses":20,
+  "nb_dedicated_courses":28,
+  "nb_matched_courses":36,
   "nb_total_courses":101
  },
  {
@@ -2928,27 +4189,30 @@
    "Science"
   ],
   "themes":[
-   "climate",
-   "environment",
+   "building",
+   "economy",
+   "energy",
+   "life",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
-   1,
-   3,
    2,
-   6
+   2,
+   2,
+   4,
+   1,
+   1
   ],
   "matched_courses":[
    "ARCH-H400",
-   "ARCH-H502",
    "ENVI-F531",
    "GEOG-Y035",
    "PROJ-P4311",
    "URBA-H9009"
   ],
   "nb_dedicated_courses":4,
-  "nb_matched_courses":6,
+  "nb_matched_courses":5,
   "nb_total_courses":49
  },
  {
@@ -2971,20 +4235,27 @@
    "Science"
   ],
   "themes":[
+   "carbon",
    "climate",
+   "economy",
    "energy",
-   "environment",
-   "resources",
-   "sustainability"
+   "life",
+   "pollution",
+   "prod&cons",
+   "resources"
   ],
   "themes_scores":[
+   3,
    8,
    1,
-   14,
    1,
-   4
+   19,
+   5,
+   2,
+   1
   ],
   "matched_courses":[
+   "BING-F301",
    "BING-F525",
    "BIOL-F417",
    "BIOL-F441",
@@ -2996,18 +4267,21 @@
    "ENVI-F452",
    "ENVI-F510",
    "ENVI-F526",
+   "ENVI-Y006",
    "GEOG-F400",
    "GEOG-F408",
    "GEOG-F410",
+   "GEOG-F502",
    "GEOG-Y001",
+   "GEOG-Y005",
    "GEOL-F414",
    "GEOL-F428",
    "GEOL-F432",
    "GEOL-F436",
    "TRAN-F201"
   ],
-  "nb_dedicated_courses":10,
-  "nb_matched_courses":20,
+  "nb_dedicated_courses":12,
+  "nb_matched_courses":24,
   "nb_total_courses":40
  },
  {
@@ -3030,18 +4304,22 @@
    "Science"
   ],
   "themes":[
+   "building",
+   "carbon",
    "climate",
-   "energy",
-   "environment",
+   "life",
+   "pollution",
    "resources",
-   "sustainability"
+   "transport"
   ],
   "themes_scores":[
+   1,
+   3,
+   3,
+   10,
    3,
    1,
-   7,
-   1,
-   3
+   1
   ],
   "matched_courses":[
    "ENVI-F1001",
@@ -3053,10 +4331,12 @@
    "ENVI-F437",
    "ENVI-F510",
    "GEOG-F400",
-   "GEOG-F414"
+   "GEOG-F414",
+   "MSTL-F601",
+   "SOCA-D550"
   ],
   "nb_dedicated_courses":5,
-  "nb_matched_courses":10,
+  "nb_matched_courses":12,
   "nb_total_courses":56
  },
  {
@@ -3077,7 +4357,7 @@
    "Science"
   ],
   "themes":[
-   "environment"
+   "life"
   ],
   "themes_scores":[
    2

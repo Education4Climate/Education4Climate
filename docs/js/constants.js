@@ -10,7 +10,7 @@ const SCHOOLS_FILE = DATA_FOLDER + "/" + "schools.json";
 const PAGE_SIZE = 20;
 const AVAILABLE_LANGUAGES = ["fr", "nl", "en"];
 const DEFAULT_LANGUAGE = "en";
-const MENU_ITEMS = ["programs", "courses", "teachers", "report", "siep"];
+const MENU_ITEMS = ["programs", "courses", "teachers", "report", "siep", "dashboard"];
 const GOOGLE_ANALYTICS_ID = "G-8JCFK91KH7";
 const SIEP_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbxWF4IAssBIE5p_wayVj9Zr110YJao4mAENWy-sHuzYRiZJWM2tWjrdvrm7BHV7VK1GNQ/exec";
 
