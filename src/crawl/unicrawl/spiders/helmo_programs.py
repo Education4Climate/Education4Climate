@@ -6,14 +6,7 @@ import scrapy
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://www.helmo.be/Formations/{}.aspx"
-DEPARTMENTS = {
-    "Département Economique et Juridique": "Economique",
-    "Département Informatique et Technique": "Technique",
-    "Département Paramédical": "Paramedical",
-    "Département Pédagogique": "Pedagogique",
-    "Département Social": "Social"
-}
+BASE_URL = "https://www.helmo.be/fr/formations"
 
 
 class HELMOProgramSpider(scrapy.Spider, ABC):
@@ -28,61 +21,48 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        for dep_name, url_code in DEPARTMENTS.items():
-            yield scrapy.Request(BASE_URL.format(url_code), self.parse_main, cb_kwargs={"faculty": dep_name})
+        yield scrapy.Request(BASE_URL, self.parse_main)
 
-    def parse_main(self, response, faculty):
-        programs_links = response.xpath("//span[contains(text(), 'Menu')]//following::ul[1]//a/@href").getall()
-        programs_names = response.xpath("//span[contains(text(), 'Menu')]//following::ul[1]//a/text()").getall()
+    def parse_main(self, response):
 
-        for i, (program_name, link) in enumerate(zip(programs_names, programs_links)):
+        programs_links = response.xpath("//a[contains(@class, 'studyCard__link')]/@href").getall()
+        for program_link in programs_links:
+            yield response.follow(program_link + "/programme", self.parse_program)
 
+    def parse_program(self, response):
+
+        program_id_url = response.url.split("/")[-2]
+        program_id = program_id_url.split("-")[0]
+        program_name = response.xpath("//h1/text()").get()
+
+        cycle = 'other'
+        if 'master' in program_name.lower():
+            cycle = 'master'
+        elif 'bachelier' in program_name.lower():
             cycle = 'bac'
-            if 'Master' in program_name:
-                cycle = 'master'
-            elif 'Spécialisation' in program_name:
-                cycle = 'spe'
 
-            base_dict = {
-                "id": f"{response.url.split('/')[-1].split('.')[0]} - {i}",
-                "name": program_name,
-                "cycle": cycle,
-                "faculties": [faculty]
-            }
+        campuses = response.xpath("//div[@class='studyInfo__location']//a/text()").getall()
+        campuses = [campus.strip("HELMo / ").strip(", ") for campus in campuses]
+        faculty = response.xpath("//dl[contains(@class, 'studyInfo__meta')]//dd/text()").get()
 
-            yield response.follow(link, self.parse_program_main, cb_kwargs={'base_dict': base_dict})
+        ue_urls = response.xpath("//section[h2[contains(text(), 'Programme d')]]//h5/a/@href").getall()
+        ue_codes = [url.split("/")[-1] for url in ue_urls]
+        ue_ects = response.xpath("//section[h2[contains(text(), 'Programme d')]]"
+                                 "//li[h5[a]]//span[contains(text(), 'cr')]/text()").getall()
+        ue_ects = [int(ects.split("cr")[0]) for ects in ue_ects]
 
-    def parse_program_main(self, response, base_dict):
+        if len(ue_codes) != len(ue_ects):
+            print(len(ue_codes), len(ue_ects))
+            print(response.url)
 
-        campus = response.xpath("//h3[1]/span/text()").get()
-        courses_list_links = response.xpath("//a[contains(text(), \"Programme d'études\")]/@href").getall()
-        courses_list_names = response.xpath("//a[contains(text(), \"Programme d'études\")]/text()").getall()
-        # Can have different options per program
-        unique_name_links = set(zip(courses_list_names, courses_list_links))
-        for i, (name, link) in enumerate(unique_name_links):
-            new_dict = base_dict.copy()
-            # Update name based on option
-            if len(unique_name_links) > 1:
-                new_dict["id"] = new_dict["id"] + chr(ord('@')+(i+1))
-                new_dict["name"] = new_dict["name"] + name.split("Programme d'études")[1]
-            new_dict["campuses"] = [campus]  # TODO: check if there can be several campuses
-            yield response.follow(link, self.parse_program_courses, cb_kwargs={"base_dict": new_dict})
-
-    @staticmethod
-    def parse_program_courses(response, base_dict):
-
-        # Get list of courses that have a link
-        ue_ects = response.xpath("//td[@colspan=2]/a//following::td[1]/text()").getall()
-        ue_ects = [int(e) for e in ue_ects]
-        ue_urls = response.xpath("//td[@colspan=2]/a/@href").getall()
-        ue_codes = [url.split("ue=")[1].split("#")[0] for url in ue_urls]
-        ue_url_codes = [url.split("Formations/")[-1].strip("#a ") for url in ue_urls]
-
-        cur_dict = {
+        yield {
+            "id": program_id,
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": campuses,
             "url": response.url,
             "courses": ue_codes,
             "ects": ue_ects,
-            "courses_urls": ue_url_codes
+            "id_url": program_id_url
         }
-
-        yield {**base_dict, **cur_dict}

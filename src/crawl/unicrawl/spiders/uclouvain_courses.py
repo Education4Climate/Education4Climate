@@ -46,15 +46,7 @@ class UCLouvainCourseSpider(scrapy.Spider, ABC):
         courses = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_list = sorted(list(set(courses.sum())))
 
-        fn = "/home/duboisa1/shifters/Education4Climate/data/crawling-output/uclouvain_courses_2023_first.json"
-        first_courses = pd.read_json(fn, orient='records')['id'].to_list()
-
         for course_id in courses_list:
-
-            if course_id in first_courses:
-                print(course_id)
-                continue
-
             yield scrapy.Request(url=BASE_URL.format(YEAR, course_id),
                                  callback=self.parse_course,
                                  cb_kwargs={"course_id": course_id})
