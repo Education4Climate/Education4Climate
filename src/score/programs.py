@@ -27,8 +27,12 @@ def main(school: str, year: int):
     for program_id, program_courses in programs_courses_ds.items():
         # Remove non-scored courses from list (could happen if the course was not crawlable)
         program_courses = list(set(program_courses).intersection(set(courses_scores_df.index)))
-        programs_scores_df.loc[program_id] = courses_scores_df.loc[program_courses].sum()
-        programs_scores_df.loc[program_id, 'total'] = int(courses_scores_df.loc[program_courses].max(axis=1).sum())
+        if len(program_courses) != 0:
+            programs_scores_df.loc[program_id] = courses_scores_df.loc[program_courses].sum()
+            programs_scores_df.loc[program_id, 'total'] = int(courses_scores_df.loc[program_courses].max(axis=1).sum())
+        else:
+            programs_scores_df.loc[program_id] = 0
+            programs_scores_df.loc[program_id, 'total'] = 0
 
     programs_scores_fn = \
         Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_programs_scoring_{year}.csv")
@@ -38,7 +42,7 @@ def main(school: str, year: int):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="input json file path")
-    parser.add_argument("-y", "--year", help="academic year", default=2022)
+    parser.add_argument("-y", "--year", help="academic year", default=2023)
     arguments = vars(parser.parse_args())
     # main(**arguments)
 
@@ -47,7 +51,7 @@ if __name__ == "__main__":
     schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
                 "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
                 "thomasmore", "ucll", "vinci", "vives"]
-    schools = ["hepl"]
+    schools = ["helmo"]
     for school in schools:
         print(school)
         main(school, arguments['year'])

@@ -176,7 +176,7 @@ def main(school: str, year: int):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="input json file path")
-    parser.add_argument("-y", "--year", help="academic year", default=2022)
+    parser.add_argument("-y", "--year", help="academic year", default=2023)
     arguments = vars(parser.parse_args())
     # main(**arguments)
 
@@ -185,7 +185,9 @@ if __name__ == "__main__":
     schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
                 "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
                 "thomasmore", "ucll", "vinci", "vives"]
-    # schools = ["umons"]
+
+    schools = ["vives"]
+
     for school_ in schools:
         print(school_)
         main(school_, arguments['year'])
