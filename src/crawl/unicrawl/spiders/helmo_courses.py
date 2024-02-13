@@ -8,9 +8,9 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URl = "https://www.helmo.be/Formations/{}"
+BASE_URL = "https://www.helmo.be/fr/formations/{}/programme/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_programs_{YEAR}.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_programs_{YEAR}_pre.json')
 
 LANGUAGES_DICT = {
     "Français": 'fr',
@@ -32,43 +32,33 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        courses_df = pd.read_json(open(PROG_DATA_PATH, "r"))[["courses", "courses_urls"]]
-        # Combine lists of strings
-        courses_ids_list = courses_df["courses"].sum()
-        courses_urls_list = courses_df["courses_urls"].sum()
-        # Some courses are specified at two different urls which have exactly the same content
-        courses_ds = pd.Series(courses_ids_list, courses_urls_list).drop_duplicates()
+        courses_df = pd.read_json(open(PROG_DATA_PATH, "r"))[["id_url", "courses"]].set_index('id_url')
 
-        for course_url, course_id in courses_ds.items():
-            yield scrapy.Request(BASE_URl.format(course_url), self.parse_main, cb_kwargs={"ue_id": str(course_id)})
+        for program_id_url, courses in courses_df['courses'].items():
+            for course_id in courses:
+                yield scrapy.Request(BASE_URL.format(program_id_url, course_id), self.parse_main, cb_kwargs={"ue_id": str(course_id)})
 
     @staticmethod
     def parse_main(response, ue_id):
 
-        ue_name = cleanup(response.xpath("//section[@id='helmoContent']//h3/text()").get())
-        if not ue_name.startswith("UE"):
-            ue_name = ue_name.title()
-        main_teacher = response.xpath("//div[text()=\"Responsable de l'UE :\"]/following::span[1]/text()").get()
-        sub_teachers = response.xpath("//div[text()=\"Autres intervenants :\"]/following::span[1]/text()").get()
-        teachers = [main_teacher]
-        if sub_teachers:
-            teachers += sub_teachers.split(",")
+        ue_name = response.xpath("//h1/text()").get()
+
+        teachers = cleanup(response.xpath("//li[h4[text()='Responsable de cette UE']]//div/text()").getall())
+        teachers += response.xpath("//li[h4[text()='Enseignants prenant part à cette UE']]//div/a/text()").getall()
         teachers = [t.strip(" ").title() for t in teachers]
-        # Put surname first
-        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
 
-        years = response.xpath("//div[text()=\"Année académique :\"]/following::span[1]/text()").get()
+        years = f"{YEAR}-{YEAR-2000+1}"
 
-        languages = response.xpath("//div[text()=\"Langue d'enseignement :\"]/following::span[1]/text()").get()
+        languages = cleanup(response.xpath("//li[h4[contains(text(), 'Langue')]]//div/text()").get())
         languages = [LANGUAGES_DICT[languages]]
 
-        def get_sections_text(sections_names):
-            texts = [cleanup(response.xpath(f"//h4[contains(text(), \"{section_name}\")]/following::div[1]").get())
-                     for section_name in sections_names]
-            return "\n".join(texts).strip("\n")
-        content = get_sections_text(['Contenu'])
-        goal = get_sections_text(['Objectifs', 'Acquis'])
-        activity = get_sections_text('Dispositif')
+        content = cleanup(response.xpath("//h4[contains(text(), 'contenus')]"
+                                         "//following-sibling::*[following::h4[contains(text(), 'acquis')]]").getall())
+        content = '\n'.join(content).strip("\n")
+
+        goal = cleanup(response.xpath("//div[h4[contains(text(), 'acquis')]]"
+                                      "/*[preceding::h4[contains(text(), 'acquis')]]").getall())
+        goal = '\n'.join(goal).strip("\n")
 
         yield {
             'id': ue_id,
@@ -79,6 +69,6 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
             'url': response.url,
             'content': content,
             'goal': goal,
-            'activity': activity,
+            'activity': '',
             'other': ''
         }
