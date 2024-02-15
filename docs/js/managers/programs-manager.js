@@ -48,7 +48,7 @@ class ProgramsManager {
                     programs.push({
 
                         id: j,
-                        code: program.id ? program.id : "",
+                        code: String(program.id) ? String(program.id) : "",
                         name: program.name ? program.name : "",
                         url: program.url ? program.url : "",
                         faculties: program.faculties ? program.faculties : "",
