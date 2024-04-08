@@ -381,3 +381,34 @@ button.loading::after {
     font-weight: 600;
     color: #4bd2af;
 }
+
+/* Welcome Modal */
+
+.welcome-modal {
+    display: none;
+    position: fixed; 
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    padding: 20px;       
+}
+
+.welcome-modal-content {
+    text-align: left;
+    background-color: var(--background-primary-color);
+    margin: 15% auto; 
+    padding: 20px;
+    width: 40%; 
+    border-radius: 10px;
+}
+
+@media (max-width: 1199.98px) {
+
+    .welcome-modal-content {
+        width: 90%; 
+    }
+}
