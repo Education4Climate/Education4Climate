@@ -78,7 +78,7 @@
                                 <div class="accent">The Shifters Belgium</div>
                                 <ul>
                                     <li>
-                                        <a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                        <a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank" rel="noopener"
                                             v-html="translate('footer.contact')"></a>
                                     </li>
                                     <li>
@@ -156,7 +156,7 @@
                     </div>
                     <div class="col-xl-6 right">
                         <ul>
-                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                            <li><a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank" rel="noopener"
                                     v-html="translate('footer.contact')"></a>
                             </li>
                             <li>
