@@ -69,7 +69,7 @@
                             <div>
                                 <div class="accent">The Shifters Belgium</div>
                                 <ul>
-                                    <li><a :href="translate('shared.google-form')" target="_blank"
+                                    <li><a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank"
                                             rel="noopener">{{translate("footer.contact")}}</a></li>
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
@@ -324,7 +324,7 @@
                         <div>
                             <div class="accent">The Shifters Belgium</div>
                             <ul>
-                                <li><a :href="translate('shared.google-form')" target="_blank"
+                                <li><a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank"
                                         rel="noopener">{{translate("footer.contact")}}</a></li>
                                 <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                 <li><a href="javascript:void(0);" data-bs-toggle="modal"
@@ -429,7 +429,7 @@
                                                 role="button">{{translate("programs.detail-courses-list")}}</a>
                                         </div>
                                         <div class="text-end">
-                                            <a :href="translate('shared.google-form')" class="btn btn-secondary btn-sm"
+                                            <a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Problème avec la formation ' + schools[program.schoolId].shortName + '-' + program.code" class="btn btn-secondary btn-sm"
                                                 target="_blank" rel="noopener">{{translate("shared.report-issue")}}</a>
                                         </div>
                                     </div>
