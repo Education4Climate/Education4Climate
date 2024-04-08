@@ -8,10 +8,12 @@
 import * as constants from './constants.js';
 import TranslationManager from "./managers/translation-manager.js";
 import CookieManager from "./components/cookie-manager.js";
+import WelcomeModal from "./components/welcome-modal.js";
 
 export default {
     components: {
-        CookieManager
+        CookieManager,
+        WelcomeModal
     },
     data() {
         return {
@@ -31,7 +33,8 @@ export default {
             selectedUniversities: null,
             selectedHighSchools: null,
             isSmallScreen: window.innerWidth < 1199.99, // Never updated, only says if the website has been started with a small screen,
-            contactEmail: constants.CONTACT_EMAIL
+            contactEmail: constants.CONTACT_EMAIL,
+            methodologyDocument: constants.METHODOLOGY_DOCUMENT
         };
     },
     async created() {

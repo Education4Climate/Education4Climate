@@ -1136,11 +1136,9 @@ footer li {
     }
 }
 
-
 /* Welcome Modal */
 
 .welcome-modal {
-    display: none;
     position: fixed; 
     z-index: 9999;
     left: 0;
@@ -1153,7 +1151,7 @@ footer li {
 }
 
 .welcome-modal-content {
-    background-color: #fefefe; 
+    background-color: var(--background-primary-color);
     margin: 15% auto; 
     padding: 20px;
     width: 40%; 

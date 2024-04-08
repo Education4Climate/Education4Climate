@@ -385,7 +385,6 @@ button.loading::after {
 /* Welcome Modal */
 
 .welcome-modal {
-    display: none;
     position: fixed; 
     z-index: 9999;
     left: 0;
@@ -404,6 +403,37 @@ button.loading::after {
     padding: 20px;
     width: 40%; 
     border-radius: 10px;
+}
+
+.welcome-modal-content p {
+    padding: 0.5rem;
+}
+
+.welcome-modal-content a {
+    color: var(--accent-color);
+}
+
+.welcome-modal-content a.btn {
+    padding: 0.5rem;
+    color: var(--font-color);
+}
+
+.welcome-modal-content a[target="_blank"]:after {
+    content: "";
+    line-height: 24px;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    background-image: unset;
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: unset;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.welcome-modal-content img {
+    display: inline;
 }
 
 @media (max-width: 1199.98px) {
