@@ -429,7 +429,7 @@
                                                 role="button">{{translate("programs.detail-courses-list")}}</a>
                                         </div>
                                         <div class="text-end">
-                                            <a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Problème avec la formation ' + schools[program.schoolId].shortName + '-' + program.code" class="btn btn-secondary btn-sm"
+                                            <a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Problème d\'indexation de la formation ' + program.code + ' (' + schools[program.schoolId].shortName + ')'" class="btn btn-secondary btn-sm"
                                                 target="_blank" rel="noopener">{{translate("shared.report-issue")}}</a>
                                         </div>
                                     </div>
