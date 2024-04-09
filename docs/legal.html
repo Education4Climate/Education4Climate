@@ -124,9 +124,8 @@
             </div>
         </footer>
 
-        <cookie-manager :translations="translations" :current-language="currentLanguage"
-            @change-cookies-consent="changeCookiesConsent">
-        </cookie-manager>
+        <cookie-manager :translations="translations" :current-language="currentLanguage" @change-cookies-consent="changeCookiesConsent"></cookie-manager>
+        <welcome-modal :translations="translations" :current-language="currentLanguage" :methodology-document="methodologyDocument"></welcome-modal>
 
     </div>
 

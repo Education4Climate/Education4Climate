@@ -288,18 +288,13 @@
                         <h1 v-html="translate('home.team-title')">L'équipe</h1>
                     </div>
 
-                    <div class="col-xl-6 container text">
+                    <div class="col-xl-5 container text">
 
                         <div class="team-pictures">
                             <div>
                                 <img src="./img/team/antoine.webp" alt="Antoine Dubois" width="128" height="128">
                                 <h2>Antoine Dubois</h2>
                                 <h3 v-html="translate('team.algorithm')">Développement algorithme</h3>
-                            </div>
-                            <div>
-                                <img src="./img/team/arthur.webp" alt="Arthur Prével" width="128" height="128">
-                                <h2>Arthur Prével</h2>
-                                <h3 v-html="translate('team.survey')">Enquête</h3>
                             </div>
                             <div>
                                 <img src="./img/team/denis.webp" alt="Denis Lebailly" width="128" height="128">
@@ -367,35 +362,10 @@
                     </div>
         </footer>
 
-        <cookie-manager :translations="translations" :current-language="currentLanguage"
-            @change-cookies-consent="changeCookiesConsent">
-        </cookie-manager>
+        <cookie-manager :translations="translations" :current-language="currentLanguage" @change-cookies-consent="changeCookiesConsent"></cookie-manager>
+        <welcome-modal :translations="translations" :current-language="currentLanguage" :methodology-document="methodologyDocument"></welcome-modal>
 
     </div>
-
-    <div id="welcome-modal" class="welcome-modal">
-        <div class="welcome-modal-content">
-            <p>Bienvenue sur Education4Climate, la plateforme de référencement des cours et des formations qui traitent des enjeux socio-environnementaux dans l'enseignement supérieur belge.</p>
-            <p style="font-size: smaller;"><strong>Ce référencement ne couvre pas (encore) la totalité des établissements d'enseignement et de formation et comporte des limites méthodologiques expliquées <a href="https://docs.google.com/document/d/1E-2aNAC6Gdi7E59uGn0Lyn_4M0rmjW1xIjrPKOkeH08/edit?usp=sharing" target="_blank">ici</a>.</strong></p>
-            <p>Education4Climate est développé par des bénévoles de <a href="https://www.theshifters.org/gl/belgique/" target="_blank"><img style="max-width: 50px;" src="./img/logo_shifters_belgium.svg"></a></p>
-            <p style="text-align: right;"><a class="btn btn-primary btn-lg" v-html="translate('menu.programs')" onclick="closeAndRemember()">J'ai compris</a></p>
-        </div>
-    </div>
-
-    <script>
-
-        window.onload = function() {
-            
-            if (sessionStorage.welcomeModalDismissed) document.getElementById('welcome-modal').style.display = 'none'; 
-            else document.getElementById('welcome-modal').style.display = 'block';
-        }
-
-        function closeAndRemember() {
-            document.getElementById('welcome-modal').style.display = 'none';
-            sessionStorage.welcomeModalDismissed = true;
-        }
-
-    </script>    
 
     <script src="js/vue.global.prod.js"></script>
     <script type="module" src="js/home.js"></script>
