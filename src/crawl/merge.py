@@ -35,7 +35,7 @@ def merge_programs(school: str, year: int):
     keys_as_list_to_set = ['faculties', 'campuses']
     for key in keys_as_list_to_set:
         programs_merged_df[key] = programs_df_grouped[key].sum().apply(lambda x: list(set(x)))
-    keys_as_list = ['courses', 'ects']
+    keys_as_list = ['courses', 'ects']  # need some time to remove ects if not in program file
     for key in keys_as_list:
         programs_merged_df[key] = programs_df_grouped[key].sum()
 
