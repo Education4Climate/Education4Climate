@@ -42,12 +42,13 @@ def get_teachers_info(school: str, year: int):
         teachers_courses_df["teacher"].apply(lambda teacher: " ".join(teacher.split(" ")[:-1]))
     teachers_courses_df = teachers_courses_df.drop('teacher', axis=1)
 
-    return teachers_courses_df[['surname', 'name', 'courses_names', 'courses_number']]
-
     # Save for mailing
-    # teachers_mail_fn = \
-    #     Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_teachers_{year}.csv")
-    # teachers_courses_df[['surname', 'name', 'courses_names', 'courses_number']].to_csv(teachers_mail_fn)
+    teachers_mail_fn = \
+        Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}{school}_teachers_{year}.csv")
+    (teachers_courses_df[['surname', 'name', 'courses_names', 'courses_number']]
+     .sort_values(by='surname').to_csv(teachers_mail_fn))
+
+    return teachers_courses_df[['surname', 'name', 'courses_names', 'courses_number']]
 
 
 def main(schools: List[str], year: int):
@@ -63,12 +64,13 @@ def main(schools: List[str], year: int):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     # parser.add_argument("-s", "--school", help="input json file path")
-    parser.add_argument("-y", "--year", help="academic year", default=2020)
+    parser.add_argument("-y", "--year", help="academic year", default=2023)
     arguments = vars(parser.parse_args())
     schools_ = ["kuleuven", "uantwerpen", "uclouvain", "ugent", "uhasselt",
                 "ulb", "uliege", "umons", "unamur", "uslb", "vub"]
     schools_ = ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "hech", "hel", "heldb", "helmo",
                 "henallux", "hers", "howest", "ichec", "ihecs", "ispg", "issig", "odisee", "thomasmore", "ucll",
                 "vinci", "vives"]
+    schools_ = ['uliege']
     arguments['schools'] = schools_
     main(**arguments)

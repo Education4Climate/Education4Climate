@@ -8,7 +8,7 @@ from difflib import get_close_matches as close_matches
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL_1 = "https://www.howest.be/nl"
+BASE_URL_1 = "https://www.howest.be/nl/opleidingen?{}&page={}"
 BASE_URL_2 = "https://app.howest.be/bamaflex/ectssearch.aspx"
 
 acad_year = "{}".format(YEAR)
@@ -17,24 +17,30 @@ BASE_POST_DATA = {
     "dropdownlistLanguage": "1",
     "dropdownlistAcademiejaar": "{}-{}".format(acad_year, int(acad_year[-2:])+1),
     "hiddenAfstudeerrichtingCode": "",
+    "sm1": "updatePanelMain|buttonZoek",
+    "buttonZoek": "Zoeken",
+    "__EVENTTARGET": '',
+    "__EVENTARGUMENT": '',
+    "__LASTFOCUS": '',
+    "__ASYNCPOST": 'true'
+}
+
+FACULTIES_CODE = {
+    "Architectuur, Energie & Bouw": "f%5B0%5D=interesse%3A10",
+    "Business & Ondernemen": "f%5B0%5D=interesse%3A11",
+    "Gezondheid & Zorg": "f%5B0%5D=interesse%3A13",
+    "Media & Communicatie": "f%5B0%5D=interesse%3A14",
+    "Mens & Samenleving": "f%5B0%5D=interesse%3A15",
+    "Onderwijs": "f%5B0%5D=interesse%3A16",
+    "Productontwerp, Digital Design & Arts": "f%5B0%5D=interesse%3A12",
+    "Sport, Toerisme & Recreatie": "f%5B0%5D=interesse%3A17",
+    "Tech & IT": "f%5B0%5D=interesse%3A18"
 }
 
 
 class HOWESTProgramSpider(scrapy.Spider, ABC):
     """
-    Program crawler for Hogeschool West-Vlaanderen 
-
-    METHOD:
-    Information about programs at HOWEST are scattered between two sites.
-    The first one (https://www.howest.be/nl) provides the names, campuses, 
-    cycles, faculties and a description of programs. 
-    The second one (https://app.howest.be/bamaflex/ectssearch.aspx) provides 
-    the lists of courses (and ects) for each program.
-    The data from each site is merged based on the name of the program. 
-    Unfortunately, there are slight differences in program names across sites.
-    For each program on the first site, we try to find the closest match on the second site
-    using the 'difflib' package. Matches have been manually checked for 2020-21.
-    If no match is found, the program is not crawled.
+    Program crawler for Hogeschool West-Vlaanderen
     """
 
     name = "howest-programs"
@@ -44,114 +50,93 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
     }
 
     def start_requests(self):
-        yield scrapy.Request(
-            url=BASE_URL_1,
-            callback=self.parse_home_page
-        )
-
-    def parse_home_page(self, response):
-        programs_urls = response.css(".subgroup > .item-list > ul > li > a::attr(href)").getall()
-        yield from response.follow_all(programs_urls, callback=self.parse_program_info)
-
-    def parse_program_info(self, response):
-
-        name = response.css("h1::text").get()
-        sub_title = response.css("page-sub-title a::text").get()
-        campuses = response.css(".oplfiche").xpath("div/strong[text()='Locatie:']/following::ul[1]/li/text()").getall()
-        faculty = response.css(".oplfiche").xpath("div[strong[text()='Studiedomein:']]/a/text()").get()
-
-        cycle = response.css(".oplfiche").xpath("div[strong[text()='Diploma:']]/a/text()").get()
-        if not cycle:
-            cycle = response.css(".oplfiche").xpath("div[strong[text()='Diploma:']]/text()").get()
-
-        if cycle is not None:
-            if "Bachelor" in cycle:
-                cycle = 'bac'
-            elif "Master" in cycle:
-                cycle = 'master'
-            elif 'Graduaat' in cycle:
-                cycle = 'grad'
-        else:
-            cycle = "other"
-
-        base_dict = {
-            "id": '',  # id is added in the next section
-            "name": sub_title if sub_title else name,
-            "cycle": cycle,
-            "faculties": [faculty],
-            "campuses": campuses,
-            # "ects" : [] # ECTS are extracted at the course level
-            "url": response.url,
-        }
-
-        # METHOD : 
-        # The list of courses of each programs is listed on another website
-        yield scrapy.Request(
-            url=BASE_URL_2,
-            callback=self.parse_programs_ids,
-            cb_kwargs={"base_dict": base_dict},
-            dont_filter=True
-        )
-
-    def parse_programs_ids(self, response, base_dict):
-        programs = response.css("#dropdownlistOpleidingen option::text").getall()
-        programs_ids = response.css("#dropdownlistOpleidingen option::attr(value)").getall()
-
-        # METHOD :
-        # The titles of the programs are slightly different on both sites.
-        # Find the closest match. Only the first match is kept.
-        # This method is not perfect. Some matches are not found (only one in my tests).
-        # Other programs have multiple valid matches, but only the first one is used.
-        name = close_matches(base_dict["name"], programs)
-
-        if name:
-            prog_index = programs.index(name[0])
-            prog_id = programs_ids[prog_index]
-
-            post_data = BASE_POST_DATA.copy()
-            post_data['dropdownlistOpleidingen'] = prog_id
-            
-            base_dict["id"] = prog_id
-
-            yield scrapy.http.FormRequest.from_response(
-                    response,
-                    callback=self.parse_program_courses,
-                    formdata=post_data,
-                    dont_click=True,
-                    cb_kwargs={"base_dict": base_dict}
+        for fac_name, fac_code in FACULTIES_CODE.items():
+            for i in range(8):   # CHECK the max number of programs per faculty / 10
+                yield scrapy.Request(
+                    url=BASE_URL_1.format(fac_code, i),
+                    callback=self.parse_home_page,
+                    cb_kwargs={'faculty': fac_name}
                 )
 
-    def parse_program_courses(self, response, base_dict):
-        prog_paths_ids = response.css("#dropdownlistTrajecten option::attr(value)").getall()
+    def parse_home_page(self, response, faculty):
+        programs_urls = response.xpath("//h3/a/@href").getall()
+        for url in programs_urls:
+            yield response.follow(url + "#opleidingsprogramma", callback=self.parse_program,
+                                  cb_kwargs={'faculty': faculty})
 
-        # Scrape courses sequentially from every program 'path' and collect them in shared 'base_dict'
-        if prog_paths_ids:
-            base_dict["courses"] = []
-            post_data = BASE_POST_DATA.copy()
-            post_data['dropdownlistOpleidingen'] = base_dict["id"]
-            post_data["dropdownlistTrajecten"] = prog_paths_ids[0]
-            yield scrapy.http.FormRequest.from_response(
-                response,
-                callback=self.parse_paths_courses_recursively,
-                formdata=post_data,
-                cb_kwargs={"base_dict": base_dict, "post_data": post_data, "paths_ids": prog_paths_ids[1:]}
-            )
+    def parse_program(self, response, faculty):
 
-    def parse_paths_courses_recursively(self, response, base_dict, post_data, paths_ids):
-        courses_urls = response.css("#panelProgramma > ul > li > a::attr(href)").getall()
-        # Collect courses ids while avoiding duplicates
-        courses_ids = set([re.findall("\?a=(.+)&b", url)[-1] for url in courses_urls])
+        program_content_link = response.xpath("//*[@id='opleidingsprogramma']/a/@href").get()
+        # Some programs do not have a list of courses associated
+        if program_content_link:
+
+            campus = response.xpath('//*[@id="headercontent"]/div/div/div[1]/span[1]/span/span/a/text()').get()
+            campus = campus.split(" – ")[0]
+
+            yield response.follow(program_content_link, callback=self.parse_content,
+                                  cb_kwargs={'faculty': faculty, 'campus': campus})
+
+    def parse_content(self, response, faculty, campus):
+
+        # Get all data for the post
+        post_data = BASE_POST_DATA.copy()
+        program_id = response.xpath('//*[@id="dropdownlistOpleidingen"]/option[@selected="selected"]/@value').get()
+        post_data['dropdownlistOpleidingen'] = program_id
+        post_data['__VIEWSTATE'] = response.xpath("//input[@id='__VIEWSTATE']/@value").get()
+        post_data['__VIEWSTATEGENERATOR'] = response.xpath("//input[@id='__VIEWSTATEGENERATOR']/@value").get()
+        post_data['__EVENTVALIDATION'] = response.xpath("//input[@id='__EVENTVALIDATION']/@value").get()
+
+        traject_ids = response.xpath('//*[@id="dropdownlistTrajecten"]/option/@value').getall()
+
+        program_name = response.xpath('//*[@id="dropdownlistOpleidingen"]/option[@selected="selected"]/text()').get()
+        program_name = program_name.split(" -")[0]
+        cycle = 'other'
+        if "bachelor" in program_name.lower():
+            cycle = 'bac'
+        elif "master" in program_name.lower():
+            cycle = 'master'
+        elif 'postgraduaat' in program_name.lower():
+            cycle = 'postgrad'
+        elif 'graduaat' in program_name.lower():
+            cycle = 'grad'
+
+        base_dict = {
+            "id": program_id,
+            "name": program_name,
+            "cycle": cycle,
+            "faculties": [faculty],
+            "campuses": [campus],
+            "url": response.url,
+            # "ects": ects are obtained at course level
+            "courses": []
+        }
+
+        # Call recursively on each trajectory
+        post_data["dropdownlistTrajecten"] = traject_ids[0]
+        yield scrapy.http.FormRequest(
+            response.url,
+            callback=self.parse_paths_courses_recursively,
+            formdata=post_data,
+            cb_kwargs={"base_dict": base_dict, "post_data": post_data, "traject_ids": traject_ids[1:]}
+        )
+
+    def parse_paths_courses_recursively(self, response, base_dict, post_data, traject_ids):
+
+        courses = response.xpath('//*[contains(@id, "repeaterModules_hyperlinkModule")]/@href').getall()
+        courses_urls = [course.split("aspx?")[1] for course in courses]
+        courses_ids = [course.split("a=")[1].split('&b')[0] for course in courses_urls]
         base_dict["courses"] = list(set(base_dict["courses"]).union(courses_ids))
 
         # Parse the next program 'path' or yield final result
-        if paths_ids:
-            post_data["dropdownlistTrajecten"] = paths_ids[0]
-            yield scrapy.http.FormRequest.from_response(
-                response,
+        if traject_ids:
+            post_data["dropdownlistTrajecten"] = traject_ids[0]
+            yield scrapy.http.FormRequest(
+                response.url,
                 callback=self.parse_paths_courses_recursively,
                 formdata=post_data,
-                cb_kwargs={"base_dict": base_dict, "post_data": post_data, "paths_ids": paths_ids[1:]}
+                cb_kwargs={"base_dict": base_dict, "post_data": post_data, "traject_ids": traject_ids[1:]}
             )
         else:
+            # Do not save programs without courses --> TODO: should we ?
             if base_dict["courses"]:
                 yield base_dict

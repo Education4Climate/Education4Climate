@@ -20,6 +20,7 @@ LANGUAGES_DICT = {
     "Chinees": "cn",
     "Duits": "de",
     "Mandarijn Chinees": "cn",
+    "Anders bepaald": 'nl'
 }
 
 
@@ -69,7 +70,7 @@ class HOWESTCourseSpider(scrapy.Spider, ABC):
             'id': course_id,
             'name': name,
             'year': year,
-            'ects': [ects],  # TODO: does not work in prepare.py
+            'ects': [ects],
             'languages': languages,
             'teachers': teachers,
             'url': response.url,
