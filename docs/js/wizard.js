@@ -184,7 +184,7 @@ var app = Vue.createApp({
             // loads programs data
 
             this.programs = await this.programsManager.getPrograms(this.schools);
-            // Pour le SIEP on ne garde que les programmes des cours des écoles francophones, on filtre maintenant pour alléger les filtres
+            // On ne garde que les programmes des cours des écoles francophones pour l'instant, donc on filtre maintenant pour alléger les filtres
             this.programs = this.programs.filter(program => this.schools.filter(school => school.languages.includes("fr") && school.id == program.schoolId).length == 1);
 
             this.fields = (await this.programsManager.getProgramsFields()).filter(field => field.name != "Other").sort((a, b) => a.name.localeCompare(b.name));
@@ -338,7 +338,7 @@ var app = Vue.createApp({
                 redirect: 'follow'
             };
 
-            fetch(constants.SIEP_APPS_SCRIPT, requestOptions)
+            fetch(constants.WIZARD_APPS_SCRIPT, requestOptions)
                 .then(response => response.text())
                 .then(result => {
 
@@ -393,7 +393,7 @@ var app = Vue.createApp({
                 redirect: 'follow'
             };
 
-            fetch(constants.SIEP_APPS_SCRIPT, requestOptions)
+            fetch(constants.WIZARD_APPS_SCRIPT, requestOptions)
                 .then(response => response.text())
                 .then()
                 .catch(error => { console.log('error', error); });

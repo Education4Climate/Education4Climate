@@ -78,7 +78,7 @@
                                 <div class="accent">The Shifters Belgium</div>
                                 <ul>
                                     <li>
-                                        <a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                                        <a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank" rel="noopener"
                                             v-html="translate('footer.contact')"></a>
                                     </li>
                                     <li>
@@ -125,8 +125,8 @@
                             <div class="buttons-container">
                           
                                 <div v-if="this.currentLanguage == 'fr' || this.currentLanguage == 'en'">
-                                    <a class="btn btn-super-accent btn-lg" href="/siep.html"
-                                        v-html="translate('menu.siep')">Guide pas à pas</a>
+                                    <a class="btn btn-super-accent btn-lg" href="/wizard.html"
+                                        v-html="translate('menu.wizard')">Guide pas à pas</a>
                                 </div>                                   
                                 <div>
                                     <a class="btn btn-primary btn-lg" href="/programs.html"
@@ -268,12 +268,12 @@
                         <h1 v-html="translate('home.section4-title')">Aidez-nous à nous améliorer !</h1>
                     </div>
 
-                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section4-text')">
+                    <div class="col-xl-6 text order-xl-first" v-html="translate('home.section4-text').replace('{0}', this.contactEmail)">
                         <p>L’amélioration continue de Education4Climate est notre priorité. Si vous souhaitez signaler
                             un cours ou une formation, ou nous suggérer des améliorations, vous pouvez le faire via
                             notre <a
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSf7_WTtbBRkQxs-hBHNfWPGlwKVurvoHRgZR7kGlKbVxkQLJg/viewform"
-                                target="_blank" rel="noopener">formulaire</a>.</p>
+                                href="mailto:contact@education4climate.org"
+                                target="_blank" rel="noopener">adresse email</a>.</p>
                     </div>
 
                 </div>
@@ -288,18 +288,13 @@
                         <h1 v-html="translate('home.team-title')">L'équipe</h1>
                     </div>
 
-                    <div class="col-xl-6 container text">
+                    <div class="col-xl-5 container text">
 
                         <div class="team-pictures">
                             <div>
                                 <img src="./img/team/antoine.webp" alt="Antoine Dubois" width="128" height="128">
                                 <h2>Antoine Dubois</h2>
                                 <h3 v-html="translate('team.algorithm')">Développement algorithme</h3>
-                            </div>
-                            <div>
-                                <img src="./img/team/arthur.webp" alt="Arthur Prével" width="128" height="128">
-                                <h2>Arthur Prével</h2>
-                                <h3 v-html="translate('team.survey')">Enquête</h3>
                             </div>
                             <div>
                                 <img src="./img/team/denis.webp" alt="Denis Lebailly" width="128" height="128">
@@ -327,13 +322,9 @@
                                 <h3 v-html="translate('team.algorithm')">Développement algorithme</h3>
                             </div>                            
                         </div>
-                        <div class="thanks" v-html="translate('home.team-thanks')">Avec l’aide de : Noël Schneider, David Steinmetz,
-                            Robin De Gernier, Aymeric Lamant, Laurent Eschenauer, Aric Wizenberg, Antoine Qian, Cédric
-                            Brusselmans, Martin Vermeiren, Hugo Poitoux, Luna Janssens, Laura Valgaeren, Noël van
-                            Boxtel, Luka Rüder, Ine Tryssesoone, Tine Meulemans, Anurag Sinha, Hülya Altinok et Cédric
-                            Cassiers.</p>
-                            <p>Elles et ils nous ont soutenus : Inge Willems (SDSN Belgium), Bart Corijn (The Shift),
-                                Clémence Vorreux (Le Shift Project) et Edwin Zaccai (ULB).</p>
+                        <div class="thanks" v-html="translate('home.team-thanks')">
+                            <p>Avec l’aide de : Antoine Qian, Anurag Sinha, Aric Wizenberg, Arthur Prével, Aymeric Lamant, Cédric Brusselmans, Cédric Cassiers, David Steinmetz, Hugo Poitoux, Hülya Altinok, Ine Tryssesoone, Laura Valgaeren, Laurent Eschenauer, Luka Rüder, Luna Janssens, Martin Vermeiren, Noël Schneider, Noël van Boxtel, Robin De Gernier et Tine Meulemans.</p>
+                            <p>Elles et ils nous ont soutenus : Inge Willems (SDSN Belgium), Bart Corijn (The Shift), Clémence Vorreux (Le Shift Project) et Edwin Zaccai (ULB).</p>                           
                         </div>
                     </div>
                 </div>
@@ -352,7 +343,7 @@
                     </div>
                     <div class="col-xl-6 right">
                         <ul>
-                            <li><a :href="translate('shared.google-form')" target="_blank" rel="noopener"
+                            <li><a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank" rel="noopener"
                                     v-html="translate('footer.contact')"></a>
                             </li>
                             <li>
@@ -367,9 +358,8 @@
                     </div>
         </footer>
 
-        <cookie-manager :translations="translations" :current-language="currentLanguage"
-            @change-cookies-consent="changeCookiesConsent">
-        </cookie-manager>
+        <cookie-manager :translations="translations" :current-language="currentLanguage" @change-cookies-consent="changeCookiesConsent"></cookie-manager>
+        <welcome-modal :translations="translations" :current-language="currentLanguage" :methodology-document="methodologyDocument"></welcome-modal>
 
     </div>
 

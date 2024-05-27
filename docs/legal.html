@@ -74,7 +74,7 @@
                             <div>
                                 <div>The Shifters Belgium</div>
                                 <ul>
-                                    <li><a :href="translate('shared.google-form')" target="_blank"
+                                    <li><a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank"
                                             rel="noopener">{{translate("footer.contact")}}</a></li>
                                     <li><a href="legal.html">{{translate("footer.legal")}}</a></li>
                                     <li><a href="javascript:void(0);" data-bs-toggle="modal"
@@ -91,7 +91,7 @@
 
         <main id="home">
 
-            <div class="container " id="home-intro" v-html="translate('legal-text')">
+            <div class="container " id="home-intro" v-html="translate('legal-text').replace('{0}', this.contactEmail)">
 
             </div>
 
@@ -107,7 +107,7 @@
                     </div>
                     <div class="col-xl-6 right">
                         <ul>
-                            <li><a :href="translate('shared.google-form')" target="_blank"
+                            <li><a :href="'mailto:' + this.contactEmail + '?subject=E4C-FORM - Contact'" target="_blank"
                                     rel="noopener">{{translate("footer.contact")}}</a>
                             </li>
                             <li>
@@ -124,9 +124,8 @@
             </div>
         </footer>
 
-        <cookie-manager :translations="translations" :current-language="currentLanguage"
-            @change-cookies-consent="changeCookiesConsent">
-        </cookie-manager>
+        <cookie-manager :translations="translations" :current-language="currentLanguage" @change-cookies-consent="changeCookiesConsent"></cookie-manager>
+        <welcome-modal :translations="translations" :current-language="currentLanguage" :methodology-document="methodologyDocument"></welcome-modal>
 
     </div>
 

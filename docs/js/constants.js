@@ -10,11 +10,13 @@ const SCHOOLS_FILE = DATA_FOLDER + "/" + "schools.json";
 const PAGE_SIZE = 20;
 const AVAILABLE_LANGUAGES = ["fr", "nl", "en"];
 const DEFAULT_LANGUAGE = "en";
-const MENU_ITEMS = ["programs", "courses", "teachers", "report", "siep", "dashboard"];
+const MENU_ITEMS = ["programs", "courses", "teachers", "report", "wizard", "dashboard"];
 const GOOGLE_ANALYTICS_ID = "G-8JCFK91KH7";
-const SIEP_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbxWF4IAssBIE5p_wayVj9Zr110YJao4mAENWy-sHuzYRiZJWM2tWjrdvrm7BHV7VK1GNQ/exec";
+const WIZARD_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbxWF4IAssBIE5p_wayVj9Zr110YJao4mAENWy-sHuzYRiZJWM2tWjrdvrm7BHV7VK1GNQ/exec";
+const CONTACT_EMAIL = "contact@education4climate.org";
+const METHODOLOGY_DOCUMENT = "https://docs.google.com/document/d/1E-2aNAC6Gdi7E59uGn0Lyn_4M0rmjW1xIjrPKOkeH08";
 
 const DEFAULT_THEME = "light";
 const ALTERNATE_THEME = "dark";
 
-export { DATA_FOLDER, SCHOOLS_FILE, PAGE_SIZE, AVAILABLE_LANGUAGES, DEFAULT_LANGUAGE, MENU_ITEMS, GOOGLE_ANALYTICS_ID, DEFAULT_THEME, ALTERNATE_THEME, SIEP_APPS_SCRIPT };
+export { DATA_FOLDER, SCHOOLS_FILE, PAGE_SIZE, AVAILABLE_LANGUAGES, DEFAULT_LANGUAGE, MENU_ITEMS, GOOGLE_ANALYTICS_ID, DEFAULT_THEME, ALTERNATE_THEME, WIZARD_APPS_SCRIPT, CONTACT_EMAIL, METHODOLOGY_DOCUMENT };

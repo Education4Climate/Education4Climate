@@ -1,13 +1,13 @@
 /* General */
 
-.siep-wizard {
+.wizard {
     background-color: var(--background-primary-color);
     color: var(--font-color);
     font-size: 16px;
     text-align: center;
 }
 
-.siep-wizard #app {
+.wizard #app {
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -16,21 +16,21 @@
 
 /* General Fonts */
 
-.siep-wizard h1 {
+.wizard h1 {
     color: var(--font-color);
     font-size: 23px;
     line-height: 25px;
     margin-bottom: 0.5rem;
 }
 
-.siep-wizard h2 {
+.wizard h2 {
     color: var(--accent-color);
     font-size: 17px;
     line-height: 19px;
     margin-bottom: 0.5rem;
 }
 
-.siep-wizard h3 {
+.wizard h3 {
     color: var(--super-accent-color);
     font-size: 12px;
 }
@@ -43,12 +43,12 @@
 
 /* Header */
 
-.siep-wizard header {
+.wizard header {
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.siep-wizard header * {
+.wizard header * {
     font-size: 14px;
     font-weight: 700;
     display: inline;
@@ -57,14 +57,14 @@
 
 /* Footer */
 
-.siep-wizard footer {
+.wizard footer {
     box-shadow: unset;
     background-color: unset;
 }
 
 /* Buttons */
 
-.siep-wizard button {
+.wizard button {
     background-color: var(--accent-color);
     color: var(--night-blue);
     border-radius: 50px;
@@ -76,26 +76,26 @@
     min-height: 40px;
 }
 
-.siep-wizard button.field {
+.wizard button.field {
     min-width: unset;
     padding: 0.5rem;
 }
 
-.siep-wizard button.secondary {
+.wizard button.secondary {
     background-color: unset;
     color: var(--accent-color);
 }
 
 /* Wizard Progress Dots */
 
-.siep-wizard .progress {
+.wizard .progress {
     justify-content: center;
     background-color: unset;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.siep-wizard .progress .dot {
+.wizard .progress .dot {
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -104,7 +104,7 @@
     margin: 0 5px 0 5px;
 }
 
-.siep-wizard .progress .dot.current {
+.wizard .progress .dot.current {
     background-color: var(--font-color);
 }
 
@@ -114,11 +114,11 @@
     width: 25vh;
 } */
 
-.siep-wizard .legend {
+.wizard .legend {
     margin-top: 2rem;
 }
 
-.siep-wizard .legend-color {
+.wizard .legend-color {
     font-size: 2.5rem;
     font-weight: 600;
     line-height: 50px;
@@ -126,11 +126,11 @@
 
 /* Results list */
 
-.siep-wizard .results .main {
+.wizard .results .main {
     margin-top: 1rem;
 }
 
-.siep-wizard .result-item {
+.wizard .result-item {
     text-align: left;
     border: 2px solid var(--accent-color);
     margin-bottom: 1rem;
@@ -139,11 +139,11 @@
     width: 100%;
 }
 
-.siep-wizard .result-item h2 {
+.wizard .result-item h2 {
     font-size: 15px;
 }
 
-.siep-wizard .result-item h3 {
+.wizard .result-item h3 {
     color: var(--font-color);
     font-size: 18px;
     line-height: 20px;
@@ -209,14 +209,14 @@
 
 /* Screen 4 : Program details */
 
-.siep-wizard .program-details .region {
+.wizard .program-details .region {
     display: flex;
     justify-content: center;
     line-height: 25px;
     margin-bottom: 0.2rem;
 }
 
-.siep-wizard .program-details .region .icon.location {
+.wizard .program-details .region .icon.location {
     height: 25px;
     margin-right: 0.3rem;
     margin-left: -3px;
@@ -224,13 +224,13 @@
 
 /* Autre */
 
-.siep-wizard .wizard-step {
+.wizard .wizard-step {
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.siep-wizard .wizard-step .main {
+.wizard .wizard-step .main {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -238,21 +238,21 @@
     justify-content: space-evenly;
 }
 
-.siep-wizard .wizard-step.email .main {
+.wizard .wizard-step.email .main {
     justify-content: space-evenly;
 }
 
-.siep-wizard .home .main img {
+.wizard .home .main img {
     flex: 0.6;
     margin-left: -25px;
     margin-bottom: 20px;
 }
 
-.siep-wizard .main .intro {
+.wizard .main .intro {
     margin: 0 25px 0 25px;
 }
 
-.siep-wizard button.field {
+.wizard button.field {
     background-color: unset;
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
@@ -263,7 +263,7 @@
     text-transform: lowercase;
 }
 
-.siep-wizard button.field.selected {
+.wizard button.field.selected {
     background-color: var(--accent-color);
     color: var(--night-blue);
 }
@@ -275,7 +275,7 @@
 /* Media Queries */
 
 @media (orientation: landscape) {
-    .siep-wizard .wizard-step {
+    .wizard .wizard-step {
         width: 30%;
         margin: auto;
     }
@@ -380,4 +380,65 @@ button.loading::after {
     text-align: left;
     font-weight: 600;
     color: #4bd2af;
+}
+
+/* Welcome Modal */
+
+.welcome-modal {
+    position: fixed; 
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    padding: 20px;       
+}
+
+.welcome-modal-content {
+    text-align: left;
+    background-color: var(--background-primary-color);
+    margin: 15% auto; 
+    padding: 20px;
+    width: 40%; 
+    border-radius: 10px;
+}
+
+.welcome-modal-content p {
+    padding: 0.5rem;
+}
+
+.welcome-modal-content a {
+    color: var(--accent-color);
+}
+
+.welcome-modal-content a.btn {
+    padding: 0.5rem;
+    color: var(--font-color);
+}
+
+.welcome-modal-content a[target="_blank"]:after {
+    content: "";
+    line-height: 24px;
+    width: 0;
+    height: 0;
+    margin-left: 4px;
+    background-image: unset;
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: unset;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.welcome-modal-content img {
+    display: inline;
+}
+
+@media (max-width: 1199.98px) {
+
+    .welcome-modal-content {
+        width: 90%; 
+    }
 }
