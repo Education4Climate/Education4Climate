@@ -46,7 +46,7 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
     name = "howest-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}howest_programs_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}howest_programs_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):
@@ -66,7 +66,8 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
 
     def parse_program(self, response, faculty):
 
-        program_content_link = response.xpath("//*[@id='opleidingsprogramma']/a/@href").get()
+        program_content_link = response.xpath("//*[@id='opleidingsprogramma']"
+                                              "//a[contains(@href, 'bamaflex')]/@href").get()
         # Some programs do not have a list of courses associated
         if program_content_link:
 
@@ -107,7 +108,7 @@ class HOWESTProgramSpider(scrapy.Spider, ABC):
             "faculties": [faculty],
             "campuses": [campus],
             "url": response.url,
-            # "ects": ects are obtained at course level
+            "ects": [],  # ects are obtained at course level
             "courses": []
         }
 
