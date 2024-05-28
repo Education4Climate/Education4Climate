@@ -423,6 +423,24 @@
             ]
         }
     },
+    "ARCH0579-1: Workshop Q3 - Th\u00e9matique 2 Habitat / Habiter : Les atmosph\u00e8res": {
+        "fr": {
+            "villes? durab": [
+                "eloppement durable  ville durable  territoire  rech"
+            ],
+            "rechauffements? climat": [
+                "urable  territoire  rechauffement climatique  empreinte envi"
+            ],
+            "[energie, durab]": [
+                "ateriaux  sources d energies      prendre en co",
+                "ite   developpement durable  ville durable  t",
+                "ment durable  ville durable  territoire  rech"
+            ],
+            "qualites? de l air": [
+                "etes thermiques  la qualite de l air  le mobilier  la de"
+            ]
+        }
+    },
     "ARCH0580-1: Workshop Q3 - Th\u00e9matique 3 - Kal\u00e9idoscope": {
         "fr": {
             "villes? durab": [
@@ -524,6 +542,19 @@
             ],
             "rechauffements? climat": [
                 "urable  territoire  rechauffement climatique  empreinte envi"
+            ]
+        }
+    },
+    "ARCH1014-1: Culture architecturale 1 - Histoire et th\u00e9orie de l'architecture - XIXe si\u00e8cle - 1940": {
+        "fr": {
+            "villes? durab": [
+                "eloppement durable  ville durable  territoire  rech"
+            ],
+            "rechauffements? climat": [
+                "urable  territoire  rechauffement climatique  empreinte envi"
+            ],
+            "preoccupations? (?:environnement|ecosyst)": [
+                " la societe  et les preoccupations environnementales    - analyser d"
             ]
         }
     },
@@ -2000,6 +2031,13 @@
         "fr": {
             "[[ ]ecolo[^ ]+]": [
                 "e droite  de gauche  ecologique  complotisme       "
+            ]
+        }
+    },
+    "DEDU0001-1: Durabilit\u00e9 et transition": {
+        "fr": {
+            "enjeux? (?:environnement|ecosyst)": [
+                "ines concernant les enjeux environnementaux et sociaux de la"
             ]
         }
     },
@@ -3682,7 +3720,7 @@
                 " enjeux associes au changement climatique  a la crise de "
             ],
             "services? (?:environnement|ecosyst)": [
-                "gronomie urbaine et services ecosystemiques      capacit"
+                "nt en hydrologie et services ecosystemiques     capacite"
             ]
         }
     },
@@ -5329,7 +5367,7 @@
             ]
         }
     },
-    "HULG9399-1: Misen en oeuvre 1": {
+    "HULG9399-1: Mise en oeuvre 1": {
         "fr": {
             "permaculture": [
                 "e ecosystemique et  permaculturelle du projet    sou"
@@ -5488,6 +5526,13 @@
         "fr": {
             "impacts? (?:environnement|ecosyst)": [
                 "ntes concernant les impacts environnementaux des activites in"
+            ]
+        }
+    },
+    "LROM0118-1: Stylistique et traitement automatique des textes espagnols": {
+        "fr": {
+            "[[ ]ecolo[^ ]+]": [
+                "ques  economiques et ecologiques qu ils suscitent  e"
             ]
         }
     },
@@ -6575,15 +6620,6 @@
             ]
         }
     },
-    "PEAV0016-1: Discours journalistique et st\u00e9r\u00e9otypes": {
-        "fr": {
-            "questions? (?:environnement|ecosyst)": [
-                "ebat public sur les questions environnementales et climatiques ",
-                "ques - traitant des questions environnementales et climatiques ",
-                "articulier  sur les questions environnementales et climatiques "
-            ]
-        }
-    },
     "PEDA0056-1: Conception, gestion et \u00e9valuation des dispositifs de formation": {
         "fr": {
             "agro-?ecolo": [
@@ -6995,17 +7031,14 @@
     "SMEM0042-1: M\u00e9moire": {
         "fr": {
             "energ[^ ]+ renouvelable": [
-                "uxembourg  finalite energies renouvelables   les reglements d"
-            ]
-        }
-    },
-    "SOCI0022-1: Epist\u00e9mologie des sciences sociales": {
-        "fr": {
-            "[[ ]ecolo[^ ]+]": [
-                "ble      3  la crise ecologique met-elle fin a l as"
+                " en eau  gire     - energies renouvelables et batiments durab"
             ],
-            "questions? (?:environnement|ecosyst)": [
-                "ciences sociales et questions environnementales  a travers le c"
+            "[energie, durab]": [
+                " en eau  gire     - energies renouvelables et b",
+                "lables et batiments durables  erbd          l"
+            ],
+            "pollu": [
+                "ing des atmospheres polluees  map     - media"
             ]
         }
     },
@@ -7192,7 +7225,7 @@
             ]
         }
     },
-    "SPOL9211-1: Ecology and politics": {
+    "SPOL9211-1: Ecology and Politics": {
         "en": {
             "[[ ]ecolo[^ ]+]": [
                 "vastes que celles \"d ecologie\" et de \"politique\"  ",
