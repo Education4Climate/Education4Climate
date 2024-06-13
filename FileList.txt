@@ -1,0 +1,187 @@
+FileList generated 2022-10-04 13:19:48.323868
+
+Project Directory Tree
++  .                                                                             
++--+  data                               Latest webcrawl and analysis            
++--+--+  analysis                        Analysis of patterns used to match course data
++--+--+  crawling-output                 Course description data from latest university crawl
++--+--+  patterns                        regex patterns parsing course information to themes
++--+--+--+  base                                                                 
++--+--+--+  dedicated                                                            
++--+--+--+  v1.0                                                                 
++--+--+--+  v1.1                                                                 
++--+--+  scoring-output                  score of each university by theme       
++--+  docs                               HTML and PDF from latest webcrawl       
++--+--+  css                                                                     
++--+--+  data                                                                    
++--+--+--+  translations                                                         
++--+--+  favicons                                                                
++--+--+  img                                                                     
++--+--+--+  team                                                                 
++--+--+  js                                                                      
++--+--+--+  components                                                           
++--+--+--+  managers                                                             
++--+  src                                Python source code                      
++--+--+  crawl                                                                   
++--+--+--+  unicrawl                     Scrapy project directory to crawl universities
++--+--+--+--+  spiders                   Scrapping controls specific to univerisities
++--+--+  score                           Score theme coverage based on courses and programs
++--+--+  web                             Convert crawling and scoring to school json files
++--+  tests                              Validate crawling data in data/crawling-output
++--+--+  crawl                                                                   
+
+Directory .                                                                     
+   Files:
+      .gitignore                         Wildcards for git version control to ignore
+      CNAME                              "education4climate.be" with no new line 
+      environment.yaml                   Unicrawl configuration file             
+      FileList.toml                      Data file creating this list            
+      FileList.txt                                                               
+      LICENSE                            MIT License                             
+      Makefile                           Makefile including web crawling         
+      README.md                          Project description and primary documentation
+      requirements.txt                   Python package dependencies list        
+      scrapy.cfg                         Scrapy web scrapper generated config file
+      settings.py                        Directory definitions for Snakefile     
+      Snakefile                          'Python code as Makefile' for crawling and scoring
+  Subdirectories:
+      data/                              Latest webcrawl and analysis            
+      docs/                              HTML and PDF from latest webcrawl       
+      src/                               Python source code                      
+      tests/                             Validate crawling data in data/crawling-output
+
+Directory: ./data, 4 Subdirectories, 3 files.
+  Description: Latest webcrawl and analysis
+  Subdirectories: analysis/, crawling-output/, patterns/, scoring-output/
+  Files : crawling_dates.csv, faculties_to_fields.csv, scoring_fields.csv
+
+Directory ./data/analysis               Analysis of patterns used to match course data
+   Files:
+      debug_ucl.txt                      Sample text scrap of ucl                
+      debug_ulb.txt                      Sample text scrap of ulb                
+      fr_true_pos.json                   course numbers for ucl and ucb          
+      pattern_comparison.xlsx            spreadsheet counting regex patterns matching class data of ucl and ulb
+      pattern_matches_ulb_ucl.xlsx       spreadsheet with more pattern matching counts
+
+Directory: ./data/crawling-output, 0 Subdirectories, 148 files.
+  Description: Course description data from latest university crawl
+  Files : artevelde_courses_2021.json, artevelde_programs_2021.json, ecam_courses_2020.json, ecam_courses_2021.json, ecam_programs_2020.json, ecam_programs_2021.json, ecsedi-isalt_courses_2020.json, ecsedi-isalt_courses_2020_pre.json, ecsedi-isalt_courses_2021.json, ecsedi-isalt_courses_2021_pre.json, ecsedi-isalt_programs_2020.json, ecsedi-isalt_programs_2020_pre.json, ecsedi-isalt_programs_2021.json, ecsedi-isalt_programs_2021_pre.json, ehb_courses_2020.json, ehb_courses_2021.json, ehb_programs_2020.json, ehb_programs_2021.json, he-ferrer_courses_2020.json, he-ferrer_courses_2021.json, he-ferrer_programs_2020.json, he-ferrer_programs_2021.json, heaj_courses_2020.json, heaj_courses_2021.json, heaj_programs_2020.json, heaj_programs_2021.json, hech_courses_2020.json, hech_courses_2021.json, hech_programs_2020.json, hech_programs_2021.json, hel_courses_2020.json, hel_courses_2021.json, hel_programs_2020.json, hel_programs_2021.json, heldb_courses_2020.json, heldb_courses_2021.json, heldb_programs_2020.json, heldb_programs_2021.json, helmo_courses_2020.json, helmo_courses_2021.json, helmo_programs_2020.json, helmo_programs_2021.json, henallux_courses_2020.json, henallux_courses_2021.json, henallux_programs_2020.json, henallux_programs_2021.json, hepl_courses_2020.json, hepl_courses_2021.json, hepl_programs_2020.json, hepl_programs_2020_pre.json, hepl_programs_2021.json, hers_courses_2020.json, hers_courses_2021.json, hers_programs_2020.json, hers_programs_2021.json, hogent_courses_2021.json, hogent_programs_2021.json, hogent_programs_2021_pre.json, howest_courses_2020.json, howest_courses_2021.json, howest_programs_2020.json, howest_programs_2021.json, ichec_courses_2020.json, ichec_courses_2021.json, ichec_programs_2020.json, ichec_programs_2021.json, ihecs_courses_2020.json, ihecs_courses_2021.json, ihecs_programs_2020.json, ihecs_programs_2021.json, ispg_courses_2020.json, ispg_courses_2021.json, ispg_programs_2020.json, ispg_programs_2021.json, issig_courses_2020.json, issig_courses_2021.json, issig_programs_2020.json, issig_programs_2021.json, kuleuven_courses_2020.json, kuleuven_courses_2021.json, kuleuven_programs_2020.json, kuleuven_programs_2021.json, odisee_courses_2020.json, odisee_courses_2021.json, odisee_programs_2020.json, odisee_programs_2021.json, thomasmore_courses_2020.json, thomasmore_courses_2021.json, thomasmore_programs_2020.json, thomasmore_programs_2021.json, uantwerpen_courses_2020.json, uantwerpen_courses_2020_pre.json, uantwerpen_courses_2021.json, uantwerpen_courses_2021_pre.json, uantwerpen_programs_2020.json, uantwerpen_programs_2021.json, ucll_courses_2020.json, ucll_courses_2021.json, ucll_programs_2020.json, ucll_programs_2021.json, uclouvain_courses_2020.json, uclouvain_courses_2021.json, uclouvain_programs_2020.json, uclouvain_programs_2020_pre.json, uclouvain_programs_2021.json, uclouvain_programs_2021_pre.json, ugent_courses_2020.json, ugent_courses_2020_pre.json, ugent_courses_2021.json, ugent_programs_2020.json, ugent_programs_2020_pre.json, ugent_programs_2021.json, uhasselt_courses_2020.json, uhasselt_courses_2021.json, uhasselt_programs_2020.json, uhasselt_programs_2021.json, ulb_courses_2020.json, ulb_courses_2021.json, ulb_programs_2020.json, ulb_programs_2021.json, uliege_courses_2020.json, uliege_courses_2021.json, uliege_programs_2020.json, uliege_programs_2021.json, umons_courses_2020.json, umons_courses_2021.json, umons_programs_2020.json, umons_programs_2021.json, unamur_courses_2020.json, unamur_courses_2021.json, unamur_programs_2020.json, unamur_programs_2021.json, uslb_courses_2020.json, uslb_courses_2021.json, uslb_programs_2020.json, uslb_programs_2021.json, vinci_courses_2020.json, vinci_courses_2021.json, vinci_programs_2020.json, vinci_programs_2021.json, vives_courses_2020.json, vives_courses_2021.json, vives_programs_2020.json, vives_programs_2021.json, vub_courses_2020.json, vub_courses_2021.json, vub_programs_2020.json, vub_programs_2021.json
+
+Directory: ./data/patterns, 4 Subdirectories, 2 files.
+  Description: regex patterns parsing course information to themes
+  Subdirectories: base/, dedicated/, v1.0/, v1.1/
+  Files : dedicated.json, themes_patterns.json
+
+Directory: ./data/patterns/base, 0 Subdirectories, 3 files.
+  Files : en.csv, fr.csv, nl.csv
+
+Directory: ./data/patterns/dedicated, 0 Subdirectories, 3 files.
+  Files : en.csv, fr.csv, nl.csv
+
+Directory: ./data/patterns/v1.0, 0 Subdirectories, 3 files.
+  Files : en.csv, fr.csv, nl.csv
+
+Directory: ./data/patterns/v1.1, 0 Subdirectories, 3 files.
+  Files : en.csv, fr.csv, nl.csv
+
+Directory: ./data/scoring-output, 0 Subdirectories, 138 files.
+  Description: score of each university by theme
+  Files : artevelde_courses_scoring_2021.csv, artevelde_matches_2021.json, artevelde_programs_scoring_2021.csv, ecam_courses_scoring_2021.csv, ecam_matches_2021.json, ecam_programs_scoring_2021.csv, ecsedi-isalt_courses_scoring_2021.csv, ecsedi-isalt_matches_2021.json, ecsedi-isalt_programs_scoring_2021.csv, ehb_courses_scoring_2021.csv, ehb_matches_2021.json, ehb_programs_scoring_2021.csv, he-ferrer_courses_scoring_2021.csv, he-ferrer_matches_2021.json, he-ferrer_programs_scoring_2021.csv, heaj_courses_scoring_2021.csv, heaj_matches_2021.json, heaj_programs_scoring_2021.csv, hech_courses_scoring_2021.csv, hech_matches_2021.json, hech_programs_scoring_2021.csv, hel_courses_scoring_2021.csv, hel_matches_2021.json, hel_programs_scoring_2021.csv, heldb_courses_scoring_2021.csv, heldb_matches_2021.json, heldb_programs_scoring_2021.csv, helmo_courses_scoring_2021.csv, helmo_matches_2021.json, helmo_programs_scoring_2021.csv, henallux_courses_scoring_2021.csv, henallux_matches_2021.json, henallux_programs_scoring_2021.csv, hepl_courses_scoring_2021.csv, hepl_matches_2021.json, hepl_programs_scoring_2021.csv, hers_courses_scoring_2021.csv, hers_matches_2021.json, hers_programs_scoring_2021.csv, hogent_courses_scoring_2021.csv, hogent_matches_2021.json, hogent_programs_scoring_2021.csv, howest_courses_scoring_2021.csv, howest_matches_2021.json, howest_programs_scoring_2021.csv, ichec_courses_scoring_2021.csv, ichec_matches_2021.json, ichec_programs_scoring_2021.csv, ihecs_courses_scoring_2021.csv, ihecs_matches_2021.json, ihecs_programs_scoring_2021.csv, ispg_courses_scoring_2021.csv, ispg_matches_2021.json, ispg_programs_scoring_2021.csv, issig_courses_scoring_2021.csv, issig_matches_2021.json, issig_programs_scoring_2021.csv, kuleuven_courses_scoring_2020.csv, kuleuven_courses_scoring_2021.csv, kuleuven_matches_2020.json, kuleuven_matches_2021.json, kuleuven_programs_scoring_2020.csv, kuleuven_programs_scoring_2021.csv, odisee_courses_scoring_2021.csv, odisee_matches_2021.json, odisee_programs_scoring_2021.csv, thomasmore_courses_scoring_2021.csv, thomasmore_matches_2021.json, thomasmore_programs_scoring_2021.csv, uantwerpen_courses_scoring_2020.csv, uantwerpen_courses_scoring_2021.csv, uantwerpen_matches_2020.json, uantwerpen_matches_2021.json, uantwerpen_programs_scoring_2020.csv, uantwerpen_programs_scoring_2021.csv, ucll_courses_scoring_2021.csv, ucll_matches_2021.json, ucll_programs_scoring_2021.csv, uclouvain_courses_scoring_2020.csv, uclouvain_courses_scoring_2021.csv, uclouvain_matches_2020.json, uclouvain_matches_2021.json, uclouvain_programs_scoring_2020.csv, uclouvain_programs_scoring_2021.csv, ugent_courses_scoring_2020.csv, ugent_courses_scoring_2021.csv, ugent_matches_2020.json, ugent_matches_2021.json, ugent_programs_scoring_2020.csv, ugent_programs_scoring_2021.csv, uhasselt_courses_scoring_2020.csv, uhasselt_courses_scoring_2021.csv, uhasselt_matches_2020.json, uhasselt_matches_2021.json, uhasselt_programs_scoring_2020.csv, uhasselt_programs_scoring_2021.csv, ulb_courses_scoring_2020.csv, ulb_courses_scoring_2021.csv, ulb_matches_2020.json, ulb_matches_2021.json, ulb_programs_scoring_2020.csv, ulb_programs_scoring_2021.csv, uliege_courses_scoring_2020.csv, uliege_courses_scoring_2021.csv, uliege_matches_2020.json, uliege_matches_2021.json, uliege_programs_scoring_2020.csv, uliege_programs_scoring_2021.csv, umons_courses_scoring_2020.csv, umons_courses_scoring_2021.csv, umons_matches_2020.json, umons_matches_2021.json, umons_programs_scoring_2020.csv, umons_programs_scoring_2021.csv, unamur_courses_scoring_2020.csv, unamur_courses_scoring_2021.csv, unamur_matches_2020.json, unamur_matches_2021.json, unamur_programs_scoring_2020.csv, unamur_programs_scoring_2021.csv, uslb_courses_scoring_2020.csv, uslb_courses_scoring_2021.csv, uslb_matches_2020.json, uslb_matches_2021.json, uslb_programs_scoring_2020.csv, uslb_programs_scoring_2021.csv, vinci_courses_scoring_2021.csv, vinci_matches_2021.json, vinci_programs_scoring_2021.csv, vives_courses_scoring_2021.csv, vives_matches_2021.json, vives_programs_scoring_2021.csv, vub_courses_scoring_2020.csv, vub_courses_scoring_2021.csv, vub_matches_2020.json, vub_matches_2021.json, vub_programs_scoring_2020.csv, vub_programs_scoring_2021.csv
+
+Directory ./docs                        HTML and PDF from latest webcrawl       
+   Files:
+      .gitignore                         Wildcards for git version control to ignore
+      .prettierrc                                                                
+      browserconfig.xml                                                          
+      CNAME                              education4climate.be with no end of line
+      courses.html                                                               
+      education4climate_rapport_final_fr.pdf                                         
+      education4climate_rapport_final_nl.pdf                                         
+      favicon.ico                                                                
+      index.html                                                                 
+      legal.html                                                                 
+      programs.html                                                              
+      README.md                                                                  
+      report.html                                                                
+      robots.txt                                                                 
+      round-table.html                                                           
+      teachers.html                                                              
+  Subdirectories:
+      css/                                                                       
+      data/                                                                      
+      favicons/                                                                  
+      img/                                                                       
+      js/                                                                        
+
+Directory: ./docs/css, 0 Subdirectories, 2 files.
+  Files : bootstrap.min.css, style.css
+
+Directory: ./docs/data, 1 Subdirectories, 71 files.
+  Subdirectories: translations/
+  Files : artevelde_data_2021_courses.json, artevelde_data_2021_programs.json, ecam_data_2021_courses.json, ecam_data_2021_programs.json, ecsedi-isalt_data_2021_courses.json, ecsedi-isalt_data_2021_programs.json, ehb_data_2021_courses.json, ehb_data_2021_programs.json, he-ferrer_data_2021_courses.json, he-ferrer_data_2021_programs.json, heaj_data_2021_courses.json, heaj_data_2021_programs.json, hech_data_2021_courses.json, hech_data_2021_programs.json, hel_data_2021_courses.json, hel_data_2021_programs.json, heldb_data_2021_courses.json, heldb_data_2021_programs.json, helmo_data_2021_courses.json, helmo_data_2021_programs.json, henallux_data_2021_courses.json, henallux_data_2021_programs.json, hepl_data_2021_courses.json, hepl_data_2021_programs.json, hers_data_2021_courses.json, hers_data_2021_programs.json, hogent_data_2021_courses.json, hogent_data_2021_programs.json, howest_data_2021_courses.json, howest_data_2021_programs.json, ichec_data_2021_courses.json, ichec_data_2021_programs.json, ihecs_data_2021_courses.json, ihecs_data_2021_programs.json, ispg_data_2021_courses.json, ispg_data_2021_programs.json, issig_data_2021_courses.json, issig_data_2021_programs.json, kuleuven_data_2021_courses.json, kuleuven_data_2021_programs.json, odisee_data_2021_courses.json, odisee_data_2021_programs.json, schools.json, thomasmore_data_2021_courses.json, thomasmore_data_2021_programs.json, uantwerpen_data_2021_courses.json, uantwerpen_data_2021_programs.json, ucll_data_2021_courses.json, ucll_data_2021_programs.json, uclouvain_data_2021_courses.json, uclouvain_data_2021_programs.json, ugent_data_2021_courses.json, ugent_data_2021_programs.json, uhasselt_data_2021_courses.json, uhasselt_data_2021_programs.json, ulb_data_2021_courses.json, ulb_data_2021_programs.json, uliege_data_2021_courses.json, uliege_data_2021_programs.json, umons_data_2021_courses.json, umons_data_2021_programs.json, unamur_data_2021_courses.json, unamur_data_2021_programs.json, uslb_data_2021_courses.json, uslb_data_2021_programs.json, vinci_data_2021_courses.json, vinci_data_2021_programs.json, vives_data_2021_courses.json, vives_data_2021_programs.json, vub_data_2021_courses.json, vub_data_2021_programs.json
+
+Directory: ./docs/data/translations, 0 Subdirectories, 3 files.
+  Files : en.json, fr.json, nl.json
+
+Directory: ./docs/favicons, 0 Subdirectories, 14 files.
+  Files : android-chrome-192x192.png, android-chrome-512x512.png, apple-touch-icon.png, browserconfig.xml, favicon.ico, favicon-16x16.png, favicon-32x32.png, mstile-144x144.png, mstile-150x150.png, mstile-310x150.png, mstile-310x310.png, mstile-70x70.png, safari-pinned-tab.svg, site.webmanifest
+
+Directory: ./docs/img, 1 Subdirectories, 23 files.
+  Subdirectories: team/
+  Files : background-report.webp, caret-down-blue.svg, caret-down-green.svg, caret-up-blue.svg, caret-up-green.svg, checked-box-green.svg, icon-education4climate.svg, logo_shifters_blue_blue.svg, logo_shifters_white_green.svg, ogimage.png, peep1.svg, peep1-dark.svg, peep2.svg, peep2-dark.svg, peep3.svg, peep3-dark.svg, sdsn-logo.png, target-green.svg, the-shift-logo.svg, the-shift-project-logo.png, theme-toggler.svg, theme-toggler-dark.svg, University-green.svg
+
+Directory: ./docs/img/team, 0 Subdirectories, 7 files.
+  Files : antoine.webp, arthur.webp, denis.webp, francois.webp, noel.webp, quentin.webp, quentin2.webp
+
+Directory: ./docs/js, 2 Subdirectories, 9 files.
+  Subdirectories: components/, managers/
+  Files : base-app.js, bootstrap.bundle.min.js, constants.js, courses.js, home.js, programs.js, round-table.js, teachers.js, vue.global.prod.js
+
+Directory: ./docs/js/components, 0 Subdirectories, 1 files.
+  Files : cookie-manager.js
+
+Directory: ./docs/js/managers, 0 Subdirectories, 5 files.
+  Files : courses-manager.js, programs-manager.js, schools-manager.js, teachers-manager.js, translation-manager.js
+
+Directory ./src                         Python source code                      
+   Files:
+      __init__.py                        Zero length file to make this a module  
+      analysis.py                                                                
+  Subdirectories:
+      crawl/                                                                     
+      score/                             Score theme coverage based on courses and programs
+      web/                               Convert crawling and scoring to school json files
+
+Directory ./src/crawl                                                           
+   Files:
+      __init__.py                                                                
+      merge.py                                                                   
+      README.md                          Full description of crawling strategy and parts
+      scrapy.cfg                         Configuration for scrapy ('scrapyd') crawler
+      utils.py                                                                   
+  Subdirectories:
+      unicrawl/                          Scrapy project directory to crawl universities
+
+Directory: ./src/crawl/unicrawl, 1 Subdirectories, 5 files.
+  Description: Scrapy project directory to crawl universities
+  Subdirectories: spiders/
+  Files : __init__.py, items.py, middlewares.py, pipelines.py, settings.py
+
+Directory: ./src/crawl/unicrawl/spiders, 0 Subdirectories, 71 files.
+  Description: Scrapping controls specific to univerisities
+  Files : __init__.py, artevelde_courses.py, artevelde_programs.py, ecam_courses.py, ecam_programs.py, ecsedi-isalt_courses.py, ecsedi-isalt_programs.py, ehb_courses.py, ehb_programs.py, he-ferrer_courses.py, he-ferrer_programs.py, heaj_courses.py, heaj_programs.py, hech_courses.py, hech_programs.py, hel_courses.py, hel_programs.py, heldb_courses.py, heldb_programs.py, helmo_courses.py, helmo_programs.py, henallux_courses.py, henallux_programs.py, hepl_courses.py, hepl_programs.py, hers_courses.py, hers_programs.py, hogent_courses.py, hogent_programs.py, howest_courses.py, howest_programs.py, ichec_courses.py, ichec_programs.py, ihecs_courses.py, ihecs_programs.py, ispg_courses.py, ispg_programs.py, issig_courses.py, issig_programs.py, kuleuven_courses.py, kuleuven_programs.py, odisee_courses.py, odisee_programs.py, thomasmore_courses.py, thomasmore_programs.py, uantwerpen_courses.py, uantwerpen_programs.py, ucll_courses.py, ucll_programs.py, uclouvain_courses.py, uclouvain_programs.py, ugent_courses.py, ugent_programs.py, uhasselt_courses.py, uhasselt_programs.py, ulb_courses.py, ulb_programs.py, uliege_courses.py, uliege_programs.py, umons_courses.py, umons_programs.py, unamur_courses.py, unamur_programs.py, uslb_courses.py, uslb_programs.py, vinci_courses.py, vinci_programs.py, vives_courses.py, vives_programs.py, vub_courses.py, vub_programs.py
+
+Directory: ./src/score, 0 Subdirectories, 7 files.
+  Description: Score theme coverage based on courses and programs
+  Files : courses.py, dictionary-comparison.py, programs.py, README.md, scoring_output_explorer.py, teachers.py, test_courses.py
+
+Directory: ./src/web, 0 Subdirectories, 2 files.
+  Description: Convert crawling and scoring to school json files
+  Files : __init__.py, prepare.py
+
+Directory: ./tests, 1 Subdirectories, 0 files.
+  Description: Validate crawling data in data/crawling-output
+  Subdirectories: crawl/
+
+Directory: ./tests/crawl, 0 Subdirectories, 1 files.
+  Files : test_crawler_results.py
