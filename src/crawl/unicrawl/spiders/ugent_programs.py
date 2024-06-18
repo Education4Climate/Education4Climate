@@ -23,7 +23,7 @@ class UGentProgramSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        campuses = ['Gent', 'Brugge', 'Oudenaarde', 'Kortrijk']
+        campuses = ['Gent', 'Brugge', 'Kortrijk', 'Korea']
         for campus in campuses:
             yield scrapy.Request(
                 url=BASE_URL.format(campus.upper()),
@@ -45,14 +45,18 @@ class UGentProgramSpider(scrapy.Spider, ABC):
 
         program_links = response.xpath("//a[h2[@class='title']]/@href").getall()
         for link in program_links:
-            programma_link = "/".join(link.split("/")[:-1]) + f"/programma/{YEAR}"
-            yield response.follow(programma_link, self.parse_program, cb_kwargs={'campus': campus})
+            program_link = f"{link}/programma"
+            yield response.follow(program_link, self.parse_program, cb_kwargs={'campus': campus})
 
     @staticmethod
     def parse_program(response, campus):
 
         program_id = response.xpath("//h1/@data-code").get()
         program_name = response.xpath("//h1[@id='titleLabel']/text()").get()
+        print(program_name)
+        if program_name is None:
+            print(f"No name for the program {response.url}")
+            return
         # Don't keep programs for exchange students
         if "exchange proramme" in program_name.lower():
             return
@@ -86,9 +90,15 @@ class UGentProgramSpider(scrapy.Spider, ABC):
         courses_text = "//tr[not(@class='nietaangeboden')]//td[@class='cursusnaam']"
         courses_ids = response.xpath(f"{div_text}{courses_text}//span/@title").getall()
         # courses_names = response.xpath(f"{div_text}{courses_text}//span/text()").getall()
-        courses_urls = response.xpath(f"{div_text}{courses_text}//a/@ng-click").getall()
-        courses_urls = [course_url.split(",")[4].strip(" '") + "/"
-                        + '/'.join(course_url.split(",")[1:4]) for course_url in courses_urls]
+        courses_urls_full = response.xpath(f"{div_text}{courses_text}//a/@ng-click").getall()
+        # Keep only the important parts
+        courses_urls = []
+        for courses_url in courses_urls_full:
+            year, nb1, nb2, lang, idx, nb3, _ = courses_url.split("(")[1].split(',')
+            year = year.strip("./'")  # Could maybe get rid of this
+            lang = lang.strip("'")
+            nb3 = nb3.strip(" ")
+            courses_urls += [f"{year}/{lang}/{nb1}/{nb2}/{nb3}"]
         # ects = response.xpath(f"{div_text}//td[@class='SP']//span/text()").getall()
         # ects = [int(float(e.replace(',', '.'))) for e in ects]
 
