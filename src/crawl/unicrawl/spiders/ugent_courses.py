@@ -2,6 +2,7 @@
 from pathlib import Path
 from abc import ABC
 from os import remove
+from typing import Dict
 
 import pandas as pd
 
@@ -9,23 +10,51 @@ import re
 import scrapy
 
 import urllib3
-from pdfminer.high_level import extract_text
-from pdfminer.pdfparser import PDFSyntaxError
+import pypdf
 
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 import logging
 logging.getLogger().setLevel(logging.INFO)
 
-BASE_URL = "https://studiekiezer.ugent.be/ministudiefiche/{}"
+BASE_URL = "https://studiekiezer.ugent.be/{}/ministudiefiche/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_programs_{YEAR}.json')
+
+LANGUAGE_DICT = {
+    "Nederlands": 'nl',
+    "Engels": 'en',
+    "Frans": 'fr',
+    "Chinees": 'cn',
+    "Duits": 'de',
+    'Japans': 'jp',
+    "Hindi": 'hi',
+    "Arabisch": 'ar',
+    "Spaans": 'es',
+    "Portugees": "pt",
+    "Italiaans": 'it',
+    "Russisch": 'ru',
+    "Turks": 'tr',
+    "Kroatisch": 'hr',
+    "Lingala": 'ln',
+    "Grieks": 'gr',
+    "Afrikaans": 'za',
+    "Sloveens": 'si',
+    "Zweeds": 'se',
+    "Bulgaars": 'bg',
+    "Bosnisch": 'ba',
+    "Deens": 'dk',
+    "Ijslands": 'is',
+    "Noors": 'no',
+    "Koreaans": 'kr',
+    "Servisch": 'rs'
+}
 
 
 def download_pdf(pdf_url: str) -> str:
 
     urllib3.disable_warnings()
-    file_path = r"file.pdf"
+    file_path = "file.pdf"
     with urllib3.PoolManager() as http:
         r = http.request('GET', pdf_url)
         with open(file_path, 'wb') as fout:
@@ -33,32 +62,69 @@ def download_pdf(pdf_url: str) -> str:
     return file_path
 
 
-def extract_content(pdf_url: str) -> str:
+def extract_content(pdf_url: str) -> Dict:
 
+    # Download pdf and extract text
+    pdf_path = download_pdf(pdf_url)
     try:
-        pdf_path = download_pdf(pdf_url)
-        content = extract_text(pdf_path)
+        pdf_reader = pypdf.PdfReader(pdf_path)
+        content = ''
+        for page_num in range(len(pdf_reader.pages)):
+            page = pdf_reader.pages[page_num]
+            content += page.extract_text() + '\n'
 
         course_id = re.compile(r'[A-Z]\d{6}').search(content)[0]
-        course_name = re.compile(r'(.*)\s(\n)?\([A-Z]\d{6}\)').search(content)[1]
-        years = re.compile(r'in academiejaar (\d{4}-\d{4})').search(content)[1]
-        languages = re.compile(r'Onderwijstalen\n\n([A-Za-z0-9\s\n\(\),ëöéï]+)\n\n'
-                               r'Trefwoorden').search(content)
-        teachers = re.compile(r'Lesgevers in academiejaar \d{4}-\d{4}\n\n'
-                              r'([A-Za-záëöéï\s\'.,-]*)\n\n').search(content)
-        ects = re.compile(r'Studiepunten[\s]*([0-9\.]*)').search(content)[1]
+        course_name = re.compile(r'(.*)\s(\n)?\([A-Z]\d{6}\)').search(content)
+        course_name = course_name[1].strip(" ") if course_name else ''
 
-        print(course_id)
-        print(course_name)
-        print(years)
-        print(languages)
-        print(teachers)
-        print(ects)
+        year = re.compile(r'in academiejaar (\d{4}-\d{4})').search(content)
+        year = year[1] if year else f'{YEAR}-{YEAR-2000+1}'
 
+        languages = re.compile(r'Onderwijstalen\n([A-Za-z0-9\s\n\(\),äáàöôëéèï]+)'
+                               r'\n(\(Goedgekeurd\)\n\n1\n\n\x0c)?Trefwoorden').search(content)
+        languages = [LANGUAGE_DICT[lang] for lang
+                     in languages[1].replace("1 (Goedgekeurd)" ,'').strip('\n').split(", ")] \
+            if languages else []
+
+        # Teachers
+        teach_pattern = (r'Lesgevers in academiejaar 2023-2024([\s\S]*?)'
+                         r'Aangeboden in onderstaande opleidingen in 2023-2024')
+        # Extract the section listing teacher
+        content_match = re.search(teach_pattern, content)
+        teachers = []
+        if content_match:
+            # Extract teachers' names
+            extracted_content = content_match.group(1).strip()
+            name_pattern = r'(.*,\s\w+)'
+            name_matches = re.findall(name_pattern, extracted_content)
+            teachers = [match for match in name_matches]
+        # teachers = teachers[1].split("\n") if teachers else []
+        teachers = [t.replace(', ', ' ') for t in teachers]
+
+        content_txt = re.search(r'Inhoud\n(.*?)\nBegincompetenties', content, re.DOTALL)
+        content_txt = content_txt.group(1) if content_txt else ''
+
+        goal = re.search(r'Situering\n(.*?)\nInhoud', content, re.DOTALL)
+        goal = goal.group(1) if goal else ''
+
+    except pypdf.errors.PdfStreamError:
         remove(pdf_path)
-    except PDFSyntaxError:
-        return ''
-    return content
+        return {}
+
+    remove(pdf_path)
+
+    return {
+        "id": course_id,
+        "name": course_name,
+        "year": year,
+        "languages": languages,
+        "teachers": teachers,
+        "url": pdf_url,
+        "content": content_txt,
+        "goal": goal,
+        "activity": '',
+        "other": ''
+}
 
 
 class UGentCourseSpider(scrapy.Spider, ABC):
@@ -69,7 +135,7 @@ class UGentCourseSpider(scrapy.Spider, ABC):
     name = 'ugent-courses'
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_courses_{YEAR}_test.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}ugent_courses_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):
@@ -87,43 +153,45 @@ class UGentCourseSpider(scrapy.Spider, ABC):
 
         for _, courses_ds in courses_df.iterrows():
 
+            # Retrieve some info in case the pdf reading does not work
             languages = courses_ds['languages'].split(',')
             languages = [] if languages == [''] else languages
-            yield scrapy.Request(url=BASE_URL.format(courses_ds['url']),
+
+            year = courses_ds['url'].split("/")[0]
+            nbs = "/".join(courses_ds['url'].split("/")[1:])
+            yield scrapy.Request(url=BASE_URL.format(year, nbs),
                                  callback=self.parse_course_info,
                                  cb_kwargs={"course_id": courses_ds['id'],
                                             "course_name": courses_ds['name'],
                                             "languages": languages})
-            return
 
     @staticmethod
     def parse_course_info(response, course_id, course_name, languages):
 
         response_json = response.json()
-        teachers = []
-        if 'lesgever' in response_json:
-            teachers = [response_json['lesgever']]
-        else:
-            print(course_name)
-            print(response_json)
-        teachers = [f"{' '.join(t.split(' ')[1:])} {t.split(' ')[0]}" for t in teachers]
+
         # Course description
+        base_dict = {}
         if 'studieficheUrlNL' in response_json:
             content_link = response_json['studieficheUrlNL']
-            content = extract_content(content_link)
+            content_link = response.url.split("ministudiefiche")[0] + content_link.strip("../")
+            base_dict = extract_content(content_link)
         else:
             content_link = response.url
-            content = ''
 
-        yield {
-            "id": course_id,
-            "name": course_name,
-            "year": f"{YEAR}-{int(YEAR) + 1}",
-            "languages": languages,
-            "teachers": teachers,
-            "url": content_link,
-            "content": content,
-            "goal": '',
-            "activity": '',
-            "other": ''
-        }
+        if 'id' in base_dict.keys():
+            yield base_dict
+        else:
+            # If pdf extraction failed still save some information
+            yield {
+                "id": course_id,
+                "name": course_name,
+                "year": f"{YEAR}-{int(YEAR) + 1}",
+                "languages": languages,
+                "teachers": [],
+                "url": content_link,
+                "content": "",
+                "goal": '',
+                "activity": '',
+                "other": ''
+            }
