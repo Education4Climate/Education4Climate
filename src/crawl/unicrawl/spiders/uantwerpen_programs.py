@@ -15,19 +15,28 @@ BASE_URL = "https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/?s=16&
 
 
 """ 
-# Do not constitute a real erro
+Error is normal for:
 
-Missing faculty for program 'Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)'
-
-Missing faculty for program 'Postgraduaat in de leerlingenbegeleiding in het secundair onderwijs'
-https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/leerlingbegeleiding-secundair/opleidingsinfo/
-https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/leerlingbegeleiding-secundair/
-
-
-Missing faculty for program 'Bio-ingenieurswetenschappen'
-https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/bio-ingenieur-worden/master/
-https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/bio-ingenieur-worden/
-
+- Master in Basisonderwijs - No info
+- Archivistiek: erfgoedbeheer en hedendaags documentbeheer - Cooresponds to master in erfgoedstudies
+- Master in Politieke wetenschappen - subdivided in other programs that are already crawled
+- Master in Chemie = Master in Chemistry
+- Master in Biologie - divided into different master of biology
+- Master in Bio-ingenieurswetenschappen - divided into other masters already crawled
+- Master in de ergotherapeutische wetenschap - KULeuven
+- Master-na-master in de literatuurwetenschappen - KULeuven
+- Master of Molecular Biology - VUB
+- Advanced master of Management - Antwerp Management School
+- Advanced master of International Fashion Management - Antwerp Management School
+- Advanced master of Innovation and Entrepreneurship - Antwerp Management School
+- Advanced master of Global Management - Antwerp Management School
+- Advanced master of Global Supply Chain Management - Antwerp Management School
+- Advanced master of Human Resources Management - Antwerp Management School
+- Advanced master of Finance - Antwerp Management School
+- Master of Global Health - Interuniversity program
+- Master in de ergotherapeutische wetenschap - Interuniversity program
+- Applied Ecohydrology - Interuniversity program
+- Master in Open Universiteit - On another website
 """
 
 PROGRAMS_FACULTY = {
@@ -36,7 +45,8 @@ PROGRAMS_FACULTY = {
         "Postgraduaat in het ondernemerschap voor wetenschappen en biomedische wetenschappen",
         "Postgraduaat in het milieu en gezondheidswetenschappen",
         "Farmaceutische wetenschappen",
-        "Leading International Vaccinology Education"
+        "Leading International Vaccinology Education",
+        "Master in Farmaceutische wetenschappen"
     ],
     "Faculteit Geneeskunde en Gezondheidswetenschappen": [
         "Postgraduate of Algology",
@@ -91,15 +101,19 @@ PROGRAMS_FACULTY = {
         "Master-na-master in de literatuurwetenschappen",
         "Digitale tekstanalyse",
         "Master-na-master in de archivistiek: erfgoedbeheer en hedendaags documentbeheer",
-        "Research Master of Philosophy"
+        "Research Master of Philosophy",
+        "Archivistiek: erfgoedbeheer en hedendaags documentbeheer",
+        "Master in Toegepaste taalkunde"
     ],
     "Faculteit Sociale Wetenschappen": [
         "Master in de opleidings- en onderwijswetenschappen",
         "Politieke wetenschappen",
-        "Master in gender en diversiteit"
+        "Master in gender en diversiteit",
+        "Basisonderwijs",
+        "Bio-ingenieurswetenschappen"
     ],
     "Faculteit Ontwerpwetenschappen": [
-        "Erfgoedstudies"
+        "Master in Erfgoedstudies"
     ],
     "Antwerp Management School": [  # not crawlable for now (2023) because different website
         "Advanced master of Management",
@@ -109,7 +123,17 @@ PROGRAMS_FACULTY = {
         "Advanced master of Global Supply Chain Management",
         "Advanced master of Global Management",
         "Advanced master of Finance",
-        "Advanced master of China-Europe Business Studies"
+        "Advanced master of China-Europe Business Studies",
+        "Centre for Maritime and Air Transport Management"
+    ],
+    "Centrum Voor Andragogiek": [
+        "Postgraduaat schoolleider in het secundair onderwijs"
+    ],
+    "Open Universiteit": [
+        "Open Universiteit"
+    ],
+    "Faculteit Toegepaste Ingenieurwetenschappen": [
+        "Master in Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)",
     ]
 }
 
@@ -139,14 +163,17 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
         nav_tabs_text = response.xpath("//nav[contains(@class, 'navSection')]//a/text()").getall()
         nav_tabs_urls = response.xpath("//nav[contains(@class, 'navSection')]//a/@href").getall()
 
+        # didn't find any id for programs so using url
+        if 'alle-opleidingen' in response.url:
+            program_id = response.url.split("alle-opleidingen/")[1].split("/")[0]
+        elif 'all-programmes' in response.url:
+            program_id = response.url.split("all-programmes/")[1].split("/")[0]
+        else:
+            program_id = response.url.split("/")[-2]
+
         # Check the navigation tab for programme info tabs
         match = False
-        program_id = response.url.split("/")[-2]  # didn't find any id for programs so using url
-
-        # There is a problem of accessibility of the courses page of this program
-        if program_id == 'bachelor-geschiedenis-studeren':
-            return
-
+        # If one of the tab below has been found, call the parse program on it
         for text, url in zip(nav_tabs_text, nav_tabs_urls):
             if text in ["About the programme", "Programme info", "Opleidingsinfo", "Bachelor", "Master",
                         "Over de bachelor", "Over de master", "Tijdens een bachelor", "Opleindingsinfo en FAQ"]:
@@ -165,18 +192,26 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
             return
         program_name = program_name.strip(" ")
 
-        # Two programs have subprograms: 'Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)' and
-        #  'Toegepaste taalkunde'
-        programs_with_subprograms = ["Industriële wetenschappen (industrieel ingenieur): chemie en biochemie",
-                                     "Toegepaste taalkunde"]
-        if program_name in programs_with_subprograms:
-            subprograms_links = response.xpath("//nav[contains(@class, 'navSub')]/ul/li/a/@href").getall()
-            for link in subprograms_links:
-                # cur_dict = base_dict.copy()
-                # cur_dict["id"] += " " + link.split("/")[-2]
-                program_id_new = program_id + " " + link.split("/")[-2]
-                yield response.follow(link, self.parse_program_info, cb_kwargs={"program_id": program_id_new})
-            return
+        # Determine general info about the program
+
+        # Find cycle and update id and name based on url
+        cycle = 'other'
+        if "master" in response.url:
+            cycle = "master"
+            if 'master' not in program_id:
+                program_id = 'master-' + program_id
+            if not ('master' in program_name or 'Master' in program_name):
+                program_name = f"Master in {program_name}"
+        elif "bachelor" in response.url:
+            cycle = "bac"
+            if 'bachelor' not in program_id:
+                program_id = 'bachelor-' + program_id
+            if not ('bachelor' in program_name or 'Bachelor' in program_name):
+                program_name = f"Bachelor in {program_name}"
+        elif "manama" in response.url:
+            cycle = 'master'
+        elif 'pavo' in response.url or 'Postgrad' in program_name:
+            cycle = 'postgrad'
 
         faculties = response.xpath("//div[contains(@class, 'managedContent')]"
                                    "//li/a[contains(text(), 'Facult') or contains(text(), 'Institu')]/text()").getall()
@@ -206,55 +241,72 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
         if link is None:
             link = response.xpath("//nav[contains(@class, 'navSection')]//a[contains(text(), 'Studieprogramma')"
                                   " or contains(text(), 'Study programme')]/@href").get()
-        # If still no link available, display information to check where the problem comes from
-        if link is None:
-            print(f"Missing link for {program_name}\n{response.url}")
-            return
 
-        # Find cycle and update id and name based on url
-        cycle = 'other'
-        if "master" in link:
-            cycle = "master"
-            if 'master' not in program_id:
-                program_id = 'master-' + program_id
-            if not('master' in program_name or 'Master' in program_name):
-                program_name = f"Master in {program_name}"
-        elif "bachelor" in link:
-            cycle = "bac"
-            if 'bachelor' not in program_id:
-                program_id = 'bachelor-' + program_id
-            if not('bachelor' in program_name or 'Bachelor' in program_name):
-                program_name = f"Bachelor in {program_name}"
-        elif "manama" in link:
-            cycle = 'master'
-        elif 'pavo' in link or 'Postgrad' in program_name:
-            cycle = 'postgrad'
+        # If link is available, continue otherwise check for subprograms
+        if link:
+            cur_dict = {
+                'id': program_id,
+                'name': program_name,
+                'cycle': cycle,
+                'faculties': faculties,
+                'campuses': campuses,
+                'url': response.url
+            }
 
-        cur_dict = {
-            'id': program_id,
-            'name': program_name,
-            'cycle': cycle,
-            'faculties': faculties,
-            'campuses': campuses,
-            'url': response.url
-        }
+            yield response.follow(link,
+                                  self.parse_study_program,
+                                  cb_kwargs={"base_dict": cur_dict})
+        else:
+            # Some programs have subprograms
+            programs_with_subprograms = \
+                ["Master in Farmaceutische wetenschappen",
+                 "Master in Toegepaste taalkunde",
+                 "Master in Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)"]
 
-        yield response.follow(link,
-                              self.parse_study_program,
-                              cb_kwargs={"base_dict": cur_dict})
+            if program_name in programs_with_subprograms:
+                subprograms_links = response.xpath("//nav[contains(@class, 'navSub')]/ul/li//a/@href").getall()
+                for link in subprograms_links:
+                    # cur_dict = base_dict.copy()
+                    # cur_dict["id"] += " " + link.split("/")[-2]
+                    program_id_new = program_id + "-" + link.split("/")[-2]
+                    yield response.follow(link, self.parse_program_info, cb_kwargs={"program_id": program_id_new})
+                return
+            else:
+                print(f"Missing link for {program_name}\n{response.url}")
+                return
 
-    @staticmethod
-    def parse_study_program(response, base_dict):
+    def parse_study_program(self, response, base_dict):
 
         # Get courses and ects
         main_tab = f"//section[contains(@id, '-{YEAR}')]"
-        courses_links = response.xpath(f"{main_tab}//h5//a/@href").getall()
+        # Add text() in a to be sure the course has a name
+        courses_links = response.xpath(f"{main_tab}//h5//a[text()]/@href").getall()
         if len(courses_links) == 0:
-            # Maybe there is no year
-            courses_links = response.xpath(f"//h5//a/@href").getall()
-            if len(courses_links) == 0:
+            # Check if there are no subprograms
+            first_path = ("//nav[contains(@class, 'navSub')]//li[a[contains(text(), 'Studieprogramma') "
+                          "or contains(text(), 'Study programme')]]//li/a/")
+            sub_programs_links = response.xpath(f"{first_path}@href").getall()
+            sub_programs_names = response.xpath(f"{first_path}text()").getall()
+            second_path = ("//nav[contains(@class, 'navSub') and header[h2[a[contains(text(), 'Studieprogramma') "
+                           "or contains(text(), 'Study programme')]]]]//li/a/")
+            sub_programs_links += response.xpath(f"{second_path}@href").getall()
+            sub_programs_names += response.xpath(f"{second_path}text()").getall()
+
+            if len(sub_programs_links) != 0:
+                for name, link in zip(sub_programs_names, sub_programs_links):
+                    cur_dict = base_dict.copy()
+                    program_id_new = base_dict['id'] + "-" + link.split("/")[-2]
+                    cur_dict['id'] = program_id_new
+                    program_name_new = base_dict['name'] + ' - ' + name
+                    cur_dict['name'] = program_name_new
+                    yield response.follow(link,
+                                          self.parse_study_program,
+                                          cb_kwargs={"base_dict": cur_dict})
+                return
+            else:
                 print(f"No courses for {base_dict['name']}")
                 return
+
         courses_codes = [link.split("-")[1].split("&")[0] for link in courses_links]
         ects = response.xpath(f"{main_tab}//div[@class='spec points']/div[@class='value']/text()").getall()
         if len(ects) == 0:

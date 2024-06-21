@@ -186,7 +186,7 @@ if __name__ == "__main__":
                 "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
                 "thomasmore", "ucll", "vinci", "vives"]
 
-    schools = ["vives"]
+    schools = ["uantwerpen"]
 
     for school_ in schools:
         print(school_)

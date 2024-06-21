@@ -22,9 +22,13 @@ LANGUAGE_DICT = {
     "Duits": 'de',
     "Spaans": 'es',
     "Italiaans": 'it',
+    "Italian": 'it',
     "Chinees": 'cn',
     "German": 'de',
-    "Spanish": 'es'
+    "Spanish": 'es',
+    "Afrikaans": 'za',
+    "Portugeees": 'pt',
+    "RUS": 'ru'
 }
 
 # WARNING: don't forget to uncomment the line 'HTTPERROR_ALLOWED_CODES = ['404']' in settings.py
@@ -43,8 +47,10 @@ class UAntwerpenCourseSpider(scrapy.Spider, ABC):
 
     def start_requests(self):
 
-        study_programs_url = set(pd.read_json(open(PROG_DATA_PATH, "r"))["url"].tolist())
-        for url in study_programs_url:
+        program_df = pd.read_json(open(PROG_DATA_PATH, "r")).set_index('id')
+        study_programs_urls = set(program_df["url"].tolist())
+
+        for url in study_programs_urls:
             yield scrapy.Request(url=url, callback=self.parse_courses)
 
     def parse_courses(self, response):
@@ -52,12 +58,15 @@ class UAntwerpenCourseSpider(scrapy.Spider, ABC):
         main_panel = f"//section[contains(@id, '-{YEAR}')]//section[@class='course']"
         # One course can be several times in the same program
         courses_names = response.xpath(f"{main_panel}/header/h5/a/text()").getall()
-        courses_links = response.xpath(f"{main_panel}/header/h5/a/@href").getall()
+        courses_links = response.xpath(f"{main_panel}/header/h5/a[text()]/@href").getall()
         for course_name, course_link in list(set(zip(courses_names, courses_links))):
 
             course_id = course_link.split(f'{YEAR}-')[1].split("&")[0]
 
-            course_info_panel = f"{main_panel}/header[h5/a[text()=\"{course_name}\"]][1]/following::div[1]"
+            if "'" in course_name:
+                course_info_panel = f"{main_panel}/header[h5/a[text()=\"{course_name}\"]][1]/following::div[1]"
+            else:
+                course_info_panel = f"{main_panel}/header[h5/a[text()=\'{course_name}\']][1]/following::div[1]"
             languages = response.xpath(f"{course_info_panel}//div[contains(@class, 'language')]"
                                        f"//div[@class='value']/text()").getall()
             languages = list(set([LANGUAGE_DICT[language.replace('\n', '').replace('\t', '')]
