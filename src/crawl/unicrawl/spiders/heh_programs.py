@@ -24,7 +24,9 @@ class HEHProgramSpider(scrapy.Spider, ABC):
 
     def parse_programs(self, response):
 
-        program_links = response.xpath("//ul[@id='formation_HEH']//ul/li/a[not(contains(text(),':'))]/@href").getall()
+        # The condition on the 'a' is to avoid the 'covering programs' (e.g. Assistante de direction)
+        program_links = response.xpath("//ul[@id='formation_HEH']//ul/li/a[@class='option'"
+                                       " or not(contains(text(),':'))]/@href").getall()
         for program_link in program_links:
             print(program_link)
             yield response.follow(
@@ -55,7 +57,8 @@ class HEHProgramSpider(scrapy.Spider, ABC):
 
         # Simplify fields
         courses_urls = [url.replace("/upload/ects/", '') for url in courses_urls]
-        courses_ects = [int(e.strip(' (ects)')) for e in courses_ects]
+        print(courses_ects)
+        courses_ects = [int(e.strip('\xa0ECTS)').strip(" (")) for e in courses_ects]
 
         # Get course ids
         courses_ids = [link.split('-')[-1].split(".")[0] for link in courses_urls]
