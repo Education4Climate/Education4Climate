@@ -51,7 +51,7 @@ if __name__ == "__main__":
     schools += ["artevelde", "ecam", "ecsedi-isalt", "ehb", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
                 "henallux", "hepl", "hers", "hogent", "howest", "ichec", "ihecs", "ispg", "issig", "odisee",
                 "thomasmore", "ucll", "vinci", "vives"]
-    schools = ["helmo"]
+    schools = ["uantwerpen"]
     for school in schools:
         print(school)
         main(school, arguments['year'])

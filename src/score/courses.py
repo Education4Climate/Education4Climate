@@ -212,7 +212,7 @@ if __name__ == "__main__":
     schools_ = ["kuleuven", "uantwerpen", "ugent", "uhasselt", "vub"]
     schools_ += ["artevelde", "ehb", "hogent", "howest", "odisee", "thomasmore", "ucll", "vives"]
 
-    schools_ = ['henallux']
+    schools_ = ['uantwerpen']
     # schools_ = ["uclouvain", "ulb", "uliege", "umons", "unamur", "uslb"]
     # schools_ += ["ecam", "ecsedi-isalt", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
     #              "henallux", "hepl", "hers", "ichec", "ihecs", "ispg", "issig", "vinci"]
