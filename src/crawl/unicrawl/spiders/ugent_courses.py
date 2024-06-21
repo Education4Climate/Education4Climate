@@ -124,7 +124,7 @@ def extract_content(pdf_url: str) -> Dict:
         "goal": goal,
         "activity": '',
         "other": ''
-}
+    }
 
 
 class UGentCourseSpider(scrapy.Spider, ABC):
