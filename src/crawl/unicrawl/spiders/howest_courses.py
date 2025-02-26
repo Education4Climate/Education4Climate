@@ -40,14 +40,7 @@ class HOWESTCourseSpider(scrapy.Spider, ABC):
         courses_ids = pd.read_json(open(PROG_DATA_PATH, "r"))["courses"]
         courses_ids_list = sorted(list(set(courses_ids.sum())))
 
-        fn = "/home/duboisa1/shifters/Education4Climate/data/crawling-output/howest_courses_2023_first.json"
-        a = pd.read_json(fn, orient='records')['id'].to_list()
-
         for course_id in courses_ids_list:
-
-            if int(course_id) in a:
-                print(course_id)
-                continue
 
             yield scrapy.Request(
                 url=BASE_URL.format(course_id),
