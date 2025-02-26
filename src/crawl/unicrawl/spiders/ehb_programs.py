@@ -12,7 +12,7 @@ BASE_URL = "https://ects.ehb.be/#/training/1/{}"  # format is program code
 acad_year = "{}".format(YEAR)
 
 BASE_DATA = {
-    "year": "{}-{}".format(acad_year, int(acad_year[-2:])+1),
+    "year": f"{acad_year}-{int(acad_year[-2:])+1}",
     "language": "1",
     "faculty": "",
     "type": "",

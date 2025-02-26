@@ -51,6 +51,8 @@ class EHBCourseSpider(scrapy.Spider, ABC):
 
         body = response.css("#content")
         name = body.css("h2::text").get()
+        if name:
+            name = name.split(" - ")[-1]
         year = body.css("#ctl00_ctl00_cphGeneral_cphMain_lblAcademiejaarOmschrijving::text").get()
 
         teachers = body.xpath("//span[text()='Coördinator: ' or text()='Docenten: ' or text()='Andere docenten: ']/following::span[1]/text()").getall()
