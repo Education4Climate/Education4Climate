@@ -9,20 +9,27 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
 BASE_URL = "https://fiches-ue.icampusferrer.eu/locked_list.php"
+
+# TODO: check each year this list
 SECTION_CAMPUS_PROGR = {
     "AA": ['Arts Appliqués', 'Site Palais du Midi',
            ["Arts du tissu", "Publicité", "Styliste et modéliste"]],
     "EcoB": ['Economique', 'Site Anneessens',
-             ["Assistant de direction", "Comptabilité", "Management de la logistique",
+             ["Assurances", "Comptabilité", "Management de la logistique",
               "Sciences administratives et gestion publique"]],
     "EcoM": ['Economique', 'Site Anneessens',
-             ["Agrégation de l'enseignement secondaire supérieur", "Gestion de l'entreprise",
+             ["Expertise comptable et fiscale", "Gestion de l'entreprise",
               "Gestion publique", "Ingénieur commercial", "Master en sciences administratives",
-              "Master en sciences commerciales"]],
+              "Sciences commerciales"]],
     "ParaMed": ['Paramédical', 'Site Brugmann',
-                ["Biologie médicale", "Sage-femme", "Soins infirmiers"]],
+                ["Technologue de laboratoire m�dical", "Santé mentale et psychiatrie", "Sage-femme",
+                 "Infirmier responsable de soins g�n�raux", "Soins infirmiers"]],
     "Peda": ['Pédagogique', 'Site Lemonnier',
-             ["Normale Préscolaire", "Normale primaire", "Normale secondaire", "Préparation physique et entraînement"]],
+             ["Certificat inter hautes écoles en didactique du néerlandais langue II et d'immersion",
+              "Agrégation de l'enseignement secondaire supérieur",
+              "Bachelier en enseignement section 1", "Bachelier en enseignement section 2",
+              "Bachelier en enseignement section 3", "Normale Préscolaire", "Normale primaire",
+              "Normale secondaire", "Préparation physique et entraînement"]],
     "Soc": ['Social', 'Site Anneessens', ["Gestion des ressources humaines"]],
     "Tech": ['Technique', 'Site Palais du Midi', ["Electronique",  "Techniques graphiques"]]
 }
@@ -56,7 +63,11 @@ class HEFERRERProgramSpider(scrapy.Spider, ABC):
                 for j, sub_program in enumerate(associated_sub_programs):
 
                     cycle = 'bac'
-                    if section_code == 'EcoM' and ('Master' in sub_program or not sub_program.endswith(" - ")):
+                    if 'Certificat' in main_program:
+                        cycle = 'certificate'
+                    elif 'Agrégation' in main_program:
+                        cycle = 'grad'
+                    elif section_code == 'EcoM' and ('Master' in sub_program or not sub_program.endswith(" - ")):
                         cycle = 'master'
 
                     yield {

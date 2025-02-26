@@ -15,12 +15,21 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}he-ferrer_programs_{YEAR}.json')
 LANGUAGES_DICT = {
     "Français": "fr",
+    "francais": "fr",
     "FranÃ\x83Â§ais": "fr",
+    "FranÃƒÂƒÃ‚Âƒ�": "fr",
+    "FranÃƒÂ§ais": "fr",
     "Anglais": "en",
+    "anglais": "en",
     "ANG": "en",
     "N?erlandais": "nl",
     "Néerlandais": "nl",
-    "NÃ\x83Â©erlandais": "nl"
+    "NÃ\x83Â©erlandais": "nl",
+    "NÃƒÂ©erlandais": "nl",
+    "NÃƒÂƒÃ‚ÂƒÃ?": "nl",
+    "NÃƒÂ?": "nl",
+    "Espagnol": 'es',
+    "espagnol": 'es'
 }
 
 
@@ -60,7 +69,8 @@ class HEFERRERCourseSpider(scrapy.Spider, ABC):
 
         languages = response.xpath("//td[contains(text(), \"Langue d'enseignement et d'évaluation\")]"
                                    "//following::strong[1]/text()").get()
-        languages = [LANGUAGES_DICT[language.strip(" ")] for language in languages.split("/")]
+        languages_split = languages.split("/") if "/" in languages else languages.split(" et ")
+        languages = [LANGUAGES_DICT[language.strip(" ")] for language in languages_split]
         languages = ["fr"] if len(languages) == 0 else languages
 
         content = cleanup(response.xpath("//h3[contains(text(), '2')]"
