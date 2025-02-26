@@ -60,7 +60,6 @@ class HOGENTCourseSpider(scrapy.Spider, ABC):
         teachers = [t.strip() for t in teachers.split(",")] if teachers else []
 
         languages = body.xpath("//span[text()='Onderwijstalen: ']/following::span[1]/text()").get()
-        print(languages)
         if languages:
             languages = [lang.strip() for lang in languages.split(',')]
             languages = [lang for lang in languages if lang != 'Taaloverschrijdend']
@@ -68,7 +67,6 @@ class HOGENTCourseSpider(scrapy.Spider, ABC):
             languages = ["nl"] if len(languages) == 0 else languages
         else:
             languages = ['nl']
-        print(languages)
 
         content = cleanup(body.xpath("//h4[contains(text(),'Inhoud')]/following::div[1]").xpath("string(.)").get())
 

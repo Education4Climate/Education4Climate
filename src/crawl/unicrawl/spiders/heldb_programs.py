@@ -32,18 +32,19 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
 
         # Get links to programs
         programs_links = response.xpath("//body/div[1]//tr//td//a[1]/@href").getall()
-        for link in programs_links:
-            yield response.follow(link, self.parse_program)
+        programs_names = response.xpath("//body/div[1]//tr//td//a[1]/text()[1]").getall()
+        for (link, program_name) in zip(programs_links, programs_names):
+            yield response.follow(link, self.parse_program, cb_kwargs={"program_name": program_name.strip("\n\t ")})
 
     @staticmethod
-    def parse_program(response):
+    def parse_program(response, program_name):
 
-        program_id = response.url.split("/")[-1]
-        program_name = response.xpath("//body/div[1]//strong[contains(text(), 'Section')]"
-                                      "/following::text()[1]").get().strip(" ")
-        if not program_name:
-            print(f"No program name available for {response.url}")
-            return
+        program_id = response.url.split("/")[-1].split("-")[0]
+        # program_name = response.xpath("//body/div[1]//strong[contains(text(), 'Section')]"
+        #                               "/following::text()[1]").get().strip(" ")
+        # if not program_name:
+        #     print(f"No program name available for {response.url}")
+        #     return
         program_subname = response.xpath("//body/div[1]//strong[contains(text(), 'Orientation')]"
                                          "/following::text()[1]").get()
         if program_subname:
@@ -53,6 +54,9 @@ class HELDBProgramSpider(scrapy.Spider, ABC):
                 program_name += f" - {program_subname}"
 
         bloc = response.xpath("//body/div[1]//td[contains(text(), 'BLOC')]/text()").get()
+        if bloc is None:
+            print(f"No courses available for {program_name}")
+            return
         bloc_number = int(bloc.split(" ")[1])
         cycle = 'bac' if bloc_number < 4 else 'master'
 

@@ -17,26 +17,29 @@ BASE_URL = "https://www.uantwerpen.be/nl/studeren/aanbod/alle-opleidingen/?s=16&
 """ 
 Error is normal for:
 
-- Master in Basisonderwijs - No info
-- Archivistiek: erfgoedbeheer en hedendaags documentbeheer - Cooresponds to master in erfgoedstudies
-- Master in Politieke wetenschappen - subdivided in other programs that are already crawled
-- Master in Chemie = Master in Chemistry
-- Master in Biologie - divided into different master of biology
-- Master in Bio-ingenieurswetenschappen - divided into other masters already crawled
-- Master in de ergotherapeutische wetenschap - KULeuven
-- Master-na-master in de literatuurwetenschappen - KULeuven
-- Master of Molecular Biology - VUB
-- Advanced master of Management - Antwerp Management School
-- Advanced master of International Fashion Management - Antwerp Management School
-- Advanced master of Innovation and Entrepreneurship - Antwerp Management School
+- Advanced master of Finance - Antwerp Management School
 - Advanced master of Global Management - Antwerp Management School
 - Advanced master of Global Supply Chain Management - Antwerp Management School
 - Advanced master of Human Resources Management - Antwerp Management School
-- Advanced master of Finance - Antwerp Management School
-- Master of Global Health - Interuniversity program
-- Master in de ergotherapeutische wetenschap - Interuniversity program
+- Advanced master of International Fashion Management - Antwerp Management School
+- Advanced master of Innovation and Entrepreneurship - Antwerp Management School
+- Advanced master of Management - Antwerp Management School
+- Advanced master of People and Change Management - Antwerp Management School
+- Advanced master of Sustainable Innovation and Entrepreneurship - Antwerp Management School
 - Applied Ecohydrology - Interuniversity program
+- Archivistiek: erfgoedbeheer en hedendaags documentbeheer - Cooresponds to master in erfgoedstudies
+- Bachelor in Toegepaste economische wetenschappen: courses could be crawlable but not in the same nomenclature...
+- Master-na-master in de literatuurwetenschappen - KULeuven
+- Master in Basisonderwijs - No info
+- Master in Bio-ingenieurswetenschappen - divided into other masters already crawled
+- Master in Biologie - divided into different master of biology
+- Master in Chemie = Master in Chemistry
+- Master in de ergotherapeutische wetenschap - Interuniversity program
 - Master in Open Universiteit - On another website
+- Master in Politieke wetenschappen - subdivided in other programs that are already crawled
+- Master of Global Health - Interuniversity program
+- Master of Molecular Biology - VUB
+- Urban Sustainability Studies - Collaborative program
 """
 
 PROGRAMS_FACULTY = {
@@ -134,6 +137,9 @@ PROGRAMS_FACULTY = {
     ],
     "Faculteit Toegepaste Ingenieurwetenschappen": [
         "Master in Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)",
+    ],
+    "Faculteit Bedrijfswetenschappen en Economie": [
+        "Master in Toegepaste economische wetenschappen"
     ]
 }
 
@@ -192,6 +198,10 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
             return
         program_name = program_name.strip(" ")
 
+        # Special case for educatieve master
+        if program_name == 'Educatieve master':
+            program_name = response.xpath("//h2/text()[1]").get().strip("\n\t ")
+
         # Determine general info about the program
 
         # Find cycle and update id and name based on url
@@ -214,9 +224,15 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
             cycle = 'postgrad'
 
         faculties = response.xpath("//div[contains(@class, 'managedContent')]"
-                                   "//li/a[contains(text(), 'Facult') or contains(text(), 'Institu')]/text()").getall()
+                                   "//li/a[contains(text(), 'Facult') or contains(text(), 'facult')"
+                                   " or contains(text(), 'Institu')]/text()").getall()
         # Small fix for program manama-fiscaal-recht
         faculties = [f for f in faculties if f != 'procedure van de Faculteit Rechten']
+
+        # Special case for eduactieve master
+        if 'Educatieve master' in program_name:
+            faculties = ["Educatieve master"]
+
         # For the programs for which the faculty is not specified, we hard-coded it.
         if len(faculties) == 0:
             for faculty, programs_ in PROGRAMS_FACULTY.items():
@@ -261,6 +277,7 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
             programs_with_subprograms = \
                 ["Master in Farmaceutische wetenschappen",
                  "Master in Toegepaste taalkunde",
+                 "Master in Toegepaste economische wetenschappen",
                  "Master in Industriële wetenschappen: chemie en biochemie (industrieel ingenieur)"]
 
             if program_name in programs_with_subprograms:
@@ -271,6 +288,17 @@ class UAntwerpenProgramSpider(scrapy.Spider, ABC):
                     program_id_new = program_id + "-" + link.split("/")[-2]
                     yield response.follow(link, self.parse_program_info, cb_kwargs={"program_id": program_id_new})
                 return
+
+            # Special cas for 'Educatieve master'
+            if "Educatieve master" in program_name:
+                # Get subprograms
+                sub_program_links = response.xpath("//a[div[@class='label']]/@href").getall()
+                print(program_name, sub_program_links)
+                for link in sub_program_links:
+                    program_id_new = program_id + "-" + link.split("/")[-2]
+                    print(program_id_new)
+                    yield response.follow(link, self.parse_program_info, cb_kwargs={'program_id': program_id_new})
+
             else:
                 print(f"Missing link for {program_name}\n{response.url}")
                 return

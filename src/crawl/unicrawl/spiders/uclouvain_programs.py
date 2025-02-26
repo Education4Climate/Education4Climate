@@ -18,7 +18,7 @@ class UCLouvainProgramSpider(scrapy.Spider, ABC):
     name = "uclouvain-programs"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}_pre.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}uclouvain_programs_{YEAR}.json').as_uri()
     }
 
     def start_requests(self):
@@ -88,13 +88,13 @@ class UCLouvainProgramSpider(scrapy.Spider, ABC):
         courses_ids = response.xpath(courses_txt).getall()
         if len(courses_ids) == 0:
             yield base_dict
+            return
 
         # Missing credit with one program
         if base_dict['id'] == "RXU2CE":
             courses_ids = courses_ids[:-1]
 
-        ects = response.xpath("//div[@class='row' and contains(@style, 'transparent')]"
-                              "//div[contains(@class, 'col-sm-6')]//span[contains(text(), 'crédit')]/text()").getall()
+        ects = response.xpath("//div[@class='row' and contains(@style, 'transparent')]/div[contains(@class, 'col-sm-6')]/span[contains(text(), 'crédit')]/text()").getall()
         ects = [int(cleanup(e).strip(" crédits")) for e in ects]
 
         cur_dict = {

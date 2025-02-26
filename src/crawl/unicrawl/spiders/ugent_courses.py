@@ -23,6 +23,7 @@ PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
 
 LANGUAGE_DICT = {
     "Nederlands": 'nl',
+    "Nederlands\nTrefwoorden": 'nl',
     "Engels": 'en',
     "Frans": 'fr',
     "Chinees": 'cn',
@@ -47,7 +48,9 @@ LANGUAGE_DICT = {
     "Ijslands": 'is',
     "Noors": 'no',
     "Koreaans": 'kr',
-    "Servisch": 'rs'
+    "Servisch": 'rs',
+    "Oekraïens": 'ua',
+    "Tsjechisch": 'cz'
 }
 
 
@@ -87,8 +90,8 @@ def extract_content(pdf_url: str) -> Dict:
             if languages else []
 
         # Teachers
-        teach_pattern = (r'Lesgevers in academiejaar 2023-2024([\s\S]*?)'
-                         r'Aangeboden in onderstaande opleidingen in 2023-2024')
+        teach_pattern = (f'Lesgevers in academiejaar {YEAR}-{YEAR+1}' + r'([\s\S]*?)' +
+                         f'Aangeboden in onderstaande opleidingen in {YEAR}-{YEAR+1}')
         # Extract the section listing teacher
         content_match = re.search(teach_pattern, content)
         teachers = []

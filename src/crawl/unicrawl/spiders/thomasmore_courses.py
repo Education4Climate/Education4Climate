@@ -8,7 +8,7 @@ import scrapy
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 from src.crawl.utils import cleanup
 
-BASE_URl = "http://onderwijsaanbodmechelenantwerpen.thomasmore.be/syllabi/{}.htm"
+BASE_URL = "https://onderwijsaanbodmechelenantwerpen.thomasmore.be/syllabi/{}.htm"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}thomasmore_programs_{YEAR}.json')
 
@@ -48,7 +48,7 @@ class ThomasMoreCourseSpider(scrapy.Spider, ABC):
         courses_urls_list = sorted(list(set(courses_urls.sum())))
 
         for course_url in courses_urls_list:
-            yield scrapy.Request(BASE_URl.format(course_url), self.parse_main)
+            yield scrapy.Request(BASE_URL.format(course_url), self.parse_main)
 
     @staticmethod
     def parse_main(response):

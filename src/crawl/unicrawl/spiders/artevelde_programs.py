@@ -11,18 +11,56 @@ BASE_URL_1 = ("https://www.arteveldehogeschool.be/nl/opleidingen/categorie/{}/ty
 BASE_URL_2 = f"https://ects.arteveldehogeschool.be/ahsownapp/ects/ECTS.aspx?ac={YEAR}-{YEAR+1-2000}"
 
 # Need to indicate the number of pages to visit for each faculty - to determine juste go on the url 1 and click on each
-# faculty one after the other
+# faculty one after the other (if overestimated, should not affect the crawling)
 FACULTIES = {
     'business-management-38': ["Business en Management", 3],
     "coaching-en-begeleiding-53": ["Coaching en Begeleiding", 1],
-    "communicatie-media-en-design-41": ["Communicatie, Media en Design", 3],
+    "communicatie-media-en-design-41": ["Communicatie, Media en Design", 2],
     "gezondheid-en-zorg-44": ["Gezondhied en Zorg", 4],
     "hr-en-leiderschap-56": ["HR en Leiderschap", 1],
     "mens-en-samenleving-47": ["Mens en Samenleving", 2],
-    "onderwijs-50": ["Onderwijs", 2]
+    "onderwijs-50": ["Onderwijs", 3]
 }
 
-# Not working for Gecertificeerd accountant, Management Centrale Sterilisatie Afdeling (CSA)
+
+# Not in programs map (so not in drop-down list https://ects.arteveldehogeschool.be/ahsownapp/ects/ECTS.aspx?ac=2024-25)
+# - Accountancy - Fiscaliteit = Specialisation of Bedrijfsmanagement
+# - Business & Languages (keuzetraject: Business Officer) = Specialisation of Organisatie en Management
+# - Business & Languages (keuzetraject: Intercultural Relations) = Specialisation of Organisatie en Management
+# - Digital Business = Organised by partner KdG Antwerp
+# - Engels
+# - Event & Project Management = Specialisation of Organisatie en Management
+# - Financiën en Verzekeringen = Specialsation of Bedrijfsmanagement
+# - Frans
+# - Internationaal Ondernemen = Specialisation of Bedrijfsmanagement
+# - Kmo-Management = Specialisation of Bedrijfsmanagement
+# - Marketing = Specialisation of Bedrijfsmanagement
+# - Rechtspraktijk = Specialisation of Bedrijfsmanagement
+# - Spaans
+# - Supply Chain Management = Specialisation of Bedrijfsmanagement
+# - Audiovisual Design = Keuzetraject of Grafische en Digitale Media
+# - Cross Media Design = Keuzetraject of Grafische en Digitale Media
+# - Interactive Media Development = Keuzetraject of Grafische en Digitale Media
+# - Print Media Technology = Keuzetraject of Grafische en Digitale Media
+# - Toegepaste Informatica = Organised by partner KdG Antwerp
+# - Audiologie = Missing ? Same as Logopedie en Audiologie ?
+# - Logopedie = Missing ? Same as Logopedie en Audiologie ?
+# - Basisverpleegkunde = Missing ?
+# - European Stuttering Specialization = Missing ?
+# - Management Centrale Sterilisatie Afdeling (CSA) = Not given in 2024-25
+# - Medische Technologie = Missing ?
+# - Perinatale coach = Missing ?
+# - Toegepaste Gerontologie = In three partners school (AP Hogeschool, Karel de Grote Hogeschool en Arteveldehogeschool.)
+# - Attest rooms-katholieke godsdienst kleuteronderwijs = Missing ?
+# - Attest rooms-katholieke godsdienst lager onderwijs = Missing ?
+# - Basiskennis bio-esthethiek = Missing ?
+# - Basiskennis haartooi = Missing ?
+# - Beleidsondersteuner = Missing ?
+# - Lichamelijke opvoeding en Bewegingsrecreatie = Missing ?
+# - Zorg in de klas = Missing ? Or microdegrees ?
+# - Zorg voor de leerling = Missing ? Or microdegrees ?
+
+
 
 PROGRAMS_MAP = {
     "Bedrijfsmanagement": "Bachelor in het bedrijfsmanagement",
@@ -53,7 +91,7 @@ PROGRAMS_MAP = {
     "Journalistiek": "Bachelor in de journalistiek",
     "Programmeren": "Graduaat in het programmeren",
     "Conversational Design": "Postgraduaat Conversational Design",
-    "Digital Content Creation": "Postgraduaat Digital Content Creation",
+    "Digital Content Creation en AI": "Postgraduaat Digital Content Creation",
     "Digital Marketing Communication": "Postgraduaat Digital Marketing Communication",
     "Experience Architect": "Postgraduaat Experience Architect",
     "Podcasting": "Postgraduaat Podcasting",
@@ -78,10 +116,11 @@ PROGRAMS_MAP = {
     "Neurologische Zorg": "Postgraduaat neurologische zorg",
     "Oncologie": "Postgraduaat oncologie",
     "Pediatrie en Neonatologie": "Postgraduaat pediatrie en neonatologie",
+    "Kritieke pediatrie": "Postgraduaat Kritieke Pediatrie",
     "Stomatherapie en Wondzorg": "Postgraduaat stomatherapie en wondzorg",
     "Verpleegkundige in de Huisartsenpraktijk":
         "Postgraduaat verpleegkundige in huisartsenpraktijk",
-    "Pedagogie van het jonge Kind": "Bachelor in de pedagogie van het jonge kind",
+    "Pedagogie van het Jonge Kind": "Bachelor in de pedagogie van het jonge kind",
     "Sociaal Werk": "Bachelor in het sociaal werk",
     "Informatiebeheer": "Graduaat in het informatiebeheer",
     "Maatschappelijk werk": "Graduaat in het maatschappelijk werk",
@@ -112,9 +151,10 @@ PROGRAMS_MAP = {
     "International Journalism": "Bachelor of International Journalism",
     "Creatieve Therapie: Bijkomend Medium": "Postgraduaat Creatieve Therapie: bijkomend medium",
     "Freinet": "Postgraduaat Freinet",
-    "Orthopedagogische Begeleiding": "Graduaat in de orthopedagogie",
+    "Orthopedagogische Begeleiding": "Graduaat in de orthopedagogische begeleiding",
     "School of Branding" :"Postgraduaat School of Branding",
-    "Mindfulnesstrainer": "Postgraduaat Mindfulnesstrainer"
+    "Mindfulnesstrainer": "Postgraduaat Mindfulnesstrainer",
+    "Gecertificeerd accountant": "Postgraduaat Gecertificeerd Accountant"
 }
 # Note: not in the program description page
 # Beleidsondersteuner
@@ -206,7 +246,7 @@ class ArteveldeProgramSpider(scrapy.Spider, ABC):
                                            "campuses": program_campuses,
                                            "cycle": program_cycle}
 
-        # Check if we are at thelast page:
+        # Check if we are at the last page:
         if page_nb < FACULTIES[faculty][1] - 1:
             page_nb += 1
             yield scrapy.Request(BASE_URL_1.format(faculty, page_nb), self.parse_faculties,

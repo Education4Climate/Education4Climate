@@ -18,7 +18,7 @@ def merge_programs(school: str, year: int):
 
     Note:
     After running unicrawl/spiders/{school}_programs.py, programs can be split over several lines
-     (due to the way the website is organised. The goal of this function is to merge those lines
+     (due to the way the website is organised). The goal of this function is to merge those lines
      to have one line per program
     """
 
@@ -42,6 +42,9 @@ def merge_programs(school: str, year: int):
     # Remove duplicate courses
     def remove_doubles(x):
         courses, positions = np.unique(x.courses, return_index=True)
+        # If no duplicates, return
+        if len(courses) == len(x.courses):
+            return x
         x.courses = courses
         for key in keys_as_list[1:]:  # Change ects
             x[key] = list(np.array(x[key])[positions])
@@ -100,7 +103,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", "--type", help='course or program', default='course')
     parser.add_argument("-s", "--school", help="input json file path")
-    parser.add_argument("-y", "--year", help="academic year", default=2023)
+    parser.add_argument("-y", "--year", help="academic year", default=2024)
     arguments = vars(parser.parse_args())
     if arguments['type'] == 'course':
         merge_courses(arguments['school'], arguments['year'])

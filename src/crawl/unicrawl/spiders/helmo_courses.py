@@ -8,9 +8,9 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = "https://www.helmo.be/fr/formations/{}/programme/{}"
+BASE_URL = "https://www.helmo.be/fr/formations/{}/{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
-    f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_programs_{YEAR}_pre.json')
+    f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_programs_{YEAR}.json')
 
 LANGUAGES_DICT = {
     "Français": 'fr',
@@ -27,7 +27,7 @@ class HELMOCourseSpider(scrapy.Spider, ABC):
     name = "helmo-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_courses_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}helmo_courses_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):

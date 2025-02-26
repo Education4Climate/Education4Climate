@@ -30,7 +30,7 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
     name = "henallux-courses"
     custom_settings = {
         'FEED_URI': Path(__file__).parent.absolute().joinpath(
-            f'../../../../{CRAWLING_OUTPUT_FOLDER}henallux_courses_{YEAR}.json').as_uri()
+            f'../../../../{CRAWLING_OUTPUT_FOLDER}henallux_courses_{YEAR}_pre.json').as_uri()
     }
 
     def start_requests(self):
@@ -38,15 +38,7 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
         courses_url_codes_ds = pd.read_json(open(PROG_DATA_PATH, "r"))["courses_url_codes"]
         courses_url_codes_list = sorted(list(set(courses_url_codes_ds.sum())))
 
-        fn = '/home/duboisa1/shifters/Education4Climate/data/crawling-output/henallux_courses_2023_first.json'
-        old_urls = pd.read_json(fn, orient='records')['url'].tolist()
-
         for course_code in courses_url_codes_list:
-
-            if BASE_URL.format(course_code) in old_urls:
-                print(BASE_URL.format(course_code))
-                continue
-
             yield scrapy.Request(url=BASE_URL.format(course_code), callback=self.parse_ue)
 
     @staticmethod
@@ -59,7 +51,6 @@ class HENALLUXCourseSpider(scrapy.Spider, ABC):
         year = response.xpath(f"{ue_div_txt}//div[span[text()='Année académique']]/text()").get().split(": ")[1]
 
         language = response.xpath(f"{ue_div_txt}//div[span[text()=\"Langue d'enseignement\"]]/text()").get()
-        print(language.strip(" \n\t"))
         languages = ['fr'] if language is None or language.strip(" \n\t") == ':' \
             else [LANGUAGE_DICT[language.split(": ")[1]]]
 

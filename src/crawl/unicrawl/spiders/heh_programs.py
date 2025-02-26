@@ -57,7 +57,6 @@ class HEHProgramSpider(scrapy.Spider, ABC):
 
         # Simplify fields
         courses_urls = [url.replace("/upload/ects/", '') for url in courses_urls]
-        print(courses_ects)
         courses_ects = [int(e.strip('\xa0ECTS)').strip(" (")) for e in courses_ects]
 
         # Get course ids

@@ -33,7 +33,8 @@ class VivesProgramSpider(scrapy.Spider, ABC):
                                                  f"//li[contains(@class, 'taal_n') or "
                                                  f"contains(@class, 'taal_e')]/a/@href").getall()
             for link in program_group_links:
-                yield response.follow(link, self.parse_program_group, cb_kwargs={"faculty": faculty.split("SG ")[1]})
+                yield response.follow(link, self.parse_program_group,
+                                      cb_kwargs={"faculty": faculty.split("Groep ")[1].capitalize()})
 
     def parse_program_group(self, response, faculty):
 
