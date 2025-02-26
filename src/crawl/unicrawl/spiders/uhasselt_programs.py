@@ -23,9 +23,11 @@ BASE_DATA = {
 # This is not great, but it's the only way we found to get faculties
 FACULTIES_PROGRAMS = {
     "Faculteit Architectuur en Kunst": [
-        "bachelor in de interieurarchitectuur", "master in de interieurarchitectuur",
-        "Master of Interior Architecture", "bachelor in de architectuur",
-        "master in de architectuur", "Educatieve master in de ontwerpwetenschappen",
+        "bachelor in de interieurarchitectuur",
+        "master in de interieurarchitectuur",
+        "Master of Interior Architecture",
+        "bachelor in de architectuur",
+        "master in de architectuur",
         "Postgraduate certificate Building Beyond Borders"
     ],
     "Faculteit Bedrijfseconomische Wetenschappen": [
@@ -36,7 +38,6 @@ FACULTIES_PROGRAMS = {
         "bachelor in de handelswetenschappen",
         "master in de handelswetenschappen",
         "master handelsingenieur",
-        "Educatieve master in de economie",
         "bachelor handelsingenieur in de beleidsinformatica",
         "master handelsingenieur in de beleidsinformatica"
     ],
@@ -45,8 +46,8 @@ FACULTIES_PROGRAMS = {
         "Master of Biomedical Sciences",
         "master in de biomedische wetenschappen",
         "bachelor in de geneeskunde",
-        "Educatieve master in de gezondheidswetenschappen",
         "master in systeem-en procesinnovatie in de gezondheidszorg",
+        "master in systeem- en procesinnovatie in de gezondheidszorg",
         "master in de verpleegkunde en de vroedkunde"
     ],
     "Faculteit Industriële Ingenieurswetenschappen": [
@@ -55,7 +56,6 @@ FACULTIES_PROGRAMS = {
         "master in de industri\u00eble wetenschappen: verpakkingstechnologie",
         "master in de industri\u00eble wetenschappen: chemie",
         "master in de industri\u00eble wetenschappen: elektromechanica",
-        "Educatieve master in de wetenschappen en technologie",
         "master in de industri\u00eble wetenschappen: elektronica-ICT",
         "master in de industri\u00eble wetenschappen: bouwkunde",
         "master in de industri\u00eble wetenschappen: energie",
@@ -65,7 +65,8 @@ FACULTIES_PROGRAMS = {
         "Postgraduate certificate Innovation and Entrepreneurship in Engineering",
         "Postgraduate certificate Innovation and Entrepreneurship in Engineering - Advanced",
         "Postgraduate certificate Innovation and Entrepreneurship in Engineering - Foundations",
-        "master in de industriële wetenschappen: informatica"
+        "master in de industriële wetenschappen: informatica",
+        "Master of Energy Engineering Technology"
     ],
     "School voor Mobiliteitswetenschappen": [
         "bachelor in de mobiliteitswetenschappen",
@@ -80,6 +81,9 @@ FACULTIES_PROGRAMS = {
         "master in de revalidatiewetenschappen en de kinesitherapie",
         "Master in de ergotherapeutische wetenschap"
     ],
+    "School voor Sociale Wetenschappen": [
+        "bachelor in de sociale wetenschappen"
+    ],
     "Faculteit Wetenschappen": [
         "bachelor in de wiskunde", "bachelor in de informatica",
         "bachelor in de chemie", "bachelor in de biologie",
@@ -87,15 +91,19 @@ FACULTIES_PROGRAMS = {
         "Master of Statistics and Data Science",
         "master in materiomics"
     ],
+    "School voor Educatieve Studies": [
+        "master in het basisonderwijs (schakelprogramma)",
+        "Educatieve master in de ontwerpwetenschappen",
+        "Educatieve master in de wetenschappen en technologie",
+        "Educatieve master in de gezondheidswetenschappen",
+        "Educatieve master in de economie"
+    ],
     "School of Expert Education": [
         "Postgraduaat Stralingsdeskundige",
         "Postgraduaat Milieucoördinator - niveau A",
         "Postgraduaat Relatie- en Communicatiewetenschappen",
         "Postgraduaat Biogebaseerde en circulaire economie",
         "Postgraduaat Bedrijfskunde"
-    ],
-    "School voor Sociale Wetenschappen": [
-        "bachelor in de sociale wetenschappen"
     ]
 }
 
