@@ -6,6 +6,6 @@ SCORING_ANALYSIS_FOLDER = path.join('data', 'scoring-analysis', '')
 CORPUS_FOLDER = path.join('data', 'corpus', '')
 WEB_INPUT_FOLDER = path.join('docs', 'data', '')
 
-YEAR = 2023
+YEAR = 2024
 
 ACCEPTED_LANGUAGES = ['en', 'fr', 'nl']

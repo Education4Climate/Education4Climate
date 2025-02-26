@@ -203,7 +203,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--school", help="School code")
-    parser.add_argument("-y", "--year", help="Academic year", default=2023)
+    parser.add_argument("-y", "--year", help="Academic year", default=2024)
 
     arguments = vars(parser.parse_args())
     arguments['output_dir'] = Path(__file__).parent.absolute().joinpath(f"../../{SCORING_OUTPUT_FOLDER}/")
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     schools_ = ["kuleuven", "uantwerpen", "ugent", "uhasselt", "vub"]
     schools_ += ["artevelde", "ehb", "hogent", "howest", "odisee", "thomasmore", "ucll", "vives"]
 
-    schools_ = ['heh']
+    schools_ = ['']
     # schools_ = ["uclouvain", "ulb", "uliege", "umons", "unamur", "uslb"]
     # schools_ += ["ecam", "ecsedi-isalt", "he-ferrer", "heaj", "hech", "hel", "heldb", "helmo",
     #              "henallux", "hepl", "hers", "ichec", "ihecs", "ispg", "issig", "vinci"]
