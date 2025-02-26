@@ -8,7 +8,9 @@ import scrapy
 from src.crawl.utils import cleanup
 from settings import YEAR, CRAWLING_OUTPUT_FOLDER
 
-BASE_URL = f"https://www.heldb.be/ficheue-{YEAR-2000}/" + "{}"
+# TODO: semble bizarre que le 'ficheue' ne soit pas suivi du numéro de l'année
+# BASE_URL = f"https://www.heldb.be/ficheue-{YEAR-2000}/" + "{}"
+BASE_URL = f"https://www.heldb.be/ficheue-23/" + "{}"
 PROG_DATA_PATH = Path(__file__).parent.absolute().joinpath(
     f'../../../../{CRAWLING_OUTPUT_FOLDER}heldb_programs_{YEAR}.json')
 
