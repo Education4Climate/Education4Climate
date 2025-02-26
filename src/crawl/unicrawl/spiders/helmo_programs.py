@@ -27,12 +27,24 @@ class HELMOProgramSpider(scrapy.Spider, ABC):
 
         programs_links = response.xpath("//a[contains(@class, 'studyCard__link')]/@href").getall()
         for program_link in programs_links:
-            yield response.follow(program_link + "/programme", self.parse_program)
+            yield response.follow(program_link, self.parse_program_link)
 
-    def parse_program(self, response):
+    def parse_program_link(self, response):
 
-        program_id_url = response.url.split("/")[-2]
-        program_id = program_id_url.split("-")[0]
+        program_link = response.xpath("//main//a[contains(@href, '/programme') "
+                                      "and contains(text(), 'Programme')]/@href").get()
+
+        if program_link:
+            yield response.follow(program_link, self.parse_program)
+        else:
+            print(f"Could not find program description for: {response.url}")
+
+
+    @staticmethod
+    def parse_program(response):
+
+        program_id = response.url.split("/")[-2].split("-")[0]
+        program_id_url = "/".join(response.url.split("/")[-2:])
         program_name = response.xpath("//h1/text()").get()
 
         cycle = 'other'
